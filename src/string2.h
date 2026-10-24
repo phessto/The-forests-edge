@@ -13,7 +13,7 @@ int           strncasecmp    ( const char*, const char*, int );
 int           strncmp        ( const char*, const char*, int );
 int           rstrcasecmp    ( const char*, const char* );
 int           rstrncasecmp   ( const char*, const char*, int );
-char*         strcat         ( char*, const char* );
+char*         strcat         ( char*, const char* ) throw();
 
 bool          matches        ( const char*&, const char*, size_t = 1 );
 bool          exact_match    ( const char*&, const char* );
