@@ -1,0 +1,1502 @@
+#AREA
+"Ash Newts"
+"Phule"
+"ash newts"
+20 0
+0
+0
+#ROOMS
+
+#42750
+"On an Obsidian Wall"
+"This vertical rock wall of smooth obsidian rises out of a river of lava below.
+
+Deep notches have been carved into the walls, creating regular hand-holds.
+
+You can climb onto a ledge to the east, or follow the wall to the west, where
+
+you can see a cave opening.
+
+"
+"[Phule] ash newts area begins
+
+[Phule] e is 75021
+
+[Phule] nomob
+
+[Froom] should players really be able to sleep here ?
+
+"
+301596685 0
+11 9 0
+D1
+""
+""
+1250 -1 75021 0 5
+D3
+""
+""
+1024 -1 42751 0 9
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You climb along the wall to the $T.
+
+"
+E
+"to_room"
+"$n climbs along the wall to the $T.
+
+"
+!
+3 0 8
+A
+"climb"
+"1 east ledge notches walls hand-holds"
+"if( find_skill( ch, climb ) > random( 2, 4 ) ) {
+
+  act_tochar( \"You climb east along the hand-holds.\", ch );
+
+  act_notchar( \"$n climbs east along the hand-holds.\", ch );
+
+  transfer( ch, find_room( 75021 ) );
+
+  act_notchar( \"$n climbs down from hand-holds to the west.\", ch );
+
+  }
+
+else {
+
+  act_tochar( \"You fail to find the necessary hand-holds.\", ch );
+
+  act_notchar( \"$n tries to climb along the hand-holds to the east, but turns back.\", ch );
+
+  }
+
+"
+!
+0 0 0
+A
+"fly"
+"1 east"
+"if( can_fly( ch ) ) {
+
+  act_tochar( \"You fly east along the ledge.\", ch );
+
+  act_notchar( \"$n flies east along the ledge.\", ch );
+
+  transfer( ch, find_room( 75021 ) );
+
+  act_notchar( \"$n flies down from ledge to the west.\", ch );
+
+  }
+
+else {
+
+  act_tochar( \"You are incapable of flight.\", ch );
+
+  }
+
+"
+!
+0 0 0
+-1
+S
+
+#42751
+"Obsidian Cave Mouth"
+"A descending cavern leads north into the obsidian rock wall, away from the
+
+river of lava to the south.  A series of deep notches in the rock wall would
+
+allow for climbing to the east.  No such notches continue along the wall to
+
+the west.
+
+"
+""
+301596677 0
+11 6 0
+D0
+""
+""
+0 -1 42752 0 6
+D1
+""
+""
+1024 -1 42750 0 9
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You $t $T into the cave mouth.
+
+"
+E
+"to_room"
+"$n $t $T into the cave mouth.
+
+"
+!
+3 0 1
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You climb onto the obsidian wall to the $T.
+
+"
+E
+"to_room"
+"$n climbs onto the obsidian wall to the $T.
+
+"
+!
+3 0 2
+-1
+S
+
+#42752
+"Ashen Tunnel"
+"This tunnel is littered with ash and obsidian fragments, as the once-solid
+
+walls have crumbled over the millenia under the intense pressures of tectonic
+
+activity.  The tunnel descends to the north, away from the heat of the river
+
+of lava which glows through the cave mouth to the south.
+
+"
+""
+301596677 0
+11 6 0
+D0
+""
+""
+0 -1 42753 0 6
+D2
+""
+""
+0 -1 42751 0 6
+3762 17 1509949460 -2 0
+-1
+S
+
+#42753
+"Ashen Chamber - Intersection"
+"This large, globular chamber's ashen walls are covered with paintings and
+
+strange sigils, although the language is indecipherable.  A tunnel rises away
+
+from the chamber to the south, while two other tunnels lead east and west.
+
+"
+""
+301596677 0
+11 7 0
+D1
+""
+""
+0 -1 42754 0 7
+D2
+""
+""
+0 -1 42752 0 6
+D3
+""
+""
+0 -1 42755 0 7
+E
+"paintings sigils"
+"The paintings depect massive, black spiders being attacked by bolts of
+
+lightning.
+
+"
+3762 17 1509949470 -2 0
+2236 9 1509949540 3 0
+-1
+S
+
+#42754
+"Ashen Tunnel - Above a Chute"
+"A chute descends from this dark, ashen tunnel, disappearing into the obsidian
+
+rock below.  To the west, the tunnel opens up as it reaches a small chamber. 
+
+The ceiling is cracked in several places, bits of ash and obsidian fragments
+
+ready to be dislodged by the next seismic event.
+
+"
+"[Phule] TODO: jump drop down
+
+[Phule] TODO climb check on leaving
+
+[Froom] climb down doesn't work
+
+"
+301596677 0
+11 6 0
+D3
+""
+""
+0 -1 42753 0 7
+D5
+""
+""
+1024 -1 42756 0 6
+A
+""
+""
+"if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  send_to_room( \"A deep vibration sends bits of ash and obsidian flying.\", room );
+
+  if( random( 1, 3 ) == 1 ) {
+
+    obj_to_room( oload( 3762 ), room );
+
+    }
+
+  }
+
+"
+!
+2 400 0
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You climb $T the chute.
+
+"
+E
+"to_room"
+"$n climbs $T the chute.
+
+"
+!
+3 0 32
+A
+"jump drop fly float fall"
+"1 down"
+"act_tochar( \"You jump into the chute.\", ch );
+
+act_notchar( \"$n jumps into the chute.\", ch );
+
+acode( room, 4 );
+
+"
+!
+0 0 0
+A
+"__DROP_DOWN_CODE__"
+""
+"transfer( ch, find_room( 42756 ) );
+
+if( can_fly( ch ) ) {
+
+  act_tochar( \"You fly safely to the bottom of the chute.\" );
+
+  act_notchar( \"$n flies in from above.\", ch );
+
+  }
+
+else {
+
+  i = 2d5+3;
+
+  dam_message( ch, i, \"falling down the chute\" );
+
+  inflict( ch, ch, i, \"falling down a chute\" );
+
+  set_resting( ch );
+
+  }
+
+"
+!
+0 0 0
+-1
+S
+
+#42755
+"Ashen Tunnel - Bend"
+"Like a turned intestine, the tunnel bends from east to north, descending
+
+through a warped, cracked cavern of crumbling obsidian ash.  To the east, a
+
+larger chamber opens up, expanding the narrow quarters of the tunnel.  To the
+
+north, the tunnel opens up into an even larger underground chamber.
+
+"
+""
+301596677 0
+11 6 0
+D0
+""
+""
+0 -1 42758 0 6
+D1
+""
+""
+0 -1 42753 0 7
+-1
+S
+
+#42756
+"Ashen Tunnel - Below a Chute"
+"This tunnel of crumbling obsidian runs east and west, below a dark chute which
+
+leads up through the cracked ceiling.  Bits of stringy black webbing stick to
+
+the walls, growing more dense as the tunnel disappears into darkness to the
+
+east.
+
+"
+"[Phule] exit e is no.mob
+
+"
+301596677 0
+11 6 0
+D1
+""
+""
+16384 -1 42757 0 6
+D3
+""
+""
+0 -1 42776 0 6
+D4
+""
+""
+1024 -1 42754 0 6
+A
+""
+""
+"if( can_fly( ch ) )
+
+  continue;
+
+else {
+
+  if( find_skill( ch, climb ) > random( 1, 3 ) )
+
+    continue;
+
+  else {
+
+    act_tochar( \"You try to climb up the chute, but come sliding back down.\", ch );
+
+    act_notchar( \"$n tries to climb up the chute, but comes sliding back down.\", ch );
+
+    }
+
+  }
+
+"
+E
+"to_char"
+"You climb $T the chute.
+
+"
+E
+"to_room"
+"$n climbs $T the chute.
+
+"
+!
+3 0 16
+A
+"climb"
+"1 up chute"
+"interpret( ch, \"up\" );
+
+"
+!
+0 0 0
+3762 17 1509949450 -2 0
+2238 9 1509949540 3 0
+-1
+S
+
+#42757
+"Ashen Tunnel - End"
+"Black, sticky web fragments litter this dead end in the ashy, obsidian
+
+tunnel.  Bits and pieces of a full web still cling to the ceiling and walls,
+
+hanging down like tangling vines.  The tunnel leads west, through the
+
+crumbling ash and obsidian rock.
+
+"
+""
+301596677 0
+11 6 0
+D3
+""
+""
+16384 -1 42756 0 6
+2241 137 1509949540 3 0
+-1
+S
+
+#42758
+"Underground Crater - Ledge"
+"A massive chamber opens up like a crater to the north, its floor a cracked
+
+eggshell ruin of crumbling obsidian ash.  You can continue along the edge of
+
+the chamber to the east, or enter a rising tunnel to the south.
+
+"
+""
+301596677 0
+11 8 0
+D0
+""
+""
+0 -1 42797 0 8
+D1
+""
+""
+0 -1 42759 0 8
+D2
+""
+""
+0 -1 42755 0 6
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You $t $T along the edge of the crater.
+
+"
+E
+"to_room"
+"$n $t $T along the edge of the crater.
+
+"
+!
+3 0 2
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You $t $T into the crater.
+
+"
+E
+"to_room"
+"$n $t $T into the crater.
+
+"
+!
+3 0 1
+2236 9 1509949540 3 0
+-1
+S
+
+#42759
+"Underground Crater - Ledge"
+"You are on the lip of a large underground crater which disappears into the
+
+darkness of the northwest.  The crumbling ledge continues north and west, a
+
+narrow ledge but easily navigable.
+
+"
+""
+301596677 0
+11 7 0
+D0
+""
+""
+0 -1 42760 0 7
+D3
+""
+""
+0 -1 42758 0 8
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You $t $T along the edge of the crater.
+
+"
+E
+"to_room"
+"$n $t $T along the edge of the crater.
+
+"
+!
+3 0 9
+-1
+S
+
+#42760
+"Underground Crater - Ledge"
+"A massive underground crater descends to the west, while this ledge follows a
+
+circuit around its circumference to the south.  A small tunnel opening leads
+
+north, through a wall of crumbling obsidian ash.
+
+"
+""
+301596677 0
+11 7 0
+D0
+""
+""
+0 -1 42761 0 7
+D2
+""
+""
+0 -1 42759 0 7
+D3
+""
+""
+0 -1 42797 0 7
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You $t $T into the crater.
+
+"
+E
+"to_room"
+"$n $t $T into the crater.
+
+"
+!
+3 0 8
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You $t $T along the edge of the crater.
+
+"
+E
+"to_room"
+"$n $t $T along the edge of the crater.
+
+"
+!
+3 0 4
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You $t $T into the tunnel.
+
+"
+E
+"to_room"
+"$n $t $T into the tunnel.
+
+"
+!
+3 0 1
+3762 17 1509949450 -2 0
+-1
+S
+
+#42761
+"Ashen Tunnel"
+"A small tunnel crawls its way from east to west, through crumbling obsidian
+
+rock.  Nearly perfectly round, the tunnel was formed by volcanic activity many
+
+thousands of years ago, and now the obsidian rock itself has succumbed to the
+
+heat and pressure of the passing millenia, decaying to ash.
+
+"
+"[Phule] exit e is no.mob
+
+"
+301596677 0
+11 6 0
+D1
+""
+""
+16384 -1 42762 0 6
+D2
+""
+""
+0 -1 42760 0 7
+2236 9 1509949540 3 0
+-1
+S
+
+#42762
+"Ashen Tunnel - End"
+"The tunnel ends here in a wall of cracked obsidian and ash.  Dark, sticky
+
+webbing hangs from the ceiling, brushing the floor in some places.  Deep
+
+scratches line the floor, cut into the hard obsidian rock at your feet by some
+
+tremendous force.
+
+"
+""
+301596677 0
+11 6 0
+D3
+""
+""
+16384 -1 42761 0 6
+2241 137 1509949540 3 0
+-1
+S
+
+#42763
+"Ashen Tunnel - Above a Fissure"
+"Under Construction.
+
+"
+""
+301596677 0
+11 6 0
+-1
+S
+
+#42773
+"Ashen Tunnel"
+"The tunnel bends from north to east, through crumbling obsidian rock and ash. 
+
+Bits of black webbing hang from the walls and ceiling, casting a sticky,
+
+shadowy veil across the darkness.  Large cracks in the ceiling of the tunnel
+
+reveal hard obsidian beyond the flaky outer shell of ash.
+
+"
+""
+301596677 0
+11 6 0
+D0
+""
+""
+0 -1 42774 0 6
+D1
+""
+""
+0 -1 42775 0 6
+2238 9 1509949540 3 0
+3762 17 1509949460 -2 0
+-1
+S
+
+#42774
+"Ashen Tunnel - Above a Fissure"
+"The small tunnel ends above a large fissure, leading down through a massive
+
+crack in the crumbling obsidian floor of the cavern.  The fissure is wide
+
+enough to climb down, but by the looks of the crumbling walls and darkness
+
+below, it could be quite a perilous climb.  The tunnel leads away from the
+
+fissure to the south.
+
+"
+"acode 2, line 15, used to go to room 42917
+
+this room does not exist, changed it to 42791, seems to be the correct target.
+
+"
+301596677 0
+11 6 0
+D2
+""
+""
+0 -1 42773 0 6
+D5
+""
+""
+1024 -1 42777 0 6
+A
+""
+""
+"if( can_fly( ch ) )
+
+  continue;
+
+else {
+
+  if( find_skill( ch, climb ) > random( 2, 4 ) )
+
+    continue;
+
+  else {
+
+    act_tochar( \"You try to climb down the fissure, but lose your footing!\", ch );
+
+    act_notchar( \"$n tries to climb down the fissure, but loses $s footing!\", ch );
+
+    acode( room, 2 );
+
+    }
+
+  }
+
+"
+E
+"to_char"
+"You carefully make your way $T the fissure.
+
+"
+E
+"to_room"
+"$n carefully makes $s way $T the fissure.
+
+"
+!
+3 0 32
+A
+"__DROP_DOWN_CODE__"
+""
+"if( can_fly( ch ) ) {
+
+transfer( ch, find_room( 42777 ) );
+
+  act_tochar( \"You fly safely to the bottom of the fissure.\" );
+
+  act_notchar( \"$n flies in from above.\", ch );
+
+  }
+
+else {
+
+  i = 3d10+3;
+
+transfer( ch, find_room( 42791 ) );
+
+  dam_message( ch, i, \"falling down the fissure\" );
+
+  inflict( ch, ch, i, \"falling down a fissure\" );
+
+  set_resting( ch );
+
+  }
+
+"
+!
+0 0 0
+A
+"jump drop fly float fall"
+"1 down"
+"act_tochar( \"You jump down the fissure.\", ch );
+
+act_notchar( \"$n jumps into the fissure.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+"climb"
+"1 down fissure"
+"interpret( ch, \"down\" );
+
+"
+!
+0 0 0
+2238 9 1509949540 3 0
+-1
+S
+
+#42775
+"Ashen Tunnel - Intersection"
+"Two tunnels instersect here, one leading east-west and the other leads south. 
+
+Thick, vine-line black webbing clings to the crumbling walls and ceiling,
+
+creating a sort of barrier to the east.  The terrain is somewhat tenuous, as
+
+the obsidian rock below crumbles and breaks apart.
+
+"
+"[Phule] exit e is no.mob
+
+"
+301596677 0
+11 6 0
+D1
+""
+""
+16384 -1 42782 0 6
+D2
+""
+""
+0 -1 42776 0 6
+D3
+""
+""
+0 -1 42773 0 6
+A
+""
+""
+"if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  if( random( 1, 3 ) == 1 ) {
+
+    act_tochar(\"A bit of webbing sticks to you.\", ch );
+
+    obj_to_char( oload( 3916 ), ch );
+
+    }
+
+  }
+
+continue;
+
+"
+E
+"to_char"
+"You $t $T through the dark webbing.
+
+"
+E
+"to_room"
+"$n $t $T through the dark webbing.
+
+"
+!
+3 0 2
+2238 9 1509949540 3 0
+-1
+S
+
+#42776
+"Ashen Tunnel - Bend"
+"The crumbling tunnel of ash and obsidian bends from north to east, where the
+
+terrain rises.  Bits of sticky black webbing hang from the ceiling, tendrils
+
+reaching nearly to the floor in parts of the cavern.
+
+"
+""
+301596677 0
+11 6 0
+D0
+""
+""
+0 -1 42775 0 6
+D1
+""
+""
+0 -1 42756 0 6
+A
+"cut rip"
+"tendrils"
+"i = 0;
+
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  if( random( 1, 4 ) == 2 ) {
+
+    }
+
+  i = 1;
+
+  }
+
+if( i == 1 ) {
+
+  act_tochar( \"You cut a piece of webbing from the tendril.\", ch );
+
+  act_notchar( \"$n cuts a piece of webbing from the hanging tendrils.\", ch );
+
+  obj_to_char( oload( 3916 ), ch );
+
+  }
+
+else {
+
+  act_tochar( \"You try to cut a piece of webbing but only end up with sticky fingers.\", ch );
+
+  act_notchar( \"$n tries to cut a piece of webbing but only ends up with sticky fingers.\", ch );
+
+  }
+
+"
+!
+0 0 0
+2238 9 1509949540 3 0
+-1
+S
+
+#42777
+"In a Fissure"
+"This narrow fissure descends through a crack in the obsidian rock of the
+
+cavern, its crumbling walls covered with some kind of sticky black webbing. 
+
+Below, the fissure opens into a large underground chamber.
+
+"
+"[Phule] nomob
+
+"
+301596685 0
+11 6 0
+D4
+""
+""
+1024 -1 42774 0 6
+D5
+""
+""
+0 -1 42791 0 6
+A
+""
+""
+"if( find_skill( ch, climb ) > random( 3, 5 ) )
+
+  continue;
+
+else {
+
+  act_tochar( \"You try to climb up the fissure, but come sliding back down.\", ch );
+
+  act_notchar( \"$n tries to climb up the fissure, but comes sliding back down.\", ch );
+
+  }
+
+"
+E
+"to_char"
+"You carefully make your way $T the fissure.
+
+"
+E
+"to_room"
+"$n carefully makes $s way $T the fissure.
+
+"
+!
+3 0 16
+A
+"climb"
+"1 up fissure"
+"interpret( ch, \"up\" );
+
+"
+!
+0 0 0
+A
+"__DROP_DOWN_CODE__"
+""
+"transfer( ch, find_room( 42791 ) );
+
+if( can_fly( ch ) ) {
+
+  act_tochar( \"You fly safely to the bottom of the fissure.\" );
+
+  act_notchar( \"$n flies in from above.\", ch );
+
+  }
+
+else {
+
+  i = 2d9+1;
+
+  dam_message( ch, i, \"falling down the fissure\" );
+
+  inflict( ch, ch, i, \"falling down a fissure\" );
+
+  set_resting( ch );
+
+  }
+
+"
+!
+0 0 0
+A
+""
+""
+"if( can_fly( ch ) )
+
+  continue;
+
+else {
+
+  if( find_skill( ch, climb ) > random( 3, 4 ) )
+
+    continue;
+
+  else {
+
+    act_tochar( \"You try to climb down the fissure, but lose your footing!\", ch );
+
+    act_notchar( \"$n tries to climb down the fissure, but loses $s footing!\", ch );
+
+    acode( room, 3 );
+
+    }
+
+  }
+
+"
+!
+3 0 32
+A
+"jump drop fly float fall"
+"1 down"
+"act_tochar( \"You jump down the fissure.\", ch );
+
+act_notchar( \"$n jumps into the fissure.\", ch );
+
+acode( room, 3 );
+
+"
+!
+0 0 0
+A
+"climb"
+"1 down fissure"
+"interpret( ch, \"down\" );
+
+"
+!
+0 0 0
+-1
+S
+
+#42782
+"Ashen Tunnel - End"
+"The tunnel of ash and broken obsidian rock ends here, in what is obviously a
+
+nest of some kind.  Sticky black webbing fills the room, hanging from the
+
+cavern's ceiling and walls and in some places completely criscrossing the
+
+tunnel.
+
+"
+""
+301596677 0
+11 6 0
+D3
+""
+""
+16384 -1 42775 0 6
+2241 137 1509949540 3 0
+3916 17 1509949460 -2 0
+-1
+S
+
+#42791
+"Large Obsidian Cavern - Below a Fissure"
+"You are at the northeast corner of a large underground cavern, enclosed in
+
+solid obsidian rock.  Tendrils of thick, black webbing hang from the ceiling,
+
+nearly covering the floor of the cavern as well.  A fissure leads up through
+
+the obsidian rock into darkness beyond.
+
+"
+""
+301596677 0
+11 9 0
+D2
+""
+""
+0 -1 42795 0 9
+D3
+""
+""
+0 -1 42792 0 9
+D4
+""
+""
+0 -1 42777 0 6
+A
+""
+""
+"if( find_skill( ch, climb ) > random( 3, 5 ) )
+
+  continue;
+
+else {
+
+  act_tochar( \"You try to climb up the fissure, but come sliding back down.\", ch );
+
+  act_notchar( \"$n tries to climb up the fissure, but comes sliding back down.\", ch );
+
+  }
+
+"
+!
+3 0 16
+A
+"climb"
+"1 up fissure"
+"interpret( ch, \"up\" );
+
+"
+!
+0 0 0
+-1
+S
+
+#42792
+"Large Obsidian Cavern"
+"The floor of this massive underground chamber is covered with a thick, black
+
+webbing, the tendrils of which threaten to entangle all who would attempt to
+
+pass.  This is the northwest corner of the roughly spherical chamber, which
+
+rises high to a domed roof overhead, from which hang more of the thick, sticky
+
+webbing.  The tendrils hanging from the ceiling are so thick to the south,
+
+that it is impossible to see what lies in that direction.
+
+"
+""
+301596677 0
+11 9 0
+D1
+""
+""
+0 -1 42791 0 9
+D2
+""
+""
+8192 -1 42796 0 9
+A
+""
+""
+"i = 0;
+
+if( is_player( ch ) )
+
+  i = 1;
+
+else {
+
+  if( !is_group( ch, arachnid ) )
+
+    i = 1;
+
+  }
+
+if( i == 1 )
+
+  do_spell( web, null, ch, 2 );
+
+"
+!
+1 0 6
+-1
+S
+
+#42795
+"Large Obsidian Cavern"
+"A carpet of thick, black tendrils hangs from the cavern ceiling, high
+
+overhead, blocking vision and perhaps movement to the west.  More of the
+
+webbing covers the obsidian rock floor, making the footing treacherous at
+
+best, impossible at worst.  You can continue along the edge of the cavern,
+
+toward more bare rock, to the north.
+
+"
+""
+301596677 0
+11 9 0
+D0
+""
+""
+0 -1 42791 0 9
+D3
+""
+""
+8192 -1 42796 0 9
+A
+""
+""
+"i = 0;
+
+if( is_player( ch ) )
+
+  i = 1;
+
+else {
+
+  if( !is_group( ch, arachnid ) )
+
+    i = 1;
+
+  }
+
+if( i == 1 )
+
+  do_spell( web, null, ch, 2 );
+
+"
+!
+1 0 9
+-1
+S
+
+#42796
+"Obsidian Nest"
+"Thick tendrils smother the room in a choking haze of sticky black webbing. 
+
+Steep walls of obsidian rock line the chamber to the south and west, but the
+
+heavy tendrils continue even onto the ceiling, hanging down to block the view
+
+to the north and east.  This is some kind of nest, albeit a strange one.  A
+
+low ring of piled obsidian stones forms a ring which closes in the southwest
+
+corner.
+
+"
+""
+301596677 0
+11 9 0
+D0
+""
+""
+8192 -1 42792 0 9
+D1
+""
+""
+8192 -1 42795 0 9
+A
+""
+""
+"i = 0;
+
+if( is_player( ch ) )
+
+  i = 1;
+
+else {
+
+  if( !is_group( ch, arachnid ) )
+
+    i = 1;
+
+  }
+
+if( i == 1 )
+
+  do_spell( web, null, ch, 4 );
+
+"
+!
+1 0 3
+A
+"search"
+"ring stones nest"
+"mob = mob_in_room( 2321, room );
+
+if( mob ) {
+
+  act_tochar( \"$N blocks your actions.\", ch, null, mob );
+
+  }
+
+else {
+
+  act_tochar( \"You root around through the ring of obsidian stones.\", ch );
+
+  act_notchar( \"$n roots around through the ring of obsidian stones.\", ch );
+
+  if( rflag( reset0, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    i = find_skill( ch, searching );
+
+    if( i > random( 0, 20 ) ) {
+
+      if( random( 1, 3 ) == 2 ) {
+
+        obj = obj_to_char( oload( 77 ), ch );
+
+        act_tochar( \"You find $p!\", ch, obj );
+
+        act_notchar( \"$n finds $p!\", ch, obj );
+
+        }
+
+      else {
+
+        act_tochar( #noth, ch );
+
+        act_notchar( #rnoth, ch );
+
+        }
+
+      }
+
+    else {
+
+      act_tochar( #noth, ch );
+
+      act_notchar( #rnoth, ch );
+
+      }
+
+    }
+
+  else {
+
+    act_tochar( #noth, ch );
+
+    act_notchar( #rnoth, ch );
+
+    }
+
+  }
+
+"
+E
+"noth"
+"You succeed only in disturbing the stones.
+
+"
+E
+"rnoth"
+"$n only succeeds in disturbing the stones.
+
+"
+!
+0 0 0
+2321 137 1509949540 3 0
+2315 9 1509949540 3 0
+2315 9 1509949540 3 0
+2315 9 1509949540 3 0
+2315 9 1509949540 3 0
+2315 9 1509949540 3 0
+2315 9 1509949540 3 0
+2315 9 1509949540 3 0
+2315 9 1509949540 3 0
+2315 9 1509949540 3 0
+2315 9 1509949540 3 0
+2315 9 1509949540 3 0
+2315 9 1509949540 3 0
+-1
+S
+
+#42797
+"Massive Underground Crater"
+"This massive underground crater rises around you, layers of melted obsidian
+
+rock leaving ripples in the sloping crater walls to the south and east.  The
+
+ground is littered with broken eggs, seemingly made of thin obsidian and ash,
+
+now cracked and empty.
+
+"
+""
+301596677 0
+11 9 0
+D1
+""
+""
+0 -1 42760 0 7
+D2
+""
+""
+0 -1 42758 0 8
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You $t $T out of the crater.
+
+"
+E
+"to_room"
+"$n $t $T out of the crater.
+
+"
+!
+3 0 6
+2236 9 1509949540 3 0
+2236 9 1509949540 3 0
+2236 9 1509949540 3 0
+3762 17 1509949480 -2 0
+3762 17 1509949460 -2 0
+3916 17 1509949480 -2 0
+3916 17 1509949450 -2 0
+-1
+S
+
+#0
+

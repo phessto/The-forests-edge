@@ -1,0 +1,2893 @@
+#AREA
+"Abandoned Northerly Road"
+"Tsukurite"
+"Abandoned Northerly Road"
+1 0
+0
+8
+#ROOMS
+
+#11200
+"Narrow Canyon Trail"
+"This trail, barely wide enough to lead a horse through, winds through a canyon
+
+set deep into a cliff.  The trail is littered with small rocks, and the cliff
+
+walls are scored with weed-choked crevices.  The cliff walls show signs of
+
+trauma, as if the path has only recently been uncovered.  Heavy timbers
+
+suspended far above show that efforts have been made to shore up the passage
+
+for safety's sake.  To the south, the latter part of the Great North Road can
+
+be seen, while the trail continues to the north.
+
+"
+"*H
+
+"
+301465600 0
+22 6 0
+D0
+""
+""
+0 -1 11201 0 6
+D2
+""
+""
+128 -1 28132 0 6
+E
+"cliff"
+"The cliff walls tower above you on each side, with small ledges high up
+
+providing purchase for the roots of small shrubs.
+
+"
+E
+"rocks"
+"The trail is scattered with small rocks of various shapes, having fallen from
+
+above.
+
+"
+A
+"climb"
+"cliff up"
+"acode( find_room( 29905 ), 2 );
+
+"
+!
+0 0 0
+-1
+S
+
+#11201
+"Narrow Canyon Trail"
+"The trail continues to cut a north-south course through the cliff.  The sides
+
+of the canyon at this point are their highest, rising far above the ground.
+
+At this point the passage widens slightly, and becomes more uneven as the
+
+newly uncovered path meets the pre-existing one.  The continuation of the
+
+trail to the north slopes downward somewhat, and trees can be glimpsed in the
+
+distance.
+
+"
+"*H
+
+"
+301465600 0
+22 7 0
+D0
+""
+""
+0 -1 11202 0 6
+D2
+""
+""
+0 -1 11200 0 6
+E
+"cliff"
+"Cliff walls rise far above you on each side, with small shrubs clinging
+
+tightly to small crevices.
+
+"
+A
+"climb"
+"cliffs"
+"acode( find_room( 29905 ), 2 );
+
+"
+!
+0 0 0
+2882 9 1509949540 3 0
+-1
+S
+
+#11202
+"Widening of the Trail"
+"At this point the trail from the south widens considerably.  While to the
+
+south, a narrow pass through the cliffs can be seen, here the space is much
+
+less claustrophobic.  Small, scrubby bushes are strewn about the trail, and
+
+cling to the lower regions of the cliffs to the south, where they are offered
+
+a degree of protection from the winds gusting through the pass.  A stream bed
+
+cuts west through the trail at this point, but seems to have been devoid of
+
+water for some years.  In the foothills past the cliff to the east, far-off
+
+ruins can be seen, scattered shells of columned buildings left to the elements.
+
+"
+"[Hedrack] Is the cliff east up or down? Can we see over it?
+
+"
+301465600 0
+22 8 0
+D0
+""
+""
+0 -1 11203 0 6
+D2
+""
+""
+0 -1 11201 0 6
+D3
+""
+""
+0 -1 11207 0 6
+E
+"stream bed"
+"This dried and cracked piece of the landscape was clearly once a stream,
+
+carrying water to the forest which can be glimpsed ahead.  It is now bone-dry
+
+and desolate.
+
+"
+E
+"ruins buildings east"
+"Buildings can be seen high in the hills to the east.  From this distance
+
+details are hard to make out, but they appear ruined.
+
+"
+E
+"bushes"
+"Several bushes are here, clinging to rocks and the inside of cracks.
+
+"
+885 9 1509949540 3 0
+-1
+S
+
+#11203
+"Wilderness Fringe"
+"This band of scrubland cuts between the cliffs and pass to the south, and a
+
+forested area to the northwest.  The ground here is covered with twisted
+
+bushes and stunted trees, with their roots entwined with what appears to be
+
+ancient cobblestones and broken fragments of flagstone.  To the north a road
+
+can be vaguely discerned, albeit broken and long unused.  In the hills
+
+eastward, shells of abandoned buildings are scattered, appearing as abandoned
+
+as the wastelands in which you stand.
+
+"
+"*H
+
+"
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 11205 0 6
+D2
+""
+""
+0 -1 11202 0 6
+D3
+""
+""
+0 -1 11204 0 6
+E
+"cobblestones fragments flagstone"
+"These stones appear to have been broken away from the road to the north at
+
+some point in the past.  They are now covered in a carpet of lichen, tree
+
+roots and dead pine needles.
+
+"
+E
+"bushes trees"
+"These plants are not very healthy, their growth stunted by poor conditions
+
+here.
+
+"
+E
+"buildings hill east"
+"Buildings can be seen high in the hills to the east.  From this distance
+
+details are hard to make out.
+
+"
+2882 9 1509949540 3 0
+-1
+S
+
+#11204
+"Wilderness Fringe"
+"The solid cliff face to the west seems somewhat lower at this point, but would
+
+still be extremely dangerous to scale.  Dry bushes and shrubs scatter the
+
+ground, indicating that slightly more water may be available to them here, but
+
+that in recent times living has been hard in this wilderness.  To the north,
+
+forestland can be glimpsed, appearing to comprise mainly of the hardier
+
+varieties of conifer and pine.  This band of scrubland seems to separate the
+
+cliffs and the pass to the south from the forested area northward.
+
+"
+"*H
+
+"
+301465601 0
+28 9 0
+D0
+""
+""
+0 -1 11206 0 6
+D1
+""
+""
+0 -1 11203 0 6
+D2
+""
+""
+0 -1 11207 0 6
+E
+"cliff"
+"Here the cliff appears most dangerous.  It overhangs slightly, and is
+
+impassable.
+
+"
+E
+"bushes shrubs"
+"Here, strewn about the area are small, stunted bushes and shrubs.  They do not
+
+look particularly healthy.
+
+"
+-1
+S
+
+#11205
+"Abandoned Northerly Road"
+"The most southern part of this road is in the worst shape of all.  In some
+
+places the stones have been torn up, exposing the foundation and layers of
+
+sand beneath, and in others the rocks are piled as high as a man's waist.  The
+
+piles are coated with moss and lichen, and some with small stunted bushes
+
+clinging to the surface, forcing roots into available crevices.  A sapling
+
+grows from a particularly large hole in the road, reaching stunted limbs
+
+upward.
+
+"
+"*H
+
+"
+301465600 0
+12 7 0
+D0
+""
+""
+0 -1 11210 0 6
+D2
+""
+""
+0 -1 11203 0 6
+D3
+""
+""
+0 -1 11206 0 6
+E
+"large hole sapling"
+"A large hole in the road appears to have been caused by excavations in the
+
+past.  Nature is attempting to fill this void with a sapling.  It is hard to
+
+say whether the road and the sapling will survive each other in the long term.
+
+"
+E
+"moss lichen bushes piles stones"
+"These piles consist of varying types of stone from the road, torn from their
+
+foundations and stacked.  They have been in this position for some time,
+
+judging by their coating of moss and small shrubs.
+
+"
+-1
+S
+
+#11206
+"Edge of the Old Forest"
+"From the smaller, scrubby trees and bushes south, and the larger and more
+
+densely wooded area to the north, this would appear to be the edge of the
+
+forest.  Pine needles are strewn about the ground, giving the sounds of forest
+
+creatures muted tones.  Shattered flagstones, covered in moss and lichen, are
+
+partially submerged in the carpet of needles, appearing to have been torn from
+
+the road eastward at some point in the past.
+
+"
+"*H
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 11209 0 6
+D1
+""
+""
+0 -1 11205 0 6
+D2
+""
+""
+0 -1 11204 0 6
+D3
+""
+""
+0 -1 11208 0 6
+E
+"pine needles carpet"
+"The blanket of pine cones carpeting the floor here is thick, and must have
+
+built up over several years.  It may be your imagination, but is there a shape
+
+just beneath the surface?
+
+"
+E
+"shattered flagstone stone"
+"These stones, once huge and proud, now lie in pieces, covered in nature's
+
+excrement.
+
+"
+A
+"2 search 2 dig"
+"2 pine 3 needles 2 ground"
+"if( is_fighting( ch ) ) {
+
+  act_tochar( \"You're too busy fighting to do that.\", ch );
+
+  end;
+
+}
+
+if( is_mounted( ch ) ) {
+
+  
+
+  act_tochar( \"You cannot do that while mounted.\", ch );
+
+  end;
+
+}
+
+act_tochar( #search, ch );
+
+act_notchar( #rsearch, ch );
+
+
+wait( 1 );
+
+if( get_room( ch ) != find_room( 11206 ) )
+
+  end;
+
+
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 10 );
+
+  if( i == 1 ) {
+
+    act_tochar( #winner, ch );
+
+    act_notchar( #rwinner, ch );
+
+    obj_to_char( oload( 16 ), ch );
+
+  }
+
+  else {
+
+    act_tochar( #loser, ch );
+
+    act_notchar( #rloser, ch );
+
+    obj_to_char( oload( 685 ), ch );
+
+  }
+
+  remove_rflag( reset0, room );
+
+}
+
+else {
+
+  act_tochar( #nothing, ch );
+
+  act_notchar( #rnothing, ch );
+
+}
+
+"
+E
+"search"
+"You rummage through the carpet of pine needles, hoping to find something
+
+buried.
+
+"
+E
+"rsearch"
+"$n inspects the carpet of pine needles, then begins to rummage through it as
+
+if looking for something.
+
+"
+E
+"winner"
+"@CYou stand up from your search, flourishing a platinum coin!
+
+"
+E
+"rwinner"
+"@C$n stands up from their search, flourishing a platinum coin!
+
+"
+E
+"loser"
+"You stand up, disgusted after having found only a pine cone.
+
+"
+E
+"rloser"
+"$n stands up, looking disgustedly at a pine cone they have found.
+
+"
+E
+"nothing"
+"You search and search, but there is nothing to be found.
+
+"
+E
+"rnothing"
+"$n searches in vain for something that does not appear to exist.
+
+"
+!
+0 0 0
+-1
+S
+
+#11207
+"Wilderness Fringe"
+"A stream bed running from the east ends here in a shallow depression, which is
+
+as dry as a desert.  A rocky outcrop which may at one point have been part of
+
+the cliffs to the south lies west, an insurmountable obstacle.  Beyond these
+
+rocks the walls of the cliff rise, giving the impression that you are in fact
+
+in a valley.  Moss and scrubby, misshapen trees cover the boulders, appearing
+
+to subsist on nothing more than the air surrounding them.  The ground is dry
+
+and cracked, as if this region has not seen much water in some years.
+
+"
+"*H
+
+"
+301465601 0
+28 9 0
+D0
+""
+""
+0 -1 11204 0 6
+D1
+""
+""
+0 -1 11202 0 6
+E
+"rocky outcrop"
+"This large outcrop of stone juts from the cliff face to the south, blocking
+
+the way westward.  It appears insurmountable.
+
+"
+E
+"shallow depression stream bed"
+"Here the dried streambed ends in a shallow hole, a dent in the ground.  It
+
+appears forlorn - or would, if a hole could emanate any kind of feeling.
+
+"
+E
+"cliffs boulders moss trees"
+"Here the cliff curves to the west, disappearing from sight behind the tree-
+
+covered mound of mossy boulders forming a wall to the west.
+
+"
+-1
+S
+
+#11208
+"Old Forest"
+"The undergrowth here thickens, and the trees to the west are so closely packed
+
+and overgrown that travel there is impossible.  This part of the forest
+
+appears devoid of the cracked and ruined masonry found elsewhere, unless they
+
+have been totally reclaimed by nature.  The trees here are tall, with many
+
+thick branches at ground level, thinning out somewhat as the trunks grow more
+
+slender.  The dense foliage above gives the forest a hushed, twilit feel even
+
+in daylight.
+
+"
+"*H
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 11211 0 6
+D1
+""
+""
+0 -1 11206 0 6
+E
+"trees dense foliage west"
+"The trees here are tall, standing tightly together.  The foliage is thick and
+
+blocks out much of the light from above.  The foliage is so thick that it bars
+
+passage to the west.
+
+"
+2882 9 1509949540 3 0
+-1
+S
+
+#11209
+"Old Forest"
+"The forest here is fairly thick, with no defined pathways or passages.  Tree
+
+roots and boughs encroach on the ruined road to the east, cracking huge stone
+
+slabs and forcing their way into masonry.  Ruined blocks are scattered here,
+
+torn from the road by sheer force, now blanketed with moss.  Scrubby bushes
+
+line the border with the road, while further to the west the forest grows
+
+thicker and more inhospitable.
+
+"
+"*H
+
+"
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 11210 0 6
+D2
+""
+""
+0 -1 11206 0 6
+D3
+""
+""
+0 -1 11211 0 6
+E
+"bush scrub"
+"These bushes are pathetic, yet somehow cling to life amid the inhospitable
+
+landscape of the broken blocks.
+
+"
+E
+"ruined blocks"
+"These large chunks of the road appear to have been forcibly removed from the
+
+road - nature could not have achieved this.  They appear to have been dumped
+
+here some time ago, as evidenced by the growth of moss coating them.
+
+"
+-1
+S
+
+#11210
+"Abandoned Northerly Road"
+"Indiscriminate piles of broken rubble, comprised of the heavy cobble and
+
+flagstones torn from the road, are gathered in several places on the ground.
+
+Vegetation from the forest to the west encroaches on the remnants of the road,
+
+with roots breaking stone and creating cracks in those patches of road that
+
+remain.  Part of a huge rounded column lies on the east side of the road,
+
+having probably rolled down from one of the ruins visible on the hills to the
+
+east.  It lies canted in its final resting place; a large hole made after
+
+several layers of stone were removed from the road's eastern edge.
+
+"
+"*H
+
+"
+301465608 0
+12 7 0
+D0
+""
+""
+0 -1 11213 0 7
+D2
+""
+""
+0 -1 11205 0 6
+D3
+""
+""
+0 -1 11209 0 6
+D5
+""
+""
+163 -1 11212 0 7
+E
+"column"
+"A huge pillar with a web of cracks spread across its surface is lying in a
+
+large hole in the road.  A remnant of some ancient carving can be vaguely seen
+
+at its apex, and appears to depict a winged creature of some variety.
+
+"
+E
+"piles broken rubble flagstones"
+"Piles of broken, unidentifiable rubble and flagstones lie here, dug from the
+
+road.  They gather moss and have presumably been here for some time.
+
+"
+E
+"vegetation roots"
+"Vegetation grows here, roots cracking stone and forcing their way into
+
+crevices, widening them and ensuring the destruction of the remnants of the
+
+road.
+
+"
+E
+"ruins hill east"
+"On the hills to the east can be seen several columned structures, in much
+
+disrepair.  They account for much of the rubble on the road, having shed walls
+
+and columns down the hillside.
+
+"
+A
+"2 open 2 move"
+"3 column 1 down"
+"if( is_fighting( ch ) ) {
+
+  act_tochar( \"You're too busy fighting to do that.\", ch );
+
+  end;
+
+}
+
+if( !is_open( room, down ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, down );
+
+  send_to_room( #open_up, find_room( 11212 ) );
+
+}
+
+else {
+
+  act_tochar( #close, ch );
+
+  act_notchar( #rclose, ch );
+
+  close( room, down );
+
+  send_to_room( #close_up, find_room( 11212 ) );
+
+}
+
+"
+E
+"open"
+"You move a column to reveal a passage leading down.
+
+"
+E
+"ropen"
+"$n moves a column revealing a passage leading down.
+
+"
+E
+"open_up"
+"Something heavy scrapes across the ceiling overhead revealing an opening.
+
+"
+E
+"close"
+"You move the column, blocking off the passage down.
+
+"
+E
+"rclose"
+"$n moves the column, blocking off the passage downward.
+
+"
+E
+"close_up"
+"Something heavy scrapes across the ceiling overhead, closing off the opening.
+
+"
+!
+0 0 0
+2882 9 1509949540 3 0
+-1
+S
+
+#11211
+"Old Forest"
+"The twilit atmosphere of this part of the forest is deepened, the sounds even
+
+more muted.  A very thick carpet of needles cloaks the ground, choking all but
+
+the hardiest creepers and vines.  The trees here are close together, brushing
+
+against clothing and skin, and preventing passage further west.
+
+"
+"*H
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 11218 0 9
+D1
+""
+""
+0 -1 11209 0 6
+D2
+""
+""
+0 -1 11208 0 6
+E
+"trees dense foliage"
+"The trees here are tall, standing tightly together.  The foliage is thick and
+
+blocks out much of the light from above.
+
+"
+E
+"pine carpet"
+"The needles here are thick, and have accumulated over years.
+
+"
+-1
+S
+
+#11212
+"Hole Under Column"
+"This hole has been created by excessive removal of stone from the road above,
+
+burrowing down beyond the foundations of the road.  Roots protrude from the
+
+rough walls of this hole, emerging from varying layers of sand, shale and
+
+rock.  Toward the top of the walls, stone slabs jut from the ground where the
+
+road is still partially intact above.
+
+"
+"[Nereus] Suggestion: want to hide an alternate entrance into Denab from here?  Send a tell to Arr.
+
+"
+301596680 0
+0 7 0
+D4
+""
+""
+163 -1 11210 0 7
+A
+"2 open 2 move"
+"3 column 1 up"
+"if( !is_open( room, up ) ) {
+
+act_tochar( #open, ch );
+
+act_notchar( #ropen, ch );
+
+open( room, up );
+
+send_to_room( #open_up, find_room( 11210 ) );
+
+}
+
+else {
+
+act_tochar( #close, ch );
+
+act_notchar( #rclose, ch );
+
+close( room, up );
+
+send_to_room( #close_up, find_room( 11210 ) );
+
+}
+
+"
+E
+"open"
+"You move the column, revealing an opening above you.
+
+"
+E
+"ropen"
+"$n moves the column, revealing an opening above.
+
+"
+E
+"open_up"
+"The column on the ground moves to one side as someone lifts it from below.
+
+"
+E
+"close"
+"You move the column, blocking the opening above you.
+
+"
+E
+"rclose"
+"$n moves the column, blocking the opening above.
+
+"
+E
+"close_up"
+"The column on the ground moves to cover the hole in the ground, as someone
+
+moves it from below.
+
+"
+!
+0 0 0
+-1
+S
+
+#11213
+"Abandoned Northerly Road"
+"The road here continues northward; to the south the beginning of the
+
+thoroughfare is visible.  Disturbed masonry is still visible here, uprooted
+
+paving slabs and broken columns littering your field of vision.  Lichen coats
+
+some of the stone, as if it has lain here for some time.  Weeds spring from
+
+cracks in the remaining parts of the road's surface, cracking the stonework
+
+further as their roots gain purchase.
+
+"
+"*H
+
+"
+301465600 0
+12 7 0
+D0
+""
+""
+0 -1 11214 0 7
+D2
+""
+""
+0 -1 11210 0 7
+E
+"masonry slab column"
+"These remnants are a mixed set of stones from the road, and those which have
+
+tumbled from the ruins which can be glimpsed eastward.
+
+"
+E
+"weeds cracks"
+"In the cracked remnants of this once-great road, weeds have begun to take
+
+purchase, forcing wedges of roots into every orifice, causing the stones to
+
+split further.
+
+"
+885 9 1509949540 3 0
+-1
+S
+
+#11214
+"Abandoned Northerly Road"
+"The road here curves to the south and west, and is still in an extreme state
+
+of disrepair.  Far up to the east, ruinous buildings can be seen, however no
+
+path is visible by which they could be reached.  They seem hollow shells, with
+
+missing walls and broken columns scattered about them.  A large piece of
+
+stone, its original purpose undiscernable, lies to the north where the road
+
+curves to the west.  If it had fallen further south the road might well have
+
+been impassable.
+
+"
+"*H
+
+*H
+
+"
+301465600 0
+12 7 0
+D2
+""
+""
+0 -1 11213 0 7
+D3
+""
+""
+0 -1 11215 0 7
+D5
+""
+""
+2219 -1 11243 0 2
+E
+"stone large"
+"A huge, unidentifiable piece of stone.  Judging by the state of the road
+
+around you, and by the ruins on the hills, this stone was likely once a pillar
+
+or support of some variety.  However it is now impossible to tell.  A very
+
+small, dirt covered hole can be seen at the base of the stone - possibly this
+
+has become the den of some small creature.
+
+"
+E
+"ruinous buildings east"
+"In the hills to the east, ruins of large columned buildings can be glimpsed.
+
+There is no visible way to reach them, and so they remain distant, as if
+
+watching the road beneath them.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@WYou move to the west, brushing past the large piece of stonework.@w
+
+"
+!
+3 0 8
+A
+""
+""
+"if( !is_player( ch ) && size( ch ) <= 3 ) act_tochar( #sense, ch );
+
+"
+E
+"sense"
+"@cYou sense something unusual at the base of the large stone to the north.@w
+
+"
+!
+1 0 12
+A
+"dig move"
+"3 dirt 1 down"
+"if( !is_open( room, down ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, down );
+
+  send_to_room( #open_up, find_room( 11243 ) );
+
+}
+
+else {
+
+  if( is_open( room, down ) ) {
+
+    act_tochar( #isopen, ch );
+
+  }
+
+}
+
+"
+E
+"open"
+"You dig at the ground beneath the stone, allowing entry to the hole below.
+
+"
+E
+"ropen"
+"$n digs at the ground beneath the stone, allowing entry to the hole below.
+
+"
+E
+"open_up"
+"Something digs at the dirt above, widening the entrance and allowing passage
+
+in.
+
+"
+E
+"isopen"
+"The exit below you is already cleared.
+
+"
+!
+0 0 0
+-1
+S
+
+#11215
+"Abandoned Northerly Road"
+"Here the road continues on its way to the east and west.  A large piece of
+
+stonework is visible to the east, almost blocking the way.  Several large
+
+holes can be seen in the road's surface, the slabs which once filled them
+
+nowhere to be seen.  In some places the foundations of the thoroughfare are
+
+visible, tightly packed layers of sand and gravel lying beneath huge stone
+
+slabs.
+
+"
+""
+301465600 0
+12 7 0
+D1
+""
+""
+0 -1 11214 0 7
+D3
+""
+""
+0 -1 11216 0 7
+E
+"stonework large"
+"A huge, unidentifiable piece of stone.  Judging by the state of the road
+
+around you, and by the ruins on the hills, the stone to your east was likely
+
+once a pillar or support of some variety.
+
+"
+E
+"holes road"
+"The road here is pocked and scarred where stone is missing, creating holes in
+
+the foundation.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@WYou move to the east, brushing past the large piece of stonework.@w
+
+"
+!
+3 0 2
+2882 9 1509949540 3 0
+-1
+S
+
+#11216
+"Abandoned Northerly Road"
+"The road once more bends, continuing to the north and east.  Masonry lies
+
+scattered about, home to various mosses and insects.  Undergrowth is slowly
+
+beginning to encroach on the road here, where there is no longer the volume of
+
+traffic to keep it at bay.  What appears to have once been a busy road is now
+
+almost deserted, its huge stones now scoured by nature.
+
+"
+""
+301465600 0
+12 7 0
+D0
+""
+""
+0 -1 11217 0 7
+D1
+""
+""
+0 -1 11215 0 7
+E
+"masonry moss insects"
+"These pieces of stone are so moss-covered and cracked it is hard to tell what
+
+they may have been.  Small insects crawl over the layers of moss, weaving
+
+their way around small obstacles and cracks in the stone.
+
+"
+E
+"undergrowth"
+"The undergrowth here is thick and seems to be attempting to invade the road.
+
+Some small attempts seem to have been made recently to clear some patches of
+
+scrub, but a lot remains.
+
+"
+-1
+S
+
+#11217
+"Abandoned Northerly Road"
+"This part of the road is completely closed off to the north.  A series of
+
+large stone columns appears to have rolled down from the hill to the east,
+
+dislodging rocks and boulders on the way, and have come to rest here,
+
+rendering the road impassable.  Some effort appears to have been made to clear
+
+the way north, but there is still a great deal of work to be done.
+
+"
+"[Hedrack] These ogres need combat codes.
+
+[Hedrack] made room safe until they get one - crescent axes should be harder to get
+
+[.T.]  Gah, meant to make this safe anyhow really - it's a temporary block.
+
+"
+301465602 0
+12 7 0
+D0
+""
+""
+10 -1 11236 0 7
+D2
+""
+""
+0 -1 11216 0 7
+2885 9 1509949540 3 0
+2885 9 1509949540 3 0
+-1
+S
+
+#11218
+"Old Forest"
+"This part of the forest appears somewhat lighter than can be seen to the
+
+south, the undergrowth not so dense.  Patches of sky can be glimpsed through
+
+the canopy, and the surrounding trees are not so tightly packed.  A large
+
+deadfall lies to the north, blocking the way completely.  To the west a small
+
+animal trail leads past the fall and carries on westward.
+
+"
+"*H
+
+"
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 11223 0 9
+D2
+""
+""
+0 -1 11211 0 9
+D3
+""
+""
+0 -1 11219 0 9
+E
+"deadfall north"
+"This mass of fallen timber and brush impedes progress northward.  It will have
+
+to be circumvented.
+
+"
+E
+"trail"
+"This small track has been worn by animals of all kinds, in response to the
+
+impassable tangle to the north.
+
+"
+-1
+S
+
+#11219
+"Animal Trail through the Old Forest"
+"The trail continues to the east and west, avoiding an impenetrable deadfall to
+
+the north.  Tracks of many smalls animals, and some of animals a great deal
+
+larger can be seen on the ground.  The forest's canopy overhead is dark, the
+
+sky's light penetrating only in patchy areas, casting strange shadows on the
+
+earth.
+
+"
+"*H
+
+"
+301465600 0
+24 9 0
+D1
+""
+""
+0 -1 11218 0 9
+D3
+""
+""
+0 -1 11220 0 9
+E
+"tracks"
+"The tracks here come and go in many directions - some you could follow the
+
+course of, others end in walls of undergrowth, and are impassable to you.
+
+"
+E
+"deadfall north"
+"This mass of fallen timber and brush impedes progress northward.  It will have
+
+to be circumvented.
+
+"
+2882 9 1509949540 3 0
+885 9 1509949540 3 0
+-1
+S
+
+#11220
+"Animal Trail through the Old Forest"
+"The animal trail from the east turns sharply to the north here, as the
+
+deadfall lessens and becomes surmountable.  Pine needles blanket the ground
+
+here, muting footsteps, giving the area an eerily silent quality.  Lichen and
+
+moss cover exposed tree roots to the sides of the trail, but in the center
+
+have been worn away by the passage of animals.  To the west, the forest
+
+thickens, with no discernable trails.  However the spacing between trees, and
+
+the lack of undergrowth due to the choking blanket of pine needles dropped
+
+over the years, means that the way west is not impassable.
+
+"
+"*H
+
+"
+301465600 0
+24 9 0
+D0
+""
+""
+0 -1 11222 0 9
+D1
+""
+""
+0 -1 11219 0 9
+D3
+""
+""
+0 -1 11224 0 9
+E
+"deadfall"
+"The deadfall here thins out, and can be passed to the north.  Animals have
+
+worn away at it, taking parts for dens and nests.
+
+"
+E
+"blanket pine needles ground"
+"The ground here is coated thickly in needles, fallen from the trees above over
+
+many seasons.  A furrow has been worn from the east to the north, from the
+
+passage of animals.
+
+"
+-1
+S
+
+#11221
+"Old Forest Spring"
+"A large outcrop of rock is to the east, with a small fissure in its base which
+
+a spring emerges.  The spring here is now little more than a trickle, and will
+
+soon begin to echo the land further south.  Already some of the less hardy
+
+plants appear to have receded, leaving patches of bare earth.  Animals from
+
+all about the area seem to use this pool as their main water source.
+
+Scattered about are various broken feathers, and traces of hair caught on
+
+protruding branches.  This area has far more of a feeling of life than those
+
+which surround it.
+
+"
+"*H
+
+"
+301465602 0
+24 9 0
+D3
+""
+""
+0 -1 11222 0 9
+E
+"fissure"
+"This fissure, barely a finger's width across, is home to a spring.  At this
+
+moment it burbles happily, but who knows for how long?
+
+"
+A
+""
+""
+"i = random( 1, 5 );
+
+if( i == 3 )
+
+send_to_room( #burble, room );
+
+if( i == 2 )
+
+send_to_room( #dies, room );
+
+"
+E
+"burble"
+"@CThe spring burbles happily, appearing for a moment to produce more water.@w
+
+"
+E
+"dies"
+"@cThe spring grows quieter, becoming a mere trickle.  It looks as if it could
+
+dry up at any moment.@w
+
+"
+!
+2 1000 0
+415 17 1509949520 -2 0
+696 17 1509949540 -2 0
+215 9 1509949540 3 0
+-1
+S
+
+#11222
+"Animal Trail through the Old Forest"
+"The trail here turns sharply behind the deadfall to the east, and back past it
+
+to the south, where the it can be seen continuing.  The sound of animals can
+
+be heard to the east, where the trail aparently ends against a rocky outcrop.
+
+Here the forest's canopy allows some light through, illuminating many
+
+varieties of pine, some of which are covered in creeping vines.
+
+"
+"*H
+
+"
+301465600 0
+24 9 0
+D1
+""
+""
+0 -1 11221 0 9
+D2
+""
+""
+0 -1 11220 0 9
+E
+"deadfall"
+"The deadfall here thins out, and can be passed to the east and south.  Animals
+
+have worn away at it, taking parts for dens and nests.
+
+"
+E
+"creeping vine"
+"The vines on this trees look in marginally better health than the trees they
+
+have chosen as a home.  They reach upward toward what little light is
+
+available.
+
+"
+A
+""
+""
+"if( !is_player( ch ))
+
+  continue;
+
+
+else {
+
+
+  if (class( ch ) == ranger || class( ch ) == druid )
+
+    {
+
+    act_tochar( #to_char2, ch );
+
+  }
+
+  else {
+
+    act_tochar( #to_char1, ch );
+
+  }
+
+  continue;
+
+}
+
+"
+E
+"to_char1"
+"@mAs you near the spring, you hear the sound of small animals scampering away
+
+into the forest.  Your company is clearly not wanted here!@n
+
+"
+E
+"to_char2"
+"@mAs you near the spring, you hear the sound of small animals as they pause for
+
+a moment.  Judging you no threat to them, they continue about their business.@w
+
+"
+!
+3 0 2
+2882 9 1509949540 3 0
+-1
+S
+
+#11223
+"Old Forest"
+"A small copse of pine trees is here, thick and impenetrable to the east.  The
+
+ground is thick with needles, choking any small shrubs which may attempt to
+
+sink their roots into the ground.  Higher in the canopy, a nest can be seen,
+
+and the leavings from this have clearly drawn attention to the area.  Evidence
+
+of small mammals can be seen here, in their leavings and small boltholes.  A
+
+perfect place for a predator to visit.
+
+"
+"*H
+
+[Hedrack] It's easier to use aflags to prevent acodes working while fighting/mounted.
+
+[Hedrack] (at the moment acode 1 can't be used while fighting/mounted because neither aflag is set)
+
+[Anya Havi] First line, is copse supposed to be corpse?
+
+[.T.]  Aye, sev showed me. Didn't get round to changing all codes in zone tho, will do later.
+
+[.T.]  And no, a corpse of trees??? What's she taking?
+
+"
+301465600 0
+3 9 0
+D3
+""
+""
+0 -1 11218 0 9
+E
+"bolt hole leavings"
+"Here several small holes are visible, and are likely burrows for small
+
+creatures.  Glimpses of tiny teeth marks on bark, remnants of berries, and a
+
+few tiny bones indicate the types of creature which may dwell here.
+
+"
+A
+"1 look"
+"3 nest"
+"if( is_fighting( ch ) ) {
+
+  act_tochar( \"You're too busy fighting to do that.\", ch );
+
+  end;
+
+}
+
+
+if( is_mounted( ch ) ) {
+
+  act_tochar( \"You cannot do that while mounted.\", ch );
+
+  end;
+
+}
+
+
+act_tochar( #look, ch );
+
+act_notchar( #rlook, ch );
+
+
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  
+
+  wait( 1 );
+
+  act_tochar( #snake, ch );
+
+  act_notchar( #rsnake, ch );
+
+  if( !mob_in_room( 210, room ) ) {
+
+    send_to_room( #load, room );
+
+    mload( 210, room );
+
+  }
+
+}
+
+
+else {
+
+  wait( 1 );
+
+  act_tochar( #nothing, ch );
+
+  act_notchar( #rnothing, ch );
+
+}
+
+"
+E
+"look"
+"You look at the nest above you, deciding how best see inside it.
+
+"
+E
+"rlook"
+"$n looks at the nest above, pondering a way to see inside.
+
+"
+E
+"snake"
+"@yArms outstretched, you attempt to reach the nest to view its contents.  Losing
+
+your balance, your foot catches in a hole, awakening its angry occupant!
+
+"
+E
+"rsnake"
+"@y$n reaches toward the nest, but stumbles in a hole, dislodging its angry
+
+occupant!
+
+"
+E
+"nothing"
+"After attempting to reach the nest for several moments, you give up.  It is
+
+simply too high up, and the trees would not support your weight.
+
+"
+E
+"rnothing"
+"$n attempts to reach the nest for several moments, and then gives it up.  The
+
+nest is simply too high up, and the trees would not support their weight.
+
+"
+E
+"load"
+"@YA tan-colored snake slithers from its crushed lair.
+
+"
+!
+0 0 2
+A
+""
+""
+"if( is_follower( ch ) ) end;
+
+  
+
+if( 1d3 == 1 ) {
+
+  wait( 1 );
+
+  send_to_room( #nest, room );
+
+
+  if( 1d2 == 1 ) {
+
+    wait( 1 );
+
+    send_to_room( #worm, room );
+
+    obj_to_room( oload( 4779 ), room );
+
+  }
+
+}
+
+"
+E
+"nest"
+"@mAbove your head, a rustling sound comes from the nest in the tree, followed by
+
+an angry squawking sound.
+
+"
+E
+"worm"
+"@MA dead worm, dislodged from the nest - or possibly hurled in a temper -
+
+plummets to the ground.
+
+"
+!
+1 0 15
+2882 9 1509949540 3 0
+-1
+S
+
+#11224
+"Deep in the Old Forest"
+"Light in this part of the forest is scarce, the canopy of branches overhead
+
+almost impenetrable.  There is some undergrowth here, managing somehow to claw
+
+its way up through the thick layers of dead brush and fallen needles.  Small
+
+bushes manage to cling to life at the bases of the trees, below even the level
+
+of the lowest branches.  A trail worn by animals can be seen to the east, but
+
+to all other sides thick vegetation can be seen.
+
+"
+"*H
+
+"
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 11220 0 9
+D3
+""
+""
+0 -1 11225 0 9
+E
+"branches undergrowth"
+"The branches here grow more tightly packed, the undergrowth thicker -
+
+especially to the west.
+
+"
+E
+"bushes"
+"Here and there at the bases of the trees, small bushes cling to life.  Only
+
+time will tell how they fare as the forest around them drains more water from
+
+the soil about them.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@gYou push through the branches and undergrowth to the west, deeper into the
+
+forest.@n
+
+"
+!
+3 0 8
+-1
+S
+
+#11225
+"Deep in the Old Forest"
+"Here, thicker undergrowth has finally managed to find some purchase in the
+
+blanket of needles, which is slightly thinner here than in the surrounding
+
+area.  The trees here now include some stranger varieties that are not known
+
+elsewhere, and seem more inclined to hang on to their needles and leaves.
+
+There is little here that is discernable by way of a path, however an alley of
+
+sorts appears to have formed between trees in a generally east-west pattern.
+
+"
+"*H
+
+"
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 11224 0 9
+D3
+""
+""
+0 -1 11226 0 9
+E
+"trees needles pine"
+"The trees here are of a coniferous nature, and appear to be of a variety much
+
+more attached to their plumage than their cousins close by.  As a result the
+
+omnipresent blanket of needles is far thinner here.
+
+"
+2882 9 1509949540 3 0
+-1
+S
+
+#11226
+"Deep in the Old Forest"
+"Here among the trees of the old forest, the space between the trees allows
+
+passage to the east and south.  Tall tree boles surround you, seemingly
+
+impenetrable to the north and west, and cast the entire area in shadow.  To
+
+the south you can see that the forest thins somewhat, creating a clearing of
+
+sorts.
+
+"
+"*H
+
+"
+301465608 0
+3 9 0
+D1
+""
+""
+0 -1 11225 0 9
+D2
+""
+""
+0 -1 11228 0 9
+E
+"trees shadow boles"
+"The tall trees here cast strange shadows about you, steeping you in a twilit
+
+fugue.  The feeling soon passes.
+
+"
+A
+""
+""
+"if (find_stat( ch, level ) < 40 )
+
+  act_tochar( #warn, ch );
+
+"
+E
+"warn"
+"@RFrom the south you hear a low rumbling growl.  Caution might be advised if
+
+proceeding in this direction.
+
+"
+!
+1 0 2
+2882 9 1509949540 3 0
+-1
+S
+
+#11227
+"Deep in the Old Forest"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+-1
+S
+
+#11228
+"Deep in the Old Forest"
+"Here the forest thins somewhat, allowing far easier passage than is evidenced
+
+to the north.  To the west, over the tops of the densely packed trees you can
+
+see a stone ridge, which appears impassable.  Needles scatter the ground here,
+
+giving the forest a hushed atmosphere and softening sounds.
+
+"
+"*H
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 11226 0 9
+D1
+""
+""
+0 -1 11230 0 9
+D2
+""
+""
+0 -1 11229 0 9
+E
+"ridge west"
+"The ridge to the west rises above the trees, a very large obstacle.
+
+"
+E
+"needles pine"
+"The needles here hush your footsteps, muting all sound.
+
+"
+-1
+S
+
+#11229
+"In the Old Forest Beneath a Mountain"
+"This area of the forest is overlooked by a huge mountain, its sheer size
+
+dwarfing the tallest of trees.  Small, scrubby trees and bushes can be seen
+
+clinging to the almost vertical barrier of the mountainside, and there is a
+
+band of the same scrubland at the base of the mountain, where the trees grow
+
+thicker again.
+
+"
+"*H
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 11228 0 9
+D1
+""
+""
+0 -1 11233 0 9
+E
+"mountain"
+"The mountain rises to the southwest, far above the trees.  Its sides slope so
+
+steeply that any further progress in these directions is impossible.
+
+"
+E
+"trees scrubby bushes"
+"These small, scrubby trees and bushes cling to life at the side of the
+
+mountain.  It is amazing that they have found any kind of purchase at all.
+
+"
+-1
+S
+
+#11230
+"Deep in the Old Forest"
+"Here the trees are still fairly dense, although not so dense as to prevent
+
+movement, except for to the north, where almost nothing can be seen save for
+
+the tightly packed trees.  Movement is possible in other directions by winding
+
+through the surrounding tree boles and sparse undergrowth.  The earth here is
+
+dry, and in some places even cracked.  You get the impression that the forest
+
+may not survive much longer in its present condition.
+
+"
+"*H
+
+"
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 11231 0 9
+D2
+""
+""
+0 -1 11233 0 9
+D3
+""
+""
+0 -1 11228 0 9
+E
+"earth ground"
+"The earth is dry and cracked, and appears to have been starved of water for
+
+some time.  Straw, which was once most likely grass, can be seen embedded in
+
+some of the cracks.
+
+"
+E
+"boles trees undergrowth"
+"Undergrowth here is brittle and dry, huddled against the boles of the large,
+
+sad-looking trees nearby.
+
+"
+-1
+S
+
+#11231
+"Old Forest - North of a Small Clearing"
+"This part of the old forest overlooks a clearing to the south.  Trees surround
+
+you to the in all directions, but thin greatly southward.  Pine needles
+
+scatter the ground here, as elsewhere, and lie in small drifts against tree
+
+trunks where the wind has blown them.  Evidence of animal activity can be seen
+
+in snapped twigs and scraped areas of ground, and snatches of fur caught on
+
+low tree branches.
+
+"
+"*H
+
+"
+301465600 0
+3 9 0
+D2
+""
+""
+0 -1 11232 0 9
+D3
+""
+""
+0 -1 11230 0 9
+E
+"drifts pine needles piles"
+"Piles of needles lie against the tree-trunks here, in drifts where they have
+
+been blown by the wind.
+
+"
+E
+"ground fur branches"
+"The ground here is scuffed, as if large animals have fought or played here.
+
+Further evidence is seen on low branches, where their scuffles have shed fur
+
+in passing.
+
+"
+2865 9 1509949540 3 0
+2882 9 1509949540 3 0
+-1
+S
+
+#11232
+"Old Forest - Small Clearing West of a Cave"
+"This area, mainly free of growth, lies to the west of a dark cave hollowed
+
+into the rocky outcrop to the east.  There is some scrubby growth in evidence
+
+here, but nothing comparable to that which is visible to the west and north.
+
+Mosses and lichens grow on the outcrop to the east, on which, strangely, a
+
+fine layer of dust is visible.  A few vines hang over the entrance to the
+
+cave, from which a strange animal smell emanates, musky and strong.
+
+"
+"*H
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 11231 0 9
+D1
+""
+""
+0 -1 11234 0 9
+D3
+""
+""
+0 -1 11233 0 9
+E
+"vine hang entrance"
+"Vines hang covering the entrance to the cave to the east.  They look almost as
+
+unhealthy as the surrounding vegetation.
+
+"
+E
+"dust fine layer"
+"For some reason a coating of dust can be seem covering the plants and vines
+
+near the entrance to the east, as if something had recently disrupted a
+
+quantity of stone.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@gYou move east, brushing beneath the vines framing the entrance to the cave.
+
+As you move into the cave the animal smell becomes stronger.@w
+
+"
+!
+3 0 2
+-1
+S
+
+#11233
+"Deep in the Old Forest"
+"Away from the side of the mountain to the west, the trees grow thicker once
+
+more.  Movement is easy in all directions except south, where the trees are
+
+too tightly packed to permit passage.  The ground here is cracked and dry,
+
+with little evidence that it has seen water recently.  Some of the trees are
+
+looking decidedly brown, and may not survive for much longer.
+
+"
+"*H
+
+[Hedrack] checked cub - it's pretty light on hp for a L15 mob.
+
+[.T.]  Raised con - better?
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 11230 0 9
+D1
+""
+""
+0 -1 11232 0 9
+D3
+""
+""
+0 -1 11229 0 9
+E
+"ground cracked"
+"The earth is dry and cracked, and appears to have been starved of water for
+
+some time.
+
+"
+-1
+S
+
+#11234
+"A Cave Lair"
+"This cave appears to be a natural formation in the rocky cliff face.  Lichen
+
+and moss coat the walls, with some bare patches where these have been dragged
+
+to the floor of the cave, presumably providing bedding for the creatures
+
+dwelling within.  There is an animal smell here, musky in the enclosed
+
+environment.  A gnawed bone of some large creature lies against the northern
+
+wall, surrounded by smaller evidence of other meals.  The rest of the cave to
+
+the south appears to have been blocked by an extremely recent cave-in, and you
+
+are not entirely sure whether it should be explored further.
+
+"
+"*H
+
+"
+301465604 0
+11 8 0
+D2
+""
+""
+235 -1 11235 0 6
+D3
+""
+""
+0 -1 11232 0 9
+E
+"south, wall, cave-in"
+"The wall to the south has collapsed, barring entry in its present state.  It
+
+appears that a weight of rubble and earth are pushing against a stone slab,
+
+which while it appears could be easily moved from your side, would surely have
+
+completely trapped anything on the other side.
+
+"
+E
+"gnawed large bone"
+"This large, partially chewed bone comes from a very large animal.  Whatever
+
+killed it is likely to be even bigger.
+
+"
+A
+"2 dig 2 move"
+"2 wall 1 south 3 cave-in"
+"if( is_fighting( ch ) ) {
+
+  act_tochar( \"You're too busy fighting to do that.\", ch );
+
+  end;
+
+}
+
+
+if( is_mounted( ch ) ) {
+
+  act_tochar( \"You cannot do that while mounted.\", ch );
+
+  end;
+
+}
+
+
+if( rflag( reset0, room ) ) {
+
+  
+
+  act_tochar( #warn, ch );
+
+  act_notchar( #rwarn, ch );
+
+  remove_rflag( reset0, room );
+
+  end;
+
+}
+
+
+else {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  send_to_room( #open_north, find_room( 11235 ) );
+
+  open( room, south );
+
+}
+
+"
+E
+"warn"
+"@RYou go to dig at the earthfall to the south, but a low rumbling growl stops
+
+you.  Whatever is making the noise sounds large and angry, and it is coming
+
+from behind the cave-in you are digging at!
+
+"
+E
+"rwarn"
+"@R$n goes to dig at the earthfall to the south, but a low rumbling growl makes
+
+$m think twice about it.
+
+"
+E
+"open"
+"@rYou dig at the wall to the south.  Earth tumbles down from above, almost
+
+choking you.  After some moments you manage to clear away enough dirt and
+
+loose stone to get a grip on the slab, and dislodge it, clearing the way south.
+
+"
+E
+"ropen"
+"@r$n digs at the wall to the south.  Earth tumbles down from above, almost
+
+choking you.  After some moments $n manages to clear away enough dirt and
+
+loose stone to get a grip on the slab, and dislodges it, clearing the way
+
+south.
+
+"
+E
+"open_north"
+"@rDirt and stone tumble from the northern wall, as someone clears the exit for
+
+you.
+
+"
+!
+0 0 0
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@gYou brush beneath the vines and head westward, out of the cave and into the
+
+fresh air.
+
+"
+!
+3 0 8
+4451 17 1509949460 -2 0
+2865 9 1509949540 3 0
+-1
+S
+
+#11235
+"A Cave Lair"
+"This part of the cave is filled with earth and rock dust.  The floor shows the
+
+remains of bedding, lying in tatters now and strewn across both rock and
+
+earth.  Signs of scrabbling can be seen against the northern area of the cave,
+
+as if something had been frantically trying to dig its way out.  The animal
+
+smell here is worse, pervading the entire area.
+
+"
+"*H
+
+"
+301465604 0
+11 8 0
+D0
+""
+""
+235 -1 11234 0 6
+2864 9 1509949540 3 0
+-1
+S
+
+#11236
+"Abandoned Northerly Road"
+"Here the road bends sharply from the south to the west, as the forest to the
+
+west grows thinner.  Chunks of masonry still remain, but this part of the road
+
+is in far better condition than is visible southward.  A large hill is visible
+
+to the east, rising above a steep cliff which curves to the north, trapping
+
+the road between it and the forest.
+
+"
+""
+301465601 0
+12 7 0
+D2
+""
+""
+10 -1 11217 0 7
+D3
+""
+""
+0 -1 11237 0 7
+D4
+""
+""
+1066 -1 11950 0 6
+E
+"masonry chunk"
+"Here, chunks of masonry still litter the road.  However, they are small and do
+
+not hinder progress.
+
+"
+E
+"hill east cliff"
+"The hill to the east is visible over the top of a large cliff which rises high
+
+into the air eastward.
+
+"
+A
+"3 climb"
+"1 up"
+"if( find_skill( ch, climb ) > 6 ) {
+
+  use_skill( ch, climb );
+
+  act_tochar( #up, ch );
+
+  act_notchar( #nup, ch );
+
+  wait(1);
+
+  act_tochar( #tired, ch );
+
+  transfer( ch, find_room( 11950 ) );
+
+  modify_move( ch, -10 );
+
+  act_notchar( #arri, ch );
+
+  loop( followers ) {
+
+    if( find_skill( rch, climb ) > 6 || can_fly( rch ) ) {
+
+      use_skill( rch, climb );
+
+      act_tochar( #up, rch );
+
+      act_notchar( #nup, rch );
+
+      wait(1);
+
+      act_tochar( #rtired, rch );
+
+      transfer( rch, find_room( 11950 ) );
+
+      modify_move( ch, -10 );
+
+      act_notchar( #arri, rch );
+
+    }
+
+  }
+
+}
+
+else {
+
+  act_tochar( #fail, ch );
+
+  act_notchar( #nfail, ch );
+
+}
+
+"
+E
+"up"
+"@mYou grab on to a stone protruding from the cliff face, and begin to climb
+
+upward.@w
+
+"
+E
+"nup"
+"$n grabs onto a rock on the cliff and makes $s way up.
+
+"
+E
+"tired"
+"@mAs you begin to weary and worry about the fall possibly awaiting you, you
+
+reach a ledge in the cliff where you can catch your breath.@w
+
+"
+E
+"arri"
+"$n climbs up from below.
+
+"
+E
+"fail"
+"You try to climb the cliff, but cannot manage.
+
+"
+E
+"nfail"
+"$n tries to climb up the cliff, but fails.
+
+"
+E
+"rtired"
+"@mAs you begin to weary and worry about the fall possibly awaiting you, you
+
+reach a ledge in the cliff where you can catch your breath.@w
+
+"
+!
+0 0 0
+-1
+S
+
+#11237
+"Abandoned North-Westerly Road"
+"Here the road travels from the east to the west.  A large hill is visible far
+
+to the east, with the remains of structures visible on the hillside.  Here the
+
+road is in fair condition, still weed-choked and potholed, but traversible.
+
+To the south an impassable tangle of trees and shrubs cling to large boulders,
+
+and to the north a rock face looms.
+
+"
+""
+301465601 0
+12 7 0
+D1
+""
+""
+0 -1 11236 0 7
+D3
+""
+""
+0 -1 11238 0 7
+E
+"weed pothole road"
+"The road here is in poor condition, filled with potholes which, in turn, are
+
+filled with weeds.
+
+"
+E
+"south tree shrub south tangle"
+"Southward, the way is blocked by a large tangle of trees and shrubs.
+
+"
+E
+"north rock face"
+"The cliff north rises steeply, and is unclimbable.
+
+"
+-1
+S
+
+#11238
+"Abandoned North-Westerly Road"
+"Here the road travels from the east to the west.  A large hill is visible far
+
+to the east.  To the south the tangle of trees presents an impassable
+
+obstacle, and to the north a rock face looms.
+
+"
+""
+301465601 0
+12 7 0
+D1
+""
+""
+0 -1 11237 0 7
+D3
+""
+""
+0 -1 11239 0 7
+E
+"south tree tangle"
+"Southward, the way is blocked by a large tangle of trees.
+
+"
+E
+"north cliff"
+"The cliff north rises steeply, and is unclimbable.
+
+"
+-1
+S
+
+#11239
+"North-Westerly Road - Rockfall"
+"Here the trail appears to have once continued northward, but is blocked by a
+
+large rockfall from the cliff running to the north and east of the road.  It
+
+appears efforts are being made to clear this trail, and should hopefully be
+
+completed soon.
+
+"
+""
+301465603 0
+12 7 0
+D0
+""
+""
+98378 -1 11241 0 7
+D1
+""
+""
+0 -1 11238 0 7
+E
+"rockfall cliff"
+"The cliff to the north appears to have deposited much of its mass onto the
+
+path.  Very inconsiderate.  It is, of course, impassable.
+
+"
+2885 9 1509949540 3 0
+2885 9 1509949540 3 0
+-1
+S
+
+#11240
+"Abandoned North-Westerly Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 7 0
+-1
+S
+
+#11241
+"Abandoned North-Westerly Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 7 0
+D2
+""
+""
+98378 -1 11239 0 7
+D3
+""
+""
+0 -1 11242 0 7
+-1
+S
+
+#11242
+"Abandoned North-Westerly Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 7 0
+D1
+""
+""
+0 -1 11241 0 7
+-1
+S
+
+#11243
+"Tiny Bolthole"
+"A tiny bolthole for an unknown animal, this den does not appear to have been
+
+used in some time.  An old pile of leaves and straw can be seen in one corner,
+
+presumably the bedding for the previous occupant.  Above is the huge fallen
+
+stone, creating a roof above the den.  A small exit can be seen above, in a
+
+gap between the ground and the stone.
+
+"
+"*H
+
+"
+301465604 0
+11 2 0
+D4
+""
+""
+2219 -1 11214 0 2
+E
+"leaves straw pile bedding"
+"This large pile of bedding seems a little too large for the space available.
+
+Perhaps it is hiding something?
+
+"
+A
+"2 search 2 dig"
+"3 leaves 3 straw"
+"act_tochar( #search, ch );
+
+act_notchar( #rsearch, ch );
+
+
+wait( 1 );
+
+
+if( !char_in_room( ch, room ) )
+
+  end;
+
+
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 50 );
+
+  if( i == 1 ) {
+
+    act_tochar( #winner, ch );
+
+    act_notchar( #rwinner, ch );
+
+    obj_to_char( oload( 4871 ), ch );
+
+  }
+
+  
+
+  else {
+
+    act_tochar( #loser, ch );
+
+    act_notchar( #rloser, ch );
+
+  }
+
+  remove_rflag( reset0, room );
+
+}
+
+
+else {
+
+  act_tochar( #nothing, ch );
+
+  act_notchar( #rnothing, ch );
+
+}
+
+"
+E
+"search"
+"You search through the bedding of leaves and straw, hoping to find something.
+
+"
+E
+"rsearch"
+"$n searches through the bedding of leaves and straw.
+
+"
+E
+"winner"
+"@CYou stand up from your search, flourishing a sabretache!
+
+"
+E
+"rwinner"
+"@C$n stands up from their search, flourishing a sabretache!
+
+"
+E
+"loser"
+"You search and search, but find nothing.
+
+"
+E
+"rloser"
+"$n searches and searches, but finds nothing.
+
+"
+E
+"nothing"
+"You search, but there is nothing to be found.
+
+"
+E
+"rnothing"
+"$n searches, but there is nothing to be found.
+
+"
+!
+0 0 0
+A
+"2 dig 2 move"
+"3 dirt 1 up"
+"if( !is_open( room, up ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, up );
+
+  send_to_room( #open_up, find_room( 11214 ) );
+
+}
+
+else {
+
+  if( is_open( room, down ) ) {
+
+    act_tochar( #isopen, ch );
+
+  }
+
+}
+
+"
+E
+"open"
+"You dig at the earth beneath the stone, allowing exit from the hole.
+
+"
+E
+"ropen"
+"$n digs at the ground beneath the stone, allowing you to exit.
+
+"
+E
+"open_up"
+"Something digs at the dirt at the base of the stone, widening the entrance and
+
+allowing passage downward.
+
+"
+E
+"isopen"
+"The exit is already cleared.
+
+"
+!
+0 0 0
+-1
+S
+
+#0
+

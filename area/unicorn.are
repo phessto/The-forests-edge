@@ -1,0 +1,39 @@
+#AREA
+"Unicorn Forest"
+"Altimeas Xami"
+""
+1 0
+3
+0
+#ROOMS
+
+#84600
+"Unicorn Forest Office"
+""
+""
+33030144 0
+0 6 0
+D3
+""
+""
+0 -1 84000 0 5
+D5
+""
+""
+0 -1 84601 0 6
+-1
+S
+
+#84601
+"Unicorn Forest"
+"Under Construction.
+
+"
+""
+33030144 0
+0 6 0
+-1
+S
+
+#0
+

@@ -1,0 +1,4971 @@
+#AREA
+"Glade of Enchantment"
+"Malrothe"
+"Glade of Enchantment"
+30 0
+0
+4
+#ROOMS
+
+#29800
+"Overgrown Trail Through a Forest"
+"A narrow trail cuts through the forest here, diverging from the main
+
+thoroughfare to the west.  Nearby foliage, ferns, grasses, and bushes are
+
+encroaching on the once wider dirt path.  The vegetation is full of leafy
+
+plants in peculiar shades of green.  Bushes boasting grayish violet buds pale
+
+beside the stout, soft-barked trees that stand beside them.  Most of these
+
+tree's branches are at their crowns, creating a thick canopy of olive green
+
+leaves.  Dew rests tranquilly atop much of the greenery.
+
+"
+"[Nereus] I would suggest making up plant varieties or using existing ones rather than saying \"it is a variety of leafy plants\"
+
+[Malrothe] i calculated about 49 south and 3 down from 19321 is the northernmost part of the K'ssk swamp.
+
+[Malrothe] somewhere around 5-10 rooms west as well
+
+[Nereus] room reviewed
+
+[Malrothe] -
+
+[Nereus] *
+
+[Trea] Look bush produces a message where 'violet' is mis-spelled.
+
+"
+301465600 0
+3 6 0
+D1
+""
+""
+0 -1 29801 0 6
+D3
+""
+""
+0 -1 29827 0 6
+E
+"bushes grayish violet buds"
+"The bushes are each about three feet high and have grayish volet buds growing
+
+from their thin branches.  No leaves are growing upon them.
+
+"
+E
+"dew"
+"Tiny droplets of dew have condensed upon much of the vegetation, forming a
+
+thin layer of moisture.
+
+"
+-1
+S
+
+#29801
+"Overgrown Trail Through a Forest - A Pair of Mushrooms"
+"The trail turns here, leading west toward a road in the distance and to the
+
+south through a pair of violet-leaved ferns.  Undergrowth and grass encroaches
+
+upon the trail, threatening to conceal the dirt path from sight.  Shrubs of
+
+dark green buds and black-violet flowers, scarlet, diamond-petaled blossoms,
+
+and stout brown trees line the trail.  Pale green grass struggles to survive
+
+with the meager sunlight it receives on either side of the trail.  A pair of
+
+bulbous gray mushrooms sit beside one of the taller trees.
+
+"
+"[Nereus] violet leaved -> violet-leaved
+
+[Nereus] threating > threatening
+
+[Nereus] diamond petaled -> diamond-petaled
+
+[Nereus] shrubs extra: pear shaped > pear-shaped
+
+[Nereus] sit mushroom code: attempt to sit upon > attempt to sit upon
+
+[Nereus] suggest pick mushroom code
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D2
+""
+""
+0 -1 29802 0 6
+D3
+""
+""
+0 -1 29800 0 9
+E
+"violet ferns"
+"The trail passes between a pair of ferns with dark violet leaves.  The leaves
+
+are small and oval, growing on long green branches.
+
+"
+E
+"shrubs"
+"These pear-shaped shrubs have no leaves yet, but only dark green buds.  Their
+
+long, brown branches reach almost four feet into the air.
+
+"
+E
+"black-violet flowers"
+"Black-violet flowers with five petals, arranged like a star, grow beside the
+
+trail between shrubs and shorter blossoms.
+
+"
+E
+"diamond blossoms"
+"These blossoms are not quite flowers, growing barely an inch above the ground.
+
+Ten to twelve diamond shaped petals are on each one.  The flowers grow
+
+wherever they can find light between the other plants.
+
+"
+E
+"stout brown trees"
+"Stout trees with greenish brown bark grow beside the trail and in the forest
+
+beyond.  The bark is soft and knotted.  Few branches are within reach; most of
+
+the branches grow near the crown of trees.
+
+"
+E
+"bulbous gray mushrooms"
+"Two bulbous gray mushrooms, one about two feet tall and the other shorter, sit
+
+beside the trail.  Their gray skin is marked with irregular brown blemishes.
+
+No vegetation grows beneath the shelter of their domed tops.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@gYou push the ferns aside and continue $T.@n
+
+"
+!
+3 0 4
+A
+"sit"
+"bulbous mushroom"
+"act_tochar( \"You attempt to sit upon one of the mushrooms but slide off its slippery surface.\", ch );
+
+act_notchar( \"$n tries to sit on of the mushrooms but slides off it.\", ch );
+
+"
+E
+"to_char"
+"No description.
+
+"
+!
+0 0 0
+A
+"pick"
+"mushroom"
+"act_tochar( \"These mushrooms are too firmly planted in the ground to be picked.\", ch );
+
+"
+!
+0 0 0
+2500 9 1509949540 3 0
+-1
+S
+
+#29802
+"Overgrown Trail Through a Forest - Before a Glade"
+"The shadowy trail disappears to the south as it approaches a glade in the
+
+forest.  To the north it continues further into the wet, leafy forest.  The
+
+moist dirt trail gives way to short @ggreen@n grasses and other unrecognizable
+
+plants.  Stout trees, with wide, soft-barked trunks line the trail.  They lack
+
+any low-lying branches, all of their boughs growing at the trees' crowns,
+
+forming a low canopy of dark @ggreen@n leaves.  Pockmarked and knotted, the trees
+
+stand as grisly sentinels for the vast forest behind.
+
+"
+"[Malrothe] What do you think of the color in the rdesc? I dig it. Maybe it's too much.
+
+[Nereus] I think it's fine if it's not overused.
+
+[Nereus] Make sure you include extras for any colored keywords since players will think these are important words.
+
+[Nereus] You might consider doing @ggreen grasses@n - up to you though.
+
+[Nereus] room reviewed
+
+[Malrothe] -
+
+[Nereus] *
+
+"
+301465608 0
+3 6 0
+D0
+""
+""
+0 -1 29801 0 9
+D2
+""
+""
+0 -1 29803 0 6
+E
+"green grass"
+"The grasses, not entirely green, are rather short here.  Thin, scarlet veins
+
+run up their center and give them a rather unique appearance.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@gYou push through some ferns and continue north.@n
+
+"
+!
+3 0 1
+-1
+S
+
+#29803
+"The Low Grasses of a Glade"
+"A sweeping field covers this glade in peculiar green grasses.  The short
+
+grasses here have unusual violet veins running up their centers, giving the
+
+area a strange organic contrast.  A few strangers to the glade, jagged-leaved
+
+weeds and spotted mushrooms, dot the landscape.  To the south, the grasses
+
+seem to flourish and begin to lengthen, while to the north, they recede in the
+
+place of a trail that leads into the forest.  To the east and west, the short
+
+grassed section of the glade continues.
+
+"
+"[Nereus] extras - violet-veined grasses, mushrooms/weeds
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29802 0 9
+D1
+""
+""
+0 -1 29805 0 6
+D2
+""
+""
+0 -1 29808 0 6
+D3
+""
+""
+0 -1 29804 0 6
+E
+"violet-veined grasses"
+"Thin grass with a single violet vein populates the area.
+
+"
+E
+"spotted mushrooms"
+"Small, spotted mushrooms grow sporadically within the carpet of violet-veined
+
+grass.
+
+"
+E
+"weeds"
+"Weeds, slightly taller than the grass around them, occasionally dot the mat of
+
+violet-veined grass.  Their jagged leaves seem to claw at the other plants
+
+around them.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@gYou push through the high grasses and $t $T.@n
+
+"
+!
+3 0 4
+A
+"pick"
+"mushroom"
+"act_tochar( \"You try to pick a mushroom but clumsily crush it.\", ch );
+
+"
+!
+0 0 0
+-1
+S
+
+#29804
+"A Patch of Wild Flowers"
+"Near the northwest corner of this grassy glade, a patch of wild flowers has
+
+sprung up, rife with pale yellow buds and thorny stems.  Several of the
+
+flowers have begun to blossom, and their satiny petals are golden and pointed.
+
+In the center of each flower, encircled by its petals, its filaments form a
+
+heart of crimson.  The glade opens to the south and east, while to the
+
+northwest the wet woodlands prevent further travel in that direction.
+
+"
+"[Nereus] All spirits need marmor
+
+[Nereus] Don't think junk_mob is necessary on death mprog
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 29803 0 9
+D2
+""
+""
+0 -1 29807 0 6
+E
+"patch wild flowers"
+"Thorny flowers grow in a tangled thatch of wildlife, most of them still
+
+budding.  A few have begun to blossom into pointed, golden petaled flowers.
+
+"
+2688 9 1509949540 3 0
+-1
+S
+
+#29805
+"A Clover Patch in the Glade"
+"A dark patch of clover covers much of the ground here, in the midst of the
+
+short @ggreen@n grasses covering the glade.  The tiny, three-leaved plants
+
+dominate the area, seeming like a swarming army of blossoming soldiers.  To
+
+the north, stout trees sit beside leafy bushes and budding shrubs, preventing
+
+further travel in that direction.  Westward, the short grasses of the glade
+
+continue, while southward high grasses obscure vision.  A colorful patch of
+
+flowers lies in the distance to the east.
+
+"
+"[Nereus] Like the clover load
+
+[Nereus] FYI, you can rearrange the search code so that you don't have to have the same block of else code twice
+
+[Nereus] if( rflag( reset0, room ) && random( 1, 10 ) < 4 ) {
+
+[Nereus] maybe add a trees 1 north extra
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 29806 0 6
+D2
+""
+""
+0 -1 29809 0 6
+D3
+""
+""
+0 -1 29803 0 9
+E
+"patch clover"
+"A healthy patch of dark clover grows here amidst the glade's green grasses.
+
+"
+E
+"trees 1 north"
+"Stout mirona trees grow to the north.  Along with the dense growth of bushes
+
+and shrubs, the travel northward is impossible.
+
+"
+A
+"pick"
+"clover"
+"if( rflag( reset0, room ) ) {
+
+  if( random( 1, 10 ) < 4 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #clover, ch );
+
+    act_notchar( #rclover, ch );
+
+    obj_to_char( oload( 1619 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #none, ch );
+
+    act_notchar( #rnone, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar (#none, ch );
+
+  act_notchar( #rnone, ch );
+
+  }
+
+"
+E
+"clover"
+"You rummage through the clover, finding a bit still intact.
+
+"
+E
+"rclover"
+"$n rummages through the clover, finding some intact.
+
+"
+E
+"none"
+"You rummage through the clover patch but can't pick out one fully intact.
+
+"
+E
+"rnone"
+"$n rumamges through the clover patch but takes nothing.
+
+"
+!
+0 0 0
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@gYou plunge into the high grasses to the south.@n
+
+"
+!
+3 0 4
+2689 9 1509949540 3 0
+-1
+S
+
+#29806
+"Near a Flower Bed"
+"Near the northeast of the glade here is a carefully tended flower bed.  The
+
+bed is rectangular, with five sections of exotic plants - one at each corner
+
+and a fifth in the center.  Short-stemmed blackbuds comprise one corner, and
+
+across from them grow white daffodils.  In another corner, red carnations are
+
+growing, and opposite them, blue violets stab out of the dark earth.  In the
+
+center, black-stemmed greenwings form a circular section.  The outer forest to
+
+the northeast hems in the glade, which opens up to the south and west.
+
+"
+"[Nereus] Add other flower keywords to rextra 1
+
+[Nereus] Pick flower code maybe?
+
+[Nereus] room reviewed
+
+[Malrothe] -done ;)
+
+[Nereus] The sleep code here is awesome, btw :)
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D2
+""
+""
+0 -1 29810 0 6
+D3
+""
+""
+0 -1 29805 0 9
+E
+"flower bed blackbuds daffodils carnations violets"
+"The flower bed is divided into five sections.  The upper leftmost corner is
+
+comprised of short-stemmed blackbuds.  Across from them to the right are white
+
+daffodils.  On the bottom left are red carnations, and opposite them are black
+
+violets.  Black-stemmed greenwings flourish in the center of the flower bed.
+
+"
+A
+"pick"
+"flower blackbud daffodil carnation violet"
+"if( find_stat( ch, int ) > random( 12, 15 ) ) {
+
+act_tochar( #bad, ch );
+
+act_notchar( #rbad, ch );
+
+}
+
+else {
+
+act_tochar( #fool, ch );
+
+act_notchar( #rfool, ch );
+
+do_spell( slow, null, ch );
+
+}
+
+"
+E
+"bad"
+"As you reach toward one of the flowers, you sense something strange in their
+
+aroma and quickly draw back.
+
+"
+E
+"rbad"
+"$n reaches toward the flowers but quickly draws back with an uncertain
+
+expression on $s face.
+
+"
+E
+"fool"
+"@gReaching toward the flowers, you inhale their strong aroma and suddenly forget
+
+what you were doing as a lethargic daze washes over you.@n
+
+"
+E
+"rfool"
+"@g$n reaches toward the flowers, inhales deeply, and arises from the flowers
+
+with a vacuous look upon $s face.@n
+
+"
+!
+0 0 0
+A
+"sleep"
+""
+"act_tochar( #sleep, ch );
+
+act_notchar( #rsleep, ch );
+
+do_spell( sleep, null, ch );
+
+"
+E
+"sleep"
+"@mAs you begin to lie down near the flower bed, you inhale a deep waft of the
+
+flowers' aroma, and a wave of drowsiness washes over you.@n
+
+"
+E
+"rsleep"
+"@m$n lies down to sleep, and a sudden listless look washes over $s eyes.@n
+
+"
+!
+0 0 0
+-1
+S
+
+#29807
+"A Quite Corner in a Glade"
+"The boughs of the nearby trees reach out into the high sky above.  The woods
+
+quiver with only a hint of life, and the quiet rustle within resonates with an
+
+inaudible sense of the sublime.  The high grasses of the glade lie languidly
+
+under the guard of the forest.  A single blossoming flower, nearly out of
+
+sight in the forest to the south, bends questioningly in an unseen breeze.
+
+The open glade lies to the east and north.
+
+"
+"[Nereus] extra single blossoming flower
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29804 0 9
+D1
+""
+""
+0 -1 29808 0 6
+E
+"single blossoming flower"
+"A single blossoming flower grows in the distant reaches of the forest to the
+
+south.  It bends in an unseen breeze, lit by an unknown source.  Barely an
+
+outline is discernible of a tall, proud blossom with a star-shaped profile.
+
+"
+2707 9 1509949540 3 0
+-1
+S
+
+#29808
+"A Fringe of Whispering Trees"
+"Whispers of an unknown nature seep into the glade from the forest to the
+
+southwest.  Like the shudder of a bat's wings, or the breathy heave of a man
+
+at his end, the murmurs attack you with silent @Rmalevolence@n.  Yet, the soft,
+
+cherubic trees stand unwittingly at the forest's edge; the ferns are noiseless
+
+and rest without motion.  West from here is a quiet corner in the glade.
+
+Further south the land begins to rise gradually, while to the north the grass
+
+shortens noticeably.  To the east is more high grass.
+
+"
+"[Nereus] this room uber alles
+
+[Nereus] The acode is awesome - might it be more appropriate if it happened only to evils?
+
+[Nereus] if( find_stat( ch, align ) % 3 == 2 ) // character is evil
+
+[Nereus] Room reviewed
+
+[Nereus] Oh one more note, random value is probably too high - 1000 is every tick
+
+[Nereus] How about 300 or 500 if you want it to happen terribly frequently
+
+[Malrothe] -done
+
+[Malrothe] They're not doing it of their own volition.  If elves don't want to
+
+be whores, they shouldn't hang out in harems.
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29803 0 9
+D1
+""
+""
+0 -1 29809 0 6
+D2
+""
+""
+0 -1 29811 0 6
+D3
+""
+""
+0 -1 29807 0 9
+A
+""
+""
+"loop( all_in_room ) {
+
+  if( is_player( rch ) ) {
+
+    if( random( 1, 10 ) < 4 ) {
+
+      act_tochar( #evil, rch );
+
+      act_notchar( #smile, rch );
+
+      }
+
+    }
+
+  }
+
+"
+E
+"evil"
+"@RThoughts of murder and maleficence worm their way into your mind, and your
+
+lips curl into an appreciative smile.@n
+
+"
+E
+"smile"
+"@R$n's lips curl into an evil smile, and $s eyes glisten with malice.@n
+
+"
+!
+2 400 0
+2706 9 1509949540 3 0
+203 9 1509949540 3 0
+-1
+S
+
+#29809
+"In the High Grasses"
+"The striped green grasses of the glade are aligned as if combed.  Extending
+
+from the skin of the earth, the cascading limbs ebb and sway in harmony.  The
+
+ground is not even visible beneath the sea of vegetation, and only a handful
+
+of weeds break the continuity of grass.  The high grasses continue to the east
+
+and west, and the glade begins to rise to the south.  Northward are shorter
+
+grasses and a distant trail into the forest.
+
+"
+"[Nereus] grasses extra - (why are they combed?)
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29805 0 9
+D1
+""
+""
+0 -1 29810 0 6
+D2
+""
+""
+0 -1 29812 0 6
+D3
+""
+""
+0 -1 29808 0 9
+E
+"green grasses"
+"The veined, green grasses of the glade are evenly spaced.  Their thin, fine
+
+lengths are aligned in much the same way, giving them the appearance of being
+
+combed.
+
+"
+-1
+S
+
+#29810
+"The Edge of a Peculiar Forest"
+"To the east lies an expanse of forest constituted of numerous odd plants and
+
+varieties of vegetation.  From here, you can see several extraordinary
+
+examples.  One shrub with hourglass-shaped petals grows near the edge of the
+
+glade.  A tall, limbless red tree with deeply grooved bark rests beside it.
+
+Several bushes with bowed branches and silvery buds grow deeper in the forest.
+
+Strange blue moss crawls up one side of the trees, nearly to their tops.  High
+
+grass grows here, to the west, and to the south.  To the north you can make
+
+out a colorful flower bed.
+
+"
+"[Nereus] hourglass shaped -> hourglass-shaped
+
+[Nereus] same for rextra 1
+
+[Nereus] perhaps a cut/get/pick moss code?
+
+[Nereus] room reviewed
+
+[Malrothe] -done, i don't like the idea of getting moss.
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29806 0 9
+D2
+""
+""
+0 -1 29813 0 6
+D3
+""
+""
+0 -1 29809 0 9
+E
+"hourglass shrub"
+"A somber shrub with hourglass-shaped petals grows near the edge of the glade.
+
+Its branches are dark, nearly black, and its petals are a reddish green.
+
+"
+E
+"bush silvery buds bowed"
+"A few bushes with bowed branches, looking almost like vortexes, are visible
+
+within the forest.  Silvery buds, not yet in bloom, grow on the branches.
+
+Their green insides are beginning to show with some anxiety.
+
+"
+E
+"limbless red tree"
+"A limbless red tree, more like a pole than a representative of the wooded
+
+lands behind, soars high into the sky.  Deeply grooved, the tree would
+
+probably look like a wheel's spokes from above if not for the deformities near
+
+its top.  Strangely green protrusions grow from the tree at its highest
+
+reaches.
+
+"
+E
+"blue moss"
+"Blue moss is growing on most of the trees.
+
+"
+2707 9 1509949540 3 0
+-1
+S
+
+#29811
+"A Rocky Rise - Beside a Tree"
+"A scattering of smooth, flat rocks mark a slight rise in the glade to the
+
+south.  Almost hidden beneath the deep grasses, these oval stones are
+
+distributed unevenly throughout the incline.  A lonely tree grows here apart
+
+from the rest of the forest to the south.  Its slim trunk and rough bark
+
+distinguish it from the stout trees elsewhere.  The high grasses continue in
+
+all directions.
+
+"
+"[Nereus] room reviewed
+
+[Malrothe] -
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29808 0 9
+D1
+""
+""
+0 -1 29812 0 6
+D2
+""
+""
+0 -1 29815 0 6
+E
+"lonely tree"
+"This tree, unlike most of the others in the forest, has a slim trunk, with
+
+rough, grating bark.
+
+"
+-1
+S
+
+#29812
+"A Gradual Rise in a Glade"
+"The green grasses climb over a gradual incline to the south.  Oval rocks of
+
+various sizes rest along the incline, half buried in the ground.  The rocks,
+
+gray and unremarkable, are nearly hidden in the dense grass, crushing the
+
+earth under their weight.  The rocks - those extinguished stars - sit cold and
+
+dead with no guidance to offer.  More high grasses can be seen in each
+
+direction.  A lone tree stands in the distance to the west.
+
+"
+"[Nereus] extra for rocks and/or lone tree
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29809 0 9
+D1
+""
+""
+0 -1 29813 0 6
+D2
+""
+""
+0 -1 29816 0 6
+D3
+""
+""
+0 -1 29811 0 9
+E
+"rocks"
+"Gray, unremarkable rocks lie half buried in the ground, nearly hidden by the
+
+thick grasses.
+
+"
+2689 9 1509949540 3 0
+-1
+S
+
+#29813
+"The Slick Grasses of a Glade"
+"The grasses here are wet with moisture.  A rocky rise to the south leads to a
+
+shallow pool.  The rocks, themselves wet with condensation, green with moss,
+
+and buried in the mud, dot the incline.  The grasses are slick and
+
+treacherous, and even the ground beneath, rarely visible, provides precarious
+
+footing at best.  Eastward, a rotting log lies in the distance near the
+
+neighboring woods.  South is the pool, and to the north and west are more high
+
+grasses.
+
+"
+"[Nereus] might want extras for rotting log, pool
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29810 0 9
+D1
+""
+""
+0 -1 29814 0 6
+D2
+""
+""
+0 -1 29817 0 6
+D3
+""
+""
+0 -1 29812 0 9
+E
+"rotting log"
+"A large, rotting log lies near the glade's edge to the east.
+
+"
+E
+"pool"
+"Just above a rocky rise to the south, a shallow pool sits in a depression in
+
+the ground.
+
+"
+-1
+S
+
+#29814
+"In a Glade Beside a Fallen Tree"
+"Long ago fallen from the forest to the northeast, a moss-ridden tree here is
+
+in an advanced state of decay.  Resting half buried in the glade's high
+
+grasses, the former tree is lacking any limbs or leaves now.  Its insides are
+
+rotting out, its bark is crumbling apart, and remnants of decaying wood powder
+
+the area around it.  Moss covers an entire side, and some can even be seen
+
+within the rotten ends of the poor being.  A shallow @Bpool@n is visible over a
+
+slight rise to the south, while to the west are more high grasses.  Dense
+
+forest bars travel to the east and north.
+
+"
+"[Nereus] extra about the dense forest
+
+[Nereus] Extra for pool
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D2
+""
+""
+0 -1 29818 0 6
+D3
+""
+""
+0 -1 29813 0 9
+E
+"dense forest"
+"Dense forest, thick with mirona trees, high ferns, and dark bushes bars travel
+
+to the east and north.  Beyond a few feet into the forest, little is visible
+
+except the mid-section of the trees.  The bushes and ferns create a dense
+
+barrier that is difficult to see through.
+
+"
+E
+"pool"
+"Past a rise to the south, in a depression set into the hill, a pool of shallow
+
+water sits calmly.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@BYou $t $T, into a shallow pool atop the hill.@n
+
+"
+!
+3 0 4
+2688 9 1509949540 3 0
+-1
+S
+
+#29815
+"In a Glade - A Growth of Mushrooms"
+"Countless mushrooms grow here, though they are of only a few distinguishable
+
+varieties.  Some of the mushrooms are a deep gray color, spotted on their caps
+
+with a pale yellow coloring.  These are the biggest and most abundant of the
+
+varieties.  Another is a tan color with ribbed caps, taller than the others
+
+but fewest in number.  The last are a deep red color with thin white strands
+
+hanging down like the tentacles of a jellyfish.  North of here, the glade
+
+descends slightly over a rocky decline.  To the south, a lone tree is visible.
+
+To the west, a dense forest blocks travel, while to the east the grassy glade
+
+opens up.
+
+"
+"[Nereus] lone tree extra
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29811 0 9
+D1
+""
+""
+0 -1 29816 0 6
+D2
+""
+""
+0 -1 29819 0 6
+E
+"lone tree"
+"A lone mirona tree stands in the glade south of here.  It stands sentinel over
+
+the rest of the treeless area.
+
+"
+A
+"pick"
+"mushroom"
+"act_tochar( #nope, ch );
+
+act_notchar( #rnope, ch );
+
+"
+E
+"nope"
+"You try to pick one of the mushrooms, but it mysteriously crumbles in your
+
+hands.
+
+"
+E
+"rnope"
+"$n tries to pick a mushroom, but it crumbles in $s hands.
+
+"
+!
+0 0 0
+2706 9 1509949540 3 0
+-1
+S
+
+#29816
+"The Quiet Grasses of a Glade"
+"The light green grasses of the glade sit here, barely stirring.  They live and
+
+die with less than a murmur, even the smallest rustle foreign to these little
+
+beasts.  Lacking a voice, yet not desiring one, the grasses live their lives
+
+catching wind, catching light, and warming the earth.  East of here there lies
+
+a shallow pool.  To the east down a decline or to the south continuing
+
+alongside the pool, the grassy glade continues.  Westward lies an enormous
+
+mushroom patch.
+
+"
+"[Nereus] duplicated punctuation, 5th line
+
+[Nereus] mushroom patch extra
+
+[Nereus] pool extra
+
+[Nereus] room reviewed
+
+[Malrothe] - done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29812 0 9
+D1
+""
+""
+0 -1 29817 0 6
+D2
+""
+""
+0 -1 29820 0 6
+D3
+""
+""
+0 -1 29815 0 9
+E
+"mushroom patch"
+"An enormous mushroom patch grows just west of here.
+
+"
+E
+"pool"
+"Atop a small hill to the east, a pool sits in a shallow depression.  The tips
+
+of reeds can just be seen, and a faint burbling sound is barely audible.
+
+"
+A
+""
+""
+"send_to_room( \"A soft wind passes through, rustling the grass in its wake.\", room );
+
+"
+!
+2 400 0
+-1
+S
+
+#29817
+"In a Shallow Pool of Water"
+"A clear pool of water has collected here in a shallow depression in the glade.
+
+No more than a few inches deep, beneath the water lies sunken detritus and a
+
+muddy bottom.  A variety of curious looking plants hang over the water's edge;
+
+some budded weeds lap at the water, and some pale @Yyellow@n flowers seem to be
+
+peering into its meager depths.  This water-filled depression sits on the top
+
+of a hill that extends to the east and south.  To the north, a slight decline
+
+leads into high grasses.  To the west, you can climb out of the pool onto dry
+
+land.
+
+"
+"[Nereus] detritus extra - what's on the bottom
+
+[Nereus] yellow flowers extra
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+13 9 0
+D0
+""
+""
+0 -1 29813 0 9
+D1
+""
+""
+0 -1 29818 0 6
+D2
+""
+""
+0 -1 29821 0 9
+D3
+""
+""
+0 -1 29816 0 9
+E
+"detritus"
+"A conglomerate of leaves, thin branches, and stray grass has collected in a
+
+muddy pile on the pool's bottom.
+
+"
+E
+"yellow flowers"
+"Pale yellow dandelions hang just over the pool's edge, gazing into its shallow
+
+depths.
+
+"
+2707 9 1509949540 3 0
+1519 17 1509949540 -2 0
+189 17 1509949540 -2 0
+-1
+S
+
+#29818
+"In a Shallow Pool of Water - Amidst Reeds"
+"Standing in a shallow pool of water here are a number of reeds.  The pale
+
+green plants produce timid ripples in the water around them, concentric waves
+
+that dissipate into the surrounding obscurity.  Most of the reeds are
+
+noticeably hollow, but the younger ones are too thin to determine.  Anchored
+
+safely in the muddy ground below, they reach longingly for the sky above.
+
+More water fills this depression to the south and west.  Further to the north,
+
+a decline down the hill leads into the glade's high grasses.
+
+"
+"[Nereus] Suggest pick reed acode
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+13 9 0
+D0
+""
+""
+0 -1 29814 0 9
+D2
+""
+""
+0 -1 29822 0 6
+D3
+""
+""
+0 -1 29817 0 9
+A
+"pick"
+"reed"
+"act_tochar( \"You struggle with one of the reeds, but it is too slippery. You nearly fall into the water after losing your grip.\", ch );
+
+act_notchar( \"$n loses $s grip while trying to take a reed and nearly loses $s balance as well.\", ch );
+
+"
+!
+0 0 0
+1519 17 1509949540 -2 0
+576 9 1509949540 3 0
+-1
+S
+
+#29819
+"A Fringe of Brush and Bees"
+"The forest to the west encroaches upon the glade here.  Between two stout,
+
+green trees is a thatch of dark reddish bushes.  Budding green, the crimson-
+
+barked bushes are tangled in a wild mess of branches.  A swarm of irreverent
+
+bees flies in and out of the thicket in a frenzy.  The small, black and gold
+
+insects seem to have a preoccupation with these plants.  High grasses grow
+
+here, curling curiously at their tips.  In all directions but west these
+
+grasses continue.
+
+"
+"[Nereus] crimson barked > crimson-barked
+
+[Nereus] Might be cool to have a pick flower code where the bees drive you back
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29815 0 9
+D1
+""
+""
+0 -1 29820 0 6
+D2
+""
+""
+0 -1 29823 0 6
+E
+"dark reddish bushes"
+"Dark reddish bushes grow beside the glade, just at the edge of the forest to
+
+the west.  Their crimson bark and green buds seem to particularly attract
+
+bees, which swarm tirelessly around them.
+
+"
+A
+""
+""
+"send_to_room( #bees, room );
+
+"
+E
+"bees"
+"@YThe bees buzz loudly as they tirelessly hound the crimson bushes.@n
+
+"
+!
+2 400 0
+A
+"pick"
+"bud flower"
+"act_tochar( #reach, ch );
+
+act_notchar( #rreach,ch );
+
+"
+E
+"reach"
+"As you reach for one of the bushes' buds, the bees swarm together and drive
+
+you back threateningly.
+
+"
+E
+"rreach"
+"$n reaches toward the bushes, upsetting the bees who swarm toward $m angrily.
+
+"
+!
+0 0 0
+122 9 1509949540 3 0
+-1
+S
+
+#29820
+"In a Glade - At a Pool's Edge"
+"This is the middle of an expansive, grassy glade.  Filled with bright green
+
+grass, the glade extends in all directions.  It is edged by a forest of leafy
+
+green foliage.  Just to the northeast lies a shallow pool.  The pool rests in
+
+a depression atop a small hill.  Only the western side can be clearly made out
+
+from here, and there is a border of flowers at its edge.  Southwest of here, a
+
+tree stands in the glade, apart from the rest of the forest.
+
+"
+"[Nereus] pool extra
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29816 0 9
+D1
+""
+""
+0 -1 29821 0 9
+D2
+""
+""
+0 -1 29824 0 6
+D3
+""
+""
+0 -1 29819 0 9
+E
+"pool"
+"Atop a small hill to the west, a shallow pool rests in a depression.  Only its
+
+western edge can be made out from here, where there is a border of flowers.
+
+"
+2688 9 1509949540 3 0
+-1
+S
+
+#29821
+"In a Shallow Pool of Water Bordered by Flowers"
+"Brilliant red and yellow flowers border the pool of water here.  The flowers'
+
+petals are primarily yellow with flame-shaped streaks of red running
+
+vertically up them.  The petals sit thick and satiny atop long, leaved stems.
+
+The border of flowers, about two to three flowers deep throughout, grows
+
+beside a clear pool of water.  The pool extends in the distance to the east
+
+and west.  West and south lie the green grasses of the glade.
+
+"
+"[Malrothe] this crazy area is getting too pretty for me
+
+[Nereus] *snicker*
+
+[Nereus] flame shaped > flame-shaped
+
+[Nereus] room reviewed
+
+[Nereus] snail shell or pebble around in one of the pool or shore rooms?
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+13 9 0
+D0
+""
+""
+0 -1 29817 0 9
+D1
+""
+""
+0 -1 29822 0 6
+D2
+""
+""
+0 -1 29825 0 6
+D3
+""
+""
+0 -1 29820 0 9
+E
+"flowers"
+"Thick stemmed flowers grow beside the shallow pool.  Their petals are a bright
+
+yellow color with streaks like flames of red running through their centers.
+
+Their stalks are bristly with hardened cuticles.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@gYou maneuver around the flowers and $t $T.@n
+
+"
+!
+3 0 8
+1519 17 1509949540 -2 0
+518 9 1509949540 3 0
+518 9 1509949540 3 0
+576 9 1509949540 3 0
+2706 9 1509949540 3 0
+-1
+S
+
+#29822
+"In a Shallow Pool of Water - Near a Dense Forest"
+"The edge of an imposing forest stands over a clear pool of water here.  The
+
+pool, no more than a few inches deep, sitting in a depression in the ground,
+
+is being fed by a burbling spring at the edge of the forest.  The forest to
+
+the east is particularly dense and green, fed as it is by copious amounts of
+
+water from the spring.  Out of immediate sight, however, a foreboding darkness
+
+covers the forest in gloom.  The pool lies still to the north and west, and to
+
+the south is the southeasternmost corner of the glade.
+
+"
+"[Nereus] eastward lying forest sounds kind of awkward
+
+[Nereus] darkness cover > darkness covers
+
+[Nereus] pool extra
+
+[Nereus] room reviewed
+
+[Nereus] Might I suggest a fish, several fish, or a school of fish mob that resets in the pool?  (setting stay_terrain flag should make them stay in the pool)
+
+[Nereus] how about resetting a snail shell in one of tehse rooms?
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+13 9 0
+D0
+""
+""
+0 -1 29818 0 9
+D2
+""
+""
+0 -1 29826 0 6
+D3
+""
+""
+0 -1 29821 0 9
+E
+"pool"
+"This pool is barely more than a puddle, measuring only a few inches in depth.
+
+It is being fed by a bubbling spring at the forest's edge, and its bottom is
+
+muddy and slick.
+
+"
+2689 9 1509949540 3 0
+1519 17 1509949540 -2 0
+22 17 1509949540 -2 0
+197 137 1509949540 3 0
+-1
+S
+
+#29823
+"A Stout Tree in a Glade"
+"A stout tree stands in the glade here, reaching about twelve feet in height.
+
+It has a rather large girth, giving it the appearance of being stout.  Its
+
+bark is a dark @ggreen@n color, and it is marked with knots and gouges.  It is
+
+soft to the touch, porous and moist.  Its branches form a bright @ggreen@n crown
+
+on the tree.  To the north and east, the glade continues.  To the southwest, a
+
+dense forest prevents passage.
+
+"
+"[Nereus] climb tree acode, is it pointless to climb?
+
+[Nereus] forest s w extra
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29819 0 9
+D1
+""
+""
+0 -1 29824 0 6
+E
+"forest 1 south 1 west"
+"The forest's edge, dense with mirona trees and dark bushes, bars passage into
+
+its depths beyond.
+
+"
+E
+"tree"
+"The tree looks to be about twelve feet high and quite stout.  It's bark is
+
+dark green in color and is marked with many knots and gouges.  It looks like
+
+the bark is quite sift to the touch, porous and moist.
+
+"
+A
+"climb"
+"tree"
+"act_tochar( \"The tree is too stout, and its branches far too high, to make climbing this tree possible.\", ch );
+
+"
+!
+0 0 0
+2706 9 1509949540 3 0
+-1
+S
+
+#29824
+"In a Glade - Ferns and Moss"
+"Robust ferns claw at the sky with waving fingers of green stalks.  The ferns
+
+form a short fence around a collection of mossy rocks that lie at the southern
+
+edge of the glade.  The rocks lie in a haphazard pile, jagged edges protruding
+
+in all directions.  The trees behind them are covered in the same green moss,
+
+and the entire area is wet with moisture.  The rest of the glade grows green
+
+with high grass which continues in all directions.
+
+"
+"[Nereus] suggest a search rock acode
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29820 0 9
+D1
+""
+""
+0 -1 29825 0 6
+D3
+""
+""
+0 -1 29823 0 9
+E
+"ferns"
+"The ferns growing here look almost like hands, each with five wavy tendrils
+
+clawing at the sky.  Their tiny leaves form a dark green fringe of vegetation
+
+around a collection of rocks near the glade's edge.
+
+"
+E
+"mossy rocks pile"
+"This pile of mossy rocks sits near the glade's southern edge, partially
+
+shielded by a growth of ferns.  Green moss grows on all the rocks, some of
+
+which are partially buried in the ground.  Others rest entirely atop the
+
+ground.
+
+"
+A
+""
+"pile rocks"
+"if( rflag( reset0, room ) && random( 1, 8 ) == 1 ) {
+
+  act_tochar( #rock, ch );
+
+  act_notchar( #rrock, ch );
+
+  obj_to_char( oload( 142 ), ch );
+
+  remove_rflag( reset0, room );
+
+}
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  interpret( ch, \"spit\" );
+
+}
+
+"
+E
+"rock"
+"You search through the pile of rocks, finding a nice, medium-sized one.
+
+"
+E
+"rrock"
+"$n rummages through the pile of rocks and selects a medium-sized one.
+
+"
+E
+"nope"
+"You search through the pile of rocks but are disgusted with the selection.
+
+"
+E
+"rnope"
+"$n stoops down to search through the rocks but arises looking disgusted.
+
+"
+!
+9 0 0
+-1
+S
+
+#29825
+"The Wet Grounds of a Green Glade"
+"The long grass of the glade lies low to the ground, weighted by beads of clear
+
+water.  The entire area is wet, the ground beneath muddy, moist, and quick to
+
+give under any pressure.  Near the forest bordering the glade to the south, it
+
+appears to dry up a bit, while near a pool to the north it is the most wet.  A
+
+few branches have fallen from the canopy of the trees to the south and lie
+
+half buried in the ground.  To the west and east, the glade's grasses
+
+continue, while to the north a pool rests in a depression in the glade.
+
+"
+"[Nereus] grass/water/glade extra
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29821 0 9
+D1
+""
+""
+0 -1 29826 0 6
+D3
+""
+""
+0 -1 29824 0 9
+E
+"branches"
+"Some thin fallen branches have fallen from the woods to the south and lie half
+
+buried in the mud.
+
+"
+E
+"grass water glade"
+"Heavy beads of water cling to the long grasses of the glade, keeping them low
+
+to the ground.  Saturated by the same precipitation, the ground beneath is
+
+muddy and wet.
+
+"
+2707 9 1509949540 3 0
+-1
+S
+
+#29826
+"The Edge of a Vibrant Glade"
+"The colors of the surrounding forest are suspended in the most stunning
+
+display of visual inertia.  Scarlet, vermillion, cobalt, @mviolet@n, and lime
+
+create an optical assault of plant life.  Bushes bristling with vivacious
+
+flowers and trees soaring like @bgeysers@n grow here beside the glade.  The
+
+glade's grasses seem to wither in shame of their banal appearance, in spite of
+
+their own rather peculiar coloration.  In the distance to the north, a spring
+
+bubbles noisily, feeding a shallow pool in the glade.  To the west lies more
+
+of the grassy glade.
+
+"
+"[Nereus] need to set value > 0 in the acode
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 29822 0 9
+D3
+""
+""
+0 -1 29825 0 9
+A
+""
+""
+"send_to_room( \"The noisy burbling of a spring to the north reaches your ears.\", room );
+
+"
+!
+2 400 0
+-1
+S
+
+#29827
+"The March of Trees"
+"Tree upon tree lines the trail here, standing as if sentinels for the wooded
+
+depths beyond.  They seem to be evenly spaced, and each tree on one side of
+
+the path has a complement on the other side.  Between the trees, budding,
+
+black-barked bushes sit unmoving in the dim light.  Small patches of grass
+
+claw their way out from fallen leaves on the forest's floor.  This uniform
+
+aberration exists only for a short way before returning to the regular
+
+irregularity of the forest to the east and west.
+
+"
+"[Nereus] black barked -> black-barked
+
+[Nereus] extras - trees lining the trail, bushes
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D1
+""
+""
+0 -1 29800 0 6
+D3
+""
+""
+0 -1 29828 0 6
+E
+"trees lining the trail"
+"The mirona trees seem irregularly placed in regluar intervals along this path.
+
+Each pair of trees is set an equal distance apart, and they form a corridor
+
+that forces travel to the east and west.
+
+"
+E
+"black-barked bushes"
+"Dark bushes with black bark grow between the regularly placed trees.  Their
+
+branches are budding with tiny, pale green sprouts.
+
+"
+415 17 1509949540 -2 0
+473 9 1509949540 3 0
+-1
+S
+
+#29828
+"The Parting Path"
+"The trail splits here, leading in three different directions.  Eastward, the
+
+path becomes overgrown by the low lying shrubbery and grasses.  Westward, the
+
+path passes around a boulder that sits in the way of the path to the north.
+
+Southward it passes into what looks like a younger section of the forest with
+
+slightly shorter trees and a floor more clear of debris.  To the south, a vine
+
+hangs low between two trees, hanging across the path.
+
+"
+"[Nereus] extra for vine
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D1
+""
+""
+0 -1 29827 0 6
+D2
+""
+""
+0 -1 29838 0 6
+D3
+""
+""
+0 -1 29829 0 6
+E
+"boulder"
+"An impressive boulder sits north of the trail, standing about thirteen feet
+
+tall.  Its girth is immeasurable, as it cannot all be seen from here, and much
+
+of lies beneath ground.  Its surface is pitted but unmarked by crags or
+
+handholds.
+
+"
+E
+"vine"
+"Stretching between two mirona trees, a long vine hangs low over the southward
+
+path.  Though not low enough to bar travel, it is a mystery how it may have
+
+fallen to its current height.
+
+"
+A
+"climb"
+"boulder"
+"act_tochar( \"The boulder just has too few handholds to climb.\", ch );
+
+act_notchar( \"$n tries unsuccessfully to climb the boulder.\", ch );
+
+"
+!
+0 0 0
+587 17 1509949540 -2 0
+-1
+S
+
+#29829
+"Dry, Fallen Leaves"
+"The ground here is littered with dry, dead leaves, fallen branches, decaying
+
+buds and @rflowers@n, and bits of whatever else the woods have let free.  Green
+
+and brown twigs lie half buried, winged and spindly legged insects crawling
+
+over it all.  A large boulder sits just to the northeast, and some of the
+
+detritus has collected in clumps along its base.  The depths of the forest to
+
+the west are veiled from view by tall bushes with wide, pear-shaped leaves.
+
+The path continues past these obstructions to the east and north.
+
+"
+"[Nereus] pear shaped -> pear-shaped
+
+[Nereus] Do you want to add a cost to obj 4492, or is it just for looking nice?
+
+[Nereus] Suggest lowering durability on flower since it's wearable
+
+[Nereus] extra for boulder to ne
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29830 0 6
+D1
+""
+""
+0 -1 29828 0 6
+E
+"flowers"
+"These crimson flowers are turning black with decay as they lie dying on the
+
+forest floor.  Having fallen from nearby bushes, most of them are mangled and
+
+worthless, but a few are perhaps salvageable.
+
+"
+E
+"pear shaped leaves bushes"
+"Tall bushes with pear shaped green leaves obscure sight to the west.  The
+
+large leaves seem almost abnormally large, and their weight causes the bushes'
+
+branches to sag in distress.
+
+"
+E
+"large boulder"
+"An enormous boulder sits to the northeast of the trail.  Only a portion of the
+
+boulder is unburied; most of it must be hidden underground.  Its surface is
+
+gritty but slick with water and a faintly visible growth of moss.
+
+"
+A
+"get take pick"
+"flower"
+"if( rflag( reset0, room ) ) {
+
+  if( random( 1, 10 ) == 1 ) {
+
+    act_tochar( \"You find one flower still mostly intact and pluck it from the ground.\", ch );
+
+    act_notchar( \"$n finds a flower mostly intact on the ground and picks it up.\", ch );
+
+    obj_to_char( oload( 4492 ), ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  else {
+
+    act_tochar( \"The flowers are all too mangled to be worth taking.\", ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( \"The flowers are all too mangled to be worth taking.\", ch );
+
+  }
+
+"
+!
+0 0 0
+-1
+S
+
+#29830
+"Trail Alongside a Boulder"
+"Wooded slopes descend just off the western edge of this trail as it passes by
+
+an enormous boulder to the east.  Through the heights of trees, the sky waits
+
+like the cupped hands of fate.  The crashing of heavy water carries through
+
+the forest, sending shivers through the ground.  The volume of the far off
+
+noise rises and falls as you pass between the seemingly anechoic trees.  The
+
+trail continues further through the woods to the north and south.
+
+"
+"[Nereus] Might want to raise random value just slightly, 100 or so - otherwise it's probably unlikely to be heard.
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Malrothe] as you can tell, i had trouble figuring out the \"Random\" acodes...
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29831 0 6
+D2
+""
+""
+0 -1 29829 0 6
+E
+"enormous boulder"
+"The imposing face of an enormous gray boulder waits just to the east.  The
+
+great boulder, nearly thirteen feet tall, has a gritty surface that is slick
+
+with the water of recent rains.  Although it already looks large, much of it
+
+must lie buried beneath the ground.
+
+"
+A
+"climb"
+"enormous boulder"
+"act_tochar( \"The boulder is far too slick to climb, and thus you are unable to scale it.\", ch );
+
+act_notchar( \"$n tries to climb the boulder but slips on its slick surface.\", ch );
+
+"
+!
+0 0 0
+A
+""
+""
+"send_to_room( #crash, room );
+
+"
+E
+"crash"
+"@BThe force of the thundering water reverberates through the ground.@n
+
+"
+!
+2 200 0
+-1
+S
+
+#29831
+"Trail Around a Boulder"
+"The trail winds its way around an oversized boulder that lies buried to the
+
+southeast.  A slight decline lies just off the trail to the west, the leafy
+
+forest disappearing down the slope.  Leafy ferns buzzing with forest life grow
+
+beneath the stout trees extending high above them.  Their thin branches wave
+
+lazily in the soft breeze.  Fallen golden-green leaves wilt away on the wet
+
+forest floor.  Water collects in thir cupped, curling remains.  The trail
+
+leads through the dense woods to the east and south.
+
+"
+"[Nereus] boulder extra: sit > sits
+
+[Nereus] Like the extras in this room
+
+[Nereus] Room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D1
+""
+""
+0 -1 29832 0 6
+D2
+""
+""
+0 -1 29830 0 6
+D5
+""
+""
+0 -1 29868 0 6
+E
+"boulder"
+"An enormous gray boulder sits just off the trail to the southeast, its girth
+
+too wide even for many giants to encircle with their arms.
+
+"
+E
+"leafy ferns"
+"Tall ferns with fragile, little leaves grow beside the trail.  Their stalks
+
+are thin and a pale green with slightly darker leaves.  The ferns wave lazily
+
+in the light breezes that frequent the forest.
+
+"
+E
+"golden-green leaves"
+"Countless golden-green leaves litter the floor of the forest, fallen from the
+
+canopies above and wet with the recent rains.  Some of the leaves cup small
+
+quantities of water within them, the leaves curling with the excess moisture.
+
+"
+A
+"get take"
+"golden-green leaves"
+"act_tochar( \"After examining several leaves, you find nothing extraordinary about them and carelessly dispose of them.\", ch );
+
+act_notchar( \"$n picks up a few leaves but then drops them disinterestedly.\", ch );
+
+"
+!
+0 0 0
+A
+""
+""
+"send_to_room( #bugs, room );
+
+"
+E
+"bugs"
+"@gThe buzzing of furiously active insects is heard nearby.@n
+
+"
+!
+2 200 0
+-1
+S
+
+#29832
+"The Face of a Boulder"
+"An enormous gray boulder sits sunken in the earth to the south.  The wooded
+
+trail carves a path around it, leading north and west through the quiet woods.
+
+Patches of grass protrude from beneath the hefty stone, eagerly reaching for
+
+the nourishment of the sky and its stars.  The path approaches the very face
+
+of the giant beforing turning again into the forested lands.
+
+"
+"[Nereus] boulder extra: boulders surface -> boulder's surface
+
+[Nereus] Room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29833 0 6
+D3
+""
+""
+0 -1 29831 0 6
+E
+"enormous gray boulder"
+"An enormous boulder, probably too large even for many giants to wrap their
+
+arms around, sits just to the south of the trail.  It appears to be about
+
+thirteen feet high, though the majority of it is surely buried underground.
+
+The boulder's surface is rough, faintly pitted, marked by flecks of black and
+
+white on the mostly gray surface.  Wispy shreds of grass protrude at the
+
+boulder's edges, searching for a niche in which to live.
+
+"
+A
+"climb"
+"enormous gray boulder"
+"act_tochar( \"Try as you might, you are unable to find a way to scale the mighty boulder.\", ch );
+
+act_notchar( \"$n tries unsuccessfully to scale the enormous boulder.\", ch );
+
+"
+!
+0 0 0
+-1
+S
+
+#29833
+"Along a Trail - Distances of Trees"
+"Through the limbless depths of mironas you can see countless,
+
+indistinguishable trees against a background of more trees.  Tendrils of vines
+
+dangle from some of the canopy's high branches.  The endless woods form a
+
+canvas of life in the visible distance, upon which the foreground of light and
+
+air paints an invisible picture.  Alongside the trail grows brush and bits of
+
+grass struggling to catch @Ysunlight@n.  Bushes and tangled undergrowth follow the
+
+path north and south.
+
+"
+"[Nereus] extra vine, tendrils
+
+[Nereus] extra bushes, undergrowth
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29834 0 6
+D2
+""
+""
+0 -1 29832 0 6
+E
+"vine tendrils"
+"High above, in the canopy formed by the mesh of interwoven branches of the
+
+mirona trees, tendrils of vines hang down from branches.  Thin and green,
+
+these vines have small leaves that grow outward from the vines' centers,
+
+trying to gather as much sunlight and air as possible.
+
+"
+E
+"bushes undergrowth"
+"Beneath the forest of mirona trees thrives another forest of bushes and
+
+tangled undergrowth.  Bushes with broad green leaves and dark branches grow
+
+above the undergrowth of clover, dustflower, and ivy.  They seem to be
+
+surviving well, even with the small shreds of light they receive through the
+
+cover overhead.
+
+"
+-1
+S
+
+#29834
+"The Creek Runs By"
+"A faintly burbling creek runs by from the west and out of sight down a pitch
+
+in the forest to the east.  This narrow trail follows alongside it for some
+
+distance before turning south.  A centipede is crawling up one of the soft-
+
+barked mironas, his movement alike the rise and fall of mountains: the
+
+crushing upheaval of earth and the hasty descent to platitude.  Thorny vines
+
+strangle black barked bushes with their long tendrils.  Leaves and detritus
+
+litter the forest's floor.
+
+"
+"[Nereus] extra black barked bushes: medium sized -> medium-sized
+
+[Nereus] extra black barked bushes: striking back -> striking black
+
+[Nereus] Room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D2
+""
+""
+0 -1 29833 0 6
+D3
+""
+""
+0 -1 29835 0 6
+E
+"centipede"
+"A small green centipede climbs the tree, its high leaves far from its current
+
+location halfway up the tree.  It moves in a smooth motion of scrunching and
+
+uncurling.
+
+"
+E
+"thorny vines"
+"Thorny vines curl themselves around the black bushes, grapsing tightly in
+
+their throttling clutches.
+
+"
+E
+"black barked bushes"
+"These medium-sized bushes, standing about four feet tall, have striking black
+
+bark.  Slightly lighter buds dot the plants, a few of them beginning to break
+
+open.  Thorny vines curl sinisterly about the bushes, threatening to strangle
+
+them in their clutches.
+
+"
+A
+"search"
+"leaves detritus"
+"act_tochar( \"You lift a few of the leaves and find beneath them yet more leaves, and sometimes dirt.\", ch );
+
+act_notchar( \"$n turns over a few leaves here and there, desirous of the great treasure that must lie beneath them.\", ch );
+
+"
+!
+0 0 0
+A
+"get take"
+"centipede"
+"if( rflag( reset0, room ) ) {
+
+  act_tochar( \"You reach for the centipede but accidentally knock it into the undergrowth, where it disappears from sight.\", ch );
+
+  act_notchar( \"$n tries to grab the centipede off the tree, but it falls into the undergrowth and disappears.\", ch );
+
+  remove_rflag( reset0, room );
+
+  }
+
+else
+
+  continue;
+
+"
+!
+0 0 0
+A
+""
+""
+"if( rflag( reset0, room ) )
+
+send_to_char( get_desc( room ), ch );
+
+else
+
+send_to_char( #nocent, ch );
+
+"
+E
+"nocent"
+"A faintly burbling creek runs by from the west and out of sight down a pitch
+
+in the forest to the east.  This narrow trail follows alongside it for some
+
+distance before turning south.  Thorny vines strangle black barked bushes with
+
+their long tendrils.  Leaves and detritus litter the forest's floor.  The dirt
+
+trail is pale, almost tan, littered with frequent pebbles and twigs.
+
+"
+!
+17 0 0
+660 17 1509949540 -2 0
+-1
+S
+
+#29835
+"Trail Beside a Quiet Creek"
+"A quiet creek slowly trickles by, its creeping pace echoing the drowsy life
+
+around it.  The tall mirona grow unperturbed beside it, limbs crossed in
+
+inaction.  A green thicket of brush and clover covers the forest further north.
+
+The faint buzzing of insect life maintains a low din in the woods.  The trail
+
+follows the creek east and west.
+
+"
+"[Nereus] Room reviewed
+
+[Malrothe] -
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D1
+""
+""
+0 -1 29834 0 6
+D3
+""
+""
+0 -1 29836 0 6
+E
+"mirona"
+"Tall mironas grow beside the quiet creek.  Their canopies are a criss-cross of
+
+branches that obscure the sky above.
+
+"
+E
+"thicket brush clover"
+"A dense tangle of brush lies to the north near an expansive patch of clover.
+
+The brush is thick and seldom leaved, showing little promise of growth.
+
+"
+A
+""
+""
+"send_to_room( #burble, room );
+
+"
+E
+"burble"
+"@BA faint burbling sound carries to your ears from the creek beside the trail.@n
+
+"
+!
+2 100 0
+660 17 1509949540 -2 0
+-1
+S
+
+#29836
+"Trail Through Quiet Woods"
+"A butterfly flutters in the distance to the west, flitting impulsively in the
+
+undergrowth.  Its wingbeats are nearly audible in the near silence of the
+
+mirona forest.  Tangles of vines and gray brush line the sides of this faint
+
+trail.  Light hangs within the canopied forest like a frozen breath; motes of
+
+dust scatter in the wilderness.  The path continues north and east.  Passage
+
+also looks possible through the heavy brush below you to the south.
+
+"
+"[Nereus] gray brush extra, add 1 south 1 down as keywords
+
+[Nereus] Room Reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29837 0 6
+D1
+""
+""
+0 -1 29835 0 6
+D5
+""
+""
+0 -1 29871 0 6
+E
+"butterfly"
+"A large violet and orange butterfly flutters through the undergrowth in the
+
+distance.
+
+"
+E
+"tangles vines"
+"Vines climbing the nearby shrubs and trees have woven themselves into a
+
+complex tangle.  They are a dark green color, the leaves showing lighter
+
+tinges of green along their veins.
+
+"
+E
+"gray brush 1 south 1 down"
+"Gray brush with limited signs of growth and few buds line the sides of the
+
+trail.
+
+"
+-1
+S
+
+#29837
+"The Disappearing Shuvana"
+"The shuvana trees are fewer here, giving way to their lesser brethren, the
+
+mirona.  The mirona, about twenty feet tall with smaller, though stout trunks,
+
+have no low-growing branches.  Their bark is soft and knotted, a grayish @ggreen@n
+
+color, and frequently pock-marked.  A faint trail runs north and south here,
+
+between the trees, bushes and other undergrowth.
+
+"
+"[Malrothe] North would be 19321
+
+[Nereus] low growing -> low-growing
+
+[Nereus] pock marked -> pockmarked
+
+[Nereus] mirona extra, soft-barked
+
+[Nereus] Room reviewed.
+
+[Malrothe] -done
+
+[Nereus] *
+
+[Malrothe] Glade of Enchantment opened at 8:20 PM Eastern Time, February 06, 2004.
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 19321 0 6
+D2
+""
+""
+0 -1 29836 0 6
+E
+"mirona trees"
+"This section of the forest is populated with soft-barked mirona trees.  Their
+
+bark is a dark, grayish green, deep curling knots covering their exterior.
+
+"
+-1
+S
+
+#29838
+"A Faint Smell of Smoke"
+"The musty smell of wood smoke hangs in the air, and although the air thickens
+
+to the south, there is no visible source of it.  The trees look beaten and
+
+slightly ashen, graying with dulled colors and rougher bark.  The layers of
+
+dark leaves form a tired facade of life within the forest.  Formed from loose
+
+dirt, the trail here is pebbly as it weaves its way through the forest.  A
+
+hazy screen of light smoke hangs in the air further south.  The way north
+
+passes beneath low vines toward a split in the trail.
+
+"
+"[Nereus] room reviewed
+
+[Malrothe] -
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29828 0 6
+D2
+""
+""
+0 -1 29839 0 6
+E
+"trees"
+"The trees here look tired and ashen.  Their bark is gashed and pitted,
+
+appearing as though it has taken much pounding over the years.
+
+"
+-1
+S
+
+#29839
+"Smoke Hanging in the Air"
+"Smoke hangs in the air, the burning comfort of mirona and ginger.  The rolling
+
+haze passes in curling waves through the trees, forming plumes of dust around
+
+the bordering hazelflower.  As the smoke rides the wind through the trees, it
+
+leaves a thin layer of ash atop them.  The grayed trees appear old and worn.
+
+Faint prints mark the trail as it continues through the forest north and south.
+
+"
+"[Nereus] layer ash > layer of ash
+
+[Nereus] prints faint extra (where do the prints lead, and whose prints are they?)
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29838 0 6
+D2
+""
+""
+0 -1 29840 0 6
+E
+"hazelflower"
+"The hazelflower is a section of flowers and dense undergrowth.  The flowers
+
+themselves grow several inches above the lower brush, forming star-shaped
+
+heads from five spade-shaped petals.  They are a pale bluish-green color and
+
+have a faint, spicy aroma.
+
+"
+E
+"faint prints"
+"A set of faint prints mark the trail.  Some of them appear to be humanoid in
+
+shape, while the others are definitely equine.  They follow the trail as it
+
+meanders north and south through the forest.
+
+"
+-1
+S
+
+#29840
+"Beaten and Withered"
+"Life looks tired of life itself.  The ashen trees look beaten and broken.
+
+Some of their trunks are warped and sickly.  Tall weeds of various lengths
+
+slump beside them.  The ground is gray and unremarkable.  No grass grows here,
+
+as it seems to have given up any struggle.  A faint hint of smoke is in the
+
+air, and it may be the source of the wild's decadence.
+
+"
+"[Nereus] cool room
+
+[Nereus] trees/trunks extra
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29839 0 6
+D2
+""
+""
+0 -1 29841 0 6
+E
+"trees trunks"
+"The trees look a bit sickly here, their trunks twisted and abnormal.  Their
+
+branches are uneven and weak, the leaves on them barely interested in existing.
+
+"
+210 9 1509949540 3 0
+-1
+S
+
+#29841
+"A Trail Through Bowed Branches and Fragrance"
+"Shorter, younger trees sit here beside the tall mironas.  Their greenish
+
+branches are long and bowed over the trail.  Pale lavender flowers and bright
+
+green leaves hang from their limbs, releasing a pleasant aroma into the air.
+
+Birds chirp noisily somewhere out of sight, singing the song of the sun's
+
+fragrance.  The underbrush is thickening with leafy, green plants which rustle
+
+periodically.  This faint trail splits in three directions, turning north,
+
+east, and west.
+
+"
+"[Nereus] Why the sudden transition between death to the north and youth and regrowth here?
+
+[Nereus] room reviewed
+
+[Malrothe] - the northern section is burnt out.
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29840 0 6
+D1
+""
+""
+0 -1 29842 0 6
+D3
+""
+""
+0 -1 29850 0 6
+E
+"younger trees"
+"These trees have thin, green trunks that are segmented much like bamboo.  The
+
+weight of their leafy branches cause them to have over the trail, and they
+
+create a kind of arching veil over the path.
+
+"
+E
+"mirona"
+"The stocky mironas stand next to the trail, next to much slimmer, younger
+
+trees.  The mironas have thick, wide trunks and are relatively short with a
+
+thickly enweaved cleavage of branches forming a canopy.
+
+"
+E
+"lavender flowers"
+"Tall flowers with fuzzy, lavender petals grow beside the trail.
+
+"
+-1
+S
+
+#29842
+"The Whistling Winds"
+"Fierce winds tear through the area, from west down an alley of trees through
+
+to the east, whistling all the way.  The gusts slash through the trees, leaves
+
+and dirt hurtling through the air in their wake.  Swirling torrents of dust
+
+and grass swing through the air in waves of motion, hitting wayward trees and
+
+smacks and clatters.  The trees seem unaffected by the winds, unmoving under
+
+their force, their upper boughs looking oblivious to the commotion below.  The
+
+trail here turns west and south, heading through the forest.
+
+"
+"[Nereus] need a value on the random acode here
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D2
+""
+""
+0 -1 29843 0 6
+D3
+""
+""
+0 -1 29841 0 6
+A
+""
+""
+"loop( all_in_room ) {
+
+  if( is_player( rch ) ) {
+
+    if( !is_sleeping( rch ) ) {
+
+      act_tochar( #wind, rch );
+
+      }
+
+    }
+
+  }
+
+"
+E
+"wind"
+"A sudden gust of wind stirs the loose dirt trail, producing a small cloud of
+
+dust.
+
+"
+!
+2 400 0
+-1
+S
+
+#29843
+"Cracked Stone"
+"From somewhere out of the depths of the earth, large, cracked slabs of stone
+
+protrude above the dirt.  Plants sprout from any open space they can find
+
+between the heavy stones.  The mironas here look old and venerable, their soft
+
+bark etched with curving grooves.  Dark, hardy bushes grow beside the trees,
+
+and a number of leafy ferns wave lightly in the breeze.  A trail of pale dirt
+
+treks through the forest to the north and south.
+
+"
+"[Nereus] what are the curving grooves in the trees?
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29842 0 6
+D2
+""
+""
+0 -1 29844 0 6
+E
+"slabs stone"
+"Large, cracked slabs of stone protrude above the earth, half covered by the
+
+forest floor and half in the open air above.  Moss and lichen clings to the
+
+rocks and thrives in fractures in the stone.
+
+"
+E
+"mironas"
+"The mironas here look old and gray-barked and leave a somber mark upon the
+
+forest.
+
+"
+E
+"hardy bushes"
+"These bushes have dark, almost violet branches and dark red buds.
+
+"
+E
+"leafy ferns"
+"These leafy ferns grow beside the trail, waving languidly in cool breezes that
+
+pass by.  Their stems are thin and light green.  Their leaves are a natural,
+
+forest green.
+
+"
+E
+"curving grooves"
+"The curving grooves appear to be the irregular breaking of the trees' outer
+
+bark.  Weathering, and perhaps some insect, has aided in creating this strange
+
+feature of the trees.
+
+"
+2506 9 1509949540 3 0
+-1
+S
+
+#29844
+"The Cracking of Bark"
+"The haunting sound of cracking bark reverberates through the air.  Far above,
+
+a passing crow looses a howl, echoing the pain of the lands below.  The nearby
+
+trees are beaten and aging; their creased bark seems to betray a forlorn,
+
+heavy-hearted nature.  Beneath the canopies, the sparse vegetation is meek and
+
+frail.  The distant depths of the forest disappear into an amalgam of
+
+vegetation and darkness.  The path leads north and south through this old
+
+section of the forest.
+
+"
+"[Nereus] comma after howl, second sentence
+
+[Nereus] heavy hearted > heavy-hearted
+
+[Nereus] nearby trees extra
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29843 0 6
+D2
+""
+""
+0 -1 29845 0 6
+E
+"nearby trees"
+"The nearby trees are old and are beginning succumb to the rigors of time.
+
+Their bark is beginning to crack irregularly in some places, and in others it
+
+is beginning to peel off.
+
+"
+415 17 1509949540 -2 0
+-1
+S
+
+#29845
+"Wispy Leaves and Blossoms"
+"Tall, thick-leaved grass clutters the sides of the trail, their lengths
+
+tapering to fine, wispy points.  Pale yellow dustflower climbs above the
+
+threads of grasses, poking their small blossoms up above them.  Other darkly
+
+barked bushes are sprouting bright blue flowers that stand out among the other
+
+pastel colors.  The tall mironas, with their lack of low-growing limbs,
+
+continue to side the trail as it creeps through the forest north and west.
+
+"
+"[Nereus] thick-leaved grass extra
+
+[Nereus] is paisly spelled paisley? (dustflower extra)
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29844 0 6
+D3
+""
+""
+0 -1 29846 0 6
+E
+"dustflower"
+"These wildflowers have small, paisley yellow petals flecked with gray and
+
+white.  The petals' surfaces are gritty and rough.
+
+"
+E
+"dark bushes"
+"These dark bushes have a dark crimson-violet bark in sharp contrast to the
+
+bright greens of much of this section of this forest.  Bright blue flowers
+
+sprout from the bushes.  Long, satiny petals skirt a reddish center of stamens.
+
+"
+E
+"thick-leaved grass"
+"Grass with thick, broad leaves grows beside the trail.  Their bright green
+
+lengths taper to fine points.
+
+"
+-1
+S
+
+#29846
+"Trail Under Loud Canopies"
+"The trail is a path of light dirt and a small bit of sand, looking to be no
+
+more than a deer's work through the forest's depths.  Faint lines and
+
+depressions, perhaps tracks, are imprinted upon the soil.  The occasional rock
+
+or pebble is buried in the trail, marked by its white sheen in the gritty
+
+dirt.  In the canopies above, thick with bright @ggreen@n leaves, birds sing
+
+loudly and a few unseen animals squeal in response.  The trail continues
+
+through the forest east and west.
+
+"
+"[Nereus] suggest pebble/sand/snail reset here
+
+[Nereus] canopies extra, perhaps, since there's a green word that will call attention
+
+[Nereus] room reviewed
+
+[Nereus] This whole loop section we need more mobs - it's too sparse
+
+[Malrothe] -done
+
+"
+301465600 0
+3 6 0
+D1
+""
+""
+0 -1 29845 0 6
+D3
+""
+""
+0 -1 29847 0 6
+E
+"depressions lines tracks"
+"These faint outlines are almost entirely eroded, and it's unclear whether they
+
+were some animals' tracks or just the mark of some fallen debris.
+
+"
+E
+"canopies"
+"The canopies overhead, in daytime backlit by the sun above, are a mesh of
+
+green leaves and branches.  They form a blanket that permits only a scattering
+
+light onto the forest floor below.
+
+"
+1410 17 1509949540 -2 0
+365 9 1509949540 3 0
+-1
+S
+
+#29847
+"The Sound of Silence"
+"A vacuous silence hangs in the air, though the common rustle of the forest and
+
+wildlife is everpresent.  It has the sonic quality of the aftermath of an
+
+explosion; it is the acuity of noise, the hesitation of motion, and the
+
+unspoken anticipation of will.  All of the woods partake in this suspension of
+
+state, devoid of any whim or putrefaction.  The trail curves through here,
+
+turning north, west, and south into the endless distances of trees.
+
+"
+"A rapturous verbatim-someone said but who is to know
+
+[Nereus] like the room
+
+[Nereus] Might want to say here that the trail narrows as it begins a descent into a valley to the west - otherwise people won't know why the next room is horse-sized
+
+[Nereus] room reviewed
+
+[Malrothe] -done, fixed all the room sizes.
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29848 0 6
+D1
+""
+""
+0 -1 29846 0 6
+D3
+""
+""
+0 -1 29851 0 6
+-1
+S
+
+#29848
+"Flowers and Hearts of Gold"
+"The trees crowd overhead; the canopy gasps for air beneath an oppressive sky;
+
+but the life below bristles with energy.  Large petaled flowers grow beside
+
+the trail in clumps of color.  Red, with centers of brilliant gold, they
+
+reflect the diaphanous vigor of the sun.  The dirt trail plods meekly through
+
+this channel of fertility, leading north and south.
+
+"
+"[Nereus] I would consider adding a hummingbird mob and removing them from the rdesc
+
+[Nereus] might make it with an attack trigger so it darts away most of the time
+
+[Nereus] room reviewed
+
+[Nereus] (see also mob 2458)
+
+[Nereus] hummingbird wings might be a sweet reagent as well...
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29849 0 6
+D2
+""
+""
+0 -1 29847 0 6
+E
+"flowers"
+"These large flowers have bright red petals surrounding a center of gold.
+
+Fiery and vibrant, these flowers stand out even among the local cacophony of
+
+life.
+
+"
+932 9 1509949540 3 0
+1434 9 1509949540 3 0
+-1
+S
+
+#29849
+"Ivy Watches the Way"
+"Tresses of greenish black vines climb the trees beside the trail, displaying
+
+thick leaves and small, @mpurple@n berries.  The vines are wrapped in coils around
+
+the trees and are reminiscent of young clutching worriedly to its mother.
+
+They curve in toward the trail at their ends, as if peering with some timid
+
+curiosity at the path below.  The trail makes its way through the forest north
+
+and south.
+
+"
+"[Nereus] can't have purple berries without tempting players into trying to pick them
+
+[Nereus] berries extra (include them in vine extra)
+
+[Nereus] like the vine analogy in the rdes
+
+[Nereus] room reviewed
+
+[Nereus] might make them poisonous but have some advantageous affect also (str+poison?_
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29850 0 6
+D2
+""
+""
+0 -1 29848 0 6
+E
+"tresses vines berries"
+"The vines wrap in coils and curving trails around the nearby mirona trees,
+
+reaching with their berry budding lengths nearly to the uppermost reaches of
+
+the trees.  At their ends, they fall away from the tree, some of them hanging
+
+over the trail with in strangely paternal curiosity.  Purple berries grow
+
+beneath the vines' leaves, carefully guarded and protected by them.
+
+"
+A
+"pick"
+"purple berries berry"
+"act_tochar( \"As you reach for one of the purple berries, the vine curls away from you, and a leaf protectively covers the berry.\", ch );
+
+act_notchar( \"$n reaches for a berry on one of the vines, but the vine recoils away from $m into the canopy.\", ch );
+
+"
+!
+0 0 0
+-1
+S
+
+#29850
+"Parting Shadows"
+"Dark shadows creep across the ground, tiny fingers of absentia in the forest.
+
+This tract of dismal forest is dark and gloomy, but its shadows are sharp and
+
+marked.  Their contrast with the light is remarkable, making them almost
+
+foreign, and perhaps it is the lighter soil here that is at fault.  The pale
+
+tan dirt and sand mixture that forms the trail is clear as it turns a corner
+
+east and south, but the periphery of striking shadows is distracting.  A
+
+staccato silence marks the intervals between sounds, and everything here seems
+
+strangely amplified and otherworldly.
+
+"
+"[Nereus] dirt/sand extra (what's the difference between the light and dark dirt?)
+
+[Nereus] shadows extra
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D1
+""
+""
+0 -1 29841 0 6
+D2
+""
+""
+0 -1 29849 0 6
+E
+"dirt sand"
+"The dirt here appears lighter, as it seems to have mixed with sand into a
+
+coarser, drier material.  Instead of black or dark brown, it is now a tan or
+
+very light brown color.
+
+"
+E
+"shadows"
+"Frightening shadows appear in great numbers here, and whether they are
+
+actually reacting to the light or moving on their own is in question.  They
+
+creep across the ground eerily, appearing to almost glide slightly above the
+
+forest floor.
+
+"
+-1
+S
+
+#29851
+"Approaching Steep Slopes"
+"Steep slopes rise suddenly beside the trail, forcing any travel through the
+
+valley between them.  The slopes are wooded and dense with dark shrubbery.
+
+The bases of the slopes are muddy and slick, with bits of wood and leaves
+
+buried in them.  Rising quickly to a height of several hundred feet, the
+
+slopes are unclimbable and perhaps unexplored.  The path plunges into the
+
+valley to the west, while to the east it leads into the forest.
+
+"
+"[Nereus] second sentence looks like a fragment
+
+[Nereus] Are these cliffs or just hills to the north and south?  NW and SW?
+
+[Nereus] You say they're unclimbable - how about a code for those who try to
+
+climb them, since saying something is unclimbable is a temptation to try :)
+
+[Nereus] slopes extra might help establish better where they are from here
+
+[Nereus] suggest search acode for bits wood leaves
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 8 0
+D1
+""
+""
+0 -1 29847 0 6
+D3
+""
+""
+0 -1 29852 0 6
+E
+"slopes"
+"Slopes rising to the northwest and southwest form steep hills and a valley
+
+between them.  The wooded slopes are slick with mud and condensation.
+
+"
+A
+"search"
+"base bits wood leaves mud"
+"act_tochar( #search1, ch );
+
+act_notchar( #rsearch1, ch );
+
+wait( 2 );
+
+if( ch ) {
+
+  if( rflag( reset0, room ) ) {
+
+    act_tochar( #search2, ch );
+
+    act_notchar( #rsearch2, ch );
+
+    obj_to_char( oload( 1594 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #darn, ch );
+
+    act_notchar( #rdarn, ch );
+
+    }
+
+  }
+
+"
+E
+"search1"
+"You plunge your hands into the muddy base of the slopes, hoping to find a
+
+magic sword or perhaps a pot of gold.
+
+"
+E
+"rsearch1"
+"$n plunges $s hands into the muddy base of the slopes with an expectant look
+
+on $s face.
+
+"
+E
+"search2"
+"With a squeal of glee, you extract a dead worm from the muddy conglomerate.
+
+"
+E
+"rsearch2"
+"$n squeals in glee as $e extracts a dead worm from the muddy mess.
+
+"
+E
+"darn"
+"You found nothing but mud and leaves in the mud and leaves.
+
+"
+E
+"rdarn"
+"$n pulls $s hands out of the mud, dirty but empty.
+
+"
+!
+0 0 0
+A
+"climb"
+"slopes"
+"act_tochar( \"You try to climb the slope but are unable to scale its slick surface.\", ch );
+
+act_notchar( \"$n tries to climb the muddy slope but slides back down.\", ch );
+
+"
+!
+0 0 0
+-1
+S
+
+#29852
+"Through A Narrow Corridor"
+"A narrow valley cuts a path between steep slopes on both sides.  The slopes
+
+are wooded with dark green foliage and tough shrubbery.  Stout trees adorn the
+
+slope's sides, forming a densely wooded barrier.  The depths of the forest are
+
+deep and dark, and this valley cuts the only lit path through it as it follows
+
+the slopes south and east.
+
+"
+"[Nereus] forest extra
+
+[Nereus] might want to talk about the path in an extra - it's narrow and horse-wide ,and presumably dirt?  Or covered with leaves?
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 8 0
+D1
+""
+""
+0 -1 29851 0 6
+D2
+""
+""
+0 -1 29853 0 6
+E
+"forest"
+"The depths of the wooded slopes are too dense and dark to be visible.
+
+"
+2506 9 1509949540 3 0
+-1
+S
+
+#29853
+"Beside A Rockfall"
+"Resting in a haphazard pile at the base of the eastern slopes are a
+
+considerable number of large rocks and boulders.  The rockfall's gravelly path
+
+of destruction is visible upon the slopes, where a track of dirt, uptorn brush
+
+and crushed trees marking its long plummet from above.  Many of the
+
+defenseless victims can be seen beneath the rubble; branches and limbs with
+
+dying leaves peak out from beneath the stone pile.
+
+"
+"[Nereus] suggest adding code to search rock fall
+
+[Nereus] might load something interesting
+
+[Nereus] need value > 0 in the random code to fire
+
+[Nereus] room reviewed
+
+[Nereus] add pile keyword to the extra
+
+[Malrothe] -done
+
+[Malrothe] the meteorite isn't useful now, but maybe later.
+
+[Nereus] *
+
+"
+301465600 0
+3 8 0
+D0
+""
+""
+0 -1 29852 0 6
+D2
+""
+""
+0 -1 29854 0 6
+E
+"rocks boulders rockfall pile"
+"Countless large rocks and boulders have fallen from the heights above,
+
+destroying much of the forest in their path, and now lie here beside the path.
+
+"
+A
+""
+""
+"loop( all_in_room ) {
+
+  if( is_player( rch ) ) {
+
+    if( !is_sleeping( rch ) ) {
+
+      act_tochar( #rock, rch );
+
+      }
+
+    }
+
+  }
+
+"
+E
+"rock"
+"A stray rock tumbles down from the slopes and lands in the pile of rocks with
+
+a smack.
+
+"
+!
+2 200 0
+A
+""
+"pile rocks rockfall boulder"
+"if( rflag( reset0, room ) && random( 1, 100 ) == 1 ) {
+
+  act_tochar( #whoa, ch );
+
+  act_notchar( #rwhoa, ch );
+
+  obj_to_char( oload( 4602 ), ch );
+
+  remove_rflag( reset0, room );
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  remove_rflag( reset0, room );
+
+  }
+
+"
+E
+"whoa"
+"@BSearching through the large pile of rocks and boulders, you find one strange-
+
+looking fragment.@n
+
+"
+E
+"rwhoa"
+"$n searches through the pile of rocks and boulders, taking a sparkling piece
+
+from it.
+
+"
+E
+"nope"
+"You search through the pile of rocks and boulders but find nothing interesting.
+
+"
+E
+"rnope"
+"$n rummages through the pile of rocks but takes nothing from it.
+
+"
+!
+9 0 0
+78 17 1509949540 -2 0
+-1
+S
+
+#29854
+"The Distant Sound of Rushing Water"
+"The forest floor shakes under the influence of a distant baritone rumble.
+
+Unlike the threating roar of thunder, this is the soothing sound of an endless
+
+rush of water rushing through the wilderness and falling upon rocks.  Quaking
+
+through this corridor, the deep rumble seems to come from all about, but there
+
+is no source in the vicinity.  An unnatural rock formation on the eastern side
+
+is constructed from long slabs of stones into a box-shaped figure, but it does
+
+not appear accessible from here.  The valley corridor winds its way through
+
+the slopes to the north, while nearby to the south it appears to open up.
+
+"
+"[Malrothe] closed east to room 29857 until a future time.
+
+[Nereus] box shaped > box-shaped
+
+[Nereus] you talk about how we're in a corridor, but what's west and east, a rock face?  A steep slope?
+
+[Nereus] I like the unnatural rock formation
+
+[Nereus] add 1 east, box-shaped to the list of keywords for the formations
+
+[Nereus] extra slabs: Their > there
+
+[Nereus] might want to add some teaser actions here about getting into the corridor
+
+[Nereus] How might you eventually let people inside?
+
+[Nereus] room reviewed
+
+[Nereus] suggest making this room no.mob to make it creepier - animals avoid it
+
+[Malrothe] -done
+
+[Malrothe] I would have just let them walk in, but perhaps a ritual is in order.
+
+[Malrothe] |__--> depends on what this formation ends up being.
+
+[Malrothe] corridor, valley, neck, path.. east and west are steep slopes, same as to the north.
+
+[Nereus] *
+
+"
+301465608 0
+3 8 0
+D0
+""
+""
+0 -1 29853 0 6
+D1
+""
+""
+98530 -1 29857 0 6
+D2
+""
+""
+0 -1 29855 0 6
+E
+"rock formation slab stones 1 east box-shaped"
+"The rock formation is composed of a number of long, thick slabs of stone which
+
+appear unnaturally cut.  Eight to ten of the slabs have been put together to
+
+form a box-like structure that lies a fair distance away from the trail.
+
+There doesn't appear to be any visible entrance to the structure, as all sides
+
+are sealed by stone.
+
+"
+-1
+S
+
+#29855
+"The Changing Forest"
+"Wooded slopes to the north taper off, and the narrow valley that cuts through
+
+them to the north widens slightly to the south as the forest levels off.  This
+
+dense, wild forest is thick with stout mirona trees and leafy shrubs.  Short-
+
+leaved ferns can be seen deeper in the forest, while nearer the path,
+
+flowering bushes flourish.  This path, little more than a dirt trail through
+
+the forest, continues north and south.
+
+"
+"[Nereus] short, leaved ferns or short-leaved ferns
+
+[Nereus] rextras for flowering bushes and ferns
+
+[Nereus] room reviewed
+
+[Malrothe] - done
+
+[Nereus] *
+
+"
+301465600 0
+3 8 0
+D0
+""
+""
+0 -1 29854 0 6
+D2
+""
+""
+0 -1 29856 0 6
+E
+"flowering bushes"
+"Black-barked bushes with small, yellow and violet clusters of flowers flourish
+
+beside the trail, where they can absorb the most sunlight.
+
+"
+E
+"short-leaved ferns"
+"Just beyond the fringe of bushes that lines the trail, ferns grow deeper in
+
+the forest.  Standing four to five feet tall, these plants seem to flourish in
+
+the environment.
+
+"
+-1
+S
+
+#29856
+"Trail Near Pollybursts"
+"The heavily worn trail angles from west to north, while splashes of blue,
+
+green, and red light illuminate the trail.  The sources of the light are
+
+strangely glowing flowers.  Colorful lights from within show through the waxen
+
+petals, casting pools of shimmering light upon the nearby trail.  Only a few
+
+of the brilliant flowers are thriving in the thick, leafy forest vegetation.
+
+"
+"[Nereus] this room reminds me of pixies
+
+[Nereus] it'd be neat if some sort of invisible fairy reset here sometimes, maybe at night, that you could chat with
+
+[Nereus] maybe she knows about how to get into the box-shaped formation further north
+
+[Nereus] second sentence needs another 'a'
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Malrothe] i like this idea
+
+[Nereus] *
+
+"
+301465600 0
+3 8 0
+D0
+""
+""
+0 -1 29855 0 6
+D3
+""
+""
+0 -1 29859 0 6
+E
+"flower pollybursts"
+"Tall flowers with thick, waxen petals grow beside the trail, illuminating the
+
+ground with pools of colored light.  Varying in color from red, to blue, to
+
+green, the pollybursts glow with an vibrant inner light.  They shed irregular
+
+pools of light upon the ground, often on top of each other, creating
+
+intermediate sections of yellow, violet, and indigo.
+
+"
+A
+"pick"
+"flower pollyburst"
+"if( rflag( reset0, room ) ) {
+
+  i = random( 1, 50 );
+
+  if( i == 1 ) {
+
+    act_tochar( #success, ch );
+
+    act_notchar( #rsuccess, ch );
+
+    j = random( 1, 3 );
+
+    remove_rflag( reset0, room );
+
+    if( j == 1 )
+
+      obj_to_char( oload( 4586 ), ch );
+
+    if( j == 2 )
+
+      obj_to_char( oload( 4587 ), ch );
+
+    if( j == 3 )
+
+      obj_to_char( oload( 4588 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+"
+E
+"success"
+"You find a healthy flower and pluck it from the ground.
+
+"
+E
+"rsuccess"
+"$n plucks one of the glowing flowers from the ground.
+
+"
+E
+"nope"
+"You try to take one of the flowers, but its light extinguishes as soon as it
+
+leaves the soil.
+
+"
+E
+"rnope"
+"$n tries to pick one of the glowing flowers, but its light extinguishes as
+
+soon as it leaves the soil.
+
+"
+!
+0 0 0
+-1
+S
+
+#29857
+"A Torch-Lit Cavern"
+"Under Construction.
+
+"
+""
+301465600 0
+3 6 0
+D1
+""
+""
+0 -1 29858 0 6
+D3
+""
+""
+98530 -1 29854 0 6
+-1
+S
+
+#29858
+"A Serene Tomb"
+""
+"[Malrothe] i'd like something intriguing here... a link to another plane, zone... some story.
+
+[Nereus] cool
+
+"
+301465600 0
+3 6 0
+D3
+""
+""
+0 -1 29857 0 6
+-1
+S
+
+#29859
+"Near a Spiny Nest"
+"A few feet from the trail's edge, nearly hidden in the forest under brambles
+
+and leafy ferns, sits a spiny mound several feet across.  The mound is formed
+
+from dark, moist sand and is circular in shape.  Spines as thin as threads
+
+project from the mound's surface and would be nearly invisible if not for
+
+their bright yellow color.  Passing this strange structure, the path leads
+
+east and west through the forest.  A loud rumbling sound from the west carries
+
+through the forest.
+
+"
+"[Nereus] cool nest
+
+[Nereus] add nest as a keyword to the search
+
+[Nereus] and structure - the keywords for the extra and action should match
+
+[Nereus] suggest opening extra - the opening into the nest
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 8 0
+D1
+""
+""
+0 -1 29856 0 6
+D3
+""
+""
+0 -1 29860 0 6
+E
+"mound hole nest opening structure"
+"A mound of dark, moist sand sits just off the trail, covered by brambles and
+
+hidden by thick ferns.  Needle-thin spines protrude from the nest, barely
+
+visible in the jungle of undergrowth.  There appears to be a large opening on
+
+one side, though the inside is too dark to make out.
+
+"
+A
+""
+"mound hole nest opening structure"
+"if( rflag( reset0, room ) ) {
+
+  act_tochar( #bug, ch );
+
+  act_notchar( #rbug, ch );
+
+  mload( 2752, room );
+
+  if( random( 1, 3 ) == 1 )
+
+    remove_rflag( reset0, room );
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+"
+E
+"bug"
+"You reach into the spiny mound, disturbing a shelled bug!
+
+"
+E
+"rbug"
+"$n reaches into the spiny mound, disturbing a shelled bug!
+
+"
+E
+"nope"
+"You feel around in mound, finding nothing.
+
+"
+E
+"rnope"
+"$n reaches into the spiny mound but appears to find nothing.
+
+"
+!
+9 0 0
+-1
+S
+
+#29860
+"High Banks of the Redwash River"
+"The roaring waters of the Redwash River rush by below.  The cresting waves,
+
+and in fact the entire river, appear red as they runs their course southward
+
+over a high waterfall.  Steep, thirty foot-tall slopes, craggy with slick,
+
+mossy outcroppings of rock prevent descent into the river from here.  Further
+
+north, the banks are more accessible, while to the south the cliffs drop
+
+beside the waterfall down to the forest floor below.
+
+"
+"[Nereus] second sentence is redundant.  Suggest something like \"The water,
+
+especially the cresting waves, appears red with sediment...\"
+
+[Nereus] Does the slope to the west drop off into the river?  If so, how about letting me jump in :)
+
+[Nereus] outcroppings of rock might sound better
+
+[Nereus] extra for river - maybe I could see from this vantage point where it comes from, how windy it is, etc
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Malrothe] jumping would be good.. but maybe better for later when the path is more developed. There's really nowhere for them to go.
+
+[Nereus] *
+
+"
+301465600 0
+3 8 0
+D0
+""
+""
+0 -1 29861 0 6
+D1
+""
+""
+0 -1 29859 0 6
+E
+"redwash river"
+"After the Redwash plummets over the waterfall, it crashes into a large basin
+
+below before continuing its course southward.  It winds its way through a
+
+landscape that slowly changed from a temperate to a more boggy forest.  Its
+
+red color seems to diminish as it stretches into the distance, where it
+
+disappears from sight.
+
+"
+415 17 1509949540 -2 0
+-1
+S
+
+#29861
+"Beside the Redwash River"
+"The crimson waters of the Redwash River carve a path through the dark forest
+
+as they rush south.  The flora and stout mirona trees flourish at the
+
+riverside, though just to the west the path approaches the river's banks
+
+uninhibited.  Across the river, the path appears to continue on its western
+
+side.  Southward, the path approaches a cliff's edge, where the rapids of the
+
+river are disappearing over an unseen, but not unheard, waterfall.
+
+"
+"[Nereus] trees, flora extra maybe
+
+[Nereus] add no-show object for redwash river
+
+[Nereus] I added you a liquid, sediment stained water.  If you like I can change the color/apearance
+
+[Nereus] tset liquid on a fountain object to set liquid type
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 8 0
+D2
+""
+""
+0 -1 29860 0 6
+D3
+""
+""
+0 -1 29862 0 6
+E
+"trees"
+"Stout mirona trees flourish at the riverside, feasting upon its nutrient rich
+
+water.
+
+"
+122 9 1509949540 3 0
+4603 17 1509949540 -2 51
+-1
+S
+
+#29862
+"In the Redwash River"
+"A red river rushes through from the north, carrying with it red sand and
+
+sediment.  The sudsing rapids brim with reddish foam that coats nearby rocks
+
+and boulders with its crimson residue.  The rapids north and south of here are
+
+too fierce to continue through, but paths on either side of the river lead
+
+into the forest.
+
+"
+"[Nereus] Add no.show river object here also
+
+[Nereus] Why is the river horse-sized here?
+
+[Nereus] Suggest making this no.mount if it's slick and difficult to cross
+
+[Nereus] Suggest random rapid action here
+
+[Nereus] room reviewed
+
+[H] residue/rock/boulder extra
+
+[Malrothe] -done
+
+[Nereus] *
+
+[Nereus] It'd be cool once this was done if you could fall in and go over the waterfall to the south
+
+"
+301465600 0
+8 8 0
+D1
+""
+""
+0 -1 29861 0 6
+D3
+""
+""
+0 -1 29863 0 6
+E
+"residue rock boulder"
+"The rocks and boulders that manage to stand against the turbulent rapids of
+
+the river are covered with a layer of crimson residue.  It appears to be a
+
+gritty collection of red sand or other sediment that has built up from the
+
+river's wash.
+
+"
+A
+""
+""
+"send_to_room( \"Turbulent rapids sweep red sediment and debris further downstream, and you struggle to steady yourself.\", room );
+
+"
+!
+2 200 0
+4603 17 1509949540 -2 51
+-1
+S
+
+#29863
+"West of the Redwash River"
+"A soggy path weaves its way through the lush forest, twisting from east to
+
+south alongside a river to the east.  The river's waters create a fine @r@Rred@n@n
+
+mist as they rush by, and much of the riverside is thick with the crimson
+
+residue.  To the east, a break in the rapids allows safe passage through the
+
+water.  Southward, the trail, hemmed in by mirona trees and tall ferns,
+
+plunges further into the forest.
+
+"
+"[Nereus] Like the river's name
+
+[Nereus] soggy path extra
+
+[Nereus] trail extra
+
+[Nereus] add no.show river objec there
+
+[Nereus] room reviewed
+
+[H] river's waters created -> river's waters have created
+
+[H] twisting from west to south? east to south?
+
+[H] or is there extra path to go westwards?
+
+[H] residue extra, it's interesting
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 8 0
+D1
+""
+""
+0 -1 29862 0 6
+D2
+""
+""
+0 -1 29864 0 6
+E
+"soggy path trail"
+"The path near the river is soggy from the constant spray upon the shore from
+
+the river.  Southward, the path dries up as it continues through the forest.
+
+"
+E
+"residue riverside"
+"Collecting upon the riverside is a thin film of gritty residue from the river
+
+rushing by.  The grains are even finer than sand, almost silt, and barely
+
+visible to the human eye.  Their red color is peculiar and striking upon the
+
+shore.
+
+"
+755 17 1509949540 -2 0
+4603 17 1509949540 -2 51
+-1
+S
+
+#29864
+"West Bank of the Redwash"
+"Falling away from the forest to the east, steep thirty-foot banks rise above a
+
+red river to the east.  From here, the coarse rapids look violent and angry,
+
+roaring red through the corridor below.  This trail runs alongside the rapids,
+
+through a forest of stout, soft-barked trees with thick canopies of bright
+
+green leaves.  The florae below struggle to grasp what snatches of sunlight
+
+they can from the obscured sky above.  To the north, the path continues
+
+through the forest.  Southward, the trail drops out of sight and the world
+
+opens up.
+
+"
+"[Nereus] thirty-food > thirty-foot (were you hungry when writing this room?)
+
+[Nereus] floar > flora
+
+[Nereus] extra for flora (what kind of plants are here?)
+
+[Nereus] room reviewed
+
+[H]
+
+[Malrothe] -done
+
+[Malrothe] but unsure if flora acts as a singular or plural noun... \"the flora struggles\" or \"the flora struggle\" ?
+
+[Nereus] *
+
+"
+301465600 0
+3 8 0
+D0
+""
+""
+0 -1 29863 0 6
+D2
+""
+""
+0 -1 29865 0 6
+E
+"flora"
+"A number of ferns and dark bushes line the trail's side, along with other
+
+leafy vegetation and the occasional fungus.
+
+"
+-1
+S
+
+#29865
+"Cliffs Beside Red Falls"
+"The forest floor begins to wear away beneath you, revealing hard limestone
+
+beneath.  A rocky cliff drops away to the south, and far below the forest
+
+floor is barely visible.  The deafening roar of the Redwash River to the east
+
+is like the ferocious, guttural bellow of a dragon.  The water careens over
+
+the side of the cliff in a magnificent spray of red water and drops in a
+
+constant crash to the stone basin below.  Northward, the trail carves a path
+
+through the forest.
+
+"
+"[Nereus] Climb down cliff teaser here, saying that a recent rockslide blocks the way down, or a wash from the river prevents climbing down.  Suggest it might be cleared someday?
+
+[Nereus] like the dragon bellow
+
+[Nereus] cliff extra is desirous
+
+[Nereus] River extra - where's the river head south of here?
+
+[Nereus] room reviewed
+
+[H] south extra to go with river extra - should be a good view from here
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 8 0
+D0
+""
+""
+0 -1 29864 0 6
+E
+"cliff"
+"The cliff is a jagged, immense beast, descending hundreds of feet to the
+
+forest floor below.  Brown and gray stone make up most of the cliffside,
+
+though an occasional bush seems to have found a niche within which to live
+
+even at dizzying heights and impossible angles.
+
+"
+E
+"river 1 south"
+"After the Redwash plummets over the waterfall, it crashes into a large basin
+
+below before continuing its course southward.  It winds its way through a
+
+landscape that slowly changed from a temperate to a more boggy forest.  Its
+
+red color seems to diminish as it stretches into the distance, where it
+
+disappears from sight.
+
+"
+A
+"climb"
+"1 down cliff"
+"act_tochar( \"You swing your legs over the cliff, but, finding no footholds to continue your descent, you clamber back atop the cliff.\", ch );
+
+act_notchar( \"$n attempts to climb down the cliff but appears to find no suitable path of descent.\", ch );
+
+"
+!
+0 0 0
+78 17 1509949540 -2 0
+-1
+S
+
+#29868
+"A Brush Ravine"
+"Heavy brush and countless bushes, thick with numerous branches of dark buds,
+
+fill this ravine and hinder travel.  The unattractive gray branches are hard
+
+and unfriendly.  Their buds are a dark violet with a tinge of green where
+
+they're beginning to open up.  In the center of the bushes where the branches
+
+meet, there is a heart of silver like the light of the moon.  Just above this
+
+ravine to the east, a trail passes through the forest.  The ravine leads west
+
+out of sight around a corner.
+
+"
+"[Nereus] brush extra: only a few -> only a few of
+
+[Nereus] Room reviewed
+
+[Malrothe] -done
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D3
+""
+""
+0 -1 29869 0 6
+D4
+""
+""
+0 -1 29831 0 6
+E
+"brush bushes"
+"Rough patches of brush mix with innumerable bushes and make travel difficult.
+
+The bushes are dark barked, with dark buds to match, though only a few of them
+
+have begun to break and blossom into flowers.  At the heart of each bush is a
+
+center of silver that resonates in color the sheen of the moon.
+
+"
+-1
+S
+
+#29869
+"The Ravine Turns"
+"This ravine, cluttered with plants fighting for their right to live among the
+
+wealth of greenery, turns from north to east alongside a trail just to the
+
+northeast.  Some willows lean over the trail here, letting their leaves lie
+
+languidly in the clear air.  The base of the ravine is covered with dark,
+
+compact dirt, speckled with fragments of white detritus.  Shed leaves and
+
+branches lie haphazardly all around, providing shelter for unseen insects and
+
+fungus.  To the east, the trail above you seems more accessible, while to the
+
+north the ravine is dense with vegetation.
+
+"
+"[Nereus] turns to from -> turns from
+
+[Nereus] willows extra:  raise trail -> raised trail
+
+[Nereus] Room reviewed
+
+[Nereus] How about resetting a deer or bird or some such down in this ravine?
+
+[Malrothe] -done, deer further north
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29870 0 6
+D1
+""
+""
+0 -1 29868 0 6
+E
+"willows"
+"Willows with pale bark lean over the trail from their heights on the raised
+
+trail to the east.  They look healthy and dance softly in the wind.
+
+"
+415 17 1509949540 -2 0
+-1
+S
+
+#29870
+"Ravine Beside a Trail"
+"This ravine cuts a path through the forest beside a trail on higher ground to
+
+the east.  The ravine is filled with bushes, tall dustflowers, and a small
+
+amount of brambles.  The plants seem to enjoy this niche, free from the
+
+oppressive canopy of trees that dominates much of the forest.  Colored with
+
+unflattering grays, browns, and blacks, the plants are not particularly
+
+vibrant.  A scant amount of green leaves breaks up the otherwise monotonous
+
+scenery.  The ravine continues north and south.
+
+"
+"[Malrothe] -
+
+[Nereus] *
+
+"
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 29871 0 6
+D2
+""
+""
+0 -1 29869 0 6
+E
+"bushes dustflowers brambles"
+"A number of bushes, some with bright green leaves and others only showing the
+
+beginnings of violet buds, fill this section of the ravine.  Tall flowers with
+
+long, pale yellow petals, dustflowers, grow amidst the bushes and brambles
+
+that populate the area.
+
+"
+A
+"pick take"
+"flower dustflower"
+"act_tochar( \"None of these flowers are worth taking.\", ch );
+
+"
+!
+0 0 0
+-1
+S
+
+#29871
+"A Dense Ravine"
+"A ravine, dense with brush and weeds, runs south from here away from a fallen
+
+tree to the north.  The tree seems to be newly fallen, not yet visibly
+
+decaying and still retaining a hint of green in its leaves.  Just above the
+
+ravine to the east, a clearing in the forest shows to be a trail.  The ravine
+
+continues a short distance to the south, through a dense thicket of dark
+
+bushes, tall, flowering weeds, and some fungi.  Its end is obscured from sight
+
+by all the foliage.
+
+"
+"[Nereus] Extras - fungi weeds, bushes
+
+[Nereus] Might suggest a search here to pick some fungi or flowering weeds that are marginally edible
+
+[Nereus] room reviewed
+
+[Malrothe] -done
+
+"
+301465600 0
+3 6 0
+D2
+""
+""
+0 -1 29870 0 6
+D4
+""
+""
+0 -1 29836 0 6
+E
+"fungi"
+"Chocolate brown mushrooms grow in a small patch in the ravine.  Their caps are
+
+vertically elongated and ridged, and they have bulbous brown stalks.
+
+"
+E
+"weeds"
+"Short weeds with jagged leaves grow in the soil, threatening the nearby
+
+vegetation.  They have small yellow and white flowers with tiny, fragile
+
+petals.
+
+"
+E
+"thicket dark bushes"
+"A thicket of bushes have grown together in the ravine's basin.  Their dark
+
+branches interweave in countless entanglements.  Broad, green bushes grow from
+
+the many bushes.
+
+"
+A
+"pick"
+"flowering weed"
+"act_tochar( \"The weeds are too small and fragile to be worthwhile.\", ch );
+
+"
+!
+0 0 0
+A
+"search get take"
+"fungi fungus"
+"if( rflag( reset0, room ) ) {
+
+  act_tochar( #mush, ch );
+
+  act_notchar( #rmush, ch );
+
+  obj_to_char( oload( 4599 ), ch );
+
+  remove_rflag( reset0, room );
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  }
+
+"
+E
+"mush"
+"You find a healthy brown mushroom and pluck it from the ground.
+
+"
+E
+"rmush"
+"$n reaches down and plucks a brown mushroom from the forest floor.
+
+"
+E
+"nope"
+"None of the mushrooms are mature enough to be worth taking.
+
+"
+!
+0 0 0
+2509 9 1509949540 3 0
+-1
+S
+
+#0
+

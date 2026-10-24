@@ -1,0 +1,2275 @@
+#AREA
+"The Ruined Shrine"
+"Orb"
+""
+1 0
+3
+0
+#ROOMS
+
+#60000
+"Before an Intricately Carved Stone Door"
+"The vaulted ceiling of this wide cavern disappears into darkness and the
+
+rough, uneven stone of the floor is littered with gravel and small shards of
+
+stone.  A pair of beautifully engraved stone doors graces the west wall with
+
+unexpected intricacy, a striking contrast to the crude cavern.  The richly
+
+carved doors have been splashed with a red substance from which a wavering
+
+circle has been drawn.
+
+"
+"Right outside the cathedral door
+
+nomob
+
+"
+301465612 0
+0 6 0
+D3
+"intricately carved door"
+""
+3 -1 60004 0 6
+E
+"door west stone"
+"Interlacing spirals and abstract swirls border the doors, embracing the nine
+
+stars that are engraved in the middle.  A stylized hourglass is set in the
+
+middle of the doors, and is bisected by the almost invisible line where the
+
+doors meet.  A wide, wavering circle of red with a missing arc near the top
+
+top right has been drawn around the hourglass.
+
+"
+-1
+S
+
+#60001
+"A Ruined Shrine - A Hidden Tunnel"
+"The rough stone walls are covered in soot, the remnants of countless torches
+
+having burned in a small space.  The latest torch in this long line of torches
+
+has burnt down to nothing and is little more than a charred stick in the crude
+
+bracket that holds it to the wall.  A crude wooden trap door is set clumsily
+
+into the ceiling, the door consists of worm-eaten wood and cheap hinges.
+
+"
+"no frills here, crudely dug out of the stone, walls grimy with soot from the torches
+
+"
+301465612 0
+0 6 0
+D1
+""
+""
+0 -1 60002 0 6
+D4
+"crude wooden door"
+""
+131 -1 60027 0 6
+E
+"trap door up"
+"This shoddily made door consists of four pieces of wood held together by a
+
+fifth board nailed diagonally across the other four.  A thick, ugly iron ring
+
+has been attached to the right side of it and crude iron hinges are fixed to
+
+the stone floor.
+
+"
+-1
+S
+
+#60002
+"A Ruined Shrine - A Hidden Tunnel"
+"A thin layer of grit lies over the rough stone floor of this tight corner. 
+
+The charred remnants of torches hang forlornly in crude brackets along the
+
+stone walls.  Thick, stale air fills the tunnel and silence fills the
+
+corridor.  To the west lies a small alcove in the wall, and to the south lies
+
+a longer tunnel lined with crude doors.
+
+"
+"crude stone walls, torches, no real decoration
+
+[Orb] South is 60028
+
+"
+301465604 0
+0 6 0
+D2
+""
+""
+0 -1 60028 0 6
+D3
+""
+""
+0 -1 60001 0 6
+-1
+S
+
+#60004
+"A Hallway in the Ruined Shrine"
+"This vaulted hallway is softly lit with balls of dim white light, although
+
+many of the balls have grown faint and barely provide any illumination at
+
+all.  The walls are lined with ragged tapestries whose scenes are all but
+
+obliterated by a combination of burns, tears, and splashes of reddish-black
+
+liquid.  The dull grey stone of the floor is pitted and marred by huge
+
+scratches, though patches of polished stone gleam softly at random intervals.
+
+"
+"Should these have only +45 hp, or did you mean +450 like most L45 mobs?
+
+"
+301465605 0
+0 6 0
+D1
+"intricately carved door"
+""
+3 -1 60000 0 6
+D3
+""
+""
+0 -1 60005 0 6
+E
+"tapestries walls"
+"The tapestries are so tattered and torn is it impossible to make out more than
+
+bits and pieces of the scenes.  The top of a large hourglass is visible in the
+
+least damaged tapestry.  A splash of dark reddish-black liquid obscures the
+
+rest of the tapestry.
+
+"
+E
+"floor"
+"The once lovingly polished grey stone is chipped and shattered in places, and
+
+small areas appear almost to have melted.
+
+"
+2585 9 1509949540 3 0
+-1
+S
+
+#60005
+"A Hallway in the Ruined Shrine"
+"Dim balls of white light softly illuminate the hallway.  One ball flickers
+
+constantly from white to purple, casting wavering shadows on the dull grey
+
+stone of the walls and floor.  Dark, reddish-black liquid spatters the entire
+
+hallway, drying to a tacky substance on the cloth of the few ragged tapestries
+
+that still cling to the wall every few paces.  Shards of sharp grey stone are
+
+scattered along the floor.
+
+"
+"search stones
+
+"
+301465605 0
+0 6 0
+D1
+""
+""
+0 -1 60004 0 6
+D3
+""
+""
+0 -1 60006 0 6
+E
+"ball light"
+"Perfect spheres of gentle light hover over discs of a silvery metal which are
+
+spaced about a human's pace apart.  The balls are dim at best, and a few have
+
+gone dark.  One errand ball fades from purple to white and back again at
+
+irregular intervals.
+
+"
+E
+"liquid red spatters"
+"The dark, viscous red liquid is spattered everywhere and has run down the
+
+walls in long streaks.
+
+"
+E
+"stone shards"
+"These fragments of stone are razor-sharp, almost as if they had been slivered
+
+from the walls.
+
+"
+2585 9 1509949540 3 0
+-1
+S
+
+#60006
+"A Hallway in the Ruined Shrine"
+"Long, thick gashes have been torn into the stone walls and floor here.  Shreds
+
+of cloth cling to the wall, remnants of the tapestries that used to hang here,
+
+while two balls of grey light flicker fitfully from their places high on the
+
+walls.  Sharp shards of stone are scattered all over the floor, making footing
+
+treacherous.
+
+"
+"Oh, a razorbeast :(
+
+[Orb] Skin the razorbeast for custom spines
+
+"
+301465605 0
+0 6 0
+D1
+""
+""
+0 -1 60005 0 6
+D3
+""
+""
+0 -1 60007 0 6
+E
+"gashes wall"
+"Deep furrows have been raked down the stone walls and across the polished
+
+floor of this room.  Shallower scratches mark the ceiling, almost as if
+
+whatever made the marks could not quite reach the top of the hallway.
+
+"
+E
+"balls"
+"The two grey balls of light hover shakily above their silver platforms,
+
+flickering fitfully in and out of existence.
+
+"
+E
+"stone shards"
+"Razor-sharp stone shards that have been clawed out of the wall and floor are
+
+scattered everywhere.
+
+"
+2586 9 1509949525 3 0
+2607 8 1509949455 3 0
+-1
+S
+
+#60007
+"A Hallway in the Ruined Shrine - Near a Glass Case"
+"Slivers of sharp stone are scattered all over the floor, gleaming like daggers
+
+in the dim light of the pale arcane spheres that illuminate the hallway.  A
+
+glass case rests against the north wall, in which is contained a cunningly
+
+wrought hourglass.  The wall and floor around the case is pitted and scratched
+
+as if something large has torn at it, but the case itself remains seemingly
+
+untouched.
+
+"
+"glass case, make an acode for this
+
+"
+301465605 0
+0 6 0
+D1
+""
+""
+0 -1 60006 0 6
+D3
+""
+""
+0 -1 60008 0 6
+E
+"stone shards slivers"
+"Razor-sharp stone shards of a pale grey color lie scattered all over the floor.
+
+"
+E
+"case"
+"The case stands about the height of an average gnome, and holds on its single
+
+shelf a lovely silver hourglass.  The pure white sand that pours slowly from
+
+the top of the hourglass to the bottom shimmers in the dim light.
+
+"
+E
+"walls floor"
+"Tears and gashes mar the wall all around the case, and floor has been
+
+lacerated mercilessly.
+
+"
+A
+"touch open get take search"
+"glass case"
+"if( get_religion( ch ) == Meriada ) {
+
+  act_tochar( #touch, ch );
+
+  act_notchar( #rtouch, ch );
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  act_notchar( #rno, ch );
+
+  }
+
+"
+E
+"touch"
+"A soft glow surrounds your hands as you touch the glass case, and a sense of
+
+peace radiates through your entire being.
+
+"
+E
+"rtouch"
+"$n's hands glow softly as $e touches the glass case.
+
+"
+E
+"no"
+"A field of energy manifests around the case as you try to touch it, keeping
+
+your hands at bay.
+
+"
+E
+"rno"
+"A field of energy manifests around the case as $n tries to touch it, keeping
+
+$s hands at bay.
+
+"
+!
+0 0 0
+-1
+S
+
+#60008
+"A Hallway in the Ruined Shrine - Near a Disfigured Mural"
+"Dim spheres of white light cast a gentle radiance over the hallway, softly
+
+illuminating the grey stone of the walls and floor.  The north wall is barren
+
+grey stone, but a lovingly drawn mural of the night sky covers the south
+
+wall.  Deep scratches run through it in abstract patterns of lines, and a
+
+wavering semi-circle of dark liquid has been roughly splashed across the
+
+center of the mural.  An unpleasant scent drifts through the room.
+
+"
+"mural here
+
+"
+301465605 0
+0 6 0
+D1
+""
+""
+0 -1 60007 0 6
+D3
+""
+""
+0 -1 60009 0 6
+E
+"mural"
+"A depiction of the night sky runs from floor to ceiling across the south
+
+wall.  The Silver Phoenix constellation shines brightly in the center of the
+
+mural, and the faint silhouette of a robed woman reaches out toward the
+
+brightest star.  Scratches run across the length of the robed woman, marring
+
+but not obliterating the picture.  A thick, uneven ring of dark liquid has
+
+been smeared across the middle of the scene.  One arc of the circle is missing
+
+near the top right.
+
+"
+2585 9 1509949535 3 0
+-1
+S
+
+#60009
+"A Hallway in the Ruined Shrine"
+"One fading ball of grey light casts a pale wash of trembling light across the
+
+stone hallway.  The walls and floor are splashed with a dark red liquid that
+
+seems almost to writhe in the uncertain light.  Tattered remnants of
+
+tapestries cling to the walls, while shreds of cloth litter the floor.
+
+Unidentifiable tracks meander through the dark splashes which cover the floor
+
+and walls.
+
+"
+""
+301465605 0
+0 6 0
+D1
+""
+""
+0 -1 60008 0 6
+D3
+""
+""
+0 -1 60010 0 6
+E
+"ball light"
+"This dim, fading ball of greyish light hovers tremulously over its silver
+
+stand, casting flickering light over the room.
+
+"
+E
+"walls liquid floor"
+"A dark liquid is splashed across the walls, drying to a flaky reddish-black
+
+substance.  Streams of the liquid dripped down the walls to dry in dark
+
+streaks.
+
+"
+E
+"tracks"
+"The tracks have four toes and are set at seemingly random intervals, as if the
+
+creature to which they belong has a very uneven gait.
+
+"
+2585 9 1509949520 3 0
+2586 136 1509949460 3 0
+-1
+S
+
+#60010
+"A Corner in the Ruined Shrine - Near a Pile of Bones and Flesh"
+"The scent of rotting meat is overpowering at this corner of the shrine.  The
+
+stone hallways meet in an elaborate arch of stone, and piled in this corner is
+
+a mound of bones with bits of rotting flesh and blood-soaked cloth clinging to
+
+them.  A large sphere of opalescent light hovers above the pile of remains,
+
+illuminating it all too clearly.  A blood-spattered mural is painted on the
+
+west and north walls, but it has been ruined by scratches and burns and the
+
+scene is lost forever.
+
+"
+"Bend in the hallway
+
+Describe greater
+
+code debuff
+
+[Hedrack] Greater imps have very high hp - they're designed to autokill solo people?
+
+[Orb] This area is tuned for grouping.
+
+"
+301465605 0
+0 6 0
+D1
+""
+""
+0 -1 60009 0 6
+D2
+""
+""
+0 -1 60011 0 6
+E
+"pile bones flesh"
+"Bones of every shape and size are piled against the wall.  The marks of
+
+gigantic teeth mar almost all of them, and many are shattered into
+
+unrecognizable bits and pieces.  Shreds of grey cloth are mixed in with the
+
+charnel.
+
+"
+E
+"walls"
+"Blood and char cover all but a few colors of this mural, leaving it totally indiscernible.
+
+"
+2586 137 1509949540 3 0
+-1
+S
+
+#60011
+"A Hallway in the Ruined Shrine"
+"Pillars of grey stone line the walls of the hall, carved with images of men
+
+and women in long, flowing robes.  The figures seem almost to move as grey
+
+balls of light blink in and out of existence above their silver holders,
+
+casting ever-changing shadows on the statues.  A stylized hourglass is
+
+engraved on the grey stone of the floor, although it is nearly obliterated by
+
+scratches and splashes of a dark liquid.
+
+"
+"hourglass on floor, statue pillars
+
+"
+301465605 0
+0 6 0
+D0
+""
+""
+0 -1 60010 0 6
+D2
+""
+""
+0 -1 60012 0 6
+E
+"pillars robes statues men women"
+"Each pillar has a man or a woman carved into it, and all of the figures wear
+
+the same flowing robe and hold the same crystal-tipped staff.  Splashes of a
+
+dark liquid have dripped down the statues, giving the illusion of wounds.
+
+"
+E
+"staff"
+"The staff is as tall as the statue and is formed of a long, clean base and an
+
+intricate crystalline design on the top.
+
+"
+E
+"hourglass floor"
+"The hourglass is engraved into the stone of the floor.  Pieces of stone have
+
+been ripped out of it and the hourglass has been scratched almost out of
+
+existence.
+
+"
+-1
+S
+
+#60012
+"A Hallway in the Ruined Shrine"
+"Detailed stone likenesses of men and women in long, flowing robes stand all
+
+along this hallway as though keeping watch.  The finer details of the statues
+
+are lost in the gentle illumination provided by the fading grey balls of light
+
+that hover tremblingly over their silver stands.  A crude circle has been
+
+scratched over the image of an hourglass that had been expertly etched into
+
+the floor.  Dried streaks and splashes of dark liquid are spattered over
+
+everything.
+
+"
+""
+301465605 0
+0 6 0
+D0
+""
+""
+0 -1 60011 0 6
+D2
+""
+""
+0 -1 60013 0 6
+E
+"pillars men women likenesses"
+"Each pillar has a man or a woman carved into it, and all of the figures wear
+
+the same flowing robe and hold the same crystal-tipped staff.  Splashes of
+
+dark liquid have dripped down the statues, giving the illusion of wounds.
+
+"
+E
+"staff"
+"The staff is as tall as the statue and is formed of a long, clean base and an
+
+intricate crystalline design on the top.
+
+"
+E
+"hourglass floor"
+"The hourglass has been engraved into the stone of the floor.  A crude ring has
+
+been scratched over it, though it is missing a piece near the top right.
+
+"
+2585 9 1509949490 3 0
+2586 8 1509949490 3 0
+-1
+S
+
+#60013
+"A Corner in the Ruined Shrine"
+"Walls of scratched and blemished grey stone intersect here in a beautifully
+
+carved, blood-spattered archway.  A statue of a stern, beautiful woman stands
+
+in the corner, her stately stone robes splashed with dried blood.  Her right
+
+arm is extended before her as though holding something forth, but the arm ends
+
+in a shattered stump near her wrist.  Balls of light flicker fitfully above
+
+silver stands, casting uncertain shadows over the features of the silent stone
+
+guardian.  The scratched, blood-stained floor is covered with shards of glass
+
+and pieces of fine grey stone.
+
+"
+"wider hallway, bend in the hall where the stone curvest around to the east.  Free-standing torch type things.
+
+"
+301465605 0
+0 6 0
+D0
+""
+""
+0 -1 60012 0 6
+D1
+""
+""
+0 -1 60014 0 6
+E
+"archway"
+"A depiction of the night sky sprawls across this elaborate archway, accented
+
+by dark spatters of blood.
+
+"
+E
+"statue woman"
+"This tall, beautiful stone woman gazes into the distance, unsmiling and
+
+grave.  She holds her arm out before her, the folds of her stone robe carved
+
+into a graceful fall.  What she may have grasped is impossible to say, as her
+
+hand and wrist have been broken off and lie shattered on the floor.
+
+"
+E
+"floor glass shards"
+"Shards of glass and pieces of grey stone are scattered everywhere, and a thin
+
+blanket of fine white sand covers the floor.  Two stone fingers are
+
+recognizable amidst the wreckage, but what they may have grasped remains a
+
+mystery.
+
+"
+-1
+S
+
+#60014
+"A Ruined Shrine - Before the Chapel"
+"The vaulted stone hallway ends here in what was once a grandiose doorway. 
+
+What remains of the great stone door lies in huge chunks scattered about the
+
+room, and only the twisted metal hinges still cling to the jam.  The two
+
+massive pillars of stone that loom silently to either side of the opening are
+
+deeply scored and chipped.  Blood and some other darker liquid have been
+
+splashed liberally across the pillars.  The shattered remains of what appears
+
+to have been a wooden polearm is visible at the foot of the left pillar amid
+
+the wreckage of bloody stone.
+
+"
+"dead sentries, shattered polearms on theg round
+
+arched ceiling as it moves into the chapel beyond
+
+acode for passing through the shattered door here
+
+"
+301465604 0
+0 6 0
+D1
+""
+""
+0 -1 60015 0 6
+D3
+""
+""
+0 -1 60013 0 6
+E
+"door doorway"
+"The gigantic stone door has been torn off its hinges and shattered into so
+
+much rubble on the floor.
+
+"
+2585 9 1509949540 3 0
+-1
+S
+
+#60015
+"A Ruined Shrine - Within the Defiled Chapel"
+"Soft white light, cast from tremulously hovering spheres, bathes the wreckage of
+
+this once-beautiful chapel.  Torn, charred tapestries line the south wall, the
+
+silk destroyed almost completely.  The polished grey stone of the floor and
+
+walls is deeply pitted and scratched, and splashes and spatters of a dark
+
+liquid are everywhere.  To the north, the area slopes downward and opens into
+
+a wide room with vaulted ceilings and wreckage scattered everywhere.  A
+
+walkway overlooking the chapel lies to the east.
+
+"
+"entrance to cathedral
+
+railing
+
+arched entryway to the north, railing that begins and runs to the east
+
+pillars
+
+room size?
+
+"
+301465605 0
+0 6 0
+D0
+""
+""
+0 -1 60016 0 6
+D1
+""
+""
+0 -1 60021 0 6
+D3
+""
+""
+0 -1 60014 0 6
+E
+"tapestries south"
+"The burned, torn remains of cloth hang in tatters on the marred stone wall. 
+
+It is impossible to tell what scenes may have been depicted on them.
+
+"
+-1
+S
+
+#60016
+"A Walkway in the Ruined Shrine"
+"The remains of a grey carpet are shredded into charred bits and blackened
+
+threads on the ravaged stone floor.  Great chunks have been torn out of the
+
+wall to the west and the benches to the east are broken and up-ended.  Dark
+
+spatters and splashes are everywhere, the now-dried liquid a deep, ugly red
+
+that nearly black.  Untouched by the carnage that has marred the rest of the
+
+area, a band of runes and symbols covers the wall about six inches from the
+
+ceiling.  The walkway slopes downward to the north into a deep blackness which
+
+obscures everything.
+
+"
+"[Orb] walkway
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 60017 0 6
+D1
+""
+""
+0 -1 60019 0 6
+D2
+""
+""
+0 -1 60015 0 6
+E
+"north"
+"You look north but can see nothing through the gloom.
+
+"
+E
+"symbols runes glyphs"
+"Looping runes and unrecognizable symbols are carved into the wall here.  The
+
+pattern repeats over and over, beginning and ending with a stylized hourglass.
+
+"
+E
+"wall west"
+"The stone wall is gashed and shattered all the way up to where the symbols and
+
+glyphs begin, about six inches from the ceiling.
+
+"
+-1
+S
+
+#60017
+"A Ruined Shrine - Near the Altar"
+"The darkness to the east seems to absorb the light, creating a suffocating
+
+closeness.  Heat radiates from the east and a soft, yet constant, rumbling
+
+which seems to cause the very stone of the walls to tremble.  The scent of
+
+rotting meat mingles with another even less pleasant scent that is
+
+unidentifiable.  The shattered remains of a broken statue lies in a heap in
+
+the corner.  A flickering grey ball of light hovers uncertainly over the pile
+
+of stone casting slow, dim flashes of light, creating the illusion of movement
+
+in the mangled stone and the thick darkness to the east.
+
+"
+"holy items and peripherals
+
+[Orb] No lights here.
+
+"
+301465604 0
+0 6 0
+D1
+""
+""
+0 -1 60018 0 6
+D2
+""
+""
+0 -1 60016 0 6
+E
+"statue corner"
+"This dismembered statue lies in pieces here, a stone corpse torn to pieces.  A
+
+ball of grey light bobs above it, reduced to mere flickers of dim light.
+
+"
+E
+"e east"
+"The thick darkness seems to swirl and pulse as the grey light flickers across
+
+it.
+
+"
+-1
+S
+
+#60018
+"A Ruined Shrine - A Desecrated Altar"
+"This raised dais is consumed by a pulsing, whirling gash of darkness that
+
+extends all the way to the ceiling.  Sickly yellow light flashes and flickers
+
+within its depths and a deep rumble throbs through the area near it.  Heat
+
+emanates from the swirling mass of darkness, along with a fetid odor of decay
+
+and the sickly-sweet scent of rotting meat.  Visible in the faint, pulsing
+
+light are chunks of stone and splintered bones lying in a heap at the base of
+
+the vortex, the shattered remains of the stone altar.
+
+"
+"altar and podium
+
+nomob
+
+open portal to the plane of chaos, unfortunately, nobody can enter since it's one way.
+
+quest to close this portal eventually, or to expand it.  peachy
+
+[Orb] This mob looks brutal, and he is.  However, the key is to kill the demi
+
+fiends first, and then he isn't so bad.  He's meant to be a badass, though,
+
+and I believe that he succeeds.
+
+"
+301465613 0
+0 6 0
+D1
+""
+""
+0 -1 60020 0 6
+D2
+""
+""
+0 -1 60019 0 6
+D3
+""
+""
+0 -1 60017 0 6
+E
+"vortex darkness mass portal gash"
+"This pulsing, swirling portal throbs and writhes in a never-ending whorl of
+
+suffocating darkness and flickers of pallid light.
+
+"
+2691 41 1509949540 3 0
+2732 73 1509949540 3 0
+2732 73 1509949540 3 0
+-1
+S
+
+#60019
+"A Ruined Shrine - Amid Shattered Benches"
+"Shattered stone and turned-over benches lie everywhere.  Pieces of beautifully
+
+carved and delicately etched stone have been pulverized into so much gravel in
+
+some places.  Some of the stone is blackened with char and splashes of a dark
+
+liquid, now dried, coat the ravaged stone liberally.  To the south lies a
+
+half-wall with a broken railing forming a balcony to look down into the
+
+chapel.  To the north the area is cloaked in a darkness so deep it is
+
+impossible to see through.
+
+"
+"room to kneel and worship
+
+cleared away so that runes and circle of protection were apparent
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 60018 0 6
+D1
+""
+""
+0 -1 60023 0 6
+D3
+""
+""
+0 -1 60016 0 6
+E
+"north"
+"You look north but can see nothing through the gloom.
+
+"
+-1
+S
+
+#60020
+"A Ruined Shrine - Near the Altar"
+"A thick, heavy cloak of darkness shrouds this area, swelling to an
+
+impenetrable blackness to the west.  Standing in the corner is the statue of a
+
+robed woman holding one hand out before her, palm upward.  The statue's head
+
+rests in her hand, and a faint ball of light fades slowly in and out of
+
+existence around the head illuminating the grotesquerie in disconcerting
+
+pulses of dim light.  A subtle, almost soundless rumble can be felt in the
+
+walls and the very air to the west.  Lightless heat wafts out from the west,
+
+and the darkness there seems to swirl slowly.
+
+"
+"holy items and peripherals
+
+"
+301465604 0
+0 6 0
+D2
+""
+""
+0 -1 60023 0 6
+D3
+""
+""
+0 -1 60018 0 6
+E
+"statue head"
+"This statue is fully preserved except for its shattered neck.  The head lies
+
+upright in the palm of the statue, its small smile lit by the fading grey
+
+sphere of light.
+
+"
+E
+"w west"
+"The thick darkness seems to swirl and pulse as the grey light flickers across it.
+
+"
+-1
+S
+
+#60021
+"A Ruined Shrine - Overlooking the Chapel"
+"Great chunks have been torn out of the beautifully crafted railing that lines
+
+the north end of the room, making it a precarious perch for those who wish to
+
+overlook the chapel below.  The south wall is a mass of charred and tattered
+
+cloth, the remnants of silken tapestries now just a mass of blackened strips. 
+
+Two flickering grey balls of light hover uncertainly over silver disks set
+
+into the wall, the other magical lights long since gone dark.
+
+"
+"entrance overlooking cathedral
+
+railing
+
+railing looking slightly down into the chapel
+
+acode for get light
+
+"
+301465605 0
+0 6 0
+D1
+""
+""
+0 -1 60022 0 6
+D3
+""
+""
+0 -1 60015 0 6
+E
+"north chapel"
+"The chapel slopes down into a small seating area filled with stone benches. 
+
+Past the rows of benches, a darkness consumes the area and it is impossible to
+
+make anything out.
+
+"
+2585 9 1509949540 3 0
+-1
+S
+
+#60022
+"A Corner in the Ruined Shrine"
+"A lone sphere of shimmering white light hovers in the corner casting dancing
+
+shadows across the marred and burned stone of the walls and floor.  A pile of
+
+bones and tattered cloth lies in the corner beneath the glowing orb, a grim
+
+remainder of what was once obviously humanoid.  Deep, gaping gashes have been
+
+slashed into the walls and floor, littering the area with razor-sharp shards
+
+of stone.  To the north lies a walkway which slopes downward into a small
+
+chapel, while to the west lies a broken railing overlooking the chapel.
+
+"
+"entrance overlooking cathedral
+
+railing
+
+secret e
+
+search bones acode
+
+take light
+
+[Orb] Pass into the living quarters
+
+"
+301465605 0
+0 6 0
+D0
+""
+""
+0 -1 60023 0 6
+D1
+""
+""
+226 -1 60024 0 6
+D3
+""
+""
+0 -1 60021 0 6
+E
+"bones pile corner"
+"Although some have been splintered into unrecognizable slivers, the bones in
+
+this pile are obviously humanoid.  Arm and leg bones, skulls of varying sizes,
+
+and a scattering of ribs lie intermixed with tatters of cloth and bits of
+
+jewelry.  Many of the bones have been cracked and gnawed.
+
+"
+-1
+S
+
+#60023
+"A Walkway in the Ruined Shrine"
+"This slender walkway runs down toward the raised dais at the northern end of
+
+the chapel, skirting the stone benches that lie to the west.  Both the benches
+
+and the walls have been ravaged, great chunks have been hewn roughly out of
+
+the stone and splashes of a dried dark liquid are spattered everywhere.  The
+
+remains of a thin red carpet cling to the middle of the walkway, reduced to a
+
+shreds here and there.  The top six inches of the wall are lined with
+
+beautifully carved runes and glyphs which are miraculously unmarred.  To the
+
+north, an impenetrable blackness lies over the area.
+
+"
+"room to kneel and worship
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 60020 0 6
+D2
+""
+""
+0 -1 60022 0 6
+D3
+""
+""
+0 -1 60019 0 6
+E
+"benches west"
+"While none of the benches is whole, the beautiful work that went into them is
+
+evident.  The backs and sides of the benches flair up into delicate
+
+curvatures, carved with lovely, unrecognizable symbols.  Pieces of the benches
+
+lie everywhere, and what does still stand is hopelessly scratched and burned.
+
+"
+E
+"wall"
+"The stone wall is gashed and shattered all the way up to where the symbols and
+
+glyphs begin, about six inches from the ceiling.
+
+"
+E
+"glyphs symbols"
+"Looping runes and unrecognizable symbols are carved into the wall here.  The
+
+pattern repeats over and over, beginning and ending with a stylized hourglass.
+
+"
+E
+"north"
+"You look north but can see nothing through the gloom.
+
+"
+-1
+S
+
+#60024
+"A Ruined Shrine - A Hidden Tunnel"
+"This cylindrical tunnel is made of rough grey stone and is barely tall enough
+
+to accommodate the average troll.  Brackets line the walls holding the burned
+
+out remains of torches.  The air is stale and silent, musty with age.  The
+
+narrow tunnel runs east toward a J-shaped junction and ends abruptly to the
+
+west in a thick stone wall.
+
+"
+"sentries here, guarding the cathedral proper
+
+"
+301465604 0
+0 6 0
+D1
+""
+""
+0 -1 60025 0 6
+D3
+""
+""
+226 -1 60022 0 6
+2585 9 1509949540 3 0
+-1
+S
+
+#60025
+"A Ruined Shrine - A Cramped Stone Tunnel"
+"Roughly hewn stone makes up the walls and floor of this shoddily carved
+
+tunnel.  The remnants of torches rest in rough iron brackets that have been
+
+affixed to the stone walls.  The air is stale and unmoving in this cramped
+
+tunnel, and a soft dripping of water can be heard from the north.  The tunnel
+
+curves sharply north here, and widens a bit toward the east.
+
+"
+"archway where the hall curves to the west and north
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 60026 0 6
+D3
+""
+""
+0 -1 60024 0 6
+-1
+S
+
+#60026
+"A Ruined Shrine - A Hidden Tunnel"
+"The soft dripping of water echoes through this area as small drops of water
+
+collect, tremble, then fall down from the ceiling into the tiny pool that has
+
+formed on the floor of the tunnel.  Torches are bracketed to the walls, though
+
+they have long since burned away to merely charred sticks.  The roughly-carved
+
+tunnel is narrow and cramped, and there seems to be no ventilation; the air is
+
+stale and thick with age.  A small alcove is to the north, while the tunnel
+
+runs on to the south.
+
+"
+"hallawy, arches, torches, etc
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 60027 0 6
+D2
+""
+""
+0 -1 60025 0 6
+2585 9 1509949540 3 0
+-1
+S
+
+#60027
+"A Ruined Shrine - A Small Alcove"
+"This alcove is a mere depression in the rough stone, hollowed out haphazardly
+
+at best.  A single bracket is affixed to the north wall; although no torch is
+
+is held by the bracket, the area around it is covered in soot.  A faint
+
+dripping sound can be heard to the south, the only ambient noise in the still,
+
+lifeless air.  A crude wooden trap door with a thick iron ring lies in the
+
+middle of the floor, held by clumsily made hinges.
+
+"
+"door down hidden by tapestry that needs to be moved aside - won't be found unless you can search at 5
+
+end of halway, tapestries and what not, stand-alone torch things
+
+searchable door down
+
+"
+301465604 0
+0 6 0
+D2
+""
+""
+0 -1 60026 0 6
+D5
+"crude wooden door"
+""
+131 -1 60001 0 6
+E
+"trap door trapdoor down"
+"This shoddily made door consists of four pieces of wood held together by a
+
+fifth board nailed diagonally across the other four.  A thick, ugly iron ring
+
+has been attached to the right side of it and crude iron hinges are fixed to
+
+the stone floor.
+
+"
+2585 9 1509949540 3 0
+-1
+S
+
+#60028
+"A Ruined Shrine - An Intersection"
+"Shoddily-made wooden doors are set into the west and east walls, hanging
+
+haphazardly from crude bronze hinges set into the rough stone walls.  Brackets
+
+made for holding torches stand on either side of each door, though they hold
+
+only charred sticks.  The floor of the tunnel is lined with a fine layer of
+
+sandy gravel.  The tunnel runs north to a sharp corner and south to more doors
+
+lining the hall.
+
+"
+"cleric cells to the west and east, crude wooden doors, damp, drafty, mildewy smell
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 60002 0 6
+D1
+"crude wooden door"
+""
+1 -1 60029 0 6
+D2
+""
+""
+0 -1 60031 0 6
+D3
+"crude wooden door"
+""
+1 -1 60030 0 6
+E
+"door doors"
+"The warped, ill-fitting boards of the crude door are held together and
+
+stabilized by a long diagonal board to which the other slats are nailed. 
+
+Crooked bronze hinges hold the door in place.
+
+"
+-1
+S
+
+#60029
+"A Ruined Shrine - A Cultist's Cell"
+"This cramped room is a study in simplicity.  A small wooden cot is bolted to
+
+the northern wall, and a torch bracket is fastened to the southern wall.  The
+
+only decoration is a small square of stone on the floor near the east wall
+
+that has been smoothed flat and polished to a dim glow and inscribed with a
+
+purposeful pattern of various symbols and runes.  A rough door is fastened to
+
+the west wall, giving access to the hall beyond.
+
+"
+""
+301465604 0
+0 6 0
+D3
+"crude wooden door"
+""
+1 -1 60028 0 6
+E
+"door"
+"The warped, ill-fitting boards of the crude door are held together and
+
+stabilized by a long diagonal board to which the other slats are nailed. 
+
+Crooked bronze hinges hold the door in place.
+
+"
+E
+"stone flat smooth pattern symbols runes"
+"Unrecognizable symbols and runes have been scribed into the polished stone all
+
+around a perfect circle perhaps ten inches in diameter.
+
+"
+E
+"cot"
+"Uneven lengths of wood have been nailed together to make an unsteady cot, and
+
+the straw mattress is thin, compressed down to no more than an inch thick.
+
+"
+A
+"take get pull"
+"cot"
+"act_tochar( #nope, ch );
+
+act_notchar( #rnope, ch );
+
+"
+E
+"nope"
+"You try to pull the cot free of the wall but it won't budge.
+
+"
+E
+"rnope"
+"$n tries to pull the cot free of the wall but it won't budge.
+
+"
+!
+0 0 0
+4338 17 1509949540 -2 0
+-1
+S
+
+#60030
+"A Ruined Shrine - A Cultist's Cell"
+"The only distinguishing feature of this small, roughly square cell is a small
+
+flat area of stone that has been polished smooth near the western wall.  A
+
+rickety cot is bolted to the northern wall and an empty torch bracket is the
+
+only adornment of the southern wall.  A crude door is set into the rough stone
+
+wall to the east.
+
+"
+"acode for a cultist's wraith
+
+"
+301465604 0
+0 6 0
+D1
+"crude wooden door"
+""
+1 -1 60028 0 6
+E
+"look smooth polished square"
+"Unrecognizable symbols and runes have been scribed into the polished stone all
+
+around a perfect circle perhaps ten inches in diameter.
+
+"
+E
+"cot"
+"Uneven lengths of wood have been nailed together to make an unsteady cot, and
+
+the straw mattress is thin, compressed down to no more than an inch thick.
+
+"
+E
+"door"
+"The warped, ill-fitting boards of the crude door are held together and
+
+stabilized by a long diagonal board to which the other slats are nailed. 
+
+Crooked bronze hinges hold the door in place.
+
+"
+A
+"take get pull"
+"cot"
+"room = find_room( 60029 );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+4338 17 1509949540 -2 0
+-1
+S
+
+#60031
+"A Ruined Shrine - An Intersection"
+"This narrow tunnel has been roughly carved out of rock, and the cold air is
+
+still and lifeless.  The faint scent of char is barely discernable, emanating
+
+from the wall brackets holding the remains of torches.  Doors interrupt the
+
+rough grey stone of the tunnel walls to the east and west, hung roughly from
+
+crude bronze hinges.
+
+"
+"cleric cells to the west and east, crude wooden doors, damp, drafty, mildewy smell
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 60028 0 6
+D1
+"crude wooden door"
+""
+3 -1 60032 0 6
+D2
+""
+""
+0 -1 60034 0 6
+D3
+"crude wooden door"
+""
+3 -1 60033 0 6
+E
+"door doors"
+"The warped, ill-fitting boards of the crude door are held together and
+
+stabilized by a long diagonal board to which the other slats are nailed. 
+
+Crooked bronze hinges hold the door in place.
+
+"
+-1
+S
+
+#60032
+"A Ruined Shrine - A Cultist's Cell"
+"A rickety cot attached to the north wall is the only furniture in this tiny
+
+stone room.  A torch bracket is fastened to the south wall, and the walls and
+
+floor are otherwise bare.  The only decoration in the room is a small square
+
+of smooth polished stone near the eastern wall.  A simply-made door is
+
+clumsily set into the stone to the west.
+
+"
+""
+301465604 0
+0 6 0
+D3
+"crude wooden door"
+""
+3 -1 60031 0 6
+E
+"cot"
+"Uneven lengths of wood have been nailed together to make an unsteady cot, and
+
+the straw mattress is thin, compressed down to no more than an inch thick.
+
+"
+E
+"symbols flat square smooth polished stone"
+"Unrecognizable symbols and runes have been scribed into the polished stone all
+
+around a perfect circle perhaps ten inches in diameter.
+
+"
+E
+"door"
+"The warped, ill-fitting boards of the crude door are held together and
+
+stabilized by a long diagonal board to which the other slats are nailed. 
+
+Crooked bronze hinges hold the door in place.
+
+"
+A
+"get take pull"
+"cot"
+"room = find_room( 60029 );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+-1
+S
+
+#60033
+"A Ruined Shrine - A Cultist's Cell"
+"This small, roughly square chamber has been hewn out of solid stone, and no
+
+great care appears to have been taken.  The only smooth area of stone is a
+
+small square near the western wall which has been polished to a dull gleam and
+
+etched with a myriad of symbols and runes.  A simply cot is bolted to the
+
+north wall, while the only adornment of the southern wall is an empty torch
+
+bracket.  A wooden door has been fastened to crooked bronze hinges to the east.
+
+"
+""
+301465604 0
+0 6 0
+D1
+"crude wooden door"
+""
+3 -1 60031 0 6
+E
+"cot"
+"Uneven lengths of wood have been nailed together to make an unsteady cot, and
+
+the straw mattress is thin, compressed down to no more than an inch thick.
+
+"
+E
+"flat smooth polished stone symbols runes"
+"Unrecognizable symbols and runes have been scribed into the polished stone all
+
+around a perfect circle perhaps ten inches in diameter.
+
+"
+E
+"door"
+"The warped, ill-fitting boards of the crude door are held together and
+
+stabilized by a long diagonal board to which the other slats are nailed. 
+
+Crooked bronze hinges hold the door in place.
+
+"
+A
+"get take pull"
+"cot"
+"room = find_room( 60029 );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+4338 17 1509949540 -2 0
+-1
+S
+
+#60034
+"A Ruined Shrine - An Intersection"
+"Crude wooden doors are set into the west and east walls of this roughly carved
+
+tunnel, and bronze torch brackets are fastened to either side of each door. 
+
+Charred sticks are all that is left of the torches which once burned to light
+
+the hallway.  A fine layer of grit coats the floor, soot mixed with sandy
+
+gravel.  The hallway runs north and south, leading to more doors.
+
+"
+"cleric cells to the west and east, crude wooden doors, damp, drafty, mildewy smell
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 60031 0 6
+D1
+"crude wooden door"
+""
+3 -1 60035 0 6
+D2
+""
+""
+0 -1 60037 0 6
+D3
+"crude wooden door"
+""
+3 -1 60036 0 6
+E
+"door doors"
+"The warped, ill-fitting boards of the crude door are held together and
+
+stabilized by a long diagonal board to which the other slats are nailed. 
+
+Crooked bronze hinges hold the door in place.
+
+"
+-1
+S
+
+#60035
+"A Ruined Shrine - A Cultist's Cell"
+"Under Construction.
+
+"
+""
+301465604 0
+0 6 0
+D3
+"crude wooden door"
+""
+3 -1 60034 0 6
+A
+"get pull take"
+"cot"
+"room = find_room( 60029 );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+4338 17 1509949540 -2 0
+-1
+S
+
+#60036
+"A Ruined Shrine - A Cultist's Cell"
+"Under Construction.
+
+"
+""
+301465604 0
+0 6 0
+D1
+"crude wooden door"
+""
+3 -1 60034 0 6
+-1
+S
+
+#60037
+"A Ruined Shrine - A Charred Hall"
+"A heavy layer of soot coats this narrow hallway, obscuring the original color
+
+of the rough stone.  The floor appears to have melted in some areas, leaving
+
+dark areas of slick, glassy stone.  A beautifully polished stone door stands
+
+to the south in stark contrast to the rough-hewn walls and floor.  The left
+
+side of the door looks like so much melted wax, having fused to the wall
+
+during whatever conflagration engulfed this room.
+
+"
+"Only a charging warrior can open this door.
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 60034 0 6
+D2
+"melted stone door"
+"melted stone door"
+32899 -1 60040 0 6
+E
+"south stone door"
+"This once-lovely door is made from an unidentifiable black stone, polished to
+
+near mirror quality.  The left side of the door has fused to the rough stone
+
+of the wall, and not even a hint of the hinges remains.
+
+"
+A
+""
+""
+"act_tochar( #nope, ch );
+
+act_notchar( #rnope, ch );
+
+"
+E
+"nope"
+"The melted hinges on the door make it nigh impossible to open.
+
+"
+E
+"rnope"
+"$n tries to open the melted door, but the fused hinges make it nigh impossible.
+
+"
+!
+8 0 4
+A
+"charge"
+"door south melted"
+"exit = door( room, south );
+
+if( dflag( closed, exit ) ) {
+
+  if( find_skill( ch, charge ) > random( 3, 10 ) ) {
+
+    act_tochar( #yes, ch );
+
+    act_notchar( #ryes, ch );
+
+    remove_dflag( closed, exit );
+
+    remove_dflag( closed, reverse( exit ) );
+
+  }
+
+  else {
+
+    act_tochar( #ow, ch );
+
+    act_notchar( #row, ch );
+
+    i = 1d100;
+
+    dam_message( ch, i, \"charging the melted door\" );
+
+    inflict( ch, mob, i, \"charging the melted door\" );
+
+  }
+
+}
+
+else
+
+  act_tochar( #open, ch );
+
+"
+E
+"yes"
+"You charge the door, and it flies open under the application of brute force.
+
+"
+E
+"ryes"
+"$n charges the door, and it flies open under the application of brute force.
+
+"
+E
+"ow"
+"You charge the door, but all you gain for your effort is a bruised shoulder.
+
+"
+E
+"row"
+"$n charges the door, but all $e gains for $s effort is a sore shoulder.
+
+"
+E
+"open"
+"The door is already open.
+
+"
+!
+0 0 0
+-1
+S
+
+#60038
+""
+"Under Construction.
+
+"
+""
+301465604 0
+0 6 0
+-1
+S
+
+#60039
+""
+"Under Construction.
+
+"
+""
+301465604 0
+0 6 0
+-1
+S
+
+#60040
+""
+"Under Construction.
+
+"
+"private office
+
+[Orb] hidden room to the south, thief only
+
+puta handle on this side of the door.
+
+"
+301465604 0
+0 6 0
+D0
+"melted stone door"
+"melted stone door"
+32899 -1 60037 0 6
+D2
+""
+""
+98317 -1 60041 0 6
+A
+""
+""
+"exit = door( room, north );
+
+if( !dflag( closed, exit ) ) {
+
+  if( find_stat( ch, str ) < 20 ) {
+
+    act_tochar( #wimp, ch );
+
+    act_notchar( #rwimp, ch );
+
+  }
+
+  else {
+
+    act_tochar( #close, ch );
+
+    act_notchar( #rclose, ch );
+
+    set_dflag( closed, exit );
+
+    set_dflag( closed, reverse( exit ) );
+
+    
+
+  }
+
+}
+
+else
+
+  act_tochar( #already, ch );
+
+"
+E
+"wimp"
+"You try to shove the door closed, but it won't budge.
+
+"
+E
+"rwimp"
+"$n tries to shove the door closed, but just can't budge it.
+
+"
+E
+"close"
+"You heave with all your might, and slowly shove the door closed.
+
+"
+E
+"rclose"
+"$n heaves against the door with all $s might and slowly shoves it closed.
+
+"
+E
+"already"
+"The door is already closed.
+
+"
+!
+10 0 1
+A
+""
+""
+"exit = door( room, north );
+
+if( dflag( closed, exit ) ) {
+
+  if( find_stat( ch, str ) < 20 ) {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+  }
+
+  else {
+
+    act_tochar( #open, ch );
+
+    act_notchar (#ropen, ch );
+
+    remove_dflag( closed, exit );
+
+    remove_dflag( closed, reverse ( exit ) );
+
+  }
+
+}
+
+else
+
+  act_tochar( #already, ch );
+
+"
+E
+"nope"
+"You grasp the tarnished gold handle and pull with all your might, but the door
+
+won't budge.
+
+"
+E
+"rnope"
+"$n yanks on the tarnished gold handle with all $s might, but the door won't
+
+budge.
+
+"
+E
+"open"
+"The door scrapes open slowly as you heave with all your considerable might.
+
+"
+E
+"ropen"
+"The door scrapes open slowly as $n heaves with all $s considerable might.
+
+"
+E
+"already"
+"The door is already open.
+
+"
+!
+8 0 1
+-1
+S
+
+#60041
+""
+"Under Construction.
+
+"
+"chapel
+
+private chapel, worship area
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+98317 -1 60040 0 6
+-1
+S
+
+#60042
+""
+"Under Construction.
+
+"
+"chapel
+
+private chapel worship area
+
+"
+301465604 0
+0 6 0
+D2
+""
+""
+0 -1 60046 0 6
+-1
+S
+
+#60043
+""
+"Under Construction.
+
+"
+"chapel
+
+"
+301465604 0
+0 6 0
+D2
+""
+""
+0 -1 60045 0 6
+-1
+S
+
+#60044
+""
+"Under Construction.
+
+"
+"chapel
+
+private chapel altar area
+
+secret study south
+
+evil.altar
+
+"
+301466628 0
+0 6 0
+D1
+""
+""
+0 -1 60045 0 6
+D2
+""
+""
+266 -1 60047 0 6
+D3
+""
+""
+0 -1 60046 0 6
+-1
+S
+
+#60045
+""
+"Under Construction.
+
+"
+"chapel
+
+chapel relic area
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 60043 0 6
+D3
+""
+""
+0 -1 60044 0 6
+-1
+S
+
+#60046
+""
+"Under Construction.
+
+"
+"chapel
+
+private chapel worship area
+
+chapel relic area
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 60042 0 6
+D1
+""
+""
+0 -1 60044 0 6
+-1
+S
+
+#60047
+""
+"Under Construction.
+
+"
+"[Orb] Private study of whatever chaplain is on duty
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+266 -1 60044 0 6
+-1
+S
+
+#0
+

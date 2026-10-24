@@ -1,0 +1,388 @@
+#AREA
+"250 rooms"
+"Elfir"
+""
+1 0
+3
+8
+#ROOMS
+
+#53500
+"Narrow Path"
+"Under Construction.
+
+"
+"[Elfir] North = road to orlumber
+
+"
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 76504 0 6
+D3
+""
+""
+0 -1 53501 0 6
+-1
+S
+
+#53501
+"Narrow Path"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 53500 0 6
+D3
+""
+""
+0 -1 53502 0 6
+-1
+S
+
+#53502
+"Pig Pasture"
+"Short yellowish green grass pokes up determinedly from the dry, packed earth.
+
+A hill rises up sharply to the north and another to the southeast.  A narrow
+
+path cuts between them, winding east.  This dry little valley spreads south
+
+and west and looks fairly round.  An unpleasant odor, caused from scattered
+
+animal droppings, is thinned by a breeze from the west.
+
+"
+"[Elfir] Pig Pasture starts
+
+"
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 53501 0 6
+D2
+""
+""
+0 -1 53506 0 6
+D3
+""
+""
+0 -1 53503 0 6
+E
+"droppings odor"
+"Many of the droppings are squished into the ground from being stepped on, but
+
+some are rounder and more...  fragrant.  Thankfully they are not in high
+
+quanity.
+
+"
+-1
+S
+
+#53503
+"Pig Pasture"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 53502 0 6
+D2
+""
+""
+0 -1 53505 0 6
+D3
+""
+""
+0 -1 53504 0 6
+-1
+S
+
+#53504
+"Pig Pasture"
+"Boulders lie in a massive but unstable pile against the hill.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 53503 0 6
+D2
+""
+""
+0 -1 53510 0 6
+D3
+""
+""
+0 -1 53509 0 6
+-1
+S
+
+#53505
+"Pig Pasture"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 53503 0 6
+D1
+""
+""
+0 -1 53506 0 6
+D2
+""
+""
+0 -1 53508 0 6
+D3
+""
+""
+0 -1 53510 0 6
+-1
+S
+
+#53506
+"Pig Pasture"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 53502 0 6
+D2
+""
+""
+0 -1 53507 0 6
+D3
+""
+""
+0 -1 53505 0 6
+-1
+S
+
+#53507
+"Pig Pasture"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 53506 0 6
+D3
+""
+""
+0 -1 53508 0 6
+-1
+S
+
+#53508
+"Pig Pasture"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 53505 0 6
+D1
+""
+""
+0 -1 53507 0 6
+D3
+""
+""
+0 -1 53512 0 6
+-1
+S
+
+#53509
+"Pig Pasture"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 53504 0 6
+D2
+""
+""
+0 -1 53511 0 6
+-1
+S
+
+#53510
+"Pig Pasture"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 53504 0 6
+D1
+""
+""
+0 -1 53505 0 6
+D2
+""
+""
+0 -1 53512 0 6
+D3
+""
+""
+0 -1 53511 0 6
+-1
+S
+
+#53511
+"Pig Pasture"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 53509 0 6
+D1
+""
+""
+0 -1 53510 0 6
+D2
+""
+""
+0 -1 53513 0 6
+-1
+S
+
+#53512
+"Pig Pasture"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 53510 0 6
+D1
+""
+""
+0 -1 53508 0 6
+D2
+""
+""
+0 -1 53516 0 6
+D3
+""
+""
+0 -1 53513 0 6
+-1
+S
+
+#53513
+"Pig Pasture"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 53511 0 6
+D1
+""
+""
+0 -1 53512 0 6
+D2
+""
+""
+0 -1 53514 0 6
+-1
+S
+
+#53514
+"Pig Pasture"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 53513 0 6
+D1
+""
+""
+0 -1 53516 0 6
+-1
+S
+
+#53516
+"Pig Pasture"
+"The ground slopes gently higher to the north.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 53512 0 6
+D3
+""
+""
+0 -1 53514 0 6
+-1
+S
+
+#0
+

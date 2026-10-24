@@ -1,0 +1,363 @@
+#AREA
+"Alyoshin Steppe"
+"Malrothe"
+""
+65 0
+3
+11
+#ROOMS
+
+#37750
+"Alyoshin Steppe Breeding Grounds"
+"Under Construction.
+
+"
+""
+301465600 0
+0 9 0
+D1
+""
+""
+0 -1 37751 0 9
+1435 169 1509949540 3 0
+2759 2185 1509949540 3 0
+1686 169 1509949540 3 0
+2759 2185 1509949540 3 0
+2756 169 1509949540 3 0
+2759 2185 1509949540 3 0
+2757 137 1509949540 3 0
+2758 169 1509949540 3 0
+2759 2185 1509949540 3 0
+2760 137 1509949540 3 0
+1559 169 1509949540 3 0
+2759 2185 1509949540 3 0
+-1
+S
+
+#37751
+"Wooded Path"
+"Under Construction.
+
+"
+""
+301465600 0
+0 9 0
+D0
+""
+""
+0 -1 37752 0 6
+D3
+""
+""
+0 -1 37750 0 9
+-1
+S
+
+#37752
+"Wooded Path"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 37753 0 6
+D2
+""
+""
+0 -1 37751 0 6
+-1
+S
+
+#37753
+"Wooded Path"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D2
+""
+""
+0 -1 37752 0 6
+D3
+""
+""
+0 -1 37754 0 6
+-1
+S
+
+#37754
+"Wooded Path"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 37755 0 6
+D1
+""
+""
+0 -1 37753 0 6
+-1
+S
+
+#37755
+"Wooded Path"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 37756 0 6
+D2
+""
+""
+0 -1 37754 0 6
+-1
+S
+
+#37756
+"Wooded Path"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D2
+""
+""
+0 -1 37755 0 6
+D3
+""
+""
+0 -1 37757 0 6
+-1
+S
+
+#37757
+"Wooded Path"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+A
+""
+""
+"wait( 2 );
+
+act_tochar( #go1, ch );
+
+wait( 3 );
+
+act_tochar( #go2, ch );
+
+wait( 3 );
+
+act_tochar( #go3, ch );
+
+wait( 3 );
+
+act_tochar( #go4, ch );
+
+wait( 3 );
+
+act_tochar( #go5, ch );
+
+wait( 3 );
+
+act_tochar( #go6, ch );
+
+wait( 3 );
+
+act_tochar( #go7, ch );
+
+wait( 3 );
+
+act_tochar( #go8, ch );
+
+wait( 3 );
+
+act_tochar( #go9, ch );
+
+wait( 3 );
+
+act_tochar( #go10, ch );
+
+wait( 3 );
+
+act_tochar( #go11, ch );
+
+wait( 3 );
+
+act_tochar( #go12, ch );
+
+wait( 3 );
+
+act_tochar( #go13, ch );
+
+wait( 3 );
+
+act_tochar( #go14, ch );
+
+wait( 3 );
+
+act_tochar( #go15, ch );
+
+wait( 3 );
+
+act_tochar( #go16, ch );
+
+wait( 3 );
+
+act_tochar( #go17, ch );
+
+wait( 3 );
+
+act_tochar( #go18, ch );
+
+"
+E
+"go1"
+"You crouch just inside the copse of trees the old warrior mentioned, stopping
+
+a moment to examine your surroundings.
+
+"
+E
+"go2"
+"The copse is dense.  A bird has nested in the branches just above you.  Past
+
+the trees to the north, a fire blazes in a clearing.
+
+"
+E
+"go3"
+"It is night.  The alyoshins sit beside the fire, feasting upon turkey, wild
+
+roots, and wine.  The warlord, marked by a dark crown, sit among the more than
+
+thirty present at the council.
+
+"
+E
+"go4"
+"The moon is high overhead.  A pair of drummers beat on tall, deep drums.  A
+
+pair of guards patrol the circle.
+
+"
+E
+"go5"
+"You seem to have arrived in the middle of an argument.
+
+"
+E
+"go6"
+"@g\"Why do we not march on Sos-Kul?\"@n One of the bearded men asks.@g \"We are ready.
+
+The men are ready.  They grow anxious and tire of patrols.\"
+
+"
+E
+"go7"
+"The warlord chews upon a greasy drumstick.  @B\"The lizardmen are not our
+
+enemies, Vilka.\"@n He stares unconcernedly at the younger, yet venerable,
+
+warrior.
+
+"
+E
+"go8"
+"@g \"Not our enemies!?\" @nOne of the alyoshins has jumped to his feet.  @g\"All the
+
+city-born are our enemies!  Have you forgotten how they cast us out?  Set the
+
+wolves upon us and cursed us?\"
+
+"
+E
+"go9"
+"@y\"Aye, aye,\" @nthe other councilmen grunt in assent.
+
+"
+E
+"go10"
+"@g\"And when they found our villages, they set upon them, setting them to fire,
+
+murdered our women and again chased us out of our homes!\"@n
+
+"
+E
+"go11"
+"@y\"Aye, aye!\"@n The clamoring grows louder.
+
+"
+E
+"go12"
+"One of the guards approaches the copse of trees within which you stand.  You
+
+shrink back against the trunk of a tree, trying to evade his lupine gaze.
+
+"
+E
+"go13"
+"The argument continues in the background.  Some of the alyoshins are gesturing
+
+an shouting as the discussion heats up.
+
+"
+E
+"go14"
+"The guard approaches the very tree you stand against.
+
+"
+E
+"go15"
+"A loud drum beat shakes your chest.  The night above presses down upon you.
+
+"
+E
+"go16"
+"You can hear the guard's breath as he creeps closer to the tree.
+
+"
+E
+"go17"
+"A branch snaps as the guard steps just up to the tree.
+
+"
+E
+"go18"
+"@G\"Ridddddddatwilatalatalatalabrrrrdrdrdrdrr!\"@n the bird above you sings out.
+
+You hear the guard behind you shuffle and grunt in agitation.  You wait until
+
+the sound of him walking away disappears until you return, relieved, to your
+
+watch of the council.
+
+"
+!
+1 0 2
+-1
+S
+
+#0
+

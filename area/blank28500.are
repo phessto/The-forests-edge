@@ -1,0 +1,3554 @@
+#AREA
+"Val'Abun"
+"Darkwind Semix"
+""
+1 0
+3
+0
+#ROOMS
+
+#28500
+"Scales of Justice"
+"The room you're standing in seems large and small at the same time, as if its
+
+dimensions operate under different rules than the rest of the world.  The
+
+walls, ceiling, and floor are all a shimmering silver.  Reflections cast from
+
+these borders are distorted visions of the reality around you.  The room is
+
+devoid of any objects, the sole exception a set of scales on a raised dais in
+
+the room's center.  There are open archways in each basic cardinal direction,
+
+although you cannot seem to see beyond them.
+
+"
+"[DW] Up is a blank room that we'll list our area ides in.
+
+[Semix] Tenative: level^4 penalty for getting caught
+
+[Semix] need rextra for the archways.
+
+
+Type \"push button\" to spawn a Val'Abun Pamphlet (temporary) to get an idea
+
+of what this place is all about.
+
+"
+66584597 0
+0 9 0
+D0
+""
+""
+8192 -1 28503 0 6
+D1
+""
+""
+8192 -1 28502 0 9
+D2
+""
+""
+8192 -1 28504 0 6
+D3
+""
+""
+8192 -1 28501 0 6
+D4
+""
+""
+16384 -1 28574 0 6
+E
+"reflections visions"
+"As you try to focus on a particular reflection your eyes begin to
+
+ache and your vision swims, forcing you to look away.
+
+"
+A
+""
+""
+"// Check adata
+
+continue;
+
+"
+E
+"to_char"
+"You pass through the shimmering archway to the $T.
+
+"
+E
+"to_room"
+"$n passes through the shimmering archway to the $T and disappears.
+
+"
+!
+3 0 15
+A
+""
+""
+"// Check adata
+
+continue;
+
+"
+E
+"to_room"
+"$n suddenly appears in the shimmering archway to the $T.
+
+"
+!
+1 0 15
+A
+"look"
+"*exit"
+"if( is_name( arg, \"n no nor nort north\" ) ) {
+
+  arg = \"north\";
+
+}
+
+else if ( is_name( arg, \"s so sou sout south\" ) ) {
+
+  arg = \"south\";
+
+}
+
+else if ( is_name( arg, \"e ea eas east\" ) ) {
+
+  arg = \"east\";
+
+}
+
+else if ( is_name( arg, \"w we wes west\" ) ) {
+
+  arg = \"west\";
+
+}
+
+else {
+
+  continue;
+
+}
+
+
+act_tochar( string( #archway, null, null, null, cmd, arg ), ch );
+
+"
+E
+"archway"
+"To the $T is a shimmering archway.
+
+"
+!
+0 0 0
+A
+"push press"
+"button"
+"send_to_char( \"You are handed a Val'Abun Pamphlet.\", ch );
+
+obj_to_char( oload( 4748, 1 ), ch );
+
+"
+!
+0 0 0
+4666 17 1509949540 -2 0
+-1
+S
+
+#28501
+"Central Bazaar"
+"The enormous marbled road continues to the north, west, and south.  To the east
+
+is a building raised above the rest of the bazaar, with a long set of wide,
+
+silvery steps surrounding it.  There is an open archway to the building, but
+
+you can't quite see what's past it.  The clank of metal on metal is faint, but
+
+distinct, and stems from farther north.
+
+"
+"[Semix] Need rextra for the archway
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28505 0 9
+D1
+""
+""
+8192 -1 28500 0 6
+D2
+""
+""
+0 -1 28506 0 9
+D3
+""
+""
+0 -1 28564 0 6
+E
+"steps"
+"It takes you a bit of time, but you count forty steps.
+
+"
+E
+"building"
+"The building seems to be the centerpiece of the entire bazaar.  It is made out
+
+of a strange silvery material you haven't seen outside of Val'Abun, almost like
+
+silver-glazed marble.  The building is simple in design, similar to a temple or
+
+monastery but on a much smaller scale.
+
+"
+A
+""
+""
+"// Check adata
+
+continue;
+
+"
+E
+"to_char"
+"You $t up the silvery steps to the $T, passing through the shimmering archway.
+
+"
+E
+"to_room"
+"$n $t up the silvery steps to the $T, passing through the shimmering archway.
+
+"
+!
+3 0 2
+A
+""
+""
+""
+E
+"to_room"
+"$n suddenly appears in the shimmering archway to the $T.
+
+"
+!
+1 0 2
+A
+"look"
+"*exit east"
+"acode( find_room( 28500 ), 3 );
+
+"
+!
+0 0 0
+-1
+S
+
+#28502
+"Central Bazaar"
+"The marbled road continues to the north, south, and east.  To the west
+
+is a building raised above the rest of the bazaar, with a long set of wide,
+
+silvery steps surrounding it.  There is an open archway to the building, but
+
+you can't quite see what's past it.  A faint purplish glow emanates from the
+
+south, while the raucous sounds of animal life can be heard from the north.
+
+"
+"[Semix] Need rextra for the archway
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28508 0 9
+D1
+""
+""
+0 -1 28535 0 9
+D2
+""
+""
+0 -1 28507 0 9
+D3
+""
+""
+8192 -1 28500 0 9
+E
+"building"
+"The building seems to be the centerpiece of the entire bazaar.  It is made out
+
+of a strange silvery material you haven't seen outside of Val'Abun, almost like
+
+silver-glazed marble.  The building is simple in design, similar to a temple or
+
+monastery but on a much smaller scale.
+
+"
+A
+""
+""
+"// Check adata
+
+continue;
+
+"
+E
+"to_char"
+"You $t up the silvery steps to the $T, passing through the shimmering archway.
+
+"
+E
+"to_room"
+"$n $t up the silvery steps to the $T, passing through the shimmering archway.
+
+"
+!
+3 0 8
+A
+""
+""
+"// Check adata
+
+continue;
+
+"
+E
+"to_room"
+"$n suddenly appears in the shimmering archway to the $T.
+
+"
+!
+1 0 8
+A
+"look"
+"*exit west"
+"acode( find_room( 28500 ), 3 );
+
+"
+!
+0 0 0
+-1
+S
+
+#28503
+"Central Bazaar"
+"The marbled road continues to the north, west, and east.  To the south
+
+is a building raised above the rest of the bazaar, with a long set of wide,
+
+silvery steps surrounding it.  There is an open archway to the building, but
+
+you can't quite see what's past it.  The clank of metal on metal is faint, but
+
+distinct, coming from somewhere to the west.  Neighs, barks, and other more
+
+obscure animal noises drift past you from somewhere to the east.
+
+"
+"[Semix] Need rextra for the archway
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28542 0 9
+D1
+""
+""
+0 -1 28508 0 9
+D2
+""
+""
+8192 -1 28500 0 6
+D3
+""
+""
+0 -1 28505 0 9
+E
+"building"
+"The building seems to be the centerpiece of the entire bazaar.  It is made out
+
+of a strange silvery material you haven't seen outside of Val'Abun, almost like
+
+silver-glazed marble.  The building is simple in design, similar to a temple or
+
+monastery but on a much smaller scale.
+
+"
+A
+""
+""
+"// Check adata
+
+continue;
+
+"
+E
+"to_char"
+"You $t up the silvery steps to the $T, passing through the shimmering archway.
+
+"
+E
+"to_room"
+"$n $t up the silvery steps to the $T, passing through the shimmering archway.
+
+"
+!
+3 0 4
+A
+""
+""
+"// Check adata
+
+continue;
+
+"
+E
+"to_room"
+"$n suddenly appears in the shimmering archway to the $T.
+
+"
+!
+1 0 4
+A
+"look"
+"*exit south"
+"acode( find_room( 28500 ), 3 );
+
+"
+!
+0 0 0
+-1
+S
+
+#28504
+"Central Bazaar"
+"The marbled white road continues to the south, west, and east.  To the north
+
+is a building raised above the rest of the bazaar, with a long set of wide,
+
+silvery steps surrounding it.  There is an open archway to the building, but
+
+you can't quite see what's past it.  A faint purplish glow emanates from the
+
+east.
+
+"
+"[Semix] Need rextra for the archway
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+8192 -1 28500 0 6
+D1
+""
+""
+0 -1 28507 0 9
+D2
+""
+""
+0 -1 28528 0 9
+D3
+""
+""
+0 -1 28506 0 9
+E
+"building"
+"The building seems to be the centerpiece of the entire bazaar.  It is made out
+
+of a strange silvery material you haven't seen outside of Val'Abun, almost like
+
+silver-glazed marble.  The building is simple in design, similar to a temple or
+
+monastery but on a much smaller scale.
+
+"
+A
+""
+""
+"// Check adata
+
+continue;
+
+"
+E
+"to_char"
+"You $t up the silvery steps to the $T, passing through the shimmering archway.
+
+"
+E
+"to_room"
+"$n $t up the silvery steps to the $T, passing through the shimmering archway.
+
+"
+!
+3 0 1
+A
+""
+""
+"// Check adata
+
+continue;
+
+"
+E
+"to_room"
+"$n suddenly appears in the shimmering archway to the $T.
+
+"
+!
+1 0 1
+A
+"look"
+"*exit north"
+"acode( find_room( 28500 ), 3 );
+
+"
+!
+0 0 0
+-1
+S
+
+#28505
+"Central Bazaar, Northwest Corner"
+"Rhythmic clanging emerges from the shop to the west, and although there is no
+
+marking to signify what type of store it is, you can make out racks of various
+
+weapons lining the walls.  To the north is a similar clamor, although you can
+
+detect that it has a slightly different tone.  You cannot quite make out what is
+
+inside that shop, however.  The wide, white-marbled road continues to the south
+
+and east.  A building that sits at the center of the bazaar looms to the
+
+southeast.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28509 0 7
+D1
+""
+""
+0 -1 28503 0 9
+D2
+""
+""
+0 -1 28501 0 9
+D3
+""
+""
+0 -1 28510 0 7
+E
+"building"
+"The building seems to be the centerpiece of the entire bazaar.  It is made out
+
+of a strange silvery material you haven't seen outside of Val'Abun, almost like
+
+silver-glazed marble.  The building is simple in design, similar to a temple or
+
+monastery but on a much smaller scale.
+
+"
+-1
+S
+
+#28506
+"Central Bazaar, Southwest Corner"
+"The shop to the south is dimly lit, so its contents currently remain a secret.
+
+A sign above the shop flaps gently in the breeze, made of some strange scarlet
+
+fur, and depicts a creature similar to a fox.  The shop to the west has several
+
+glass windows in which a multitude of gems, jewelry, and other precious metals
+
+are on display.  The pristine marble road continues to the north and east.  A
+
+building that sits at the center of the bazaar rises above you to the northeast.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28501 0 9
+D1
+""
+""
+0 -1 28504 0 9
+D2
+""
+""
+0 -1 28512 0 7
+D3
+""
+""
+0 -1 28511 0 7
+E
+"building"
+"The building seems to be the centerpiece of the entire bazaar.  It is made out
+
+of a strange silvery material you haven't seen outside of Val'Abun, almost like
+
+silver-glazed marble.  The building is simple in design, similar to a temple or
+
+monastery but on a much smaller scale.
+
+"
+-1
+S
+
+#28507
+"Central Bazaar, Southeast Corner"
+"To the east is the source of the purple light, a glowing ball hanging above the
+
+doorway to what looks to be a store of some sort.  There is no other marking to
+
+indicate its contents.  The store to the south is more unassuming, with a
+
+simple picture of a scroll etched into the marble on the right of the door.
+
+The white marble road continues to the north and west.  A building that sits at
+
+the center of the bazaar rises above you to the northwest.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28502 0 9
+D1
+""
+""
+0 -1 28513 0 7
+D2
+""
+""
+0 -1 28514 0 7
+D3
+""
+""
+0 -1 28504 0 9
+E
+"building"
+"The building seems to be the centerpiece of the entire bazaar.  It is made out
+
+of a strange silvery material you haven't seen outside of Val'Abun, almost like
+
+silver-glazed marble.  The building is simple in design, similar to a temple or
+
+monastery but on a much smaller scale.
+
+"
+E
+"purple light ball glowing"
+"The purple ball of glowing light is suspended above the eastern doorway with
+
+no visible means of support.
+
+"
+-1
+S
+
+#28508
+"Central Bazaar, Northeast Corner"
+"The air is filled with the musty smell of animals and their unfortunate
+
+leavings, making your eyes water slightly.  Neighs and whinnies are coming
+
+from the east while barks, growls, and screeches fight for supremacy from the
+
+north.  The splendid marble road continues to the south and west.  A building
+
+that sits at the center of the bazaar looms to the southwest.
+
+"
+"[DW] Smells of animals or something, maybe. (acode)
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28566 0 6
+D1
+""
+""
+0 -1 28516 0 7
+D2
+""
+""
+0 -1 28502 0 9
+D3
+""
+""
+0 -1 28503 0 9
+E
+"building"
+"The building seems to be the centerpiece of the entire bazaar.  It is made out
+
+of a strange silvery material you haven't seen outside of Val'Abun, almost like
+
+silver-glazed marble.  The building is simple in design, similar to a temple or
+
+monastery but on a much smaller scale.
+
+"
+-1
+S
+
+#28509
+"Armor Shop"
+"Under Construction.
+
+"
+""
+33034261 0
+0 7 0
+D2
+""
+""
+0 -1 28505 0 7
+2810 9 1509949540 3 0
+-1
+S
+
+#28510
+"Weapon Shop"
+"Under Construction.
+
+"
+""
+33034261 0
+0 7 0
+D1
+""
+""
+0 -1 28505 0 7
+-1
+S
+
+#28511
+"Jewelry Shop"
+"Under Construction.
+
+"
+""
+33034261 0
+0 7 0
+D1
+""
+""
+0 -1 28506 0 7
+-1
+S
+
+#28512
+"Luxury Shop"
+"Under Construction.
+
+"
+""
+33034261 0
+0 7 0
+D0
+""
+""
+0 -1 28506 0 7
+-1
+S
+
+#28513
+"Reagent Shop"
+""
+""
+33034261 0
+0 7 0
+D3
+""
+""
+0 -1 28507 0 7
+-1
+S
+
+#28514
+"Scroll Shop"
+"Under Construction.
+
+"
+""
+33034261 0
+0 7 0
+D0
+""
+""
+0 -1 28507 0 7
+-1
+S
+
+#28515
+"Government District"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28560 0 6
+D2
+""
+""
+0 -1 28565 0 6
+-1
+S
+
+#28516
+"Fantastic Mount Shop"
+"Under Construction.
+
+"
+""
+33038357 0
+0 7 0
+D3
+""
+""
+0 -1 28508 0 7
+D5
+""
+""
+16384 -1 28517 0 6
+2803 9 1509949540 3 0
+-1
+S
+
+#28517
+"Mount Storage Room"
+"Under Construction.
+
+"
+"[Semix] Hmm, warpig's mpcodes seem a bit off.
+
+"
+33030165 0
+0 6 0
+D4
+""
+""
+16384 -1 28516 0 6
+2804 9 1509949540 3 0
+2845 9 1509949540 3 0
+-1
+S
+
+#28518
+"Outside Cobalt Gates"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D1
+""
+""
+0 -1 28562 0 9
+D3
+"Ornate Cobalt-Blue Gates"
+"ornate cobalt-blue blue gates"
+98711 -1 28557 0 9
+2791 9 1509949540 3 0
+2791 9 1509949540 3 0
+-1
+S
+
+#28519
+"Outer Bazaar, West Side"
+"To the west is the most lavish entrance to a building in the bazaar.  A bright
+
+red carpet coats the half-dozen stairs that lead up to an ornate set of wooden
+
+double-doors easily three stories high.  Immense stone columns flank the doors,
+
+decorated with etchings of a multitude of races.  The smoothly-marbled road
+
+continues to the north, where a massive domed building can be seen far in the
+
+distance.  The road to the south brings you to the Cobalt district intersection.
+
+"
+"[DW] add acode to hear singing coming from the playhouse
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28521 0 9
+D2
+""
+""
+0 -1 28562 0 9
+D3
+""
+""
+0 -1 28577 0 7
+-1
+S
+
+#28520
+"Outer Bazaar, West Side"
+"Vendors line the road, hawking their wares from various carts and stands. Most
+
+of the vendors are selling useless tourist items, except for one stand that has
+
+the scent of fresh, crisp vegetables and fruits emanating from it. There appear
+
+to be no entrances to the buildings that lie to the east and west, at least
+
+from here.  To the north is the Cobalt district intersection, while to the south
+
+you can smell baking bread.
+
+"
+"Set vegetable seller here, as well as fruits and veggies stand
+
+"
+33034257 0
+1 9 0
+D0
+""
+""
+0 -1 28562 0 9
+D2
+""
+""
+0 -1 28522 0 9
+2800 9 1509949540 3 0
+-1
+S
+
+#28521
+"Outer Bazaar, West Side"
+"A lavish building is situated to the west, although the entrance to it is
+
+further south.  The store to the east has a large copper plaque above the door,
+
+in which is engraved a picture of a shovel and a rope.  The marble road
+
+continues south toward the the Cobalt district and north toward a huge, domed
+
+building.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28523 0 9
+D1
+""
+""
+0 -1 28545 0 7
+D2
+""
+""
+0 -1 28519 0 9
+-1
+S
+
+#28522
+"Outer Bazaar, West Side"
+"The heavenly scent of freshly baked bread inundates the air around you.  The
+
+store to the east, unlike most of the stores in the bazaar, has pure glass
+
+walls, allowing you to see the variety of baked goods ready to be purchased.
+
+Sweetmeat, bread, syrupy goodies, hard candy, fudge, and huge cookies decorate
+
+the storefront.  The city road continues south toward a bend to the east, and
+
+north toward a distant intersection.
+
+"
+"[DW] Smells of baking wafting from the east. (acode)
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28520 0 9
+D1
+""
+""
+0 -1 28547 0 7
+D2
+""
+""
+0 -1 28524 0 9
+-1
+S
+
+#28523
+"Outer Bazaar, Northwest Corner"
+"The west end of the domed structure that is the Val'Abun Coliseum lies to the
+
+north, its apex many stories high.  There are several dozen entryways to the
+
+north, accessible in between the multitude of Doric columns that support this
+
+amazing stonework construction.  The sound of music can be heard sporadically
+
+coming from the west, where a shop with a golden guitar, depicted on a sign to
+
+the right of its door, stands.  The white-marbled road continues along the
+
+outer bazaar to the south and east.
+
+"
+"[DW] Shouts and cheers reverberate from the colesium to the north. (acode)
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28580 0 9
+D1
+""
+""
+0 -1 28544 0 9
+D2
+""
+""
+0 -1 28521 0 9
+D3
+""
+""
+0 -1 28579 0 7
+-1
+S
+
+#28524
+"Outer Bazaar, Southwest Corner"
+"To the south is an rustic wooden building, complete with a wooden sign labeled
+
+'Inn' poking out over the road, quite out of place in a city filled with alien
+
+materials and architecture.  A similarly decorated building lies to the east,
+
+although much larger and with a mug of beer depicted on its sign.  The gleaming
+
+white-marble road continues along the outer bazaar to the north and east.  The
+
+distant scent of baked goods seem to come from both directions.
+
+"
+"[DW] Acode for raucous laughter coming from the west.
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28522 0 9
+D1
+""
+""
+0 -1 28525 0 9
+D2
+""
+""
+0 -1 28550 0 7
+D3
+""
+""
+0 -1 28549 0 7
+-1
+S
+
+#28525
+"Outer Bazaar, South Side"
+"The scent of freshly baked goods envelops you, drawing you toward the shop to
+
+the north.  The store, unlike most of the stores in the bazaar, has pure glass
+
+walls, allowing you to see the variety of baked goods ready to be purchased.
+
+Sweetmeat, bread, syrupy goodies, hard candy, fudge, and huge cookies lure in
+
+unwary travelers, changing their waistlines forever.  From the east drifts a
+
+hint of spices, barely able to penetrate the wall of scents built by the
+
+northern bakery.  To the west is a northern curve in the wide road that will
+
+invariably lead to more shops.  The southern building looks like stables,
+
+although you can't smell or hear anything coming from it.
+
+"
+"[DW] Smells of baking wafting from the north. (acode)
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28547 0 7
+D1
+""
+""
+0 -1 28526 0 9
+D2
+""
+""
+0 -1 28553 0 7
+D3
+""
+""
+0 -1 28524 0 9
+-1
+S
+
+#28526
+"Outer Bazaar, South Side"
+"Delicious smells waft past your nose, a pleasing blend of spices and baked
+
+goods. A strong smell of cooking meat, vegetables, and herbs come from the
+
+building to the south, its only marking a dancing blue flame over the doorway.
+
+The smell of baking bread and steaming sweets comes from farther west, where
+
+the marble road continues toward more shops.  To the east is the Government
+
+District Crossroads.
+
+"
+""
+33030161 0
+1 6 0
+D1
+""
+""
+0 -1 28563 0 6
+D2
+"door"
+"door"
+131 -1 28572 0 7
+D3
+""
+""
+0 -1 28525 0 9
+-1
+S
+
+#28527
+"Outside Government District Gates"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28563 0 9
+D2
+"massive adamantine gate"
+"massive adamantine gate"
+66007 -1 28560 0 6
+2794 9 1509949540 3 0
+2794 9 1509949540 3 0
+-1
+S
+
+#28528
+"Southern Throughway"
+"Flanking you to the east and west are two large buildings made of some material
+
+that resembles wood, or perhaps it is a wood you've never encountered before.
+
+The building to the west is a deep cherry, while the building to the east is a
+
+dusky yellow-brown.  The impeccably paved road continues north toward the
+
+center of the bazaar, while to the south it travels toward the outer ring of
+
+stores and the Government District.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28504 0 9
+D2
+""
+""
+0 -1 28563 0 9
+-1
+S
+
+#28529
+"Outer Bazaar, South Side"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D1
+""
+""
+0 -1 28530 0 9
+D3
+""
+""
+0 -1 28563 0 9
+-1
+S
+
+#28530
+"Outer Bazaar, South Side"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28548 0 7
+D1
+""
+""
+0 -1 28531 0 9
+D3
+""
+""
+0 -1 28529 0 9
+-1
+S
+
+#28531
+"Outer Bazaar, Southeast Corner"
+"Under Construction.
+
+"
+"add mob here that allows only remorts south: some sort of seer
+
+
+[DW] Sudden flashing light as somerled teleports someone. (acode)
+
+[Semix] Created a simple message, will likely need to be spruced up a bit.
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28532 0 9
+D1
+""
+""
+0 -1 28575 0 7
+D2
+""
+""
+0 -1 28554 0 7
+D3
+""
+""
+0 -1 28530 0 9
+2790 9 1509949540 3 0
+-1
+S
+
+#28532
+"Outer Bazaar, East Side"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28533 0 9
+D1
+""
+""
+0 -1 28569 0 7
+D2
+""
+""
+0 -1 28531 0 9
+D3
+""
+""
+0 -1 28548 0 7
+-1
+S
+
+#28533
+"Outer Bazaar, East Side"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28590 0 9
+D2
+""
+""
+0 -1 28532 0 9
+-1
+S
+
+#28534
+"Outside Emerald Gates"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D1
+"Glittering Emerald-Green Gates"
+"glittering emerald-green green gates"
+98711 -1 28559 0 9
+D3
+""
+""
+0 -1 28590 0 9
+2793 9 1509949540 3 0
+2793 9 1509949540 3 0
+-1
+S
+
+#28535
+"Eastern Throughway"
+"Muffled neighs and the occasional sound of hooves scraping against wood come from
+
+the building to the north, although there does not appear to be an entrance on
+
+this side of the building.  There is a faint purplish glow cast on the north
+
+building, seeming to originate somewhere from the southwest, around the corner
+
+of the southern building.  The marble-paved road continues west toward the
+
+center of the bazaar, while to the east it travels toward the outer ring of
+
+stores and the Emerald District.
+
+"
+""
+33030161 0
+1 9 0
+D1
+""
+""
+0 -1 28590 0 9
+D3
+""
+""
+0 -1 28502 0 9
+-1
+S
+
+#28536
+"Outer Bazaar, East Side"
+"The Bank of Val'Abun lies to the east, its name printed in many languages on
+
+several signs affixed to the outside walls.  A carefully attended flower garden
+
+surrounds the bank, filling the air with pleasant fragrances.  The wide, white
+
+marbled road continues south toward the Emerald district intersection.  Long
+
+shadows reach toward you from the north, although they seem to be unable to
+
+penetrate far beyond its source: a large, black-marbled temple.  A glimpse of
+
+sandy gold can be seen even farther to the north.
+
+"
+"[DW] Acode of the bazaar noise quieting when entering this room from the south.
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28537 0 9
+D1
+""
+""
+0 -1 28588 0 7
+D2
+""
+""
+0 -1 28590 0 9
+A
+""
+""
+"send_to_char( \"\", ch );
+
+
+// Alignment Specific Reactions
+
+i = find_stat( ch, align );
+
+if( i / 3 == 0 ) {
+
+  arg = string( #quieting, ch, null, null, #relief, \"\" );
+
+}
+
+else if( i / 3 == 2 ) {
+
+  arg = string( #quieting, ch, null, null, #longing, \"\" );
+
+}
+
+else {
+
+  arg = string ( #quieting, ch, null, null, \"\", \"\" );
+
+}
+
+
+// Display Message
+
+act_tochar( arg, ch );
+
+
+"
+E
+"quieting"
+"
+
+@WMuffled by the towering marble walls to the west, the chaotic sounds of the
+
+bazaar have become somewhat muted. $t@n
+
+"
+E
+"relief"
+"Freed from the constant clamor, you can't help but breath a sigh of relief.
+
+"
+E
+"longing"
+"Leaving the clamor behind, you feel a brief moment of wistfulness.
+
+"
+!
+1 0 4
+-1
+S
+
+#28537
+"Outer Bazaar, East Side"
+"The foreboding temple to the east is made entirely of an eerily black, seamless
+
+marble that seems to absorb all ambient light around it.  The statue of a
+
+unicorn in full gallop rises above the second floor's parapet, made of even
+
+blacker material than the temple itself, although that does not seem rationally
+
+possible.  Incredibly out of place is the smell of leather and oil coming from
+
+a rustic shop to the west.  The subdued marble road continues south along the
+
+outer bazaar ring, as well as north toward a sand-colored temple.
+
+"
+""
+33030160 0
+1 9 0
+D0
+""
+""
+0 -1 28538 0 6
+D1
+""
+""
+8192 -1 28587 0 7
+D2
+""
+""
+0 -1 28536 0 9
+D3
+""
+""
+0 -1 28546 0 7
+E
+"unicorn statue"
+"The statue of a unicorn is stretched in a full gallop, its gnarled and twisted
+
+horn stained a sickening crimson.  Eyes the color of blood roll back in its
+
+marble head, giving it a frenzied, evil look.
+
+"
+-1
+S
+
+#28538
+"Outer Bazaar, Northeast Corner"
+"The sand-colored temple before you seems to pulse with an energy more felt than
+
+seen, raising goose bumps all over your body.  Six steps lead north into the
+
+temple, its doorway shrouded in the total darkness of a moonless night.  To the
+
+east is the edge of a another, more sinister temple whose entrance is farther
+
+south.  A glowing light can be seen further west, its source a distant spire in
+
+the sky.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+8192 -1 28585 0 7
+D2
+""
+""
+0 -1 28537 0 6
+D3
+""
+""
+0 -1 28539 0 9
+E
+"doorway darkness moonless n no nor nort north"
+"Upon further inspection, the doorway is not utter darkness.  Pinpoints of
+
+light dot the seeming emptiness, reminding you of a formation of stars you're
+
+pretty sure you've seen before, perhaps in the night sky.
+
+"
+-1
+S
+
+#28539
+"Outer Bazaar, North Side"
+"There is a soft glow coming from the northwest, shining from the symbol of a
+
+sun on the apex of a church's steeple.  There is a sizable gap between the
+
+church to the north and west and the temple to the northeast, filled by an
+
+impeccably tended garden filled with strange, but colorful vegetation.  There
+
+is a dusky, leathery smell in the air, and it seems to be coming from the shop
+
+to the south.  Strangely out of place among the churches and temples of the
+
+religious, the shop's sign depicts a saddle and horseshoe.
+
+"
+""
+33030161 0
+1 9 0
+D1
+""
+""
+0 -1 28538 0 9
+D2
+""
+""
+0 -1 28546 0 7
+D3
+""
+""
+0 -1 28540 0 9
+-1
+S
+
+#28540
+"Outer Bazaar, North Side"
+"A soft glow caresses your face, its source the church to the north.  The symbol
+
+of a sun shines forth from the apex of the church's steeple, proving the gentle
+
+light.  A feeling of peace invades you, an emotion you are powerless to combat
+
+even if you were so inclined.  The white-marbled road glows in response to the
+
+church's symbol, lighting your way east toward two other places of worship, and
+
+west toward the Crimson district intersection.
+
+"
+"[DW] Entering acode from west only that says something about how quiet it is.
+
+[DW] The din of the bazaar fades into a gentle murmur.
+
+"
+33030163 0
+1 9 0
+D0
+""
+""
+0 -1 28583 0 7
+D1
+""
+""
+0 -1 28539 0 9
+D3
+""
+""
+0 -1 28591 0 9
+A
+""
+""
+"send_to_char( \"\", ch );
+
+
+// Alignment Specific Reactions
+
+i = find_stat( ch, align );
+
+if( i / 3 == 0 ) {
+
+  arg = string( #murmur, ch, null, null, #relief, \"\" );
+
+}
+
+else if( i / 3 == 2 ) {
+
+  arg = string( #murmur, ch, null, null, #longing, \"\" );
+
+}
+
+else {
+
+  arg = string ( #murmur, ch, null, null, \"\", \"\" );
+
+}
+
+
+// Display Message
+
+act_tochar( arg, ch );
+
+"
+E
+"murmur"
+"Muffled by the towering marble walls to the south, the din of the bazaar
+
+fades into a gentle murmur. $t
+
+"
+E
+"relief"
+"Freed from the constant clamor, you can't help but breath a sigh of relief.
+
+"
+E
+"longing"
+"Leaving the clamor behind, you feel a brief moment of wistfulness.
+
+"
+!
+1 0 8
+-1
+S
+
+#28541
+"Outside Crimson Gates"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D0
+"Twisted Crimson Gates"
+"twisted crimson gates"
+98711 -1 28558 0 9
+D2
+""
+""
+0 -1 28591 0 9
+2792 9 1509949540 3 0
+2792 9 1509949540 3 0
+-1
+S
+
+#28542
+"Northern Throughway"
+"This throughway connects the outer bazaar to the north with the central bazaar
+
+to the south.  A glimpse of crimson from the north catches your eye, but you
+
+can't quite make out what it is.  The building to the east has a montage of
+
+forest creatures painted with loving care covering its entirety, a scene
+
+reminiscent of Medienne Forest seen when a little too inebriated.  The building
+
+to the west has the look of a smithy, all function and little art.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28591 0 9
+D2
+""
+""
+0 -1 28503 0 9
+-1
+S
+
+#28543
+"Outer Bazaar, North Side"
+"The east end of the domed structure that is the Val'Abun Coliseum lies to the
+
+north, its apex many stories high.  There are several dozen entryways to the
+
+north, accessible in between a multitude of Doric columns.  The marbled road of
+
+Val'Abun continues east toward the Crimson district intersection, as well as
+
+west along the outer bazaar ring.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28582 0 9
+D1
+""
+""
+0 -1 28591 0 6
+D3
+""
+""
+0 -1 28544 0 9
+-1
+S
+
+#28544
+"Outer Bazaar, North Side"
+"To the north is the center of the Val'Abun Coliseum.  From here you can make
+
+out the Ionic columns that support the second tier of the amphitheatre, as well
+
+as the Corinthian columns that support the roof.  Entrances to the Coliseum can
+
+be seen farther to both the east and west.  A store to the south boasts a
+
+modest copper sign above its store, depicting a rope and a shovel.
+
+"
+""
+33030161 0
+1 9 0
+D1
+""
+""
+0 -1 28543 0 9
+D2
+""
+""
+0 -1 28545 0 7
+D3
+""
+""
+0 -1 28523 0 9
+-1
+S
+
+#28545
+"Eallair's Supply Store"
+"Under Construction.
+
+"
+""
+33034261 0
+1 7 0
+D0
+""
+""
+0 -1 28544 0 7
+D3
+""
+""
+0 -1 28521 0 7
+-1
+S
+
+#28546
+"Pet Equipment Store"
+"Under Construction.
+
+"
+""
+33034261 0
+1 7 0
+D0
+""
+""
+0 -1 28539 0 7
+D1
+""
+""
+0 -1 28537 0 7
+-1
+S
+
+#28547
+"Bakery"
+"Under Construction.
+
+"
+"[Semix] rextra for larder?
+
+"
+33034261 0
+1 7 0
+D2
+""
+""
+0 -1 28525 0 7
+D3
+""
+""
+0 -1 28522 0 7
+A
+""
+""
+"if( mob_in_room( 2805, room ) ) {
+
+  send_to_room( #baker, room );
+
+  send_to_room( #freshn, find_room( 28525 ) );
+
+  send_to_room( #freshe, find_room( 28522 ) );
+
+}
+
+"
+E
+"baker"
+"@yThe baker pulls his latest creation out of the oven, filling the air with the
+
+scent of freshly baked goods.@n
+
+"
+E
+"freshe"
+"@yThe smell of freshly baked goods wafts in from the east.@n
+
+"
+E
+"freshn"
+"@yThe smell of freshly baked goods wafts in from the north.@n
+
+"
+!
+4 500 0
+2805 9 1509949540 3 0
+-1
+S
+
+#28548
+"Alchemical Emporium"
+"Under Construction.
+
+"
+"[Semix] Shop keeper needed
+
+"
+33034261 0
+1 7 0
+D1
+""
+""
+0 -1 28532 0 7
+D2
+""
+""
+0 -1 28530 0 7
+-1
+S
+
+#28549
+"Hiro's Tavern"
+"Under Construction.
+
+"
+""
+33030165 0
+0 7 0
+D0
+""
+""
+0 -1 28551 0 7
+D1
+""
+""
+0 -1 28524 0 7
+2799 9 1509949540 3 0
+-1
+S
+
+#28550
+"Y.T's Inn"
+"The \"inn\" provides a service where the client is put into a state of suspended
+
+animation through immersion in a pool of an emerald-glowing liquid.  The liquid
+
+cleanses the body of impurities and increases the natural regenerative powers
+
+of the subject.  The pool also has the property that time moves much faster for
+
+the subject than those not immersed, effectively creating a near-instant
+
+recovery.
+
+"
+"The owner of this inn will fully restore you for 20 plat with a suspended
+
+animation-type sleep.  since the entire zone is no.recall, this should be
+
+relatively non-abusable.
+
+"
+33030165 0
+0 7 0
+D0
+""
+""
+0 -1 28524 0 7
+D3
+"door"
+"door"
+407 -1 28556 0 7
+-1
+S
+
+#28551
+"Hiro's Tavern, Smoky Bar"
+"Under Construction.
+
+"
+""
+33030165 0
+0 7 0
+D0
+"door"
+"door"
+391 -1 28552 0 7
+D2
+""
+""
+0 -1 28549 0 7
+-1
+S
+
+#28552
+"Hiro's Tavern, Casino Room"
+"Under Construction.
+
+"
+"[DW] I'm thinking Blackjack with the new card game, roulette, and whatever we think of.
+
+"
+33030165 0
+0 6 0
+D2
+"door"
+"door"
+391 -1 28551 0 7
+-1
+S
+
+#28553
+"Stables"
+"Under Construction.
+
+"
+""
+33030165 0
+0 7 0
+D0
+""
+""
+0 -1 28525 0 7
+-1
+S
+
+#28554
+"Remort Customs"
+"Under Construction.
+
+"
+"[DW] Not sure how many rooms we'll need.  These will be mostly low to mid level remort 1 customs.
+
+"
+33030165 0
+0 7 0
+D0
+""
+""
+0 -1 28531 0 7
+D1
+""
+""
+0 -1 28573 0 7
+D3
+""
+""
+0 -1 28555 0 7
+-1
+S
+
+#28555
+"Remort Customs"
+"Under Construction.
+
+"
+""
+33030165 0
+0 7 0
+D1
+""
+""
+0 -1 28554 0 7
+-1
+S
+
+#28556
+"Y.T's Inn"
+"Under Construction.
+
+"
+"[Semix] rextra for pool, and acode for entering pool
+
+[Semix] Basic healing done, need messages.
+
+"
+33030165 0
+0 7 0
+D1
+"door"
+"door"
+407 -1 28550 0 7
+D5
+""
+""
+8224 -1 28605 0 6
+A
+"enter jump climb dive"
+"pool water liquid"
+"// Transfer to pool room
+
+transfer( ch, find_room( 28605 ) );
+
+"
+!
+0 0 0
+-1
+S
+
+#28557
+"Entrance to Cobalt Faction"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D1
+"Ornate Cobalt-Blue Gates"
+"ornate cobalt-blue blue gates"
+98711 -1 28518 0 9
+-1
+S
+
+#28558
+"Entrance to Crimson Faction"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D2
+"Twisted Crimson Gates"
+"twisted crimson gates"
+98711 -1 28541 0 9
+-1
+S
+
+#28559
+"Entrance to Emerald Faction"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D3
+"Glittering Emerald-Green Gates"
+"glittering emerald-green green gates"
+98711 -1 28534 0 9
+-1
+S
+
+#28560
+"Entrance to Government District"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D0
+"massive adamantine gate"
+"massive adamantine gate"
+66007 -1 28527 0 6
+D2
+""
+""
+0 -1 28515 0 6
+D3
+""
+""
+0 -1 28603 0 6
+A
+"knock bang pound"
+"massive adamantine gates north"
+"exit = door( room, north );
+
+if( !is_open( room, north ) ) {
+
+  act_tochar( #to_char, ch );
+
+  act_notchar( #to_room, ch );
+
+  open( room, north );
+
+  send_to_room( #to_all, room );
+
+  send_to_room( #to_all, leads_to( exit ) );
+
+}
+
+else {
+
+  act_tochar( #nothing, ch );
+
+  end;
+
+}
+
+
+wait( 3 );
+
+
+if( is_open( room, north ) ) {
+
+  close( room, north );
+
+  send_to_room( #close, room );
+
+  send_to_room( #close, leads_to( exit ) );
+
+}
+
+"
+E
+"to_char"
+"You bang loudly on the massive adamantine gate to the north.
+
+"
+E
+"to_room"
+"$n bangs loudly on the massive adamantine gate to the north.
+
+"
+E
+"to_all"
+"The gate opens with an audible groan.
+
+"
+E
+"nothing"
+"The gate is already open.
+
+"
+E
+"close"
+"The gate closes with a resounding clang.
+
+"
+!
+0 0 0
+-1
+S
+
+#28561
+"Classroom"
+"Under Construction.
+
+"
+""
+33030165 0
+0 8 0
+D2
+""
+""
+0 -1 28593 0 6
+-1
+S
+
+#28562
+"Cobalt District Crossroads"
+"A beautiful, blue-marble @efountain@n dominates the center of this intersection.
+
+Easily thirty feet high and as wide as a building, it still only takes up a
+
+small section of the white-marbled road.  The water that filters down the
+
+fountain's six levels is is pure and clear.  In the distance to the west you
+
+can see a large set of cobalt-blue gates blocking the road.  The eastern road
+
+takes you toward the bazaar's center, while the road to the north and south
+
+continues along the outer bazaar ring.
+
+"
+"[DW] Add cobalt-faction fountain guard
+
+[Semix] Typo in the odesc of the fountain near 'adorn fountain'
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28519 0 9
+D1
+""
+""
+0 -1 28564 0 6
+D2
+""
+""
+0 -1 28520 0 9
+D3
+""
+""
+0 -1 28518 0 9
+4678 273 1509949540 -2 0
+-1
+S
+
+#28563
+"Government District Crossroads"
+"Rivers of white marble form an immense intersection here, the entrance to
+
+Val'Abun's bazaar.  The roads are easily wide enough for twenty horse-drawn
+
+carts to ride down, side by side.  A cornucopia of sights, sounds, and smells
+
+assault your senses, hinting at the wide variety of goods and services
+
+available here.  To the north is a throughway that will bring you to the
+
+center of the bazaar, while the roads east and west seem to go in between
+
+shops along the outer bazaar walls.  Far to the south you can make out a huge
+
+set of adamantine gates that mark the entrance to the Government District.
+
+"
+"[Semix] Typo in fountain odesc
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28528 0 9
+D1
+""
+""
+0 -1 28529 0 9
+D2
+""
+""
+0 -1 28527 0 9
+D3
+""
+""
+0 -1 28526 0 6
+4677 17 1509949540 -2 0
+-1
+S
+
+#28564
+"Western Throughway"
+"Flanking you to the north and south are two large buildings, although it seems
+
+there is no access to their interiors from here. The building to the north is
+
+made out of some kind of dark orange brick, while the building to the south is
+
+gaudily glazed in gold and silver.  The impeccably paved road continues east
+
+toward the center of the bazaar, while to the west it travels toward the outer
+
+ring of stores and the Cobalt district.
+
+"
+""
+33030161 0
+1 9 0
+D1
+""
+""
+0 -1 28501 0 6
+D3
+""
+""
+0 -1 28562 0 6
+-1
+S
+
+#28565
+"Courtyard"
+"Under Construction.
+
+"
+"[Semix] Sundial here.  type 'look sundial' to trigger oprog (or look large/ornate)
+
+"
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28515 0 6
+D1
+""
+""
+0 -1 28570 0 6
+D2
+""
+""
+0 -1 28600 0 6
+D3
+"double-doors"
+"double-doors doors"
+1 -1 28593 0 6
+4684 17 1509949540 -2 0
+-1
+S
+
+#28566
+"Fantastic Pet Shop"
+"Under Construction.
+
+"
+""
+33034261 0
+0 7 0
+D2
+""
+""
+0 -1 28508 0 6
+D5
+""
+""
+0 -1 28567 0 6
+-1
+S
+
+#28567
+"Pet Storage Room"
+"Under Construction.
+
+"
+""
+33030165 0
+1 6 0
+D4
+""
+""
+0 -1 28566 0 6
+-1
+S
+
+#28568
+"Temple of Meriada"
+"Under Construction.
+
+"
+""
+33030165 0
+0 6 0
+D3
+""
+""
+0 -1 28585 0 7
+-1
+S
+
+#28569
+"Library"
+"Under Construction.
+
+"
+""
+33030165 0
+0 7 0
+D0
+""
+""
+0 -1 28576 0 7
+D3
+""
+""
+0 -1 28532 0 7
+-1
+S
+
+#28570
+"City Hall Entrance"
+"Under Construction.
+
+"
+""
+33030165 0
+0 8 0
+D0
+""
+""
+0 -1 28571 0 6
+D1
+""
+""
+0 -1 28598 0 6
+D2
+""
+""
+0 -1 28592 0 6
+D3
+""
+""
+0 -1 28565 0 6
+-1
+S
+
+#28571
+"Public Works"
+"Under Construction.
+
+"
+""
+33030165 0
+0 7 0
+D2
+""
+""
+0 -1 28570 0 6
+-1
+S
+
+#28572
+"Blue Flame Restaurant"
+"Under Construction.
+
+"
+"[DW] Serves four-star meals, orderable by a menu on the wall.  Will need to
+
+trap for Orc/Ent.
+
+"
+33030161 0
+0 7 0
+D0
+"door"
+"door"
+131 -1 28526 0 7
+-1
+S
+
+#28573
+"Remort Customs"
+"Under Construction.
+
+"
+""
+33030165 0
+0 7 0
+D3
+""
+""
+0 -1 28554 0 7
+-1
+S
+
+#28574
+"Area Ideas"
+""
+"[DW] Room 28552 is a Casino.  Need to write blackjack and roulette, if those
+
+are possible.
+
+[DW] Room 28572 is a Restaurant. Need to work out feeding code.
+
+[Semix] basic Val'Abun knowledge pamphlet (City Clerk: #28592)
+
+---
+
+[Semix] Sun/Mood acodes will likely need to be ditched as there doesn't appear
+
+to be any way to prevent the normal sun/moon message from displaying short of
+
+setting each room as indoors.
+
+"
+66584593 0
+0 6 0
+D5
+""
+""
+16384 -1 28500 0 6
+A
+""
+""
+" loop( rooms_in_area ) {
+
+   if( !rflag( indoors, room ) ) {
+
+     send_to_room( #sun, room );
+
+   }
+
+ }
+
+"
+E
+"sun"
+"@YThe faux-sun begins its climb up the artificial horizon, signaling the dawn of a new day.@n
+
+"
+!
+14 1 0
+A
+"mudtime"
+""
+"arg = string( \"@C$t:$T@n\", null, null, null, time_hour(), time_minute() );
+
+act_tochar( arg, ch );
+
+"
+!
+0 0 0
+A
+""
+""
+" loop( rooms_in_area ) {
+
+   if( !rflag( indoors, room ) ) {
+
+     send_to_room( #moon, room );
+
+   }
+
+ }
+
+"
+E
+"moon"
+"The false moon casts its glowing gaze across the sky.
+
+"
+!
+15 1 0
+2798 41 1509949540 3 0
+2797 73 1509949540 3 0
+2797 73 1509949540 3 0
+-1
+S
+
+#28575
+"Somerled's Teleportation Services"
+"Under Construction.
+
+"
+"[DW] You will be able to purchase teleports to any town from Somerled.
+
+[Semix] Shop functionality should be done, short of transfer messages and money deductions.
+
+"
+33030165 0
+0 7 0
+D3
+""
+""
+0 -1 28531 0 7
+A
+"list"
+""
+"if( mob_in_room( 2796, room ) ) {
+
+  i = get_money( ch );
+
+  send_to_char( string( \"Copper Coins: $T\", null, null, null, \"\", i ), ch );
+
+  send_to_char( #list, ch );
+
+}
+
+else {
+
+  act_tochar( #noshop, ch, null, null );
+
+}
+
+"
+E
+"list"
+"
+
+Item                               Price
+
+----                               -----
+
+A personal teleport                10000
+
+
+
+            @RValid Destinations@n
+
+            ------------------@W
+
+  Chiiron   ::    Medienne   ::   Pennan
+
+  Sos-kul   ::    Voaleth    ::   Denab-knur
+
+  Kha-da    ::    Brithbarad ::   Vaasa
+
+  Darkhaven ::    Narak      ::@n
+
+
+Syntax: @Wbuy teleport <destination>@n (no multiples)
+
+
+"
+E
+"noshop"
+"The shop keeper is not around right now.
+
+"
+!
+0 0 0
+A
+"buy"
+""
+"if( mob_in_room( 2796, room ) ) {
+
+  if( is_name( first_word( arg ), \"teleport\" ) ) {
+
+    if( get_money( ch ) >= 10000 ) {
+
+      if( word( arg, 1 ) && is_name( word( arg, 1 ), #dests ) ) {
+
+        arg = word( arg, 1 );
+
+        acode( room, 3 );
+
+      }
+
+      else
+
+        act_tochar( #idest, ch, null, null );
+
+    }
+
+    else
+
+      act_tochar( #short, ch, null, null );
+
+  }
+
+  else
+
+    act_tochar( #nosell, ch, null, null );
+
+}
+
+else
+
+  act_tochar( #noshop, ch, null, null );
+
+"
+E
+"dests"
+"chiiron medienne pennan sos-kul voaleth denab-kenur brithbarad vaasa darkhaven narak
+
+"
+E
+"idest"
+"You must select from the available destinations. (type 'list' for more)
+
+"
+E
+"short"
+"You don't have enough money to buy that.
+
+"
+E
+"nosell"
+"That's not for sale here.
+
+"
+E
+"noshop"
+"The shop keeper is not around right now.
+
+"
+!
+0 0 0
+A
+""
+""
+"i = 1;
+
+if( is_name( arg, \"Chiiron\" ) )
+
+  i = 903;
+
+if( is_name( arg, \"Medienne\" ) )
+
+  i = 107;
+
+if( is_name( arg, \"Pennan\" ) )
+
+  i = 37013;
+
+if( is_name( arg, \"Sos-kul\" ) )
+
+  i = 30776;
+
+if( is_name( arg, \"Denab-Knur\" ) )
+
+  i = 30340;
+
+if( is_name( arg, \"Voaleth\" ) )
+
+  i = 20083;
+
+if( is_name( arg, \"Darkhaven\" ) )
+
+  i = 30008;
+
+if( is_name( arg, \"Kha-da\" ) )
+
+  i = 27008;
+
+if( is_name( arg, \"Brithbarad\" ) )
+
+  i = 63520;
+
+if( is_name( arg, \"Vaasa\" ) )
+
+  i = 18002;
+
+if( is_name( arg, \"Narak\" ) )
+
+  i = 36100;
+
+
+if( i == 1 ) {
+
+  act_tochar( #idest, ch );
+
+  end;
+
+}
+
+
+transfer( ch, find_room( i ) );
+
+send_to_room( #flash, find_room( 28531 ) );
+
+"
+E
+"idest"
+"You must select from the available destinations. (type 'list' for more)
+
+"
+E
+"flash"
+"@CYou see a flash of brilliant light from the east.@n
+
+"
+!
+0 0 0
+2796 9 1509949540 3 0
+-1
+S
+
+#28576
+"Library"
+"Under Construction.
+
+"
+""
+33030165 0
+0 7 0
+D2
+""
+""
+0 -1 28569 0 7
+-1
+S
+
+#28577
+"Laic's Playhouse"
+"Under Construction.
+
+"
+""
+33030165 0
+0 7 0
+D0
+""
+""
+0 -1 28578 0 7
+D1
+""
+""
+0 -1 28519 0 7
+-1
+S
+
+#28578
+"Theatre Stage"
+"Under Construction.
+
+"
+""
+33030165 0
+0 8 0
+D2
+""
+""
+0 -1 28577 0 7
+-1
+S
+
+#28579
+"Euterpe's Music Shop"
+"Under Construction.
+
+"
+"[DW] Add double flute item to her inventory.
+
+[Semix] This one time, at band camp...
+
+[DW] Sick bastard
+
+"
+33030161 0
+0 7 0
+D1
+""
+""
+0 -1 28523 0 7
+-1
+S
+
+#28580
+"Amphitheatre Stands, West Side"
+"Under Construction.
+
+"
+""
+33030165 0
+0 9 0
+D1
+""
+""
+0 -1 28581 0 9
+D2
+""
+""
+0 -1 28523 0 9
+-1
+S
+
+#28581
+"Coliseum Arena"
+"Under Construction.
+
+"
+"[DW] The doors will be removed, the room only accessible through mpcodes.
+
+[Semix] What exactly is the concept for this Coliseum?
+
+"
+33030161 0
+0 9 0
+D1
+""
+""
+0 -1 28582 0 6
+D3
+""
+""
+0 -1 28580 0 9
+-1
+S
+
+#28582
+"Amphitheatre Stands, East Side"
+"Under Construction.
+
+"
+""
+33030161 0
+0 9 0
+D2
+""
+""
+0 -1 28543 0 9
+D3
+""
+""
+0 -1 28581 0 6
+-1
+S
+
+#28583
+"Temple of Lonil"
+"Under Construction.
+
+"
+""
+33030165 0
+0 7 0
+D1
+""
+""
+0 -1 28584 0 7
+D2
+""
+""
+0 -1 28540 0 7
+-1
+S
+
+#28584
+"Temple of Lonil"
+"Under Construction.
+
+"
+""
+33030165 0
+0 7 0
+D3
+""
+""
+0 -1 28583 0 7
+-1
+S
+
+#28585
+"Temple of Meriada"
+"Under Construction.
+
+"
+""
+33030165 0
+0 7 0
+D1
+""
+""
+0 -1 28568 0 7
+D2
+""
+""
+0 -1 28538 0 7
+-1
+S
+
+#28586
+"Temple of Temohpab"
+"Under Construction.
+
+"
+""
+33030164 0
+0 7 0
+D2
+""
+""
+0 -1 28587 0 7
+-1
+S
+
+#28587
+"Temple of Temohpab"
+"Under Construction.
+
+"
+""
+33030164 0
+0 7 0
+D0
+""
+""
+0 -1 28586 0 7
+D3
+""
+""
+0 -1 28537 0 7
+-1
+S
+
+#28588
+"Val'Abun Bank"
+"Under Construction.
+
+"
+""
+33032213 0
+0 7 0
+D3
+""
+""
+0 -1 28536 0 7
+-1
+S
+
+#28589
+"Government District"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28600 0 6
+D1
+""
+""
+0 -1 28595 0 6
+D2
+""
+""
+0 -1 28597 0 6
+-1
+S
+
+#28590
+"Emerald District Crossroads"
+"Water pours out of a vertical spout at the top, flowing down into a small
+
+basin about three feet below.  The water then falls about a foot down into a
+
+slightly bigger basin, then another two feet into a much larger one.  Finally,
+
+the water drops three more feet into the giant base of the @efountain@n, rippling
+
+gently, reflected the pristine emerald color of the entire construction.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28536 0 9
+D1
+""
+""
+0 -1 28534 0 9
+D2
+""
+""
+0 -1 28533 0 9
+D3
+""
+""
+0 -1 28535 0 9
+4683 273 1509949540 -2 0
+-1
+S
+
+#28591
+"Crimson District Crossroads"
+"A @efountain@n unlike any you have seen before lies in the center of this
+
+intersection.  It is made out of marble the color of human blood, but that is
+
+the most mundane effect of it.  There are at least a dozen basins jutting out
+
+at odd angles and heights, no rhyme or reason evident in its construction.  The
+
+water in the fountain flows at gravity-defying angles; in some cases it even
+
+flows upward.  Looking northward you can see a set of crimson gates in the
+
+distance.  The marbled road south leads you toward the center of the bazaar,
+
+while the road running east and west continue along the outer bazaar ring.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28541 0 9
+D1
+""
+""
+0 -1 28540 0 9
+D2
+""
+""
+0 -1 28542 0 9
+D3
+""
+""
+0 -1 28543 0 6
+4681 273 1509949540 -2 0
+-1
+S
+
+#28592
+"City Clerk"
+"Under Construction.
+
+"
+""
+33030165 0
+0 7 0
+D0
+""
+""
+0 -1 28570 0 6
+-1
+S
+
+#28593
+"Val'Abun Academy"
+"Under Construction.
+
+"
+""
+33030165 0
+0 8 0
+D0
+""
+""
+0 -1 28561 0 6
+D1
+"double-doors"
+"double-doors doors"
+1 -1 28565 0 6
+D2
+""
+""
+0 -1 28602 0 6
+D3
+""
+""
+0 -1 28599 0 6
+-1
+S
+
+#28594
+"Council Chambers"
+"Under Construction.
+
+"
+""
+33030165 0
+0 8 0
+D2
+""
+""
+0 -1 28598 0 6
+-1
+S
+
+#28595
+"Guard House"
+"Under Construction.
+
+"
+""
+33030165 0
+0 5 0
+D1
+"door"
+"door"
+407 -1 28596 0 6
+D3
+""
+""
+0 -1 28589 0 6
+-1
+S
+
+#28596
+"Holding Cell"
+"Under Construction.
+
+"
+"[Semix] Officiator located in 28604
+
+[Semix] Imm's can type down to visit officiator
+
+"
+33030165 0
+0 5 0
+D3
+"door"
+"door"
+407 -1 28595 0 6
+A
+"d do dow down"
+""
+"if( find_stat( ch, level ) > 91 ) {
+
+  transfer( ch, find_room( 28604 ) );
+
+}
+
+"
+!
+0 0 0
+-1
+S
+
+#28597
+"Point of Entry"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28589 0 6
+-1
+S
+
+#28598
+"Audience Chamber"
+"Under Construction.
+
+"
+""
+33030165 0
+0 5 0
+D0
+""
+""
+0 -1 28594 0 6
+D2
+"door"
+"door"
+3 -1 28601 0 6
+D3
+""
+""
+0 -1 28570 0 6
+-1
+S
+
+#28599
+"Salle"
+"Under Construction.
+
+"
+""
+33030161 0
+0 9 0
+D1
+""
+""
+0 -1 28593 0 6
+-1
+S
+
+#28600
+"Government District"
+"Under Construction.
+
+"
+""
+33030161 0
+1 9 0
+D0
+""
+""
+0 -1 28565 0 6
+D2
+""
+""
+0 -1 28589 0 6
+-1
+S
+
+#28601
+"Private Meeting Room"
+"Under Construction.
+
+"
+""
+33030161 0
+1 6 0
+D0
+"door"
+"door"
+3 -1 28598 0 6
+-1
+S
+
+#28602
+"Barracks"
+"Under Construction.
+
+"
+""
+33030165 0
+0 8 0
+D0
+""
+""
+0 -1 28593 0 6
+-1
+S
+
+#28603
+"Guard House"
+"Under Construction.
+
+"
+""
+33030165 0
+0 5 0
+D1
+""
+""
+0 -1 28560 0 6
+-1
+S
+
+#28604
+"Mob Storage"
+"Under Construction.
+
+"
+"[Semix] Type 'up' to return to the holding cell
+
+"
+33030165 0
+0 6 0
+A
+"u up"
+""
+"transfer( ch, find_room( 28596 ) );
+
+"
+!
+0 0 0
+2808 9 1509949540 3 0
+-1
+S
+
+#28605
+"Immersed within the healing pool"
+"Under Construction.
+
+"
+"[Semix] Entering room (transfer) trigger to give no_show item which provides
+
+the regenerative properties.
+
+
+[Semix] Leaving room (transfer) trigger to remove and purge item.
+
+[Semix] Also, a random trigger checking for hit == max_hit to transfer out.
+
+"
+33062967 0
+18 6 0
+D4
+""
+""
+8224 -1 28556 0 6
+A
+""
+""
+"// Cleanse Impurities
+
+dispel_affect( ch, confuse );
+
+dispel_affect( ch, death pale );
+
+dispel_affect( ch, hallucinate );
+
+dispel_affect( ch, plague );
+
+dispel_affect( ch, poison );
+
+"
+!
+1 0 256
+A
+""
+""
+"// Check for full health
+
+loop( all_in_room ) {
+
+  drain_stat( rch, hunger, 20 );
+
+  drain_stat( rch, thirst, 20 );
+
+
+  i = find_stat( rch, hit );
+
+  j = find_stat( rch, max_hit );
+
+
+  if ( i == j ) {
+
+    transfer( rch, find_room( 28556 ) );
+
+  }
+
+  else {
+
+    acode( room, 3 );
+
+  }
+
+}
+
+"
+!
+2 1000 0
+A
+""
+""
+"i = find_stat( rch, hit );
+
+j = find_stat( rch, max_hit );
+
+
+if( j - i > 50 ) {
+
+  heal( ch, ( j - i ) / 3 );
+
+}
+
+else {
+
+  heal( ch, j - i );
+
+  acode( room, 2 );
+
+}
+
+"
+!
+0 0 0
+-1
+S
+
+#0
+

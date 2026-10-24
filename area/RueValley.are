@@ -1,0 +1,5621 @@
+#AREA
+"Rua Valley"
+"Kiian"
+"Rua Valley"
+12 0
+0
+0
+#ROOMS
+
+#91600
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+-1
+S
+
+#91601
+"A Steep Hillside"
+"You stand unsteadily on a steep, rocky hillside.  A sheer cliff to the
+
+north and several large boulders to the south and east prevent you from
+
+straying too far.  Small, scraggly weeds grow among the rocks, their
+
+forms stunted by the thin soil.  A path leads up the hillside to the west.
+
+"
+"no_mob
+
+used to be room 37093.
+
+"
+301465608 0
+4 6 0
+D1
+"boulder"
+""
+234 -1 37089 0 6
+D3
+""
+""
+0 -1 91602 0 6
+E
+"boulders boulder"
+"Large boulders burrow into the earth of this precarious hillside.  Lying
+
+in heavy piles, they prevent movement to the east.  A large boulder to
+
+the south blocks a path down the hill.
+
+"
+A
+"move push lift"
+"3 boulders 3 rocks 3 stones 1 east"
+"if( rflag( reset0, find_room( 37089 ) ) ) {
+
+remove_rflag( reset0, find_room( 37089 ) );
+
+  send_to_char( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  }
+
+else {
+
+ set_rflag( reset0, find_room( 37089 ) );
+
+send_to_char( #close, ch );
+
+act_notchar( #rclose, ch );
+
+}
+
+"
+E
+"ropen"
+"$n moves the boulder aside.
+
+"
+E
+"open"
+"You move the boulder aside.
+
+"
+E
+"close"
+"You move the boulder back, concealing the path.
+
+"
+E
+"rclose"
+"$n moves the bouder back, concealing the path.
+
+"
+!
+0 0 0
+A
+"climb enter"
+"1 down trail track 1 east"
+"if( !rflag( reset0, find_room( 37089 ) ) ) {
+
+  if( is_standing( ch ) ) {
+
+    send_to_char( #goeast, ch );
+
+    act_notchar( #goeast2, ch );
+
+    transfer( ch, find_room( 37089 ) );
+
+    act_notchar( #arrive, ch );
+
+    loop( followers ) {
+
+      if( is_standing( ch ) ) {
+
+        act_notchar( #folleave, rch );
+
+        transfer( rch, find_room( 37089 ) );
+
+        act_notchar( #arrive, rch );
+
+        }
+
+      else
+
+        act_tochar( #stand, rch );
+
+      }
+
+    }
+
+  else
+
+    act_tochar( #stand, ch );
+
+  }
+
+else
+
+  send_to_char( #blocking, ch );
+
+"
+E
+"blocking"
+"You need to move the boulder out of the way.
+
+"
+E
+"folleave"
+"$n leaves.
+
+"
+E
+"arrive"
+"$n arrives.
+
+"
+E
+"goeast2"
+"$n climbs down the rocky trail.
+
+"
+E
+"goeast"
+"You climb down the rocky trail.
+
+"
+E
+"stand"
+"You must be standing to climb down the rocky trail.
+
+"
+!
+0 0 0
+A
+"look"
+"rock, boulder"
+"act_tochar( #trail, ch );
+
+"
+E
+"trail"
+"Looking at the boulders, you notice a small track which winds its way
+
+down the steep hillside to the east.  If only someone would move that
+
+boulder, you think you could make it up the track.
+
+"
+!
+0 0 0
+-1
+S
+
+#91602
+"Rocky Hillside Track"
+"The trail continues up to the west here, finding shelter between two large and
+
+craggy hills.  Sharp rocks jut out from the ground, and force you to proceed
+
+with care lest you stumble.  The landscape is marked by only a few bushes, the
+
+most notable pair of large holly bushes to the south.
+
+"
+"37111 to south; enter holly to get there
+
+used to be 37094
+
+"
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 91601 0 6
+D2
+""
+""
+170 -1 91603 0 5
+D3
+""
+""
+0 -1 91615 0 6
+E
+"holly bush bushes"
+"The two holly bushes grow close to one another, their spiny leaves
+
+intermingling in an almost sentient embrace of their neighbor.
+
+You think you see something behind the bushes, but are not sure.
+
+"
+E
+"plants"
+"The trail continues up to the west here, finding shelter
+
+sufficient water and nutrients in the rocky soil.  Looking between their
+
+shriveled leaves and dry bark, you notice a small path leading off to the
+
+south.
+
+"
+E
+"grass"
+"The grass here is short and dry, unable to get enough water and nutrients
+
+from the thin, rocky soil.
+
+"
+A
+"enter"
+"south holly bushes plants"
+"if( size( ch ) > size( find_room( 91603 ) ) ) {
+
+  send_to_char( #toobig, ch );
+
+  end;
+
+  }
+
+i = 1d5;
+
+send_to_char( #enterplants, ch );
+
+act_notchar( #enterplants2, ch );
+
+dam_message( ch, i, \"the holly\" );
+
+inflict( ch, mob, i, \"the holly\" );
+
+transfer( ch, find_room( 91603 ) );
+
+act_notchar( #arr, ch );
+
+"
+E
+"enterplants2"
+"$n pushes through the holly and heads south.
+
+"
+E
+"enterplants"
+"You push through the holly and head south.
+
+"
+E
+"arr"
+"$n pushes through the holly from the north.
+
+"
+E
+"toobig"
+"You are too large to squeeze between the holly bushes.
+
+"
+!
+0 0 0
+-1
+S
+
+#91603
+"Behind the Holly"
+"This narrow path is littered with chunks of dead wood and charred rocks.  No
+
+vegetation grows here, save for the pair of giant holly bushes to the north.
+
+The hillside rises high above you to the west, while to the east the ground
+
+drops off toward the valley floor.  Two large rocks block off the western
+
+exit, though it looks possible to squeeze between them.  A small path runs off
+
+to the south.
+
+"
+""
+301465600 0
+4 5 0
+D0
+"holly bush"
+""
+170 -1 91602 0 5
+D2
+""
+""
+0 -1 91605 0 5
+D3
+""
+""
+0 -1 91604 0 5
+E
+"bush plants"
+"The lush bushes are laden with shiny red holly berries.  The healthy
+
+green of the leaves is rather surprising, given the lack of any other
+
+vegetation in the surrounding area.  The branches are carefully trimmed
+
+and pruned; excellent care has been taken of these large bushes.  Beyond
+
+the bushes is a faint trail, though you would have to pass through the
+
+holly to reach it.
+
+"
+A
+"enter"
+"bush plant holly bushes plants"
+"i = 1d3;
+
+send_to_char( #enterplant, ch );
+
+act_notchar( #enterplant2, ch );
+
+dam_message( ch, i, \"the holly\" );
+
+inflict( ch, mob, i, \"the holly\" );
+
+transfer( ch, find_room( 91602 ) );
+
+act_notchar( #arr, ch );
+
+"
+E
+"enterplant2"
+"$n pushes through the holly and heads north.
+
+"
+E
+"enterplant"
+"You push through the holly and head north.
+
+"
+E
+"arr"
+"$n pushes through the holly from the south.
+
+"
+!
+0 0 0
+851 9 1509949540 3 0
+-1
+S
+
+#91604
+"Sheltered Hillside Alcove"
+"You stand inside a rocky alcove, surrounded on three sides by nearly vertical
+
+rock walls which reach far above your head.  The hills continue to rise above
+
+you to the north and west.  Hundreds of stones clatter about your feet as you
+
+walk here, the stone of the hills worn and broken down here by the ages.  Two
+
+large rocks block your exit to the east, though perhaps it would be possible
+
+to squeeze between them.
+
+"
+""
+301465600 0
+3 5 0
+D1
+""
+""
+0 -1 91603 0 5
+E
+"stones"
+"Many small stones lie on the ground here, presumably having fallen from
+
+higher up the hillside.
+
+"
+726 9 1509949540 3 0
+851 9 1509949540 3 0
+-1
+S
+
+#91605
+"A Narrow Gap"
+"The path continues to the south along the edge of a steep incline.  A slow
+
+trickle of water drips slowly off the rock wall which rises above you to the
+
+west.  To the east, the small flow of water drips off the edge of the rocky
+
+path and down toward the valley floor below to the east.  Below you to the
+
+east, the valley floor opens up and in the distance to the east you see the
+
+mill lake and the abandoned mill next to it.
+
+"
+""
+301465600 0
+4 5 0
+D0
+""
+""
+0 -1 91603 0 5
+D2
+""
+""
+0 -1 91606 0 5
+-1
+S
+
+#91606
+"Rocky Hillside"
+"More water drips off the rocky mountain walls onto the ground in front of you.
+
+Directly above you, an ancient tree leans out from the hillside at an odd
+
+angle, its roots digging into the steep hillside.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91605 0 5
+D1
+""
+""
+0 -1 91607 0 9
+D2
+""
+""
+0 -1 91608 0 9
+E
+"stream"
+"none This tiny stream is really nothing more than ground water running
+
+off to a nearby river or lake.  The dark line it traces now may one day
+
+become a mighty river.  Only time will tell.
+
+"
+E
+"old tree"
+"This tree has obviously seen better days yet in its age you feel a
+
+foreboding as if the tree were a sentinel of ages past.  But what secret
+
+the tree guards will soon die with its passing.
+
+"
+872 17 1509949450 -2 0
+-1
+S
+
+#91607
+"At the Edge of A Steep Drop"
+"The valley wind rushes up the side of the hill and crashes hard into your
+
+body, forcing you to steady yourself by leaning on a nearby boulder.  Far
+
+below you, you can make out people and animals traveling along Delving lane.
+
+To the south, you spy a narrow goat track cutting across a steep, rocky
+
+hillside.
+
+"
+""
+301465600 0
+4 9 0
+D3
+""
+""
+0 -1 91606 0 9
+-1
+S
+
+#91608
+"A Craggy Promontory"
+"The hills rise far above your head to the west, in a single, monumental stone
+
+leap.  To the east and south, the ground falls away quite suddenly, leading
+
+down toward the floor of the valley.  Below you to the east you spy an
+
+extremely narrow goat path cut into the side of the hill, and even further
+
+below the path you spy the village proper, shrouded in a fine mist typical of
+
+the valley's clime.  Several immense stone slabs lie on the rocky ground here.
+
+"
+"r/w cave entirely
+
+open slab
+
+no mob
+
+"
+301465608 0
+4 9 0
+D0
+""
+""
+0 -1 91606 0 9
+D5
+"stone slab"
+""
+131 -1 91609 0 7
+E
+"stone slabs"
+"The slabs, gigantic pieces of cut stone, have regular faces and squared
+
+corners.  Fashioned for some unknown purpose, they now lie crumpled and
+
+scattered on the ground like many giant, discarded playing cards.
+
+"
+-1
+S
+
+#91609
+"Limestone Cave"
+"You stand in a large natural cave, its jagged white limestone walls slick and
+
+damp.  Small pools of fetid water have collected amidst the crevices on the
+
+rough floor underfoot, and dim shafts of light reflected off the murky water
+
+creates faint, wavy patterns which appear on the uneven walls to each side.
+
+"
+""
+335020036 0
+11 7 0
+D0
+""
+""
+0 -1 91612 0 6
+D2
+""
+""
+0 -1 91610 0 6
+D3
+""
+""
+0 -1 91611 0 6
+D4
+"stone slab ceiling"
+""
+131 -1 91608 0 7
+E
+"1 up above ceiling"
+"You see a small opening and stone slab which can be opened and closed.
+
+"
+78 17 1509949465 -2 0
+851 9 1509949540 3 0
+851 9 1509949490 3 0
+-1
+S
+
+#91610
+"Among the Stalagmites"
+"Thick stalagmites of all sizes, from a few scant inches to some as large as a
+
+burly troll, litter the floor of this large, damp cavern.  A small trickle of
+
+water flows into a fissure in the southern wall of the cavern, moving deeper
+
+into the earth and parts unknown.
+
+"
+"[Lansharra] orcish mercenary: desc - tattoos
+
+[Adakar] should be able to search the fissure or something
+
+"
+335020036 0
+11 6 0
+D0
+""
+""
+0 -1 91609 0 6
+E
+"fissure"
+"Carved by years of erosion, this fissure is large enough for a man-sized
+
+hand to fit through into the crevice.
+
+"
+851 9 1509949490 3 0
+853 9 1509949540 3 0
+-1
+S
+
+#91611
+"Small Limestone Cave"
+"The limestone walls close in on you here, until you are forced to move
+
+carefully around the rough, uneven curves of the walls and floor.  The ceiling
+
+here is low and damp, the puddles underfoot shallow but all too common.
+
+"
+""
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 91613 0 5
+D1
+""
+""
+0 -1 91609 0 6
+851 9 1509949540 3 0
+-1
+S
+
+#91612
+"Limestone Cave"
+"Stalagmites and stalactites grow like jagged teeth in the damp darkness of
+
+this limestone cave.  Small pools of water have collected in the cracked rock
+
+underfoot, and you notice a few small limestone fragments scattered on the
+
+floor between the many shallow pools.
+
+"
+"[Lansharra] orcish mercenary: tattoos
+
+lurker here
+
+What is this acode and is it ever used? - E
+
+"
+335020036 0
+11 6 0
+D2
+""
+""
+0 -1 91609 0 6
+D3
+""
+""
+0 -1 91613 0 5
+A
+""
+""
+"if( !mob_in_room( 783, room ) ) {
+
+  if( random( 1, 3 ) == 2 ) {
+
+    act_room( #fall, ch );
+
+    mload( 783, room );
+
+    mob = mob_in_room( 783, room );
+
+    loop( all_in_room ) {
+
+      if( is_player( rch ) )
+
+        i = 2d10+15;
+
+      attack( mob, rch, i, \"thrashing tentacles\" );
+
+      attack( mob, rch, i, \"thrashing tentacles\" );
+
+      }
+
+    }
+
+  }
+
+else
+
+  act_room( #slime, ch );
+
+"
+E
+"fall"
+"@GA writhing mass of tentacles drops from the ceiling!@n
+
+"
+E
+"slime"
+"@GA few drops of acidic slime drip slowly into a pool on the floor.
+
+"
+!
+0 0 0
+851 9 1509949540 3 0
+853 9 1509949490 3 0
+2463 17 1509949540 -2 20
+-1
+S
+
+#91613
+"Limestone Cave"
+"The cave opens up here a bit, with a few deposits of reddish-brown clay
+
+intruding on the white limestone found elsewhere in this cave system.  A
+
+number of stalactites of varied size dangle menacingly above your head, with a
+
+few limestone shards scattered about the floor here.  The cavern continues to
+
+the east and west, while it narrows somewhat off to the south.
+
+"
+"action
+
+"
+335020036 0
+11 5 0
+D1
+""
+""
+0 -1 91612 0 5
+D2
+""
+""
+0 -1 91611 0 5
+D3
+""
+""
+0 -1 91614 0 5
+E
+"rocks"
+"Pieces of broken rocks, ranging from pebbles to stones the size of a human
+
+head, litter the cavern floor.  Closer examination of the larger pieces
+
+hints that the rocks, were once shaped like stalactites.
+
+"
+A
+""
+""
+"if( random( 0, 1 ) == 1 ) 
+
+  continue;
+
+i = 1d12;
+
+send_to_room( #falls, room );
+
+dam_message( ch, i, \"a small stalactite\" );
+
+inflict( ch, mob, i, \"a small stalactite\" );
+
+"
+E
+"falls"
+"A loose stalactite falls from above.
+
+"
+!
+1 -1 15
+-1
+S
+
+#91614
+"Limestone Cave"
+"You stand in a smallish side cavern, oddly devoid of the stalactites and
+
+stalagmites present in many of the other nearby caverns.  To the west, the
+
+ceiling drops to within a few feet of the ground, eventually nearly joining
+
+with it.  Too smallish to enter, you notice a faint trickle of water flowing
+
+out of the western wall, into the everpresent shallow pools beneath your feet.
+
+"
+""
+335020036 0
+11 6 0
+D1
+""
+""
+0 -1 91613 0 5
+851 9 1509949540 3 0
+851 9 1509949540 3 0
+852 9 1509949540 3 0
+853 9 1509949540 3 0
+2745 17 1509949460 -2 0
+-1
+S
+
+#91615
+"Rocky Hillside Track"
+"The track continues to climb up the hillside, weaving its way between
+
+giant boulders and drops.  The wind whistles at you, following the course
+
+of the trail between the hills, and you look forward to finding some less
+
+exposed ground soon.  To the west, the trail continues up into the hills,
+
+and down to the east the trail zigzags back toward Delving Lane.
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 91602 0 6
+D3
+""
+""
+0 -1 91616 0 6
+766 9 1509949465 3 0
+-1
+S
+
+#91616
+"Narrow Hillside Track"
+"The narrow track emerges from the boulder-ridden hollow, and begins an
+
+ascent of a final, steep slope to the west of here.  Some short, dense
+
+grass clings to the earth along the edges of the path.  Up above you, the
+
+vegetation thickens.  To the east, the track leads back down toward the
+
+valley floor.
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 91615 0 6
+D3
+""
+""
+0 -1 91617 0 6
+-1
+S
+
+#91617
+"In the Hills"
+"You stand atop a hill overlooking the Rua Valley to the east and south. 
+
+To the north and west, the hills continue and rise far above your head. 
+
+You cannot help but marvel at their craggy heights and wonder whether
+
+this range would more aptly be described as mountains.  The path leads
+
+back down into the rocky hollow to the east, and into a hilly, grassy
+
+meadow to the south.
+
+"
+""
+301465600 0
+4 7 0
+D1
+""
+""
+0 -1 91616 0 6
+D2
+""
+""
+0 -1 91618 0 7
+-1
+S
+
+#91618
+"Trail in the Hills"
+"The trail continues, weaving its way between tall stands of meadow
+
+grasses.  A few boulders lie scattered about the area like grey islands
+
+in a sea of billowing, verdant green.  To the east, the grass gives way
+
+as more and more boulders begin to litter the meadowy clearing.  You spy
+
+an opening between two boulders in that direction; the narrow track
+
+continues on west into a stand of birch trees.  An immense boulder
+
+precludes movement to the south.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91617 0 7
+D1
+""
+""
+0 -1 91619 0 5
+D3
+""
+""
+0 -1 91630 0 9
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You clamber through the opening between the boulders.
+
+"
+!
+3 -1 2
+-1
+S
+
+#91619
+"In a Rocky Cleft"
+"You stand in a rocky area in the shadow of a large hill.  The wind howls
+
+around you, yet you find shelter in the generous curve of the hillside.  Small
+
+dry clumps of listless grass and yellowed shrubs cling to the crumbly, rocky
+
+ground beneath your feet.
+
+"
+"how bout dell for area
+
+or bowl
+
+"
+301465600 0
+4 5 0
+D2
+""
+""
+0 -1 91620 0 5
+D3
+""
+""
+0 -1 91618 0 5
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You climb between two boulders and head west.
+
+"
+!
+3 0 8
+-1
+S
+
+#91620
+"Hilly Slope"
+"You stand on a sharply-angled slope in the hills northwest of Pennan.  To the
+
+north, you spy a rocky cleft, and to your south a ragged curtain of trees
+
+cover the hillside.  A rock wall to the west looms high above your present
+
+position.  An additional drop is to your east, at the foot of which the rocky
+
+hills recede.  Further off, the low silver form of the mill lake hugs the
+
+valley floor.
+
+"
+""
+301465600 0
+4 7 0
+D0
+""
+""
+0 -1 91619 0 5
+D2
+""
+""
+0 -1 91621 0 7
+2509 9 1509949540 3 0
+832 17 1509949540 -2 0
+-1
+S
+
+#91621
+"Lightly Wooded Slope"
+"Small birch trees grow along the side of the hill.  To the south, the
+
+trees thicken, their trunks dotting the sloped hillsides.  A rocky rise
+
+prevents movement to the west, while to the east the woods continue,
+
+gradually sloping downward.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91620 0 7
+D1
+""
+""
+0 -1 91622 0 9
+D2
+""
+""
+0 -1 91624 0 9
+726 9 1509949540 3 0
+-1
+S
+
+#91622
+"Thickly Wooded Hillside"
+"A thick canopy of trees obscures the sky as you examine your surroundings.  To
+
+the east and north, the ground falls away at a steep angle toward the valley
+
+floor far below.  The woods continue to the west and south in a tangle of
+
+vegetation.
+
+"
+""
+301465600 0
+4 9 0
+D2
+""
+""
+0 -1 91623 0 9
+D3
+""
+""
+0 -1 91621 0 9
+368 9 1509949540 3 0
+2509 41 1509949540 3 0
+2509 41 1509949490 3 0
+2508 73 1509949490 3 0
+-1
+S
+
+#91623
+"Thickly Wooded Hillside"
+"Dense woods blanket your hilly surroundings, the thick trunks of nearby
+
+oaks, elms, and a few birches limit your vision to only a few feet in
+
+each direction.  Light penetrates the forest canopy to the east of here,
+
+and you surmise that the woods must thin out in that direction.  The
+
+trees continues to the north, while south of you an extremely steep slope
+
+of bare rock and dirt leads up toward the crest of the hill.
+
+"
+"climb slope to get to room 91643
+
+"
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91622 0 9
+D3
+""
+""
+0 -1 91624 0 9
+E
+"rise incline slope south"
+"On second glance, you once again notice the extremely steep angle of the
+
+incline.  The ground is rocky and the dirt loose - the footing, very
+
+likely, treacherous.
+
+"
+A
+"scale climb"
+"slope incline south path up"
+"i = 1d10;
+
+if( can_fly( ch ) ) { 
+
+  send_to_char( #success, ch );
+
+  act_notchar( #success2, ch );
+
+  transfer( ch, find_room( 91643 ) );
+
+  act_notchar( #arrives, ch );
+
+  end;
+
+  }
+
+else
+
+  if( is_mounted( ch ) ) {
+
+  send_to_char( #nogo, ch );
+
+  end;
+
+  }
+
+else
+
+  if( find_stat( ch, dex ) < 11 ) {
+
+  if( random( 1, 10 ) < 8 ) { 
+
+    send_to_char( #stumble, ch ); 
+
+    act_notchar( #stumble2, ch );
+
+    dam_message( ch, i, \"the fall\" );
+
+    inflict( ch, mob, i, \"the fall\" );
+
+    end;
+
+    }
+
+  else { 
+
+    send_to_char( #getdown, ch );
+
+    act_notchar( #getdown2, ch );
+
+    end;
+
+    }
+
+  }
+
+else
+
+  if( find_skill( ch, climb ) < 10 )  {
+
+  if( random( 1, 10 ) < 8 ) {
+
+    send_to_char( #stumble, ch );
+
+    act_notchar( #stumble2, ch );
+
+    dam_message( ch, i, \"the fall\" );
+
+    inflict( ch, mob, i, \"the fall\" );
+
+    end;
+
+    }
+
+  else { 
+
+    send_to_char( #getdown, ch );
+
+    act_notchar( #getdown2, ch );
+
+    end;
+
+    }
+
+  }
+
+else
+
+  if( random( 1, 10 ) < 6 ) {
+
+  send_to_char( #stumbletoo, ch );
+
+  end;
+
+  }
+
+send_to_char( #success, ch );
+
+act_notchar( #success2, ch );
+
+transfer( ch, find_room( 91643 ) );
+
+act_notchar( #arrives, ch );
+
+"
+E
+"getdown2"
+"$n stumbles haflway up the slope, but gets back down safely.
+
+"
+E
+"stumble2"
+"$n makes it part of the way up the slope, but slips and falls back down!
+
+"
+E
+"stumbletoo"
+"Nearly at the top, you slip and slide back down to the bottom of the slope.
+
+"
+E
+"getdown"
+"You stumble halfway up the slope, but get back down safely.
+
+"
+E
+"stumble"
+"Halfway up the slope, you slip and fall back down!
+
+"
+E
+"nogo"
+"You will have to dismount if you want to make it up the slope.
+
+"
+E
+"arrives"
+"$n arrives from below.
+
+"
+E
+"success2"
+"$n makes it up the slope.
+
+"
+E
+"success"
+"You make it up the slope.
+
+"
+!
+0 0 0
+28 9 100 3 0
+-1
+S
+
+#91624
+"Between Wood and Meadow"
+"You stand in an area which is neither forest nor meadow.  Tall grasses vie
+
+with small, young trees for space and sunlight.  A stand of birch trees grows
+
+off to the east, while to the south is a rock wall, the bottom of a cliff
+
+which reaches high above you.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91621 0 9
+D1
+""
+""
+0 -1 91623 0 9
+D3
+""
+""
+0 -1 91625 0 9
+E
+"prints"
+"Aside from the various small animal prints you see the faint outline of
+
+larger, man-sized creatures.  The footprints reveal that someone has been here
+
+in the not too distant past.
+
+"
+-1
+S
+
+#91625
+"Hill Meadow"
+"You stand in a meadow in the hills above the Rua Valley.  The grass grows
+
+high here, its blades thick and green from the abundant rainfall and
+
+fertile soil.  You notice a small, dark opening in the hillside to the
+
+north.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91626 0 4
+D1
+""
+""
+0 -1 91624 0 9
+D2
+""
+""
+0 -1 91636 0 9
+D3
+""
+""
+0 -1 91627 0 9
+E
+"white"
+"Making your way through the grass you arrive at the remains of a large
+
+farm animal, possibly a cow.  The bones have been picked clean long ago
+
+by scavengers of all sorts.  The meadow must have been used for livestock.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You squeeze through the dark opening.
+
+"
+E
+"to_room"
+"$n squeezes through the dark opening.
+
+"
+!
+3 0 1
+302 41 1509949540 3 0
+161 73 100 3 0
+161 73 100 3 0
+161 73 100 3 0
+2693 17 1509949540 -2 0
+-1
+S
+
+#91626
+"Hillside Shelter"
+"Initial impressions of a natural cave give way to the realization that
+
+you have entered a small shelter dug out of the hillside.  Sheltered from
+
+the harsh valley wind, the little hovel is a comfortable enough spot,
+
+with a small firepit cut into the floor near the doorway.  Small wood
+
+chips and assorted debris lie scattered across the uneven dirt floor.
+
+"
+"no mob so no wandering mobs come in here
+
+"
+301465612 0
+0 4 0
+D2
+""
+""
+0 -1 91625 0 4
+762 9 1509949515 3 0
+-1
+S
+
+#91627
+"Faint Track"
+"The trail becomes faint here as it enters an area covered with waist-high
+
+grass.  To the north, the trail leads into a rocky section of the hills. 
+
+South of here, your eye follows the faint track deeper into the hilltop
+
+meadow.  The grassy area continues to the east, while a steep rocky rise
+
+to the west leads toward a wooded area.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91628 0 9
+D1
+""
+""
+0 -1 91625 0 9
+D2
+""
+""
+0 -1 91635 0 9
+D3
+""
+""
+0 -1 91632 0 9
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You head up the rocky rise to the west.
+
+"
+!
+3 0 8
+-1
+S
+
+#91628
+"Trail through Rocky Hills"
+"The ground rises here, and bare rock walls to the east and west force you
+
+north and south.  Small lichens and weeds litter the rocky trailside,
+
+their growth stunted by the poor soil.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91629 0 9
+D2
+""
+""
+0 -1 91627 0 9
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You head north into the small hollow.
+
+"
+!
+3 0 1
+-1
+S
+
+#91629
+"Trail Through a Small Hollow"
+"You have entered a small hollow between two large hills.  Only a few
+
+older trees grow here, their great branches spreading out to dominate the
+
+sheltered space in the lee of the hill.  Giant slabs of exposed rock jut
+
+out of the sides of the hill, exposed by the incessant erosion of wind
+
+and rain.  The path leads north and south.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91630 0 9
+D2
+""
+""
+0 -1 91628 0 9
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You head up the slight rise and out of the hollow.
+
+"
+!
+3 0 3
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You follow the trail south and out of the hollow.
+
+"
+!
+3 0 4
+-1
+S
+
+#91630
+"Trail on a Wooded Hilltop"
+"You have entered a small copse of oaks and elms atop a round hill.  To your
+
+north and west is a steep cliff, the ground dropping away to reveal a gaping
+
+chasm opening up below you.  On the far side of the chasm, the hills rise once
+
+again, this time far above you until they blanket the horizon and disappear
+
+into the clouds.  The small trail continues east into more open terrain, and
+
+down a slight slope into a gully between some hills.
+
+"
+""
+301465600 0
+4 9 0
+D1
+""
+""
+0 -1 91618 0 9
+D2
+""
+""
+0 -1 91629 0 9
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You follow the trail down into a small hollow.
+
+"
+!
+3 0 6
+A
+""
+""
+"send_to_room( #wind, room );
+
+"
+E
+"wind"
+"A strong gust of wind whistles between the trees.
+
+"
+!
+2 25 0
+415 17 1509949515 -2 0
+-1
+S
+
+#91631
+"Atop a Cliff"
+"The ground tumbles down into a jagged crevasse to the north here, the
+
+harsh, angular lines along its sides leading downward toward a small
+
+stream, hundreds of feet below you.  On the far side, the hills resume
+
+their climb up toward the horizon, thick woods covering the steep
+
+inclines under an olive canopy.  To the west, the trees stop abruptly;
+
+you see an open area at the top of a cliff.
+
+"
+""
+301465600 0
+4 9 0
+D2
+""
+""
+0 -1 91632 0 9
+D3
+""
+""
+0 -1 91665 0 9
+A
+"1 north"
+""
+"send_to_char( #north, ch );
+
+"
+E
+"north"
+"You decide not to head north, not wanting to plummet toward certain doom.
+
+"
+!
+0 0 0
+-1
+S
+
+#91632
+"Wooded Hills"
+"You stand in a rocky section of the hills.  To the east, a small gap
+
+between a rough outcropping leads downward toward a grassy meadow.  You
+
+see more open space to the south, while to the north and west thick woods
+
+cover the hillside.
+
+"
+"no_mob
+
+"
+301465608 0
+4 9 0
+D0
+""
+""
+0 -1 91631 0 9
+D1
+""
+""
+0 -1 91627 0 9
+D2
+""
+""
+0 -1 91633 0 9
+D3
+""
+""
+0 -1 91666 0 9
+-1
+S
+
+#91633
+"Meadow"
+"The grass continues here, growing right up to the foot of a rocky rise
+
+to the north.  A few ferns and low-growing bushes cover a slope which
+
+rises up to the west.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91632 0 9
+D1
+""
+""
+0 -1 91635 0 9
+D2
+""
+""
+0 -1 91638 0 9
+D3
+""
+""
+0 -1 91634 0 9
+161 9 1509949540 3 0
+256 9 1509949540 3 0
+-1
+S
+
+#91634
+"Edge of a Gorge"
+"A stand of regal oaks cling to the edge of a steep gorge.  Their gnarled roots
+
+dig into the rocky soil along the lip of the chasm, the ground suddenly
+
+plunging downward toward the rocky floor far below.  A single tree has fallen,
+
+the victim of a recent valley storm, and now lies nearly horizontal, spanning
+
+the gorge.  The trunk itself is wide, and you think that an agile person could
+
+make it across.  A deep, gaping hole signals where the tree once stood.
+
+"
+"climb trunk to go to 37140 west
+
+"
+301465600 0
+4 9 0
+D1
+""
+""
+0 -1 91633 0 9
+D2
+""
+""
+0 -1 91637 0 9
+E
+"hole"
+"Loose, dark soil partially fills the gaping hole in the earth where the
+
+tree's roots once stood.
+
+"
+A
+"climb"
+"trunk tree"
+"i = 3d25+25;
+
+if( cflag( 25, ch ) ) {
+
+  if( can_fly( ch ) ) { 
+
+    send_to_char( #success, ch );
+
+    act_notchar( #success2, ch );
+
+    send_to_room( #arrives, find_room( 91678 ) );
+
+    transfer( ch, find_room( 91678 ) );
+
+    end;
+
+    }
+
+  else
+
+    if( is_mounted( ch ) ) {
+
+    send_to_char( #nogo, ch );
+
+    end;
+
+    }
+
+  else
+
+    if( find_stat( ch, dex ) < 11 ) {
+
+    if( random( 1, 10 ) < 8 ) {
+
+      send_to_char( #stumble, ch ); 
+
+      act_notchar( #stumble2, ch );
+
+      transfer( ch, find_room( 91679 ) );
+
+      dam_message( ch, i, \"the fall\" );
+
+      inflict( ch, mob, i, \"the fall\" );
+
+      end;
+
+      }
+
+    else { 
+
+      send_to_char( #getdown, ch );
+
+      act_notchar( #getdown2, ch );
+
+      end;
+
+      }
+
+    }
+
+  else
+
+  use_skill( ch, climb );
+
+    if( find_skill( ch, climb ) < 5 ) {
+
+    if( random( 1, 10 ) < 8 ) {
+
+      send_to_char( #stumble, ch );
+
+      act_notchar( #stumble2, ch );
+
+      transfer( ch, find_Room( 91679 ) );
+
+      dam_message( ch, i, \"the fall\" );
+
+      inflict( ch, mob, i, \"the fall\" );
+
+      end;
+
+      }
+
+    else { 
+
+      send_to_char( #getdown, ch );
+
+      act_notchar( #getdown2, ch );
+
+      end;
+
+      }
+
+    }
+
+  else
+
+    if( random( 1, 10 ) < 6 ) {
+
+    send_to_char( #stumbletoo, ch );
+
+    end;
+
+    }
+
+  send_to_char( #success, ch );
+
+  act_notchar( #success2, ch );
+
+  send_to_room( #arrives, find_room( 91678 ) );
+
+  transfer( ch, find_room( 91678 ) );
+
+  end;
+
+  }
+
+else
+
+  set_cflag( 25, ch );
+
+send_to_char( #warning, ch );
+
+"
+E
+"warning"
+"As you step toward the tree trunk, you realize that what you are about to
+
+attempt could very likely result in death for all but the most agile.
+
+It is a long way down to the bottom of the gorge from here.
+
+"
+E
+"getdown2"
+"$n stumbles trying to climb onto the tree trunk.
+
+"
+E
+"stumble2"
+"$n tries to climb onto the tree trunk, but slips and falls into the gorge!
+
+"
+E
+"stumbletoo"
+"Just as you think you make it, you slip and fall down!
+
+"
+E
+"getdown"
+"You stumble as you climb the tree, but remain unhurt.
+
+"
+E
+"stumble"
+"As you climb the tree, you slip and fall off it and into the gorge!
+
+"
+E
+"nogo"
+"You will have to dismount if you want to try climbing up onto the tree trunk.
+
+"
+E
+"arrives"
+"$n arrives from the east.
+
+"
+E
+"success2"
+"$n climbs up onto the tree trunk.
+
+"
+E
+"success"
+"You climb up onto the tree trunk.
+
+"
+!
+0 0 0
+-1
+S
+
+#91635
+"Faint Track"
+"A quivering green sea of tall, lush grass surrounds you.  A faint dirt
+
+track winds through the meadow, heading north and south.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91627 0 9
+D1
+""
+""
+0 -1 91636 0 9
+D2
+""
+""
+0 -1 91639 0 9
+D3
+""
+""
+0 -1 91633 0 9
+755 9 1509949540 3 0
+-1
+S
+
+#91636
+"Meadow"
+"The sea of meadow grass continues in all directions save east.  In that
+
+direction, a jagged cliff rises up above the meadow, its steep slopes
+
+covered with a thick tangle of dark brush and weatherworn trees.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91625 0 9
+D2
+""
+""
+0 -1 91640 0 9
+D3
+""
+""
+0 -1 91635 0 9
+E
+"1 east "
+"The cliff is far too steep to climb.
+
+"
+161 9 1509949540 3 0
+161 9 1509949540 3 0
+161 9 1509949540 3 0
+161 9 1509949540 3 0
+161 9 1509949540 3 0
+302 9 1509949540 3 0
+256 9 1509949540 3 0
+755 9 1509949490 3 0
+-1
+S
+
+#91637
+"Rocky Trail"
+"The trail leads east and south here, making its way slowly through the rough,
+
+rocky terrain.  A sheer drop to the west reveals a small spring at the base of
+
+the cliff.  To your north, another rock wall rises high above your head; at
+
+its top you see a canopy of green.  A small path winds its way up between the
+
+rocks to the north.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91634 0 9
+D1
+""
+""
+0 -1 91638 0 9
+D2
+""
+""
+0 -1 91662 0 5
+725 9 1509949540 3 0
+-1
+S
+
+#91638
+"Faint Meadow Track"
+"The trail follows the soft earth into a grassy meadow.  A steep, rocky
+
+rise prevents movement to the south, while the tall grasses continue to
+
+the north and east.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91633 0 9
+D1
+""
+""
+0 -1 91639 0 9
+D3
+""
+""
+0 -1 91637 0 9
+358 17 1509949540 -2 0
+-1
+S
+
+#91639
+"Meadow Fork"
+"The tall grasses thin out to the south here, near the rim of a perilously
+
+steep drop to the south.  Below you, the slope descends in a headlong rush
+
+toward the valley floor.  Small dirt paths lead north, east and west through
+
+the grass.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91635 0 9
+D1
+""
+""
+0 -1 91640 0 9
+D3
+""
+""
+0 -1 91638 0 9
+E
+"south down slope"
+"Looking down the incline, you observe many small intermediate ridges and
+
+crags between your present hilltop position and the floor of the Rua
+
+Valley.
+
+"
+-1
+S
+
+#91640
+"Faint Meadow Track"
+"A narrow path runs from a birch grove to the east through the meadow and off
+
+to the west, following the rim of the southern edge of the hill.  Looking
+
+south, the hills tumble down toward the valley floor in a mass of rocks and
+
+choked vegetation.  A single dead tree rises above the tall grass of the
+
+meadow.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91636 0 9
+D1
+""
+""
+0 -1 91641 0 9
+D3
+""
+""
+0 -1 91639 0 9
+E
+"tree dead"
+"The tree leans slightly to one side, in a futile struggle against the
+
+inevitable.
+
+"
+161 9 1509949540 3 0
+256 9 1509949540 3 0
+161 9 1509949540 3 0
+161 9 1509949490 3 0
+-1
+S
+
+#91641
+"Small Grove"
+"You stand inside a small grove of birch trees.  A faint path winds
+
+between their thin trunks, leading roughly east and west.  A rocky ridge
+
+rises up to the north to prevent your passage, while to the south the
+
+ground leads downward, toward a hedge of thorny bushes.
+
+"
+"Acode 2 - does it ever get used? - E
+
+"
+301465600 0
+4 9 0
+D1
+""
+""
+0 -1 91642 0 9
+D2
+"hedge"
+""
+232 -1 91654 0 5
+D3
+""
+""
+0 -1 91640 0 9
+E
+"ridge"
+"It is quite steep, making for a very treacherous climb.
+
+"
+E
+"bush thorny hedges"
+"The thorny hedge is tall and thick, but not quite impermeable.  A scrap
+
+of cloth, evidence of someone's passage past the hedge, is caught on one
+
+of its vicious thorns.
+
+"
+A
+"move push nudge"
+"bush hedge thorny"
+"if( !is_open( room, south ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, south );
+
+  }
+
+else {
+
+  act_tochar( #close, ch );
+
+  act_notchar( #rclose, ch );
+
+  close( room, south );
+
+  }
+
+acode( find_room( 91641 ), 2 );
+
+"
+E
+"open"
+"Heedless of the thorns, you move aside the hedge to the south.
+
+"
+E
+"ropen"
+"Heedless of the thorns, $n moves aside the hedge to the south.
+
+"
+E
+"close"
+"Ignoring its thorns, you move the hedge to conceal what lies south.
+
+"
+E
+"rclose"
+"Ignoring its thorns, $n moves the hedge to conceal what lies south.
+
+"
+!
+0 0 0
+A
+""
+""
+"act_tochar( #thorn, ch );
+
+act_notchar( #rthorn, ch );
+
+dam_message( ch, 2d4, \"One of the bush's prickly thorns\" );
+
+inflict( ch, mob, 2d4, \"a thorn prick\" );
+
+wait( 2 );
+
+if( is_player( ch ) )
+
+  if( rflag( reset0, room ) )
+
+  if( random( 1, 10 ) == 1 ) {
+
+  act_tochar( #stick, ch );
+
+  act_notchar( #rstick, ch );
+
+  obj_to_char( oload( 2376 ), ch );
+
+  remove_rflag( reset0, room );
+
+  }
+
+"
+E
+"thorn"
+"@gAs you touch the bush, you snag yourself on one of its thorns.@n
+
+"
+E
+"rthorn"
+"@gAs $n touches the bush, $e snags $mself on one of its thorns.@n
+
+"
+E
+"stick"
+"@GAfter extricating yourself from the bush, you pluck out an offending
+
+thorn.@n 
+
+"
+E
+"rstick"
+"@GAfter extricating $mself from the bush, $n plucks out an offending
+
+thorn.@n 
+
+"
+!
+0 0 0
+-1
+S
+
+#91642
+"Faint Meadow Track Bend"
+"A steep rise to the east and a vertical drop to the south turn the trail
+
+to the north and west.  A few patches of clover and tufts of a shorter,
+
+brown grass grow in the rocky clefts near the edge of the cliff.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91643 0 9
+D3
+""
+""
+0 -1 91641 0 9
+755 9 1509949490 3 0
+415 17 1509949540 -2 0
+-1
+S
+
+#91643
+"Faint Track through Lightly Wooded Hills"
+"The track crosses a clearing here, leading west and south.  Tall elm
+
+trees border the clearing, their stout limbs rising high above the ground. 
+
+To the north, a steep slope gives you pause.  Looking downward from its
+
+edge, you notice a small dirt path running down the steep incline.  With
+
+some luck, you think you might be able to make it down.
+
+"
+"climb slope to move north to room 91623
+
+"
+301465600 0
+3 9 0
+D2
+""
+""
+0 -1 91642 0 9
+D3
+""
+""
+0 -1 91644 0 5
+A
+"climb descend"
+"slope path cliff north down"
+"i = 1d10;
+
+if( can_fly( ch ) ) { 
+
+  send_to_char( #success, ch );
+
+  act_notchar( #success2, ch );
+
+  transfer( ch, find_room( 91623 ) );
+
+  act_notchar( #succarrive, ch );
+
+  end;
+
+  }
+
+else
+
+  if( find_stat( ch, dex ) < 11 ) { 
+
+  send_to_char( #wipeout, ch );
+
+  act_notchar( #wipeout2, ch );
+
+  transfer( ch, find_room( 91623 ) );
+
+  act_notchar( #wipearrive, ch );
+
+  dam_message( ch, i, \"the fall\" );
+
+  inflict( ch, mob, i, \"the fall\" );
+
+  end;
+
+  }
+
+else
+
+  if( random( 1, 10 ) < 6 ) { 
+
+  send_to_char( #wipeout, ch );
+
+  act_notchar( #wipeout2, ch );
+
+  transfer( ch, find_room( 91623 ) );
+
+  act_notchar( #wipearrive, ch );
+
+  dam_message( ch, i, \"the fall\" );
+
+  inflict( ch, mob, i, \"the fall\" );
+
+  end;
+
+  }
+
+else
+
+  send_to_char( #success, ch );
+
+act_notchar( #success2, ch );
+
+transfer( ch, find_room( 91623 ) );
+
+act_notchar( #succarrive, ch );
+
+"
+E
+"succarrive"
+"$n somehow makes it down the treacherous slope from above.
+
+"
+E
+"wipearrive"
+"$n comes tumbling down the slope from above!
+
+"
+E
+"wipeout2"
+"$n falls head over heels down the treacherous slope!
+
+"
+E
+"wipeout"
+"You fall head over heels down the treacherous slope!
+
+"
+E
+"success2"
+"$n makes it down the treacherous slope.
+
+"
+E
+"success"
+"You make your way down the treacherous slope.
+
+"
+!
+0 0 0
+-1
+S
+
+#91644
+"Summit"
+"You stand at the summit of a hill, among thickly twisted trees and jagged
+
+greyish slabs of rock.  All about you, the wooded hills drop below your line
+
+of sight.  You spy Pennan and the bottomlands of the Rua Valley below you to
+
+the southeast, while the deep gaps and steep curves of the hills continue off
+
+toward the horizon in all other directions.
+
+"
+""
+301465608 0
+4 5 0
+D1
+""
+""
+0 -1 91643 0 5
+E
+"trees"
+"The trees' trunks are weathered from the constant wind which whips up the
+
+hillside here, the bark stripped and almost worn away.
+
+"
+E
+"slab slabs rock"
+"Immense slabs of rock lie embedded in the hilltop here, with the roots of
+
+trees woven between them.  Most are smooth, their rough edges worn away
+
+from ages of exposure to the harsh wind.
+
+"
+E
+"trunk"
+"Their trunks are thick, needing great strength to withstand the strong
+
+gusts of wind which frequently whip across the hill.
+
+"
+E
+"roots"
+"Upon closer examination, a large opening is hidden from view by the odd way
+
+the roots lie.
+
+"
+A
+"enter"
+"opening"
+"send_to_char( #enter, ch );
+
+act_notchar( #enters, ch );
+
+transfer( ch, find_room( 91645 ) );
+
+act_notchar( #arrives, ch );
+
+"
+E
+"arrives"
+"$n arrives from above.
+
+"
+E
+"enters"
+"$n steps behind a tree, and disappears from view.
+
+"
+E
+"enter"
+"You squeeze into the opening between the tree root and rock slab.
+
+"
+!
+0 0 0
+A
+""
+""
+"send_to_char( #wind, ch );
+
+"
+E
+"wind"
+"A fierce blast of wind comes whipping through the trees, sending chills
+
+up your spine.
+
+"
+!
+2 50 0
+A
+"1 look"
+"bark"
+"if( find_skill( ch, searching ) > 1 ) {
+
+  if( random( 1, 10 ) < 6 ) { 
+
+    send_to_char( #eureka, ch );
+
+    end;
+
+    }
+
+  else { 
+
+    send_to_char( #nope, ch );
+
+    end;
+
+    }
+
+  }
+
+send_to_char( #nope, ch );
+
+"
+E
+"nope"
+"The trees' bark reflects years of exposure to the elements.
+
+"
+E
+"eureka"
+"Looking at the worn trees a bit more carefully, you notice a small dark
+
+opening between a gnarled tree root and a giant slab of rock.
+
+"
+!
+0 0 0
+755 17 1509949540 -2 0
+-1
+S
+
+#91645
+"Root Cave"
+"You stand in a dark, rock cave.  Immense slabs of rock jut out from the walls
+
+in all directions, and huge masses of roots crisscross the cave, their gnarled
+
+mass anchoring the trees above the surface.  A gap between two roots leads yet
+
+further downward into darkness.  A steep incline leads up out of the cave.
+
+"
+""
+301465612 0
+0 5 0
+D5
+""
+""
+0 -1 91646 0 5
+E
+"gap"
+"A small opening between two roots looks as if you might be able to slip
+
+in.
+
+"
+A
+"d do dow down"
+""
+"send_to_char( #down, ch );
+
+continue;
+
+"
+E
+"down"
+"You enter the gap and continue downward.
+
+"
+!
+0 0 0
+A
+"climb go"
+"incline up"
+"send_to_char( #enter, ch );
+
+act_notchar( #enters, ch );
+
+transfer( ch, find_room( 91644 ) );
+
+act_notchar( #arrives, ch );
+
+"
+E
+"arrives"
+"$n arrives from below.
+
+"
+E
+"enters"
+"$n climbs up and out of the cave.
+
+"
+E
+"enter"
+"You climb up and out of the cave.
+
+"
+!
+0 0 0
+-1
+S
+
+#91646
+"Below the Rocks and Roots"
+"You stand on a ledge in a series of nearly vertical caves and passages, far
+
+below the rocky, windblown hilltop.  No roots penetrate the unworked stone
+
+walls which surround you.  You think you hear the faint sounds of running
+
+water, but are unable to tell with certainty.
+
+"
+""
+301465604 0
+0 5 0
+D4
+""
+""
+0 -1 91645 0 5
+D5
+""
+""
+0 -1 91647 0 5
+A
+""
+""
+"if( find_stat( ch, level ) < 20 )
+
+  send_to_char( #danger, ch );
+
+else
+
+  send_to_char( #danger2, ch );
+
+"
+E
+"danger2"
+"You sense something lurking in the darkness below, a sinister, evil
+
+presence which knows only one thing - how to kill.
+
+"
+E
+"danger"
+"Something sinister lurks in the darkness below.  You are barely able to
+
+resist an overpowering urge to flee, and remove yourself from mortal
+
+peril, and the sense of impending doom which pervades this shadowy cave.
+
+"
+!
+1 -1 48
+59 9 1509949540 3 0
+-1
+S
+
+#91647
+"Dark Cavern"
+"You have reached the floor of a large natural cavern.  All around you,
+
+rock walls lead to and fro, the silent record of the earth's earliest
+
+days.  Immense slabs of rock jut out from the northwest and southeast,
+
+coming within a few feet of meeting one another.
+
+"
+""
+301465604 0
+0 7 0
+D0
+""
+""
+0 -1 91648 0 7
+D1
+""
+""
+0 -1 91652 0 7
+D2
+""
+""
+0 -1 91649 0 7
+D3
+""
+""
+0 -1 91650 0 7
+D4
+""
+""
+0 -1 91646 0 5
+750 9 1509949540 3 0
+59 9 1509949540 3 0
+-1
+S
+
+#91648
+"Dark Cavern"
+"You stand in a dark subterranean cavern, its rough surfaces seemingly
+
+untouched by any force other than nature.  The air is stale and cool.
+
+"
+""
+301465604 0
+0 9 0
+D1
+""
+""
+0 -1 91653 0 9
+D2
+""
+""
+0 -1 91647 0 7
+750 9 1509949540 3 0
+872 17 1509949460 -2 0
+-1
+S
+
+#91649
+"Dark Cavern"
+"You stand in a dark subterranean cavern, its rough surfaces seemingly
+
+untouched by any force other than nature.  The air is stale and cool.
+
+"
+""
+301465604 0
+0 9 0
+D0
+""
+""
+0 -1 91647 0 7
+D2
+"cavern wall"
+""
+235 -1 37234 0 5
+D3
+""
+""
+0 -1 91651 0 9
+E
+"rough surfaces"
+"As you examine the walls around you, you notice a slightly discolored
+
+stone embedded in the southern wall.
+
+"
+E
+"stone discolored"
+"It seems to be loose.
+
+"
+A
+"move push"
+"stone"
+"if( !is_open( room, south ) ) {
+
+  send_to_char( #move, ch );
+
+  act_notchar( #move2, ch );
+
+  open( room, south );
+
+  end;
+
+  }
+
+send_to_char( #open, ch );
+
+"
+E
+"open"
+"It is already open.
+
+"
+E
+"move2"
+"$n touches a spot on the southern wall and a hidden door to the south appears.
+
+"
+E
+"move"
+"You push the stone in and a hidden exit to the south opens.
+
+"
+!
+0 0 0
+78 17 1509949490 -2 0
+750 9 1509949540 3 0
+750 9 1509949540 3 0
+-1
+S
+
+#91650
+"Dark Cavern"
+"You stand in a dark subterranean cavern, its rough surfaces seemingly
+
+untouched by any force other than nature.  The air is stale and cool.
+
+"
+""
+301465604 0
+0 9 0
+D1
+""
+""
+0 -1 91647 0 7
+D2
+""
+""
+0 -1 91651 0 9
+26 17 1509949442 -2 0
+-1
+S
+
+#91651
+"Dark Cavern"
+"You stand in a dark subterranean cavern, its rough surfaces seemingly
+
+untouched by any force other than nature.  The air is stale and cool.
+
+"
+""
+301465604 0
+0 9 0
+D0
+""
+""
+0 -1 91650 0 9
+D1
+""
+""
+0 -1 91649 0 9
+14 17 1509949445 -2 0
+750 9 1509949540 3 0
+6 17 1509949442 -2 0
+-1
+S
+
+#91652
+"Dark Cavern"
+"You stand in a dark subterranean cavern, its rough surfaces seemingly
+
+untouched by any force other than nature.  The air is stale and cool.  A
+
+few dark branches and stones have been collected against the east wall.
+
+"
+""
+301465604 0
+0 9 0
+D0
+""
+""
+0 -1 91653 0 9
+D3
+""
+""
+0 -1 91647 0 7
+E
+"branch branches stones"
+"They seem to have been piled together, as if to form a crude nest.
+
+"
+A
+"search"
+"nest"
+"i = random( 1, 15 );
+
+if( rflag( reset0, room ) ) {
+
+  if( i == 1 ) {
+
+    send_to_char( #crescent, ch );
+
+    act_notchar( #crescent2, ch );
+
+    obj_to_char( oload( 780 ), ch );
+
+    remove_rflag( reset0, room );
+
+    end;
+
+    }
+
+  if( i == 2 ) {
+
+    send_to_char( #scroll, ch );
+
+    act_notchar( #scroll2, ch );
+
+    obj_to_char( oload( 1013 ), ch );
+
+    remove_rflag( reset0, room );
+
+    end;
+
+    }
+
+  else
+
+    send_to_char( #nothing, ch );
+
+  remove_rflag( reset0, room );
+
+  end;
+
+  }
+
+remove_rflag( reset0, room );
+
+send_to_Char( #nothing, ch );
+
+"
+E
+"scroll2"
+"$n cries out, having found something in the rubble!
+
+"
+E
+"scroll"
+"As you search through the crude nest, you come across what appears to be
+
+an ancient scroll!
+
+"
+E
+"nothing"
+"You search through the rubble, and find nothing of interest.
+
+"
+E
+"crescent2"
+"$n looks through the rubble, and cries out, having found something!
+
+"
+E
+"crescent"
+"As you search through the crude nest, you find a small crescent-shaped
+
+dagger!
+
+"
+!
+0 0 0
+-1
+S
+
+#91653
+"Dark Cavern"
+"You stand in a dark subterranean cavern, its rough surfaces seemingly
+
+untouched by any force other than nature.  The air is stale and cool.  A
+
+shallow pool of water has collected in a low part of the floor here.
+
+"
+""
+301465604 0
+0 9 0
+D2
+""
+""
+0 -1 91652 0 9
+D3
+""
+""
+0 -1 91648 0 9
+A
+""
+""
+"send_to_room( #drip, room );
+
+"
+E
+"drip"
+"You hear a soft splash as a drop of water falls from the darkness
+
+overhead and into the shallow pool.
+
+"
+!
+2 20 0
+A
+"drink"
+"pool"
+"send_to_char( #drink, ch );
+
+"
+E
+"drink"
+"You realize that the water here is unsafe to drink, and reconsider your
+
+decision.
+
+"
+!
+0 0 0
+14 17 1509949445 -2 0
+12 17 1509949445 -2 0
+750 9 1509949490 3 0
+-1
+S
+
+#91654
+"Very Narrow Track"
+"The track follows along a narrow ledge cut into the side of a steep,
+
+rocky incline.  A few dense bushes grow along the path to the north,
+
+where the curve of the hill is much less severe.
+
+"
+""
+301465600 0
+4 5 0
+D0
+"hedge"
+""
+232 -1 91641 0 5
+D1
+""
+""
+0 -1 91656 0 5
+D3
+""
+""
+0 -1 91655 0 5
+E
+"hedge bushes north thorny"
+"The bushes to the north seem to form a rough hedge.  After a moment's
+
+reflection, you think you might be able to make it through them and up
+
+the hills to the north if you could somehow move them.  The bushes,
+
+though, look fairly wicked with their inch long thorns protruding from
+
+their masses.
+
+"
+A
+"move part nudge budge"
+"bushes hedges thorny"
+"if( !is_open( room, north ) ) {
+
+act_tochar( #open, ch );
+
+act_notchar( #ropen, ch );
+
+open( room, north );
+
+}
+
+else {
+
+act_tochar( #close, ch );
+
+act_notchar( #rclose, ch );
+
+close( room, north );
+
+}
+
+acode( find_room( 91641 ), 2 );
+
+"
+E
+"open"
+"Ignorning the wicked thorns, you tug at and move one of the hedges.
+
+"
+E
+"ropen"
+"Ignorning the wicked thorns, $n tugs at and moves one of the hedges.
+
+"
+E
+"close"
+"You move one of the hedges aside, hiding the route to the northern hills.
+
+"
+E
+"rclose"
+"$n moves one of the hedges, hiding the route to the northern hills.
+
+"
+!
+0 0 0
+-1
+S
+
+#91655
+"On a Ledge in the Hills"
+"You stand upon a ledge overlooking the Rua Valley to the south.  The wall
+
+behind you rises nearly straight up to a height far above your head, its
+
+rough cracked walls marked by only a few patches of scrubby brown grass.
+
+"
+""
+301465600 0
+4 9 0
+D1
+""
+""
+0 -1 91654 0 5
+E
+"s"
+"Looking off the ledge to your south, you see the valley open up
+
+underneath you, the small houses and farms small and distant.
+
+"
+205 9 1509949540 3 0
+-1
+S
+
+#91656
+"Very Narrow Path"
+"The small track continues here, clawing its way east and west along a
+
+rocky, barren hillside.  Above you, a steep cliff rises to the north,
+
+while scant inches away to the south the ground drops almost straight
+
+down toward the emerald green valley floor.
+
+"
+""
+301465600 0
+4 5 0
+D1
+""
+""
+0 -1 91657 0 5
+D3
+""
+""
+0 -1 91654 0 5
+205 9 1509949540 3 0
+-1
+S
+
+#91657
+"Very Narrow Path"
+"The narrow path traverses the rocky hillside, high above the thatched
+
+rooftops of Pennan.  A few modest tufts of grass cling to small niches
+
+between the rocks, their existence precarious at best.
+
+"
+""
+301465600 0
+4 5 0
+D1
+""
+""
+0 -1 91658 0 5
+D3
+""
+""
+0 -1 91656 0 5
+-1
+S
+
+#91658
+"On a Small Ledge"
+"Two narrow paths converge at a rough stone ledge.  The rocky floor is covered
+
+with small twigs and stones.  It appears that someone has made a recent - and
+
+unsuccessful - attempt at a fire here.  Looking off to the southeast, you see
+
+a small cluster of houses gathered around a small square.  Rising high above
+
+you to the northwest, the rough walls of the cliff tower above your position.
+
+"
+""
+301465600 0
+4 5 0
+D0
+""
+""
+0 -1 91659 0 5
+D3
+""
+""
+0 -1 91657 0 5
+E
+"north west walls cliff"
+"The cliff here seems steep, but several openings in the weathered face of
+
+the rock make you think you might be able to climb it.
+
+"
+A
+"climb"
+"cliff up face north west"
+"if( find_stat( ch, level, ) < random( 5, 15 ) ) {
+
+  send_to_char( #scared, ch );
+
+  end;
+
+}
+
+send_to_char( #climb, ch );
+
+act_notchar( #climb2, ch );
+
+transfer( ch, find_room( 91687 ) );
+
+act_notchar( #arrives, ch );
+
+"
+E
+"scared"
+"A chill sensation overcomes you as you begin your climb, and you find
+
+yourself unable to proceed up the rocky face of the cliff.
+
+"
+E
+"arrives"
+"$n arrives from below.
+
+"
+E
+"climb2"
+"$n climbs up and disappears from view.
+
+"
+E
+"climb"
+"You climb up the cliff face.
+
+"
+!
+0 0 0
+496 9 1509949515 3 0
+-1
+S
+
+#91659
+"Very Narrow Path"
+"A rocky overhang juts out here, nearly preventing your continued progress
+
+along the goat path.  The trail, only a foot or so wide at best, winds
+
+its way around the rocky shelf in a scissor-like motion.  To the east you
+
+see the fields and farms of the Rua Valley spread out beneath you.
+
+"
+""
+301465600 0
+4 5 0
+D0
+""
+""
+0 -1 91660 0 5
+D2
+""
+""
+0 -1 91658 0 5
+-1
+S
+
+#91660
+"Very Narrow Path"
+"The path continues north and south along the edge of the steep hillside. 
+
+Small scrub grows in the chinks between the rocks here.  To the east, the
+
+hills fall away toward the valley floor far below you.  You see Delving
+
+Lane winding its way between a few farms, and the shimmering waters of
+
+the mill lake in the distance to the northeast.
+
+"
+"[Lansharra] shrub
+
+"
+301465600 0
+4 5 0
+D0
+""
+""
+0 -1 91661 0 5
+D2
+""
+""
+0 -1 91659 0 5
+205 9 1509949540 3 0
+-1
+S
+
+#91661
+"Very Narrow Path"
+"A narrow goat path follows a precarious line across the rocky slope,
+
+coming to and by a moss-covered rise to the east.  To the southeast, the
+
+rough hillside plummets toward the green fields and small farms on the
+
+valley floor.  The path continues to the south, while sheer rock walls
+
+loom overhead to the north and west.
+
+"
+"Underground area to be explored starts here
+
+"
+301465600 0
+4 5 0
+D1
+""
+""
+234 -1 37023 0 5
+D2
+""
+""
+0 -1 91660 0 5
+E
+"moss rise"
+"The mossy rise blocks further progress to the east.  You think you see a
+
+small opening between two large rocks.
+
+"
+A
+"enter"
+"opening hole east moss gap"
+"send_to_char( #moss, ch );
+
+act_notchar( #moss2, ch );
+
+transfer( ch, find_room( 37023 ) );
+
+act_notchar( #arrives, ch );
+
+"
+E
+"arrives"
+"$n arrives from nowhere.
+
+"
+E
+"moss2"
+"$n squeezes through the mossy opening and heads east.
+
+"
+E
+"moss"
+"You squeeze through the mossy opening and head east.
+
+"
+!
+0 0 0
+-1
+S
+
+#91662
+"Rocky Trail"
+"Turning away from a sheer cliff to the south, the trail runs north to west
+
+here.  The view of the Rua Valley to the south is stunning, with small fields
+
+and farms gathered in a tight circle, surrounded on all sides by the emerald
+
+wilderness.  Peeking around a slate-grey boulder, you follow the course of the
+
+Greened Way as it winds its way between the steep ridges and hillsides west of
+
+Pennan.
+
+"
+""
+301465608 0
+4 5 0
+D0
+""
+""
+0 -1 91637 0 5
+D1
+"crack"
+""
+235 -1 37160 0 5
+D3
+""
+""
+0 -1 91663 0 5
+E
+"crack"
+"You notice a single long crack running the
+
+"
+E
+"smooth"
+"The boulder is quite smooth, having very few cracks in its nearly uniform
+
+surface.  It has been here a long time.
+
+"
+E
+"boulder slate grey"
+"A very large, very old, very smooth boulder.
+
+"
+A
+"climb"
+"boulder"
+"if( random( 1, 10 ) < 3 ) { 
+
+  send_to_char( #climb, ch );
+
+  end;
+
+  }
+
+else
+
+  send_to_char( #climb2, ch );
+
+"
+E
+"climb2"
+"You nearly make it up the boulder, but slip and fall back down.
+
+"
+E
+"climb"
+"You try to climb the boulder, but it is too slippery.
+
+"
+!
+0 0 0
+A
+"open"
+"crack"
+"if( is_open( room, east ) )
+
+  send_to_char( #nothing, ch );
+
+else {
+
+  send_to_char( #to_char, ch );
+
+  act_notchar( #to_room, ch );
+
+  send_to_room( #to_all, find_room( 37160 ) );
+
+  open( room, east );
+
+  }
+
+"
+E
+"to_all"
+"An opening appears to the west.
+
+"
+E
+"to_room"
+"$n manipulates something on the face of the boulder and a hidden door
+
+appears from nowhere.
+
+"
+E
+"to_char"
+"You open the crack and find a hidden door concealed in the boulder's face.
+
+"
+E
+"nothing"
+"The crack is already open.
+
+"
+!
+0 0 0
+A
+"close"
+"crack"
+"if( !is_open( room, east ) )
+
+  send_to_char( #nothing, ch );
+
+else {
+
+  send_to_char( #to_char, ch );
+
+  act_notchar( #to_room, ch );
+
+  send_to_room( #to_all, find_room( 37160 ) );
+
+  close( room, east );
+
+  }
+
+"
+E
+"to_all"
+"The door to the west closes.
+
+"
+E
+"to_room"
+"$n manipulates the boulder and the hidden door disappears.
+
+"
+E
+"to_char"
+"You manipulate the crack and the hidden door disappears.
+
+"
+E
+"nothing"
+"It is already closed.
+
+"
+!
+0 0 0
+-1
+S
+
+#91663
+"Rocky Trail"
+"A narrow, rocky trail leads down a steep slope to the east, and climbs up it
+
+toward a high outcropping to the west.  The passage of many feet has worn a
+
+deep groove into the rock underfoot.  At the bottom of a steep drop to the
+
+south, the narrow stone ribbon of the Greened Way moves east and west along
+
+the valley floor.
+
+"
+""
+301465600 0
+4 5 0
+D1
+""
+""
+0 -1 91662 0 5
+D3
+""
+""
+0 -1 91664 0 5
+-1
+S
+
+#91664
+"Overlooking the Greened Way"
+"You stand on a rocky outcropping, high in the hills.  On three sides of you,
+
+the craggy rock drops down and away from you toward the valley floor and
+
+certain death.  Far below you to the south, the worn stones of the Greened Way
+
+process by in silence.
+
+"
+""
+301465600 0
+4 5 0
+D1
+""
+""
+0 -1 91663 0 5
+205 9 1509949540 3 0
+-1
+S
+
+#91665
+"Rocky Cliff"
+"A deep crevasse prevents your passage to the north and west.  Dark,
+
+wooded hills on the far side of the chasm rise above your present
+
+position, obscuring the horizon behind their rough curves.  To the south
+
+and east, the woods follow the curve of the hill.
+
+"
+"r/w
+
+"
+301465600 0
+4 9 0
+D1
+""
+""
+0 -1 91631 0 9
+D2
+""
+""
+0 -1 91666 0 9
+A
+""
+""
+"send_to_char( #wind, ch );
+
+continue;
+
+"
+E
+"wind"
+"A gust of wind blows in your face.
+
+"
+!
+2 25 0
+-1
+S
+
+#91666
+"Wooded Hills"
+"You see a rocky cliff-top clearing to the north.  To the east and west, the
+
+hillside is covered by thick forest, while a wall of dense brambles prevents
+
+movement to the south.  The trees here are large, and quite old, their limbs
+
+reaching far above your head.  A few toadstools grow on the ground here, in
+
+the dark shadows between the trees.
+
+"
+"other side
+
+toadstools/mushrooms for ranger herbalism skill?
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 91665 0 9
+D1
+""
+""
+0 -1 91632 0 9
+D3
+""
+""
+0 -1 91667 0 9
+A
+"1 south"
+""
+"i = 1d5;
+
+send_to_char( #brambles, ch );
+
+dam_message( ch, i, \"the wall of brambles\" );
+
+inflict( ch, mob, i, \"the wall of brambles\" );
+
+"
+E
+"brambles"
+"The wall of brambles are too dense to pass through.
+
+"
+!
+0 0 0
+134 9 1509949540 3 0
+-1
+S
+
+#91667
+"Thickly Wooded Hillside"
+"You stand in an almost impenetrable tangle of vegetation - thick trees covered
+
+with dark, creeping vines and dense, thorny underbrush.  Dark brambles and
+
+several large boulders bar passage to the south and west.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 91669 0 9
+D1
+""
+""
+0 -1 91666 0 9
+E
+"vines"
+"The vines hang from the trees.  They are dark and thick.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You make your way through the thick vegetation.
+
+"
+!
+3 -1 3
+A
+"climb"
+"boulders"
+"if( size( ch ) > size( find_room( 91668 ) ) ) {
+
+  send_to_char( #big, ch );
+
+  act_notchar( #rbig, ch );
+
+  end;
+
+}
+
+send_to_char( #vine, ch );
+
+act_notchar( #vine2, ch );
+
+transfer( ch, find_room( 91668 ) );
+
+act_notchar( #arrive, ch );
+
+"
+E
+"arrive"
+"$n arrives from a mass of tangled vines.
+
+"
+E
+"vine2"
+"$n pushes $e way between some vines and climbs up onto a large boulder,
+
+disappearing from view.
+
+"
+E
+"vine"
+"You climb up between the vines and onto the boulder, then slip down the
+
+other side.
+
+"
+E
+"big"
+"You try to push your way between the vines to climb the boulders, but you are
+
+too large.
+
+"
+E
+"rbig"
+"$n tries to push $s way between the vines to climb the boulders, but $e is too
+
+large.
+
+"
+!
+0 0 0
+A
+"south west"
+""
+"send_to_char( #south, ch );
+
+"
+E
+"south"
+"The dark brambles prevent movement in that direction.
+
+"
+!
+0 0 0
+2509 9 1509949540 3 0
+-1
+S
+
+#91668
+"Stone Cairn"
+"A high stone cairn has been constructed inside a ring of giant boulders.
+
+Outside the stone ring, dark creeping vines and the thick trunks of aged trees
+
+push toward the small clearing and the stones inside of it.
+
+"
+"mistletoe here
+
+"
+301465600 0
+3 4 0
+E
+"cairn"
+"Several large stones, stacked one on top of another, placed here as a 
+
+marker.
+
+"
+E
+"trees"
+"The trees seem ancient here, their branches intertwined with one another
+
+to form a thick canopy of green above your head.
+
+"
+E
+"vines"
+"The vines crawl between the boulders and trees here, joining with the bushes
+
+and trees here to form an almost impermeable wall of vegetation.
+
+"
+A
+"climb"
+"boulder boulders"
+"send_to_char( #vine, ch );
+
+act_notchar( #vine2, ch );
+
+transfer( ch, find_room( 91667 ) );
+
+act_notchar( #arrive, ch );
+
+"
+E
+"arrive"
+"$n climbs down from the top of a boulder.
+
+"
+E
+"vine2"
+"$n climbs up onto a boulder and disappears from view.
+
+"
+E
+"vine"
+"You climb up onto a boulder.
+
+"
+!
+0 0 0
+A
+""
+""
+"send_to_room( #wind, room );
+
+"
+E
+"wind"
+"A soft wind rustles through the trees.
+
+"
+!
+2 10 0
+A
+"pray reflect"
+""
+"i = random( 1, 10 );
+
+j = random( 1, 2 );
+
+if( j == 1 ) {
+
+  if( !rflag( reset1, room ) ) {
+
+    act_room( #appears, ch );
+
+    set_rflag( reset1, room );
+
+    wait( i );
+
+    obj_to_room( oload( 667 ), room );
+
+    end;
+
+    }
+
+  send_to_char( #peace, ch );
+
+  end;
+
+  }
+
+send_to_char( #peace, ch );
+
+"
+E
+"peace"
+"You feel at peace and in harmony with your natural surroundings.
+
+"
+E
+"appears"
+"@b@GA soft wind rushes through the trees, leaving a small sprig of
+
+mistletoe on top of the cairn where there was none just a moment before.
+
+"
+!
+0 0 0
+A
+"stand enter go"
+"circle inside stones"
+"send_to_char( #stand, ch );
+
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  remove_rflag( reset1, room );
+
+  }
+
+"
+E
+"stand"
+"You step inside the circle of ancient stones with a measured reverence.
+
+"
+!
+0 0 0
+-1
+S
+
+#91669
+"Clearing in the Hills"
+"You stand in a rocky cliffside clearing.  Many large boulders lie scattered
+
+about the area, the rocky soil inhibiting the growth of anything larger than a
+
+few tufts of sallow hill grass.  Near the edge of the precipice to the north
+
+you spy several large iron rings which have been driven into the stone ground.
+
+A few old trees, their trunks covered by creepers and vines, grow along the
+
+southern edge of the clearing.
+
+"
+"to card magic tower cli down/n 39278
+
+[Mantispid] Might need more keywords.. can't seem to find anything that opens the area to the north.
+
+[Thyme] should you be able to go north?
+
+"
+301465600 0
+4 9 0
+D0
+""
+""
+234 -1 39278 0 9
+D2
+""
+""
+0 -1 91667 0 9
+D3
+""
+""
+0 -1 91670 0 9
+E
+"trees trunks"
+"The trees seem old here, almost dying from the vine and tangled growth
+
+which climbs their trunks from the ground.
+
+"
+E
+"boulders"
+"The boulders are big, really big, and heavy.  Really heavy.
+
+"
+E
+"rings iron ground"
+"The iron rings are firmly anchored to the rock beneath your feet. 
+
+Looking closely, you see a few strands of aged rope tied to several of
+
+the rings.  You realize that once, long ago, a rope bridge spanned the
+
+chasm to the north.
+
+"
+A
+""
+""
+"send_to_char( #wind, ch );
+
+continue;
+
+"
+E
+"wind"
+"A sharp gust of wind blows across the open hillside.
+
+"
+!
+2 25 0
+872 17 1509949455 -2 0
+2693 17 1509949460 -2 0
+-1
+S
+
+#91670
+"A Rocky Cliff in the Hills"
+"The hill drops away to the north, where a rushing stream plummets down a
+
+deep rocky chute between hills.  On the other side, you spy a narrow
+
+trail wind its way across the steep hillside, zigzagging between large
+
+boulders and the thick trunks of pine trees.  To the south of you, a
+
+thick wall of vegetation bars passage.
+
+"
+"[Derwen] \"On the other side you spy a narrow trail wind 0 have an 'ing' its way...\"
+
+"
+301465600 0
+4 9 0
+D1
+""
+""
+0 -1 91669 0 9
+D3
+""
+""
+0 -1 91671 0 9
+840 17 1509949540 -2 0
+-1
+S
+
+#91671
+"Lightly Wooded Hillside"
+"A few elms and young oaks dot the hillside here, growing in small clusters
+
+amidst large slabs of exposed rock.  To the north, a cliff drops hundreds of
+
+feet down to a small stream flowing along the bottom of a stone gorge.
+
+"
+"search elm
+
+garnet changed to agate --kiian
+
+"
+301465600 0
+4 9 0
+D1
+""
+""
+0 -1 91670 0 9
+D2
+""
+""
+0 -1 91672 0 9
+D3
+""
+""
+0 -1 91519 0 9
+E
+"elm"
+"You look at the elms scattered about the area and notice one with a
+
+particularly large, wrinkled root.
+
+"
+E
+"trees elms oaks"
+"The trees seem particularly old and weathered here, for some unknown reason.
+
+"
+A
+"search"
+"elm root"
+"if( !rflag( reset0, room ) ) {
+
+  send_to_char( #nothing, ch );
+
+  end;
+
+  }
+
+else
+
+  if( random( 1, 5 ) < 2 ) { 
+
+  remove_rflag( reset0, room );
+
+  obj_to_char( oload( 632 ), ch );
+
+  send_to_char( #garnet, ch );
+
+  act_notchar( #garnet2, ch );
+
+  end;
+
+  }
+
+else
+
+  send_to_char( #nothing, ch );
+
+"
+E
+"garnet2"
+"$n looks around and seems to find something!
+
+
+"
+E
+"garnet"
+"Looking under a gnarled root, you find a small gem!
+
+"
+E
+"nothing"
+"You look around and find nothing.
+
+"
+!
+0 0 0
+2509 9 1509949540 3 0
+-1
+S
+
+#91672
+"Wooded Hills"
+"The woods here are thick and tangled with dark vines and underbrush.  The
+
+everpresent boulders and exposed rock faces are absent here, replaced by
+
+rough vegetation which slows your step.  A pair of holly bushes bars
+
+movement to the east.
+
+"
+"action
+
+"
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91671 0 9
+D2
+""
+""
+0 -1 91676 0 9
+D3
+""
+""
+0 -1 91673 0 9
+A
+""
+""
+"i = random( 1, 10 );
+
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 10 ) < 3 ) {
+
+    wait( i );
+
+    send_to_room( #falls, room );
+
+    obj_to_room( oload( 663 ), room );
+
+    end;
+
+    }
+
+  }
+
+else
+
+  remove_rflag( reset0, room );
+
+"
+E
+"falls"
+"A small holly berry falls to the ground.
+
+"
+!
+1 1000 9
+A
+"1 east"
+""
+"send_to_char( #holly, ch );
+
+end;
+
+"
+E
+"holly"
+"The holly bushes are too thick to pass through.
+
+"
+!
+0 0 0
+663 17 1509949540 -2 0
+2509 41 1509949490 3 0
+2508 73 1509949465 3 0
+-1
+S
+
+#91673
+"Rocky Hilltop"
+"You stand near the summit of a rocky hill, its weathered grey slabs of
+
+stone exposed to a constant, sharp wind.  A few small bushes and tufts of
+
+grass grow here between the slabs, while to the north and west, the
+
+ground falls away steeply toward the bottom of a dark gorge.  Obscured by
+
+the ragged line of the hill, you cannot see its bottom.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91519 0 9
+D1
+""
+""
+0 -1 91672 0 9
+D2
+""
+""
+0 -1 91675 0 7
+D3
+""
+""
+0 -1 91520 0 9
+A
+""
+""
+"send_to_room( #water, room );
+
+"
+E
+"water"
+"@BYou hear the faint sounds of rushing water.@n
+
+"
+!
+2 25 0
+-1
+S
+
+#91674
+"Rocky Outcropping"
+"You stand on an exposed portion of the hills, with little around to
+
+shield you from the elements.  The ground here is rocky and rough, with
+
+many small stones scattered about the area, and many small patches of
+
+scraggly weeds growing in between them.  To the east, you see several
+
+large boulders and, further off, a stand of trees.
+
+"
+""
+301465600 0
+5 9 0
+D0
+""
+""
+0 -1 91520 0 9
+D1
+""
+""
+0 -1 91675 0 7
+E
+"stones"
+"Unremarkable flat grey rocks.
+
+"
+78 17 1509949540 -2 0
+-1
+S
+
+#91675
+"Wooded Hollow"
+"You stand in a wooded area sheltered from the wind.  To the south, a
+
+small path cuts down a rocky slope, while to the north the slope
+
+continues to rise toward a rocky hilltop.  To the east you spy a stand of
+
+of trees, while to the west several boulders are visible through a screen
+
+of oaks and elms.
+
+"
+"[Zot] mentions nothing about down.
+
+"
+301465600 0
+4 7 0
+D0
+""
+""
+0 -1 91673 0 7
+D1
+""
+""
+0 -1 91676 0 7
+D3
+""
+""
+0 -1 91674 0 7
+D5
+""
+""
+0 -1 37144 0 7
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You head up toward the summit of the hill.
+
+"
+!
+3 0 1
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You head down the rocky slope to the south.
+
+"
+!
+3 0 36
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You pick your way between the boulders and head west.
+
+"
+!
+3 0 8
+659 9 1509949445 3 0
+28 9 1509949540 3 0
+813 17 1509949540 -2 0
+-1
+S
+
+#91676
+"Lightly Wooded Hills"
+"Rocky ground to the east of here gives way to a stand of old oak and elm
+
+trees.  A few low bushes grow where enough light penetrates the elms'
+
+branches, and a thick mass of thorny bushes prevents your passage to the
+
+south.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 91672 0 9
+D1
+""
+""
+0 -1 91677 0 9
+D3
+""
+""
+0 -1 91675 0 7
+A
+"south"
+""
+"i = 1d5;
+
+send_to_char( #south, ch );
+
+act_notchar( #south2, ch );
+
+dam_message( ch, i, \"the wall of thorns\" );
+
+inflict( ch, mob, i, \"the wall of thorns\" );
+
+"
+E
+"south2"
+"$n tries to go south, but is prevented by the thick thorn bushes.
+
+"
+E
+"south"
+"You try to go south, but are prevented by the wall of thorns.
+
+"
+!
+0 0 0
+2509 9 1509949540 3 0
+122 9 1509949540 3 0
+2694 17 1509949457 -2 0
+-1
+S
+
+#91677
+"Edge of a Gorge"
+"You stand in a clearing in the hills above Pennan.  A tree has fallen
+
+here, its thick branches and lush green leaves lying on the ground in a
+
+cloud of brown and green.  To the east, you see a profound gorge open up,
+
+and realize that the great tree has fallen across the open maw of the
+
+gorge.  The very agile might find it a convenient but perilous bridge.
+
+"
+"tree trunk over gorge 37140 to east of here
+
+There's got to be a better way to make acode 1 - E
+
+"
+301465600 0
+4 9 0
+D3
+""
+""
+0 -1 91676 0 9
+A
+"climb "
+"tree trunk "
+"i = 3d25+25;
+
+if( !cflag( 25, ch ) ) {
+
+  set_cflag( 25, ch );
+
+  send_to_char( #warning, ch );
+
+  end;
+
+  }
+
+if( can_fly( ch ) ) { 
+
+  send_to_char( #success, ch );
+
+  act_notchar( #success2, ch );
+
+  send_to_room( #arrives, find_room( 91678 ) );
+
+  transfer( ch, find_room( 91678 ) );
+
+  end;
+
+  }
+
+if( find_stat( ch, dex ) < 11 ) {
+
+  if( random( 1, 10 ) < 3 ) { 
+
+    send_to_char( #stumble, ch ); 
+
+    act_notchar( #stumble2, ch );
+
+    transfer( ch, find_room( 91679 ) );
+
+    dam_message( ch, i, \"the fall\" );
+
+    inflict( ch, mob, i, \"the fall\" );
+
+    end;
+
+    }
+
+  send_to_char( #getdown, ch );
+
+  act_notchar( #getdown2, ch );
+
+  end;
+
+  }
+
+if( find_skill( ch, climb ) < 5 ) {
+
+  if( random( 1, 10 ) < 3 ) {
+
+    send_to_char( #stumble, ch );
+
+    act_notchar( #stumble2, ch );
+
+    transfer( ch, find_room( 91679 ) );
+
+    dam_message( ch, i, \"the fall\" );
+
+    inflict( ch, mob, i, \"the fall\" );
+
+    end;
+
+    }
+
+  send_to_char( #getdown, ch );
+
+  act_notchar( #getdown2, ch );
+
+  end;
+
+  }
+
+if( random( 1, 10 ) < 3 ) {
+
+  send_to_char( #stumbletoo, ch );
+
+  end;
+
+  }
+
+send_to_char( #success, ch );
+
+act_notchar( #success2, ch );
+
+transfer( ch, find_room( 91678 ) );
+
+act_notchar( #arrives, ch );
+
+"
+E
+"warning"
+"As you step toward the tree trunk, you realize that what you are about to
+
+attempt could very likely result in death for all but the most agile.
+
+ 
+
+It is a long way down to the bottom of the gorge from here.
+
+"
+E
+"getdown2"
+"$n stumbles trying to climb onto the tree trunk.
+
+"
+E
+"stumble2"
+"$n tries to climb onto the tree trunk, but slips and falls into the gorge!
+
+"
+E
+"stumbletoo"
+"You slip as you climb the tree.
+
+"
+E
+"getdown"
+"You stumble as you climb the tree, but remain unhurt.
+
+"
+E
+"stumble"
+"As you climb the tree, you slip and fall off it and into the gorge!
+
+"
+E
+"arrives"
+"$n arrives from below.
+
+"
+E
+"success2"
+"$n climbs up onto the tree trunk.
+
+"
+E
+"success"
+"You climb up onto the tree trunk.
+
+"
+!
+0 0 0
+130 9 1509949490 3 0
+755 17 1509949540 -2 0
+-1
+S
+
+#91678
+"A Trunk Spanning a Deep Gorge"
+"You stand on a long, tree trunk which bridges a deep gorge.  To the east, you
+
+see the tree's roots sticking up out of the ground, while to the west the
+
+tree's branches have found support in the rocky ground on that side of the
+
+gorge.  Below you, you see rocky ground covered with dark, scrubby bushes and
+
+jagged stones.
+
+"
+""
+301465600 0
+4 9 0
+D1
+""
+""
+0 -1 91634 0 9
+D3
+""
+""
+0 -1 91677 0 9
+E
+"chasm down d do dow gorge"
+"The chasm plunges downward below the tree trunk, its depth at once dizzying
+
+and exhilarating.  Far below you, you see a thick green carpet of vegetation
+
+grow along the floor of the gorge.  Falling from here could very well result
+
+in death.
+
+"
+E
+"tree brigde oak"
+"Once a massive oak, this tree has fallen to some great force.  Its
+
+massive trunk and branches somehow manage to span the gorge, and although
+
+not very wide, it seems fairly stable in its present horizontal position.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You climb down off the tree trunk.
+
+"
+!
+3 -1 10
+A
+""
+""
+"if( mob_in_room( 727, room ) ) {
+
+  send_to_room( #message, room );
+
+  send_to_char( #message2, rand_char( room ) );
+
+  }
+
+"
+E
+"message2"
+"The elf looks at you for a moment and says, \"I'm ready for some fun, if
+
+you are.\" He straightens up and smiles expectantly.
+
+"
+E
+"message"
+"As you climb up onto the tree trunk, you are startled to see a tall,
+
+sunburned elf leaning casually on a staff at the exact midpoint of the
+
+tree trunk.  As you arrive, his eyes twinkle mischeviously.
+
+"
+!
+1 -1 10
+A
+""
+""
+"act_notchar( #enter, ch );
+
+"
+E
+"enter"
+"$n climbs up the tree to join you.
+
+"
+!
+1 -1 10
+727 9 1509949540 3 0
+-1
+S
+
+#91679
+"A Solitary Spring"
+"Thick bushes crowd the edges of a small clearing.  A small @bspring@n
+
+flows out between some patches of moss and rocks, its cool stream
+
+disappearing soon afterwards under the thick leaves of the nearby foliage. 
+
+High above you, thick spanish moss hangs from the rocky walls of the
+
+gorge.
+
+"
+""
+301465600 0
+2 7 0
+D3
+""
+""
+0 -1 91680 0 7
+E
+"moss"
+"The moss hangs from the craggy walls in long strands which move slightly
+
+to and fro in the breeze.
+
+"
+E
+"e"
+"The rock walls rise high above the thick vegetation which encircles the
+
+spring.
+
+"
+A
+"l lo loo look"
+"n no nor nort north"
+"if( find_skill( ch, searching ) > 3 ) {
+
+  if( random( 1, 10 ) < 3 ) {
+
+    send_to_char( #north, ch );
+
+    if( find_stat( ch, int ) > 14 ) { 
+
+      wait( 1 );
+
+      send_to_char( #north2, ch );
+
+      }
+
+    }
+
+  else
+
+    send_to_char( #north3, ch );
+
+  }
+
+else
+
+  send_to_char( #north3, ch );
+
+"
+E
+"north3"
+"Thick vegetation grows at the base of a rocky cliff.
+
+"
+E
+"north2"
+"You notice a large footprint beside some broken leaves.  It is very large.
+
+"
+E
+"north"
+"You look to the north and spy a dark cave opening obscured by the thick
+
+vegetation.
+
+"
+!
+0 0 0
+A
+"enter"
+"vegetation plants"
+"if( find_stat( ch, level ) < 20 ) {
+
+  send_to_char( #fear, ch );
+
+  end;
+
+  }
+
+send_to_char( #enter, ch );
+
+act_notchar( #enter2, ch );
+
+send_to_char( #fear2, ch );
+
+transfer( ch, find_room( 91683 ) );
+
+act_notchar( #arrives, ch );
+
+"
+E
+"fear2"
+"You pause for a moment, sensing a great danger which lurks nearby.
+
+"
+E
+"fear"
+"As you step to enter the vegetation, your knees buckle and your body
+
+begins to shake involuntarily.  You realize that whatever lies on the
+
+other side would bring an end to your existence.  Paralyzed with fear,
+
+you cannot bring yourself to procede further.
+
+"
+E
+"arrives"
+"$n arrives from the south.
+
+"
+E
+"enter2"
+"$n pushes through the vegetation to the north and disappears from view.
+
+"
+E
+"enter"
+"You push through the plants and head toward the cave opening.
+
+"
+!
+0 0 0
+A
+"cross"
+"stream"
+"if( has_obj( 2848, ch ) ) {
+
+  act_tochar( #enter, ch );
+
+  act_notchar( #goes, ch );
+
+  transfer( ch, find_room( 51001 ) );
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #stay, ch );
+
+  }
+
+"
+E
+"enter"
+"You grab your key and wade through the stream to get to your hideaway.
+
+"
+E
+"goes"
+"You see $n cross the stream and disappear from sight.
+
+"
+E
+"nope"
+"You cannot cross the stream.
+
+"
+E
+"stay"
+"You see $n start the enter the water, then sigh and return to the firm
+
+ground.
+
+"
+!
+0 0 0
+696 17 1509949540 -2 0
+2509 9 1509949490 3 0
+-1
+S
+
+#91680
+"Footpath Along the Bottom of a Gorge"
+"Steep rock walls rise to the north and south, their presence keeping a
+
+fine mist hovering in the damp overhead.  The verdant vegetation clings
+
+to the ground here, with mosses and wide, leafy bushes crowding the
+
+trail's edge.  A tiny stream trickles along the floor of the gorge,
+
+leading east and west.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 91679 0 7
+D3
+""
+""
+0 -1 91681 0 9
+E
+"bushes"
+"The bushes' long leaves are green and thick from the lush soil and
+
+abundant water here.
+
+"
+-1
+S
+
+#91681
+"Footpath through a Gorge"
+"The ground here is moist, and a spongy carpet of moss has for the most part
+
+replaced the tall grasses which grow off to the south.  The gorge's walls are
+
+almost entirely covered with dark mosses and vines, and a light mist clouds
+
+the narrow space between the rock walls about you.  As you push through thick
+
+leaves and bushes, you see the footpath continue to the east and south.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 91680 0 9
+D2
+""
+""
+0 -1 91682 0 9
+E
+"moss"
+"Thick mosses seem to grow everywhere here in this lush and secluded
+
+corner of the Rua Valley.
+
+"
+E
+"wall"
+"The walls are covered with dense growth.  You don't think you can climb
+
+them.
+
+"
+2509 9 1509949540 3 0
+2501 9 1509949540 3 0
+-1
+S
+
+#91682
+"Narrow Gorge"
+"Lush vegetation grows on floor of a rocky gorge.  Sheer walls to the east
+
+and west tower above you, their jagged faces partially obscured by thick
+
+colonies of lichens and spanish moss.  A small footpath leads north
+
+through the carpet of thick grasses and bushes, while a dark curtain of
+
+vegetation blocks passage to the south.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 91681 0 9
+E
+"3 vegetation 3 south plants wall"
+"You think you spy a road or path through the thick vegetation to the
+
+south.
+
+"
+A
+"enter crawl push go"
+"vegetation plants wall south"
+"send_to_char( #south, ch );
+
+act_notchar( #south2, ch );
+
+transfer( ch, find_room( 37037 ) );
+
+act_notchar( #arrives, ch );
+
+"
+E
+"arrives"
+"$n arrives from the north.
+
+"
+E
+"south2"
+"$n pushes through the tangled vegetation.
+
+"
+E
+"south"
+"You push your way through the tangled vegetation.
+
+"
+!
+0 0 0
+-1
+S
+
+#91683
+"In a Deep Gorge"
+"You stand on the bottom of a gorge, amid scores of jagged rocks and an
+
+almost overwhelming display of vegetation.  All about you, plants vie for
+
+space with one another on the moist ground between the giant boulders and
+
+nearby walls of the gorge.  To the east and west, the craggy walls of the
+
+gorge rise high above you, their towering forms blocking out all but a
+
+thin sliver of sky.  At the top of the gorge, you see a tree trunk which
+
+lies across it, much like a bridge.  To the south of here, a dense tangle
+
+of vegetation chokes the floor of the gorge.  To the north, the canyon
+
+continues.
+
+"
+""
+301465600 0
+2 7 0
+D0
+""
+""
+0 -1 91684 0 7
+E
+"boulders"
+"The boulders are very large and you would guess very heavy.  Looking
+
+around at several of them, you notice that a number have flattened plants
+
+and trees, almost as if they had landed on top of them.
+
+"
+E
+"plants vegetation south"
+"You think you see a faint path somewhere to the south, through the
+
+branches.
+
+"
+A
+"enter "
+"vegetation south plants"
+"send_to_char( #enter, ch );
+
+act_notchar( #enter2, ch );
+
+transfer( ch, find_room( 91679 ) );
+
+act_notchar( #arrives, ch );
+
+"
+E
+"arrives"
+"$n arrives from the north.
+
+"
+E
+"enter2"
+"$n pushes through the vegetation to the south and disappears from view.
+
+"
+E
+"enter"
+"You push through the plants and head south.
+
+"
+!
+0 0 0
+A
+""
+""
+"i = 4d25+25;
+
+if( mob_in_room( 715, find_room( 91686 ) ) ) {
+
+  if( !rflag( reset0, find_room( 91686 ) ) ) {
+
+    ch = rand_char( room );
+
+    loop( all_in_room ) {
+
+      act_tochar( #boulder, rch );
+
+      dam_message( rch, i, \"the ettin's huge boulder\" );
+
+      inflict( rch, mob, i, \"the ettin's huge boulder\" );
+
+      }
+
+    }
+
+  }
+
+"
+E
+"boulder"
+"@b@RThe ettin flings a huge boulder into the room!
+
+"
+!
+2 500 0
+-1
+S
+
+#91684
+"Before a Dark Cave"
+"You stand before the gaping maw of a cave.  Over time, huge section of
+
+the hillside has over time split in two, leaving an opening suited even
+
+for the largest of creatures.  Thick vegetation grows all about the area,
+
+and thick mosses hang down over much of the opening, drifting slowly in
+
+the slight breeze, hanging off of the many boulders scattered around the
+
+area.
+
+"
+""
+301465604 0
+0 7 0
+D0
+""
+""
+0 -1 91685 0 7
+D2
+""
+""
+0 -1 91683 0 7
+A
+""
+""
+"if( find_stat( ch, level ) < 20 ) { 
+
+  send_to_char( #fear, ch );
+
+  end;
+
+  }
+
+else
+
+send_to_char( #fear2, ch );
+
+continue;
+
+"
+E
+"fear2"
+"As you step toward the cave opening, you pause for a moment, sensing a
+
+great danger which lurks in the darkness inside.
+
+"
+E
+"fear"
+"As you step to enter the cave, your knees buckle and your body begins to
+
+shake involuntarily.  You realize that whatever lies within would bring
+
+an end to your existence.  Paralyzed with fear, you cannot bring yourself
+
+to enter the cave.
+
+"
+!
+0 0 0
+A
+""
+""
+"i = 4d25+25;
+
+if( mob_in_room( 715, find_room( 91686 ) ) ) {
+
+  if( !rflag( reset0, find_room( 91686 ) ) ) {
+
+      ch = rand_char( room );
+
+      loop( all_in_room ) {
+
+        send_to_char( #boulder, rch );
+
+        dam_message( rch, i, \"the ettin's huge boulder\" );
+
+        inflict( rch, mob, i, \"the ettin's huge boulder\" );
+
+        }
+
+      }
+
+    }
+
+"
+E
+"boulder"
+"A huge boulder crashes into the area, hurled by the ettin!
+
+"
+!
+2 650 0
+755 17 1509949540 -2 0
+-1
+S
+
+#91685
+"Damp Cave"
+"You stand in a dark passageway, the air cool and the size of the cave
+
+beyond your ability to determine.  The floor seems to slope downward to
+
+the south, and you can hear the soft sound of running water.  As you
+
+walk, the sound of the water is accompanied by the soft crunch of bone
+
+underfoot.  The air around you carries an unpleasant stench.  A number of
+
+boulders lie scattered about the area.
+
+"
+""
+301465604 0
+0 7 0
+D0
+""
+""
+0 -1 91686 0 7
+D2
+""
+""
+0 -1 91684 0 7
+E
+"boulders"
+"Huge, and probably quite heavy.
+
+"
+E
+"bone down"
+"Many bone fragments, both large and small, are strewn about the area. 
+
+They appear to be animal, human, and otherwise.
+
+"
+A
+"smell"
+""
+"send_to_room( #flesh, room );
+
+"
+E
+"flesh"
+"The still air reeks of rotting flesh.
+
+"
+!
+0 -1 0
+A
+""
+""
+"i = 4d25+25;
+
+mob = mob_in_room( 715, find_room( 91686 ) );
+
+if( mob ) {
+
+  if( is_standing( mob ) ) {
+
+    if( !rflag( reset0, find_room( 91686 ) ) ) {
+
+      ch = rand_char( room );
+
+      loop( all_in_room ) {
+
+        send_to_char( #boulder, rch );
+
+        dam_message( rch, i, \"the ettin's huge boulder\" );
+
+        inflict( rch, mob, i, \"the ettin's huge boulder\" );
+
+        }
+
+      }
+
+    }
+
+  }
+
+"
+E
+"boulder"
+"A boulder crashes into the room, thrown by an enraged ettin!
+
+"
+!
+2 750 0
+A
+"lift move roll"
+"boulder"
+"send_to_Char( #lift, ch );
+
+"
+E
+"lift"
+"Try as you might, you cannot move the giant boulder.
+
+"
+!
+0 0 0
+757 17 1509949540 -2 0
+-1
+S
+
+#91686
+"Cave End"
+"The rough rock walls of the cave disappear into a deep veil of darkness. 
+
+A slight echo and a rush of cool air suggest that the chamber is quite
+
+large, even as you are unable to determine its actual dimensions.  An
+
+almost stench of rotting flesh and urine penetrates your nostrils.  It
+
+seems to emanate from a haphazard pile of rubble and matted straw to your
+
+left.  Several huge boulders are stacked off in a dark corner.
+
+"
+""
+301465605 0
+0 7 0
+D2
+""
+""
+0 -1 91685 0 7
+E
+"boulders stack corner"
+"Too heavy to lift, the boulders resist your attempts to move and examine
+
+them further.
+
+"
+E
+"pile straw matted"
+"Looking at the dark pile of objects to your left, you find the rubble to
+
+consist of many small and medium-sized stones, old straw, and a few
+
+rotten animal skins.
+
+"
+A
+"listen"
+""
+"send_to_char( #drip, ch );
+
+"
+E
+"drip"
+"The slow drip of water falling from stone echoes throughout the cave.
+
+"
+!
+0 -1 0
+36 17 1509949490 -2 0
+715 9 1509949540 3 0
+23 17 1509949490 -2 0
+-1
+S
+
+#91687
+"Overgrown Ledge"
+"A large ledge high in the hills, covered with thick weeds and brush.  The
+
+vegetation here seems almost alive, moving slowly away from you, somehow
+
+sensing where you will step and avoiding your footfalls.  On three sides,
+
+rocky cliff walls rise up above you, with thousands of thorny bushes and vines
+
+covering their craggy faces.  Below you to the east, you see a small goat path
+
+cut across a steep hillside.
+
+"
+""
+301465600 0
+4 9 0
+E
+"bushes vines cliff walls"
+"The vegetation here is thick and unnatural - almost too thick, it seems.
+
+"
+A
+"climb"
+"down east path"
+"send_to_char( #climb, ch );
+
+act_notchar( #climb2, ch );
+
+transfer( ch, find_room( 91658 ) );
+
+act_notchar( #arrives, ch );
+
+"
+E
+"arrives"
+"$n arrives from above.
+
+"
+E
+"climb2"
+"$n climbs down.
+
+"
+E
+"climb"
+"You climb down toward the narrow path.
+
+"
+!
+0 0 0
+A
+"search"
+"bushes"
+"if( !rflag( reset0, room ) ) {
+
+  send_to_char( #search, ch );
+
+  end;
+
+}
+
+else
+
+  if( find_skill( ch, searching ) > 2 ) {
+
+  remove_rflag( reset0, room );
+
+  if( random( 1, 5 ) < 2 ) {
+
+    obj_to_char( oload( 799 ), ch );
+
+    send_to_char( #find, ch );
+
+    act_notchar( #find2, ch );
+
+    end;
+
+  }
+
+  else { 
+
+    send_to_char( #search, ch );
+
+  }
+
+}
+
+else
+
+  send_to_char( #search, ch );
+
+"
+E
+"find2"
+"$n cries out, having found something in the bushes!
+
+"
+E
+"find"
+"Looking through the dense growth, you find something!
+
+"
+E
+"search"
+"You search through the impenetrable tangle of bushes and accomplish
+
+nothing - except for cutting your hands on the dark thorns and spines
+
+which seem to grow everywhere.
+
+"
+!
+0 0 0
+805 17 1509949490 -2 0
+805 17 1509949490 -2 0
+763 9 1509949540 3 0
+-1
+S
+
+#0
+

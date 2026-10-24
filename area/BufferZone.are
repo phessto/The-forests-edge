@@ -1,0 +1,1433 @@
+#AREA
+"buffer zone"
+""
+""
+1 0
+0
+8
+#ROOMS
+
+#94600
+"Small Forest Path"
+"Before you a small trail leads faintly to the north, winding around some
+
+trees.  It looks as if the forest begins to thin out to the north.  To the
+
+south the trail disappears and the forest thickens.
+
+"
+""
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 94601 0 6
+D2
+""
+""
+0 -1 497 0 6
+D3
+""
+""
+0 -1 482 0 6
+-1
+S
+
+#94601
+"Small Forest Path"
+"The large trees of the forest begin to thin and disappear as the trail nears a
+
+large mountain range to the east and north.  Up ahead to the north you see
+
+large rocks and boulders, whereas to the south the soft dirt path of the
+
+forest continues.
+
+"
+""
+301465600 0
+3 6 0
+D0
+""
+""
+0 -1 94602 0 6
+D2
+""
+""
+0 -1 94600 0 6
+-1
+S
+
+#94602
+"Base of the Mountain Trail"
+"The soft dirt of the forest trail has turned into hard boulders and rocks of
+
+the mountains.  The trees begin to part, overcome by boulders.  To the south a
+
+soft dirt path leads into the Medienne forest, while to the east a dirt and
+
+rock trail leads up into the mountains.
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 44250 0 5
+D1
+""
+""
+0 -1 94603 0 6
+D2
+""
+""
+0 -1 94601 0 6
+-1
+S
+
+#94603
+"Mountain Trail"
+"Here at the base of the mountain you sense a great fear that lies upon
+
+the slopes of this ancient chain of mountains.  A dark fear is present in
+
+your heart, warning of something above.  The trail here is far less
+
+traveled and is rockier than that to the west.  Above you lies a small
+
+cliff in which you must climb to continue on the trail.  
+
+"
+""
+301465608 0
+5 6 0
+D3
+""
+""
+0 -1 94602 0 6
+D4
+""
+""
+0 -1 94604 0 6
+A
+""
+""
+"if( !is_exhausted( ch ) ) {
+
+  send_to_char( #ch, ch );
+
+  continue;
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"ch"
+"You climb up the small cliff to continue your trek to the summit.
+
+
+"
+!
+3 4 16
+1974 17 1509949540 -2 0
+-1
+S
+
+#94604
+"Mountain Trail"
+"Almost at the bottom of the mountains you are just above the tree line. 
+
+Looking out across the Medienne forest you see only the pointed green
+
+tree tops.  To the east the mountains leads up the mountain towards the
+
+summit and the mountains to the Medienne forest leads almost directly
+
+down a cliff.
+
+"
+""
+301465600 0
+5 6 0
+D1
+""
+""
+0 -1 94605 0 6
+D5
+""
+""
+0 -1 94603 0 6
+A
+""
+""
+"if( !is_exhausted( ch ) ) {
+
+  send_to_char( #ch, ch );
+
+  continue;
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"ch"
+"You clamber down the last section of the trail, thankful to be down off
+
+the mountain.  
+
+
+"
+!
+3 5 32
+-1
+S
+
+#94605
+"Mountain Trail"
+"For a small stretch the rocky mountain trail flattens out and heads simply
+
+east and west.  It appears that the original trail had been where the
+
+large landslide is to the north.  Now all that is left of the trail is a
+
+large cliff.  
+
+"
+""
+301465600 0
+5 6 0
+D1
+""
+""
+0 -1 94606 0 6
+D3
+""
+""
+0 -1 94604 0 6
+-1
+S
+
+#94606
+"Mountain Trail"
+"The trail seems fairly washed out here, a large gully runs across.  The recent
+
+lack of rain however has left it dry and dusty with not so much as a drop of
+
+water present.  To the north, the trail journeys towards the great Vaasa and
+
+the legends beyond, whereas to the west it leads down to the valley below.
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 94607 0 6
+D3
+""
+""
+0 -1 94605 0 6
+-1
+S
+
+#94607
+"Mountain Trail"
+"From this vantage point you get a great view out over the valley.  You
+
+think you can see a small wagon or traveller walking on the coastal
+
+trail.  To the east the trail continues up towards the summit and the
+
+unknown wonders beyond, while to the south the trail leads towards the
+
+Medienne forest and the valley below.  
+
+"
+""
+301465600 0
+5 6 0
+D1
+""
+""
+0 -1 94608 0 6
+D2
+""
+""
+0 -1 94606 0 6
+-1
+S
+
+#94608
+"Mountain Trail"
+"Here, nearing the summit, you feel and hear the lonely shrill of the
+
+wind, seemingly warning you of the dangers and perils that lie ahead.
+
+Above you another cliff lies before the summit, and the trail leads down
+
+to the forest below to the west.  
+
+"
+""
+301465600 0
+5 6 0
+D3
+""
+""
+0 -1 94607 0 6
+D4
+""
+""
+0 -1 94609 0 6
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You climb up the last cliff to the summit.
+
+
+"
+!
+3 4 16
+-1
+S
+
+#94609
+"Mountain Trail"
+"From here you can see far out to the west over the world.  In the
+
+distance you can see the human town of Medienne, and even the Great Inner
+
+Sea.  The trail continues to the north towards the lowest pass, and
+
+somewhere far below you, the Medienne forest.  
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 94610 0 6
+D5
+""
+""
+0 -1 94608 0 6
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You scramble down the mountain towards the Medienne forest.
+
+
+"
+!
+3 5 32
+-1
+S
+
+#94610
+"Mountain Trail"
+"Far above you winged shapes pass over, but you can only speculate what they
+
+may be from such great distance.  You know only of the stories of lost
+
+caravans and travelers who have never made it over the pass.  To the east the
+
+trail continues across the saddle towards the Vaasa.  And to the south the
+
+trail leads down toward the Medienne Forest.
+
+"
+""
+301465600 0
+5 6 0
+D1
+""
+""
+0 -1 94611 0 6
+D2
+""
+""
+0 -1 94609 0 6
+-1
+S
+
+#94611
+"Mountain Trail"
+"You are standing on the east side of a major saddle.  To the west and below
+
+lies the Medienne forest, and to the east and below, the great Vaasa forest.
+
+To the west the trail leads across the saddle while the trail heads almost
+
+directly down in the other direction.  Off in the cloudy distance, you can see
+
+the high summit of the great Dragonspire mountains.  A patch of @Eice@n lies to
+
+the north, seeming to connect to a long trail through the snow.  As your gaze
+
+comes back down from the mountain, you see an amazing stone @bmonument.@n The
+
+granite is not in the least bit intricate or detailed in design, except for
+
+its perfect simplicity.
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 34551 0 6
+D3
+""
+""
+0 -1 94610 0 6
+D5
+""
+""
+0 -1 94612 0 6
+E
+"stone monument granite"
+"The massive stone monument is bigger than any boulder you have ever seen,
+
+and someone has managed to place it right out in the open, off to the
+
+side of trail.  The stone has been cut from solid granite.  It is shaped
+
+in a perfect square, without a single crack, rough edge, or blemish of
+
+any kind.  The only thing to break up the perfect face of the stone box
+
+is a small inscription.
+
+"
+E
+"inscription"
+"Carved in perfect letters you read:
+
+
+        @bTruths of the Highlands
+
+
+                @bIf the highlands fall, the realm falls.
+
+                What is good for the highlands, is good for the realm.
+
+                What makes the highlands and the Highland folks
+
+                strong shall be the greatest good, and shall be done.
+
+
+        Laws of the Highlands
+
+
+                All manner of creature may enjoy the beauty and adventure
+
+                that await them in the highlands, however, no one but
+
+                respectable highland folks shall attempt to make a home or
+
+                practice their trade in the mountainous regions.
+
+                Highlanders will always strike back when one of their own
+
+                is wounded.
+
+                Let the fine highland folks know the laws, and the Heroes
+
+                of the Highlands enforce them.@n
+
+
+Below the inscription you can see a smaller quote etched into the rock,
+
+which reads '@bBring not the blood of your wars to mountainous soil, lest
+
+the Heroes bring the weight of the mountain down on top of you.@n'
+
+
+--Alec 4th Thane of the Heroes--
+
+"
+E
+"ice patch road"
+"The ice looks slick, but a layer of snow gives it some traction.  You can
+
+probably @Ecross@n the @Eice@n to reach the snowy road.
+
+"
+A
+""
+""
+"send_to_char( #ch, ch );
+
+continue;
+
+"
+E
+"ch"
+"You scramble down the steep slope, thankful to be off of the summit.
+
+"
+!
+3 5 32
+A
+"invoke"
+"rod"
+"continue;
+
+if( has_obj( 1767, ch ) ) {
+
+  if( !mob_in_room( 1627, room ) ) {
+
+    act_tochar( #invoke, ch );
+
+    act_notchar( #rinvoke, ch );
+
+    wait( 1 );
+
+    act_room( #portal, ch );
+
+    mload( 1627, room );
+
+    wait( 7 );
+
+    send_to_room( #bye, room );
+
+    junk_mob( mob_in_room( 1627, room ) );
+
+    }
+
+  else
+
+    act_tochar( #nope, ch );
+
+  }
+
+else
+
+  act_tochar( #norod, ch );
+
+"
+E
+"invoke"
+"@BYou invoke the power of the crystal rod, willing it to form a portal to
+
+the material plane.
+
+"
+E
+"rinvoke"
+"@B$n holds an eight sided crystal rod before $m, incanting mystical
+
+phrases.
+
+"
+E
+"portal"
+"@BA whirling blue portal materializes before you.
+
+"
+E
+"bye"
+"The shimmering portal glows brightly, then fades away.
+
+"
+E
+"nope"
+"You invoke the rod, but nothing happens.
+
+"
+E
+"norod"
+"You lack the crystal rod.
+
+"
+!
+0 0 0
+A
+"enter"
+"portal"
+"continue;
+
+if( mob_in_room( 1627, room ) ) {
+
+  act_tochar( #enter, ch );
+
+  act_notchar( #rstep, ch );
+
+  transfer( ch, find_room( 47263 ) );
+
+  act_notchar( #arrive, ch );
+
+  }
+
+else
+
+  act_tochar( #nope, ch );
+
+"
+E
+"enter"
+"You step into the shimmering portal and reality shifts.
+
+"
+E
+"rstep"
+"$n steps into the shimmering portal and disappears.
+
+"
+E
+"arrive"
+"$n materializes from thin air.
+
+"
+E
+"nope"
+"Whatever that is you are unable to enter it.
+
+"
+!
+0 0 0
+A
+"cross"
+"over ice"
+"act_tochar( \"You carefully cross over the ice and onto the road beyond.\", ch );
+
+act_notchar( \"$n carefully crosses over the ice and onto the road beyond.\", ch );
+
+transfer( ch, find_room( 34551 ) );
+
+act_notchar( \"$n crosses over from the path to the south.\", ch );
+
+"
+!
+0 0 3
+-1
+S
+
+#94612
+"Mountain Trail"
+"The dreaded pass of many adventurers lies above you, over the next long ledge.
+
+You have heard the terrible stories of caravans and travelers lost upon the
+
+slopes of these peaks.  The wind blowing from out over the great Vaasa has
+
+become stronger with each gust, and is howling like a wounded Angarlish.  To
+
+the south the trail leads downward.
+
+"
+""
+301465600 0
+5 6 0
+D2
+""
+""
+0 -1 94613 0 6
+D4
+""
+""
+0 -1 94611 0 6
+A
+""
+""
+"send_to_char( #ch, ch );
+
+continue;
+
+"
+E
+"ch"
+"You struggle up the last portion of the mountain.
+
+"
+!
+3 4 16
+-1
+S
+
+#94613
+"Mountain Trail"
+"The rocky mountain trail is far short of comforting in its angle, and
+
+sometimes there is a mere half meter gap between you and the rocky drop on the
+
+side.  To the north the trail nears the summit, and to the east the trail
+
+leads down the mountain, out of the howling cold wind.
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 94612 0 6
+D1
+""
+""
+0 -1 94614 0 6
+-1
+S
+
+#94614
+"Mountain Trail"
+"Before you, a huge winged shadow passes over the ground.  However, when you
+
+look up into the sky you see nothing that could have caused it.  Far out on
+
+the horizon to the east you see a distant pillar of rock spearing up through
+
+the emerald sea of the great Vaasa.  The rocky mountain trail continues
+
+winding its way to the east and west.
+
+"
+""
+301465600 0
+5 6 0
+D1
+""
+""
+0 -1 94615 0 6
+D3
+""
+""
+0 -1 94613 0 6
+-1
+S
+
+#94615
+"Mountain Trail"
+"As you round the bend in the trail you hear a loud screeching coming from up
+
+above the mountain.  The screech roots deep fear and paranoia in your soul,
+
+causing you a strange panic.  To the west the trail leads up and to the south
+
+it leads steadily downward.
+
+"
+""
+301465600 0
+5 6 0
+D2
+""
+""
+0 -1 94616 0 6
+D3
+""
+""
+0 -1 94614 0 6
+-1
+S
+
+#94616
+"Mountain Trail"
+"The side of the mountain is dark, grey and bleak; its simple yet raw and
+
+rugged appearance frightens most, except maybe the dwarves.  Walking the
+
+trail, you remember stories of great wyrms ravaging these areas.  The trail
+
+continues up the mountain to the north and down into the opening valley below.
+
+The trail leads south to a fortress set into the mountainside.
+
+"
+"[Orb] HERO Stronghold to the South
+
+"
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 94615 0 6
+D2
+""
+""
+0 -1 29700 0 6
+D5
+""
+""
+0 -1 94617 0 6
+E
+"valley"
+"The valley opens into a great sea of green treetops, as far as the eye
+
+can see, and bordered only by dwindling mountains.  Intersperced across
+
+this vista are tall pointed spires of rock, spearing up above the sea. 
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You scramble down the last section of trail before the forested valley.
+
+
+"
+!
+3 5 32
+-1
+S
+
+#94617
+"Base of the Mountain Trail"
+"You are at the base of a rugged trail that leads up and into the massive grey
+
+mountains, and you are unable to see the summit of the mountains from here.
+
+Large stormy clouds lay over the mountains looking very foreboding, while the
+
+sea of green to your east looks exotic and inviting.
+
+"
+""
+301465608 0
+5 6 0
+D1
+""
+""
+0 -1 94618 0 6
+D4
+""
+""
+0 -1 94616 0 6
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You scramble up the beginning of the mountain trail.
+
+
+"
+!
+3 4 16
+-1
+S
+
+#94618
+"Old Trail"
+"This appears to be the end of the forest trail.  The soft dirt of the forest
+
+trail has turned into hard rocks of the mountain.  Looking up, a fear seems to
+
+radiate from the mountain depths.  Looking into the forest however, you feel
+
+great age, strength, and long harmony.
+
+"
+""
+301465600 0
+3 6 0
+D1
+""
+""
+0 -1 19135 0 6
+D3
+""
+""
+0 -1 94617 0 6
+1974 17 1509949540 -2 0
+-1
+S
+
+#94619
+"Forest Floor"
+"The small trail gets even smaller as it nears the base of Hark's Finger, as
+
+you have heard it called.  Many legends you have heard that speak of this
+
+notable landmark.  The trail leads east toward the base, and deep into the
+
+forest to the west.
+
+"
+"areas should separate here.
+
+"
+301465600 0
+3 7 0
+D1
+""
+""
+0 -1 71500 0 7
+D3
+""
+""
+0 -1 94620 0 6
+493 17 1509949540 -2 0
+-1
+S
+
+#94620
+"Forest Floor"
+"A large rock formation is now clearly visible to the east.  The formation
+
+looks like it would make an excellent lookout with a good view of the
+
+surrounding area.  From here you can see that the formation shows no signs of
+
+elven usage, no buildings or structures of any kind, as if it is not used for
+
+that purpose or was long ago abandoned.  The trail continues onward towards
+
+the rock formation to the east and winds off through the woods again to the
+
+west.
+
+"
+""
+301465600 0
+3 6 0
+D1
+""
+""
+0 -1 94619 0 6
+D3
+""
+""
+0 -1 19164 0 6
+-1
+S
+
+#94621
+"Faint Trail"
+"The trail continues along the bottom of a small ravine, leading to the
+
+east and west.  The bottom of the ravine is filled with soft leaves and
+
+plants, indicating that water has not flowed through it in many moons. 
+
+To the east the sound of water is more prominent than ever and to the
+
+west the ravine continues.
+
+"
+""
+301465600 0
+3 6 0
+D1
+""
+""
+0 -1 94622 0 6
+D3
+""
+""
+0 -1 19102 0 6
+587 17 1509949540 -2 0
+-1
+S
+
+#94622
+"A Dead End on the Faint Trail"
+"The faint trail comes to a dead end at the bank of the small crystal clear
+
+stream.  A small break in the foliage allows you to see the bottom of the
+
+bubbling stream.  Across the stream you see a small open patch in the forest. 
+
+Beside the trail to the north is a scraggly bush.  The trail leads back to the
+
+west.
+
+"
+""
+301465600 0
+3 6 0
+D0
+"secret bush"
+""
+235 -1 50005 25 6
+D3
+""
+""
+0 -1 94621 0 6
+E
+"foliage plants"
+"The gap looks large enough for an elf to fit through.  One bush in
+
+particular looks oddly placed.
+
+"
+E
+"clearing bank patch east"
+"The small clearing looks just large enough for an elf to rest
+
+comfortably, but first you need to jump the stream.  
+
+"
+E
+"stream water bottom"
+"At the bottom of the stream you see small golden flecks that shimmer as
+
+the water passes over them.  
+
+"
+A
+"1 jump cross"
+"stream river 1 east"
+"if( !cflag( 3, ch ) ) {
+
+  send_to_char( #ch, ch );
+
+  act_notchar( #r, ch );
+
+  transfer( ch, find_room( 19125 ) );
+
+  act_notchar( #ar, ch );
+
+  if( doing_quest( ch, 11 ) )
+
+    acode( find_room( 19125 ), 2 );
+
+  end;
+
+  loop( followers ) {
+
+    if( is_standing( rch ) ) {
+
+      act_notchar( #f_leave, rch );
+
+      transfer( rch, find_room( 19125 ) );
+
+      act_notchar( #f_arr, rch );
+
+} } }
+
+"
+E
+"f_arr"
+"$n also comes from across the stream.
+
+"
+E
+"f_leave"
+"$n also crosses the stream.
+
+"
+E
+"ar"
+"$n jumps next to you from across the small stream.
+
+"
+E
+"r"
+"$n jumps over the small stream to the east.
+
+"
+E
+"ch"
+"You jump over the small stream onto the grass.
+
+"
+!
+0 0 0
+A
+"open move push pull uproot"
+"secret bush"
+"if( is_open( room, north ) ) {
+
+  act_tochar( #close, ch );
+
+  act_notchar( #rclose, ch );
+
+  close( room, north );
+
+  }
+
+else {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, north );
+
+  }
+
+"
+E
+"close"
+"You push and prod the bush until it neatly conceals the northern path.
+
+"
+E
+"rclose"
+"$n pushes and prods a bush until it conceals the path to the north.
+
+"
+E
+"open"
+"You pull upon a bush, nearly uprooting it.  In the process, you reveal a
+
+previously hidden path north.
+
+"
+E
+"ropen"
+"$n pulls at a bush, almost uprooting it.  In the process, $e reveals a
+
+path north.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( find_stat( ch, level ) < 6 ) {
+
+  act_tochar( #forbidden, ch );
+
+  end;
+
+  }
+
+if( find_stat( ch, level ) < 20 )
+
+  act_tochar( #danger, ch );
+
+continue;
+
+"
+E
+"forbidden"
+"@RBeyond this point, any player in the game can attack you.  There are players
+
+who can and will hide in the area with intent to ambush and slay you.  You may
+
+not proceed until you have made it past level 5.
+
+"
+E
+"danger"
+"@RYou are entering a PKill zone.  Other players can kill you while in this
+
+zone.  Be careful.
+
+"
+!
+3 0 1
+398 17 1509949540 -2 0
+-1
+S
+
+#94623
+"Before a Dead Shuvana"
+"Now directly in front of the massive hulking dead form of the once great
+
+shuvana you comprehend the true destruction that has taken place here.  The
+
+bark of the tree has been eaten, and through a rip in the trunk you see the
+
+inside has been gutted.
+
+"
+""
+301465600 0
+3 6 0
+D3
+""
+""
+0 -1 19193 0 6
+E
+"dead tree rip crack north"
+"The rip in the trunk of the massive tree looks large enough for you to
+
+enter.
+
+"
+A
+"enter open"
+"bark tree hole gap crack"
+"i = size( find_room( 7000 ) );
+
+if( size( ch ) <= i ) {
+
+  send_to_char( #ch, ch );
+
+  act_notchar( #r, ch );
+
+  transfer( ch, find_room( 7000 ) );
+
+  act_notchar( #a, ch );
+
+  loop( followers ) {
+
+    if( is_standing( rch ) && !mount( rch ) ) {
+
+      if( size( rch ) <= i ) {
+
+        act_notchar( #rch, rch );
+
+        transfer( rch, find_room( 7000 ) );
+
+        act_notchar( #arch, rch );
+
+      }
+
+      else
+
+        act_tochar( #too_big, rch );
+
+    }
+
+  }
+
+}
+
+else
+
+  act_tochar( #too_big, ch );
+
+"
+E
+"arch"
+"$n arrives from the south.
+
+"
+E
+"rch"
+"$n enters the crack in the tree.
+
+"
+E
+"a"
+"$n enters through the crack in the tree trunk to the north.
+
+"
+E
+"r"
+"$n enters the rip in the trunk of the Shuvana to the north.
+
+"
+E
+"ch"
+"You squeeze into the crack in the dead bark.
+
+"
+E
+"too_big"
+"You're too big to fit through a crack that small.
+
+"
+!
+0 0 0
+A
+"north"
+""
+"if( find_stat( ch, level ) > 2 )
+
+  send_to_char( #ch, ch );
+
+else {
+
+  send_to_char( #ch, ch );
+
+  act_tochar( #new, ch );
+
+}
+
+"
+E
+"new"
+"Try @benter@ning the @btree@n.
+
+"
+E
+"ch"
+"The gap is too small for you to just walk in.
+
+"
+!
+0 0 0
+2509 9 1509949540 3 0
+-1
+S
+
+#94624
+"Faint Path through the Woods"
+"The east-west path you are on begins to widen to the east.  The air
+
+begins to carry the feel of moisture on it.  Surrounding the path on
+
+either side, the vegetation rapidly becomes too dense to see through.
+
+"
+""
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 38673 0 9
+D3
+""
+""
+0 -1 94625 0 9
+E
+"vegetation"
+"Years of untamed growth has allowed the small leafed bushes to grow into
+
+a thick tangle of greenery.  Thick branches with almost black bark cause
+
+the shadowed recesses to appear even deeper.
+
+"
+-1
+S
+
+#94625
+"Faint Path through the Woods"
+"The path narrows again, winding briefly around a stump in the middle of
+
+the trail before resuming its east-west course.  At some point, some one
+
+must have gotten tired of ducking that tree's branches on the trail and
+
+cut it down.  Despite its absence, enough trees remain to insure the
+
+shade of the forest is secure here.
+
+"
+""
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 94624 0 9
+D3
+""
+""
+0 -1 94626 0 9
+E
+"stump"
+"The exposed surface is weathered with years of aging.  Its surface is
+
+marked by many concentric rings, some slightly darker than the rest.
+
+"
+A
+"count"
+"rings"
+"act_tochar( #kneel, ch );
+
+act_notchar( #rkneel, ch );
+
+wait( 2 );
+
+act_tochar( #stand, ch );
+
+act_notchar( #rstand, ch );
+
+"
+E
+"kneel"
+"You squat down before the stump and begin to count the rings. 1, 2, 3...
+
+"
+E
+"rkneel"
+"$n squats down before a tree stump and inspects its surface.
+
+"
+E
+"stand"
+"After a brief period you count out 163 concentric ring on the stump.
+
+"
+E
+"rstand"
+"After a brief period, $n stands again.
+
+"
+!
+0 0 0
+-1
+S
+
+#94626
+"Faint Path through the Woods"
+"The narrow path is lined to the north and south by dense forest
+
+vegetation.  High above a break in the trees allows a shaft of golden
+
+sunlight to stream through the forest canopy.  The sudden brilliance
+
+after so long in the dense woodland is a painful reminder of how long you
+
+have been in the shade.
+
+"
+""
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 94625 0 9
+D3
+""
+""
+0 -1 19357 0 9
+E
+"vegetation "
+"The dense vegetation is comprised of primarily small leafed bushes in
+
+contest with the young trees for growing space.
+
+"
+E
+"shaft"
+"It almost seems a solid object as it lances down from the forest canopy. 
+
+It paints a small section of ground, no wider than a foot, in a swathe of
+
+brilliance.
+
+"
+-1
+S
+
+#0
+

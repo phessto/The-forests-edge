@@ -1,0 +1,4482 @@
+#AREA
+"Around Chiiron"
+"Kiian Phule Merior Aeradon"
+""
+0 0
+0
+4
+#ROOMS
+
+#40500
+"Small Meadow"
+"You stand in a small meadow outside of Chiiron.  To the east, the town walls
+
+rise above your head, protecting the inhabitants from the perils which lurk
+
+outside the gates.  A shallow trickle of a stream flows out of the woods to
+
+the northeast, heading off to the southeast.  Off to the south, you see a town
+
+gate.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40501 0 9
+D2
+""
+""
+0 -1 938 0 9
+D3
+""
+""
+0 -1 40512 0 9
+755 9 1509949490 3 0
+398 17 1509949540 -2 0
+-1
+S
+
+#40501
+"Meadow"
+"You stand in a small grassy meadow located between the town wall to the east
+
+and a thickly wooded stream to the west.  You presume that Chiiron's defenders
+
+keep this area clear to guard the approaches to the town.  Here grass grows
+
+lushly with scattered wildflowers decorating the rich shade of green.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40502 0 9
+D2
+""
+""
+0 -1 40500 0 9
+D3
+""
+""
+0 -1 40514 0 9
+755 9 1509949490 3 0
+544 17 1509949540 -2 0
+-1
+S
+
+#40502
+"Near the Forest's Edge"
+"The trees creep in more closely here, approaching from the west toward
+
+the battlements of Chiiron, which stand off to the east.  A few large
+
+stones are scattered about the area here, among the grass, too large to
+
+move.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40503 0 9
+D2
+""
+""
+0 -1 40501 0 9
+E
+"stones"
+"Large, grey, and heavy, these are more like boulders than stones, come to
+
+think of it.
+
+"
+755 9 1509949540 3 0
+755 9 1509949465 3 0
+37 17 1509949490 -2 0
+-1
+S
+
+#40503
+"By the Forest's Edge"
+"You are almost in the woods here, with branches overhanging the grass. 
+
+Tall oaks and elms crowd the area to the north, with thick bushes growing
+
+in the shadows beneath their thick boughs.  To the southeast, you spy a
+
+stout watch tower atop the town wall, from which Chiiron's defenders may
+
+observe happenings in the area.
+
+"
+""
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 40504 0 9
+D2
+""
+""
+0 -1 40502 0 9
+D3
+""
+""
+0 -1 40578 0 9
+E
+"tower watch wall"
+"A short stone tower rises up from the city wall, able to be seen from any
+
+location on this side of the city and, presumably, guards in the tower can
+
+observe said locations quite well.
+
+"
+2509 9 1509949540 3 0
+2509 9 1509949490 3 0
+-1
+S
+
+#40504
+"Near the Forest's Edge"
+"To the north, oaks line the edge of the small field in which you stand,
+
+while off to the south, you eye follows the course of the town wall of
+
+Chiiron.  A guard tower, posted at the corner of the town wall, stands
+
+high overhead, providing those within with a fine vantage point from
+
+which to view the surrounding area.
+
+"
+""
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 40505 0 9
+D3
+""
+""
+0 -1 40503 0 9
+E
+"tower"
+"The guard tower looks out over the countryside surrounding the city of Chiiron
+
+giving the town advanced warning of any assaulting forces or any trying to
+
+sneak over its walls.  From here you can even see one of the guards standing
+
+stoically in the tower maintaining watch.
+
+"
+755 9 1509949540 3 0
+2509 9 1509949490 3 0
+755 9 1509949465 3 0
+-1
+S
+
+#40505
+"Small Clearing"
+"You stand in a small clearing near the walls of Chiiron.  Several large rocks
+
+have been gathered in a semicircle, and you notice the remains of a fire near
+
+the center of the area.  A small path winds its way back to the east, while a
+
+thick forest grows north of here.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 40506 0 9
+D3
+""
+""
+0 -1 40504 0 9
+E
+"semicircle circle rocks remains fire center"
+"The semicircle of rocks guard what once would have been a blazing fire in the
+
+center of the clearing.  Where the missing rocks that would completed the
+
+circle have gone is a mystery.  Bits of aging grey ash has been blown into the
+
+protected crevices at the base of the rocks on the inside of the semi-circle
+
+they form.
+
+"
+E
+"remains fire"
+"Where once a fire rested now remains nothing but charred fragments of wood and
+
+cold grey ash.  Most of the ash has long since blown away and only a few small
+
+piles remain.
+
+"
+A
+"1 look seach examine"
+"fire ash remains"
+"act_tochar( #dirty, ch );
+
+"
+E
+"dirty"
+"Searching the remains of the fire you don't manage to find anything of note.
+
+You have managed to thoroughly coat your hands in dirt and ash, though.
+
+"
+!
+0 0 0
+755 9 1509949540 3 0
+37 17 1509949445 -2 0
+-1
+S
+
+#40506
+"Path Through Meadow"
+"A small path darts back and forth through a rolling green meadow here, between
+
+the town wall to the south and a dark screen of branches to the north.  The
+
+north wall of Chiiron, a tall stone obstacle, rises up to the south and runs
+
+east and west from here.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40513 0 9
+D1
+""
+""
+0 -1 40507 0 9
+D3
+""
+""
+0 -1 40505 0 9
+A
+"get take pick"
+"red flowering plant rose"
+"acode( find_room( 345 ), 3 );
+
+"
+!
+0 0 0
+755 9 1509949540 3 0
+755 9 1509949540 3 0
+-1
+S
+
+#40507
+"Meadow Near Chiiron"
+"You stand in a small, meadow beneath the walls of Chiiron.  A narrow,
+
+dusty path runs east and west here, making an uneven course through the
+
+grassy area.  To the north, a thick forest looms quite close at hand. 
+
+You see a gate in the wall to the east.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40508 0 9
+D1
+""
+""
+0 -1 25000 0 6
+D3
+""
+""
+0 -1 40506 0 9
+755 9 1509949465 3 0
+37 17 1509949540 -2 0
+-1
+S
+
+#40508
+"Near a Forest"
+"You stand in a meadow, near a forest.  The grass here is almost
+
+waist-high, and the ground is slightly damp; you can see many animal
+
+tracks criss-crossing the ground beneath your feet.  To the north, a
+
+steep cliff rises above your head, preventing passage.  Far to the south,
+
+you see the town wall of Chiiron, while to the east you spy a more rocky
+
+area.
+
+"
+"no_mob
+
+"
+301465608 0
+2 9 0
+D1
+""
+""
+0 -1 25001 0 8
+D2
+""
+""
+0 -1 40507 0 9
+D3
+""
+""
+0 -1 40513 0 9
+-1
+S
+
+#40509
+"Foot of a Small Hill"
+"A small hill rises gently to the north, a well-worn dirt path winding through
+
+the grasses.  Just to your south the high wall of Chiiron looms, its heavy
+
+stones bespeaking a strong defense.  Small bushes dot the area, growing amidst
+
+the short grass.  To your northeast you see a small wooden bridge.
+
+"
+"west is 25000
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+128 -1 25009 0 6
+D1
+""
+""
+0 -1 40510 0 9
+D3
+""
+""
+0 -1 25000 0 6
+E
+"1 north"
+"You see a small hill.
+
+"
+E
+"1 west"
+"You see a clearing and the North Gate of Chiiron.
+
+"
+E
+"1 east"
+"You see an open area north of the town wall.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@GYou $t up the dirt path that winds up the gentle hill.@n
+
+"
+E
+"to_room"
+"@G$n $t up the dirt path that winds up the gentle hill.@n
+
+"
+!
+3 -1 1
+78 17 1509949490 -2 0
+37 17 1509949540 -2 0
+-1
+S
+
+#40510
+"Near the Town Wall"
+"A lone stone tower rises up above you to the south, high above the rest
+
+of the town wall, ever vigilant in the defense of Chiiron.  The grass
+
+here is tall and thick, but here and there you see a few marks which
+
+indicate that the town's inhabitants bring their animals here to graze. 
+
+You spy a wooden bridge to the north, which crosses a small stream which
+
+flows by from north to the east of here.
+
+"
+""
+301465608 0
+2 9 0
+D0
+""
+""
+0 -1 25017 0 5
+D1
+""
+""
+0 -1 40511 0 9
+D3
+""
+""
+0 -1 40509 0 9
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@GYou walk onto the bridge.@n 
+
+"
+!
+3 0 1
+755 9 1509949490 3 0
+755 9 1509949490 3 0
+189 17 1509949450 -2 0
+-1
+S
+
+#40511
+"Shallow Brook"
+"A very shallow stream trickles by here, running northeast to south.  To
+
+the east, a steep hill rises up above your head, a small dirt path
+
+zigzagging up the slope and out of sight to the east.
+
+"
+"water flows by here
+
+action stream gurgles
+
+"
+301465608 0
+13 9 0
+D1
+""
+""
+0 -1 26007 0 6
+D2
+""
+""
+0 -1 984 0 9
+D3
+""
+""
+0 -1 40510 0 9
+A
+""
+""
+"act_room( #gurgle, ch );
+
+"
+E
+"gurgle"
+"The stream gurgles softly.
+
+"
+!
+2 100 0
+398 17 1509949540 -2 0
+880 17 1509949540 -2 0
+-1
+S
+
+#40512
+"Edge of the Woods"
+"A few large boulders mix with several stands of thick trees in this
+
+transitional area between wood and meadow.  To the west, the forest becomes
+
+increasingly thick, while far off to the east you spy the wall which protects
+
+Chiiron from the dangers of the woods.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40514 0 9
+D1
+""
+""
+0 -1 40500 0 9
+D2
+""
+""
+0 -1 979 0 9
+E
+"boulders"
+"The boulders measure anywhere from two feet to four feet high.  They are
+
+little more than large rocks shoved up from the earth and slowly eroding away
+
+into the dirt of the countryside.
+
+"
+A
+"climb"
+"7 boulders 4 rocks"
+"if( find_skill( ch, climb ) > 0 ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  }
+
+else
+
+  act_tochar( #no, ch );
+
+"
+E
+"climb"
+"You scramble up on top of one of the large rocks, the extra four feet of
+
+height giving you no real advantage other than a new perspective of what it
+
+would be like to be four feet taller.
+
+"
+E
+"rclimb"
+"$n climbs up on top of one of the boulders and now $e's looking at you from
+
+four feet higher than before.
+
+"
+E
+"no"
+"You aren't really good at climbing things, perhaps if someone trained you to
+
+be better at climbing.
+
+"
+!
+0 0 0
+-1
+S
+
+#40513
+"Edge of a Wood"
+"You stand in a lightly wooded area.  To the north and west, the trees
+
+thicken substantially, barring progress in those directions.  A meadow of
+
+high grass lies off to the south, while an open field with a number of
+
+bushes scattered throughout it lies to the east.
+
+"
+"r/w this and surrounding rooms
+
+"
+301465608 0
+2 9 0
+D1
+""
+""
+0 -1 40508 0 9
+D2
+""
+""
+0 -1 40506 0 9
+-1
+S
+
+#40514
+"Edge of the Woods"
+"A few large boulders mix with several stands of thick trees in this
+
+transitional area between wood and meadow.  To the west, the forest becomes
+
+increasingly thick, while far off to the east you spy the wall which protects
+
+Chiiron from the dangers of the woods.  A small stream flows quietly by, down
+
+a slope from the north, leading southeast.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 40501 0 9
+D2
+""
+""
+0 -1 40512 0 9
+D4
+""
+""
+8418 -1 40599 0 6
+E
+"3 boulders"
+"The boulders are large weather worn rocks of a dark gray color.  Some are
+
+taller than others but one or two may actually be climbable.
+
+"
+A
+"climb"
+"1 up boulder"
+"if( can_fly( ch ) ) {
+
+  send_to_char( #fly, ch );
+
+  act_notchar( #flying, ch );
+
+  transfer( ch, find_room( 40599 ) );
+
+  act_notchar( #flying2, ch );
+
+  end;
+
+  }
+
+if( find_skill( ch, climb ) > random( 0, 5 ) ) {
+
+  use_skill( ch, climb );
+
+  send_to_char( #success, ch );
+
+  act_notchar( #success1, ch );
+
+  transfer( ch, find_room( 40599 ) );
+
+  act_notchar( #success2, ch );
+
+  }
+
+else {
+
+  send_to_char( #fail, ch );
+
+  set_resting( ch );
+
+  act_notchar( #failed, ch );
+
+  end;
+
+  }
+
+loop( followers ) {
+
+  ch = rch;
+
+  if( !is_resting( rch ) && !is_sleeping( rch ) )
+
+    acode( room, 1 );
+
+  }
+
+"
+E
+"fly"
+"You fly up onto the boulder.
+
+"
+E
+"flying"
+"$n flies up onto a boulder.
+
+"
+E
+"flying2"
+"$n flies up onto the boulder.
+
+"
+E
+"success"
+"You manage to climb up onto the boulder.
+
+"
+E
+"success1"
+"$n manages to climb up onto one of the boulders.
+
+"
+E
+"success2"
+"$n climbs up onto the boulder.
+
+"
+E
+"fail"
+"You try to climb up on to the boulder but slip and fall back to the ground.
+
+"
+E
+"failed"
+"$n tries to climb a boulder but slips and falls to the ground.
+
+"
+!
+0 0 0
+398 17 1509949540 -2 0
+587 17 1509949540 -2 0
+37 17 1509949490 -2 0
+-1
+S
+
+#40515
+"Meadow Near Chiiron"
+"Tall grass billows slowly in the breeze here, in this open meadow a short
+
+distance outside of Chiiron.  To the east, a tower rises above you, while in
+
+the distance to the northeast you think you can make out the thick stone form
+
+of a gatehouse.  A small stream bisects the meadow, running from north to
+
+southwest, where it disappears around the curve of a wooded hill.  A curtain
+
+of dark trees looms off to the west.
+
+"
+"slopes up to w, stream runs along base of hill to w running n and s
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 939 0 9
+D2
+""
+""
+0 -1 40516 0 9
+D3
+""
+""
+0 -1 980 0 7
+398 17 1509949540 -2 0
+755 9 1509949540 3 0
+-1
+S
+
+#40516
+"Meadow Near Chiiron"
+"The walls of Chiiron stand off to the east, running north and south.  An open
+
+meadow stands adjacent to the fortifications, the sightlines kept clear by the
+
+villagers for matters of security.  To the west, the ground gradually rises
+
+and groups of trees thicken until the hillsides are covered in a dense green
+
+canopy.  You hear the gurgle of a small stream as it flows by you, off
+
+somewhere to the west or north of here.
+
+"
+"r/w
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40515 0 9
+D2
+""
+""
+0 -1 40517 0 9
+D3
+""
+""
+0 -1 40518 0 9
+755 9 1509949540 3 0
+2507 9 1509949540 3 0
+-1
+S
+
+#40517
+"Meadow Near Chiiron"
+"You stand in a small meadow near the Chiiron town wall.  A high tower looms
+
+overhead to the east, the southwest tower of the town's fortifications.  To
+
+the west, a few bushes and spits of particularly rough ground rise into an
+
+ever-thickening wood.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40516 0 9
+D2
+""
+""
+0 -1 40520 0 9
+D3
+""
+""
+0 -1 40519 0 9
+-1
+S
+
+#40518
+"Dense Woods"
+"You stand on a small, wooded hillside.  The ground here is rough but grassy,
+
+with a number of steep rises and dips making the footing treacherous.  To the
+
+north, you spy another hill in the distance while a small stream flows
+
+silently through the trees.
+
+"
+"stream runs north of here, e w
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 980 0 7
+D1
+""
+""
+0 -1 40516 0 9
+D2
+""
+""
+0 -1 40519 0 9
+D3
+""
+""
+0 -1 40523 0 9
+398 17 1509949540 -2 0
+-1
+S
+
+#40519
+"Wooded Hill"
+"A few large rocks mark this otherwise nondescript wooded hilltop, their slate
+
+gray forms embedded in the earth by some ancient terrestrial upheaval.  To the
+
+north, the ground continues to be hilly, while to the west the woods grow
+
+progressively more dense.  Down a slight slope to the east is an open meadow,
+
+and to the east of that meadow you spy the walls of Chiiron, looming in the
+
+distance.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40518 0 9
+D1
+""
+""
+0 -1 40517 0 9
+D2
+""
+""
+0 -1 40522 0 9
+D3
+""
+""
+0 -1 40530 0 9
+-1
+S
+
+#40520
+"Trampled Meadow"
+"Trampled grass and a few scattered rocks characterize this area.  To the
+
+northeast, an old worn stone tower looms over the area, and every so often you
+
+sense the heavy eyes of a Chiiron guard fall upon you from within the
+
+structure.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40517 0 9
+D1
+""
+""
+0 -1 40521 0 9
+D2
+""
+""
+0 -1 40527 0 9
+D3
+""
+""
+0 -1 40522 0 9
+E
+"grass trampled"
+"It appears as if some animals have bedded down
+
+"
+E
+"rocks"
+"The rocks are big and heavy, and rather unremarkable.
+
+"
+78 17 1509949465 -2 0
+2507 9 1509949540 3 0
+-1
+S
+
+#40521
+"Meadow Near Chiiron"
+"The battlements of Chiiron's grand curtain wall stand here, their weathered
+
+stones damaged from age and past sieges.  Clusters of grass grow near the
+
+wall's base, the green carpet thickening steadily as the ground emerges from
+
+under the shadow of the wall.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 40524 0 9
+D2
+""
+""
+0 -1 40528 0 9
+D3
+""
+""
+0 -1 40520 0 9
+755 9 1509949540 3 0
+78 17 1509949465 -2 0
+2507 9 1509949540 3 0
+-1
+S
+
+#40522
+"Light Woods"
+"A few small bushes and young trees grow here, in this transitional area
+
+between meadow and forest proper.  You sense that if left unchecked, the
+
+forest will soon take over this area and continue its growth toward the worn
+
+walls of Chiiron.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40519 0 9
+D1
+""
+""
+0 -1 40520 0 9
+D2
+""
+""
+0 -1 40526 0 9
+D3
+""
+""
+0 -1 40594 0 9
+2509 41 1509949540 3 0
+2508 73 1509949540 3 0
+-1
+S
+
+#40523
+"Dense Woods"
+"The uneven ground here is covered in short grass and moss, while overhead a
+
+uniformly green canopy shields the forest floor from the sky.  Spindly
+
+branches reach out like fingers to the sky, blocking out the light and wind,
+
+keeping the air here cool and damp.  A small trickling stream flows from
+
+northeast to southwest, between aged roots and rocks, drifting ever deeper
+
+into the woods.
+
+"
+"stream runs from ne to sw here into woods
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 943 0 9
+D1
+""
+""
+0 -1 40518 0 9
+D2
+""
+""
+0 -1 40530 0 9
+E
+"ground mossy contours"
+"Looking underfoot, you notice several animal tracks, all of them recent. 
+
+A great deal of wildlife must make its home here.
+
+"
+398 17 1509949540 -2 0
+-1
+S
+
+#40524
+"Meadow Near Chiiron"
+"A few large stones have fallen from the battlements here, coming to a rest
+
+near the base of the wall amidst stands of tall meadow grass and a few tiny
+
+bushes.  The area is open, with only a few stands of meadow grass and weeds
+
+managing to catch your eye.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 40525 0 9
+D2
+""
+""
+0 -1 40529 0 9
+D3
+""
+""
+0 -1 40521 0 9
+755 9 1509949540 3 0
+2507 9 1509949540 3 0
+-1
+S
+
+#40525
+"Meadow South of Chiiron"
+"The stone wall of Chiiron borders this wide grassy meadow to the north, with
+
+the meadow spreading out over the areas to the east, south and west.  A few
+
+clovers and violets grow among the short grass blades, showing signs of recent
+
+grazing.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 40563 0 9
+D2
+""
+""
+0 -1 40575 0 9
+D3
+""
+""
+0 -1 40524 0 9
+-1
+S
+
+#40526
+"Overgrown Woods"
+"Tangled brush and clinging vines choke this area of the woods, the odd, dense
+
+growth branching off from the great trees' trunks in every imaginable manner
+
+and angle.  To the west and south, the forest only continues to thicken, while
+
+to the northeast you can see the walls of Chiiron in the distance.
+
+"
+"r/w
+
+- Aeradon - updated. Acode for trees and some rdesc editing.
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40522 0 9
+D1
+""
+""
+0 -1 40527 0 9
+D3
+""
+""
+0 -1 40590 0 9
+A
+"1 south"
+""
+"act_tochar( #trees, ch );
+
+"
+E
+"trees"
+"Thick pine trees block your way to the south.
+
+"
+!
+0 0 0
+130 9 1509949540 3 0
+-1
+S
+
+#40527
+"Light, Open Woods"
+"Some young trees grow in several large stands along the eastern section of
+
+this area, while older, darker trees and dense brush grow in the southern and
+
+western portions of your surroundings.  It is clear that the forest here is
+
+creeping slowly toward the cleared band of grass which surrounds the village
+
+of Chiiron, relentless in its desire to claim what once was its own.
+
+"
+"this whole section needs cleaning up
+
+everybody feel free, was done quickly - kiian
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40520 0 9
+D1
+""
+""
+0 -1 40528 0 9
+D3
+""
+""
+0 -1 40526 0 9
+A
+"south"
+""
+"acode( find_room(40526), 1 );
+
+"
+!
+0 0 0
+755 9 1509949540 3 0
+-1
+S
+
+#40528
+"Open Woods"
+"A few small trees grow here, interspersed with several large boulders and
+
+ever-thickening brush.  To the south, the ground rises slightly, and the trees
+
+seem to close about you, forming a dark curtain of living matter which bars
+
+passage in that direction.
+
+"
+"- Aeradon - updated. Acode for trees.
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40521 0 9
+D1
+""
+""
+0 -1 40529 0 9
+D3
+""
+""
+0 -1 40527 0 9
+A
+"1 south"
+""
+"acode( find_room(40526), 1 );
+
+"
+!
+0 0 0
+-1
+S
+
+#40529
+"Light Woods, Boulder"
+"A few small trees grow around a large boulder embedded in the earth.  To the
+
+north, you spy an open area beneath the Chiiron town wall.  To the south and
+
+east, the woods quickly become thick, dark and nearly impenetrable.
+
+"
+"oak tree will grow here
+
+banyan?
+
+- Aeradon - updated. Acode for trees.
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40524 0 9
+D1
+""
+""
+0 -1 40575 0 9
+D3
+""
+""
+0 -1 40528 0 9
+A
+"1 south"
+""
+"acode( find_room(40526), 1 );
+
+"
+!
+0 0 0
+-1
+S
+
+#40530
+"Dense Woods"
+"The trees seem to thicken here, their aged trunks nearly brushing up against
+
+one another, their limbs and leaves intertwined with one another overhead in a
+
+dense green mass.  To the west and south, the trees thicken and together with
+
+brush from an impenetrable tangle.  You hear the soft gurgle of a brook
+
+somewhere in the distance, screened by the trees.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40523 0 9
+D1
+""
+""
+0 -1 40519 0 9
+D2
+""
+""
+0 -1 40594 0 9
+2509 9 1509949540 3 0
+-1
+S
+
+#40531
+"A Thick Forest of Oaks and Elms"
+"You stand amidst a massive line of oaks and elms which marks the edge of
+
+the forest.  Small bushes crowd around you underfoot, while to the south
+
+the trees and shrubbery are thinner.  The same is true to the north,
+
+where tall blades of grass line what appears to be a small pond.  High
+
+overhead in a branch of an oak, a small robin nests on a few of her eggs.
+
+"
+"no_mob
+
+"
+301465608 0
+3 9 0
+D0
+""
+""
+0 -1 40532 0 9
+-1
+S
+
+#40532
+"The South Shore of a Duck Pond"
+"Tall, wide-leafed blades of grass grow high around you, unmolested by the
+
+fauna of the area.  Clovers grow in clumps nearby beside a few sunflowers.  To
+
+the south a line of trees marks the edge of a forest, the nearly impenetrable
+
+wall of oaks and elms stretching to the east and west around a small pond to
+
+the north.  The greenish water's south shore here is lined with wet, slimy
+
+rocks which looks extremely slippery and yet should not be too hard to cross.
+
+"
+"cattaills, etc, mossy rocks, lily pads
+
+mosquitoes, dragonflies, deer flies, horse flies
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+16384 -1 40550 0 9
+D1
+""
+""
+0 -1 40533 0 9
+D3
+""
+""
+0 -1 40534 0 9
+A
+"pick"
+"clover"
+"act_tochar( #pick, ch );
+
+if( rflag( reset1, room ) ) {
+
+  if( 1d200 == 1 ) {
+
+    act_tochar( #four, ch );
+
+    obj_to_char( oload( 407 ), ch );
+
+    remove_rflag( reset1, room );
+
+    end;
+
+    }
+
+  else {
+
+    act_tochar( #three, ch );
+
+    obj_to_char( oload( 1619 ), ch );
+
+    remove_rflag( reset1, room );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rmnope, ch );
+
+  }
+
+"
+E
+"three"
+"@GYou find a bit of clover, but unfortunately not a four-leaf clover.@n
+
+"
+E
+"four"
+"@RYou find a rare four-leaf clover!!@n
+
+"
+E
+"pick"
+"@GYou search the clover patch.@n
+
+"
+E
+"nope"
+"@GAll the mature clover has already been picked.@n
+
+"
+E
+"rmnope"
+"@G$n looks through the clover patch.@n
+
+"
+!
+0 0 0
+-1
+S
+
+#40533
+"South of a Duck Pond"
+"Tall cattails and long, wide-leafed reeds form a growing, yet crossable
+
+barrier around the pond to the north.  Behind the reeds the sounds of frogs,
+
+ducks, and geese echo across the water.  Tall oaks and elms rise high into the
+
+sky to the south, with myriad bushes growing underfoot.  A slight trail
+
+through the tall grass around the pond leads east and west.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+16384 -1 40551 0 9
+D1
+""
+""
+0 -1 40535 0 9
+D3
+""
+""
+0 -1 40532 0 9
+-1
+S
+
+#40534
+"South of a Duck Pond"
+"Tall cat-tails and long, wide-leafed reeds form a growing barrier around the
+
+pond to the north.  Beyond the reeds the sounds of frogs, ducks, and geese
+
+echo across the water.  Tall oaks and elms rise high into the sky to the
+
+south, with a thick hedgerow between you and the trees.  A slight trail
+
+through the tall grass around the pond leads east and west.
+
+"
+""
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 40532 0 9
+D2
+"hedgerow"
+"bushes"
+235 -1 47000 0 5
+D3
+""
+""
+0 -1 40547 0 9
+E
+"hedgerow bushes"
+"A thick hedgerow grows just to the south here.  You think you can see a
+
+small trail leading south, into the bushes.
+
+"
+A
+"move push part"
+"hedgerow bushes south"
+"if( !is_open( room, south ) ) {
+
+  act_tochar( #move, ch );
+
+  act_notchar( #rmove, ch );
+
+  open( room, south );
+
+  send_to_room( #rmoved, find_room( 47000 ) );
+
+  }
+
+else {
+
+  act_notchar( #rmove2, ch );
+
+  act_tochar( #move2, ch );
+
+  close( room, south );
+
+  send_to_room( #rmoved2, find_room( 47000 ) );
+
+  }
+
+"
+E
+"move"
+"You move the hedgerow bush aside, revealing a trail leading south.
+
+"
+E
+"rmove"
+"$n moves a hedgerow bush aside, revealing a trail leading south.
+
+"
+E
+"rmove2"
+"$n moves a hedgerow bush, concealing a trail that led south.
+
+"
+E
+"move2"
+"You move the hedgerow bush, concealing a trail that led south.
+
+"
+E
+"rmoved"
+"The hedgerow moves aside, revealing a trail leading north.
+
+"
+E
+"rmoved2"
+"The hedgerow moves back, concealing a trail that led north.
+
+"
+!
+0 0 0
+A
+"push"
+"button"
+"continue;
+
+if( cflag( 100, ch ) )
+
+remove_cflag( 100, ch );
+
+if( cflag( 123, ch ) )
+
+remove_cflag( 123, ch );
+
+act_room( \"Poof\", ch );
+
+"
+!
+0 0 0
+-1
+S
+
+#40535
+"Southeast of a Duck Pond"
+"Faint trails lead through tall, wide-leafed grass to the north and west around
+
+the arching shore of a small duck pond.  A small hole, just large enough for a
+
+human to squeeze into, lies dug into the ground about halfway between the pond
+
+and the tree-line which roughly follows it to the east and south.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40536 0 9
+D3
+""
+""
+0 -1 40533 0 9
+D5
+""
+""
+0 -1 40557 0 5
+755 9 1509949540 3 0
+-1
+S
+
+#40536
+"East of a Duck Pond"
+"The muddy, reed-lined bank of the pond meets the tall, wide-leafed grass shelf
+
+between the pond and the tree-line to the east.  A faint path leads through
+
+the grass and around the pond to the north and south.  Another trail leads
+
+east into the even taller grass near the tree-line.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40544 0 9
+D1
+""
+""
+0 -1 40558 0 9
+D2
+""
+""
+0 -1 40535 0 9
+D3
+""
+""
+16384 -1 40551 0 9
+1125 17 1509949465 -2 0
+-1
+S
+
+#40537
+"East of a Duck Pond"
+"The muddy, reed-lined bank of the pond meets the tall, wide-leafed grass shelf
+
+between the pond and the tree-line to the east.  A faint path through the grass
+
+and around the pond leads north and south.  Another trail leads east into the
+
+even taller grass near the tree-line.  From the east you hear the sounds of
+
+chattering squirrels, while west the sounds of waterfowl and deep-voiced frogs
+
+echo across the water.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40538 0 9
+D1
+""
+""
+0 -1 40560 0 9
+D2
+""
+""
+0 -1 40544 0 9
+D3
+""
+""
+16384 -1 40554 0 9
+-1
+S
+
+#40538
+"Northeast of a Duck Pond"
+"This small section of tall, wide-leafed grass is framed by the sloping
+
+tree-line to the north and east and a small pond to the south and west.  The
+
+echoes of waterfowl calls and the splashes of frogs leaping into the water
+
+reach your ears, along with the sound of the wind whistling across the
+
+cattails and howling over the large, round reeds.
+
+"
+""
+301465600 0
+3 9 0
+D2
+""
+""
+0 -1 40537 0 9
+D3
+""
+""
+0 -1 40539 0 9
+1136 17 1509949460 -2 0
+-1
+S
+
+#40539
+"North of a Duck Pond"
+"A steep mud bank to the south makes jumping into the muddy water unwise, and
+
+to the north a dense line of trees mark the edge of a forest.  Tall, wide
+
+leaves of grass grow all around over a few scattered patches of clover, and a
+
+slightly beaten path leads through the grass and around the pond to the east
+
+and west.  The tree-line to the north is broken somewhat here, and a small
+
+trail leads north onto the edge of a meadow.
+
+"
+"how about action when players go south that says trees prevent etc
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40574 0 9
+D1
+""
+""
+0 -1 40538 0 9
+D3
+""
+""
+0 -1 40540 0 9
+755 9 1509949540 3 0
+-1
+S
+
+#40540
+"North Shore of a Duck Pond"
+"A soft mud bank leads down into the water of the pond to the south, while to
+
+the north a dense line of trees stretches east and west along a small patch of
+
+tall grass.  Several sets of deer tracks suggest that this is a favorite
+
+watering spot for local wildlife.
+
+"
+"extras? tracks
+
+"
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 40539 0 9
+D2
+""
+""
+16384 -1 40555 0 9
+D3
+""
+""
+0 -1 40541 0 9
+E
+"deer tracks"
+"The ground is dotted with deer tracks going in every which direction.  From
+
+the edge of the water itself they spread outward to the east and west.  It
+
+appears that there are a lot of deer that frequent this particular spot.
+
+"
+78 17 1509949465 -2 0
+-1
+S
+
+#40541
+"North of a Duck Pond"
+"A natural ramp of flat stones leads south and down into the cool waters of the
+
+pond, its shore lined with reeds and cattails.  The tall, wide-leafed grass is
+
+interspersed here and there with a few patches of clover which bear the signs
+
+of rabbit nibbling.  A faint path leads through the grass along the pond's
+
+curving shore to the east and west, also following roughly a line of dense
+
+trees to the north.
+
+"
+"north of a pond or north of a duck pond? not sure whether duck should be part of the name
+
+"
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 40540 0 9
+D2
+""
+""
+16384 -1 40556 0 9
+D3
+""
+""
+0 -1 40542 0 9
+1125 17 1509949465 -2 0
+755 9 1509949540 3 0
+-1
+S
+
+#40542
+"Northwest of a Duck Pond"
+"The telltale signs of a deer's passage have been left crudely along a faint
+
+trail through the tall, wide-leafed grass which leads east and south along the
+
+pond's shore.  To the north and west a thick line of trees rise up, stretching
+
+towards the sky, a few scattered birds' nests nestled high in a few odd
+
+branches.  The chattering of squirrels from above mixes with the sounds of
+
+waterfowl on the pond, putting you at ease.  A faint path leads north into the
+
+woods.
+
+"
+"this area needs more extras
+
+perhaps write in a walnut tree, and have action of maybe 5% chance when a
+
+player enters of a nut falling?
+
+remember to set items' repairs to 10 if they aren't repairable
+
+action is made for walnut falling
+
+- Aeradon - updated. Acode for trees.
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40575 0 9
+D1
+""
+""
+0 -1 40541 0 9
+D2
+""
+""
+0 -1 40543 0 9
+A
+""
+""
+"i = random( 1, 10 );
+
+room = find_room( 40542 );
+
+if( random( 1, 20 ) < 2 ) {
+
+  wait( i );
+
+  send_to_room( #fall, room );
+
+  obj_to_room( oload( 1136 ), room );
+
+}
+
+"
+E
+"fall"
+"A hard-shelled walnut falls from a nearby walnut tree.
+
+"
+!
+1 0 15
+A
+"1 west"
+""
+"act_tochar( #trees, ch );
+
+"
+E
+"trees"
+"Thick pine trees block your way to the west.
+
+"
+!
+0 0 0
+1136 17 1509949455 -2 0
+1142 17 1509949540 -2 0
+-1
+S
+
+#40543
+"West of a Duck Pond"
+"A slope of flat rocks leads down and into the pond to the east through a few
+
+cattails on the edge of the shore.  Tall wide-leafed grass grows at your feet
+
+here, between the pond and a line of trees to the west.  A faint path leads
+
+north and south along the fairly smooth shoreline of the pond.
+
+"
+"- Aeradon - updated. Acode for trees.
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40542 0 9
+D1
+""
+""
+16384 -1 40556 0 9
+D2
+""
+""
+0 -1 40545 0 9
+A
+"1 west"
+""
+"acode( find_room(40542), 2 );
+
+"
+!
+0 0 0
+2509 9 1509949540 3 0
+-1
+S
+
+#40544
+"East Shore of a Duck Pond"
+"The cool water of a small pond to the west laps against a muddy rise near its
+
+shore.  Cattails and tall, wide reeds line the pond, hiding the source of the
+
+sounds of waterfowl and frogs.  A faint path leads north and south through
+
+tall grass along the pond's shore, and another trail leads into even higher
+
+grass to the east.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40537 0 9
+D1
+""
+""
+0 -1 40559 0 9
+D2
+""
+""
+0 -1 40536 0 9
+D3
+""
+""
+16384 -1 40552 0 9
+755 9 1509949540 3 0
+1410 17 1509949490 -2 0
+-1
+S
+
+#40545
+"West Shore of a Duck Pond"
+"To the east, smooth rocks line the muddy shore of a small pond, full of sound
+
+and life.  Around you now tall, wide-leaf grass grows along the edge of the
+
+pond and west to a thick tree-line.  A faint trail leads around the pond and
+
+through the grass to the north and south.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40543 0 9
+D1
+""
+""
+16384 -1 40548 0 9
+D2
+""
+""
+0 -1 40546 0 9
+D3
+""
+""
+0 -1 40583 0 9
+-1
+S
+
+#40546
+"West of a Duck Pond"
+"Several tall, flat rocks standing on end to the east could be climbed down and
+
+into the pond's water.  The tall, wide-leafed grass around you follows the
+
+curves of the pond north and south along a thick tree-line to the west.
+
+"
+"w is 40579
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40545 0 9
+D1
+""
+""
+16384 -1 40549 0 9
+D2
+""
+""
+0 -1 40547 0 9
+D3
+""
+""
+0 -1 40579 0 9
+1125 17 1509949465 -2 0
+1410 17 1509949465 -2 0
+-1
+S
+
+#40547
+"Southwest of a Duck Pond"
+"This corner of the pond is steep and deep, making the only way to get into the
+
+pond a daring dive into its murky depths.  Tall, wide-leafed grass forms a
+
+curving bowl around the pond to the north and east, while to the south and
+
+west a dense tree-line stretches.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40546 0 9
+D1
+""
+""
+0 -1 40534 0 9
+D3
+""
+""
+0 -1 40592 0 9
+A
+"jump dive"
+"water pond"
+"act_tochar( #dive, ch );
+
+act_notchar( #rdive, ch );
+
+transfer( ch, find_room( 40549 ) );
+
+"
+E
+"rdive"
+"$n jumps into the cool waters of the pool, sending water everywhere.
+
+"
+E
+"dive"
+"You jump into the cool waters of the pool, sending water everywhere.
+
+"
+!
+0 0 0
+755 9 1509949540 3 0
+280 17 1509949465 -2 0
+-1
+S
+
+#40548
+"In the Duck Pond"
+"The stones of the west shore of the pond slope gently up to the shore, and the
+
+water deepens considerably to the east.  Not many cattails are supported by
+
+the rocky pond floor, but a few lily pads float by, sailing along on the
+
+ripples created by jumping frogs or landing ducks and geese.  The pond water
+
+here is fairly clear, with mossy branches and underwater reeds growing on the
+
+pond floor.
+
+"
+""
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 40556 0 9
+D1
+""
+""
+0 -1 40553 0 9
+D2
+""
+""
+0 -1 40549 0 9
+D3
+""
+""
+16384 -1 40545 0 9
+903 9 1509949540 3 0
+1146 17 1509949540 -2 0
+-1
+S
+
+#40549
+"In the Duck Pond"
+"This corner of the pond is formed by a high mud bank to the south and several
+
+tall, flat rocks standing on end to the west.  You think you can climb up on
+
+them and out of the pond.  Not much vegetation is in this area, but a large
+
+patch of cattails is visible to the northeast.  The clear water of the pond
+
+reveals mossy branches and a floor of fallen leaves and reeds beneath you.
+
+"
+""
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 40548 0 9
+D1
+""
+""
+0 -1 40550 0 9
+D3
+""
+""
+16384 -1 40546 0 9
+901 9 1509949490 3 0
+904 9 1509949540 3 0
+905 9 1509949490 3 0
+1146 17 1509949540 -2 0
+-1
+S
+
+#40550
+"In the Duck Pond"
+"To the south, a ramp of slimy rocks rise onto the grassy shore, while to the a
+
+thick patch of cattails blocks your vision.  The peaceful sounds of waterfowl
+
+come from beyond the reeds, and the nearby splash of a jumping frog sends
+
+ripples streaming across the pond's surface.  Several lily pads float in and
+
+amongst the cattails and reeds in the area.
+
+"
+""
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 40553 0 9
+D1
+""
+""
+0 -1 40551 0 9
+D2
+""
+""
+16384 -1 40532 0 9
+D3
+""
+""
+0 -1 40549 0 9
+903 9 1509949540 3 0
+904 9 1509949470 3 0
+1123 49 1509949540 -2 0
+1124 81 1509949465 -2 0
+1123 16 1509949490 -2 0
+1146 17 1509949540 -2 0
+-1
+S
+
+#40551
+"In the Duck Pond"
+"Soft mud lines the pond to the south and east, with tall reeds all around you
+
+and more soft mud at your feet.  The nearby quacking of ducks mixes with the
+
+incessant buzz of hundreds of tiny insects all about the area.  The clear
+
+water of the pond reveals mossy branches and underwater reeds below you.
+
+"
+""
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 40552 0 9
+D1
+""
+""
+16384 -1 40536 0 9
+D2
+""
+""
+16384 -1 40533 0 9
+D3
+""
+""
+0 -1 40550 0 9
+901 9 1509949540 3 0
+902 9 1509949540 3 0
+418 9 1509949490 3 0
+1146 17 1509949540 -2 0
+-1
+S
+
+#40552
+"In the Duck Pond"
+"The muddy floor of the pond squishes comfortably beneath your feet.  The ends
+
+of cattails blow back and forth in a gentle breeze which blows a few ripples
+
+across the pond.  A small patch of reeds frame a grass beach to the east, and
+
+a few lily pads float by unconcerned with the lives of the nearby pond
+
+creatures.
+
+"
+""
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 40554 0 9
+D1
+""
+""
+16384 -1 40544 0 9
+D2
+""
+""
+0 -1 40551 0 9
+D3
+""
+""
+0 -1 40553 0 9
+902 9 1509949540 3 0
+904 9 1509949460 3 0
+905 9 1509949540 3 0
+418 9 1509949495 3 0
+1146 17 1509949540 -2 0
+-1
+S
+
+#40553
+"The Center of the Duck Pond"
+"From the center of the small pond the area's wildlife can be clearly detected
+
+by their echoing noises.  A thick wall of cattails rises to the south,
+
+blocking vision yet not motion, and to the west the pond floor becomes lined
+
+with smooth rocks.  The clear water of the pond reveals mossy branches and
+
+hundreds of fallen leaves which have sunk to the floor of the pond.
+
+"
+"nice but perhaps describe stuff other than sounds of wildlife? ie just water? shrug :)
+
+[Hedrack] Fixed info.bug spam from someone trying to get a horse into the stronghold here.
+
+"
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 40555 0 9
+D1
+""
+""
+0 -1 40552 0 9
+D2
+""
+""
+0 -1 40550 0 9
+D3
+""
+""
+0 -1 40548 0 9
+D5
+""
+""
+235 -1 40595 0 9
+E
+"leaves"
+"The leaves and twigs seem to be covering a large hole at the base of the
+
+pond.
+
+"
+A
+"clear move"
+"leaves"
+"act_tochar( #clear, ch );
+
+act_notchar( #rclear, ch );
+
+open( room, down );
+
+"
+E
+"clear"
+"You clear the leaves out of the way, revealing a descending underwater passage.
+
+"
+E
+"rclear"
+"$n splashes around a bit beneath the water.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !is_open( room, down ) )
+
+  act_tochar( #leaves, ch );
+
+else
+
+  continue;
+
+"
+E
+"leaves"
+"You have to @Wclear@n the @Wleaves@n before you can enter the hole.
+
+"
+!
+3 0 32
+A
+"enter crevice"
+""
+"if( is_player( ch ) ) {
+
+if( !is_resting( ch ) && !is_sleeping( ch ) && is_name( \"COVE\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #go, ch );
+
+    act_notchar( #rgo, ch );
+
+    transfer( ch, find_room( 24750 ) );
+
+    Act_notchar( #appear, ch );
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"go"
+"You clear away a patch of spongy moss and enter a crevice hidden beneath.
+
+"
+E
+"rgo"
+"$n clears away a patch of spongy moss and enters a crevice hidden beneath.
+
+"
+E
+"appear"
+"$n slips in through the narrow crevice.
+
+"
+!
+0 0 0
+901 9 1509949490 3 0
+1146 17 1509949540 -2 0
+-1
+S
+
+#40554
+"In the Duck Pond"
+"A high mud bank lines the pond to the north, while to the east a few reeds
+
+create the necessary handholds to climb out of the pond.  This water of this
+
+section of the duck pond is relatively clear, with only a few stray cattails
+
+blocking sight or motion.  The pond stays too deep to exit to the north, while
+
+to the east a few reeds create the necessary handhold to climb out.  The
+
+nearby splash of jumping frogs get your attention, shattering the peaceful
+
+aura of the small pond.
+
+"
+""
+301465600 0
+6 9 0
+D1
+""
+""
+16384 -1 40537 0 9
+D2
+""
+""
+0 -1 40552 0 9
+D3
+""
+""
+0 -1 40555 0 9
+903 9 1509949490 3 0
+904 9 1509949515 3 0
+1123 49 1509949540 -2 0
+1124 81 1509949490 -2 0
+1123 16 1509949490 -2 0
+905 9 1509949540 3 0
+1146 17 1509949540 -2 0
+-1
+S
+
+#40555
+"In the Duck Pond"
+"The sounds of the living pond surround you.  The croaks of frogs, the quacks
+
+of ducks, the honks of geese, even the gentle buzz of the deer flies.  Lily
+
+pads float by among the cattails while water bugs jump back and forth across
+
+the water creating tiny ripples which spread like circles in all directions.
+
+Through the mud to the north the shore is accessible, and in all other
+
+directions the peaceful, yet noisy, duck pond rests, waiting.
+
+"
+""
+301465600 0
+6 9 0
+D0
+""
+""
+16384 -1 40540 0 9
+D1
+""
+""
+0 -1 40554 0 9
+D2
+""
+""
+0 -1 40553 0 9
+D3
+""
+""
+0 -1 40556 0 9
+904 9 1509949515 3 0
+1123 49 1509949540 -2 0
+1124 81 1509949465 -2 0
+1146 17 1509949540 -2 0
+-1
+S
+
+#40556
+"In the Duck Pond"
+"This northwest corner of the pond contains only sparse vegetation, as the flat
+
+rocks beneath your feet contain no nourishment for the cattails.  The nearby
+
+quacks of a few ducks reach your ears along with the sound of myriad frogs
+
+plunging into the cool, clear water.
+
+"
+""
+301465600 0
+6 9 0
+D0
+""
+""
+16384 -1 40541 0 9
+D1
+""
+""
+0 -1 40555 0 9
+D2
+""
+""
+0 -1 40548 0 9
+D3
+""
+""
+16384 -1 40543 0 9
+902 9 1509949540 3 0
+905 9 1509949500 3 0
+1146 17 1509949540 -2 0
+-1
+S
+
+#40557
+"Hedgehog's Hole"
+"This hole is the home of a small forest creature.  Soft mud walls have been
+
+packed by bits of grass which the industrious little critter has brought down
+
+here, and a mass of clover appears to be its bed.  Out a small hole above your
+
+head you can hear the sounds of waterfowl and lapping water.
+
+"
+""
+301465608 0
+11 5 0
+D4
+""
+""
+0 -1 40535 0 5
+470 9 1509949540 3 0
+-1
+S
+
+#40558
+"In the Tall Grass"
+"This section of tall, wide-leafed grass expands to the south,
+
+interspersed with gopher holes and the flattened areas of grass where
+
+deer have laid down for the night.  To the west the grass reaches the
+
+east shore of a small duck pond alive with fowl and frogs.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40559 0 9
+D3
+""
+""
+0 -1 40536 0 9
+203 9 1509949540 3 0
+-1
+S
+
+#40559
+"In the Tall Grass"
+"This section of tall, wide-leafed grass expands to the south,
+
+interspersed with gopher holes and the flattened areas of grass where
+
+deer have bedded down for the night.  To the west the grass reaches the
+
+east shore of a small duck pond alive with fowl and frogs.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40560 0 9
+D2
+""
+""
+0 -1 40558 0 9
+D3
+""
+""
+0 -1 40544 0 9
+-1
+S
+
+#40560
+"In the Tall Grass"
+"This section of tall, wide-leafed grass expands to the south,
+
+interspersed with gopher holes and the flattened areas of grass where
+
+deer have bedded down for the night.  To the west the grass reaches the
+
+east shore of a small duck pond alive with fowl and frogs, and to the
+
+east a small trail leads through the trees.
+
+"
+"perhaps vary these rdescs
+
+"
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 40562 0 9
+D2
+""
+""
+0 -1 40559 0 9
+D3
+""
+""
+0 -1 40537 0 9
+D5
+""
+""
+0 -1 40561 0 4
+-1
+S
+
+#40561
+"A Gopher Hole"
+"This small hole is the home of a furry little gopher.  Dry earth walls
+
+surround you except for a small hole above your head which leads up and out
+
+towards the sounds of a duck pond and a forest.  A few half-chewed leaves
+
+litter the floor, perhaps some sort of bedding for the denizen of this hole.
+
+"
+""
+301465612 0
+0 4 0
+D4
+""
+""
+0 -1 40560 0 4
+622 9 1509949540 3 0
+-1
+S
+
+#40562
+"Light Woods near a Pond"
+"This fairly beaten dirt trail winds its way into the elms and oaks to the
+
+east and tall, wide-leafed grass to the west.  Further to the west, the
+
+sounds of resting waterfowl and deep-voiced frogs can be heard, while
+
+high above you in a tree the cheerful chattering of a squirrel makes its
+
+way down to your ears.  A few trees have fallen along the path to the
+
+east, blocking passage.
+
+"
+"[Orin] 'look shrub' - first like of the description, '2' should be 'two'
+
+"
+301465600 0
+3 9 0
+D3
+""
+""
+0 -1 40560 0 9
+2508 9 1509949490 3 0
+1363 17 1509949540 -2 0
+-1
+S
+
+#40563
+"Meadow - Grass, Clovers, and Violets"
+"This flat grassy meadow spreads out in all directions except north, where the
+
+stone wall of Chiiron rises about forty feet above the ground.  Clover and
+
+violets grow in patches in the grass, clipped short by the nibbling of
+
+rabbits and the grazing of deer.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 40564 0 9
+D2
+""
+""
+0 -1 40566 0 9
+D3
+""
+""
+0 -1 40525 0 9
+2507 9 1509949540 3 0
+-1
+S
+
+#40564
+"Meadow - Grass and Weeds"
+"The soft earth at your feet supports patches of grass and weeds, all showing
+
+signs of recent nibbling by hungry rabbits and deer.  The southern wall of
+
+Chiiron rises to the north, while the meadow spreads out in all other
+
+directions.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 40567 0 9
+D2
+""
+""
+0 -1 40565 0 9
+D3
+""
+""
+0 -1 40563 0 9
+755 9 1509949540 3 0
+755 9 1509949540 3 0
+-1
+S
+
+#40565
+"Light Woods"
+"This stretch of growing oak trees grows in size and thickness to the
+
+west, where walnut trees can also be seen.  The trees to the south are
+
+very large and close together as well, joining with the underlying brush
+
+to form barrier which would be extremely difficult to pass through.  A
+
+meadow of grass and clover spreads to the east and north.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40564 0 9
+D1
+""
+""
+0 -1 40574 0 9
+D3
+""
+""
+0 -1 40566 0 9
+130 9 1509949540 3 0
+-1
+S
+
+#40566
+"Light Woods - Oaks and Elms"
+"The young oak trees are surrounded by larger walnut trees and the stray
+
+elm in this area of light woods south of a meadow.  To the south, massive
+
+trees join with underlying brush to form a fairly impenetrable barrier. 
+
+Fighting your way south would not be very wise, at it appears that to the
+
+west there is a better way to enter the area beyond.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40563 0 9
+D1
+""
+""
+0 -1 40565 0 9
+D3
+""
+""
+0 -1 40575 0 9
+-1
+S
+
+#40567
+"Meadow - Grass and Clover"
+"Short, stubby grass grows in moist, rich soil near the shadow of the south
+
+wall of Chiiron.  The tall stone wall lines the meadow to the north.  The
+
+meadow expands to the west and south, while to the east a fairly worn path
+
+leads into a hilly area around Chiiron.
+
+"
+"vary room names a bit in meadow?
+
+"
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 40568 0 9
+D2
+""
+""
+0 -1 40574 0 9
+D3
+""
+""
+0 -1 40564 0 9
+-1
+S
+
+#40568
+"Edge of the Hills"
+"Sparse grass dots the surface of this worn hill southeast of Chiiron, the
+
+city whose wall rises to the north.  A fairly worn path leads into a
+
+rich, grassy meadow to the west, and around the wall to the east, rising
+
+up the hill.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 40569 0 9
+D2
+""
+""
+0 -1 40576 0 9
+D3
+""
+""
+0 -1 40567 0 9
+78 17 1509949465 -2 0
+-1
+S
+
+#40569
+"Foot of Dry Hill"
+"A faintly beaten path reaches the foot of a hill of dry soil, where rare is
+
+the grass which can find enough sustenance in the hard soil to sprout into the
+
+air.  To the northwest the southeast corner of Chiiron can be seen, its stone
+
+walls a reminder of the wilderness around the city which must always be
+
+safeguarded against.
+
+"
+"meadow continue 1 e and 1 s of here?
+
+hrmm...mebbe :)
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40570 0 9
+D2
+""
+""
+0 -1 40577 0 9
+D3
+""
+""
+0 -1 40568 0 9
+-1
+S
+
+#40570
+"Dry Hill Path"
+"A worn dirt trail leads along this hill beside the east wall of Chiiron to the
+
+west.  A few odd blades of grass poke their way above the dry soil, but
+
+nothing like the rich meadows surrounding the other parts of Chiiron.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40571 0 9
+D2
+""
+""
+0 -1 40569 0 9
+755 9 1509949540 3 0
+-1
+S
+
+#40571
+"Dry Hill Path"
+"This worn dirt trail leads north and south along the stone walls of Chiiron to
+
+the west.  A few sparse patches of grass grow here and there, but the hilly
+
+soil is much too dry to support any extensive vegetation.  From far to the
+
+north you can hear the clank-clank of the east gate of Chiiron.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40572 0 9
+D1
+""
+""
+0 -1 24057 0 9
+D2
+""
+""
+0 -1 40570 0 9
+-1
+S
+
+#40572
+"Dry Hill Path"
+"The dry, clumpy dirt of these hills only sports a small population of sparse
+
+grass and a few weeds.  A faint trail leads along the hilly terrain along the
+
+east wall of Chiiron which plants its stone frame to the west.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40573 0 9
+D2
+""
+""
+0 -1 40571 0 9
+755 9 1509949540 3 0
+205 9 1509949540 3 0
+-1
+S
+
+#40573
+"Dry Hill Path"
+"This worn, hilly trail is dotted with sparse grass, but the dirt here is much
+
+too dry for most other vegetation.  To the north this faint trail intersects
+
+with a path just east of Chiiron's city gates, and the trail continues to the
+
+south along the east wall of Chiiron to the west.
+
+"
+"rocky terrain, hills to east, chiiron wall to w
+
+"
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 933 0 6
+D2
+""
+""
+0 -1 40572 0 9
+755 9 1509949540 3 0
+-1
+S
+
+#40574
+"Meadow - Near Tree-Line"
+"To the south a slight break in the tree-line offers passage to what appears to
+
+be a small pond, teeming with waterfowl and other wildlife.  To the east the
+
+terrain gets dry and the grass nearly disappears into the packed dirt hills
+
+southeast of Chiiron.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40567 0 9
+D1
+""
+""
+0 -1 40576 0 9
+D2
+""
+""
+0 -1 40539 0 9
+D3
+""
+""
+0 -1 40565 0 9
+-1
+S
+
+#40575
+"Light Woods - Oaks, Elms and Walnuts"
+"This area sports the growing trunks of young elm and oak trees, with a few
+
+older walnuts mixed in as well.  The underlying shrubs make the forest floor
+
+fairly thick, but a slight break in the brush-line to the south leads into the
+
+tall grass beyond.  To the north you can see a wide, grassy meadow, beyond
+
+which stands the stone walls of Chiiron.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40525 0 9
+D1
+""
+""
+0 -1 40566 0 9
+D2
+""
+""
+0 -1 40542 0 9
+D3
+""
+""
+0 -1 40529 0 9
+-1
+S
+
+#40576
+"Patchy Meadow"
+"This patchy meadow lies between the stone walls of Chiiron and their
+
+outlying hills and the more fertile land to the city's south and west. 
+
+To the south a thick tree-line rises into the sky which could probably be
+
+crossed into, but the fight through the underlying brush would be unwise
+
+because there is most certainly another, easier way to gain access into
+
+the woods beyond.  The ground to the west supports a thick grass
+
+covering, spreading into a long meadow away from the dry hills.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40568 0 9
+D1
+""
+""
+0 -1 40577 0 9
+D3
+""
+""
+0 -1 40574 0 9
+-1
+S
+
+#40577
+"Patchy Meadow"
+"This patchy meadow lies between the stone walls of Chiiron and their outlying
+
+hills and the more fertile land to the city's south and west.  To the south a
+
+thick tree-line rises into the sky which could probably be crossed into, but
+
+the fight through the underlying brush would be unwise because there is most
+
+certainly another, easier way to gain access into the woods beyond.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 40569 0 9
+D3
+""
+""
+0 -1 40576 0 9
+2509 9 1509949540 3 0
+358 17 1509949540 -2 0
+-1
+S
+
+#40578
+"Forest"
+"Trees loom about you on all sides, their boughs stretching up to obscure the
+
+sky overhead.  To the west the forest thickens, while to the north the ground
+
+rises and seems to become more rough.  Looking in that direction you spy a
+
+slight path wind its way between several large trees, overgrown and forgotten
+
+over time.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 46311 0 6
+D1
+""
+""
+0 -1 40503 0 9
+-1
+S
+
+#40579
+"Near a Pond - Overgrown Path"
+"The path splits three ways here: north, east, and west.  To the north, light
+
+woods dot the landscape.  To the east, you can just hear the splashes of life
+
+that suggest a large pond.  To the west, the path fades into a large forest
+
+that looms high overhead.  The warn path does not continue south, though a
+
+more natural trail is apparent.
+
+"
+"- Aeradon - updated.
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40583 0 9
+D1
+""
+""
+0 -1 40546 0 9
+D2
+""
+""
+0 -1 40592 0 9
+D3
+""
+""
+0 -1 40580 0 9
+203 9 1509949540 3 0
+-1
+S
+
+#40580
+"Woods - Overgrown Path"
+"The remains of a path head east and west from here; and you can see the forest
+
+slowly reclaiming the man-made thoroughfare as the trees send their saplings
+
+towards the clearing.  Apple seeds on the ground indicate that fruit trees are
+
+nearby -- and that something has been feasting on them.
+
+"
+""
+301465600 0
+3 9 0
+D0
+"large wooden gate"
+""
+65715 -1 41769 0 5
+D1
+""
+""
+0 -1 40579 0 9
+D2
+""
+""
+0 -1 40593 0 9
+D3
+""
+""
+0 -1 40581 0 9
+A
+""
+"1 north gate"
+"act_tochar( #swing, ch );
+
+act_notchar( #nswing, ch );
+
+open( room, north );
+
+send_to_room( #open, find_room( 41769 ) );
+
+"
+E
+"swing"
+"You swing open the gate to the north.
+
+"
+E
+"nswing"
+"$n swings open the gate to the north.
+
+"
+E
+"open"
+"The gate creaks open wearily.
+
+"
+!
+8 0 1
+A
+""
+""
+"if( is_follower( ch ) )
+
+  end;
+
+exit = door( room, north );
+
+act_room( #close, ch, null, null, exit );
+
+close( room, north );
+
+send_to_room( #nclose, find_room( 41769 ) );
+
+"
+E
+"close"
+"$t slams shut behind you, burying itself behind the trees and vines.
+
+"
+E
+"nclose"
+"The gate to the south slams shut with a great deal of force.
+
+"
+!
+1 0 1
+-1
+S
+
+#40581
+"Woods - Overgrown Path"
+"A overgrown path continues to your east and west, bordered by large fruit
+
+trees.  All along the ground are some of the products of these trees, over-
+
+ripe and teeming with bugs.
+
+"
+"- Aeradon - Will look at this rdesc more..  updated rextras and added an acode
+
+for take/get fruit.
+
+"
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 40580 0 9
+D3
+""
+""
+0 -1 40582 0 9
+E
+"bugs"
+"Dozens of tiny ants and gnats are crawling all over the rotting fruit.  They
+
+seem to move in a wave, as if orchestrated by a hidden conductor.
+
+"
+E
+"fruit trees"
+"Large apple and cherry trees line the path to the north and south. 
+
+Although still full of fruit, it is clear that no-one has cared for them
+
+in several years.
+
+"
+A
+"take get"
+"fruit"
+"act_tochar( #nofruit, ch );
+
+"
+E
+"nofruit"
+"Whatever fruit is left on the trees appears to be rotten and of no value to
+
+you.
+
+"
+!
+0 0 0
+702 17 1509949465 -2 0
+-1
+S
+
+#40582
+"Woods - Overgrown Path at The Mansion"
+"The path to the north leads up a small flight of stone stairs to a large
+
+house.  Bits of glass and fabric lie strewn on the ground near what were large
+
+windows.  The house itself is most massive, and built of light grey stone.  It
+
+is surrounded by a low green shrub, the trimming of which must have been the
+
+full-time job of at least one gardener.  A large wooden door once sealed the
+
+house from the outside world; now it looks like it barely can stay on its
+
+hinges.  A large path leads east-west from the house, bordered by lovely fruit
+
+trees.
+
+"
+""
+301465600 0
+3 9 0
+D0
+"wooden door"
+""
+16515 -1 41750 0 5
+D1
+""
+""
+0 -1 40581 0 9
+D3
+""
+""
+0 -1 40584 0 9
+E
+"door"
+"A large, carved oak door just barely holds on to its hinges.  The once
+
+ornate carvings have been slashed by a large knife or other sharp weapon,
+
+but the shapes of forest animals can still be recognized.
+
+"
+E
+"shrub"
+"The shrub is low to the ground still but shows evidence of having not been
+
+tended in a long time.  Bits of wild growth are starting to creep higher and
+
+if it goes untended too long will start to conceal more of the house.  The
+
+green of the shrub is a fading grey green more suited to a dying shrub than a
+
+healthy one.
+
+"
+E
+"house mansion"
+"This large, once-grand mansion has fall into utter disrepair.  Its windows are
+
+broken and covered with boards.  Many of the stones on the face of the house
+
+are cracked and chipped.  The stone stairs leading to the doorway look in
+
+similarly pitiful shape.
+
+"
+E
+"stone stairs"
+"These crumbling stairs appear to have once been a fine piece of work.  While
+
+they were probably built by the most skilled of stone masons, they, like the
+
+house itself, have succumbed to nothing but a pile of rocky wreckage.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"As you open the door, it creaks eeriely.
+
+"
+E
+"to_room"
+"The door creaks as $n opens it.
+
+"
+!
+8 0 1
+-1
+S
+
+#40583
+"Woods - By the Mansion"
+"To the west, tall pines allow just a glimpse of a large structure.  The sounds
+
+of life come from a large pond to the south, as splashing and quacking fill
+
+the air.  The forest continues to the north, hiding the many forest creatures.
+
+"
+"- Aeradon - updated.
+
+"
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 40545 0 9
+D2
+""
+""
+0 -1 40579 0 9
+-1
+S
+
+#40584
+"Woods - Overgrown Path near Mansion"
+"The path, broad and whole to the east, shows signs of disrepair as it heads
+
+westward into the woods.  The woods are fairly thin here, and small peach and
+
+plum trees abound.  To the north, the outline of a large house can just barely
+
+be seen.
+
+"
+"- Aeradon - Added rextra for peach and plum trees. And acode for picking.
+
+"
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 40582 0 9
+D3
+""
+""
+0 -1 40585 0 9
+E
+"peach plum trees"
+"Some small peach and plum trees grow sparingly around you.  They appear be old
+
+enough to bear fruit; however, you cannot see any fruit to be picked.  It may
+
+be that some force keeps the fruit from growing.
+
+"
+A
+"pick"
+"peach plum fruit tree"
+"act_tochar( #nofruit, ch );
+
+"
+E
+"nofruit"
+"There does not appear to be any fruit to be picked.
+
+"
+!
+0 0 0
+1198 19 1509959705 -2 0
+4555 16 1509964800 -2 0
+2507 9 1509949540 3 0
+-1
+S
+
+#40585
+"Woods - Overgrown Path"
+"An overgrown path runs north and east here.  Thick vines and underbrush
+
+clutter the way, making walking a bit of a chore.  In the northeast, you can
+
+just make out the outline of a large house.  Dense trees block your way to the
+
+south and west.
+
+"
+"[Elfir] Painfully short room description - due for a rewrite one of these days
+
+- Aeradon - Updated. Rewrote desc. Will add acodes for trees shortly.
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40586 0 9
+D1
+""
+""
+0 -1 40584 0 9
+2509 9 1509949490 3 0
+415 17 1509949540 -2 0
+790 17 1509949540 -2 0
+-1
+S
+
+#40586
+"Woods - Overgrown Path"
+"A thin path overgrown with large weeds runs north-south here.  A large mansion
+
+lies across a field of weeds to your east; woods extend westward as far as the
+
+eye can see.  The trees are covered with moss, and almost glow with a strange
+
+green light.
+
+"
+"- Aeradon - updated. Acode for weeds.
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40587 0 9
+D2
+""
+""
+0 -1 40585 0 9
+E
+"weeds"
+"Tall weeds, thick and green, spring up everywhere.  It has been quite
+
+some time since a gardener tended this area.
+
+"
+A
+"1 east"
+""
+"acode( find_room(40589), 1 );
+
+"
+!
+0 0 0
+755 9 1509949540 3 0
+-1
+S
+
+#40587
+"Woods - Overgrown Path"
+"A large house lies directly to the east, broken windows open to the elements.
+
+The remnants of a path run north and south, separating the western woods from
+
+what was once a broad lawn.  The path is now overgrown with weeds, and only
+
+bits of clear ground remain.
+
+"
+"- Aeradon - This room still bothers me with the whole window thing..  but
+
+*shrugs* hehe.. Added acode for weeds.
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40588 0 9
+D2
+""
+""
+0 -1 40586 0 9
+E
+"window"
+"Several broken windows can be seen at ground level.  A large gap appears
+
+high on the wall between the second-story window -- almost giving the
+
+side of the house the appearance of a human face.
+
+"
+E
+"house"
+"This large house was once a grand mansion, but now lies in a state of
+
+decay.  A bit of shredded curtain waves through a broken window.
+
+"
+A
+"open enter"
+"window"
+"send_to_char( #to_char, ch );
+
+"
+E
+"to_char"
+"Try as you might, you cannot enter the window: it's as if a force is
+
+trying to keep you out.
+
+"
+!
+0 0 0
+A
+"1 east"
+""
+"acode( find_room(40589), 1 );
+
+"
+!
+0 0 0
+2509 9 1509949540 3 0
+-1
+S
+
+#40588
+"Woods - End of Overgrown Path, Well"
+"The path ends here at a large stone well.  The forest now encroaches in all
+
+directions, and it is difficult to see what lurks in the woods.  Directly to
+
+your east is a large oak tree, which bends with the breeze.  At its roots are
+
+dozens of dried acorns.
+
+"
+"[Zithuan] Plague spot if someone drinks from the well?
+
+[Nereus] Too low level for plague around here
+
+- Aeradon - updated. Added well.
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40591 0 9
+D1
+""
+""
+0 -1 40589 0 9
+D2
+""
+""
+0 -1 40587 0 9
+E
+"oak tree"
+"A tall, ancient oak stands by the well.  Just out of reach up in its
+
+branches you can see a swing.  It appears that perhaps the tree has grown
+
+since anyone has used it -- that, or there is a giant nearby.
+
+"
+E
+"well"
+"The large well is almost hidden in a large patch of ivy.  As you peer in
+
+for a closer look, you notice that the water is foul and gives off a
+
+terrible odor.
+
+"
+A
+"drink"
+"well"
+"send_to_char( #to_char, ch );
+
+"
+E
+"to_char"
+"As you bend to drink the water, you decide that it is far too foul.
+
+"
+!
+0 0 0
+A
+"2 climb enter"
+"down well in"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"You can't climb down in there.
+
+"
+!
+0 -1 0
+3439 17 1509949540 -2 25
+-1
+S
+
+#40589
+"By the Weeds"
+"To your south and east is a large field of weeds, blocking your way closer to
+
+the great house.  Large woods lie in all other directions, looming dark and
+
+forbidding.  Sounds of life can be heard from within the forest, but also
+
+sounds of death.
+
+"
+"- Aeradon - updated. Acode for weeds.
+
+"
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40590 0 9
+D3
+""
+""
+0 -1 40588 0 9
+E
+"weeds"
+"Tall weeds of many hues of green form a solid, impenetrable mass.  They
+
+wave in the breeze, but will not allow your passage.
+
+"
+E
+"house"
+"A large, dilapidated house stands in the distance.  The grounds have
+
+clearly not been maintained for some time, and have been overtaken by
+
+weeds.
+
+"
+A
+"1 south 1 east"
+""
+"act_tochar( #nopath, ch );
+
+"
+E
+"nopath"
+"The weeds are much too thick to cross through. You'd better find another way.
+
+"
+!
+0 0 0
+-1
+S
+
+#40590
+"Dark Woods"
+"The woods are quite dark here, and the tall elms are covered in thick, choking
+
+vines.  Sounds of large beasts, chasing after light-footed creatures, echo
+
+around you.  You notice that the way south is just a little bit lighter, and
+
+that the trees in that direction are not as covered in vines.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40594 0 9
+D1
+""
+""
+0 -1 40526 0 9
+D2
+""
+""
+0 -1 40589 0 9
+D3
+""
+""
+0 -1 40591 0 9
+473 9 1509949540 3 0
+2504 9 1509949540 3 0
+-1
+S
+
+#40591
+"Woods - By the Pine Tree"
+"The air is crisp and clean, and the pine scent is strong and refreshing.  The
+
+ground is covered by a layer of pine needles, causing a squishing sound as you
+
+walk.  The needles are so deep, it appears that no one has disturbed them for
+
+years.
+
+"
+""
+301465600 0
+3 9 0
+D1
+""
+""
+0 -1 40590 0 9
+D2
+""
+""
+0 -1 40588 0 9
+E
+"pine needle"
+"Long brown pine needles form a thick carpet on the ground of the forest. 
+
+One area seems just a little harder than the others.
+
+"
+A
+"search move"
+"pine needles"
+"if( !can_see_room( ch, room ) ) {
+
+  act_tochar( #nosee, ch );
+
+  end;
+
+  }
+
+if( rflag( reset1, room ) ) {
+
+  i = random( 1,5 );
+
+  if( i < 4 ) {
+
+    if( i == 1 ) 
+
+      obj = oload( 983 );
+
+    else
+
+      obj = oload( 14 );
+
+    act_tochar( #true_char, ch, obj );
+
+    act_notchar( #true_room, ch, obj );
+
+    obj_to_char( obj, ch );
+
+    remove_rflag( reset1, room );
+
+    end;
+
+    }
+
+  }
+
+send_to_char( #false_char, ch );
+
+"
+E
+"false_char"
+"You find nothing of interest in the pine needles.
+
+"
+E
+"true_room"
+"$n finds $p buried in the needles!
+
+"
+E
+"true_char"
+"You find $p buried deep in the needles!
+
+"
+E
+"nosee"
+"You don't see that here.
+
+"
+!
+0 0 0
+2508 9 1509949540 3 0
+-1
+S
+
+#40592
+"Woods - Near a Pond"
+"You stand in a wooded, grassy area.  To your west is the edge of a dark
+
+forest, filled with large, towering trees.  To the east is the shore of a
+
+large pond teeming with ducks and other types of waterfowl.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40579 0 9
+D1
+""
+""
+0 -1 40547 0 9
+D3
+""
+""
+0 -1 40593 0 9
+2507 9 1509949540 3 0
+415 17 1509949490 -2 0
+-1
+S
+
+#40593
+"Woods"
+"Small elms and oaks delineate the border between open land and forest.  You
+
+can see the way their tops rise to the west as the forest thickens.  Towards
+
+the east you can see a grassy area, and can just make out what appears to be a
+
+pond in that direction.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40580 0 9
+D1
+""
+""
+0 -1 40592 0 9
+473 9 1509949540 3 0
+2504 9 1509949540 3 0
+-1
+S
+
+#40594
+"Dark Woods"
+"The forest here is dark, with thick branches covering the sky and casting the
+
+ground deep in shadow.  In all directions, the forest continues, thinning out
+
+to the east, where you see the beginnings of a meadow and, off in the
+
+distance, the walls of Chiiron.
+
+"
+""
+301465600 0
+3 9 0
+D0
+""
+""
+0 -1 40530 0 9
+D1
+""
+""
+0 -1 40522 0 9
+D2
+""
+""
+0 -1 40590 0 9
+-1
+S
+
+#40595
+"A Vertical Underwater Passage"
+"You are surrounded on all sides by walls of rock, and above you lies about 10
+
+feet of pond water topped by a mass of leaves.  A vertical passage heads down
+
+to a larger underwater chamber below.
+
+"
+""
+301465600 0
+7 9 0
+D4
+""
+""
+235 -1 40553 0 9
+D5
+""
+""
+0 -1 40596 0 9
+E
+"3 leaves leaf"
+"The leaves obscure the surface, perhaps if you @bclear@n the @bleaves@n you
+
+might see a way out.
+
+"
+A
+"clear"
+"leaves"
+"act_tochar( #clear, ch );
+
+act_notchar( #rclear, ch );
+
+open( room, up );
+
+"
+E
+"clear"
+"You clear the leaves aside revealing a passageway leading to the surface.
+
+"
+E
+"rclear"
+"$n splashes around a bit in the water.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !is_open( room, up ) )
+
+  act_tochar( #leaves, ch );
+
+else
+
+  continue;
+
+"
+E
+"leaves"
+"@RYou attempt to go head up through the leaves but find they are obscuring a
+
+rocky ceiling!  Perhaps if you @bclear@R the @bleaves@R away you will be able
+
+to see if there is an exit.
+
+"
+!
+3 0 16
+-1
+S
+
+#40596
+"An Underwater Chamber"
+"This large underwater chamber is dark and murky, barely letting in the
+
+sunlight from above.  A vertical chamber leads up and to the surface, and
+
+another tunnel leads west, still underwater, towards a dim yellow light.
+
+"
+"[Orb] down is 24570 - COVE Stronghold
+
+"
+301465600 0
+7 9 0
+D3
+""
+""
+0 -1 40597 0 9
+D4
+""
+""
+0 -1 40595 0 9
+D5
+""
+""
+98530 -1 24750 0 6
+A
+"enter crevice"
+""
+"if( !is_resting( ch ) && !is_sleeping( ch ) && is_name( \"COVE\", clan_abbrev( ch ) ) ) {
+
+  act_tochar( #go, ch );
+
+  act_notchar( #rgo, ch );
+
+  transfer( ch, find_room( 24750 ) );
+
+  Act_notchar( #appear, ch );
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"go"
+"You clear away a patch of spongy moss and enter a crevice hidden beneath.
+
+"
+E
+"rgo"
+"$n clears away a patch of spongy moss and enters a crevice hidden beneath.
+
+"
+E
+"appear"
+"$n slips in through the narrow crevice.
+
+"
+!
+0 0 0
+-1
+S
+
+#40597
+"An Underwater Tunnel"
+"This east west underwater cave seems to surface into a cavern of air
+
+above.  To the east a larger underwater cavern can be seen.  This tunnel
+
+is dimly lit by yellow light from above.
+
+"
+""
+301465609 0
+7 9 0
+D1
+""
+""
+0 -1 40596 0 9
+D4
+""
+""
+0 -1 40598 0 9
+-1
+S
+
+#40598
+"A Secret Cave"
+"Lit by scores of torches high overhead, this massive cavern stretches out
+
+in all direction from a pool below.  The floor of the cave is covered
+
+with hay and is quite warm.  Small bits of feather-stuff litter the
+
+cavern, blowing wisp-like in a slight breeze which sometimes sets the
+
+torch-flames dancing.
+
+"
+""
+301465601 0
+11 9 0
+D5
+""
+""
+0 -1 40597 0 9
+901 9 1509949540 3 0
+901 9 1509949540 3 0
+901 9 1509949540 3 0
+901 9 1509949540 3 0
+-1
+S
+
+#40599
+"On a Boulder at the Edge of the Woods"
+"You're atop one of several boulders amidst several stands of large trees.  Off
+
+to the west you can see the forest canopy growing thicker but it remains
+
+unreachable from this boulder.  Off to the east you can make out the walls
+
+surrounding the village of Chiiron.  The only option open appears to be
+
+climbing down.
+
+"
+""
+301465600 0
+3 7 0
+D5
+""
+""
+8418 -1 40514 0 6
+A
+"climb"
+"1 down off 3 ground"
+"if( can_fly( ch ) ) {
+
+  send_to_char( #fly, ch );
+
+  act_notchar( #flying, ch );
+
+  transfer( ch, find_room( 40514 ) );
+
+  act_notchar( #flying2, ch );
+
+  end;
+
+  }
+
+if( find_skill( ch, climb ) > random( 0, 5 ) ) {
+
+  use_skill( ch, climb );
+
+  send_to_char( #success, ch );
+
+  act_notchar( #success1, ch );
+
+  transfer( ch, find_room( 40514 ) );
+
+  act_notchar( #success2, ch );
+
+  }
+
+else {
+
+  send_to_char( #fail, ch );
+
+  act_notchar( #failed, ch );
+
+  end;
+
+  }
+
+loop( followers ) {
+
+  ch = rch;
+
+  if( !is_resting( rch ) && !is_sleeping( rch ) )
+
+    acode( room, 1 );
+
+  }
+
+"
+E
+"fly"
+"You fly back down to the ground.
+
+"
+E
+"flying"
+"$n flies back down to the ground.
+
+"
+E
+"flying2"
+"$n comes flying down off a boulder.
+
+"
+E
+"success"
+"You safely climb down off the boulder.
+
+"
+E
+"success1"
+"$n safely climbs down off the boulder.
+
+"
+E
+"success2"
+"$n safely climbs down off of one of the boulders.
+
+"
+E
+"fail"
+"You start to climb down but change your mind when you can't find safe
+
+footing.  You could probably @bjump down@n but you might get hurt if you did
+
+that.
+
+"
+E
+"failed"
+"$n tries to climb down off the boulder but gives up after a few tries.
+
+"
+!
+0 0 0
+A
+"jump"
+"1 down"
+"act_tochar( #jump, ch );
+
+act_notchar( #jumps, ch );
+
+transfer( ch, find_room( 40514 ) );
+
+if( find_stat( ch, dex ) < random( 10, 15 ) ) {
+
+  i = random( 1, 3 );
+
+  dam_message( ch, i, \"the fall\" );
+
+  inflict( ch, mob, i, \"a fall from a boulder\" );
+
+  act_notchar( #fell, ch );
+
+  }
+
+else
+
+  act_notchar( #jumped, ch );
+
+"
+E
+"jump"
+"You jump off the boulder to the ground below.
+
+"
+E
+"jumps"
+"$n jumps off the side of the boulder.
+
+"
+E
+"jumped"
+"$n, having jumped off a boulder overhead, lands deftly on the ground.
+
+"
+E
+"fell"
+"$n, having jumped off a boulder overhead, lands hard on the ground.
+
+"
+!
+0 0 0
+2857 17 1509949442 -2 0
+-1
+S
+
+#0
+

@@ -1,0 +1,367 @@
+#AREA
+"Southern Sea Trail"
+"Altimeas Xami"
+""
+60 0
+0
+4
+#ROOMS
+
+#84500
+"A Frozen Obelisk"
+"The remains of an obelisk stand here smashed and frozen.  The sea trail leads
+
+to the north and west, with dense forest dominating the east and south. 
+
+Looking old and not very well kept, it is obvious that this trail has been
+
+forgotten about for some time, and only recently rediscovered.
+
+"
+"[Altimeas] Begin Minor Hydra Forest
+
+[Altimeas] Medienne scout to tell story, stop low levels, ect...
+
+"
+301465602 0
+5 6 0
+D0
+""
+""
+98 -1 21119 0 6
+D3
+""
+""
+0 -1 84501 0 6
+E
+"obelisk stone smash"
+"Erected before you is a ruined obelisk of black stone thats been split into
+
+two pieces.  The base is ringed with weeds and stands about the height of a
+
+tall human until abruptly breaking showing the rougher stone of its core. 
+
+Lying flat across the ground is the upper section of the grand polished
+
+stone.  Both portions have a thin layer of ice coating them and enhancing the
+
+reflective black surface.
+
+"
+A
+""
+""
+"mpcode( mob_in_room( 2227, find_room( 84500 ) ), 1 );
+
+"
+!
+1 0 1
+A
+""
+""
+"mpcode( mob_in_room( 2227, find_room( 84500 ) ), 2 );
+
+continue;
+
+"
+!
+3 0 8
+2227 137 1509949540 3 0
+-1
+S
+
+#84501
+"Southern Sea Trail"
+"An disheveled trail bends east and south here.  The western edge of the trail
+
+borders along a short cliff that empties into the sea below.  A thickening
+
+tree line to the north prevents anything from entering the forest.
+
+"
+""
+301465600 0
+5 6 0
+D1
+""
+""
+0 -1 84500 0 6
+D2
+""
+""
+0 -1 84502 0 6
+-1
+S
+
+#84502
+"Southern Sea Trail"
+"The long forgotten trail continues to the north and south along the edge of
+
+the sea and forest.  A faint foot print in the cold mud nearby has been left
+
+by a recent traveler heading towards the south.
+
+"
+"[Altimeas] No Mobs
+
+"
+301465608 0
+5 6 0
+D0
+""
+""
+0 -1 84501 0 6
+D2
+""
+""
+0 -1 84503 0 6
+-1
+S
+
+#84503
+"Southern Sea Trail"
+"The sea trail turns the north and east here, following the edge of the forest
+
+and sea.  Out to the west the sea looks calm, and to the south the soothing
+
+sound of the water crashing against the side of the small cliff can be heard. 
+
+Cool air brushes over your skin as it flows from the east.
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 84502 0 6
+D1
+""
+""
+0 -1 84504 0 6
+-1
+S
+
+#84504
+"Southern Sea Trail"
+"The vegetation in this area fights for survival against a peculiar drop in
+
+temperature.  Icicles can been seen along trees that barely still live and
+
+crystallized tufts of grass line part of the forest floor.  Both the
+
+surrounding forest and the trail appear to be deteriorating with dying plants
+
+that blur the paths edge.
+
+"
+""
+301465600 0
+5 6 0
+D2
+""
+""
+0 -1 84505 0 6
+D3
+""
+""
+0 -1 84503 0 6
+2486 9 1509949540 3 0
+-1
+S
+
+#84505
+"Southern Sea Trail"
+"A deteriorating trail leads north and south.  A forest of dying flora lines
+
+the east edge of the trail as the west side meets with the sea a few feet
+
+below.  A chilling breeze moves in from the north and continues south.
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 84504 0 6
+D2
+""
+""
+0 -1 84506 0 6
+-1
+S
+
+#84506
+"Remnants of a Sea Trail"
+"A faint trail is here leading to the north and slowly disappears towards the
+
+west.  A chilling wind comes from the north, whilst a warmer, more dry wind
+
+emanates from the southwest.  Water below can faintly be heard as the sea
+
+meets the land.
+
+"
+"[Altimeas] No Mobs
+
+"
+301465608 0
+5 6 0
+D0
+""
+""
+0 -1 84505 0 6
+D3
+""
+""
+0 -1 84507 0 6
+-1
+S
+
+#84507
+"Remnants of a Sea Trail"
+"The deteriorating remains of an old trail fades into barren land to the south
+
+and can only faintly be seen leading to the east.  The smell of newly burnt
+
+wood creeps in from the south along with a gust of hot, dry air.  The
+
+surrounding flora is withering, just barely holding onto life, whilst the sea
+
+to the west still appears calm and soothing.
+
+"
+""
+301465600 0
+5 6 0
+D1
+""
+""
+0 -1 84506 0 6
+D2
+""
+""
+0 -1 84508 0 6
+-1
+S
+
+#84508
+"Remnants of a Sea Trail"
+"The location tells that this once was part of a sea trail, but the scenery no
+
+longer shows much resemblance of there ever being a trail here.  All the
+
+surroundings are charred, if not completely burnt and the only obvious paths
+
+to travel are to the north and west.
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 84507 0 6
+D3
+""
+""
+0 -1 84509 0 6
+2485 9 1509949540 3 0
+-1
+S
+
+#84509
+"Remnants of a Sea Trail"
+"The air here is rather hot and dry, mainly pouring in from the east.  The
+
+ground is covered in dying and dead flora, as well as some ash and charcoal. 
+
+To the west, the sea can be heard as it collides with the land below.  A faint
+
+glow to the south and the smell of smoke alert you of a fire somewhere to the
+
+south.
+
+"
+""
+301465600 0
+5 6 0
+D1
+""
+""
+0 -1 84508 0 6
+D2
+""
+""
+0 -1 84510 0 6
+-1
+S
+
+#84510
+"Remnants of a Sea Trail"
+"Withering and dead flora is all that meets the eye to the east.  From trees to
+
+shrubs, every living thing struggles to sustain itself, and many have failed. 
+
+A very contrasting view to that of the west, where the sea rests calmly and
+
+undisturbed.  A large mass of trees to the south are burning fiercely, making
+
+the area uncomfortably hot and filling the air with smoke.
+
+"
+"burning tree(s) to block south temp. will be ashes when hydra forest opens.
+
+[Altimeas] acode needed for attempts to head south
+
+acode put in place, and rextra added for the fire.
+
+"
+301465601 0
+5 6 0
+D0
+""
+""
+0 -1 84509 0 6
+D2
+""
+""
+235 -1 84001 0 6
+E
+"fire south inferno burning trees"
+"A large mass of trees to the south are burning uncontrollably.  There is no
+
+evidence of what may have caused the fire to begin, but it is obvious that the
+
+only way to stop the fire is to let it burn itself out.  Even at this distance
+
+from the flames you can feel a burning sensation upon your flesh.
+
+"
+A
+""
+""
+"act_tochar( \"You step towards the inferno and realize it's way too hot to pass.\", ch );
+
+act_notchar( \"$n steps towards the inferno and realize it's way too hot to pass.\", ch );
+
+i = 6d12;
+
+fire_message( ch, i, \"The blazing inferno\" );
+
+inflict_fire( ch, ch, i, \"The blazing inferno\" );
+
+end;
+
+"
+!
+3 0 4
+-1
+S
+
+#0
+

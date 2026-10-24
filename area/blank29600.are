@@ -1,0 +1,320 @@
+#AREA
+"KEEP Stronghold"
+""
+""
+1 0
+0
+0
+#ROOMS
+
+#29600
+"Chamber of Twilight"
+"Carved out of the substance of the mountain itself, this room shows delicate
+
+and intricate hand carved details and motifs on the stark grey granite walls,
+
+giving the cold hard stone some substance and texture.  The room is empty save
+
+for a fountain which dominates the center of the floor seemingly sculpted out
+
+of the very substance of the rock, giving the illusion that perhaps this is a
+
+direct tap into a hidden aquifer.
+
+"
+""
+301596677 0
+11 6 0
+D0
+""
+""
+0 -1 29601 0 6
+D3
+""
+""
+0 -1 29606 0 6
+E
+"fountain"
+"Naturally formed from the floor of the cavern, this fountain is made of
+
+igneous rock slightly different in texture from the surrounding granite.  The
+
+overall appearance is that of a molten lava tube which serendipitously met a
+
+hidden aquifer causing the solidification and formation of an outlet for the
+
+water.
+
+"
+1 17 1509949540 -2 0
+-1
+S
+
+#29601
+"Foyer of Decision"
+"Cold sturdy granite walls line the way here ending in a \"T\" junction with a
+
+corridor leading east and west.  A beautifully carved staircase is at the
+
+center of the room leading to an unknown room above.  There is absolutely
+
+nothing else in the chamber except for the granite staircase, giving the
+
+impression of a stark yet very clean and elegant design on the part of the
+
+builder.
+
+"
+""
+301596677 0
+0 6 0
+D1
+""
+""
+0 -1 29603 0 6
+D2
+""
+""
+0 -1 29600 0 6
+D3
+""
+""
+0 -1 29602 0 6
+D4
+""
+""
+0 -1 29604 0 6
+3247 17 1509949540 -2 0
+-1
+S
+
+#29602
+"Arena of Twilight"
+"This chamber is devoid of any markings on the walls or of any furniture save
+
+for a black and white circle brilliantly emblazoned on the center of the
+
+floor.  Two semicircular shapes reminiscent of gigantic commas, one of white
+
+and one of black comprise the circle, representing one of the classic symbols
+
+of the eternal struggle between the light and dark.
+
+"
+""
+368705541 0
+0 6 0
+D1
+""
+""
+0 -1 29601 0 6
+-1
+S
+
+#29603
+"Chamber of Comestibles"
+"Large black cauldron dominates this chamber placed centrally on the floor. 
+
+Unlike the other chambers, the granite walls have a softer look to them,
+
+likely from build up of soot and other particulate matter over the years. 
+
+Stone shelves are carved into the eastern wall while a solid granite table top
+
+protrudes from the northern wall, making up the cooking surface.
+
+"
+""
+301596677 0
+0 6 0
+D3
+""
+""
+0 -1 29601 0 6
+460 17 1509949540 -2 16
+-1
+S
+
+#29604
+"Chamber of Wealth"
+"Glyphs of gold and silver decorate the uppermost margins of the walls before
+
+the joint with the ceiling.  A small square window is built into the northern
+
+wall representing the deposit cubicle.  While there is no definite living
+
+presence in the chamber, there is a strange crisp feeling in the air as if
+
+there was something otherworldly at work in this room.  The beautifully carved
+
+granite staircase is present centrally in this chamber, linking it to the
+
+rooms above and below.
+
+"
+"[Orb] STORAGE ROOM, DO NOT PURGE
+
+"
+301467689 0
+0 6 0
+D4
+""
+""
+0 -1 29605 0 6
+D5
+""
+""
+0 -1 29601 0 6
+-1
+S
+
+#29605
+"Chamber of Unity"
+"The granite staircase ends here in a cul de sac of sorts.  Carelessly arranged
+
+large pillows dominate the chamber with no apparent exit except via the stairs
+
+to the chamber below.  Bold and colorful tapestries decorate the granite walls
+
+of this chamber, giving it some character and warmth.
+
+"
+""
+301465601 0
+0 6 0
+D5
+""
+""
+0 -1 29604 0 6
+-1
+S
+
+#29606
+"Short Tunnel"
+"A cul-de-sac of sorts has been created here within the very heart of the
+
+Dragonspires mountains, carved out with meticulous care with a smooth finish.
+
+The only way out of this corner is to the east where the tunnel widens out
+
+into a chamber.  Dark smooth granite walls give off no heat and there is an
+
+overall feeling of coldness, or rather the lack of warmth.  A large, roughly
+
+round granite boulder has been set against the western wall of this chamber.
+
+"
+""
+301596677 0
+11 6 0
+D1
+""
+""
+0 -1 29600 0 6
+D3
+""
+""
+32778 -1 28111 0 6
+A
+"insert"
+"ring"
+"if( has_obj( 4323, ch ) || wearing_obj( 4323, ch ) ) {
+
+  if( is_name( \"KEEP\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #success, ch );
+
+    act_notchar( #rsuccess, ch );
+
+    wait( 1 );
+
+    act_tochar( #bye, ch );
+
+    act_notchar( #rbye, ch );
+
+    room = find_room( 28111 );
+
+    transfer( ch, room );
+
+    }
+
+  else {
+
+    act_tochar( #fail, ch );
+
+    act_notchar( #rfail, ch );
+
+    junk_obj( has_obj( 4323, ch ) );
+
+    }
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"success"
+"@mAs you insert your fist into the indentation, a strange magenta glow engulfs you!@n
+
+"
+E
+"rsuccess"
+"@mAs $n inserts $s fist into the indentation, a strange magenta glow engulfs $m!@n
+
+"
+E
+"fail"
+"As you try to fit the ring into the indentation, the ring suddenly explodes
+
+into multiple pieces!
+
+"
+E
+"rfail"
+"As $n tries to fit the ring into the indentation, the ring suddenly explodes
+
+into multiple pieces.
+
+"
+E
+"nope"
+"You try to place your ring into the indentation, but it does not seem to fit.
+
+"
+E
+"rnope"
+"$n tries to fit $s ring into the indentation, but it does not seem to fit.
+
+"
+E
+"pet"
+"You are a pet and are being transferred out.
+
+"
+E
+"rpet"
+"Yadayada, $n is a pet and is leaving now.
+
+"
+E
+"bye"
+"You are pulled to another location.
+
+"
+E
+"rbye"
+"As you blink your eyes in disbelief, the glow dissipates and $n is no longer
+
+here!
+
+"
+!
+0 0 1
+-1
+S
+
+#0
+

@@ -1,0 +1,4003 @@
+#AREA
+"Coach - Medienne/Chiiron"
+"Talis"
+""
+1 0
+3
+0
+#ROOMS
+
+#29500
+"Inside a Coach"
+"Out of the coach windows you you see a stone gate house to the west flanked by
+
+two towers.  A path leads away east though winding hills in the other
+
+direction.  South of here, a small path marked by tracks of the coach as it
+
+arrived at Chiiron winds its way between the town wall and a range of hills
+
+east of town.
+
+"
+"links to 933
+
+remember to force sitting on entry.
+
+max number of players in coach, limit 5?
+
+allow pets or not?
+
+Damage on stepping out while in transit or not?
+
+Maybe a fee no entry every time you enter.  Exit whenever?  Can hop on
+
+mid-trail then maybe.
+
+"
+335052850 0
+0 5 0
+D2
+""
+""
+226 -1 29501 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach.  Please hold onto your gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29501
+"Inside a Coach"
+"This worn, hilly trail is dotted with sparse grass, but the dirt here is
+
+much too dry for most other vegetation.  To the north this faint trail
+
+intersects with a path just east of Chiiron's city gates, and the trail
+
+continues to the south along the east wall of Chiiron to the west.
+
+"
+"links to 40573
+
+"
+335052850 0
+0 5 0
+D0
+""
+""
+226 -1 29500 0 6
+D2
+""
+""
+226 -1 29502 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29502
+"Inside a Coach"
+"The dry, clumpy dirt of these hills only sports a small population of
+
+sparse grass and a few weeds.  A faint trail leads along the hilly
+
+terrain along the east wall of Chiiron which plants its stone frame to
+
+the west.
+
+"
+"links to 40572
+
+"
+335052850 0
+0 5 0
+D0
+""
+""
+226 -1 29501 0 6
+D2
+""
+""
+226 -1 29503 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29503
+"Inside a Coach"
+"This worn dirt trail leads north and south along the stone walls of
+
+Chiiron to the west.  A few sparse patches of grass grow here and there,
+
+but the hilly soil is much too dry to support any extensive vegetation. 
+
+From far to the north you can hear the clank-clank of the east gate of
+
+Chiiron.
+
+"
+"links to 40571
+
+"
+335052850 0
+0 5 0
+D0
+""
+""
+226 -1 29502 0 6
+D1
+""
+""
+226 -1 29504 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29504
+"Inside a Coach"
+"You stand on a steep, dry hilly slope.  To the north and south, the
+
+ground rises steeply, the unforgiving inclines covered with scores of
+
+rocks, large and small.  You can see the walls of Chiiron off in the
+
+distance to the west.
+
+"
+"links to 24057
+
+"
+335052850 0
+0 5 0
+D1
+""
+""
+226 -1 29505 0 6
+D3
+""
+""
+226 -1 29503 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29505
+"Inside a Coach"
+"A few clumps of thick brown bushes grow here, but you are able to move
+
+freely through the grassy areas between them.  The surrounding terrain is
+
+hilly, with rocky rises to the north and south of you.
+
+"
+"links to 24056
+
+"
+335052850 0
+0 5 0
+D1
+""
+""
+226 -1 29506 0 6
+D3
+""
+""
+226 -1 29504 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29506
+"Inside a Coach"
+"Thick brambles and brush cover this hillside.  Wherever the brush does not
+
+grow, it seems that a large boulder or steep slope is - making movement
+
+here slow and difficult.  To the east, you think you see an open area
+
+through some brambles, and to the west a small opening offers passage
+
+near the bottom of a hill.
+
+"
+"links to 24055
+
+"
+335052850 0
+0 5 0
+D1
+""
+""
+226 -1 29507 0 6
+D3
+""
+""
+226 -1 29505 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29507
+"Inside a Coach"
+"The animal trail you have been following peters out here with no where
+
+else to go.  To the south is a cliff, while north of here the ground
+
+rises up a rocky slope.  A thick wall of brambles to the west renders
+
+progress in that direction difficult.
+
+
+A small platform is balanced upon a tall wooden pole here.
+
+"
+"links to 24030
+
+"
+335052850 0
+0 5 0
+D1
+""
+""
+226 -1 29508 0 6
+D3
+""
+""
+226 -1 29506 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29508
+"Inside a Coach"
+"The trail bends around to the west and starts to run along a cliff facing
+
+the south.  The brush has thicken up quite a bit here.  Something catches
+
+your eye as it scurries under a nearby rock.
+
+"
+"links to 24029
+
+"
+335052850 0
+0 5 0
+D0
+""
+""
+226 -1 29509 0 6
+D3
+""
+""
+226 -1 29507 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29509
+"Inside a Coach"
+"Dozens of bees buzz around a small bush covered in little white flowers.
+
+You have never seen a bush like this one before; it has tiny white flowers
+
+and big purple leaves and is the only one like it in the surrounding area.
+
+"
+"links to 24025
+
+"
+335052850 0
+0 5 0
+D1
+""
+""
+226 -1 29510 0 6
+D2
+""
+""
+226 -1 29508 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29510
+"Inside a Coach"
+"Oversized and considerably out of place for this landscape is a mighty
+
+balsa tree.  Towering over the shrubbery at over thirty meters, the tree
+
+seems to reach into the sky.  Who knows what may be up there?
+
+"
+"links to 24023
+
+"
+335052850 0
+0 5 0
+D1
+""
+""
+226 -1 29511 0 6
+D3
+""
+""
+226 -1 29509 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29511
+"Inside a Coach"
+"The tracks runs west to east here and narrows as the brush is quite thick
+
+through here.  There are the bones and other remains of quite a number of
+
+rabbit spread all around.  There must be something that lives in the area
+
+by hunting rabbits.  
+
+"
+"links to 24022
+
+"
+335052850 0
+0 5 0
+D1
+""
+""
+226 -1 29512 0 6
+D3
+""
+""
+226 -1 29510 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29512
+"Inside a Coach"
+"The animal track turns to the west here and continues to show hoofprints. 
+
+Throughout this area you quite often hear the sounds of wildlife in the nearby
+
+bushes.  The hunting here must be quite good.
+
+"
+"links to 24021
+
+"
+335052850 0
+0 5 0
+D0
+""
+""
+226 -1 29513 0 6
+D3
+""
+""
+226 -1 29511 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29513
+"Inside a Coach"
+"A tight path cuts through the brush here in what is unmistakably an
+
+animal track.  The irregularity of the trail surface shows the heavy
+
+scars of hoofprints, at points cutting into the thick network of roots
+
+beneath the topsoil.  A broader path is visible to the north, while the
+
+track continues into the brush to the south.  
+
+"
+"links to 24018
+
+"
+335052850 0
+0 5 0
+D0
+""
+""
+226 -1 29514 0 6
+D2
+""
+""
+226 -1 29512 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29514
+"Inside a Coach"
+"The path here takes a noticeable step upward as you continue to the
+
+west.  An animal trail leading into the thick brush is evident to the
+
+south, showing tracks from many of the local fauna.  The main path
+
+continues to the east, where the faint sound of waves on a shore can be
+
+heard.  
+
+"
+"links to 24016
+
+"
+335052850 0
+0 5 0
+D1
+""
+""
+226 -1 29515 0 6
+D2
+""
+""
+226 -1 29513 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29515
+"Inside a Coach"
+"Filling each horizon are the mountains which define this region.  While
+
+considerably lower to the south, they are by no means small.  To the
+
+east, down the hill, it is possible to glimpse the the black waters of
+
+the Northern Sea, although it is not close enough to witness any detail. 
+
+Continuing to the west leads further up the mountainside.  
+
+"
+"links to 24017
+
+"
+335052850 0
+0 5 0
+D1
+""
+""
+226 -1 29516 0 6
+D3
+""
+""
+226 -1 29514 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29516
+"Inside a Coach"
+"Heavy brush and large, jagged rocks cover the hillside here.  A trail of
+
+three meters in width cuts across this landscape continuing at an incline
+
+from east to west, leading to apparent signs of life up the hill to the
+
+west.  
+
+"
+"links to 24019
+
+"
+335052850 0
+0 5 0
+D1
+""
+""
+226 -1 29517 0 6
+D3
+""
+""
+226 -1 29515 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29517
+"Inside a Coach"
+"This section of the trail is moderately inclined to the west, where the
+
+path can be seen to stretch for several hundred meters.  The smell of
+
+salt air and the chill of the mist rising off the sea to the east are
+
+strong, as is the breeze blowing from the north.  To the east the path
+
+appears to come to an intersection.  
+
+"
+"links to 24020
+
+"
+335052850 0
+0 5 0
+D1
+""
+""
+226 -1 29518 0 6
+D3
+""
+""
+226 -1 29516 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29518
+"Inside a Coach"
+"You have reached a crossroads in the trail.  To the north, the path begins to
+
+climb and off in the distance you can see a small watch tower.  To the east
+
+the path drops sharply winding its way down a small cliff to what looks like a
+
+beach below.  To the west the path is fairly level and leads off into the
+
+hillside.  To the south, the trail quickly appears amidst the brambles.
+
+"
+"links to 21000
+
+"
+335052850 0
+0 5 0
+D0
+""
+""
+226 -1 29519 0 6
+D3
+""
+""
+226 -1 29517 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29519
+"Inside a Coach"
+"The marked trail continues on to the north and south.  To the south you
+
+see what appears to be a fork in the trail.  Wind blows in from the sea
+
+to the east covering your face with drops of salty water.
+
+"
+"links to 21001
+
+"
+335052850 0
+0 5 0
+D0
+""
+""
+226 -1 29520 0 6
+D2
+""
+""
+226 -1 29518 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29520
+"Inside a Coach"
+"The trail here is muddy and you can see tracks heading north and south. 
+
+Your footwear soon becomes splattered with mud as you continue on along
+
+the trail.  To the east you can hear the cries of sea gulls and other
+
+birds of the sea.  
+
+"
+"links to 21002
+
+"
+335052850 0
+0 5 0
+D0
+""
+""
+226 -1 29521 0 5
+D2
+""
+""
+226 -1 29519 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29521
+"Inside a Coach"
+"Ahead the trail curves right while to the south you see what appears to
+
+be a patch of muddy ground.  To the east you can hear the sound of waves
+
+crashing against the shore below.  From what you can see this trail is
+
+not too far from the beach off to the east.
+
+"
+"links to 21003
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29522 0 6
+D2
+""
+""
+226 -1 29520 0 5
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29522
+"Inside a Coach"
+"Bushes along the side of the path rustle as wind blows in from the
+
+south.  Thoughts of an ambush from cut-throats and brigands trouble you
+
+as you walk along the trail.  The trail takes a turn to the north further
+
+ahead.  
+
+"
+"links to 21004
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29523 0 6
+D3
+""
+""
+226 -1 29521 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29523
+"Inside a Coach"
+"You can see tracks in the ground made by wheelbarrows and many feet.  It
+
+would seem there is a significant amount of traffic along this route. 
+
+Occasionally you can see an albatross circling lazily in the sky.  The
+
+trail leads to the north and south.  
+
+"
+"links to 21005
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29524 0 6
+D2
+""
+""
+226 -1 29522 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29524
+"Inside a Coach"
+"The trail comes in from the south and winds on to the east.  Down below
+
+you can hear the cries of sea birds as they go about their activity.  A
+
+spatter of salt water falls on your lips as a chilly wind blows in from
+
+the east.  
+
+"
+"links to 21006
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29525 0 6
+D2
+""
+""
+226 -1 29523 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29525
+"Inside a Coach"
+"Wheel ruts can be seen on the ground going off to the north and west. 
+
+Elm trees border the trail and sway gently to the wind blowing in from
+
+the sea.  A tower can be seen to the north perched on a hill.  
+
+"
+"links to 21007
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29526 0 6
+D3
+""
+""
+226 -1 29524 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29526
+"Inside a Coach"
+"The trail continues on to the east and south while a path leads west to
+
+what seems to be a tower of some sort.  Bushes with berries blooming dot
+
+the sides of the trail.  
+
+"
+"links to 21008
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29527 0 6
+D2
+""
+""
+226 -1 29525 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29527
+"Inside a Coach"
+"The thunderous crash of waves to the east echos loudly up the side of the
+
+near vertical cliff.  The various trails converging here make a form of a
+
+T intersection with paths leading north, south and west.  Trees lining
+
+the paths stretch peacefully into the sky as well as provide some shade
+
+for the lonely traveler.
+
+"
+"links to 21011
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29528 0 6
+D3
+""
+""
+226 -1 29526 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29528
+"Inside a Coach"
+"You can barely hear the waves now as you reach this particular spot.  The
+
+trail leads east and downwards to the south.  The top of a tower can be
+
+seen to the southwest.  
+
+"
+"links to 21015
+
+end of western sea trail
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29529 0 6
+D2
+""
+""
+226 -1 29527 0 6
+A
+"3 drop"
+""
+"act_tochar( \"No littering is allowed in the coach. Please hold onto you gear.\", ch );
+
+end;
+
+"
+!
+0 0 0
+A
+"2 stand"
+""
+"if( find_stat( ch, level ) < 90 ) {
+
+  if( size( ch ) < 3 ) {
+
+    act_tochar( \"The coach is too small for you to stand up in.\", ch );
+
+    end;
+
+    }
+
+  }
+
+continue;
+
+"
+!
+0 0 0
+A
+"1 meditate 2 sleep"
+""
+"act_tochar( \"The coach is bouncing around too much to do that just now.\", ch );
+
+end;
+
+"
+!
+0 0 0
+-1
+S
+
+#29529
+"Inside a Coach"
+"The well-worn mountain trail leads to the west and south.  Off in the
+
+distance to the south you hear the rhythmic sound of waves crashing, and
+
+above you fly many different varieties of sea birds.  This small road is
+
+not one of the safest places apparently as there are frequent reports of
+
+highway men and rogues.  Even the semi-frequent patrols of guards can't
+
+keep it safe.  To the north, a small road disappears from view behind a
+
+screen of bushes.
+
+
+A small sign is posted here.
+
+"
+"links to 21016
+
+begin northern sea trail
+
+"
+335052850 0
+0 6 0
+D2
+""
+""
+226 -1 29530 0 6
+D3
+""
+""
+226 -1 29528 0 6
+-1
+S
+
+#29530
+"Inside a Coach"
+"The well-worn mountain road leads to the east and north here.  About 150
+
+meters below you, you see the Northern Sea battering the coast line with
+
+its large waves.  It appears that the whole sea is covered in a fine
+
+mist, and the water is so dark that no light penetrates it.  
+
+"
+"links to 21019
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29529 0 6
+D1
+""
+""
+226 -1 29531 0 6
+-1
+S
+
+#29531
+"Inside a Coach"
+"The mountain road continues to the east and west here.  To the north
+
+there are densely wooded mountains, and to the south you hear the waves
+
+of the Northern Sea.  This road is known for the often poor visibility,
+
+that is caused by the fog that rolls in up the valley.  You notice as you
+
+walk that everyone you pass is all bundled up and looking away from you.  
+
+"
+"links to 21020
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29532 0 6
+D3
+""
+""
+226 -1 29530 0 6
+-1
+S
+
+#29532
+"Inside a Coach"
+"You are on a well-worn mountain road that leads to the north and west. 
+
+Below you, beneath the dark mist you hear the sound of waves, battering
+
+the coastline.  Every once in a while you hear the low bellowing of a
+
+ship's horn, or get a glimpse of a ship through the dark mist.  To the
+
+north shrouded in dark fog, you see densely wooded mountains.  
+
+"
+"links to 21021
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29533 0 6
+D3
+""
+""
+226 -1 29531 0 6
+-1
+S
+
+#29533
+"Inside a Coach"
+"You are on a well-worn mountain road that goes east and south.  To the
+
+north is the base of a range of densely forested mountains, and in the
+
+distance to the south you can hear the rhythmic tumbling of waves
+
+crashing on a beach.  Off in the distance to the west you see a guard
+
+tower, with a large bell mounted at the top.  The bell is used for
+
+warning the guards of Chiiron and Medienne in case of attack from the
+
+north or south.
+
+"
+"links to 21022
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29534 0 6
+D2
+""
+""
+226 -1 29532 0 6
+-1
+S
+
+#29534
+"Inside a Coach"
+"The mountain road continues to the east and west here.  To the north
+
+there are densely wooden mountains, and to the south you hear the waves
+
+of the Northern Sea.  This road is known for the often poor visibility
+
+that is caused by the fog that rolls in up the valley.  You notice as you
+
+walk that everyone you pass is all bundled up and looking away from you.  
+
+"
+"links to 21074
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29535 0 6
+D3
+""
+""
+226 -1 29533 0 6
+-1
+S
+
+#29535
+"Inside a Coach"
+"You are on a well-worn trail, that runs east and west.  About 150 meters
+
+below you is the Northern Sea, covered in a light mist, with waters that
+
+are dark and black.  Off in the distance below you, you hear the low
+
+bellowing of the horn on a merchant ship.  To the north lie woods so
+
+dense that you can barely see the mountains they cover.  
+
+"
+"links to 21073
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29536 0 6
+D3
+""
+""
+226 -1 29534 0 6
+-1
+S
+
+#29536
+"Inside a Coach"
+"You are on a well-worn trail that leads west and north.  To the north
+
+lie moutains that are covered in dense and eerie woods.  As you walk
+
+along you feel very unsafe, maybe it's all the people that walk by you
+
+with their heads down and hoods up.  This area is known for the outlaws
+
+and thieves that frequent here.  
+
+"
+"links to 21276
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29537 0 6
+D3
+""
+""
+226 -1 29535 0 6
+-1
+S
+
+#29537
+"Inside a Coach"
+"You are on a well-worn trail that leads south and north.  To the north
+
+lie moutains that are covered in dense and eerie woods.  As you walk
+
+along you feel very unsafe, maybe it's all the people that walk by you
+
+with their heads down and hoods up.  This area is known for the outlaws
+
+and thieves that frequent here.  
+
+"
+"links to 21275
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29538 0 6
+D2
+""
+""
+226 -1 29536 0 6
+-1
+S
+
+#29538
+"Inside a Coach"
+"You are travelling a path that is well worn and runs north and south.  To
+
+the north lie wood covered mountains that have an eerie mist rising from
+
+them.  You do not find yourself feeling very safe while travelling this
+
+path, as most of the people on it are walking with their heads down and
+
+their hoods up.  This is a higher-crime area, as indicated by the obvious
+
+thieves and outlaws that are around.
+
+"
+"links to 21274
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29539 0 6
+D2
+""
+""
+226 -1 29537 0 6
+-1
+S
+
+#29539
+"Inside a Coach"
+"You are on a well-worn trail that leads south and north.  To the north
+
+lie moutains that are covered in dense and eerie woods.  As you walk
+
+along you feel very unsafe, maybe it's all the people that walk by you
+
+with their heads down and hoods up.  This area is known for the outlaws
+
+and thieves that frequent here.  
+
+"
+"links to 21273
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29540 0 6
+D2
+""
+""
+226 -1 29538 0 6
+-1
+S
+
+#29540
+"Inside a Coach"
+"You are on a well-worn trail that leads south and north.  To the north
+
+lie moutains that are covered in dense and eerie woods.  As you walk
+
+along you feel very unsafe, maybe it's all the people that walk by you
+
+with their heads down and hoods up.  This area is known for the outlaws
+
+and thieves that frequent here.  
+
+"
+"links to 21272
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29541 0 6
+D2
+""
+""
+226 -1 29539 0 6
+-1
+S
+
+#29541
+"Inside a Coach"
+"You are on a well-worn trail that leads south and north.  To the north
+
+lie moutains that are covered in dense and eerie woods.  As you walk
+
+along you feel very unsafe, maybe it's all the people that walk by you
+
+with their heads down and hoods up.  This area is known for the outlaws
+
+and thieves that frequent here.  
+
+"
+"links to 21271
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29542 0 6
+D2
+""
+""
+226 -1 29540 0 6
+-1
+S
+
+#29542
+"Inside a Coach"
+"You are on a well-worn trail that leads south and north.  To the north
+
+lie mountains that are covered in dense and eerie woods.  As you walk
+
+along you feel very unsafe; maybe it's all the people that walk by you
+
+with their heads down and hoods up.  This area is known for the outlaws
+
+and thieves that frequent here.  
+
+"
+"links to 21270
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29543 0 6
+D2
+""
+""
+226 -1 29541 0 6
+-1
+S
+
+#29543
+"Inside a Coach"
+"You are on a well-worn trail that leads south and north.  To the north
+
+lie moutains that are covered in dense and eerie woods.  As you walk
+
+along you feel very unsafe, maybe it's all the people that walk by you
+
+with their heads down and hoods up.  This area is known for the outlaws
+
+and thieves that frequent here.  
+
+"
+"links to 21269
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29544 0 6
+D2
+""
+""
+226 -1 29542 0 6
+-1
+S
+
+#29544
+"Inside a Coach"
+"You are on a well-worn trail that leads north and south.  To the north
+
+lie mountains that are covered in dense and eerie woods.  As you walk
+
+along you feel very unsafe, maybe it's all the people that walk by you
+
+with their heads down and hoods up.  This area is known for the outlaws
+
+and thieves that frequent here.  
+
+"
+"links to 21072
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29545 0 6
+D2
+""
+""
+226 -1 29543 0 6
+-1
+S
+
+#29545
+"Inside a Coach"
+"You are on a well-worn path that leads east and south.  To the north lies
+
+a dense wood that covers the lower part of the mountains.  About one
+
+hundred fifty feet meters below you to the south lies the Northern Sea,
+
+which is covered in a thin mist.  The smell of salt and fish is so thick
+
+in the air it almost hurts to breathe.
+
+"
+"links to 21071
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29546 0 6
+D2
+""
+""
+226 -1 29544 0 6
+-1
+S
+
+#29546
+"Inside a Coach"
+"You are on a well-worn path that leads east and west from here.  Below you to
+
+the south, the Northern Sea lies, dark and impenetrable.  Northward, is a
+
+dense wood covering much of the hillside.  This trail is known for the often
+
+poor visibility because of the fog that rolls up the valley.  A series of
+
+hills, ever-increasing in height, lies to the north, rising toward the
+
+mountains.
+
+"
+"links to 21070
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29547 0 6
+D3
+""
+""
+226 -1 29545 0 6
+-1
+S
+
+#29547
+"Inside a Coach"
+"You are on a well-worn trail that leads to the north and west.  To the
+
+north lies the densely wooded mountains an to the south the Northern
+
+Sea.  In the distance you can see the watch tower, it reminds you that
+
+there are guards that pass by once and a while.  You can also see the
+
+great warning bell on the top of it, used for warning the guards of
+
+Chiiron and Medienne.  
+
+"
+"links to 21069
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29548 0 6
+D3
+""
+""
+226 -1 29546 0 6
+-1
+S
+
+#29548
+"Inside a Coach"
+"The trail continues to follow the edge of the chasm to the east.  To the
+
+north, the trail heads straight for the forest which trims the trail.  To
+
+the south, the trail winds its way back to the west.
+
+"
+"links to 21265
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29549 0 6
+D2
+""
+""
+226 -1 29547 0 6
+-1
+S
+
+#29549
+"Inside a Coach"
+"You are on a well-worn mountain path that leads to the north and south. 
+
+To the east a wide and very deep chasm cuts down from the mountains to
+
+the sea.  Looking down into the chasm, you can barely see the small river
+
+that carved it.  You see the faintest of trails leading down over the
+
+cliff edge.
+
+"
+"links to 21264
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29550 0 6
+D2
+""
+""
+226 -1 29548 0 6
+-1
+S
+
+#29550
+"Inside a Coach"
+"You are on a well-worn mountain path that leads to the north and south. 
+
+To the east a wide and very deep chasm cuts down from the mountains to
+
+the sea.  Looking down into the chasm, you can barely see the small river
+
+that carved it.
+
+"
+"links to 21263
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29551 0 6
+D2
+""
+""
+226 -1 29549 0 6
+-1
+S
+
+#29551
+"Inside a Coach"
+"You are on a well-worn mountain path that leads to the north and south. 
+
+To the east a wide and very deep chasm cuts down from the mountains to
+
+the sea.  Looking down into the chasm, you can barely see the small river
+
+that carved it.
+
+"
+"links to 21262
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29552 0 6
+D2
+""
+""
+226 -1 29550 0 6
+-1
+S
+
+#29552
+"Inside a Coach"
+"You are on a well-worn mountain path that leads to the north and south. 
+
+To the east a wide and very deep chasm cuts down from the mountains to
+
+the sea.  The cliff is steep, the chasm walls plunging down to the bottom. 
+
+Looking down into the chasm, you can barely see the small river that
+
+carved it.
+
+"
+"links to 21067
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29553 0 6
+D2
+""
+""
+226 -1 29551 0 6
+-1
+S
+
+#29553
+"Inside a Coach"
+"You are on a well-worn path that leads south and east.  A ways off to the
+
+south you hear the familiar sounds of the sea, the waves crashing, birds
+
+squaking, and the deep bellowing of merchant ship's horns.  To the north
+
+and west lie densely wooded mountains that are partly covered in a dark
+
+fog.  
+
+"
+"links to 21076
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29554 0 6
+D2
+""
+""
+226 -1 29552 0 6
+-1
+S
+
+#29554
+"Inside a Coach"
+"You are on a well-worn trail that leads to the north and west.  To the
+
+east lies a great chasm, at the bottom of the chasm you can see a small
+
+river running into the sea.  To the north you see that the chasm ends in
+
+a large cliff, the road lies above that cliff.
+
+"
+"links to 21077
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29555 0 6
+D3
+""
+""
+226 -1 29553 0 6
+-1
+S
+
+#29555
+"Inside a Coach"
+"You are on a well-worn path that leads south and east.  Rising from the
+
+chasm to your southeast you hear the familiar sounds of the sea, the
+
+waves crashing, birds squeaking, and the occasional bellow of a ship's
+
+horn.  To the north and west lie densely wooden mountains that are partly
+
+covered in a dark mist.  
+
+"
+"links to 21078
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29556 0 6
+D2
+""
+""
+226 -1 29554 0 6
+-1
+S
+
+#29556
+"Inside a Coach"
+"The trail climbs up a steep cliff here, allowing you an amazing view of
+
+the vast Sea of Stars to the south.  The clear blue water of the sea laps
+
+gently against the shore below and as the light strikes different
+
+portions of it you can see a light twinkling effect, hence why it is
+
+called the Sea of Stars.  The trail descends down the cliff a few feet to
+
+the west from here while to the east it continues to climb the steep
+
+cliff.
+
+"
+"links to 21014
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29557 0 6
+D3
+""
+""
+226 -1 29555 0 6
+-1
+S
+
+#29557
+"Inside a Coach"
+"Large pine trees border the southern edge of the cliff here, acting as a
+
+sort of natural fence to keep you from falling off the edge and
+
+plummeting to your death.  A cool breeze blows across the cliff carried
+
+with it the scent of the salt water below.  To the east the trail becomes
+
+rocky as it continues to make its climb up the cliff and around the edges
+
+of the sea.  To the west it begins to descend a bit as it heads down
+
+towards a dense forest.
+
+"
+"links to 21044
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29558 0 6
+D3
+""
+""
+226 -1 29556 0 6
+-1
+S
+
+#29558
+"Inside a Coach"
+"Large smooth boulders lie scattered about the trail here, nearly blocking
+
+further passage to the east.  The roots of several of the trees which
+
+border the trail break through the hard ground here as time has eroded
+
+most of the soil away.  Looking over the edge you notice that several
+
+trees lie at the rocky shore below as the cliff has slowly been eaten
+
+away by erosion.  The trail continues its course around the edge of the
+
+sea to the east and west from here.
+
+"
+"links to 21049
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29559 0 6
+D3
+""
+""
+226 -1 29557 0 6
+-1
+S
+
+#29559
+"Inside a Coach"
+"The trail becomes extremely narrow here, just barely wide enough to allow
+
+a wagon to pass with safety.  Several trees which sit at the southern
+
+edge of the trail lean at a steep angle over the cliff, as if at any
+
+moment their roots could break and send them tumbling to the water below. 
+
+A few miles to the southeast you can see the city of Medienne sitting
+
+just on the outskirts of the forest.  Far off the southwest the city of
+
+Chiiron appears as a mere speck as the landscape.
+
+"
+"links to 21050
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29560 0 6
+D3
+""
+""
+226 -1 29558 0 6
+-1
+S
+
+#29560
+"Inside a Coach"
+"Wagon ruts have been worn deep into the trail here, testament to the
+
+intense trading between Chiiron and Medienne over the last hundred years. 
+
+The trail is littered with small gravel-like rocks here, making movement
+
+slow and tedious across it as you carefully try not to slip and fall off
+
+the edge of the cliff.  Just barely visible at least fifty miles to the
+
+east are the massive Dragonspire mountains.
+
+"
+"links to 21051
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29561 0 6
+D3
+""
+""
+226 -1 29559 0 6
+-1
+S
+
+#29561
+"Inside a Coach"
+"The sound of the massive waves of the Sea of Stars crashing against the
+
+rocky base of the cliff fills the air.  The trail has become considerably
+
+wider here, allowing enough room for several wagons to pass side by side
+
+with ease.  Sitting against the northern edge of the trail are two small
+
+wagons filled with road working equipment ranging from shovels to hefty
+
+pick-axes.  Along the southern edge of the trail a small, makeshift stone
+
+wall has been built.  The trail continues seemingly for miles to the east
+
+and west from here.
+
+"
+"links to 21052
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29562 0 6
+D3
+""
+""
+226 -1 29560 0 6
+-1
+S
+
+#29562
+"Inside a Coach"
+"The well-worn path continues east and west here, following the winding
+
+edge of the cliff.  The sounds of the sea rise to your ears from the
+
+chasm to east: waves crashing, birds squawking, and the occasional toll
+
+of a ship's bell. To the north and west lie the mist-shrouded,
+
+densely-wooded eastern arm of the Cairn mountains.
+
+"
+"links to 21317
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29563 0 6
+D3
+""
+""
+226 -1 29561 0 6
+-1
+S
+
+#29563
+"Inside a Coach"
+"The trail continues, following a fairly sure east-west line along the
+
+cliff.  South of here, the sea stretches out before you: calm, but quite
+
+daunting.  To the north loom the Cairn Mountains whose chill waters feed
+
+the hidden river that has carved the deep chasm that lies to the east.
+
+"
+"links to 21316
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29564 0 6
+D3
+""
+""
+226 -1 29562 0 6
+-1
+S
+
+#29564
+"Inside a Coach"
+"The trail winds east and west here, across a sloped hillside.  To the
+
+southeast, the cliff drops away to the sea while directly to the east a
+
+small, nameless river has cut a deep chasm, spanned by a sturdy bridge. 
+
+On the other side of the chasm, the path seems to continue, wandering
+
+along under under the shadow of the Cairn Mountains to the north.  A
+
+large building sits to the south of the trail.
+
+"
+"links to 21315
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29565 0 6
+D3
+""
+""
+226 -1 29563 0 6
+-1
+S
+
+#29565
+"Inside a Coach"
+"The bridge rises up here from the edge of a sheer cliff to the west that
+
+drops away hundreds of feet below you.  The view is breathtaking, with
+
+the chasm descending steeply away to meet the glittering inland sea to
+
+the south.
+
+"
+"links to 21314
+
+clatter of coach on bridge
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29566 0 6
+D3
+""
+""
+226 -1 29564 0 6
+-1
+S
+
+#29566
+"Inside a Coach"
+"The peak of the stone bridge spans the chasm here, reinforced all along
+
+its length by heavy, squared timbers cut from the nearby forest.  At each
+
+end of the bridge stand heavy wooden arches, weather-beaten and
+
+salt-stained, making this something of a border between the human lands
+
+to the east and west.  The view is breathtaking and obviously the reason
+
+for the bridge's name, with the chasm below dropping steeply away to meet
+
+the glittering inland sea to the south.
+
+"
+"links to 21313
+
+clatter of coach on bridge
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29567 0 6
+D3
+""
+""
+226 -1 29565 0 6
+-1
+S
+
+#29567
+"Inside a Coach"
+"The bridge rises up here from the edge of a sheer cliff to the east that
+
+drops away hundreds of feet below you.  The view is breathtaking, with
+
+the chasm descending steeply away to meet the glittering inland sea to
+
+the south.
+
+"
+"links to 21312
+
+clatter of coach on bridge
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29568 0 6
+D3
+""
+""
+226 -1 29566 0 6
+-1
+S
+
+#29568
+"Inside a Coach"
+"The road twists and turns here between the edge of a sheer cliff which
+
+drops away hundreds of feet just south of you and the rugged climb of the
+
+mountains north and up.  The view is breathtaking, with the chasm
+
+dropping steeply away to meet the glittering inland sea to the far south. 
+
+Tiny shrubs and trees grow along the edge of the chasm, hanging on with
+
+twisted roots.  To the west a sturdy old stone bridge spans the gap
+
+carved over the ages by a tiny river that pours down from the mountains. 
+
+Far to the south, the river empties into the Northern Sea.
+
+"
+"links to 21311
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29569 0 6
+D3
+""
+""
+226 -1 29567 0 6
+-1
+S
+
+#29569
+"Inside a Coach"
+"The road twists and turns here between the edge of a sheer cliff which
+
+drops away hundreds of feet just south of you and the rugged climb of the
+
+mountains north and up.  The view is breathtaking, with the chasm
+
+dropping steeply away to meet the glittering inland sea to the far south. 
+
+A large boulder has fallen from the mountains to the north, and rests
+
+next to the trail.
+
+"
+"links to 21310
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29570 0 6
+D3
+""
+""
+226 -1 29568 0 6
+-1
+S
+
+#29570
+"Inside a Coach"
+"The road twists and turns here between the edge of a sheer cliff which
+
+drops away hundreds of feet just south of you and the rugged climb of the
+
+mountains north and up.  The view is breathtaking, with the chasm
+
+dropping steeply away to meet the glittering inland sea to the far
+
+south.  The panoramic view is put into perspective with the distant
+
+shape of a full sailed ship far out to sea.
+
+"
+"links to 21089
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29571 0 6
+D3
+""
+""
+226 -1 29569 0 6
+-1
+S
+
+#29571
+"Inside a Coach"
+"You are on a well-worn path that leads south and west.  Rising from the
+
+chasm to your southwest you hear the familiar sounds of the sea, the
+
+waves crashing, birds squacking, and the occasional bellow of a ship's
+
+horn.  To the north and east lie densely wooden mountains that are partly
+
+covered in a dark mist.
+
+"
+"links to 21079
+
+"
+335052850 0
+0 6 0
+D2
+""
+""
+226 -1 29572 0 6
+D3
+""
+""
+226 -1 29570 0 6
+-1
+S
+
+#29572
+"Inside a Coach"
+"You are on a well-worn trail that leads to the east and north.  To the
+
+west lies a great chasm, at the bottom of which you can see a small river
+
+running toward the sea.  To the north the chasm ends as it abuts against
+
+a sheer cliff, with the road running along its top.
+
+"
+"links to 21080
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29571 0 6
+D1
+""
+""
+226 -1 29573 0 6
+-1
+S
+
+#29573
+"Inside a Coach"
+"You are on a well-worn path that leads south and west.  In the distance
+
+and echoing up the chasm you hear the familiar sounds of the sea, the
+
+waves crashing, birds squaking, and the deep bellowing of ship horns.  To
+
+the north and east lie densely wooden mountains, partly covered in dark
+
+mists.  
+
+"
+"links to 21081
+
+"
+335052850 0
+0 6 0
+D2
+""
+""
+226 -1 29574 0 6
+D3
+""
+""
+226 -1 29572 0 6
+-1
+S
+
+#29574
+"Inside a Coach"
+"You are on a well-worn mountain path that leads to the north and south. 
+
+To the west a wide and very deep chasm cuts down from the mountains to
+
+the sea.  Looking down into the chasm, you can barely see the small river
+
+that carved it.
+
+"
+"links to 21064
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29573 0 6
+D2
+""
+""
+226 -1 29575 0 6
+-1
+S
+
+#29575
+"Inside a Coach"
+"You are on a well-worn mountain road that leads to the north and east. 
+
+Below you, beneath the dark mist you hear the sound of waves, battering
+
+the coastline.  Every once in a while you hear the low bellowing of a
+
+ship's horn, or get a glimpse of a ship through the parting mist.  To the
+
+north shrouded in dark fog, you see densely wooded mountains.  
+
+"
+"links to 21063
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29574 0 6
+D1
+""
+""
+226 -1 29576 0 6
+-1
+S
+
+#29576
+"Inside a Coach"
+"The mountain road continues to the east and west here.  To the north
+
+there are densely wooden mountains, and to the south you hear the waves
+
+of the Northern Sea.  This road is known for the often poor visibility,
+
+that is caused by the fog that rolls in up the valley.  You notice as you
+
+walk that the few people you pass are all bundled up and move quickly
+
+past without looking.
+
+"
+"links to 21062
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29577 0 6
+D3
+""
+""
+226 -1 29575 0 6
+-1
+S
+
+#29577
+"Inside a Coach"
+"Off in the distance to the south you hear the rythmic sound of waves
+
+crashing, and above you find many different varieties of sea birds. 
+
+There is a major fork in the trail here with the main trail running to
+
+the west and then south of here, and a smaller fork in heading off to the
+
+north and the densely wooded slopes.  Standing to one side of this
+
+crossroads is an empty gibbet, its rope gently swaying in the breeze - a
+
+reminder to those highwaymen and robbers who inhabit these parts.
+
+  
+
+A rickety @bsign@n points with three broken edges.
+
+"
+"links to 21061
+
+"
+335052850 0
+0 6 0
+D2
+""
+""
+226 -1 29578 0 6
+D3
+""
+""
+226 -1 29576 0 6
+-1
+S
+
+#29578
+"Inside a Coach"
+"You are on a well-worn trail that runs north and south.  About 150 meters
+
+below you is an inlet of the Northern Sea, covered in a light mist making
+
+the waters look dark and black.  Looking north you see wooded slopes so
+
+dense you can barely see the lower foothills they cover.
+
+"
+"links to 21060
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29577 0 6
+D2
+""
+""
+226 -1 29579 0 6
+-1
+S
+
+#29579
+"Inside a Coach"
+"You are on a well-worn trail that runs north and south.  About 150 meters
+
+below you is an inlet of the Northern Sea, covered in a light mist, with
+
+waters that are dark and black.  In the distance somewhere below you, you
+
+hear the low haunting bellow of a merchant ship.  Looking north you see
+
+wooded slopes so dense you can barely see the mountains they cover.
+
+"
+"links to 21059
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29578 0 6
+D2
+""
+""
+226 -1 29580 0 6
+-1
+S
+
+#29580
+"Inside a Coach"
+"Here the path bends to the north around a small inlet and the path here
+
+looks well-worn with signs of heavy commercial use.  Below a cliff drops
+
+away toward the Northern Sea, and just from this vantage point, you can
+
+see the top of a tower down there.  A faint trail winds its way down to
+
+the west.  
+
+"
+"links to 21023
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29579 0 6
+D1
+""
+""
+226 -1 29581 0 6
+-1
+S
+
+#29581
+"Inside a Coach"
+"You are a well-worn path that heads east and west.  This is the path that
+
+connects Chiiron and Medienne, that would explain the deep ruts and hoof
+
+prints in the mud.  To the north, austere mountains rise, seeming to loom
+
+overhead, while to the south the terrain drops until a cliff plunges the
+
+rest of the way into the Great Northern Sea.  
+
+"
+"links to 21024
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29582 0 6
+D3
+""
+""
+226 -1 29580 0 6
+-1
+S
+
+#29582
+"Inside a Coach"
+"You have reached a sharp bend in the well-worn path.  Here the path turns
+
+to the west and south.  There are deep ruts and hoof prints in the
+
+semi-dry mud.  To the north-east you see a forest that slowly rises into
+
+the mountains, and to the south-west you see the Great Northern Sea.  A
+
+faint, newly-opened path leads eastward into the forest.
+
+"
+"links to 21026
+
+end of northern sea trail
+
+"
+335052850 0
+0 6 0
+D2
+""
+""
+226 -1 29583 0 6
+D3
+""
+""
+226 -1 29581 0 6
+-1
+S
+
+#29583
+"Inside a Coach"
+"You have reached a sharp bend in the well-worn path.  Here the path turns
+
+to the east and north.  There are deep ruts and hoof prints in the
+
+semi-dry mud.  To the north-east you see a forest that slowly rises into
+
+the mountains.
+
+"
+"links to 21027
+
+eastern sea trail
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29582 0 6
+D1
+""
+""
+226 -1 29584 0 6
+-1
+S
+
+#29584
+"Inside a Coach"
+"You are on a well-worn road that runs to the west and south.  To the
+
+south-west you can hear the sounds of the northern Sea, merchant ship
+
+horns blowing, and waves crashing.  To the north-west great forested
+
+mountains rise up out of the foothills.  You notice that everyone who
+
+passes by is totally bundled up and are looking down with their faces
+
+covered.  Even the guards that frequent the area can't keep the road too
+
+safe.  
+
+"
+"links to 21028
+
+"
+335052850 0
+0 6 0
+D2
+""
+""
+226 -1 29585 0 6
+D3
+""
+""
+226 -1 29583 0 6
+-1
+S
+
+#29585
+"Inside a Coach"
+"Here there is an intersection in the well-worn path.  To the north the
+
+main path trail continues, you can tell because of the deep ruts and hoof
+
+prints in the mud.  A small trail branches off to the east and heads into
+
+a dense forest.
+
+"
+"links to 21029
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29584 0 6
+D2
+""
+""
+226 -1 29586 0 6
+-1
+S
+
+#29586
+"Inside a Coach"
+"You are on a well-worn road that leads north and south.  A little bit to
+
+the north, you see a small intersection, and way off in the distance to
+
+the south, you see a large wall.  Down a small cliff to the west, the
+
+Northern Sea is battering the coast.  And to the east large forested
+
+mountains rise up out of the foothills.  
+
+"
+"links to 21030
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29585 0 6
+D2
+""
+""
+226 -1 29587 0 6
+-1
+S
+
+#29587
+"Inside a Coach"
+"You are on a well-worn road that leads north and south.  A little bit to
+
+the north, the sea trail continues, and to the south you see a large wall. 
+
+Down a small cliff to the west the Northern Sea is battering the coast. 
+
+And to the east large forested mountains rise up out of the foothills.
+
+"
+"links to 21031
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29586 0 6
+D3
+""
+""
+226 -1 29588 0 6
+-1
+S
+
+#29588
+"Inside a Coach"
+"A fortified wall standing fifteen meters in height borders the trail here
+
+to the south.  From beyond the wall, the sounds of life can be heard, and
+
+there are pungent odors of meat cooking on a pit.  The path continues
+
+along the wall to the south and east.
+
+"
+"links to 21034
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29587 0 6
+D2
+""
+""
+226 -1 29589 0 6
+-1
+S
+
+#29589
+"Inside a Coach"
+"You are next to a tall wall that stands about fifteen meters high.  The
+
+trail leads east and west along the wall.  From beyond the wall you hear
+
+the sounds of city life.  
+
+"
+"links to 21040
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29588 0 6
+D3
+""
+""
+226 -1 29590 0 6
+-1
+S
+
+#29590
+"Inside a Coach"
+"You are travelling on a well-worn path showing heavy imprints from carts
+
+and possibly oxen.  Heavy foliage prevents you from leaving the trail to
+
+the north and west.  Southeast of here is what appears to be a heavily
+
+fortified wall of a fortress or city.  
+
+"
+"links to 21041
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29589 0 6
+D2
+""
+""
+226 -1 29591 0 6
+-1
+S
+
+#29591
+"Inside a Coach"
+"You are on a well-worn path along the wall of a city or fortress.  High
+
+above, birds circle in search of prey.  Far to the west can be heard the
+
+crashing of waves on a shore, with sounds of activity coming from across
+
+the wall to the east.  The path continues here from north to south.  
+
+"
+"links to 21042
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29590 0 6
+D2
+""
+""
+226 -1 29592 0 6
+-1
+S
+
+#29592
+"Inside a Coach"
+"This path leads along the fortified wall of what appears to be some sort
+
+of city.  The path continues to the north and the west, and to the south
+
+is a large pile of freshly cut wood.
+
+"
+"links to 21043
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29591 0 6
+D3
+""
+""
+226 -1 29593 0 6
+-1
+S
+
+#29593
+"Inside a Coach"
+"The path bends here from east to south around the wood pile.  In the
+
+distance to the west can be heard the crashing of waves on a shore.  High
+
+above, gulls circle seeking prey among the grass and trees.  
+
+"
+"links to 21045
+
+"
+335052850 0
+0 6 0
+D1
+""
+""
+226 -1 29592 0 6
+D2
+""
+""
+226 -1 29594 0 6
+-1
+S
+
+#29594
+"Inside a Coach"
+"Brief scampering sounds can be heard from within the pile of wood to the
+
+east of here.  Far to the west, the crashing of waves on a rocky
+
+shoreline can be heard, along with the cries of gulls high overhead.  The
+
+path continues here to the north and south.
+
+"
+"links to 21046
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29593 0 6
+D2
+""
+""
+226 -1 29595 0 6
+-1
+S
+
+#29595
+"Inside a Coach"
+"The road bends from north to east here, snaking its way around a great
+
+pile of wood.  In the distance to the west, you hear the low rumbling of
+
+waves crashing into the cliffs.  High above, gulls circle about, seeking
+
+prey among the grass and trees.  A narrow road follows a slope down
+
+towards the Inner Sea to the west.
+
+  
+
+A small sign has been placed at the crossroads.
+
+"
+"links to 21047
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29594 0 6
+D1
+""
+""
+226 -1 29596 0 6
+-1
+S
+
+#29596
+"Inside a Coach"
+"To the east, strong fortified walls of a city rise.  Smells and sounds of
+
+commerce and life lightly fill the air, calling to you to come see the
+
+strange and rare things this land produces.  To the north a small path
+
+leads between towering walls of stacked wood, and to the west the road
+
+continues.  The road follows the wall south to a section of the wall with
+
+a large portcullis set in it.
+
+"
+"links to 21048
+
+"
+335052850 0
+0 6 0
+D2
+""
+""
+226 -1 29597 0 6
+D3
+""
+""
+226 -1 29595 0 6
+-1
+S
+
+#29597
+"Inside a Coach"
+"Here stands a huge archway, the west gate of Medienne.  The walls are tall and
+
+thick, having been reinforced many times over.  A road starts here at the gate
+
+and winds it's way towards the Northern Sea.  The smells of the city mingle
+
+with the salty smell of the sea, drifting in from the west.
+
+"
+"links to 172
+
+medienne gate
+
+"
+335052850 0
+0 6 0
+D0
+""
+""
+226 -1 29596 0 6
+-1
+S
+
+#0
+

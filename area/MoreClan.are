@@ -1,0 +1,1823 @@
+#AREA
+"HOPE Stronghold"
+"Altimeas Xami Delkan"
+""
+1 0
+0
+0
+#ROOMS
+
+#85000
+"Near a Large Granite Structure"
+"To the west you can see a massive stronghold made from gray stone, looking as
+
+though it were only recently built.  The path leading east goes back to the
+
+mountain trail.  The calming sound of rushing water can be heard in the
+
+distant west.
+
+"
+""
+301465600 0
+5 9 0
+D1
+""
+""
+0 -1 43261 0 9
+D3
+""
+""
+0 -1 85001 0 9
+-1
+S
+
+#85001
+"South of a Large Granite Structure"
+"You can now see the dimensions of this impressive stronghold.  Made from gray
+
+granite, each block appears as though it would weight several tons.  Clearly
+
+seen to the north are the large gates that lead into the grand structure.  A
+
+broad path leads to the east and west.
+
+"
+""
+301465608 0
+5 9 0
+D0
+""
+""
+0 -1 85002 0 9
+D1
+""
+""
+0 -1 85000 0 9
+D3
+""
+""
+0 -1 85024 0 9
+-1
+S
+
+#85002
+"Before The Gates of a Granite Structure"
+"A great wall of granite rises to the north, at least thirty feet high, forming
+
+the outside of a grand structure.  To the east and west stand two rounded
+
+towers with cone-shaped roofs.  Fixed into the wall just north of you is a
+
+large gate which seeming leads into the granite structure beyond the grand
+
+walls.  Overhead a large banner can be seen.
+
+"
+"one guard
+
+vnum513 is clan key for door
+
+guard still needs to be worked on
+
+[Orb] I disabled acode 2 for now.  I have replaced its functionality with acode 4.
+
+"
+301465609 0
+12 6 0
+D0
+"gate"
+""
+98515 -1 85003 0 9
+D2
+""
+""
+0 -1 85001 0 9
+E
+"banner"
+"A large, white, square banner flaps in the wind above you.  Upon the banner is
+
+a silvery shield engraved with a gleaming white sword and a black crest.
+
+"
+A
+"knock bash bang pound"
+"gate north"
+"if( is_open( room, north ) ) {
+
+  act_tochar( #open, ch );
+
+  end;
+
+  }
+
+if( is_player( ch ) ) {
+
+  if( is_name( \"HOPE\", clan_abbrev( ch ) ) ) {
+
+    send_to_char( #char, ch );
+
+    act_notchar( #room, ch );
+
+    act_room( #all, ch );
+
+    open( room, north );
+
+    }
+
+  else {
+
+    send_to_char( #fail, ch );
+
+    act_notchar( #failed, ch );
+
+    }
+
+  wait( 3 );
+
+  if( is_open( room, north ) ) {
+
+    close( room, north );
+
+    send_to_room( #closing, room );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #fail, ch );
+
+  act_notchar( #failed, ch );
+
+  }
+
+"
+E
+"failed"
+"$n bangs on the gates.  A minute later a guard shows up on looks $n over
+
+before saying \"HOPE members only.\"
+
+"
+E
+"fail"
+"You bang on the gate.
+
+A gate guard comes and looks you over before telling you \"HOPE members only.\"
+
+"
+E
+"all"
+"The gate opens with a grinding of gears.
+
+"
+E
+"room"
+"$n bangs on the gate.  A guard comes and looks $m over and then goes back and
+
+pulls a lever on the inside.
+
+"
+E
+"char"
+"A guard comes and looks you over for a minute then goes and pulls a lever on
+
+the inside.
+
+"
+E
+"open"
+"The gate is already open.
+
+"
+E
+"closing"
+"The northern gate slowly rumbles closed.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( is_player( ch ) ) {
+
+  if( find_stat( ch, level ) > 29 ) {
+
+    i = find_stat( ch, align );
+
+    if( i == 2 || i == 5 || i == 8 ) {
+
+      act_tochar( #char, ch );
+
+      act_notchar( #other, ch );
+
+      end;
+
+      } else {
+
+    if( is_player( ch ) ) {
+
+      if( !has_obj( 513, ch ) ) {
+
+        act_tochar( #char, ch );
+
+        act_notchar( #other, ch );
+
+        }
+
+      else {
+
+        continue;
+
+        }
+
+      } else {
+
+    continue;
+
+    }
+
+  }
+
+}
+
+else {
+
+act_tochar( \"You are not of level and could not be in this clan.\", ch );
+
+}
+
+} else { continue; }
+
+"
+E
+"char"
+"You feel repelled by a mysterious force.
+
+"
+E
+"other"
+"$n tries to leave north, but is mysteriously unable to do so.
+
+"
+!
+0 0 0
+A
+"look l"
+"gate n north"
+"if( !is_open( room, north ) ) {
+
+  act_tochar( #gate, ch );
+
+  end;
+
+  }
+
+else
+
+  act_tochar( #open, ch );
+
+"
+E
+"gate"
+"@GThe massive steel gates of the structure are closed.  They appear very
+
+strong and durable.  @n
+
+"
+E
+"open"
+"@GThe gates are open.@n
+
+"
+!
+0 0 0
+A
+""
+"none"
+"if( is_player( ch ) ) {
+
+  if( is_name( \"HOPE\", clan_abbrev( ch ) ) )
+
+    continue;
+
+  else {
+
+    act_tochar( #no, ch );
+
+    act_notchar( #rno, ch );
+
+    end;
+
+    }
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"no"
+"You feel repelled by a mysterious force.
+
+"
+E
+"rno"
+"$n tries to leave north, but is mysteriously unable to do so.
+
+"
+!
+3 0 1
+2335 137 1509949540 3 0
+-1
+S
+
+#85003
+"Main Gate"
+"A gravel road leads to the north and south with granite walls to either side. 
+
+Upon the walls rest a decrative symbol consisting of a shield, a sword, and a
+
+crest.  A large gate is situated to the south keeping out unwanted visitors. 
+
+A cool breeze blows in from above as there is no roof to this part of the
+
+structure.  To one side of the gate there is a small metallic lever.
+
+"
+"lever in this room, gates are south
+
+"
+301465601 0
+12 8 0
+D0
+""
+""
+98304 -1 85004 0 8
+D2
+"gate"
+""
+98515 -1 85002 0 9
+E
+"lever"
+"The finely crafted steel lever is obviously pulled to open the gate.
+
+"
+A
+"pull"
+"lever"
+"if( is_open( room, south ) )
+
+  send_to_char( #nothing, ch );
+
+else {
+
+  send_to_char( #to_char, ch );
+
+  act_notchar( #to_room, ch );
+
+  act_room( #to_all, ch );
+
+  open( room, south );
+
+  }
+
+wait( 3 );
+
+if( is_open( room, south ) ) {
+
+  close( room, south );
+
+  send_to_room( #closing, room );
+
+  }
+
+"
+E
+"to_all"
+"The gate opens with a grinding of gears.
+
+"
+E
+"to_room"
+"$n pulls the lever.
+
+"
+E
+"to_char"
+"You pull the lever.
+
+"
+E
+"nothing"
+"You pull the lever and nothing happens.
+
+"
+E
+"closing"
+"The southern gate slowly rumbles closed.
+
+"
+!
+0 0 0
+-1
+S
+
+#85004
+"Gravel Path"
+"The gravel path continues to the north and south, a gate visible in both
+
+directions.  A nice fountain of pure water decoratively marks the center of
+
+the area.  Beside the fountain sits a bench, inviting you to sit down and look
+
+at the open sky above whilst listening to the calming sound of water from the
+
+fountain.  The aroma of cooking food looms in from the doorway to the east.  A
+
+sign next to the entrance indicates that the kitchen is beyond.  To the west,
+
+the sign above the doorway tells you that these are the sleeping quarters.
+
+"
+""
+301465603 0
+12 8 0
+D0
+""
+""
+98304 -1 85010 0 8
+D1
+""
+""
+98304 -1 85006 0 6
+D2
+""
+""
+98304 -1 85003 0 8
+D3
+"heavy oak door"
+""
+98305 -1 85005 0 6
+E
+"fountain"
+"Concentric basins of pale grey granite rise one above the other in a simple
+
+and elegant design for the town's fountain.  Water rises forth from the
+
+pinnacle of the piece, a full seven feet in the air, beginning its journey
+
+down through the four catch-basins.  The stone is edged with small scallops,
+
+giving the water a bit of turbulence to increase its song.
+
+"
+1 17 1509949540 -2 0
+3249 17 1509949540 -2 0
+-1
+S
+
+#85005
+"Quarters"
+"You have entered an elaborately decorated bedroom.  The owners of this abode
+
+have put much time and thought into this room.  An immense fur rug covers the
+
+floor of this room making you wonder what beast this might have been taken
+
+from.  Many tapestries dot the walls, picturing many great battles and
+
+quests.  Five pillowy feathered beds lie symmetrically inside this room, each
+
+covered with silken bed sheets.  Doorways lie to the south and to the east,
+
+each with heavy oak doors that push ever so gently open.
+
+"
+"five beds are here, they need to be writen in to the desc
+
+"
+335020037 0
+0 6 0
+D1
+"heavy oak door"
+""
+98305 -1 85004 0 6
+D2
+"heavy oak door"
+""
+98307 -1 85007 0 6
+1400 17 1509949540 -2 0
+1400 17 1509949540 -2 0
+1400 17 1509949540 -2 0
+1400 17 1509949540 -2 0
+1400 17 1509949540 -2 0
+-1
+S
+
+#85006
+"Kitchen"
+"Stepping inside, you realize you have entered the kitchen, with enough space
+
+and wares to feed all who come to visit.  Even the greatest chefs would be
+
+envious of this kitchen.  The smells of freshly baked breads, simmering stew
+
+and freshly cooked meats fill your senses.  Cupboards and countertops cover
+
+all areas, and are filled with every spice and edible item known and unknown
+
+to you.  Pots and pans hang from every nook and crannie.  An enormous stone
+
+hearth lies at the center of this room, an essential item for any cook.  An
+
+entryway to the south leads to a storage room whilst a large opening heads off
+
+to the common room.  A western doorway leads outside to a gravel path.
+
+"
+""
+335020037 0
+0 6 0
+D0
+""
+""
+98304 -1 85011 0 6
+D2
+""
+""
+98304 -1 85008 0 6
+D3
+""
+""
+98304 -1 85004 0 6
+3914 17 1509949540 -2 0
+1901 17 1509949540 -2 16
+1869 17 1509949540 -2 0
+2840 9 1509949540 3 0
+-1
+S
+
+#85007
+"Quarters"
+"This appears to be the neatest bedroom you have ever visited.  Not a sheet out
+
+of place or piece of clothing to be found lying around.  An extremely large,
+
+elaborately decorated mirror dominates the southern wall.  Immaculately carved
+
+dressers sit amongst the east and west walls, with enough drawers to contain
+
+an army's belongings.  Five large fluffy beds dot the walls awaiting your
+
+company.  A heavy oak door lies to the north; seemingly the only exit.
+
+"
+""
+335020037 0
+0 6 0
+D0
+"heavy oak door"
+""
+98307 -1 85005 0 6
+1400 17 1509949540 -2 0
+1400 17 1509949540 -2 0
+1400 17 1509949540 -2 0
+1400 17 1509949540 -2 0
+1400 17 1509949540 -2 0
+-1
+S
+
+#85008
+"Storage"
+"In this storage room many barrels crates and sacks are piled along the walls. 
+
+From the ceiling hang many different kinds of meat and vegetables as well as
+
+an oil lamp that is noticeably the only light source for the room.  Shelves
+
+which are filled with many crucibles, small pots and flasks take up the
+
+majority of the other wall space.  Even from the bars of the window hang some
+
+small sacks with obviously edible contents.  Some barrels with beer and wine
+
+are distributed amongst the other goods.  Only the center of the room remains
+
+empty.  The only exit is back to the kitchen through the door to the north.
+
+"
+"barrels can only hold liquid, not very good for storage
+
+chest for room d is #3875
+
+[Olah] Transporter to storage room 85009
+
+"
+335020037 0
+0 6 0
+D0
+""
+""
+98304 -1 85006 0 6
+A
+"exclaim"
+"5 }{()|DE 5 hope><epoh"
+"act_tochar( #exclaim, ch );
+
+act_notchar( #nexclaim, ch );
+
+wait( 2 );
+
+if( is_player( ch ) ) {
+
+  if( is_name( \"HOPE\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #disap, ch );
+
+    act_notchar( #ndisap, ch );
+
+    transfer( ch, find_room( 85009 ) );
+
+    act_notchar( #npuff, ch );
+
+    }
+
+  else
+
+    act_tochar( #fail, ch );
+
+  }
+
+else
+
+  act_tochar( #fail, ch );
+
+"
+E
+"exclaim"
+"You exclaim '}{()|DE' to the room.
+
+"
+E
+"nexclaim"
+"$n exclaims something.
+
+"
+E
+"disap"
+"You feel yourself dematerializing, surrounded in a puff of smoke.
+
+"
+E
+"ndisap"
+"@c$n disappears in a puff of smoke!@n
+
+"
+E
+"npuff"
+"@c$n arrives in a puff of smoke.@n
+
+"
+E
+"fail"
+"You feel a soft tugging, but nothing happens.
+
+"
+!
+0 0 0
+-1
+S
+
+#85009
+"Secret Storage"
+"The granite walls of this large room have no window in any kind.  The floor is
+
+clean and also made from granite.  There are seven chest in this room in a
+
+perfect circle.  On the walls you can see a huge white sign.  There are no
+
+obvious exit from this prison like treasure chamber.
+
+"
+"Mage guardian needs to be added later
+
+Chests 500lbs (x7)
+
+[Olah] Transporter to room 85008
+
+"
+335153205 0
+0 9 0
+E
+"sign"
+"@I_________________________
+
+@I|  Take what you need.  |
+
+@I|If you stop needing it,|
+
+@I|     Bring it back.    |
+
+@I-------------------------
+
+"
+A
+"exclaim"
+"open"
+"act_tochar( #exclaim, ch );
+
+act_notchar( #exclaim1, ch );
+
+wait( 1 );
+
+if( is_name( \"HOPE\", clan_abbrev( ch ) ) ) {
+
+  act_tochar( #disap, ch );
+
+  act_notchar( #ndisap, ch );
+
+  transfer( ch, find_room( 85008 ) );
+
+  act_notchar( #npuff, ch );
+
+  }
+
+else
+
+  act_tochar( #fail, ch );
+
+"
+E
+"exclaim"
+"You exclaim 'open!' to the room.
+
+"
+E
+"exclaim1"
+"$n exclaims something to the room.
+
+"
+E
+"npuff"
+"@c$n arrives in a puff of smoke.@n
+
+"
+E
+"disap"
+"@cYou feel yourself dematerialize.@n
+
+"
+E
+"ndisap"
+"@c$n dematerializes before you!@n
+
+"
+E
+"fail"
+"You feel a soft tugging, but nothing happens.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( find_stat( ch, level ) < 91 ) {
+
+  if( !is_name( \"HOPE\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #begon, ch );
+
+    obj_to_char( oload( 14 ), ch );
+
+    interpret( ch, \"mail Kicked from HOPE stronghold\" );
+
+    interpret( ch, \"mail send Talis\" );
+
+    act_notchar( #poof, ch );
+
+    transfer( ch, find_room( 85002 ) );
+
+    act_notchar( #rpoof, ch );
+
+  }
+
+}
+
+"
+E
+"begon"
+"@YProtective spells evict you from this place!@n
+
+"
+E
+"poof"
+"$n disappears in a small mushroom cloud.
+
+"
+E
+"rpoof"
+"$n appears in a cloud of acrid smoke looking rather singed!
+
+"
+!
+2 1000 0
+-1
+S
+
+#85010
+"Gravel Path"
+"The fresh smell of hay creeps in from the north.  The gravel path comes to an
+
+end at the north as it meets an open gate leading to the stables.  A
+
+flickering orange light draws your attention to the western doorway, and you
+
+manage to catch a glimpse of what looks like shelves in the brief flicker of
+
+light.  An intertwining double-spiral staircase ascends up into the ceiling. 
+
+Numerous torches are spaced equidistant following the trail of the granite
+
+staircase.
+
+"
+""
+301465601 0
+12 8 0
+D0
+""
+""
+114688 -1 85013 0 8
+D1
+""
+""
+98304 -1 85011 0 6
+D2
+""
+""
+98304 -1 85004 0 8
+D3
+""
+""
+98304 -1 85012 0 6
+-1
+S
+
+#85011
+"Commons"
+"Crystal ensconsed candelabras illuminate every corner of the room.  The soft
+
+furnishings make for a comfortable atmosphere.  A square shaped obisidian
+
+table stands in the center of the room.  Large tapestries depict the personal
+
+coat of arms for the leaders of the Holy Order of Purity and Enlightenment.
+
+"
+""
+335020037 0
+0 9 0
+D0
+"steel-banded door"
+""
+98435 -1 85014 0 6
+D1
+""
+""
+98304 -1 85025 0 6
+D2
+""
+""
+98304 -1 85006 0 6
+D3
+""
+""
+98304 -1 85010 0 6
+A
+""
+""
+"act_room( #flash, ch );
+
+"
+E
+"flash"
+"@eWith a flash of white light, the statue animates to life, and two chalices
+
+have replaced the sword and shield.  Dipping each of the chalices deep into
+
+the barrel of beer, the statue drinks them and lets out a loud burp that
+
+trembles the land all around.@n
+
+"
+!
+2 300 0
+3777 17 1509949540 -2 0
+466 17 1509949540 -2 0
+466 17 1509949540 -2 0
+466 17 1509949540 -2 0
+466 17 1509949540 -2 0
+466 17 1509949540 -2 0
+466 17 1509949540 -2 0
+466 17 1509949540 -2 0
+466 17 1509949540 -2 0
+466 17 1509949540 -2 0
+466 17 1509949540 -2 0
+4159 17 1509949540 -2 0
+-1
+S
+
+#85012
+"Great Library"
+"The library is a large semi-circular room of polished granite.  In the center
+
+is a blazing fire place that lends both warmth and good light for reading. 
+
+Along the straight wall are shelves upon shelves stacked floor to ceiling with
+
+unbelievable volumes of literature, from the most common, to the most rare. 
+
+This is one of the most extensive private collections you have ever seen,
+
+rivaling many town libraries.  Skirting the the rounded part of the room are
+
+many chairs and couches, not the hard wooden kinds you might see in taverns,
+
+but comfortable hand crafted pieces of furniture collected from many regions. 
+
+Covered in unusual fabrics and stuffed with soft cottons and animal furrs,
+
+they lend themselves to a cozy place to curl up with a good book for a little
+
+rest and relaxation after a hard fought campaign in the name of the light.
+
+"
+""
+335020037 0
+0 9 0
+D0
+""
+""
+98304 -1 85015 0 6
+D1
+""
+""
+98304 -1 85010 0 6
+1878 17 1509949540 -2 0
+-1
+S
+
+#85013
+"Stables"
+"The smell of fresh hay fills your lungs as you enter the stables.  The floor
+
+is lined with hay and bundles of it are stacked against the east and west
+
+walls.  To the north a large gate is firmly fixed into the wall, whilst south
+
+a gravel path begins just past the open gate.  A small metallic lever
+
+resides next to the northern gates.
+
+"
+"stables must be safe room to keep agro tames from killing things
+
+lever in this room, gates are north
+
+[Sohj] is there any way to make creatures stay in this room over repop?
+
+"
+301465607 0
+0 9 0
+D0
+""
+""
+114883 -1 85016 0 9
+D2
+""
+""
+114688 -1 85010 0 8
+E
+"level"
+"The finely crafted steel lever is obviously pulled to open the gate.
+
+"
+A
+"pull"
+"lever"
+"if( is_open( room, north ) )
+
+  send_to_char( #nothing, ch );
+
+else {
+
+  send_to_char( #to_char, ch );
+
+  act_notchar( #to_room, ch );
+
+  act_room( #to_all, ch );
+
+  open( room, north );
+
+  }
+
+wait( 3 );
+
+if( is_open( room, north ) ) {
+
+  close( room, north );
+
+  send_to_room( #closing, room );
+
+  }
+
+"
+E
+"to_all"
+"The gate opens with a grinding of gears.
+
+"
+E
+"to_room"
+"$n pulls the lever.
+
+"
+E
+"to_char"
+"You pull the lever.
+
+"
+E
+"nothing"
+"You pull the lever and nothing happens.
+
+"
+E
+"closing"
+"The northern gate slowly rumbles closed.
+
+"
+!
+0 0 0
+-1
+S
+
+#85014
+"Warleader Office"
+"This room appears to be the room of a warrior.  Decorating the thick granite
+
+walls are many maps of different regions of the lands.  On the massive oak
+
+table rests a map with small tin knights and wooden orcs upon it.  The room is
+
+lit only by an oil lamp that hangs from the ceiling.  In the north wall are
+
+small gapes in the stone actings as windows.  A steel-banded door in the south
+
+wall and an archway in the easter wall are the only exits.
+
+"
+""
+335020037 0
+0 8 0
+D1
+""
+""
+0 -1 85027 0 6
+D2
+"steel-banded door"
+""
+98435 -1 85011 0 6
+A
+""
+""
+"act_room( #glist, ch );
+
+"
+E
+"glist"
+"@rThe mithril statue of the dwarven warrior glistens and sparkles with
+
+perfection.@n
+
+"
+!
+2 400 0
+3582 17 1509949540 -2 0
+3672 17 1509949540 -2 0
+4069 17 1509949540 -2 0
+-1
+S
+
+#85015
+"Grand Chapel"
+"You stand in the center of a grand chapel.  The room itself is large and
+
+rounded, with walls appropriately designed to suit all the good and neutral
+
+dieties.  The central design is that of Taranth.  The design features a
+
+beautifully crafted dove, wreated in leaves of ivy.  Candles appear around the
+
+chapel providing light to every corner.  High in the western wall is a small
+
+window which leads outside.
+
+"
+"Candles will be added at the further cost 5k
+
+"
+335020167 0
+0 7 0
+D2
+""
+""
+98304 -1 85012 0 6
+A
+""
+""
+"act_room( #glow, ch );
+
+"
+E
+"glow"
+"@YThe electrum statue statue of the halfling cleric briefly glows a soft
+
+yellow hue, illuminating the entire room.
+
+"
+!
+2 400 0
+4136 17 1509949540 -2 0
+-1
+S
+
+#85016
+"Inside a Massive Cave - Large Gates"
+"A large gate is situated to the south.  A torch burns brightly on either side
+
+of the gate, providing a great amount of light to the cave.  The walls are
+
+high and smooth and the ground is sturdy, but soft.  The only exit other than
+
+the gate is west.
+
+"
+"One Gaurd
+
+[Orb] Acode 3 has been disabled.  Acode 4 now performs its functionality.
+
+"
+301465601 0
+11 9 0
+D2
+""
+""
+114883 -1 85013 0 9
+D3
+""
+""
+0 -1 85017 0 9
+A
+"knock bash pound bang"
+"gate south"
+"if( is_open( room, south ) ) {
+
+  act_tochar( #open, ch );
+
+  end;
+
+  }
+
+if( is_player( ch ) ) {
+
+  if( is_name( \"HOPE\", clan_abbrev( ch ) ) ) {
+
+    send_to_char( #char, ch );
+
+    act_notchar( #room, ch );
+
+    act_room( #all, ch );
+
+    open( room, south );
+
+    }
+
+  else {
+
+    send_to_char( #fail, ch );
+
+    act_notchar( #failed, ch );
+
+    }
+
+  wait( 3 );
+
+  if( is_open( room, south ) ) {
+
+    close( room, south );
+
+    send_to_room( #closing, room );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #fail, ch );
+
+  act_notchar( #failed, ch );
+
+  }
+
+"
+E
+"failed"
+"$n bangs on the gates.  A minute later a guard shows up on looks $n over
+
+before saying \"HOPE members only.\"
+
+"
+E
+"fail"
+"You bang on the gate.
+
+A gate guard comes and looks you over before telling you to \"HOPE members
+
+only.\"
+
+"
+E
+"all"
+"The gate opens with a grinding of gears.
+
+"
+E
+"room"
+"$n bangs on the gate.  A guard comes and looks $m over and then goes back and
+
+pulls a lever on the inside.
+
+"
+E
+"char"
+"A guard comes and looks you over for a minute then goes and pulls a lever on
+
+the inside.
+
+"
+E
+"open"
+"The gate is already open.
+
+"
+E
+"closing"
+"The southern gate slowly rumbles closed.
+
+"
+!
+0 0 0
+A
+"look l"
+"gate s south"
+"if( !is_open( room, south ) ) {
+
+  act_tochar( #gate, ch );
+
+  end;
+
+  }
+
+else
+
+  act_tochar( #open, ch );
+
+"
+E
+"gate"
+"@GThe massive steel gates of the structure are closed.  They appear very
+
+strong and durable.  @n
+
+"
+E
+"open"
+"@GThe gates are open.@n
+
+"
+!
+0 0 0
+A
+""
+""
+"if( is_player( ch ) ) {
+
+  if( find_stat( ch, level ) > 20 ) {
+
+    i = find_stat( ch, align );
+
+    if( i == 2 || i == 5 || i == 8 ) {
+
+      act_tochar( #char, ch );
+
+      act_notchar( #other, ch );
+
+      end;
+
+      } else {
+
+    if( is_player( ch ) ) {
+
+      if( !has_obj( 513, ch ) ) {
+
+        act_tochar( #char, ch );
+
+        act_notchar( #other, ch );
+
+        }
+
+      else {
+
+        continue;
+
+        }
+
+      } else {
+
+    continue;
+
+    }
+
+  }
+
+}
+
+else {
+
+act_tochar( \"You are not of level and could not be in this clan.\", ch );
+
+}
+
+} else { continue; }
+
+"
+E
+"char"
+"You feel repelled by a mysterious force.
+
+"
+E
+"other"
+"$n tries to leave south, but is mysteriously unable to do so.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( is_player( ch ) ) {
+
+  if( is_name( \"HOPE\", clan_abbrev( ch ) ) )
+
+    continue;
+
+  else {
+
+    act_tochar( #no, ch );
+
+    act_notchar( #rno, ch );
+
+    end;
+
+    }
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"no"
+"You feel repelled by a mysterious force.
+
+"
+E
+"rno"
+"$n tries to leave south, but is mysteriously unable to.
+
+"
+!
+3 0 4
+2335 9 1509949540 3 0
+-1
+S
+
+#85017
+"Inside a Massive Cave"
+"The cave is quite dark, but a source of light to the east illuminates the area
+
+well enough for you to see.  The walls are high and very smooth, looking as
+
+though they had been polished for the past thousand years.  The ground is
+
+comprised of a mixture of sands and dirt, feeling soft, but not soft enough to
+
+sink into.
+
+"
+""
+301465608 0
+11 9 0
+D1
+""
+""
+0 -1 85016 0 9
+D3
+""
+""
+0 -1 85018 0 9
+-1
+S
+
+#85018
+"A Path Along a Cliff - Before a Massive Cave"
+"A dirt path widens and leads to the south.  To the west and north the edges of
+
+the cliff look dangerously high with nothing seperating the path from the it. 
+
+To the southeast stands a rounded, granite tower more than thirty feet tall,
+
+and two walls connect to either side of it.  East is a large cave which looks
+
+unnaturally perfect.
+
+"
+""
+301465600 0
+5 9 0
+D1
+""
+""
+0 -1 85017 0 9
+D2
+""
+""
+0 -1 85019 0 9
+-1
+S
+
+#85019
+"A Path Along a Cliff"
+"The walls east of you are craftfully built and look very thick.  Ivy tries to
+
+find his way up to the top, but presently only reaches a few feet up the
+
+thirty foot wall.  Towards the top of the wall, a small window is illuminated
+
+with a bright, flickering, orange-red light.  The cliff to the west seems
+
+quite high and peering over to look doesn't seem like a good idea.  The broad
+
+dirt path continues north and south.
+
+"
+""
+301465600 0
+5 9 0
+D0
+""
+""
+0 -1 85018 0 9
+D2
+""
+""
+0 -1 85020 0 9
+-1
+S
+
+#85020
+"A Path Along a Cliff"
+"The walls east of you are craftfully built and look very thick.  Ivy tries to
+
+find his way up to the top, but presently only reaches a few feet up the
+
+thirty foot wall.  The cliff to the west seems quite high and peering over to
+
+look doesn't seem like a good idea.  The broad dirt path continues north and
+
+south.
+
+"
+""
+301465600 0
+5 9 0
+D0
+""
+""
+0 -1 85019 0 9
+D2
+""
+""
+0 -1 85021 0 9
+-1
+S
+
+#85021
+"A Path Along a Cliff"
+"The walls east of you are craftfully built and look very thick.  Ivy tries to
+
+find his way up to the top, but presently only reaches a few feet up the
+
+thirty foot wall.  The cliff to the west seems quite high and peering over to
+
+look doesn't seem like a good idea.  The broad dirt path continues north and
+
+south.
+
+"
+""
+301465600 0
+5 9 0
+D0
+""
+""
+0 -1 85020 0 9
+D2
+""
+""
+0 -1 85022 0 9
+-1
+S
+
+#85022
+"A Path Along a Cliff"
+"The walls east of you are craftfully built and look very thick.  Ivy tries to
+
+find his way up to the top, but presently only reaches a few feet up the
+
+thirty foot wall.  The cliff to the west seems quite high and peering over to
+
+look doesn't seem like a good idea.  The broad dirt path continues north and
+
+south.
+
+"
+""
+301465600 0
+5 9 0
+D0
+""
+""
+0 -1 85021 0 9
+D2
+""
+""
+0 -1 85023 0 9
+-1
+S
+
+#85023
+"A Path Along a Cliff"
+"The wide dirt path bends to the north and east here.  The inner side of the
+
+path curves around a roughly built stone wall a few feet high, whilst the
+
+outer side of the path converts itself into a vertical fall as it meets with
+
+the edge of the cliff.  Far below the sounds of rushing water can be heard.
+
+"
+""
+301465600 0
+5 9 0
+D0
+""
+""
+0 -1 85022 0 9
+D1
+""
+""
+0 -1 85024 0 9
+-1
+S
+
+#85024
+"A Path Along a Cliff"
+"To the north a grand structure stands tall, looking newly built.  A rounded
+
+tower extends over thirty feet towards the sky, marking the corner of the
+
+structure.  To the northeast you catch a glimps of a large gate which appears
+
+to be the entrance.  The broad dirt path continues the the west and east, but
+
+is met to the south by the edge of a tall cliff.
+
+"
+""
+301465600 0
+5 9 0
+D1
+""
+""
+0 -1 85001 0 9
+D3
+""
+""
+0 -1 85023 0 9
+-1
+S
+
+#85025
+"Hall of Memories"
+"A brilliant light shines from an orb hanging from the ceiling illuminating the
+
+entire corridor.  Several square openings can be seen at the top of the walls
+
+on either side.  A faint breeze can be felt coming from above.  Three
+
+pictures, one on the north side and one on the south side of the wall decorate
+
+this otherwise gloomy hallway.  To the east there is a granite archway leading
+
+to a rather large room and to the west is back to the heart of the stronghold.
+
+"
+""
+335020037 0
+0 6 0
+D1
+""
+""
+98304 -1 85026 0 6
+D3
+""
+""
+98304 -1 85011 0 6
+E
+"picture manee"
+"You can see an about 4'5\" high dwarf with a bald head and brownish blackish
+
+beard which reaches down to his belt.  His head, which is mounted on rather
+
+broad shoulders, is decorated with a tattoo showing an ancient battle scene
+
+between dwarves and orcs in front of the gates of a town.  The orcs seem to be
+
+losing the fight.  There is only a small difference in the color of his
+
+elemental tanned skin and his brown eyes.  On the back of his hands you can
+
+see many dark hairs and a fust of leather grease and weapon oil surrounds him.
+
+"
+E
+"picture kaldin"
+"Before you stands a tall elvish male, his black hair half pulled back behind
+
+his head to form a lose ponytail.  Peering up from his raven locks, large,
+
+round eyes that form deep pools of blue look out.  His thin legs tremble as
+
+they work to support the rest of his frame looking as though they may give out
+
+at any second.  A button nose is placed upon his thin face as two point ears
+
+prick up on either side.
+
+"
+E
+"picture jarak"
+"Before you stands a large, well-built man with deep dark eyes.  Broad
+
+shoulders frame a well-muscled body.  His hair falls in a long raven black
+
+plait to beneath his shoulders.  His dark, well-tanned skin is that of a
+
+person who spends much time outdoors.  Many small black scars run across his
+
+neck in a criss crossed pattern.  His face is set in a grim visage of one who
+
+has seen hard times.  Large powerful hands look well used to hard work.  Dark
+
+eyes seem to stare right though you as his gaze moves around as if searching
+
+for something.
+
+"
+A
+""
+""
+"act_room( #glist, ch );
+
+"
+E
+"glist"
+"@yThe golden statue of the elven bard glistens and sparkles with perfection.@n
+
+"
+!
+2 200 0
+4070 17 1509949540 -2 0
+-1
+S
+
+#85026
+"Sparring Chamber"
+"Scorch marks and chipped pieces of granite litter this huge room.  A brilliant
+
+light shines from an orb hanging from the ceiling, chasing away the darkness. 
+
+An occasional shard of metal or a link from some armor will shine in the
+
+light.  The room is divided in half with a scuffed up white line.  Another
+
+faded white line, divides the room into equal fourths.  On each side of the
+
+room, a small half-circle is inscribed.  Perhaps this room isn't just used for
+
+sparring.  The only exit is the archway to the west.
+
+"
+""
+402161669 0
+0 6 0
+D3
+""
+""
+98304 -1 85025 0 6
+-1
+S
+
+#85027
+"Indoor Pool"
+"A narrow lip of marble tiles lines the rim of large pool set into the floor of
+
+this room.  A set of marble steps rises from the western edge of the pool and
+
+towards an archway in the western wall that appears to be the only way out.
+
+The pool's bottom is lined with a tile mosaic of a silvery shield engraved
+
+witha gleaming white sword and a black crest.
+
+"
+""
+335020037 0
+6 6 0
+D3
+""
+""
+0 -1 85014 0 6
+E
+"pool"
+"It looks like a perfect place to practice swimming.
+
+"
+A
+"swim"
+"pool"
+"if( is_exhausted( ch ) ) {
+
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+
+  end;
+
+}
+
+modify_move( ch, -10 );
+
+if( check_skill( ch, swimming, random( 7, 10 ) ) ) {
+
+  send_to_char( \"You perform a flawless lap in the pool.\", ch );
+
+}
+
+else {
+
+  act_tochar( \"You perform a lap in the pool but swallow some water in the process.\", ch );
+
+}
+
+use_skill( ch, swimming );
+
+"
+!
+0 0 0
+-1
+S
+
+#0
+

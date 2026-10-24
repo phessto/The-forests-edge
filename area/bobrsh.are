@@ -1,0 +1,1598 @@
+#AREA
+"BoBr Stronghold"
+"Olah"
+""
+1 0
+0
+0
+#ROOMS
+
+#90000
+"A Damp Cavern"
+"The floor of the cave is wet and swampy, and the air is quite musty.  The
+
+steady sound of dripping water echoes down into the cave.  The walls of the
+
+cave are rough and jagged with various types of vegetation growing on parts
+
+the rock surface.  The cave passage continues to the east.
+
+"
+""
+301596676 0
+11 7 0
+D1
+""
+""
+0 -1 90001 0 6
+D4
+""
+""
+98466 -1 23096 0 6
+A
+"push"
+"boulder"
+"if( is_open( room, up ) )
+
+  act_tochar( #why, ch );
+
+else {
+
+  act_tochar( #push, ch );
+
+  act_notchar( #npush, ch );
+
+  open( room, up );
+
+  }
+
+"
+E
+"why"
+"The boulder has already been pushed aside.
+
+"
+E
+"push"
+"You push the boulder aside, revealing an opening in the ceiling.
+
+"
+E
+"npush"
+"$n pushes the boulder aside, revealing an opening in the ceiling.
+
+"
+!
+0 0 0
+A
+"pull"
+"boulder"
+"if( is_open( room, up ) ) {
+
+  act_tochar( #pull, ch );
+
+  act_notchar( #npull, ch );
+
+  close( room, up );
+
+  }
+
+else
+
+  act_tochar( #why, ch );
+
+"
+E
+"pull"
+"You pull the boulder, sealing the opening.
+
+"
+E
+"npull"
+"$n pulls the boulder, sealing the opening.
+
+"
+E
+"why"
+"The boulder has already been pulled closed.
+
+"
+!
+0 0 0
+A
+""
+""
+"wait( 2 );
+
+if( is_open( room, up ) ) {
+
+  send_to_room( #close, room );
+
+  send_to_room( #close, find_room( 23096 ) );
+
+  close( room, up );
+
+  }
+
+"
+E
+"close"
+"The boulder rolls back and covers the opening.
+
+"
+!
+1 0 16
+-1
+S
+
+#90001
+"A Damp Cavern"
+"The dank air has caused much moisture to accumulate along the walls, ceilings,
+
+and soggy ground.  Due to the moisture, moss and other fungi have managed to
+
+grow at the intersection of the wall and ground, as well as along parts of the
+
+walls to the north and south.  The cavernous passage seems to open up if you
+
+head west.  To the east, light flickers in the distance, causing shadows to
+
+dance along the walls.
+
+"
+""
+301596676 0
+11 6 0
+D1
+""
+""
+0 -1 90002 0 6
+D3
+""
+""
+0 -1 90000 0 6
+-1
+S
+
+#90002
+"A Damp Cavern"
+"This section of the cave is quite well lit by two ornately gilded lamp stands
+
+fixed to the floor.  The ground here is muddy, with many deep imprints left by
+
+other travelers.  The walls of the cave are rough and jagged with various
+
+types of vegetation growing on parts the rock surface.  The cavern continues
+
+to the west.  A crude altar of twigs has been constructed in the center of the
+
+room.
+
+"
+""
+301596805 0
+11 6 0
+D1
+""
+""
+226 -1 90003 0 6
+D3
+""
+""
+0 -1 90001 0 6
+E
+"altar"
+"The crude altar is made of cedar wood.
+
+"
+E
+"lamps"
+"These beautifully gilded lamp stands are spaced around the room, providing
+
+ample light.  The stands themselves are wrought of iron, but trimmed in gold,
+
+an odd combination of the lavish and the useful.  Three bars twisted around
+
+one another provide the bases, and gold leaves are wrapped around each bar. 
+
+At the top, a decorated gold plate holds the burning oil lamp, reflecting its
+
+light around the room.
+
+"
+A
+"twist pull turn push"
+"lamps"
+"act_tochar( #fail, ch );
+
+"
+E
+"fail"
+"No amount of effort seems to be able to  dislocate the the lamp.
+
+"
+!
+0 0 0
+A
+"dance"
+"altar"
+"act_tochar( #dance, ch );
+
+act_notchar( #ndance, ch );
+
+if( is_player( ch ) ) {
+
+  if( is_open( room, east ) || !is_name( \"BoBr\", clan_abbrev( ch ) ) )
+
+    end;
+
+  wait( 1 );
+
+  act_tochar( #open, ch );
+
+  act_notchar( #nopen, ch );
+
+  send_to_room( #open2, find_room( 90003 ) );
+
+  open( room, east );
+
+  wait( 2 );
+
+  if( is_open( room, east ) ) {
+
+    send_to_room( #close, room );
+
+    send_to_room( #close2, find_room( 90003 ) );
+
+    close( room, east );
+
+    }
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"dance"
+"You dance rythmically around the altar.
+
+"
+E
+"ndance"
+"$n dances rhythmically around the altar.
+
+"
+E
+"open"
+"@RAs you finish your dance, you hear a loud noise just as the eastern wall
+
+fades from existance.
+
+"
+E
+"nopen"
+"@RAs $n finishes $s dance, you hear a loud noise just as the eastern wall fades
+
+from existence.
+
+"
+E
+"close"
+"@RThe east wall slowly fades into existance.@n
+
+"
+E
+"close2"
+"@RThe west wall slowly fades into existance.@n
+
+"
+E
+"open2"
+"@RThe west wall slowly fades from existance.@n
+
+"
+!
+0 0 0
+-1
+S
+
+#90003
+"A Large Cave"
+"The western wall is solid rock, with only a small plaque in the corner
+
+interupts the uniformity.  Draped across most of the ceiling is a large banner
+
+of the Bog Brigade.  There is a large fountain gurgling here, providing fresh
+
+water.  There is a large statue of a troll wielding a gigantic sword looms
+
+over the fountain.  There are tunnels leading in all directions, oil lamps set
+
+in ornate stands, illuminating the hall, adorn the room.
+
+"
+""
+301596677 0
+11 6 0
+D0
+""
+""
+0 -1 90005 0 6
+D1
+""
+""
+0 -1 90007 0 6
+D2
+""
+""
+0 -1 90006 0 6
+D3
+""
+""
+226 -1 90002 0 6
+D4
+""
+""
+98530 -1 90008 0 6
+E
+"lamps"
+"These beautifully gilded lamp stands are spaced around the room, providing
+
+ample light.  The stands themselves are wrought of iron, but trimmed in gold,
+
+an odd combination of the lavish and the useful.  Three bars twisted around
+
+one another provide the bases, and gold leaves are wrapped around each bar. 
+
+At the top, a decorated gold plate holds the burning oil lamp, reflecting its
+
+light around the room.
+
+"
+E
+"fountain"
+"This worn marble fountain is showing its age.  What once was probably a
+
+shining white, beautifully carved piece of art is now little more than a place
+
+to store water.  The marble is grey with age, and a ring of black marks the
+
+water line.  Near the wall where the water pours into it, various types of
+
+fungus have taken up residence.  The sides of the fountain have been worn
+
+down, being used as both table and bench.  The only positive thing to be said
+
+about it is the fact that the water it holds is perfectly clear, allowing you
+
+to see the clean marble at the bottom, giving a glimpse of how it once must
+
+have looked.
+
+"
+E
+"statue"
+"This enormous statue of a troll looms over all who enter, including other
+
+trolls.  Cut from a dark granite cut through with streaks of green, the statue
+
+depicts a giant of a troll wielding a great two-handed sword.  The trolls
+
+muscles are enormous, and are all visible as he is clothed in nothing more
+
+than a lion cloth to preserve his modesty, if he has such a thing.  For all
+
+the detail shown in the troll, the true work of art is the sword he wields. 
+
+Every detail of it is perfectly brought to life in stone, down to the
+
+leather-wrapped pommel and etched blade.  There is even a chip in the back
+
+edge of the blade, specifically chiseled away from the grain of the rock so as
+
+not to be mistaken as an accident.
+
+"
+E
+"plaque"
+"Inscribed on the plaque the words: Created with help from: Groob, Affenaut,
+
+and Fenix.  Financial Aid provided by: Groob, Grimslade and Kytorez.  In the
+
+lower left corner of the plaque there is a small green button.
+
+"
+A
+"twist"
+"pommel"
+"if( is_player( ch ) ) {
+
+  if( is_open( room, west ) || !is_name( \"BoBr\", clan_abbrev( ch ) ) )
+
+    end;
+
+  act_tochar( #twist, ch );
+
+  act_notchar( #ntwist, ch );
+
+  send_to_room( #open2, find_room( 90008 ) );
+
+  open( room, up );
+
+  wait( 3 );
+
+  if( is_open( room, up ) ) {
+
+    send_to_room( #close, room );
+
+    send_to_room( #close2, find_room( 90008 ) );
+
+    close( room, up );
+
+    }
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"twist"
+"@MAs you twist the pommel of the gigantic statue's sword, you hear a loud
+
+*THUD* as a stone ladder drops from the ceiling, and a stone slab swings down
+
+revealing an opening.@n
+
+"
+E
+"ntwist"
+"@MAs $n twists the pommel of the gigantic statue's sword, you hear a loud
+
+*THUD* as a stone ladder drops from the ceiling, and a stone slab swings down
+
+revealing an opening.@n
+
+"
+E
+"close"
+"@MWith a *ChingChingChing* the ladder disappears into the ceiling.@n
+
+"
+E
+"close2"
+"@MWith a *ChingChingChing* the ladder slides up, preventing you from going
+
+down.@n
+
+"
+E
+"open2"
+"@MThe floor opens up, sliding a ladder down the tunnel with a loud *THUD*.@n
+
+"
+!
+0 0 0
+A
+"push"
+"button"
+"if( is_open( room, west ) || !is_name( \"BoBr\", clan_abbrev( ch ) ) )
+
+  end;
+
+act_tochar( #open, ch );
+
+act_notchar( #nopen, ch );
+
+send_to_room( #open2, find_room( 90002 ) );
+
+open( room, west );
+
+wait( 2 );
+
+if( is_open( room, west ) ) {
+
+  send_to_room( #close, room );
+
+  send_to_room( #close, find_room( 90002 ) );
+
+  close( room, west );
+
+  }
+
+"
+E
+"open"
+"@RAs you push the button, the western wall fades from existance.@n
+
+"
+E
+"nopen"
+"@RAs $n pushes the button, the western wall fades from existance.@n
+
+"
+E
+"close"
+"@RThe wall slowly fades into existance.@n
+
+"
+E
+"open2"
+"@RThe eastern wall fades from existence.@n
+
+"
+!
+0 0 0
+A
+""
+""
+"send_to_room( #twinkle, room );
+
+"
+E
+"twinkle"
+"@BThe twinkle of the lamps creates eerie shadows around the room.@n
+
+"
+!
+2 1000 0
+A
+""
+""
+"send_to_room( #fish, room );
+
+"
+E
+"fish"
+"@CA small fish splashes water as it jumps about in the fountain.@n
+
+"
+!
+2 600 0
+4165 17 1509949540 -2 0
+-1
+S
+
+#90004
+"A Small Alcove"
+"The north and south walls of the shop are lined with compartments, most of
+
+them stocked with tightly rolled scrolls, others with potions.  The eastern
+
+wall has a large mural of a Lizardman in battle.  There is a small desk where
+
+it is evident that someone has been scribing scrolls.  The tunnel leads to the
+
+west.
+
+"
+""
+301596677 0
+11 6 0
+D3
+""
+""
+0 -1 90005 0 6
+E
+"desk"
+"A small oaken desk covered in ink jars and unfinished scrolls.  A small lamp
+
+twinkles from the edge of the desk.
+
+"
+E
+"mural"
+"The painting shows a well muscled lizardman pulling back a warbow, preparing
+
+to fire.
+
+"
+A
+""
+""
+"act_room( #twinkle, ch );
+
+"
+E
+"twinkle"
+"@bA small lamp twinkles faintly, almost going out.@n
+
+"
+!
+2 600 0
+2624 9 1509949540 3 0
+1020 17 1509949490 -1 0
+305 17 1509949465 -1 0
+1008 17 1509949500 -1 0
+1021 17 1509949465 -1 0
+1025 17 1509949530 -1 0
+-1
+S
+
+#90005
+"A Cluttered Tunnel"
+"The walls of the cave are lined with shelves which are covered with hundreds
+
+of labelled bottles and boxes.  There is a desk that is a mess of charts and
+
+lists of spells and components.  Oil lamps provide the light to the area.  The
+
+tunnel curves from a larger cave to the south, to east.
+
+"
+""
+301596676 0
+11 6 0
+D1
+""
+""
+0 -1 90004 0 6
+D2
+""
+""
+0 -1 90003 0 6
+E
+"shelves bottle boxes charts"
+"All kinds of strange objects clutter every inch of space.
+
+"
+E
+"lamps"
+"These beautifully gilded lamp stands are spaced around the room, providing
+
+ample light.  The stands themselves are wrought of iron, but trimmed in gold,
+
+an odd combination of the lavish and the useful.  Three bars twisted around
+
+one another provide the bases, and gold leaves are wrapped around each bar. 
+
+At the top, a decorated gold plate holds the burning oil lamp, reflecting its
+
+light around the room.
+
+"
+A
+""
+""
+"act_room( #twinkle, ch );
+
+"
+E
+"twinkle"
+"@BThe twinkle of the lamps creates eerie shadows around the room.@n
+
+"
+!
+2 1000 0
+2623 9 1509949540 3 0
+249 17 1509949500 -1 0
+1269 17 1509949510 -1 0
+2376 17 1509949530 -1 0
+415 17 1509949530 -1 0
+81 17 1509949530 -1 0
+189 17 1509949530 -1 0
+-1
+S
+
+#90006
+"Sleeping Chamber"
+"This is the sleeping chamber for a small army.  There are maps hanging on
+
+every wall, even one draped across the ceiling, each one of a large piece of
+
+realm.  The room has straw bedding covering the entire floor of the chamber. 
+
+In niches along the south wall of the room are busts of the gods Kerog and
+
+Ulthi, along with a small water trough.  Ornate lampstands built into the wall
+
+provide light to the area.  Pointing northward from the southern wall is a
+
+long obsidian lever.
+
+"
+"[Olah] action leads to arena room #90014
+
+"
+301596677 0
+11 6 0
+D0
+""
+""
+0 -1 90003 0 6
+D1
+""
+""
+0 -1 90009 0 6
+D3
+""
+""
+98466 -1 90014 0 7
+E
+"maps"
+"It seems like the whole realm has been mapped out here.
+
+"
+E
+"busts Kerog Ulthi"
+"These ancient statuettes look worn down with age.
+
+"
+E
+"lampstands"
+"These beautifully gilded lamp stands are spaced around the room, providing
+
+ample light.  The stands themselves are wrought of iron, but trimmed in gold,
+
+an odd combination of the lavish and the useful.  Three bars twisted around
+
+one another provide the bases, and gold leaves are wrapped around each bar. 
+
+At the top, a decorated gold plate holds the burning oil lamp, reflecting its
+
+light around the room.
+
+"
+A
+""
+""
+"act_room( #twinkle, ch );
+
+"
+E
+"twinkle"
+"@BThe twinkle of the lamps creates eerie shadows around the room.@n
+
+"
+!
+2 600 0
+A
+"pull"
+"lever"
+"act_tochar( #pull, ch );
+
+act_notchar( #npull, ch );
+
+transfer( ch, find_room( 90014 ) );
+
+act_notchar( #narrive, ch );
+
+"
+E
+"pull"
+"You pull the lever and suddenly feel yourself dematerializing and pulled to
+
+the combat chamber.
+
+"
+E
+"npull"
+"$n pulls the lever and dematerializes.
+
+"
+E
+"narrive"
+"$n suddenly materializes before you, ready for combat.
+
+"
+!
+0 0 0
+1878 17 1509949540 -2 0
+1878 17 1509949540 -2 0
+-1
+S
+
+#90007
+"The Armor Forge"
+"The walls are jagged and scratched, likely a mined cavern.  There are several
+
+tools scattered around, with many pieces of armor are laying around the cave
+
+waiting for the smith's attention.  The smithy appears to be keeping good
+
+business, as there seem to be many projects in various levels of completion. 
+
+Piles of wood are stacked next to a large forge.  There is a large well worn
+
+anvil in the center of the chamber.
+
+"
+""
+301596677 0
+11 6 0
+D3
+""
+""
+0 -1 90003 0 6
+E
+"forge"
+"A very large forge has been cut into the rock walls.  Heat flows from it at an
+
+intense rate.
+
+"
+E
+"anvil"
+"The anvil appears to be of mithril and been in use for hundreds of years.
+
+"
+A
+"bang"
+"anvil"
+"act_tochar( #bang, ch );
+
+act_notchar( #nbang, ch );
+
+act_area( #abang, ch );
+
+"
+E
+"bang"
+"@GAs you bang on the anvil, a loud *Clang* echoes though the caves.@n
+
+"
+E
+"abang"
+"@GA loud *Clang* echoes throughout the caves.@n
+
+"
+E
+"nbang"
+"@G$n bangs on the anvil, sending a loud *Clang* echoing through the caves.@n
+
+"
+!
+0 0 0
+2636 9 1509949540 3 0
+646 17 1509949540 -1 0
+644 17 1509949540 -1 0
+645 17 1509949540 -1 0
+2042 17 1509949540 -1 0
+2022 17 1509949540 -1 0
+2002 17 1509949540 -1 0
+-1
+S
+
+#90008
+"Storeroom"
+"You are in a very large and cavernous room.  There is a small tunnel in the
+
+center of the room leading down, with a ladder in it.  Next to the hole is
+
+small lever.  Another tunnel leads of to the east.  Large mithril doors are
+
+set in the walls to the north, east, and west.  Stalagmites and stalactites
+
+hang all over the chamber.  To the south is a foot-long stalagmite that
+
+protrudes from the wall.
+
+"
+""
+301596677 0
+11 6 0
+D0
+"large mithril door"
+""
+1 3373 90010 0 6
+D1
+"large mithril door"
+""
+1 3373 90011 0 6
+D2
+""
+""
+98466 -1 90012 0 6
+D3
+"large mithril door"
+""
+1 3373 90013 0 6
+D5
+""
+""
+98530 -1 90003 0 6
+E
+"chest treasures armours coins weapons reagents"
+"There are all kinds of chests each having its own label: Treasures, Armours,
+
+Coins, Weapons, Regeants are all labels you can read.  There is also one that
+
+seems to be scratched out.
+
+"
+A
+"pull"
+"lever"
+"if( is_open( room, down ) )
+
+  end;
+
+act_tochar( #pull, ch );
+
+act_notchar( #npull, ch );
+
+send_to_room( #open2, find_room( 90003 ) );
+
+open( room, down );
+
+wait( 3 );
+
+if( is_open( room, down ) ) {
+
+  send_to_room( #close, room );
+
+  send_to_room( #close2, find_room( 90003 ) );
+
+  close( room, down );
+
+  }
+
+"
+E
+"pull"
+"@MYou pull on the lever, and the floor opens up, sliding a ladder down the
+
+tunnel with a loud *THUD*.@n
+
+"
+E
+"npull"
+"@M$n pulls on the lever, and the floor opens up, sliding a ladder down the
+
+tunnel with a loud *THUD*.@n
+
+"
+E
+"close"
+"@MWith a *ChingChingChing* the ladder slides up, preventing you from going
+
+down.@n
+
+"
+E
+"close2"
+"@MWith a *ChingChingChing* the ladder slides up, preventing you from going
+
+up.@n
+
+"
+E
+"open2"
+"@MWith a *ChingChingChing* a ladder slides down, allowing you passage
+
+upward.@n
+
+"
+!
+0 0 0
+A
+"pull"
+"1 south stalagmite"
+"if( is_player( ch ) )  {
+
+  act_tochar( #pull, ch );
+
+  act_notchar( #npull, ch );
+
+  wait( 1 );
+
+  if( is_name( \"BoBr\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #trans, ch );
+
+    act_notchar( #ntrans, ch );
+
+    transfer( ch, find_room( 90012 ) );
+
+    act_notchar( #narrive, ch );
+
+    }
+
+  else
+
+    act_tochar( #fail, ch );
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"pull"
+"You pull on the stalagmite protruding from the southern wall.
+
+"
+E
+"npull"
+"$n pulls on the stalagmite protruding from the southern wall.
+
+"
+E
+"trans"
+"You feel yourself dematerialize and get pulled to a new location.
+
+"
+E
+"ntrans"
+"$n suddenly dematerializes.
+
+"
+E
+"narrive"
+"@C$n suddenly materializes.@n
+
+"
+E
+"fail"
+"You feel a slight tugging sensation.
+
+"
+!
+0 0 0
+A
+"open unlock untrap"
+"chest treasures armours coins weapons regeants"
+"act_tochar( #fail, ch );
+
+act_notchar( #nfail, ch );
+
+loop( all_in_room ) {
+
+  i = 1d50+20;
+
+  dam_message( rch, i, \"+The poison-tipped arrows\" );
+
+  inflict( rch, null, i, \"Poison-tipped arrows\" );
+
+  if( rch )
+
+    poison( rch );
+
+}
+
+"
+E
+"fail"
+"As you attempt to play with the chest, it suddenly lets out a multitude of
+
+poison-tipped arrows!
+
+"
+E
+"nfail"
+"As $n attempts to play with the chest, it suddenly lets out a multitude of
+
+poison-tipped arrows!
+
+"
+!
+0 0 0
+167 17 1509949540 -2 0
+2837 137 1509949540 3 0
+-1
+S
+
+#90009
+"Brigadier Bank"
+"The encampment's bank is a fairly large square room with a gate through the
+
+middle separating customers from the bank's daemon tellers.  There are ropes
+
+on poles creating lines for customers to follow, and the walls here are
+
+chiseled down to a smooth surface with pictures of beautiful swamplands
+
+adorning them.  A tunnel leads back to the west into the sleeping chamber.
+
+"
+""
+301598725 0
+11 6 0
+D3
+""
+""
+0 -1 90006 0 6
+-1
+S
+
+#90010
+"A Damp Pit"
+"The cave here is roughly cut, and the floor lost to a foot of murky water. 
+
+The walls are bare and wet.  The only exit is way up a boulder above your
+
+head.  Skeletons of all kinds poke out of the water.
+
+"
+""
+301596676 0
+11 6 0
+D2
+"large mithril door"
+""
+1 3373 90008 0 6
+E
+"skeletons bones"
+"All kinds of skeletons can be seen, some still have meat on them.
+
+"
+E
+"1 up boulder"
+"The boulder is rather immense and covered in blood.
+
+"
+A
+""
+""
+"if( is_player( ch ) ) {
+
+  if( !is_name( \"BoBr\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #fall, ch );
+
+    act_notchar( #nfall, ch );
+
+    i = 4d10+10;
+
+    dam_message( ch, i, \"The fall\" );
+
+    inflict( ch, null, i, \"Falling down a pit\" );
+
+    close( room, south );
+
+    lock( room, south );
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"fall"
+"You suddenly fall into a pit, landing on a boulder!
+
+"
+E
+"nfall"
+"$n suddenly falls into a pit and lands on a boulder!
+
+"
+!
+1 0 4
+A
+"climb"
+"1 up boulder"
+"act_tochar( #climb, ch );
+
+act_notchar( #nclimb, ch );
+
+wait( 1 );
+
+act_tochar( #fall, ch );
+
+act_notchar( #nfall, ch );
+
+i = 2d15+10;
+
+dam_message( ch, i, \"Falling down the boulder\" );
+
+inflict( ch, null, i, \"Falling down a boulder\" );
+
+"
+E
+"climb"
+"You begin climbing up the boulder.
+
+"
+E
+"nclimb"
+"$n begins climbing up the boulder.
+
+"
+E
+"fall"
+"You lose your footing and fall, smacking your head on a small rock.
+
+"
+E
+"nfall"
+"$n loses $s footing and fall, smacking $s head on a small boulder.
+
+"
+!
+0 0 0
+-1
+S
+
+#90011
+"A Weapon Forge"
+"The walls are jagged and scratched, likely a mined cavern.  There are several
+
+tools scattered around, with many tools of battle are laying around the cave
+
+waiting for the smith's attention.  The smithy appears to be keeping good
+
+business, as there seem to be many projects in various levels of completion. 
+
+Piles of wood are stacked next to a large forge.  There is a large well worn
+
+anvil in the center of the chamber.
+
+"
+""
+301596677 0
+11 6 0
+D3
+"large mithril door"
+""
+1 3373 90008 0 6
+E
+"forge"
+"A very large forge has been cut into the rock walls.  Heat flows from it at an
+
+intense rate.
+
+"
+E
+"anvil"
+"The anvil appears to be of mithril and been in use for hundreds of years.
+
+"
+A
+"bang"
+"anvil"
+"act_tochar( #bang, ch );
+
+act_notchar( #nbang, ch );
+
+act_area( #bang2, ch );
+
+"
+E
+"bang"
+"@GAs you bang on the anvil, a loud *Clang* echoes though the caves.@n
+
+"
+E
+"nbang"
+"@GAs $n bangs on the anvil, a loud *Clang* echoes though the caves.@n
+
+"
+E
+"bang2"
+"@GA loud *Clang* echoes through the caves.@n
+
+"
+!
+0 0 0
+2635 9 1509949540 3 0
+-1
+S
+
+#90012
+"The Vault"
+"This is the storage room, where members of the Bog Brigade may come to store
+
+their equipment, or to leave what they have spare for others to use.  Bright
+
+lamps lining the walls provide ample light for this room.  All the walls are
+
+made of solid mithril.  A button is located on the northern wall.
+
+"
+""
+301596709 0
+11 6 0
+D0
+""
+""
+98466 -1 90008 0 6
+A
+"push"
+"button"
+"if( is_player( ch ) ) {
+
+  act_tochar( #push, ch );
+
+  act_notchar( #npush, ch );
+
+  wait( 1 );
+
+  if( is_name( \"BoBr\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #trans, ch );
+
+    act_notchar( #ntrans, ch );
+
+    transfer( ch, find_room( 90008 ) );
+
+    act_notchar( #narrive, ch );
+
+    }
+
+  else
+
+    act_tochar( #fail, ch );
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"push"
+"You push on the button on the northern wall.
+
+"
+E
+"npush"
+"$n pushes on the button on the northern wall.
+
+"
+E
+"trans"
+"You feel yourself dematerialize and get pulled to a new location.
+
+"
+E
+"ntrans"
+"$n suddenly dematerializes.
+
+"
+E
+"narrive"
+"@C$n suddenly materializes.@n
+
+"
+E
+"fail"
+"You feel a slight tugging sensation.
+
+"
+!
+0 0 0
+-1
+S
+
+#90013
+"A Damp Pit"
+"The cave here is roughly cut, and the floor lost to a foot of murky water. 
+
+The walls are bare and wet.  The only exit is way up above your head. 
+
+Skeletons of all kinds poke out of the water.
+
+"
+""
+301596676 0
+11 6 0
+D1
+"large mithril door"
+""
+1 3373 90008 0 6
+E
+"skeletons bone"
+"All kinds of skeletons can be seen, some still have meat on them.
+
+"
+E
+"1 up boulder"
+"The boulder is rather immense and covered in blood.
+
+"
+A
+""
+""
+"if( is_player( ch ) ) {
+
+  if( !is_name( \"BoBr\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #fall, ch );
+
+    act_notchar( #nfall, ch );
+
+    i = 4d10+10;
+
+    dam_message( ch, i, \"The fall\" );
+
+    inflict( ch, null, i, \"Falling down a pit\" );
+
+    close( room, east );
+
+    lock( room, east );
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"fall"
+"You suddenly fall into a pit, landing on a boulder!
+
+"
+E
+"nfall"
+"$n suddenly falls into a pit and lands on a boulder!
+
+"
+!
+1 0 2
+A
+"climb"
+"1 up boulder"
+"act_tochar( #climb, ch );
+
+act_notchar( #nclimb, ch );
+
+wait( 1 );
+
+act_tochar( #fall, ch );
+
+act_notchar( #nfall, ch );
+
+i = 2d15+10;
+
+dam_message( ch, i, \"Falling down the boulder\" );
+
+inflict( ch, null, i, \"Falling down a boulder\" );
+
+"
+E
+"climb"
+"You begin climbing up the boulder.
+
+"
+E
+"nclimb"
+"$n begins climbing up the boulder.
+
+"
+E
+"fall"
+"You lose your footing and fall, smacking your head on a small rock.
+
+"
+E
+"nfall"
+"$n loses $s footing and fall, smacking $s head on a small boulder.
+
+"
+!
+0 0 0
+-1
+S
+
+#90014
+"Combat Chamber"
+"This is the Bog Brigade's chamber of combat.  In these rooms the soldiers of
+
+the brigade hone their skills through combat.  The walls are littered with odd
+
+scribbles of scores between various fighters, as well as pictures of fierce
+
+battles which have been scribbled here.  There is a large chain dangling from
+
+the ceiling.
+
+"
+"[Olah] action leads out into regen room #90006
+
+"
+368738309 0
+11 7 0
+D1
+""
+""
+98466 -1 90006 0 7
+D2
+""
+""
+0 -1 90015 0 7
+A
+"pull"
+"chain"
+"act_tochar( #pull, ch );
+
+act_notchar( #npull, ch );
+
+transfer( ch, find_room( 90006 ) );
+
+act_notchar( #narrive, ch );
+
+"
+E
+"pull"
+"You pull the large chain dangling from the ceiling and suddenly feel yourself
+
+dematerialize.
+
+"
+E
+"npull"
+"$n pulls the large chain dangling from the ceiling and dematerializes.
+
+"
+E
+"narrive"
+"$n suddenly materializes before you.
+
+"
+!
+0 0 0
+-1
+S
+
+#90015
+"Combat Chamber"
+"This is the Bog Brigade's chamber of combat.  In these rooms the soldiers of
+
+the brigade hone their skills through combat.  The walls are littered with odd
+
+scribbles of scores between various fighters, as well as pictures of fierce
+
+battles which have been scribbled here.
+
+"
+""
+368738309 0
+11 7 0
+D0
+""
+""
+0 -1 90014 0 7
+D2
+""
+""
+0 -1 90016 0 7
+-1
+S
+
+#90016
+"Combat Chamber"
+"This is the Bog Brigade's chamber of combat.  In these rooms the soldiers of
+
+the brigade hone their skills through combat.  The walls are littered with odd
+
+scribbles of scores between various fighters, as well as pictures of fierce
+
+battles which have been scribbled here.
+
+"
+""
+368738309 0
+11 7 0
+D0
+""
+""
+0 -1 90015 0 7
+-1
+S
+
+#0
+

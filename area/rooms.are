@@ -1,0 +1,1965 @@
+#AREA
+"Bounty Hunters"
+"Tsukurite"
+""
+40 0
+3
+6
+#ROOMS
+
+#11950
+"A Ledge on a Cliff"
+"This rocky outcrop in the side of the cliff provides a good place for rest
+
+before completing the rest of the climb.  The ledge has a slight overhang,
+
+over which a long drop can be seen.  Upward the path appears far easier, and
+
+could be scaled with ease.  Small plants have managed somehow to find purchase
+
+in thin crevices on the cliff face, and are the only visible form of life in
+
+this small space.
+
+"
+""
+301465600 0
+4 5 0
+D4
+""
+""
+0 -1 11951 0 6
+D5
+""
+""
+1066 -1 11236 0 6
+E
+"plants small crevice face"
+"Here small plants cling to life in crevices in the rocky cliff face.  They
+
+provide no purchase on the cliff itself, if anything impeding progress.
+
+"
+E
+"overhang ledge drop"
+"Where this ledge protrudes from the side of the cliff face, it overhangs the
+
+cliff further down, obscuring the view of the cliff below.  A long drop is
+
+visible when approaching the edge of the overhang.
+
+"
+A
+"3 Climb"
+"1 down"
+"if( find_skill( ch, climb ) > 6 ) {
+
+  use_skill( ch, climb );
+
+  act_tochar( #up, ch );
+
+  act_notchar( #nup, ch );
+
+  wait(1);
+
+  act_tochar( #tired, ch );
+
+  transfer( ch, find_room( 11236 ) );
+
+  modify_move( ch, -5 );
+
+  act_notchar( #arri, ch );
+
+  loop( followers ) {
+
+    ch = rch;
+
+    acode( room, 1 );
+
+  }
+
+}
+
+else {
+
+  act_tochar( #hurt, ch );
+
+  act_notchar( #nhurt, ch );
+
+  wait(1);
+
+  transfer( ch, find_room( 11236 ) );
+
+  act_notchar( #fall, ch );
+
+  dam_message( ch, 4d5+35, \"The fall\" );
+
+  inflict( ch, null, 4d5+35, \"falling down a cliff\" );
+
+  modify_move( ch, -10 );
+
+  set_resting( ch );
+
+}
+
+"
+E
+"up"
+"@mYou lower yourself over the side of the the cliff face, and begin to slowly
+
+climb down.@w
+
+"
+E
+"nup"
+"$n climbs over the side of the cliff and makes $s way down.
+
+"
+E
+"tired"
+"@mAs you begin to weary and worry about the fall possibly awaiting you, you
+
+reach the base of the cliff at last.@w
+
+"
+E
+"arri"
+"$n arrives from above.
+
+"
+E
+"hurt"
+"@rYou attempt to climb down the cliff, but lose your grip and fall!@w
+
+"
+E
+"nhurt"
+"$n attempts to climb down the cliff, but loses $s grip and falls down!
+
+"
+E
+"fall"
+"$n comes falling down the cliff.
+
+"
+!
+0 0 1
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@WYou climb up the last part of the cliff with ease.@w
+
+"
+!
+3 0 16
+-1
+S
+
+#11951
+"A Hillside Trail"
+"This trail begins at the top of the cliff, to the west.  It appears little
+
+used, and indeed seems to have only recently been cleared or debris.  Piles of
+
+dead brush and several large stones can be seen piled to the sides of the
+
+trail, creating a pathway leading to the east.
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 11952 0 6
+D5
+""
+""
+0 -1 11950 0 6
+E
+"pile stone brush dead"
+"Piles of stones dead brush have been cleared away from the trail here, and
+
+deposited in piles to either side of the path.
+
+"
+E
+"cliff"
+"The cliff here drops fairly sharply to the west.  However the way is still
+
+traversable.
+
+"
+-1
+S
+
+#11952
+"A Hillside Trail"
+"The path here runs in a straight line from east to west, in a small gully in
+
+the hillside.  To the north the ground rises very steeply and is fringed with
+
+saplings, while to the south the steep hillside is blocked by larger trees
+
+clutching its face.  Far to the east the hill can be seen to rise, making it
+
+appear almost a mountain.
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 11953 0 6
+D3
+""
+""
+0 -1 11951 0 6
+E
+"saplings north"
+"Small saplings cling to the hillside to the north of the trail on the
+
+hillside.  The hill rises sharply, and is impassable.
+
+"
+E
+"trees south"
+"To the south the hillside drops, with larger trees clinging to it.
+
+"
+-1
+S
+
+#11953
+"A Hillside Trail"
+"Here the hill's slope northward is far more pronounced, its angle more
+
+extreme.  Through a gap in the treeline far up to the east can be glimpsed a
+
+large structure of unknown purpose.  The path here runs on an east-west axis,
+
+with small piles of stones and brush to either side of the trail.
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 11954 0 6
+D3
+""
+""
+0 -1 11952 0 6
+E
+"stones piles brush"
+"Piles of stones dead brush have been cleared away from the trail here, and
+
+deposited in piles to either side of the path.
+
+"
+E
+"gap treeline structure"
+"From this distance the structure is indistinct, and could be any size as there
+
+is nothing nearby to compare it with.  It peeks through the line of trees
+
+which is visible further east.
+
+"
+-1
+S
+
+#11954
+"A Hillside Trail"
+"Here the trail has a transitionary appearance - it appears to be recently used
+
+by many people, but there are many signs that it had previously become
+
+overgrown.  Small shrubs have been crushed underfoot, and ruts have begun to
+
+appear in the hard ground.  Here the path turns bends from the west to the
+
+south, and southward can be seen evidence of several small structures in
+
+various states of disrepair.
+
+"
+""
+301465600 0
+4 6 0
+D2
+""
+""
+0 -1 11955 0 6
+D3
+""
+""
+0 -1 11953 0 6
+E
+"structure south disrepair"
+"South of here some small buildings can be seen.  They appear to have been
+
+abandoned for some time.
+
+"
+E
+"rut shrub"
+"The ground is slightly rutted here, as if carts have recently been dragged
+
+along it.  Shrubs have been crushed under wheel and foot.
+
+"
+2897 9 1509949540 3 0
+-1
+S
+
+#11955
+"A Hillside Trail"
+"Here the path runs from the north to the south, and is becoming well-worn.  It
+
+appears to have only recently been uncovered, although there are signs that it
+
+may have once been a frequently used pathway.  To the south several structures
+
+can be seen, in various states of disrepair.  Higher on the hill to the east
+
+is a large, ominous structure,
+
+"
+""
+301465600 0
+4 6 0
+D0
+""
+""
+0 -1 11954 0 6
+D2
+""
+""
+0 -1 11956 0 6
+E
+"pathway signs"
+"The path here is scuffed as if it has been recently cleared of scrubby
+
+undergrowth.
+
+"
+E
+"ominous east hill structure"
+"High on the hill to the east, you can see a large building which appears to be
+
+abandoned.
+
+"
+-1
+S
+
+#11956
+"Hillside Trail - Outside a Cottage"
+"Here the trail passes a small cottage.  There are signs of traffic having
+
+passed through here, and signs that the cottage may be currently in use.
+
+Light flickers through the holes in the walls where windows once were.  Marks
+
+can be seen on the ground where things have been carried to and from the
+
+cottage.  Further south another slightly bigger, but more ruinous structure is
+
+visible,
+
+"
+""
+301465601 0
+4 6 0
+D0
+""
+""
+0 -1 11955 0 6
+D1
+""
+""
+0 -1 11957 0 6
+D2
+""
+""
+0 -1 11958 0 6
+E
+"holes wall light"
+"The building to the east is fairly dilapidated.  Its walls look to have been
+
+recently patched where holes had formed, and the windows are boarded over as a
+
+temporary respite from the elements.  There appears to be no door, merely a
+
+curtain lined with waxed leather.
+
+"
+E
+"signs"
+"Here the road is rutted, with many scuff marks headed into and out of the
+
+small cottage to the east.
+
+"
+A
+""
+""
+"send_to_room( #enters, find_room( 11957 ) );
+
+continue;
+
+"
+E
+"to_char"
+"@WYou push through the curtain to the east.
+
+"
+E
+"enters"
+"@WThe curtain to the west moves to one side as someone pushes through.
+
+"
+!
+3 0 2
+2914 9 1509949540 3 0
+2914 9 1509949540 3 0
+-1
+S
+
+#11957
+"A Small Ruined Cottage"
+"The inside of this cottage is suprisingly warm, thanks to a large fireplace
+
+set into the eastern wall.  Small efforts at repair have been made, mainly to
+
+the roof, which has been patched up against the elements.  It appears that
+
+efforts have been made to turn this place into some kind of command centre -
+
+the wall is hung with several maps, and the large desk occupying the corner of
+
+the room is full of papers.
+
+"
+""
+301465605 0
+0 7 0
+D3
+""
+""
+0 -1 11956 0 6
+E
+"fireplace east"
+"This fireplace has seen better days.  It is soot-stained and grubby, choked
+
+with old ash.  However, it seems to fulfil its purpose in providing warmth for
+
+the room.
+
+"
+A
+""
+""
+"send_to_room( #enters, find_room( 11956 ) );
+
+continue;
+
+"
+E
+"to_char"
+"@WYou push through the curtain to the west.
+
+"
+E
+"enters"
+"@WThe curtain to the east moves to one side as someone exits the building.
+
+"
+!
+3 0 8
+4914 17 1509949540 -2 0
+1754 17 1509949540 -2 0
+47 17 1509949540 -2 0
+2902 4233 1509949540 2 0
+-1
+S
+
+#11958
+"A Hillside Trail"
+"Here the trail curves to the east from the north, leading further up the
+
+hillside.  To the west is a reasonably large building, where visible effort
+
+has been made to patch up holes and make it visible.  Dim light shines through
+
+the doorway, providing some illumination.  Surrounding the trail is scrubby
+
+plantlife, trying to cling to life despite having obviously been recently
+
+trampled.  To the south the hill rises too steeply to climb, evidencing the
+
+fact that this trail was cut into the hillside.
+
+"
+""
+301465601 0
+4 6 0
+D0
+""
+""
+0 -1 11956 0 6
+D1
+""
+""
+0 -1 11959 0 6
+D3
+""
+""
+0 -1 11960 0 6
+E
+"door hole west building"
+"The building west is dilapidated to say the least.  Some repair efforts have
+
+been made, but it remains barely habitable.  The most welcoming thing about
+
+the structure is the warm glow emanating from behind the doorway.
+
+"
+E
+"hill south"
+"Southward the hill rises steeply.
+
+"
+A
+""
+""
+"i = random( 1, 5 );
+
+if( i == 1 )
+
+send_to_room( #scream, room );
+
+if( i == 2 )
+
+send_to_room( #slap, room );
+
+"
+E
+"scream"
+"@wYou hear a small scream from inside the building to the west.
+
+"
+E
+"slap"
+"@wThe sharp sound of a slap escapes from inside the building to the west.
+
+"
+!
+2 1000 0
+2915 9 1509949540 3 0
+-1
+S
+
+#11959
+"A Hillside Trail"
+"Here the trail runs from the west to the east, where the path rises gradually
+
+higher into the hills.  To the north and south, the hill rises too steeply to
+
+climb.  Small, scrubby trees cling to the hillside, and some small bushes line
+
+the path.  Higher to the east, the shape of a large structure is visible.
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 11962 0 6
+D3
+""
+""
+0 -1 11958 0 6
+E
+"bush tree scrubby"
+"Small bushes and stunted trees line the sides of the path, undisturbed by
+
+passage of visitors here.
+
+"
+E
+"north south hill"
+"To the north and south, the hill rises too steeply to climb.
+
+"
+-1
+S
+
+#11960
+"An Old, Crumbling Building"
+"Just inside the large crumbling building it is visible that some efforts have
+
+been recently made to make it habitable, at least temporarily.  Holes in the
+
+ceiling are patched with strips of oiled canvas nailed over them, and the
+
+windows are covered in much the same way, giving the room a dim feeling.  A
+
+firepit has been dug in the center of the room, with embers still glowing
+
+dully amidst the charred remains of fuel and wood.
+
+"
+"[.T.]  I like this acode. Seems to work now... need to add item and ads.
+
+[.T.]  Object added. #4902 'a small scalpel'
+
+[.T.]  Mob added + randoms
+
+"
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 11958 0 6
+D2
+""
+""
+0 -1 11961 0 6
+E
+"firepit pit ember"
+"The fire is dying down, the fuel almost used up.  Remains of food are still
+
+visible in the fire's embers.  The embers glow dully, providing a warm, soft
+
+light.  As you look closer you see a vague glinting amidst the remains of the
+
+fuel.
+
+"
+E
+"hole patch ceiling"
+"The ceiling here has been recently patched, in a temporary effort to hold back
+
+the elements.
+
+"
+E
+"corner shadow"
+"@WYou peer into the corner, trying to see if anything is hidden there.  A small
+
+shadow flickers across your field of vision, but is gone too quickly to
+
+discern its form.
+
+"
+A
+"search get"
+"3 fire 3 pit 3 embers 3 glinting"
+"if( rflag( reset1, room ) ) {
+
+  
+
+  if( rflag( !reset0, room ) ) {
+
+    act_tochar( #ouch, ch );
+
+    act_notchar( #rouch, ch );
+
+  }
+
+  
+
+  else {
+
+    {
+
+      
+
+      i = random( 1, 10 );
+
+      if( i == 1 ) {
+
+        act_tochar( #winner, ch );
+
+        act_notchar( #rwinner, ch );
+
+        obj_to_char( oload( 4902 ), ch );
+
+        if( !mob_in_room( 2910, room ) ) {
+
+          send_to_room( #load, room );
+
+          mload( 2910, room );
+
+        }
+
+      }
+
+      else {
+
+        act_tochar( #loser, ch );
+
+        act_notchar( #rloser, ch );
+
+      }
+
+      remove_rflag( reset1, room );
+
+    }
+
+  }
+
+}
+
+else {
+
+  act_tochar( #nothing, ch );
+
+  act_notchar( #rnothing, ch );
+
+}
+
+"
+E
+"ouch"
+"@RYou try to reach the glinting object in the embers, but the heat prevents you
+
+reaching into the pit.@w
+
+"
+E
+"rouch"
+"@R$n tries to reach the glinting object in the embers, but the heat prevents
+
+them reaching into the pit.@w
+
+"
+E
+"winner"
+"@WAfter searching through the remains of the fire, you stand up having found a
+
+small scalpel buried in the ashes.@w
+
+"
+E
+"rwinner"
+"@WAfter searching through the remains of the fire, $n stands up having found a
+
+small scalpel buried in the ashes.@w
+
+"
+E
+"loser"
+"@rYou scrabble through the ashes for the glinting thing you saw, but alas.
+
+There is nothing to be found.@w
+
+"
+E
+"rloser"
+"@r$n scrabbles through the ashes, but finds nothing.@w
+
+"
+E
+"nothing"
+"@rYou scrabble through the ashes for the glinting thing you saw, but soon
+
+realise your efforts are futile.@w
+
+"
+E
+"rnothing"
+"@r$n scrabbles through the ashes, but finds nothing.@w
+
+"
+E
+"load"
+"@YA terrified goblin slave leaps from his hiding place, eyes fixed in terror on
+
+the scalpel you are holding!@w
+
+"
+!
+0 0 0
+A
+"3 clear 2 kick 2 move"
+"3 ember 3 fire 3 pit"
+"act_tochar( #clear, ch );
+
+act_notchar( #rclear, ch );
+
+remove_rflag( reset0, room );
+
+"
+E
+"clear"
+"@RYou quickly swipe at the smouldering embers, flicking them from the firepit
+
+and scattering the ashes.@w
+
+"
+E
+"rclear"
+"@R$n quickly swipes at the smouldering embers, flicking them from the firepit
+
+and scattering the ashes.@w
+
+"
+!
+0 0 0
+A
+""
+""
+"i = random( 1, 5 );
+
+if( i == 1 )
+
+send_to_room( #whimper, room );
+
+if( i == 2 )
+
+send_to_room( #scream, room );
+
+if( i == 3 )
+
+send_to_room( #fire, room );
+
+"
+E
+"whimper"
+"@WA terrified whimper chokes out of the shadowy corners of the room.
+
+"
+E
+"scream"
+"@WA faint scream begins to the south, and quickly cuts off.@w
+
+"
+E
+"fire"
+"@rEmbers in the fireplace glow dully.
+
+"
+!
+2 1000 0
+-1
+S
+
+#11961
+"Old, Crumbling Building - South End"
+"This, the southern end of the ruined building, has become home to an
+
+unpleasant scene.  It appears that prisoners have been held here, and
+
+tortured.  The ground is messy with excrement, blood and other stains.  The
+
+room is bare of any furniture, and the walls are stained and cracked.  Further
+
+evidence of this room's purpose comes from a trolley here, the contents of
+
+which are grisly indeed.
+
+"
+"[.T.]  I'm an evil bastard.
+
+[.T.]  :D
+
+"
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 11960 0 6
+E
+"stain blood excrement"
+"@WThe ground and walls are stained and messy with leavings from and remains of
+
+previous torture victims.  Blood, sweat and excrement are visible in abundance.
+
+"
+A
+""
+""
+"mob = mob_in_room( 2913, room );
+
+i = random( 1, 5 );
+
+
+if( mob_in_room( 2903, room ) ) {
+
+
+  if( i == 1 ) {
+
+    interpret( mob, #tell );
+
+    interpret( mob, \"slap goblin\" );
+
+  }
+
+  if( i == 2 )
+
+    interpret( mob, #threat );
+
+  if( i == 3 )
+
+    interpret( mob, \"growl goblin\" );
+
+}
+
+"
+E
+"tell"
+"say We know that you have information on the location of these slaves, so you'd better begin talking! Tell us what we want to know!
+
+"
+E
+"threat"
+"say If you don't start talking soon, you won't be able to talk at all!
+
+"
+!
+2 1000 0
+A
+""
+""
+"mob = mob_in_room( 2903, room );
+
+i = random( 1, 5 );
+
+
+if( mob_in_room( 2913, room ) ) {
+
+  if( i == 1 )
+
+    interpret( mob, \"whimper\" );
+
+  if( i == 2 )
+
+    interpret( mob, \"cringe\" );
+
+  if( i == 3 )
+
+    interpret( mob, \"scream\" );
+
+}
+
+"
+!
+2 1000 0
+A
+"search"
+"trolley"
+"act_tochar( #nothing, ch );
+
+act_notchar( #rnothing, ch );
+
+"
+E
+"nothing"
+"@WWincing, you search the trolley.  You see nothing which would be of any use
+
+for all but the most twisted purposes, and certainly nothing which would work
+
+as a weapon against anyone capable of self-defence.
+
+"
+E
+"rnothing"
+"@WWincing, $n searches the trolley, but stops after a few moments.
+
+"
+!
+0 0 0
+A
+""
+""
+"mob = mob_in_room( 2913, room );
+
+i = random( 1, 5 );
+
+
+if( mob_in_room( 2903, room ) ) {
+
+  
+
+  if( i == 1 ) {
+
+    interpret( mob, \"look trolley\" );
+
+    interpret( mob, #select1 );
+
+  }
+
+  if( i == 2 ) {
+
+    interpret( mob, \"look trolley\" );
+
+    interpret( mob, #select2 );
+
+  }
+
+}
+
+"
+E
+"select1"
+"emote selects something which appears to be a glass phial from the trolley.
+
+"
+E
+"select2"
+"emote examines one of the trays on the trolley, and selects a hook-shaped
+
+piece of metal, which he promptly inserts into a strategic place in the
+
+goblin's flesh.
+
+"
+!
+2 1000 0
+2903 9 1509949540 3 0
+2913 9 1509949540 3 0
+4913 17 1509949540 -2 0
+2914 9 1509949540 3 0
+-1
+S
+
+#11962
+"A Steep Path"
+"Here the path takes a steep upward turn northward.  Higher up the trail a huge
+
+structure is visible, in a state of disrepair.  To the west the trail leads
+
+back down the hillside, where the path looks to be more easily traversible.
+
+To the south and east the hill rises too steeply to climb, further evidence
+
+that this path was created rather than being naturally formed.
+
+"
+""
+301465600 0
+4 6 0
+D3
+""
+""
+0 -1 11959 0 6
+D4
+""
+""
+0 -1 11963 0 6
+E
+"south east hill"
+"To the east and south, the hill rises too steeply to climb.
+
+"
+2916 9 1509949540 3 0
+-1
+S
+
+#11963
+"A Hillside Trail"
+"The path here heads northward up the hillside, or steeply southward back
+
+toward the small, crumbling settlement below.  Looming high to the northeast
+
+is a large structure, now visibly a cathedral in a state of disrepair.  The
+
+path is surrounded by small scrubby bushes on either side.  To the east the
+
+hill rises steeply, while to the west it falls away sharply, providing a few
+
+of the small buildings below.
+
+"
+""
+301465600 0
+22 6 0
+D0
+""
+""
+0 -1 11964 0 6
+D5
+""
+""
+0 -1 11962 0 6
+E
+"path scrub"
+"Small bushes line the sides of the path, undisturbed by passage of visitors
+
+here.
+
+"
+E
+"hill east west"
+"To the east the hill rises too steeply to climb, while downward to the west
+
+several small buildings are visible.
+
+"
+-1
+S
+
+#11964
+"A Hillside Trail"
+"Here the trail moves from the south and upward to the north.  From here more
+
+detail can be seen of the cathedral to the northeast.  Although the structure
+
+is old and abandoned, it is still in one piece.  To the west the hillside
+
+drops away sharply, and the small settlement is visible below.  Small, scrubby
+
+bushes and trees line the path, and the hillside to the east is covered in
+
+thorny brambles and shrubs.
+
+"
+""
+301465600 0
+22 6 0
+D0
+""
+""
+0 -1 11965 0 6
+D2
+""
+""
+0 -1 11963 0 6
+E
+"scrubby bush tree"
+"Small bushes and trees line the sides of the path, undisturbed by passage of
+
+visitors here.
+
+"
+E
+"hill east bramble shrub"
+"Eastward the hill rises steeply, and is covered in a blanket of thorny
+
+brambles and bushes.
+
+"
+2917 9 1509949540 3 0
+2918 9 1509949540 3 0
+-1
+S
+
+#11965
+"A Hillside Trail - Near the Cathedral"
+"Here the trail takes a sharp turn from the south to the east.  Northward the
+
+the hillside rises up in a cliff, and to the west lies a long downward drop.
+
+East lies the cathedral, steps rising gradually toward the entrance hall.  Any
+
+vegetation which may have grown here has been covered over and strangled by
+
+huge paving slabs which cover the ground, large and thick enough to withstand
+
+the tests of time and season.
+
+"
+""
+301465608 0
+12 6 0
+D1
+""
+""
+0 -1 11966 0 6
+D2
+""
+""
+0 -1 11964 0 6
+E
+"paving slab ground"
+"Here the ground is paved with huge slabs of stone, which must have been set
+
+into the ground centuries ago.
+
+"
+E
+"cliff north"
+"Northward the hill rises in a sharp cliff, too steep to climb.
+
+"
+E
+"east cathedral steps"
+"Eastward, large marble steps lead toward the entrance.  The step's balusters
+
+are each mounted by a large stone figure.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@WYou pass by the large statues of robed figures mounted on the balusters as you
+
+climb the steps eastward.
+
+"
+!
+3 0 2
+-1
+S
+
+#11966
+"Steps to an Old Cathedral"
+"Here the steps rise up gradually to the east, leading to the cathdral doors.
+
+The steps are hewn from what appears to be one huge piece of marble, and
+
+demonstrate the wealth of the people who built this place.  Two large figures,
+
+robed and solemn, have been carved from marble and placed at the western end
+
+of each baluster.  The balusters themselves have been hewn from the same grey
+
+marble as the steps.
+
+"
+""
+301465602 0
+21 6 0
+D1
+""
+""
+360448 -1 11967 0 6
+D3
+""
+""
+0 -1 11965 0 6
+E
+"baluster robed figure carved"
+"@WThese large figures are heavily robed, their identities hidden.  They are
+
+carved from solid grey marble.
+
+"
+E
+"steps marble baluster"
+"@WThe steps and marble appear to have been hewn from one giant piece of grey
+
+marble.  An extremely impressive feat which can only have been achieved
+
+through use of magic.
+
+"
+A
+""
+"east"
+"mob = mob_in_room( 2914, room );
+
+if( !mob || is_follower( ch ) )
+
+  end;
+
+
+else {
+
+interpret( mob, #block );
+
+interpret( mob, #halt );
+
+  end;
+
+}
+
+"
+E
+"block"
+"emote holds out his hand, preventing you from proceeding east.
+
+"
+E
+"halt"
+"say Until we have identified precisely what has happened, no one is permitted
+
+beyond this point.  Perhaps you should come back later.
+
+"
+!
+3 0 2
+2914 9 1509949540 3 0
+-1
+S
+
+#11967
+"Steps to an Old Cathedral"
+"Here, at the top of the steps, the cathedral is hugely present.  The path here
+
+is worn smooth from much use, although the surrounding shrubs begin to
+
+encroach on the sides of the path.  South the hill rises steeply, while to the
+
+north the wall of the cathedral looms.  Huge blocks of granite have been
+
+transported here and locked together immovably, forming a towering structure.
+
+High up in the walls, huge stained-glass windows are set.  Somehow they have
+
+withstood the tests of time and age.
+
+"
+""
+301465600 0
+21 6 0
+D1
+""
+""
+0 -1 99300 0 6
+D3
+""
+""
+360448 -1 11966 0 6
+E
+"stained glass window"
+"These huge panes of stained glass are set high into the wall.  This large
+
+example depicts what appears to be a saint, surrounded by a glowing aura, with
+
+smiling people surrounding him.
+
+"
+E
+"path smooth"
+"Here the path is formed of huge paving slabs, untouched by season but worn by
+
+the feet of many a pilgrim and worshiper.
+
+"
+E
+"shrubs hill"
+"Shrubs, overflowing from the hillside, have begun to make their mark upon the
+
+surface of the paving slabs.  They creep across the path attempting to gain
+
+purchase.
+
+"
+-1
+S
+
+#11968
+"Outside the Old Cathedral"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11969 0 6
+-1
+S
+
+#11969
+"Old Cathedral - Entrance Hall"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+391 -1 11972 0 6
+D1
+""
+""
+0 -1 11970 0 6
+D2
+""
+""
+0 -1 11968 0 6
+D3
+""
+""
+0 -1 11971 0 6
+-1
+S
+
+#11970
+"Old Cathedral - Entrance Hall"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D3
+""
+""
+0 -1 11969 0 6
+-1
+S
+
+#11971
+"Old Cathedral - Entrance Hall"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11969 0 6
+-1
+S
+
+#11972
+"Old Cathedral Nave - South End"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11983 0 6
+D1
+""
+""
+0 -1 11973 0 6
+D2
+""
+""
+391 -1 11969 0 6
+D3
+""
+""
+0 -1 11974 0 6
+-1
+S
+
+#11973
+"Old Cathedral Nave - South End"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11977 0 6
+D3
+""
+""
+0 -1 11972 0 6
+-1
+S
+
+#11974
+"Old Cathedral Nave - South End"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11972 0 6
+D3
+""
+""
+0 -1 11975 0 6
+-1
+S
+
+#11975
+"Old Cathedral Nave - South End"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11974 0 6
+D3
+""
+""
+0 -1 11976 0 6
+-1
+S
+
+#11976
+"Old Cathedral Nave - Southwest Corner"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11979 0 6
+D1
+""
+""
+0 -1 11975 0 6
+-1
+S
+
+#11977
+"Old Cathedral Nave - South End"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11978 0 6
+D3
+""
+""
+0 -1 11973 0 6
+-1
+S
+
+#11978
+"Old Cathedral Nave - Southeast Corner"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D3
+""
+""
+0 -1 11977 0 6
+-1
+S
+
+#11979
+"Old Cathedral Nave - Western Aisle"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11980 0 6
+D2
+""
+""
+0 -1 11976 0 6
+-1
+S
+
+#11980
+"Old Cathedral Nave - Western Aisle"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11981 0 6
+D2
+""
+""
+0 -1 11979 0 6
+-1
+S
+
+#11981
+"Old Cathedral Nave - Western Aisle"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11982 0 6
+D2
+""
+""
+0 -1 11980 0 6
+-1
+S
+
+#11982
+"Old Cathedral Nave - Western Aisle"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D2
+""
+""
+0 -1 11981 0 6
+-1
+S
+
+#11983
+"Old Cathedral Nave - Central Aisle"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11984 0 6
+D2
+""
+""
+0 -1 11972 0 6
+-1
+S
+
+#11984
+"Old Cathedral Nave - Central Aisle"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11985 0 6
+D2
+""
+""
+0 -1 11983 0 6
+-1
+S
+
+#11985
+"Old Cathedral Nave - Central Aisle"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11986 0 6
+D2
+""
+""
+0 -1 11984 0 6
+-1
+S
+
+#11986
+"Old Cathedral Nave - Central Aisle"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11987 0 6
+D2
+""
+""
+0 -1 11985 0 6
+-1
+S
+
+#11987
+"Old Cathedral Nave - Central Aisle"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11988 0 6
+D2
+""
+""
+0 -1 11986 0 6
+-1
+S
+
+#11988
+"Old Cathedral Nave - Central Aisle"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11989 0 6
+D2
+""
+""
+0 -1 11987 0 6
+-1
+S
+
+#11989
+"Old Cathedral Nave - Before a Dias"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11991 0 6
+D2
+""
+""
+0 -1 11988 0 6
+D3
+""
+""
+0 -1 11990 0 6
+-1
+S
+
+#11990
+"Old Cathedral Nave - Before a Dias"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11989 0 6
+D3
+""
+""
+0 -1 11992 0 6
+-1
+S
+
+#11991
+"Old Cathedral Nave - Before a Dias"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D3
+""
+""
+0 -1 11989 0 6
+-1
+S
+
+#11992
+"Old Cathedral Nave - Southwest of a Dias"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11990 0 6
+D3
+""
+""
+0 -1 11993 0 6
+-1
+S
+
+#11993
+"Old Cathedral Nave - Southwest of a Dias"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11992 0 6
+D3
+""
+""
+0 -1 11994 0 6
+-1
+S
+
+#11994
+"Old Cathedral Nave - West Transept"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11993 0 6
+D3
+""
+""
+0 -1 11995 0 6
+-1
+S
+
+#11995
+"Old Cathedral Nave - West Transept"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11994 0 6
+D3
+""
+""
+0 -1 11996 0 6
+-1
+S
+
+#11996
+"Old Cathedral Nave - West Transept"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11995 0 6
+D2
+""
+""
+0 -1 11997 0 6
+-1
+S
+
+#11997
+"Old Cathedral Nave - West Transept"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11996 0 6
+D3
+""
+""
+0 -1 11998 0 6
+-1
+S
+
+#11998
+"Old Cathedral Nave - West Transept"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11997 0 6
+D2
+""
+""
+0 -1 11999 0 6
+-1
+S
+
+#11999
+"Old Cathedral Nave - West Transept"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11998 0 6
+-1
+S
+
+#0
+

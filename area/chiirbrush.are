@@ -1,0 +1,3383 @@
+#AREA
+"Chiiron Brush"
+"Karn Vulcan Kiian"
+""
+0 0
+0
+4
+#ROOMS
+
+#24000
+"Narrow Ravine"
+"As you walk along this part of the ravine, you notice the walls have become
+
+less steep, and covered with sparse brush.  This part of the ravine acts as a
+
+funnel for the winds, making an eerie moaning noise.  The ravine continues
+
+east and west, and a small path cuts north.
+
+"
+""
+301465600 0
+4 6 0
+D0
+""
+""
+0 -1 24004 0 6
+D1
+""
+""
+0 -1 24001 0 6
+D3
+""
+""
+0 -1 24006 0 6
+A
+"listen"
+""
+"send_to_char( #to_char, ch );
+
+"
+E
+"to_char"
+"Like many things in nature, the sound of this wind seems almost like
+
+the sounds of words, almost but not quite understood...
+
+"
+!
+0 0 0
+78 17 1509949460 -2 0
+-1
+S
+
+#24001
+"Path through Ravine"
+"Stumbling over a small dip in the path, you notice the sounds of falling
+
+pebbles.  Looking up along the ravine you notice a faint path climbing up the
+
+ravine wall to the south.  The wall to the north also seems accessible.  As
+
+the air swirls about you in fits, a faint moaning can be heard.
+
+"
+""
+301465600 0
+4 6 0
+D0
+""
+""
+0 -1 24005 0 6
+D1
+""
+""
+0 -1 24003 0 6
+D3
+""
+""
+0 -1 24000 0 6
+E
+"drawing"
+"Fnord.
+
+"
+A
+"listen"
+"noise"
+"send_to_char( #to_char, ch );
+
+"
+E
+"to_char"
+"You hear a moaning from the west.
+
+"
+!
+0 100 0
+-1
+S
+
+#24002
+"Path through Ravine"
+"Rolling hills surround you here, the only real view off to the west down a
+
+gully.  The grey walls of a small town are visible in the distance there,
+
+mostly obscured by brush and stone.  Switchbacking, the trail descends into
+
+the gully, and off further into dense bush and rock eastwards.  Further south,
+
+a steep rocky climb leads to a hillcrest, tall branches from some tree
+
+silhouetted behind to the southeast.
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 24007 0 6
+D2
+""
+""
+0 -1 24053 0 6
+D5
+""
+""
+0 -1 24003 0 6
+755 9 1509949540 3 0
+-1
+S
+
+#24003
+"Path through Ravine"
+"The ravine surrounding you ends a little further east in a bramble-choked
+
+draw.  A wagon-track from further down the ravine to the west cuts past into
+
+the southern wall, switchbacking once before climbing over the crest out of
+
+sight.  The opposite wall of the ravine is sheer, with only a few high
+
+crevices that look to be the nests of birds.
+
+"
+""
+301465600 0
+4 6 0
+D3
+""
+""
+0 -1 24001 0 6
+D4
+""
+""
+0 -1 24002 0 6
+A
+"search"
+"brambles bramble-choked draw end"
+"act_tochar( #no, ch );
+
+act_notchar( #ono, ch );
+
+"
+E
+"no"
+"@gYou give the mass of brambles a once-over, but there seems to be nothing of
+
+value there.@n
+
+"
+E
+"ono"
+"@g$n searches through the brambles for a short while, but comes back
+
+empty-handed.@n
+
+"
+!
+9 0 0
+-1
+S
+
+#24004
+"Ravine Wall"
+"You climb to this spot on the ravine wall, looking down on the ravine
+
+itself.  The wind whips your clothing, stinging your eyes and drying
+
+out your throat.  Pebbles, dislodged by your feet, bounce down into the
+
+ravine.  The only way to go is east along the ravine wall, or south
+
+back to the ravine.
+
+"
+""
+301465601 0
+5 6 0
+D1
+""
+""
+0 -1 24005 0 6
+D2
+""
+""
+0 -1 24000 0 6
+E
+"ravine"
+"The ravine widens below you, a short scramble down to the well-worn path. 
+
+There isn't much chance of climbing any further.
+
+"
+-1
+S
+
+#24005
+"Ravine Wall"
+"Your foot slips a little as you reach this part of the wall, making
+
+you stumble.  Bits of rock tumble down the wall to the ravine, the
+
+sounds of their travel echoing hollowly.
+
+"
+""
+301465601 0
+5 6 0
+D2
+""
+""
+0 -1 24001 0 6
+D3
+""
+""
+0 -1 24004 0 6
+E
+"ravine"
+"The ravine runs roughly east-west here, the well-worn path running between
+
+mossy boulders.
+
+"
+78 17 1509949445 -2 0
+-1
+S
+
+#24006
+"Narrow Ravine outside Chiiron"
+"From this location you are presented with an excellent view of the mountainous
+
+terrain of this region.  The village of Chiiron, directly to the west, is set
+
+on the inside face of a mountain range surrounding a large sea.  A heavy mist
+
+rolls in waves over the surface of the black water, occasionally making
+
+visible a barge or merchantman crossing from shore to shore.  Far to the
+
+southeast, majestic mountains pierce the dark clouds encircling them, a path
+
+here cuts between two sheer rock faces, sloping sharply down the hill to the
+
+east.
+
+"
+""
+301465600 0
+12 6 0
+D1
+""
+""
+0 -1 24000 0 6
+D3
+""
+""
+0 -1 933 0 6
+-1
+S
+
+#24007
+"Path through Ravine"
+"You are in an area of large rocks and a few bushes.  To the west there is
+
+a path which winds its way between two hills which rise up before you. 
+
+The break which the path follows is worn through time but looks like it
+
+was caused by some giant upheaval of the earth.  The path continues its
+
+way south avoiding a large boulder.
+
+"
+""
+301465600 0
+4 6 0
+D2
+""
+""
+0 -1 24008 0 6
+D3
+""
+""
+0 -1 24002 0 6
+205 9 1509949540 3 0
+-1
+S
+
+#24008
+"Path Around a Large Boulder"
+"You are on a well travelled path between Chiiron and Medienne.  Right now the
+
+path is curving around a large boulder which was carelessly placed here eons
+
+ago.  The boulder is large but with a bit of skill you might be able to
+
+clamber on top of it.  To the east you can see the sea far off in the distance
+
+and the path slowly winding its way towards it.  The other end of the path
+
+heads north.
+
+"
+""
+301465600 0
+4 6 0
+D0
+""
+""
+0 -1 24007 0 6
+D1
+""
+""
+0 -1 24009 0 6
+A
+"climb clamber"
+"boulder rock"
+"if( is_mounted( ch ) ) {
+
+  send_to_char( #mount, ch );
+
+  end;
+
+  }
+
+if( can_fly( ch ) ) {
+
+  send_to_char( #fly_char, ch );
+
+  act_notchar( #fly_room, ch );
+
+  transfer( ch, find_room( 24010 ) );
+
+  act_notchar( #fly_arr, ch );
+
+  end;
+
+  }
+
+if( find_skill( ch, climb ) > random( 0, 7 ) ) {
+
+  use_skill( ch, climb );
+
+  send_to_char( #to_char, ch );
+
+  act_notchar( #to_room, ch );
+
+  transfer( ch, find_room( 24010 ) );
+
+  act_notchar( #arr, ch );
+
+  }
+
+else {
+
+  send_to_char( #char_fall, ch );
+
+  act_notchar( #room_fall, ch );
+
+  i = dice( 3, 6 );
+
+  dam_message( ch, i, \"The fall\" );
+
+inflict( ch, mob, i, \"The fall\" );
+
+  }
+
+"
+E
+"fly_arr"
+"$n flies up from below and lands on the rock.
+
+"
+E
+"fly_room"
+"$n rises up in the air and flies to the top of the boulder.
+
+"
+E
+"fly_char"
+"You rise up in the air and fly to the top of the boulder.
+
+"
+E
+"mount"
+"You can't climb the rock while mounted!
+
+"
+E
+"room_fall"
+"$n slips and falls hurting $mself!
+
+"
+E
+"char_fall"
+"You slip and fall hurting yourself!
+
+"
+E
+"arr"
+"$n comes climbing up the south side of the boulder, and joins you at the
+
+top.  
+
+"
+E
+"to_room"
+"With some effort $n scales the rock and disappears over the top.
+
+"
+E
+"to_char"
+"With some effort you scale the rock.
+
+"
+!
+0 0 0
+755 9 1509949540 3 0
+755 9 1509949540 3 0
+-1
+S
+
+#24009
+"Mountain Path"
+"As the wind crosses the path, it carries a strong scent of wild sage with it.
+
+Heavy pollen fills the air, and swirls about you like a thin blanket on an
+
+autumn evening.  Signs of life are everywhere, with a variety of animal tracks
+
+littering the path.  More of this can be seen to the north and west.
+
+"
+""
+301465600 0
+4 6 0
+D0
+""
+""
+0 -1 24012 0 6
+D3
+""
+""
+0 -1 24008 0 6
+-1
+S
+
+#24010
+"On Top of the Boulder"
+"You stand on top of a very large boulder.  The rock underfoot is almost
+
+level, and large enough for several people to stand here.  Looking
+
+around, you can see for miles in all directions.  On all sides, hills
+
+rise up toward the horizon, and in the distance to the west you spy the
+
+walls of Chiiron.
+
+"
+""
+301465608 0
+5 6 0
+D5
+""
+""
+0 -1 24008 0 6
+196 9 1509949540 3 0
+-1
+S
+
+#24011
+"Crest View"
+"A hillcrest is surmounted by the path here, giving you an excellent view of
+
+the brush-filled valley to the south and east.  North, the path winds
+
+downwards between slabs of broken rock towards a gully.  The main landmark in
+
+the valley is a great tree towering to the east, shading a wide area.  Beyond
+
+in the distance cliffs rise, with more rough brush, rock and forest shrouding
+
+the peaks.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 24053 0 6
+D5
+""
+""
+0 -1 24052 0 6
+-1
+S
+
+#24012
+"Mountain Path"
+"Footprints of the clad and unclad alike describe a trail from east to south.
+
+Large rocks jutting from the mountainside serve to outline this trail, and
+
+appear as if they might provide some protection against the elements.
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 24013 0 6
+D2
+""
+""
+0 -1 24009 0 6
+E
+"rocks"
+"These rocks appear to have been placed here with great effort.
+
+"
+2511 9 1509949540 3 0
+210 9 1509949540 3 0
+-1
+S
+
+#24013
+"Mountain Path"
+"A soft breeze can be heard overhead as the wind crosses the high boulders
+
+lining the path.  Dirt from the trail swirls in tiny eddies with every gust,
+
+each time further obscuring the tracks of various sorts along this path.
+
+Travel is possible up the hill to the west and downward to the east.
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 24014 0 6
+D3
+""
+""
+0 -1 24012 0 6
+E
+"boulders"
+"The rocks here show the signs of erosion and time as countless storms and
+
+skirmishes have marred their surfaces.  
+
+"
+E
+"dirt"
+"This is rather ordinary topsoil, dry and mineral depleted.
+
+"
+205 9 1509949540 3 0
+-1
+S
+
+#24014
+"Split in the Path"
+"The path here takes a very steep decline to the east, requiring a climb
+
+down of about five meters to continue in that direction.  To the north is
+
+a small animal track into the brush, and to the west the path continues
+
+up the hill.
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 24015 0 6
+D3
+""
+""
+0 -1 24013 0 6
+D5
+""
+""
+0 -1 24016 0 6
+-1
+S
+
+#24015
+"Brush, North Ridge"
+"From this vantage point you can see north to the mountains and below you
+
+a valley of brush and scrub.  The track continues to the north down into
+
+the valley and south back to the main trail.  The track is quite steep
+
+and narrow.  The ridge-side is covered in brush, and thorns, you would
+
+not want to fall in this area.  
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 24031 0 6
+D2
+""
+""
+0 -1 24014 0 6
+755 9 1509949540 3 0
+755 9 1509949540 3 0
+-1
+S
+
+#24016
+"Break in the Path"
+"The path here takes a noticeable step upward as you continue to the
+
+west.  An animal trail leading into the thick brush is evident to the
+
+south, showing tracks from many of the local fauna.  The main path
+
+continues to the east, where the faint sound of waves on a shore can be
+
+heard.  
+
+"
+""
+301465600 0
+5 6 0
+D1
+""
+""
+0 -1 24017 0 6
+D2
+""
+""
+0 -1 24018 0 6
+D4
+""
+""
+0 -1 24014 0 6
+217 9 1509949540 3 0
+-1
+S
+
+#24017
+"Hillside Trail"
+"Filling each horizon are the mountains which define this region.  While
+
+considerably lower to the south, they are by no means small.  To the
+
+east, down the hill, it is possible to glimpse the the black waters of
+
+the Northern Sea, although it is not close enough to witness any detail. 
+
+Continuing to the west leads further up the mountainside.  
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 24019 0 6
+D3
+""
+""
+0 -1 24016 0 6
+-1
+S
+
+#24018
+"An Animal Track"
+"A tight path cuts through the brush here in what is unmistakably an
+
+animal track.  The irregularity of the trail surface shows the heavy
+
+scars of hoofprints, at points cutting into the thick network of roots
+
+beneath the topsoil.  A broader path is visible to the north, while the
+
+track continues into the brush to the south.  
+
+"
+""
+301465600 0
+4 6 0
+D0
+""
+""
+0 -1 24016 0 6
+D1
+""
+""
+0 -1 24058 0 6
+D2
+""
+""
+0 -1 24021 0 6
+2513 9 1509949540 3 0
+205 9 1509949540 3 0
+-1
+S
+
+#24019
+"Hillside Trail"
+"Heavy brush and large, jagged rocks cover the hillside here.  A trail of
+
+three meters in width cuts across this landscape continuing at an incline
+
+from east to west, leading to apparent signs of life up the hill to the
+
+west.  
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 24020 0 6
+D3
+""
+""
+0 -1 24017 0 6
+-1
+S
+
+#24020
+"Hillside Trail"
+"This section of the trail is moderately inclined to the west, where the
+
+path can be seen to stretch for several hundred meters.  The smell of
+
+salt air and the chill of the mist rising off the sea to the east are
+
+strong, as is the breeze blowing from the north.  To the east the path
+
+appears to come to an intersection.  
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 21000 0 6
+D3
+""
+""
+0 -1 24019 0 6
+-1
+S
+
+#24021
+"Brush"
+"The animal track turns to the west here and continues to show hoofprints. 
+
+Throughout this area you quite often hear the sounds of wildlife in the nearby
+
+bushes.  The hunting here must be quite good.
+
+"
+""
+301465600 0
+4 6 0
+D0
+""
+""
+0 -1 24018 0 6
+D1
+""
+""
+0 -1 24059 0 6
+D2
+""
+""
+0 -1 24027 0 6
+D3
+""
+""
+0 -1 24022 0 6
+755 9 1509949540 3 0
+130 9 1509949540 3 0
+358 17 1509949540 -2 0
+-1
+S
+
+#24022
+"Brush"
+"The tracks runs west to east here and narrows as the brush is quite thick
+
+through here.  There are the bones and other remains of quite a number of
+
+rabbit spread all around.  There must be something that lives in the area
+
+by hunting rabbits.  
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 24021 0 6
+D2
+""
+""
+0 -1 24026 0 6
+D3
+""
+""
+0 -1 24023 0 6
+755 9 1509949540 3 0
+-1
+S
+
+#24023
+"Large Tree"
+"Oversized and considerably out of place for this landscape is a mighty balsa
+
+tree.  Towering over the shrubbery at over thirty meters, the tree seems to
+
+reach into the sky.  Who knows what might be up there?
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 24022 0 6
+D2
+""
+""
+0 -1 24024 0 6
+D3
+""
+""
+0 -1 24025 0 6
+A
+"climb"
+"tree balsa 1 up"
+"if( size( ch ) > size( find_room( 24049 ) ) ) {
+
+  send_to_char( #big, ch );
+
+  act_notchar( #rbig, ch );
+
+  end;
+
+}
+
+if( can_fly( ch ) ) {
+
+  send_to_char( #fly, ch );
+
+  act_notchar( #flying, ch );
+
+  transfer( ch, find_room( 24049 ) );
+
+  act_notchar( #flying2, ch );
+
+  end;
+
+}
+
+if( find_skill( ch, climb ) > random( 0, 7 ) ) {
+
+  use_skill( ch, climb );
+
+  send_to_char( #success, ch );
+
+  act_notchar( #success1, ch );
+
+  transfer( ch, find_room( 24049 ) );
+
+  act_notchar( #success2, ch );
+
+}
+
+else {
+
+  send_to_char( #fail, ch );
+
+  act_notchar( #failed, ch );
+
+  end;
+
+}
+
+loop( followers ) {
+
+  ch = rch;
+
+  if( !is_resting( rch ) && !is_sleeping( rch ) )
+
+    acode( room, 1 );
+
+}
+
+"
+E
+"nomount"
+"You cant do that while mounted.
+
+"
+E
+"flying2"
+"$n flies up from below and lands on a nearby branch.
+
+"
+E
+"flying"
+"$n flies up into the tree.
+
+"
+E
+"fly"
+"You fly up into the tree.
+
+"
+E
+"failed"
+"$n slips while trying to climb the tree.
+
+"
+E
+"fail"
+"You slip and almost hurt yourself.
+
+"
+E
+"success2"
+"$n comes clambering up from below.
+
+"
+E
+"success1"
+"$n grabs a low lying branch and clambers up the tree.
+
+"
+E
+"success"
+"Finding many helping branches you clamber up the tree.
+
+"
+E
+"big"
+"You are too big to fit up in the tree.
+
+"
+E
+"rbig"
+"$n tries to climb the tree, but gives up because $e is too large to fit up in the branches.
+
+"
+!
+0 0 0
+755 9 1509949540 3 0
+2513 9 1509949540 3 0
+-1
+S
+
+#24024
+"Brush"
+"The track twists to the east and gets quite rocky.  There appears to be a
+
+cliff to the southeast.  North a little way, a towering tree stabs against the
+
+sky, a rough hillside beyond.
+
+"
+""
+301465600 0
+4 6 0
+D0
+""
+""
+0 -1 24023 0 6
+D1
+""
+""
+0 -1 24026 0 6
+D3
+""
+""
+0 -1 24029 0 6
+205 9 1509949540 3 0
+2511 9 1509949540 3 0
+544 17 1509949490 -2 0
+-1
+S
+
+#24025
+"Brush"
+"Dozens of bees buzz around a small bush covered in little white flowers.
+
+You have never seen a bush like this one before; it has tiny white flowers
+
+and big purple leaves and is the only one like it in the surrounding area.
+
+"
+""
+301465600 0
+2 6 0
+D1
+""
+""
+0 -1 24023 0 6
+D2
+""
+""
+0 -1 24029 0 6
+D3
+""
+""
+0 -1 24052 0 6
+-1
+S
+
+#24026
+"Brush"
+"The track now trundles along the base of a cliff to the south.  There are
+
+a number of sage bushes along the base of the cliff.  For some reason
+
+they look a bit out of place as though someone has come along and planted
+
+them all in a row with some purpose in mind.
+
+"
+""
+301465600 0
+4 6 0
+D0
+""
+""
+0 -1 24022 0 6
+D1
+""
+""
+0 -1 24027 0 6
+D2
+"sage bush"
+""
+232 -1 24028 0 4
+D3
+""
+""
+0 -1 24024 0 6
+E
+"sage bush"
+"There are some sage bushes along the base of the cliff to the south
+
+here.  One of them looks like it might have an entrance behind.  
+
+"
+A
+"move part pull push"
+"sage bushes"
+"if( !is_open( room, south ) ) {
+
+act_tochar( #open, ch );
+
+act_notchar( #ropen, ch );
+
+open( room, south );
+
+}
+
+else {
+
+act_tochar( #close, ch );
+
+act_notchar( #rclose, ch );
+
+close( room, south );
+
+}
+
+"
+E
+"open"
+"You see an opening behind the sage bushes and widen it.
+
+"
+E
+"ropen"
+"$n widens an opening behind the sage bushes.
+
+"
+E
+"close"
+"You tug upon a couple of sage bushes, hiding the alcove to the south.
+
+"
+E
+"rclose"
+"$n tugs upon a couple of sage bushes, hiding the alcove to the south.
+
+"
+!
+0 0 0
+544 17 1509949540 -2 0
+-1
+S
+
+#24027
+"Brush"
+"The track opens out onto a dry rocky plateau with only one noticeable feature;
+
+a huge anthill lies directly in front of you.  The hill is large enough for
+
+most creatures to enter.
+
+"
+"no mob
+
+"
+301465608 0
+4 6 0
+D0
+""
+""
+0 -1 24021 0 6
+D3
+""
+""
+0 -1 24026 0 6
+D5
+""
+""
+0 -1 612 0 5
+-1
+S
+
+#24028
+"Rocky Alcove"
+"This looks like it is the home of some trapper.  There are the skins of many
+
+rabbits stretched out on boards drying.  It doesn't look like it has been
+
+occupied in some time though and while most of the skins have rotted there
+
+might be some that are still worth taking.  There are some sage bushes to the
+
+north at the mouth of the alcove.
+
+"
+""
+301465612 0
+0 4 0
+D0
+"sage bush"
+""
+232 -1 24026 0 4
+E
+"sage bushes"
+"These sage bushes look to have been moved recently, for their roots have
+
+been partly uncovered from the soil.  For the most part, the sage bushes
+
+look to be close to full bloom.
+
+"
+A
+"move part push pull"
+"bushes sage"
+"if( !is_open( room, north ) ) {
+
+act_tochar( #open, ch );
+
+act_notchar( #ropen, ch );
+
+open( room, north );
+
+}
+
+else {
+
+act_tochar( #close, ch );
+
+act_notchar( #rclose, ch );
+
+close( room, north );
+
+}
+
+"
+E
+"open"
+"You find an opening behind the sage bushes and make it wider.
+
+"
+E
+"ropen"
+"$n finds an opening behind some sage bushes and make it wider.
+
+"
+E
+"close"
+"You push a couple of sage bushes together, hiding the way north.
+
+"
+E
+"rclose"
+"$n pushes a couple of sage bushes together, hiding the way north.
+
+"
+!
+0 0 0
+A
+"1 look"
+"4 skins 3 rabbits"
+"if( obj_in_room( 40, room ) )
+
+  act_tochar( #good, ch );
+
+else
+
+  act_tochar( #rotted, ch );
+
+"
+E
+"good"
+"Most of the skins are rotted but it appears as if there at least one skin
+
+still in good enough condition to be worth taking.
+
+"
+E
+"rotted"
+"All the skins are old and rotted.  There isn't a single rabbit skin here worth
+
+taking.
+
+"
+!
+0 0 0
+A
+"1 get take"
+"4 skins 3 rabbits"
+"if( !obj_in_room( 40, room ) )
+
+act_tochar( #no, ch );
+
+"
+E
+"no"
+"There don't appear to be any in good enough condition to be worth taking.
+
+"
+!
+0 0 0
+40 17 1509949465 -2 0
+-1
+S
+
+#24029
+"Brush"
+"The trail bends around to the west and starts to run along a cliff facing the
+
+south.  The brush has thickened up quite a bit here.  Something catches your
+
+eye as it scurries under a nearby rock.
+
+"
+""
+301465600 0
+2 6 0
+D0
+""
+""
+0 -1 24025 0 6
+D1
+""
+""
+0 -1 24024 0 6
+D3
+""
+""
+0 -1 24030 0 6
+E
+"rock"
+"The rock leans on another rock and there looks like enough room for
+
+something to be under there.  
+
+"
+A
+"lift move push"
+"rock"
+"if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  send_to_char( #to_char, ch );
+
+  act_notchar( #to_room, ch );
+
+  if( random( 0, 1 ) == 1 ) 
+
+    mload( 210, room );
+
+  else
+
+    mload( 2516, room );
+
+  }
+
+else {
+
+  send_to_char( #char_empty, ch );
+
+  act_notchar( #room_empty, ch );
+
+  }
+
+"
+E
+"room_empty"
+"$n lifts the rock but finds nothings.
+
+"
+E
+"char_empty"
+"You lift the rock but there is nothing under it.
+
+"
+E
+"to_room"
+"$n lifts up a rock.
+
+Underneath is a snake!!
+
+"
+E
+"to_char"
+"You lift the rock quite easily.
+
+You find a snake!!
+
+"
+!
+0 0 0
+755 9 1509949540 3 0
+-1
+S
+
+#24030
+"Near an Odd Pole"
+"The animal trail you have been following peters out here with no where
+
+else to go.  To the south is a cliff, while north of here the ground
+
+rises up a rocky slope.  A thick wall of brambles to the west renders
+
+progress in that direction difficult.
+
+
+A small platform is balanced upon a tall wooden pole here.
+
+"
+""
+301465600 0
+2 6 0
+D0
+""
+""
+0 -1 24052 0 6
+D1
+""
+""
+0 -1 24029 0 6
+D3
+""
+""
+0 -1 24055 0 6
+E
+"platform pole 1 up"
+"The pole is tall, and up above you can see a small platform on its
+
+top.  You don't see anything up there, but you might have to climb up to
+
+find out.  
+
+"
+A
+"climb"
+"1 up pole"
+"mob = mob_in_room( 286, find_room( 24048 ) );
+
+if( can_fly( ch ) ) {
+
+  send_to_char( #fly, ch );
+
+  act_notchar( #flying, ch );
+
+  transfer( ch, find_room( 24048 ) );
+
+  mpcode( mob, 2 );
+
+  act_notchar( #flying2, ch );
+
+  end;
+
+  }
+
+if( check_skill( ch, climb, 12 ) ) {
+
+  send_to_char( #char, ch );
+
+  act_notchar( #room, ch );
+
+  use_skill( ch, climb );
+
+  transfer( ch, find_room( 24048 ) );
+
+  mpcode( mob, 2 );
+
+  act_notchar( #arr, ch );
+
+  }
+
+else {
+
+  send_to_char( #fail, ch );
+
+  act_notchar( #failed, ch );
+
+  end;
+
+  }
+
+"
+E
+"failed"
+"$n tries to climb up the pole but fails.
+
+"
+E
+"fail"
+"You try to climb up the pole but fail.
+
+"
+E
+"flying2"
+"$n comes flying up onto the platform.
+
+"
+E
+"flying"
+"$n flies up to the platform.
+
+"
+E
+"fly"
+"You fly up onto the platform.
+
+"
+E
+"arr"
+"$n comes climbing up onto the platform.
+
+"
+E
+"room"
+"$n climbs up the pole.
+
+"
+E
+"char"
+"You climb up the pole.
+
+"
+!
+0 0 1
+A
+""
+""
+"continue;
+
+"
+E
+"to_room"
+"$n comes climbing down the pole.
+
+"
+!
+1 0 16
+755 9 1509949540 3 0
+189 17 1509949515 -2 0
+755 9 1509949540 3 0
+-1
+S
+
+#24031
+"North Ridge, Vantage Point"
+"From here the track continues down to the north or south back along the
+
+ridge.  It is a magnificent view here across the valley below and to the
+
+mountains to the north.  You can hear the faint cry of a hawk, smell the
+
+fresh air, and admire the view.  
+
+"
+""
+301465600 0
+5 6 0
+D2
+""
+""
+0 -1 24015 0 6
+D5
+""
+""
+0 -1 24033 0 6
+A
+"admire"
+""
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+"
+E
+"to_room"
+"$n sits down on the edge of the track and stares happily at the
+
+magnificent view.  
+
+"
+E
+"to_char"
+"You sit down on the edge of the track and happily admire the view.  You
+
+think, when the Gods made this world they really new what they where
+
+doing.  
+
+"
+!
+0 0 0
+A
+"smell"
+""
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+"
+E
+"to_room"
+"$n breaths in deeply consuming the air around.
+
+"
+E
+"to_char"
+"You breath in deeply taking a large lungful of fresh mountain air.
+
+Man, that feels good!
+
+"
+!
+0 0 0
+A
+"climb"
+"up above rock hawk"
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+transfer( ch, find_room( 24042 ) );
+
+"
+E
+"to_room"
+"$n scrambles up the rocky slope.
+
+"
+E
+"to_char"
+"You scramble up the rocky slope, as you get higher you can see the nest
+
+and head for it.  
+
+"
+!
+0 0 0
+A
+"hear listen"
+""
+"send_to_char( #to_char, ch );
+
+"
+E
+"to_char"
+"Cupping one hand to your ear you listen carfully.  From somewhere above
+
+you can definightely hear the cry of a hawk.  
+
+"
+!
+0 0 0
+755 9 1509949540 3 0
+-1
+S
+
+#24032
+"Brush"
+"Here the track has dropped away from the ridge which still runs north-south
+
+over away to the east.  The brush has opened up a little and here and there is
+
+the odd balsa tree or bush of sage.  The ground is still quite rocky and many
+
+small rocks litter the ground all around.  One rock catches your eye though
+
+because sticking out from underneath it is the top of a small leather pouch.
+
+A stream crosses the path to the north, possibly deep enough to cause problems
+
+for armor clad adventurers.
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 24043 0 6
+D2
+""
+""
+0 -1 24041 0 5
+E
+"rock"
+"The rock is no more than ankle high but is quite flat and about two feet
+
+across.  It does not look too heavy, perhaps you could lift it.  
+
+"
+E
+"pouch"
+"The pouch is rotting away and looks completely worthless.
+
+"
+A
+"get lift"
+"rock"
+"if( mob_in_room( 202, room ) ) { 
+
+  send_to_char( #char_nothing, ch );
+
+  act_notchar( #room_nothing, ch );
+
+  end;
+
+  }
+
+if( !rflag( reset0, room ) ) {
+
+  send_to_char( #char_nothing, ch );
+
+  act_notchar( #room_nothing, ch );
+
+  end;
+
+  }
+
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  send_to_char( #to_char, ch );
+
+  act_notchar( #to_room, ch );
+
+  mload( 202, room );
+
+  obj_to_char( oload( 14 ), ch );
+
+  }
+
+"
+E
+"room_nothing"
+"$n lifts the rock but only a rotten empty pouch lies there.
+
+"
+E
+"char_nothing"
+"You lift the rock but see only a rotted empty pouch.
+
+"
+E
+"to_room"
+"$n reaches down and lifts a nerby rock for something and a centipede
+
+lunges out to attack.  
+
+"
+E
+"to_char"
+"You lift the rock and discover the leather pouch has completely rotted
+
+away, but a glint of silver tells you at least one coin remains. 
+
+Unfortunately your actions have disturbed a centipede which lunges out
+
+from under the rock.  
+
+You get a silver coin.
+
+"
+!
+0 0 0
+A
+"get"
+"pouch"
+"send_to_char( #char, ch );
+
+"
+E
+"char"
+"You bend to pickup the pouch but see it has completely rotted away.  A
+
+rock is covering most of the remains and it might be worth lifting that
+
+to see what is under it.  
+
+"
+!
+0 0 0
+-1
+S
+
+#24033
+"Brush, North Ridge"
+"The track drops below the ridge edge on the west side of the ridge and
+
+continues down to the north.  Here and there, there are the odd set of
+
+tracks now that the ground has more soil.  Against the east side of the
+
+track at one point there are some bushes that seem to have a quite dark
+
+patch of rock behind them.  
+
+"
+""
+301465600 0
+5 6 0
+D1
+"bushes"
+""
+171 -1 24034 0 4
+D4
+""
+""
+0 -1 24031 0 6
+D5
+""
+""
+0 -1 24037 0 6
+E
+"tracks"
+"Peering at the ground the tracks seem to be of a small hoofed animal
+
+possibly a sheep or goat.  
+
+"
+E
+"bushes"
+"Now that you have come over to have a closer look you can see that the
+
+bushes are concealing a cave entrance.  Perhaps you could try to open
+
+something.  
+
+"
+A
+"open move pull"
+"1 east 3 bushes"
+"if( is_open( room, east ) ) {
+
+  send_to_char( #already, ch );
+
+  act_notchar( #alreadynot, ch );
+
+  end;
+
+  }
+
+send_to_char( #open, ch );
+
+act_notchar( #opennot, ch );
+
+open( room, east );
+
+"
+E
+"already"
+"You move some bushes to conceal the opening to the east.
+
+"
+E
+"open"
+"You pull the bushes aside, revealing a dark tunnel that leads into the
+
+face of the rock.
+
+"
+E
+"opennot"
+"$n pulls aside the bushes to the east, revealing a dark tunnel that leads
+
+into the face of the rock.
+
+"
+E
+"alreadynot"
+"$n moves some bushes to conceal the opening to the east.
+
+"
+!
+0 0 0
+205 9 1509949540 3 0
+205 9 1509949540 3 0
+-1
+S
+
+#24034
+"Cave"
+"Just past the bushes you find a natural cave, but not very tall - you are
+
+barely able to stand up within it.  Stretching further into the mountain
+
+east there is quite a pungent odor coming from further within.  A
+
+sandy dry floor doesn't reveal any tracks.  
+
+"
+""
+301465612 0
+11 5 0
+D1
+""
+""
+0 -1 24035 0 4
+D3
+"bushes"
+""
+171 -1 24033 0 4
+A
+"smell"
+""
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+"
+E
+"to_room"
+"$n sniffs the air like a bloodhound.
+
+"
+E
+"to_char"
+"You sniff the area and can easily detect what is quite a strong smell of
+
+guano.  
+
+"
+!
+0 0 0
+A
+"move"
+"1 west 3 bushes"
+"if( is_open( room, west ) ) {
+
+close( room, west );
+
+act_tochar( #already, ch );
+
+act_notchar( #alreadynot, ch );
+
+end;
+
+}
+
+send_to_char( #open, ch );
+
+act_notchar( #opennot, ch );
+
+open( room, west );
+
+"
+E
+"already"
+"You move the bushes back in place to conceal the opening.
+
+"
+E
+"open"
+"You pull aside the bushes to the west, opening up a narrow passage to the
+
+outside world.
+
+"
+E
+"opennot"
+"$n pulls aside the bushes to the west, opening up a passage to the
+
+outside world.
+
+"
+E
+"alreadynot"
+"$n moves some bushes to conceal the opening to the west.
+
+"
+!
+0 0 0
+-1
+S
+
+#24035
+"Cave"
+"There is a colony of bats living here hanging from the ceiling, their
+
+guano all over the floor is what you could smell to the west.  
+
+"
+""
+301465604 0
+11 6 0
+D2
+""
+""
+0 -1 24036 0 5
+D3
+""
+""
+0 -1 24034 0 4
+206 9 1509949540 3 0
+206 9 1509949540 3 0
+206 9 1509949540 3 0
+872 17 1509949450 -2 0
+206 9 1509949540 3 0
+-1
+S
+
+#24036
+"Cave"
+"The cave seems to come to a natural dead end here and simply peters out.  The
+
+floor of the cave is still dry and sandy but for some reason the bats don't
+
+seem to like living here as there is no sign of them having ever done so. 
+
+Here and there along the floor of this small cave, irregular dark splotches
+
+are visible against the paler sand.  Tucked away in a deep niche along the
+
+southern wall, a small, blood-stained altar lies shrouded in shadows, carved
+
+with potent unholy symbols.
+
+"
+""
+301466764 0
+11 5 0
+D0
+""
+""
+0 -1 24035 0 5
+E
+"blood-stained altar"
+"The altar has been carved from the same stone that originally lined the niche
+
+and is a part of the wall itself.  The altar's surface has been carved away to
+
+leave behind a sinuously curved dagger of stone embossed on the top, the
+
+symbol of Iniara.  Small depressions in the stone of the dagger on the altar
+
+are lined with dried blood and it looks as if they would catch the blood of
+
+sacrifices nicely forming small ruby droplets of blood in the hilt of the
+
+dagger.
+
+"
+A
+"1 get take"
+"altar dagger"
+"act_tochar( \"You can't take that, its connected to the wall.\", ch );
+
+"
+!
+0 0 0
+A
+"1 look"
+"unholy 6 symbols"
+"if( get_religion( ch ) == Iniara ) {
+
+  if( class( ch ) == cleric || class( ch ) == paladin )
+
+    act_tochar( #iniara_devoted, ch );
+
+  else
+
+    act_tochar( #iniara_follower, ch );
+
+  }
+
+else
+
+  act_tochar( #evil, ch );
+
+"
+E
+"iniara_devoted"
+"The sinuously cured unholy symbols are ones you readily recognize.  These
+
+symbols are holy to Iniara and devote this unholy altar to her name and
+
+cause.  Specifically, someone has dedicated this altar to Iniara in her guise
+
+as the goddess of hate and pain.
+
+"
+E
+"iniara_follower"
+"The sinuously carved unholy symobls are ones you recognize as those used by
+
+the priests, priestesses and paladins of Iniara in their unholy rites.
+
+"
+E
+"evil"
+"The runes are sinuously twisted and manage to give off an evil feel.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( get_religion( ch ) == Iniara )
+
+  act_tochar( #thanks, ch );
+
+continue;
+
+"
+E
+"thanks"
+"@MIniara thanks you for your sacrifice.@n
+
+"
+!
+5 0 0
+A
+"pray"
+""
+"if( get_religion( ch ) == Iniara ) {
+
+  if( class( ch ) == cleric || class( ch ) == paladin ) {
+
+    if( find_stat( ch, prayer ) > 150 ) {
+
+      drain_stat( ch, prayer, 0, -150 );
+
+      act_tochar( #pray, ch );
+
+      obj_to_char( oload( 4531 ), ch );
+
+      }
+
+    else {
+
+      act_tochar( #failure, ch );
+
+      drain_stat( ch, prayer, 0, -15 );
+
+      }
+
+    }
+
+  else {
+
+    if( find_stat( ch, prayer ) > 200 ) {
+
+      drain_stat( ch, prayer, 0, -200 );
+
+      act_tochar( #pray, ch );
+
+      obj_to_char( oload( 4531 ), ch );
+
+      }
+
+    else {
+
+      act_tochar( #failure, ch );
+
+      drain_stat( ch, prayer, 0, -20 );
+
+      }
+
+    }
+
+  }
+
+else {
+
+  continue;
+
+  }
+
+"
+E
+"pray"
+"Your dark prayers to Iniara have been answered with a gift!
+
+"
+E
+"failure"
+"You pray to Iniara.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( get_religion( ch ) != Iniara ) end;
+
+  wait( random( 5, 7 ) );
+
+if( !is_sleeping( ch ) ) end;
+
+  if( get_room( ch ) != find_room( 24036 ) ) end;
+
+  if( class( ch ) == cleric || class( ch ) == paladin ) {
+
+  if( !has_obj( 4596, ch ) && !wearing_obj( 4596, ch ) ) {
+
+    act_tochar( #dream_holy_symbol, ch );
+
+    }
+
+  }
+
+"
+E
+"dream_holy_symbol"
+"@MIn an unusually vivid dream you see a stunningly beautiful vyan woman dressed
+
+in a blood-red dress that conforms to her every contour.  In the dream you see
+
+her sacrificing an obsidian shard upon Iniara's altar.@n
+
+"
+!
+0 0 0
+A
+"2 sleep"
+""
+"acode( room, 5 );
+
+continue;
+
+"
+!
+0 0 0
+A
+""
+""
+"if( get_religion( ch ) != Iniara ) end;
+
+  if( class( ch ) == cleric || class( ch ) == paladin ) {
+
+  act_tochar( #holy, ch );
+
+  junk_obj( has_obj( 3762, find_room( 24036 ) ) );
+
+  act_notchar( #rholy, ch );
+
+  obj_to_char( oload( 4596 ), ch );
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"holy"
+"You place the obsidian shard upon the altar and kneel before it praying that
+
+Iniara accepts your sacrifice.  In a flash of darkness the sacrifice is
+
+accepted and in its place stands a holy symbol if Iniara.
+
+You quickly scoop up your prize before another has a chance to steal it.
+
+"
+E
+"rholy"
+"$n kneels before the altar and places something upon it.  There is a sudden
+
+flash of darkness and when it is gone you see $n scooping something up off the
+
+altar but you didn't see what it was.
+
+"
+!
+5 3762 0
+-1
+S
+
+#24037
+"Brush"
+"The track drops down from the ridge to the south and now has much more in the
+
+way of trees and bushes.  There is a small animal trail off to the west but
+
+otherwise the main track seems to continue north.
+
+"
+"[Sidenti] beuatiful, shiny platinum coins!
+
+"
+301465600 0
+4 6 0
+D0
+""
+""
+0 -1 24041 0 5
+D3
+""
+""
+0 -1 24038 0 6
+D4
+""
+""
+0 -1 24033 0 6
+755 9 1509949540 3 0
+-1
+S
+
+#24038
+"Brush"
+"The trail here runs east to west, although with the heavy overgrowth it
+
+is often difficult to find exactly where the trail markers lie.  Tracks
+
+of various sort line the soft dirt of the path.
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 24037 0 6
+D3
+""
+""
+0 -1 24039 0 6
+E
+"tracks"
+"The tracks seem to be only of hooved animals, there are no paw prints and
+
+you would guess that quite a few animals use this trail for this reason.  
+
+"
+-1
+S
+
+#24039
+"Brush"
+"The brush is heavy in this spot, with branches and scrub jutting directly into
+
+the trail.  Rustling noises can be heard in the bushes somewhere south.  The
+
+path continues west and you can see it winding its way north west up a small
+
+hill.
+
+"
+""
+301465600 0
+4 6 0
+D1
+""
+""
+0 -1 24038 0 6
+D2
+""
+""
+0 -1 24040 0 6
+D3
+""
+""
+0 -1 26000 0 6
+A
+"listen"
+""
+"send_to_char( #to_char, ch );
+
+"
+E
+"to_char"
+"You cup your hand to you ear and strain to hear anything.  To the south
+
+you think you can hear the sounds of something rooting up the ground and
+
+making grunting noises.  
+
+"
+!
+0 0 0
+755 9 1509949540 3 0
+-1
+S
+
+#24040
+"Small Clearing"
+"The trail opens into a small clearing of approximately twenty meters in
+
+diameter.  The scent of sagebrush is not nearly as strong here as throughout
+
+the rest of the brush, and is laced with the pungent odor of excrement.  A
+
+thick swelling of dark green foliage is in the southwest section of this
+
+clearing.  To the south, a huge boulder looms over the area, part of a rocky
+
+ridge which seems to run roughly east to west.  A small rickety shack stands
+
+off to the west, dug into the side of a hill.
+
+"
+"to south is rock
+
+"
+301465600 0
+4 6 0
+D0
+""
+""
+0 -1 24039 0 6
+D3
+"door"
+""
+513 -1 24054 0 5
+E
+"swelling foliage"
+"These plants are thriving on a small, natural spring here.  The clear,
+
+cold water looks to be safe for drinking.  
+
+"
+E
+"southwest foliage"
+"The foliage to the southwest appears to be a thick cluster of scrub brush. 
+
+There doesn't appear to be anything behind it worth investigating.
+
+"
+E
+"1 south boulder"
+"The boulder appears to be a part of the same rocky ridge running through this
+
+area.  The rock, itself, is a dark grey color with darker patches of dirt and
+
+mud marking its base in places.
+
+"
+E
+"1 west rickety shack"
+"The rickety shack looks barely stable enough to remain standing.  Its hard to
+
+believe anyone would be living in such a run-down shack.  There are gaps in
+
+the boards of the shack where they no longer meet together flush and where
+
+others have fallen away in places.  Where a door once stood now stands only
+
+the gaping remains of the frame that once held it and even that slightly askew.
+
+"
+208 169 1509949540 3 0
+207 201 1509949540 3 0
+207 201 1509949540 3 0
+22 17 1509949540 -2 0
+-1
+S
+
+#24041
+"Cavern Between Rocks"
+"This narrow cavern is little more than a shelter formed by two large,
+
+overlapping rocks.  The air is somewhat cooler here as the sun does not have
+
+direct access to this spot.  Tracks lead both to the north and south.
+
+"
+""
+301465604 0
+11 5 0
+D0
+""
+""
+0 -1 24032 0 5
+D2
+""
+""
+0 -1 24037 0 5
+755 9 1509949540 3 0
+755 9 1509949540 3 0
+-1
+S
+
+#24042
+"Hawk's Nest"
+"A hawk's nest perches precariously on an outcrop of rock.  Although the
+
+view is even better from up here than is was on the track you wouldn't
+
+want to spend anymore time here than was necessary.  
+
+"
+""
+301465600 0
+5 6 0
+E
+"4 nest"
+"The hawk's nest is quite large, the sticks used to build it look quite
+
+old and this nest site must have been used for a long time.  
+
+"
+E
+"10 under nest"
+"You scratch around under the nest and think you can see the glint of
+
+metal.  But if you are going to get at it you will have to scratch around
+
+some more.  
+
+"
+A
+"climb"
+"down track"
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+transfer( ch, find_room( 24031 ) );
+
+"
+E
+"to_room"
+"$n scrambles back down to the track below.
+
+"
+E
+"to_char"
+"You scramble back down the ridge to relative safety on the track below.
+
+"
+!
+0 0 0
+A
+"scratch search dig"
+"nest shells outcrop"
+"if( rflag( reset0, room ) ) {
+
+  send_to_char( #to_char, ch );
+
+  remove_rflag( reset0, room );
+
+  room = find_room( 24031 );
+
+  obj_to_room( oload( 163 ), room );
+
+  }
+
+else
+
+  send_to_char( #char_fail, ch );
+
+"
+E
+"char_fail"
+"You scratch around but don't find anything there at the moment.
+
+"
+E
+"to_char"
+"You scratch around and manage to dislodge a key which falls down onto the
+
+track below.  
+
+"
+!
+0 0 0
+204 9 1509949540 3 0
+873 17 1509949442 -2 0
+-1
+S
+
+#24043
+"Stream Crossing"
+"The track meanders along northwards until it meets a stream which runs west to
+
+east across the path of the stream.  The stream, no more than a few feet
+
+across is of clear cold mountain water and empties into a waterhole to the
+
+east of the track.  There is the gentle sound of the stream and occasional
+
+splash of a fish.
+
+"
+""
+301465600 0
+8 6 0
+D0
+""
+""
+0 -1 24047 0 6
+D2
+""
+""
+0 -1 24032 0 6
+D3
+""
+""
+0 -1 24044 0 6
+198 137 1509949490 3 0
+198 137 1509949490 3 0
+398 17 1509949540 -2 0
+-1
+S
+
+#24044
+"Brush, Streambed"
+"The stream continues west or east and is quite cold to stand in.  Though
+
+it is quite easy to travel along the stream with a soft gravelly
+
+streambed the banks are quite high and there seems to be no way up, or
+
+out of the stream bed.  
+
+"
+""
+301465608 0
+8 6 0
+D1
+""
+""
+0 -1 24043 0 6
+D3
+""
+""
+0 -1 24045 0 6
+A
+""
+""
+"send_to_room( #to_all, room );
+
+"
+E
+"to_all"
+"You feel something slimy brush against your legs.
+
+"
+!
+2 400 0
+398 17 1509949540 -2 0
+-1
+S
+
+#24045
+"Stream Through Brush"
+"Some trees from above the stream bank shade this area of the stream making
+
+it quite dark down here.  The stream twists around to the north upstream
+
+and to the east downstream. There is something swimming in a circle
+
+around you in the water.  
+
+"
+""
+301465600 0
+8 6 0
+D1
+""
+""
+0 -1 24044 0 6
+D2
+""
+""
+0 -1 24046 0 6
+A
+"l look"
+"water stream"
+"send_to_char( #to_char, ch );
+
+"
+E
+"to_char"
+"Peering into the water you see a Giant six foot long Eel swimming in a
+
+lazy circle around you.  
+
+"
+!
+0 0 0
+198 137 1509949490 3 0
+198 137 1509949465 3 0
+398 17 1509949540 -2 0
+-1
+S
+
+#24046
+"A Shallow Stream"
+"The stream curves around a series of stones along the southwest bank and
+
+disappears underground into a rock wall to the west.  The banks surrounding
+
+the stream are much too steep to climb but the cavern the stream follows looks
+
+barely large enough to enter.
+
+"
+"[Altimeas] connect to 83000
+
+"
+301465600 0
+8 6 0
+D0
+""
+""
+0 -1 24045 0 6
+D3
+""
+""
+0 -1 83000 0 6
+A
+""
+""
+"if( size( ch ) >= 5 ) {
+
+  act_tochar( #large, ch );
+
+  act_notchar( #clarge, ch );
+
+  }
+
+if( size( ch ) == 4 ) {
+
+  act_tochar( #med, ch );
+
+  act_notchar( #cmed, ch );
+
+  }
+
+continue;
+
+"
+E
+"large"
+"You squeeze through the tight opening into the cavern.
+
+"
+E
+"clarge"
+"$n squeezes through the tight opening into the cavern.
+
+"
+E
+"med"
+"You're forced to duck under the low stone entrance to the cavern as you pass
+
+through.
+
+"
+E
+"cmed"
+"$n ducks under the low stone entryway as $e enters the cavern.
+
+"
+!
+3 0 8
+198 137 1509949540 3 0
+198 137 1509949490 3 0
+398 17 1509949540 -2 0
+-1
+S
+
+#24047
+"Brush, Bluff"
+"The track ends here after about a mile or so of sparse witch hazel and sage
+
+bushes.  From here you can see further north into the valley and the snow
+
+capped mountains beyond but there appears no way down the bluff.
+
+"
+""
+301465608 0
+5 6 0
+D2
+""
+""
+0 -1 24043 0 6
+311 9 1509949540 2 0
+1358 17 1509949540 -2 0
+-1
+S
+
+#24048
+"Atop a Small Wooden Platform"
+"You stand atop a very small platform, attached precariously on top of a long
+
+slender pole.  The view up here seems more beautiful, looking out over the
+
+brush and scrub and the rolling hills around.  Smoke rises above the hills to
+
+the northwest where Chiiron must be.  Turning your face into the wind and
+
+looking far to the north, you have a great view of the land rising up into the
+
+Great Northern Mountains.  The sunrises and sunsets must be spectacular from
+
+here.
+
+"
+"hourglass on swami is for song of the ward quest
+
+must he held, for timer to work
+
+[Froom] should be the swami, a small, half-naked man, sits here
+
+"
+301465600 0
+2 5 0
+D5
+""
+""
+0 -1 24030 0 5
+A
+"4 practice"
+"1 float"
+"if( is_player( ch ) )
+
+  if( class( ch ) == cleric ) i = 1;
+
+  if( class( ch ) == mage ) i = 1;
+
+  if( i == 1 )
+
+  if( has_obj( 2793, ch ) ) {
+
+  mob = mob_in_room( 286, room );
+
+  tell( mob, ch, #have );
+
+  continue;
+
+  }
+
+else {
+
+  mob = mob_in_room( 286, room );
+
+  tell( mob, ch, #no );
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"have"
+"Very well. You have proven yourself.
+
+"
+E
+"no"
+"Only when you have shown your worth to me will I teach you float.  To
+
+prove yourself, show me a talisman of deep water.
+
+"
+!
+0 0 0
+A
+"4 practice"
+"1 song of the ward"
+"mob = mob_in_room( 286, room );
+
+if( !mob )
+
+  end;
+
+if( find_skill( ch, song of the wind ) == 0 ) {
+
+  interpret( mob, #no2 );
+
+  end;
+
+  }
+
+if( !cflag( 148, ch ) ) {
+
+  interpret( mob, #no );
+
+  end;
+
+  }
+
+continue;
+
+"
+E
+"no"
+"say Until the test you have passed, you will not have been able to comprehend
+
+my teachings.  Of the test you may ask if you so wish.
+
+"
+E
+"no2"
+"say The very basics of what I would build upon, you are unaware of.  I have
+
+nothing to teach you.
+
+"
+!
+0 0 0
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You climb down the pole.
+
+"
+E
+"to_room"
+"$n climbs down the pole.
+
+"
+!
+3 0 32
+286 9 1509949540 3 0
+-1
+S
+
+#24049
+"Halfway up the Balsa Tree"
+"You are sitting on a branch about thirty feet off the ground.  The trunk of
+
+the tree is still several yards wide.  On the north side of the tree is a hole
+
+that apparently leads to something's home.  It is about two feet in diameter
+
+and obviously was made by something bigger than a squirrel.
+
+"
+""
+301465600 0
+19 5 0
+D4
+""
+""
+0 -1 24050 0 5
+D5
+""
+""
+0 -1 24023 0 6
+E
+"hole"
+"The hole is two feet in diameter and looks to lead to a cave of some
+
+sort.  Other than that there isn't much to say.  
+
+"
+A
+"enter go"
+"hole tree"
+"if( is_player( ch ) ) {
+
+  if( size( ch ) > 4 ) {
+
+    act_tochar( #big, ch );
+
+    end;
+
+    }
+
+  act_tochar( #char, ch );
+
+  act_notchar( #room, ch );
+
+  transfer( ch, find_room( 24051 ) );
+
+  }
+
+else
+
+  act_tochar( #else, ch );
+
+"
+E
+"room"
+"$n enters the hole.
+
+"
+E
+"char"
+"You enter the hole.
+
+"
+E
+"else"
+"You cannot enter the hole.
+
+"
+E
+"big"
+"You are too large to enter the hole.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !cflag( 53, ch ) ) {
+
+  if( doing_quest( ch, 37 ) && !has_obj( 80, ch ) && !wearing_obj( 80, ch ) && !obj_in_room( 80, find_room( 24050 ) ) ) {
+
+    obj_to_room( oload( 80 ), find_room( 24050 ) );
+
+  }
+
+}
+
+continue;
+
+"
+!
+3 0 16
+-1
+S
+
+#24050
+"Top of the Large Balsa Tree"
+"You are at the top of the balsa tree.  You can see for miles in every
+
+direction.  Chiiron lies to the west and far to the east you can make out
+
+the ocean.  
+
+"
+""
+301465600 0
+19 5 0
+D5
+""
+""
+0 -1 24049 0 5
+316 9 1509949470 3 0
+-1
+S
+
+#24051
+"Inside the Balsa Tree"
+"You are inside the balsa tree.  Something or someone has carefully scraped out
+
+the inside of the tree to make a very comfortable room.  The only problem with
+
+it is the very strong animal stench which makes being in here rather
+
+unpleasant.  In one corner is a pile of odds and ends which the owner of this
+
+cave seems to have collected.
+
+"
+""
+301465604 0
+0 4 0
+D0
+""
+""
+0 -1 24049 0 4
+A
+"search 1 look examine"
+"pile odds ends"
+"if( !is_player( ch ) )
+
+  end;
+
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 20 );
+
+  if( i > 18 ) {
+
+    act_tochar( #gem, ch );
+
+    act_notchar( #gem2, ch );
+
+    obj_to_char( oload( 632 ), ch );
+
+    }
+
+  else {
+
+    send_to_char( #no_char, ch );
+
+    act_notchar( #no_room, ch );
+
+    }
+
+  remove_rflag( reset0, room );
+
+  }
+
+else {
+
+  send_to_char( #no_char, ch );
+
+  act_notchar( #no_room, ch );
+
+  }
+
+"
+E
+"yes_room"
+"$n rummages through the pile, finding a silver keyring!
+
+exi
+
+"
+E
+"yes_char"
+"You rummage through the pile, finding a silver keyring!
+
+"
+E
+"no_room"
+"$n rummages through the pile but finds nothing of interest.
+
+"
+E
+"no_char"
+"You rummage through the pile finding nothing of interest.
+
+"
+E
+"gem"
+"You search through the pile and find some type of gem!
+
+"
+E
+"gem2"
+"$n searches through the pile and seems to find something!
+
+"
+!
+0 0 0
+38 9 1509949540 3 0
+-1
+S
+
+#24052
+"Narrow Ravine"
+"Steep rocky walls rise towards the hills north and west, dense underbrush
+
+crowding the area underfoot.  Northwards, the rocky slope is an easy scramble,
+
+with many handholds and roots.  To the east, you spy an open area with bushes,
+
+with a great tree towering over the entire area.
+
+"
+""
+301465600 0
+4 9 0
+D1
+""
+""
+0 -1 24025 0 6
+D2
+""
+""
+0 -1 24030 0 6
+D4
+""
+""
+0 -1 24011 0 6
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You head up the rocky slope to the north.
+
+"
+!
+3 -1 1
+-1
+S
+
+#24053
+"Rocky Slope"
+"The ground here is steep and uneven, as it slopes steeply downward to the
+
+south and back toward the brush.  At the foot of a steep drop to the north,
+
+you spy a narrow trail leading east and west.  A huge tree towers over you to
+
+the east, and above a rock wall to the west dense bushes and undergrowth
+
+prevents passage.  Southwards, the ground slopes up a little towards a rocky
+
+ridge, the path leading up and over.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 24002 0 6
+D2
+""
+""
+0 -1 24011 0 6
+205 9 100 3 0
+1324 17 1509949540 -2 0
+-1
+S
+
+#24054
+"Rickety Shack"
+"The interior of this shack is in shambles.  The wooden boards which
+
+comprise its walls lean this way and that, threatening at any moment to
+
+come tumbling down upon your head.  A simple pile of straw sits off in
+
+one corner, while a few wooden benches and ratty blankets make up the
+
+remainder of the room's furnishings.
+
+"
+""
+301465604 0
+0 5 0
+D1
+"door"
+""
+513 -1 24040 0 5
+E
+"benches"
+"The benches are of simple but effective design.
+
+"
+E
+"wooden boards"
+"Calling them boards is generous.  Slipshod of manufacture, these pieces
+
+of malformed lumber barely remain standing.
+
+"
+E
+"straw"
+"A foul odor arises as you examine the straw bed. 
+
+"
+875 9 1509949540 3 0
+-1
+S
+
+#24055
+"Brambles"
+"Thick brambles and brush cover this hillside.  Wherever the brush does not
+
+grow, it seems that a large boulder or steep slope is - making movement
+
+here slow and difficult.  To the east, you think you see an open area
+
+through some brambles, and to the west a small opening offers passage
+
+near the bottom of a hill.
+
+"
+""
+301465600 0
+4 9 0
+D1
+""
+""
+0 -1 24030 0 6
+D3
+""
+""
+0 -1 24056 0 9
+755 9 1509949540 3 0
+-1
+S
+
+#24056
+"Dry Rocky Hills"
+"A few clumps of thick brown bushes grow here, but you are able to move
+
+freely through the grassy areas between them.  The surrounding terrain is
+
+hilly, with rocky rises to the north and south of you.
+
+"
+""
+301465600 0
+4 9 0
+D1
+""
+""
+0 -1 24055 0 9
+D3
+""
+""
+0 -1 24057 0 9
+78 17 1509949465 -2 0
+205 9 1509949540 3 0
+-1
+S
+
+#24057
+"Dry Rocky Hills"
+"You stand on a steep, dry hilly slope.  To the north and south, the
+
+ground rises steeply, the unforgiving inclines covered with scores of
+
+rocks, large and small.  You can see the walls of Chiiron off in the
+
+distance to the west.
+
+"
+""
+301465600 0
+4 9 0
+D1
+""
+""
+0 -1 24056 0 9
+D3
+""
+""
+0 -1 40571 0 9
+78 17 1509949465 -2 0
+-1
+S
+
+#24058
+"Brush"
+"The brush here is thick, with many bushes growing along the rocky slopes. 
+
+To the north, a rough outcropping towers above you, in the direction of
+
+the road, while west of here you spy an animal track.  To the south, the
+
+ground rises towards a small hilltop.
+
+"
+""
+301465600 0
+4 9 0
+D2
+""
+""
+0 -1 24059 0 9
+D3
+""
+""
+0 -1 24018 0 6
+755 9 1509949540 3 0
+-1
+S
+
+#24059
+"Brush - Hillside"
+"You stand on a sloped hillside, with a number of clusters of bushes and
+
+brambles.  To the south, the ground continues to rise, while you spy an
+
+animal track off to the west.
+
+"
+""
+301465600 0
+4 9 0
+D0
+""
+""
+0 -1 24058 0 9
+D3
+""
+""
+0 -1 24021 0 6
+755 9 1509949540 3 0
+-1
+S
+
+#0
+

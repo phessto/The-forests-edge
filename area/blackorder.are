@@ -1,0 +1,1805 @@
+#AREA
+"Tower of the Black Order"
+"Terek"
+""
+90 0
+2
+0
+#ROOMS
+
+#64500
+"Blackened Forest - Amidst Stone Ruins"
+"To be used for new areas 
+"
+"[Soren] south was 51389
+
+"
+301465601 0
+3 5 0
+D0
+""
+""
+0 -1 64507 0 5
+D1
+""
+""
+0 -1 64501 0 5
+D3
+""
+""
+0 -1 64503 0 5
+-1
+S
+
+#64501
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+"[Soren] south was 51390
+
+"
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64506 0 9
+D1
+""
+""
+0 -1 64502 0 9
+D3
+""
+""
+0 -1 64500 0 5
+-1
+S
+
+#64502
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+"[Soren] south was 51391
+
+"
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64505 0 9
+D3
+""
+""
+0 -1 64501 0 9
+-1
+S
+
+#64503
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64508 0 9
+D1
+""
+""
+0 -1 64500 0 5
+D2
+""
+""
+0 -1 64504 0 9
+D3
+""
+""
+0 -1 64515 0 9
+-1
+S
+
+#64504
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+"[Soren] east was 51389
+
+"
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64503 0 9
+D3
+""
+""
+0 -1 64516 0 9
+-1
+S
+
+#64505
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64514 0 9
+D2
+""
+""
+0 -1 64502 0 9
+D3
+""
+""
+0 -1 64506 0 9
+-1
+S
+
+#64506
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64513 0 9
+D1
+""
+""
+0 -1 64505 0 9
+D2
+""
+""
+0 -1 64501 0 9
+D3
+""
+""
+0 -1 64507 0 9
+-1
+S
+
+#64507
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64512 0 9
+D1
+""
+""
+0 -1 64506 0 9
+D2
+""
+""
+0 -1 64500 0 5
+D3
+""
+""
+0 -1 64508 0 9
+-1
+S
+
+#64508
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64511 0 9
+D1
+""
+""
+0 -1 64507 0 9
+D2
+""
+""
+0 -1 64503 0 9
+D3
+""
+""
+0 -1 64509 0 9
+-1
+S
+
+#64509
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64510 0 9
+D1
+""
+""
+0 -1 64508 0 9
+D2
+""
+""
+0 -1 64515 0 9
+-1
+S
+
+#64510
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+"[Soren] north was 51346
+
+"
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64511 0 9
+D2
+""
+""
+0 -1 64509 0 9
+-1
+S
+
+#64511
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+"[Soren] north was 51345
+
+"
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64512 0 9
+D2
+""
+""
+0 -1 64508 0 9
+D3
+""
+""
+0 -1 64510 0 9
+-1
+S
+
+#64512
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+"[Soren] north was 51344
+
+"
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64513 0 9
+D2
+""
+""
+0 -1 64507 0 9
+D3
+""
+""
+0 -1 64511 0 9
+-1
+S
+
+#64513
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+"[Soren] north was 51343
+
+"
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64514 0 9
+D2
+""
+""
+0 -1 64506 0 9
+D3
+""
+""
+0 -1 64512 0 9
+-1
+S
+
+#64514
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+"[Soren] north was 51342
+
+"
+301465601 0
+3 9 0
+D2
+""
+""
+0 -1 64505 0 9
+D3
+""
+""
+0 -1 64513 0 9
+-1
+S
+
+#64515
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64509 0 9
+D1
+""
+""
+0 -1 64503 0 9
+D2
+""
+""
+0 -1 64516 0 9
+D3
+""
+""
+0 -1 64517 0 9
+-1
+S
+
+#64516
+"Blackened Forest - Amidst Stone Ruins"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64515 0 9
+D1
+""
+""
+0 -1 64504 0 9
+-1
+S
+
+#64517
+"Blackened Forest - Before an Ancient Black Stone Tower"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64515 0 9
+D3
+""
+""
+0 -1 64518 0 9
+-1
+S
+
+#64518
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64535 0 9
+D1
+""
+""
+0 -1 64517 0 9
+D2
+""
+""
+0 -1 64520 0 9
+D3
+""
+""
+0 -1 64544 0 9
+-1
+S
+
+#64520
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64518 0 9
+D2
+""
+""
+0 -1 64521 0 9
+D3
+""
+""
+0 -1 64542 0 9
+-1
+S
+
+#64521
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64520 0 9
+D3
+""
+""
+0 -1 64522 0 9
+D4
+""
+""
+0 -1 64546 0 9
+-1
+S
+
+#64522
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64521 0 9
+D3
+""
+""
+0 -1 64523 0 9
+-1
+S
+
+#64523
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64541 0 9
+D1
+""
+""
+0 -1 64522 0 9
+D3
+""
+""
+0 -1 64524 0 9
+-1
+S
+
+#64524
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64523 0 9
+D3
+""
+""
+0 -1 64525 0 9
+-1
+S
+
+#64525
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64526 0 9
+D1
+""
+""
+0 -1 64524 0 9
+D4
+""
+""
+0 -1 64545 0 9
+-1
+S
+
+#64526
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64527 0 9
+D1
+""
+""
+0 -1 64538 0 9
+D2
+""
+""
+0 -1 64525 0 9
+-1
+S
+
+#64527
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64529 0 9
+D1
+""
+""
+0 -1 64537 0 9
+D2
+""
+""
+0 -1 64526 0 9
+-1
+S
+
+#64529
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64530 0 9
+D1
+""
+""
+0 -1 64536 0 9
+D2
+""
+""
+0 -1 64527 0 9
+-1
+S
+
+#64530
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64531 0 9
+D2
+""
+""
+0 -1 64529 0 9
+D4
+""
+""
+0 -1 64548 0 9
+-1
+S
+
+#64531
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64532 0 9
+D3
+""
+""
+0 -1 64530 0 9
+-1
+S
+
+#64532
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64533 0 9
+D2
+""
+""
+0 -1 64539 0 9
+D3
+""
+""
+0 -1 64531 0 9
+-1
+S
+
+#64533
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64534 0 9
+D3
+""
+""
+0 -1 64532 0 9
+-1
+S
+
+#64534
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D2
+""
+""
+0 -1 64535 0 9
+D3
+""
+""
+0 -1 64533 0 9
+D4
+""
+""
+0 -1 64547 0 9
+-1
+S
+
+#64535
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64534 0 9
+D2
+""
+""
+0 -1 64518 0 9
+D3
+""
+""
+0 -1 64543 0 9
+-1
+S
+
+#64536
+"Black Tower - Elegant Living Quarters"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D3
+""
+""
+0 -1 64529 0 9
+-1
+S
+
+#64537
+"Black Tower - Elegant Living Quarters"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D3
+""
+""
+0 -1 64527 0 9
+-1
+S
+
+#64538
+"Black Tower - Elegant Living Quarters"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D3
+""
+""
+0 -1 64526 0 9
+-1
+S
+
+#64539
+"Black Tower - Illusionist's Labratory"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64532 0 9
+D2
+""
+""
+0 -1 64540 0 9
+-1
+S
+
+#64540
+"Black Tower - Den of the Master Illusionist"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64539 0 9
+D2
+""
+""
+0 -1 64541 0 9
+-1
+S
+
+#64541
+"Black Tower - Illusionist's Labratory"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64540 0 9
+D2
+""
+""
+0 -1 64523 0 9
+-1
+S
+
+#64542
+"Black Tower - Forgotten Library"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64520 0 9
+-1
+S
+
+#64543
+"Black Tower - Dusty Stone Vault"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64535 0 9
+-1
+S
+
+#64544
+"Black Tower - Abandoned Guard's Chambers"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64518 0 9
+-1
+S
+
+#64545
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64551 0 9
+D1
+""
+""
+0 -1 64553 0 9
+D4
+""
+""
+0 -1 64572 0 9
+D5
+""
+""
+0 -1 64525 0 9
+-1
+S
+
+#64546
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64556 0 9
+D3
+""
+""
+0 -1 64555 0 9
+D4
+""
+""
+0 -1 64571 0 9
+D5
+""
+""
+0 -1 64521 0 9
+-1
+S
+
+#64547
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D2
+""
+""
+0 -1 64558 0 9
+D3
+""
+""
+0 -1 64559 0 9
+D4
+""
+""
+0 -1 64573 0 9
+D5
+""
+""
+0 -1 64534 0 9
+-1
+S
+
+#64548
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64561 0 9
+D2
+""
+""
+0 -1 64549 0 9
+D4
+""
+""
+0 -1 64574 0 9
+D5
+""
+""
+0 -1 64530 0 9
+-1
+S
+
+#64549
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64548 0 9
+D2
+""
+""
+0 -1 64550 0 9
+-1
+S
+
+#64550
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+"[Terek] Runes, decipher them, create gate, etc
+
+"
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64549 0 9
+D1
+""
+""
+0 -1 64562 0 9
+D2
+""
+""
+0 -1 64551 0 9
+-1
+S
+
+#64551
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64550 0 9
+D2
+""
+""
+0 -1 64545 0 9
+-1
+S
+
+#64552
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+-1
+S
+
+#64553
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64564 0 9
+D1
+""
+""
+0 -1 64554 0 9
+D3
+""
+""
+0 -1 64545 0 9
+-1
+S
+
+#64554
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64565 0 9
+D1
+""
+""
+0 -1 64555 0 9
+D3
+""
+""
+0 -1 64553 0 9
+-1
+S
+
+#64555
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64566 0 9
+D1
+""
+""
+0 -1 64546 0 9
+D3
+""
+""
+0 -1 64554 0 9
+-1
+S
+
+#64556
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64557 0 9
+D2
+""
+""
+0 -1 64546 0 9
+-1
+S
+
+#64557
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64558 0 9
+D2
+""
+""
+0 -1 64556 0 9
+D3
+""
+""
+0 -1 64570 0 9
+-1
+S
+
+#64558
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64547 0 9
+D2
+""
+""
+0 -1 64557 0 9
+-1
+S
+
+#64559
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64547 0 9
+D2
+""
+""
+0 -1 64567 0 9
+D3
+""
+""
+0 -1 64560 0 9
+-1
+S
+
+#64560
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64559 0 9
+D2
+""
+""
+0 -1 64568 0 9
+D3
+""
+""
+0 -1 64561 0 9
+-1
+S
+
+#64561
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64560 0 9
+D2
+""
+""
+0 -1 64569 0 9
+D3
+""
+""
+0 -1 64548 0 9
+-1
+S
+
+#64562
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64563 0 9
+D3
+""
+""
+0 -1 64550 0 9
+-1
+S
+
+#64563
+"Black Tower - Lair of the Master Enchanter"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D3
+""
+""
+0 -1 64562 0 9
+-1
+S
+
+#64564
+"Black Tower - Enchanter's Barracks"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64565 0 9
+D2
+""
+""
+0 -1 64553 0 9
+-1
+S
+
+#64565
+"Black Tower - Enchanter's Barracks"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64566 0 9
+D2
+""
+""
+0 -1 64554 0 9
+D3
+""
+""
+0 -1 64564 0 9
+-1
+S
+
+#64566
+"Black Tower - Enchanter's Barracks"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D2
+""
+""
+0 -1 64555 0 9
+D3
+""
+""
+0 -1 64565 0 9
+-1
+S
+
+#64567
+"Black Tower - Weapons Storage Room"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64559 0 9
+-1
+S
+
+#64568
+"Black Tower - Enchanter's Labratory"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64560 0 9
+D3
+""
+""
+0 -1 64569 0 9
+-1
+S
+
+#64569
+"Black Tower - Enchanter's Labratory"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64561 0 9
+D1
+""
+""
+0 -1 64568 0 9
+-1
+S
+
+#64570
+"Black Tower - Sealed Storage Room"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64557 0 9
+-1
+S
+
+#64571
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64584 0 9
+D3
+""
+""
+0 -1 64583 0 9
+D5
+""
+""
+0 -1 64546 0 9
+-1
+S
+
+#64572
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64577 0 9
+D1
+""
+""
+0 -1 64581 0 9
+D5
+""
+""
+0 -1 64545 0 9
+-1
+S
+
+#64573
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D2
+""
+""
+0 -1 64586 0 9
+D3
+""
+""
+0 -1 64580 0 9
+D5
+""
+""
+0 -1 64547 0 9
+-1
+S
+
+#64574
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64578 0 9
+D2
+""
+""
+0 -1 64575 0 9
+D5
+""
+""
+0 -1 64548 0 9
+-1
+S
+
+#64575
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64574 0 9
+D2
+""
+""
+0 -1 64576 0 9
+-1
+S
+
+#64576
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64575 0 9
+D2
+""
+""
+0 -1 64577 0 9
+-1
+S
+
+#64577
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64576 0 9
+D2
+""
+""
+0 -1 64572 0 9
+-1
+S
+
+#64578
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64579 0 9
+D3
+""
+""
+0 -1 64574 0 9
+-1
+S
+
+#64579
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64580 0 9
+D3
+""
+""
+0 -1 64578 0 9
+-1
+S
+
+#64580
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64573 0 9
+D3
+""
+""
+0 -1 64579 0 9
+-1
+S
+
+#64581
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64582 0 9
+D3
+""
+""
+0 -1 64572 0 9
+-1
+S
+
+#64582
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64583 0 9
+D3
+""
+""
+0 -1 64581 0 9
+-1
+S
+
+#64583
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D1
+""
+""
+0 -1 64571 0 9
+D3
+""
+""
+0 -1 64582 0 9
+-1
+S
+
+#64584
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64585 0 9
+D2
+""
+""
+0 -1 64571 0 9
+-1
+S
+
+#64585
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64586 0 9
+D2
+""
+""
+0 -1 64584 0 9
+-1
+S
+
+#64586
+"Black Tower - Cold Stone Corridor"
+"Under Construction.
+
+"
+""
+301465601 0
+3 9 0
+D0
+""
+""
+0 -1 64573 0 9
+D2
+""
+""
+0 -1 64585 0 9
+-1
+S
+
+#0
+

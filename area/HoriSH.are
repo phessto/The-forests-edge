@@ -1,0 +1,1365 @@
+#AREA
+"HORI Stronghold"
+"Olah"
+""
+1 0
+0
+0
+#ROOMS
+
+#14000
+"Stronghold Foyer"
+"You pass through the barrier and into what looks to be a foyer for the
+
+stronghold.  The room itself is fairly spacious, and sunlight streaming
+
+through the large bay windows provides plenty of natural light for the room. 
+
+You notice that the view here is almost as spectacular as the one from the
+
+balcony of the Eagle Eye Cafe.  Clearly visible through the windows is the Sea
+
+of Stars, its waters crashing against the rocks off in the distance.  All in
+
+all, the location and atmosphere of the room engender a sense of paradise. 
+
+One cannot help but want to sit in this room and take a reprieve from the
+
+troubles of life.  In the center of the room, with a fountain nearby, stands a
+
+statue of Meriada, the Grey Lady, with her arm uplifted as if looking toward
+
+the future dawn and the coming of the red horizon.  To the south is a marble
+
+gate.  A lever has been set beside it.
+
+"
+""
+301465605 0
+0 9 0
+D0
+""
+""
+0 -1 14006 0 6
+D1
+"oak door"
+""
+1 -1 14002 0 6
+D2
+"immense marble gate"
+""
+33175 4166 14004 0 7
+D3
+"kitchen door"
+""
+1 -1 14001 0 6
+A
+""
+""
+"wait( 1 );
+
+if( !is_open( room, south ) )
+
+  end;
+
+close( room, south );
+
+lock( room, south );
+
+send_to_room( #close, room );
+
+send_to_room( #close, find_room( 14004 ) );
+
+"
+E
+"close"
+"@eThe immense marble gate slams shut!@n
+
+"
+!
+1 0 4
+A
+"pull"
+"lever"
+"if( is_open( room, south ) )
+
+  act_tochar( #why, ch );
+
+else {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #nopen, ch );
+
+  unlock( room, south );
+
+  open( room, south );
+
+  }
+
+"
+E
+"why"
+"The lever has already been pulled.
+
+"
+E
+"open"
+"You pull the lever, and the marble gate opens.
+
+"
+E
+"nopen"
+"$n pulls the lever, and the marble gate opens.
+
+"
+!
+0 0 0
+A
+"push"
+"lever"
+"if( is_open( room, south ) ) {
+
+  act_tochar( #close, ch );
+
+  act_notchar( #nclose, ch );
+
+  close( room, south );
+
+  lock( room, south );
+
+  }
+
+else
+
+  act_tochar( #why, ch );
+
+"
+E
+"why"
+"The lever has already been pushed.
+
+"
+E
+"close"
+"You push the lever, and the marble gate closes.
+
+"
+E
+"nclose"
+"$n pushes the lever, and the marble gate closes.
+
+"
+!
+0 0 0
+1878 17 1509949540 -2 0
+4165 17 1509949540 -2 0
+-1
+S
+
+#14001
+"Kitchen"
+"Even before you entered this room, the delicious smells wafting from it
+
+identify it as the kitchen.  Cabinets and cupboards line the walls, while pots
+
+and pans are hung from every nook and cranny available.  Over in the corner,
+
+you see an iron stove and griddle, ingeniously rigged so that the smoke goes
+
+right out through a vent in the side of the cliff.  You also see a table and
+
+some chairs sitting in one corner, made available for the passing adventurer
+
+who only has time for a quick meal.  The chef, a robust man with a thick,
+
+black moustache, is standing near a black kettle with a ladle in one hand. 
+
+You might want to wander over and see what's in the kettle, since, judging by
+
+the aroma coming from it, whatever is being cooked is bound to be delicious.
+
+"
+""
+301465605 0
+0 7 0
+D1
+"kitchen door"
+""
+1 -1 14000 0 6
+1901 17 1509949540 -2 16
+-1
+S
+
+#14002
+"Meeting Hall"
+"In this room you see a large oak table with maps and parchments scattered upon
+
+it.  The table is obviously the center of the room and is surrounded by high-
+
+backed chairs.  The walls are covered with tapestries depicting the red
+
+horizon and the blue setting of the moon.  At the foot of the large table is a
+
+small box from where a speaker may project his voice and inspire the listeners
+
+in this meeting hall.
+
+"
+"[Olah] storage room is 14003
+
+"
+301465605 0
+0 8 0
+D3
+"oak door"
+""
+1 -1 14000 0 6
+A
+"move"
+"tapestries"
+"if( rflag( reset0, room ) ) {
+
+  act_tochar( #move, ch );
+
+  act_notchar( #nmove, ch );
+
+  remove_rflag( reset0, room );
+
+  }
+
+else
+
+  act_tochar( #why, ch );
+
+"
+E
+"move"
+"You move the tapestries aside and reveal a secret button.
+
+"
+E
+"nmove"
+"$n moves the tapestries aside.
+
+"
+E
+"why"
+"The tapestries have already been moved.
+
+"
+!
+0 0 0
+A
+"press push"
+"secret button"
+"if( rflag( reset0, room ) )
+
+  continue;
+
+else {
+
+  if( is_player( ch ) ) {
+
+    if( is_name( \"HORI\", clan_abbrev( ch ) ) ) {
+
+      act_tochar( #tele, ch );
+
+      act_notchar( #ntele, ch );
+
+      transfer( ch, find_room( 14003 ) );
+
+      act_notchar( #narrive, ch );
+
+      }
+
+    else {
+
+      act_tochar( #fail, ch );
+
+      act_notchar( #nfail, ch );
+
+      }
+
+    }
+
+  else {
+
+    act_tochar( #fail, ch );
+
+    act_notchar( #nfail, ch );
+
+    }
+
+  }
+
+"
+E
+"tele"
+"You press the secret button and quickly dematerialize.
+
+"
+E
+"ntele"
+"$n presses a button and quickly dematerializes.
+
+"
+E
+"narrive"
+"@C$n materializes in a puff of smoke.@n
+
+"
+E
+"fail"
+"You press the secret button and then feel a tugging sensation that quickly
+
+fades.
+
+"
+E
+"nfail"
+"$n presses a button.
+
+"
+!
+0 0 0
+-1
+S
+
+#14003
+"Storage Room"
+"The size of this room is deceiving, as the darkness hides its true size. 
+
+There are a few torches burning and providing ample light for what business
+
+goes on here.  The floor is smooth and carved from the stone in the cliff. 
+
+The walls are a smooth sand color.  A button can be seen protruding from one
+
+of the walls.
+
+"
+"[Olah] out to meeting hall is 14002
+
+[Olah] Storage Room.  Do NOT purge!!
+
+"
+301467685 0
+0 7 0
+D4
+""
+""
+0 -1 14010 0 6
+A
+"press push"
+"button"
+"if( is_player( ch ) ) {
+
+  if( is_name( \"HORI\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #tele, ch );
+
+    act_notchar( #ntele, ch );
+
+    transfer( ch, find_room( 14002 ) );
+
+    act_notchar( #narrive, ch );
+
+    }
+
+  else {
+
+    act_tochar( #fail, ch );
+
+    act_notchar( #nfail, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #fail, ch );
+
+  act_notchar( #nfail, ch );
+
+  }
+
+"
+E
+"tele"
+"You press the secret button and quickly dematerialize.
+
+"
+E
+"ntele"
+"$n presses a button and quickly dematerializes.
+
+"
+E
+"narrive"
+"@C$n materializes in a puff of smoke.@n
+
+"
+E
+"fail"
+"You press the button and then feel a tugging sensation that quickly fades.
+
+"
+E
+"nfail"
+"$n presses the button.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( find_stat( ch, level ) < 92 ) {
+
+  if( !is_name( \"HORI\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #begon, ch );
+
+    obj_to_char( oload( 14 ), ch );
+
+    interpret( ch, \"mail Kicked from HORI stronghold\" );
+
+    interpret( ch, \"mail send Talis\" );
+
+    act_notchar( #poof, ch );
+
+    transfer( ch, find_room( 14004 ) );
+
+    act_notchar( #rpoof, ch );
+
+  }
+
+}
+
+"
+E
+"begon"
+"@YProtective spells evict you from this place!@n
+
+"
+E
+"poof"
+"$n disappears in a small mushroom cloud.
+
+"
+E
+"rpoof"
+"$n appears in a cloud of acrid smoke looking rather singed!
+
+"
+!
+2 1000 0
+A
+"1 look 1 eat 1 drink 1 get 1 take 1 cast"
+""
+"acode( room, 2 );
+
+continue;
+
+"
+!
+0 0 0
+-1
+S
+
+#14004
+"Dead End of a Trail"
+"You are on a small trail that reaches its end northward, obstructed by an
+
+immense marble gate partially covered in ivy.  The grass have grown to several
+
+feet here, unmaintained and overflowing with weeds.  Inhabiting the east and
+
+west are thickets of underbrush and shrubbery that seem to be fighting for
+
+every inch of space among them.  A stone boulder rests southward.
+
+"
+""
+301465605 0
+0 8 0
+D0
+"immense marble gate"
+""
+33175 4166 14000 0 7
+D2
+""
+""
+226 -1 21310 0 6
+D3
+""
+""
+0 -1 14005 0 7
+A
+"move push"
+"stone boulder"
+"if( is_open( room, south ) ) {
+
+  act_tochar( #close, ch );
+
+  act_notchar( #nclose, ch );
+
+  send_to_room( #close2, find_room( 21310 ) );
+
+  close( room, south );
+
+}
+
+else {
+
+  act_tochar( #move, ch );
+
+  act_notchar( #nmove, ch );
+
+  send_to_room( #open, find_room( 21310 ) );
+
+  open( room, south );
+
+  wait( 3 );
+
+  if(is_open( room, south ) ) {
+
+    send_to_room( #back, room );
+
+    send_to_room( #back, find_room( 21310 ) );
+
+    close( room, south );
+
+  }
+
+}
+
+"
+E
+"move"
+"You move the stone boulder aside, allowing passasge southward.
+
+"
+E
+"nmove"
+"$n moves the stone boulder aside, allowing passasge southward.
+
+"
+E
+"close"
+"You push the boulder so that it blocks passage southward.
+
+"
+E
+"nclose"
+"$n pushes the boulder, blocking passage southward.
+
+"
+E
+"close2"
+"The stone boulder suddenly moves, sealing off passage northward.
+
+"
+E
+"open"
+"The boulder suddenly moves, opening up passage northward.
+
+"
+E
+"back"
+"The stone boulder moves back in place.
+
+"
+!
+0 0 0
+A
+""
+"entering"
+"wait( 1 );
+
+if( !is_open( room, north ) )
+
+  end;
+
+close( room, north );
+
+lock( room, north );
+
+send_to_room( #close, room );
+
+send_to_room( #close, find_room( 14000 ) );
+
+"
+E
+"close"
+"@eThe immense marble gate slams shut!@n
+
+"
+!
+1 0 1
+A
+""
+""
+"mob = mob_in_room( 2645, room );
+
+if( is_player( ch ) ) {
+
+  if( mob && !is_name( \"HORI\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #block, ch );
+
+    act_notchar( #nblock, ch );
+
+    end;
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"block"
+"A lizardman guard steps in front of you, shakes his head, and peers warily at
+
+you.
+
+"
+E
+"nblock"
+"A lizardman guard steps in front of $n, shakes his head, and peers warily at
+
+$m.
+
+"
+!
+3 0 1
+2645 9 1509949540 3 0
+2645 9 1509949540 3 0
+-1
+S
+
+#14005
+"A Well Cleaned Stable"
+"As you enter this room you sense the smell and sound of creatures.  First
+
+thing you see is a mass of straw and resting places for animals.  Wooden
+
+booths are occupied with horses and other type of pets in this stable and they
+
+all are aware of your presence.  Buckets filled with water and troughs filled
+
+with oats and other grains fill this nicely kept stable as well.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 14004 0 7
+-1
+S
+
+#14006
+"A Bar"
+"Entering this room you notice a dartboard hanging on the massive stone walls
+
+and it seems to be in the design of a sun.  In the corner of the room you also
+
+see a huge keg mounted on the ground with a spout.  A long bar resides against
+
+the wall with stools placed for people to sit.  Obviously many laughs and
+
+gossip goes around in this busy room, the presence of this room feels like a
+
+very entertaining one at that.
+
+"
+""
+368574469 0
+0 6 0
+D1
+""
+""
+0 -1 14007 0 6
+D2
+""
+""
+0 -1 14000 0 6
+A
+"play"
+"darts"
+"if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #play, ch );
+
+  act_notchar( #rplay, ch );
+
+  if( find_stat( ch, level ) > 90 ) {
+
+    acode( room, 3 );
+
+    end;
+
+    }
+
+  wait( 3 );
+
+  if( !char_in_room( ch, find_room( 14006 ) ) )
+
+    end;
+
+  act_tochar( #one, ch );
+
+  act_notchar( #rone, ch );
+
+  acode( room, 2 );
+
+  wait( 2 );
+
+  if( !char_in_room( ch, find_room( 14006 ) ) )
+
+    end;
+
+  act_tochar( #two, ch );
+
+  act_notchar( #rtwo, ch );
+
+  acode( room, 2 );
+
+  wait( 2 );
+
+  if( !char_in_room( ch, find_room( 14006 ) ) )
+
+    end;
+
+  act_tochar( #three, ch );
+
+  act_notchar( #rthree, ch );
+
+  acode( room, 2 );
+
+  set_rflag( reset0, room );
+
+  }
+
+else
+
+  act_tochar( #wait, ch );
+
+"
+E
+"rplay"
+"$n grabs three darts from the dart holder and steps back to the line to play.
+
+"
+E
+"play"
+"You grab the three darts from the dart holder and step back to the line.
+
+"
+E
+"one"
+"Taking aim, you throw the first dart.
+
+"
+E
+"rone"
+"Taking aim, $n throws the first dart.
+
+"
+E
+"two"
+"Taking aim, you throw the second dart.
+
+"
+E
+"rtwo"
+"Taking aim, $n throws the second dart.
+
+"
+E
+"three"
+"Taking aim, you throw the third dart.
+
+"
+E
+"rthree"
+"Taking aim, $n throws the third dart.
+
+"
+E
+"wait"
+"You should wait until the game in progress is done.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( j == 3 ) {
+
+  act_tochar( #third, ch );
+
+  act_notchar( #rthird, ch );
+
+  j = 4;
+
+  }
+
+if( j == 2 ) {
+
+  act_tochar( #second, ch );
+
+  act_notchar( #rsecond, ch );
+
+  j = 3;
+
+  }
+
+if( j == 1 ) {
+
+  act_tochar( #first, ch );
+
+  act_notchar( #rfirst, ch );
+
+  j = 2;
+
+  }
+
+i = random( 1, 50 );
+
+if( i == 1 ) {
+
+  act_tochar( #bull, ch );
+
+  act_notchar( #rbull, ch );
+
+  }
+
+else {
+
+  if( i < 6 ) {
+
+    act_tochar( #ring1, ch );
+
+    act_notchar( #rring1, ch );
+
+    }
+
+  else {
+
+    if( i < 16 ) {
+
+      act_tochar( #ring2, ch );
+
+      act_notchar( #rring2, ch );
+
+      }
+
+    else {
+
+      if( i < 31 ) {
+
+        act_tochar( #ring3, ch );
+
+        act_notchar( #rring3, ch );
+
+        }
+
+      else {
+
+        act_tochar( #ring4, ch );
+
+        act_notchar( #rring4, ch );
+
+        }
+
+      }
+
+    }
+
+  }
+
+"
+E
+"rthird"
+"$n tosses the third dart.....
+
+"
+E
+"third"
+"You toss the third dart.....
+
+"
+E
+"rsecond"
+"$n tosses the second dart.....
+
+"
+E
+"second"
+"You toss the second dart.....
+
+"
+E
+"rring4"
+"$n's toss is a poor one, catching the outermost ring for a measly 1 point.
+
+"
+E
+"ring4"
+"Your toss is a poor one, catching the outermost ring for a measly 1 point.
+
+"
+E
+"rring3"
+"$n's toss goes off course, hitting the third ring.  Only 3 points.
+
+"
+E
+"ring3"
+"Your toss goes off course, hitting the third ring.  Only 3 points.
+
+"
+E
+"rring2"
+"$n's toss hits the second ring for 5 points.
+
+"
+E
+"ring2"
+"Your toss hits the second ring for 5 points.
+
+"
+E
+"rring1"
+"$n's toss hits the first ring!  10 points!
+
+"
+E
+"ring1"
+"Your toss hits the first ring!  10 points!
+
+"
+E
+"rbull"
+"$n's toss hits the bullseye!!  20 points!!
+
+"
+E
+"bull"
+"You hit the bullseye!!  20 points!!
+
+"
+E
+"rfirst"
+"$n tosses the first dart.....
+
+"
+E
+"first"
+"You toss the first dart.....
+
+"
+E
+"rplay"
+"$n grabs three darts from the dart holder and steps back to the line.
+
+"
+E
+"play"
+"You grab the three darts from the dart holder and step back to the line.
+
+"
+E
+"notyet"
+"The dart game is not yet ready to be played.
+
+"
+!
+0 0 0
+A
+""
+""
+"wait( 1 );
+
+act_tochar( #prepare, ch );
+
+act_notchar( #rprepare, ch );
+
+wait( 1 );
+
+act_notchar( #win, ch );
+
+set_rflag( reset0, room );
+
+"
+E
+"prepare"
+"Accompanied by a slight pop as air rushes in to fill a sudden void, the darts
+
+disappear from your hand only to reappear a moment later in the bullseye of
+
+the dartboard.
+
+"
+E
+"rprepare"
+"Accompanied by the pop of air rushing in to fill a sudden void, all three
+
+darts disapear from $n's hand.
+
+"
+E
+"win"
+"Suddenly you notice all three darts are now sticking in the bullseye of the
+
+dartboard.  Amazing!
+
+"
+!
+0 0 0
+1127 17 1509949540 -2 0
+1127 17 1509949540 -2 0
+1127 17 1509949540 -2 0
+1127 17 1509949540 -2 0
+4079 17 1509949540 -2 1
+-1
+S
+
+#14007
+"Trophy Room"
+"Everything you see in this room is full of trophies, from animal heads hanging
+
+on the wall to a human head.  In the corner of the room stands a monstrous
+
+alligator with it's mouth wide open as if it's jaws are were going to rip you
+
+apart.  Magnificent weapons made from the finest metals are mounted on these
+
+walls with beautiful designs engraved on the blades and handles.
+
+"
+""
+368574469 0
+0 6 0
+D1
+""
+""
+0 -1 14008 0 6
+D3
+""
+""
+0 -1 14006 0 6
+4483 17 1509949540 -2 0
+-1
+S
+
+#14008
+"Mural Room"
+"Walking into this room, you can tell the strong stone walls are scattered with
+
+slash marks and other markings.  The black marble floor with red spots seems
+
+very intriguing, you can't seem to figure it out if it is part of the marble,
+
+spots of blood, or maybe both.  On the south wall there is a huge mural of a
+
+ferocious battle raging between every race and beast with a huge sun going
+
+down over the horizon.
+
+"
+""
+368574469 0
+0 6 0
+D2
+""
+""
+0 -1 14009 0 6
+D3
+""
+""
+0 -1 14007 0 6
+-1
+S
+
+#14009
+"Training Room"
+"Weapons hang and surround these walls everywhere.  In the corner stands a
+
+wooden dummy with heavy damage taken to it, obviously used by the HORI clan
+
+members to brush up on their skills.  Racks of scrolls dwell in the corner of
+
+the room along with bandages.  Hanging from the ceiling is a long rope, maybe
+
+used for climbing.  Off to one side near the rope also sits a well-used
+
+punching bag.  Opposite the punching bag is a well-worn stand for practicing
+
+kicking on.
+
+"
+""
+368574469 0
+0 6 0
+D0
+""
+""
+0 -1 14008 0 6
+D1
+""
+""
+0 -1 14011 0 6
+A
+"climb"
+"rope"
+"if( modify_move( ch, -5 ) ) {
+
+  if( check_skill( ch, climb, 0 ) ) {
+
+    act_tochar( #succeed, ch );
+
+    act_notchar( #nsucceed, ch );
+
+    use_skill( ch, climb );
+
+  }
+
+  else {
+
+    act_tochar( #fail, ch );
+
+    act_notchar( #nfail, ch );
+
+  }
+
+}
+
+else {
+
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+
+  end;
+
+}
+
+"
+E
+"succeed"
+"You grab onto the long rope, successfully climbing your body to the top, then
+
+leap back down to the ground.
+
+"
+E
+"nsucceed"
+"$n grabs onto the long rope and successfully climbs up to the top before
+
+leaping back down to the ground.
+
+"
+E
+"fail"
+"You grab onto the long rope and try to climb it, but are unable to make it to
+
+the top.
+
+"
+E
+"nfail"
+"$n grabs onto the long rope and tries to climb it but fails to make it to the
+
+top.
+
+"
+!
+0 0 0
+A
+"hit punch"
+"punching bag"
+"if( is_exhausted( ch ) ) {
+
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+
+  end;
+
+}
+
+if( modify_move( ch, -5 ) ) {
+
+  if( check_skill( ch, punch, random( 7, 10 ) ) ) {
+
+    send_to_char( \"You hit the punching bag solidly!\", ch );
+
+  }
+
+  else {
+
+    act_tochar( \"You miss the punching bag!\", ch );
+
+  }
+
+  use_skill( ch, punch );
+
+}
+
+else {
+
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+
+  end;
+
+}
+
+"
+!
+0 0 0
+A
+"kick"
+"kicking stand"
+"if( is_exhausted( ch ) ) {
+
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+
+  end;
+
+}
+
+if( modify_move( ch, -5 ) ) {
+
+  if( check_skill( ch, kick, random( 7, 10 ) ) ) {
+
+    send_to_char( \"You land a solid blow on the kicking stand.\", ch );
+
+  }
+
+  else {
+
+    act_tochar( \"You nearly fall over when you miss the kicking stand!\", ch );
+
+  }
+
+  use_skill( ch, kick );
+
+}
+
+else {
+
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+
+  end;
+
+}
+
+"
+!
+0 0 0
+-1
+S
+
+#14010
+"Repair Shop"
+"Upon entering this tiny shop, your senses are assailed with the scents of
+
+saddle-soap, hot metal, and leather.  Low benches and work tables lie
+
+scattered about in a seemingly random order, each piled high with unfinished
+
+projects and strange devices.  Great care must be taken to avoid stumbling
+
+over the numerous barrels of rivets, scrap leather, and other various odds and
+
+ends.  The proprietor, however, moves nimbly about the cluttered shop with an
+
+air of comfortable familiarity.  The shop is open to the elements on all
+
+sides, with thick brush seen to the east and west.  The mountain peaks loom
+
+overhead to the north, enshrouded in mist, and the shining sea of stars can be
+
+viewed off to the south.
+
+"
+""
+301469697 0
+0 6 0
+D5
+""
+""
+0 -1 14003 0 6
+2690 9 1509949540 3 0
+-1
+S
+
+#14011
+"Swimming Pool"
+"You are in a wide round pool with a narrow ledge of marble tiles lining its
+
+rim.  The base of the pool is lined with a tile mozaic of a crimson sun just
+
+cresting the horizon.  A set of submerged steps leads up and out through an
+
+archway to the left providing egress back into the main stronghold.  On one of
+
+the walls easily visisble upon coming in is a sign declaring \"No Running!\"
+
+"
+""
+368574469 0
+8 6 0
+D3
+""
+""
+0 -1 14009 0 6
+A
+"swim"
+"pool"
+"if( is_exhausted( ch ) ) {
+
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+
+  end;
+
+}
+
+modify_move( ch, -10 );
+
+if( check_skill( ch, swimming, random( 7, 10 ) ) ) {
+
+  send_to_char( \"You perform a flawless lap in the pool.\", ch );
+
+}
+
+else {
+
+  act_tochar( \"You perform a lap in the pool but swallow some water in the process.\", ch );
+
+}
+
+use_skill( ch, swimming );
+
+"
+!
+0 0 0
+-1
+S
+
+#0
+

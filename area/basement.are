@@ -1,0 +1,1982 @@
+#AREA
+"mansion basement"
+"Xami Aeradon"
+""
+10 0
+0
+0
+#ROOMS
+
+#91000
+"Bottom of Shaft"
+"The room around you is made of solid stone bricks.  It appears to have been
+
+built as some sort of escape tunnel, or perhaps simply for storage.  The air
+
+is very cold and damp.  Echoes of small creatures crawling about can be heard
+
+quite clearly.  Two sconces hang on either side of the metallic ladder leading
+
+upward.  The dark hall continues to the west.
+
+"
+"[Nereus] What's the entering code do here?
+
+[Nereus] Is this a stairwell or a ladder?  Inconsistency between rdesc and room name?
+
+[Nereus] You shouldn't say both sconces are blackened in the rdesc if only one is blackened
+
+[Nereus] Room Reviewed.
+
+*
+
+[Nereus] **
+
+[Pheebar] continues to the south -> west?
+
+[Pheebar] also, should the sconces be N and S? the sconce dest efers to the west one
+
+[Pheebar] can walk off with the prisoner chest
+
+[Pheebar] 'turn sconce' would be nice as a fake
+
+"
+301596684 0
+11 5 0
+D3
+""
+""
+0 -1 91001 0 5
+D4
+"heavy cellar door"
+""
+16579 -1 41775 0 5
+E
+"sconces"
+"Two sconces rest dead in the wall, each protruding from a grey rounded tile.
+
+The sconce on the north wall has been polished as though it was had never been
+
+used.  The other is black as night, the metallic surface marred by gummy soot.
+
+"
+A
+"pull"
+"1 south sconce"
+"if( !is_open( room, up ) ) {
+
+  act_tochar( #pull, ch );
+
+  act_notchar( #npull, ch );
+
+  act_room( #open, ch );
+
+  send_to_room( #open2, find_room( 41775 ) );
+
+  open( room, up );
+
+}
+
+else {
+
+  act_tochar( #pull, ch );
+
+  act_notchar( #npull, ch );
+
+  act_room( #close, ch );
+
+  send_to_room( #close2, find_room( 41775 ) );
+
+  close( room, up );
+
+}
+
+wait( 3 );
+
+if( is_open( room, up ) ) {
+
+  send_to_room( #close, find_room( 91000 ) );
+
+  send_to_room( #close2, find_room( 41775 ) );
+
+  close( room, up );
+
+}
+
+"
+E
+"pull"
+"You pull the sconce on the east wall.
+
+"
+E
+"npull"
+"$n pulls the sconce on the east wall.
+
+"
+E
+"open"
+"The trap door above you opens with some resistance, shaking dirt and dust from
+
+the walls.
+
+"
+E
+"close"
+"The trap door above you slams shut with a loud clang, shaking dirt and dust
+
+from the walls.
+
+"
+E
+"close2"
+"The door slams closed with a loud clang.
+
+"
+E
+"open2"
+"The trap door creaks open with a great deal of protest.
+
+"
+!
+0 0 0
+-1
+S
+
+#91001
+"Pipe-like Room"
+"The stone slabs that line the walls are quite large and identical to the
+
+others.  They stagger a bit, curving around impressively in a pipe-like
+
+fashion.  Whomever built this dungeon of a basement went to great lengths to
+
+eliminate the corners.  To the west, the dark tunnel turns abruptly south.
+
+Eastward, a ladder rises from the floor to the surface.
+
+"
+"[Nereus] comma after 'stagger a bit'
+
+[Nereus] Why is this called pipe room?  It's not filled with pipes
+
+[Nereus] How about making the room name more descriptive
+
+[Nereus] Don't include \"Your exits are ..\" since players have this info.  If you want to say something like \"To the west, the tunnel turns south\" or \"Eastward, a ladder leads out of this dank place\" that'so kay, because you're providing additional info
+
+[Nereus] Room Reviewed.
+
+*
+
+[Nereus] **
+
+"
+301596676 0
+11 5 0
+D1
+""
+""
+0 -1 91000 0 5
+D3
+""
+""
+0 -1 91009 0 6
+E
+"stone slabs"
+"Each of the stone slabs is finely polished and evenly cut.  They are evenly
+
+spaced and were put together with unbelievable care.
+
+"
+-1
+S
+
+#91009
+"Curve of Color"
+"The walls continue their curvy pattern of stones to the south.  A small stream
+
+of water rises up from between the stones near the center of the room.  The
+
+water flows just below the surface of the floor, equidistant from either wall.
+
+Intricate patterns of stone line the floor where the water flows.  The
+
+patterns change dramatically to the south.
+
+"
+"[Nereus] the pool doesn't rise from the stones
+
+[Nereus] What path?
+
+[Nereus] patterns extra, intricately
+
+[Nereus] What glass are you talking about in the pattern extra?
+
+[Nereus] The water is beneath a sheet of glass?  Interesting
+
+[Nereus] Room Reviewed.
+
+*
+
+[Nereus] Patterns extra, intricately
+
+[Nereus] patterns extra has a missing word or two
+
+[Nereus] hm you have two different patterns extras - one of them will not be visible
+
+*
+
+[Nereus] You still spelled intricately wrong :)
+
+* - hehe. fixed.
+
+
+[Nereus] You still need to talk about the glass in the patterns extra.  You don't mention it anywhere else, and when I try to look glass I get nothing.
+
+[Nereus] I suggest adding small pool to the keywords of this extra, or adding another
+
+*
+
+[Nereus] **
+
+[Pheebar] l stone -> eachother -> each other
+
+"
+301596676 0
+11 5 0
+D1
+""
+""
+0 -1 91001 0 6
+D2
+""
+""
+0 -1 91010 0 6
+E
+"stone patterns"
+"Multicolored stones curve intricately together around the glass's edge.  They
+
+twist and flow around each other.  These floors were put together with
+
+unbelievable skill.
+
+"
+E
+"glass small stream"
+"A small stream of water burbles up from deep below.  Brightly colored stones
+
+line the basin upon which the water flows steadily south.  A sheet of glass
+
+covers the small stream, keeping the floor beneath your feet flat and your
+
+feet promisingly dry.
+
+"
+-1
+S
+
+#91010
+"Pipe Dream"
+"A small stream of crystal clear water flows from the north, moving its way
+
+south.  A thick glass pane covers the stream, allowing you only a view of the
+
+rushing water.  Changing patterns of colorful stones line the bottom of the
+
+watery path in the center of the hall.  The stone walls share a pattern of
+
+similar intricacy with the floor tiles as they move to the south.
+
+"
+"[Nereus] comma after 'covers the stream'
+
+[Nereus] What's with the glass?  Just curious, it seems kind of mysterious and interesting
+
+[Nereus] patterns extra end -> ends
+
+[Nereus] Room Reviewed.
+
+*
+
+[Nereus] **
+
+"
+301596676 0
+11 5 0
+D0
+""
+""
+0 -1 91009 0 6
+D2
+""
+""
+0 -1 91011 0 6
+E
+"stone patterns"
+"It is impossible to tell where one pattern ends and the next begins.  The
+
+designs flow from ceiling to floor and back again beautifully.  Someone had a
+
+lot of time on their hands - or perhaps a lot of money.
+
+"
+896 9 1509949540 3 0
+896 9 1509949540 3 0
+-1
+S
+
+#91011
+"Moment of Chaos"
+"The stone tiles on the floor become tangled in a disarray of color.  The
+
+stream, which flows in from the north, drops off into the ground and away from
+
+sight.  The walls themselves are sheathed in solid black tile.  The cavernous
+
+path continues to the east and north.
+
+"
+"level 3 ghost to reset here, will pop key1
+
+[Nereus] dissarray -> disarray
+
+[Nereus] Stream extra.  It goes down into the ground, but it might be cool to be able to see down a whole long way tinto blackness
+
+[Nereus] Room Reviewed.
+
+*
+
+[Nereus] **
+
+"
+301596676 0
+11 5 0
+D0
+""
+""
+0 -1 91010 0 6
+D1
+""
+""
+0 -1 91012 0 6
+E
+"stone tiles ground"
+"The stone tiles on the ground lose all trace of pattern as they continue their
+
+steady curve to the east.  The colors drift from unbelievable order into
+
+startling chaos.
+
+"
+E
+"stream"
+"The stream falls from its path and deep into the ground, disappearing into the
+
+darkness.
+
+"
+2746 9 1509949540 3 0
+-1
+S
+
+#91012
+"Beneath the Mansion"
+"The pitch black wall to the north has been well polished to a fine, glossy
+
+sheen.  A small spider web clings tentatively to the ceiling just above the
+
+door to the west.  To the east, colorful tiles twist and turn as the hallway
+
+leads to the north.  To the west and south, the hallway is dark and it is
+
+difficult to see where they lead.
+
+"
+"giant beetle to pop here
+
+take/get - web
+
+[Nereus] Why are they eerie?
+
+[Nereus] Are both walls eerie?  Why is only the north one polished?  What's it made out of?
+
+[Nereus] Expand on the spider web sentence
+
+[Nereus] This rdesc sounds choppy to me
+
+[Nereus] Need more description here
+
+[Nereus] Room Reviewed.
+
+*
+
+[Nereus] wall extra - what's the wall made out of?
+
+*
+
+[Nereus] **
+
+"
+301596676 0
+11 5 0
+D1
+""
+""
+16384 -1 91013 0 5
+D2
+""
+""
+0 -1 91015 0 6
+D3
+""
+""
+0 -1 91011 0 6
+E
+"1 north glossy wall"
+"This wall is black as night.  Its glossy finish reflects your image back at
+
+you.  It looks to be made of a finely polished blank marble.
+
+"
+E
+"web"
+"A thin layer of spider web hangs from the ceiling.  It grows thicker to the
+
+east.
+
+"
+A
+"take get search"
+"web"
+"if( rflag( reset0, room ) ) {
+
+  act_tochar( #web, ch );
+
+  act_notchar( #nweb, ch );
+
+  obj = oload( 81 );
+
+  obj_to_char( obj, ch );
+
+  remove_rflag( reset0, room );
+
+}
+
+else {
+
+  act_tochar( #nothing, ch );
+
+}
+
+"
+E
+"web"
+"You reach up and take the small spider web from the ceiling.
+
+"
+E
+"nweb"
+"$n reaches up and takes the small spider web from the ceiling.
+
+"
+E
+"nothing"
+"There doesn't appear to be enough web to be of any use to you.
+
+"
+!
+0 0 0
+A
+"touch"
+"1 wall north glossy"
+"act_tochar( #wall, ch );
+
+act_tochar( #nwall, ch );
+
+"
+E
+"wall"
+"You reach out and touch the glossy north wall.  Your reflection glares at you.
+
+"
+E
+"nwall"
+"$n reaches out and touches the glossy north wall. His reflection imitates $m perfectly.
+
+"
+!
+0 0 0
+A
+""
+""
+"act_room( #sounds, ch );
+
+"
+E
+"sounds"
+"@cSounds of creaking boards, squeaking mice and the occasional clicking echo
+
+around you.@n
+
+"
+!
+2 -3000 0
+A
+"look"
+"1 north wall"
+"act_tochar( #look, ch );
+
+act_notchar( #nlook, ch );
+
+wait( 1 );
+
+act_tochar( #reflection, ch );
+
+act_notchar( #nreflection, ch );
+
+"
+E
+"look"
+"You look at the polished black wall carefully.
+
+"
+E
+"nlook"
+"$n looks carefully at the polished black wall.
+
+"
+E
+"reflection"
+"Your reflection grins wickedly at you.  You shiver as a wave of cold covers
+
+your body.
+
+"
+E
+"nreflection"
+"$n's reflection grins at $m with wicked eyes.
+
+"
+!
+0 0 0
+2524 9 1509949540 3 0
+907 9 1509949540 3 0
+-1
+S
+
+#91013
+"The Web"
+"Many webs of different shapes and sizes cover the ceiling and walls.  The
+
+corpse of a rat hangs from one web, its body withered far beyond the point of
+
+rotting.  The floor is littered with web sacks ranging from the size of a fly
+
+to that of a small dog.  The webs thicken to the east and you have a great
+
+deal of difficulty looking past them.  The webs are noticeably less dense to
+
+the west.
+
+"
+"pop piece of spider web here 75%
+
+[Nereus] How many shapes and sizes are there to webs?  Isn't it just that webbing covers everything in a contiguous clump of webbing, or are they individual tiny webs?
+
+[Nereus] Suggest rewording the many shapes and sizes line
+
+[Nereus] Unwelcoming line is unnecessary - again, this is a judgement call, maybe I like web-choked rooms.  Describe it and make the players feel what you want them to feel - don't tell them how they should feel.
+
+[Nereus] Room Reviewed.
+
+*
+
+[Nereus] last line, east should be west
+
+*
+
+[Nereus] **
+
+"
+301596676 0
+11 5 0
+D1
+"the thick cobwebs"
+""
+8192 -1 91014 0 6
+D3
+""
+""
+16384 -1 91012 0 5
+E
+"2 web sacks"
+"Countless webs of many shapes and sizes coat the ceiling and walls.  They are
+
+thick and sticky and you think it not a good idea to get too close to them.
+
+Web sacs rest on the floor, probably the remnants of a meal eaten long ago.
+
+"
+81 17 1509949515 -2 0
+-1
+S
+
+#91014
+"Spider's Den"
+"This room looks more like a morgue than anything else.  Dead animals of many
+
+shapes and sizes litter the floor, drained of their fluids.  A single web has
+
+been strung from ceiling to floor near the center of the room between the east
+
+and west walls.
+
+"
+"webbing spider level 7 reset here
+
+[Nereus] Again, exit comment is redundant if you're just saying \"Your only exit is <x>\"  Provide additional info, descriptive, colorful, or useful, or don't say it
+
+[Nereus] Change your room name here
+
+[Nereus] like the search code on animals
+
+[Nereus] Room Reviewed.
+
+*
+
+[Nereus] animals search, ada 1, retched -> wretched
+
+*
+
+[Nereus] **
+
+"
+301596684 0
+11 5 0
+D3
+"the thick cobwebs"
+""
+8192 -1 91013 0 6
+E
+"web"
+"This beautifully woven web is a wonder in itself.  Its design is awe-
+
+inspiring; a perfect spiral of web linked together by single strands from wall
+
+to wall.
+
+"
+E
+"4 animals"
+"Who is to say how these poor creatures got here.  Perhaps the owner of this
+
+web ventured out and brought them here for dinner.  Or perhaps they wandered
+
+in on themselves.  Whatever the case, they all appear to have been sucked dry.
+
+"
+A
+"search"
+"animals"
+"act_tochar( #nothing, ch );
+
+act_notchar( #nnothing, ch );
+
+"
+E
+"nothing"
+"You rummage through the carcassas of the dead animals, but find only a wretched
+
+odor that sticks to your skin.
+
+"
+E
+"nnothing"
+"$n rummages through the carcassas of the dead animals.
+
+"
+!
+0 0 0
+A
+"search"
+"web"
+"act_tochar( #nothing, ch );
+
+act_notchar( #nnothing, ch );
+
+"
+E
+"nothing"
+"You try searching through the web, however it only sticks to you and breaks apart.
+
+"
+E
+"nnothing"
+"$n searches through the web only to be left with tiny web particles stuck to $s skin.
+
+"
+!
+0 0 0
+293 137 1509949540 3 0
+-1
+S
+
+#91015
+"Intersection in the Darkness"
+"As the path splits, you notice that less and less effort has been made to
+
+dress up the cavernous passages.  Little to no obvious decoration has been
+
+added to the floors and walls in order to impress upon the eyes.  The somewhat
+
+rocky ground slopes off heavily to the south.  To the west, the cave expands
+
+greatly in size and continues on.
+
+"
+"giant beetle pop here
+
+[H] checked
+
+[Nereus] Servant girl - first line of mdesc doesn't make sense:  Ghost of a form?
+
+[Nereus] First two lines seem redundant.
+
+[Nereus] mdesc quit -> quite
+
+[Nereus] why is the girl summonable?
+
+[Nereus] Girl, set her long_s and long_p
+
+[Nereus] Set marmor on the ghost
+
+[Nereus] and remove humanoid mflag
+
+[Nereus] She's level 5, but has 700 hp?  Way too many hp :)
+
+[Nereus] Need more description to this room, you're only talking about the passageways leading out of here.  Am I in a cavern like the others?  Why is it so cold here, is there a draft?   A hole in the ground somewhere?
+
+[Nereus] What's the similar level of comfort mean in the last line?  Both passages are similarly easy to walk down?
+
+[Nereus] How about an extra for the floor so you can talk about the rockiness
+
+[Nereus] Room Reviewed.
+
+*
+
+[Nereus] **
+
+"
+301596676 0
+11 8 0
+D0
+""
+""
+0 -1 91012 0 6
+D2
+""
+""
+0 -1 91016 0 6
+D3
+""
+""
+0 -1 91019 0 8
+E
+"1 down floor"
+"The ground is rocky and loose beneath your feet.  With each movement, lose
+
+rocks roll away or sink deeper into the floor.
+
+"
+2524 9 1509949540 3 0
+-1
+S
+
+#91016
+"Dirt Hollow"
+"The dirt at your feet is fine and appears to have been raked quite nicely at
+
+some point.  To the south, the rock face has been carefully carved out to
+
+resemble a door.  To the east, a large oak door sits inlaid within the rock.
+
+The wall to the west looks to have been untouched by anything aside from
+
+nature itself.
+
+"
+"1 in 10 chance per reset of the broken key working on eastern door. :)
+
+[H] checked
+
+[Nereus] Withered old man ghost:
+
+[Nereus] Why is the old man ghost marked summonable
+
+[Nereus] His resists are generally too high - poison should gbe 100, give him a - resist
+
+[Nereus] Remove humanoid flag and give him marmor
+
+[Nereus] How do we know the dirt wasn't raked yesterday?
+
+[Nereus] instead of ages ago?
+
+[Nereus] What does the second line mean?  Has a door frame been carved out of the wall?
+
+[Nereus] rdesc aside nature -> aside from nature
+
+[Nereus] need a polished square extra since you mention it in the extra for south door rock
+
+[Nereus] uncapitalize the doors in this room
+
+[Nereus] dirt floor extra
+
+[Nereus] Maybe a new rname here would be interesting?
+
+[Nereus] Room Reviewed.
+
+*
+
+[Nereus] new rname here
+
+[Nereus] That south door rock extra still doesn't make any sense to me.  How has it been carved down to look similar to a door?
+
+[Nereus] Carved frame?  The carved front of a door?  Outline of a door?  What kind of door?  A mansion door?  A rectangle in the stone?
+
+[Nereus] touch slab code, fizzlez -> fizzles
+
+[Nereus] last sentence door extra, looks like it's missing some stuff
+
+*
+
+[Nereus] You didn't fix the last sentence.
+
+*
+
+[Nereus] **
+
+[Pheebar] The a polished stone key breaks in the lock with a loud snap.
+
+"
+301596676 0
+11 5 0
+D0
+""
+""
+0 -1 91015 0 6
+D1
+"large oak door"
+""
+16775 4627 91017 0 6
+D2
+"door imbedded into the rock face"
+""
+227 -1 91018 0 6
+E
+"south door rock"
+"The rock face to the south has been intricately carved down to look similar to
+
+a door.  What looks like the frame for the door juts out a bit, surrounding a
+
+solid slab on three sides.  The floor at the base of the stone door simply
+
+ends at the face itself.  There doesn't appear to be any kind of handle.
+
+However, a polished square slab has been fitted securely into the center of it.
+
+"
+E
+"polished stone square slab"
+"This hand-sized polished stone square is fitted perfectly in the center of the
+
+carved door.
+
+"
+A
+"touch push"
+"black slab"
+"act_tochar( #touch, ch );
+
+act_notchar( #ntouch, ch );
+
+if( find_room( 91016 ) == room ) {
+
+  open( room, south );
+
+}
+
+act_room( #open, ch );
+
+"
+E
+"touch"
+"You reach forward and touch the small stone slab.
+
+"
+E
+"ntouch"
+"$n reaches forward and touches the small stone slab.
+
+"
+E
+"open"
+"The door shimmers and creaks, then fizzles away into nothingness.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !is_player( ch ) )
+
+  continue;
+
+if( class( ch ) == mage || class( ch ) == cleric ) {
+
+  act_tochar( #door, ch );
+
+  }
+
+continue;
+
+"
+E
+"door"
+"A flurry of symbols across the southern rockface shimmers for a moment only to
+
+fade away into nothingness, leaving no memory of what they said or even what
+
+they looked like.
+
+"
+!
+1 0 1
+A
+"unlock"
+"1 east large oak door"
+"if( is_locked( ( exit = door( room, east ) ) ) ) {
+
+  if( ( obj = has_key( ch, 4627 ) ) ) {
+
+    act_tochar( #turn, ch, obj, null, exit );
+
+    act_notchar( #nturn, ch, obj, null, exit );
+
+    unlock( room, east );
+
+    act_room( #break, ch, obj );
+
+    replace_obj( obj, 4626 );
+
+  }
+
+  else {
+
+    if( ( obj = has_key( ch, 4626 ) ) ) {
+
+      act_tochar( #try, ch, obj, null, exit );
+
+      act_notchar( #ntry, ch, obj, null, exit );
+
+      if( rflag( reset0, room ) ) {
+
+        remove_rflag( reset0, room );
+
+        if( 1d10 == 4 ) {
+
+          act_tochar( #turn, ch, obj, null, exit );
+
+          act_notchar( #nturn, ch, obj, null, exit );
+
+          unlock( room, east );
+
+        }
+
+        else {
+
+          act_tochar( #fail, ch, obj, null, exit );
+
+          act_notchar( #nfail, ch, obj, null, exit );
+
+        }
+
+      }
+
+      else {
+
+        act_tochar( #fail, ch, obj, null, exit );
+
+act_notchar( #nfail, ch, obj, null, exit );
+
+      }
+
+    }
+
+    else
+
+      continue;
+
+  }
+
+}
+
+else
+
+  continue;
+
+"
+E
+"turn"
+"You unlock $t with $p.
+
+"
+E
+"nturn"
+"$n unlocks $t with $p.
+
+"
+E
+"break"
+"The $y breaks in the lock with a loud snap.
+
+"
+E
+"try"
+"You attempt to unlock $t with $p.
+
+"
+E
+"ntry"
+"$n attempts to unlock $t with $p.
+
+"
+E
+"fail"
+"You fail in your attempt to unlock $t.
+
+"
+E
+"nfail"
+"$n fails in $s attempt to unlock $t.
+
+"
+!
+0 0 2
+-1
+S
+
+#91017
+"Shoddy Parlor Room"
+"This small parlor room was apparently home to a not-so-neat hermit in ages
+
+past.  Broken bottles of whiskey and rum litter the floor.  A small table,
+
+probably used for playing cards, is the only furniture in the room.  A pile of
+
+bags that reek of aged and rotting manure rest on the floor near the east
+
+wall.  Otherwise the room is quite plain - a hermit doesn't need much.
+
+"
+"level 8 ghost reset in here, pops key to chest west south of here
+
+[Nereus] Shotty?  Do you mean shoddy?
+
+[Nereus] Would the bags still be ripe with the scent of manure?  I would think it would still smell like manure, but a dead, stale smell now, the smell of stone and age, not of manure in the sense of growth and life
+
+[Nereus] Reset a whiskey bottle in here :)
+
+[Nereus] Suggest copying object 24
+
+[Nereus] or just resetting a couple obj 24's in here
+
+[Nereus] or make them in the search code
+
+[Nereus] Change mob's wineskin reset from 100% to something else (recommend 50 or below)
+
+[Nereus] furnature -> furniture
+
+[Nereus] Maybe you could find an empty burlap bag in the manure sacks
+
+[Nereus] Room Reviewed.
+
+[Nereus] add a long_s to this mob
+
+[Nereus] these ghosts don't have consistent resists.  Why are some cold resistant and some not?
+
+[Nereus] Shouldn't they be similar
+
+*
+
+[Nereus] **
+
+[Pheebar] what's with the middle line when I search bags?
+
+"
+301596676 0
+11 5 0
+D3
+"large oak door"
+""
+16775 4627 91016 0 6
+E
+"3 bottles rum whiskey"
+"Random broken bottles of assorted liquors litter the floor.  They don't appear
+
+to be of any use to anyone - including the previous owners.
+
+"
+E
+"bags"
+"These filthy manure bags were probably a bed to random dirty visitors to the
+
+hermit's hovel.  He probably slept in them only when he was sober enough to
+
+make it across the room.
+
+"
+A
+"search get take"
+"3 bottles rum whiskey"
+"act_tochar( #nothing, ch );
+
+act_notchar( #nnothing, ch );
+
+"
+E
+"nothing"
+"You can't find anything of use amid the assortment of broken bottles on the
+
+floor.
+
+"
+E
+"nnothing"
+"$n looks around, but can't find anything useful in the assorted broken bottles to take.
+
+"
+!
+0 0 0
+A
+""
+"aged rotting bags manure"
+"act_tochar( #search, ch );
+
+act_notchar( #nsearch, ch );
+
+i = 1d10;
+
+if( rflag( reset0, room ) ) {
+
+  if( i == 8 ) {
+
+    act_tochar( #find, ch );
+
+    act_notchar( #nfind, ch );
+
+    obj_to_char( oload( 6 ), ch );
+
+    remove_rflag( reset0, room );
+
+  }
+
+}
+
+else {
+
+  interpret( ch, \"frown\" );
+
+  act_tochar( #nofind, ch );
+
+  act_notchar( #nnofind, ch );
+
+}
+
+"
+E
+"search"
+"You search through the aged manure bags.
+
+"
+E
+"nsearch"
+"$n searches through the aged manure bags.
+
+"
+E
+"find"
+"You manage to dig one usable empty burlap bag from the filth.
+
+"
+E
+"nfind"
+"$n manages to dig one usable empty burlap bag from the filth.
+
+"
+E
+"nofind"
+"You come up from the filth with nothing but a horrid stench that clings
+
+desperately to you.
+
+"
+E
+"nnofind"
+"$n rises from the filth emptyhanded and smelling of rotten manure.
+
+"
+!
+9 0 0
+2748 9 1509949540 3 0
+4629 49 1509949540 -2 0
+24 81 1509949540 -2 37
+24 17 1509949540 -2 -1
+-1
+S
+
+#91018
+"Circular Cavern"
+"The walls of this room appear to be solid stone.  While the room is
+
+impressively circular in form, it appears that only the door is man-made.  The
+
+floor is nothing but dirt and rock.  A single chest is pressed against the
+
+southeastern wall.  This room may have been intended to store something
+
+valuable, but it looks as though it was never finished.
+
+"
+"[Nereus] This isn't a dirt hollow, is it?  It's rock walls
+
+[Nereus] what's the last sentence of the door extra mean
+
+[Nereus] add 1 north as a keyword to the door rextra
+
+[Nereus] What gives the impression that the room was never finished?
+
+[Nereus] how about an extra for the floor
+
+[Nereus] in the first line you say that the room is bland - let the players decide that
+
+[Nereus] Room Reviewed.
+
+*
+
+[Nereus] first sentence, do you mean \"surrounded by\"
+
+*
+
+[Nereus] need square slab polished extra in this room too, can just copy the one from north if they are the same
+
+*
+
+[Nereus] **
+
+[Pheebar] l chest, painted white-painted painted -> white-painted
+
+[Pheebar] jeez, high capacity
+
+"
+301596676 0
+11 8 0
+D0
+"door imbedded into the rock face"
+""
+227 -1 91016 0 6
+E
+"1 north door"
+"The door to the north is little more than a large rectangle carved out of pure
+
+stone.  It is somewhat difficult to pick out any creases or notches where it
+
+connects with the wall.  As there was on the other side, a finely polished
+
+square slab rests in the center of the door.
+
+"
+E
+"1 down floor"
+"Small rocks and dirt cover the hard ground.  It appears that someone went to
+
+great lengthy to level and clear out any large rocks that may have been here.
+
+"
+E
+"polished stone square slab"
+"This hand-sized polished stone square is fitted perfectly in the center of the
+
+carved door.
+
+"
+A
+"touch push"
+"polished black slab"
+"acode( find_room( 91016 ), 1 );
+
+open( room, north );
+
+"
+!
+0 0 0
+A
+""
+""
+"act_room( #water, ch );
+
+"
+E
+"water"
+"You hear the soft sound of rusing water in the distance, it's origins unknown.
+
+"
+!
+2 -5000 0
+4558 49 1509949540 -2 0
+14 82 1509966080 -2 0
+0 68 1509960960 -2 0
+2 82 1509966080 -2 0
+-1
+S
+
+#91019
+"Cavern Beneath the Mansion"
+"This somewhat large cave has been touched very little by tools or hands.
+
+Thick shackles attached to similarly thick chains hang from the west wall.
+
+They are worn and cracked from lack of use for many years.  The path splits to
+
+the east.  A light breeze flows in from the south.
+
+"
+"level 5 ghost to reset here, pops key2
+
+[Nereus] Why do you have a death mprog on this mob if it doesn't do anything?
+
+Fixed.
+
+[Nereus] Don't need to say that the scene is dungeon-like, describe it in such a way that it is obvious.
+
+[Nereus] I think this room has more potential - who was held here?  Maybe the girl should be sentinel and trapped in this room, and wail to be freed, even though she's already dead
+
+[Nereus] Is this a natural cavern, or dug out?  Is there evidence of tool-work on the wall?  How are the shackles and chains hung.  Have any fallen out of the walls and now lie on the floor?
+
+[Nereus] Maybe if you follow the girl-died-here idea, you could have an Unlock shackles action that would make her look at you tearfully and then vanish, dropping her key :)
+
+[Nereus] last line about exits - same as the other rooms.  Does the passage slope more down to the south?  Is the footing worse or better?  Is it damp, muddy, polished floor, different type of stone?
+
+[Nereus] Room Reviewed.
+
+*
+
+[Nereus] change key to two-pronged key from two pronged key
+
+*
+
+[Nereus] **
+
+[Pheebar] shackles lies here -> maybe should be 'shackles hang from the wall'
+
+[Pheebar] I assume she's immune to magic, it'd be nice to get a 'does no damage' message
+
+[Houkonu] The girl's misty form glows briefly, obsorbing the spell cast bu Rashir.
+
+"
+301596676 0
+11 8 0
+D1
+""
+""
+0 -1 91015 0 8
+D2
+""
+""
+0 -1 91020 0 8
+E
+"shackles chains"
+"Rusty and cracked shackles and chains hang from the west wall.  They are well
+
+worn from use and time and it's doubtful that they've been used in some time.
+
+"
+A
+""
+""
+"mob = mob_in_room( 2749, room );
+
+if( mob ) {
+
+  i = random( 1, 30 );
+
+  if( i <= 10 ) {
+
+    act_room( #chains, mob );
+
+  }
+
+  else if( i > 10 && i <= 20 ) {
+
+    interpret( mob, \"weep\" );
+
+    act_room( #weep, mob );
+
+  }
+
+  else {
+
+    act_room( #beg, mob );
+
+  }
+
+}
+
+"
+E
+"chains"
+"The $n tugs at her chains, screaming silently.  Her face is woeful, lost in
+
+her misery.
+
+"
+E
+"weep"
+"She reaches out to someone who is now only a memory.
+
+"
+E
+"beg"
+"The $n kneels on her knees, begging for her freedom.
+
+"
+!
+2 10 0
+A
+"open"
+"closed open very rusty shackles"
+"obj = obj_in_room( 4641, room );
+
+if( !is_locked( obj ) ) {
+
+  if( !is_open( obj ) ) {
+
+    acode( room, 3 );
+
+    continue;
+
+  }
+
+  else
+
+continue;
+
+}
+
+else
+
+  continue;
+
+"
+E
+"open"
+"The $p are already open.
+
+"
+!
+0 0 0
+A
+""
+""
+"wait( 0 );
+
+mob = mob_in_room( 2749, room );
+
+obj = obj_in_room( 4641, room );
+
+if( mob ) {
+
+  act_room( #vanish, mob, obj );
+
+  junk_mob( mob );
+
+  obj = obj_to_room( oload( 4562 ), room );
+
+}
+
+"
+E
+"vanish"
+"The $n smiles.  $>e looks down at the $y as $e vanishes into thin air.  A key
+
+falls to the floor where $e once stood.
+
+"
+E
+"look"
+"No description.
+
+"
+!
+0 0 0
+2749 9 1509949540 3 0
+4641 49 754974820 -2 0
+1126 82 1509975040 -2 0
+-1
+S
+
+#91020
+"Cavern Beneath the Mansion"
+"A small, vertical crack runs along the west well.  Small stalagmites and
+
+stalactites have formed on the floor and ceiling, creating a maze of glossy
+
+stone.  Perhaps this area was once filled with water.  The cavern-like
+
+corridor continues to the north and south.
+
+"
+"reset for cockroach here
+
+[Nereus] Do breezes wander?
+
+[Nereus] crack extra, \"fine crack in the wall running vertically along the west wall.\"  You say in the wall twice, redundant
+
+[Nereus] stalagmites extra, litter the floor and ceiling imply that they are broken off and are actually litter - maybe you could say pepper or have formed randomly, or something
+
+[Nereus] \"thought they were neat\" should be reworded
+
+[Nereus] Maybe make a random acode with chance 100 that has the cold wind blowing through from the crack
+
+[Nereus] Room Reviewed.
+
+*
+
+[Nereus] **
+
+"
+301596676 0
+11 8 0
+D0
+""
+""
+0 -1 91019 0 8
+D2
+""
+""
+0 -1 91021 0 8
+E
+"1 west crack"
+"In times long past, this fine crack may have allowed water to fill this room.
+
+Now, however, a slight breeze brings air into the cavern from somewhere above.
+
+"
+E
+"stalagmites stalactites"
+"Stalagmites and stalactites of various shapes and sizes coat the floor and
+
+ceiling.  This room was very likely filled with water at one point.  Perhaps
+
+these were going to be cleared out at some point or the owners of the mansion
+
+decided they were fond of them.
+
+"
+A
+""
+""
+"act_room( #breeze, ch );
+
+"
+E
+"breeze"
+"@CA cold breeze rushes from the crack in the wall.@n
+
+"
+!
+2 -50 0
+907 9 1509949540 3 0
+-1
+S
+
+#91021
+"Cavern Beneath the Mansion"
+"The corridor closes in around you, dead-ending to the south.  The walls look a
+
+bit dangerous to the touch; the rocks having been shaped into very jagged
+
+edges.  To the west, a large, reinforced door of steel rests in your path.
+
+The cavern opens up to the north.
+
+"
+"exit west reuires key2 to open
+
+[H] large boulder that's locked?
+
+[H] change exit name to boulder perhaps
+
+[Nereus] dead ends -> dead-ends
+
+[Nereus] This rdesc is a bit on the short side
+
+[Nereus] two spaces after period, in the large boulder sentence
+
+[Nereus] Small hole keyhole extra needed
+
+[Nereus] Is the keyhole in the boulder, or the wall?
+
+[Nereus] Why and how woudl someone lock a boulder?  That doesn't make any sense to me
+
+[Nereus] boulder shouldn't be capitalized in nokey message in unlock code
+
+[Nereus] boulder shouldn't be capitalized as the door name
+
+[Nereus] Room Reviewed.
+
+- Fixed -
+
+*
+
+[Nereus] edged -> edges
+
+[Nereus] change \"large, steel reinforced\" to \"large, reinforced door of steel\" or something like that
+
+[Nereus] Unlock action, I still see \"You do not appear to have the proper key to unlock the boulder\"
+
+[Nereus] It is dangerous to have the same command in two different codes
+
+*
+
+[Nereus] **
+
+[Elchyen] when looking at door 'intensely' makes no sense
+
+"
+301596676 0
+11 6 0
+D0
+""
+""
+0 -1 91020 0 8
+D3
+"thick steel reinforced door"
+""
+16775 4562 91022 0 4
+E
+"large steel door"
+"An enormous steel reinforced door blocks your way to the west.  It was built
+
+to be intensely in order to prevent anyone from getting in - or out.  There
+
+are no apparent knobs or otherwise that might allow the door to be opened.  a
+
+large keyhole is visible just to the left of it.
+
+"
+E
+"large keyhole"
+"This keyhole rests just to the left of the door.  It is centered within a
+
+large polished steel square, mounted firmly into the rock face.
+
+"
+A
+"move open unlock"
+"1 west thick reinforced steel door"
+"exit = door( room, west );
+
+if( is_locked( room, west ) ) {
+
+  if( ( obj = has_key( ch, 4562 ) ) ) {
+
+    act_tochar( #unlock, ch, obj, null, exit );
+
+    act_notchar( #nunlock, ch, obj, null, exit );
+
+    act_room( #click, ch );
+
+unlock( room, west );
+
+    open( room, west );
+
+  }
+
+  else {
+
+    act_tochar( #locked, ch, null, null, exit );
+
+  }
+
+}
+
+else {
+
+  act_tochar( #locked, ch, null, null, exit );
+
+}
+
+"
+E
+"unlock"
+"You put the $y into the keyhole and turn.
+
+"
+E
+"click"
+"You hear a loud clicking sound that resonates deep within the door itself.  It
+
+shifts heavily and slides away, burying itself into the wall.
+
+"
+E
+"nunlock"
+"$n puts $p into the keyhole and turns it.
+
+"
+E
+"nokey"
+"You do not appear to have the proper key to unlock the Boulder.
+
+"
+E
+"nothing"
+"Nothing happens.
+
+"
+E
+"locked"
+"$>t refuses to move.
+
+"
+!
+0 0 0
+A
+""
+""
+"act_room( #close, ch );
+
+lock( room, west );
+
+close( room, west );
+
+"
+E
+"close"
+"The steel reinforced door to the west grinds closed behind you.
+
+"
+!
+1 0 8
+-1
+S
+
+#91022
+"Black Chamber"
+"The walls are black.  Whatever covers the walls absorbs light like a sponge
+
+absorbs water.  The ceiling is either too high to see or camouflaged with the
+
+same black substance that covers the walls.  A tiny light the size of a pin
+
+blinks occasionally high above in the center of the ceiling.  An enormous
+
+steel door blocks your way to the east.
+
+"
+"[Nereus] What's a boulder doing here?  Is this a cave? Did it get dug out from the basement?  By who and for what reason?
+
+[Nereus] maybe combine first two sentences?  Sounds kind of choppy
+
+[Nereus] walls extra, what is pitch amber black?  I can't picture that.  Is it pitch-black with an amber tint?
+
+[Nereus] walls extra, colered -> colored
+
+[Nereus] walls extra, I don't think the statement about one of the few natural parts of the mansion's basemenet is true - I just walked through 2 or 3 other rooms with stalagmites
+
+[Nereus] The boulder doesn't always block your path, you could make a describe trigger that showed whether it was open or closed
+
+[Nereus] I don't understand how there could be a prisoner trapped in here if there's a lever that lets him out
+
+[Nereus] Set a new long_s on this guy
+
+[Nereus] How about actually resetting some chains on him, if he's whipping people with them
+
+[Nereus] His area seems to happen pretty frequently
+
+[Nereus] Resists on this mob are waaay too high
+
+[Nereus] Cold is okay, but he should have at least 1 negative resists
+
+[Nereus] poison and mind are ok too
+
+[Nereus] Why does this ghost have 0/0 int wis?  ghosts generally have a mind, or is there a reason this one doesn't
+
+[Nereus] I suggest giving the ghost an additional attack, but do slightly less damage with the chain-whip
+
+[Nereus] Why don't we pop some other little stuff in this chest?  A fake gem?  some little trash?
+
+[Nereus] Room Reviewed.
+
+* - I think? =-p There are too many rbugs.. heh
+
+
+[Nereus] 15% pop on the tourmaline seems somewhat high
+
+[Nereus] especially considering the other gem
+
+[Nereus] Can you make the ghost's marmor more interesting?  Even just marmor 1 1000 5 wispy form would be more interesting
+
+[Nereus] Resets are still too high
+
+[Nereus] Is it intentional that the chains pop in his inventory and not in his right_hand as a weapon?
+
+[Nereus] that's up to you
+
+*
+
+[Nereus] **
+
+[Pheebar] look broken polished key -> usefull -> useful
+
+[Houkonu] The steel reinforced door to the east grinds closed behind you.  appears twice, same with room# 91021
+
+[Rashir] A singly tiny light shines in from high above.
+
+"
+301596676 0
+11 9 0
+D1
+"thick steel reinforced door"
+""
+16775 4562 91021 0 4
+E
+"walls"
+"The walls are a pitch amber black.  They don't appear to be painted or colored
+
+in any way.  They are very smooth and shimmer lightly when light hits them at
+
+just the right angles.  This cavern may very well be one of the few natural
+
+parts of the mansion's basement.
+
+"
+E
+"light"
+"A singly tiny light shines in from high above.  It is hard to tell for sure,
+
+but it appears to be coming from outside.
+
+"
+E
+"steel reinforced door"
+"An enormous steel reinforced door blocks your way to the east.  It was built
+
+to be intensely in order to prevent anyone from getting in - or out.  There
+
+are no apparent knobs or otherwise that might allow the door to be opened.  a
+
+large keyhole is visible just to the right of it.
+
+"
+E
+"large keyhole"
+"This keyhole rests just to the right of the door.  It is centered within a
+
+large polished steel square, mounted firmly into the rock face.
+
+"
+A
+"move open unlock"
+"1 east thick reinforced steel door"
+"exit = door( room, east );
+
+if( is_locked( room, east ) ) {
+
+  if( ( obj = has_key( ch, 4562 ) ) ) {
+
+    act_tochar( #unlock, ch, obj );
+
+    act_notchar( #nunlock, ch, obj );
+
+    act_room( #click, ch );
+
+    unlock( room, east );
+
+    open( room, east );
+
+  }
+
+  else {
+
+    act_tochar( #nokey, ch, null, null, exit );
+
+  }
+
+}
+
+else {
+
+  act_tochar( #nokey, ch, null, null, exit );
+
+}
+
+"
+E
+"unlock"
+"You put the $y into the keyhole and turn.
+
+"
+E
+"click"
+"You hear a loud clicking sound that resonates deep within the door itself.
+
+It shifts heavily and slides away, burying itself into the wall.
+
+"
+E
+"nunlock"
+"$n puts $p into the keyhole and turns it.
+
+"
+E
+"nokey"
+"$>t refuses to budge.
+
+"
+E
+"nothing"
+"Nothing happens.
+
+"
+!
+0 0 0
+A
+""
+""
+"act_room( #close, ch );
+
+lock( room, east );
+
+close( room, east );
+
+"
+E
+"close"
+"The steel reinforced door to the east grinds closed behind you.
+
+"
+!
+1 0 2
+2750 9 1509949540 3 0
+4661 49 1509949540 -2 0
+1 66 1509960960 -2 0
+998 82 1509951488 -2 0
+2 82 1509960960 -2 0
+2 84 1511587840 -2 0
+-1
+S
+
+#0
+

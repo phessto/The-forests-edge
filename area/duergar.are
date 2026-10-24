@@ -1,0 +1,2133 @@
+#AREA
+"50 rooms"
+"Semix"
+""
+35 0
+3
+0
+#ROOMS
+
+#91750
+"Small Dark Cave"
+"This small limestone cave stands about eight feet in height at its tallest,
+
+just high enough to accommodate a full-sized ogre, and digs roughly twelve feet
+
+into the side of the mountain.  Dry and dusty, the ground is mostly comprised
+
+of packed dirt and gravel, with patches of weed-ridden grass growing as you
+
+approach the mouth of the cave to the east.  On the west end, steeped in shadow,
+
+lies the boarded-up entrance to a vertical mine shaft.
+
+"
+"<pry boards> to gain entrance (needs crowbar)
+
+<break/kick/bash boards> to gain entrance (str check)
+
+---
+
+[Semix] Maybe add leaving (down) acode.
+
+[Semix] Need a copy of acode 5 (leaving trigger) put in the room east (for Kotoktok)
+
+"
+33030156 0
+11 5 0
+D1
+""
+""
+0 -1 57288 20 5
+D5
+"mine shaft"
+"mine shaft"
+8419 -1 91751 0 5
+A
+"pry"
+"d do down boards"
+"if( !is_open( room, down ) ) {
+
+  if( has_obj( 241, ch ) ) {
+
+   act_tochar( #pry, ch );
+
+   act_notchar( #rpry, ch );
+
+   open( room, down );
+
+  }
+
+  else
+
+    act_tochar( #nobar, ch );
+
+}
+
+else
+
+  act_tochar( #opened, ch );
+
+"
+E
+"opened"
+"The boards have already been removed.
+
+"
+E
+"pry"
+"@yYou pry the boards loose, exposing the dusty entrance to a steeply inclined
+
+mine shaft.@n
+
+"
+E
+"rpry"
+"@y$n pries the boards loose, exposing the dusty entrance to a steeply inclined
+
+mine shaft.@n
+
+"
+E
+"nobar"
+"You aren't carrying anything that can pry the boards loose.  Perhaps you
+
+should try a crowbar.
+
+"
+!
+0 0 0
+A
+"break kick punch bash"
+"d do down boards"
+"if( !is_open( room, down ) ) {
+
+  if( find_stat( ch, str ) > 15 ) {
+
+   act_tochar( #break, ch );
+
+   act_notchar( #rbreak, ch );
+
+   open( room, down );
+
+  }
+
+  else
+
+    act_tochar( #weak, ch );
+
+    act_notchar( #rweak, ch );
+
+}
+
+else
+
+  act_tochar( #opened, ch );
+
+"
+E
+"opened"
+"The boards have already been removed.
+
+"
+E
+"break"
+"@yYou furiously attack the boards, sending pieces of wood flying and exposing
+
+the dusty entrance to a steeply inclined mine shaft.@n
+
+"
+E
+"rbreak"
+"@y$n furiously attacks the boards, sending pieces of wood flying and exposing
+
+the dusty entrance to a steeply inclined mine shaft.@n
+
+"
+E
+"weak"
+"@cYou throw your weight against the boards, but are unable to do more than send
+
+dust flying.@n
+
+"
+E
+"rweak"
+"@c$n throws $s weight against the boards, but is unable to do more than send
+
+dust flying.@n
+
+"
+!
+0 0 0
+A
+"open move pull"
+"d do down boards"
+"if( !is_open( room, down ) ) {
+
+  act_tochar( #cant, ch );
+
+  act_notchar( #rcant, ch );
+
+}
+
+else
+
+  act_tochar( #opened, ch );
+
+
+"
+E
+"cant"
+"You can't seem to pull the boards loose with your bare hands.  You might be
+
+able to pry them off with a crowbar, or perhaps just pure brute force will do.
+
+"
+E
+"rcant"
+"$n tries to pull the boards loose but seems unable.
+
+"
+E
+"opened"
+"The boards have already been removed.
+
+"
+!
+0 0 0
+A
+"look"
+"d do down boards"
+"if( !is_open( room, down ) )
+
+  act_tochar( #boards, ch );
+
+else if( is_name( arg, \"boards\" ) )
+
+  act_tochar( #opened, ch );
+
+else
+
+  continue;
+
+"
+E
+"boards"
+"The entrance to what appears to be a steeply inclined mine shaft has been
+
+boarded up from the outside, with sturdy planks of wood nailed firmly in
+
+place.  As you wipe away the dust, you see the word \"@RDanger@n\" painted across
+
+them in red.
+
+"
+E
+"opened"
+"The boards have been removed.
+
+"
+!
+0 0 0
+A
+""
+""
+"exit = door( room, east );
+
+if ( exit && leads_to( exit ) ) {
+
+  i = size( ch );
+
+  j = size( leads_to( exit ) );
+
+
+  // If needs to duck and can fit out the door
+
+  if ( i > 4 && i <= j ) {
+
+    act_tochar( #duck, ch );
+
+    act_notchar( #rduck, ch );
+
+
+    transfer( ch, leads_to( exit ) );
+
+    end;
+
+  }
+
+  // Else if can fit, continue as usual
+
+  else if ( i <= j )
+
+    continue;
+
+}
+
+else
+
+  beetle( \"Error: Exit not found.\", ch, null, room );
+
+"
+E
+"duck"
+"You hunker your head down and head east out of the cave.
+
+"
+E
+"rduck"
+"$n hunkers $s head down and heads east out of the cave.
+
+"
+!
+3 0 2
+A
+""
+""
+"// Modified Defaults, see adata
+
+continue;
+
+"
+E
+"to_char"
+"You step onto the iron rung of a ladder and carefully lower yourself down into
+
+the mine shaft.
+
+"
+E
+"to_room"
+"Stepping onto the iron rung of a ladder, $n carefully lowers $mself down into
+
+the mine shaft.
+
+"
+!
+3 0 32
+-1
+S
+
+#91751
+"Vertical Mine Shaft"
+"// See acode #5
+
+"
+"[Semix] There are two rdesc for this room: One if the exit above is open,
+
+ .....  another if it's closed.
+
+"
+33161220 0
+0 5 0
+D4
+"mine shaft"
+"mine shaft"
+8419 -1 91750 0 5
+D5
+""
+""
+0 -1 91787 0 5
+E
+"boards"
+"No description.
+
+"
+A
+"open push break punch kick bash"
+"u up boards"
+"if( !is_open( room, up ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, up );
+
+
+  if( random( 1, 10 ) > 8 )
+
+    acode( find_room( 91752 ), 4 );
+
+}
+
+else
+
+  act_tochar( #opened, ch );
+
+"
+E
+"opened"
+"The boards have already been removed.
+
+"
+E
+"open"
+"You are able to loose the boards above with relative ease, creating an opening
+
+large enough to pass through.
+
+"
+E
+"ropen"
+"$n clears away the boards above, creating an opening large enough to pass through.
+
+"
+!
+0 0 0
+A
+"look"
+"u up boards"
+"if( !is_open( room, up ) )
+
+  act_tochar( #boards, ch );
+
+else
+
+  act_tochar( #opened, ch );
+
+"
+E
+"opened"
+"The boards have been removed.
+
+"
+E
+"boards"
+"Your way out is blocked by several sturdy planks of wood nailed down from the
+
+outside.  You think you could readily open the way with a little effort, though
+
+maintaining your grip on the iron ladder could prove interesting.
+
+"
+!
+0 0 0
+A
+"sleep sit rest meditate"
+""
+"acode( find_room( 91752 ), 4 );
+
+"
+!
+0 0 0
+A
+"cast prep"
+""
+"acode( find_room( 91752 ), 5 );
+
+"
+!
+0 0 0
+A
+""
+""
+"// Handle 'up' exit status (open vs closed)
+
+exit = door(room,up);
+
+if (exit) {
+
+  if ( is_open( exit ) )
+
+    act_tochar( #open, ch );
+
+  else
+
+    act_tochar( #closed, ch );
+
+}
+
+"
+E
+"open"
+"Layered in dust, this narrow, vertical mine shaft hasn't seen the light of day
+
+in quite some time.  Cut of rough-hewn limestone, the chiseled walls of the
+
+shaft are braced by sturdy granite beams arranged in a truss formation. Evenly
+
+spaced, coarse iron rungs form a ladder leading down, delving deeper into the
+
+heart of the mountain. The opening above leads out of the mine shaft to a small
+
+dark dave.
+
+"
+E
+"closed"
+"Layered in dust, this narrow, vertical mine shaft hasn't seen the light of day
+
+in quite some time.  Cut of rough-hewn limestone, the chiseled walls of the
+
+shaft are braced by sturdy granite beams arranged in a truss formation. Evenly
+
+spaced, coarse iron rungs form a ladder leading down, delving deeper into the
+
+heart of the mountain.  The way up is blocked by several sturdy planks of wood,
+
+nailed down from the outside.
+
+"
+!
+17 0 0
+-1
+S
+
+#91752
+"Before a Collapse"
+"Under Construction.
+
+"
+"<cli rubble/west> to get to active mine
+
+<move/dig/clear rubble/west> gives message about enough room to clamber over.
+
+---
+
+[Semix] Need description for the rubble here.
+
+[Semix] Need to add skill check for climb (acode 2)
+
+[Semix] Need to drain movement from climbing (acode 2)
+
+"
+33161220 0
+0 5 0
+D3
+"rubble"
+"rubble"
+195 -1 91753 0 6
+D4
+""
+""
+0 -1 91787 0 5
+E
+"rubble"
+"No description.
+
+"
+A
+"open move dig clear"
+"w we west rubble"
+"act_tochar( #cleared, ch );
+
+"
+E
+"cleared"
+"As you go to clear away the rubble, you realize that somebody has already dug
+
+away enough of it so that one could climb over the top.
+
+"
+!
+0 0 0
+A
+"climb"
+"w we west rubble"
+"if( ( exit = door( room, west ) ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, leads_to( exit ) );
+
+
+  loop( followers ) {
+
+    if ( is_standing( rch ) && !is_fighting( rch ) && !is_mounted( rch ) ) {
+
+      ch = rch;
+
+      acode( room, 2 );
+
+    }
+
+    else {
+
+      if( !is_fighting( rch ) && is_mounted( rch ) )
+
+        act_tochar( #mounted, rch );
+
+    }
+
+  }
+
+}
+
+else
+
+  beetle( #broken, ch );
+
+"
+E
+"climb"
+"You carefully pull yourself over the top of the rubble.
+
+"
+E
+"rclimb"
+"$n carefully pulls $mself over the top of the rubble, disappearing from sight.
+
+"
+E
+"broken"
+"Acode broken, invalid exit.
+
+"
+E
+"mounted"
+"You don't think you could make it over the rubble while mounted.
+
+"
+!
+0 0 0
+A
+""
+""
+"act_notchar( #rclimb, ch );
+
+"
+E
+"rclimb"
+"@y$n appears at the top of the rubble, and climbs $s way down to join you at
+
+the bottom.@n
+
+"
+!
+1 0 264
+A
+""
+""
+"// I see falling people!
+
+i = 5d10+20;
+
+act_tochar( #slip, ch );
+
+act_notchar( #rslip, ch );
+
+transfer( ch, find_room( 91752 ) );
+
+dam_message( ch, i, \"the crushing impact\" );
+
+inflict( ch, null, i, \"a sudden stop\" );
+
+set_resting( ch );
+
+"
+E
+"slip"
+"@RYour grip on the iron rung slips, sending you plummeting down the mine shaft!@n
+
+"
+E
+"rslip"
+"@m$n's grip on the iron rung slips, sending $m plummeting down the mine shaft!@n
+
+"
+!
+0 0 0
+A
+""
+""
+"// Keep people from doing silly things while climbing
+
+act_tochar( #think, ch );
+
+"
+E
+"think"
+"You think it would be wiser to concentrate on maintaining your grip.
+
+"
+!
+0 0 0
+-1
+S
+
+#91753
+"Mine Tunnel - After a Collapse"
+"Under Construction.
+
+"
+"<cli rubble/east> to get to mine shaft
+
+<move/dig/clear rubble/east> gives message about enough room to clamber over.
+
+---
+
+[Semix] Need description for the rubble here.
+
+[Semix] Need to add skill check for climb (acode 2)
+
+[Semix] Need to drain movement from climbing (acode 2)
+
+"
+33161220 0
+0 5 0
+D0
+""
+""
+0 -1 91757 0 5
+D1
+"rubble"
+"rubble"
+195 -1 91752 0 5
+D3
+""
+""
+0 -1 91756 0 5
+E
+"rubble"
+"No description.
+
+"
+A
+""
+""
+"act_notchar( #rclimb, ch );
+
+"
+E
+"rclimb"
+"@y$n appears at the top of the rubble, and climbs $s way down to join you at
+
+the bottom.@n
+
+"
+!
+1 0 258
+A
+"climb"
+"e ea east rubble"
+"if( ( exit = door( room, east ) ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, leads_to( exit ) );
+
+
+  loop( followers ) {
+
+    if ( is_standing( rch ) && !is_fighting( rch ) && !is_mounted( rch ) ) {
+
+      ch = rch;
+
+      acode( room, 2 );
+
+    }
+
+    else {
+
+      if( !is_fighting( rch ) && is_mounted( rch ) )
+
+        act_tochar( #mounted, rch );
+
+    }
+
+  }
+
+}
+
+else
+
+  beetle( #broken, ch );
+
+"
+E
+"climb"
+"You carefully pull yourself over the top of the rubble.
+
+"
+E
+"rclimb"
+"$n carefully pulls $mself over the top of the rubble, disappearing from sight.
+
+"
+E
+"mounted"
+"You don't think you could make it over the rubble while mounted.
+
+"
+E
+"broken"
+"Acode broken, invalid exit.
+
+"
+!
+0 0 0
+A
+"open move dig clear"
+"e ea east rubble"
+"act_tochar( #cleared, ch );
+
+"
+E
+"cleared"
+"As you go to clear away the rubble, you realize that somebody has already dug
+
+away enough of it so that one could climb over the top.
+
+"
+!
+0 0 0
+-1
+S
+
+#91754
+"Unfinished Area"
+"Under Construction.
+
+"
+"This room is reserved for future expansion.
+
+"
+33161220 0
+0 5 0
+D4
+""
+""
+227 -1 91764 0 5
+-1
+S
+
+#91756
+"Mine Tunnel - Tool Storage"
+"Under Construction.
+
+"
+"Tools used to collapse tunnel and board up the shaft here (crowbar, pickaxe)
+
+oil-soaked rag (for oiling door hinges at break room)
+
+
+<search cart> for chance to find any of the above.
+
+
+[Semix] cart needs a description (rextra)
+
+"
+33161220 0
+0 5 0
+D1
+""
+""
+0 -1 91753 0 5
+E
+"cart"
+"No description.
+
+"
+A
+""
+"cart"
+"if( !is_player( ch ) )
+
+  end;
+
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 100 );
+
+  remove_rflag( reset0, room );
+
+  if( i < 51 ) {
+
+    // found something!
+
+    act_tochar( #eureka, ch );
+
+    act_notchar( #reureka, ch );
+
+
+    // load pickaxe
+
+    if( i > 20 )
+
+      obj_to_char( oload( 3403 ), ch );
+
+    else {
+
+      // load crowbar (for #91750)
+
+      if( i > 10 )
+
+        obj_to_char( oload( 241 ), ch );
+
+      // load oil-soaked rag (for #91776)
+
+      else
+
+        obj_to_char( oload( 2079 ), ch );
+
+    }
+
+    end;
+
+  }
+
+}
+
+
+act_tochar( #nothing, ch );
+
+act_notchar( #rnothing, ch );
+
+
+"
+E
+"eureka"
+"@W>> You find something in the cart <<@n
+
+"
+E
+"reureka"
+"@W$n searches through the cart and comes out with something in $s hands.@n
+
+"
+E
+"nothing"
+"You search through the cart but are unable to find anything particularly
+
+useful.
+
+"
+E
+"rnothing"
+"$n searches through the cart a bit but comes up empty.
+
+"
+!
+9 0 0
+-1
+S
+
+#91757
+"Mine Tunnel"
+"Under Construction.
+
+"
+"reset here <mine rat>.
+
+"
+33161220 0
+0 5 0
+D0
+""
+""
+0 -1 91758 0 5
+D1
+""
+""
+0 -1 91759 0 5
+D2
+""
+""
+0 -1 91753 0 5
+1489 9 1509949540 3 0
+-1
+S
+
+#91758
+"Mine Tunnel - Bend in the Path"
+"Under Construction.
+
+"
+"reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D2
+""
+""
+0 -1 91757 0 5
+D3
+""
+""
+0 -1 91760 0 5
+2784 9 1509949540 3 0
+-1
+S
+
+#91759
+"Mine Tunnel - Watering Hole"
+"Under Construction.
+
+"
+"Well of murky (but drinkable) water here.
+
+
+reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D3
+""
+""
+0 -1 91757 0 5
+4749 17 1509949540 -2 0
+2784 9 1509949540 3 0
+-1
+S
+
+#91760
+"Mine Tunnel"
+"Under Construction.
+
+"
+"reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D0
+""
+""
+0 -1 91761 0 5
+D1
+""
+""
+0 -1 91758 0 5
+2784 9 1509949540 3 0
+-1
+S
+
+#91761
+"Mine Tunnel"
+"Under Construction.
+
+"
+"reset here <worker + rat>.
+
+"
+33161220 0
+0 5 0
+D0
+""
+""
+0 -1 91762 0 5
+D2
+""
+""
+0 -1 91760 0 5
+2784 9 1509949540 3 0
+1489 1033 1509949540 3 0
+-1
+S
+
+#91762
+"Mine Tunnel - Bend in the Path"
+"Under Construction.
+
+"
+"reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D1
+""
+""
+0 -1 91763 0 5
+D2
+""
+""
+0 -1 91761 0 5
+2784 9 1509949540 3 0
+-1
+S
+
+#91763
+"Mine Tunnel"
+"Under Construction.
+
+"
+""
+33161220 0
+0 5 0
+D0
+""
+""
+0 -1 91764 0 5
+D3
+""
+""
+0 -1 91762 0 5
+-1
+S
+
+#91764
+"Mine Tunnel - Intersection"
+"Under Construction.
+
+"
+"reset here <worker + foreman>.
+
+
+[Semix] Large circular room, with another mine shaft heading deeper into the
+
+mountain.
+
+"
+33161220 0
+0 5 0
+D1
+""
+""
+0 -1 91765 0 5
+D2
+""
+""
+0 -1 91763 0 5
+D3
+""
+""
+0 -1 91766 0 5
+D5
+""
+""
+227 -1 91754 0 5
+2784 9 1509949540 3 0
+2848 9 1509949540 3 0
+-1
+S
+
+#91765
+"Mine Tunnel - Before a Collapse"
+"Under Construction.
+
+"
+"Unpassable rubble to the east.
+
+
+reset here <mine rat>
+
+"
+33161220 0
+0 5 0
+D3
+""
+""
+0 -1 91764 0 5
+A
+"look inspect examine"
+"e ea east rubble"
+"act_tochar( #rubble, ch );
+
+"
+E
+"rubble"
+"It appears that at some point the tunnel to the east collapsed completely,
+
+leaving a giant pile of rubble in its wake.
+
+"
+!
+0 0 0
+A
+"open move dig clear"
+"e ea east rubble"
+"act_tochar( #futile, ch );
+
+act_notchar( #rfutile, ch );
+
+"
+E
+"futile"
+"You attempt to clear away the rubble to the east but are unable to make any
+
+headway.
+
+"
+E
+"rfutile"
+"$n attempts to clear away the rubble to the east but is unable to make any
+
+headway.
+
+"
+!
+0 0 0
+A
+""
+"e ea east rubble"
+"act_tochar( #nothing, ch );
+
+act_notchar( #rnothing, ch );
+
+"
+E
+"nothing"
+"You search through the rubble to the east but find nothing except.. rubble.
+
+"
+E
+"rnothing"
+"$n searches through the rubble to the east but comes up empty-handed.
+
+"
+!
+9 0 0
+1489 1033 1509949540 3 0
+-1
+S
+
+#91766
+"Mine Tunnel"
+"Under Construction.
+
+"
+""
+33161220 0
+0 5 0
+D1
+""
+""
+0 -1 91764 0 5
+D3
+""
+""
+0 -1 91767 0 5
+-1
+S
+
+#91767
+"Mine Tunnel - Intersection"
+"Under Construction.
+
+"
+"reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D0
+""
+""
+0 -1 91769 0 5
+D1
+""
+""
+0 -1 91766 0 5
+D3
+""
+""
+0 -1 91768 0 5
+2784 9 1509949540 3 0
+-1
+S
+
+#91768
+"Mine Tunnel - Intersection"
+"Under Construction.
+
+"
+"reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D1
+""
+""
+0 -1 91767 0 5
+D2
+""
+""
+0 -1 91781 0 5
+D3
+""
+""
+0 -1 91782 0 5
+2784 9 1509949540 3 0
+-1
+S
+
+#91769
+"Mine Tunnel"
+"Under Construction.
+
+"
+"reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D0
+""
+""
+0 -1 91770 0 5
+D2
+""
+""
+0 -1 91767 0 5
+2784 9 1509949540 3 0
+-1
+S
+
+#91770
+"Mine Tunnel - Bend in the Path"
+"Under Construction.
+
+"
+""
+33161220 0
+0 5 0
+D1
+""
+""
+0 -1 91771 0 5
+D2
+""
+""
+0 -1 91769 0 5
+-1
+S
+
+#91771
+"Mine Tunnel - Intersection"
+"Under Construction.
+
+"
+"reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D0
+""
+""
+0 -1 91785 0 5
+D1
+""
+""
+0 -1 91772 0 5
+D3
+""
+""
+0 -1 91770 0 5
+2784 9 1509949540 3 0
+-1
+S
+
+#91772
+"Mine Tunnel"
+"Under Construction.
+
+"
+"sentinel reset here <foreman>.
+
+"
+33161220 0
+0 5 0
+D1
+""
+""
+0 -1 91773 0 5
+D3
+""
+""
+0 -1 91771 0 5
+2848 9 1509949540 3 0
+-1
+S
+
+#91773
+"Mine Tunnel - Intersection"
+"Under Construction.
+
+"
+""
+33161220 0
+0 5 0
+D0
+""
+""
+0 -1 91786 0 5
+D1
+""
+""
+0 -1 91775 0 5
+D3
+""
+""
+0 -1 91772 0 5
+2784 1033 1509949540 3 0
+-1
+S
+
+#91774
+"Acode Junction Box"
+"Use this room for acodes which will be required in multiple rooms.
+
+
+NOTE: Terrain was set to jungle to provide a visual cue on 'map'.
+
+"
+"[Semix] Acode #1: requires tool_mine obj wielded, chance to find ore.
+
+[Semix] Acode #2: prevents people from burying where they can't dig.
+
+"
+33161220 0
+15 5 0
+D1
+""
+""
+65763 -1 91779 0 5
+A
+"dig mine"
+""
+"if( !is_player( ch ) )
+
+  end;
+
+
+// Make sure player has a proper mining tool wielded
+
+if( !wield( ch ) || !obj_flag( wield( ch ), tool_mine ) ) {
+
+  act_tochar( #needtool, ch );
+
+  end;
+
+}
+
+
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  i = random( 1, 10 );
+
+
+  // Found something (chunk of platinum ore)
+
+  if( i < 4 ) {
+
+    act_tochar( #found, ch );
+
+    act_notchar( #rfound, ch );
+
+    obj_to_char( oload( 4752 ), ch );
+
+    end;
+
+  }
+
+}
+
+
+// No dice!
+
+act_tochar( #nothing, ch );
+
+act_notchar( #rnothing, ch );
+
+"
+E
+"needtool"
+"You aren't wielding a mining tool.
+
+"
+E
+"found"
+"@W>> You dig a chunk of platinum ore out of the stone wall.<<@n
+
+"
+E
+"rfound"
+"@W$n digs a chunk of platinum ore out of the stone wall.@n
+
+"
+E
+"nothing"
+"You dig at the wall but are unable to extract anything of value.
+
+"
+E
+"rnothing"
+"$n digs at the wall but is unable to extract anything of value.
+
+"
+!
+0 0 0
+A
+"bury"
+""
+"act_tochar( #nobury, ch );
+
+"
+E
+"nobury"
+"You don't think it would be a good idea to bury anything here.
+
+"
+!
+0 0 0
+-1
+S
+
+#91775
+"Mine Tunnel - Bend in the Path"
+"Under Construction.
+
+"
+"reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D2
+""
+""
+16384 -1 91776 0 5
+D3
+""
+""
+0 -1 91773 0 5
+2784 9 1509949540 3 0
+-1
+S
+
+#91776
+"Mine Tunnel - Intersection"
+"Under Construction.
+
+"
+"<oil/grease hinges/door> to open door quietly (mobs will remain seated)
+
+"
+33161220 0
+0 5 0
+D0
+""
+""
+16384 -1 91775 0 5
+D1
+""
+""
+16384 -1 91780 0 5
+D2
+"makeshift wooden door"
+"makeshift wooden door"
+131 -1 91777 0 5
+D3
+""
+""
+16384 -1 91778 0 5
+A
+"open"
+"*exit south"
+"if( !( thing = find_room( 91776 ) ) )
+
+  end;
+
+
+// Opens quietly
+
+if( !rflag( reset0, room( thing ) ) ) {
+
+  act_tochar( #quiet, ch );
+
+  act_notchar( #rquiet, ch );
+
+}
+
+// Opens loudly (alerts workers)
+
+else {
+
+  act_tochar( #loud, ch );
+
+  act_notchar( #rloud, ch );
+
+  room = find_room( 91777 );
+
+  acode( room, 1 );  // Workers stand up, switch weapons
+
+}
+
+open( room( thing ), south );
+
+"
+E
+"quiet"
+"With the hinges nicely oiled, you manage to open the door quietly.
+
+"
+E
+"rquiet"
+"$n manages to open the makeshift door to the south without making any noise.
+
+"
+E
+"loud"
+"@WAs you open the makeshift door to the south, the hinges bind and you hear a
+
+loud screech!@n
+
+"
+E
+"rloud"
+"As $n opens the makeshift door to the south, the hinges bind, making a loud
+
+screeching noise.@n
+
+"
+!
+0 0 0
+A
+"oil grease"
+"s so south door hinges"
+"if( !is_player( ch ) )
+
+  end;
+
+
+if( !rflag( reset0, room ) ) {
+
+  act_tochar( #done, ch );
+
+  end;
+
+}
+
+
+// has a set of oil-soaked rags
+
+if( has_obj( 2079, ch ) ) {
+
+  act_tochar( #oil, ch );
+
+  act_notchar( #roil, ch );
+
+  remove_rflag( reset0, room );
+
+}
+
+else
+
+  act_tochar( #cant, ch );
+
+"
+E
+"oil"
+"You grease up the hinges of the makeshift door with an oil-soaked rag.
+
+"
+E
+"roil"
+"$n greases up the hinges of the makeshift door to the south with an oil-soaked
+
+rag.
+
+"
+E
+"cant"
+"You don't have anything to grease the hinges with.
+
+"
+E
+"done"
+"The hinges already appear to be nicely greased.
+
+"
+!
+0 0 0
+-1
+S
+
+#91777
+"Break Room"
+"Under Construction.
+
+"
+"Break room w/workers playing games of chance
+
+loot will be on the table (cash, low pop item)
+
+tunnel to the west is collapsed, unpassable
+
+"
+33161220 0
+0 5 0
+D0
+"makeshift wooden door"
+"makeshift wooden door"
+131 -1 91776 0 5
+A
+""
+""
+"loop( all_in_room ) {
+
+  // Only trigger for duergar mine workers
+
+  if( is_mob( rch ) && vnum( rch ) == 2784 ) {
+
+    mob = rch;
+
+    if( is_resting( mob ) ) {
+
+      set_standing( mob );
+
+      interpret( mob, \"emote leaps up from his seat and readies for battle!\" );
+
+    }
+
+    mpcode( mob, 2 );
+
+  }
+
+}
+
+
+if( !is_open( room, north ) )
+
+  open( room, north );
+
+"
+!
+0 0 0
+A
+"push"
+"button"
+"// Temporary Acode To Forcibly Make Overseer Call
+
+room = find_room( 91779 );
+
+loop( all_in_room ) {
+
+  if( !is_player( rch ) && vnum( rch ) == 2851 ) {
+
+    mob = rch;
+
+    mpcode( mob, 1 );
+
+  }
+
+}
+
+"
+!
+0 0 0
+A
+"look inspect examine"
+"w we west rubble"
+"act_tochar( #rubble, ch );
+
+"
+E
+"rubble"
+"It appears that at some point the tunnel to the west collapsed completely,
+
+leaving a giant pile of rubble in its wake.
+
+"
+!
+0 0 0
+A
+"open move dig clear"
+"w we west rubble"
+"act_tochar( #futile, ch );
+
+act_notchar( #rfutile, ch );
+
+"
+E
+"futile"
+"You attempt to clear away the rubble to the west but are unable to make any
+
+headway.
+
+"
+E
+"rfutile"
+"$n attempts to clear away the rubble to the west but is unable to make any
+
+headway.
+
+"
+!
+0 0 0
+A
+""
+"w we west rubble"
+"act_tochar( #nothing, ch );
+
+act_notchar( #rnothing, ch );
+
+"
+E
+"nothing"
+"You search through the rubble to the west but find nothing except.. rubble.
+
+"
+E
+"rnothing"
+"$n searches through the rubble to the west but comes up empty-handed.
+
+"
+!
+9 0 0
+4750 49 1509949540 -2 0
+4751 17 1509949540 -2 0
+2784 4105 1509949540 2 0
+4751 17 1509949540 -2 0
+2784 4105 1509949540 2 0
+4751 17 1509949540 -2 0
+2784 4105 1509949540 2 0
+4751 17 1509949540 -2 0
+-1
+S
+
+#91778
+"Mine Tunnel"
+"Under Construction.
+
+"
+""
+33161220 0
+0 5 0
+D1
+""
+""
+16384 -1 91776 0 5
+D3
+""
+""
+0 -1 91779 0 5
+2850 9 1509949540 3 0
+-1
+S
+
+#91779
+"Mine Tunnel - Dead End"
+"Under Construction.
+
+"
+"[Semix] Add map rextra showing a map of the mines, pointing out the ore-rich areas.
+
+"
+33161220 0
+0 5 0
+D1
+""
+""
+0 -1 91778 0 5
+D3
+""
+""
+65763 -1 91774 0 5
+2851 9 1509949540 3 0
+-1
+S
+
+#91780
+"Mine Tunnel - Cook's Quarters"
+"Under Construction.
+
+"
+"sentine reset here <cook>.
+
+[Semix] Need to add mine rat stew here (iron-cast pot)
+
+"
+33161220 0
+0 5 0
+D3
+""
+""
+16384 -1 91776 0 5
+2849 9 1509949540 3 0
+-1
+S
+
+#91781
+"Mine Tunnel - Dead End"
+"Under Construction.
+
+"
+"Can dig/mine for goodies here (need pickaxe or other tool_mine object).
+
+
+reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D0
+""
+""
+0 -1 91768 0 5
+A
+"dig mine"
+""
+"// Acode Junction Box (acode #1)
+
+acode( find_room( 91774 ), 1);
+
+"
+!
+0 0 0
+A
+"bury"
+""
+"// Acode Junction Box (acode #2)
+
+acode( find_room( 91774 ), 2);
+
+"
+!
+0 0 0
+2784 137 1509949540 3 0
+-1
+S
+
+#91782
+"Mine Tunnel - Intersection"
+"Under Construction.
+
+"
+"reset here <foreman>.
+
+"
+33161220 0
+0 5 0
+D0
+""
+""
+0 -1 91784 0 5
+D1
+""
+""
+0 -1 91768 0 5
+D3
+""
+""
+0 -1 91783 0 5
+2848 9 1509949540 3 0
+-1
+S
+
+#91783
+"Mine Tunnel - Dead End"
+"Under Construction.
+
+"
+"Can dig/mine for goodies here (need pickaxe or other tool_mine object).
+
+
+reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D1
+""
+""
+0 -1 91782 0 5
+A
+"dig mine"
+""
+"// Acode Junction Box (acode #1)
+
+acode( find_room( 91774 ), 1);
+
+"
+!
+0 0 0
+A
+"bury"
+""
+"// Acode Junction Box (acode #2)
+
+acode( find_room( 91774 ), 2);
+
+"
+!
+0 0 0
+2784 137 1509949540 3 0
+-1
+S
+
+#91784
+"Mine Tunnel - Dead End"
+"Under Construction.
+
+"
+"Can dig/mine for goodies here (need pickaxe or other tool_mine object).
+
+
+reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D2
+""
+""
+0 -1 91782 0 5
+A
+"dig mine"
+""
+"// Acode Junction Box (acode #1)
+
+acode( find_room( 91774 ), 1);
+
+"
+!
+0 0 0
+A
+"bury"
+""
+"// Acode Junction Box (acode #2)
+
+acode( find_room( 91774 ), 2);
+
+"
+!
+0 0 0
+2784 137 1509949540 3 0
+-1
+S
+
+#91785
+"Mine Tunnel - Dead End"
+"Under Construction.
+
+"
+"Can dig/mine for goodies here (need pickaxe or other tool_mine object).
+
+
+sentinel reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D2
+""
+""
+0 -1 91771 0 5
+A
+"dig mine"
+""
+"// Acode Junction Box (acode #1)
+
+acode( find_room( 91774 ), 1);
+
+"
+!
+0 0 0
+A
+"bury"
+""
+"// Acode Junction Box (acode #2)
+
+acode( find_room( 91774 ), 2);
+
+"
+!
+0 0 0
+2784 1161 1509949540 3 0
+-1
+S
+
+#91786
+"Mine Tunnel - Dead End"
+"Under Construction.
+
+"
+"Can dig/mine for goodies here (need pickaxe or other tool_mine object).
+
+
+sentinel reset here <worker>.
+
+"
+33161220 0
+0 5 0
+D2
+""
+""
+0 -1 91773 0 5
+A
+"dig mine"
+""
+"// Acode Junction Box (acode #1)
+
+acode( find_room( 91774 ), 1 );
+
+"
+!
+0 0 0
+A
+"bury"
+""
+"// Acode Junction Box (acode #2)
+
+acode( find_room( 91774 ), 2);
+
+"
+!
+0 0 0
+2784 1161 1509949540 3 0
+-1
+S
+
+#91787
+"Vertical Mine Shaft"
+"This vertical mine shaft leads both up and down via a series of iron rungs,
+
+secured by steel spikes driven into the side of the limestone shaft.  Above
+
+leads toward a barely visible exit, though it is impossible to tell if the
+
+way is clear from here. As the passageway continues further down, the
+
+limestone gives way to solid granite, with flecks of glittering quartz
+
+embedded into the surface of the chiseled walls.  Sturdy beams of that same,
+
+hard stone brace walls just wide enough to squeeze an large ogre through.
+
+"
+""
+33161220 0
+0 5 0
+D4
+""
+""
+0 -1 91751 0 5
+D5
+""
+""
+0 -1 91752 0 5
+A
+"sleep sit rest meditate"
+""
+"acode( find_room( 91752 ), 4 );
+
+"
+!
+0 0 0
+A
+"cast prep"
+""
+"acode( find_room( 91752 ), 5 );
+
+"
+!
+0 0 0
+-1
+S
+
+#0
+

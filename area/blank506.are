@@ -1,0 +1,709 @@
+#AREA
+"FRND Stronghold"
+"Olah"
+""
+1 0
+0
+0
+#ROOMS
+
+#11700
+"Under A Giant Sequoia Tree"
+"You walk along a faint dirt path which runs north through the thick
+
+vegetation.  Much of the vegetation has become overcome to the south, making
+
+one have to force their way through it.  Lush green plants and prickly shrubs
+
+poke onto the path from all directions.  A giant tree looms nearby to the
+
+north.
+
+"
+""
+301465600 0
+24 6 0
+D0
+""
+""
+0 -1 11701 0 6
+D2
+""
+""
+162 -1 3798 0 6
+A
+"enter"
+"vegetation"
+"act_tochar( #south, ch );
+
+act_notchar( #nsouth, ch );
+
+transfer( ch, find_room( 3798 ) );
+
+act_notchar( #napp, ch );
+
+"
+E
+"south"
+"You make your way through the thick vegetation to the south.
+
+"
+E
+"nsouth"
+"$n makes $s way through the thick vegetation and disappears.
+
+"
+E
+"napp"
+"$n appears through the vegetation from the north.
+
+"
+!
+0 0 0
+-1
+S
+
+#11701
+"Faint Path Through The Brush"
+"These are the roots of a giant redwood.  You can tell by its thick trunk and
+
+knotted, almost petrified bark that this must be a very old tree.  It is so
+
+tall that it seems to go on forever and looking up from here you cannot see
+
+past its boughs for they block the sky beyond.
+
+"
+""
+301465600 0
+24 6 0
+D2
+""
+""
+0 -1 11700 0 6
+D4
+""
+""
+162 -1 11702 0 6
+A
+"climb"
+"1 up tree"
+"if( find_skill( ch, climb ) > 0 ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #nclimb, ch );
+
+  use_skill( ch, climb );
+
+  transfer( ch, find_room( 11702 ) );
+
+  modify_move( ch, -5 );
+
+  act_notchar( #napp, ch );
+
+}
+
+else {
+
+  act_tochar( #fail, ch );
+
+  act_notchar( #nfail, ch );
+
+}
+
+"
+E
+"climb"
+"You climb up the giant redwood tree.
+
+"
+E
+"nclimb"
+"$n climbs up the giant redwood tree.
+
+"
+E
+"napp"
+"$n climbs up from below.
+
+"
+E
+"fail"
+"You try to climb up the giant redwood tree but are unable to hang onto a
+
+branch.
+
+"
+E
+"nfail"
+"$n tries to climb up the giant redwood tree but can't.
+
+"
+!
+0 0 0
+-1
+S
+
+#11702
+"On The Trunk"
+"You hang from the trunk of the sequoia tree.  From this vantage point you can
+
+see the great forest around you, but it is also a long way down to the safe
+
+ground below.  The bark here is loose in spots and you grasp for handholds to
+
+remain steady.
+
+"
+""
+301465600 0
+19 6 0
+D0
+""
+""
+162 -1 11703 0 6
+D5
+""
+""
+162 -1 11701 0 6
+A
+"move"
+"bark"
+"if( rflag( reset0, room ) ) {
+
+  act_tochar( #move, ch );
+
+  act_notchar( #nmove, ch );
+
+  send_to_room( #open, find_room( 11703 ) );
+
+  remove_rflag( reset0, room );
+
+}
+
+else {
+
+  act_tochar( #move2, ch );
+
+  act_notchar( #nmove2, ch );
+
+  send_to_room( #close, find_room( 11703 ) );
+
+  set_rflag( reset0, room );
+
+}
+
+"
+E
+"move"
+"You move a piece of bark on the tree trunk, revealing an entrance into the
+
+tree.
+
+"
+E
+"nmove"
+"$n moves a piece of bark on the tree trunk.
+
+"
+E
+"open"
+"The bark suddenly moves, revealing a hole from outside.
+
+"
+E
+"move2"
+"You move the bark and close the entrance to the tree.
+
+"
+E
+"nmove2"
+"$n moves the bark and closes the entrance to the tree.
+
+"
+E
+"close"
+"The hole suddenly closes.
+
+"
+!
+0 0 0
+A
+"enter"
+"tree"
+"if( rflag( reset0, room ) )
+
+  act_tochar( #cant, ch );
+
+else {
+
+  if( is_name( \"FRND\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #enter, ch );
+
+    act_notchar( #nenter, ch );
+
+    transfer( ch, find_room( 11703 ) );
+
+    act_notchar( #napp, ch );
+
+  }
+
+  else {
+
+    act_tochar( #fail, ch );
+
+    act_notchar( #nfail, ch );
+
+    end;
+
+  }
+
+}
+
+"
+E
+"cant"
+"You see no way of entering the tree.
+
+"
+E
+"enter"
+"You carefully enter the tree.
+
+"
+E
+"nenter"
+"$n enters the tree.
+
+"
+E
+"napp"
+"$n suddenly appears from the hole.
+
+"
+E
+"fail"
+"You try to enter the tree but feel a magical force repelling you.
+
+"
+E
+"nfail"
+"$n tries to enter the tree but is unable to.
+
+"
+!
+0 0 0
+A
+"climb"
+"1 down"
+"if( find_skill( ch, climb ) > 0 ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #nclimb, ch );
+
+  use_skill( ch, climb );
+
+  transfer( ch, find_room( 11701 ) );
+
+  modify_move( ch, -5 );
+
+  act_notchar( #napp, ch );
+
+}
+
+else {
+
+  act_tochar( #fail, ch );
+
+  act_notchar( #nfail, ch );
+
+  transfer( ch, find_room( 11701 ) );
+
+  dam_message( ch, 4d5+10, \"*falling down the tree\", ch );
+
+  inflict( ch, null, 4d5+10, \"falling down a redwood tree\" );
+
+  set_resting( ch );
+
+}
+
+"
+E
+"climb"
+"You grab the branches and climb down the tree.
+
+"
+E
+"nclimb"
+"$n climbs down the tree.
+
+"
+E
+"napp"
+"$n comes climbing down the tree from above.
+
+"
+E
+"fail"
+"You try to climb down but lose grip of a branch, causing you to fall down the
+
+tree!
+
+"
+E
+"nfail"
+"$n tries to climb down but loses hold of a branch and falls down!
+
+"
+!
+0 0 0
+-1
+S
+
+#11703
+"Inside A Giant Redwood Tree"
+"You emerge into a large, circularly hallowed out chamber.  There are several
+
+softly glowing orbs, evenly spaced around the perimeter, that illuminate the
+
+area.  The floor has been cut from the tree itself and polished to a glass-
+
+like finish.  A large tapestry covers most of the eastern wall.  There is a
+
+ladder leading up to a man-size hole cut into the ceiling.
+
+"
+""
+301465605 0
+0 6 0
+D0
+""
+""
+0 -1 11704 0 6
+D2
+""
+""
+162 -1 11702 0 6
+D4
+""
+""
+0 -1 11705 0 6
+A
+"move"
+"bark"
+"if( rflag( reset0, find_room( 11702 ) ) ) {
+
+  act_tochar( #move, ch );
+
+  act_notchar( #nmove, ch );
+
+  send_to_room( #open, find_room( 11702 ) );
+
+  remove_rflag( reset0, find_room( 11702 ) );
+
+}
+
+else {
+
+  act_tochar( #move2, ch );
+
+  act_notchar( #nmove2, ch );
+
+  send_to_room( #close, find_room( 11702 ) );
+
+  set_rflag( reset0, find_room( 11702 ) );
+
+}
+
+"
+E
+"move"
+"You move a piece of bark to reveal a hole.
+
+"
+E
+"nmove"
+"$n moves a piece of bark to reveal a hole.
+
+"
+E
+"open"
+"A piece of bark suddenly moves, revealing an entrance into the tree.
+
+"
+E
+"move2"
+"You move a piece of bark to close the hole.
+
+"
+E
+"nmove2"
+"$n moves a piece of bark to close the hole.
+
+"
+E
+"close"
+"A piece of bark suddenly moves, closing up entrance into the tree.
+
+"
+!
+0 0 0
+A
+"enter"
+"hole"
+"if( rflag( reset0, find_room( 11702 ) ) )
+
+  act_tochar( #cant, ch );
+
+else {
+
+  act_tochar( #enter, ch );
+
+  act_notchar( #nenter, ch );
+
+  transfer( ch, find_room( 11702 ) );
+
+  act_notchar( #napp, ch );
+
+}
+
+"
+E
+"cant"
+"<Type 'help' for help>
+
+"
+E
+"enter"
+"You enter the hole and find yourself outside the tree.
+
+"
+E
+"nenter"
+"$n leaves through the hole.
+
+"
+E
+"napp"
+"$n suddenly emerges from the opening.
+
+"
+!
+0 0 0
+-1
+S
+
+#11704
+"Out On A Limb"
+"This huge branch is gnarled and rough, yet broad enough to walk on.  The end,
+
+apparently sheered off by a bolt of lightening, abuts an opening in a stone
+
+wall built into a hillside which rises behind the tree.
+
+"
+""
+301465600 0
+19 6 0
+D2
+""
+""
+0 -1 11703 0 6
+D5
+""
+""
+1024 -1 11707 0 6
+-1
+S
+
+#11705
+"A Large Comfortable Lounge"
+"This is a large, cozy hall.  The only light comes from a fire blazing in the
+
+stone hearth that is built into the northern wall.  An iron kettle in the
+
+hearth emits a pleasant herbal aroma, that permeates the entire room.  The
+
+floor is covered in soft, lush furs of all kinds.  There is a comfortable
+
+looking couch along the western wall.  An unusual crack in the eastern wall
+
+seems to break the harmony of the room.
+
+"
+""
+301465605 0
+0 6 0
+D1
+""
+""
+98466 -1 11706 0 6
+D5
+""
+""
+0 -1 11703 0 6
+A
+"enter"
+"crack"
+"if( is_name( \"FRND\", clan_abbrev( ch ) ) ) {
+
+  act_tochar( #enter, ch );
+
+  act_notchar( #nenter, ch );
+
+  transfer( ch, find_room( 11706 ) );
+
+  act_notchar( #napp, ch );
+
+}
+
+else {
+
+  act_tochar( #fail, ch );
+
+  act_notchar( #nfail, ch );
+
+  end;
+
+}
+
+"
+E
+"enter"
+"You enter through the crack.
+
+"
+E
+"nenter"
+"$n enters the crack.
+
+"
+E
+"napp"
+"$n emerges from the crack.
+
+"
+E
+"fail"
+"You try to enter the crack but feel magically repelled.
+
+"
+E
+"nfail"
+"$n tries to enter the crack but is repelled backward.
+
+"
+!
+0 0 0
+1901 17 1509949540 -2 16
+1878 17 1509949540 -2 0
+-1
+S
+
+#11706
+"Inside A Crack Of A Redwood"
+"You enter what can only be described as a vault.  All four walls, ceiling and
+
+floor are made of a dull black metal.  The room is well lit by sconces located
+
+on every wall.  Several chests are scattered throughout the room.  A crack can
+
+be seen on the western wall, disrupting its otherwise perfect smoothness.
+
+"
+""
+301467685 0
+0 6 0
+D3
+""
+""
+98466 -1 11705 0 6
+A
+"enter"
+"crack"
+"if( is_name( \"FRND\", clan_abbrev( ch ) ) ) {
+
+  act_tochar( #enter, ch );
+
+  act_notchar( #nenter, ch );
+
+  transfer( ch, find_room( 11705 ) );
+
+  act_notchar( #napp, ch );
+
+}
+
+else {
+
+  act_tochar( #fail, ch );
+
+  act_notchar( #nfail, ch );
+
+  end;
+
+}
+
+"
+E
+"enter"
+"You enter through the crack.
+
+"
+E
+"nenter"
+"$n enters the crack.
+
+"
+E
+"napp"
+"$n emerges from the crack.
+
+"
+E
+"fail"
+"You try to enter the crack but feel magically repelled.
+
+"
+E
+"nfail"
+"$n tries to enter the crack but is repelled backward.
+
+"
+!
+0 0 0
+-1
+S
+
+#11707
+"Out On A Limb"
+"You are in a courtyard with walls cobbled of rough-hewn, mica-flecked stone.
+
+A profusion of pale violet wisteria climbs the enclosure, filling the air with
+
+its sweet, heady fragrance.  Smooth river rocks create a path leading to a
+
+round of flagstones laid in a spiral pattern, at the centre of which is a
+
+carpet of green.  In the northwest corner a small spring burbles into a tiny
+
+pool, spilling over gently to nourish the garden.  Growing nearby, a mimosa
+
+tree lends shade and beauty with its delicate frothy blossoms.
+
+"
+""
+301465600 0
+4 9 0
+D4
+""
+""
+1024 -1 11704 0 6
+1513 17 1509949540 -2 0
+-1
+S
+
+#0
+

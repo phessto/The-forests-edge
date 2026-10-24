@@ -1,0 +1,1957 @@
+#AREA
+"LoSD Stronghold"
+"Zithuan Olah"
+""
+1 0
+0
+0
+#ROOMS
+
+#8000
+"Atop a Knoll before the Gates"
+"You are at the summit of a verdant knoll.  All around you to the north, south,
+
+and west below are pine trees that surround the knoll like a fence.  Towering
+
+over you to the east are a pair of immense gates made of sturdy oak and
+
+reinforced with shiny steel.  Palisades that reach heights of over ten feet
+
+stand beside the gates.  Traces of blood and claw marks can be detected on the
+
+barky exterior of the palisades.
+
+"
+""
+301465729 0
+0 6 0
+D1
+"gates"
+""
+37271 3962 8001 0 6
+D5
+""
+""
+0 -1 21140 0 6
+A
+""
+""
+"wait( 1 );
+
+if( !is_open( room, east ) )
+
+  end;
+
+close( room, east );
+
+lock( room, east );
+
+send_to_room( #close, room );
+
+send_to_room( #closee, find_room( 8001 ) );
+
+"
+E
+"close"
+"The gates to the east suddenly close with a loud THUD.
+
+"
+E
+"closee"
+"The gates to the west suddenly close with a loud THUD.
+
+"
+!
+1 0 2
+-1
+S
+
+#8001
+"Entrance"
+"Just behind you, as you enter, the massive gates loom to either side.  The
+
+gates being great bulky things crafted from thick oak planks and strapped
+
+together with heavy steel bands.  A great black iron portcullis is hanging
+
+above, suspended by thick chains.  Before you lies a tunnel through the dark
+
+stone.  At the end of the tunnel, a small courtyard can be seen.  The tunnel
+
+walls are planed smooth, almost slick to the touch.  The stone overhead is
+
+craggy and dark with recesses and what appear to be little slits.
+
+"
+""
+301465601 0
+0 6 0
+D1
+"portcullis"
+""
+0 -1 8002 0 6
+D3
+"gates"
+""
+37271 3962 8000 0 6
+E
+"gates"
+"Massive planks of wood capped and banded with thick, heavy bands of metal. 
+
+The planks have been layered, three thick, vertical and then horizontal, then
+
+diagonal.  Each plank must be three inches thick and the layers are separated
+
+by a sheet of steel.  Thick bands of steel wrap the planks at four heights,
+
+the thickest bands in the center.
+
+"
+E
+"portcullis"
+"A great blackiron grillework, this portcullis is made of two inch thick bars. 
+
+The bars have been interlaced and welded to create a mesh with six inch
+
+openings.  The vertical bars end in barbed points, that would sink into the
+
+sockets along the floor, penetrating anything in their way on the descent. 
+
+Two massive chains support its weight.
+
+"
+A
+""
+"none"
+"wait( 1 );
+
+if( !is_open( room, west ) )
+
+  end;
+
+close( room, west );
+
+lock( room, west );
+
+send_to_room( #close, room );
+
+send_to_room( #closew, find_room( 8000 ) );
+
+"
+E
+"close"
+"The gates to the west suddenly close with a loud THUD.
+
+"
+E
+"closew"
+"The gates to the east suddenly close with a loud THUD.
+
+"
+!
+1 0 8
+-1
+S
+
+#8002
+"Courtyard"
+"Surrounded by tall walls, this courtyard is somewhat cramped feeling.  On the
+
+west side is a tunnel, on the side opposite is a large door.  On the southern
+
+side of the courtyard is a very wide doorway.  The courtyard has a bit of
+
+plant-life growing up next to the pathways.  In the center is a fountain,
+
+carved, from obsidian, in the likeness of a dark god.
+
+"
+""
+301465601 0
+0 6 0
+D0
+""
+""
+1 -1 8004 0 6
+D1
+"large mahogany door banded in black iron"
+""
+131 -1 8007 0 6
+D2
+""
+""
+0 -1 8003 0 6
+D3
+"portcullis"
+""
+0 -1 8001 0 6
+E
+"fountain"
+"A great sight has been carved out of this single block of obsidian.  Standing
+
+fifteen feet tall, and six feet wide, it makes quite an imposing sight.  There
+
+is a pool surrounding the statue, in which water gathers.  The features have
+
+all been somewhat obscured, by weather, or plan, who can know.  All you can
+
+make out is an image of a great, demonic, horned monstrosity.
+
+"
+1 17 1509949540 -2 29
+-1
+S
+
+#8003
+"Courtyard"
+"The southern side of the courtyard has a bit of plant-life growing up near the
+
+pathways.  A heavily reinforced door lies off to the west.  To the east there
+
+is a large opening, leading into the stables.  From the south comes the sound
+
+of metal being hammered.
+
+"
+""
+301465601 0
+0 6 0
+D0
+""
+""
+0 -1 8002 0 6
+D1
+""
+""
+0 -1 8029 0 6
+D2
+""
+""
+0 -1 8005 0 6
+D3
+"thick, steel reinforced, oaken door"
+""
+131 -1 8006 0 6
+-1
+S
+
+#8004
+"Cleaver Street"
+"A short street leads away from the courtyard to the south.  A shop lies to
+
+either side, with the street ending at a solid wall of stone.  The street
+
+looks to be made of cobbles.  A small sign hangs above each door.  A bit
+
+beyond the doors can be seen a grille, covering a hole, bored deep into the
+
+rock.
+
+"
+""
+301465605 0
+0 6 0
+D1
+""
+""
+0 -1 8009 0 6
+D2
+""
+""
+1 -1 8002 0 6
+D3
+""
+""
+0 -1 8008 0 6
+-1
+S
+
+#8005
+"Armory"
+"The entrance to this place is wide enough for a pair of wagons.  The front
+
+half of the chamber is an armory, the back, a forge.  So many types and styles
+
+of arms and armor surround you that it would be quite possible to find
+
+anything you'd desire.  A long, low wall separates the two halves of the
+
+building.  The foundry area is large enough to accommodate several smiths at
+
+once, yet one is in attendance.  Several forges, anvils, and troughs are
+
+scattered throughout.  Along the southern wall are bins and crates, all filled
+
+with supplies.  A door leads out the eastern wall, surrounded by practice gear.
+
+"
+"[Olah] should there be a repair mob?
+
+"
+301465601 0
+0 6 0
+D0
+""
+""
+0 -1 8003 0 6
+D1
+"oaken door"
+""
+131 -1 8013 0 6
+-1
+S
+
+#8006
+"Guard Room"
+"This room has all the markings of military use.  It has some furnishings, all
+
+functional, and some gear, ready to be used.  Standing to either side of the
+
+doorway are weapon racks; swords and the like to the left, polearms and bows
+
+to the right.  There are a few cots along the back wall.  In the back corner
+
+of the room sits a ladder.
+
+"
+""
+301465601 0
+0 6 0
+D1
+"thick, steel reinforced, oaken door"
+""
+131 -1 8003 0 6
+D4
+""
+""
+1024 -1 8022 0 6
+E
+"racks"
+"The weapon rack is a simple thing of cross slats and pegs.  Various weapons
+
+hang upon the pegs, or lean against them.  There is a bar across the rack,
+
+with a lock at one end, and a hinge at the other.
+
+"
+E
+"swords"
+"Several swords are kept upon this rack.  Each one is well maintained, and
+
+ready for use.  The rack's locking bar is down and firmly holding the weapons
+
+in place.
+
+"
+E
+"polearms"
+"Standing in ranks are several varieties of polearm.  There are spears, pikes,
+
+halberds, voulges, pole-axes, glaives, and tridents.  All of which are bound
+
+under the locking bar.
+
+"
+E
+"bows"
+"Several bows, mostly shortbows, fill this short rack.  There is a small wooden
+
+box next to the rack, it must contain the bowstrings, as the bows are not
+
+strung.
+
+"
+E
+"ladder"
+"The ladder consists of a stout iron frame, bolted to the wall, and wooden
+
+rungs.  The frame is about three feet wide, ten feet tall, and three inches
+
+thick.  Each of the rungs is a board, slid in through the side of the ladder
+
+frame, and strapped firmly in place with hemp rope.
+
+"
+A
+"climb"
+"u up ladder"
+"act_tochar( #cli, ch );
+
+act_notchar( #ncli, ch );
+
+transfer( ch, find_room( 8022 ) );
+
+act_notchar( #arrive, ch );
+
+loop( followers ) {
+
+  if( is_player( rch ) ) {
+
+    transfer( rch, find_room( 8022 ) );
+
+    act_notchar( #arrive, rch );
+
+    }
+
+  }
+
+"
+E
+"cli"
+"You grab ahold of the rungs on the ladder and climb up it.
+
+"
+E
+"ncli"
+"$n grabs a hold of the rungs on the ladder and climbs upward.
+
+"
+E
+"arrive"
+"$n climbs up the ladder from below.
+
+"
+!
+0 0 0
+A
+"up"
+""
+"if( can_fly( ch ) )
+
+  continue;
+
+else
+
+  act_tochar( #cant, ch );
+
+"
+E
+"cant"
+"You need to climb up the ladder to leave up.
+
+"
+!
+0 0 0
+-1
+S
+
+#8007
+"Great Hall"
+"Decorating the walls of this large chamber are many exotic trophies, ranging
+
+from basic to ancient artifacts.  Seven giant pillars support the domed roof
+
+high overhead, each one carved as a totem to a dark god.  The greatest of the
+
+pillars in the center of the room, circled by the other six.  Spaced around
+
+the central pillar are three long tables, hewn of some dark and silvery wood. 
+
+At each table's ends are wineracks or kegs.  Upon the tables, a feast is set,
+
+great haunches of meat resting on platters, surrounded by breads, sweets,
+
+sauces, and wines.  Many tapestries hang down from the high ceiling above,
+
+each depicting an event of triumph.  Against the eastern wall is a large
+
+tapestry, with smaller ones upon the rest of the walls.
+
+"
+"[Olah] 5 chair and table objects need to be added
+
+"
+301465601 0
+0 6 0
+D1
+""
+""
+0 -1 8010 0 6
+D3
+"large mahogany door banded in black iron"
+""
+131 -1 8002 0 6
+E
+"trophies"
+"These trophies come in all shapes, and sizes; from taxidermied elves to
+
+polished dwarf skulls.  There are relics of lost kingdoms, crowns, sceptres,
+
+and the like.  There are dark and deadly blades, evil glowing armors, and even
+
+a stone that emits powerful light-safely subdued of course.  The most
+
+magnificient trophy, a large marble statue of Lonil, said to have been stolen
+
+from one of his most sacred of temples.
+
+"
+E
+"pillars"
+"The center pillar is carved into likeness of Temohpab, dark, foreboding, and
+
+all powerful.  The three pillars closest to him are of Oyasuminsai, Shninkoki,
+
+and Jack.  The remaining three pay tribute to Morkith, Xiroce, and Morr. 
+
+Tribute is paid to the other dark gods in the form of small shrines and
+
+tapestries around the chamber.
+
+"
+E
+"tapestries"
+"A very large tapestry, this work shows the Triumvirate.  Depicted in their
+
+normal color, black, upon a background of the purest blood-red.  The Dark Gods
+
+are overseeing a glorious massacre.  Elves, halflings, gnomes, dwarves, and
+
+humans all perish under their watchful gaze, and the swords of their minions.
+
+"
+-1
+S
+
+#8008
+"Mystic Shop"
+"The inside of this shop is a mess.  There is clutter everywhere.  Stacks of
+
+books and scrolls litter all surfaces not covered with odds and ends.  Small
+
+bits of the furniture peek out through the piles.  Overall, the room gives the
+
+feel that the owner is very untidy and has a short attention span.
+
+"
+""
+301469701 0
+0 6 0
+D1
+""
+""
+0 -1 8004 0 6
+2464 9 1509949540 3 0
+1020 17 1509949490 -1 0
+1021 17 1509949465 -1 0
+305 17 1509949465 -1 0
+1008 17 1509949500 -1 0
+1025 17 1509949520 -1 0
+9 17 1509949520 -1 0
+-1
+S
+
+#8009
+"Herbalist"
+"Smooth swept floors greet you in this tidy little shop.  Upon each of the
+
+walls is a large rack of shelves.  Each of the shelves has many small bins,
+
+all painstakingly labeled in fine script.  Several bunches of herbs lie out,
+
+in various states of preparedness.  Hanging around the shop are many small
+
+clusters, drying.  The inventory of this shop must contain nearly every herb
+
+known.
+
+"
+""
+301469701 0
+0 6 0
+D3
+""
+""
+0 -1 8004 0 6
+2463 9 1509949540 3 0
+977 17 1509949470 -1 0
+98 17 1509949530 -1 0
+81 17 1509949530 -1 0
+415 17 1509949530 -1 0
+189 17 1509949530 -1 0
+1301 17 1509949490 -1 0
+479 17 1509949470 -1 0
+1999 17 1509949470 -1 0
+2690 17 1509949500 -1 0
+2691 17 1509949500 -1 0
+1194 17 1509949520 -1 0
+249 17 1509949500 -1 0
+1269 17 1509949510 -1 0
+79 17 1509949530 -1 0
+210 17 1509949530 -1 0
+1460 17 1509949500 -1 0
+873 17 1509949500 -1 0
+2294 17 1509949470 -1 0
+1391 17 1509949510 -1 0
+37 17 1509949530 -1 0
+280 17 1509949500 -1 0
+1182 17 1509949530 -1 0
+284 17 1509949520 -1 0
+304 17 1509949510 -1 0
+872 17 1509949520 -1 0
+474 17 1509949530 -1 0
+1974 17 1509949520 -1 0
+78 17 1509949530 -1 0
+243 17 1509949530 -1 0
+229 17 1509949510 -1 0
+2118 17 1509949460 -1 0
+425 17 1509949520 -1 0
+495 17 1509949490 -1 0
+84 17 1509949510 -1 0
+755 17 1509949515 -1 0
+206 17 1509949490 -1 0
+3507 17 1509949470 -1 0
+776 17 1509949460 -1 0
+4487 17 1509949490 -1 0
+-1
+S
+
+#8010
+"Foyer"
+"A lavishly appointed chamber with the walls paneled in a light wood, floors of
+
+polished tile.  Many thick, heavy tapestries hang upon the walls.  There are a
+
+few deep pile rugs around the room, seemingly tossed in place.  Built into the
+
+walls are some large shelves which are partially covered with books and
+
+scrolls.  A few chairs and pillows add to the clutter of the room.  Set
+
+against the east wall is a grand staircase.  The stairs are carved from marble
+
+blocks, with railings made out of a golden-toned wood.  To the north is an
+
+ornate door, covered with many detailed carvings.  East, next to the stairway,
+
+lies a heavy, reinforced door.  A button shaped like a skull is situated
+
+beside the door.
+
+"
+"[Olah] press button to get into storage room 8023
+
+"
+301465605 0
+0 6 0
+D0
+"carved door of obsidian"
+""
+1 -1 8011 0 6
+D2
+""
+""
+0 -1 8012 0 6
+D3
+""
+""
+0 -1 8007 0 6
+D4
+""
+""
+0 -1 8020 0 6
+E
+"tapestries"
+"Woven of wool, these tapestries are quite thick.  They all show different
+
+scenes from the great history of darkness.  The overwhelming of a party of
+
+elves by a small band of orcs.  The destruction of a halfling village by
+
+marauding goblins.
+
+"
+E
+"rugs"
+"Several fur rugs lie on the floor.  Some are from recognizable creatures,
+
+others are decidedly from fantastical, almost mythical creatures.
+
+"
+E
+"sheleves"
+"Floor to ceiling book shelves have been built along the walls.  Each bookshelf
+
+is moderately full of books, scrolls, and other forms of writing.
+
+"
+E
+"button"
+"A button the size of a human's hand protrudes a few inches from the wall
+
+beside the door to the east.
+
+"
+A
+"press push"
+"button"
+"act_tochar( #press, ch );
+
+act_notchar( #npress, ch );
+
+if( is_player( ch ) ) {
+
+  if( is_name( \"LoSD\", clan_abbrev( ch ) ) ) {
+
+    act_notchar( #leave, ch );
+
+    transfer( ch, find_room( 8023 ) );
+
+    act_notchar( #arrive, ch );
+
+  }
+
+  else {
+
+    act_tochar( #begon, ch );
+
+    act_notchar( #poof, ch );
+
+    transfer( ch, find_room( 8000 ) );
+
+    act_notchar( #rpoof, ch );
+
+  }
+
+}
+
+else
+
+  act_tochar( #fail, ch );
+
+"
+E
+"press"
+"@cYou carefully press the button beside the door.@n
+
+"
+E
+"npress"
+"@c$n carefully presses the button beside the door.@n
+
+"
+E
+"arrive"
+"@c$n arrives in a puff of smoke.@n
+
+"
+E
+"fail"
+"@cYou feel something tugging you before fading.@n
+
+"
+E
+"leave"
+"@cYou see $n leave in a puff of smoke.@n
+
+"
+E
+"begon"
+"@YProtective spells evict you from this place!@n
+
+"
+E
+"rpoof"
+"$n appears in a cloud of acrid smoke looking rather singed!
+
+"
+E
+"poof"
+"$n disappears in a small mushroom cloud.
+
+"
+!
+0 0 0
+4427 17 1509949540 -2 0
+4427 17 1509949540 -2 0
+3755 17 1509949540 -2 0
+-1
+S
+
+#8011
+"Shrine"
+"The center of this chamber is dominated by a great block of obsidian, easily
+
+eight feet wide and five feet tall.  Directly behind the stone, that can only
+
+be called an altar, is a matched pair of curtains.  Tall, stark white, silk
+
+curtains that bear upon them the mark of the triumvirate.  The room has an
+
+ominous feel, like someone is watching you.  To either side of the altar are
+
+big candelabra, providing enough light to make out the shape of the room, but
+
+no details.
+
+"
+"Temohpab altar
+
+"
+301465733 0
+0 6 0
+D2
+"carved door of obsidian"
+""
+1 -1 8010 0 6
+E
+"candelabra"
+"Twelve candle holders spread out in a circle form the candelabra.  They are
+
+all connected by bronze piping.  The tallest position being in the center at
+
+five feet tall, and the rest descending from that point in a spiral.
+
+"
+-1
+S
+
+#8012
+"Hallway"
+"This area looks to be an intersection of sorts.  To the north is a grand
+
+foyer, south is a formidable looking door, west is a small alcove, and to the
+
+east, a curtain covers a doorway.  The room is furnished only with a few rugs
+
+and tapestries.
+
+"
+""
+301465605 0
+0 6 0
+D0
+""
+""
+0 -1 8010 0 6
+D1
+"large mahogany double doors"
+""
+4227 -1 8015 0 6
+D2
+"dark walnut door"
+""
+131 -1 8014 0 6
+E
+"rugs"
+"Throw rugs cover a good part of the floor, deadening some of the sound as well
+
+as providing a bit of insulation from the stone below.  The rugs are made from
+
+a multitude of fabrics, styles, and colors, giving the room a kaleidoscope of
+
+color.
+
+"
+E
+"tapestries"
+"Woven of wool, these tapestries are quite thick.  They all show different
+
+scenes from the great history of darkness.  Some depict executions, others,
+
+more sinister acts.  One shows a \"great\" king, with an arrow piercing his
+
+throat, surrounded by his ministers, what a glorious sight.
+
+"
+-1
+S
+
+#8013
+"Arena"
+"This area is large and open.  There are several pieces of martial practice
+
+equipment staged throughout the area.  There is enough room to practice
+
+mounted combat, archery, and many other techniques.  Some thick wood posts and
+
+simple dummies are set along the northern edge.
+
+"
+""
+368607233 0
+0 6 0
+D1
+""
+""
+0 -1 8014 0 6
+D2
+""
+""
+0 -1 8024 0 6
+D3
+"oaken door"
+""
+131 -1 8005 0 6
+-1
+S
+
+#8014
+"Arena"
+"There is some practice gear strewn about the northern wall, flanking a dark
+
+wooden door.  Some wooden posts are driven into the ground, beginner foes. 
+
+There are also a few more challenging adversaries, a man-shaped target on a
+
+swivel for example.  South and west lie more of the battle grounds.
+
+"
+""
+368607233 0
+0 6 0
+D0
+"dark walnut door"
+""
+131 -1 8012 0 6
+D2
+""
+""
+0 -1 8025 0 6
+D3
+""
+""
+0 -1 8013 0 6
+-1
+S
+
+#8015
+"Entrance to the Harem"
+"Large mahogany double doors open into this lavish area.  Candles fill this
+
+room, many set upon silver platters and in silver inlaid sconces on the
+
+walls.  The candlelight dances off the polished, dark marble walls, but leaves
+
+much of the room dimly lit.  Many silken pillows in various rich hues are
+
+strewn in piles around the room.  These plush pillows look large enough for
+
+more than one person to share comfortably.  A few silver trays have been left
+
+close at hand, with various bottles of alcohol and crystal glasses upon them. 
+
+Fresh flowers and herbs are used to fill the area with an enticing aroma, and
+
+rose petals have been scattered upon the floor.  To the east, sheer curtains
+
+hang from a large archway, revealing a glimpse of a large pool in the next
+
+room.
+
+"
+"pillows, bottles, glass items
+
+"
+301465605 0
+0 6 0
+D1
+""
+""
+0 -1 8016 0 6
+D3
+"large mahogany double doors"
+""
+4227 -1 8012 0 6
+2075 9 1509949540 3 0
+2076 9 1509949540 3 0
+2150 9 1509949540 3 0
+2170 9 1509949540 3 0
+-1
+S
+
+#8016
+"A Luxurious Pool"
+"A large rectangular pool dominates the center of this room.  The pool is
+
+crafted from the same dark marble as the walls.  Candle light dances over the
+
+top of the water giving it the appearance of golden satin, while below the
+
+surface remains as dark as night.  The water is heated magically, giving off
+
+steam, and keeping this area very warm.  At the far end of the pool stands a
+
+statue of Iniara, The Dark Goddess of Lust.  Water pours into the pool from a
+
+wine pitcher in Iniaras hand, lit by magical means, the water flows blood red
+
+in color.  Pillows are placed along the walls, as well as towels, oils, soaps
+
+and anything else that might be required.  To the north, south and east are
+
+smaller rooms used for changing.  To the west is the archway leading back to
+
+the main area.
+
+"
+""
+301465605 0
+0 6 0
+D0
+"changing room door"
+""
+1 -1 8017 0 6
+D1
+"planked cedar door covered with bas-relief"
+""
+131 -1 8018 0 6
+D2
+"changing room door"
+""
+1 -1 8019 0 6
+D3
+""
+""
+0 -1 8015 0 6
+2217 9 1509949540 3 0
+2220 9 1509949540 3 0
+2221 9 1509949540 3 0
+2229 9 1509949540 3 0
+2230 9 1509949540 3 0
+-1
+S
+
+#8017
+"Changing Room"
+"This room is not large, but very lavishly decorated.  A small table and two
+
+chairs take up one corner of the room.  Upon the table is an ornate bottle
+
+filled with an aromatic wine as well as some crystal glasses to serve it in. 
+
+Shelves hold towels and robes as well as oils, soaps and lotions.  A large
+
+bench sits against the other wall, covered in rich, gold hued satin.  The only
+
+door in the room leads back out into the pool area.
+
+"
+""
+301465605 0
+0 6 0
+D2
+"changing room door"
+""
+1 -1 8016 0 6
+-1
+S
+
+#8018
+"Changing Room"
+"This room is not large, but very lavishly decorated.  A small table and two
+
+chairs take up one corner of the room.  Upon the table is an ornate bottle
+
+filled with an aromatic wine as well as some crystal glasses to serve it in. 
+
+Shelves hold towels and robes as well as oils, soaps and lotions.  A large
+
+bench sits against the other wall, covered in rich, gold hued satin.  The only
+
+door in the room leads back out into the pool area.
+
+"
+""
+301465605 0
+0 6 0
+D3
+"planked cedar door covered with bas-relief"
+""
+131 -1 8016 0 6
+-1
+S
+
+#8019
+"Changing Room"
+"This room is not large, but very lavishly decorated.  A small table and two
+
+chairs take up one corner of the room.  Upon the table is an ornate bottle
+
+filled with an aromatic wine as well as some crystal glasses to serve it in. 
+
+Shelves hold towels and robes as well as oils, soaps and lotions.  A large
+
+bench sits against the other wall, covered in rich, gold hued satin.  The only
+
+door in the room leads back out into the pool area.
+
+"
+""
+301465605 0
+0 6 0
+D0
+"changing room door"
+""
+1 -1 8016 0 6
+-1
+S
+
+#8020
+"Upstairs Foyer"
+"Grand stairs descend to the lower level against the southern wall.  The area
+
+is covered with wood chips, blocks of stone, and all sorts of tools used in
+
+the carving of the rock.  There appears to be much work going on, all in
+
+various states of completion.  The hallway extends to the north, where you see
+
+more of the same.
+
+"
+""
+301465605 0
+0 6 0
+D0
+""
+""
+0 -1 8030 0 6
+D1
+"mahogany door"
+""
+98321 4030 8021 0 6
+D3
+"heavy ironwood door"
+""
+98321 4273 8031 0 6
+D5
+""
+""
+0 -1 8010 0 6
+E
+"1 west heavy iron door"
+"The heavy ironwood door is built as though to withstand a siege, though
+
+whether it's intended to keep something in or out is unclear.  Inlaid into the
+
+wood in emerald green are the symbols of a pentacle and an exploding skull,
+
+with an inscription beneath.
+
+"
+A
+"1 look read"
+"inscription"
+"if( find_skill( ch, vyanian ) > 6 )
+
+  act_tochar( #read, ch );
+
+else
+
+  act_tochar( #cant, ch );
+
+"
+E
+"read"
+"\"Caution: Mage at work or play\"
+
+"
+E
+"cant"
+"You can't seem to understand what the inscription says.
+
+"
+!
+0 0 0
+-1
+S
+
+#8021
+"Makalyn's Haven"
+"Upon entering, you can make out the soft sound of flowing water.  The area is
+
+very large, and richly decorated.  A large bed has been placed in the center
+
+of the room, covered in crimson and black silks, clearly meaning to be the
+
+focus of the area.  Four abstract paintings cover three of the walls, and an
+
+easel has been set at a corner, with a fifth unfinished painting.  The fourth
+
+wall is covered in red-hued wooden shelves that display various instruments. 
+
+The only window to the room is covered in thick crimson velvet, meant to keep
+
+most of the light out of the room.  Magical lighting, as well as candles keep
+
+the room dimly lit, but easily adjusted.  Luxurious furs cover the floor,
+
+keeping the cold stone beneath from touching bare feet.  A small fireplace
+
+sits under one of the paintings, heating the entire area.
+
+"
+""
+301465605 0
+0 6 0
+D3
+"mahogany door"
+""
+98321 4030 8020 0 6
+E
+"paintings blood elf easel unfinished"
+"Elven skin has been used as the canvas for these abstract paintings.  Broad
+
+strokes of what appears to be blood make up the different images.  The colors
+
+in the images vary from nearly black to light red depending on how liberally
+
+the medium was applied to the canvas.  No two painting are alike, and each
+
+possibly meaning something different based on the imagination of those that
+
+view them.  A large easel has been set in the corner of the room with an
+
+unfinished painting.  Brushes sit on a nearby table as well as a few sealed
+
+bottles of red liquid.
+
+"
+E
+"shelf shelves blood-stained instruments"
+"Shelves line one entire wall, floor to ceiling.  The rich grained wood is
+
+stained with what one might guess to be blood, to achieve a beautiful red
+
+hue.  The shelves are deep, and set at various heights to accommodate the many
+
+different types of instruments displayed upon them.  An unknown light source
+
+is used to highlight each piece.  It is obvious these instruments are prized
+
+possessions, and meant to be shown off and admired, yet still easily
+
+accessible when the urge to play them arises.
+
+"
+4025 17 1509949540 -2 0
+4028 17 1509949540 -2 43
+-1
+S
+
+#8022
+"Over the Gatehouse"
+"This room is partially open to the elements.  On the eastern side is a low
+
+wall, looking out over the gates below.  All along the floor are murder
+
+holes.  Some of the holes show the gates, but the rest look down into the
+
+tunnel below.  There is a fire-pit to one side with a large cauldron sitting
+
+above it, and a few more nearby.
+
+"
+"[Olah] cauldron extra copied. object needs to be made with soup
+
+"
+301465601 0
+0 6 0
+D5
+""
+""
+1024 -1 8006 0 6
+E
+"cauldron"
+"The cauldron is easily large enough to hold 50 liters of liquid.  It is mostly
+
+full of a dark, smelly liquid.  A tripod suspends it over the fire-pit, and
+
+others sit nearby, ready to be used.  The fire-pit extends back underneath the
+
+other vats, in order to warm them in preparation for boiling.
+
+"
+-1
+S
+
+#8023
+"The Vault"
+"This cavernous chamber is stark.  There are chests lining the eastern and
+
+western walls.  A long table and bench set amidst them to either side.  The
+
+walls here have an odd look to them, almost as if this room were melted out of
+
+the rock.  No seams can be found.  West lies a normal door, heavy timber
+
+reinforced with some dark metal and bearing a lock and bar.  The chests are
+
+interesting, as no two are alike.  Each is crafted of a different wood, metal,
+
+or stone.  To the west is a button in the shape of a skull.
+
+"
+"[Olah] DO NOT PURGE in this room!
+
+[Olah] press button to get out to 8010
+
+"
+301467681 0
+0 6 0
+E
+"button"
+"A button the size of a human's hand protrudes a few inches from the wall to
+
+the west.
+
+"
+A
+"press push"
+"button"
+"act_tochar( #press, ch );
+
+act_notchar( #npress, ch );
+
+if( is_player( ch ) ) {
+
+  if( is_name( \"LoSD\", clan_abbrev( ch ) ) ) {
+
+    act_notchar( #leave, ch );
+
+    transfer( ch, find_room( 8010 ) );
+
+    act_notchar( #arrive, ch );
+
+    }
+
+  else
+
+    act_tochar( #fail, ch );
+
+  }
+
+else
+
+  act_tochar( #fail, ch );
+
+"
+E
+"press"
+"@cYou carefully press the button beside the door.@n
+
+"
+E
+"npress"
+"@c$n carefully presses the button beside the door.@n
+
+"
+E
+"arrive"
+"@c$n arrives in a puff of smoke.@n
+
+"
+E
+"fail"
+"@cYou feel something tugging you before fading.@n
+
+"
+E
+"leave"
+"@cYou see $n leave in a puff of smoke.@n
+
+"
+!
+0 1000 0
+A
+""
+""
+"if( find_stat( ch, level ) < 92 ) {
+
+  if( !is_name( \"LoSD\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #begon, ch );
+
+    obj_to_char( oload( 14 ), ch );
+
+    interpret( ch, \"mail Kicked from LoSD stronghold\" );
+
+    interpret( ch, \"mail send Talis\" );
+
+    act_notchar( #poof, ch );
+
+    transfer( ch, find_room( 8000 ) );
+
+    act_notchar( #rpoof, ch );
+
+  }
+
+}
+
+"
+E
+"begon"
+"@YProtective spells evict you from this place!@n
+
+"
+E
+"poof"
+"$n disappears in a small mushroom cloud.
+
+"
+E
+"rpoof"
+"$n appears in a cloud of acrid smoke looking rather singed!
+
+"
+!
+2 1000 0
+A
+"1 look 1 eat 1 drink 1 get 1 take 1 cast"
+""
+"acode( room, 2 );
+
+continue;
+
+"
+!
+0 0 0
+-1
+S
+
+#8024
+"Arena"
+"The sandy floor here is speckled with red.  Chained to two of the stout wooden
+
+pilings are elvish corpses, the rest are empty.  Both look to have been
+
+archery targets, as several arrows are sticking out of their skin.  To the
+
+west is the edge of the arena, a great stone wall.
+
+"
+""
+368607233 0
+0 6 0
+D0
+""
+""
+0 -1 8013 0 6
+D1
+""
+""
+0 -1 8025 0 6
+D2
+""
+""
+0 -1 8026 0 6
+-1
+S
+
+#8025
+"Arena"
+"Dark red smears cover the sandy floor here.  Along the eastern wall is a long,
+
+tall stack of firewood, and spaced a bit from it, a pyre.  Evidently, bodies
+
+are dragged over to the pyre to be disposed of.  A cloud of smoke rises from
+
+the pyre and drifts south, towards an opening in the roof.
+
+"
+""
+368607233 0
+0 6 0
+D0
+""
+""
+0 -1 8014 0 6
+D2
+""
+""
+0 -1 8027 0 6
+D3
+""
+""
+0 -1 8024 0 6
+E
+"pyre"
+"The pyre is made up from some firewood and kindling.  Stacked upon it are a
+
+couple of corpses, ready to be ignited.  The scorch marks upon the ground, and
+
+the way that the sand has been baked into a sheet, indicate that this sees use
+
+very regularly.  There is a pall of smoke above the area, still being pulled
+
+from the arena through an opening in the roof.
+
+"
+-1
+S
+
+#8026
+"Arena"
+"The floor here is littered with discarded arms and armors.  Most of it looks
+
+to come from the losing side of the battles, beaten and battered.  North and
+
+east is the bulk of the arena, with the great stone walls to the west and
+
+south.
+
+"
+""
+368607233 0
+0 6 0
+D0
+""
+""
+0 -1 8024 0 6
+D1
+""
+""
+0 -1 8027 0 6
+-1
+S
+
+#8027
+"Arena"
+"Great patches of dark cover the ground here.  The sandy floor reduced to a
+
+mud-like state in places.  A thick pall of smoke hovers in the air here, as it
+
+makes its way out a large opening in the roof.  The stone walls to the east
+
+and south are covered with soot.
+
+"
+""
+368607233 0
+0 6 0
+D0
+""
+""
+0 -1 8025 0 6
+D3
+""
+""
+0 -1 8026 0 6
+-1
+S
+
+#8028
+"Arghelan's Asylum"
+"Dark depictions sketched along the stone walls give this otherwise stark room
+
+an ominous feel.  A large fireplace is built into the southern wall, with dark
+
+charcoal colored marble used as an edging around the opening as well as the
+
+hearthstone.  A grand curved window extends outside the eastern wall of the
+
+room, and a mat has been placed on the floor beside it for meditation and
+
+prayer.  Carved into the center of the floor is some sort of symbol made up of
+
+intertwining circles.  There is little in the way of furnishings to draw
+
+attention from the cold gray stone in the room.  Thick furs and soft pelts
+
+have been carefully placed upon the floor, providing the only comfortable
+
+place to rest.  A few texts on fighting styles, philosophy, and meditation
+
+have been casually left around the room, open to passages recently read.  A
+
+large stuffed bag made of a thick coarse fabric hangs by a chain from the
+
+ceiling in the northeast corner of the room.  The only door to the room leads
+
+back out into the hallway to the west.
+
+"
+""
+301465613 0
+0 6 0
+D3
+"dark marble door"
+""
+98327 3788 8030 0 6
+E
+"sketches"
+"The walls of this room are covered in bleak scenes.  A sea of black and red,
+
+one sketch flows into the next, creating a mural of hatred and pain.  One area
+
+depicts a gruesome battle, the dead and dying covering the ground; another
+
+shows some horrific types of torture being performed on what looks like an
+
+elf.  Perhaps the most disturbing are some of the dark, sexual scenes, best
+
+not studied too closely.  Cooled embers from the fireplace litter the floor
+
+near the most recent sketch, some stained with dried blood.
+
+"
+E
+"fireplace"
+"This fireplace is built into the southern wall.  Dark, charcoal colored marble
+
+edges the sides of the fireplace, giving it a more decorative look.  The
+
+hearthstone comes out a few feet from the fireplace in a semi-circle, also
+
+done in the charcoal-colored marble.  An intense heat radiates from the fire
+
+burning within the fireplace.  A few large logs have recently been placed over
+
+the glowing embers.  Large flames are slowly beginning to lick the length of
+
+the woods surface, causing light to flicker throughout the room.
+
+"
+E
+"window"
+"Centered in the eastern wall is a large semi-circular window.  The windowpanes
+
+are curved slightly and extend beyond the wall, giving the window a large open
+
+feel.  The window looks out over a large forested area, and possibly what
+
+could be an old mine in the distance.  Given the direction the window faces,
+
+it probably gives a spectacular view of the sunrise in the east.  A meditation
+
+mat has been placed in the center of the semi-circle so that the window curves
+
+around it on three sides.  Some dried white sandalwood rests in a small stone
+
+bowl next to the mat, probably used to aid meditation.
+
+"
+E
+"furs"
+"Very little in this room could be called relaxing, but the thick bear skins,
+
+piled on the floor look very inviting.  Adding to the look of comfort, brushed
+
+lambskin has been rolled into pillows and mink and rabbit furs made into
+
+oversized blankets.  This is the type of bed one could cuddle up in all day
+
+and never think twice.  Although this looks very out of place in a room like
+
+this, even the most dedicated have their vices, and guessing from the crimson
+
+silk peeking out from under one of the blankets, this serves to support more
+
+than one of them.
+
+"
+E
+"training circle"
+"Large intertwining circles are carved into the center of the stone floor.  An
+
+oily reddish residue fills the deep grooves, which are also covered in dark
+
+scorch marks.  The circles vary in size and position, but all join in the
+
+center forming a small central circle.  This, one could assume, is meant to
+
+signify the point where mind and body are one, and from there all else may be
+
+realized.  The rings look to be used for training and conditioning of the body.
+
+"
+E
+"texts"
+"Various texts on fighting styles, philosophy and meditation litter the room. 
+
+Old and new works alike seem to have been tossed aside once the reader had
+
+finished with them.  One in particular though, sitting next to the fireplace,
+
+catches your eye.  It is leather bound and looks to be open to a hand written
+
+passage.
+
+"
+E
+"passage"
+"\"...  But, in conclusion, I find I have insensibly reverted to the point I
+
+desired; for, since it is now manifest to me that bodies themselves are not
+
+properly perceived by the senses nor by the faculty of imagination, but by the
+
+intellect alone; and since they are not perceived because they are seen and
+
+touched, but only because they are understood [or rightly comprehended by
+
+thought], I readily discover that there is nothing more easily or clearly
+
+apprehended than my own mind.  But because it is difficult to rid one's self
+
+so promptly of an opinion to which one has been long accustomed, it will be
+
+desirable to tarry for some time at this stage, that, by long continued
+
+meditation, I may more deeply impress upon my memory this new knowledge.\"
+
+"
+4248 49 1509949540 -2 0
+4134 81 1509949540 -2 0
+-1
+S
+
+#8029
+"Stables"
+"Lining both the northern and southern walls are the many stalls that make up
+
+the stables.  There is a stall set aside for tack, the rest are all devoted to
+
+the various creatures.  Along the back wall, there is a pile of hay, and a few
+
+barrels.  Several large iron rings are set into the roofing supports,
+
+evidently to be used for tethering.  A large opening leads out into the
+
+courtyard.
+
+"
+"[Olah] room and extras copied
+
+"
+301465605 0
+0 6 0
+D3
+""
+""
+0 -1 8003 0 6
+E
+"hay"
+"The hay pile is taller than you, and nearly twice as wide as it is tall.
+
+"
+E
+"barrels"
+"Plain wooden slats bound together with a few hoops make up the barrels.  They
+
+have some fodder inside.
+
+"
+E
+"rings"
+"Each ring is firmly riveted into place on a support beam.  They are all the
+
+same size, and most of them are still round.  Each one is the size of a large
+
+fist.
+
+"
+-1
+S
+
+#8030
+"Upstairs Foyer"
+"The hallway ends abruptly as you reach the end of the construction.  A stack
+
+of spades and other stone-working tools have been tossed in a pile at the
+
+northern wall, awaiting the next call to arms.  Back to the south lies a grand
+
+staircase leading down into the castle proper.  A singular door is set into
+
+the eastern wall, its dark marble surface gleaming eerily in the torchlight.
+
+"
+""
+301465605 0
+0 6 0
+D1
+"dark marble door"
+""
+98327 3788 8028 0 6
+D2
+""
+""
+0 -1 8020 0 6
+-1
+S
+
+#8031
+"Marakata's Lair"
+"Although there is no boundary between the two, the room is roughly divided
+
+into two parts, a sleeping and living area in the northern half and a work
+
+area in the southern half.  The sleeping are is furnished with a large but
+
+very plain looking bed in the north east corner, a fireplace in the middle of
+
+the north wall and a wardrobe in the north west corner.  Two chairs are
+
+positioned facing the fireplace.  The only furniture in the southern half of
+
+the room is a large desk in the south west corner with a tapestry behind it
+
+and a blackboard alongside it.  Much of the remaining space is taken up by a
+
+large pentagram inscribed on the floor.  Mystical seeming symbols are
+
+delicately carved into the wall at various intervals, although whether for
+
+enchantment or decoration is unclear.  The walls, ceiling, and floor are all
+
+of polished stone.  In the centre of the east wall is a large ironwood door,
+
+and evenly spaced across the west wall are three tall narrow windows, each set
+
+with heavy ironwood shutters.
+
+"
+""
+301465605 0
+0 6 0
+D1
+"heavy ironwood door"
+""
+98321 4273 8020 0 6
+E
+"fireplace"
+"The fireplace is set directly into the wall with no surround or mantlepiece. 
+
+A brightly burning fire provides heat for the room.
+
+"
+E
+"desk"
+"The teak desk was obviously finely crafted and of excellent quality, however
+
+its surface is now marred by many forms of damage, including what appear to be
+
+acid burns, fire scorches, scratches, stains, and on one side the claw marks
+
+of some large creature.  The floor around the desk shows signs of similar
+
+damage.
+
+"
+E
+"tapestry"
+"On closer inspection the main reason for the tapestry being here seems to be
+
+to cover over damage to the wall that could only have resulted from a series
+
+of explosions.
+
+"
+E
+"blackboard"
+"The blackboard is about 4 feet square and covered with a mixture of magical
+
+symbols and formulae together with a few reminders, all rendered in white
+
+chalk.  It looks as though the various formulae have gone through many
+
+revisions with bits evidently wiped out and rewritten.  At the far bottom
+
+corner of the blackboard a small message has been hastily written.
+
+"
+E
+"message"
+"Makalyn was here!!  Muhahaha ;)
+
+"
+E
+"pentagram"
+"The pentagram is carved into the floor and inlaid with what appears to be
+
+silver.  Embedded into the floor around it are four evenly spaced hoops of
+
+some strange metal.
+
+"
+E
+"hoops"
+"The hoops look as though they may have been used to chain something within the
+
+pentagram.  They are twisted and buckled as though they have been subject to
+
+some great force, but they appear to have withstood it.
+
+"
+E
+"windows"
+"The windows provide a spectacular view over the nearby forest.
+
+"
+E
+"wardrobe"
+"The large teak wardrobe is obviously of high quality workmanship, although of
+
+very plain design.  A mirror is attached inside one of the doors.
+
+"
+E
+"bellpull"
+"The bellpull is a length of white silk suspended from the ceiling, presumably
+
+used to summon slaves.
+
+"
+E
+"ironwood shutters"
+"The shutters are strong and seem to have been built to withstand great force,
+
+whether from within or without.  Carved into them are many fine symbols, some
+
+of which you recognise as relating to protection and warding.
+
+"
+A
+"bounce jump"
+"bed"
+"act_tochar( #bounce, ch );
+
+act_notchar( #nbounce, ch );
+
+if( random( 1, 20 ) > find_stat( ch, dex ) ) {
+
+  i = 2d10+5;
+
+  act_tochar( #fall, ch );
+
+  act_notchar( #nfall, ch );
+
+  set_resting( ch );
+
+  dam_message( ch, i, \"the fall\" );
+
+  inflict( ch, null, i, \"falling off a bed\" );
+
+  }
+
+"
+E
+"bounce"
+"You bounce up and down on the bed deliriously.
+
+"
+E
+"nbounce"
+"$n bounces up and down on the bed.
+
+"
+E
+"fall"
+"You suddenly lose your balance and fall off the bed!
+
+"
+E
+"nfall"
+"$n suddenly loses $s balance and falls off the bed!
+
+"
+!
+0 0 0
+4272 17 1509949540 -2 0
+-1
+S
+
+#0
+

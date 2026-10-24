@@ -1,0 +1,2445 @@
+#AREA
+"Frost Imp Cavern"
+"Eridan"
+"icy cavern"
+7 0
+0
+6
+#ROOMS
+
+#78250
+"Icy Cavern"
+"The walls of this narrow tunnel are entirely coated with sheets of thick,
+
+shimmering ice.  Five-foot icicles hang like giant daggers from the ceiling.
+
+A chilling wind blasts through the cave, churning sleet and ice into a
+
+blinding dust that gluts the frigid air.  The tunnel heads north, and to the
+
+south is a sort of cage formed of giant icicles that have grown all the way
+
+down to the floor.
+
+"
+"no.mob to separate areas
+
+"
+301465612 0
+11 5 0
+D0
+""
+""
+0 -1 78251 0 5
+D2
+"cage of ice"
+""
+235 -1 37579 0 5
+A
+"shatter break kick hit open"
+"wall ice cage south"
+"if( is_open( room, south ) )
+
+  send_to_char( #already, ch );
+
+else {
+
+  send_to_char( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, south );
+
+  end;
+
+  }
+
+"
+E
+"already"
+"The ice has already been shattered, leaving the path to the south open.
+
+"
+E
+"open"
+"Gathering your strength, you shatter the cage of ice to the south,
+
+clearing a path.
+
+"
+E
+"ropen"
+"$n shatters the cage of ice to the south, clearing a path.
+
+"
+!
+0 0 0
+-1
+S
+
+#78251
+"Icy Cavern"
+"The icy tunnel turns east and south here, though the view in either direction
+
+is blurred by churning sleet and snow in the wind-torn air.  The walls are
+
+probably stone, but have long since been swallowed by sheets of thick, heavy
+
+ice.
+
+"
+""
+301465604 0
+11 5 0
+D1
+""
+""
+0 -1 78252 0 5
+D2
+""
+""
+0 -1 78250 0 5
+1151 9 1509949540 3 0
+1151 9 1509949540 3 0
+-1
+S
+
+#78252
+"Icy Cavern"
+"The tunnel comes in from the west then slopes sharply downward here.  The
+
+slope looks treacherous - slick with black ice.  The ice-covered walls press
+
+in, heavy and narrow, and echo with the howl of a chilling wind.
+
+"
+""
+301465604 0
+11 5 0
+D3
+""
+""
+0 -1 78251 0 5
+D5
+""
+""
+0 -1 78253 0 5
+1151 9 1509949540 3 0
+-1
+S
+
+#78253
+"Icy Cavern"
+"This is the base of a steep, icy slope that heads upward into the darkness and
+
+roiling, wind-blown sleet.  The tunnel also heads to the east.  The wind here
+
+is cold and almost deafening, ringing off the icy walls and throwing shards of
+
+glittering ice.
+
+"
+""
+301465604 0
+11 5 0
+D1
+""
+""
+0 -1 78254 0 5
+D4
+""
+""
+0 -1 78252 0 5
+1151 9 1509949540 3 0
+-1
+S
+
+#78254
+"Icy Cavern"
+"This is a bend in the icy tunnel, which turns south and west.  Over the
+
+cacophonic ringing of wind and shattering ice come strange, discordant
+
+sounds of chattering far in the distance.  The walls are icy but show long,
+
+deep scars as if they have been slashed by terrible, clawed hands.
+
+"
+""
+301465604 0
+11 5 0
+D2
+""
+""
+0 -1 78255 0 5
+D3
+""
+""
+0 -1 78253 0 5
+E
+"walls slashes scars"
+"Long, thin scars have been slashed into the thick ice that coats the
+
+walls.  The scars are in groups of four, reminiscent of the claws of some
+
+terrible animal.
+
+"
+1151 9 1509949540 3 0
+-1
+S
+
+#78255
+"Icy Cavern"
+"The tunnel comes in from the west here and heads north into a hazy of churning
+
+snow and sleet.  Icicles jut from the high ceiling - large ones that seems as
+
+immovable as a mountain, and small ones that break away in the wind and
+
+clattering to the ground in an icy, silver tinkling.
+
+"
+""
+301465604 0
+11 5 0
+D0
+""
+""
+0 -1 78254 0 5
+D3
+""
+""
+0 -1 78256 0 5
+-1
+S
+
+#78256
+"Icy Cavern"
+"The tunnels heads straight east-to-west here.  The walls are smooth with thick
+
+black ice, and the air is assaulted by a hellish wind that drives snow and
+
+particles of shattered ice like thousands of tiny daggers.
+
+"
+""
+301465604 0
+11 5 0
+D1
+""
+""
+0 -1 78255 0 5
+D3
+""
+""
+0 -1 78257 0 5
+1151 9 1509949540 3 0
+1151 9 1509949540 3 0
+-1
+S
+
+#78257
+"Icy Cavern"
+"This east-west stretch of tunnel is so heavy with churning waves of sleet and
+
+ice that vision is nearly impossible.  The wind here is incredibly strong,
+
+ringing off the glossy sheets of ice on the wall like a giant hammer.  The
+
+wind seems to be coming from the west.
+
+"
+""
+301465604 0
+11 5 0
+D1
+""
+""
+0 -1 78256 0 5
+D3
+""
+""
+0 -1 78258 0 5
+-1
+S
+
+#78258
+"Icy Cavern"
+"The tunnel bends here to the east and north.  From the north comes the sound
+
+of dozens of tiny voices, while to the east is only the hollow echo of a
+
+distant wind.  The cold here is so severe it is almost dangerous, as are the
+
+thousands of shards of ice that the blistering storm drives in front of it.
+
+"
+""
+301465604 0
+11 5 0
+D0
+""
+""
+0 -1 78259 0 5
+D1
+""
+""
+0 -1 78257 0 5
+1151 9 1509949540 3 0
+-1
+S
+
+#78259
+"Icy Cavern"
+"The walls here show damage and deep scarring in the ice - perhaps the remnants
+
+of a battle.  Blotchy patches of discolored ice suggest that portions of the
+
+icy wall have recently been melted then frozen over again.  The tunnel turns
+
+here to the south and west.
+
+"
+""
+301465604 0
+11 5 0
+D2
+""
+""
+0 -1 78258 0 5
+D3
+""
+""
+0 -1 78260 0 5
+E
+"wall ice patches scars"
+"The walls here are coated with a mostly smooth layer of thick ice. 
+
+However, parts of the wall show nicks and deep gouges, while other parts
+
+of the wall look as if they might have been melted then quickly refrozen.
+
+"
+-1
+S
+
+#78260
+"Icy Cavern"
+"This stretch of tunnel has seen some action recently.  The once-smooth sheets
+
+of ice that cover the walls are now mangled and entirely melted in some places
+
+revealing the underlying stone of the cavern.  The floor is littered with the
+
+shattered remnants of huge, fallen icicles.  The tunnel splits off to the
+
+south, east and west.
+
+"
+""
+301465604 0
+11 5 0
+D1
+""
+""
+0 -1 78259 0 5
+D2
+""
+""
+0 -1 78290 0 5
+D3
+""
+""
+0 -1 78261 0 5
+E
+"ice wall south sheet"
+"On the south wall of this stretch of tunnel is a sheet of perfectly
+
+smooth ice.  Unlike the other icy walls in this cavern, this one is
+
+completely unharmed.  In fact, it shows signs of having formed quite
+
+recently.  Oddly, behind the sheet, or deep inside it, is a strange
+
+darkness.
+
+"
+1151 9 1509949540 3 0
+1151 9 1509949540 3 0
+-1
+S
+
+#78261
+"Icy Cavern"
+"The air is awash with a blinding torrent of icy wind that churns and
+
+assaults anything unfortunate enough to be in its path.  The wind seems
+
+to come strong from the roiling darkness to the north.  The tunnel bends
+
+here to the north and east.
+
+"
+""
+301465604 0
+11 5 0
+D0
+""
+""
+0 -1 78262 0 5
+D1
+""
+""
+0 -1 78260 0 5
+-1
+S
+
+#78262
+"Top of an Icy Slope"
+"A very steep, slope heads downward into the darkness.  The slope is
+
+narrow and covered entirely with glistening ice.  A raking wind comes up
+
+from below, blasting the air here with painful shards of ice.  The tunnel
+
+also heads into the darkness to the south.
+
+"
+"slip-down-the-ice acode
+
+"
+301465604 0
+11 5 0
+D2
+""
+""
+0 -1 78261 0 5
+D5
+""
+""
+0 -1 78263 0 5
+A
+"1 down"
+""
+"if( find_stat( ch, dex ) < random( 10, 25 ) ) {
+
+  act_tochar( #slip, ch );
+
+  act_notchar( #slipnot, ch );
+
+  send_to_room( #slip3, find_room( 78263 ) );
+
+  transfer( ch, find_room( 78264 ) );
+
+  i = 1d10;
+
+  dam_message( ch, i, \"smashing into the icy wall\" );
+
+  inflict( ch, mob, i, \"smashing into a wall\" );
+
+  act_notchar( #slip2, ch );
+
+  }
+
+else
+
+  continue;
+
+loop( followers ) {
+
+  ch = rch;
+
+  acode( room, 1 );
+
+  }
+
+"
+E
+"slip"
+"@CAs you start down the icy slope, you suddenly lose your footing, go
+
+sliding down, through the room and the bottom of the slope, and into a
+
+wall of solid ice!@n
+
+"
+E
+"slipnot"
+"@C$n looses $s footing and goes sliding headlong down the icy slope!@n
+
+"
+E
+"slip2"
+"@C$n comes sliding into the room and smashes against the icy wall!@n
+
+"
+E
+"slip3"
+"Someone comes sliding down the icy slope above in an unidentifiable
+
+pile of tumbling arms and legs, goes straight through this room, across
+
+the icy floor, and into the room to the south. 
+
+"
+!
+0 0 0
+-1
+S
+
+#78263
+"Bottom of an Icy Slope"
+"A steep and very icy slope heads upward into the wind-raked darkness,
+
+while the icy tunnel also heads off to the south.  This room is assaulted
+
+by a fierce wind that stings the eyes and chills the bones.  The wind
+
+seems to be coming from the south.
+
+"
+"no.mob
+
+start resetting snow imps here
+
+"
+301465612 0
+11 5 0
+D2
+""
+""
+0 -1 78264 0 5
+D4
+""
+""
+0 -1 78262 0 5
+-1
+S
+
+#78264
+"Icy Cavern"
+"This bend in the wind-blown, icy tunnel heads to the north and west.  The
+
+walls here are dark with heavy, black glistening ice, which shows signs
+
+here and there of having sustained some damage.  Small pits have been
+
+gouged into the ice along most of its length, especially down around the
+
+floor.
+
+"
+""
+301465604 0
+11 5 0
+D0
+""
+""
+0 -1 78263 0 5
+D3
+""
+""
+0 -1 78265 0 5
+E
+"walls pits gouges holes ice"
+"Deep pits have been gouged into the ice here.  Most are very small, but
+
+some, especially down around the floor, are larger than an ogre's fist
+
+and appear quite deep.
+
+"
+A
+"search examine"
+"pits holes gouges niches"
+"if( !rflag( reset0, room ) ) {
+
+  send_to_char( #nada, ch );
+
+  act_notchar( #nadanot, ch );
+
+  end;
+
+  }
+
+remove_rflag( reset0, room );
+
+i = random( 1, 100 );
+
+if( i < 50 ) {
+
+  send_to_char( #nada, ch );
+
+  act_notchar( #nadanot, ch );
+
+  end;
+
+  }
+
+if( i < 75 ) {
+
+  send_to_char( #silver, ch );
+
+  act_notchar( #silvernot, ch );
+
+  obj_to_char( oload( 14 ), ch );
+
+  end;
+
+  }
+
+if( i < 85 ) {
+
+  send_to_char( #gold, ch );
+
+  act_notchar( #goldnot, ch );
+
+  obj_to_char( oload( 2 ), ch );
+
+  end;
+
+  }
+
+if( i < 90 ) {
+
+  send_to_char( #jewel, ch );
+
+  act_notchar( #jewelnot, ch );
+
+  obj_to_char( oload( 998 ), ch );
+
+  end;
+
+  }
+
+if( i < 92 ) {
+
+  send_to_char( #manysilver, ch );
+
+  act_notchar( #manynot, ch );
+
+  obj_to_char( oload( 14 ), ch );
+
+  obj_to_char( oload( 14 ), ch );
+
+  obj_to_char( oload( 14 ), ch );
+
+  end;
+
+  }
+
+if( i < 101 ) {
+
+  act_tochar( #snake, ch );
+
+  act_notchar( #snakenot, ch );
+
+  mload( 2262, room );
+
+  mob = mob_in_room( 2262, room );
+
+  i = 1d4;
+
+  dam_message( ch, i, \"the fanged bite\" );
+
+  inflict( ch, mob, i, \"a tiny demon serpent\" );
+
+  if( find_stat( ch, con ) < random( 10, 22 ) )
+
+    poison( ch );
+
+  attack( mob, ch, 1d4, \"bite\" );
+
+  }
+
+"
+E
+"nada"
+"You search the icy niches but find nothing.
+
+"
+E
+"nadanot"
+"$n searches the icy niches in the wall but seems to find nothing.
+
+"
+E
+"silver"
+"You grab a small, cold object deep in the niche.  You pull out your hand
+
+and find it holding a silver coin.
+
+"
+E
+"silvernot"
+"$n searches the icy niches in the wall.  It seems $e has found a silver
+
+coin!
+
+"
+E
+"gold"
+"You grab a small, cold object deep in the niche.  You pull out your hand
+
+and find it holding a gold coin.
+
+"
+E
+"goldnot"
+"$n searches the niches in the wall.  It seems $e has found a gold coin!
+
+"
+E
+"jewel"
+"You grab a small, cold object deep in the niche.  You pull out your hand
+
+and find it holding a sea green gem!
+
+"
+E
+"jewelnot"
+"$n searches the niches in the wall.  It seems $e has found a sea-green
+
+gem!
+
+"
+E
+"manysilver"
+"You grab several small, cold objects deep inside the niche.  You pull out
+
+your hand to find it holding three silver coins.
+
+"
+E
+"manynot"
+"$n searches the niches in the wall.  It seems $e has found several silver
+
+coins!
+
+"
+E
+"snake"
+"@CYou grab an object deep in the niche.  It moves a little, and once it
+
+hisses you realize it is alive!  You try to jerk your hand away, but
+
+before you can a pair of tiny fangs sinks into your flesh!  A tiny
+
+blue-white snake leaps out!@n
+
+"
+E
+"snakenot"
+"@C$n sticks $s hand into the niches.  Then $e suddenly yelps in pain,
+
+pulling his hand away.  He has been bitten by the tiny blue-white snake
+
+that leaps out!@n
+
+"
+!
+0 0 0
+2263 9 1509949540 3 0
+-1
+S
+
+#78265
+"Intersection in an Icy Cavern"
+"The icy, wind-blown network of frozen tunnels comes to a sharp, narrow
+
+intersection here, breaking off to the east, north and south.  Glittering
+
+motes of snow and ice swirl in the turbulent air, carried by a wind that
+
+seems to come from the south.
+
+"
+""
+301465604 0
+11 5 0
+D0
+""
+""
+0 -1 78266 0 5
+D1
+""
+""
+0 -1 78264 0 5
+D2
+""
+""
+0 -1 78267 0 5
+2263 9 1509949540 3 0
+1151 9 1509949540 3 0
+-1
+S
+
+#78266
+"Runes in the Ice"
+"This frigid alcove clearly has been worked by living hands.  The ice on
+
+the east and west walls is smooth, polished, and in some places shows
+
+tool marks.  The ice on the north wall also has been smoothed, and it is
+
+inset with dozens of intricate, arcane runes.
+
+"
+""
+301465604 0
+11 5 0
+D2
+""
+""
+0 -1 78265 0 5
+E
+"wall ice runes"
+"The wall to the north has been entirely covered with odd, arcane runes,
+
+most of which seem fresh in the smooth, glimmering ice.
+
+"
+2263 9 1509949540 3 0
+-1
+S
+
+#78267
+"Bend in an Icy Cavern"
+"The wind here is cold and incredibly powerful, driving before it sleet,
+
+snow, and jagged fragments of ice like a storm of arrows.  The wind,
+
+which is coming in from the west, creates an almost deafening howl that
+
+rings off the slick, icy walls.  The tunnel also heads off to the north.
+
+"
+""
+301465604 0
+11 5 0
+D0
+""
+""
+0 -1 78265 0 5
+D3
+""
+""
+0 -1 78268 0 5
+2263 9 1509949540 3 0
+-1
+S
+
+#78268
+"Wind-Blown, Icy Cavern"
+"Icicles shatter all around, broken loose from the high ceiling by the
+
+brutal, icy wind that comes in from the west, pushing with it a barrage
+
+of sleet and jagged ice.  The floor and walls here, all covered with ice,
+
+show deep scars from the impact of the driven storm of icy fragments.
+
+"
+""
+301465604 0
+11 5 0
+D1
+""
+""
+0 -1 78267 0 5
+D3
+""
+""
+0 -1 78269 0 5
+-1
+S
+
+#78269
+"Wind-Blown, Icy Cavern"
+"It is nearly impossible to see or hear anything because the blistering
+
+wind that comes in from the west is both deafening and blinding.  The air
+
+is choked with a torrential haze of flying particles that whirl in
+
+violent eddies of icy wind.  The tunnel heads to the east, or to the west
+
+where the wind seems to grow even stronger.
+
+"
+"damage-inflicting acode
+
+"
+301465604 0
+11 5 0
+D1
+""
+""
+0 -1 78268 0 5
+D3
+""
+""
+0 -1 78270 0 5
+A
+""
+""
+"send_to_room( #wind, room );
+
+i = 2d4;
+
+loop( all_in_room ) {
+
+  if( is_player( rch ) ) {
+
+    cold_message( rch, i, \"the icy wind\" );
+
+    inflict_cold( rch, mob, i, \"freezing to death\" );
+
+    }
+
+  }
+
+"
+E
+"wind"
+"A hellishly cold blast of wind comes in from the west, tearing at your flesh!
+
+"
+!
+2 400 0
+1151 9 1509949540 3 0
+2263 9 1509949540 3 0
+-1
+S
+
+#78270
+"Stone Face in an Icy Cavern"
+"On the west wall of this icy cavern is a huge, stone face, its eyes aglow, its
+
+mouth agape and exhaling a gale-force, punishing cold wind, which shoots
+
+straight down the tunnel to the east.  The cavern also heads north, and to the
+
+south, set into the icy wall, is a towering iron door.
+
+"
+""
+301465604 0
+11 5 0
+D0
+""
+""
+0 -1 78271 0 5
+D1
+""
+""
+0 -1 78269 0 5
+D2
+"heavy iron door"
+""
+211 -1 78273 0 5
+E
+"face west"
+"The face is huge and inhuman, looking more like an imp or demon.  Its
+
+mouth is wide agape, exhaling a hellish, icy wind that shears the very
+
+air with particles of ice.  It has red, jewelled eyes that glow strangely.
+
+"
+E
+"eyes"
+"The stone face's eyes are inset with dark, deeply red jewels.  The eye to the
+
+right seems oddly creased, showing lines around its stony contours.
+
+"
+E
+"door south iron"
+"The door on the south wall is tall, wide and seemingly immovable.  It is
+
+made of iron and is touched here and there with spidery fingers of frost
+
+that clutch at its frigid edges.
+
+"
+E
+"mouth"
+"The statue's mouth is open wide and from it comes a terrible, icy wind
+
+that echoes down the tunnel to the east.
+
+"
+A
+""
+""
+"send_to_room( #wind, room );
+
+i = 2d5;
+
+loop( all_in_room ) {
+
+  if( is_player( rch ) ) {
+
+    cold_message( rch, i, \"the icy wind\" );
+
+    inflict_cold( rch, mob, i, \"freezing to death\" );
+
+    }
+
+  }
+
+"
+E
+"wind"
+"A hellishly cold blast of wind comes from the stone mouth on the west
+
+wall, tearing at your flesh!
+
+"
+!
+2 500 0
+A
+"push close touch"
+"eyes"
+"if( is_open( room, south ) ) {
+
+  send_to_char( #already, ch );
+
+  end;
+
+  }
+
+send_to_char( #push, ch );
+
+act_notchar( #pushnot, ch );
+
+open( room, south );
+
+"
+E
+"already"
+"The eye has already been pushed in, opening the heavy iron door to the
+
+south.
+
+"
+E
+"push"
+"You push on the right eye.  It gives way!  As it sinks back into the
+
+socket, a grating sound fills the room.  The door to the south grinds
+
+open.
+
+"
+E
+"pushnot"
+"$n pushes on the right eye of the stone face.  It gives way!  As it sinks
+
+back into the socket, a grating sound fills the room.  The door to the
+
+south grinds open.
+
+"
+!
+0 0 0
+2263 9 1509949540 3 0
+-1
+S
+
+#78271
+"Icy Cavern"
+"The walls here are slick with heavy black ice, and the floor is littered
+
+with stones and the shattered remains of icicles that once clung to the
+
+ceiling far overhead.  This bend in the icy cavern turns south and west. 
+
+From the south comes the raging echo of a terrible wind, while to the
+
+west is only darkness.
+
+"
+""
+301465604 0
+11 5 0
+D2
+""
+""
+0 -1 78270 0 5
+D3
+""
+""
+0 -1 78272 0 5
+-1
+S
+
+#78272
+"Alcove in an Icy Cavern"
+"This alcove is cold but oddly quiet.  The air here is stirred by a cold
+
+wind, and particles of ice glimmer like fireflies in the frigid air.  The
+
+walls are covered with a deep black ice that seems to swallow any light. 
+
+To the east, the alcove opens up into an icy tunnel.
+
+"
+""
+301465604 0
+11 5 0
+D1
+""
+""
+0 -1 78271 0 5
+E
+"black ice walls"
+"The walls here close in tightly, covered by a thick sheet of the deepest
+
+black ice.
+
+"
+2263 9 1509949540 3 0
+-1
+S
+
+#78273
+"Icy Cavern"
+"Although the walls here are probably stone, they are coated with a thick,
+
+glistening sheet of black ice.  The ice is unnaturally smooth, showing
+
+signs here and there of having been intentionally polished by a living
+
+hand.  This tunnel heads off to the south, while to the north is a door
+
+of heavy, frost-touched iron.  Set into the east wall is an enormous
+
+stone lever.
+
+"
+""
+301465604 0
+11 5 0
+D0
+""
+""
+211 -1 78270 0 5
+D2
+""
+""
+0 -1 78274 0 5
+E
+"ice walls black"
+"The ice that coats the cavern walls is black - not a dirty, muddy dark,
+
+but a sheer, clean black that seems to absorb any light that touches it.
+
+"
+E
+"door north"
+"Set into the north wall is a huge iron door.  It has no handle or latch.
+
+"
+E
+"lever"
+"This lever is enormous and is made of stone.  It is set into the east
+
+wall above five feet from the ice-strewn cavern floor.
+
+"
+A
+"pull push grab hold use"
+"lever"
+"if( is_open( room, north ) ) {
+
+send_to_char( #already, ch );
+
+end;
+
+}
+
+send_to_char( #lever, ch );
+
+act_notchar( #levernot, ch );
+
+open( room, north );
+
+"
+E
+"already"
+"The lever has already been pulled, opening the heavy iron door to the
+
+north.
+
+"
+E
+"lever"
+"You pull on the lever.  The sound of metallic grating suddenly fills the
+
+room as the heavy iron door to the north grinds open.
+
+"
+E
+"levernot"
+"$n pulls on the stone lever.  The sound of metallic grating suddenly
+
+fills the room as the heavy iron door to the north grinds open.
+
+"
+!
+0 0 0
+2263 9 1509949540 3 0
+-1
+S
+
+#78274
+"Icy Cavern"
+"This bend in the icy tunnel heads off to the north and to the west.  The
+
+walls of this tunnel close in, heavy with ice, making the passage narrow
+
+and treacherous.  The floor is uneven with deep pits and large chunks of
+
+broken ice making it all the more difficult to traverse.  From the
+
+distant north comes the echo of a strong wind.
+
+"
+""
+301465604 0
+11 5 0
+D0
+""
+""
+0 -1 78273 0 5
+D3
+""
+""
+0 -1 78275 0 5
+E
+"pits"
+"The pits here seem to have been worn into through use, as though this
+
+area has been pass through countless times.
+
+"
+E
+"chunks ice"
+"Large chunks of plain ice litter the ground, making passage through this
+
+tunnel very difficult.
+
+"
+2263 9 1509949540 3 0
+1151 9 1509949540 3 0
+-1
+S
+
+#78275
+"Icy Cavern"
+"Threads of glimmering red ice wind their way through the dominantly black
+
+ice that coats the walls of this narrow passage.  The icy walls are
+
+mottled with these colors and shine translucently in the reflected light. 
+
+The tunnel heads to the east and to the west.
+
+"
+""
+301465604 0
+11 5 0
+D1
+""
+""
+0 -1 78274 0 5
+D3
+""
+""
+0 -1 78276 0 5
+-1
+S
+
+#78276
+"Icy Cavern"
+"The tunnel turns here in two directions.  To the south is a sheer wall of
+
+transparent ice.  From the east comes the hollow whisper of a distant
+
+wind, and from the west comes a very faint glimmer of subdued bluish
+
+light.
+
+"
+""
+301465604 0
+11 5 0
+D1
+""
+""
+0 -1 78275 0 5
+D2
+""
+""
+235 -1 78277 0 5
+D3
+""
+""
+0 -1 78278 0 5
+A
+"break shatter kick punch"
+"south wall ice"
+"if( is_open( room, south ) ) {
+
+send_to_char( #already, ch );
+
+end;
+
+}
+
+send_to_char( #break, ch );
+
+act_notchar( #breaknot, ch );
+
+open( room, south );
+
+"
+E
+"already"
+"The wall of ice has already been shattered, revealing a dark passage to
+
+the south.
+
+"
+E
+"break"
+"Gathering your strength, you smash the icy wall to the south.  It
+
+shatters into thousands of fragments, opening a dark passage.
+
+"
+E
+"breaknot"
+"$n shatters the icy wall to the south, opening a dark passage.
+
+"
+!
+0 0 0
+2263 9 1509949540 3 0
+-1
+S
+
+#78277
+"Blood-Splattered Cavern"
+"Even against the pure-black ice that covers the tunnel walls here is the
+
+dull, crimson stain of old blood.  It is nearly everywhere - on the
+
+walls, the floor, even the ceiling.  This alcove is quiet but smells
+
+foul, the air thick with the stench of rotting meat.  The north wall is a
+
+sheet of nearly transparent ice.
+
+"
+"winter cloak reset here
+
+imp sentinal
+
+"
+301465604 0
+11 5 0
+D0
+""
+""
+235 -1 78276 0 5
+A
+"break shatter destroy smash"
+"north wall ice sheet"
+"if( is_open( room, north ) ) {
+
+  send_to_char( #already, ch );
+
+  end;
+
+  }
+
+act_tochar( #smash, ch );
+
+act_notchar( #smashnot, ch );
+
+open( room, north );
+
+"
+E
+"already"
+"The sheet of ice on the north wall has already been shattered, opening up
+
+a passageway.
+
+"
+E
+"smash"
+"You smash the wall to the north, opening up a passageway.
+
+"
+E
+"smashnot"
+"$n smashes the icy wall to the north, opening up a passageway.
+
+"
+!
+0 0 0
+1152 9 1509949540 3 0
+843 17 1509949470 -1 0
+-1
+S
+
+#78278
+"Top of an Icy Crevice"
+"In the center of this room is a long, wide crevice in the floor, as if the
+
+very stone has split wide open.  The sides of the crevice are covered entirely
+
+with ice, and into the ice someone has gouged a complete set of handholds,
+
+which lead downward into darkness.  The tunnel also continues to the east.
+
+"
+""
+301465604 0
+11 5 0
+D1
+""
+""
+0 -1 78276 0 5
+D5
+""
+""
+0 -1 78279 0 5
+E
+"down floor crevice"
+"A wide crevice splits the floor of this part of the tunnel in two. 
+
+Someone has dug a set of handhold into the ice, leading downward into the
+
+bowels of the crevice.
+
+"
+-1
+S
+
+#78279
+"Beneath an Icy Crevice"
+"This tunnel is very quiet and mostly dark, the only light being a soft, pallid
+
+blue glow that comes distantly from the north.  The walls here are a thick,
+
+reddish ice that catches the light and send it back in webs of undulating
+
+crimson.  Handholds have been gouged into the ice, forming a makeshift ladder
+
+that leads upward through a jagged crevice in the ceiling.
+
+"
+"no.mob
+
+"
+301465612 0
+11 9 0
+D0
+""
+""
+0 -1 78280 0 5
+D4
+""
+""
+0 -1 78278 0 5
+E
+"ladder handholds"
+"The handholds are large and seem solid.  They lead to a room overhead.
+
+"
+E
+"ice red crimson"
+"The ice here is strangely red.  It catches your light and reflects it
+
+back in flickering, crimson webs.
+
+"
+-1
+S
+
+#78280
+"Icy Cavern"
+"The blood-red ice that coats the narrow walls of this tunnel catches and
+
+reflects a thrumming, pallid blue light that comes from the east.  The air
+
+here is still and very quiet.  The tunnel continues to the south, and it heads
+
+east, where the blue light is bright enough to reveal an enormous cavern.
+
+"
+""
+301465604 0
+11 5 0
+D1
+""
+""
+0 -1 78281 0 5
+D2
+""
+""
+0 -1 78279 0 5
+2263 9 1509949540 3 0
+-1
+S
+
+#78281
+"Chamber of Ice"
+"This is the southwest corner of a single, enormous cavern that towers
+
+overhead, its ceiling lost in the shadowy heights.  The floor here is thick
+
+with ice and very uneven, but the reddish walls have been smoothed and
+
+polished.  The huge cavern heads off to the north and to the east.  To the
+
+west it becomes a narrow tunnel.
+
+"
+""
+301465605 0
+11 9 0
+D0
+""
+""
+0 -1 78282 0 9
+D1
+""
+""
+0 -1 78288 0 9
+D3
+""
+""
+0 -1 78280 0 5
+2263 9 1509949540 3 0
+-1
+S
+
+#78282
+"Chamber of Ice"
+"The west wall of this cavern soars upward into the shadowy reaches overhead.
+
+The wall is slick with polished red ice but also features several small,
+
+intricate runes, which have a randomness to them that seems to suggest
+
+graffiti rather than decoration.  This entire chamber is well-lit by an eerie
+
+blue light, which seems to come strongest from the east.
+
+"
+""
+301465605 0
+11 9 0
+D0
+""
+""
+0 -1 78283 0 9
+D1
+""
+""
+0 -1 78289 0 9
+D2
+""
+""
+0 -1 78281 0 9
+E
+"wall runes graffiti"
+"These runes are small and intricate, but do not appear to be artfully
+
+drawn.  They look more like doodles carved into the ice.
+
+"
+-1
+S
+
+#78283
+"Chamber of Ice"
+"This is the quiet and windless northwest corner of a vast, looming cavern
+
+of deep red ice.  The ice that covers the walls also blankets the floor,
+
+where it is uneven and very thick.  The room is lit by a pulsating blue
+
+light that seems to come from the southeast.
+
+"
+""
+301465605 0
+11 9 0
+D1
+""
+""
+0 -1 78284 0 9
+D2
+""
+""
+0 -1 78282 0 9
+2263 9 1509949540 3 0
+-1
+S
+
+#78284
+"Chamber of Ice"
+"The north wall of this giant cavern soars high above and is lost, its
+
+ceiling too high to be seen.  Heavy sheets of dark red ice have swallowed
+
+the walls and floor.  From directly to the south comes the flickering
+
+pulse of an eerie blue light that is bright enough to illuminate this
+
+entire cavern.
+
+"
+""
+301465605 0
+11 9 0
+D1
+""
+""
+0 -1 78285 0 9
+D2
+""
+""
+0 -1 78289 0 9
+D3
+""
+""
+0 -1 78283 0 9
+-1
+S
+
+#78285
+"Chamber of Ice"
+"Here, at the northeast corner of the massive, frozen cavern, someone has
+
+piled several slabs of reddish ice, which have since frozen together, to
+
+form a single, large block of ice vaguely reminiscent of an altar.  The
+
+cavern sprawls to the south and to the west.
+
+"
+""
+301465605 0
+11 9 0
+D2
+""
+""
+0 -1 78286 0 9
+D3
+""
+""
+0 -1 78284 0 9
+E
+"altar stones rocks pile ice slabs"
+"These are simple slabs of the strange reddish ice that have been piled up. 
+
+They seem to have no special purpose, but are vaguely reminiscent of some
+
+sort of altar.
+
+"
+1151 9 1509949540 3 0
+-1
+S
+
+#78286
+"Chamber of Ice"
+"The east wall of this giant cavern stands here, mountainous and ominous, with
+
+its dark red ice gleaming with refracted light.  The floor here is also
+
+covered with ice, though it is obscured somewhat by a dusting of powdery snow.
+
+From the west comes a pulsing blue light.
+
+"
+""
+301465605 0
+11 9 0
+D0
+""
+""
+0 -1 78285 0 9
+D2
+""
+""
+0 -1 78287 0 9
+D3
+""
+""
+0 -1 78289 0 9
+1151 9 1509949540 3 0
+-1
+S
+
+#78287
+"Chamber of Ice"
+"The southeast corner of this enormous cavern is still and quiet, undisturbed
+
+by even the slightest touch of a breeze.  The icy floor here is covered by a
+
+thin, powdery dust of snow that seems fresh and shows footprints here and
+
+there.  The wall is a slick sheet of dark red ice.  From the northwest comes a
+
+pulsating blue light.
+
+"
+""
+301465605 0
+11 9 0
+D0
+""
+""
+0 -1 78286 0 9
+D3
+""
+""
+0 -1 78288 0 9
+E
+"footprint"
+"Tiny footprints criss-cross through the powdery snow.  They lead in all
+
+directions.
+
+"
+-1
+S
+
+#78288
+"Chamber of Ice"
+"This is the southernmost wall of an enormous, ice-covered cavern that
+
+looms ponderously overhead.  The wall here, like the floor, is completely
+
+encased by sheets of strange, reddish ice.  The ice glimmers with
+
+reflected blue light, which seems to emanate from the north.
+
+"
+""
+301465605 0
+11 9 0
+D0
+""
+""
+0 -1 78289 0 9
+D1
+""
+""
+0 -1 78287 0 9
+D3
+""
+""
+0 -1 78281 0 9
+2263 9 1509949540 3 0
+-1
+S
+
+#78289
+"Center of a Chamber of Ice"
+"All around rises the dizzying expanses of a huge, ice-choked cavern.  Red ice
+
+coats the walls and floor.  Directly in the center of the floor is a patch of
+
+strangely transparent ice.  It seems very thick, and from deep within the ice
+
+comes the pallid blue glow that illuminates this entire chamber.
+
+"
+"must have pickaxe (3403) to break ice and head downward
+
+[Vlad] the second time you break ice with a pick in this room, reavealing is misspelled
+
+"
+301465605 0
+11 9 0
+D0
+""
+""
+0 -1 78284 0 9
+D1
+""
+""
+0 -1 78286 0 9
+D2
+""
+""
+0 -1 78288 0 9
+D3
+""
+""
+0 -1 78282 0 9
+D5
+"sheet of ice"
+""
+235 -1 78292 0 5
+E
+"patch"
+"Directly in the center of the room is a patch of strangely transparent ice. 
+
+Unlike the rest of the floor, which is thick and white, this small area
+
+tingles with a flicker of light from below.
+
+"
+A
+"break smash open shatter dig"
+"down ice sheet door floor"
+"if( is_open( room, down ) ) {
+
+  send_to_char( #already, ch );
+
+  end;
+
+}
+
+if( has_obj( 3403, ch ) || wearing_obj( 3403, ch )
+
+  || has_obj( 2589, ch ) || wearing_obj( 2589, ch )
+
+  || has_obj( 1632, ch ) || wearing_obj( 1632, ch ) ) {
+
+  act_tochar( #break, ch );
+
+  act_notchar( #breaknot, ch );
+
+  open( room, down );
+
+  end;
+
+}
+
+send_to_char( #nope, ch );
+
+act_notchar( #nopenot, ch );
+
+"
+E
+"already"
+"The sheet of ice on the ground has already been broken, reavealing an icy
+
+shaft that leads downward.
+
+"
+E
+"break"
+"@WHefting the pickaxe, you smash at the icy floor.  It cracks a little
+
+then, with a second blow, it shatters wide open, revealing a passage that
+
+leads downward.@n
+
+"
+E
+"breaknot"
+"@W$n hefts a heavy pickaxe and, with two blows, shatters the ice on the
+
+floor, revealing an icy shaft that leads downward.@n
+
+"
+E
+"nope"
+"You attack the sheet of ice with everything you've got, but the thick,
+
+heavy ice will not budge.  Perhaps you need a tool that is more suited to
+
+this sort of work.
+
+"
+E
+"nopenot"
+"$n attacks the sheet of ice on the ground with everything $e has, but the
+
+thick, heavy ice will not budge.
+
+"
+!
+0 0 0
+-1
+S
+
+#78290
+"Quiet Bend in Icy Cavern"
+"This bend in the network of icy tunnels is oddly calm.  Although a raking wind
+
+echoes low and hollow in the distance, the air here is mostly calm.  The floor
+
+here is thick powdery snow.  The footprints in the snow look rather fresh.
+
+"
+""
+301465604 0
+11 5 0
+D0
+""
+""
+0 -1 78260 0 5
+D3
+""
+""
+0 -1 78291 0 5
+E
+"footprints snow floor"
+"A thick dusting of dry, powdery snow coats the floor here.  The snow has
+
+been kicked up and scarred by the passing of dozens of feet.  The
+
+footprints here are small and strangely shaped.
+
+"
+-1
+S
+
+#78291
+"Quiet, Icy Alcove"
+"This room is peaceful and strangely quiet, the silence broken only by the
+
+sibilant whisper of a distant wind.  Motes of glittering ice and snow swirl
+
+slowly and gently in the air, tinkling against hundreds of dangling icicles.
+
+The icy tunnel heads off to the east.
+
+"
+"[Qin] snow imp roars at you even when attacking someone else
+
+"
+301465604 0
+11 5 0
+D1
+""
+""
+0 -1 78290 0 5
+1151 9 1509949540 3 0
+1151 9 1509949540 3 0
+2263 137 1509949540 3 0
+-1
+S
+
+#78292
+"Icy Shaft"
+"This extremely narrow shaft of the purest white ice drives straight
+
+downward into the wintry belly of this cavern system.  The way down is
+
+made accessible by dozens of handholds that have been gouged into the
+
+wall.  Straight overhead is a sheet of transparent ice.
+
+"
+""
+301465605 0
+11 5 0
+D4
+""
+""
+235 -1 78289 0 5
+D5
+""
+""
+0 -1 78293 0 5
+A
+"smash break dig hit destroy shatter"
+"up ice wall door sheet"
+"if( is_open( room, up ) ) {
+
+  send_to_char( #already, ch );
+
+  end;
+
+  }
+
+act_tochar( #smash, ch );
+
+act_notchar( #smashnot, ch );
+
+open( room, up );
+
+"
+E
+"already"
+"The sheet of ice overhead has already been shattered, allowing passage
+
+upward into a large chamber.
+
+"
+E
+"smash"
+"You smash the sheet of ice overhead, allowing passage upward into a large
+
+chamber.
+
+"
+E
+"smashnot"
+"$n smashes the sheet of ice overhead, allowing passage upward into a
+
+large chamber.
+
+"
+!
+0 0 0
+-1
+S
+
+#78293
+"Base of an Icy Shaft"
+"The glistening white ice that covers the wall here is globular and
+
+amorphous, as if someone had thrown against the wall buckets of water
+
+that froze immediately on impact.  To the north is a narrow, icy tunnel,
+
+well-lit by bluish light, while overhead is a constrictive shaft of ice
+
+that leads straight upward.
+
+"
+"no.mob
+
+"
+301465613 0
+11 5 0
+D0
+""
+""
+0 -1 78294 0 5
+D4
+""
+""
+0 -1 78292 0 5
+-1
+S
+
+#78294
+"Icy Cavern"
+"This tunnel is narrow and precariously slick with a glistening coat of
+
+sheer, white ice.  The ice that covers the walls is heavy and shapeless,
+
+and it glows with the refracted light of the eerie blue glow that
+
+illuminates this entire cavern.  The tunnel heads east and south.
+
+"
+"start boreal imps here
+
+"
+301465605 0
+11 5 0
+D1
+""
+""
+0 -1 78295 0 5
+D2
+""
+""
+0 -1 78293 0 5
+2264 9 1509949540 3 0
+-1
+S
+
+#78295
+"Icy Cavern"
+"The icy cavern twists here to the west and to the south.  The floor is
+
+slick with a sheet of ice and with a substantial blanket of snow.  The
+
+walls are completely frozen over and press in heavily, making this
+
+passage quite narrow.  The tunnel heads west and south.
+
+"
+""
+301465605 0
+11 5 0
+D2
+""
+""
+0 -1 78297 0 5
+D3
+""
+""
+0 -1 78294 0 5
+2264 9 1509949540 3 0
+-1
+S
+
+#78297
+"Icy Cavern"
+"A distant sound - a low, steady hum - comes in from the east and echoes
+
+lightly off the glistening, icy walls.  This portion of the cavern heads
+
+east and also turns to the north.  The entire cavern is lit by a pulsing
+
+blue light, which seems to accompany the distant hum.
+
+"
+""
+301465605 0
+11 5 0
+D0
+""
+""
+0 -1 78295 0 5
+D1
+""
+""
+0 -1 78298 0 5
+-1
+S
+
+#78298
+"Icy Cavern"
+"The air here is utterly still, and the entire room is very quiet except
+
+for a low, steady humming sound that comes distantly from the south.  The
+
+walls here are covered with heavy clumps of misshapen ice, and the floor
+
+is uneven with pits, scrapes and other signs of having been well-traveled.
+
+"
+""
+301465605 0
+11 5 0
+D2
+""
+""
+0 -1 78299 0 5
+D3
+""
+""
+0 -1 78297 0 5
+2264 9 1509949540 3 0
+2264 9 1509949540 3 0
+-1
+S
+
+#78299
+"Icy Cavern"
+"Large, inhuman footprints have trampled the snow on the floor here into a
+
+hard-packed, discolored mash.  This cavern has obviously seen a great deal of
+
+use.  There are also long scrapes in the ice on the floor and on the walls
+
+which looks as if they might be claw marks.  The tunnel heads to the north and
+
+south, though to the south the ubiquitous blue light that illuminates the
+
+cavern seems to grow a little stronger.
+
+"
+""
+301465605 0
+11 5 0
+D0
+""
+""
+0 -1 78298 0 5
+D2
+""
+""
+0 -1 78300 0 5
+-1
+S
+
+#78300
+"Icy Cavern"
+"The cavern takes a sharp, narrow turn here, heading off to the north and
+
+to the west.  A persistent and somewhat disconcerting hum fills the air,
+
+echoing off the walls again and again as it bounces its way through the
+
+length of this long, icy tunnel.  The hum seems to come from the west, as
+
+does a strong blue light.
+
+"
+""
+301465605 0
+11 5 0
+D0
+""
+""
+0 -1 78299 0 5
+D3
+""
+""
+0 -1 78301 0 5
+2264 9 1509949540 3 0
+-1
+S
+
+#78301
+"Icy Cavern"
+"The ice that covers the walls is shimmering here very brightly as it
+
+catches the strong blue light that is coming from the north.  A loud,
+
+pulsating hum fills the entire cavern with sound.  The cavern heads north
+
+toward the light and it also heads east toward another bend.
+
+"
+""
+301465605 0
+11 5 0
+D0
+""
+""
+0 -1 78302 0 5
+D1
+""
+""
+0 -1 78300 0 5
+2264 9 1509949540 3 0
+-1
+S
+
+#78302
+"Icy Cavern"
+"The blue light that fills this stretch of the icy tunnel is almost blinding,
+
+searing in from the west so bright that it seems to burn away even shadows. 
+
+Strangely, the light seems to actually emit cold rather than heat.  The air
+
+here is painfully frigid.  The tunnel heads west toward the light and south.
+
+"
+"no.mob
+
+"
+301465613 0
+11 5 0
+D2
+""
+""
+0 -1 78301 0 5
+D3
+""
+""
+0 -1 78303 0 5
+-1
+S
+
+#78303
+"Icy Cavern"
+"The long, east-west tunnel is lit by a brilliant blue light that comes in
+
+from the west.  The ice that covers the walls has been polished and glows
+
+incandescently with the refracted light.  The floor is clear of snow and
+
+rubble, as if it has been deliberately kept clean.
+
+"
+""
+301465605 0
+11 5 0
+D1
+""
+""
+0 -1 78302 0 5
+D3
+""
+""
+0 -1 78304 0 5
+1152 137 1509949540 3 0
+-1
+S
+
+#78304
+"Icy Cavern"
+"The painfully bright, searing blue light comes directly from the north,
+
+as does the near-deafening hum that seems to penetrate bones, ice, and
+
+rock alike.  The air here is astonishingly cold and motionless, as if the
+
+very air itself is about to freeze into a solid block of ice.
+
+"
+"sentinels here
+
+"
+301465605 0
+11 5 0
+D0
+""
+""
+0 -1 78305 0 5
+D1
+""
+""
+0 -1 78303 0 5
+1152 1161 1509949540 3 0
+-1
+S
+
+#78305
+"The Throne of Ice"
+"This enormous room is circular and covered with large, twisting runes. 
+
+Against the north wall sits a throne of ice, simple in design, blocky with the
+
+back and armrest of equal height.  A narrow exit to the south looks to be the
+
+only way out.
+
+"
+""
+301465605 0
+11 8 0
+D2
+""
+""
+0 -1 78304 0 5
+E
+"throne north"
+"This throne is carved entirely of ice but is otherwise unremarkable.
+
+"
+E
+"walls runes"
+"These runes are large, intricate, and seem to have been made by an expert
+
+hand.  They are carved directly into the ice that covers the walls.
+
+"
+A
+"break shatter smash"
+"globe ice sphere light pedestal"
+"if( !obj_in_room( 3404, room ) ) {
+
+  send_to_char( #already, ch );
+
+  end;
+
+  }
+
+mob = mob_in_room( 1153, room );
+
+if( mob ) {
+
+  if( !is_sleeping( mob ) ) {
+
+    act_tochar( #attack, ch );
+
+    act_notchar( #attacknot, ch );
+
+    attack_weapon( mob, ch, 5d5, \"icy claw\" );
+
+    end;
+
+    }
+
+  }
+
+junk_obj( obj_in_room( 3404, room ) );
+
+i = random( 1, 10 );
+
+if( i < 8 ) {
+
+  act_tochar( #nada, ch );
+
+  act_notchar( #nadanot, ch );
+
+  end;
+
+  }
+
+act_tochar( #gem, ch );
+
+act_notchar( #gemnot, ch );
+
+obj_to_room( oload( 3405 ), room );
+
+"
+E
+"already"
+"The sphere of ice has already been shattered.
+
+"
+E
+"attack"
+"@WAs you head toward the sphere of ice, the tall humanoid roars and leaps
+
+at you!@n 
+
+"
+E
+"attacknot"
+"@W$n heads toward the sphere of ice, intent on breaking it.  This enrages
+
+the tall humanoid, who roars and leaps to attack!@n 
+
+"
+E
+"nada"
+"@WYou smash the sphere of ice, which breaks with surprising ease.  Shards
+
+of jagged ice go flying, and the sphere's blue light dies out.@n
+
+"
+E
+"nadanot"
+"@W$n smashes the sphere of ice, which breaks easily.  Shards of jagged
+
+ice go flying, and the sphere's blue light dies out.@n 
+
+"
+E
+"gem"
+"@WYou smash the sphere of ice, which breaks with surprising ease.  Shards
+
+of jagged ice go flying.  A small, blue gem goes clattering to the floor
+
+as the sphere's blue light dies out.@n 
+
+"
+E
+"gemnot"
+"@W$n smashes the sphere of ice, which breaks easily.  Shards of jagged
+
+ice go flying.  A small, blue gem goes clattering to the floor as the
+
+sphere's blue light dies out.@n 
+
+"
+!
+0 0 0
+3404 17 1509949540 -2 0
+3928 17 1509949540 -2 0
+1153 4265 1509949540 2 0
+2263 201 1509949540 3 0
+-1
+S
+
+#0
+

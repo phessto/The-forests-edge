@@ -1,0 +1,858 @@
+#AREA
+"Southern Trade Road"
+"Merior Olah"
+""
+1 0
+3
+0
+#ROOMS
+
+#16000
+"Southern Trade Road"
+"To your north is a great iron @bportcullis@n, built into a massive stone tower.
+
+From that direction, you can hear the sounds of sheep baa-ing, cows mooing,
+
+and noises reminiscent of a farming village.  A wide road of earth stretches
+
+to the south, its red surface standing out in sharp contrast to the nearby
+
+green hills.
+
+"
+"[Olah] need action for portcullis
+
+"
+301465600 0
+12 7 0
+D0
+""
+""
+162 -1 37051 0 7
+D2
+""
+""
+0 -1 16003 0 7
+E
+"1 north portcullis"
+"The great iron portcullis is formed of close bars of thick iron that are only
+
+barely begining to show signs of rust.  Someone must take great care in the
+
+upkeep of such a sturdy work, that or perhaps it is touched by magic to slow
+
+its aging?  A careful inspection shows there is no locking mechanism, the
+
+portcullis is merely closed.  Its unlikely a score of ents or ogres could even
+
+budge its massive weight.
+
+"
+-1
+S
+
+#16001
+"Southern Trade Road"
+"The hard-packed dirt here forms a road wide enough for two wagons to pass each
+
+other comfortably.  The gently rolling hills which surround the thoroughfare
+
+are covered and form a small valley which embraces the road.  soft green
+
+grass, and form a small valley which embraces the road.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16003 0 9
+D2
+""
+""
+0 -1 16004 0 9
+-1
+S
+
+#16002
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465600 0
+12 6 0
+D1
+""
+""
+226 -1 16017 0 6
+D3
+""
+""
+0 -1 16030 0 6
+-1
+S
+
+#16003
+"Southern Trade Road"
+"A ways to your north you can see a great iron portcullis set into a large
+
+stone tower.  A wide dirt road leads to the gate, but you cannot see what lies
+
+on the other side.  The same road stretches south as far as your eye can see.
+
+The gently rolling hills of the countryside are covered with light green
+
+grass, and only a occasional tree mars the skyline.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16000 0 7
+D2
+""
+""
+0 -1 16001 0 9
+-1
+S
+
+#16004
+"Southern Trade Road"
+"The road rises here just a little as it follows the curve of the hills.  From
+
+this vantage point you can see a tower and gate far to the north; to to the
+
+south all you can see are more hills bisected by the road.  The surface color
+
+of the pathway changes color slightly, from a deep red in the north to a
+
+browner shade as it heads south.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16001 0 9
+D2
+""
+""
+0 -1 16005 0 9
+-1
+S
+
+#16005
+"Southern Trade Road"
+"A large oak tree off to your east breaks up a vast field of grasses which seem
+
+to stretch endlessly in that direction.  Off to your west is another large
+
+field of wild grass, it, however, has several small saplings grouped together.
+
+North and south runs a wide, earth-covered thoroughfare.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16004 0 9
+D2
+""
+""
+0 -1 16006 0 9
+-1
+S
+
+#16006
+"Southern Trade Road"
+"A small stream comes close to the west side of the road here, its surface
+
+covered with tiny bubbles.  A faint splashing sound comes from that direction,
+
+as the water hits a large rock.  To your east a grass-covered hill provides a
+
+place of relaxation for several rabbits.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16005 0 9
+D2
+""
+""
+0 -1 16007 0 9
+D3
+""
+""
+0 -1 16009 0 9
+-1
+S
+
+#16007
+"Southern Trade Road"
+"Off to your northwest, you can see a small stream curve close to the wide,
+
+dirt-covered road.  You can hear the burble of the water, and an occasional
+
+splash at it hits a rock.  Wagon ruts show where heavy vehicles have moved
+
+just off to the west side of the road, and the grass in that area has been
+
+almost completely worn away, leaving an uneven patch of dirt.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16006 0 9
+D2
+""
+""
+0 -1 16008 0 9
+-1
+S
+
+#16008
+"Southern Trade Road"
+"To your north extends a wide thoroughfare, its terminus cannot be seen.
+
+Southward, the road seems to take a sharp turn westward before it stretches
+
+off into the horizon.  Gently rolling hills surround the road, their surfaces
+
+covered with green grasses.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16007 0 9
+D2
+""
+""
+0 -1 16010 0 9
+-1
+S
+
+#16009
+"Small Stream by the Southern Trade Road"
+"A small stream comes from the southwest, curves here, and returns to the
+
+northwest, providing just a bit of cool water for weary travellers.  Off to
+
+your east lies a wide earth-covered road, and further to the east is a large
+
+grassy field.
+
+"
+""
+301465601 0
+8 9 0
+D1
+""
+""
+0 -1 16006 0 9
+398 17 1509949540 -2 0
+-1
+S
+
+#16010
+"Southern Trade Road"
+"The wide road stretches due north here as well as west, forming almost a 90
+
+degree angle.  The reason for its sharp turn appears to be several rocks
+
+jutting out from the hill just to the south of the road.  To your east is a
+
+large oak tree, its trunk must be at least four feet in diameter.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16008 0 9
+D3
+""
+""
+0 -1 16011 0 9
+-1
+S
+
+#16011
+"Southern Trade Road"
+"The dirt-covered road heads east and south here, its brown surface cuts a dark
+
+swath in the green hills around it.  Perhaps the earth is a bit soft here; you
+
+can see the impressions of many wagon wheels and even hoof-prints of horses.
+
+"
+""
+301465600 0
+12 9 0
+D1
+""
+""
+0 -1 16010 0 9
+D2
+""
+""
+0 -1 16012 0 9
+-1
+S
+
+#16012
+"Southern Trade Road"
+"A soft breeze blows through the air, bringing with it the scent of
+
+wildflowers.  These flowers, in fact, dot the hills to your east and west,
+
+giving the grassy hills a festive air.  A wide path of packed dirt leads north
+
+and south, allowing you to move without treading on the flowers.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16011 0 9
+D2
+""
+""
+0 -1 16013 0 9
+-1
+S
+
+#16013
+"Southern Trade Road"
+"A wide, straight road leads north and south here, neatly bisecting the
+
+surrounding hills.  Off to the west you can see a tall tree, its green leaves
+
+blending in with the surrounding grass.  The land to the east is a mirror
+
+image of the west, save the single tree is replaced by a pair of tall, slender
+
+pines.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16012 0 9
+D2
+""
+""
+0 -1 16014 0 9
+-1
+S
+
+#16014
+"Southern Trade Road"
+"Tall grasses off to your east ripple as a slight breeze blows through them,
+
+and a soft whispering drifts through the air.  A pair of apple trees stands
+
+lonely among the grass; the result of a passing bird scattering seeds, no
+
+doubt.  The wide road leads north and south, no end in sight.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16013 0 9
+D2
+""
+""
+0 -1 16015 0 9
+-1
+S
+
+#16015
+"Southern Trade Road"
+"The earthen road curves here, allowing movement north and west.  Its surface
+
+is dusty, and any tracks which may have covered it have been obliterated.  The
+
+turn in its direction is due, no doubt, to the builders' desire to lay its
+
+path within the relatively flat valley between the rolling hills of the
+
+surrounding countryside.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16014 0 9
+D3
+""
+""
+0 -1 16016 0 9
+-1
+S
+
+#16016
+"Southern Trade Road"
+"The road runs east-west here, but you can see it extending far to the north
+
+just a little east of you, and well south just to your west.  The road itself
+
+here is barely wide enough for two wagons to pass side-by-side; the
+
+encroaching hills keep it from being as wide as most travellers would like.
+
+"
+""
+301465600 0
+12 9 0
+D1
+""
+""
+0 -1 16015 0 9
+D3
+""
+""
+0 -1 16017 0 9
+-1
+S
+
+#16017
+"Southern Trade Road"
+"The surrounding hills are a verdant green, their rolling surfaces covered with
+
+high grass.  The brown, hard-packed earth that forms the road is quite dry,
+
+and small cracks line its surface.  The road itself curves here, heading east
+
+and south, following the tiny valley formed by the hills.
+
+"
+"[Minqa] Think about connecting gypsies west here.
+
+"
+301465600 0
+12 9 0
+D1
+""
+""
+0 -1 16016 0 9
+D2
+""
+""
+0 -1 16018 0 9
+D3
+""
+""
+226 -1 16002 0 6
+-1
+S
+
+#16018
+"Southern Trade Road"
+"The road itself heads north and south, the surface clear of detrius.  The
+
+rolling hills nearby are covered with low greet grass, their surfaces are
+
+dotted with the sheep that keep the vegetation low.  A tiny figure in the
+
+distance may be a shepherd, or could even be a small tree; it is too far to
+
+determine just what the mark against the horizon is.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16017 0 9
+D2
+""
+""
+0 -1 16019 0 9
+-1
+S
+
+#16019
+"Southern Trade Road"
+"The wide, dirt-covered road stretches as far to the north and south as you can
+
+see, though the view is impeded by the rolling hills of the nearby
+
+countryside.  The surface of the road is dry, and a fine coat of dust covers
+
+any marks which may stand upon its face.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16018 0 9
+D2
+""
+""
+0 -1 16020 0 9
+-1
+S
+
+#16020
+"Southern Trade Road"
+"Small cracks in the road surface have tiny bits of grass growing in them,
+
+parodying the taller grasses flourishing nearby.  Just off to the east grows a
+
+small stand of saplings, their leaves are a pale green as they reach for the
+
+sky.  The road stretches far to your north, but you can see it take a turn
+
+westward just towards your south.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16019 0 9
+D2
+""
+""
+0 -1 16021 0 9
+-1
+S
+
+#16021
+"Southern Trade Road"
+"The road follows the curves of the valley, leading north and west.  Off to
+
+your east and south are the gentle hills which embrace the road.  The usually
+
+grassy covering is replaced here by low shrubs covered with tiny blue flowers.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16020 0 9
+D3
+""
+""
+0 -1 16022 0 9
+-1
+S
+
+#16022
+"Southern Trade Road"
+"To the west stands a solitary elm tree, its branches covered with green
+
+leaves.  As the wind moves gently, it causes the branches to quiver, and a
+
+small flurry of leaves falls to the ground beneath the tree.  The dirt-covered
+
+road leads east a short ways, or south up to a small hill.
+
+"
+""
+301465600 0
+12 9 0
+D1
+""
+""
+0 -1 16021 0 9
+D2
+""
+""
+0 -1 16023 0 9
+-1
+S
+
+#16023
+"Southern Trade Road"
+"To your immediate south is a hill higher then those found in the surrounding
+
+land.  The mound is covered with short grass, and several boulders are
+
+sprinkled about its surface.  Rolling hills lay off to your east, occasional
+
+trees dotting the landscape.  A hard-packed dirt road leads north towards a
+
+large elm tree, or eastwards through the hills.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16022 0 9
+D1
+""
+""
+0 -1 16024 0 9
+-1
+S
+
+#16024
+"Southern Trade Road"
+"The surface of the road is littered with bits of dried grass, the brownish
+
+vegetation only a little lighter then the color of the road itself.  The road
+
+itself travels only short ways to the east and west, and the surrounding hills
+
+block your view of where it might then meander.
+
+"
+""
+301465600 0
+12 9 0
+D1
+""
+""
+0 -1 16025 0 9
+D3
+""
+""
+0 -1 16023 0 9
+-1
+S
+
+#16025
+"Southern Trade Road"
+"A dark brown, earthen road stretches south as far as your eyes can see.  It
+
+also extends towards your west, but only for a bit before meeting with a hill.
+
+On all sides, the rolling green hills of the country-side surround you, an
+
+occasional tree breaking up the low-rising grass.
+
+"
+""
+301465600 0
+12 9 0
+D2
+""
+""
+0 -1 16026 0 9
+D3
+""
+""
+0 -1 16024 0 9
+-1
+S
+
+#16026
+"Southern Trade Road"
+"To your west grows a field of wildflowers, their bright reds, yellows, and
+
+blues dotting the green beneath them.  On the hill to your east, short grasses
+
+are mixed with taller weeds, the uneven growth barely noticeable as their
+
+colors merge.  The road continues a short way to the north before heading
+
+west, and continues to the south as far as you can see.
+
+"
+"[Olah] fields to the east and west part of newbie area for Brembledon
+
+"
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16025 0 9
+D2
+""
+""
+0 -1 16027 0 9
+-1
+S
+
+#16027
+"Southern Trade Road"
+"Rows of grass blades have been mowed to fall haphazardly on this part of the
+
+road.  They lightly carpet the trail in green patches, like locks of hair that
+
+accumulate on the floor of a barber shop.  A quiet breeze is carried in from
+
+the east, bringing with it the smell of fresh daisies and ripe berries.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16026 0 9
+D2
+""
+""
+0 -1 16028 0 9
+-1
+S
+
+#16028
+"Southern Trade Road"
+"This section of the road has wheel ruts that are easily visible as they are
+
+more deeply entrenched within the soft dirt ground.  Bordering the eastern and
+
+western sides of the road are grass that have grown several inches high. 
+
+Interspersed within the grass are wild dandelions and buttercups, their petals
+
+flapping against the occasional gusts of wind.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16027 0 9
+D2
+""
+""
+0 -1 16029 0 9
+-1
+S
+
+#16029
+"Southern Trade Road"
+"Numerous footprints and wagon ruts have been imprinted throughout the road
+
+here.  Embedded within the ruts and indentations on the ground are crushed
+
+dandelion petals and pieces of grass.  Also scattered along the road are horse
+
+droppings the size of a gnome's foot.  Off to the distant south, you can make
+
+out a pair of large wooden gates.
+
+"
+""
+301465600 0
+12 9 0
+D0
+""
+""
+0 -1 16028 0 9
+D2
+""
+""
+0 -1 89000 0 9
+-1
+S
+
+#16030
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465600 0
+12 6 0
+D1
+""
+""
+0 -1 16002 0 6
+D2
+""
+""
+0 -1 16031 0 6
+-1
+S
+
+#16031
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465600 0
+12 6 0
+D0
+""
+""
+0 -1 16030 0 6
+D3
+""
+""
+0 -1 16032 0 6
+-1
+S
+
+#16032
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465608 0
+12 6 0
+D0
+""
+""
+0 -1 76026 0 6
+D1
+""
+""
+0 -1 16031 0 6
+-1
+S
+
+#0
+

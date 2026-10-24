@@ -1,0 +1,206 @@
+#AREA
+"UOFD Stronghold"
+"Olah"
+""
+1 0
+0
+0
+#ROOMS
+
+#95150
+"Entrance Room"
+"This room has been constructed with one major theme in mind; most everything
+
+is round.  From the grey-flecked granite floor tiles to the small windows,
+
+even the picture frames around painted portraits - it's all round.  The room
+
+is decorated simply, with items one might find in a prosperous farmhouse.  A
+
+blue and red braided rug adds warmth to the room, as does the rustic wrought
+
+iron chandelier which hangs from a chain in the center of the low ceiling. 
+
+Two circular doors, to the east and west, are labeled \"Storage Closet\" and
+
+\"Living Room,\" respectively.
+
+"
+"[Olah] Out to room 28024
+
+"
+301465601 0
+0 6 0
+D1
+""
+""
+0 -1 95151 0 6
+D2
+""
+""
+226 -1 28024 0 6
+D3
+""
+""
+0 -1 95152 0 6
+A
+"twist"
+"ring"
+"if( has_obj( 4313, ch ) && !wearing_obj( 4313, ch ) ) {
+
+  act_tochar( #cant, ch );
+
+  end;
+
+  }
+
+if( is_player( ch ) ) {
+
+  if( wearing_obj( 4313, ch ) ) {
+
+    if( is_name( \"UOFD\", clan_abbrev( ch ) ) ) {
+
+      act_tochar( #twist, ch );
+
+      act_notchar( #ntwist, ch );
+
+      wait( 1 );
+
+      act_tochar( #bamfout, ch );
+
+      act_notchar( #nbamfout, ch );
+
+      transfer( ch, find_room( 28024 ) );
+
+      act_notchar( #narrive, ch );
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"twist"
+"As you twist your silver signet ring, you once more hear the merry clucking of
+
+the blue chicken.
+
+"
+E
+"ntwist"
+"$n turns the ring on $s finger.
+
+"
+E
+"bamfout"
+"@eYou are enveloped in a brilliant light, and find yourself outside again.@n
+
+"
+E
+"nbamfout"
+"@eFollowing a faint clucking sound, $n disappears in a flash of brilliant
+
+light.@n
+
+"
+E
+"narrive"
+"@e$n suddenly appears, amidst a cloud of bright sparks.@n
+
+"
+E
+"cant"
+"You must be wearing a silver signet ring in order to twist it around your
+
+finger.
+
+"
+E
+"nope"
+"You twist the ring on your finger, but nothing happens.
+
+"
+E
+"rnope"
+"$n twists the ring on $s finger, but nothing happens.
+
+"
+!
+0 0 0
+-1
+S
+
+#95151
+"Bank Room"
+"While bigger than a clothing closet, this storage room is just barely large
+
+enough to hold two or three people at a time, as all the equipment and odds
+
+and ends take up most of the floor.  Larger items, such as armor full burlap
+
+bags, are neatly arranged on the ground.  Smaller items have been placed into
+
+natural shelves, which have been dug into the earthen walls and given a plank
+
+bottom.
+
+"
+"[Olah] Storage room.  DO NOT PURGE here!
+
+"
+301467681 0
+0 5 0
+D3
+""
+""
+0 -1 95150 0 6
+-1
+S
+
+#95152
+"Meeting Room"
+"Couches surround a low, circular table in this room, which seems designed to
+
+be as conducive to conversation as possible.  The room itself is paneled in
+
+rough-hewn redwood, which has been lacquered til smooth.  A red brick
+
+fireplace has been built into the wall at the end opposite the door.  The
+
+mantelpiece over the hearth holds a collection of odd trinkets, as well as a
+
+brightly-painted portrait of a group of smiling halflings.
+
+"
+""
+301465601 0
+0 6 0
+D1
+""
+""
+0 -1 95150 0 6
+1878 17 1509949540 -2 0
+2013 17 1509949540 -2 0
+-1
+S
+
+#0
+

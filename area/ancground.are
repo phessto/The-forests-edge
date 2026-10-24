@@ -1,0 +1,870 @@
+#AREA
+"Ancient Training Grounds"
+"Tallaor"
+""
+0 0
+2
+0
+#ROOMS
+
+#78500
+"A Small, Rough Cavern"
+"A small cavern has been carved out of the very mountain itself.  The
+
+stone is damp and covered with a fine layer of multicolored molds,
+
+mildews, and moss.  The air has a slight chill to it and the pungent odor
+
+of the flora on the stone can be detected.  The walls look quite old; and
+
+an equally old looking set of stone stairs leads down into the darkness.
+
+"
+""
+335151104 0
+11 5 0
+D5
+""
+""
+0 -1 78501 0 5
+E
+"stone mildew mold moss walls"
+"The stone walls, where not covered by fauna, appear to have been carved
+
+out long ago.  The marks left by the diggers tools have become rounded
+
+with age.  The rest of the small canvern is covered in a dull rainbow of
+
+color by the mold, moss, and mildew.
+
+"
+E
+"stairs down"
+"The stairs have been carved straight out of the mountain; and appear to
+
+be quite old.  They lead down into darkness.
+
+"
+-1
+S
+
+#78501
+"A Cramped Stone Stairway"
+"This set of stairs, carved from the rock mountain itself, lead deeper
+
+into the mountain.  No handrail has been constructed; however you can
+
+steady yourself with the rock walls on either side of the stairs. 
+
+Various forms of mold and moss cover most of the rock, even the stairs
+
+have a substantial growth on them.
+
+"
+""
+301596672 0
+11 5 0
+D4
+""
+""
+0 -1 78500 0 5
+D5
+""
+""
+0 -1 78502 0 5
+-1
+S
+
+#78502
+"A Stone Stairwell"
+"The stairs leading updwards meld into the stone floor here.  All the
+
+surfaces seem to have been carved from the rock of the mountain itself. 
+
+Close inspection reveals a few carving marks can still be seen in the
+
+hard stone.  A hallway, leading off to the east, is given a sureal
+
+apperance by the multicolored flora that grow over most of the stone.
+
+"
+""
+301596672 0
+11 5 0
+D1
+""
+""
+0 -1 78503 0 5
+D4
+""
+""
+0 -1 78501 0 5
+-1
+S
+
+#78503
+"A Dark, Damp Hallway"
+"This hallway leads east and west.  It is an extremelly basic square,
+
+horizontal shaft carved from the stone of the mountain.  Molds and
+
+lichens cover alot of the stones surface, and the air is extremelly moist. 
+
+The marks made in the stone from it's carving are quite dulled with age;
+
+the stone and flora on it are also quite damp from the moist air.
+
+"
+""
+301596672 0
+11 5 0
+D1
+""
+""
+0 -1 78504 0 5
+D3
+""
+""
+0 -1 78502 0 5
+-1
+S
+
+#78504
+"A Dark, Damp Hallway"
+"The moisture laden air in this hallway carries the distinctive odors of
+
+the molds and moss that grow on the stone.  The hallway itself stretches
+
+to the west and seems to come to an end to the east.  From what you can
+
+see of the stone it appears to have been carved long ago.
+
+"
+""
+301596672 0
+11 5 0
+D1
+""
+""
+0 -1 78505 0 5
+D3
+""
+""
+0 -1 78503 0 5
+-1
+S
+
+#78505
+"A Turn in a Dark, Damp Hallway"
+"The hallway turns to the south here, leading into a great darkness, and
+
+continues to the west.  Mold and mildew fill moisture laiden air with an
+
+odd scent.  The humidity is so high that a fine sheen of water can be
+
+seen condenceing on the stone walls, floor, and ceiling.
+
+"
+""
+301596672 0
+11 5 0
+D2
+""
+""
+0 -1 78506 0 5
+D3
+""
+""
+0 -1 78504 0 5
+A
+""
+""
+"act_tochar( #sounds, ch );
+
+"
+E
+"sounds"
+"You could have sworn you just heard the sounds of combat.  Metal clanks,
+
+bone crunching thuds, and even someone yelling in an unfamiliar language.
+
+"
+!
+2 300 0
+-1
+S
+
+#78506
+"An Opening Before a Large Cavern"
+"A hallway opens into a large cavern to the south and heads into the stone
+
+to the north.  The amount of molds and lichens here is alot less than in
+
+other sections of the hallway.  The air also seems to be alot less humid
+
+as well.  The stone floor here is extremelly flat and smooth, as if worn
+
+down over the ages by thousands of feet.
+
+"
+""
+301596672 0
+11 5 0
+D0
+""
+""
+0 -1 78505 0 5
+D2
+""
+""
+0 -1 78507 0 5
+-1
+S
+
+#78507
+"A Pathway in a Large Cavern"
+"Leading to the north a hallway as been carved into the stone of the
+
+cavern's wall.  The walls of the cavern shoot up into darkness,
+
+preventing you from seeing the ceiling.  It appears that piles of rubble
+
+have been used to partion off the cavern a great deal.  One such wall
+
+prevents your movement south.  A worn, narrow path leads to the east and
+
+west.  The air here is very dry and nothing seems to be growing on the
+
+stone, with the exception of some dust bunnies.
+
+"
+""
+301596672 0
+11 5 0
+D0
+""
+""
+0 -1 78506 0 5
+D1
+""
+""
+0 -1 78523 0 5
+D3
+""
+""
+0 -1 78508 0 5
+E
+"rubble wall walls south"
+"The rubble appears to be the debris from carving out the hallway into
+
+this cavern, and perhaps some basic excavation of the cavern itself.  It
+
+stands about ten feet high and looks climable by someone with some skill.
+
+"
+A
+"climb"
+"south wall"
+"if( find_skill( ch, climb ) > 3 ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #r_climb, ch );
+
+  room = find_room( 78516 );
+
+  transfer( ch, room );
+
+  act_notchar( #r_arrive, ch );
+
+}
+
+else
+
+  act_tochar( #nope, ch );
+
+"
+E
+"climb"
+"After spending a moment finding hand holds you climb over the wall of
+
+rubble and find yourself in another section of the cavern.
+
+"
+E
+"r_climb"
+"$n climbs the wall of rubble to the south and disappears from sight.
+
+"
+E
+"r_arrive"
+"You hear a noise to the north and see $n climbing down the wall of rubble!
+
+"
+E
+"nope"
+"After a moments contemplation you decide that wall of rubble is beyond
+
+your ability to climb.
+
+"
+!
+0 0 0
+-1
+S
+
+#78508
+"An Intersection of Pathways"
+"The cavern wall borders the pathway on the north, ascending into the
+
+darkness.  To the west is an area that seems to have been partitioned
+
+almost all the way off by walls of rubble.  The pathway continues south. 
+
+As you move around small puffs of dust are raised into the air, which is
+
+quite dry.  The stone here is bare of any plant life.
+
+"
+""
+301596672 0
+11 9 0
+D1
+""
+""
+0 -1 78507 0 5
+D2
+""
+""
+0 -1 78513 0 5
+D3
+""
+""
+0 -1 78509 0 5
+A
+""
+""
+"act_tochar( #sneeze, ch );
+
+interpret( ch, \"sneeze\" );
+
+"
+E
+"sneeze"
+"You inhale a small amount of dust.
+
+"
+!
+2 300 0
+-1
+S
+
+#78509
+"Near a Fighting Circle"
+"In the middle of this area a large circle has been totally cleared of any
+
+debris and worn flat by the passage of feet.  Small pieces of rock and
+
+debris can be seen lying on the floor outside of the circle, and a large
+
+wall of rubble has been placed to the south.  The cavern walls prevent
+
+movement to the north or west, but a small pathway seems to lead from the
+
+circle to the east.
+
+"
+""
+301596672 0
+11 5 0
+D1
+""
+""
+0 -1 78508 0 5
+E
+"cleared circle"
+"This circle has a diameter of about fifteen feet.  It is just a stone
+
+floor that has been worn exceptionally smooth and flat by the passage of
+
+many feet over time.  Small dark stains can be seen in parts of it,
+
+resembling blood that dried very long ago.
+
+"
+A
+""
+""
+"if( mob_in_room( 2269, room ) ) {
+
+  mob = mob_in_room( 2269, room );
+
+  i = random( 1, 5 );
+
+  if( i == 1 )
+
+    send_to_room( #one, room );
+
+  if( i == 2 )
+
+    send_to_room( #two, room );
+
+  if( i == 3 )
+
+    send_to_room( #three, room );
+
+  if( i == 4 )
+
+    send_to_room( #four, room );
+
+  if( i == 5 )
+
+    send_to_room( #five, room );
+
+}
+
+"
+E
+"one"
+"The ghost of an old lizardman assumes a new fighting stance and sends a
+
+flurry of punches into the air!
+
+"
+E
+"two"
+"The ghost of an old lizardman lunges into the air, performs a flawless
+
+backflip, and lands beautifully.
+
+"
+E
+"three"
+"The ghost of an old lizardman remains perfectly still as it begins to
+
+meditate.
+
+"
+E
+"four"
+"The ghost of an old lizardman drops to the ground and executes a textbook
+
+sweep kick.
+
+"
+E
+"five"
+"The ghost of an old lizardman leaps to attack an imaginary opponent.
+
+"
+!
+2 400 0
+A
+"climb"
+"wall south"
+"if( find_skill( ch, climb ) > 3 ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #r_climb, ch );
+
+  room = find_room( 78510 );
+
+  transfer( ch, room );
+
+  act_notchar( #r_arrive, ch );
+
+}
+
+else
+
+  act_tochar( #nope, ch );
+
+"
+E
+"climb"
+"After spending a moment finding hand holds you climb over the wall of
+
+rubble and find yourself in another section of the cavern.
+
+"
+E
+"r_climb"
+"$n climbs the wall of rubble to the south and disappears from sight.
+
+"
+E
+"r_arrive"
+"You hear a noise to the north and see $n climbing down the wall of rubble!
+
+"
+E
+"nope"
+"After a moments contemplation you decide that wall of rubble is beyond
+
+your ability to climb.
+
+"
+!
+0 0 0
+2269 9 1509949540 3 0
+-1
+S
+
+#78510
+"A Room Full of Stone Pillars"
+"This area of the cavern has been partitioned off with walls of stone
+
+rubble to the north and south.  A number of tall stone pillars have been
+
+placed in this part of the cavern.  They don't support anything, as you
+
+can see the tops of them quite easily.  Everything is coated in a thick
+
+layer of dust.  Barely visibile under the dust are large patches of a
+
+dark red, almost black, substance on the stone.  A pathway leads out of
+
+this area to the east.
+
+"
+"[Tallaor] acode - climb over rubble north/south
+
+[Tallaor] acode - movement between pillars, spooky!
+
+"
+301596672 0
+11 5 0
+D1
+""
+""
+0 -1 78513 0 5
+2270 9 1509949540 3 0
+-1
+S
+
+#78511
+"An Abandoned Training Area"
+"This area of the cavern looks to have been undisturbed for centuries. 
+
+The walls of rubble that partition it off from the rest of the cavern are
+
+covered by a thick layer of dust.  Thick bunches of cobwebs cover parts
+
+of the stone and creep out from various nooks.  A raised stone platform
+
+rests in the middle of the room, also looking to have been untouched for
+
+at least several hundred years.
+
+"
+""
+301596672 0
+11 5 0
+D1
+""
+""
+0 -1 78512 0 5
+-1
+S
+
+#78512
+"An Old Pathway"
+"Small pieces of stone debris are scattered around this part of the cavern. 
+
+A small pathway extends to the north and east, occasionally twisting
+
+around a piece of stone to large to move.  When looking up only blackness
+
+can be seen, hopefully somewhere in it is the ceiling to this cavern. 
+
+Parts of the cavern that have been partitioned off with walls or rubble
+
+lie to the west and south.
+
+"
+""
+301596672 0
+11 5 0
+D0
+""
+""
+0 -1 78513 0 5
+D1
+""
+""
+0 -1 78515 0 5
+D2
+""
+""
+0 -1 78514 0 5
+D3
+""
+""
+0 -1 78511 0 5
+-1
+S
+
+#78513
+"An Old Pathway"
+"A large wall of rubble, looking to be nearly twenty feet high, blocks
+
+movement to the east.  The pathway runs in a north to south direction and
+
+a small off-shoot seems to lead to the west.  Looking up all you can see
+
+is darkness, hopefully the ceiling of the cavern is up there somewhere. 
+
+A thick layer of dust has coated the stone here, causing little clouds to
+
+rise whenever there is movement.
+
+"
+"[Galen] acode - climb rubble to the east
+
+[Galen] acode - random noises
+
+"
+301596672 0
+11 5 0
+D0
+""
+""
+0 -1 78508 0 5
+D2
+""
+""
+0 -1 78512 0 5
+D3
+""
+""
+0 -1 78510 0 5
+-1
+S
+
+#78514
+"Training Area"
+"Under Construction.
+
+"
+""
+301596672 0
+11 5 0
+D0
+""
+""
+0 -1 78512 0 5
+-1
+S
+
+#78515
+"An Old Pathway"
+"Under Construction.
+
+"
+""
+301596672 0
+11 5 0
+D0
+""
+""
+0 -1 78516 0 5
+D1
+""
+""
+0 -1 78518 0 5
+D2
+""
+""
+0 -1 78517 0 5
+D3
+""
+""
+0 -1 78512 0 5
+-1
+S
+
+#78516
+"Training Area"
+"Under Construction.
+
+"
+""
+301596672 0
+11 5 0
+D2
+""
+""
+0 -1 78515 0 5
+-1
+S
+
+#78517
+"Master's Training Area"
+"Under Construction.
+
+"
+""
+301596672 0
+11 5 0
+D0
+""
+""
+0 -1 78515 0 5
+D2
+"old stone door"
+""
+2447 -1 78524 0 5
+-1
+S
+
+#78518
+"An Old Pathway"
+"Under Construction.
+
+"
+""
+301596672 0
+11 5 0
+D0
+""
+""
+0 -1 78519 0 5
+D1
+""
+""
+0 -1 78521 0 5
+D2
+""
+""
+0 -1 78520 0 5
+D3
+""
+""
+0 -1 78515 0 5
+-1
+S
+
+#78519
+"An Old Pathway"
+"Under Construction.
+
+"
+""
+301596672 0
+11 5 0
+D0
+""
+""
+0 -1 78523 0 5
+D1
+""
+""
+0 -1 78522 0 5
+D2
+""
+""
+0 -1 78518 0 5
+-1
+S
+
+#78520
+"Training Area"
+"Under Construction.
+
+"
+""
+301596672 0
+11 5 0
+D0
+""
+""
+0 -1 78518 0 5
+-1
+S
+
+#78521
+"Ruins"
+"Under Construction.
+
+"
+""
+301596672 0
+11 5 0
+D3
+""
+""
+0 -1 78518 0 5
+-1
+S
+
+#78522
+"Training Area"
+"Under Construction.
+
+"
+""
+301596672 0
+11 5 0
+D3
+""
+""
+0 -1 78519 0 5
+-1
+S
+
+#78523
+"An Old Pathway Before Some Rubble"
+"The pathway turns south here and would continue east if not for the huge
+
+pile of rubble that has covered it.  It appears as if a portion of cavern
+
+has collapsed to the east, completely covering that area in tons upon
+
+tons of stone.  This part of the cavern is completely covered in dust,
+
+likely from the cave in, over two inches thick.
+
+"
+""
+301596672 0
+11 9 0
+D2
+""
+""
+0 -1 78519 0 5
+D3
+""
+""
+0 -1 78507 0 5
+E
+"rubble east debris stone"
+"This cave in appears to be quite old, but not nearly as old as the work
+
+done on the hallway or cavern.  The rubble is covered in a substantial
+
+amount of dust.  The sheer weight of the debris prevents it from being
+
+moved.
+
+"
+-1
+S
+
+#78524
+"Treasurery"
+"Under Construction.
+
+"
+""
+301465601 0
+11 5 0
+D0
+"old stone door"
+""
+2447 -1 78517 0 5
+-1
+S
+
+#0
+

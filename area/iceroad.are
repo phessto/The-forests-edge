@@ -1,0 +1,4421 @@
+#AREA
+"Dragonspire Pass"
+"Nereus"
+"dragonspire pass"
+45 0
+0
+6
+#ROOMS
+
+#82000
+"An Icy Trail - Between Towering Drifts"
+"The snow at your feet has been packed down by the passage of countless large
+
+creatures; their footprints are visible moving from the highest point here
+
+down a slope towards the north.  Drifts rise to thirty feet on either side of
+
+you here, blocking sight and sound and making travel in those directions
+
+impossible.  Large snowdrifts have collected below you to the south, but these
+
+drifts are probably passable, if with a little digging.
+
+"
+"[Nereus] This room must not be no.mob so yeti can wander in and out without
+
+providing players with a \"safe room\" to go to so they can run yeti more safely.
+
+"
+301465600 0
+5 8 0
+D0
+""
+""
+0 -1 82001 0 8
+D2
+"drift"
+""
+227 -1 34518 0 7
+E
+"footprints trail snow"
+"The footprints are somewhat humanoid, although a great deal larger than even
+
+the footprints of an ogre would be.  Even though snow blows down from the
+
+drifts around you, the tracks are not filled in with fresh snow.  Evidently
+
+whatever created them is very close indeed.
+
+"
+A
+"dig move push"
+"1 south drifts"
+"if( !is_open( room, south ) ) {
+
+  if( find_stat( ch, move ) > 50 ) {
+
+    modify_move( ch, -50 );
+
+    act_tochar( #dig, ch );
+
+    act_notchar( #digs, ch );
+
+    open( room, south );
+
+    send_to_room( #opens, find_room( 34518 ) );
+
+    }
+
+  else
+
+    act_tochar( #no, ch );
+
+  }
+
+else
+
+  act_tochar( #dumbass, ch );
+
+"
+E
+"dig"
+"You manage to dig a path through the drifts to the south, revealing a path
+
+beyond.
+
+"
+E
+"digs"
+"$n digs a path through the drifts to the south.
+
+"
+E
+"opens"
+"Someone digs through the drift to the north, creating a path through to the
+
+north.
+
+"
+E
+"no"
+"You are simply too exhausted to dig through the drifts.
+
+"
+E
+"dumbass"
+"The drifts to the south have already been dug away, revealing a path.
+
+"
+!
+0 0 0
+612 9 1509949540 3 0
+612 9 1509949540 3 0
+612 9 1509949540 3 0
+612 9 1509949540 3 0
+-1
+S
+
+#82001
+"An Icy Trail - Between Towering Drifts"
+"An icy trail is evident here, marked by giant humanoid footprints.  To the
+
+north and south, the trail follows a rise; this section of the trail is in a
+
+muted depression that is thankfully free of the wind.  Great drifts loom
+
+menacingly on both sides of the trail, fifty feet of ice and snow that could
+
+come crashing down on your head given the slightest disturbance in the area.
+
+"
+""
+301465600 0
+5 8 0
+D0
+""
+""
+0 -1 82002 0 8
+D2
+""
+""
+0 -1 82000 0 8
+E
+"drifts snow 1 east 1 west"
+"The drifts are roughly fifty feet above the trail.  Even though they could
+
+collapse at any moment, they block the wind and snow falling into this
+
+depression, offering some refuge from the wintry weather.
+
+"
+E
+"trail footprints"
+"The trail has been packed down by something very large and heavy in the very
+
+recent past.  The footprints are roughly humanoid but covered in snow falling
+
+gently from the drifts above makes exact identification impossible.
+
+"
+612 9 1509949540 3 0
+-1
+S
+
+#82002
+"Edge of the Drifts"
+"Great drifts block any passage to the east or west, a spectacular reminder of
+
+the forces of nature.  The drifts end abruptly to the north as a chasm yawns
+
+into the snowy black some mindless distance beneath the trail.  This region
+
+seems to have seen quite a bit of activity recently, as a trail of sorts has
+
+been trampled into the snow by the passing of a few giant humanoid creatures. 
+
+The trail ends abruptly at the cliff edge, and continues south on a slope into
+
+a depression.
+
+
+An ancient stone marker stands a few meters from the cliff edge.
+
+"
+""
+301465600 0
+5 8 0
+D1
+""
+""
+227 -1 82003 0 8
+D2
+""
+""
+0 -1 82001 0 8
+E
+"ancient stone marker sign"
+"In ancient times this might have been a sign indicating landmarks that lay
+
+ahead on the trail.  Intricate, spidery runes have been carved into the face
+
+of the marker, most of which have been obliterated through ages of weather. 
+
+Arrows seem to point northward, off the cliff edge, and eastward, into a great
+
+snowdrift, although what is supposed to be in those directions is impossible
+
+to discern from the writing.
+
+"
+E
+"chasm 1 north"
+"The trail abruptly ends and a sheer cliff face looms below you.  Gently
+
+falling snow disappears far below; one might fall a long, long time if they
+
+were to lose footing and slip off the cliff edge.
+
+"
+A
+"dig"
+"drifts east"
+"if( !is_open( room, east ) ) {
+
+  if( find_stat( ch, move ) > 50 ) {
+
+    modify_move( ch, -50 );
+
+    act_tochar( #dig, ch );
+
+    act_notchar( #digs, ch );
+
+    open( room, east );
+
+    send_to_room( #opens, find_room( 82003 ) );
+
+    }
+
+  else
+
+    act_tochar( #no, ch );
+
+  }
+
+else
+
+  act_tochar( #dumbass, ch );
+
+"
+E
+"dumbass"
+"The drifts have already been dug aside, revealing a trail stretching along the
+
+cliff edge to the east.
+
+"
+E
+"dig"
+"You manage to dig away enough of the massive drift to the east to reveal a
+
+trail winding along the cliff edge.
+
+"
+E
+"digs"
+"$n manages to dig away enough of the drift to the east to reveal a trail
+
+winding along the cliff edge.
+
+"
+E
+"no"
+"You are simply too exhausted to try to dig aside the deep snowdrift.
+
+"
+E
+"opens"
+"The drifts to the west have been pushed aside, clearing a path.
+
+"
+!
+0 0 0
+3620 17 1509949540 -2 0
+612 4105 1509949540 2 0
+1602 17 1509949485 -2 0
+-1
+S
+
+#82003
+"Wide Trail Under Overhang"
+"A wide trail has been worn down to gray rock along the base of the overhanging
+
+mountain above.  Snow blows from above and collects in drifts to the west and
+
+along a snowbank before a sheer drop into yawning white north of the trail. 
+
+Patches of ice cover the edges of the trail, packed down by large humanoid
+
+creatures moving through the area.  The trail continues to hug the cliffside
+
+and slopes down to the east.
+
+"
+""
+301465600 0
+5 7 0
+D1
+""
+""
+0 -1 82004 0 7
+D3
+""
+""
+227 -1 82002 0 8
+E
+"1 south cliff overhang"
+"The cliff overhangs the gray rock of the trail you are standing on.  It is
+
+smooth rock, polished by wind and snow, and does not appear to be climbable.
+
+"
+E
+"ice footprints"
+"What creature could have left these footprints is difficult to ascertain; only
+
+the very edges of the trail are snowy and have been packed down into ice in
+
+patches.
+
+"
+A
+"dig move"
+"west drifts"
+"if( !is_open( room, west ) ) {
+
+  if( find_stat( ch, move ) > 50 ) {
+
+    modify_move( ch, -50 );
+
+    act_tochar( #dig, ch );
+
+    act_notchar( #digs, ch );
+
+    open( room, west );
+
+    send_to_room( #opens, find_room( 82002 ) );
+
+    }
+
+  else
+
+    act_tochar( #no, ch );
+
+  }
+
+else
+
+  act_tochar( #dumbass, ch );
+
+"
+E
+"dumbass"
+"The drifts have already been dug aside, revealing a trail through the snow to
+
+the west.
+
+"
+E
+"dig"
+"You manage to dig away enough of the massive drift to the west to reveal a
+
+trail through the snow.
+
+"
+E
+"digs"
+"$n manages to dig away enough of the drift to the west to reveal a trail
+
+winding through the snow.
+
+"
+E
+"opens"
+"The drifts to the west have been pushed aside, clearing a path.
+
+"
+E
+"no"
+"You are simply too exhausted to dig through any snow.
+
+"
+!
+0 0 0
+612 9 1509949540 3 0
+-1
+S
+
+#82004
+"Mountainside Path - Turn in the Trail"
+"The packed icy trail turns abruptly to the north here, where the rocky
+
+overhang above is littered with icicles, some as large as a man.  The grey
+
+rock of the cliffside to the east and south is covered with a fine dusting of
+
+snow, but the trail is free of drifts and shows evidence of the recent
+
+activity of a number of large, humanoid creatures.  Narrower than the trail to
+
+the north and south, the pass here is still wide enough to easily accomodate a
+
+wagon and its team of horses.  Past a snowbank on the northwest edges of the
+
+trail, through the swirling snow, the panorama of the Dragonspires stretches
+
+as far as you can see.
+
+"
+""
+301465600 0
+5 7 0
+D0
+""
+""
+0 -1 82005 0 7
+D3
+""
+""
+0 -1 82003 0 7
+E
+"cliffside overhang"
+"The base of the mountainside runs parallel along the trail, overhanging it by
+
+nearly thirty feet in some places.  Many large icicles have formed on the
+
+bottom of the overhang, some as large as a man.
+
+"
+E
+"icicles"
+"Water trickling from somewhere further up the mountainside has formed into
+
+large icicles on the overhanging stone above.  A forest of glimmering
+
+stalactites, some of the icicles are as large as a man and thicker than an
+
+ogre's waist.
+
+"
+E
+"trail footprints"
+"The trail has been formed by the passage of large humanoid creatures through
+
+the snow, but what created them is not discernible by the footprints alone.
+
+"
+A
+"get take break"
+"icicles"
+"act_tochar( #toohigh, ch );
+
+"
+E
+"toohigh"
+"The icicles hang down perhaps twenty feet above the trail; you have no way to
+
+reach them.
+
+"
+!
+0 0 0
+3930 17 1509949540 -2 0
+612 9 1509949540 3 0
+612 9 1509949540 3 0
+-1
+S
+
+#82005
+"The Fangs of the Dragonspires"
+"Grand icicles, as thick as an ancient oak at their base, flow from the
+
+overhang above to the chasm edge on the western side of the trail.  The trail
+
+narrows abruptly here -- a flat space thirty paces across is all that stands
+
+between the eastern cliff wall and the chasm to the west.  Snow-capped
+
+mountains stretch for an eternity; framed between mighty icicles that flow
+
+from the overhanging cliff above, the view is breathtaking.  A few patches of
+
+blood lie splashed on the rocks at your feet, evidence of some greater
+
+predator than the yetis which are said to roam this region.
+
+"
+""
+301465600 0
+5 8 0
+D0
+""
+""
+0 -1 82006 0 7
+D2
+""
+""
+0 -1 82004 0 7
+E
+"blood patches rocks trail"
+"The trail here is mostly rock, since the icicles on the west seem to shelter
+
+the trail from the falling snow.  A few of the rocks at your feet are splashed
+
+with dark red blood which appears to be relatively fresh.
+
+"
+E
+"icicles"
+"The icicles frame the view to the west of the mountains which stretch away in
+
+the distance.  The largest is probably at least fifty feet long and thirty
+
+feet across.  With the light streaming in from the west side of the trail, the
+
+shadows cast by the icicles make you feel as if you are looking out from a
+
+great maw in the mountainside itself.
+
+"
+A
+"climb scale clamber"
+"icicles 1 up"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"Although you might be able to reach the overhang above the trail far above,
+
+there are no handholds and no way to swing onto the outside of the mighty
+
+icicles.
+
+"
+!
+0 0 0
+3930 17 1509949520 -2 0
+3930 17 1509949465 -2 0
+-1
+S
+
+#82006
+"Mountainside Trail - Littered with Boulders"
+"The snow in this area has been churned and packed down by something very large
+
+and terribly heavy.  Dark red patches stain the snow in a few places along the
+
+trail, more evidence that this area is frequented by a large predator. 
+
+Boulders ranging in size from a few feet to the size of a small cottage litter
+
+the trail, sentinels of rock and ice that certainly bore witness to the
+
+carnage that occurred not long ago.  The trail is very wide and the rocky
+
+overhang visible along the trail to the south is not evident here.  Through
+
+the swirling snow west of the trail, the panorama of the Dragonspires
+
+stretches for miles.
+
+"
+""
+301465600 0
+5 6 0
+D0
+"avalanche"
+""
+33361 -1 82007 0 6
+D2
+""
+""
+0 -1 82005 0 7
+E
+"snow patches ground trail 1 down"
+"The snow has been churned and packed down along the trail here.  The patches
+
+are almost certainly blood; and by the quantity and size came from a very
+
+large, very dead creature.
+
+"
+E
+"boulders"
+"The boulders range in size from large rocks to the size of a small cottage. 
+
+Many of them appear to be made of ice, while some are chunks of rock from the
+
+cliff wall to the east.
+
+"
+E
+"Dragonspires panorama view 1 west"
+"The view from this high mountain trail is breathtaking.  A sudden steep drop
+
+west of the mountain trail allows a view of a deep white valley; another line
+
+of peaks rises in the distance to the west.
+
+"
+A
+"open dig clear move"
+"avalanche n north ice rock snow"
+"if( !is_open( room, north ) ) {
+
+  act_tochar( #noway, ch );
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"noway"
+"The avalanche is an immeasurable amount of ice and snow.  It is likely you
+
+would freeze to death long before digging any sort of reasonable trail through
+
+it.
+
+"
+!
+0 0 0
+A
+""
+""
+"wait( 3 );
+
+send_to_room( #seal, room );
+
+close( room, north );
+
+"
+E
+"seal"
+"@BAn avalanche of ice and rock crashes down on the trail from above, sealing
+
+off the path north.@n
+
+"
+!
+0 0 0
+A
+"climb scale"
+"north pile avalanche ice snow"
+"if( !is_open( room, north ) ) {
+
+  if( find_skill( ch, climb ) >= 5 ) {
+
+    act_tochar( #climb, ch );
+
+    act_notchar( #climbs, ch );
+
+    transfer( ch, find_room( 82007 ) );
+
+    act_notchar( #drops, ch );
+
+    loop( followers ) {
+
+      if( find_skill( rch, climb ) >= 5 ) {
+
+        act_tochar( #climb, rch );
+
+        act_notchar( #climbs, rch );
+
+        transfer( rch, find_room( 82007 ) );
+
+        act_notchar( #drops, rch );
+
+        }
+
+      else {
+
+        act_tochar( #falls, ch );
+
+        act_tochar( #cantfollow, rch );
+
+        }
+
+      }
+
+    }
+
+  else {
+
+    act_tochar( #no, ch );
+
+    act_notchar( #nos, ch );
+
+    }
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"climb"
+"You scramble over the tons of rock, ice, and snow and drop back on the trail
+
+to the north.
+
+"
+E
+"climbs"
+"$n climbs over the fallen ice and disappears on the other side.
+
+"
+E
+"drops"
+"$n jumps down from the avalanche, landing on the trail near you.
+
+"
+E
+"no"
+"You try to climb up the pile of ice, but slip and crash back into the snow of
+
+the trail.
+
+"
+E
+"nos"
+"$n tries to climb up the pile of ice, but slips and crashes back into the snow
+
+at your feet.
+
+"
+E
+"falls"
+"$n tries to climb up the avalanche after you, but slips and falls back to the
+
+trail.
+
+"
+E
+"cantfollow"
+"You try to follow over the avalanche, but slip and fall back to the trail.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( find_stat( ch, level ) > 92 )
+
+  continue;
+
+if( !is_open( room, north ) )
+
+  act_tochar( #errno, ch );
+
+else
+
+  continue;
+
+"
+E
+"errno"
+"There is a massive avalanche blocking the trail in that direction.
+
+"
+!
+3 0 1
+2345 137 1509949540 3 0
+3620 17 1509949540 -2 0
+141 17 1509949540 -2 0
+141 17 1509949540 -2 0
+3620 17 1509949540 -2 0
+3620 17 1509949540 -2 0
+-1
+S
+
+#82007
+"Treacherous Footing"
+"Towering taller to the north, the mountain above seems impossibly large and
+
+the trail a narrow ribbon winding its way desperately forward.  The trail
+
+narrows dramatically as one heads north, forcing travellers to hug the
+
+frost-rimed rock of the mountain face to the east.  Large, heavy footprints
+
+pack down the fresh snow on the trail, evidence that something has travelled
+
+here recently.  The trail continues at an upslope to the north, although the
+
+footprints are evident no further in that direction.
+
+"
+"[Dalthas] follow trig from south of here is messed up, must be $n instead of $N
+
+[Dalthas] avalanche act_notchar broken climbing north from south of here
+
+"
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 82008 0 6
+D2
+"avalanche"
+""
+33361 -1 82006 0 6
+E
+"footprints large heavy"
+"The footprints were made by something large, heavy, and bipedal; the freshness
+
+of the fallen snow around them indicates that they were made quite recently. 
+
+They have packed down the snow along the trail here and to the south, but the
+
+snow to the north seems untouched.
+
+"
+E
+"trail 1 north 1 south"
+"The trail narrows to the north as it winds its way along the mountainside, and
+
+widens rapidly to the south.
+
+"
+E
+"mountain"
+"The peaks of the Dragonspires are daunting indeed.  While the mountain that
+
+this trail winds along is fairly low compared to the peaks visible in the
+
+distance to the west, It is still incomprehensibly large; its peak stretches
+
+into the clouds high above you to the east.
+
+"
+A
+"open dig clear move"
+"avalanche 1 south snow rock ice"
+"if( !is_open( room, south ) ) {
+
+  act_tochar( #noway, ch );
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"noway"
+"The avalanche is an immeasurable amount of ice and rock.  It would be
+
+impossible for you to clear any reasonable amount of it.
+
+"
+!
+0 0 0
+A
+"climb scale"
+"1 south avalanche ice snow rock debris"
+"if( !is_open( room, south ) ) {
+
+  if( find_skill( ch, climb ) >= 5 ) {
+
+    act_tochar( #climb, ch );
+
+    act_notchar( #climbs, ch );
+
+    transfer( ch, find_room( 82006 ) );
+
+    act_notchar( #drops, ch );
+
+    loop( followers ) {
+
+      if( find_skill( rch, climb ) >= 5 ) {
+
+        act_tochar( #climb, rch );
+
+        act_notchar( #climbs, rch );
+
+        transfer( rch, find_room( 82006 ) );
+
+        act_notchar( #drops, rch );
+
+        }
+
+      else {
+
+        act_tochar( #falls, ch );
+
+        act_tochar( #cantfollow, rch );
+
+        }
+
+      }
+
+    }
+
+  else {
+
+    act_tochar( #no, ch );
+
+    act_notchar( #nos, ch );
+
+    }
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"climb"
+"You scramble over the tons of rock and ice and drop back onto the trail to the
+
+south.
+
+"
+E
+"climbs"
+"$n climbs over the avalanche to the south and disappears behind the debris.
+
+"
+E
+"drops"
+"$n jumps down from the avalanche, landing on the trail near you.
+
+"
+E
+"falls"
+"$n tries to climb up the avalanche after you, but slips and falls back to the
+
+trail.
+
+"
+E
+"cantfollow"
+"You try to follow over the avalanche, but slip and fall back to the trail.
+
+"
+E
+"no"
+"You try to climb up the pile of ice, but slip and crash back into the snow of
+
+the trail.
+
+"
+E
+"nos"
+"$n attempts to scale the avalanche, but slips on $s way up and crashes back
+
+into the snow at your feet.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( find_stat( ch, level ) > 92 )
+
+  continue;
+
+if( !is_open( room, south ) )
+
+  act_tochar( #errno, ch );
+
+else
+
+  continue;
+
+"
+E
+"errno"
+"There is an avalanche blocking the trail to the south.
+
+"
+!
+3 0 4
+612 9 1509949540 3 0
+612 9 1509949540 3 0
+1602 17 1509949470 -2 0
+-1
+S
+
+#82008
+"Ice-slicked Path - Between Mountain and Chasm"
+"Perhaps at one time the name \"Dragonspire Pass\" was more appropriate, but here
+
+the trail narrows to a mere handspan in places.  Scoured by a biting wind, no
+
+snow clings to the rock along this section of the trail; it has been replaced
+
+with a thin coating of nearly invisible ice.  An icy chasm falls away below
+
+the cliff's edge to the west, its bottom lost in a swirl of dusty snow.
+
+"
+"[Nereus] Fall here
+
+"
+301465608 0
+5 6 0
+D0
+""
+""
+0 -1 82009 0 5
+D2
+""
+""
+0 -1 82007 0 6
+E
+"chasm"
+"The chasm runs north-south along the west side of the trail, starting abruptly
+
+beneath you and stretching into the distance northward.  It is unclear how
+
+deep the chasm is, but discovering would probably be extremely painful if not
+
+deadly.
+
+"
+A
+""
+""
+"if( can_fly( ch ) )
+
+  continue;
+
+if( random( 7, 23 ) > find_stat( ch, dex ) ) {
+
+  act_tochar( #slip, ch );
+
+  act_notchar( #slips, ch );
+
+  transfer( ch, find_room( 82023 ) );
+
+  act_notchar( #falls, ch );
+
+  i = 1d150+40;
+
+  dam_message( ch, i, \"falling off an icy cliff\" );
+
+  inflict( ch, null, i, \"falling off an icy cliff\" );
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"slip"
+"@YAs you try to follow the trail north, you slip and tumble into the yawning
+
+chasm beside the trail!@n
+
+"
+E
+"slips"
+"@Y$n slips on the ice-slicked stone and tumbles into the yawning chasm
+
+below!@n
+
+"
+E
+"falls"
+"@YYou hear a scream from above and $n comes plummeting into the chasm from
+
+above!@n
+
+"
+!
+3 0 1
+-1
+S
+
+#82009
+"Narrow Trail - Collapsing Mountainside"
+"At one time, perhaps centuries ago, the trail must have been wide enough here
+
+to provide a respite from the treacherous sections below and above.  The land
+
+is flat and the cliff's edge on the eastern side of the trail far from the
+
+chasm that parallels the trail on the west.  Unfortunately, at some point the
+
+cliff edge collapsed onto the wide eastern part of the trail, flooding it with
+
+a treacherous pile of rock and ice.  What remains of the trail shows no signs
+
+of any but animal activity.
+
+"
+"[Maurtock] pile extra here
+
+"
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 82010 0 6
+D2
+""
+""
+0 -1 82008 0 5
+E
+"trail"
+"The trail is merely a narrow band that parallels the chasm to the west.  There
+
+are a few footprints indicating some kind of activity along this section of
+
+the trail, but they are too covered in snow now to make out.
+
+"
+-1
+S
+
+#82010
+"Treacherous Footing"
+"Blasted by a wind from the chasm below, the mountainside has lost all traces
+
+of snow and instead collected a thin, icy coating along the grey rock face. 
+
+Stretching above and below you, the mountain is incomprehensibly large and
+
+seems immune to the forces ravaging it.  The trail here, while wide enough to
+
+accomodate the travel of a man leading a horse, has sections that have fallen
+
+away, leaving dangerous gaps that must be jumped.  The wind gusts dangerously,
+
+threatening to smash you into the ground you know must be waiting below, even
+
+if it is out of sight.
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 82011 0 7
+D2
+""
+""
+0 -1 82009 0 6
+E
+"gaps trail"
+"The trail here has several gaps that fall away into nothingness.  It looks as
+
+if in another hundred or perhaps thousand years, the trail will have
+
+completely dissolved.
+
+"
+A
+""
+""
+"send_to_room( #deathwind, room );
+
+"
+E
+"deathwind"
+"The wind gusts ferociously, howling and tearing at you with tiny particles of
+
+ice.  You dare not linger here long.
+
+"
+!
+2 850 0
+1602 17 1509949540 -2 0
+-1
+S
+
+#82011
+"A Break in the Narrow Trail"
+"Obviously safer than the treacherous footing you can see to the south, the
+
+trail has widened back to safely accomodate a wagon or even a brave caravan. 
+
+A widened clearing lies to the east of the trail, the closeness of the
+
+cliffside on the eastern side of the trail offering some limited shelter.  The
+
+chasm edge is very close here, and you can see the sheer, icy wall of granite
+
+tumbling away into a white eternity below.  The trail narrows again to the
+
+north as it hugs the mountainside.
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 82012 0 7
+D2
+""
+""
+0 -1 82010 0 7
+E
+"cliffside mountain 1 east"
+"The mountainside is further away from the trail than to the north and south,
+
+where it literally hugs the mountainside.  Ageless and powerful, the mountain
+
+wall stretches up into the clouds above.
+
+"
+E
+"clearing"
+"Freshly-fallen snow covers this flat, widened area on the east of the trail. 
+
+While it seems that it would offer some limited respite, it would probably be
+
+best to finish your treacherous journey before you freeze to death.
+
+"
+A
+"climb scale jump"
+"1 down 1 west chasm gorge"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"The top of the chasm wall is solid ice and the bottom lost through the softly
+
+falling snow, making you think twice before attempting such a dangerous climb.
+
+"
+!
+0 0 0
+-1
+S
+
+#82012
+"Mountainside Trail"
+"Remarkably, the trail is nearly perfectly level, despite a sheer drop both on
+
+the west into a widening chasm, and a nearly sheer cliff face climbing to the
+
+east.  The clouds high above the mountain seem thinner here, making the craggy
+
+granite of the cliff face on the eastern side of the trail all the more
+
+intimidating.  Widening and sloping upward as it heads north, the trail
+
+continues to hug the granite of the cliffside.
+
+"
+""
+301465600 0
+5 8 0
+D0
+""
+""
+0 -1 82014 0 7
+D2
+""
+""
+0 -1 82011 0 7
+E
+"1 east cliffside"
+"The rock of the eastern cliff is craggy and nearly vertical as it climbs high
+
+above.  Upon closer inspection, there are several fissures at the base of the
+
+cliff on the eastern side of the trail.  They are large enough that an ogre
+
+could probably squeeze inside if he crawled on all fours.
+
+"
+E
+"crevice fissures"
+"The crevices in the cliffside appear large enough for an ogre to crawl
+
+through.  Perhaps they lead somewhere?
+
+"
+A
+"enter squeeze"
+"1 east crevice crack fissure"
+"if( size( ch ) < 6 ) {
+
+  act_tochar( #squeeze, ch );
+
+  act_notchar( #squeezes, ch );
+
+  transfer( ch, find_room( 82013 ) );
+
+  act_notchar( #yo, ch );
+
+  }
+
+else
+
+  act_tochar( #toobig, ch );
+
+"
+E
+"toobig"
+"You are too big to squeeze into the crack in the cliff face.
+
+"
+E
+"squeeze"
+"You squeeze through the narrow fissure and into the cavern beyond.
+
+"
+E
+"squeezes"
+"$n squeezes through a narrow crevice in the cliff wall to the east and
+
+vanishes from sight.
+
+"
+E
+"yo"
+"$n squeezes through the fissure and into the small cavern.
+
+"
+!
+0 0 0
+612 9 1509949540 3 0
+612 9 1509949540 3 0
+-1
+S
+
+#82013
+"Shelter From the Storm"
+"A perfect spot to stop and rest, this cave shows evidence of having been used
+
+countless times by travellers making their way through the pass.  The cleft to
+
+the west winds around a corner, offering protection from the chill winds
+
+outside.  The ceiling stretches high ahead, with a hole to vent smoke if one
+
+were to build a fire.  The floor has been worn smooth over time, and a crude
+
+firepit has been chiseled into the stone floor and surrounded with several
+
+small rocks.
+
+"
+""
+301465606 0
+11 6 0
+E
+"firepit"
+"The firepit has been chiseled into the stone floor of this small cavern. 
+
+Scorched black and filled with ash and rock, it has seen possibly millenia of
+
+use.
+
+"
+E
+"1 west cleft crevice"
+"A winding crevice leads into the stone, out into the cold of the storm.
+
+"
+A
+"light kindle start build"
+"fire"
+"if( obj_in_room( 1356, room ) ) {
+
+  act_tochar( #already, ch );
+
+  end;
+
+  }
+
+obj = has_obj( 3925, ch );
+
+if( !obj )
+
+  obj = obj_in_room( 3925, room );
+
+if( obj ) {
+
+  act_tochar( #build, ch );
+
+  act_notchar( #builds, ch );
+
+  junk_obj( obj, 1 );
+
+  obj = obj_to_room( oload( 1356 ), room );
+
+set_obj_value( obj, 0, 300 );
+
+set_obj_value( obj, 1, 300 );
+
+  }
+
+else {
+
+  act_tochar( #donthave, ch );
+
+  }
+
+"
+E
+"donthave"
+"You don't have or see here anything you can build a fire with.
+
+"
+E
+"build"
+"You build a small fire and manage to get it going with a piece of flint that
+
+was discarded in the firepit.
+
+"
+E
+"builds"
+"$n builds a small fire with the firewood and starts it with a piece of flint
+
+from the firepit.
+
+"
+E
+"already"
+"A crackling fire has already been lit in the firepit.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( obj_in_room( 1356, room ) ) {
+
+  act_tochar( #rockon, ch );
+
+  heal( ch, 10 );
+
+  modify_mana( ch, 10 );
+
+  modify_move( ch, 15 );
+
+  }
+
+"
+E
+"rockon"
+"@YThe campfire crackles and burns merrily, soothing your wounds and helping
+
+restore your concentration for travels ahead.@n
+
+"
+!
+2 350 0
+A
+"search dig"
+"ashes firepit"
+"if( !rflag( reset0, room ) ) {
+
+  act_notchar( #searches, ch );
+
+  act_tochar( #nothing, ch );
+
+  end;
+
+  }
+
+remove_rflag( reset0, room );
+
+if( obj_in_room( 1356, room ) )
+
+  act_tochar( #no, ch );
+
+else {
+
+  i = random( 1, 120 );
+
+  if( i < 50 )
+
+    act_tochar( #nothing, ch );
+
+  else
+
+    act_tochar( #findsomething, ch );
+
+  if( i >= 50 && i < 60 )
+
+    obj_to_char( oload( 142 ), ch );
+
+  if( i >= 60 && i < 65 )
+
+    obj_to_char( oload( 2745 ), ch );
+
+  if( i >= 65 && i < 70 )
+
+    obj_to_char( oload( 1924 ), ch );
+
+  if( i >= 70 && i < 80 )
+
+    obj_to_char( oload( 79 ), ch );
+
+  if( i >= 80 && i < 83 )
+
+    obj_to_char( oload( 105 ), ch );
+
+  if( i >= 83 && i < 110 )
+
+    obj_to_char( oload( 2 ), ch );
+
+  if( i >= 110 && i < 115 )
+
+    obj_to_char( oload( 3926 ), ch );
+
+  if( i == 115 )
+
+    obj_to_char( oload( 3927 ), ch );
+
+  if( i > 115 )
+
+    obj_to_char( oload( 3929 ), ch );
+
+  act_notchar( #searches, ch );
+
+  }
+
+"
+E
+"no"
+"You can't search through the firepit while a fire is burning.
+
+"
+E
+"nothing"
+"You search through the firepit, but don't find anything of value.
+
+"
+E
+"searches"
+"$n digs through the firepit, searching for something valueable.
+
+"
+E
+"findsomething"
+"You search through the ashes of the firepit, uncovering something!
+
+"
+!
+0 0 0
+A
+"squeeze enter"
+"1 west crevice crack cleft"
+"if( size( ch ) < 6 ) {
+
+  act_tochar( #squeeze, ch );
+
+  act_notchar( #squeezes, ch );
+
+  transfer( ch, find_room( 82012 ) );
+
+  act_notchar( #yo, ch );
+
+  }
+
+else
+
+  act_tochar( #toobig, ch );
+
+"
+E
+"squeeze"
+"You squeeze into the crevice to the west and find yourself faced with the fury
+
+of the storm.
+
+"
+E
+"squeezes"
+"$n squeezes through the crevice to the west and disappears.
+
+"
+E
+"yo"
+"$n squeezes through from a crack in the cliff to the east.
+
+"
+E
+"toobig"
+"You are too large to fit through the crevice.
+
+"
+!
+0 0 0
+3925 17 1509949470 -2 0
+-1
+S
+
+#82014
+"Hugging the Cliffside - Widening Trail"
+"The trail continues to widen here, although unlike the level trail to the
+
+south, the trail slopes sharply down towards the eastern side of the trail.  A
+
+pile of ice and snow has collected along the eastern edge of the trail, next
+
+to the mountainside.  All that seperates the edge of the trail on the west
+
+from a deep drop into the chasm beyond is a thin ribbon of undisturbed snow --
+
+apparently the animals in this area know what lies beyond.  The trail reaches
+
+a peak and turns out of sight a bit to the north.
+
+"
+"[Maurtock] snow/chasm extras
+
+"
+301465600 0
+5 7 0
+D0
+""
+""
+0 -1 82015 0 7
+D2
+""
+""
+0 -1 82012 0 7
+E
+"trail"
+"The trail is quite wide here, leaving little danger of falling into the chasm
+
+on the western side of the trail.
+
+"
+612 9 1509949540 3 0
+-1
+S
+
+#82015
+"Mountainside Trail - Peak Along the Trail"
+"This high point in the trail offers a spectacular view of the Dragonspires
+
+which stretch away miles in the distance to the north and west.  A small
+
+outcropping of ice-covered rock marks the furthest you can move north here
+
+before a sheer drop into the yawning chasm; the trail turns to the east and
+
+slopes down along the mountainside.  The trail is wide enough for a pair of
+
+horses to comfortably ride abreast; wide indeed compared to the treacherous
+
+footing below.  Footprints abound in the snow along the trail, humanoid, but
+
+extremely large.
+
+"
+""
+301465600 0
+5 7 0
+D1
+""
+""
+0 -1 82016 0 7
+D2
+""
+""
+0 -1 82014 0 7
+E
+"outcropping peak ice-covered covered rock"
+"The outcropping stretches out to the north, the very edge of the mighty chasm
+
+that falls away to the north and west.  A small pile of snow has collected at
+
+its peak.
+
+"
+E
+"chasm"
+"The chasm parallels the trail, running north and then turning east.  You
+
+cannot see the bottom through the gently falling snow.
+
+"
+E
+"footprints trail"
+"The edges of the trail are defined by large, humanoid footprints.  The trail
+
+is icy as if it has seen frequent, recent traffic.
+
+"
+1602 17 1509949485 -2 0
+-1
+S
+
+#82016
+"Narrow Mountainside Trail"
+"Widening as you move northward, the trail winds from west to north here,
+
+hugging the cliffside.  While the cliff face to the south is sheer and covered
+
+in ice, the eastern face is rough and clear of ice.  Beyond a crusted drift, a
+
+chasm falls away; the stark peaks of the dragonspires visible in the distance
+
+far beyond.  Recent activity is evident here -- the trail has been packed to
+
+ice by the movement of large, humanoid creatures.
+
+"
+""
+301465600 0
+5 7 0
+D0
+""
+""
+0 -1 82017 0 7
+D3
+""
+""
+0 -1 82015 0 7
+E
+"1 east cliff rough"
+"Towering above you, the mountain to the east stretches up into the clouds high
+
+above.  Rough and rocky, it looks as if you could possibly climb up to a ledge
+
+a hundred feet above the trail, if you were brave and a little lucky.
+
+"
+E
+"drift crusted"
+"An ordinary snowdrift guards the lip of the chasm.  It has been crusted over
+
+with a thin layer of ice.
+
+"
+E
+"chasm"
+"The chasm parallels the trail, which in turn follows the cliff edges ever
+
+upwards.  The bottom of the chasm is lost in the snowy distance far below.
+
+"
+E
+"trail footprints"
+"The trail is almost solid ice here, packed by a great activity of some large
+
+creature or creatures.  Only a few footprints are evident at the very edge of
+
+the trail, too blurred or weatherbeaten to make out.
+
+"
+A
+"climb scale"
+"1 up 1 east mountain ledge"
+"if( find_skill( ch, climb ) > random( 5, 11 ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #climbs, ch );
+
+  transfer( ch, find_room( 82018 ) );
+
+  act_notchar( #climbsin, ch );
+
+  }
+
+else {
+
+  act_tochar( #cant, ch );
+
+  act_notchar( #theycant, ch );
+
+  }
+
+"
+E
+"climb"
+"After a moment of searching, you manage to find a few handholds and pull
+
+yourself up to the mountain ledge far above.
+
+"
+E
+"climbs"
+"After a moment of looking at the wall, $n climbs the long and treacherous
+
+distance to the mountain ledge above.
+
+"
+E
+"climbsin"
+"Huffing and wheezing, $n climbs up over the edge of the ledge from below.
+
+"
+E
+"cant"
+"Despite finding a few meager ice-covered handholds, you find yourself sliding
+
+back onto the snowy trail at the base of the mountainside.
+
+"
+E
+"theycant"
+"$n tries to climb the cliff face to the east, but just slides back down to the
+
+snowy trail.
+
+"
+!
+0 0 0
+612 9 1509949540 3 0
+612 9 1509949495 3 0
+612 9 1509949465 3 0
+-1
+S
+
+#82017
+"Before the Ice Bridge"
+"Looming over the chasm sloping down into oblivion, a span seems to defy
+
+gravity and crosses the chasm at its narrowest point to the north.  Running
+
+parallel to the eastern cliff face, the trail is at its widest point since the
+
+base of the mountains many miles below.  The trail here has been tracked down
+
+to mushy ice by the travel of dozens of giant, humanoid creatures.  The
+
+footprints in the snowy trail seem to stop abruptly a few feet before the icy
+
+span -- perhaps the animals don't trust the bridge to hold them.
+
+
+The remains of an ancient stone marker stand just west of the icy bridge.
+
+"
+""
+301465600 0
+5 7 0
+D0
+""
+""
+0 -1 82041 0 6
+D2
+""
+""
+0 -1 82016 0 7
+E
+"marker ancient stone"
+"The marker has been broken off a long time ago, the remnants now weathered
+
+down to almost nothing.  If there was writing on this marker at some point in
+
+the past, there is none evident on what remains.
+
+"
+E
+"footprints"
+"The footprints have packed the trail down to ice.  They are large and
+
+humanoid, but there are too many overlapping prints to get a good idea of what
+
+has been leaving them.  The footprints stop abruptly a few feet before the
+
+bridge spanning the chasm to the north.
+
+"
+E
+"1 north bridge icy span"
+"The bridge spans the chasm to the north at its narrowest point.  It is made
+
+entirely of what looks like an entire block of ice.  The western side of the
+
+bridge appears to have collapsed long ago, but it still appears quite stable.
+
+"
+612 9 1509949527 3 0
+-1
+S
+
+#82018
+"Narrow Ledge Above the Trail"
+"Wide enough only for a man to lay down on, this ledge of rock and ice is on
+
+the western side of a towering mountain peak.  The spectacular view of the
+
+Dragonspires stretches for miles off to the west and north; far below a wider
+
+trail winds its way along the mountain peak.  A dark patch is visible through
+
+the falling snow near the top of the mountain, possibly a collection of stone
+
+or a huge volume of snow.
+
+"
+""
+301465600 0
+5 5 0
+E
+"patch volume snow collection stone"
+"Upon closer inspection, it appears as if the dark patch high above is actually
+
+a massive nest.  It might be possible to continue climbing the cliff face to
+
+reach the nest, although it would be a near impossible climb.
+
+"
+E
+"nest"
+"What appears to be a nest is barely visible at the top of a peak to the east. 
+
+It might be possible to continue climbing the cliff face to reach the nest,
+
+although it would be a near impossible climb.
+
+"
+A
+"climb scale"
+"1 up 1 east mountain nest"
+"if( find_skill( ch, climb ) > random( 6, 12 ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #climbs, ch );
+
+  transfer( ch, find_room( 82019 ) );
+
+  act_notchar( #climbsin, ch );
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  act_notchar( #nos, ch );
+
+  }
+
+"
+E
+"climb"
+"You manage to continue up the steep cliff face and pull yourself into the nest
+
+high above.
+
+"
+E
+"climbs"
+"$n manages to continue up the steep cliff face and pulls $mself up into the
+
+nest high above.
+
+"
+E
+"climbsin"
+"$n pulls $mself over the western edge of the nest and drops down beside you.
+
+"
+E
+"no"
+"You try to continue up the moutainside, but almost lose your footing and
+
+return to the safety of the ledge.
+
+"
+E
+"nos"
+"$n attempts to climb further up the mountain face, but loses $s footing and
+
+slips back to the ledge.
+
+"
+!
+0 0 0
+A
+"climb scale"
+"1 down 1 west trail"
+"act_tochar( #climb, ch );
+
+act_notchar( #climbs, ch );
+
+transfer( ch, find_room( 82016 ) );
+
+act_notchar( #climbsin, ch );
+
+"
+E
+"climb"
+"You lower yourself over the ledge and climb back down to the trail far below.
+
+"
+E
+"climbs"
+"$n lowers $mself over the ledge and climbs back down to the trail far below.
+
+"
+E
+"climbsin"
+"$n climbs down from the cliff and onto the trail near you.
+
+"
+!
+0 0 0
+-1
+S
+
+#82019
+"Inside a Great Nest - Sheltered From the Storm"
+"Towering hundreds of feet above the trail, a large and sturdy nest has been
+
+constructed between two mountain peaks.  However, no ordinary bird or beast
+
+built this nest; it has been piled with entire trees ripped straight from the
+
+earth and dropped into the gap between the peaks.  It is sheltered from the
+
+storm here, since the eastern peak overhangs the nest, although in all other
+
+directions you can see for miles.  The nest has a thin layer of mud, ice, and
+
+small feathers at the bottom, providing a not terribly comfortable but
+
+workable place to rest.
+
+"
+"[Nereus] Do not remove or reorder acode 1 here.
+
+[Maurtock] make eggs breakable/edible
+
+"
+301465600 0
+5 9 0
+E
+"nest"
+"The nest is constructed of entire trees and the bottom has been lined with
+
+rock, mud, ice, and feathers.  It is unclear what sort of beast or bird
+
+constructed this nest, but since the temperature of the nest is fairly warm it
+
+appears that whatever lives here now is not far away.  The nest is easily ten
+
+meters across in the interior.
+
+"
+E
+"feathers"
+"The feathers are for the most part fairly small and downy, either from a young
+
+bird or the from the soft underbelly of a larger bird.
+
+"
+A
+""
+""
+"mob = mob_in_room( 2348, room );
+
+act_notchar( #buffet, mob );
+
+loop( all_in_room ) {
+
+  if( size( rch ) < 6 ) {
+
+    if( random( 9, 24 ) > find_stat( rch, dex ) ) {
+
+      act_tochar( #blown, rch );
+
+      act_notchar( #blowns, rch );
+
+      transfer( rch, find_room( 82018 ) );
+
+      act_notchar( #ouch, rch );
+
+      i = 8d20+35;
+
+      inflict( rch, mob, i, \"falling from a cliff nest\" );
+
+      dam_message( rch, i, \"falling from a cliff nest\" );
+
+      interpret( rch, \"+sit\" );
+
+      }
+
+    else
+
+      act_tochar( #dodge, rch );
+
+    }
+
+  else
+
+    act_tochar( #toobig, rch );
+
+  }
+
+"
+E
+"buffet"
+"@eThe roc's great claws dig into the earth as it flaps its giant wings!@n
+
+"
+E
+"blown"
+"The buffeting winds blast you out of the nest and you fall, tumbling down the
+
+cliff!
+
+"
+E
+"blowns"
+"The buffeting winds blast $n out of the nest and $e falls, tumbling down the
+
+cliff!
+
+"
+E
+"ouch"
+"$n comes hurtling down from above and crashes into the stone ledge next to you!
+
+"
+E
+"dodge"
+"You duck to the ground and hang on to a section of the nest, braving the
+
+buffeting winds.
+
+"
+E
+"toobig"
+"The buffeting winds blow all around you, but you are too heavy to be blown
+
+away.
+
+"
+!
+0 0 0
+A
+"climb scale"
+"1 down out 1 west"
+"wait( 0 );
+
+act_tochar( #climb, ch );
+
+act_notchar( #climbs, ch );
+
+transfer( ch, find_room( 82018 ) );
+
+act_notchar( #climbsin, ch );
+
+"
+E
+"climb"
+"You scale over the western edge of the nest and climb down to the ledge far
+
+below.
+
+"
+E
+"climbs"
+"$n scales the western edge of the nest and drops down out of sight.
+
+"
+E
+"climbsin"
+"$n drops down onto the ledge beside you from above.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( rflag( reset0, room ) && rflag( reset1, room ) && !mob_in_room( 2348, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  send_to_room( #wow, room );
+
+  }
+
+"
+E
+"wow"
+"@YHigh above, from the swirling snow, a deafening scream echoes -- the cry of
+
+a mother returned from the hunt.@n
+
+"
+!
+2 1000 0
+A
+""
+""
+"if( !mob_in_room( 2348, room ) && !rflag( reset0, room ) && rflag( reset1, room ) ) {
+
+  remove_rflag( reset1, room );
+
+  ch = rand_char( room );
+
+  act_tochar( #swoop, ch );
+
+  act_notchar( #swoops, ch );
+
+  mload( 2348, room );
+
+  mob = mob_in_room( 2348, room );
+
+  attack( mob, ch, 10d10+200, \"razor-sharp bite\" );
+
+  }
+
+"
+E
+"swoop"
+"@eWith blinding speed, a giant snow-white roc drops out of the swirling snow
+
+above and bites you with her beak!@n
+
+"
+E
+"swoops"
+"@eWith blinding speed, a giant snow-white roc drops out of the swirling snow
+
+above and bites $n with her beak!@n
+
+"
+!
+2 800 0
+A
+"search"
+"nest ground feathers"
+"if( rflag( reset2, room ) ) {
+
+  remove_rflag( reset2, room );
+
+  if( random( 1, 20 ) == 15 ) {
+
+    act_tochar( #find, ch );
+
+    obj_to_char( oload( 3645, 1 ), ch );
+
+    }
+
+  else
+
+    act_tochar( #no, ch );
+
+  act_notchar( #nos, ch );
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  act_notchar( #nos, ch );
+
+  }
+
+"
+E
+"find"
+"You search through the nest and find something of interest!
+
+"
+E
+"no"
+"You search through the nest, but find nothing of interest.
+
+"
+E
+"nos"
+"$n searches through the nest.
+
+"
+!
+0 0 0
+1927 17 1509949540 -2 0
+1927 17 1509949540 -2 0
+-1
+S
+
+#82020
+"Icy Chasm - Collapse"
+"Further travel to the north is blocked completely by a collapse or avalanche
+
+from above.  Rimed with ice and impossibly slick, the western rock face of the
+
+chasm seems to taunt you with its dizzying height.  Starkly contrasting this,
+
+the eastern rock face has not been exposed to the wind or water and is rough
+
+and possibly climbable with the right tools.  The chasm is nearly as wide here
+
+as to the south, while to the north the pile of rubble makes the state of the
+
+chasm in that direction impossible to determine.
+
+"
+"[Nereus] No.Mob
+
+[Nereus] Require climbing gear to climb up here
+
+"
+301465608 0
+5 6 0
+D2
+""
+""
+0 -1 82021 0 6
+E
+"pile north ice"
+"The rubble pile consists mainly of very large blocks of ice and ice-rimed
+
+boulders.  Snow, ice, and smaller debris has collected at the bottom of the
+
+chasm here.
+
+"
+A
+""
+""
+"act_room( #rumble, ch );
+
+"
+E
+"rumble"
+"@YAn ominous rumble from the icy pile of debris to the north indicates that
+
+the northern wall is not entirely stable.@n
+
+"
+!
+2 800 0
+A
+"climb scale"
+"1 north rubble pile"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"The rubble consists mainly of very large blocks of ice and ice-rimed boulders,
+
+and appears very unstable.  Climbing to the top and risking a complete
+
+collapse of the tons of ice above you would probably not be a good idea.
+
+"
+!
+0 0 0
+A
+"search dig"
+"1 north rubble pile landslide debris"
+"if( find_stat( ch, move ) > 30 ) {
+
+  act_tochar( #dig, ch );
+
+  act_notchar( #digs, ch );
+
+  modify_move( ch, -30 );
+
+  wait( 3 );
+
+  if( !char_in_room( ch, room ) )
+
+    end;
+
+  if( obj_in_room( 3657, room ) )
+
+    remove_rflag( reset0, room );
+
+  if( random( 1, 8 ) == 4 && rflag( reset0, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #uncover, ch );
+
+    act_notchar( #uncovers, ch );
+
+    obj_to_room( oload( 3657 ), room );
+
+    }
+
+  else {
+
+    act_tochar( #nothing, ch );
+
+    act_notchar( #nothings, ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #tootired, ch );
+
+"
+E
+"uncover"
+"After several minutes of digging, you manage to uncover a frozen corpse!
+
+"
+E
+"dig"
+"You begin the exhausting task of digging through the pile of debris.
+
+"
+E
+"digs"
+"$n begins to dig through the pile of debris.
+
+"
+E
+"uncovers"
+"After several minutes of digging, $n has managed to uncover a frozen corpse!
+
+"
+E
+"nothing"
+"After several minutes of digging, you give up in frustration, having found
+
+nothing.
+
+"
+E
+"nothings"
+"$n stands back up and stops digging.
+
+"
+E
+"tootired"
+"You are too tired to start digging through the debris.
+
+"
+!
+0 0 0
+A
+""
+"corpse traveller body clothing"
+"obj = obj_in_room( 3657, room );
+
+if( obj ) {
+
+  if( rflag( reset1, room ) ) {
+
+    act_tochar( #search, ch );
+
+    act_notchar( #searches, ch );
+
+    obj_to_char( oload( 3658 ), ch );
+
+remove_rflag( reset1, room );
+
+    }
+
+  else {
+
+    act_tochar( #nothing, ch );
+
+    act_notchar( #searches, ch );
+
+    }
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"search"
+"You search over the frozen corpse, finding a set of climbing equipment in a
+
+decaying pack.
+
+"
+E
+"searches"
+"$n searches over the frozen corpse.
+
+"
+E
+"nothing"
+"You search over the frozen corpse, but find nothing of value.
+
+"
+!
+9 0 0
+A
+"climb scale clamber"
+"1 east 1 up"
+"if( has_obj( 2341, ch ) || has_obj( 3658, ch ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #climbs, ch );
+
+  transfer( ch, find_room( 82011 ) );
+
+  act_notchar( #comesup, ch );
+
+  }
+
+else
+
+  act_tochar( #no, ch );
+
+"
+E
+"climb"
+"Using your climbing equipment, you manage to climb up the icy cliff wall to
+
+the east and pull yourself back up onto the trail.
+
+"
+E
+"climbs"
+"$n climbs up the eastern cliff wall and finally disappears from sight high
+
+above.
+
+"
+E
+"comesup"
+"$n pulls $mself over the lip of the yawning chasm to the west onto the
+
+mountain trail next to you.
+
+"
+E
+"no"
+"Despite the roughness of the eastern rock face, the climb would still be
+
+almost impossible because of the thin layer of ice covering the rock.  Perhaps
+
+if you had some climbing equipment it would be possible.
+
+"
+!
+0 0 0
+A
+"get take"
+"corpse body traveller"
+"if( obj_in_room( 3657, room ) )
+
+  act_tochar( #frozen, ch );
+
+else
+
+  continue;
+
+"
+E
+"frozen"
+"The corpse's legs are still buried under a huge boulder and partially frozen
+
+to the ground, making it impossible to free entirely.
+
+"
+!
+0 0 0
+-1
+S
+
+#82021
+"Ice-Rimed Chasm"
+"The chasm is nearly ten meters across at the bottom in this wider section. 
+
+Nearly perpendicular to the chasm floor, the walls of the chasm loom above you
+
+for hundreds of feet, the top of the cliff lost above in the falling snow. 
+
+The dark grey stone of the chasm is covered with a thick layer of ice which
+
+completely obscures the eastern cliff face.  The frigid stone floor of the
+
+chasm is covered in an inch-deep layer of frost; trails of blue-white ice
+
+trace mindlessly through the frost at your feet.
+
+"
+"[Nereus] we <3 ooze
+
+"
+301465600 0
+5 7 0
+D0
+""
+""
+0 -1 82020 0 6
+D1
+""
+"wall of ice"
+227 -1 82024 0 7
+D2
+""
+""
+0 -1 82022 0 7
+E
+"1 east"
+"Looking at the eastern wall more carefully, it appears that the rocky face of
+
+the cliff may be hollow here at the base.
+
+"
+E
+"blue-white ice floor"
+"The frosty ground is covered with icy trails of blue-white ice.  Since they do
+
+not blend in with the otherwise frosty ground, it seems that someone or
+
+something that left them behind has been here rather recently.  The trails can
+
+be seen all around this region of the chasm, and some lead further south,
+
+while to the north, where the chasm floor slopes upward, no trails are evident.
+
+"
+A
+"break smash shatter"
+"1 east wall ice"
+"if( !is_open( room, east ) ) {
+
+  if( random( 12, 18 ) < find_stat( ch, str ) ) {
+
+    act_tochar( #smash, ch );
+
+    act_notchar( #smashes, ch );
+
+    open( room, east );
+
+    send_to_room( #break, find_room( 82024 ) );
+
+    }
+
+  else {
+
+    act_tochar( #no, ch );
+
+    act_notchar( #nos, ch );
+
+    i = 2d6;
+
+    inflict( ch, NULL, i, \"crashing into a wall of ice\" );
+
+    dam_message( ch, i, \"crashing into a wall of ice\" );
+
+    set_resting( ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #dumbass, ch );
+
+"
+E
+"smash"
+"You take a deep breath and throw your shoulder against the ice wall to the
+
+east, breaking through with a crash!
+
+"
+E
+"smashes"
+"$n throws $mself against the ice wall to the east, breaking through it with a
+
+crash!
+
+"
+E
+"no"
+"You take a deep breath and throw yourself against the ice wall to the east,
+
+but merely bounce off and fall to the ground.
+
+"
+E
+"nos"
+"$n takes a deep breath and throws $mself against the ice wall to the east, but
+
+merely bounces off and falls to the ground.
+
+"
+E
+"dumbass"
+"The wall of ice has already been shattered.
+
+"
+E
+"break"
+"The wall of ice to the west suddenly is shattered from the other side!
+
+"
+!
+0 0 0
+-1
+S
+
+#82022
+"Windscoured Chasm"
+"The chasm is more narrow here than either north or south, forcing a biting
+
+wind to whistle through from north to south.  The rock walls and even floor of
+
+the chasm have been scoured smooth by hundreds or thousands of years of
+
+snow-blowing wind, and are free from almost any frost, snow, or ice.  Faint,
+
+blue-white trails can be made out along the rocky floor of the chasm.
+
+"
+"[Nereus] Ooze resets here
+
+[Nereus] Ooze's marmor is intentional - do not change it!
+
+"
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 82021 0 7
+D2
+""
+""
+0 -1 82023 0 6
+E
+"trails blue-white floor"
+"The floor has been scoured clean by the icy wind, leading to the conclusion
+
+that some slug-like creature has moved through the area very recently.  The
+
+trails appear to be random and have left behind a frozen, blue-white tinged
+
+layer of ice perhaps a foot across.
+
+"
+A
+""
+""
+"act_room( #wind, ch );
+
+"
+E
+"wind"
+"@BA bitter wind blows through from the north, making a resonant whistling
+
+sound through this narrow section of chasm.@n
+
+"
+!
+2 350 0
+2349 9 1509949540 3 0
+-1
+S
+
+#82023
+"A Narrowing Chasm"
+"A light dusting of snow covers the smooth gray stone of the chasm floor.  Both
+
+the walls of the chasm are ice-slicked rock, offering no easy escape.  Faint
+
+trails of ice can be made out along the snowy floor, a faint blue-white tinge
+
+that stands out against the stark whiteness.  The chasm widens to the north,
+
+while to the south it is too narrow to continue.
+
+"
+""
+301465600 0
+5 6 0
+D0
+""
+""
+0 -1 82022 0 6
+E
+"snow floor stone"
+"The chasm floor is a gray, non-descript stone that has been worn smooth,
+
+presumably by wind and weather.
+
+"
+E
+"trails blue-white ice"
+"The trails suggest a slug-like creature whose passage left behind fluid which
+
+froze.  There are quite a few of the trails, as if this area sees a lot of
+
+activity.
+
+"
+A
+"climb scale"
+"up wall east chasm"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"The chasm wall is a sheer vertical face without handholds and is coated in a
+
+thin layer of ice.
+
+"
+!
+0 0 0
+A
+"south"
+""
+"if( is_exhausted( ch ) )
+
+  continue;
+
+else
+
+  act_tochar( #narrow, ch );
+
+"
+E
+"narrow"
+"The chasm narrows too much for you to continue south.
+
+"
+!
+0 0 0
+-1
+S
+
+#82024
+"Timeworn Stone Hall"
+"Entombed in the ice, this ancient stone hall has survived unharmed for
+
+uncountable eons.  The stone of the walls is carved from a speckled charcoal
+
+stone; despite its obvious age, it shows no cracks from ice or other damage. 
+
+There is no frost, dust, or debris collected here, even though your breath
+
+fogs the air and metal rimes quickly with frost.  The western end of the hall
+
+ends abruptly a few inches before a thick wall of ice begins -- perhaps where
+
+the magic holding this chamber in such pristine condition ends and ordinary
+
+stone once began.
+
+"
+"[Nereus] no.mob
+
+"
+301596684 0
+11 7 0
+D1
+""
+""
+0 -1 82025 0 7
+D3
+""
+""
+227 -1 82021 0 7
+E
+"walls stone charcoal"
+"The stone appears as new as the day it was carved.  No marks of travel mar its
+
+surface, no dust has collected, no spiderwebs line the corners, and no frost
+
+has rimed the cold surface of the rock.  The stonework is of marvelously high
+
+quality, but no evidence of chisel marks can be found.  Perhaps this chamber
+
+was formed solely by magic, or perhaps this art of stonework has been lost to
+
+the world over the ages.
+
+"
+A
+"break smash shatter"
+"1 west wall ice"
+"if( !is_open( room, west ) ) {
+
+  if( random( 12, 18 ) < find_stat( ch, str ) ) {
+
+    act_tochar( #smash, ch );
+
+    act_notchar( #smashes, ch );
+
+    open( room, west );
+
+    send_to_room( #break, find_room( 82021 ) );
+
+    }
+
+  else {
+
+    act_tochar( #no, ch );
+
+    act_notchar( #nos, ch );
+
+    i = 2d6;
+
+    inflict( ch, NULL, i, \"crashing into a wall of ice\" );
+
+    dam_message( ch, i, \"crashing into a wall of ice\" );
+
+    set_resting( ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #dumbass, ch );
+
+"
+E
+"smash"
+"You take a deep breath and throw your shoulder against the ice wall to the
+
+west, breaking through it with a crash!
+
+"
+E
+"smashes"
+"$n throws $mself against the ice wall to the west, breaking through it with a
+
+crash!
+
+"
+E
+"break"
+"The eastern wall of ice is suddenly shattered from the other side!
+
+"
+E
+"no"
+"You take a deep breath and throw yourself against the ice wall to the west,
+
+but merely bounce off and fall to the ground.
+
+"
+E
+"nos"
+"$n takes a deep breath and throws $mself against the ice wall to the west, but
+
+merely bounces off and falls to the ground.
+
+"
+E
+"dumbass"
+"The wall of ice to the west has already been shattered.
+
+"
+!
+0 0 0
+-1
+S
+
+#82025
+"Timeworn Stone Hall"
+"A marvelous feat of magic or stonework, the hall turns abruptly from east-west
+
+to northward here.  Even for dwarven stonework, the angles are too perfect;
+
+the hall remains perfectly square, roughly twenty feet high and across,
+
+through the right angle.  The dark grey stone continues unmarked to the west
+
+and north from this turning point, the sameness and silent emptiness beginning
+
+to become unnerving.
+
+"
+""
+301596676 0
+11 6 0
+D0
+""
+""
+0 -1 82026 0 6
+D3
+""
+""
+0 -1 82024 0 7
+-1
+S
+
+#82026
+"Timeworn Stone Hall - Portal"
+"Breaking the monotony of the perfect charcoal-grey stone, a portal has been
+
+set into the eastern wall of the tunnel.  It is half again as tall as the
+
+hallway itself, perhaps as tall as a tall ogre, and wide enough to accomodate
+
+a man lying across the doorway.  Beyond the portal, you can barely make out a
+
+rectangular block of stone placed in the center of the stone room.  The
+
+perfection of the stone hallway continues to the north and south.
+
+"
+""
+301596676 0
+11 7 0
+D0
+""
+""
+0 -1 82028 0 6
+D1
+""
+""
+0 -1 82027 0 6
+D2
+""
+""
+0 -1 82025 0 6
+E
+"portal 1 east doorway"
+"The portal is roughly ten feet high and six feet across.  Inside the chamber,
+
+you can see a rectangular block of stone that could possibly be a coffin of
+
+some kind.
+
+"
+-1
+S
+
+#82027
+"Intact Sepulcher"
+"In an abrupt change from the unmarked stone hallway to the west, every inch of
+
+the walls of this chamber have been covered with intricate, spidery runes. 
+
+The walls are made of the same charcoal-grey, impossibly hard materials as the
+
+floor, ceiling, and passage that you entered to come here; it is unclear what
+
+sort of tool was used to chisel the runes into the walls.  In the exact center
+
+of the perfectly level floor, a stone coffin has been placed; soft
+
+illumination seems to come from the stone itself.
+
+"
+""
+301596676 0
+11 6 0
+D3
+""
+""
+0 -1 82026 0 6
+E
+"writing intricate spidery runes"
+"The writing is exactly the same size throughout the chamber, roughly an inch
+
+in height.  Dozens of perfectly parallel lines of the spidery runes flow
+
+around the walls, interrupted only by the portal leading west.  Every inch of
+
+the walls is covered, from a few millimeters from the ceiling to just above
+
+the floor.
+
+"
+3931 49 1509949540 -2 0
+3932 81 1509949540 -2 0
+-1
+S
+
+#82028
+"Timeworn Stone Hall"
+"Evidence of the fallability of the builders of this place, or perhaps just a
+
+failing of the magic over the eons: for whatever reason, the passage leading
+
+east from here has completely collapsed, sealing whatever lay beyond.  In
+
+other respects, this section of the hall is identical to what you can make out
+
+to the north and south; charcoal-grey walls, untouched by time, stand sentry
+
+over this ancient hall.  On the entrance to the eastern tunnel is a silvery
+
+plaque with some spidery runes engraved on its surface.
+
+"
+""
+301596676 0
+11 6 0
+D0
+""
+""
+0 -1 82029 0 6
+D2
+""
+""
+0 -1 82026 0 6
+E
+"plaque runes spidery engravings"
+"A plaque made of some untarnished silvery metal decorates the entry to the
+
+eastern tunnel.  The spidery runes are simple, there is only a single line of
+
+text.  Their meaning has been lost to time.
+
+"
+A
+"read decipher recite"
+"spidery runes plaque"
+"act_tochar( #lost, ch );
+
+"
+E
+"lost"
+"The meaning of the spidery runes has been lost over the eons since the plaque
+
+has been placed here.
+
+"
+!
+0 0 0
+A
+"get take pry"
+"plaque silvery"
+"act_tochar( #pry, ch );
+
+act_notchar( #pries, ch );
+
+"
+E
+"pry"
+"You try to pry the silvery plaque off the wall, but it is almost as if it has
+
+been fused into the stone.  The plaque will not budge.
+
+"
+E
+"pries"
+"$n tries to pry the silvery plaque off the wall, but they can't seem to budge
+
+it.
+
+"
+!
+0 0 0
+-1
+S
+
+#82029
+"Timeworn Stone Hall - Before a Decaying Portal"
+"A striking contrast to the perfection of the tunnel, the portal inset in the
+
+wall to the east appears to be near collapse.  The perfect frame of the portal
+
+sags unsteadily -- beyond you can make out only darkness.  The decay of the
+
+portal serves to illustrate the masterful workmanship of the charcoal-grey
+
+stone of the tunnel; it continues in mute flawlessness to the north and south.
+
+"
+""
+301596676 0
+11 6 0
+D0
+""
+""
+0 -1 82031 0 7
+D1
+""
+""
+0 -1 82030 0 6
+D2
+""
+""
+0 -1 82028 0 6
+E
+"portal 1 east doorway"
+"The portal sags unsteadily.  The idea that hundreds of tons of stone could
+
+come crashing down on you as you pass beneath it makes you shiver.  Beyond is
+
+only darkness.
+
+"
+-1
+S
+
+#82030
+"Ransacked Stone Crypt"
+"Once you imagine this room could have been a pristine crypt, a holy tribute to
+
+the dead.  Now, it is difficult to imagine the glory of ages past.  The
+
+northeastern corner of the room has completely collapsed, the charcoal-grey
+
+stone lining the walls backed with dark speckled granite.  Writing must have
+
+once lined all the walls in this chamber, but over ages past melting water
+
+from the collapsing ceiling above has obliterated all but a few spidery runes
+
+along the bases and near the tops of the walls.  The floor now slopes visibly
+
+to the south; it appears water once ran from north to south through the room
+
+and through a now dry crack in the southern edge of the floor.  A decaying
+
+portal inset in the western wall leads out of this dead place.
+
+"
+""
+301596686 0
+11 6 0
+D3
+""
+""
+0 -1 82029 0 6
+E
+"walls"
+"The walls once must have had writing all across them, indentations are still
+
+visible in a few places where the walls are not stained with calcium and rust,
+
+presumably from decades of water running across them.
+
+"
+E
+"floor crack"
+"A crack in the floor, perhaps two inches wide and five feet in length, leads
+
+down into darkness.
+
+"
+3768 17 1509949540 -2 0
+2745 17 1509949540 -2 0
+-1
+S
+
+#82031
+"Timeworn Stone Hall - Intersection"
+"Like the flawless construction in the tunnels south of here, the walls, floor,
+
+and ceiling are perfectly level, charcoal-grey stone.  Unlike the tunnel to
+
+the south that you entered from, there is an intersection of sorts at this
+
+point in the tunnel.  Portals flank the walls on the east and west; beyond the
+
+portal to the east is a stone chamber of the same charcoal-grey stone of the
+
+tunnel you stand in, while to the west, the chamber appears to be completely
+
+constructed of ice.  To the north, there is an abrupt line where the deep grey
+
+stone ends; whether the magic has failed beyond this point or the builders
+
+simply used a different material beyond is unknown.
+
+"
+""
+301465604 0
+11 7 0
+D0
+""
+""
+0 -1 82035 0 6
+D1
+""
+""
+0 -1 82032 0 6
+D2
+""
+""
+0 -1 82029 0 7
+D3
+""
+""
+0 -1 82033 0 6
+E
+"walls construction floor ceiling"
+"As with much of the rest of this ancient hall, the stonework is utterly
+
+without flaw.  The ceiling is perfectly parallel with the floor twenty feet
+
+below, the portals to the east and west are perfectly symetrical, and the
+
+walls are without mark, dust, or ice.
+
+"
+E
+"1 east"
+"The chamber to the east appears to be a closed chamber of sorts.  You can
+
+barely make out a soft light coming from the east; a square block of stone has
+
+been placed in the center of the chamber.
+
+"
+E
+"1 west"
+"A beautiful chamber carved from the ice lies to the west.  It appears to be
+
+quite empty.
+
+"
+-1
+S
+
+#82032
+"Intact Sepulcher"
+"Strikingly unlike the unadorned hallway to the west, the walls of this
+
+remarkably square chamber have been engraved with intricate, spidery runes. 
+
+Every surface of the walls have been covered with the writing, although the
+
+writing does not touch the perfectly carved, plain stone floor or ceiling. 
+
+The walls are constructed of the same charcoal-grey stone as the hallway to
+
+the west; what manner of material is capable of carving into them is unknown. 
+
+In the precise center of the room, a stone coffin has been placed, giving a
+
+soft glow.
+
+"
+""
+301596672 0
+5 6 0
+D3
+""
+""
+0 -1 82031 0 6
+E
+"writing spidery runes walls"
+"The writing covers every inch of all four walls, breaking only in the corners
+
+or a few millimeters from the ceiling, floor, or the portal set into the
+
+western wall.
+
+"
+A
+"read recite decipher"
+"runes writing spidery"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"There is likely noone that still lives that even knows the name of this
+
+ancient tongue, much less that can decipher its meaning.
+
+"
+!
+0 0 0
+3931 49 1509949540 -2 0
+3932 81 1509949540 -2 0
+-1
+S
+
+#82033
+"Serene Crypt of Ice"
+"The perfection of the charcoal-grey stone hallway to the east is echoed here
+
+in the opaque ice of this chamber.  The lines here are so perfect that they
+
+could only have been fashioned by magic, or perhaps some art of carving long
+
+forgotten.  The icy chamber is utterly empty, even of dust, frost, or
+
+footprints.  An archway of glimmering ice outlines a doorway in the western
+
+wall of this chamber.
+
+"
+""
+301596684 0
+11 7 0
+D1
+""
+""
+0 -1 82031 0 6
+D3
+""
+""
+0 -1 82034 0 7
+E
+"1 west archway"
+"The archway leading to the west is the one non-square aspect of the room,
+
+making its curve even more startling.  Beyond to the west, a soft, pure white
+
+light is visible, as well as two central columns of ice.
+
+"
+-1
+S
+
+#82034
+"Pristine Crypt of Ice"
+"Even the most ancient of dwarves would find themselves impressed with the
+
+construction of this crypt of ice.  The floor is perfectly smooth, opaque ice,
+
+lacking any blemish or imperfection.  The walls and ceiling are at remarkably
+
+straight right angles from one another and in equally pristine condition.  A
+
+pair of cylindrical columns of faintly lit ice stand in the center of the
+
+room, a coffin of crystalline ice between them.
+
+"
+"[Nereus] Status0 indicates that a grave has been tampered with.  This should
+
+remain until a reboot or until the knight has been killed.
+
+[Nereus] Add quest here for the witch's hand
+
+[Nereus] And some history about the witch/sir jormleif relationship
+
+"
+301596941 0
+0 7 0
+D1
+""
+""
+0 -1 82033 0 7
+E
+"columns"
+"A pair of columns flank the coffin of ice in the center of the room, giving
+
+off a soft, white light.  Unlike the coffin, the columns are made of an
+
+opaque, pure white ice.  There are no ornamentations or markings on the
+
+columns.
+
+"
+A
+""
+""
+"mob = mob_in_room( 2313, room );
+
+if( mob ) {
+
+  if( !rflag( status0, room ) && rflag( reset0, room ) ) {
+
+    if( find_stat( ch, align ) % 3 == 2 ){
+
+      if( can_see_char( mob, ch ) ) {
+
+        interpret( mob, \"yell Foul one, begone from this holy place!\" );
+
+        interpret( mob, \"kill\", ch );
+
+        remove_rflag( reset0, room );
+
+        }
+
+      }
+
+    }
+
+  }
+
+"
+!
+1 0 2
+2313 169 1509949540 3 0
+2302 2057 1509949540 3 0
+3659 49 1509949540 -2 0
+3922 81 1509949442 -2 0
+3923 81 1509949444 -2 0
+3924 81 1509949530 -2 0
+3924 81 1509949510 -2 0
+3924 81 1509949470 -2 0
+3099 81 1509949446 -2 0
+-1
+S
+
+#82035
+"Tunnel Through the Ice"
+"In stark contrast to the stone hall to the south, this tunnel is ragged and
+
+made entirely of ice.  The floor is uneven and jagged, fragments of ice
+
+crunching beneath your feet.  Stalactites of ice hang from the ceiling high
+
+above.  It slopes gently upward towards a wall of ice on the northern side;
+
+light is visible from the other side of the sheet of ice.
+
+"
+"[Nereus] No.Mob
+
+"
+301465612 0
+11 6 0
+D0
+"wall of ice"
+""
+227 -1 82036 0 6
+D2
+""
+""
+0 -1 82031 0 6
+A
+"break smash crash crush"
+"ice 1 north wall"
+"if( !is_open( room, north ) ) {
+
+  if( random( 12, 18 ) < find_stat( ch, str ) ) {
+
+    act_tochar( #smash, ch );
+
+    act_notchar( #smashes, ch );
+
+    open( room, north );
+
+    send_to_room( #break, find_room( 82021 ) );
+
+    }
+
+  else {
+
+    act_tochar( #no, ch );
+
+    act_notchar( #nos, ch );
+
+    i = 2d6;
+
+    inflict( ch, NULL, i, \"crashing into a wall of ice\" );
+
+    dam_message( ch, i, \"crashing into a wall of ice\" );
+
+set_resting( ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #dumbass, ch );
+
+"
+E
+"smash"
+"You take a deep breath and throw your shoulder against the ice wall to the
+
+north, breaking through it with a crash!
+
+"
+E
+"smashes"
+"$n throws $mself against the ice wall to the north, breaking through it with a
+
+crash!
+
+"
+E
+"break"
+"The wall of ice to the south is suddenly shattered from the other side!
+
+"
+E
+"no"
+"You take a deep breath and throw yourself against the ice wall to the north,
+
+but merely bounce off and fall to the ground.
+
+"
+E
+"nos"
+"$n takes a deep breath and throws $mself against the ice wall to the north,
+
+but $e merely bounces off and falls to the ground.
+
+"
+E
+"dumbass"
+"The ice wall to the north has already been shattered, revealing the bottom of
+
+an icy chasm beyond.
+
+"
+!
+0 0 0
+-1
+S
+
+#82036
+"Bottom of a Precipitous Chasm"
+"Slick, ice-coated rock towers high above you to the north and south, except
+
+for the base of the southern wall, which is a sheer sheet of opaque ice. 
+
+Drifts of snow have piled against the bases of the icy walls of the chasm
+
+here, while to the east and west, the chasm has collapsed far above, an
+
+impassable avalanche of rock and ice.  It seems nothing can live here for
+
+long; this icy chasm of rock and snow is inhospitable indeed.  High above,
+
+barely visible on the northern wall of the chasm, you can make out a narrow
+
+ledge.
+
+"
+""
+301465600 0
+5 6 0
+D2
+"wall of ice"
+""
+227 -1 82035 0 6
+E
+"drifts snow"
+"The drifts of snow are made of a fine dusting of snow falling from far, far
+
+above.  The wind whips through the bottom of this inhospitable place
+
+occasionally, stirring the piles and keeping too much precipitation from
+
+collecting here at the bottom.
+
+"
+E
+"1 south wall sheer sheet ice"
+"The sheer wall of ice to the south covers the base of the cavern.  It is
+
+opaque and it seems impossible to detect how thick it is.
+
+"
+E
+"ledge"
+"The ledge is perhaps a hundred feet above you, protruding from the northern
+
+face of the chasm.  The cliff seems much less steep above the ledge; if you
+
+could make it that high perhaps you could escape.
+
+"
+A
+"break smash crash crush destroy hit punch kick"
+"1 south ice wall sheet sheer"
+"act_tochar( #harmless, ch );
+
+act_notchar( #harmlesses, ch );
+
+set_resting( ch );
+
+"
+E
+"harmless"
+"You throw yourself against the sheer wall of ice to the south, but bounce
+
+harmlessly off it.
+
+"
+E
+"harmlesses"
+"$n throws $mself against the sheer wall of ice to the south, but bounces
+
+harmlessly off of it.
+
+"
+!
+0 0 0
+A
+"climb scale clamber"
+"1 up cliff"
+"if( has_obj( 3658, ch ) || has_obj( 2341, ch ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #climbs, ch );
+
+  transfer( ch, find_room( 82037 ) );
+
+  act_notchar( #climbsup, ch );
+
+  }
+
+else
+
+  act_tochar( #no, ch );
+
+"
+E
+"no"
+"The northern wall is a sheer cliff of granite, covered in a layer of almost
+
+invisible ice.  Perhaps if you had some climbing gear, you could climb up, but
+
+without any sort of equipment such a climb would be hopeless.
+
+"
+E
+"climb"
+"Using the climbing equipment, you manage to pull yourself up the cliff wall to
+
+the ledge high above.
+
+"
+E
+"climbs"
+"Using some climbing equipment, $n manages to pull $mself up to a ledge in the
+
+cliff face far above.
+
+"
+E
+"climbsup"
+"Pulling $mself up with some climbing equipment, $n climbs over the edge of the
+
+ledge and collapses next to you.
+
+"
+!
+0 0 0
+-1
+S
+
+#82037
+"Narrow Ledge on Chasm Wall"
+"Pinned against the rough chasm wall, you feel exposed here on this narrow
+
+ledge about halfway up the chasm.  High above through the dusty, falling snow,
+
+you can make out a dark shape spanning the chasm, presumably a bridge of some
+
+sort.  Further down, you can barely make out the bottom of the chasm; it is
+
+covered in slides of rock and ice and does not appear particularly hospitable.
+
+"
+""
+301465600 0
+5 6 0
+A
+"climb scale clamber"
+"1 down chasm"
+"if( has_obj( 3658, ch ) || has_obj( 2341, ch ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #climbs, ch );
+
+  transfer( ch, find_room( 82036 ) );
+
+  act_notchar( #climbsup, ch );
+
+  }
+
+else
+
+  act_tochar( #no, ch );
+
+"
+E
+"climb"
+"Using the climbing equipment, you lower yourself over the edge of the ledge
+
+and into the waiting chasm below.
+
+"
+E
+"climbs"
+"$n lowers $mself over the edge of the ledge and climbs down to the chasm floor
+
+below.
+
+"
+E
+"climbsup"
+"Using some climbing equipment, $n climbs down from the ledge above and jumps
+
+spryly down to the chasm floor beside you.
+
+"
+E
+"no"
+"You can't climb down this sheer, icy cliff face without some sort of equipment.
+
+"
+!
+0 0 0
+A
+"climb scale clamber"
+"1 north 1 up"
+"if( can_fly( ch ) ) {
+
+  act_tochar( #fly, ch );
+
+  act_notchar( #flies, ch );
+
+  transfer( ch, find_room( 82038 ) );
+
+  act_notchar( #fliesin, ch );
+
+  }
+
+if( find_skill( ch, climb ) > random( 3, 12 ) ) {
+
+  act_tochar( #climbs, ch );
+
+  act_notchar( #heclimbs, ch );
+
+  use_skill( ch, climb );
+
+  transfer( ch, find_room( 82038 ) );
+
+  act_notchar( #climbsup, ch );
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  act_notchar( #nos, ch );
+
+  }
+
+"
+E
+"climbs"
+"You manage to scale the rough cliffside to the north and pull yourself out of
+
+the chasm.
+
+"
+E
+"heclimbs"
+"$n pulls $mself up the rough cliffside to the north and pulls $mself out of
+
+the chasm.
+
+"
+E
+"fly"
+"You fly up and out of the chasm.
+
+"
+E
+"flies"
+"$n flies up and out of the chasm.
+
+"
+E
+"climbsup"
+"$n climbs up from the chasm below.
+
+"
+E
+"no"
+"You try to climb up the rough chasm wall, but slip and barely catch yourself
+
+on the narrow ledge.
+
+"
+E
+"nos"
+"$n tries to climb up the rough chasm wall to the north, but $e slips and
+
+barely catches $mself on the narrow ledge beside you.
+
+"
+E
+"fliesin"
+"$n flies in from the chasm below.
+
+"
+!
+0 0 0
+1602 17 1509949515 -2 0
+-1
+S
+
+#82038
+"North of a Narrow Bridge of Ice"
+"A breathtaking bridge of opaque ice spans a chasm to the south.  Even though
+
+it appears that further south, some of the bridge has collapsed over time, it
+
+seems mostly stable.  Sloping up and away to the north, the trail disappears
+
+in a virtual wall of snow; a blizzard of enormous proportions ebbs and flows,
+
+but remaining relatively the same size.  The chasm horseshoes around the
+
+bridgehead, apparently this is the only place the chasm is wide enough to span
+
+easily.  There are scratches along the chasm wall just next to the bridge,
+
+evidence of something climbing or being dragged over the snowy edge.
+
+"
+"[Nereus] No.Mob - nothing wandering in here
+
+"
+301465608 0
+5 7 0
+D0
+""
+""
+8192 -1 82039 0 6
+D2
+""
+""
+0 -1 82041 0 6
+E
+"bridge 1 south"
+"The bridge crosses the narrowest point of the chasm to the south.  While a
+
+good portion of the bridge has collapsed, it remains fairly stable.
+
+"
+E
+"1 north blizzard"
+"The blizzard seems almost alive, swirling, ebbing, and flowing.  Winds come in
+
+from above the chasm to the east and west, sending the snow on the trail into
+
+a storm of immense proportions.
+
+"
+E
+"chasm"
+"The chasm widens to the east and west, leaving this region as a sort of
+
+peninsula where the chasm is the most narrow.  A logical place to put a
+
+bridge.  The bottom of the chasm is lost to the white far below.
+
+"
+E
+"scratches wall"
+"Leaning carefully over the edge of the chasm, it seems like the slope is more
+
+gentle immediately on the western side of the bridge.  It seems as if someone
+
+or something has recently climbed down to a ledge far below on the northern
+
+wall of the chasm.
+
+"
+A
+"climb clamber scale"
+"1 down cliff"
+"if( can_fly( ch ) ) {
+
+  act_tochar( #fly, ch );
+
+  act_notchar( #flies, ch );
+
+  transfer( ch, find_room( 82037 ) );
+
+act_notchar( #fliesin, ch );
+
+  }
+
+if( find_skill( ch, climb ) > random( 3, 12 ) ) {
+
+  act_tochar( #climbs, ch );
+
+  act_notchar( #heclimbs, ch );
+
+  use_skill( ch, climb );
+
+  transfer( ch, find_room( 82037 ) );
+
+  act_notchar( #climbsup, ch );
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  act_notchar( #nos, ch );
+
+  }
+
+"
+E
+"fly"
+"You fly down into the chasm.
+
+"
+E
+"flies"
+"$n flies down into the chasm.
+
+"
+E
+"fliesin"
+"$n flies in from above.
+
+"
+E
+"climbs"
+"You lower yourself over the edge of the chasm and climb to the ledge below.
+
+"
+E
+"heclimbs"
+"$n lowers $mself over the edge of the chasm and climbs down to a narrow ledge
+
+below.
+
+"
+E
+"climbsup"
+"$n climbs down the cliff wall and joins you on the narrow ledge.
+
+"
+E
+"no"
+"You start to lower yourself over the cliff edge, but nearly slip and tumble in.
+
+"
+E
+"nos"
+"$n starts to lower $mself over the cliff edge, but $e nearly slips and tumbles
+
+into the chasm.
+
+"
+!
+0 0 0
+-1
+S
+
+#82039
+"Blinding Snow"
+"Whirling, dizzying white is all you can make out.  The snow at your feet is
+
+fresh; whether this is some new precipitation or older snow being blown from
+
+the mountain far above is not clear.  It seems even the yeti that are rumored
+
+to be so plentiful in the pass avoid this area.
+
+"
+"[Nereus] no.scan if that works
+
+[Nereus] This room is very mazey, just have to keep trying until you get out somewhere
+
+[Nereus] Room Finished
+
+"
+301465664 0
+17 6 0
+D0
+""
+""
+8192 -1 82040 0 9
+D2
+""
+""
+8192 -1 82038 0 6
+A
+"scan"
+"1 east 1 west 1 south 1 north"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"@WYou can see nothing but falling snow in any direction.@n
+
+"
+!
+0 0 0
+A
+"scan"
+""
+"acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( find_stat( ch, level ) > 93 )
+
+  continue;
+
+if( is_exhausted( ch ) || is_follower( ch ) || !is_standing( ch ) )
+
+  continue;
+
+i = 15;
+
+if( find_stat( ch, wis ) > 15 )
+
+  i = i - 2;
+
+if( find_stat( ch, int ) > 16 )
+
+  i = i - 2;
+
+if( is_player( ch ) ) {
+
+  if( class( ch ) == ranger )
+
+    i = i - 5;
+
+  }
+
+if( race( ch ) == elf )
+
+  i = i - 1;
+
+if( race( ch ) == dwarf )
+
+  i = i - 2;
+
+j = random( 1, i );
+
+if( j == 3 ) {
+
+  act_tochar( #makesout, ch );
+
+  continue;
+
+  }
+
+else {
+
+  act_tochar( #try, ch );
+
+  transfer( ch, find_room( 82039 ) );
+
+  modify_move( ch, -20 );
+
+  modify_move( ch, -1 );
+
+  loop( followers ) {
+
+    if( is_exhausted( rch ) || !is_standing( rch ) ) {
+
+      act_tochar( #tooexhausted, rch );
+
+      act_tochar( #hestired, ch );
+
+      }
+
+    else {
+
+      act_tochar( #follow, rch );
+
+      act_tochar( #follows, ch );
+
+      transfer( rch, find_room( 82039 ) );
+
+      modify_move( rch, -20 );
+
+      modify_move( rch, -1 );
+
+      }
+
+    }
+
+  }
+
+"
+E
+"try"
+"@BYou try to make your way out of this terrible blizzard, but it is difficult
+
+to tell if you are making any progress.@n
+
+"
+E
+"makesout"
+"Finally, you stumble out of the blizzard into the clear air.
+
+"
+E
+"tooexhausted"
+"You are too exhausted to continue through the blizzard.
+
+"
+E
+"hestired"
+"A dimly visible shape that appears to have been following you collapses into
+
+the snow, too tired to follow.
+
+"
+E
+"follow"
+"You follow through the blinding snow, hoping to be free of the blizzard.
+
+"
+E
+"follows"
+"Someone follows you through the blinding snow.
+
+"
+!
+3 0 5
+A
+""
+""
+"act_room( #freeze, ch );
+
+loop( all_in_room ) {
+
+  i = 4d4+10;
+
+  cold_message( rch, i, \"the icy wind\" );
+
+  inflict_cold( rch, null, i, \"freezing to death\" );
+
+}
+
+"
+E
+"freeze"
+"@BA chill wind freezes you to the bone, draining you of what little precious
+
+heat remains.@n
+
+"
+!
+2 600 0
+-1
+S
+
+#82040
+"Through the Wall of Snow"
+"A scene of terrible carnage, the snow has been churned about all around this
+
+empty plateau.  Splatters of blood are evident in a dozen patches through the
+
+snow, some bright red and some so dark almost to be black.  East and west of
+
+this snowy plain, cliff edges abruptly drop into blackness; if it were snowing
+
+here you have little doubt that it would be simple to wander off a cliff into
+
+oblivion.  To the south, a blizzard rages, snow blown madly about from the
+
+winds that blast across from east and west.
+
+"
+""
+301465672 0
+5 9 0
+D0
+""
+""
+0 -1 29000 0 9
+D2
+""
+""
+8192 -1 82039 0 9
+E
+"blood patches splatters"
+"Great volumes of blood have been emptied all around this snowy plain.  The
+
+blood appears to be of two varieties: most of it is a bright, ordinary-looking
+
+red, while a few splashes are dark, rusty brown.
+
+"
+E
+"1 south blizzard"
+"The snow swirls maddeningly, almost hypnotically, to the south.  Cold air
+
+falling off the plateau to the north into the chasm crosses the trail from
+
+both sides, carrying with it snow and upsetting the precipitation already
+
+piled on the trail.
+
+"
+A
+""
+""
+"if( !is_sleeping( ch ) )
+
+  act_tochar( #wind, ch );
+
+"
+E
+"wind"
+"A swirling wind, carrying a flurry of snow, gusts in from the blizzard visible
+
+to the south.
+
+"
+!
+2 300 0
+3935 17 1509949540 -2 0
+-1
+S
+
+#82041
+"On a Precipitous Span of Ice"
+"This bridge is a magnificent feat of engineering.  Made entirely of what
+
+appears to be a single enormous block of ice, at one time this bridge likely
+
+would have been wide enough to accomodate two wagons travelling side by side. 
+
+Long ago, the western side of the bridge tumbled into the fissure below,
+
+leaving only the eastern half wide enough to accomodate a brave horse and
+
+rider.  A railing is visible on the east side, with evidence near the base
+
+that it once had intricate carvings.  Whatever engineering or magic held this
+
+bridge together appears to have weakened but the bridge as it is still seems
+
+sturdy enough.
+
+"
+""
+301465608 0
+5 6 0
+D0
+""
+""
+0 -1 82038 0 6
+D2
+""
+""
+0 -1 82017 0 6
+E
+"bridge"
+"The bridge was carved or perhaps created magically from a single block of
+
+ice.  The western half has since collapsed into the chasm below along a rough
+
+fissure down the center.
+
+"
+E
+"railing carvings intricate"
+"The railings are worn down, whether from eons of travellers passing over them
+
+or the centuries of weather is not evident.  The writing at the base of the
+
+railing has nearly been obliterated over time; a few barely visible spidery
+
+runes are carved into the ice near the base.
+
+"
+E
+"fissure chasm 1 down"
+"The fissure opens into nothingness below the icy span.  The fall could be
+
+miles until the bottom of the chasm lost in the swirling snow far below.
+
+"
+A
+""
+""
+"act_tochar( #howl, ch );
+
+"
+E
+"howl"
+"@BA low, mournful sound echoes from below the bridge -- wind whipping through
+
+the chasm.@n
+
+"
+!
+2 250 0
+-1
+S
+
+#0
+

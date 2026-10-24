@@ -1,0 +1,3805 @@
+#AREA
+"Southern Trade Road"
+"Terek Olah Merior"
+""
+0 0
+6
+0
+#ROOMS
+
+#77250
+"Southern Trade Road"
+"To your north is a great iron @bportcullis@n, built into a massive stone
+
+tower.  From that direction, you can hear the sounds of sheep baa-ing,
+
+cows mooing, and noises reminiscent of a farming village.  A wide road of
+
+earth stretches to the south, its red surface standing out in sharp
+
+contrast to the nearby green hills.
+
+"
+"[Merior] add actions to knock or whatever on the gate
+
+"
+301465601 0
+12 9 0
+E
+"1 north portcullis"
+"The great iron portcullis is formed of close bars of thick iron that are
+
+only barely begining to show signs of rust.  Someone must take great care
+
+in the upkeep of such a sturdy work, that or perhaps it is touched by
+
+magic to slow its aging?  A careful inspection shows there is no locking
+
+mechanism, the portcullis is merely closed.  Its unlikely a score of ents
+
+or ogres could even budge its massive weight.
+
+"
+-1
+S
+
+#77275
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D2
+""
+""
+0 -1 77276 0 9
+-1
+S
+
+#77276
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77275 0 9
+D2
+""
+""
+0 -1 77277 0 9
+-1
+S
+
+#77277
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77276 0 9
+D2
+""
+""
+0 -1 77278 0 9
+-1
+S
+
+#77278
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77277 0 9
+D3
+""
+""
+0 -1 77279 0 9
+-1
+S
+
+#77279
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77278 0 9
+D2
+""
+""
+0 -1 77280 0 9
+-1
+S
+
+#77280
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77279 0 9
+D3
+""
+""
+0 -1 77281 0 9
+-1
+S
+
+#77281
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77280 0 9
+D2
+""
+""
+0 -1 77282 0 9
+-1
+S
+
+#77282
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77281 0 9
+D2
+""
+""
+0 -1 77283 0 9
+-1
+S
+
+#77283
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77282 0 9
+D2
+""
+""
+0 -1 77284 0 9
+-1
+S
+
+#77284
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77283 0 9
+D2
+""
+""
+0 -1 77285 0 9
+-1
+S
+
+#77285
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77284 0 9
+D1
+""
+""
+0 -1 77286 0 9
+-1
+S
+
+#77286
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D2
+""
+""
+0 -1 77287 0 9
+D3
+""
+""
+0 -1 77285 0 9
+-1
+S
+
+#77287
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77286 0 9
+D2
+""
+""
+0 -1 77288 0 9
+-1
+S
+
+#77288
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77287 0 9
+D2
+""
+""
+0 -1 77289 0 9
+-1
+S
+
+#77289
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77288 0 9
+D2
+""
+""
+0 -1 77290 0 9
+-1
+S
+
+#77290
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77289 0 9
+D3
+""
+""
+0 -1 77291 0 9
+-1
+S
+
+#77291
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77290 0 9
+D3
+""
+""
+0 -1 77292 0 9
+-1
+S
+
+#77292
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77291 0 9
+D2
+""
+""
+0 -1 77293 0 9
+-1
+S
+
+#77293
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77292 0 9
+D2
+""
+""
+0 -1 77294 0 9
+-1
+S
+
+#77294
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77293 0 9
+D3
+""
+""
+0 -1 77295 0 9
+-1
+S
+
+#77295
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77294 0 9
+D2
+""
+""
+0 -1 77296 0 9
+-1
+S
+
+#77296
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77295 0 9
+D2
+""
+""
+0 -1 77297 0 9
+-1
+S
+
+#77297
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77296 0 9
+D1
+""
+""
+0 -1 77298 0 9
+-1
+S
+
+#77298
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D2
+""
+""
+0 -1 77299 0 9
+D3
+""
+""
+0 -1 77297 0 9
+-1
+S
+
+#77299
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77298 0 9
+D2
+""
+""
+0 -1 77300 0 9
+-1
+S
+
+#77300
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77299 0 9
+D2
+""
+""
+0 -1 77301 0 9
+-1
+S
+
+#77301
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77300 0 9
+D2
+""
+""
+0 -1 77302 0 9
+-1
+S
+
+#77302
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77301 0 9
+D2
+""
+""
+0 -1 77303 0 9
+-1
+S
+
+#77303
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77302 0 9
+D2
+""
+""
+0 -1 77304 0 9
+-1
+S
+
+#77304
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77303 0 9
+D3
+""
+""
+0 -1 77305 0 9
+-1
+S
+
+#77305
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77304 0 9
+D2
+""
+""
+0 -1 77306 0 9
+-1
+S
+
+#77306
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77305 0 9
+D1
+""
+""
+0 -1 77307 0 9
+-1
+S
+
+#77307
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D2
+""
+""
+0 -1 77308 0 9
+D3
+""
+""
+0 -1 77306 0 9
+-1
+S
+
+#77308
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77307 0 9
+D3
+""
+""
+0 -1 77309 0 9
+-1
+S
+
+#77309
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77308 0 9
+D2
+""
+""
+0 -1 77310 0 9
+-1
+S
+
+#77310
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77309 0 9
+D2
+""
+""
+0 -1 77311 0 9
+-1
+S
+
+#77311
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77310 0 9
+D2
+""
+""
+0 -1 77312 0 9
+-1
+S
+
+#77312
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77311 0 9
+D2
+""
+""
+0 -1 77313 0 9
+-1
+S
+
+#77313
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77312 0 9
+D3
+""
+""
+0 -1 77314 0 9
+-1
+S
+
+#77314
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77313 0 9
+D2
+""
+""
+0 -1 77316 0 9
+-1
+S
+
+#77315
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77319 0 9
+D2
+""
+""
+0 -1 77320 0 9
+-1
+S
+
+#77316
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77314 0 9
+D2
+""
+""
+0 -1 77317 0 9
+-1
+S
+
+#77317
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77316 0 9
+D3
+""
+""
+0 -1 77318 0 9
+-1
+S
+
+#77318
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77317 0 9
+D2
+""
+""
+0 -1 77319 0 9
+-1
+S
+
+#77319
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77318 0 9
+D2
+""
+""
+0 -1 77315 0 9
+-1
+S
+
+#77320
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77315 0 9
+D2
+""
+""
+0 -1 77321 0 9
+-1
+S
+
+#77321
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77320 0 9
+D2
+""
+""
+0 -1 77322 0 9
+-1
+S
+
+#77322
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77321 0 9
+D3
+""
+""
+0 -1 77323 0 9
+-1
+S
+
+#77323
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77322 0 9
+D2
+""
+""
+0 -1 77324 0 9
+-1
+S
+
+#77324
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77323 0 9
+D2
+""
+""
+0 -1 77325 0 9
+-1
+S
+
+#77325
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77324 0 9
+D2
+""
+""
+0 -1 77326 0 9
+-1
+S
+
+#77326
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77325 0 9
+D2
+""
+""
+0 -1 77327 0 9
+-1
+S
+
+#77327
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77326 0 9
+D2
+""
+""
+0 -1 77328 0 9
+-1
+S
+
+#77328
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77327 0 9
+D2
+""
+""
+0 -1 77329 0 9
+-1
+S
+
+#77329
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77328 0 9
+D2
+""
+""
+0 -1 77330 0 9
+-1
+S
+
+#77330
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77329 0 9
+D2
+""
+""
+0 -1 77331 0 9
+-1
+S
+
+#77331
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77330 0 9
+D2
+""
+""
+0 -1 77332 0 9
+-1
+S
+
+#77332
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77331 0 9
+D2
+""
+""
+0 -1 77333 0 9
+-1
+S
+
+#77333
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77332 0 9
+D2
+""
+""
+0 -1 77334 0 9
+-1
+S
+
+#77334
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77333 0 9
+D1
+""
+""
+0 -1 77335 0 9
+-1
+S
+
+#77335
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D2
+""
+""
+0 -1 77336 0 9
+D3
+""
+""
+0 -1 77334 0 9
+-1
+S
+
+#77336
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77335 0 9
+D1
+""
+""
+0 -1 77337 0 9
+-1
+S
+
+#77337
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D2
+""
+""
+0 -1 77338 0 9
+D3
+""
+""
+0 -1 77336 0 9
+-1
+S
+
+#77338
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77337 0 9
+D2
+""
+""
+0 -1 77339 0 9
+-1
+S
+
+#77339
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77338 0 9
+D3
+""
+""
+0 -1 77340 0 9
+-1
+S
+
+#77340
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77339 0 9
+D2
+""
+""
+0 -1 77341 0 9
+-1
+S
+
+#77341
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77340 0 9
+D3
+""
+""
+0 -1 77342 0 9
+-1
+S
+
+#77342
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77341 0 9
+D2
+""
+""
+0 -1 77343 0 9
+-1
+S
+
+#77343
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77342 0 9
+D3
+""
+""
+0 -1 77344 0 9
+-1
+S
+
+#77344
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77343 0 9
+D3
+""
+""
+0 -1 77345 0 9
+-1
+S
+
+#77345
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77344 0 9
+D3
+""
+""
+0 -1 77346 0 9
+-1
+S
+
+#77346
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77345 0 9
+D3
+""
+""
+0 -1 77347 0 9
+-1
+S
+
+#77347
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77346 0 9
+D3
+""
+""
+0 -1 77348 0 9
+-1
+S
+
+#77348
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77347 0 9
+D2
+""
+""
+0 -1 77349 0 9
+-1
+S
+
+#77349
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77348 0 9
+D2
+""
+""
+0 -1 77350 0 9
+-1
+S
+
+#77350
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77349 0 9
+D2
+""
+""
+0 -1 77351 0 9
+-1
+S
+
+#77351
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77350 0 9
+D2
+""
+""
+0 -1 77352 0 9
+-1
+S
+
+#77352
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77351 0 9
+D2
+""
+""
+0 -1 77353 0 9
+-1
+S
+
+#77353
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77352 0 9
+D1
+""
+""
+0 -1 77354 0 9
+D2
+""
+""
+0 -1 77414 0 9
+D3
+""
+""
+0 -1 77420 0 9
+-1
+S
+
+#77354
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77439 0 9
+D2
+""
+""
+0 -1 77355 0 9
+D3
+""
+""
+0 -1 77353 0 9
+-1
+S
+
+#77355
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77354 0 9
+D1
+""
+""
+0 -1 77438 0 9
+D2
+""
+""
+0 -1 77356 0 9
+D3
+""
+""
+0 -1 77414 0 9
+-1
+S
+
+#77356
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77355 0 9
+D1
+""
+""
+0 -1 77421 0 9
+D2
+""
+""
+0 -1 77357 0 9
+D3
+""
+""
+0 -1 77397 0 9
+-1
+S
+
+#77357
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77356 0 9
+D1
+""
+""
+0 -1 77396 0 9
+D2
+""
+""
+0 -1 77358 0 9
+D3
+""
+""
+0 -1 77378 0 9
+-1
+S
+
+#77358
+"Southern Trade Road"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77357 0 9
+D1
+""
+""
+0 -1 77379 0 9
+D2
+""
+""
+0 -1 77359 0 9
+D3
+""
+""
+0 -1 77361 0 9
+-1
+S
+
+#77359
+"Southern Trade Road - Near the Gates of Shadybrook"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77358 0 9
+-1
+S
+
+#77361
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77378 0 9
+D1
+""
+""
+0 -1 77358 0 9
+-1
+S
+
+#77362
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77377 0 9
+D3
+""
+""
+0 -1 77363 0 9
+-1
+S
+
+#77363
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77376 0 9
+D1
+""
+""
+0 -1 77362 0 9
+D3
+""
+""
+0 -1 77364 0 9
+-1
+S
+
+#77364
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77375 0 9
+D1
+""
+""
+0 -1 77363 0 9
+D3
+""
+""
+0 -1 77365 0 9
+-1
+S
+
+#77365
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77374 0 9
+D1
+""
+""
+0 -1 77364 0 9
+D3
+""
+""
+0 -1 77366 0 9
+-1
+S
+
+#77366
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77373 0 9
+D1
+""
+""
+0 -1 77365 0 9
+D3
+""
+""
+0 -1 77367 0 9
+-1
+S
+
+#77367
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77372 0 9
+D1
+""
+""
+0 -1 77366 0 9
+D3
+""
+""
+0 -1 77368 0 9
+-1
+S
+
+#77368
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77371 0 9
+D1
+""
+""
+0 -1 77367 0 9
+D3
+""
+""
+0 -1 77369 0 9
+-1
+S
+
+#77369
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77370 0 9
+D1
+""
+""
+0 -1 77368 0 9
+-1
+S
+
+#77370
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77405 0 9
+D1
+""
+""
+0 -1 77371 0 9
+D2
+""
+""
+0 -1 77369 0 9
+-1
+S
+
+#77371
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77404 0 9
+D1
+""
+""
+0 -1 77372 0 9
+D2
+""
+""
+0 -1 77368 0 9
+D3
+""
+""
+0 -1 77370 0 9
+-1
+S
+
+#77372
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77403 0 9
+D1
+""
+""
+0 -1 77373 0 9
+D2
+""
+""
+0 -1 77367 0 9
+D3
+""
+""
+0 -1 77371 0 9
+-1
+S
+
+#77373
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77402 0 9
+D1
+""
+""
+0 -1 77374 0 9
+D2
+""
+""
+0 -1 77366 0 9
+D3
+""
+""
+0 -1 77372 0 9
+-1
+S
+
+#77374
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77401 0 9
+D1
+""
+""
+0 -1 77375 0 9
+D2
+""
+""
+0 -1 77365 0 9
+D3
+""
+""
+0 -1 77373 0 9
+-1
+S
+
+#77375
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77400 0 9
+D1
+""
+""
+0 -1 77376 0 9
+D2
+""
+""
+0 -1 77364 0 9
+D3
+""
+""
+0 -1 77374 0 9
+-1
+S
+
+#77376
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77399 0 9
+D1
+""
+""
+0 -1 77377 0 9
+D2
+""
+""
+0 -1 77363 0 9
+D3
+""
+""
+0 -1 77375 0 9
+-1
+S
+
+#77377
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77398 0 9
+D1
+""
+""
+0 -1 77378 0 9
+D2
+""
+""
+0 -1 77362 0 9
+D3
+""
+""
+0 -1 77376 0 9
+-1
+S
+
+#77378
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77397 0 9
+D1
+""
+""
+0 -1 77357 0 9
+D2
+""
+""
+0 -1 77361 0 9
+D3
+""
+""
+0 -1 77377 0 9
+-1
+S
+
+#77379
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77396 0 9
+D1
+""
+""
+0 -1 77380 0 9
+D3
+""
+""
+0 -1 77358 0 9
+-1
+S
+
+#77380
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77395 0 9
+D1
+""
+""
+0 -1 77381 0 9
+D3
+""
+""
+0 -1 77379 0 9
+-1
+S
+
+#77381
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77394 0 9
+D1
+""
+""
+0 -1 77382 0 9
+D3
+""
+""
+0 -1 77380 0 9
+-1
+S
+
+#77382
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77393 0 9
+D1
+""
+""
+0 -1 77383 0 9
+D3
+""
+""
+0 -1 77381 0 9
+-1
+S
+
+#77383
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77392 0 9
+D1
+""
+""
+0 -1 77384 0 9
+D3
+""
+""
+0 -1 77382 0 9
+-1
+S
+
+#77384
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77391 0 9
+D1
+""
+""
+0 -1 77385 0 9
+D3
+""
+""
+0 -1 77383 0 9
+-1
+S
+
+#77385
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77390 0 9
+D1
+""
+""
+0 -1 77386 0 9
+D3
+""
+""
+0 -1 77384 0 5
+-1
+S
+
+#77386
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77389 0 9
+D1
+""
+""
+0 -1 77387 0 9
+D3
+""
+""
+0 -1 77385 0 9
+-1
+S
+
+#77387
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77388 0 9
+D3
+""
+""
+0 -1 77386 0 9
+-1
+S
+
+#77388
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77429 0 9
+D2
+""
+""
+0 -1 77387 0 9
+D3
+""
+""
+0 -1 77389 0 9
+-1
+S
+
+#77389
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77428 0 9
+D1
+""
+""
+0 -1 77388 0 9
+D2
+""
+""
+0 -1 77386 0 9
+D3
+""
+""
+0 -1 77390 0 9
+-1
+S
+
+#77390
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77427 0 9
+D1
+""
+""
+0 -1 77389 0 9
+D2
+""
+""
+0 -1 77385 0 9
+D3
+""
+""
+0 -1 77391 0 9
+-1
+S
+
+#77391
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77426 0 9
+D1
+""
+""
+0 -1 77390 0 9
+D2
+""
+""
+0 -1 77384 0 9
+D3
+""
+""
+0 -1 77392 0 9
+-1
+S
+
+#77392
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77425 0 9
+D1
+""
+""
+0 -1 77391 0 9
+D2
+""
+""
+0 -1 77383 0 9
+D3
+""
+""
+0 -1 77393 0 9
+-1
+S
+
+#77393
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77424 0 9
+D1
+""
+""
+0 -1 77392 0 9
+D2
+""
+""
+0 -1 77382 0 9
+D3
+""
+""
+0 -1 77394 0 9
+-1
+S
+
+#77394
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77423 0 9
+D1
+""
+""
+0 -1 77393 0 9
+D2
+""
+""
+0 -1 77381 0 9
+D3
+""
+""
+0 -1 77395 0 9
+-1
+S
+
+#77395
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77422 0 9
+D1
+""
+""
+0 -1 77394 0 9
+D2
+""
+""
+0 -1 77380 0 9
+D3
+""
+""
+0 -1 77396 0 9
+-1
+S
+
+#77396
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77421 0 9
+D1
+""
+""
+0 -1 77395 0 9
+D2
+""
+""
+0 -1 77379 0 9
+D3
+""
+""
+0 -1 77357 0 9
+-1
+S
+
+#77397
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77414 0 9
+D1
+""
+""
+0 -1 77356 0 9
+D2
+""
+""
+0 -1 77378 0 9
+D3
+""
+""
+0 -1 77398 0 9
+-1
+S
+
+#77398
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77413 0 9
+D1
+""
+""
+0 -1 77397 0 9
+D2
+""
+""
+0 -1 77377 0 9
+D3
+""
+""
+0 -1 77399 0 9
+-1
+S
+
+#77399
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77412 0 9
+D1
+""
+""
+0 -1 77398 0 9
+D2
+""
+""
+0 -1 77376 0 9
+D3
+""
+""
+0 -1 77400 0 9
+-1
+S
+
+#77400
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77411 0 9
+D1
+""
+""
+0 -1 77399 0 9
+D2
+""
+""
+0 -1 77375 0 9
+D3
+""
+""
+0 -1 77401 0 9
+-1
+S
+
+#77401
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77410 0 9
+D1
+""
+""
+0 -1 77400 0 9
+D2
+""
+""
+0 -1 77374 0 9
+D3
+""
+""
+0 -1 77402 0 9
+-1
+S
+
+#77402
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77409 0 9
+D1
+""
+""
+0 -1 77401 0 9
+D2
+""
+""
+0 -1 77373 0 9
+D3
+""
+""
+0 -1 77403 0 9
+-1
+S
+
+#77403
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77408 0 9
+D1
+""
+""
+0 -1 77402 0 9
+D2
+""
+""
+0 -1 77372 0 9
+D3
+""
+""
+0 -1 77404 0 9
+-1
+S
+
+#77404
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77407 0 9
+D1
+""
+""
+0 -1 77403 0 9
+D2
+""
+""
+0 -1 77371 0 9
+D3
+""
+""
+0 -1 77405 0 9
+-1
+S
+
+#77405
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77406 0 9
+D1
+""
+""
+0 -1 77404 0 9
+D2
+""
+""
+0 -1 77370 0 9
+-1
+S
+
+#77406
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77407 0 9
+D2
+""
+""
+0 -1 77405 0 9
+-1
+S
+
+#77407
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77408 0 9
+D2
+""
+""
+0 -1 77404 0 9
+D3
+""
+""
+0 -1 77406 0 9
+-1
+S
+
+#77408
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77415 0 9
+D1
+""
+""
+0 -1 77409 0 9
+D2
+""
+""
+0 -1 77403 0 9
+D3
+""
+""
+0 -1 77407 0 9
+-1
+S
+
+#77409
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77416 0 9
+D1
+""
+""
+0 -1 77410 0 9
+D2
+""
+""
+0 -1 77402 0 9
+D3
+""
+""
+0 -1 77408 0 9
+-1
+S
+
+#77410
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77417 0 9
+D1
+""
+""
+0 -1 77411 0 9
+D2
+""
+""
+0 -1 77401 0 9
+D3
+""
+""
+0 -1 77409 0 9
+-1
+S
+
+#77411
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77418 0 9
+D1
+""
+""
+0 -1 77412 0 9
+D2
+""
+""
+0 -1 77400 0 9
+D3
+""
+""
+0 -1 77410 0 9
+-1
+S
+
+#77412
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77419 0 9
+D1
+""
+""
+0 -1 77413 0 9
+D2
+""
+""
+0 -1 77399 0 9
+D3
+""
+""
+0 -1 77411 0 9
+-1
+S
+
+#77413
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77420 0 9
+D1
+""
+""
+0 -1 77414 0 9
+D2
+""
+""
+0 -1 77398 0 9
+D3
+""
+""
+0 -1 77412 0 9
+-1
+S
+
+#77414
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77353 0 9
+D1
+""
+""
+0 -1 77355 0 9
+D2
+""
+""
+0 -1 77397 0 9
+D3
+""
+""
+0 -1 77413 0 9
+-1
+S
+
+#77415
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77416 0 9
+D2
+""
+""
+0 -1 77408 0 9
+-1
+S
+
+#77416
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77417 0 9
+D2
+""
+""
+0 -1 77409 0 9
+D3
+""
+""
+0 -1 77415 0 9
+-1
+S
+
+#77417
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77418 0 9
+D2
+""
+""
+0 -1 77410 0 9
+D3
+""
+""
+0 -1 77416 0 9
+-1
+S
+
+#77418
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77419 0 9
+D2
+""
+""
+0 -1 77411 0 9
+D3
+""
+""
+0 -1 77417 0 9
+-1
+S
+
+#77419
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77420 0 9
+D2
+""
+""
+0 -1 77412 0 9
+D3
+""
+""
+0 -1 77418 0 9
+-1
+S
+
+#77420
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77353 0 9
+D2
+""
+""
+0 -1 77413 0 9
+D3
+""
+""
+0 -1 77419 0 9
+-1
+S
+
+#77421
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77438 0 9
+D1
+""
+""
+0 -1 77422 0 9
+D2
+""
+""
+0 -1 77396 0 9
+D3
+""
+""
+0 -1 77356 0 9
+-1
+S
+
+#77422
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77437 0 9
+D1
+""
+""
+0 -1 77423 0 9
+D2
+""
+""
+0 -1 77395 0 9
+D3
+""
+""
+0 -1 77421 0 9
+-1
+S
+
+#77423
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77436 0 9
+D1
+""
+""
+0 -1 77424 0 9
+D2
+""
+""
+0 -1 77394 0 9
+D3
+""
+""
+0 -1 77422 0 9
+-1
+S
+
+#77424
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77435 0 9
+D1
+""
+""
+0 -1 77425 0 9
+D2
+""
+""
+0 -1 77393 0 9
+D3
+""
+""
+0 -1 77423 0 9
+-1
+S
+
+#77425
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77434 0 9
+D1
+""
+""
+0 -1 77426 0 9
+D2
+""
+""
+0 -1 77392 0 9
+D3
+""
+""
+0 -1 77424 0 9
+-1
+S
+
+#77426
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77433 0 9
+D1
+""
+""
+0 -1 77427 0 9
+D2
+""
+""
+0 -1 77391 0 9
+D3
+""
+""
+0 -1 77425 0 9
+-1
+S
+
+#77427
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77432 0 9
+D1
+""
+""
+0 -1 77428 0 9
+D2
+""
+""
+0 -1 77390 0 9
+D3
+""
+""
+0 -1 77426 0 9
+-1
+S
+
+#77428
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77431 0 9
+D1
+""
+""
+0 -1 77429 0 9
+D2
+""
+""
+0 -1 77389 0 9
+D3
+""
+""
+0 -1 77427 0 9
+-1
+S
+
+#77429
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77430 0 9
+D2
+""
+""
+0 -1 77388 0 9
+D3
+""
+""
+0 -1 77428 0 9
+-1
+S
+
+#77430
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D2
+""
+""
+0 -1 77429 0 9
+D3
+""
+""
+0 -1 77431 0 9
+-1
+S
+
+#77431
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77430 0 9
+D2
+""
+""
+0 -1 77428 0 9
+D3
+""
+""
+0 -1 77432 0 9
+-1
+S
+
+#77432
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77445 0 9
+D1
+""
+""
+0 -1 77431 0 9
+D2
+""
+""
+0 -1 77427 0 9
+D3
+""
+""
+0 -1 77433 0 9
+-1
+S
+
+#77433
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77444 0 9
+D1
+""
+""
+0 -1 77432 0 9
+D2
+""
+""
+0 -1 77426 0 9
+D3
+""
+""
+0 -1 77434 0 9
+-1
+S
+
+#77434
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77443 0 9
+D1
+""
+""
+0 -1 77433 0 9
+D2
+""
+""
+0 -1 77425 0 9
+D3
+""
+""
+0 -1 77435 0 9
+-1
+S
+
+#77435
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77442 0 9
+D1
+""
+""
+0 -1 77434 0 9
+D2
+""
+""
+0 -1 77424 0 9
+D3
+""
+""
+0 -1 77436 0 9
+-1
+S
+
+#77436
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77441 0 9
+D1
+""
+""
+0 -1 77435 0 9
+D2
+""
+""
+0 -1 77423 0 9
+D3
+""
+""
+0 -1 77437 0 9
+-1
+S
+
+#77437
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77440 0 9
+D1
+""
+""
+0 -1 77436 0 9
+D2
+""
+""
+0 -1 77422 0 9
+D3
+""
+""
+0 -1 77438 0 9
+-1
+S
+
+#77438
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D0
+""
+""
+0 -1 77439 0 9
+D1
+""
+""
+0 -1 77437 0 9
+D2
+""
+""
+0 -1 77421 0 9
+D3
+""
+""
+0 -1 77355 0 9
+-1
+S
+
+#77439
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77440 0 9
+D2
+""
+""
+0 -1 77438 0 9
+D3
+""
+""
+0 -1 77354 0 9
+-1
+S
+
+#77440
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77441 0 9
+D2
+""
+""
+0 -1 77437 0 9
+D3
+""
+""
+0 -1 77439 0 9
+-1
+S
+
+#77441
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77442 0 9
+D2
+""
+""
+0 -1 77436 0 9
+D3
+""
+""
+0 -1 77440 0 9
+-1
+S
+
+#77442
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77443 0 9
+D2
+""
+""
+0 -1 77435 0 9
+D3
+""
+""
+0 -1 77441 0 9
+-1
+S
+
+#77443
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77444 0 9
+D2
+""
+""
+0 -1 77434 0 9
+D3
+""
+""
+0 -1 77442 0 9
+-1
+S
+
+#77444
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D1
+""
+""
+0 -1 77445 0 9
+D2
+""
+""
+0 -1 77433 0 9
+D3
+""
+""
+0 -1 77443 0 9
+-1
+S
+
+#77445
+"Shadybrook Wilds - Across a Grassy Plain"
+"Under Construction.
+
+"
+""
+301465601 0
+12 9 0
+D2
+""
+""
+0 -1 77432 0 9
+D3
+""
+""
+0 -1 77444 0 9
+-1
+S
+
+#0
+

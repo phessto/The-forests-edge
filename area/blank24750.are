@@ -1,0 +1,336 @@
+#AREA
+"COVE Stronghold"
+"Orb"
+""
+1 0
+0
+0
+#ROOMS
+
+#24750
+"Atop a Rotten Ladder"
+"A layer of mildewy dampness covers the cool, natural ceiling above your head.
+
+Rocky walls worn smooth by a constant trickle of water ripple downward into
+
+darkness.  Moss clings to the ceiling, shifting occasionally as water sifts
+
+through.  A rickety ladder, damaged by rot and decay, is attached to the wall
+
+with iron bolts and descends into the pit below.
+
+"
+"[Orb] Up is 40596
+
+"
+301465600 0
+0 6 0
+D4
+""
+""
+98530 -1 40596 0 6
+D5
+""
+""
+65536 -1 24751 0 6
+E
+"moss"
+"The spongy green moss is clumped hard against a narrow crevice, nearly
+
+concealing it.
+
+"
+A
+""
+""
+"act_room( #drip, ch );
+
+"
+E
+"drip"
+"The sound of water dripping from the moss above echoes throughout the small
+
+room.
+
+"
+!
+2 1000 0
+A
+"enter crevice"
+""
+"if( !is_resting( ch ) && !is_sleeping( ch ) ) {
+
+  act_tochar( #slip, ch );
+
+  act_notchar( #rslip, ch );
+
+  transfer( ch, find_room( 40553 ) );
+
+  act_notchar( #hello, ch );
+
+  loop( followers ) {
+
+    ch = rch;
+
+    acode( room, 2 );
+
+    }
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"slip"
+"You slip past the spongy green moss and into the narrow crevice.
+
+"
+E
+"rslip"
+"$n slips past the spongy green moss and into the narrow crevice.
+
+"
+E
+"hello"
+"$n comes crawling through a hidden crevice below.
+
+"
+!
+0 0 0
+4521 17 1509949540 -2 0
+-1
+S
+
+#24751
+"On a Rotten Ladder"
+"You are on a rotten ladder.  The wood is wet and slimy and is frayed where
+
+long iron bolts hold it hard against the smooth wall.  Some rust and tarnish
+
+is caked onto the bolts.  A little bit of water trickles down the ladder into
+
+the room below, where the ladder appears to end.  Above is nothing but
+
+darkness and the sound of water dripping.
+
+"
+""
+301465600 0
+0 6 0
+D4
+""
+""
+65536 -1 24750 0 6
+D5
+""
+""
+65536 -1 24752 0 6
+-1
+S
+
+#24752
+"The Throne Room"
+"The smooth, water-worn walls of the chamber blend with stone construction as
+
+they near the floor.  A heavy, damp rug covers most of the cobble-stone floor,
+
+stopping short of arched doorways in each direction.  The arches are rounded,
+
+with heavy keystones of a lighter colored rock than the rest of the arch
+
+holding them up.  Dominating the entire chamber is a large, granite throne
+
+covered in a thin layer of fungus and moss.  A carving of a large troll can be
+
+seen etched into the back.  From the flickering light given off by the torches
+
+on the walls, you can make out rooms in all directions and an old, rotten
+
+ladder just barely within arm's reach above you.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+65536 -1 24753 0 6
+D1
+""
+""
+65536 -1 24754 0 6
+D2
+""
+""
+65536 -1 24756 0 6
+D3
+""
+""
+65536 -1 24755 0 6
+D4
+""
+""
+65536 -1 24751 0 6
+E
+"throne"
+"The heavy throne is large, providing enough space for several men to sit
+
+comfortably.  The arms are carved from solid rock and are pitted and scarred
+
+from years of moss growth.  Into the back seat of the throne, an image of a
+
+large troll has been carved.  The remains of atattered pillow cling to the
+
+seat.  The throne is clearly old and the rock from which it was carved does
+
+not look native to this area.
+
+"
+1736 17 1509949540 -2 0
+-1
+S
+
+#24753
+"The Supply Chamber"
+"Torches, nearly burned out, barely illuminate this small alcove from sconces
+
+embedded in the walls.  The walls are build from stones and mortar and hold up
+
+a raised ceiling high above.  Water has gathered in the ridges of the rock and
+
+the corners of the room, leaving dark, damp spots everywhere.  A solid
+
+archway, held up by a lightly-colored keystone, leads south to what appears to
+
+be a throne room.
+
+"
+""
+301465632 0
+0 6 0
+D2
+""
+""
+65536 -1 24752 0 6
+A
+"purge reset"
+""
+"act_tochar( #purge, ch );
+
+"
+E
+"purge"
+"@CThis is a storage room, don't purge or reset this area!@n
+
+"
+!
+0 0 0
+-1
+S
+
+#24754
+"The Kitchen"
+"The smell of soup fills the air of this narrow alcove.  A massive cast-iron
+
+cauldron hangs above a small fire and fills the chamber.  Pressed up against
+
+the southern wall is a small cot made of grubby canvas.  The cobblestone floor
+
+is somewhat lean, with piles of dirt and mud swept into the corners.  The
+
+walls, adorned only by torch-filled sconces, are somewhat dry.  The sloped
+
+ceiling of the small room rises to the west and meets an archway.  Through the
+
+arch you can see what appears to be a throne room.
+
+"
+""
+301465600 0
+0 6 0
+D3
+""
+""
+65536 -1 24752 0 6
+E
+"cot"
+"The grubby cot is stained with old sweat and damp mud.  The faded color of the
+
+dirt makes it look like someone has tried to rub the canvas clean.  Thin bits
+
+of wood hold the entire thing together.  Although it looks uncomfortable and
+
+unstable, the cot has clearly seen a lot of use.
+
+"
+4338 17 1509949540 -2 0
+987 17 1509949540 -2 16
+-1
+S
+
+#24755
+"An Alcove Full of Closets"
+"Closets made of light-colored wood line the far wall of this small alcove.
+
+Everything is damp and spongy in here, from the earth between the cobblestone
+
+floor to the dripping ceiling overhead.  The flickering light of torches
+
+reflects off the iron knobs of the closets.  To the east, there is a high
+
+archway, held up by a lightly-colored keystone, that leads to what appears to
+
+be a throne room.
+
+"
+""
+301467648 0
+0 6 0
+D1
+""
+""
+65536 -1 24752 0 6
+-1
+S
+
+#24756
+"A Deep Pool"
+"This alcove surrounds a small, dark well that is sunken into the floor.  A
+
+circular rim of stones surrounds the lip of the well, with a cobblestone floor
+
+spreading out from the well to the walls.  Waterlogged tapestries depicting
+
+trolls and sorcerers are plastered to the southern wall.  The stones of this
+
+room are all damp from the constant trickle of water that seeps from the pool.
+
+An archway leads north into what appears to be a throne room.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+65536 -1 24752 0 6
+E
+"tapestry tapestries"
+"An enormous green troll has been embroidered into this tapestry.  His seaweed-
+
+covered talons are rending a badly-damaged crown and throwing it to the ground.
+
+Behind him, a massive stone throne looms prominently in the tapestry.
+
+"
+82 17 1509949540 -2 0
+-1
+S
+
+#0
+

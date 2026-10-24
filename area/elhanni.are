@@ -1,0 +1,4245 @@
+#AREA
+"Elhanni River"
+"Phule"
+""
+5 0
+0
+4
+#ROOMS
+
+#4000
+"Elhanni River - Bend"
+"Curving from northwest to southeast to accomodate the grassy bank to the
+
+southeast, the rushing Elhanni tumbles downstream as it seaks the sea.  To the
+
+northeast, the Cairn mountains loom, their granite crags carving a zig-zag
+
+horizon into the sky.  The current from the north is extremely fierce, but
+
+this bend slows the current enough for a strong swimmer.
+
+"
+"[Phule] w is 54547
+
+[Phule] s is 54543
+
+river goes n,e
+
+[Phule] river slows a bit
+
+[Phule] nomob
+
+"
+301465608 0
+8 9 0
+D0
+""
+""
+0 -1 4001 0 9
+D1
+""
+""
+0 -1 4018 0 9
+D2
+""
+""
+0 -1 54543 0 9
+D3
+""
+""
+0 -1 54547 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni washes you onto its banks.\", ch );
+
+act_notchar( \"The swift Elhanni washes $n onto its banks.\", ch );
+
+room = find_room( 54543 );
+
+transfer( ch, room );
+
+act_notchar( \"$n washes onto shore.\", ch );
+
+"
+!
+0 0 0
+324 17 1509949540 -2 0
+-1
+S
+
+#4001
+"Elhanni River"
+"The powerful current of the Elhanni flows south down a steep gradient, as
+
+water from the high Cairns pushes its way to the sea.  The sheer granite face
+
+of one of the Cairns' borders the river to the east, while to the west,
+
+another rock face crumbles as its limestone is slowly eroded by the river.
+
+"
+"[Phule] e is mountain face
+
+[Phule] AREA NOTE: this zone is, for all intents and purposes, a 'road
+
+zone'.  please treat as such.
+
+[Phule] pets which can't climb can't go further north?
+
+"
+301465600 0
+8 9 0
+D0
+""
+""
+1024 -1 4002 0 9
+D2
+""
+""
+0 -1 4000 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you south.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n south.\", ch );
+
+room = find_room( 4000 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the north by the rushing current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+  act_tochar( \"You struggle to fight the current.\", ch );
+
+  act_notchar( \"$n struggles to fight the current.\", ch );
+
+  i = find_skill( ch, swimming );
+
+  j = random( 1, 5 );
+
+  if( j > i )
+
+    acode( room, 1 );
+
+  }
+
+"
+!
+1 0 5
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+  ch = rch;
+
+  acode( room, 2 );
+
+  }
+
+"
+!
+2 150 0
+324 17 1509949540 -2 0
+-1
+S
+
+#4002
+"Elhanni River"
+"The powerful current of the Elhanni flows south down a steep gradient, as
+
+water from the high Cairns pushes its way to the sea.  The sheer granite face
+
+of one of the Cairns borders the river to the east, while to the west, another
+
+rock face crumbles as its limestone is slowly eroded by the river.
+
+"
+"[Phule] e is mountain face
+
+[Phule] w is rock face
+
+"
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4003 0 9
+D2
+""
+""
+1024 -1 4001 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you south.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n south.\", ch );
+
+room = find_room( 4001 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the north by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+  act_tochar( \"You struggle to fight the current.\", ch );
+
+  act_notchar( \"$n struggles to fight the current.\", ch );
+
+  i = find_skill( ch, swimming );
+
+  j = random( 1, 5 );
+
+  if( j > i )
+
+    acode( room, 1 );
+
+  }
+
+"
+!
+1 0 5
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+  ch = rch;
+
+  acode( room, 2 );
+
+  }
+
+"
+!
+2 150 0
+324 17 1509949540 -2 0
+-1
+S
+
+#4003
+"Elhanni River - Bend"
+"The mighty Elhanni rushes in from the west, turning south to follow the
+
+granite rock of the Cairns to the east.  The current is strong and swift, as
+
+the river follows a steep gradient down and out of the mountains.  A small
+
+opening in the rock to the north reveals a cave.
+
+"
+"[Phule] mountain ne
+
+[Phule] rock face sw
+
+"
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4030 0 9
+D2
+""
+""
+0 -1 4002 0 9
+D3
+""
+""
+0 -1 4004 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you south.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n south.\", ch );
+
+room = find_room( 4002 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the north by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+  act_tochar( \"You struggle to fight the current.\", ch );
+
+  act_notchar( \"$n struggles to fight the current.\", ch );
+
+  i = find_skill( ch, swimming );
+
+  j = random( 1, 5 );
+
+  if( j > i )
+
+    acode( room, 1 );
+
+  }
+
+"
+!
+1 0 13
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You climb $T into a small, damp cave.
+
+"
+E
+"to_room"
+"$n climbs $T into a small, damp cave.
+
+"
+!
+3 0 1
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+  ch = rch;
+
+  acode( room, 2 );
+
+  }
+
+"
+!
+2 150 0
+324 17 1509949540 -2 0
+-1
+S
+
+#4004
+"Elhanni River - Bend"
+"The Elhanni flows in from the north, crashing into the limestone wall to the
+
+south and turning east around the granite stone of the Cairns to the northeast.
+
+"
+""
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4005 0 9
+D1
+""
+""
+0 -1 4003 0 9
+A
+"__continue_being_pushed"
+""
+"act_tochar( \"The swift Elhanni carries you east.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n east.\", ch );
+
+room = find_room( 4003 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the west by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+  act_tochar( \"You struggle to fight the current.\", ch );
+
+  act_notchar( \"$n struggles to fight the current.\", ch );
+
+  i = find_skill( ch, swimming );
+
+  j = random( 1, 5 );
+
+  if( j > i )
+
+    acode( room, 1 );
+
+  }
+
+"
+!
+1 0 3
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+  ch = rch;
+
+  acode( room, 2 );
+
+  }
+
+"
+!
+2 150 0
+324 17 1509949540 -2 0
+-1
+S
+
+#4005
+"Elhanni River"
+"The river is an endless torrent of water, churning its way south down a steep
+
+cut through the limestone rock.  To the east, the sheer granite face of the
+
+Cairns appears unfazed by the river's course.  A slick limestone shelf follows
+
+the river on the west, while from the north comes the sound of a massive
+
+waterfall.
+
+"
+"[Phule] e is mountain
+
+[Phule] w is trail
+
+"
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4006 0 9
+D2
+""
+""
+0 -1 4004 0 9
+D3
+""
+""
+0 -1 4024 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you south.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n south.\", ch );
+
+room = find_room( 4004 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the north by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+  act_tochar( \"You struggle to fight the current.\", ch );
+
+  act_notchar( \"$n struggles to fight the current.\", ch );
+
+  i = find_skill( ch, swimming );
+
+  j = random( 1, 5 );
+
+  if( j > i )
+
+    acode( room, 1 );
+
+  }
+
+"
+!
+1 0 13
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+  ch = rch;
+
+  acode( room, 2 );
+
+  }
+
+"
+!
+2 150 0
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You climb $T onto the limestone shelf.
+
+"
+E
+"to_room"
+"$n climbs $T onto the limestone shelf.
+
+"
+!
+3 0 8
+324 17 1509949540 -2 0
+-1
+S
+
+#4006
+"Elhanni River"
+"The river is an endless torrent of water, churning its way south down a steep
+
+cut through the limestone rock.  To the east, the sheer granite face of the
+
+Cairns appears unfazed by the river's course.  A slick limestone shelf follows
+
+the river on the west, while from the north comes the sound of a massive
+
+waterfall.
+
+"
+"[Phule] e is mountain
+
+[Phule] w is trail
+
+"
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4007 0 9
+D2
+""
+""
+0 -1 4005 0 9
+D3
+""
+""
+0 -1 4023 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you south.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n south.\", ch );
+
+room = find_room( 4005 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the north by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+  act_tochar( \"You struggle to fight the current.\", ch );
+
+  act_notchar( \"$n struggles to fight the current.\", ch );
+
+  i = find_skill( ch, swimming );
+
+  j = random( 1, 5 );
+
+  if( j > i )
+
+    acode( room, 1 );
+
+  }
+
+"
+!
+1 0 13
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+  ch = rch;
+
+  acode( room, 2 );
+
+  }
+
+"
+!
+2 150 0
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You climb $T onto the limestone shelf.
+
+"
+E
+"to_room"
+"$n climbs $T onto the limestone shelf.
+
+"
+!
+3 0 8
+324 17 1509949540 -2 0
+-1
+S
+
+#4007
+"Elhanni River - South of the Falls"
+"The swift Elhanni gains momentum as it crashes south, down a slick bed of
+
+limestone.  To the north lie the falls, as the Elhanni makes its way down from
+
+the mountains to the northeast, sending a fine spray into the air.  A slick
+
+ledge of limestone lies to the west, covered in spray.
+
+"
+"[Phule] if they are not flying, they are being rushed s.
+
+"
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4008 0 9
+D2
+""
+""
+0 -1 4006 0 9
+D3
+""
+""
+0 -1 4022 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you south.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n south.\", ch );
+
+room = find_room( 4006 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the north by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+  act_tochar( \"You struggle to fight the current.\", ch );
+
+  act_notchar( \"$n struggles to fight the current.\", ch );
+
+  i = find_skill( ch, swimming );
+
+  j = random( 1, 5 );
+
+  if( j > i )
+
+    acode( room, 1 );
+
+  }
+
+"
+!
+1 0 13
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+  ch = rch;
+
+  acode( room, 2 );
+
+  }
+
+"
+!
+2 150 0
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You climb $T onto the limestone shelf.
+
+"
+E
+"to_room"
+"$n climbs $T onto the limestone shelf.
+
+"
+!
+3 0 8
+324 17 1509949540 -2 0
+-1
+S
+
+#4008
+"Elhanni River - Below the Falls"
+"Tons of water pound their way down the rocks to the northeast, blasting a fine
+
+spray into the air.  The water rushes away from the falls, heading downstream
+
+along a slick limestone bed to the south.  To the west, the slick limestone
+
+rises toward a sheer rock face.
+
+"
+"[Soren] can we remove the up and stuff
+
+[Soren] up was originally 4032
+
+[Phule] climb east to get behind waterfall - room 5000
+
+[Voraster] nothing to do with the cave here?
+
+-- OOPS
+
+"
+301465600 0
+8 9 0
+D2
+""
+""
+0 -1 4007 0 9
+D3
+""
+""
+0 -1 4012 0 9
+D5
+""
+""
+0 -1 4065 0 9
+E
+"1 east waterfall"
+"You peer intently into the rushing falls, and see the darkess of a cave behind
+
+the wall of water.
+
+"
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you south.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n south.\", ch );
+
+room = find_room( 4007 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the north by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+  act_tochar( \"You struggle to fight the current.\", ch );
+
+  act_notchar( \"$n struggles to fight the current.\", ch );
+
+  i = find_skill( ch, swimming );
+
+  j = random( 1, 5 );
+
+  if( j > i )
+
+    acode( room, 1 );
+
+  }
+
+"
+!
+1 0 62
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+  ch = rch;
+
+  acode( room, 2 );
+
+  }
+
+"
+!
+2 150 0
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You climb $T onto the limestone shelf.
+
+"
+E
+"to_room"
+"$n climbs $T onto the limestone shelf.
+
+"
+!
+3 0 8
+A
+""
+""
+"if( can_fly( ch ) )
+
+  continue;
+
+else
+
+  act_tochar( \"You cannot swim or climb the falls.\", ch );
+
+"
+!
+3 0 16
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You take a deep breath and dive.
+
+"
+E
+"to_room"
+"$n takes a deep breath and dives.
+
+"
+!
+3 0 32
+A
+"climb enter"
+"cave waterfall 1 east"
+"act_tochar(\"You clamber up through the waterfall and into the cavern beyond.\", ch );
+
+act_notchar( \"$n clambers up through the waterfall and into the cavern beyond.\", ch );
+
+transfer( ch, find_room( 5000 ) );
+
+"
+!
+0 0 0
+324 17 1509949540 -2 0
+-1
+S
+
+#4009
+"Limestone Shelf"
+"The Elhanni to the south drops a majestic fifty feet to the rocks below,
+
+spraying a fine mist into the air.  The mist coats this limestone shelf,
+
+making it very slick.  The shelf continues to the east, upstream, and follows
+
+a descent west along the granite rock of the mountain to the north.
+
+"
+"[Phule] falls are down to s
+
+[Phule] base of falls i mean
+
+[Phule] ARG top of falls :)
+
+"
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 4013 0 9
+D2
+""
+""
+0 -1 4032 0 9
+D3
+""
+""
+0 -1 4010 0 9
+-1
+S
+
+#4010
+"Limestone Shelf"
+"This vantage provides a great view of the crashing falls to the southeast, as
+
+the Elhanni river comes down from the mountains to the east and churns its way
+
+south to the sea.  The waterfall sends a fine spray into the air, coating the
+
+limestone and making it very slick.  The shelf reaches the top of the falls to
+
+the east, while it descends sharply to the west.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 4009 0 9
+D5
+""
+""
+0 -1 4011 0 9
+A
+"1 west"
+""
+"interpret( ch, \"down\" );
+
+"
+!
+0 0 0
+-1
+S
+
+#4011
+"Limestone Shelf"
+"This slick limestone shelf climbs sharply to the east, following the northern
+
+edge of the waterfall to the southeast.  The shelf follows the river to the
+
+south, its surface slick with the mist created by the crashing falls.
+
+"
+"[Phule] cup goes twisting up to east
+
+[Soren] and this one
+
+[Soren] up originally was 4010
+
+"
+301465600 0
+2 9 0
+D2
+""
+""
+0 -1 4012 0 9
+D4
+""
+""
+0 -1 4010 0 9
+A
+"1 east"
+""
+"interpret( ch, \"up\" );
+
+"
+!
+0 0 0
+-1
+S
+
+#4012
+"Limestone Shelf - West of a Waterfall"
+"A majestic waterfall crashes to the east, following a long drop from the
+
+mountain shelf above.  The impact of the water sends a fine spray into the
+
+air, coating this limestone shelf and creating a hazardous, slippery haven
+
+from the rushing water of the river.  The cacaphonous sound of the falls echos
+
+between the limestone wall to the west and the granite rock of the mountain
+
+across the river, creating a tremendous noise which is nearly deafening.  The
+
+shelf continues to the south along the river, and climbs to the north,
+
+twisting up to the east.
+
+"
+"[Phule] rock covered with spray from falls to e
+
+"
+301465600 0
+11 9 0
+D0
+""
+""
+0 -1 4011 0 9
+D1
+""
+""
+0 -1 4008 0 9
+D2
+""
+""
+0 -1 4022 0 9
+324 17 1509949540 -2 0
+-1
+S
+
+#4013
+"Limestone Shelf"
+"This slick limestone shelf sits between the granite stone rock of the mountain
+
+to the north and the swift Elhanni to the south.  A massive boulder sits to
+
+the east and can probably be climbed.  The shelf follows the river west toward
+
+the sound of a waterfall.
+
+"
+"[Phule] river is s, beginning of falls to sw
+
+[Phule] if you go in here, down yougo :)
+
+"
+301465600 0
+2 9 0
+D2
+""
+""
+0 -1 4049 0 9
+D3
+""
+""
+0 -1 4009 0 9
+A
+"up east"
+""
+"acode( room, 2 );
+
+"
+E
+"idea"
+"You will have to climb up the boulder.
+
+"
+!
+0 0 0
+A
+"climb fly"
+"1 up boulder"
+"if( can_fly( ch ) ) {
+
+  act_tochar( \"You fly up onto boulder.\", ch );
+
+  act_notchar( \"$n flies up onto boulder.\", ch );
+
+  transfer( ch, find_room( 4025 ) );
+
+  act_notchar( \"$n flies up from the limestone shelf below.\", ch );
+
+  }
+
+else {
+
+  if( find_skill( ch, climb ) > random( 1, 4 ) ) {
+
+    act_tochar(\"You carefully climb up the large block of stone.\", ch );
+
+    act_notchar(\"$n carefully climbs climbs up the boulder.\", ch );
+
+    transfer( ch, find_room( 4025 ));
+
+    act_notchar(\"$n climbs up from the limestone shelf below.\", ch );
+
+    }
+
+  else {
+
+    act_tochar(\"You fail to find the necessary footholds to climb up.\", ch );
+
+    act_notchar(\"$n shakes $s head, unable to make the ascent.\", ch );
+
+    }
+
+  }
+
+"
+!
+0 0 0
+-1
+S
+
+#4014
+"Along a Pebbled Trail"
+"A small pebbled path climbs up to the east, toward a rope bridge in the
+
+distance.  A large, moss-covered boulder marks the western end of the
+
+trail.  It appears to be well-traveled; the green and red mosses which
+
+grow on it are crushed in several places, leaving boot imprints.  The
+
+trail is bordered by a sheer rock face to the north and the gorge to the
+
+south.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 4015 0 9
+D3
+""
+""
+0 -1 4026 0 9
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You clamber up onto the boulder to the $T.
+
+"
+E
+"to_room"
+"$n clambers up onto the boulder to the $T.
+
+"
+!
+3 0 8
+-1
+S
+
+#4015
+"Pebbly Mountain Trail - North of a Rope Bridge"
+"A small pebbled trail winds its way east-west along the mountain face to
+
+the west.  To the south, a narrow rope bridge extends across widening
+
+river rapids.  The bridge looks quite flimsy and sways dangerously from
+
+east to west.  The pebbled trail crumbles slowly, pulled by gravity down
+
+its steep gradient to the west.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 4016 0 9
+D2
+""
+""
+0 -1 4017 0 9
+D3
+""
+""
+0 -1 4014 0 9
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You step $T onto a creaky rope bridge.
+
+"
+!
+3 0 4
+-1
+S
+
+#4016
+"Pebbly Mountain Trail - Along a Gorge"
+"This faint trail is dotted by shrubs and mountain grasses, but most
+
+vegetation would find the rocky ground inhospitable.  The trail overlooks
+
+a gorge to the south, through which a rushing river flows west toward the
+
+crashing sound of a waterfall.  A pebbled trail lies to the west, while
+
+to the east, this faint trail continues.
+
+"
+"[Phule] trail e is along the gorge. eventually goes down to river.
+
+"
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 4029 0 9
+D3
+""
+""
+0 -1 4015 0 9
+-1
+S
+
+#4017
+"North End of a Rope Bridge"
+"The worn ropes of this thick rope bridge do not appear overly worn or
+
+rotting, but that does not compensate for the missing and cracked boards
+
+which form this walkway high over the rushing river below.  To the north,
+
+the bridge reaches a pebbled trail which graces the curve of a large
+
+mountain.  To the south, the bridge overhangs a rocky gorge as it nears a
+
+large, forboding forest of dark leaves.  From the west, the sound of the
+
+river becoming a waterfall rush into your ears.
+
+"
+"[Phule] d is 4046
+
+"
+335020040 0
+2 9 0
+D0
+""
+""
+0 -1 4015 0 9
+D2
+""
+""
+0 -1 4027 0 9
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You carefully make your way $T along the rope bridge.
+
+"
+E
+"to_room"
+"$n carefully makes $s way $T along the rope bridge.
+
+"
+!
+3 0 4
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You step $T onto the pebbled path.
+
+"
+E
+"to_room"
+"$n steps $T onto the pebbled path.
+
+"
+!
+3 0 1
+A
+""
+""
+"send_to_room(\"The rope bridge sways back and forth as a gust of wind shakes its rotting boards.\", room );
+
+"
+!
+2 100 0
+-1
+S
+
+#4018
+"Elhanni River - Bend"
+"The Elhanni rushes down from the west, turning south as it follows the
+
+granite rock of the Cairns to the east.  To the southwest, a wide, grassy
+
+plain of tall grass spreads away from the river.
+
+"
+"[Phule] n and e is mountain face
+
+"
+301465600 0
+8 9 0
+D2
+""
+""
+0 -1 4019 0 9
+D3
+""
+""
+0 -1 4000 0 9
+324 17 1509949540 -2 0
+-1
+S
+
+#4019
+"Elhanni River"
+"The Elhanni flows north to south, a wide, strong current making its
+
+journey from the mountains to the sea.  On the west bank, the muddy
+
+ground gives way to a wide, grassy plain.  To the east, the unforgiving
+
+stone of the Cairns marks the edge of the river.
+
+"
+"[Phule] w is plains
+
+"
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4018 0 9
+D2
+""
+""
+0 -1 4020 0 9
+D3
+""
+""
+0 -1 54543 0 9
+324 17 1509949540 -2 0
+-1
+S
+
+#4020
+"Elhanni River"
+"The Elhanni flows north to south, a wide, strong current making its
+
+journey from the mountains to the sea.  On the west bank, the muddy
+
+ground gives way to a wide, grassy plain.  To the east, the unforgiving
+
+stone of the Cairns marks the edge of the river.
+
+"
+"[Phule] e is mountain
+
+[Phule] w is plains
+
+"
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4019 0 9
+D2
+""
+""
+0 -1 4021 0 9
+D3
+""
+""
+0 -1 54542 0 9
+324 17 1509949540 -2 0
+-1
+S
+
+#4021
+"Elhanni River - North of a Bridge"
+"To the south, a rugged wooden bridge hangs low across the river; so low,
+
+in fact, that the Elhanni rushes beneath it without room to accomodate
+
+swimming.  The grassy plains to the west become a muddy bank along the
+
+river, which continues upstream to the north.  To the east, the bank is
+
+dry and rocky.
+
+"
+"[Phule] s is troll bridge
+
+[Phule] e is mountain
+
+[Phule] w is plains
+
+"
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4020 0 9
+D1
+""
+""
+0 -1 4028 0 9
+D3
+""
+""
+0 -1 39090 0 9
+324 17 1509949540 -2 0
+-1
+S
+
+#4022
+"Limestone Shelf"
+"This slick limestone shelf has been worn smooth by the oft-flooded Elhanni,
+
+which rushes by to the east.  A fine mist is in the air, created by the
+
+majestic waterfall to the northeast.  To the west lies a wall of limestone.
+
+The shelf continues to the north and south.
+
+"
+"[Phule] rock covered with spray from falls to ne
+
+"
+301465600 0
+11 9 0
+D0
+""
+""
+0 -1 4012 0 9
+D1
+""
+""
+0 -1 4007 0 9
+D2
+""
+""
+0 -1 4023 0 9
+324 17 1509949540 -2 0
+-1
+S
+
+#4023
+"Limestone Shelf"
+"This slick limestone shelf has been worn smooth by the oft-flooded Elhanni,
+
+which rushes by to the east.  A fine mist is in the air, created by the
+
+majestic waterfall a few hundred yards to the northeast.  To the west lies a
+
+wall of limestone.  The shelf continues to the north and south.
+
+"
+"[Phule] rock covered with spray from falls
+
+"
+301465600 0
+11 9 0
+D0
+""
+""
+0 -1 4022 0 9
+D1
+""
+""
+0 -1 4006 0 9
+D2
+""
+""
+0 -1 4024 0 9
+324 17 1509949540 -2 0
+-1
+S
+
+#4024
+"Limestone Shelf"
+"This slick limestone shelf has been worn smooth by the oft-flooded Elhanni,
+
+which rushes by to the east.  A fine mist is in the air, created by the
+
+majestic waterfall a few hundred yards to the northeast.  To the west and
+
+south lie walls of limestone.  The shelf continues to the north.
+
+"
+"[Phule] rock
+
+"
+301465600 0
+11 9 0
+D0
+""
+""
+0 -1 4023 0 9
+D1
+""
+""
+0 -1 4005 0 9
+324 17 1509949540 -2 0
+-1
+S
+
+#4025
+"Atop a Boulder"
+"This massive boulder sits alongside another, larger boulder to the east,
+
+covered in moss and slime.  It is but a short hop across a narrow gap to reach
+
+the boulder to the east, but a long descent or fall lies to the west, as the
+
+boulder stands above a limestone shelf about thirty feet below.  A waterfall
+
+lies to the south, pouring into a river which leads down to the west.
+
+"
+"[Phule] action climb down
+
+[Phule] action 1 east
+
+[Phule] action 1 west
+
+[Phule] action jump 1 west 1 down
+
+"
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 4026 0 9
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You carefully jump across the gap onto another large boulder.
+
+"
+E
+"to_room"
+"$n carefully jumps east across a narrow gap and onto a large boulder.
+
+"
+!
+3 0 2
+A
+"climb"
+"1 down"
+"if( can_fly( ch ) ) {
+
+  act_tochar( \"You fly off the boulder.\", ch );
+
+  act_notchar( \"$n flies off the boulder.\", ch );
+
+  transfer( ch, find_room( 4013 ) );
+
+  }
+
+else {
+
+  if( find_skill( ch, climb ) > random( 1, 4 ) ) {
+
+    act_tochar(\"You carefully climb down the large block of stone.\", ch );
+
+    act_notchar(\"$n carefully climbs down to the limestone shelf below.\", ch );
+
+    transfer( ch, find_room( 4013 ));
+
+    act_notchar(\"$n climbs down from the boulder to the east.\", ch );
+
+    }
+
+  else {
+
+    act_tochar(\"You fail to find the necessary footholds to climb down.\", ch );
+
+    act_notchar(\"$n shakes $s head, unable to make the descent.\", ch );
+
+    }
+
+  }
+
+"
+!
+0 0 0
+A
+"jump leap fly fall"
+"1 west 1 down"
+"act_tochar(\"You leap off from the boulder, hurtling downward toward the limestone below.\", ch );
+
+act_notchar(\"$n leaps from the boulder, falling to the west.\", ch );
+
+if( can_fly( ch ) ) {
+
+  act_tochar(\"You float safely to the ground.\", ch );
+
+  transfer( ch, find_room( 4013 ) );
+
+  act_notchar( \"$n flies down from the boulder to the east.\", ch );
+
+  }
+
+else {
+
+  i = 4d4+12;
+
+  transfer( ch, find_room( 4013 ));
+
+  act_tochar(\"You land, a crumpled heap, on the limestone floor.\", ch );
+
+  act_notchar(\"$n lands in a crumpled heap, having fallen from the boulder to the east.\", ch );
+
+  dam_message( ch, i, \"the fall\" );
+
+  inflict( ch, ch, i, \"falling\" );
+
+  }
+
+"
+!
+0 0 0
+A
+"west down"
+""
+"acode( room, 2 );
+
+"
+E
+"idea"
+"It would probably be a good idea to climb down, for a fall from this
+
+height would likely break a bone.
+
+"
+!
+0 0 0
+-1
+S
+
+#4026
+"Atop a Moss-Covered Boulder"
+"Moss covers this large boulder, its smooth, porous surface a welcome home
+
+to the lichen and slime.  This boulder is larger and more rounded than
+
+the dry, rough-hewn boulder a short hop to the west.  It is an easy jump
+
+down to a pebbled trail to the east, which climbs the shoulder of the
+
+mountain above the gorge to the south.  From below, the roaring sound of
+
+crashing water echoes across the rocks.
+
+"
+""
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 4014 0 9
+D3
+""
+""
+0 -1 4025 0 9
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You carefully jump across the gap onto another large boulder.
+
+"
+E
+"to_room"
+"$n carefully jumps $T across a now gap and onto a large boulder.
+
+"
+!
+3 0 8
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You jump down to the pebbled trail to the east.
+
+"
+E
+"to_room"
+"$n jumps down to the pebbled trail to the $T.
+
+"
+!
+3 0 2
+-1
+S
+
+#4027
+"South End of a Rope Bridge"
+"Cracked, warped, rotting boards form this rope bridge, missing boards
+
+forming a toothy smile high above the rocky gorge below.  To the north,
+
+the bridge overhands a rushing river, nearing the deafening sound of a
+
+waterfall.  To the south, a faint path disappears into a dark, misty
+
+forest.
+
+"
+"[Phule] s is raven rood
+
+"
+335020040 0
+2 9 0
+D0
+""
+""
+0 -1 4017 0 9
+D2
+""
+""
+0 -1 2001 0 9
+A
+""
+""
+"send_to_room(\"The rope bridge sways back and forth as a gust of wind shakes its rotting boards.\", room );
+
+"
+!
+2 150 0
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You carefully make your way $T along the rope bridge.
+
+"
+E
+"to_room"
+"$n carefully makes $s way $T along the rope bridge.
+
+"
+!
+3 0 1
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You step $T off the rope bridge, entering a dark forest.
+
+"
+!
+3 0 4
+-1
+S
+
+#4028
+"Rocks Along the Elhanni"
+"Large rocks litter this dry riverbank, bordering the rushing Elhanni to
+
+the west.  The dwarf-sized rocks are mere pebbles, however, to the sheer
+
+granite face to the northeast.  To the south, a stone-paved road leads
+
+downstream along the river.
+
+"
+"[Phule] w is the elhanni and the plains
+
+[Phule] sw is the troll bridge
+
+[Phule] ne is the mountains
+
+"
+301465600 0
+2 9 0
+D2
+""
+""
+0 -1 39087 0 9
+D3
+""
+""
+0 -1 4021 0 9
+-1
+S
+
+#4029
+"Faint Trail - End"
+"The trail ends abruptly as the ledge crumbles away to the east, leaving a
+
+sizeable gap between this part of the trail and the trail visible on the other
+
+side.  This faint trail leads west, along the gorge to the south.
+
+"
+"[Phule] eventually continues to e, down to river, etc.
+
+[Phule] e is 4031
+
+[Phule] notyet code for jumping east
+
+"
+301465600 0
+2 9 0
+D1
+""
+""
+226 -1 4031 0 9
+D3
+""
+""
+0 -1 4016 0 9
+A
+"jump leap cross fly"
+"1 east gap across"
+"act_tochar( \"You cannot jump this gap. Yet.\", ch );
+
+end;
+
+act_tochar( \"You jump across the gap.\", ch );
+
+act_notchar( \"$n jumps across the gap.\", ch );
+
+transfer( ch, find_room( 4031 ) );
+
+act_notchar( \"$n lands, having jumped across the gap to the west.\", ch );
+
+"
+!
+0 0 3
+A
+"east"
+""
+"acode( room, 1 );
+
+"
+!
+0 0 0
+-1
+S
+
+#4030
+"Small Cave"
+"This small, damp cave is only about eight feet wide in any direction.  The
+
+Elhanni River rushes by to the south, a mighty current which would send all
+
+but the strongest swimmers downstream.
+
+"
+"[Phule] rest spot
+
+"
+301465600 0
+11 9 0
+D2
+""
+""
+0 -1 4003 0 9
+-1
+S
+
+#4031
+"Faint Trail - End"
+"Shrubs and wild grasses dot this pebbly mountain trail, which follows the
+
+sloping mountain face to the south.  A wide gap has formed to the west, where
+
+erosion has chewed away at the trail.  To the north and east rises the granite
+
+face of a mountain.
+
+"
+"[Phule] trail continues east and down to river.
+
+[Phule] w is 4029
+
+[Phule] this section not open yet.
+
+"
+301465600 0
+2 9 0
+D2
+""
+""
+0 -1 4034 0 9
+D3
+""
+""
+226 -1 4029 0 9
+A
+"west"
+""
+"acode( room, 2 );
+
+"
+!
+0 0 0
+A
+"jump leap cross fly"
+"1 west gap across"
+"act_tochar( \"You jump across the gap.\", ch );
+
+act_notchar( \"$n jumps across the gap.\", ch );
+
+transfer( ch, find_room( 4029 ) );
+
+act_notchar( \"$n lands, having jumped across the gap to the east.\", ch );
+
+"
+!
+0 0 3
+-1
+S
+
+#4032
+"Elhanni River - Atop the Falls"
+"The Elhanni rushes over the edge of the mountain and down, some fifty feet to
+
+the rocks below.  The strong current churns as it nears the edge, threatening
+
+to pull anything in its grasp over the lip and down.  A limestone shelf
+
+follows the river to the north.
+
+"
+""
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4009 0 9
+D1
+""
+""
+0 -1 4049 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"You crash headlong over the waterfall and into the river below.\", ch );
+
+act_notchar( \"$n crashes headlong over the waterfall and into the river below.\", ch );
+
+room = find_room( 4065 );
+
+transfer( ch, room );
+
+act_notchar( \"$n crashes in from the waterfall above.\", ch );
+
+send_to_room( \"Someone crashes down from the falls and into the water below.\", find_room( 4008 ) );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 5, 8 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 35
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+A
+""
+""
+"if( can_fly( ch ) )
+
+  continue;
+
+else
+
+  act_tochar( \"You would have to be able to fly to simply go down the falls.\", ch );
+
+"
+!
+3 0 32
+324 17 1509949540 -2 0
+-1
+S
+
+#4034
+"Faint Trail Along a Gorge"
+"This pebbly trail slopes down sharply to the south, as it cuts along the
+
+mountainside to the river below.  To the north, shrubs and wild grasses litter
+
+the path.  To the east, the granite face of the mountain rises into the air.
+
+"
+""
+301465600 0
+2 9 0
+D0
+""
+""
+0 -1 4031 0 9
+D5
+""
+""
+0 -1 4035 0 9
+A
+"1 south"
+""
+"interpret( ch, \"down\" );
+
+"
+!
+0 0 0
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You follow the faint trail $T to the river.
+
+"
+E
+"to_room"
+"$n follows the faint trail $T to the river.
+
+"
+!
+3 0 32
+-1
+S
+
+#4035
+"Faint Trail Along a Mountain River"
+"The Elhanni rushes by to the south, crashing off a bend in the mountain
+
+face to the southwest and coming by the trail again to the west, as it
+
+heads through the gorge.  The trail climbs sharply to the north, heading
+
+up to a ridge along the northern side of the river.  To the east, the
+
+pebbly trail approaches a cave.
+
+"
+"[Phule] along river
+
+"
+301465600 0
+2 9 0
+D1
+""
+""
+0 -1 4036 0 9
+D2
+""
+""
+0 -1 4042 0 9
+D3
+""
+""
+0 -1 4044 0 9
+D4
+""
+""
+0 -1 4034 0 9
+A
+"1 north"
+""
+"interpret( ch, \"up\" );
+
+"
+!
+0 0 0
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You follow the faint trail $T.
+
+"
+E
+"to_room"
+"$n follows the faint trail $T.
+
+"
+!
+3 0 16
+-1
+S
+
+#4036
+"Faint Trail - End"
+"This thin, pebby ledge follows the rushing mountain river to the south,
+
+leading west between the river and the stone face to the north.  The
+
+trail ends to the east, as the mountain face sweeps across in that
+
+direction.
+
+"
+""
+301465600 0
+2 9 0
+D2
+""
+""
+0 -1 4041 0 9
+D3
+""
+""
+0 -1 4035 0 9
+-1
+S
+
+#4037
+"Elhanni River - In a Mountain Cave"
+"The sounds of the rushing river echo off the cave walls, as the Elhanni
+
+flows through this mountain cavern from east to west.  The river reaches
+
+open air to the west as the cave opens into a gorge.
+
+"
+""
+301596676 0
+8 6 0
+D1
+""
+""
+0 -1 4038 0 6
+D3
+""
+""
+0 -1 4041 0 6
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4041 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 10
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4038
+"Elhanni River - In a Mountain Cave"
+"Water rushes in from the east, nearly filling this small mountain cavern. 
+
+Tiny stalagtites litter the ceiling, coated in a thin layer of ice as the
+
+Elhanni brings the chill of snowmelt down from the mountaintops.  The
+
+river continues to the west, while a small tunnel leads north into the
+
+cavern wall.
+
+"
+""
+301596676 0
+8 6 0
+D0
+""
+""
+0 -1 4054 0 6
+D1
+""
+""
+226 -1 4063 0 6
+D3
+""
+""
+0 -1 4037 0 6
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4037 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 11
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+A
+"east"
+""
+"act_tochar( \"The current is too strong.\", ch );
+
+"
+!
+0 0 0
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You climb $T into the cave tunnel.
+
+"
+E
+"to_room"
+"$n climbs $T into the cave tunnel.
+
+"
+!
+3 0 1
+-1
+S
+
+#4039
+"Underground River"
+"Under Construction.
+
+"
+""
+301596676 0
+7 9 0
+D1
+""
+""
+0 -1 4040 0 9
+D4
+""
+""
+0 -1 4063 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you up.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n up.\", ch );
+
+room = find_room( 4063 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from below by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 18
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4040
+"Underground River"
+"Under Construction.
+
+"
+"[Phule] search for sapphire
+
+"
+301596676 0
+7 9 0
+D1
+""
+""
+0 -1 4050 0 9
+D3
+""
+""
+0 -1 4039 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4039 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 10
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4041
+"Elhanni River"
+"The Elhanni rushes west, out of the mountain cave to the east.  A faint
+
+trail lies to the north, following the river west.
+
+"
+""
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4036 0 9
+D1
+""
+""
+0 -1 4037 0 6
+D3
+""
+""
+0 -1 4042 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4042 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 11
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4042
+"Elhanni River"
+"Under Construction.
+
+"
+""
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4035 0 9
+D1
+""
+""
+0 -1 4041 0 9
+D3
+""
+""
+0 -1 4043 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4043 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 11
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4043
+"Elhanni River"
+""
+"[Phule] fall in here from 'out on a limb'
+
+[Phule] u is 2003
+
+"
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4044 0 9
+D1
+""
+""
+0 -1 4042 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you north.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n north.\", ch );
+
+room = find_room( 4044 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the south by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 3
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4044
+"Elhanni River"
+"The river churns as it enters rapids to the west, flowing quickly over sharp
+
+rocks.  The Elhanni rushes in from the south, careening along the gorge.  To
+
+the east, a faint trail approaches the river.
+
+"
+"[Phule] disabled float actoin here.
+
+"
+301465600 0
+8 9 0
+D1
+""
+""
+0 -1 4035 0 9
+D2
+""
+""
+0 -1 4043 0 9
+D3
+""
+""
+162 -1 4045 0 9
+A
+"__continue_being_pushed__"
+""
+"end;
+
+act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4045 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 14
+A
+"float"
+""
+"act_tochar( \"Floating into the rapids would not be a good idea.\", ch );
+
+end;
+
+act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+A
+"west"
+""
+"act_tochar( \"Sharp rocks prevent swimming to the west.\", ch );
+
+"
+!
+0 0 0
+-1
+S
+
+#4045
+"Elhanni River"
+"Under Construction.
+
+"
+""
+301465600 0
+8 9 0
+D1
+""
+""
+162 -1 4044 0 9
+D3
+""
+""
+0 -1 4046 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4046 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 10
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4046
+"Elhanni River"
+"Under Construction.
+
+"
+"[Phule] BRIDGE UP
+
+[Phule] u is 4017
+
+"
+301465600 0
+8 9 0
+D1
+""
+""
+0 -1 4045 0 9
+D3
+""
+""
+0 -1 4047 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4047 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 10
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4047
+"Elhanni River"
+"Under Construction.
+
+"
+""
+301465600 0
+8 9 0
+D1
+""
+""
+0 -1 4046 0 9
+D3
+""
+""
+0 -1 4048 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4048 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 10
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4048
+"Elhanni River"
+""
+"[Phule] top of falls is 2 W
+
+[Phule] w is 4049 (type float)
+
+"
+301465600 0
+8 9 0
+D1
+""
+""
+0 -1 4047 0 9
+D3
+""
+""
+226 -1 4049 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4049 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 10
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4049
+"Elhanni River - Approaching the Falls"
+"The river picks up speed as it flows west; from the roaring sounds it is
+
+obvious that the river becomes a waterfall, with a substantial drop.  A
+
+limestone shelf borders the river to the north.
+
+"
+"[Phule] top of falls is 1 W
+
+[Phule] e is closed for now
+
+[Phule] e is 4048
+
+"
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4013 0 9
+D1
+""
+""
+226 -1 4048 0 9
+D3
+""
+""
+0 -1 4032 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4032 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+  act_tochar( \"You struggle to fight the current.\", ch );
+
+  act_notchar( \"$n struggles to fight the current.\", ch );
+
+  i = find_skill( ch, swimming );
+
+  j = random( 3, 6 );
+
+  if( j > i )
+
+    acode( room, 1 );
+
+  }
+
+"
+!
+1 0 11
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+A
+"east"
+""
+"act_tochar( \"Sharp rocks prevent swimming.\", ch );
+
+"
+!
+0 0 0
+324 17 1509949540 -2 0
+-1
+S
+
+#4050
+"Underground River"
+"Under Construction.
+
+"
+""
+301596676 0
+7 9 0
+D3
+""
+""
+0 -1 4040 0 9
+D4
+""
+""
+0 -1 4064 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4040 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 16
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4051
+"Elhanni River - In a Mountain Cave"
+"Under Construction.
+
+"
+""
+301596676 0
+8 9 0
+D0
+""
+""
+0 -1 4053 0 9
+D1
+""
+""
+0 -1 4052 0 9
+D3
+""
+""
+0 -1 4064 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4064 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 11
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4052
+"Elhanni River - In a Mountain Cave"
+"Under Construction.
+
+"
+""
+301596676 0
+8 9 0
+D1
+""
+""
+0 -1 4056 0 9
+D3
+""
+""
+0 -1 4051 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4051 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 10
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4053
+"Damp Mountain Cave"
+"Under Construction.
+
+"
+"[Phule] cave
+
+[Phule] goblins to n (notyet)
+
+"
+301596676 0
+11 9 0
+D2
+""
+""
+0 -1 4051 0 9
+-1
+S
+
+#4054
+"Damp Mountain Cave"
+"This small, damp tunnel leads north into darkness, away from the rushing
+
+river to the south.  Chill air blows across the cave mouth, carried down
+
+from the Cairns' snowy caps by the river.
+
+"
+"[Phule] goblins n (notyet)
+
+"
+301596676 0
+11 6 0
+D2
+""
+""
+0 -1 4038 0 6
+-1
+S
+
+#4055
+"Elhanni River - Underwater Beneath the Waterfall"
+"Under Construction.
+
+"
+""
+301596672 0
+7 9 0
+D4
+""
+""
+0 -1 4056 0 9
+-1
+S
+
+#4056
+"Elhanni River - Below a High Mountain Waterfall"
+"Under Construction.
+
+"
+"[Phule] light waterfall, can climb up
+
+[Phule] if fail, fall underwater below
+
+[Phule] stream is calmer here, less gradient
+
+[Phule] action leaving e, s, u
+
+"
+301465600 0
+8 9 0
+D1
+""
+""
+0 -1 4057 0 9
+D3
+""
+""
+0 -1 4052 0 9
+D4
+""
+""
+0 -1 4058 0 9
+D5
+""
+""
+0 -1 4055 0 9
+-1
+S
+
+#4057
+"Behind the High Mountain Waterfall"
+""
+"[Phule] e is goblins (notyet)
+
+"
+301465600 0
+11 9 0
+D3
+""
+""
+0 -1 4056 0 9
+-1
+S
+
+#4058
+"Elhanni River - Above a High Mountain Waterfall"
+"Under Construction.
+
+"
+""
+301465600 0
+8 9 0
+D1
+""
+""
+0 -1 4059 0 9
+D5
+""
+""
+0 -1 4056 0 9
+-1
+S
+
+#4059
+"Elhanni River"
+"Under Construction.
+
+"
+""
+301465600 0
+8 9 0
+D1
+""
+""
+0 -1 4060 0 9
+D3
+""
+""
+0 -1 4058 0 9
+-1
+S
+
+#4060
+"Elhanni River"
+"Under Construction.
+
+"
+""
+301465600 0
+8 9 0
+D1
+""
+""
+0 -1 4061 0 9
+D3
+""
+""
+0 -1 4059 0 9
+-1
+S
+
+#4061
+"Elhanni River - Bend"
+"Under Construction.
+
+"
+""
+301465600 0
+8 9 0
+D2
+""
+""
+0 -1 4062 0 9
+D3
+""
+""
+0 -1 4060 0 9
+-1
+S
+
+#4062
+"Elhanni River - Source"
+""
+"[Phule] high mountain road from kha-da should come in e
+
+[Phule] silver dragons/tomb of house nercress region to east ?
+
+"
+301465600 0
+8 9 0
+D0
+""
+""
+0 -1 4061 0 9
+-1
+S
+
+#4063
+"Elhanni River - In a Mountain Cave"
+"Under Construction.
+
+"
+""
+301596676 0
+8 9 0
+D3
+""
+""
+226 -1 4038 0 6
+D5
+""
+""
+0 -1 4039 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you west.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n west.\", ch );
+
+room = find_room( 4038 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from the east by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 40
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You take a deep breath and $t $T.
+
+"
+E
+"to_room"
+"$n takes a deep breath and $t $T.
+
+"
+!
+3 0 32
+-1
+S
+
+#4064
+"Elhanni River - In a Mountain Cave"
+"Under Construction.
+
+"
+""
+301596676 0
+8 9 0
+D1
+""
+""
+0 -1 4051 0 9
+D5
+""
+""
+0 -1 4050 0 9
+A
+"__continue_being_pushed__"
+""
+"act_tochar( \"The swift Elhanni carries you down.\", ch );
+
+act_notchar( \"The swift Elhanni carries $n down.\", ch );
+
+room = find_room( 4050 );
+
+transfer( ch, room );
+
+act_notchar( \"$n is carried in from above by the rushing current.\", ch );
+
+acode( room, 2 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !can_fly( ch ) ) {
+
+act_tochar( \"You struggle to fight the current.\", ch );
+
+act_notchar( \"$n struggles to fight the current.\", ch );
+
+i = find_skill( ch, swimming );
+
+j = random( 1, 5 );
+
+if( j > i )
+
+acode( room, 1 );
+
+}
+
+"
+!
+1 0 34
+A
+"float"
+""
+"act_tochar( \"You let the current carry you...\", ch );
+
+act_notchar( \"$n succumbs to the pull of the current.\", ch );
+
+acode( room, 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"loop( all_in_room ) {
+
+ch = rch;
+
+acode( room, 2 );
+
+}
+
+"
+!
+2 150 0
+-1
+S
+
+#4065
+"Elhanni River - Beneath the Falls"
+"This small underwater bowl is constantly being pounded by falling water from
+
+above.  Slick limestone surrounds you, leaving little traction to use the
+
+walls to climb up.
+
+"
+"[Phule] buffeted by the current, hard to swim up
+
+"
+301465600 0
+7 9 0
+D4
+""
+""
+0 -1 4008 0 9
+A
+"__hit_the_rocks__"
+""
+"i = 2d4+5;
+
+dam_message( ch, i, \"The fall\" );
+
+inflict( ch, ch, i, \"The fall\" );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( find_skill( ch, swimming ) > random( 1, 3 ) )
+
+  continue;
+
+else {
+
+  act_tochar( \"You struggle against the falling water, but are pushed back down.\", ch );
+
+  act_notchar( \"$n struggles to swim against the falling water, but is pushed pack down.\", ch );
+
+  }
+
+"
+!
+3 0 16
+324 17 1509949540 -2 0
+-1
+S
+
+#0
+

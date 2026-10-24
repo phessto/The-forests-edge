@@ -1,0 +1,5099 @@
+#AREA
+"Jungle"
+"Zithuan"
+""
+15 0
+3
+1
+#ROOMS
+
+#70600
+"Under a Huge Tree"
+"A huge tree leans across the entire path, completely blocking sight of the sky
+
+or even the canopy.  The tree is quite healthy, however, other than some
+
+scattered, tiny holes pecked into the bark by a hunt for insects.  Ferns and
+
+grasses grow healthily near the ground despite the shading, and vines tangle
+
+through a dense section of trees that the huge one merges into.
+
+"
+""
+301465604 0
+15 9 0
+D1
+""
+""
+0 -1 70044 0 9
+D3
+""
+""
+0 -1 70601 0 6
+A
+""
+""
+"send_to_area( #bug, room );
+
+"
+E
+"bug"
+"A fist-sized insect buzzes past your head, ignoring you.
+
+"
+!
+4 20 0
+-1
+S
+
+#70601
+"A Narrow Path in an Overgrown Forest"
+"The forest floor here is thick with vegetation blocking anything larger than a
+
+horse from moving through.  There is a narrow path that leads to the south and
+
+east.  The path is almost suffocating with the closeness of the surrounding
+
+plant life, the only escape from the everpresent green is up in the sky.  The
+
+air around you is damp, heavy, and hot.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70600 0 5
+D2
+""
+""
+0 -1 70602 0 6
+A
+""
+""
+"send_to_area( #quetzal, room );
+
+"
+E
+"quetzal"
+"Above you, a rare and beautiful quetzal bird flies overhead.
+
+"
+!
+4 20 0
+-1
+S
+
+#70602
+"A Narrow Path in an Overgrown Forest"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70601 0 5
+D3
+""
+""
+0 -1 70603 0 6
+A
+""
+""
+"send_to_area( #pounce, room );
+
+"
+E
+"pounce"
+"You suddenly hear the startled cry of a small mammal as its life it cut short
+
+by a large predator.
+
+"
+!
+4 20 0
+-1
+S
+
+#70603
+"A Narrow Path in an Overgrown Forest"
+"Under Construction.
+
+"
+""
+301465608 0
+15 6 0
+D1
+""
+""
+0 -1 70602 0 5
+D2
+""
+""
+0 -1 70604 0 6
+A
+""
+""
+"send_to_area( #bird, room );
+
+"
+E
+"bird"
+"From all around you, you hear the squawking sounds of parrots.
+
+"
+!
+4 20 0
+-1
+S
+
+#70604
+"At a Clearing in the Jungle"
+"The faint path from the north opens up here into a moderately sized clearing. 
+
+All at once, you find yourself subject to a dizzying assault on all of your
+
+senses.  Towering trees reach to the sky above you, and from the heights
+
+above, you can see monkeys and birds of all sizes chittering, howling,
+
+chirping and squawking to each other in an exotic cacophany of sound. 
+
+Permeating the air around you, the smells of rare flowers, half eaten fruits,
+
+and damp fur produce a rather undescribable smell.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70603 0 5
+D1
+""
+""
+0 -1 70609 0 6
+D2
+""
+""
+0 -1 70608 0 6
+D3
+""
+""
+0 -1 70605 0 6
+A
+""
+""
+"send_to_area( #monkey, room );
+
+"
+E
+"monkey"
+"From above you in the trees, you hear the unearthly shrieking of a howler
+
+monkey.
+
+"
+!
+4 20 0
+-1
+S
+
+#70605
+"At the Base of a Massive Tree"
+"A massive tree towers above the jungle floor, so wide that the armswidth of a
+
+half dozen people could not even encircle it halfway.  Several lianas, firmly
+
+rooted into the ground, wrap around the massive tree, like a network of
+
+knotted ropes.  The north is blocked in an entirely different way, smaller
+
+trees growing close together and small shrubs growing in between.
+
+"
+"Climb lianas to canopy, not so difficult, like climbing a rope ladder
+
+Further in, the climbs become more challenging.
+
+"
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70604 0 5
+D3
+""
+""
+0 -1 70606 0 6
+D4
+""
+""
+1024 -1 70704 0 6
+2435 9 1509949540 3 0
+-1
+S
+
+#70606
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70605 0 5
+D2
+""
+""
+0 -1 70607 0 6
+2436 9 1509949540 3 0
+-1
+S
+
+#70607
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70606 0 5
+D1
+""
+""
+0 -1 70611 0 5
+D2
+""
+""
+0 -1 70613 0 6
+D3
+""
+""
+0 -1 70614 0 6
+-1
+S
+
+#70608
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70604 0 5
+D1
+""
+""
+0 -1 70610 0 5
+D3
+""
+""
+0 -1 70611 0 6
+-1
+S
+
+#70609
+"Surrounded by Massive Trees"
+"Dense foliage is quite abundant here, massive ferns and exotic flowers fill
+
+the gaps between the ancient trees.  To the south, you can occasionally hear
+
+the faint sounds of a gentle stream, and it appears that the forest thins a
+
+bit to the southwest.  The wall of plant life east of you would not yield
+
+passage to any but the smallest of creatures.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70610 0 6
+D3
+""
+""
+0 -1 70604 0 5
+2438 9 1509949540 3 0
+2458 9 1509949540 3 0
+-1
+S
+
+#70610
+"A Small Section of Stream"
+"A small stream winds its way between the trees, flowing further into the dense
+
+brush to the northeast.  The reflection of the canopy above and the fallen
+
+leaves in the gently flowing water produce a tranquil scene, that is
+
+unfortunately disturbed every so often by the wildlife here.  The stream flows
+
+from the southwest, though a direct route is not available to you.
+
+"
+""
+301465600 0
+13 6 0
+D0
+""
+""
+0 -1 70609 0 5
+D3
+""
+""
+0 -1 70608 0 6
+2446 137 1509949540 3 0
+-1
+S
+
+#70611
+"Under Construction"
+"Under Construction.
+
+"
+"Big giant tree north
+
+Climb tree to canopy
+
+"
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70608 0 5
+D2
+""
+""
+0 -1 70612 0 6
+D3
+""
+""
+0 -1 70607 0 6
+D4
+""
+""
+1024 -1 70703 0 6
+-1
+S
+
+#70612
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70611 0 5
+D1
+""
+""
+0 -1 70616 0 6
+D3
+""
+""
+0 -1 70613 0 5
+-1
+S
+
+#70613
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70607 0 5
+D1
+""
+""
+0 -1 70612 0 6
+D2
+""
+""
+0 -1 70618 0 6
+D3
+""
+""
+0 -1 70615 0 5
+D4
+""
+""
+1024 -1 70779 0 6
+-1
+S
+
+#70614
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70607 0 5
+D2
+""
+""
+0 -1 70615 0 6
+-1
+S
+
+#70615
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70614 0 5
+D1
+""
+""
+0 -1 70613 0 6
+D2
+""
+""
+0 -1 70617 0 6
+-1
+S
+
+#70616
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D3
+""
+""
+0 -1 70612 0 5
+D4
+""
+""
+1024 -1 70774 0 6
+-1
+S
+
+#70617
+"The Jungle"
+"Dense clusters of large trees form wavy patterns across the brown and green
+
+leaf covered forest floor.  Echoes of rustling leaves and snapping of smaller
+
+twigs and branches bounce across the jungle with every step.  Smaller plant
+
+life such as bushes and tall purple flowers decorate the forest floor adding
+
+some color to the ground.  Within the bushes there is near constant rustling
+
+or whipping of the bush as if something were hiding within.  Openings within
+
+the centers of the tree clusters allow passage to north, east, south, and the
+
+west.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70615 0 5
+D1
+""
+""
+0 -1 70618 0 5
+D2
+""
+""
+0 -1 70623 0 6
+D3
+""
+""
+0 -1 70621 0 6
+-1
+S
+
+#70618
+"The Jungle"
+"The trees are not quite as dense in this area leaving more room for smaller
+
+vegetation such as flowers, large ferns, and bushes.  Lying across the ground
+
+is a thick blanket of green and brown leaves that rustle with every moment. 
+
+Smaller animals dwell within the leaf cover hiding from predators on a daily
+
+basis while searching for food.  High above, the forest ceiling composed of a
+
+dense cover of leaves has many large gaping holes within the natural roof. 
+
+This provides adequate light to the plants along the forest floor.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70613 0 5
+D1
+""
+""
+0 -1 70619 0 5
+D2
+""
+""
+0 -1 70624 0 6
+D3
+""
+""
+0 -1 70617 0 6
+-1
+S
+
+#70619
+"The Jungle"
+"In the center of the forest floor three pools of muddy water has gathered, a
+
+reminder of a past rain storm.  Drying out slowly, the pools will eventually
+
+give way to leaves and dirt that will fill the holes left.  Surrounding the
+
+pools are several dense clusters of large dying trees, charred and scarred
+
+with wear and tear, not to mention victims of a bolt of lightning.  Much of
+
+the vegetation seems cleared out, as evidence by the trees perhaps a fire
+
+occurred here in the past.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70620 0 5
+D2
+""
+""
+0 -1 70625 0 6
+D3
+""
+""
+0 -1 70618 0 6
+-1
+S
+
+#70620
+"Before a Giant Tree"
+"Standing out from the eastern cluster of dense trees, a giant blackened tree,
+
+like an old warrior watches over the jungle.  Thick vines, both new and old
+
+dangle from the branches above almost reaching the ground.  Around the tree is
+
+evidence of a past fire occurring from a single strike of lightning as
+
+evidence by a nearby tree split down the center, revealing the light colored
+
+wood inside.  Most of the leaf cover remains intact, revealing grasses and
+
+plants underneath its cover.  Examining the giant tree closer, there appears
+
+to be cut holes in the trunk big enough for hands and feet to climb upon.
+
+"
+""
+301465608 0
+15 6 0
+D2
+""
+""
+0 -1 70626 0 6
+D3
+""
+""
+0 -1 70619 0 6
+D4
+""
+""
+1024 -1 70775 0 6
+-1
+S
+
+#70621
+"Before a Giant Tree"
+"Standing before a dense cluster of trees is a gigantic tree, far older than
+
+many trees in the jungle.  Scratches, holes burrowed into its thick trunk, and
+
+bits torn out of it mark its scars of time.  Overhead, the tree shadows the
+
+ground with a thick cluster of dark green leaves and branches stretching out
+
+into the forest ceiling.  Thick vines dangle almost to the ground, allowing
+
+one to climb up into the tree.  A virtual impenetrable wall of trees surrounds
+
+to the west and north, allowing only a path of green and brown leaves to the
+
+east and south.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70617 0 5
+D2
+""
+""
+0 -1 70622 0 6
+D4
+""
+""
+1024 -1 70780 0 6
+-1
+S
+
+#70622
+"The Jungle"
+"Large dark green ferns grow in dense clusters replacing most of the trees in
+
+this area.  Purple and white flowers grow freely in the open space here, and
+
+are provided with lots of light from a large opening in the forest ceiling. 
+
+Small brown dirt covered rocks litter the top of the blanket of leaves
+
+covering the forest floor, sticking out like path markers.  Dried botches of
+
+blood appear on some of the leaves around the area.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70621 0 5
+D1
+""
+""
+0 -1 70623 0 5
+D3
+""
+""
+0 -1 70627 0 6
+-1
+S
+
+#70623
+"The Jungle"
+"A large, weathered pointed rock lies in the center of the blanket of leaves
+
+surrounded by four large trees.  Green moss and fungus cover the face of the
+
+rock and have built up over time.  Gaps between the cluster of trees allow
+
+passage in nearly every direction.  Perhaps the trees are feeling generous to
+
+the traveler to see the wonders of the jungle, yet a trail of fresh blood
+
+droplets dot a path along the leaves to the south.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70617 0 5
+D1
+""
+""
+0 -1 70624 0 5
+D2
+""
+""
+0 -1 70633 0 6
+D3
+""
+""
+0 -1 70622 0 6
+-1
+S
+
+#70624
+"Under Construction"
+"Under Construction.
+
+The canopy is thick overhead, with vines reaching from tree to tree far above.
+
+"
+"Climb up a vine to canopy
+
+Clump of trees east
+
+"
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70618 0 5
+D2
+""
+""
+0 -1 70632 0 6
+D3
+""
+""
+0 -1 70623 0 6
+D4
+""
+""
+1024 -1 70713 0 6
+2451 9 1509949540 3 0
+-1
+S
+
+#70625
+"The Jungle"
+"Thick vines hang down from branches like loops that nearly touch the ground. 
+
+Parts of the ground are muddy from the last rainfall making the ground a
+
+little slippery.  Leaves try to cover the muddy holes but instead are drawn
+
+into its mixture.  Clusters of dense trees crowd the area with their leaves
+
+cover the forest ceiling with a blanket of emerald green.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70619 0 5
+D1
+""
+""
+0 -1 70626 0 5
+D2
+""
+""
+0 -1 70631 0 6
+-1
+S
+
+#70626
+"The Jungle"
+"Spots of dried blood dot the trees, ferns, and bushes as if something were
+
+slaughtered in this area.  Only the surrounding trees know for sure.  Only if
+
+they could speak, the stories they could tell.  Sink holes are present in the
+
+ground as parts of the ground sinks underneath the leaves, easily causing a
+
+foot to become lodged.  Scattered across the leaves are small pointed dirt
+
+matted rocks that have surfaced from their cover of leaves.  The echoes of the
+
+jungle animals seems to surround everything within.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70620 0 5
+D1
+""
+""
+0 -1 70628 0 6
+D2
+""
+""
+0 -1 70630 0 6
+D3
+""
+""
+0 -1 70625 0 6
+-1
+S
+
+#70627
+"The Jungle"
+"Dense clusters of ancient trees narrow the vision of anyone that travels
+
+through this area.  Smaller spaces between the trees prevent a far vision into
+
+what is ahead.  Constant rustling sounds erupt from the blanket of brown and
+
+green leaves covering the forest floor.  Peering down at some of the leaves,
+
+droplets of dried blood cover some of the leaves.  A fair indication of a
+
+jungle predator making a kill in this area.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70622 0 5
+D2
+""
+""
+0 -1 70635 0 6
+-1
+S
+
+#70628
+"The Jungle"
+"Water droplets drip from the ferns, pelting the dry leaves below.  Each
+
+droplet quickly disappears, swallowed up by the forest floor.  Screeching
+
+pierces down to the ground from the birds gathered in the trees.  Vines curl
+
+and hang down from the trees like snakes slithering to the ground.  Huddled
+
+together, many of the trees in this area shadow the ferns, bushes, and smaller
+
+plant life, often stealing their sunlight needed to flourish.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70629 0 6
+D3
+""
+""
+0 -1 70626 0 5
+-1
+S
+
+#70629
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70628 0 5
+D2
+""
+""
+0 -1 70642 0 6
+D3
+""
+""
+0 -1 70630 0 5
+-1
+S
+
+#70630
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70626 0 5
+D1
+""
+""
+0 -1 70629 0 6
+D2
+""
+""
+0 -1 70641 0 6
+-1
+S
+
+#70631
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70625 0 5
+D2
+""
+""
+0 -1 70640 0 6
+D3
+""
+""
+0 -1 70632 0 5
+2458 9 1509949540 3 0
+2458 9 1509949540 3 0
+-1
+S
+
+#70632
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70624 0 5
+D1
+""
+""
+0 -1 70631 0 6
+D2
+""
+""
+0 -1 70639 0 6
+D3
+""
+""
+0 -1 70633 0 5
+-1
+S
+
+#70633
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70623 0 5
+D1
+""
+""
+0 -1 70632 0 6
+D3
+""
+""
+0 -1 70634 0 5
+-1
+S
+
+#70634
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70633 0 6
+D2
+""
+""
+0 -1 70637 0 6
+D3
+""
+""
+0 -1 70635 0 5
+-1
+S
+
+#70635
+"Under Construction"
+""
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70627 0 5
+D1
+""
+""
+0 -1 70634 0 6
+D4
+""
+""
+1024 -1 70721 0 6
+-1
+S
+
+#70636
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70637 0 5
+D2
+""
+""
+0 -1 70647 0 6
+D3
+""
+""
+0 -1 70643 0 6
+-1
+S
+
+#70637
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70634 0 5
+D1
+""
+""
+0 -1 70638 0 5
+D2
+""
+""
+0 -1 70648 0 6
+D3
+""
+""
+0 -1 70636 0 6
+-1
+S
+
+#70638
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70649 0 6
+D3
+""
+""
+0 -1 70637 0 6
+D4
+""
+""
+1024 -1 70717 0 6
+-1
+S
+
+#70639
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70632 0 5
+D2
+""
+""
+0 -1 70650 0 6
+-1
+S
+
+#70640
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70631 0 5
+D1
+""
+""
+0 -1 70641 0 5
+D2
+""
+""
+0 -1 70651 0 6
+D4
+""
+""
+1024 -1 70709 0 6
+-1
+S
+
+#70641
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70630 0 5
+D1
+""
+""
+0 -1 70642 0 5
+D2
+""
+""
+0 -1 70652 0 6
+D3
+""
+""
+0 -1 70640 0 6
+D4
+""
+""
+1024 -1 70708 0 6
+-1
+S
+
+#70642
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70629 0 5
+D3
+""
+""
+0 -1 70641 0 6
+-1
+S
+
+#70643
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70636 0 5
+D3
+""
+""
+0 -1 70644 0 6
+-1
+S
+
+#70644
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70643 0 5
+D2
+""
+""
+0 -1 70645 0 6
+-1
+S
+
+#70645
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70644 0 5
+D1
+""
+""
+0 -1 70646 0 5
+D2
+""
+""
+0 -1 70653 0 6
+-1
+S
+
+#70646
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70647 0 5
+D2
+""
+""
+0 -1 70654 0 6
+D3
+""
+""
+0 -1 70645 0 6
+D4
+""
+""
+1024 -1 70742 0 6
+-1
+S
+
+#70647
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70636 0 5
+D1
+""
+""
+0 -1 70648 0 5
+D2
+""
+""
+0 -1 70655 0 6
+D3
+""
+""
+0 -1 70646 0 6
+D4
+""
+""
+1024 -1 70745 0 6
+-1
+S
+
+#70648
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70637 0 5
+D1
+""
+""
+0 -1 70649 0 5
+D2
+""
+""
+0 -1 70656 0 6
+D3
+""
+""
+0 -1 70647 0 6
+-1
+S
+
+#70649
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70638 0 5
+D1
+""
+""
+0 -1 70650 0 5
+D2
+""
+""
+0 -1 70657 0 6
+D3
+""
+""
+0 -1 70648 0 6
+-1
+S
+
+#70650
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70639 0 5
+D3
+""
+""
+0 -1 70649 0 6
+D4
+""
+""
+1024 -1 70738 0 6
+-1
+S
+
+#70651
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70640 0 5
+D1
+""
+""
+0 -1 70652 0 5
+D2
+""
+""
+0 -1 70659 0 6
+-1
+S
+
+#70652
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70641 0 5
+D3
+""
+""
+0 -1 70651 0 6
+-1
+S
+
+#70653
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70645 0 5
+D1
+""
+""
+0 -1 70654 0 5
+-1
+S
+
+#70654
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70646 0 5
+D2
+""
+""
+0 -1 70660 0 6
+D3
+""
+""
+0 -1 70653 0 6
+-1
+S
+
+#70655
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70647 0 5
+D1
+""
+""
+0 -1 70656 0 5
+D2
+""
+""
+0 -1 70661 0 6
+-1
+S
+
+#70656
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70648 0 5
+D2
+""
+""
+0 -1 70662 0 6
+D3
+""
+""
+0 -1 70655 0 6
+D4
+""
+""
+0 -1 70739 0 6
+-1
+S
+
+#70657
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70649 0 5
+D1
+""
+""
+0 -1 70658 0 5
+D2
+""
+""
+0 -1 70663 0 6
+-1
+S
+
+#70658
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70659 0 5
+D2
+""
+""
+0 -1 70664 0 6
+D3
+""
+""
+0 -1 70657 0 6
+-1
+S
+
+#70659
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70651 0 5
+D1
+""
+""
+0 -1 70666 0 6
+D2
+""
+""
+0 -1 70665 0 6
+D3
+""
+""
+0 -1 70658 0 6
+D4
+""
+""
+1024 -1 70735 0 6
+-1
+S
+
+#70660
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70654 0 5
+D2
+""
+""
+0 -1 70672 0 6
+D3
+""
+""
+0 -1 70668 0 6
+D4
+""
+""
+1024 -1 70751 0 6
+-1
+S
+
+#70661
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70655 0 5
+D1
+""
+""
+0 -1 70662 0 5
+D2
+""
+""
+0 -1 70673 0 6
+D4
+""
+""
+1024 -1 70724 0 6
+-1
+S
+
+#70662
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70656 0 5
+D1
+""
+""
+0 -1 70663 0 5
+D2
+""
+""
+0 -1 70674 0 6
+D3
+""
+""
+0 -1 70661 0 6
+-1
+S
+
+#70663
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70657 0 5
+D2
+""
+""
+0 -1 70675 0 6
+D3
+""
+""
+0 -1 70662 0 6
+-1
+S
+
+#70664
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70658 0 5
+D1
+""
+""
+0 -1 70665 0 5
+D4
+""
+""
+1024 -1 70732 0 6
+-1
+S
+
+#70665
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70659 0 5
+D1
+""
+""
+0 -1 70667 0 5
+D2
+""
+""
+0 -1 70677 0 6
+D3
+""
+""
+0 -1 70664 0 6
+-1
+S
+
+#70666
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70667 0 6
+D3
+""
+""
+0 -1 70659 0 5
+D4
+""
+""
+1024 -1 70759 0 6
+-1
+S
+
+#70667
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70666 0 5
+D2
+""
+""
+0 -1 70678 0 6
+D3
+""
+""
+0 -1 70665 0 6
+-1
+S
+
+#70668
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70660 0 5
+D2
+""
+""
+0 -1 70671 0 6
+D3
+""
+""
+0 -1 70669 0 6
+-1
+S
+
+#70669
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70668 0 5
+D2
+""
+""
+0 -1 70670 0 6
+D4
+""
+""
+1024 -1 70746 0 6
+-1
+S
+
+#70670
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70669 0 5
+D1
+""
+""
+0 -1 70671 0 5
+D2
+""
+""
+0 -1 70681 0 6
+D3
+""
+""
+0 -1 70679 0 6
+2455 9 1509949540 3 0
+-1
+S
+
+#70671
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70668 0 5
+D1
+""
+""
+0 -1 70672 0 5
+D2
+""
+""
+0 -1 70682 0 6
+D3
+""
+""
+0 -1 70670 0 6
+2455 9 1509949540 3 0
+2455 9 1509949540 3 0
+2455 9 1509949540 3 0
+-1
+S
+
+#70672
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70660 0 5
+D1
+""
+""
+0 -1 70673 0 5
+D2
+""
+""
+0 -1 70683 0 6
+D3
+""
+""
+0 -1 70671 0 6
+-1
+S
+
+#70673
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70661 0 5
+D1
+""
+""
+0 -1 70674 0 5
+D2
+""
+""
+0 -1 70684 0 6
+D3
+""
+""
+0 -1 70672 0 6
+-1
+S
+
+#70674
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70662 0 5
+D1
+""
+""
+0 -1 70675 0 5
+D2
+""
+""
+0 -1 70685 0 6
+D3
+""
+""
+0 -1 70673 0 6
+-1
+S
+
+#70675
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70663 0 5
+D1
+""
+""
+0 -1 70676 0 5
+D2
+""
+""
+0 -1 70686 0 6
+D3
+""
+""
+0 -1 70674 0 6
+D4
+""
+""
+1024 -1 70729 0 6
+-1
+S
+
+#70676
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70677 0 5
+D3
+""
+""
+0 -1 70675 0 6
+-1
+S
+
+#70677
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70665 0 5
+D1
+""
+""
+0 -1 70678 0 5
+D2
+""
+""
+0 -1 70688 0 6
+D3
+""
+""
+0 -1 70676 0 6
+-1
+S
+
+#70678
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70667 0 5
+D1
+""
+""
+0 -1 70690 0 6
+D2
+""
+""
+0 -1 70689 0 6
+D3
+""
+""
+0 -1 70677 0 6
+D4
+""
+""
+1024 -1 70753 0 6
+-1
+S
+
+#70679
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D1
+""
+""
+0 -1 70670 0 5
+D2
+""
+""
+0 -1 70680 0 6
+2455 9 1509949540 3 0
+2455 9 1509949540 3 0
+-1
+S
+
+#70680
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70679 0 5
+D1
+""
+""
+0 -1 70681 0 5
+D2
+""
+""
+0 -1 70692 0 6
+2455 9 1509949540 3 0
+2455 9 1509949540 3 0
+-1
+S
+
+#70681
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70670 0 5
+D1
+""
+""
+0 -1 70682 0 5
+D2
+""
+""
+0 -1 70693 0 6
+D3
+""
+""
+0 -1 70680 0 6
+2455 9 1509949540 3 0
+2455 9 1509949540 3 0
+2455 9 1509949540 3 0
+-1
+S
+
+#70682
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70671 0 5
+D1
+""
+""
+0 -1 70683 0 5
+D2
+""
+""
+0 -1 70694 0 6
+D3
+""
+""
+0 -1 70681 0 6
+2455 9 1509949540 3 0
+2455 9 1509949540 3 0
+-1
+S
+
+#70683
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70672 0 5
+D1
+""
+""
+0 -1 70684 0 5
+D2
+""
+""
+0 -1 70695 0 6
+D3
+""
+""
+0 -1 70682 0 6
+-1
+S
+
+#70684
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70673 0 5
+D1
+""
+""
+0 -1 70685 0 5
+D2
+""
+""
+0 -1 70696 0 6
+D3
+""
+""
+0 -1 70683 0 6
+-1
+S
+
+#70685
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70674 0 5
+D1
+""
+""
+0 -1 70686 0 5
+D2
+""
+""
+0 -1 70697 0 6
+D3
+""
+""
+0 -1 70684 0 6
+-1
+S
+
+#70686
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70675 0 5
+D1
+""
+""
+0 -1 70687 0 5
+D2
+""
+""
+0 -1 70698 0 6
+D3
+""
+""
+0 -1 70685 0 6
+-1
+S
+
+#70687
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70699 0 6
+D3
+""
+""
+0 -1 70686 0 6
+D4
+""
+""
+1024 -1 70810 0 6
+-1
+S
+
+#70688
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70677 0 5
+D1
+""
+""
+0 -1 70689 0 5
+D2
+""
+""
+0 -1 70700 0 6
+-1
+S
+
+#70689
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70678 0 5
+D1
+""
+""
+0 -1 70691 0 5
+D2
+""
+""
+0 -1 70701 0 6
+D3
+""
+""
+0 -1 70688 0 6
+-1
+S
+
+#70690
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70691 0 6
+D3
+""
+""
+0 -1 70678 0 5
+-1
+S
+
+#70691
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70690 0 5
+D2
+""
+""
+0 -1 70702 0 6
+D3
+""
+""
+0 -1 70689 0 6
+-1
+S
+
+#70692
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70680 0 5
+D1
+""
+""
+0 -1 70693 0 5
+D2
+""
+""
+0 -1 70770 0 6
+2455 9 1509949540 3 0
+2455 9 1509949540 3 0
+2455 9 1509949540 3 0
+-1
+S
+
+#70693
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70681 0 5
+D1
+""
+""
+0 -1 70694 0 5
+D2
+""
+""
+0 -1 70769 0 6
+D3
+""
+""
+0 -1 70692 0 6
+2449 9 1509949540 3 0
+-1
+S
+
+#70694
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70682 0 5
+D1
+""
+""
+0 -1 70695 0 5
+D2
+""
+""
+0 -1 70768 0 6
+D3
+""
+""
+0 -1 70693 0 6
+-1
+S
+
+#70695
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70683 0 5
+D1
+""
+""
+0 -1 70696 0 5
+D2
+""
+""
+0 -1 70767 0 6
+D3
+""
+""
+0 -1 70694 0 6
+-1
+S
+
+#70696
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70684 0 5
+D1
+""
+""
+0 -1 70697 0 5
+D2
+""
+""
+0 -1 70766 0 6
+D3
+""
+""
+0 -1 70695 0 6
+-1
+S
+
+#70697
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70685 0 5
+D1
+""
+""
+0 -1 70698 0 5
+D2
+""
+""
+0 -1 70765 0 6
+D3
+""
+""
+0 -1 70696 0 6
+2449 9 1509949540 3 0
+2455 9 1509949540 3 0
+2455 9 1509949540 3 0
+-1
+S
+
+#70698
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70686 0 5
+D1
+""
+""
+0 -1 70699 0 5
+D2
+""
+""
+0 -1 70764 0 6
+D3
+""
+""
+0 -1 70697 0 6
+-1
+S
+
+#70699
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70687 0 5
+D1
+""
+""
+0 -1 70700 0 5
+D2
+""
+""
+0 -1 70763 0 6
+D3
+""
+""
+0 -1 70698 0 6
+-1
+S
+
+#70700
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70688 0 5
+D1
+""
+""
+0 -1 70701 0 5
+D2
+""
+""
+0 -1 70762 0 6
+D3
+""
+""
+0 -1 70699 0 6
+-1
+S
+
+#70701
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70689 0 5
+D1
+""
+""
+0 -1 70702 0 5
+D2
+""
+""
+0 -1 70761 0 6
+D3
+""
+""
+0 -1 70700 0 6
+D4
+""
+""
+1024 -1 70771 0 6
+-1
+S
+
+#70702
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70691 0 5
+D2
+""
+""
+0 -1 70760 0 6
+D3
+""
+""
+0 -1 70701 0 6
+-1
+S
+
+#70703
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70704 0 5
+D1
+""
+""
+0 -1 70706 0 6
+D3
+""
+""
+0 -1 70705 0 6
+D5
+""
+""
+1024 -1 70611 0 5
+-1
+S
+
+#70704
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70707 0 6
+D2
+""
+""
+0 -1 70703 0 6
+D5
+""
+""
+1024 -1 70605 0 5
+-1
+S
+
+#70705
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70703 0 5
+-1
+S
+
+#70706
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D3
+""
+""
+0 -1 70703 0 5
+-1
+S
+
+#70707
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D3
+""
+""
+0 -1 70704 0 5
+-1
+S
+
+#70708
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70711 0 6
+D3
+""
+""
+0 -1 70709 0 5
+D5
+""
+""
+1024 -1 70641 0 5
+-1
+S
+
+#70709
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70710 0 6
+D1
+""
+""
+0 -1 70708 0 6
+D3
+""
+""
+0 -1 70712 0 6
+D5
+""
+""
+1024 -1 70640 0 5
+-1
+S
+
+#70710
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70711 0 5
+D2
+""
+""
+0 -1 70709 0 5
+-1
+S
+
+#70711
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70708 0 5
+D3
+""
+""
+0 -1 70710 0 6
+-1
+S
+
+#70712
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70709 0 5
+-1
+S
+
+#70713
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70716 0 6
+D2
+""
+""
+0 -1 70714 0 6
+D3
+""
+""
+0 -1 70715 0 6
+D5
+""
+""
+1024 -1 70624 0 5
+-1
+S
+
+#70714
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70713 0 5
+-1
+S
+
+#70715
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70713 0 5
+-1
+S
+
+#70716
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70713 0 5
+-1
+S
+
+#70717
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70718 0 6
+D3
+""
+""
+0 -1 70719 0 6
+D5
+""
+""
+1024 -1 70638 0 5
+-1
+S
+
+#70718
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70717 0 5
+-1
+S
+
+#70719
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70717 0 5
+D2
+""
+""
+0 -1 70720 0 6
+-1
+S
+
+#70720
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70719 0 5
+-1
+S
+
+#70721
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70722 0 6
+D2
+""
+""
+0 -1 70723 0 6
+D5
+""
+""
+1024 -1 70635 0 5
+-1
+S
+
+#70722
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D3
+""
+""
+0 -1 70721 0 5
+-1
+S
+
+#70723
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70721 0 5
+-1
+S
+
+#70724
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70725 0 6
+D1
+""
+""
+0 -1 70726 0 6
+D2
+""
+""
+0 -1 70727 0 6
+D5
+""
+""
+1024 -1 70661 0 5
+-1
+S
+
+#70725
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70724 0 5
+-1
+S
+
+#70726
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70728 0 6
+D3
+""
+""
+0 -1 70724 0 5
+-1
+S
+
+#70727
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70724 0 5
+-1
+S
+
+#70728
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70726 0 5
+D1
+""
+""
+0 -1 70729 0 5
+-1
+S
+
+#70729
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70730 0 6
+D2
+""
+""
+0 -1 70731 0 6
+D3
+""
+""
+0 -1 70728 0 6
+D5
+""
+""
+1024 -1 70675 0 5
+-1
+S
+
+#70730
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D3
+""
+""
+0 -1 70729 0 5
+-1
+S
+
+#70731
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70729 0 5
+-1
+S
+
+#70732
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70734 0 6
+D3
+""
+""
+0 -1 70733 0 6
+D5
+""
+""
+1024 -1 70664 0 5
+-1
+S
+
+#70733
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70732 0 5
+-1
+S
+
+#70734
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D3
+""
+""
+0 -1 70732 0 5
+-1
+S
+
+#70735
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70737 0 6
+D3
+""
+""
+0 -1 70736 0 6
+D5
+""
+""
+1024 -1 70659 0 5
+-1
+S
+
+#70736
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70738 0 5
+D1
+""
+""
+0 -1 70735 0 5
+-1
+S
+
+#70737
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70735 0 5
+D3
+""
+""
+0 -1 70738 0 6
+-1
+S
+
+#70738
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70737 0 5
+D2
+""
+""
+0 -1 70736 0 6
+D5
+""
+""
+1024 -1 70650 0 5
+-1
+S
+
+#70739
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70740 0 6
+D5
+""
+""
+0 -1 70656 0 5
+-1
+S
+
+#70740
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70741 0 6
+D3
+""
+""
+0 -1 70739 0 5
+-1
+S
+
+#70741
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70740 0 5
+-1
+S
+
+#70742
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70743 0 6
+D2
+""
+""
+0 -1 70744 0 6
+D5
+""
+""
+1024 -1 70646 0 5
+-1
+S
+
+#70743
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70742 0 5
+-1
+S
+
+#70744
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70742 0 5
+D3
+""
+""
+0 -1 70750 0 6
+-1
+S
+
+#70745
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D5
+""
+""
+1024 -1 70647 0 5
+-1
+S
+
+#70746
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70749 0 6
+D1
+""
+""
+0 -1 70748 0 6
+D2
+""
+""
+0 -1 70747 0 6
+D5
+""
+""
+1024 -1 70669 0 5
+-1
+S
+
+#70747
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70746 0 5
+-1
+S
+
+#70748
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70750 0 6
+D3
+""
+""
+0 -1 70746 0 5
+-1
+S
+
+#70749
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70746 0 5
+-1
+S
+
+#70750
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70744 0 5
+D2
+""
+""
+0 -1 70748 0 5
+-1
+S
+
+#70751
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70752 0 6
+D5
+""
+""
+1024 -1 70660 0 5
+-1
+S
+
+#70752
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70751 0 5
+D2
+""
+""
+0 -1 70802 0 6
+-1
+S
+
+#70753
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70754 0 6
+D1
+""
+""
+0 -1 70755 0 6
+D2
+""
+""
+0 -1 70757 0 6
+D3
+""
+""
+0 -1 70756 0 6
+D5
+""
+""
+1024 -1 70678 0 5
+-1
+S
+
+#70754
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70753 0 5
+-1
+S
+
+#70755
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D3
+""
+""
+0 -1 70753 0 5
+-1
+S
+
+#70756
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70753 0 5
+D2
+""
+""
+0 -1 70758 0 5
+-1
+S
+
+#70757
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70753 0 5
+D3
+""
+""
+0 -1 70758 0 6
+-1
+S
+
+#70758
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70756 0 6
+D1
+""
+""
+0 -1 70757 0 5
+D2
+""
+""
+0 -1 70772 0 6
+D3
+""
+""
+0 -1 70810 0 6
+-1
+S
+
+#70759
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D5
+""
+""
+1024 -1 70666 0 5
+-1
+S
+
+#70760
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70702 0 5
+D1
+""
+""
+0 -1 70784 0 6
+D2
+""
+""
+0 -1 70786 0 6
+D3
+""
+""
+0 -1 70761 0 5
+-1
+S
+
+#70761
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70701 0 5
+D1
+""
+""
+0 -1 70760 0 6
+D2
+""
+""
+0 -1 70787 0 6
+D3
+""
+""
+0 -1 70762 0 5
+-1
+S
+
+#70762
+"Under Construction"
+"Under Construction.
+
+"
+"Need a good river name
+
+"
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70700 0 5
+D1
+""
+""
+0 -1 70761 0 6
+D2
+""
+""
+0 -1 70788 0 6
+D3
+""
+""
+0 -1 70763 0 5
+-1
+S
+
+#70763
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70699 0 5
+D1
+""
+""
+0 -1 70762 0 6
+D2
+""
+""
+0 -1 70789 0 6
+D3
+""
+""
+0 -1 70764 0 5
+-1
+S
+
+#70764
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70698 0 5
+D1
+""
+""
+0 -1 70763 0 6
+D2
+""
+""
+0 -1 70790 0 6
+D3
+""
+""
+0 -1 70765 0 5
+-1
+S
+
+#70765
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70697 0 5
+D1
+""
+""
+0 -1 70764 0 6
+D2
+""
+""
+0 -1 70791 0 6
+D3
+""
+""
+0 -1 70766 0 5
+-1
+S
+
+#70766
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70696 0 5
+D1
+""
+""
+0 -1 70765 0 6
+D2
+""
+""
+0 -1 70792 0 6
+D3
+""
+""
+0 -1 70767 0 5
+-1
+S
+
+#70767
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70695 0 5
+D1
+""
+""
+0 -1 70766 0 6
+D2
+""
+""
+0 -1 70793 0 6
+D3
+""
+""
+0 -1 70768 0 5
+-1
+S
+
+#70768
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70694 0 5
+D1
+""
+""
+0 -1 70767 0 6
+D2
+""
+""
+0 -1 70794 0 6
+D3
+""
+""
+0 -1 70769 0 5
+-1
+S
+
+#70769
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70693 0 5
+D1
+""
+""
+0 -1 70768 0 6
+D2
+""
+""
+0 -1 70795 0 6
+D3
+""
+""
+0 -1 70770 0 5
+-1
+S
+
+#70770
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70692 0 5
+D1
+""
+""
+0 -1 70769 0 6
+D2
+""
+""
+0 -1 70796 0 6
+2455 9 1509949540 3 0
+-1
+S
+
+#70771
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D3
+""
+""
+0 -1 70772 0 6
+D5
+""
+""
+1024 -1 70701 0 5
+-1
+S
+
+#70772
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70758 0 5
+D1
+""
+""
+0 -1 70771 0 5
+D3
+""
+""
+0 -1 70773 0 6
+-1
+S
+
+#70773
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70772 0 5
+-1
+S
+
+#70774
+"Up in a Tree"
+"Atop this tree, the trunk appears very uneven and keeping balance is a
+
+challenge.  Clusters of dark green leaves mat parts of the trunk, causing
+
+anyone to part the leaves in order to reach different areas across the trunk. 
+
+Snaking across, a small twisted path leads across with a curtain of dangling
+
+vines swinging back and forth.  A vine latched tightly to the trunk dangling
+
+down allows one to climb down to the forest floor.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70775 0 6
+D5
+""
+""
+1024 -1 70616 0 5
+-1
+S
+
+#70775
+"Up in a Tree"
+"Standing on an uneven section of the trunk, it takes near perfect balance to
+
+keep from falling out of the tree.  The bark of the trunk is scarred and
+
+marred with many holes chewed into its inner wood layers by insects and small
+
+animals.  Hanging down are many dark green vines like a curtain covering a
+
+window.  From this point, two branches stretch out to the east and west, big
+
+enough for a humanoid to walk across.  Across the other side, a narrow section
+
+allows one to cross to the other side of the trunk.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70774 0 5
+D1
+""
+""
+0 -1 70776 0 6
+D3
+""
+""
+0 -1 70777 0 6
+D5
+""
+""
+1024 -1 70620 0 5
+-1
+S
+
+#70776
+"A Small Branch's End"
+"This branch has stopped its promising growth, ending way short.  Brown and
+
+greenish vines dangle down from the branch like small ropes toward the
+
+ground.  Below the branch is a collection of spear, edged brown rocks
+
+scattered across a small field of ferns.  Littering the branch are colorful
+
+red and green feathers, some matted with dots of dried blood.  Just below a
+
+group of feathers is a tiny dried pool of red blood just at the end of the
+
+branch.
+
+"
+""
+301465600 0
+15 6 0
+D3
+""
+""
+0 -1 70775 0 5
+-1
+S
+
+#70777
+"Along a Branch"
+"Droplets of blood dried and fresh blood dot the dark wooden branch as it
+
+twists and curves to the south.  Bits of feathers cling to the branch as
+
+evidence of birds taking rest or making their homes here in the tree.  Vines
+
+and leaves intertwine across the branch making it difficult to fully stand up
+
+without the leaves grasping around the head.  To the south the end of the
+
+branch is visible in a cluster of leaves and vines, while the center of the
+
+trunk looks more comforting to the east.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70775 0 5
+D2
+""
+""
+0 -1 70778 0 6
+-1
+S
+
+#70778
+"The Golden Python's Lair"
+"Dried blood mats the branch with large and small feathers clinging tightly to
+
+the end of the branch.  Something appears to have been killed very recently in
+
+evidence to several bloody feathers.  Dense clusters of dark green leaves and
+
+vines in this area of the branch provides several hiding spots for predators
+
+wishing to ambush their prey.  The slight rustling of the leaves around is
+
+almost a solid indication that something is watching every moment made on this
+
+branch very, very closely.
+
+"
+"golden python would be a medium sized mob
+
+"
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70777 0 5
+-1
+S
+
+#70779
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D5
+""
+""
+1024 -1 70613 0 5
+-1
+S
+
+#70780
+"Up in a Giant Tree"
+"Several holes along the massive trunk allows good holds and footing for
+
+climbers.  Upon a u-shaped area of the trunk allows a few moments of rest
+
+before gazing out at the long, thick branches stretching off from the trunk. 
+
+Each branch could easily hold a humanoid being and allow them to walk across
+
+the branch with relative ease.  Only two branches to the north and west allow
+
+such passage while further up the trunk seems currently impossible.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70781 0 6
+D3
+""
+""
+0 -1 70782 0 6
+D5
+""
+""
+1024 -1 70621 0 5
+-1
+S
+
+#70781
+"A Broken Tree Branch"
+"This thick tree branch seems to have broken off due to a lightning strike as
+
+evidence of black charred marks on the end of the splintered wood.  Lying
+
+below on the forest floor is the remains of the tree branch, charred, but now
+
+home to small insects and tiny animals.  Thick clusters of green leaves above
+
+shake and rattle from animals either jumping from branch to branch or pulling
+
+on the smaller branches.  Nothing more to view here, but to turn back.
+
+"
+""
+301465600 0
+15 6 0
+D2
+""
+""
+0 -1 70780 0 5
+-1
+S
+
+#70782
+"Along A Tree Branch"
+"The wood of the branch is not only holey but crooked from growth, making
+
+passage on it an act of balance as the branch moves up, down, and to the
+
+side.  Some green leaf clusters are attached to the branch with many leaves
+
+showing signs of insect bites, decay, and animals having torn them off.  White
+
+and greenish bird droppings litter the branch with droplets of blood, some
+
+still fresh.  A couple of the blood droplets run down the branch and trickle
+
+off below onto fallen leaves.  Off to the south, a ghastly view of bones, tiny
+
+pools of blood, and strings of flesh are visible at the branchs end.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70780 0 5
+D2
+""
+""
+0 -1 70783 0 6
+-1
+S
+
+#70783
+"The Jungle Gremlin's Home"
+"The end of the branch is soaked in blood with much of it drying and adding a
+
+reddish tint to the branch.  Animal bones, mostly that of birds are scattered
+
+across the thick flat end of the branch.  Trickling off the branch are tiny
+
+rivers of blood from fresh bird corpses that lie torn and shredded from what
+
+appears to be claw and bite marks.  A foul stench arises from the collection
+
+of bird corpses made worse from the hot humid climate of the jungle.  Back
+
+across the branch seems more pleasant.
+
+"
+"jungle gremlin would be a medium sized mob
+
+"
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70782 0 5
+-1
+S
+
+#70784
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D2
+""
+""
+0 -1 70785 0 6
+D3
+""
+""
+0 -1 70760 0 5
+-1
+S
+
+#70785
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70784 0 5
+D3
+""
+""
+0 -1 70786 0 5
+-1
+S
+
+#70786
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70760 0 5
+D1
+""
+""
+0 -1 70785 0 6
+D3
+""
+""
+0 -1 70787 0 5
+-1
+S
+
+#70787
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70761 0 5
+D1
+""
+""
+0 -1 70786 0 6
+D3
+""
+""
+0 -1 70788 0 5
+-1
+S
+
+#70788
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70762 0 5
+D1
+""
+""
+0 -1 70787 0 6
+D3
+""
+""
+0 -1 70789 0 5
+-1
+S
+
+#70789
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70763 0 5
+D1
+""
+""
+0 -1 70788 0 6
+D3
+""
+""
+0 -1 70790 0 5
+-1
+S
+
+#70790
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70764 0 5
+D1
+""
+""
+0 -1 70789 0 6
+D3
+""
+""
+0 -1 70791 0 5
+-1
+S
+
+#70791
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70765 0 5
+D1
+""
+""
+0 -1 70790 0 6
+D3
+""
+""
+0 -1 70792 0 5
+-1
+S
+
+#70792
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70766 0 5
+D1
+""
+""
+0 -1 70791 0 6
+D3
+""
+""
+0 -1 70793 0 5
+-1
+S
+
+#70793
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 70767 0 5
+D1
+""
+""
+0 -1 70792 0 6
+D3
+""
+""
+0 -1 70794 0 5
+-1
+S
+
+#70794
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70768 0 5
+D1
+""
+""
+0 -1 70793 0 6
+D3
+""
+""
+0 -1 70795 0 5
+D4
+""
+""
+1024 -1 70797 0 6
+-1
+S
+
+#70795
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70769 0 5
+D1
+""
+""
+0 -1 70794 0 6
+D3
+""
+""
+0 -1 70796 0 5
+-1
+S
+
+#70796
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70770 0 5
+D1
+""
+""
+0 -1 70795 0 6
+D4
+""
+""
+1024 -1 70805 0 6
+-1
+S
+
+#70797
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70798 0 6
+D3
+""
+""
+0 -1 70799 0 6
+D5
+""
+""
+1024 -1 70794 0 5
+-1
+S
+
+#70798
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70800 0 6
+D2
+""
+""
+0 -1 70797 0 5
+-1
+S
+
+#70799
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70797 0 5
+-1
+S
+
+#70800
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70801 0 6
+D1
+""
+""
+0 -1 70804 0 6
+D3
+""
+""
+0 -1 70798 0 5
+-1
+S
+
+#70801
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70802 0 6
+D2
+""
+""
+0 -1 70800 0 5
+-1
+S
+
+#70802
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70752 0 5
+D2
+""
+""
+0 -1 70801 0 5
+D3
+""
+""
+0 -1 70803 0 6
+-1
+S
+
+#70803
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70802 0 5
+-1
+S
+
+#70804
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D3
+""
+""
+0 -1 70800 0 5
+-1
+S
+
+#70805
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70806 0 6
+D2
+""
+""
+0 -1 70807 0 6
+D5
+""
+""
+1024 -1 70796 0 5
+-1
+S
+
+#70806
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70808 0 6
+D2
+""
+""
+0 -1 70805 0 5
+-1
+S
+
+#70807
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D0
+""
+""
+0 -1 70805 0 5
+-1
+S
+
+#70808
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70809 0 6
+D2
+""
+""
+0 -1 70806 0 5
+-1
+S
+
+#70809
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D3
+""
+""
+0 -1 70808 0 5
+-1
+S
+
+#70810
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+15 6 0
+D1
+""
+""
+0 -1 70758 0 5
+D5
+""
+""
+1024 -1 70687 0 5
+-1
+S
+
+#70811
+"Under a Huge Tree"
+"Under Construction.
+
+"
+""
+300941316 0
+15 6 0
+2451 9 1509949540 3 0
+14 17 1509949540 -2 0
+-1
+S
+
+#0
+

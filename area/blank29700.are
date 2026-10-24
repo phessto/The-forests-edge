@@ -1,0 +1,483 @@
+#AREA
+"HERO stronghold"
+""
+""
+1 0
+0
+0
+#ROOMS
+
+#29700
+"Before a White Fortress"
+"Before you is an ominous fortress made of the purest white-marble.  The white
+
+of the fortress contrasts nicely with the gray-white background of the
+
+mountain.  The fortress looms several stories up reaching towards the sky with
+
+an occasional spike jutting out from the high walls.  Two towers, one each on
+
+either side of the entrance stands firm against the shadows.  There is an
+
+eerie ambience encompassing the fortress for no guards or gate can be seen.
+
+No scratches or cracks can be seen anywhere on the surface of the fortress.
+
+There is an opening leading south into the heart of the quiet fortress and a
+
+faint path leading north back towards the mountain trail.
+
+"
+""
+301465600 0
+0 5 0
+D0
+""
+""
+0 -1 94616 0 6
+D2
+""
+""
+65536 -1 29701 0 6
+A
+""
+""
+"if( is_player( ch ) ) {
+
+  if( is_name( \"HERO\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #yes, ch );
+
+    act_notchar( #ryes, ch );
+
+    continue;
+
+    }
+
+  else {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #pet, ch );
+
+"
+E
+"yes"
+"Your body tingles slightly as you pass through to the south.
+
+"
+E
+"ryes"
+"$n shivers slightly then proceeds to the south.
+
+"
+E
+"nope"
+"You feel a body-numbing rush of energy and stop, unable to enter the fortress.
+
+"
+E
+"rnope"
+"$n shivers slightly and stops, unable to move into the fortress.
+
+"
+E
+"pet"
+"Pets are not allowed in this fortress.
+
+"
+!
+3 0 4
+-1
+S
+
+#29701
+"The Heart of the White Fortress"
+"In the center of the room is a beautiful circular water fountain.  A sculpture
+
+of a naked elven woman stands in the center of the fountain elegantly pouring
+
+crystal-clear water into the fountain.  Both the woman and the fountain appear
+
+to be carved out of the same marble as the fortress.  The ceiling and floor
+
+glow with a soft hum, illuminating the entire room leaving no shadows.  No
+
+tiles or seams of any kind can be seen in the marble work.  Perhaps this was
+
+all carved out of a single piece of marble.  There is a hallway leading south,
+
+deeper into the fortress, and one leading back north towards the entrance.
+
+"
+""
+301465604 0
+0 5 0
+D0
+""
+""
+65536 -1 29700 0 6
+D1
+""
+""
+0 -1 29703 0 5
+D2
+""
+""
+229376 -1 29702 0 5
+A
+""
+""
+"if( is_player( ch ) ) {
+
+  if( !is_name( \"HERO\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #bye, ch );
+
+    act_notchar( #rbye, ch );
+
+    room = find_room( 29700 );
+
+    transfer( ch, room );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #pet, ch );
+
+  room = find_room( 29700 );
+
+  transfer( victim, room );
+
+  }
+
+"
+E
+"bye"
+"Your kind is not welcome here.
+
+"
+E
+"rbye"
+"$n disappears in a flash of white light.
+
+"
+E
+"pet"
+"Pets are not welcome here.
+
+"
+!
+1 0 5
+1 17 1509949540 -2 0
+-1
+S
+
+#29702
+"White Fortress Storage Room"
+"Set into the north wall is a massive adamantine safe with an even more
+
+impressive combination lock system.  The walls and ceiling of this room hum
+
+and glow, illuminating the room, chasing away the shadows.  Treasure chests of
+
+all shapes, sizes, and colors cover the floor like a carpet.  On the west wall
+
+there is a picture of a man in shiny black metal armor wielding a glowing
+
+sword.  Surrounding the man in black are three humanoids that appear to be
+
+chanting a spell.  There is a hallway leading back north to the heart of the
+
+fortress.
+
+"
+"[Orb] THIS IS A STORAGE ROOM.  DO NOT PURGE!
+
+[Orb] This attaches to 29701.
+
+"
+301467685 0
+0 5 0
+D0
+""
+""
+229376 -1 29701 0 5
+A
+""
+""
+"if( is_player( ch ) ) {
+
+  if( !is_name( \"HERO\", clan_abbrev( ch ) ) ) {
+
+    act_tochar( #bye, ch );
+
+    act_notchar( #rbye, ch );
+
+    room = find_room( 29700 );
+
+    transfer( ch, room );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #pet, ch );
+
+  room = find_room( 29700 );
+
+  transfer( victim, room );
+
+  }
+
+"
+E
+"bye"
+"Your kind is not wanted here.
+
+"
+E
+"rbye"
+"$n disappears in a flash of light.
+
+"
+E
+"pet"
+"Pets are not allowed.
+
+"
+!
+1 0 128
+A
+"purge"
+""
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"This is a store room.  Purging in here means the newbs cry and Orb has to
+
+reimburse a ton of stuff.  Don't do it!
+
+"
+!
+0 0 0
+-1
+S
+
+#29703
+"White Fortress - Hallway"
+"As you enter the hallway, the floor and ceiling spring to life lighting up the
+
+room with the sound of echoing hums.  Nothing of notice catches your eye in
+
+this bleak hallway.  A soft breeze floats by smelling of fresh baked bread.
+
+The occasional faint sound of a pan clanging reverberates off the walls.  The
+
+hallways stops suddenly then veers off towards the south.  The only other exit
+
+is back west towards the heart of the fortress.
+
+"
+"[A'iko] fifth line \"hallways stops suddenly\" should be \"hallway stops suddenly\"
+
+"
+301465604 0
+0 6 0
+D2
+""
+""
+0 -1 29704 0 6
+D3
+""
+""
+0 -1 29701 0 5
+-1
+S
+
+#29704
+"White Fortress - Intersection"
+"As you enter the hallway, the floor and ceiling spring to life lighting up the
+
+room with the sound of echoing hums.  The spices from some fresh vegetables
+
+create a tingling sensation in your nose.  The source of the exotic smells and
+
+the clanging of pots seem to be coming from the hallway to the east.  A huge
+
+portrait hangs on the west wall.  The humanoid portrayed in it resembles that
+
+of an elf, yet is taller and more filled out.  In the background, a village of
+
+troll-like citizens are frozen in time, eternally doing their everyday chores.
+
+There is a hallway leading south, deeper into the fortress, and one leading
+
+north back to the entrance.
+
+"
+"south is 29707
+
+"
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 29703 0 6
+D1
+""
+""
+0 -1 29705 0 6
+D2
+""
+""
+0 -1 29707 0 6
+-1
+S
+
+#29705
+"White Fortress - Dining Room"
+"The ceiling and floors are already glowing when you enter.  Rows of oak tables
+
+neatly line the floor, probably enough to seat an army.  Two oak benches are
+
+located on opposite sides of the tables, ready to support hungry guests.  Each
+
+of the tables has already been prepped for the main course.  Silk napkins,
+
+forks, spoons, and knives are delicately distributed beside the clay plates.
+
+The only two exits, a hallway leading back west to the entrance, and a doorway
+
+leading east towards the kitchen.
+
+"
+""
+301465604 0
+0 6 0
+D1
+""
+""
+0 -1 29706 0 6
+D3
+""
+""
+0 -1 29704 0 6
+-1
+S
+
+#29706
+"White Fortress - Kitchen"
+"The eclectic smells and sights overwhelm your senses.  Fresh-picked berries
+
+sit next to a bowl of freshly tossed bowl of potato salad.  Baked bread rests
+
+on the table still warm from the brick-oven stove.  A rack attacked to the
+
+ceiling holds a variety of pots and saucepans.  The ceiling is glowing a gray
+
+color, probably due to the accumulation of soot from the fire.  The floor is
+
+littered with spilled spices and squished fruits.  A shiny silver bell is
+
+sitting on the thick oak table waiting to be rung.  The only exit is back west
+
+towards the dinning room.
+
+"
+"[A'iko] second line \"bowl of freshly tossed bowl of potato salad\" should be \"bowl of freshly tossed potato salad\"
+
+[A'iko] third line \"A rack attacked to the ceiling\" should be \"A rack attached to the ceiling\"
+
+"
+301465604 0
+0 6 0
+D3
+""
+""
+0 -1 29705 0 6
+-1
+S
+
+#29707
+"White Fortress - Bar"
+"This room is only lit by candlelight, creating eerie shadows.  In the center
+
+of the room is an oval shaped bar with a heavily polished wooden countertop.
+
+The bright mithril border surrounding the countertop contrasts nicely with the
+
+darker wood.  Hanging from the ceiling, following the trail of the countertop
+
+is an assortment of shot and wine glasses.  Scattered out across the room are
+
+a dozen wooden tables with a compliment of four chairs at each table.
+
+Eclectic collections of alcoholic beverages are stacked neatly in the inner
+
+part of the countertop.  There is a hallway leading north, back to the
+
+entrance, and a hallway leading west, deeper into the fortress.
+
+"
+""
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 29704 0 6
+D3
+""
+""
+0 -1 29708 0 6
+-1
+S
+
+#29708
+"White Fortress - Great Library"
+"Every square-inch of wall space is lined with shelves of books.  Only the
+
+ceiling glows with a hum of light creating dark shadows underneath the chairs
+
+and tables, which are scattered sparsely.  Two ladders are propped up against
+
+the walls for the more adventurous reader.  A series of scattered notes
+
+written in an ancient language waits patiently on a nearby table for the
+
+return of their master.  There is a hallway leading east, back towards the
+
+entrance.
+
+"
+""
+301465604 0
+0 6 0
+D1
+""
+""
+0 -1 29707 0 6
+1878 17 1509949540 -2 0
+4165 17 1509949540 -2 0
+-1
+S
+
+#0
+

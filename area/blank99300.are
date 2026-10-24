@@ -1,0 +1,1442 @@
+#AREA
+"Old Cathedral"
+""
+""
+40 0
+5
+0
+#ROOMS
+
+#99300
+"Before an Old Cathedral"
+"The cathedral looming to the north is a work of engineering genius.  It is
+
+formed of thousands of huge, grey granite blocks, each stacked with precision
+
+upon the one below in an interlocking pattern.  The colossal archway to the
+
+north contains the entrance hall of this monolithic building.  Above the
+
+archway, several runes are inscribed.  They appear to be the dates of the
+
+building and blessing of the cathedral.  Several enormous steps lead up to the
+
+entrance hall, formed of the same grey marble visible further down the path.
+
+"
+""
+301465600 0
+21 6 0
+D0
+""
+""
+0 -1 99301 0 6
+D3
+""
+""
+0 -1 11967 0 6
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@WYou walk up the grey marble steps to the entrance of the cathedral.
+
+"
+!
+3 0 1
+-1
+S
+
+#99301
+"Old Cathedral - Entrance Hall"
+"Here, before the great, looming doors of the cathedral, the entrance hall
+
+seems small.  The doors are each formed of single, huge plank of ironwood, and
+
+are a dull silvery colour.  To the east and west, the entrance hall extends,
+
+creating a larger area for people to congregate.  The floor here is of a
+
+mosaic pattern, formed of thousands of small gems and pieces of stone.  South,
+
+large grey marble steps lead downward and away from the hall.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+20871 4920 99304 0 6
+D1
+""
+""
+0 -1 99302 0 6
+D2
+""
+""
+0 -1 99300 0 6
+D3
+""
+""
+0 -1 99303 0 6
+E
+"door ironwood plank"
+"@WThe huge doors stand easily thirty feet tall, and are highly polished,
+
+enhancing the natural colour and glow of the metallic ironwood.  Each of them
+
+is formed from a single piece of this prized wood, and must have been
+
+harvested from a tree thousands of years old.
+
+"
+E
+"mosaic floor gems stones"
+"This mosaic is formed from mainly deep blue and green gems and precious
+
+stones, and what appears to be gold filigree, which has somehow survived the
+
+years and the passage of thousands across its surface.  The pattern depicts a
+
+large structure bathed in the light of the gods.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"@WYou descend the grey marble steps and leave the cathedral.
+
+"
+!
+3 0 4
+-1
+S
+
+#99302
+"Old Cathedral - Entrance Hall"
+"In the eastern end of the hall, there is little evidence that the cathedral
+
+has aged or changed at all.  All here seems to be almost exactly as it should
+
+be.  The mosaics on the floor here, made of the same gems and stones as those
+
+before the main door, are still full of life and colour.  The walls are of the
+
+same granite as those on the outside of the building, and stained-glass
+
+windows are set high into the walls, casting coruscating lights on the floor
+
+and walls.
+
+"
+""
+301465600 0
+0 6 0
+D3
+""
+""
+0 -1 99301 0 6
+E
+"stained glass window wall"
+"@WTwo stained-glass windows are set high into the walls here.  One depicts a
+
+robed figure surrounded with an aura of light; the other is of a large
+
+structure which could well be this very cathedral.
+
+"
+E
+"floor gems stones mosaic"
+"The mosaic on the floor here depicts a benevolent, kindly looking old man.  He
+
+is holding a key in his left hand, and a book in his right.
+
+"
+-1
+S
+
+#99303
+"Old Cathedral - Entrance Hall"
+"The western part of this hall is dank and musty, where a leak has formed high
+
+up on the wall.  The mosaic on the floor is dulled and grimy from pooled water
+
+stagnating over the years.  In the corners of the hall, leaves have become
+
+trapped in corners after having been blown in by gusts of wind.  To the east,
+
+the hall continues and the main doors to the cathedral are visible.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 99301 0 6
+E
+"leaves corners"
+"Piles of leaves rest in the corners, having been blown in by wind over the
+
+years.  They rest in piles of dust - the remains of their predecessors.
+
+"
+E
+"mosaic floor"
+"The mosaic here is obscured where water has stagnated and calcified over the
+
+years.  It is impossible to discern what it once depicted.
+
+"
+E
+"west wall leak"
+"A leak has formed here, tingeing the wall with a green mold.
+
+"
+-1
+S
+
+#99304
+"Old Cathedral - Atrium"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+131 -1 99311 0 6
+D1
+""
+""
+0 -1 99306 0 6
+D2
+""
+""
+20871 4920 99301 0 6
+D3
+""
+""
+0 -1 99305 0 6
+-1
+S
+
+#99305
+"Old Cathedral - Atrium"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99304 0 6
+D3
+""
+""
+0 -1 99307 0 6
+-1
+S
+
+#99306
+"Old Cathedral - Atrium"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99309 0 6
+D3
+""
+""
+0 -1 99304 0 6
+-1
+S
+
+#99307
+"Old Cathedral - Atrium"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99305 0 6
+D3
+""
+""
+0 -1 99308 0 6
+-1
+S
+
+#99308
+"Old Cathedral - Southwest Atrium Corner"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+391 -1 99357 0 7
+D1
+""
+""
+0 -1 99307 0 6
+-1
+S
+
+#99309
+"Old Cathedral - Atrium"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99310 0 6
+D3
+""
+""
+0 -1 99306 0 6
+-1
+S
+
+#99310
+"Old Cathedral - Southeast Atrium Corner"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+131 -1 99318 0 7
+D3
+""
+""
+0 -1 99309 0 6
+-1
+S
+
+#99311
+"Old Cathedral Nave - Central Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99312 0 6
+D2
+""
+""
+131 -1 99304 0 6
+-1
+S
+
+#99312
+"Old Cathedral Nave - Central Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99313 0 6
+D2
+""
+""
+0 -1 99311 0 6
+-1
+S
+
+#99313
+"Old Cathedral Nave - Central Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99314 0 6
+D2
+""
+""
+0 -1 99312 0 6
+-1
+S
+
+#99314
+"Old Cathedral Nave - Central Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99315 0 7
+D1
+""
+""
+0 -1 99335 0 7
+D2
+""
+""
+0 -1 99313 0 6
+-1
+S
+
+#99315
+"Old Cathedral Nave - Central Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99316 0 7
+D2
+""
+""
+0 -1 99314 0 7
+-1
+S
+
+#99316
+"Old Cathedral Nave - Central Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99317 0 7
+D2
+""
+""
+0 -1 99315 0 7
+D3
+""
+""
+0 -1 99360 0 7
+-1
+S
+
+#99317
+"Old Cathedral Nave - Central Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99337 0 7
+D2
+""
+""
+0 -1 99316 0 7
+-1
+S
+
+#99318
+"Old Cathedral Nave - Eastern Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99319 0 7
+D2
+""
+""
+131 -1 99310 0 7
+-1
+S
+
+#99319
+"Old Cathedral Nave - Eastern Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99320 0 7
+D2
+""
+""
+0 -1 99318 0 7
+-1
+S
+
+#99320
+"Old Cathedral Nave - Eastern Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99321 0 7
+D1
+""
+""
+131 -1 99336 0 7
+D2
+""
+""
+0 -1 99319 0 7
+-1
+S
+
+#99321
+"Old Cathedral Nave - Eastern Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99322 0 7
+D2
+""
+""
+0 -1 99320 0 7
+D3
+""
+""
+0 -1 99334 0 7
+-1
+S
+
+#99322
+"Old Cathedral Nave - Eastern Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99323 0 7
+D2
+""
+""
+0 -1 99321 0 7
+-1
+S
+
+#99323
+"Old Cathedral Nave - Eastern Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99324 0 7
+D2
+""
+""
+0 -1 99322 0 7
+-1
+S
+
+#99324
+"Eastern Transept"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99325 0 7
+D3
+""
+""
+0 -1 99323 0 7
+-1
+S
+
+#99325
+"Eastern Transept"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99326 0 7
+D3
+""
+""
+0 -1 99324 0 7
+-1
+S
+
+#99326
+"Eastern Transept"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99327 0 7
+D3
+""
+""
+0 -1 99325 0 7
+-1
+S
+
+#99327
+"Eastern Transept"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99328 0 7
+D1
+""
+""
+131 -1 99332 0 7
+D2
+""
+""
+0 -1 99326 0 7
+-1
+S
+
+#99328
+"Eastern Transept"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99329 0 7
+D1
+""
+""
+131 -1 99333 0 7
+D2
+""
+""
+0 -1 99327 0 7
+-1
+S
+
+#99329
+"Eastern Transept"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D2
+""
+""
+0 -1 99328 0 7
+D3
+""
+""
+0 -1 99330 0 7
+-1
+S
+
+#99330
+"Eastern Transept"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99329 0 7
+D3
+""
+""
+0 -1 99331 0 7
+-1
+S
+
+#99331
+"Eastern Transept - Crumbling Pews"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99330 0 7
+D4
+""
+""
+0 -1 99341 0 7
+-1
+S
+
+#99332
+"Eastern Transept - Small Chapel"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D3
+""
+""
+131 -1 99327 0 7
+-1
+S
+
+#99333
+"Eastern Transept - Small Chapel"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D3
+""
+""
+131 -1 99328 0 7
+-1
+S
+
+#99334
+"Old Cathedral Nave - Along a Row of Pews"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99321 0 7
+D3
+""
+""
+0 -1 99335 0 7
+-1
+S
+
+#99335
+"Old Cathedral Nave - Along a Row of Pews"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99334 0 7
+D3
+""
+""
+0 -1 99314 0 7
+-1
+S
+
+#99336
+"Small Side-Chapel"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D3
+""
+""
+131 -1 99320 0 7
+-1
+S
+
+#99337
+"Old Cathedral Nave - Before the Altar"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99338 0 7
+D2
+""
+""
+0 -1 99317 0 7
+D3
+""
+""
+0 -1 99340 0 7
+-1
+S
+
+#99338
+"Old Cathedral Nave - Before the Altar"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99339 0 7
+D3
+""
+""
+0 -1 99337 0 7
+-1
+S
+
+#99339
+"Old Cathedral Nave - Monument"
+"Under Construction.
+
+"
+"[.T.]  One-way exit down from 99344. Needs code
+
+"
+301465605 0
+0 7 0
+D3
+""
+""
+0 -1 99338 0 7
+-1
+S
+
+#99340
+"Old Cathedral Nave - Before the Altar"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99337 0 7
+-1
+S
+
+#99341
+"Above the Nave - Small walkway"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D3
+""
+""
+0 -1 99342 0 5
+D5
+""
+""
+0 -1 99331 0 7
+-1
+S
+
+#99342
+"Above the Nave - Small walkway"
+"Under Construction.
+
+"
+"[.T.]  key number 4921. No reset atm
+
+"
+301465605 0
+0 5 0
+D1
+""
+""
+0 -1 99341 0 5
+D3
+""
+""
+391 4921 99343 0 5
+-1
+S
+
+#99343
+"Corona - Above the Altar"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D0
+""
+""
+0 -1 99352 0 5
+D1
+""
+""
+391 4921 99342 0 5
+D2
+""
+""
+0 -1 99344 0 5
+-1
+S
+
+#99344
+"Corona - Above the Altar"
+"Under Construction.
+
+"
+"[.T.]  One-way exit down to 99339. Needs code
+
+"
+301465605 0
+0 5 0
+D0
+""
+""
+0 -1 99343 0 5
+D3
+""
+""
+0 -1 99345 0 5
+D5
+""
+""
+235 -1 99339 0 5
+-1
+S
+
+#99345
+"Corona - Above the Altar"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D1
+""
+""
+0 -1 99344 0 5
+D3
+""
+""
+0 -1 99346 0 5
+-1
+S
+
+#99346
+"Corona - Above the Altar"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D1
+""
+""
+0 -1 99345 0 5
+D3
+""
+""
+0 -1 99347 0 5
+-1
+S
+
+#99347
+"Corona - Above the Altar"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D0
+""
+""
+0 -1 99348 0 5
+D1
+""
+""
+0 -1 99346 0 5
+-1
+S
+
+#99348
+"Corona - Above the Altar"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D2
+""
+""
+0 -1 99347 0 5
+D4
+""
+""
+0 -1 99349 0 5
+-1
+S
+
+#99349
+"Small Ladder"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D4
+""
+""
+0 -1 99350 0 5
+D5
+""
+""
+0 -1 99348 0 5
+-1
+S
+
+#99350
+"Small Ladder"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D4
+""
+""
+391 -1 99351 0 5
+D5
+""
+""
+0 -1 99349 0 5
+-1
+S
+
+#99351
+"Bell Tower"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D5
+""
+""
+391 -1 99350 0 5
+-1
+S
+
+#99352
+"Corona - Above the Altar"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D2
+""
+""
+0 -1 99343 0 5
+D5
+""
+""
+0 -1 99353 0 5
+-1
+S
+
+#99353
+"Old Cathedral Nave - North of the Altar"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D3
+""
+""
+0 -1 99354 0 5
+D4
+""
+""
+0 -1 99352 0 5
+-1
+S
+
+#99354
+"Old Cathedral Nave - North of the Altar"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D1
+""
+""
+0 -1 99353 0 5
+D2
+""
+""
+0 -1 99355 0 5
+-1
+S
+
+#99355
+"Old Cathedral Altar"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D0
+""
+""
+0 -1 99354 0 5
+D3
+""
+""
+2 -1 99356 0 5
+-1
+S
+
+#99356
+"Corona - Above the Altar"
+"Under Construction.
+
+"
+""
+301465605 0
+0 5 0
+D1
+""
+""
+2 -1 99355 0 5
+-1
+S
+
+#99357
+"Old Cathedral Nave - Western Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D0
+""
+""
+0 -1 99358 0 7
+D2
+""
+""
+391 -1 99308 0 7
+-1
+S
+
+#99358
+"Old Cathedral Nave - Western Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D2
+""
+""
+0 -1 99357 0 7
+D3
+""
+""
+0 -1 99359 0 7
+-1
+S
+
+#99359
+"Small Side-Chapel"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99358 0 7
+-1
+S
+
+#99360
+"Old Cathedral Nave - A Row of Trampled Pews"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99316 0 7
+D3
+""
+""
+0 -1 99361 0 7
+-1
+S
+
+#99361
+"Old Cathedral Nave - A Row of Trampled Pews"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99360 0 7
+D3
+""
+""
+0 -1 99362 0 7
+-1
+S
+
+#99362
+"West Transept Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99361 0 7
+D3
+""
+""
+0 -1 99363 0 7
+-1
+S
+
+#99363
+"West Transept Aisle"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99362 0 7
+D2
+""
+""
+131 -1 99364 0 7
+-1
+S
+
+#99364
+"Small Chapel - Goblin's Den"
+"Under Construction.
+
+"
+""
+301465605 0
+0 6 0
+D0
+""
+""
+131 -1 99363 0 7
+D3
+""
+""
+0 -1 99365 0 7
+-1
+S
+
+#99365
+"Small Chapel - Goblin's Dining Area"
+"Under Construction.
+
+"
+""
+301465605 0
+0 7 0
+D1
+""
+""
+0 -1 99364 0 7
+D2
+""
+""
+0 -1 99367 0 7
+D3
+""
+""
+0 -1 99366 0 7
+-1
+S
+
+#99366
+"Small Chapel - Goblin's Barracks"
+"Under Construction.
+
+"
+""
+301465605 0
+0 6 0
+D1
+""
+""
+0 -1 99365 0 7
+-1
+S
+
+#99367
+"Small Chapel - Kitchen"
+"Under Construction.
+
+"
+""
+301465605 0
+0 6 0
+D0
+""
+""
+0 -1 99365 0 7
+-1
+S
+
+#0
+

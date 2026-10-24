@@ -1,0 +1,8139 @@
+#AREA
+"Bamboo Forest"
+"Kotoktok"
+"Bamboo Forest"
+30 0
+0
+3
+#ROOMS
+
+#39750
+"Path Through Bamboo Forest"
+"Overhanging bamboo stalks shade the path, which runs east and west between the
+
+closely growing fingers of bamboo.  Grass-like leaves above wave in the wind,
+
+creating a pleasant sound.  Several stalks have fallen in the road, having
+
+been gnawed through at the base by large teeth.  Through occasional gaps in
+
+the bamboo, a swamp to the east can be seen.
+
+"
+"[Nereus] First room of bamboo forest
+
+[Kotoktok] has initial extras
+
+[Kotoktok] mobs in zone:
+
+(list includes zombies of mobs) 2775, 2776, 2777, 2778, 2779, 2780, 2785,
+
+2786, 2802, 2809, 2811
+
+2818, 2819
+
+[Kotoktok] objects in zone:
+
+obj: 4644. 4645. 4646. 4685, 4686, 4687, 4688, 4689, 4690, 4691, 4693
+
+- -
+
+[Nereus] I think grasslike should be grass-like
+
+where does this road lead?  Where is it coming from and where does it go?  How recently travelled is it?
+
+I think in your last sentence you should be more gradual - would the swamp really just start on the border?
+
+- -
+
+[Nereus] We need some more animals in here, check this out:
+
+[Nereus] lemur:
+
+[Nereus] http://www.animalinfo.org/species/primate/hapaaure.htm
+
+[Nereus] Here's a dog you can put in, it can move in little packs of 4 or 5
+
+[Nereus] http://www.enchantedlearning.com/subjects/mammals/dog/Dholeprintout.shtml
+
+[Nereus] how about some sort of small bamboo rats or birds, too?
+
+- -
+
+[Nereus] Fyi, I added these to a bamboo_animals group - if you want to make them assist, etc, you'll need to make new groupings
+
+[Nereus] Other animal ideas:
+
+[Nereus] elephants (smaller versions), wild cattle, leaf monkeys, bats (hognosed bats, insectivorous bats)
+
+[Nereus] make some bats come out at night
+
+[Nereus] white-browed piculet, rufus warbler, pin-tailed parrotfinch
+
+[Zithuan] Chinese Bamboo Partridge
+
+-T
+
+[Kotoktok] Zone opened 2:45pm Wed. July 7, 2004
+
+"
+301465600 0
+26 7 0
+D1
+""
+""
+0 -1 25558 0 6
+D3
+""
+""
+0 -1 39751 0 7
+E
+"bamboo stalks"
+"The fallen stalks seem to be the victims of rodent teeth.  The foot-tall
+
+stumps stand out on the north side of the path, their whitish interiors
+
+visible against the other green-brown plants.
+
+"
+2820 41 1509949540 3 0
+2823 73 1509949540 3 0
+-1
+S
+
+#39751
+"Path Through Bamboo Forest"
+"The thin dirt road is crossed here by several small rivulets of water, which
+
+come out of the thick bamboo to the north.  Many continue across the road
+
+heading back into the bamboo to the south.  Tall stalks of green-brown bamboo
+
+lean over the road, providing shade.  To the north and south, the stalks grow
+
+close together, making them impassable.
+
+"
+"[Kotoktok] has initial extras
+
+[Nereus] I don't like the \"sometimes something can be moving\" part - make this a random acode?
+
+[Nereus] extras for n/s, bamboo
+
+[Nereus] extra for road
+
+[Nereus] Reviewed
+
+[Kotoktok] -
+
+[Talis] Rextra 2, The thick grown of bamboo...  [it] appers to be quite
+
+healthy.  Second sentence it begins refering to it as \"They\", should probably
+
+still be It, singular for a single stand of bamboo leaning like that.
+
+-T
+
+[Nereus] Fix Talis' comment
+
+[Nereus] add a rivulet here please
+
+[Kotoktok] done and done
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D1
+""
+""
+0 -1 39750 0 7
+D3
+""
+""
+0 -1 39752 0 7
+E
+"small rivulets of water"
+"The rivulets at the biggest are only about three inches wide, trickling lazily
+
+across the path.  Small swamp insects flit on the surface of some of them,
+
+fleeing as you pass by.
+
+"
+E
+"bamboo 1 north 1 south"
+"The thick growth of bamboo lining the trail on the north and south is green-
+
+brown in color, and it appears to be quite healthy.  It leans slightly over
+
+the trail, turning it into a sort of tunnel.
+
+"
+E
+"thin dirt road"
+"The road is solid hard-packed clay, mostly dry except where small rivulets
+
+cross it.
+
+"
+A
+""
+""
+"send_to_room( #noise, room );
+
+"
+E
+"noise"
+"A rustling comes from the bamboo to the north, but the forest goes still and
+
+nothing emerges.
+
+"
+!
+2 200 0
+4712 17 1509949540 -2 0
+-1
+S
+
+#39752
+"Path Through Bamboo Forest"
+"The tunnel through the bamboo continues east and west.  The path is slightly
+
+muddy dirt, and doesn't seem to have been used for some time.  North and
+
+south, the stalks grow so close together that you can't see a way through
+
+them, but in some places small animal trails open up onto the road.  Wedged
+
+into one of these trails is the half-eaten corpse of an unfortunate adventurer.
+
+"
+"[Kotoktok] has initial extras
+
+[Nereus] Just use 1 period in the adventurer extra
+
+[Nereus] extra for the road/path - could talk about how there's some sparse grass growing on it which leads you to believe it's not well-travelled
+
+[Nereus] reviewed
+
+[Nereus] clawmarks -> claw marks
+
+[Kotoktok] -
+
+-T
+
+[Nereus] can you add a code to search the corpse, even if it just says the same thing as the extra
+
+[Kotoktok] fixed
+
+"
+301465600 0
+26 7 0
+D1
+""
+""
+0 -1 39751 0 7
+D3
+""
+""
+0 -1 39753 0 7
+E
+"half-eaten corpse unfortunate adventurer"
+"This poor adventure seems to have been attacked by animals.  Its face is
+
+completely eaten off, and small claw marks score the rest of the body.  The
+
+exposed bone on the face has scrapes, that appear to have been caused by large
+
+rodent teeth.  Maybe this isn't the safest of roads.
+
+"
+E
+"bamboo stalks 1 north 1 south"
+"The stalks are about four inches in diameter, and many are more than twelve
+
+feet high.  The closeness of the stalks to each other leaves perhaps two feet
+
+of visibility into the bamboo, past which nothing but brown stalks can be seen.
+
+"
+E
+"road path"
+"A small amount of grass and other vegetation grows on the trail, making it
+
+look overgrown and under-travelled.
+
+"
+A
+"search"
+"half-eaten corpse adventurer"
+"act_tochar( #blah, ch );
+
+"
+E
+"blah"
+"This poor adventure seems to have been attacked by animals.  Its face is
+
+completely eaten off, and small claw marks score the rest of the body.  The
+
+exposed bone on the face has scrapes, that appear to have been caused by large
+
+rodent teeth.  Nothing of value seems to be left on the body.
+
+"
+!
+0 0 0
+1 9 1509949470 3 0
+-1
+S
+
+#39753
+"Path Through Bamboo Forest"
+"Stands of bamboo too thick to pass lie to the north, west, and southeast.  The
+
+tunnel-like trail continues south and east through the thick bamboo.  To the
+
+south, you think you can see the bamboo getting thinner, enough so that you
+
+might be able to enter it.  Large leaves have fallen on the trail, rustling
+
+gently in the breeze.  Strange sounds come from the forest on both sides.
+
+"
+"[Kotoktok] has initial extras
+
+[Nereus] extras:  leaves, trail/road/tunnel-like
+
+[Nereus] reviewed
+
+[Kotoktok] -
+
+[Talis] Need the trail/road/tunnel-like extra?
+
+-T
+
+[Nereus] don't want a trail extra?
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D1
+""
+""
+0 -1 39752 0 7
+D2
+""
+""
+0 -1 39754 0 7
+E
+"bamboo 1 north 1 west"
+"Brown at the base, and getting greener towards the tip, twelve foot stalks
+
+lean over the trail.  The leaves and sprouts coming out of the creases in the
+
+trunk look at once sharp and tender.
+
+"
+E
+"large leaves"
+"Large bamboo leaves lie on the trail in various stages of decay.  Some have
+
+almost become soil, while others still rustle on the path's surface.
+
+"
+4717 17 1509949540 -2 0
+-1
+S
+
+#39754
+"Path Through Bamboo Forest"
+"Tall bamboo to the east hems in the path, which runs north and south through
+
+the forest.  West, the bamboo is thin enough to allow you to enter a vast
+
+forest of waving stalks.  The clay-like soil of the trail here is only just
+
+damp enough to prevent dustiness, and is slightly pitted.  Small animal trails
+
+crisscross the path, connecting the forest to the west with the thick bamboo
+
+to the east.  To the south is a bend in the road.
+
+"
+"[Kotoktok] has initial extras
+
+[Nereus] duplicated period, first line
+
+[Nereus] how about a road extra describing how decrepit the road has become
+
+[Nereus] reviewe
+
+[Nereus] extra traversible -> traversable
+
+[Kotoktok] -
+
+-T
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39753 0 7
+D2
+""
+""
+0 -1 39755 0 7
+D3
+""
+""
+0 -1 39770 0 7
+E
+"small animal trails"
+"The trails consist of small, dark openings in the vegetation to the east, and
+
+some flattened plants where they go into the forest to the west.
+
+"
+E
+"forest 1 west"
+"Thinning out slightly, the bamboo to the west allows far more light in than
+
+that hemming the trail to the east.  Also unlike the bamboo to the east, it
+
+looks easily traversable.
+
+"
+2778 9 1509949540 3 0
+-1
+S
+
+#39755
+"Path Through Bamboo Forest"
+"South and east, the thick stems grow too close together to see through or
+
+pass.  The meager dirt path continues north and west between the edges of the
+
+forest.  A small rivulet of murky water cuts across the southeast corner of
+
+the road, streaming off to the southwest.  Small animal trails can be seen
+
+coming out of the forest on both sides, from which strange noises can be heard.
+
+"
+"[Kotoktok] has initial extras
+
+[Nereus] Make a rivulet object that I can fill from
+
+[Nereus] reviewed
+
+[Kotoktok] -
+
+-T
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39754 0 7
+D3
+""
+""
+0 -1 39756 0 7
+E
+"small rivulet murky water"
+"About a foot wide and filled with green-brown running water, this rivulet is
+
+just shy of being an actual stream.  Bamboo leaves and various insects float
+
+by on its surface, quickly disappearing into the vegetation to the south.
+
+"
+4712 17 1509949540 -2 0
+4719 17 1509949485 -2 0
+-1
+S
+
+#39756
+"Path Through Bamboo Forest"
+"The small dirt path here continues east and west between towering stalks of
+
+bamboo.  The ground looks soft, as if feet would sink in several inches before
+
+hitting hard-packed clay.  To the south, the stems grow too close together to
+
+pass, having gaps of only three or four inches at the most.  The bamboo to the
+
+north is thin enough to enter, and you can see almost twenty feet between
+
+stalks in that direction.
+
+"
+"[Kotoktok] has initial extras
+
+[Nereus] extras: dirt path
+
+[Nereus] reviewed
+
+[Kotoktok] -
+
+-T
+
+[Nereus] In the second sentence, wouldn't you be able to actually tell this instead of saying that the ground 'looks' soft?
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39770 0 7
+D1
+""
+""
+0 -1 39755 0 7
+D3
+""
+""
+0 -1 39757 0 7
+E
+"south stems"
+"Thick, healthy-looking green-brown stems crowd each other, nearly covering the
+
+ground to the south of the trail.  Tiny animal trails are the only gaps in
+
+that barrier.
+
+"
+E
+"dirt path"
+"The ground is a soft layer of sandy, muddy sludge with hard-packed clay
+
+underneath.  The trail runs east and west between the leaning stalks.
+
+"
+-1
+S
+
+#39757
+"Path Through Bamboo Forest"
+"Thick green and brown stalks line the small dirt road, which makes its way
+
+east and west through a vast forest of bamboo.  To the south, the thick stems
+
+grow too close together to squeeze past, forming a solid wall save for the
+
+dark openings of wildlife trails.  North, the bamboo is thin enough to
+
+traverse easily, and the forest floor is striped by the shadows of evenly-
+
+spaced stems.
+
+"
+"[Kotoktok] initial extras
+
+[Nereus] If there's openings that big, why aren't there any room exits that are just smaller?  Why can't my rat familiar leave anywhere?
+
+[Nereus] dirt road extra
+
+[Kotoktok] -
+
+[Nereus] *
+
+[Merolen] 'a pygmy elephant forages in the understory.
+
+[Merolen] understory?
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39771 0 7
+D1
+""
+""
+0 -1 39756 0 7
+D3
+""
+""
+0 -1 39758 0 7
+E
+"dark openings wildlife trails"
+"The largest ones are about two feet wide and two feet high, leading into the
+
+darkness of the bamboo thicket.  Small paw prints and droppings cover the
+
+ground in front of several of them, suggesting that rodents are the main
+
+travelers of these paths.
+
+"
+E
+"dirt road"
+"The ground is hard-packed clay, with a thin layer of sandy soil on top.  The
+
+road leads east and west along the wall of bamboo to the south.
+
+"
+-1
+S
+
+#39758
+"Path Through Bamboo Forest"
+"To the south, a giant bamboo stalk perhaps four feet wide towers above the
+
+road, growing tightly with smaller ones to block exit in that direction.  The
+
+small dirt path continues east and west through the vast bamboo forest, its
+
+hard-packed clay looking firm to the touch.  To the north, the bamboo is thin
+
+enough to enter, and you can see a ways into the forest.  The canopy above is
+
+very sparse on the northern edge of the trail, but provides complete coverage
+
+on the southern edge.
+
+"
+"[Nereus] this room makes me wonder something - can you climb all these bamboo stalks?
+
+[Kotoktok] initial rextras
+
+[Nereus] hardpacked -> hard-packed
+
+[Nereus] Add a climb code to this even if i'ts just to say that it's too slick to climb
+
+[Nereus] dirt path extra
+
+[Nereus] reviewed
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39772 0 7
+D1
+""
+""
+0 -1 39757 0 7
+D3
+""
+""
+0 -1 39759 0 7
+E
+"dirt path"
+"For some reason, this single shoot of bamboo has grown to a ridiculously large
+
+size.  Measuring more than four feet wide at the base, the stalk shoots up
+
+until it disappears into the canopy above.  Other stalks of normal size
+
+crowding around it look flimsy and small.
+
+"
+E
+""
+"A thin layer of gritty dirt covers the hard-packed clay surface.  Many dry
+
+leaves have fallen, and make scratching noises as they move over the sand.
+
+"
+A
+"climb"
+"giant bamboo stalk"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"The bamboo is simply too slick to climb.
+
+"
+!
+0 0 0
+-1
+S
+
+#39759
+"Path Through Bamboo Forest"
+"This hard-packed clay trail can still be easily made out, cutting east and
+
+west through a vast bamboo forest.  To the south, a rock wall juts up from
+
+among thick bamboo stems.  The rock wall is covered with moss and lichen, and
+
+very little stone shows.  North, the bamboo is thin enough to enter.  To the
+
+east, a giant bamboo stalk can be seen towering over the south side of the
+
+road.
+
+"
+"[Kotoktok] climb up/ladder leads to abandoned guard tower, spearhead pop inside
+
+[Nereus] cool room
+
+[Nereus] ** Room Reviewed **
+
+[Kotoktok] -
+
+[Nereus] can you add a quick moss/lichen extra
+
+[Kotoktok] check
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39773 0 7
+D1
+""
+""
+0 -1 39758 0 7
+D3
+""
+""
+0 -1 39760 0 7
+E
+"rock wall"
+"What little stone is visible is cracked and ancient, but appears to be quite
+
+solid.  Upon closer inspection, individual blocks and some crumbling mortar
+
+between them can be made out; this is not a natural rock formation.  A rusting
+
+iron ladder leads up along one side of it, disappearing into the canopy above.
+
+"
+E
+"ladder"
+"Rusty, yet solid, the ladder is set into the stone itself.  The sturdy rungs
+
+that are visible look like a fairly easy climb, but you lose sight of the
+
+ladder as it goes into the canopy above.
+
+"
+E
+"moss lichen"
+"The moss grows in profusion on the lower section of the stone, where it is
+
+moist and sheltered.  Much more resistant to dryness, the lichen begins about
+
+five feet up the wall, and covers it as far up as one can see.
+
+"
+A
+"climb"
+"wall ladder up"
+"act_tochar( #climb, ch );
+
+act_notchar( #nclimb, ch );
+
+transfer( ch, find_room( 39851 ) );
+
+act_notchar( #nappear, ch );
+
+"
+E
+"climb"
+"You climb up the rusty ladder, pushing gingerly through the canopy.
+
+"
+E
+"nclimb"
+"$n climbs up the rusty ladder, disappearing above the canopy.
+
+"
+E
+"nappear"
+"$n pulls $mself over the railing and hops down beside you.
+
+"
+!
+0 0 0
+2838 9 1509949540 3 0
+2839 9 1509949540 3 0
+-1
+S
+
+#39760
+"Path Through Bamboo Forest"
+"The dirt trail continues here, running east to west through the forest of
+
+bamboo.  Overhanging stalks shade the road from sun and rain, their wide
+
+leaves sprouting from smooth stems.  To the south, the bamboo is too thick to
+
+pass, while to the north it thins enough to be passable.  Small ruts line the
+
+road where runoff has streamed down it towards an unknown goal, away from some
+
+unseen water source.
+
+"
+"[Kotoktok] has extras
+
+[N] - how about an extra for the road
+
+[Nereus] ** Room reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39774 0 7
+D1
+""
+""
+0 -1 39759 0 7
+D3
+""
+""
+0 -1 39761 0 7
+E
+"overhanging stalks bamboo 1 south"
+"The tightly-packed bamboo to the south arches over one side of the trail,
+
+forming an opaque canopy.  Several spiders can be seen hanging in their webs,
+
+which are strung between stalks of the canopy, too high overhead to reach.
+
+"
+E
+"small ruts dirt trail road"
+"Small ruts have been cut into the clay-like soil on each side of the road by
+
+running water.  Only a small amount of liquid trickles steadily along each
+
+channel, carrying small leaves and insects away on an uncertain journey.  For
+
+the most part, however, the road is quite dry, even to the point of being
+
+gritty.
+
+"
+189 17 1509949495 -2 0
+-1
+S
+
+#39761
+"Path Through Bamboo Forest"
+"The dirt trail follows a tunnel-like path, cutting east and west through a
+
+vast forest of bamboo.  To the south, the green-brown bamboo grows so closely
+
+together that it is impassable.  Farther along the trail to the east, the tiny
+
+ruts that line the road are slightly wider.  North, you can see further into
+
+the forest, and the stalks are spaced far enough apart as to make travel
+
+possible.
+
+"
+"[Kotoktok] extras
+
+[Nereus] ** Room reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39775 0 7
+D1
+""
+""
+0 -1 39760 0 7
+D3
+""
+""
+0 -1 39762 0 7
+E
+"dirt trail"
+"The ground is hard-packed clay with a light dusting of pebbles and bamboo
+
+leaves.  It continues east and west along an overhanging wall of bamboo to the
+
+south.
+
+"
+E
+"forest 1 north"
+"Further apart than the bamboo to the south, that to the north looks like it
+
+would be easily traversable.  Light dances around between the stalks as leaves
+
+move with the slightest breeze.
+
+"
+215 9 1509949540 3 0
+4717 17 1509949470 -2 0
+2838 9 1509949540 3 0
+-1
+S
+
+#39762
+"Path Through Bamboo Forest"
+"Long, smooth stalks of bamboo hang over the trail, their broad leaves shading
+
+it from sun and rain.  The arches of bamboo enclose the trail, turning it into
+
+a softly whispering tunnel of green and brown.  On the trail west of here, the
+
+open forest to the north tightens into an impenetrable wall.  To the south,
+
+the bamboo is also too thick to enter, while to the north it is thin enough to
+
+traverse easily.
+
+"
+"[Kotoktok] extras
+
+[Nereus] trail extra
+
+[Nereus] west extra (for the end of the trail)
+
+[Nereus] ** Room reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39776 0 7
+D1
+""
+""
+0 -1 39761 0 7
+D3
+""
+""
+0 -1 39763 0 7
+E
+"long smooth stalks bamboo arches 1 south"
+"The tall, thin stalks to the south grow in a solid wall of hollow trunks,
+
+which arch over the trail forming a sort of half-tunnel.
+
+"
+E
+"trail 1 west"
+"The trail here is thinner than it is to the east, and it grows even more
+
+narrow to the west, where it finally seems to end against the bamboo.
+
+"
+2778 9 1509949540 3 0
+2839 9 1509949490 3 0
+4633 17 1509949465 -2 0
+-1
+S
+
+#39763
+"Path Through Bamboo Forest"
+"To the south, strong green shoots grow so close together as to be impassable,
+
+blocking both vision and movement.  The slightly blackened bamboo to the north
+
+is older, and seems full of decay.  An unhealthy odor wafts towards you from
+
+that direction.  To the east, the road continues into a forest which is more
+
+open, and can be entered to the north.  To the west, it looks like the trail
+
+once continued on through the bamboo, but it has since become overgrown.
+
+Perhaps the road will someday be reopened.
+
+"
+"[Nereus] How did the trail get formed?  Did people with machetes chop it through the bamboo?
+
+[Kotoktok] extras
+
+[Kotoktok] i may add another lizard settlement and some zones past this trail at some point
+
+[Kotoktok] connects to 39764
+
+[Nereus] how about a cut bamboo action here that there's just too much to cut through, or it's too think or something
+
+[Nereus] I added a connection to that room, even though it's not done yet
+
+[Nereus] ** Room reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D1
+""
+""
+0 -1 39762 0 7
+D3
+""
+""
+33002 -1 39764 0 9
+E
+"blackened bamboo 1 north"
+"Most of the bamboo blocking passage to the north is dull brown in color, but
+
+it is peppered with fungus-blackened stalks.  Between the stalks, all you can
+
+see is blackness.
+
+"
+E
+"overgrown trail 1 west"
+"The path grows steadily narrower and rougher to the west, and finally becomes
+
+impassable.  Strong young bamboo shoots grow closely together, blocking
+
+further progress.
+
+"
+A
+"cut"
+"bamboo west"
+"act_tochar( #no, ch );
+
+act_notchar( #heno, ch );
+
+modify_move( ch, -10 );
+
+"
+E
+"no"
+"You work away furiously at the bamboo for some time, but get nowhere.
+
+"
+E
+"heno"
+"$n works away furiously at the bamboo for some time, but gets nowhere.
+
+"
+!
+0 0 0
+4719 17 1509949505 -2 0
+-1
+S
+
+#39764
+"Path Through Bamboo Forest"
+"Under Construction.
+
+"
+""
+301465600 0
+24 9 0
+D1
+""
+""
+33002 -1 39763 0 9
+D3
+""
+""
+0 -1 39765 0 6
+-1
+S
+
+#39765
+"Path Through Bamboo Forest"
+"Under Construction.
+
+"
+""
+301465600 0
+24 9 0
+D1
+""
+""
+0 -1 39764 0 6
+D3
+""
+""
+0 -1 39766 0 6
+-1
+S
+
+#39766
+"Path Through Bamboo Forest"
+"Under Construction.
+
+"
+""
+301465600 0
+24 9 0
+D1
+""
+""
+0 -1 39765 0 6
+D3
+""
+""
+0 -1 39767 0 6
+-1
+S
+
+#39767
+"Path Through Bamboo Forest"
+"Under Construction.
+
+"
+""
+301465600 0
+24 9 0
+D1
+""
+""
+0 -1 39766 0 6
+D2
+""
+""
+0 -1 39768 0 6
+-1
+S
+
+#39768
+"Path Through Bamboo Forest"
+"Under Construction.
+
+"
+""
+301465600 0
+24 9 0
+D0
+""
+""
+0 -1 39767 0 6
+D2
+""
+""
+0 -1 39769 0 6
+-1
+S
+
+#39769
+"Path Through Bamboo Forest"
+"Under Construction.
+
+"
+"[Nereus] What's going to be at the end of the road?
+
+"
+301465600 0
+24 9 0
+D0
+""
+""
+0 -1 39768 0 6
+-1
+S
+
+#39770
+"Bamboo Forest"
+"Wind moves gently between tall smooth stalks, whose leaves shade the ground
+
+lightly.  Light lances between the long thin vegetation, striping the ground
+
+like a tiger's flank.  Rustling in the bamboo can be heard nearby, but you
+
+cannot always spot the source.  To the south and east, you can barely see a
+
+small dirt path like a darkened tunnel between the stalks.
+
+"
+"[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+-T
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39777 0 7
+D1
+""
+""
+0 -1 39754 0 7
+D2
+""
+""
+0 -1 39756 0 7
+D3
+""
+""
+0 -1 39771 0 7
+E
+"small dirt path 1 south 1 east"
+"To the south and east, a dirt trail bends around the edge of the forest,
+
+shaded on one side by a canopy of leaning bamboo stalks.
+
+"
+280 17 1509949540 -2 0
+-1
+S
+
+#39771
+"Bamboo Forest"
+"Light passes only dimly between the towering stalks in the cardinal
+
+directions.  The bamboo, forming a blanket overhead, barely gives way to the
+
+sky above.  A rather muffled echo can be heard from all around, making it hard
+
+to pinpoint its source.  Faintly, a small clearing can be seen to the south,
+
+as if a trail of some sort is there.  Small pebbles have been strewn about the
+
+ground here and there.
+
+"
+"[Nereus] it's -> its
+
+[Nereus] first two sentences are very redundant
+
+[Nereus] Why are the pebbles here strange?
+
+[Nereus] how about resetting a pebble on the ground
+
+[Nereus] trail/clearing extra needed
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39778 0 7
+D1
+""
+""
+0 -1 39770 0 7
+D2
+""
+""
+0 -1 39757 0 7
+D3
+""
+""
+0 -1 39772 0 7
+E
+"small pebbles ground"
+"Several pebbles lie around on the ground, some of them partially embedded in
+
+the clay-like soil.  The number of pebbles seems to increase westward.
+
+"
+E
+"small clearing trail 1 south"
+"The bamboo steadily gets thinner to the south, then disappears entirely as the
+
+forest gives way to a trail.  The trail is lined on its south side by stalks
+
+which lean over it, forming a half-tunnel.
+
+"
+78 17 1509949540 -2 0
+2838 9 1509949540 3 0
+-1
+S
+
+#39772
+"Bamboo Forest"
+"Extraordinary shades of green and brown gleam from the shoots of bamboo which
+
+grow high above your head.  The occasional wind whipping against their tops
+
+produces a faint whistling sound, reminiscent of a swinging blade.  Small
+
+tufts of grass grow sparsely from the clay-like floor.  Tiny, spherical
+
+pebbles are scattered between them, looking almost as if someone had intended
+
+them for decoration.
+
+"
+"[Kotoktok] get pebble acode
+
+suggest resetting another pebble also
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39779 0 7
+D1
+""
+""
+0 -1 39771 0 7
+D2
+""
+""
+0 -1 39758 0 7
+D3
+""
+""
+0 -1 39773 0 7
+E
+"small tufts grass"
+"The biggest patches of light green grass cover about two square feet of
+
+ground, their blades about seven inches high.
+
+"
+E
+"tiny spherical pebbles ground"
+"Ranging in color from reddish to black, the assortment of pebbles looks
+
+somewhat out of place in this setting.
+
+"
+A
+"get take"
+"tiny spherical pebbles"
+"if( rflag( reset1, room ) ) {
+
+  if ( random( 1,100 ) < 70 ) {
+
+    act_tochar(#yep,ch);
+
+    obj_to_char( oload( 78 ), ch );
+
+  }
+
+  else {
+
+    act_tochar(#nope,ch);
+
+    remove_rflag( reset1, room );
+
+  }
+
+}
+
+else {
+
+  act_tochar(#nope,ch);
+
+}
+
+"
+E
+"yep"
+"You grab a likely-looking pebble.
+
+"
+E
+"nope"
+"None of the pebbles look to be worth taking.
+
+"
+!
+0 0 0
+-1
+S
+
+#39773
+"Bamboo Forest"
+"The tall stalks close in to the north, east, and west, blending in myriad
+
+shades of green and brown.  Light streams between the stalks, flickering when
+
+the wind moves through the forest.  Smooth segments of bamboo gleam dully in
+
+the moving light, catching your eye as part of the forest seems to move.  To
+
+the south, a narrow dirt path is just visible, looking like a tunnel between
+
+the tall bamboo stems.
+
+"
+"[Nereus] second sentence doesn't need a comma but might sound better if you said \"flickering\"
+
+need extras for stalks of bamboo, and narrow dirt path
+
+[Nereus] sure about dinosaur here?
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39780 0 7
+D1
+""
+""
+0 -1 39772 0 7
+D2
+""
+""
+0 -1 39759 0 7
+D3
+""
+""
+0 -1 39774 0 7
+E
+"stalks bamboo smooth segments"
+"The green and brown segmented stalks gleam dully in the light, looking like an
+
+army spears.
+
+"
+E
+"narrow dirt path tunnel 1 south"
+"The narrow dirt path runs along a leaning wall of bamboo to its south.  It
+
+cuts east to west through the forest.
+
+"
+2778 9 1509949540 3 0
+2823 9 1509949540 3 0
+-1
+S
+
+#39774
+"Bamboo Forest"
+"On all sides, thick stems clunk together as they move.  The ground is slightly
+
+sandy, with small shoots coming out from between fallen stalks.  Small stumps
+
+with tender green leaves stud the ground, in the process of budding.  The
+
+light diminishes as it passes between the elongated leaves, flickering faintly
+
+on the forest floor.  Through the stems to the south, you can just make out a
+
+small dirt road cutting through the forest.
+
+"
+"[Nereus] this area seems fairly open, but it is it really open enough for dinosaur?
+
+[Nereus] ** Room reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39781 0 7
+D1
+""
+""
+0 -1 39773 0 7
+D2
+""
+""
+0 -1 39760 0 7
+D3
+""
+""
+0 -1 39775 0 7
+E
+"ground small shoots fallen stalks stumps"
+"The ground is hard-pack clay, lightly dusted with sand and fallen leaves.  It
+
+is studded with small brown stumps, each one with green shoots just beginning
+
+to bud out of it.  Small shoots coming directly from the soil paint the ground
+
+a light green.
+
+"
+-1
+S
+
+#39775
+"Bamboo Forest"
+"A tiny animal trail leads between the towering stalks of bamboo, their leaves
+
+waving in the slightest breeze.  East and west, you can only see a short
+
+distance between the stalks.  North and south, however, the bamboo is somewhat
+
+thinner; individual stalks are farther apart as they rise up from the dark,
+
+nearly black, soil.  South, a larger trail is barely visible between the thick
+
+stems.
+
+"
+"[Kotoktok] i hate doing extras for this part, boooring
+
+[Nereus] if this is a tiny animal trail why is it size dino?
+
+[Nereus] we should probably set most of these rooms to something like horse
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39782 0 7
+D1
+""
+""
+0 -1 39774 0 7
+D2
+""
+""
+0 -1 39761 0 7
+D3
+""
+""
+0 -1 39776 0 7
+E
+"larger trail 1 south"
+"The shafts of green bamboo are further apart to the south, and open up into a
+
+larger trail, almost big enough to be a road.  Thick bamboo hangs over the
+
+southern edge of the trail, forming a sort of half-tunnel.
+
+"
+2778 9 1509949540 3 0
+280 17 1509949540 -2 0
+-1
+S
+
+#39776
+"Bamboo Forest"
+"A large pointed stub of a bamboo shoot protrudes from the ground, drawing
+
+attention to itself.  Around it the ground looks soft and unstable, unlike most
+
+of the clay-like soil around it.  The growth here is thick, shattering light
+
+into many bright shards.  West, the stalks are too close together to pass, and
+
+seem somewhat dilapidated.  To the north, the forest continues, light
+
+flickering on the ground, while to the south, a narrow dirt road is visible.
+
+"
+"[Kotoktok] dig acode?
+
+[Nereus] what's the point of this, is it a trap or did someone chew it off?
+
+[Nereus] ** Room reviewed **
+
+[Kotoktok] -
+
+[Nereus] Add a dig get take | stub pointed shoot code?
+
+[Kotoktok] ok
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39783 0 7
+D1
+""
+""
+0 -1 39775 0 7
+D2
+""
+""
+0 -1 39762 0 7
+E
+"stalks dilapitated 1 west"
+"Many of the brown and blackened stalks to the west are broken, tilting out at
+
+odd angles.  The distasteful odor of fungal spores wafts in from that
+
+direction.
+
+"
+E
+"large pointed stub bamboo ground"
+"About four inches in diameter at the base, the bamboo's shaft has been broken
+
+off in such a fashion that the stump is sharp at the tip.  The ground around
+
+it is softer and sandier than is typical of this area.
+
+"
+A
+"dig get take"
+"stub pointed bamboo shoot"
+"if (rflag(reset1, room)) {
+
+  act_tochar( #mag, ch );
+
+  act_notchar( #hemag, ch );
+
+  mload( 1, room );
+
+  remove_rflag( reset1, room );
+
+}
+
+else
+
+  act_tochar(#fuckyou, ch);
+
+"
+E
+"mag"
+"You root around in the loose soil around the stub, finding a brown snake.
+
+"
+E
+"hemag"
+"$n roots around in the loose soil near the stub, finding a brown snake.
+
+"
+E
+"fuckyou"
+"You find nothing of interest.
+
+"
+!
+0 0 0
+-1
+S
+
+#39777
+"Bamboo Forest"
+"You move between tall stalks, diminished light streaming past the vegetation
+
+all around.  South and west, the thin forest of bamboo continues, flickering
+
+eerily in the light.  To the east, a thick stand of tall, green-brown stalks
+
+blocks both sight and passage.  Northwest, you can see a wall of old-looking
+
+bamboo obstructing the otherwise open forest.  North, a small animal trail
+
+leads through the ancient trunks.
+
+"
+"[Kotoktok] no one cares about extras in this room, i know i don't
+
+[Nereus] extras for s/w where it's thinning
+
+[Nereus] extra for east
+
+[Nereus] extra for small animal trail
+
+[Nereus] if we're following an animal trail why is the size dinosaur?
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+-T
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39784 0 7
+D2
+""
+""
+0 -1 39770 0 7
+D3
+""
+""
+0 -1 39778 0 6
+E
+"thin forest 1 south 1 west"
+"The forest is thin and airy to the south and west, with ample room between
+
+stalks for movement.
+
+"
+E
+"thick stand green-brown stalks 1 east"
+"The stalks to the east grow close together, with at most a foot of space
+
+between them.  Their leaves intertwine, forming a nearly solid wall.
+
+"
+E
+"small animal trail"
+"To the north, walls of stalks close in on the east and west, crowding the
+
+trail.  It's significantly darker in that direction.
+
+"
+2778 9 1509949540 3 0
+-1
+S
+
+#39778
+"Bamboo Forest"
+"The growth here is slightly brown, as if it has not been getting enough
+
+moisture for some time.  Leaves rustle drily, making a sound like moving
+
+paper.  The forest floor is painted odd colors as the light filters through
+
+the brownish leaves.  It dances on the ground in myriad patterns, shifting
+
+with the leaves.  To the south, east, and west, the forest is greener, while
+
+movement north is blocked by a thick wall of old bamboo.
+
+"
+"[Nereus] ** Reviewed
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D1
+""
+""
+0 -1 39777 0 6
+D2
+""
+""
+0 -1 39771 0 7
+D3
+""
+""
+0 -1 39779 0 6
+E
+"thick wall old bamboo 1 north"
+"The bamboo to the north looks old, colored a weathered brown by the passage of
+
+time.  The shafts grow no more than four inches apart, making passage through
+
+it impossible.
+
+"
+2509 9 1509949540 3 0
+4717 17 1509949484 -2 0
+-1
+S
+
+#39779
+"Bamboo Forest"
+"A small boulder juts from the ground here, looking out of place in the midst
+
+of the tall, thin stalks of bamboo.  There is a small hole leading under the
+
+boulder, probably the home of some rodent or snake.  Tiny shoots cover the
+
+hard-packed clay floor around the hole, tinting it green like the leaves
+
+above.  To the south, east, and west, the forest continues in a waving sea of
+
+brown and green.  North, a wall of thick bamboo blocks passage, growing far
+
+too closely together to see through.
+
+"
+"[Nereus] good lord we need an action here, I want to be able to stick my hand inside and root about and get bitten by something
+
+[Nereus] and also possibly pop some trinket, special rock, gem, etc
+
+[Nereus] new extra for 1 north wall bamboo
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] it's a rodent hole, and the rodent is scared of the searching hand ---> no bite
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D1
+""
+""
+0 -1 39778 0 6
+D2
+""
+""
+0 -1 39772 0 7
+D3
+""
+""
+0 -1 39780 0 7
+E
+"small boulder hole"
+"The dirty, greyish boulder is roughly square, and two feet in length on each
+
+side.  A hole about four inches in diameter leads under the boulder,
+
+disappearing into blackness.
+
+"
+E
+"wall thick bamboo 1 north"
+"The bamboo to the north is old and brown with very thick, smooth stalks.  The
+
+only green leaves are near the tips of each stalk.
+
+"
+A
+"search dig"
+"hole"
+"if (rflag(reset1,room)) {
+
+  if (random(1,25) == 5) {
+
+    act_tochar(#get,ch);
+
+    act_notchar(#heget,ch);
+
+    obj_to_char(oload(2375),ch);
+
+    remove_rflag(reset1,room);
+
+  }
+
+  else {
+
+    act_tochar(#nope,ch);
+
+    act_notchar(#henope,ch);
+
+    remove_rflag(reset1,room);
+
+  }
+
+}
+
+else {
+
+  act_tochar(#nope,ch);
+
+  act_notchar(#henope,ch);
+
+  remove_rflag(reset1,room);
+
+}
+
+"
+E
+"get"
+"You root around in the hole for a while, finally pulling a small stone from
+
+the side of the tunnel.
+
+"
+E
+"heget"
+"$n roots around in the hole for a while, finally recovering a small object.
+
+"
+E
+"nope"
+"You root around in the hole for a while, but find nothing.
+
+"
+E
+"henope"
+"$n roots around in the hole for a while, but finds nothing.
+
+"
+!
+0 0 0
+2778 9 1509949540 3 0
+2511 9 1509949540 3 0
+215 9 1509949540 3 0
+-1
+S
+
+#39780
+"Bamboo Forest"
+"You continue through the forest, passing between closely-placed stalks.  Light
+
+streams through the elongated leaves, blotching the forest floor with spots of
+
+various colors which undulate with the wind.  To the south, east, and west,
+
+you can see an area of similar floral composition between the green-brown
+
+stalks, while to the north a thick wall of brown bamboo blocks passage.
+
+"
+"[Nereus] floral composition sounds awfully technical :)
+
+[Nereus] extra for 1 north wall bamboo
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D1
+""
+""
+0 -1 39779 0 7
+D2
+""
+""
+0 -1 39773 0 7
+D3
+""
+""
+0 -1 39781 0 7
+E
+"thick wall brown bamboo 1 north"
+"Brown with age, the bamboo to the north grows closely together, blocking
+
+passage.  The stalks seem large and healthy despite their age, with green
+
+leaves sprouting at the crown of each.
+
+"
+280 17 1509949540 -2 0
+2839 9 1509949465 3 0
+-1
+S
+
+#39781
+"Bamboo Forest"
+"A huge skeleton lies on the ground here, lightly covered in mold.  It looks to
+
+be the skeleton of some kind of bear, with enormous pearly canines.  Covering
+
+it are large, long tooth marks, from teeth that might belong to some kind of
+
+rodent.  Blocking the way to the north is a stand of bamboo so thick that you
+
+cannot see or move past it.  To the south, east, and west, the thin, breezy
+
+forest continues.
+
+"
+"[Nereus] extra for 1 north thick bamboo
+
+[Nereus] toothmarks -> tooth marks
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 6 0
+D1
+""
+""
+0 -1 39780 0 7
+D2
+""
+""
+0 -1 39774 0 7
+D3
+""
+""
+0 -1 39782 0 7
+E
+"huge skeleton bear"
+"The greyish-white skeleton of a large bear lies here, partially obscured by
+
+the mold and leaves covering it.  There is severe damage to the skull, and the
+
+bones are scored by wide tooth marks; the bear seems to have been killed by
+
+something, rather than having died of natural causes.  Several large canines
+
+in the jaw look like they might be intact still.
+
+"
+E
+"stand thick bamboo 1 north"
+"The bamboo to the north is thicker and older than that in other directions,
+
+and grows very closely together.  There is no obvious way to get past it here.
+
+"
+A
+"get"
+"pearly canine"
+"act_tochar( #taunt, ch );
+
+"
+E
+"taunt"
+"You examine the skeleton's mouth more closely, finding that none of the teeth
+
+are in decent condition.
+
+"
+!
+0 0 0
+2778 9 1509949540 3 0
+-1
+S
+
+#39782
+"Bamboo Forest"
+"This seems to be an intersection frequented by many animals, as the clay-like
+
+soil is packed unusually hard and smooth.  All around, tall stalks of bamboo
+
+gleam dully in the light, flashing as they move with the wind.  To the south,
+
+east, and west, the forest floor stretches away, shaded by the tall stalks and
+
+dotted with tufts of light green grass.  North is a clear, tunnel-like animal
+
+trail, leading between two thick walls of bamboo trunks.
+
+"
+"[Nereus] new extra for 1 north tunnel-like animal trail
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39815 0 6
+D1
+""
+""
+0 -1 39781 0 7
+D2
+""
+""
+0 -1 39775 0 7
+D3
+""
+""
+0 -1 39783 0 7
+E
+"tufts light green grass"
+"The majority of the grass is a light green and about five inches in height,
+
+growing in small patches which never really meet to form a carpet.
+
+"
+E
+"tunnel-like animal trail 1 north"
+"The stalks to the north close in around the trail, arching overhead to form a
+
+tunnel-like path.  Nothing is visible beyond where it appears to dead-end
+
+against more bamboo.
+
+"
+2820 9 1509949540 3 0
+2823 9 1509949540 3 0
+2838 9 1509949540 3 0
+-1
+S
+
+#39783
+"Bamboo Forest"
+"South and east, tall stalks sway in the wind, painting the ground with various
+
+shades of light and dark.  To the north and west, the stalks grow so close
+
+together as to be impassable.  The stalks to the west look old, yet not
+
+venerable; their growth was cut short by mold at some point, and they are
+
+gradually decaying while they still stand.
+
+"
+"[Nereus] I suggest adding a random acode for the noises which would be more evil
+
+[Nereus] and removing the last line
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D1
+""
+""
+0 -1 39782 0 7
+D2
+""
+""
+0 -1 39776 0 7
+E
+"stalks 1 west"
+"The wall of stalks to the west is brownish-black, tainted by mold and other
+
+forms of fungus.  The shafts are small and thin, as if they died before
+
+growing to full stature.
+
+"
+A
+""
+""
+"send_to_room( #noise, room );
+
+"
+E
+"noise"
+"A rustling comes from the decaying bamboo to the west, but nothing emerges.
+
+"
+!
+2 200 0
+2778 9 1509949540 3 0
+-1
+S
+
+#39784
+"Bamboo Forest"
+"To the east and west, the towering trunks of ancient bamboo are blackened with
+
+mold and age, yet still look sturdy.  The small trail here appears to be used
+
+frequently by large and small animals alike.  Large bear prints sink into the
+
+soft soil here, as well as the small prints of rodents and deer.  South, the
+
+forest opens up, light streaming more abundantly through the leaves.  North,
+
+the dim tunnel continues between the two walls of old bamboo.
+
+"
+"[Nereus] towering trunks ancient bamboo extra
+
+[Nereus] trail/bear prints/rodent prints/soil extra
+
+[Nereus] Want to set size to something else?  Seems high
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+-T
+
+[Nereus] *
+
+"
+301465600 0
+26 6 0
+D0
+""
+""
+0 -1 39785 0 7
+D2
+""
+""
+0 -1 39777 0 7
+E
+"towering trunks ancient bamboo 1 east 1 west"
+"The bamboo to the east and west grows thick, blocking passage.  The stalks are
+
+discolored with mold and age, but overall seem smooth and sturdy.  Healthy
+
+green leaves sprout from the crown of each stalk.
+
+"
+E
+"trail bear deer rodent prints soil"
+"The hard-packed clay of the forest floor here is covered in a rich muddy loam,
+
+which shows prints very well.  Bear paws have sunk deeply into the soil
+
+recently, and small rodent prints are scattered randomly throughout the area.
+
+The hooves of standard deer have left their impression, but are accompanied by
+
+other, amazingly tiny hoof marks.
+
+"
+2511 9 1509949540 3 0
+4719 17 1509949540 -2 0
+-1
+S
+
+#39785
+"Bamboo Forest"
+"This is an intersection on the trail, where it splits off into branches
+
+leading north, south, and west.  The ground looks soft and resilient to the
+
+touch, almost like pine needles and loam.  To the east, large bamboo stalks
+
+blackened with age tower over the trail, cutting out any chance of light from
+
+above.  North west, and south, tunnel-like trails cut through the thick forest.
+
+"
+"[Kotoktok] no.mob to keep giant pandas in their area
+
+[Nereus] extras:  intersection/trails
+
+[Nereus] extras:  1 east/large/bamboo stalks
+
+[Nereus] ** Reviewed **
+
+[Nereus] I wouldn't make this room no.mob, just add a leaving room trig in the northern room to keep the super skliss and pandas trapped
+
+[Nereus] currently the small pandas can't wander west
+
+[Kotoktok] -
+
+-T
+
+[Nereus] *
+
+"
+301465600 0
+26 7 0
+D0
+""
+""
+0 -1 39786 0 6
+D2
+""
+""
+0 -1 39784 0 7
+D3
+""
+""
+0 -1 39810 0 6
+E
+"large bamboo stalks 1 east"
+"The stalks to the east are thick and old, mostly brown but some have been
+
+blackened by mold.  They arch over the trail, blocking out most of the sky.
+
+"
+E
+"ground"
+"The ground is hard-packed clay underneath, but is covered by a thick layer of
+
+springy soil and fallen leaves.
+
+"
+-1
+S
+
+#39786
+"Bamboo Forest"
+"To the east, a huge wall of ancient stalks cuts off passage, and blocks any
+
+light coming from that direction.  The path underfoot looks like it has been
+
+beaten until it is nearly as hard as stone.  North, the forest is brighter and
+
+more open above, with young green shoots sprouting in profusion.  South, you
+
+can see a split in the trail where it branches off to the west.  To the west
+
+is a kind of dark cave cut into the thick bamboo.  Large prints on the softer
+
+edges of the trail can be seen leading into it.
+
+"
+"[Nereus] \"there might be from that direction\" sounds awkward
+
+[Kotoktok] your homosexual advances are awkward, but i don't complain
+
+[Nereus] first sentence awkward
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+-T
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39787 0 9
+D2
+""
+""
+0 -1 39785 0 6
+D3
+""
+""
+0 -1 39809 0 7
+E
+"path"
+"The path is clay-like dirt, which has been packed down by the repeated passing
+
+of large animals until it is nearly as hard as stone.  The surface is covered
+
+by a thin layer of sandy grit.
+
+"
+E
+"dark cave large prints 1 west"
+"Large prints can be seen leading both into and out of the dark gap in the
+
+bamboo to the west.  Nearly large enough for an elephant to fit in, it is
+
+still dwarfed by the size of the bamboo in which it is nestled.
+
+"
+A
+"none"
+""
+"if( (vnum( ch ) == 2775) && !is_pet(ch)) {
+
+  end;
+
+}
+
+if( (vnum( ch ) == 2802) && !is_pet( ch ) ) {
+
+  end;
+
+}
+
+continue;
+
+"
+!
+3 0 4
+-1
+S
+
+#39787
+"Giant Bamboo"
+"To the north, a bright and green forest of large bamboo opens before you.
+
+Giant green stalks three feet wide and more at the base shoot into the sky.  A
+
+wide, well-beaten path leads north, twisting between the large green stalks.
+
+Large paw prints mark the trail, and some of the bamboo on each side is scored
+
+with tooth marks.  South, the trail gets thinner and leads into a dimmer
+
+forest, where the stalks lean over to block light from above.
+
+"
+"[Nereus] how about an extra for the giant stalks
+
+[Nereus] extra: trail
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+-T
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39788 0 9
+D2
+""
+""
+0 -1 39786 0 9
+E
+"large paw prints pawprints trail"
+"The paw prints of what must be an enormous bear are all over this area, and
+
+are particularly noticeable along the edges where the dirt is softer.
+
+"
+E
+"giant green stalks"
+"The stalks are unnaturally large, reaching five times the height of their
+
+smaller cousins to the south.  Enormous, shiny green segments are stacked one
+
+on top of the other, with man-sized leaves budding out from the creases.
+
+"
+2775 9 1509949540 3 0
+2823 9 1509949540 3 0
+2820 9 1509949540 3 0
+1410 17 1509949485 -2 0
+-1
+S
+
+#39788
+"Giant Bamboo"
+"You move along the wide path leading north and south, noticing that the ground
+
+has been beaten hard by the passing of many heavy beasts for long periods of
+
+time.  East and west, enormous trunks of bright green bamboo block passage and
+
+vision, some three feet wide and more at the base.  A pleasant rustling sound
+
+issues from the leaves overhead as small breezes skip over the forest.  North
+
+leads further into the forest of giant bamboo, while to the south the trail
+
+gets gradually smaller, leading into a dim twilit forest of smaller bamboo.
+
+"
+"[Nereus] end of first sentence is somewhat redundant
+
+[Kotoktok] who cares? your annoying comments are redundant
+
+[Nereus] floor doesn't sound very good in a forest
+
+[Nereus] add trail to extra keywords extra 1
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+-T
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39789 0 9
+D2
+""
+""
+0 -1 39787 0 9
+E
+"wide path ground trail"
+"The ground is clay-like soil which has been packed hard by the paws of many
+
+large beasts.  A fine dusting of gritty sand covers it all, making scratching
+
+noises among the papery, dried-out leaves which line the trail.
+
+"
+2839 9 1509949540 3 0
+-1
+S
+
+#39789
+"Giant Bamboo"
+"A wide dirt path cuts north and south through the lush green forest of giant
+
+bamboo.  To the east and west, towering trunks of healthy green bamboo block
+
+passage, as well as survey in each direction.  Some of the stalks are more
+
+than three feet wide, and scored with tooth and claw marks.  Light lances
+
+through the green leaves around, tinting the the stalks with various shades.
+
+Loud crunching and grunting noises come from the thick stands of greenery on
+
+both sides.
+
+"
+"[Nereus] trail extra
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+-T
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39790 0 9
+D2
+""
+""
+0 -1 39788 0 9
+E
+"towering trunks healthy green bamboo stalks tooth claw marks 1 east 1 west"
+"The bamboo blocking further progress to the east and west is far larger than
+
+normal bamboo, towering like tall trees overhead.  Several stalks along both
+
+sides of the trail are scored by large claws and teeth, and moisture beads on
+
+the inside of the plants' wounds.
+
+"
+E
+"wide dirt path trail"
+"The trail is here large enough to be called a road, except no one built it.
+
+The hard, well-packed soil underfoot suggests that it was formed by the
+
+frequent passing of large animals.
+
+"
+2775 9 1509949540 3 0
+4718 17 1509949472 -2 0
+-1
+S
+
+#39790
+"Giant Bamboo"
+"Rocks stud the ground here in the middle of the wide path, creating a tripping
+
+hazard.  The path travels north and south between the giant green trunks,
+
+large claw marks evident in some places.  To the east is an incredibly
+
+enormous bamboo stalk, almost six feet at the base, and reaching far above the
+
+other stalks into the sky.  To the north, a bend in the path cam be seen where
+
+it stops against huge stalks and heads west.
+
+"
+"[Nereus] I take it you're going to make people trip :)
+
+[Nereus] double period at end of rdes
+
+[Kotoktok] yea, but only if they are pussies
+
+[Nereus] you should make it random - people with dex < 13 shouldn't always fall
+
+[Nereus] do woodpeckers live in bamboo?
+
+[Nereus] ** Reviewed **
+
+[Nereus] how about a climb stalk acode, even if it tells you it's too smooth to climb?
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39791 0 9
+D2
+""
+""
+0 -1 39789 0 9
+E
+"rocks wide path"
+"Skull-sized to watermelon-sized rocks are half-buried in the otherwise smooth
+
+trail here.  They are dusted with the same sandy grit as the surface of the
+
+trail and blend in to some degree, creating a tripping hazard.
+
+"
+E
+"enormous bamboo stalk 1 east"
+"The enormous stalk to the east is larger than all but the tallest trees in the
+
+realm, and looks formidably sturdy.  Halfway up the trunk, about forty feet
+
+from the ground, is a small hole in the green-brown plant, perhaps the home of
+
+a woodpecker.
+
+"
+A
+""
+""
+"if( can_fly( ch ) || char_affected( ch, float ) )
+
+  continue;
+
+else {
+
+  if (find_stat(ch,dex) < random(1,16)) {
+
+    act_tochar( #losefooting, ch );
+
+    act_notchar( #loses, ch );
+
+    set_resting( ch );
+
+  }
+
+  else
+
+    act_tochar( #almost, ch );
+
+}
+
+"
+E
+"losefooting"
+"You trip over some rocks and fall to the ground.
+
+"
+E
+"loses"
+"$n trips over some rocks and falls to the ground.
+
+"
+E
+"almost"
+"You trip over some rocks, but manage to stay on your feet.
+
+"
+!
+1 0 5
+A
+""
+""
+"send_to_room(#peck,room);
+
+"
+E
+"peck"
+"The sound of a woodpecker at work floats in from above.
+
+"
+!
+2 100 0
+A
+"climb"
+"enormous bamboo stalk"
+"act_tochar( #slick, ch );
+
+"
+E
+"slick"
+"You try to climb the giant stalk, but are unable to find any handholds.
+
+"
+!
+0 0 0
+2838 9 1509949525 3 0
+-1
+S
+
+#39791
+"Giant Bamboo"
+"Here is a bend in the wide, well-beaten path, which leads south and west
+
+through a lush green forest of towering stalks.  The giant trunks are
+
+unusually thick at the base, and reach far up towards the sky like enormous
+
+skeletal fingers.  Large paw prints mark the trail, and there are tooth and
+
+claw marks in some of the bamboo along the path.  Paper-like rustling can be
+
+heard only faintly from far above, where a light breeze titillates the leaves.
+
+"
+"[Kotoktok] push stalk/bamboo - north is colossal skliss
+
+[Nereus] how about adding a strength check on the push acode
+
+[Nereus] You need to send a message to the room north that the stalk has crashed over and reveals a way north
+
+[Nereus] might also send messages south and west that there's the noise of a loud crash
+
+[Nereus] titilates is spelled wrong
+
+[Nereus] ** Reviewed **
+
+[Nereus] use describe trigger to say whether stalk has fallen or not
+
+[Nereus] can also use one for the north extra
+
+[Kotoktok] man, those describe triggers were annoying to get down, you jerk.. but done
+
+[Kotoktok] -
+
+[Kotoktok] oops, fixed the trig to send message north of stalk falling
+
+[Nereus] titillates misspelled
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+203 -1 39853 0 9
+D2
+""
+""
+0 -1 39790 0 9
+D3
+""
+""
+0 -1 39792 0 9
+E
+"bamboo giant trunks stalks north"
+"The majority of the green stalks to the north are thick and hale, looking as
+
+strong as trees.  They grow closely together, blocking passage or vision.  One
+
+stalk, however, has been damaged near the base and the rest of the plant above
+
+the damage has died, leaving it in a rather precarious state.
+
+"
+A
+"push"
+"stalk trunk bamboo"
+"if( is_open( room, north ) ) {
+
+  act_tochar( #isopen, ch );
+
+  end;
+
+}
+
+if( find_stat( ch, str ) > 16 ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  send_to_room( #crash, find_room( 39853 ) );
+
+  open( room, north );
+
+}
+
+"
+E
+"isopen"
+"The stalk has already been felled, revealing a clearing to the north.
+
+"
+E
+"open"
+"You push mightily on the giant stalk, and it gradually creaks and falls over
+
+to reveal a clearing to the north.
+
+"
+E
+"ropen"
+"$n pushes mightily on the giant stalk, and it gradually creaks and falls over
+
+to reveal a clearing to the north.
+
+"
+E
+"crash"
+"A dead stalk to the south begins creaking, then falls to the ground with a
+
+mighty crash.  A trail is revealed to the south.
+
+"
+!
+0 0 0
+A
+""
+"bamboo giant trunks stalks north"
+"if( is_open( room, north ) ) {
+
+  act_tochar( #newnorth, ch );
+
+}
+
+else {
+
+  act_tochar( #oldnorth, ch );
+
+}
+
+"
+E
+"newnorth"
+"The majority of the green stalks to the north are thick and hale, looking as
+
+strong as trees.  They grow closely together, blocking passage and vision.
+
+One however, has fallen, revealing a path to the north.
+
+"
+E
+"oldnorth"
+"The majority of the green stalks to the north are thick and hale, looking as
+
+strong as trees.  They grow closely together, blocking passage or vision.  One
+
+stalk, however, has been damaged near the base and the rest of the plant above
+
+the damage has died, leaving it in a rather precarious state.
+
+"
+!
+17 0 0
+A
+""
+""
+"if (is_open( room, north) ) {
+
+  act_tochar( #open, ch );
+
+}
+
+else
+
+  continue;
+
+"
+E
+"open"
+"Here is an intersection in the wide, well-beaten path, where it splits north,
+
+south, and west through a lush green forest of towering stalks.  The giant
+
+trunks are unusually thick at the base, and reach far up towards the sky like
+
+enormous skeletal fingers.  Large paw prints mark the trail, and there are
+
+tooth and claw marks in some of the bamboo along the path.  Paper-like
+
+rustling can be heard only faintly from far above, where a light breeze
+
+titillates the leaves.
+
+"
+!
+17 0 0
+2775 9 1509949540 3 0
+-1
+S
+
+#39792
+"Giant Bamboo"
+"Both passage and vision are blocked by the bamboo to the north and south, some
+
+of which is scored with teeth and claw marks.  The wide dirt path leads east
+
+and west, hemmed in on the north and south by the gigantic trunks of healthy
+
+green bamboo.  Light streams amply around, flickering as the wind moves the
+
+through the leaves.  To the east a bend in the trail can be made out, where it
+
+turns south.
+
+"
+"[Nereus] Let's try to avoid the sounds if we can, put them in actions
+
+[Kotoktok] let's try to avoid whining
+
+[Nereus] last sentence the subject isn't clear, reword
+
+[Nereus] Extra:  wide dirt path
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] bearprints -> bear prints
+
+[Nereus] (extra 2)
+
+"
+301465600 0
+26 9 0
+D1
+""
+""
+0 -1 39791 0 9
+D3
+""
+""
+0 -1 39793 0 9
+E
+"bamboo teeth claw marks 1 north 1 south"
+"Many of the giant stalks to the north and south, which are otherwise healthy,
+
+have been scored by the raking of giant claws and teeth.  Several freshly-
+
+gnawed stumps are evident.
+
+"
+E
+"wide dirt path"
+"The ground is solid, clay-like soil which has been packed hard by the passing
+
+of many large beasts.  Several enormous bearprints are evident in the softer
+
+soil towards the trail's edge.
+
+"
+2823 9 1509949540 3 0
+2820 9 1509949540 3 0
+4718 17 1509949540 -2 0
+-1
+S
+
+#39793
+"Giant Bamboo"
+"This is a wide, heavily-used dirt trail, running east and west between giant
+
+stalks of thick green bamboo.  Some of the trunks are more than four feet
+
+thick at the base, too large to be normal bamboo.  A creaking sound comes from
+
+the forest blocking passage to the north and south, as the wind moves through
+
+the upper stalks.  The rustling of leaves above joins the creaking, giving
+
+silence little chance.  To the west is a bend in the trail, where it turns
+
+south.
+
+"
+"[Nereus] comma after forest, line 7
+
+[Kotoktok] that would make the meaning ambiguous, leaving
+
+[Nereus] 3rd sentence is still hard to read
+
+[Nereus] last sentence is ambiguous just like the one to the east
+
+[Nereus] Extras: large trunks; trail
+
+[Nereus] ** Reviewed **
+
+[Nereus] what's the empty acode for?
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D1
+""
+""
+0 -1 39792 0 9
+D3
+""
+""
+0 -1 39794 0 9
+E
+"large trunks giant stalks thick green bamboo"
+"The enormous bamboo grows tightly, with very little space between adjacent
+
+trunks.  The vertical grain is interrupted every four feet by creases which
+
+separate the segments of the great bamboo.
+
+"
+E
+"wide dirt trail"
+"Years of trampling by heavy beasts has beaten the surface of the trail to
+
+stone-like hardness.  The soil near the edges is slightly softer, and shows
+
+the prints of various animals.
+
+"
+2775 9 1509949540 3 0
+-1
+S
+
+#39794
+"Giant Bamboo"
+"The wide dirt animal track turns south and east here, winding between the
+
+large bamboo on both sides.  North and west, the giant trunks of enormous
+
+bamboo stalks grow close together, blocking passage.  Some of these are three
+
+feet and more in width, and reach thirty into the sky.  Tooth and claw marks
+
+can be seen on some of them, hinting at the presence of some large animal in
+
+this area.
+
+"
+"[Nereus] might be good if there was a climb bamboo trig here that didn't do anything
+
+[Nereus] extra for tooth/claw marks
+
+[Nereus] extra for giant trunks
+
+[Nereus] extra for trail
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+[Joelynar] fourth line:  thirty what?  feet I assume.  (:
+
+"
+301465600 0
+26 9 0
+D1
+""
+""
+0 -1 39793 0 9
+D2
+""
+""
+0 -1 39795 0 9
+E
+"giant trunks enormous bamboo stalks tooth claw marks 1 north 1 west"
+"The green, segmented yet tree-like trunks to the north and west grow no more
+
+than about four inches apart.  Passage is impossible, and vision is restricted
+
+to a few feet into the crowded forest.  Several of the trunks are marked by
+
+the recent activities of large teeth and claws; moisture beads on the inside
+
+of these animal-inflicted wounds.
+
+"
+E
+"wide dirt track"
+"The trail bends sharply here, branches heading east and south.  The ground is
+
+mostly hard-packed clay, but the northwest edge of the trail appears very
+
+soft, showing many recent prints.
+
+"
+A
+""
+""
+"send_to_room(#creaking,room);
+
+"
+E
+"creaking"
+"@gCreaking noises issue from the bamboo to the north and west as wind sways the
+
+stalks.@n
+
+"
+!
+2 200 0
+215 9 1509949540 3 0
+280 17 1509949540 -2 0
+-1
+S
+
+#39795
+"Giant Bamboo"
+"The wide, sandy animal track here leads north and south between giant bamboo
+
+stalks.  East and west, the large trunks of giant bamboo grow close together,
+
+blocking the way.  Some of the trunks are three feet and more wide at the
+
+base, looking ridiculously cramped by the other trunks around them.  The
+
+fronds above wave in the wind, producing a pleasant rustling sound.
+
+"
+"[Nereus] extras:  sandy animal track; trunks giant bamboo stalks
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39794 0 9
+D2
+""
+""
+0 -1 39796 0 9
+E
+"trunks giant bamboo stalks 1 east 1 west"
+"The gleaming, segmented trunks are really more of a green-brown at the base,
+
+but grow progressively greener towards the crown.  They grow closely together
+
+both east and west, making progress in those directions impossible.
+
+"
+E
+"wide sandy animal track"
+"The trail is hard-packed clay towards the center, covered in a thin layer of
+
+loose sand and dirt.  The edges are softer, sandy soil which is littered by
+
+fallen leaves.
+
+"
+2775 9 1509949540 3 0
+-1
+S
+
+#39796
+"Giant Bamboo"
+"Far above, the giant bamboo blots out most of the sky to the east and west
+
+with a wall of greenish stalks.  This is a comfortably wide dirt path, cutting
+
+north and south between the thick trunks of towering giant bamboo.  Freshly-
+
+cut stumps on both sides of the trail bear the markings of large teeth and
+
+claws.  To the south, there is a bend in the path, where it meets a thick
+
+stand of bamboo and turns west.
+
+"
+"[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39795 0 9
+D2
+""
+""
+0 -1 39797 0 9
+E
+"giant bamboo wall greenish stalks 1 east 1 west"
+"Passage to the east and west is blocked by rows of tall, straight bamboo
+
+stalks.  A light greenish-brown at the base and progressively greener as they
+
+reach upwards, the bamboo blocks out all but a small corridor of the sky above.
+
+"
+E
+"wide dirt path"
+"Wide enough for an elephant to walk along with ease, the path is paved with
+
+hard-pack clay.  A light dusting of sand and dirt covers the hard surface,
+
+with numerous fallen leaves rustling drily along the sides of the trail.
+
+"
+A
+""
+""
+"send_to_room(\"@cA bird calls from the west, a beautiful but melancholy note.@n\", room);
+
+"
+!
+2 100 0
+2838 9 1509949540 3 0
+-1
+S
+
+#39797
+"Giant Bamboo"
+"There is a bend in the wide dirt path here, where it turns north and west.  To
+
+the south, stands of giant bamboo grow close together, their enormous girth
+
+blocking passage.  You can barely see between some of them into a bright
+
+clearing, where rich green grass is dotted with tiny golden flowers.  Several
+
+stumps line the path on the east, freshly chewed down by large sharp teeth.
+
+Giant paw prints are scattered about the ground.
+
+"
+"[Nereus] a stand grows close together
+
+[Nereus] Can paw prints be scattered?  THey're not something that you can have a handful of and drop all over
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39796 0 9
+D3
+""
+""
+0 -1 39798 0 9
+E
+"giant bamboo bright clearing 1 south"
+"Although the solid green-brown trunks grow too closely together to afford
+
+passage, it is possible to see through a few cracks into a clearing to the
+
+south.  Green grass grows in profusion, dotted with small yellow flowers, and
+
+a humble lean-to is on the west side of the clearing.
+
+"
+2775 9 1509949540 3 0
+2820 9 1509949540 3 0
+2823 9 1509949540 3 0
+-1
+S
+
+#39798
+"Giant Bamboo"
+"A wide dirt path cuts east and west through the forest of tall bamboo here.
+
+To the north and south, stalks of giant bamboo grow closely, their wide trunks
+
+blocking passage.  Some of these have been cut down, and are scored with the
+
+marks of giant sharp teeth.  The ground around them has been torn up by sharp
+
+claws with incredible weight behind them.  To the east and west the path
+
+bends, turning north on both sides.
+
+"
+"[Nereus] extra:  wide dirt path
+
+[Nereus] might want to mention the cut down stalks in the arousing rextra
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D1
+""
+""
+0 -1 39797 0 9
+D3
+""
+""
+0 -1 39799 0 9
+E
+"giant bamboo stalks trunks 1 north 1 south"
+"Smooth and erect, the shafts to the north and south look tantalizingly
+
+healthy.  Although some shafts are small, some are more than two feet wide at
+
+the base, and incredibly long.  They crowd so closely together that passage
+
+between seems impossible.  Several have been cut down by the apparent gnawing
+
+of large teeth, then left for some reason.
+
+"
+E
+"wide dirt path"
+"The clay-like soil of the trail here has been torn up somewhat by large claws,
+
+doing something other than simply passing by.  The softer ground towards the
+
+edges of the trail has suffered even more trauma.
+
+"
+4718 17 1509949515 -2 0
+-1
+S
+
+#39799
+"Giant Bamboo - Bend in the Path"
+"This is a bend in the path where it turns north and east, cutting between the
+
+thick trunks of enormous bamboo.  Some of the stalks have recently been cut
+
+down, leaving jagged stumps scored with the marks of large teeth and claws.
+
+Long, wide dragging marks in the dirt path lead north beside a set of giant
+
+paw prints.  Above, the elongated light green leaves wave in the breeze,
+
+moving like tiny windmills in the stronger gusts.
+
+"
+"[Nereus] first comma unnecessary, first sentence
+
+[Nereus] add cut stalks to rdes 1
+
+[Nereus] err 1st extra
+
+[Nereus] ** reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39800 0 9
+D1
+""
+""
+0 -1 39798 0 9
+E
+"dragging marks giant paw prints cut stalks"
+"It appears as though some animal has recently felled several stalks, and
+
+dragged them off to the north.  Wide, sweeping marks have been left by the
+
+leaves and knobs on the giant stalks as they were dragged away.
+
+"
+2775 9 1509949540 3 0
+-1
+S
+
+#39800
+"Giant Bamboo"
+"The dirt path widens to the north, wide enough to be a small road.  Many large
+
+paw prints are scattered about the area, particularly to each side of the
+
+trail.  To the west, large stalks of brown and green bamboo block the way.
+
+East is blocked by giant green bamboo, three feet wide and more at the base.
+
+Several stumps can be seen in their midst, scarred by marks from large teeth
+
+and claws.  To the south is a bend in the path, where it turns east.
+
+"
+"[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39801 0 9
+D2
+""
+""
+0 -1 39799 0 9
+E
+"dirt path paw prints"
+"The dirt path is quite wide here, widening even more to the north.  The hard,
+
+sandy ground shows evidence of large animals, including paw prints and claw
+
+marks; these are more obvious at the edges of the trail, where the ground is
+
+not quite so hard.
+
+"
+E
+"stumps"
+"Most of the stumps are brown and old, yet many of them are showing new growth
+
+in the form of young, green stalks sprouting from the edges.  Apparently being
+
+cut down is not always fatal to these hardy plants.
+
+"
+280 17 1509949465 -2 0
+-1
+S
+
+#39801
+"Giant Bamboo"
+"The path through the bamboo is as wide as a small road here, cutting north and
+
+south through giant stalks.  To the east and west, the trunks of towering
+
+bamboo are as wide as three feet, growing close together and blocking passage.
+
+To the north, a colossal pine tree can be seen on the west side of the path.
+
+On both sides, scarred stumps are among the bamboo, scored by large teeth and
+
+claws.  Paw prints mar the sandy trail, large claw marks clearly showing.
+
+"
+"[Nereus] need a pine tree extra here
+
+[Nereus] stumps extra might be nice too
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39802 0 9
+D2
+""
+""
+0 -1 39800 0 9
+E
+"trunks towering bamboo 1 west 1 east"
+"Venerable green-brown trunks mingle with young-looking, yet no less
+
+impressively sized, green stalks.  The tall trunks are thick and grow closely
+
+together, blocking both vision and movement.
+
+"
+E
+"path trail paw prints claw marks"
+"Perhaps twenty feet wide, the path is spacious and fairly clear of debris.
+
+The sandy ground is extremely hard, yet paw prints and claw marks still are
+
+clearly evident; whatever made them must be very large.
+
+"
+E
+"pine tree"
+"The great pine soars high above the tallest of the bamboo, its size nearly
+
+incompatible with the fact that it is a tree.
+
+"
+E
+"scarred stumps"
+"The empty interiors of these remnants of fallen bamboo show that the stalks
+
+are hollow.
+
+"
+2775 9 1509949540 3 0
+2838 9 1509949540 3 0
+-1
+S
+
+#39802
+"Giant Bamboo"
+"You are on a wide dirt path the size of a small dirt road.  It cuts north and
+
+south through a forest of giant green bamboo, the trunks of which are three
+
+feet wide and more at the base.  To the west is a colossal fir tree, towering
+
+over the giant bamboo which surrounds it.  Several stumps line the path,
+
+freshly cut down by the gnawing of sharp teeth.  Pine needles and brown bamboo
+
+leaves mingle on the western side of the path, rustling against each other in
+
+the breeze.
+
+"
+"[Kotoktok] extra for pine tree, nest room (climb up) with small pop
+
+[Kotoktok] 39848
+
+[Nereus] secret rooms arouse me
+
+[Nereus] no comma needed first sentence
+
+[Nereus] extra: wide dirt path road
+
+[Nereus] add fir to rextra 1
+
+[Nereus] extra:  stumps/gnawed gnawing
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39803 0 9
+D2
+""
+""
+0 -1 39801 0 9
+E
+"pine fir tree 1 west"
+"The pine tree to the west seems impossibly tall, making the gigantic bamboo
+
+look like grass around it.  The textured greyish bark is cut through with
+
+creases where the dark interior shows through.  A delicate, almost sweet
+
+fragrance flows from it, scenting the area around the base.  Many branches
+
+shoot out from the enormous trunk even around the base; on one of these just
+
+below the tops of the bamboo is a large nest.
+
+"
+E
+"nest"
+"The nest is very large, composed of pine branches and lengths of sturdy-
+
+looking bamboo.  It is located in a crook where a large branch meets the bole
+
+of the tree.
+
+"
+E
+"wide dirt path road"
+"The path is quite wide here, hard-pack clay in the middle and softer soil on
+
+the edges.  Enormous pine needs and man-sized bamboo leaves litter the ground,
+
+making it soft and springy.
+
+"
+E
+"stumps gnawed gnawing"
+"Clear sap oozes from the chewed edges of the stumps, trickling down the
+
+outside.  Most of the stumps are still green and moist, suggesting the bamboo
+
+was felled recently.
+
+"
+A
+"climb"
+"pine tree up"
+"if (is_exhausted(ch)) {
+
+  act_tochar(#yawn, ch);
+
+  end;
+
+}
+
+acode( room, 2 );
+
+loop( followers ) {
+
+  ch = rch;
+
+  acode( room, 2 );
+
+}
+
+"
+E
+"yawn"
+"You are too exhausted.
+
+"
+!
+0 0 0
+A
+""
+""
+"if (is_exhausted(ch)) {
+
+  act_tochar(\"You are too exhausted.\", ch);
+
+  end;
+
+}
+
+if( find_skill( ch, climb ) > 3 ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #nclimb, ch );
+
+  transfer( ch, find_room( 39848 ) );
+
+  modify_move( ch, -4 );
+
+  use_skill( ch, climb );
+
+  act_notchar( #nappear, ch );
+
+}
+
+else {
+
+  act_tochar( #fail, ch );
+
+  act_notchar( #nfail, ch );
+
+}
+
+"
+E
+"climb"
+"You climb up the giant bole branch by branch, all the way to the nest.
+
+"
+E
+"nclimb"
+"$n climbs up the giant bole branch by branch, finally stopping at a large nest.
+
+"
+E
+"nappear"
+"$n appears over the side of the nest, and swings $mself in beside you.
+
+"
+E
+"fail"
+"You attempt to climb the tree, but come sliding back down.
+
+"
+E
+"nfail"
+"$n attempts to climb the tree, but comes sliding back down.
+
+"
+!
+0 0 0
+-1
+S
+
+#39803
+"Giant Bamboo"
+"To the west, large brown and green stalks grow closely, blocking passage.
+
+East, the giant green trunks of enormous bamboo are side by side, barring the
+
+way of travelers.  The dirt below forms a clear trail, wide enough to be a
+
+small road, cutting its way between the bamboo.  To the south you can see a
+
+colossal pine tree growing along the west side of the trail.  North, the path
+
+comes to an intersection, where it turns north and east.
+
+"
+"[Nereus] extra: large brown green stalks 1 west
+
+[Nereus] incidentally why's it brown to the west?  Dying section that close?
+
+[Nereus] This room's kind of boring with all its directions
+
+[Kotoktok] you're kind of boring, jerk
+
+[Nereus] In rextra 1 - do you mean weaves or leaves
+
+[Nereus] extra:  dirt trail
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39804 0 9
+D2
+""
+""
+0 -1 39802 0 9
+E
+"large brown green stalks 1 west 1 east"
+"The trunks of giant bamboo rising over fifty feet on both sides of the trail
+
+blot out most of the sky, their large leaves rustling gently.  Horizontal
+
+creases in the outer surface every four feet vertically mark off growth
+
+segments.
+
+"
+E
+"dirt trail path"
+"The path has been beaten until it is nearly as hard as stone in the middle,
+
+but the ground on the sides of the trail is somewhat softer.  Man-sized bamboo
+
+leaves litter the ground.
+
+"
+2775 9 1509949540 3 0
+-1
+S
+
+#39804
+"Giant Bamboo"
+"You are at an intersection on the wide path, where it splits north, south, and
+
+east.  To the west, the thick trunks of giant green bamboo grow close
+
+together, blocking passage.  Several stalks have been freshly cut, scored by
+
+the marks of large teeth and claws.  Light streams in from above, filtered by
+
+the elongated leaves overhead.  To the east, the path is thinner and studded
+
+with the stumps of dead bamboo, not just on the edges but in the middle as
+
+well.
+
+"
+"[Nereus] extra: wide path (what created it)
+
+[Nereus] extra: 1 west thick trunks giant green bamboo
+
+[Nereus] extra: stalks marks teeth claws
+
+[Nereus] possible extra for east if you feel like talking about the stumps or paths in any directions
+
+[Nereus] The exits all through this area are too small
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+0 -1 39808 0 9
+D1
+""
+""
+0 -1 39805 0 9
+D2
+""
+""
+0 -1 39803 0 9
+E
+"wide path"
+"The ground has been packed hard here by the passing of many large paws,
+
+forming a wide trail through the bamboo.
+
+"
+E
+"1 west thick trunks giant green bamboo stalks marks teeth claws"
+"The giant green trunks to the west grow closely enough to prevent travel in
+
+that direction, having at most a foot of navigable space between them.
+
+Several of the smaller stalks, less than two feet at the base, have been
+
+freshly thrashed by large teeth and claws.  Moisture beading on the inside of
+
+each wound gives off a fresh vegetable smell.
+
+"
+-1
+S
+
+#39805
+"Giant Bamboo"
+"North and south, the trunks of giant green bamboo grow closely, blocking
+
+passage.  Their trunks are three feet wide and more at the base, and the
+
+healthy shoots soar high into the sky.  This rough, stubbly dirt path runs
+
+east and west between the enormous trunks.  Several stumps line the path,
+
+scarred by marks from large teeth and claws.  West is an intersection, where
+
+the path widens almost to the size of a road, and then turns north and south.
+
+"
+"[Nereus] extra: trunks giant green bamboo 1 north 1 south
+
+[Nereus] extra: bamboo shoots
+
+[Nereus] extra: stumps
+
+[Nereus] room name
+
+[Nereus] third sentence can just say \"this rough, stubbly dirt path\"
+
+[Kotoktok] -
+
+[Nereus] what does \"road size\" mean?
+
+[Kotoktok] made it clearer
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D1
+""
+""
+0 -1 39806 0 9
+D3
+""
+""
+0 -1 39804 0 9
+E
+"trunks giant green bamboo 1 north 1 south"
+"The giant green stalks look to be in good health, with green leaves sprouting
+
+at regular intervals all the way to the top.  They grow too closely together
+
+to allow more than a few feet of vision into them, let alone passage through
+
+them.
+
+"
+E
+"stumps"
+"Most of the stumps are long-dead, cut off about six inches above the ground.
+
+Claw and teeth marks are evident on them, suggesting the method by which they
+
+were felled.  Several small shoots are beginning to grow from the sides of
+
+several of the stumps; perhaps the felled bamboo is not necessarily killed.
+
+"
+2775 9 1509949540 3 0
+280 17 1509949525 -2 0
+280 17 1509949445 -2 0
+-1
+S
+
+#39806
+"Giant Bamboo"
+"The open route for movement here is a rough path, running east and west
+
+through giant bamboo.  The forest floor is studded with brown, dried-up bamboo
+
+stumps, scarred by large teeth and claws.  Passage to the north and south is
+
+blocked by the close-growing trunks of large bamboo stalks.  To the west, the
+
+path is wider and more defined, with fewer stumps.  East is a hole in the
+
+bamboo, leading into a dark den.  Large paw prints mark the dirt in front of
+
+the den.
+
+"
+"[Nereus] Is it really a floor?  Maybe say forest floor
+
+[Nereus] extra: dirt large paw prints pawprints
+
+[Nereus] extra: north/south (why can't I fit through the bamboo)
+
+[Nereus] extra: stumps
+
+[Nereus] room name
+
+[Kotoktok] watch out for the skliss, it wants to rape you
+
+[Nereus] changed the code a bit to use path() and resized exits
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] Describe trigs for the north 'doorway'
+
+[Kotoktok] fixed
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D0
+""
+""
+203 -1 39854 0 9
+D1
+""
+""
+0 -1 39807 0 9
+D3
+""
+""
+0 -1 39805 0 9
+E
+"dirt large paw prints pawprints"
+"The prints are the size of dinner plates, with deep holes where the claws dug
+
+into the dirt.  Many old prints can be seen entering and exiting the den, as
+
+well as several very fresh ones.
+
+"
+E
+"trunks large bamboo stalks 1 north 1 south"
+"Most of the bamboo on each side of the path is green, but several green-brown
+
+stalks pepper the forest, lending some warmth with their color.  The stalks
+
+are over two feet in width, and grow closely together; passage seems
+
+impossible.
+
+"
+A
+""
+""
+"if( rflag( reset0, room ) && (1d30 == 1) && is_player( ch ) ) {
+
+  acode(room,2);
+
+}
+
+else {
+
+  continue;
+
+}
+
+"
+!
+1 0 10
+A
+""
+""
+"if (mob_in_room(2802,find_room(39854))) {
+
+  remove_rflag( reset0, find_room( 39806 ) );
+
+  mob = mob_in_room(2802, find_room(39854));
+
+  send_to_room(#oshit,room);
+
+  open(room, north);
+
+  path( mob, find_room( 39806 ), 10, 20 );
+
+}
+
+else {
+
+  continue;
+
+}
+
+"
+E
+"oshit"
+"@RYou hear a thunderous crashing from the bamboo to the north as it is laid to
+
+waste.  An impossibly huge bipedal reptile breaks through.@n
+
+"
+!
+0 0 0
+A
+""
+""
+"if( vnum( ch ) == 2802 ) {
+
+  interpret( ch, \"kill panda\" );
+
+}
+
+continue;
+
+"
+!
+1 0 1
+A
+""
+""
+"if (is_open( room, north ) ) {
+
+  act_tochar( #open, ch );
+
+}
+
+else
+
+  continue;
+
+"
+E
+"open"
+"The open route for movement here is a rough path, running east and west
+
+through giant bamboo.  The forest floor is studded with brown, dried-up bamboo
+
+stumps, scarred by large teeth and claws.  Passage to the south is blocked by
+
+the close-growing trunks of large bamboo stalks.  The bamboo to the north has
+
+been utterly crushed, revealing a muddy clearing.  To the west, the path is
+
+wider and more defined, with fewer stumps.  East is a hole in the bamboo,
+
+leading into a dark den.  Large paw prints mark the dirt in front of the den.
+
+"
+!
+17 0 0
+A
+""
+"trunks large"
+"if (is_open( room, north) ) {
+
+  act_tochar( #open, ch );
+
+}
+
+else
+
+  continue;
+
+"
+E
+"open"
+"Most of the bamboo on each side of the path is green, but several green-brown
+
+stalks pepper the forest, lending some warmth with their color.  The stalks to
+
+the south are over two feet in width, and grow closely together; passage seems
+
+impossible.  To the north, the giant stalks have been utterly crushed, revealing a muddy clearing.
+
+"
+!
+17 0 0
+-1
+S
+
+#39807
+"Giant Bamboo - Den"
+"Many giant stalks have been bent inwards, forming a roughly conical den which
+
+is closed at the top.  The floor is strewn with a thick layer of bamboo leaves
+
+fallen from the canopy above, and coarse black and white fur.  Many stumps
+
+line the edges of the den, cut by large teeth and claws.  West, an opening
+
+leads towards a rough path, studded by many stumps.
+
+"
+"[Nereus] like the den room
+
+[Nereus] extra: conical den giant stalks
+
+[Nereus] extra: floor bamboo leaves fur
+
+[Nereus] extra: stumps
+
+[Nereus] extra: 1 west path (if you want)
+
+[Nereus] search acode here?
+
+[Nereus] come up witha better room name here
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465604 0
+26 8 0
+D3
+""
+""
+0 -1 39806 0 9
+E
+"floor bamboo leaves fur"
+"Leaves cover most of the dirt on the floor, with the coverage being thinnest
+
+in the center of the den.  At the edges, matted black and white fur is mixed
+
+in with the leaves to form an even thicker carpet.
+
+"
+E
+"stumps"
+"The stumps are old and dry with no new growth showing.  Tooth and claw have
+
+marred them heavily; the edges are jagged and dirty.
+
+"
+A
+"search"
+"floor fur leaves"
+"act_tochar( #taunt, ch );
+
+"
+E
+"taunt"
+"You search the debris on the den floor, but find nothing.
+
+"
+!
+0 0 0
+2775 137 1509949540 2 0
+2145 137 1509949540 3 0
+-1
+S
+
+#39808
+"Giant Bamboo - Grass-choked Mud"
+"Unusually large grass chokes the muddy ground here, standing over six feet
+
+tall with giant, fleshy blades.  Pools of liquid form in small depressions in
+
+the mud, in which some enormous water bugs are evident.  The stand of bamboo
+
+to the west is impossibly large; trunks as wide and tall as those of adult
+
+redwoods support leaves the size of small canoes.  East and north is also
+
+giant bamboo, but it is not nearly as large as that to the west.  To the south
+
+can be made out a dry, clear trail through the vegetation.
+
+"
+"[Nereus] what's up with this section?
+
+[Kotoktokt] enter gap/bamboo brings you to spirit of the spring
+
+[Nereus] Should make a code to get/kill bugs or something
+
+[Nereus] how about making drinkable pool objects?
+
+[Nereus] ** Reviewed **
+
+[Nereus] grass extra
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+3 9 0
+D2
+""
+""
+0 -1 39804 0 9
+D3
+""
+""
+33003 -1 39849 0 9
+E
+"giant bamboo 1 west grass"
+"The smoothness of the huge, silvery-green trunks to the west is broken by
+
+creases every five feet vertically, which mark each growth segment.  Although
+
+most of the bamboo grows far too closely together to pass, there is a sizable
+
+gap in the bamboo which is partially hidden by the large grass.
+
+"
+E
+"pools liquid depressions mud enormous water bugs"
+"Pools of crystal clear liquid are dispersed throughout this muddy area,
+
+ranging from six inches to over two feet in depth.  At the bottom of these can
+
+be seen crab-sized water beetles and some very large insect nymphs.  Seven
+
+inch long water striders dart around on the surface, keeping just out of reach.
+
+"
+A
+""
+""
+"if( !is_sleeping( ch ) && !is_exhausted( ch ) && !is_resting( ch ) ) {
+
+  act_tochar( #enter, ch );
+
+  act_notchar( #nenter, ch );
+
+  transfer( ch, find_room( 39849 ) );
+
+  act_notchar( #nappear, ch );
+
+}
+
+"
+E
+"enter"
+"You push some of the grass aside and move on through the bamboo.
+
+"
+E
+"nenter"
+"$n pushes some of the grass aside, and disappears into the giant bamboo.
+
+"
+E
+"nappear"
+"$n stumbles into the clearing through a gap in the bamboo to the east.
+
+"
+!
+0 0 0
+A
+"enter"
+"gap bamboo"
+"acode( room, 1 );
+
+loop( followers ) {
+
+  ch = rch;
+
+  acode( room, 1 );
+
+}
+
+"
+!
+0 0 0
+2775 9 1509949540 3 0
+2509 9 1509949540 3 0
+1662 17 1509949540 -2 0
+2839 9 1509949465 3 0
+-1
+S
+
+#39809
+"Bamboo Forest - Den"
+"This is a large, darkened den in the bamboo.  Giant bear prints are in the
+
+dirt at the entrance, but the rest of the floor is covered with bamboo leaves.
+
+Large, coarse black and white hairs line the edges of the den, giving off a
+
+musty odor.  Extremely old and thick stalks form the walls of the den, and the
+
+shoots meet above to form a web, impermeable to light.  To the east, bamboo
+
+does not so closely or completely surround the trail, which heads off north
+
+and south.
+
+"
+"[Nereus] why are these aggressive?
+
+[Nereus] flag this as indoors
+
+[Nereus] These are size giant which is larger than the room
+
+[Nereus] (i.e. change room to giant sized)
+
+[Nereus] Search floor/bamboo leaves/hair acode, bitte
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+-T
+
+[Nereus] *
+
+"
+301465604 0
+26 7 0
+D1
+""
+""
+0 -1 39786 0 7
+E
+"bear prints dirt"
+"Unusually large bear prints mark the soft dirt of the den's floor, claw marks
+
+in clear evidence.
+
+"
+E
+"coarse black white hairs"
+"Fluffy piles of coarse black and white hairs line the edges of the den,
+
+partially covered in dirt.  Small leaves and pieces of shredded bamboo stick
+
+out from the mass of fur.
+
+"
+A
+"search"
+"floor bamboo leaves hair"
+"act_tochar( #sucker, ch );
+
+"
+E
+"sucker"
+"You search the debris on the den floor, but find nothing.
+
+"
+!
+0 0 0
+2775 137 1509949540 3 0
+2145 137 1509949540 3 0
+-1
+S
+
+#39810
+"Bamboo Forest"
+"To the north and south, solid walls of ancient bamboo block passage.  Above,
+
+the stalks weave together, forming a tight roof that lets in little light.
+
+The ground is packed hard from many passing animals, and scattered with a thin
+
+layer of fallen leaves.  To the east, you can see an intersection where the
+
+trail splits north and south.  West, the trail continues in a straight line.
+
+"
+"[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 6 0
+D1
+""
+""
+0 -1 39785 0 6
+D3
+""
+""
+0 -1 39811 0 6
+E
+"solid walls ancient bamboo 1 north 1 south"
+"Any hope of movement to the north or south is dashed by the thick, green-brown
+
+walls of ancient bamboo.  One can see only a few feet into the tangle, before
+
+darkness makes sight impossible.
+
+"
+2778 9 1509949540 3 0
+2509 9 1509949540 3 0
+4717 17 1509949540 -2 0
+-1
+S
+
+#39811
+"Bamboo Forest"
+"The path here is just a small animal trail, cutting east to west.  On the
+
+north and south, towering walls of thick bamboo trunks block passage.  Their
+
+stalks lean over the trail, weaving together to form a roof, which dims the
+
+light overhead.  West is a fork in the trail, marked by a small clearing where
+
+the path branches north.  To the east, the trail continues, eventually coming
+
+to an intersection.
+
+"
+"[Kotoktok] i'd rather die than do extras for this shitty, shitty room
+
+[Nereus] on the north and south sounds weird, how about \"To the north and south\" or \"on the north and south sides of the trail,\"
+
+[Nereus] I don't think you mean \"take all intersection\"
+
+[Nereus] extras: small animal trail ground, you can talk about rat tracks or some crap
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 6 0
+D1
+""
+""
+0 -1 39810 0 6
+D3
+""
+""
+0 -1 39812 0 6
+E
+"roof 1 up"
+"The bamboo to the north and south leans over the trail, partially covering it
+
+with their leaves.  A small, dotted line of sky is visible, as the fronds from
+
+each side do not always meet.
+
+"
+2839 9 1509949540 3 0
+4633 17 1509949470 -2 0
+-1
+S
+
+#39812
+"Bamboo Forest"
+"Small tufts of grass and bamboo stumps stud the ground between open patches of
+
+clay-like soil.  A path leads north, where old bamboo gradually begins to give
+
+way to young green shoots.  To the south, the bamboo is too thick to pass,
+
+while the trail to the east and west can be easily traversed.  The soil is
+
+firm and sandy, packed down by many passing feet.  Fallen leaves are scattered
+
+about, rustling softly as you pass over.
+
+"
+"[Nereus] add some keywords to the fallen leaves extra (ground soil perhaps?)
+
+[Nereus] south thick bamboo extra
+
+[Nereus] stumps tuft grass extra
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 6 0
+D0
+""
+""
+0 -1 39816 0 6
+D1
+""
+""
+0 -1 39811 0 6
+D3
+""
+""
+0 -1 39813 0 6
+E
+"path 1 north"
+"The path to the north is lighter and more airy than this one, leading into
+
+greener and younger bamboo.
+
+"
+E
+"fallen leaves stumps tufts grass ground soil"
+"Small tufts of grass grow in rings around the stumps of long-dead stalks.
+
+Bamboo leaves litter the ground in the areas of open soil; some are soft and
+
+old, far along in the process of decay, and others are dry and crinkled,
+
+producing noise as they move.
+
+"
+E
+"thick bamboo 1 south"
+"Thick brown stalks grow closely together to the south, blocking sight and
+
+movement in that direction.
+
+"
+2511 9 1509949540 3 0
+-1
+S
+
+#39813
+"Bamboo Forest"
+"Towering walls of thick bamboo trunks block movement to the north and south.
+
+Boughs far above mesh together, forming a tight roof which almost entirely
+
+blots out the sky.  The ground is sandy and firm, scattered with fallen leaves
+
+and small pebbles.  To the east is an intersection in the trail, where it
+
+branches north and east.  West of here the trail bends south where it meets an
+
+impenetrable wall of vegetation.
+
+"
+"[Nereus] double period
+
+[Nereus] need period first line
+
+[Nereus] how about resetting a sand grain or a pebble here
+
+[Nereus] how about 1 west wall extra
+
+[Nereus] maybe intersection extra if you feel like it
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 6 0
+D1
+""
+""
+0 -1 39812 0 6
+D3
+""
+""
+0 -1 39814 0 6
+E
+"ground leaves pebbles"
+"The sand-covered hard-pack clay trail is strewn with leaves and pebbles here,
+
+which give the ground a certain crunchiness.
+
+"
+E
+"towering walls thick bamboo trunks 1 north 1 south"
+"The bamboo to the north and south is both larger than average, and grows very
+
+close together; passage appears impossible.
+
+"
+2778 9 1509949540 3 0
+1410 17 1509949540 -2 0
+-1
+S
+
+#39814
+"Bamboo Forest"
+"The floor is strewn with dried leaves, fallen from the canopy above, where
+
+boughs mesh into a tight roof.  The trail comes to a bend here, turning south
+
+and east.  The bamboo to the north looks especially weak and aged, and the
+
+ground in front of it is littered with small animal bones.  East and south,
+
+the trail continues between thick walls of bamboo, blackened with age.
+
+"
+"[Kotoktok] break bamboo opens hidden north exit
+
+[Kotoktok] to 39818
+
+[Kotoktok] break bamboo code also pops part of custom, 2%'
+
+[Nereus] search bones code
+
+[Nereus] added no.open flag so people can't just close/reopen the door until they find the bamboo
+
+[Nereus] extra for animal bones
+
+[Nereus] extra for trail
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 6 0
+D0
+""
+"bamboo"
+203 -1 39818 0 6
+D1
+""
+""
+0 -1 39813 0 6
+D2
+""
+""
+0 -1 39815 0 6
+E
+"bamboo 1 north"
+"Brownish bamboo stalks crowd close together, blocking passage to the north.
+
+The stalks look older and possibly weaker than the bamboo around them.
+
+"
+E
+"ground small animal bones"
+"The ground in front of the bamboo to the north is littered with animal bones,
+
+ranging from rat-sized to bear-sized.  The bones have been marked by the
+
+gnawing of blunt teeth.
+
+"
+A
+"break clear open move"
+"north bamboo"
+"if( is_open( room, north ) ) {
+
+  act_tochar( #isopen, ch );
+
+}
+
+else {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, north );
+
+  if( random(1,100) < 3) {
+
+    send_to_room(\"A particularly uniform stalk catches your eye.\", room);
+
+    obj_to_room( oload(4645), room);
+
+  }
+
+}
+
+"
+E
+"isopen"
+"The bamboo to the north has already been cleared.
+
+"
+E
+"open"
+"You break some of the weakened bamboo, revealing a trail to the north.
+
+"
+E
+"ropen"
+"$n breaks some of the weakened bamboo to the north, revealing a small trail.
+
+"
+!
+0 0 0
+A
+"search"
+"bones"
+"if (rflag(reset1,room)) {
+
+  remove_rflag( reset1, room );
+
+  if( 1d12 == 5 ) {
+
+    act_tochar(#get,ch);
+
+    obj_to_char(oload(2253),ch);
+
+    end;
+
+  }
+
+}
+
+act_tochar(#nope,ch);
+
+"
+E
+"get"
+"You grab a likely little piece of bone.
+
+"
+E
+"nope"
+"You search through the bones, but find nothing of interest.
+
+"
+!
+0 0 0
+4719 17 1509949510 -2 0
+4633 17 1509949465 -2 0
+-1
+S
+
+#39815
+"Bamboo Forest"
+"East and west, towering stalks of bamboo form thick walls, blocking passage.
+
+The small animal trail cuts north and south between the walls, its firm
+
+surface studded with pebbles.  Above, a web of leaves forms a thick canopy,
+
+blotting out all but small pieces of the sky.  South, the trail opens up on an
+
+airy forest of bamboo, light streaming through onto the ground.  North the
+
+trail comes to bend against a wall of bamboo, where it turns east.
+
+"
+"[Nereus] if it's to east and west, they should form thick walls, not one thick wall
+
+[Nereus] get pebble code?
+
+[Nereus] extras for east west
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 6 0
+D0
+""
+""
+0 -1 39814 0 6
+D2
+""
+""
+0 -1 39782 0 6
+E
+"small animal trail surface pebbles"
+"The trail is hard-pack clay, with many small pebbles embedded in it.  No plant
+
+life grows on the trail itself, indicating that the trail is highly used by
+
+the wildlife of the area.
+
+"
+E
+"towering stalks bamboo thick walls 1 east 1 west"
+"The bamboo to the east is old and brown, but appears healthy.  To the west,
+
+the wall of bamboo is blackened by mold and appears to have been killed before
+
+it reached full size.  On both sides, the vegetation thickly enough to prevent
+
+passage.
+
+"
+78 17 1509949526 -2 0
+-1
+S
+
+#39816
+"Bamboo Forest"
+"The hard, smooth ground is scattered with leaves, fallen from above.  East and
+
+west, towering walls of bamboo browning with age block passage.  The canopy
+
+above is so thick that only a small amount of light can filter through.
+
+North, the forest becomes lighter, and instead of ancient stalks, green young
+
+shoots sprout in profusion.  South is dimly lit, but an intersection can be
+
+made out where the trail splits east and west.
+
+"
+"[Nereus] walls of bamboo extra
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 6 0
+D0
+""
+""
+0 -1 39817 0 6
+D2
+""
+""
+0 -1 39812 0 6
+E
+"hard smooth ground leaves"
+"The ground is hard-packed clay with many bamboo leaves embedded in it.  Many
+
+passing paws or feet have worn it smooth, and only a few loose leaves scatter
+
+its surface.
+
+"
+E
+"towering walls bamboo 1 east 1 west"
+"Old and brown, yet a healthy green at the crown, the bamboo to the east and
+
+west grows quite close together, blocking passage.
+
+"
+2838 9 1509949540 3 0
+-1
+S
+
+#39817
+"Bamboo Forest"
+"The small clearing is hemmed in on the east and west by young stalks of green
+
+bamboo which grow closely together.  North, trunks of enormous bamboo, some
+
+three feet or more in diameter, spring up from the ground, rocketing many feet
+
+into the sky.  The floor is covered with rich green grass, and dotted with
+
+small golden flowers.  On the western side of the clearing is a bamboo lean-
+
+to, the opening to which is covered in thick, black pelts.  South, a small
+
+path leads into the dim forest.
+
+"
+"[Nereus] it's not a floor, it's ground
+
+[Nereus] rich green grass/golden flowers extra
+
+[Nereus] pick flowers action
+
+[Nereus] get pelts action
+
+[Nereus] pelts/lean-to extra
+
+[Nereus] leanto -> lean-to
+
+[Nereus] Is the forest always twilit?  Sounds like it's always night; not sure how to say it in such a way that it's just lit in the same way
+
+[Nereus] ** Reviewed **
+
+[Nereus] Maybe it would be cool if the lizardy dude had a pet tied up out here to a post or something
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+26 6 0
+D2
+""
+""
+0 -1 39816 0 6
+D3
+"curtain of black pelts"
+"curtain of black pelts"
+131 -1 39850 0 6
+E
+"rich green grass golden flowers"
+"The rich green grass grows thick on the ground, providing a sort of giant
+
+green welcome mat for the lean-to to the west.  Small golden flowers are
+
+scattered among the grass like droplets of gold.
+
+"
+E
+"thick black pelts 1 west"
+"The lean-to's walls are supported by an enormous bamboo trunk leaned against
+
+another, upright trunk.  The walls are neatly trimmed, smaller bamboo stalks
+
+which have been placed side by side and then thatched with leaves.  The
+
+opening is covered in thick, black pelts which appear to have come from a
+
+very, very large rodent.
+
+"
+A
+"pick"
+"dandelion flowers"
+"interpret( ch, \"get dandelion\" );
+
+"
+!
+0 0 0
+A
+"get"
+"black pelts"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"The pelts are firmly attached to the supporting bamboo.
+
+"
+!
+0 0 0
+2509 9 1509949540 3 0
+1471 17 1509949540 -2 0
+1471 17 1509949540 -2 0
+4717 17 1509949540 -2 0
+2839 9 1509949473 3 0
+-1
+S
+
+#39818
+"Edge of a Black Bamboo Forest"
+"The trail here leads west, where it becomes steadily darker and more gloomy;
+
+the trail leading south seems to terminate against the bamboo.  The firm sandy
+
+ground is strewn with leaves, fallen from the canopy above.  Only an
+
+occasional gap between boughs reveals the sky.  East, a thick wall of towering
+
+trunks blocks passage, while to the south the stalks look thin and old.
+
+"
+"[Kotoktok] break bamboo opens hidden exit south
+
+[Kotoktok] to 39814
+
+[Nereus] Do the rats go out south?
+
+[Nereus] Maybe you should add a code to make them stay in here?
+
+[Nereus] floor -> ground
+
+[Nereus] what kind of trunks lie to the east (east extra?)
+
+[Nereus] ** Reviewed **
+
+[Nereus] also leaves ground extra maybe
+
+[Nereus] *
+
+[Joelynar] Perhaps make this room no.mob?  So as to prevent the animals of the healthy portion of the bamboo forest from entering the decayed portion of the forest.
+
+"
+301465600 0
+26 6 0
+D2
+""
+"bamboo"
+203 -1 39814 0 6
+D3
+""
+""
+0 -1 39819 0 6
+E
+"bamboo 1 south"
+"Brownish bamboo stalks crowd close together, blocking passage to the south.
+
+The stalks look older and possibly weaker than the bamboo around them.
+
+"
+A
+"break clear move open"
+"south bamboo"
+"if( is_open( room, south ) ) {
+
+  act_tochar( #isopen, ch );
+
+}
+
+else {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, south );
+
+  if( random(1,100) < 3) {
+
+    send_to_room(\"A particularly uniform stalk catches your eye.\", room);
+
+    obj_to_room( oload(4645), room);
+
+  }
+
+}
+
+"
+E
+"isopen"
+"The bamboo to the south has already been cleared.
+
+"
+E
+"open"
+"You break some of the aged bamboo, revealing a trail to the south.
+
+"
+E
+"ropen"
+"$n breaks some of the aged bamboo to the south, revealing a trail.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( (vnum( ch ) == 2786) && !is_pet(ch)) {
+
+  end;
+
+}
+
+else
+
+  continue;
+
+"
+!
+3 0 4
+4719 17 1509949500 -2 0
+-1
+S
+
+#39819
+"Black Bamboo Forest"
+"Here, the forest is dark and gloomy, and almost no sky can be seen through the
+
+tangled masses of blackened stalks above.  Fungus grows about the base of each
+
+shoot, and a musty smell hangs in the air.  Small and large bones alike are
+
+scattered about the ground, scored by many teeth.  West, the trail leads into
+
+utter darkness, where strange noises can be heard.  East leads out into a
+
+lighter, more wholesome section of the trail.
+
+"
+"[Nereus] almost sky?  How about sky can barely be seen or almost be made out or some such?
+
+[Nereus] Add search bones code
+
+[Nereus] Might be cool if you made a type of fungus object load on the ground in a couple of these rooms
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D1
+""
+""
+0 -1 39818 0 6
+D3
+""
+""
+0 -1 39820 0 6
+E
+"fungus"
+"Mostly whitish fungus grows around the base of each shoot, but some is black
+
+and looks slimy.  The fungus gives off clouds of spores, which smell terrible
+
+and sting the eyes.
+
+"
+E
+"bones"
+"The bones range from those of rodents and deer to what might be the bones of a
+
+sizable bear.  They are yellowed and look crumbly, and bear the marks of many
+
+blunt teeth.
+
+"
+A
+"search"
+"bones"
+"if (rflag(reset1, room)) {
+
+  act_tochar( #mag, ch );
+
+  act_notchar( #hemag, ch );
+
+  mload( 1148, room );
+
+  remove_rflag( reset1, room );
+
+}
+
+else
+
+  act_tochar(#fuckyou, ch);
+
+"
+E
+"fuckyou"
+"You search through the bones, but find nothing of interest.
+
+"
+E
+"mag"
+"You uncover something unsavory.
+
+"
+E
+"hemag"
+"$n uncovers something unsavory.
+
+"
+!
+0 0 0
+2786 9 1509949540 3 0
+-1
+S
+
+#39820
+"Black Bamboo Forest"
+"The ground underfoot is soft and squelchy due to the large amounts of slime-
+
+mold and various fungi.  This small trail begins at the edge of a dark and
+
+gloomy forest of blackened bamboo.  An unwholesome odor of decaying bamboo and
+
+thriving fungus wafts up from the ground and the surrounding forest.  Drops of
+
+unmoving water hang from several stalks, like tiny round crystals.  Several of
+
+them sparkle beautifully in the light.
+
+"
+"[Nereus] Don't need 'looks' in the 1st sentence, it _is_ soft and squelchy
+
+[Nereus] second sentence sounds jumpy
+
+[Nereus] how about \"This small trail begins at the edge of a dark and gloomy...\"
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D1
+""
+""
+0 -1 39819 0 6
+D3
+""
+""
+0 -1 39821 0 6
+E
+"ground slime-mold fungi"
+"If it were clear of mushrooms and mold, the ground would be a slightly sticky
+
+clay.  However, the fungus blanketing the ground is thick and slimy, and turns
+
+the ground into mush.
+
+"
+59 9 1509949540 3 0
+-1
+S
+
+#39821
+"Black Bamboo Forest"
+"A small animal trail weaves through blackened bamboo, traveling more or less
+
+east to west.  The odors of decaying plant matter and fungal spores greet your
+
+nose, making it hard to breathe.  Utter blackness lies on the ground and moves
+
+through the trees.  Thick black fungus lies on the ground, which looks soft
+
+and spongy.  No breeze moves under the tangled forest, and the only noises are
+
+occasional drips of water, and strange rustlings in the bamboo.
+
+"
+"[Nereus] this room is sufficently evil to please me
+
+[Nereus] do fungal spores have a smell, or is it just the smell of rot?
+
+[Nereus] hail evil
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D1
+""
+""
+0 -1 39820 0 6
+D3
+""
+""
+0 -1 39822 0 6
+E
+"thick black fungus ground"
+"A carpet of squishy, jet-black fungus covers the ground here, oozing with its
+
+own acrid juices.  Slimy creatures can be seen crawling throughout it; they
+
+look just like maggots, but no flies buzz around this gloomy forest to have
+
+spawned them.
+
+"
+2786 9 1509949540 3 0
+-1
+S
+
+#39822
+"Black Bamboo Forest"
+"The trail bends south and east here, leading through the dismal black forest.
+
+A horrible musty smell of decaying bamboo and fungus fumes up from the ground,
+
+which looks black and soft, squelching slightly as bubbles of gas escape from
+
+below.  Tangled masses of blackened bamboo line the trail, dripping with
+
+ancient moisture.  Strange scurrying and rustling noises come from the bamboo
+
+on both sides.
+
+"
+"[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D1
+""
+""
+0 -1 39821 0 6
+D2
+""
+""
+0 -1 39823 0 6
+E
+"tangled masses blackened bamboo 1 north 1 west"
+"Thin, weak-looking stalks line the trail to the north and west, blocking
+
+passage.  Many of them have fallen over, succumbing to the mold which chokes
+
+the thicket and paints them an unhealthy black.
+
+"
+81 17 1509949540 -2 0
+-1
+S
+
+#39823
+"Black Bamboo Forest"
+"This is a small animal trail which weaves its way north and south between
+
+blackened, fungus-covered shoots of bamboo.  The ground looks like it would
+
+give underfoot, and a horrible stench of rotting plants and fungus wafts up
+
+from it.  Moisture on the blackened stalks gleams in the light, and drops
+
+sparkle like tiny crystals.  The trail to the south hits a thick wall of
+
+bamboo, and splits east and west.
+
+"
+"[Nereus] avoid you
+
+[Nereus] I've noticed you use a lot of scurrying noises - why not make some of these in random acodes
+
+[Nereus] commas incorrect in first sentence
+
+[Nereus] wafts up - how about wafts from beneath
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D0
+""
+""
+0 -1 39822 0 6
+D2
+""
+""
+0 -1 39824 0 6
+E
+"moisture blackened stalks drops 1 west 1 east"
+"Moisture hangs motionless on many of the moldy stalks to the east and west,
+
+glistening in the light.  Few trickles seem to occur, suggesting that each
+
+drop has probably been where it is for months and perhaps years.
+
+"
+A
+""
+""
+"send_to_room( #noise, room );
+
+"
+E
+"noise"
+"@eA scurrying sound comes from the forest to the west.@n
+
+"
+!
+2 200 0
+2786 9 1509949540 3 0
+-1
+S
+
+#39824
+"Black Bamboo Forest"
+"There is a fork in the small animal trail here, where it branches north, east,
+
+and west into blackness.  Water pools where the brown, musty leaves meet the
+
+blackened stalks, and a thin film of mold forms on these pools.  Stalks
+
+overhead meet, blocking out any trace of the sky or fresh air.  The ground
+
+looks strangely soft, and gives off a disturbing odor.  A tangled mess of
+
+moldy, blackened bamboo blocks passage to the south.
+
+"
+"[Nereus] I don't know if the animals' death screams are going to be frequent enough that you will want to mention them in the description
+
+[Nereus] all ways lead into darkness
+
+[Nereus] how about an evil death scream or scrambling acode in the bamboo
+
+[Nereus] ** Reviewed **
+
+[Nereus] extras for trail/ground/leaves?
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D0
+""
+""
+0 -1 39823 0 6
+D1
+""
+""
+0 -1 39825 0 6
+D3
+""
+""
+0 -1 39827 0 6
+E
+"water pools leaves"
+"Where the leaves of the mangled bamboo meet the stalk are small depressions,
+
+many of which are filled with water.  The surface of each tiny pool is dusted
+
+with oily-looking mold of various colors.
+
+"
+E
+"ground trail"
+"Black, slimy fungus covers the ground, oozing foul liquids and gases.  Small,
+
+dirty white creatures which look like maggots crawl around in the fungus.
+
+"
+-1
+S
+
+#39825
+"Black Bamboo Forest"
+"Long ropes of strange fungal growth drape across the trail here, swaying as
+
+you pass by.  Water droplets hang on these as if from a spider's web,
+
+shimmering like crystals on a revolting chandelier.  Decaying bamboo and
+
+fungus create a horrible odor, rudely greeting the olfactory sense.  Slimy
+
+bamboo blocks progress to the north and south, while the trail continues east
+
+and west into utter blackness.
+
+"
+"[Nereus] second sentence is awesome, but crystals used twice
+
+[Nereus] droplets extra, comma after pale
+
+[Nereus] since the bamboo exit to the north discusses how thin the bamboo is, maybe it would be good to add a break bamboo code that didn't do anything
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D1
+""
+""
+0 -1 39826 0 6
+D3
+""
+""
+0 -1 39824 0 6
+E
+"long ropes strange fungal growth water droplets"
+"Pale, off-white fungus hangs in clumpy, slimy ropes from the bamboo just
+
+overhead, spanning the trail.  Droplets of acrid-smelling water hang from
+
+these, occasionally falling to the rancid floor with a faint splash.
+
+"
+E
+"slimy bamboo 1 north 1 south"
+"The bamboo blocking passage to the north is thin and weak, each stalk encased
+
+in a thin sheath of slime-mold.  You think you see a pair of eyes watching you
+
+from between some stalks to the south, but it might be your imagination.
+
+"
+A
+""
+""
+"send_to_room(#drip, room);
+
+"
+E
+"drip"
+"@wA sparkling droplet of liquid falls from the fungus above, landing with a
+
+faint splash.@n
+
+"
+!
+2 200 0
+2786 9 1509949540 3 0
+885 17 1509949470 -2 0
+-1
+S
+
+#39826
+"Black Bamboo Forest - Dead End"
+"To the east, the way is blocked by a huge growth of fungus, blanketed by a
+
+thick layer of slime.  Myriad colours are revealed in the slimy surface by the
+
+light, and a few bamboo shoots poke through it.  Water drips from the edges of
+
+the fungal formation.  Both north and south, the tangled growth of mold-
+
+blackened stalks blocks passage.  Small rustling noises can be heard from
+
+within.
+
+"
+"[Nereus] Myriad and different are redundant, suggest \"A myriad of colors\" or \"Myriad colors are revealed\"
+
+[Nereus] bomboo > bamboo
+
+[Nereus] Are you going to have pop-outs from the bamboo?  It would be sweet as hell to make a bunch of \"secret\" doors where your rats have passwall and pass through the bamboo
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] you forgot to set aflag and check for null mob, but I fixed it
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D0
+"blackened bamboo"
+""
+229603 -1 39855 0 6
+D3
+""
+""
+0 -1 39825 0 6
+E
+"huge growth fungus slime shoots formation 1 east"
+"An eight-foot high fungal mass rises in the middle of the trail to the east,
+
+making further progress impossible.  Its surface is blotchy, with patches of
+
+color ranging from purest black, to orange, to chalky white.  Moisture beads
+
+on the edges, dripping steadily onto the floor below.  Small, long-dead bamboo
+
+shoots poke through the fungus at several points, having died trying vainly to
+
+reach the sun.
+
+"
+A
+""
+""
+"mob = mob_in_room( 2786, find_room(39855) );
+
+if( mob )
+
+  do_spell( pass door, null, mob, 30 );
+
+"
+!
+1 0 128
+59 9 1509949540 3 0
+4719 17 1509949540 -2 0
+1148 9 1509949450 3 0
+-1
+S
+
+#39827
+"Black Bamboo Forest"
+"Blackened stalks of bamboo brush at your face as you pass by, as the roof is
+
+quite low and many broken stems hang from above.  The ground is covered with a
+
+healthy growth of fungus, which looks soft to the touch.  A rancid odor wafts
+
+away from the tangled masses of fungus-covered shoots to the north and south.
+
+Eerie drops of water and grunting noises can be heard, making the forest seem
+
+uneasy.
+
+"
+"[Nereus] how about putting a secret room off to the south along this east-west section?
+
+[Nereus] makin -> making the
+
+[Nereus] search fungus code perhaps
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] you need to set an aflag on entering codes (I have done so)
+
+[Nereus] also your codes need to check if( mob )  - fixed this too
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D1
+""
+""
+0 -1 39824 0 6
+D2
+"blackened bamboo"
+""
+237803 -1 39856 0 6
+D3
+""
+""
+0 -1 39828 0 6
+E
+"tangled masses fungus-covered shoots 1 north 1 south"
+"Blocking progress to the north and south are seemingly impenetrable walls of
+
+moldy bamboo.  The stalks are thin and brown where they show through the
+
+fungus; their growth was cut short at some point.  Clouds of spores float away
+
+from them towards you, smelling awful and burning the eyes.
+
+"
+A
+""
+""
+"mob = mob_in_room( 2786, find_room(39856) );
+
+if( mob )
+
+  do_spell( pass door, null, mob, 30 );
+
+"
+!
+1 0 128
+2786 9 1509949540 3 0
+-1
+S
+
+#39828
+"Black Bamboo Forest"
+"You are at an intersection, where the small trail splits north, east, and
+
+west.  All paths lead into almost palpable darkness; it is hard to tell where
+
+there is darkness from where there is simply a wall of black, slimy
+
+vegetation.  Horrible smells assail the nose as air wafts by, emanating from
+
+the fungal carpet underfoot.  To the south, a tangle of blackened bamboo
+
+blocks passage, dripping with moisture.  Several droplets catch the light,
+
+shining like crystals.
+
+"
+"[Nereus] south extra, eachother -> each other
+
+[Nereus] cool room again
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D0
+""
+""
+0 -1 39838 0 6
+D1
+""
+""
+0 -1 39827 0 6
+D2
+"blackened bamboo"
+""
+237795 -1 39857 0 6
+D3
+""
+""
+0 -1 39829 0 6
+E
+"tangle blackened bamboo droplets 1 south"
+"Stalks have fallen across each other to the south, forming a tangled mass of
+
+mold-tainted bamboo.  You think you see a dark form moving about between the
+
+fallen sticks, but cannot be certain.
+
+"
+A
+""
+""
+"mob = mob_in_room( 2786, find_room(39857) );
+
+if( mob )
+
+  do_spell( pass door, null, mob, 30 );
+
+"
+!
+1 0 267
+-1
+S
+
+#39829
+"Black Bamboo Forest"
+"The only obvious way to travel here is along a small animal trail, leading
+
+east and west through the dark black forest.  North, you think you can see a
+
+flickering greenish light, but that direction is blocked by a tangled mass of
+
+bamboo, covered in fungus and blackened with age.  The same sort of tangle
+
+blocks the passage to the south.  East and west both lead into yet more
+
+stifling darkness.
+
+"
+"[Nereus] like here, add a north exit that's no show into the room to the north
+
+[Nereus] that the evil rats can scurry through the bamboo to
+
+[Nereus] last sentence, east and west each lead might sound better
+
+[Nereus] extra 1 lightsource -> light source
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D1
+""
+""
+0 -1 39828 0 6
+D3
+""
+""
+0 -1 39830 0 6
+E
+"flickering greenish light tangled mass bamboo 1 north"
+"The tangled mass of blackened bamboo to the north is lit from behind by an
+
+unearthly green light source.  Droplets of liquid hanging from leaves and
+
+fungus take on a shimmering green iridescence.
+
+"
+189 17 1509949490 -2 0
+-1
+S
+
+#39830
+"Black Bamboo Forest"
+"This is an intersection on a small animal trail, where it splits off in all
+
+directions.  North, south, and east, it leads into blackness where nothing can
+
+be seen.  To the west a dim green light can just be made out, glowing
+
+steadily.  Mushy black fungus squelches as gas bubbles up from underneath it,
+
+giving off a horrible odor.  Blackened bamboo arches overhead, forming a roof
+
+which is impermeable to the light of moon or sun.
+
+"
+"[Nereus] where it splits off sounds weird
+
+[Nereus] maybe just me
+
+[Nereus] fungus extra, carpetted -> carpeted
+
+[Nereus] like extra 2
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D0
+""
+""
+0 -1 39833 0 6
+D1
+""
+""
+0 -1 39829 0 6
+D2
+""
+""
+0 -1 39839 0 6
+D3
+""
+""
+0 -1 39831 0 6
+E
+"mushy black fungus"
+"The forest floor is carpeted by mushy black fungus and slime-mold. Small gas
+
+bubbles make a putrid sucking sound as they burst free of the slime, which is
+
+teeming with the activities of small, foul creatures.
+
+"
+E
+"blackened bamboo roof"
+"The mold-blackened bamboo which lines the trail in all directions arches
+
+overhead, sealing in this place's foulness, and sealing out the light of day.
+
+Small drops of moisture bead on some of the leaves above, sometimes trickling
+
+down the outside of the stalk like blood from a wound.
+
+"
+2786 9 1509949540 3 0
+81 17 1509949473 -2 0
+-1
+S
+
+#39831
+"Black Bamboo Forest"
+"A green glow comes from the south, illuminating the area.  Bright red eyes
+
+peer out from the tangled masses of blackened bamboo to the north and west,
+
+and droplets of hanging moisture glow green like tiny emeralds.  The moist
+
+black fungus on the ground shines green like copper, but still gives off a
+
+horrible odor.  Vines of fungus hang from the canopy above, brushing you as
+
+you move past.
+
+"
+"[Nereus] get fungus action might be good here
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] action added
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D1
+""
+""
+0 -1 39830 0 6
+D2
+""
+""
+0 -1 39832 0 6
+E
+"vines fungus canopy"
+"Pale, tan-colored ropes of fungus span the trail, hanging from the bamboo
+
+stalks on each side.  Moisture beads on them as on a spider's web.
+
+"
+E
+"moist black fungus ground"
+"The ubiquitous black slime-mold covering the ground here is tinged with green
+
+from the glow to the south.  Small pools of water on the ground take on an
+
+even brighter glow, looking like sheets of burnished copper.
+
+"
+A
+"get"
+"fungus"
+"if (rflag(reset1,room)) {
+
+  act_tochar(#get,ch);
+
+  obj_to_char(oload(4635),ch);
+
+  remove_rflag(reset1,room);
+
+}
+
+else {
+
+  act_tochar(#nope,ch);
+
+}
+
+"
+E
+"get"
+"You reach up and grab a string of fungus.
+
+"
+E
+"nope"
+"None of the fungus looks remotely useful.
+
+"
+!
+0 0 0
+-1
+S
+
+#39832
+"Black Bamboo Forest - Glowing Fungus"
+"All around, the strange fungus gives off an eerie green glow, illuminating the
+
+scene.  Both large and small bones litter the floor here, showing signs of
+
+serious trauma; most of these animals appear to have been crushed to death.
+
+The floor shines green like copper in the strange light, where slime-mold
+
+reflects the fungal luminescence.  The small alcove is hemmed in by blackened
+
+stalks of fungus-covered bamboo, which meet overhead to form a roof.  North
+
+leads out, back into utter darkness.
+
+"
+"[Nereus] definitely need a search bone acode
+
+[Nereus] Is there any way to get any of this glowing fungus to use as emergency lightsource?
+
+[Nereus] fungus object description:  change room to area or something - we aren't in a room here.
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] if you remove a piece from the rest of the fungus, it stops glowing
+
+[Kotoktok] -
+
+[Nereus] *
+
+[Nereus] I made this no.mob
+
+[Nereus] *
+
+"
+301465608 0
+25 6 0
+D0
+""
+""
+0 -1 39831 0 6
+E
+"bones"
+"The bones here are splintered and broken, and range from having been recently
+
+stripped of flesh to various states of mold-facilitated decay.  It is
+
+difficult to tell what type of animals these bones belonged to.
+
+"
+A
+"search"
+"bones ground"
+"act_tochar(#taunt,ch);
+
+"
+E
+"taunt"
+"You search through the scattered bones, but find nothing worth keeping.
+
+"
+!
+0 0 0
+2811 9 1509949540 3 0
+4696 17 1509949540 -2 0
+59 9 1509949540 3 0
+-1
+S
+
+#39833
+"Black Bamboo Forest"
+"You move along the small animal trail, weaving between blackened, fungus-
+
+covered stalks.  The ground looks soft and gives off a smell of rotting
+
+fungus.  To the east, a faint green light can be made out, barely filtering
+
+through the shoots which block passage in that direction.  Faint hissing
+
+noises come through from the same direction.  North and south, the passage
+
+continues into the dank gloominess.
+
+"
+"[Nereus] space after comma in line 5
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+[Joelynar] Not to be picky, but if the snake is dead, would you hear hissing towards the east?  The same holds true from this rooms counterpart on the eastern side of the cave.
+
+"
+301465600 0
+25 6 0
+D0
+""
+""
+0 -1 39834 0 6
+D2
+""
+""
+0 -1 39830 0 6
+E
+"faint green light 1 east"
+"Small gaps in the decaying bamboo to the east allow glimpses of a pale green
+
+glow beyond the thicket wall.  Sunlight on green plants could create a similar
+
+glow, but somehow you doubt that is the source of light.
+
+"
+2786 9 1509949540 3 0
+1148 9 1509949465 3 0
+-1
+S
+
+#39834
+"Black Bamboo Forest"
+"Here the small animal trail bends south and east, cutting through a dark world
+
+of decay and death.  Bamboo shoots blackened with age and everpresent mold
+
+crowd the trail, leaning overhead to make an impenetrable roof against the
+
+sun, moon, and stars.  The floor is soft and moist underfoot, a living carpet
+
+of black fungus.  A dim green glow can be seen illuminating the passage to the
+
+east.
+
+"
+"[Nereus] I think you are overusing \"Fungal growth\"
+
+[Kotoktok] you're one to talk, mr. yeast infection
+
+[Nereus] blackened bamboo shoots / animal trail extras might be interesting, or not if you like
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] grublike -> grub-like
+
+[Kotoktok] check
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D1
+""
+""
+0 -1 39835 0 6
+D2
+""
+""
+0 -1 39833 0 6
+E
+"floor living carpet black fungus"
+"The fungus underfoot is black as night, but the moisture on its surface shines
+
+silver in the light.  Foul little creatures can be seen crawling through it,
+
+ranging from grub-like bugs to small arachnids.
+
+"
+-1
+S
+
+#39835
+"Black Bamboo Forest"
+"A steady green glow comes from the south, illuminating this section of the
+
+small animal trail.  The wet floor gives off a silvery sheen, and droplets of
+
+water hanging on the blackened bamboo to the north shine green like emeralds.
+
+The trail goes east and west into darkness, and south into a dimly-lit bamboo
+
+cave.  Strange noises come from the cave, and the smell wafting from that
+
+direction seems particularly foul.
+
+"
+"[Nereus] how about a south extra describing the evil o' the cave
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D1
+""
+""
+0 -1 39837 0 6
+D2
+""
+""
+0 -1 39836 0 6
+D3
+""
+""
+0 -1 39834 0 6
+E
+"wet floor"
+"Moisture on the black carpet of slime-mold on the ground reflects the green
+
+glow from the south, shining like tainted emerald.
+
+"
+E
+"cave 1 south"
+"No detail can be made out from here, except that the cave to the south is
+
+dimly lit by a green glow.  Foul odors waft in from that direction.
+
+"
+2786 9 1509949540 3 0
+81 17 1509949540 -2 0
+-1
+S
+
+#39836
+"Black Bamboo Forest - Glowing Fungus"
+"Bones both large and small litter the floor in this well-lit cavern of bamboo.
+
+Globular green fungi which hang from the ceiling and are attached to the
+
+stalks all around give off an eerie green light, illuminating the room with
+
+their unearthly glow.  Droplets of water shine brightly, hanging from decayed
+
+stalks.  The fungal carpet here is thin and patchy, having been worn away by
+
+the constant movement of something heavy.  There is a small exit through the
+
+bamboo to the north.
+
+"
+"[Nereus] Is something special going to be in these little cave endings?
+
+[Nereus] like big giant rats or something?
+
+[Nereus] make some way for mini-normal-rats to go east, west, and south to cut right through the bamboob
+
+[Nereus] haha bamboo
+
+[Nereus] Going to pop some no-show fungus here that gives off light?  I like it
+
+[Nereus] This room no mob to keep out of the rat?
+
+[Nereus] Is this room larger than horse?
+
+[Nereus] search bones action needed
+
+[Nereus] maybe we could reset something in the bone pile
+
+[Nereus] fungus description has extra comma, first sentence
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] Maybe you could make the snakes eat the rats
+
+[Nereus] eh that'd probably make it too easy to get the teeth
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D0
+""
+""
+0 -1 39835 0 6
+E
+"bones"
+"The moldy, decaying bones of several animals lie here.  Most of the bones seem
+
+to belong to very large rodents, although a deer and bear of some kind are
+
+also evident.
+
+"
+E
+"globular green fungi fungus"
+"Globs of glowing green fungus ranging from marble-sized to the size of a human
+
+head hang from the stalks above and cling to the stalks nearby.  They cast a
+
+dim sheen over the slime-covered area around them.
+
+"
+A
+"search"
+"bones ground earth floor cave"
+"act_tochar(#taunt,ch);
+
+"
+E
+"taunt"
+"You search through the decaying bones, but find nothing of interest.
+
+"
+!
+0 0 0
+2811 9 1509949540 3 0
+4696 17 1509949540 -2 0
+-1
+S
+
+#39837
+"Black Bamboo Forest"
+"A dim green glow can be seen to the west, coming from what seems to be a small
+
+cavern in the bamboo.  The small animal trail here bends south and west,
+
+weaving between unhealthy stalks of blackened, fungus-covered bamboo.  The
+
+floor is wet and soft, and looks like it would give underfoot.  Vine-like
+
+growths of fungus hang from the ceiling, formed where the bamboo leans
+
+overhead to make a roof.
+
+"
+"[Nereus] Possible secret room from here:  Dig through the nasty ground into an alcove that is small enough for size < halfling to fit into
+
+[Nereus] and pop something interesting there
+
+[Nereus] no secret room?
+
+[Nereus] come on, help a brother out
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Kotoktok] what i meant by \"give\" is that it is squishy... the entering message reflects this
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D2
+""
+""
+0 -1 39838 0 6
+D3
+""
+""
+0 -1 39835 0 6
+E
+"vine-like growths fungus"
+"Just overhead, ropes of pale off-white fungus grow across the passage from one
+
+stalk to another.  Small droplets of moisture hang on these as if from
+
+spider's silk, glistening in the light.
+
+"
+E
+"floor"
+"Black slime covers the ground in a lumpy, disgusting carpet.  Foul little
+
+maggot-like creatures root around in it with gusto.
+
+"
+A
+""
+""
+"if( can_fly( ch ) || char_affected( ch, float ) ) {
+
+  continue;
+
+}
+
+act_tochar( #squelch, ch );
+
+"
+E
+"squelch"
+"@BYour feet sink a couple of inches into the putrid slime.@n
+
+"
+!
+1 0 12
+-1
+S
+
+#39838
+"Black Bamboo Forest"
+"A choking mist of spores clouds the air, looking almost like fog in the light.
+
+A small passage leads north and south here, cutting between walls of decaying
+
+bamboo on the east and west.  Drapes of fungus which look as soft as silk hang
+
+from the ceiling above, brushing you as you pass by.  A flickering green glow
+
+can be seen coming from the tangled bamboo to the west, and dim hissing noises
+
+come from there as well.
+
+"
+"[Nereus] like the spores
+
+[Nereus] extra for the choking mist of spores?
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Kotoktok] added a rare plaguing code
+
+[Nereus] Like the plague
+
+[Nereus] *
+
+[Joelynar] Hissing to the west.  What if the snake is dead?
+
+"
+301465600 0
+25 6 0
+D0
+""
+""
+0 -1 39837 0 6
+D2
+""
+""
+0 -1 39828 0 6
+E
+"drapes fungus"
+"About half an inch thick, some of the individual drapes have as much as
+
+fifteen square feet of surface area.  They are composed of a soft, off-white
+
+fungus which grows in threads.
+
+"
+E
+"flickering green glow tangled bamboo 1 west"
+"Occasional breaks in the bamboo to the west afford glimpses of an unearthly
+
+dim green glow, the source of which you cannot determine.
+
+"
+A
+""
+""
+"loop (all_in_room) {
+
+  act_tochar( #gag, rch );
+
+  if (1d20 == 5)
+
+    plague( rch, 10 );
+
+}
+
+"
+E
+"gag"
+"@yYou gag on the choking mist of spores.@n
+
+"
+!
+2 200 0
+2786 9 1509949540 3 0
+885 17 1509949480 -2 0
+-1
+S
+
+#39839
+"Black Bamboo Forest"
+"The small animal trail continues here, weaving its way north and south between
+
+decaying shoots of blackened cane.  A thick fungal carpet lies on the ground,
+
+and gives off a sickly odor as air wafts up from it.  Droplets of water fall
+
+from the canopy above, shimmering in the air, and splash silently onto the
+
+slimy ground below.  Vines of a strange fungus, soft as silk, drape from
+
+above, where the stalks of bamboo meet to form a thick roof.
+
+"
+"[Nereus] floor = ground?
+
+[Nereus] floor used twice in same sentence, how about some variety
+
+[Nereus] Suggest adding a water droplet/dripping action
+
+[Nereus] add ground to extra 2
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D0
+""
+""
+0 -1 39830 0 6
+D2
+""
+""
+0 -1 39840 0 6
+E
+"vines strange fungus"
+"Ranging from ropes two inches in diameter to thread-like strands, the pure
+
+white fungus above drips with moisture.
+
+"
+E
+"thick fungal carpet ground"
+"Black slime-mold and various other fungi have woven themselves together into a
+
+thick, squishy carpet which covers the ground here.
+
+"
+2786 9 1509949540 3 0
+-1
+S
+
+#39840
+"Black Bamboo Forest"
+"This is a small intersection on the small animal trail, where it splits north,
+
+south, and east.  A thick wall of musty, blackened stalks blocks movement and
+
+sight to the west.  The ground is covered with a thin layer of black fungus,
+
+sliding around on firm ground underneath.  The path branches out, leading into
+
+darkness in all directions.
+
+"
+"[Nereus] trail extra perhaps
+
+[Nereus] fungus extra if you like
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D0
+""
+""
+0 -1 39839 0 6
+D1
+""
+""
+0 -1 39842 0 6
+D2
+""
+""
+0 -1 39841 0 6
+E
+"thick wall musty blackened stalks 1 west"
+"The blackened stalks to the west grow closely together, blocking passage.
+
+Although obviously very old, they look underdeveloped, as if something killed
+
+them before they reached adult size.
+
+"
+E
+"ground thin layer black fungus"
+"The ground here is covered in a thin layer of black fungus, which seems
+
+threadbare in some areas.  The soil underneath is moist, but firm.
+
+"
+4635 17 1509949490 -2 0
+-1
+S
+
+#39841
+"Black Bamboo Forest - Alcove"
+"There is no fungus on the ground here, and paw prints can be seen in the dry,
+
+sandy soil.  This is a small alcove, carved into the blackened fungus-covered
+
+bamboo.  Bones are scattered about, scored by large, blunt teeth.  The
+
+surrounding plants hang overhead, creating a thick roof which blocks out all
+
+light.  A small trail heads north, out of the cramped alcove.
+
+"
+"[Nereus] comma after dry
+
+[Nereus] search bones code
+
+[Nereus] bones extra
+
+[Nereus] ground/sandy soil extra
+
+[Nereus] set size here to halfling?
+
+[Nereus] and pop something in the bones?
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] leaving room size
+
+[Kotoktok] -
+
+[Nereus] pawprints ->paw prints
+
+[Nereus] shouldn't make this pop 100%
+
+[Nereus] how about 1:8
+
+[Kotoktok] check
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D0
+""
+""
+0 -1 39840 0 6
+E
+"bones"
+"Ranging from mouse to deer-sized, the bones are in various states of decay.
+
+Large, square tooth marks cover most of them.
+
+"
+E
+"ground sandy soil"
+"The ground here is hard and sandy, marked with paw prints.  On closer
+
+inspection, some large rodent droppings are apparent.
+
+"
+A
+"search"
+"bones ground"
+"if (rflag(reset1,room) && 1d7 == 3) {
+
+  act_tochar(#get,ch);
+
+  obj_to_char(oload(2253),ch);
+
+  remove_rflag(reset1,room);
+
+}
+
+else {
+
+  act_tochar(#nope,ch);
+
+  remove_rflag(reset1,room);
+
+}
+
+"
+E
+"get"
+"You find a small piece of bone.
+
+"
+E
+"nope"
+"You search the bones, but find nothing of interest.
+
+"
+!
+0 0 0
+2786 9 1509949540 3 0
+4633 17 1509949473 -2 0
+-1
+S
+
+#39842
+"Black Bamboo Forest"
+"The small animal trail here runs east and west, and is dry, with sandy soil
+
+marked by many small feet.  Blackened leaves have fallen down from the canopy
+
+above, littering the floor below.  Strange noises come from the fungus-laden
+
+bamboo, which blocks passage to the north and south.  To the east, a dim light
+
+can be seen.
+
+"
+"[Nereus] floor only really sounds good if you're saying something like 'forest floor'
+
+[Nereus] trail extra
+
+[Nereus] prints extra
+
+[Nereus] make the scream of a dying animal a random acode
+
+[Nereus] dim light/east extra
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D1
+""
+""
+0 -1 39843 0 6
+D3
+""
+""
+0 -1 39840 0 6
+E
+"small animal trail dim light prints 1 east"
+"Just about wide enough for a horse, the small trail continues east to west
+
+here.  No growth can be seen on the ground, which is a sandy brown color and
+
+covered in the prints of some small animal.  A dim glow can be seen to the
+
+east, where the canopy thins.
+
+"
+A
+""
+""
+"act_tochar( #scream, ch );
+
+"
+E
+"scream"
+"@RAn animal's death scream rings out from the northeast.@n
+
+"
+!
+2 150 0
+2786 9 1509949540 3 0
+-1
+S
+
+#39843
+"Black Bamboo Forest"
+"A few feeble glimpses of the sky can be seen above, managing to push through
+
+the black canopy overhead.  North and south, stalks blackened by age and mold
+
+block passage, and arch over to form a roof.  The ground is sandy and dry on
+
+the surface, but hard-packed clay underneath and is marked by many small feet.
+
+To the west, darkness consumes the forest, while to the east, the forest
+
+brightens, growing greener and more wholesome.
+
+"
+"[Nereus] extras: stalks/n/s
+
+[Nereus] extra: floo/sandy
+
+[Nereus] I'd change floor to something else
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D1
+""
+""
+0 -1 39844 0 6
+D3
+""
+""
+0 -1 39842 0 6
+E
+"stalks 1 north 1 south"
+"The stalks are certainly moldy and decaying, but not quite so much as those
+
+further to the west.  They have fallen across each other to form a tangled
+
+mess, which prevents passage to the north and south.
+
+"
+E
+"dry sandy ground"
+"Sand and loose dirt cover the trail's hard-packed clay surface here.  Some
+
+old, moldy leaves have fallen on the surface of the path, where they lie
+
+slowly decaying.
+
+"
+4719 17 1509949485 -2 0
+-1
+S
+
+#39844
+"Black Bamboo Forest"
+"Small openings in the otherwise impenetrable canopy show several lonely
+
+patches of sky.  The bamboo to the north and south is blackened, but among it
+
+grow some green shoots, reaching towards the sky.  To the west the forest
+
+grows dimmer, and the smells of decay and fungus waft in from that direction.
+
+A small breeze stirs the tips of the bamboo above, making a pleasant rustling
+
+noise.
+
+"
+"[Nereus] extra 1, no comma after here
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+25 6 0
+D1
+""
+""
+0 -1 39845 0 6
+D3
+""
+""
+0 -1 39843 0 6
+E
+"small openings canopy 1 up"
+"The dank black canopy above has several small openings here which show small
+
+patches of sky.  The canopy gets thicker to the west, and thinner to the east.
+
+"
+2786 9 1509949540 3 0
+1410 17 1509949540 -2 0
+-1
+S
+
+#39845
+"Black Bamboo Forest - Fringes"
+"North and south, the bamboo blocking passage is brown, with only occasional
+
+black stalks.  Above only a thin canopy remains, and there are nearly as many
+
+shards of sky visible as there are clumps of boughs.  To the east you can see
+
+a clearing, carpeted with rich green grass and dotted with yellow flowers.
+
+West, the trail is dimmer, leading into blackness.
+
+"
+"[Kotoktok] no.mob to keep the deer in the nice part, and the rats in the shitty part.
+
+[Nereus] how about a more interesting room name?
+
+[Nereus] like edge of forest or some crap
+
+[Nereus] trail extra?
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+[Joelynar] looking 'north' and 'south'...  Should that be \"Only a few black stalks *mar* the woody brown...\"
+
+"
+301465608 0
+25 6 0
+D1
+""
+""
+0 -1 39846 0 6
+D3
+""
+""
+0 -1 39844 0 6
+E
+"bamboo 1 north 1 south"
+"The bamboo to the north and south is not as blackened and decaying as that
+
+further west.  Only a few black stalks war the woody brown texture of the
+
+trail walls.
+
+"
+E
+"trail 1 west"
+"The trail is sandy and dry, leading east and west.  To the west, the canopy
+
+overhead thickens, blocking out all light from above.
+
+"
+-1
+S
+
+#39846
+"Black Bamboo Forest - Clearing"
+"Grass grows plentifully in this beautiful clearing, surrounded on the south
+
+and east by blackened and decaying bamboo.  The grass is rich and green,
+
+shining like silver in the light.  Small golden flowers dot the clearing, like
+
+tears of gold among the blades of silver grass.  To the west, a small animal
+
+trail leads out of the clearing, heading into the dim forest.  The clearing
+
+extends north, growing yet wider and less crowded by bamboo.
+
+"
+"[Nereus] I think you should swap out the deer for a pair of pudu :)
+
+[Nereus] extra for 1 west trail?
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+[Nereus] *
+
+[Joelynar] everytime I \"pick flower\" in here, all I get is:  Nothing found matching \"dandelion\".
+
+[Joelynar] the failure message of 'pick flower' is rather unclear.  perhaps something more along the lines of \"All of the flowers worth picking are already gone.\"
+
+"
+301465600 0
+26 6 0
+D0
+""
+""
+0 -1 39847 0 6
+D3
+""
+""
+0 -1 39845 0 6
+E
+"rich gren grass small golden flowers"
+"The ground here is carpeted with lustrous green grass, growing thick and full.
+
+Small golden flowers sprout up among the grass.  Several of these flowers have
+
+seeded and become balls of greyish fluff, gradually blowing away with the wind.
+
+"
+A
+"pick"
+"flowers dandelion"
+"interpret( ch, \"get dandelion\" );
+
+"
+!
+0 0 0
+1471 17 1509949470 -2 0
+1471 17 1509949470 -2 0
+-1
+S
+
+#39847
+"Black Bamboo Forest - Clearing"
+"To the north and west, blackened stalks hem in the clearing, covered in fungus
+
+and decaying from age.  East, the stalks are a semi-healthy brown, not so
+
+tainted by fungal growth.  The ground here is covered with a thick green layer
+
+of grass, shining in the light.  A sprinkling of small golden flowers are in
+
+the grass, like tiny drops of sunlight.  To the south, the clearing continues.
+
+"
+"[Nereus] make this room a sanc?
+
+[Nereus] might consider it
+
+[Nereus] possible extra for blackened stalks or the walls blocking in the clearing
+
+[Nereus] You might consider adding a fountain, spring, or stream of clean water also, sancs are generally restful and all
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465602 0
+26 6 0
+D2
+""
+""
+0 -1 39846 0 6
+E
+"ground thick green layer grass golden flowers"
+"The ground here is carpeted with lustrous green grass, growing thick and full.
+
+Small golden flowers sprout up among the grass.  Several of these flowers have
+
+seeded and become balls of greyish fluff, gradually blowing away with the wind.
+
+"
+E
+"blackened 1 north 1 west"
+"The stalks look old, yet not large; they were killed by mold before reaching
+
+full size.  They grow in a close tangle, blocking passage.
+
+"
+E
+"semi-healthy brown 1 east"
+"A light dusting of mold covers the stalks to the east, but doesn't completely
+
+infest them.  Most of the stalks are a seasoned brown, but some have healthy
+
+green leaves at the top.
+
+"
+A
+"pick"
+"flowers dandelion"
+"interpret( ch, \"get dandelion\" );
+
+"
+!
+0 0 0
+2820 41 1509949485 3 0
+2823 74 1509975040 3 0
+1471 17 1509949470 -2 0
+1471 17 1509949470 -2 0
+-1
+S
+
+#39848
+"Enormous Pine Tree - Nest"
+"This enormous nest is almost ten feet in diameter, easily big enough to be a
+
+bear den, let alone a bird's home.  Lengths of bamboo more than eight feet
+
+long and branches from various trees interlock, spanning the distance between
+
+two adjacent branches jutting from the tree.  On this platform have been lain
+
+many other smaller branches, which form a nearly uniform floor with no gaps
+
+where a chick could fall through.  Large, downy feathers blanket the floor in
+
+a wonderfully soft carpet.
+
+"
+"[Nereus] What are you going to pop up here?
+
+[Nereus] You should check for is_exhausted in the climb code
+
+[Nereus] search nest code?
+
+[Nereus] where a chick -> which a chick?
+
+[Nereus] last sentence, you have large small feathers, how about large pinfeathers or large downy feathers.
+
+[Nereus] I think layed -> lain
+
+[Nereus] feathers extra
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] Cool pop
+
+[Nereus] *
+
+[Joelynar] My pet climbs up the tree with me from the room below without my having to prompt him, but I am required to order him to climb down out of the tree.
+
+"
+301465600 0
+3 6 0
+E
+"large downy feathers"
+"The feathers appear to be from the downy underbelly of what must be an
+
+enormous bird.  They lie in a thick pile, cushioning the nest's floor.
+
+"
+A
+"climb"
+"down"
+"if (is_exhausted(ch)) {
+
+  act_tochar(#no,ch);
+
+  end;
+
+}
+
+act_tochar( #climb, ch );
+
+act_notchar( #nclimb, ch );
+
+transfer( ch, find_room( 39802 ) );
+
+modify_move( ch, -4 );
+
+act_notchar( #nappear, ch );
+
+"
+E
+"climb"
+"You climb steadily down the tree, finally reaching the ground.
+
+"
+E
+"nclimb"
+"$n climbs steadily down the tree, finally reaching the ground.
+
+"
+E
+"nappear"
+"$n comes climbing down the tree, landing beside you.
+
+"
+E
+"no"
+"You are too exhausted.
+
+"
+!
+0 0 0
+A
+"search"
+"downy feathers branches nest"
+"if (rflag(reset1,room)) {
+
+if (random(1,8) == 5) {
+
+    act_tochar(#get,ch);
+
+    act_notchar(#heget,ch);
+
+obj_to_char( oload(1598),ch);
+
+    remove_rflag(reset1,room);
+
+  }
+
+  else {
+
+    act_tochar(#nope,ch);
+
+    act_notchar(#henope,ch);
+
+    remove_rflag(reset1,room);
+
+  }
+
+}
+
+else {
+
+  act_tochar(#nope,ch);
+
+  act_notchar(#henope,ch);
+
+  remove_rflag(reset1,room);
+
+}
+
+"
+E
+"get"
+"You search through the sticks and feathers, uncovering a dead mouse.
+
+"
+E
+"heget"
+"$n searches through the sticks and feathers, uncovering a dead mouse.
+
+"
+E
+"nope"
+"You search through the sticks and feathers, but find nothing.
+
+"
+E
+"henope"
+"$n searches through the sticks and feathers, but finds nothing.
+
+"
+!
+0 0 0
+939 9 1509949540 3 0
+935 9 1509949540 3 0
+935 9 1509949540 3 0
+-1
+S
+
+#39849
+"Giant Bamboo - Spring"
+"Sparkling water gurgles merrily as it leaves this small pond, draining east
+
+and west.  The water is crystal clear and harbors incredible forms of life;
+
+enormous water bugs and crustaceans can be seen in the depths.  These are
+
+dwarfed however, by the redwood-sized bamboo and tree-sized grass that grow in
+
+profusion around the spring, forming a seemingly impenetrable wall of green.
+
+An aura of benevolence in the air is almost tangible, seeming to swaddle the
+
+spring protectively.
+
+"
+"[Nereus] Maybe you should make the pool liquid do something?
+
+[Nereus] To people, I mean, be poisonous or kill them or heal them or act as youth potion or something
+
+[Nereus] Maybe you could make a dive/swim code about how the swarming giant bugs deter you from entering the pool
+
+[Kotoktok] -
+
+[Nereus] *
+
+[Joelynar] There is a feeling of benevolence, yet the non-evil spirit of the lake ambushes me upon entering?  That seems a tad odd.
+
+"
+301465600 0
+3 9 0
+D1
+""
+""
+33003 -1 39808 0 9
+E
+"pond spring water bugs crustaceans"
+"The water is perhaps twenty-five feet deep in the center of the pool, and
+
+perfectly clear.  The titanic walls of greenery all around reflect in the
+
+water, making it look like a liquid emerald if you focus on the surface.
+
+Below, water beetles the size of house cats and crayfish as big as large dogs
+
+go lazily about their business, secure in their size and seclusion.
+
+"
+E
+"bamboo 1 east"
+"The smoothness of the huge, silvery-green trunks to the east is broken by
+
+creases every five feet vertically, which mark each growth segment.  Although
+
+most of the bamboo grows far too closely together to pass, there is a sizable
+
+gap in the bamboo which is partially hidden by the large grass.
+
+"
+A
+""
+""
+"act_tochar( #enter, ch );
+
+act_notchar( #nenter, ch );
+
+transfer( ch, find_room( 39808 ) );
+
+act_notchar( #nappear, ch );
+
+"
+E
+"enter"
+"You push some of the grass aside and move on through the bamboo.
+
+"
+E
+"nenter"
+"$n pushes some of the grass aside, and disappears into the giant bamboo.
+
+"
+E
+"nappear"
+"$n stumbles into the area from a gap in the bamboo to the west.
+
+"
+!
+0 0 0
+A
+"enter"
+"gap bamboo"
+"acode( room, 1 );
+
+loop( followers ) {
+
+  ch = rch;
+
+  acode( room, 1 );
+
+}
+
+"
+!
+0 0 0
+A
+"dive swim enter"
+"pool pond"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"The swarms of unusually large creatures don't look like good swimming buddies.
+
+"
+!
+0 0 0
+A
+"drink"
+"pond"
+"interpret( ch, \"drink pool\" );
+
+"
+!
+0 0 0
+4675 17 1509949540 -2 0
+2809 9 1509949540 3 0
+-1
+S
+
+#39850
+"Bamboo Lean-to"
+"An earthy smell rises up from the dirt floor of this homey lean-to, which is
+
+littered with dried bamboo leaves fallen from above.  Long sticks of bamboo
+
+meet overhead to form a roof, which is thatched with leaves and small fronds.
+
+Some wood-working equipment lies in the northwest corner of the lean-to, where
+
+the ground is littered with shavings.  Odd assortments of animal parts
+
+including skulls, skins, claws, and teeth adorn the wall to the north.  Thick,
+
+black pelts hang over the open east end of the structure, forming a sort of
+
+door.
+
+"
+"[Nereus] She needs some stuff to say
+
+[Nereus] how about I could ask her about this:
+
+[Nereus] - black rat rodent
+
+[Nereus] - pandas
+
+[Nereus] - some of the giant animals up north
+
+[Nereus] - might be cool if she knew about the skliss
+
+[Nereus] - her customs
+
+[Nereus] - to her hi hello
+
+[Nereus] ** Reviewed **
+
+[Nereus] you're still spelling moccasins wrong in all these mprogs
+
+[Nereus] The moccasins answer should be elaborated on some - magical effects is somewhat meaningless
+
+[Nereus] (the longspear answer is good)
+
+[Nereus] if you don't have anything to say about them you could talk about their constituent materials
+
+[Kotoktok] fixt
+
+"
+301469708 0
+0 6 0
+D1
+"curtain of black pelts"
+"curtain of black pelts"
+131 -1 39817 0 6
+E
+"odd assortment animal parts skulls skins claws teeth wall 1 north"
+"What look like several bleached rat skulls are most prominent on the north
+
+wall; however, the skulls simply look too large to be from any rat.  Teeth,
+
+both yellowish wedge-shaped ones and large, sharp canines dangle from leather
+
+cords on the wall.
+
+"
+2785 9 1509949540 3 0
+-1
+S
+
+#39851
+"Atop an Ancient Guard Tower"
+"A spectacular view of the surrounding land spreads out in all directions,
+
+painted in the gentle green, brown, and grey pastels of bamboo and swamplands.
+
+Ancient stones held together by crumbling mortar form a battlement wall around
+
+the top of this small tower.  The roof of the tower is about fifteen by
+
+fifteen feet, and nearly perfectly square.  At each corner of the battlement
+
+are rusting iron poles, which once may have held flags.  A small trapdoor was
+
+once in the center of the floor, but it has long rotted away, leaving a
+
+rectangular hole where a small ladder leads down into the tower.  A small,
+
+decrepit iron ladder leader over the outside edge of the tower.
+
+"
+"[Nereus] might add a trapdoor extra which just discusses how it's only a gaping hole now
+
+[Nereus] rusted poles extra would be nice
+
+[Nereus] ** Room reviewed **
+
+[Kotoktok] -
+
+"
+301465600 0
+0 6 0
+D5
+""
+""
+0 -1 39852 0 6
+E
+"north"
+"A bamboo forest stretches out to the north, covering the ground in a green-
+
+brown canopy.  At the edge of your vision you can see that the tall bamboo
+
+gets gradually taller, eventually reaching impossible heights.
+
+"
+E
+"east"
+"The bamboo below continues for a short way, but then gives way to the more
+
+sparse shrubbery of the swamplands.  The walls of Sos-kul are barely visible
+
+through the ever-present swamp mist.
+
+"
+E
+"west"
+"Just to the northwest, the green-brown bamboo fades, becoming more brown, then
+
+grey, and finally a dusty black.  Further west, healthy bamboo continues, and
+
+you can make out a winding green-grey river in the distance.
+
+"
+E
+"south"
+"Bamboo continues for a ways to the south, but anything else in that direction
+
+is hidden by a thick light grey mist.
+
+"
+E
+"decrepit iron ladder"
+"The small ladder leads over the edge of the tower and back under the bamboo
+
+canopy.
+
+"
+E
+"trapdoor hole 1 down"
+"The rusty hinges of the ancient trapdoor remain anchored to the stone,
+
+although the door itself has long ago rotted away.  A small ladder is set in
+
+the gaping hole, leading down to a small room.
+
+"
+E
+"rusting poles"
+"Each pole juts up about eight feet from the corner where it is anchored.
+
+Small metal rings are at the top of the poles from where streaming banners
+
+must have once waved.
+
+"
+A
+"climb"
+"down wall ladder"
+"act_tochar( #climb, ch );
+
+act_notchar( #nclimb, ch );
+
+transfer( ch, find_room( 39759 ) );
+
+act_notchar( #nappear, ch );
+
+"
+E
+"climb"
+"You lower yourself down the ladder, pushing through the canopy below.
+
+"
+E
+"nclimb"
+"$n mounts the ladder, swings over the edge, and disappears from view.
+
+"
+E
+"nappear"
+"$n bursts through the canopy above with a loud rustling and lowers $mself to the ground.
+
+"
+!
+0 0 0
+-1
+S
+
+#39852
+"Inside an Ancient Guard Tower"
+"This small room has not had regular visitors for a long time.  A thin layer of
+
+dust lies on the granite floor and sparse furnishings, dampening any sounds
+
+and giving the room a sombre air.  A small weapons rack stands against the
+
+ancient wall to the north, covered in cobwebs.  In the southwest corner is a
+
+small table with a couple of stools, one of which is missing a leg and tilted
+
+at an odd angle.  The wall to the south was once home to a door, but it has
+
+been broken off at the hinges leaving a door-shaped gap.  Bamboo crowds the
+
+gap in the wall, forming an impenetrable barrier.  A small ladder leads up in
+
+the center of the room, disappearing through a hole in the stone roof above.
+
+"
+"[Kotoktok] spearhead pop for longspear 'Uncouth'
+
+[Nereus] I suggest actually making the furniture as objects
+
+[Nereus] awesome extras in this room
+
+[Nereus] extras needed:  ladder
+
+[Nereus] ** Room reviewed **
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465604 0
+0 6 0
+D4
+""
+""
+0 -1 39851 0 6
+E
+"weapons rack 1 north"
+"The cast-iron rack looks like it was designed to hold primarily spears and
+
+javelins, at it is very tall and narrow.  It is covered in cobwebs, which hide
+
+any weapons that may still be stored there.
+
+"
+E
+"door-shaped gap bamboo 1 south"
+"The arching doorway to the south must have once held an impressively thick
+
+door, as the wall is over three feet thick and the door was meant as the main
+
+entrance.  The masonry where the hinges once were is broken and crumbling, and
+
+not with age alone; it appears that the door was forcibly ripped out.  Bamboo
+
+grows right up against the empty door now, the stalks no more than three
+
+inches apart.  Exit by this route is no longer possible.
+
+"
+E
+"ladder"
+"The rusty iron ladder looks sturdy despite its obvious age.  It leads through
+
+a trapdoor in the ceiling.
+
+"
+A
+"search"
+"weapons rack"
+"if( rflag( reset1, room ) ) {
+
+  if( get_quest( ch, 63 ) == 1 ) {
+
+    act_tochar( #findy, ch );
+
+    act_notchar( #findys, ch );
+
+    obj_to_char( oload( 4825 ), ch );
+
+    set_quest( ch, 63, 2 );
+
+    remove_rflag( reset1, room );
+
+    end;
+
+  }
+
+  if ( random( 1,100 ) <= 2 ) {
+
+    act_tochar(#head,ch);
+
+    obj_to_char( oload( 4685 ), ch );
+
+  }
+
+  else {
+
+    act_tochar(#nope,ch);
+
+  }
+
+}
+
+else {
+
+  act_tochar( #nope , ch );
+
+}
+
+remove_rflag( reset1, room );
+
+"
+E
+"head"
+"You move some cobwebs aside and uncover a beautiful obsidian spearhead.
+
+"
+E
+"nope"
+"You move the cobwebs aside and examine the rack, but find nothing of interest.
+
+"
+E
+"findy"
+"You search through the weapon rack, and happen to look behind the rusted
+
+weapons to find a discarded, dusty gladius in the corner.
+
+"
+E
+"findys"
+"$n searches through the weapon rack, finding a discarded gladius.
+
+"
+!
+0 0 0
+81 17 1509949490 -2 0
+1488 17 1509949540 -2 0
+1488 17 1509949540 -2 0
+3528 17 1509949540 -2 0
+-1
+S
+
+#39853
+"Giant Bamboo - Marshy Ground"
+"Marshy and soft, the ground of this large clearing in the bamboo squelches
+
+with any movement.  Small tufts of swamp grass are the only plant life that
+
+hangs on in the unstable mud.  Half-submerged bones of creatures ranging from
+
+what look like deer, to what might be giant bears of some kind stick up at odd
+
+angles.  Thick, thorny swamp briar has invaded the bamboo to the north and
+
+east; the maze of giant stalks and rough undergrowth looks impassable.
+
+Movement to the south and west is blocked by thick green walls of giant bamboo.
+
+"
+"[Kotoktok] colossal skliss here
+
+[Kotoktok] skin to be part of remort custom in a later zone
+
+[Nereus] Need a describe trigger - if the north is open, don't say the last part.
+
+[Nereus] You should make him immune to web
+
+[Nereus] can't you make him do something unique?  He's exactly the same as all the rest of the mobs except his dice are bigger
+
+[Nereus] Search code for the bones
+
+[Nereus] extras ground/marshy/soft
+
+[Nereus] extra: swamp grass
+
+[Nereus] extra: bones
+
+[Nereus] extra north/swamp bria
+
+[Nereus] ** Reviewed **
+
+[Kotoktok] -
+
+[Nereus] What's the point of that code at the beginning? How can the skliss get out?
+
+[Nereus] or is that just a cool message
+
+[Nereus] The leaving for the skliss shows a duplicated message; set an adata string named to_room to blank and that will fix it.
+
+[Nereus] THen you'll have to add an act_message to show the non-mob moving south
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D2
+""
+""
+203 -1 39791 0 9
+E
+"thick green wall giant bamboo south"
+"The giant green stalks grow close together, blocking passage.  One of them has
+
+been damaged near the base and is withered and brown from there up.  It looks
+
+precarious.
+
+"
+E
+"soft ground"
+"A layer of mud more than a foot thick in some places blankets the ground, with
+
+only sparse vegetation hanging on.
+
+"
+E
+"tufts swamp grass"
+"Grey-green swamp grass is the only plant that hasn't given in to repeated
+
+trampling and unstable soil.  Even the grass however, grows sparsely.
+
+"
+E
+"swamp briar 1 north"
+"Thick, grey vines of swamp briar with formidable thorns have invaded the giant
+
+bamboo to the north, and crowd the understory so much that passage in that
+
+direction seems impossible.
+
+"
+E
+"bones"
+"The bones have been crushed and spread around by something enormous.  The
+
+collection spans various stages of decay; the slaughter here must have been
+
+going on for quite some time.
+
+"
+A
+"push"
+"trunk stalk bamboo"
+"if( is_open( room, south ) ) {
+
+  act_tochar( #isopen, ch );
+
+  end;
+
+}
+
+if( find_stat( ch, str ) > 16 ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  send_to_room( #crash, find_room( 39791 ) );
+
+  open( room, south );
+
+}
+
+"
+E
+"isopen"
+"The stalk has already been felled, revealing a dirt trail to the south.
+
+"
+E
+"open"
+"You push mightily on the giant stalk, and it gradually creaks and falls over to reveal a trail to the south.
+
+"
+E
+"ropen"
+"$n pushes mightily on the giant stalk, and it gradually creaks and falls over to reveal a trail to the south.
+
+"
+E
+"crash"
+"A dead stalk to the north begins creaking, then falls to the ground with a
+
+mighty crash.  A clearing to the north is revealed.
+
+"
+!
+0 0 0
+A
+""
+"thick green wall giant bamboo south"
+"if (is_open( room, south) ) {
+
+  act_tochar( #open, ch );
+
+}
+
+else
+
+  continue;
+
+"
+E
+"open"
+"A very large stalk to the south has been felled, revealing a wide, well-beaten
+
+dirth path.
+
+"
+!
+17 0 0
+A
+""
+""
+"if (is_open( room, south ) ) {
+
+  act_tochar( #open, ch );
+
+}
+
+else
+
+  continue;
+
+"
+E
+"open"
+"Marshy and soft, the ground of this large clearing in the bamboo squelches
+
+with any movement.  Small tufts of swamp grass are the only plant life that
+
+hangs on in the unstable mud.  Half-submerged bones of creatures ranging from
+
+what look like deer, to what might be giant bears of some kind stick up at odd
+
+angles.  Thick, thorny swamp briar has invaded the bamboo to the north and
+
+east; the maze of giant stalks and rough undergrowth looks impassable.
+
+Movement to the west is blocked by a thick green wall of giant bamboo.  A
+
+fallen trunk has revealed an opening in the bamboo to the south.
+
+"
+!
+17 0 0
+A
+""
+""
+"if( vnum( ch ) == 2802 ) {
+
+  act_notchar( #leave, ch );
+
+  send_to_room( #comes, find_room(39791) );
+
+  continue;
+
+}
+
+else
+
+  continue;
+
+"
+E
+"leave"
+"@G$n simply steps over the wall of stalks to the south.@n
+
+"
+E
+"comes"
+"@GA tremendous crashing comes from the bamboo to the north as it is pushed
+
+aside.@n
+
+"
+E
+"to_room"
+""
+!
+3 0 4
+2802 9 1509949540 3 0
+-1
+S
+
+#39854
+"Giant Bamboo - Clearing"
+"The ground here is muddy and soft, having been trampled by something
+
+incredibly heavy in the recent past.  Small tufts of grass are the only
+
+vegetation that has managed to survive in the clearing, save for a few hardy
+
+shoots of bamboo.  Thick walls of giant green bamboo block passage and sight
+
+in all directions, although some of the bamboo in each direction has been
+
+trampled; something large enough to push aside or step over the bamboo lives
+
+here.
+
+"
+"[Nereus] isn't this description identical to the other room?
+
+[Nereus] is this an extra room that needs deletin'?
+
+[Nereus] you should make this room at least somewhat different form the other one
+
+[Nereus] suggest changing the room name since it's a marsh land in here
+
+[Kotoktok] -
+
+[Nereus] Describe trigs for extra 2; room also
+
+[Nereus] *
+
+"
+301465600 0
+26 9 0
+D2
+""
+""
+203 -1 39806 0 9
+E
+"muddy ground small tufts grass"
+"The muddy ground looks unstable, and all but the most hardy swamp grass has
+
+given up trying to survive in the shifting mud.
+
+"
+E
+"thick walls giant green bamboo"
+"The giant stalks grow closely together, their segmented green trunks reaching
+
+high overhead.  There is no obvious way to leave this clearing.
+
+"
+A
+""
+"thick walls giant green bamboo"
+"if (is_open( room, south ) ) {
+
+  act_tochar( #open, ch );
+
+}
+
+else
+
+  continue;
+
+"
+E
+"open"
+"The giant stalks grow closely together, their segmented green trunks reaching
+
+high overhead.  Some of the bamboo to the south has been utterly crushed,
+
+revealing a dirt trail.
+
+"
+!
+17 0 0
+A
+""
+""
+"if (is_open( room, south ) ) {
+
+  act_tochar( #open, ch );
+
+}
+
+else
+
+  continue;
+
+"
+E
+"open"
+"The ground here is muddy and soft, having been trampled by something
+
+incredibly heavy in the recent past.  Small tufts of grass are the only
+
+vegetation that has managed to survive in the clearing, save for a few hardy
+
+shoots of bamboo.  Thick walls of giant green bamboo block passage and sight
+
+in all directions except for south, where a large section of bamboo has been
+
+utterly crushed.  A dirt path is visible through the opening.
+
+"
+!
+17 0 0
+2802 9 1509949540 3 0
+-1
+S
+
+#39855
+"Black Bamboo Forest - Dead End"
+"rat room
+
+"
+"[Nereus] Only one resets here?
+
+"
+301465600 0
+25 6 0
+D2
+"blackened bamboo"
+""
+196803 -1 39826 0 6
+2786 9 1509949540 3 0
+-1
+S
+
+#39856
+"Black Bamboo Forest"
+"rat room
+
+"
+"[Kotoktok] mpcode 2 on mob 2809 oints to here
+
+[Kotoktok] players shoul;d never get in here, and don't delete the room or mob
+
+2809 will not work properly
+
+"
+301465600 0
+25 6 0
+D0
+"blackened bamboo"
+""
+204995 -1 39827 0 6
+2786 9 1509949540 3 0
+-1
+S
+
+#39857
+"Black Bamboo Forest"
+"rat room
+
+"
+""
+301465600 0
+25 6 0
+D0
+"blackened bamboo"
+""
+204995 -1 39828 0 6
+2786 9 1509949540 3 0
+-1
+S
+
+#0
+

@@ -1,0 +1,3350 @@
+#AREA
+"Vaasa Village"
+"Talis Amon Athyle"
+""
+1 0
+0
+1
+#ROOMS
+
+#18000
+"Crown of the World"
+"This is the single highest tree in all of the Great Vaasa, and from it
+
+you can see much of the sea of green.  Spread out before you is the
+
+beautiful canopy of the mighty forest with the rare spire lancing out of
+
+it, toward the sun.  Mounted nearby on a large branch is the Horn of
+
+Ral'airdn.  A blow from this @bhorn@n can be heard for miles through the
+
+forest.  Below you the branches form a natural ladder leading down to the
+
+altar of Tarafas.  
+
+"
+""
+301465665 0
+3 6 0
+D5
+""
+""
+0 -1 18002 0 6
+E
+"horn"
+"Hanging from a branch by leather straps, the horn is a beautiful tool. 
+
+The ends are bound in silver and engraved along it's length are elven and
+
+forest scenes.  The horn is said to come from the Ral'airdn.  A rare and
+
+dangerous beast that roams only the deepest parts of the great forest.  
+
+"
+E
+"5 spires stone"
+"The spires of stone are the only things that interupt the sea of green,
+
+besides perhaps the enclosing mountains to the west and south.  The
+
+spires are sharp points of rock, thousands of feet tall, conical
+
+formations pointing toward the heavens.  
+
+"
+A
+"blow"
+"horn"
+"send_to_char( #char, ch );
+
+act_notchar( #room, ch );
+
+send_to_area( #area, find_room( 18000 ) );
+
+send_to_area( #area, find_room( 19000 ) );
+
+"
+E
+"area"
+"Suddenly, a loud lone horn can be heard, somewhere up and away, seeming
+
+to echo off the great trees.  It fades and an expectant hush follows.
+
+"
+E
+"char"
+"Taking a huge breath ....  you blow the horn!  The sound of it echos around
+
+you and then off through the forest.  After the last echos fade, the forest
+
+seems hushed, as if a collective breath is held.
+
+"
+E
+"room"
+"$n steps over to the the horn and blows a loud long note through it.  The
+
+sound is strange, and it echos away through the wood.  Afterwhich a hush falls.
+
+"
+!
+0 0 0
+A
+""
+""
+"i = random( 1, 10 );
+
+if( i == 1 ) {
+
+  send_to_area( #bird, room );
+
+  end;
+
+  }
+
+if( i == 2 ) {
+
+  send_to_area( #laugh, room );
+
+  end;
+
+  }
+
+if( i == 3 ) {
+
+  send_to_area( #life, room );
+
+  end;
+
+  }
+
+if( i == 4 ) {
+
+  send_to_area( #tree, room );
+
+  end;
+
+  }
+
+"
+E
+"life"
+"The subtle life sounds of an elven village can be heard all around you.
+
+"
+E
+"laugh"
+"The lilting sound of laughter wafts in from somewhere nearby.
+
+"
+E
+"bird"
+"You hear a lilting birdcall from somewhere nearby in the canopy.
+
+"
+E
+"tree"
+"The leaves around you rustle softly in a brief, gentle breeze.
+
+"
+!
+4 30 0
+A
+""
+""
+"i = time_hour();
+
+if( i > 11 )
+
+  i -= 12;
+
+if( i == 1 )
+
+  send_to_area( \"A mystical chime gently rings throughout the city.\", room );
+
+if( i == 2 )
+
+  send_to_area( \"A mystical chime gently rings throughout the city twice.\", room );
+
+if( i == 3 )
+
+  send_to_area( \"A mystical chime gently rings throughout the city thrice.\", room );
+
+if( i == 4 )
+
+  send_to_area( \"A mystical chime gently rings throughout the city four times.\", room );
+
+if( i == 5 )
+
+  send_to_area( \"A mystical chime gently rings throughout the city five times.\", room );
+
+if( i == 6 )
+
+  send_to_area( \"A mystical chime gently rings throughout the city six times.\", room );
+
+if( i == 7 )
+
+  send_to_area( \"A mystical chime gently rings throughout the city seven times.\", room );
+
+if( i == 8 )
+
+  send_to_area( \"A mystical chime gently rings throughout the city eight times.\", room );
+
+if( i == 9 )
+
+  send_to_area( \"A mystical chime gently rings throughout the city nine times.\", room );
+
+if( i == 10 )
+
+  send_to_area( \"A mystical chime gently rings throughout the city ten times.\", room );
+
+if( i == 11 )
+
+  send_to_area( \"A mystical chime gently rings throughout the city eleven times.\", room );
+
+if( i == 0 )
+
+  send_to_area( \"A mystical chime gently rings throughout the city twelve times.\", room );
+
+"
+!
+6 -60 0
+-1
+S
+
+#18001
+"Union Chamber"
+"In all directions you can see the inside of a massive tree, and you realize
+
+this must be a room inside the immense tree.  To the north, south, and west
+
+there are large holes with walkways leading out to the rest of the city and
+
+above you vines hang, allowing easy climbing up.  On the easternmost ledge of
+
+the platform, a broad branch arcs downward like a great staircase.  Directly
+
+in the center of this 'town square' of sorts, is a @bspring@n flowing from what
+
+looks like the core of the tree.
+
+"
+""
+301465671 0
+0 8 0
+D0
+""
+""
+0 -1 18013 0 6
+D2
+""
+""
+0 -1 18004 0 5
+D3
+""
+""
+0 -1 18003 0 8
+D4
+""
+""
+0 -1 18002 0 7
+D5
+""
+""
+0 -1 18043 0 6
+E
+"core tree spring"
+"Upon closer examination you can tell that the spring is the life force of
+
+this ancient tree, without it, it would be dead and so would a part of
+
+the core of the elven spirit.  The core of the tree is still alive and is
+
+keeping the whole tree alive and well, and will continue doing so for
+
+many centuries if undisturbed.  
+
+"
+A
+""
+""
+"if( !is_exhausted( ch ) )
+
+  act_tochar( #down, ch );
+
+continue;
+
+"
+E
+"down"
+"As you walk down the broad branch, it curves into a hollow in the great tree.
+
+"
+!
+3 0 32
+481 9 1509949540 3 0
+606 9 1509949540 3 0
+481 9 1509949540 3 0
+696 17 1509949540 -2 0
+-1
+S
+
+#18002
+"Altar to the Dawnstar, Tarafas"
+"This area is apparently for the worship of the elven creator god, Tarafas, the
+
+Dawnstar.  It is, however, not formed by elves in any way except for a large
+
+symbol which is painted on a large piece of bark overhead.  Below you the
+
+branches are separated into the form of stairs, and above you the branches
+
+form a nice ladder leading farther up.  On all sides, light branches obscure
+
+the view in, but allow great viewing out over the surrounding area.
+
+"
+""
+-235404861 0
+3 7 0
+D4
+""
+""
+0 -1 18000 0 6
+D5
+""
+""
+0 -1 18001 0 7
+E
+"symbol bark tree"
+"Upon the bark painted in the dyes of the wild is the symbol of Tarafas, the
+
+Dawnstar.  The symbol depicts a golden crescent moon with a drop of dew
+
+falling from the lower tip.
+
+"
+A
+"pray"
+""
+"i = 236;
+
+if( get_religion( ch ) == Tarafas ) {
+
+  if( class( ch ) == cleric || class( ch ) == paladin ) {
+
+    if( find_stat( ch, prayer ) > 300 ) {
+
+      drain_stat( ch, prayer, 0, -300 );
+
+      if( race( ch ) == elf )
+
+        i = 4532;
+
+      else
+
+        i = 4533;
+
+      if( wearing_obj( 4532, ch )
+
+        || wearing_obj( 4533, ch )
+
+        || wearing_obj( 4534, ch ) ) {
+
+        act_tochar( #failure, ch );
+
+        drain_stat( ch, prayer, 0, -25 );
+
+        end;
+
+        }
+
+      else {
+
+        act_tochar( #pray, ch );
+
+        obj_to_char( oload( i ), ch );
+
+        interpret( ch, \"wear dawnstar.sprite\" );
+
+        end;
+
+        }
+
+      }
+
+    else {
+
+      act_tochar( #failure, ch );
+
+      drain_stat( ch, prayer, 0, -25 );
+
+      end;
+
+      }
+
+    }
+
+  else {
+
+    if( find_stat( ch, prayer ) > 400 ) {
+
+      drain_stat( ch, prayer, 0, -400 );
+
+      if( race( ch ) == elf )
+
+        i = 4533;
+
+      else
+
+        i = 4534;
+
+      if( wearing_obj( 4532, ch )
+
+        || wearing_obj( 4533, ch )
+
+        || wearing_obj( 4534, ch ) ) {
+
+        act_tochar( #failure, ch );
+
+        drain_stat( ch, prayer, 0, -50 );
+
+        end;
+
+        }
+
+      else {
+
+        act_tochar( #pray, ch );
+
+        obj_to_char( oload( i ), ch );
+
+        interpret( ch, \"wear dawnstar.sprite\" );
+
+        end;
+
+        }
+
+      }
+
+    else {
+
+      act_tochar( #failure, ch );
+
+      drain_stat( ch, prayer, 0, -50 );
+
+      end;
+
+      }
+
+    }
+
+  }
+
+else {
+
+  continue;
+
+  }
+
+"
+E
+"pray"
+"Tarafas rewards your prayers with a gift!
+
+"
+E
+"failure"
+"You have prayed to Tarafas.
+
+"
+!
+0 0 0
+-1
+S
+
+#18003
+"The Glade"
+"This is the meeting place of the elves, though not many of them seem to be
+
+here.  Large barrels of various liquids are placed on the far side of the
+
+outdoor area.  All about the platform, benches and seats are arrayed.  As you
+
+look up you notice a large opening above you that allows viewing of the stars
+
+or sky.
+
+"
+"acode 4 is apocolypse clues
+
+"
+335024195 0
+3 8 0
+D1
+""
+""
+0 -1 18001 0 8
+E
+"barrels liquids"
+"The barrels appear to be filled with a dark wine.  A smaller barrel to
+
+one side contains a liquid of much thicker consistancy.  
+
+"
+A
+""
+""
+"send_to_room( #tasloi_rumor, room );
+
+"
+E
+"tasloi_rumor"
+"You overhear an elf in the corner complaining about goblins in the Vaasa
+
+attacking him and his narrow, heroic escape.  One of his drinking
+
+companions laughs freely, exclaiming how it was probably a Zuralduur and
+
+one too many bottles of ale that really attacked him.
+
+"
+!
+2 30 0
+A
+""
+""
+"send_to_room( #elven_longsword, room );
+
+"
+E
+"elven_longsword"
+"Two patrons walk by you on their way out.  As they walk by, you overhear
+
+something about the fine longswords made by the High Druid.
+
+"
+!
+2 30 0
+A
+""
+""
+"send_to_room( #tasloi, room );
+
+"
+E
+"tasloi"
+"Catching a bit of conversation from nearby patrons you learn that a local
+
+citizen was accosted by strange goblinoids in the forest.  It seems he
+
+lost a fine dagger and a few prized mithril rings to the goblinoids in
+
+the escape though.
+
+"
+!
+2 40 0
+A
+""
+""
+"i = random( 1, 2 );
+
+if( i == 1 )
+
+act_tochar( #three, ch );
+
+if( i == 2 )
+
+act_tochar( #two, ch );
+
+"
+E
+"one"
+"@W\"That darkness to the west seems distant now...  but I fear even if this
+
+city became the final stronghold it too would eventually fall.\"@n
+
+"
+E
+"two"
+"@W\"Ive never seen so many Shuvanaguard in the forest at once, they must be
+
+preparing for something.\"@n
+
+"
+E
+"three"
+"@W\"I hear U'lulandriel is paying a reward to any who will help fight the
+
+woodworm menace.  I'll be asking him about that myself after I finish this
+
+glass of wine.\"
+
+"
+!
+2 200 0
+458 9 1509949540 3 0
+236 17 1509949515 -1 0
+114 17 1509949540 -1 2
+24 17 1509949540 -1 15
+49 17 1509949540 -1 0
+50 17 1509949540 -1 0
+4555 17 1509949540 -1 0
+-1
+S
+
+#18004
+"Main Level - South Walkway"
+"You stand upon a walkway that leads toward a huge tree to the north and
+
+west where it intersects another walkway.  Living branches are molded and
+
+and prodded to grow the right directions, then woven together to make
+
+these walkways.  The foliage about you is very dense, however you are
+
+able to get glances of the nearby areas.
+
+"
+""
+301465665 0
+3 5 0
+D0
+""
+""
+0 -1 18001 0 5
+D3
+""
+""
+0 -1 18005 0 5
+-1
+S
+
+#18005
+"Southern Walkway"
+"You are standing on a broad walkway that leads from tree to tree.  The
+
+platform appears to be made totally of living wood.  The branches here
+
+look worn in spots, and you notice that they are used to go up from
+
+here.  The walkway leads away to the east.  
+
+"
+""
+301465665 0
+3 5 0
+D1
+""
+""
+0 -1 18004 0 5
+D4
+""
+""
+0 -1 18006 0 5
+-1
+S
+
+#18006
+"Upper Level - Southwestern Corner"
+"The Branches above you give way to the sky as you head west.  Directly to
+
+the west of you there is a completely clear gap with the crystal blue sky
+
+showing though.  The small platform you are standing on continues to the
+
+west where it leads to a larger area.  The branches below you seem to be
+
+in the shape of a ladder leading down.  Likewise branches form stairs
+
+leading up.  Above you hang several large vines which you might be able
+
+to @bswing@n on.  
+
+"
+""
+301465665 0
+3 5 0
+D3
+""
+""
+0 -1 18007 0 5
+D5
+""
+""
+0 -1 18005 0 5
+A
+"2 swing"
+"1 south"
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+transfer( ch, find_room( 18009 ) );
+
+act_notchar( #arival, ch );
+
+send_to_char( #char_arival, ch );
+
+"
+E
+"char_arival"
+"You made it to a tree a far ways to the south from where you were.
+
+"
+E
+"arival"
+"$n comes swinging in from the north on a vine.
+
+"
+E
+"to_room"
+"$n grabs hold of a vine and swings to the south.
+
+"
+E
+"to_char"
+"You grab hold of a vine and swing south towards another tree.
+
+"
+!
+0 0 0
+A
+"climb"
+"stairs branches 1 up"
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_char, ch );
+
+transfer( ch, find_room( 18002 ) );
+
+act_notchar( #arival, ch );
+
+"
+E
+"arival"
+"$n comes climbing up through the branches.
+
+"
+E
+"to_room"
+"$n clims off through the branches towards the altar area.
+
+"
+E
+"to_char"
+"You climb across the branches up to the altar area.
+
+"
+!
+0 0 0
+A
+"2 swing"
+"1 east"
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+transfer( ch, find_room( 18018 ) );
+
+act_notchar( #arival, ch );
+
+send_to_char( #char_arival, ch );
+
+"
+E
+"char_arival"
+"You made it to a tree east of where you were.
+
+"
+E
+"arival"
+"$n comes swinging in on a vine from another tree.
+
+"
+E
+"to_room"
+"$n grabs ahold of a vine and swings to the east.
+
+"
+E
+"to_char"
+"You grab hold of a vine and swing to the east.
+
+"
+!
+0 0 0
+A
+"1 up"
+""
+"act_tochar( #ch, ch );
+
+"
+E
+"ch"
+"You have to @bclimb@n the @bstairs@n to get there.
+
+"
+!
+0 0 0
+A
+"2 swing"
+"1 north"
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+transfer( ch, find_room( 18037 ) );
+
+act_notchar( #arival, ch );
+
+send_to_char( #char_arival, ch );
+
+"
+E
+"char_arival"
+"You made it to the next tree to the north.
+
+"
+E
+"arival"
+"$n comes swinging in from a the south on a vine.
+
+"
+E
+"to_room"
+"$n grabs hold of a vine and swings to the north.
+
+"
+E
+"to_char"
+"You grab hold of a vine and swing north towards another tree.
+
+"
+!
+0 0 0
+A
+"2 swing"
+""
+"send_to_char( #error, ch );
+
+"
+E
+"error"
+"You either can't swing in that direction or that isn't a direction.  You look
+
+around and see that you can swing to the north, south or east.
+
+"
+!
+0 0 0
+481 9 1509949540 3 0
+-1
+S
+
+#18007
+"The Celestial Observatory"
+"This large area made of tied and woven tree branches works as an
+
+observatory.  About the room there are three large tables strewn with
+
+charts and information about the heavens.  This area, however, does not
+
+serve as the actual observation area, there is a large branch leading
+
+through a hide covered archway to the observation platform.  
+
+"
+"[Rillandar] this mob has a typo (difficult description) in the final line of his greeting/quest
+
+"
+301465665 0
+3 8 0
+D1
+""
+""
+0 -1 18006 0 5
+D3
+""
+""
+0 -1 18008 0 8
+A
+"2 climb"
+"1 up tree 5 branches"
+"if( race( ch ) == elf ) {
+
+  if( find_skill( ch, climb ) > 1 ) {
+
+    use_skill( ch, climb );
+
+    send_to_char( #k_c, ch );
+
+    act_notchar( #k_r, ch );
+
+    transfer( ch, find_room( 18042 ) );
+
+    act_notchar( #arrive, ch );
+
+    }
+
+  }
+
+else
+
+  send_to_char( #n_c, ch );
+
+"
+E
+"fail"
+"You hear a large amount of noise coming from below you.
+
+"
+E
+"n_c"
+"You attempt to climb the branches but fail and cause a great deal of
+
+noise.  
+
+"
+E
+"arrive"
+"$n comes climbing up from the branches below.
+
+"
+E
+"k_r"
+"As you glance around you notice $n is no longer with you.
+
+"
+E
+"k_c"
+"You easily climb up into the branches above.
+
+"
+!
+0 0 0
+415 9 1509949540 3 0
+-1
+S
+
+#18008
+"The Observatory Platform"
+"This large platform seems to be built from sturdy logs.  The only structure of
+
+it's kind in the whole city.  This also appears to be one of the few areas
+
+with a completely unobstructed view of the heavens.  All about the perimeter
+
+of this platform sticks are mounted, pointing to locations where various
+
+constellations are spotted at certain times of the year.  In the center of the
+
+platform a large hollow log is mounted, on some kind of stand.
+
+"
+""
+301465665 0
+3 8 0
+D1
+""
+""
+0 -1 18007 0 8
+E
+"log telescope"
+"The log appears to have been naturaly hollowed by bugs or rot.  At each
+
+of the openings a strange type of crystal lens is placed, and you can see
+
+through it!  Where the log is mounted to the stand many dials protrude
+
+from both parts, each with their own set of markings.  
+
+"
+A
+"use"
+"log telescope 5 lenses 4 dials 4 knobs"
+"i = random( 1, 5 );
+
+if( i == 1 ) {
+
+  act_tochar( #I_see, ch );
+
+  act_notchar( #What_do_you_see?, ch );
+
+  end;
+
+  }
+
+if( i == 2 ) {
+
+  act_tochar( #Wow, ch );
+
+  act_notchar( #What_do_you_see?, ch );
+
+  end;
+
+  }
+
+else{
+
+  act_tochar( #I_dont_see, ch );
+
+  act_notchar( #See_anything?, ch );
+
+  }
+
+"
+E
+"I_see"
+"You place your eye to what appears to be the appropriate side of the log
+
+and view through it.  All you can see is a blur, until you inexpertly toy
+
+with the dials, suddenly bringing an eagle into view many miles away above
+
+the tree tops.  In surprise you pull your eye away and can find the eagle
+
+no where with your naked eye.
+
+"
+E
+"What_do_you_see?"
+"$N puts $s eye to the log and momentarily begins to fiddle with the dials
+
+on its side.  After a few moments you hear a gasp of surprise from $m as
+
+$e suddenly pull $s head away and begin to scan the treeline.
+
+"
+E
+"Wow"
+"You place your eye to what appears to be the appropriate side of the log
+
+and view through it.  All you can see is a blur, until you inexpertly toy
+
+with the dials suddenly bringing into view an eagle as it strikes a
+
+Zuralduur from the sky somewhere in the distant tree tops.  In surprise
+
+you pull your eye away and can find the eagle no where with your naked
+
+eye.
+
+"
+E
+"I_dont_see"
+"You place your eye to what appears to be the appropriate side of the log
+
+and view through it.  All you can see is a blur, until you inexpertly toy
+
+with the dials, suddenly bringing the treeline into an astonishingly
+
+sharp focus.  After a while of scanning the uneventful treeline you sigh
+
+contentedly and pull your eye away from the crystal.
+
+"
+E
+"See_anything?"
+"$n peers peers through the hollowed log aparatus, fiddles with the dials
+
+on it a little and peers through it again.  After a short time $e stops,
+
+peers out over the treescape, then looks back through the log.  Maybe $e
+
+sees something you dont?
+
+"
+!
+0 0 0
+-1
+S
+
+#18009
+"Green Leaves"
+"You are standing on a large platform of living wood.  To the west you
+
+hear chanting drifting through the trees.  As you listen to the soft
+
+incantations drifting through the trees you ponder on the meaning of life. 
+
+The chanting seems to have calmed your nerves and you feel at peace with
+
+the world.  To the north you see a large platform, but it's far out of
+
+jumping range.  Above you large vines hang, some large enough to support
+
+you.
+
+"
+""
+301465665 0
+3 5 0
+D3
+""
+""
+0 -1 18010 0 5
+E
+"vines"
+"The vines look large enough for you to swing on.
+
+"
+A
+"2 swing"
+"1 north"
+"send_to_char( #char, ch );
+
+act_notchar( #room, ch );
+
+transfer( ch, find_room( 18006 ) );
+
+send_to_char( #carr, ch );
+
+act_notchar( #arr, ch );
+
+"
+E
+"carr"
+"You made it to a tree a good ways to the north of where you where.
+
+"
+E
+"arr"
+"$n comes swinging in from the south on a vine.
+
+"
+E
+"room"
+"$n grabs hold of a vine and swings to the north.
+
+"
+E
+"char"
+"You grab hold of a vine a swing north towards another tree.
+
+"
+!
+0 0 0
+A
+"1 north"
+""
+"act_tochar( #ch, ch );
+
+"
+E
+"ch"
+"You need to @bswing@n on the @bvines@n to get there.
+
+"
+!
+0 0 0
+A
+"2 swing"
+""
+"act_tochar( #ch, ch );
+
+"
+E
+"ch"
+"Either you can't swing that way or it's not a direction.
+
+Looking around you see that you can swing to the north.
+
+"
+!
+0 0 0
+-1
+S
+
+#18010
+"Main Level - Below Magic Shop"
+"You are standing below a shop on a large platform.  The platform is made
+
+of living wood woven into a dense mat.  About you the branches form a
+
+sort of wall allowing passage only to the east where a walkway runs.  The
+
+branches above you form a ladder that leads up to the shop.  Sounds of
+
+chanting incantations drift down from above.  
+
+"
+""
+301465665 0
+3 5 0
+D1
+""
+""
+0 -1 18009 0 5
+D4
+""
+""
+0 -1 18011 0 5
+-1
+S
+
+#18011
+"Magic Shop"
+"The shop area about you is formed out of the living tree.  The floor is
+
+made of woven branches and the walls are of interwoven boughs of the
+
+tree.  About the area articles such as potions and spell books lie in a
+
+state of disarray.  The branches above and below form ladders leading to
+
+other parts of the tree.  
+
+"
+""
+335024199 0
+0 6 0
+D4
+""
+""
+0 -1 18012 0 5
+D5
+""
+""
+0 -1 18010 0 5
+330 9 1509949540 3 0
+1020 17 1509949540 -1 0
+1025 17 1509949540 -1 0
+249 17 1509949450 -1 0
+38 17 1509949445 -1 0
+285 17 1509949465 -1 0
+1017 17 1509949540 -1 0
+1182 17 1509949540 -1 0
+81 17 1509949540 -1 0
+1269 17 1509949490 -1 0
+1246 17 1509949460 -1 0
+210 17 1509949480 -1 0
+189 17 1509949490 -1 0
+1410 17 1509949540 -1 0
+474 17 1509949540 -1 0
+1974 17 1509949540 -1 0
+78 17 1509949540 -1 0
+-1
+S
+
+#18012
+"Tree Top, Above the Magic Shop"
+"Having risen above the mass of the tree you can see clearly across the
+
+sea of tree tops.  Far off in the distance you spy a few large rock
+
+spires piercing through the veil of trees.  Below you the sounds of the
+
+local magic shop can be heard.  The branches below you also form a ladder
+
+leading to the shop.  
+
+"
+""
+301465600 0
+3 5 0
+D5
+""
+""
+0 -1 18011 0 5
+-1
+S
+
+#18013
+"Main Level - North Walkway"
+"You are on a walkway that leads to the east and west from here.  The walkway
+
+appears to made entirely of living wood, branches all woven together.  The
+
+foliage here is very dense, not allowing you to view much of the area around.
+
+"
+""
+301465665 0
+3 6 0
+D1
+""
+""
+0 -1 18014 0 5
+D2
+""
+""
+0 -1 18001 0 6
+D3
+""
+""
+0 -1 18036 0 6
+-1
+S
+
+#18014
+"North Walkway"
+"You are standing on a broad walkway that leads from tree to tree.  The
+
+platform appears to be made totally of living wood.  Far below you, you can
+
+almost see the forest floor.  The walkway leads in three directions from here,
+
+north, west, and south.
+
+"
+""
+301465665 0
+3 5 0
+D0
+""
+""
+0 -1 18030 0 5
+D2
+""
+""
+0 -1 18015 0 5
+D3
+""
+""
+0 -1 18013 0 5
+D4
+""
+""
+0 -1 18026 0 5
+481 9 1509949540 3 0
+-1
+S
+
+#18015
+"High Walkway"
+"You are standing on a large walkway made entirely of living wood.  The signs
+
+of a prosperous village are rare, with only the amount of elves to show that
+
+this is a village.  The walkway leads north and south where you can see
+
+exceptionally large trees, while to the east is a huge branch leading away
+
+through the foliage.
+
+"
+""
+301465665 0
+3 5 0
+D0
+""
+""
+0 -1 18014 0 5
+D1
+""
+""
+0 -1 18019 0 5
+D2
+""
+""
+0 -1 18016 0 5
+2070 9 1509949540 3 0
+-1
+S
+
+#18016
+"Main Level - South East Corner"
+"You are standing on a broad walkway that leads from tree to tree.  The
+
+platform appears to be made totally of living wood.  Far below you, you can
+
+almost see the forest floor.  To the north the walkway continues, and above
+
+you the branches form stairs leading up.
+
+"
+""
+301465665 0
+3 5 0
+D0
+""
+""
+0 -1 18015 0 5
+D2
+""
+""
+0 -1 18017 0 5
+D4
+""
+""
+0 -1 18018 0 5
+-1
+S
+
+#18017
+"Vintner's Shop"
+"A wide, relatively flat branch serves to make a fine floor.  Offshoot branches
+
+seem to form natural half-walls to keep anyone from falling over the edges.
+
+Light from overhead filters down through the leaves of other branches throwing
+
+a tapestry of dappled shadows across the impromptu floor.  Someone has set up
+
+a counter off to one side with stools in front of it.
+
+"
+"For celebrations set a 100% reload for item 1645 with liquid set to
+
+springwine.  The actions are already in place for it.  -Talis 
+
+Oh yeah, don't reset it on the counter, reset it on the ground.
+
+"
+301469763 0
+3 9 0
+D0
+""
+""
+0 -1 18016 0 5
+E
+"1 south 1 east 1 west"
+"The leaves and branches of trees stretch on as far as you can see in that
+
+direction.
+
+"
+E
+"branches"
+"The branches have grown into an intermingled tangle that effectivly
+
+prevent anyone, but the suicidal, from going over the edge.  They are
+
+covered in lush green leaves. 
+
+"
+A
+"get"
+"stools counter all"
+"if( mob_in_room( 1247, room ) )
+
+  act_tochar( #no, ch );
+
+"
+E
+"no"
+"Clenestil intervenes and asks \"If you really feel the need to take
+
+something, might I interest you in a bottle of fine wine?\" 
+
+"
+!
+0 0 0
+A
+"fill refill"
+""
+"if( obj_in_room( 1645, room ) ) {
+
+  if( random( 1, 15 ) == 1 ) {
+
+    act_tochar( #last, ch );
+
+    act_notchar( #rlast, ch );
+
+    acode( room, 3 );
+
+    }
+
+  }
+
+continue;
+
+"
+E
+"last"
+"Looks like you used up the last of this cask as the last few drop trickle
+
+out.
+
+  
+
+"
+E
+"rlast"
+"Looks like $n has emptied the cask as the last few drop trickle out.
+
+  
+
+"
+!
+0 0 0
+A
+""
+""
+"wait( 1 );
+
+junk_obj( obj_in_room( 1645, room ) );
+
+if( mob_in_room( 1247, room ) ) {
+
+  wait( 1 ) ;
+
+  act_room( #restock, ch );
+
+  obj_to_room( oload( 1645 ), room );
+
+  }
+
+"
+E
+"restock"
+"Clenestil removes an empty cask from the branches and places a new one in
+
+its place.  He quickly taps a spigot into one end and announces, \"Drinks
+
+for the festivities, on the house!\" 
+
+   
+
+"
+!
+0 0 0
+1247 9 1509949540 3 0
+24 17 1509949540 -1 2
+24 17 1509949540 -1 2
+114 17 1509949520 -1 2
+23 17 1509949490 -1 2
+1721 17 1509949480 -1 0
+1625 17 1509949540 -2 0
+1625 17 1509949540 -2 0
+1625 17 1509949540 -2 0
+1626 17 1509949540 -2 0
+-1
+S
+
+#18018
+"Higher Level"
+"You are standing on some branches above the main level of the village. 
+
+All about, dense leaves prevent you from seeing very far, and long vines
+
+hang here, some which could be used to @bswing@n on.
+
+"
+""
+301465673 0
+3 5 0
+D5
+""
+""
+0 -1 18016 0 5
+A
+"2 swing"
+"1 north"
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+transfer( ch, find_room( 18026 ) );
+
+act_notchar( #arival, ch );
+
+send_to_char( #char_arival, ch );
+
+"
+E
+"char_arival"
+"You made it to a tree north of where you were.
+
+"
+E
+"arival"
+"$n comes swinging in on a vine from the south.
+
+"
+E
+"to_room"
+"$n grabs hold of a vine and swings north.
+
+"
+E
+"to_char"
+"You grab hold of a vine and swing north.
+
+"
+!
+0 0 0
+A
+"2 swing"
+"1 west"
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+transfer( ch, find_room( 18006 ) );
+
+act_notchar( #arival, ch );
+
+send_to_char( #char_arival, ch );
+
+"
+E
+"char_arival"
+"You made it to a tree west of where you were.
+
+"
+E
+"arival"
+"$n comes swinging in on a vine from the east.
+
+"
+E
+"to_room"
+"$n grabs hold of a vine and swings to the west.
+
+"
+E
+"to_char"
+"You grab hold of a vine and swing to the west.
+
+"
+!
+0 0 0
+A
+"2 swing"
+""
+"send_to_char( #error, ch );
+
+"
+E
+"error"
+"You either can't swing in that direction or that isn't a direction.  
+
+Looking around you see you can swing either west or north.
+
+"
+!
+0 0 0
+-1
+S
+
+#18019
+"Huge Branch"
+"You stand on a huge branch that extends from the main trunk to the east and
+
+runs away through the foliage to the west.  There is another branch nearby
+
+that you could use to get to a pair of trees to the north, from where come
+
+sounds of clinking metal.  Looking over the side, you catch a rare glimpse of
+
+the ground far below and guess you are at least 250 feet up.
+
+"
+""
+301465665 0
+3 5 0
+D0
+""
+""
+0 -1 18020 0 5
+D1
+""
+""
+0 -1 18022 0 5
+D2
+""
+""
+0 -1 18044 0 5
+D3
+""
+""
+0 -1 18015 0 5
+-1
+S
+
+#18020
+"Base Of Branch"
+"You are standing at the base of a branch that leads away to the south. 
+
+Two enormous trunks stand close together here, limbs gnarled together. 
+
+Below you is a very sturdy looking shop of sorts, built between the two
+
+trunks and putting the gnarled limbs to good use.  
+
+"
+""
+301465665 0
+3 5 0
+D2
+""
+""
+0 -1 18019 0 5
+D5
+""
+""
+0 -1 18021 0 5
+-1
+S
+
+#18021
+"Armor Shop"
+"You have entered a well-lit elven shop.  Two walls are near-flat trunks,
+
+while the other two are tightly woven branches and living wood and look
+
+woven well enough to keep the warmth in and the cold winds out.  Covering
+
+the walls are articles of armor, suits of leather, cloaks for protection
+
+and warmth.  Cases with delicate crystal panes hold suits of metal, some
+
+bronze, some chain.  Others hold glinting helms and shiny plates.
+
+"
+""
+335024199 0
+0 6 0
+D4
+""
+""
+0 -1 18020 0 5
+E
+"platform"
+"Examining the platform does no solve the mystery of it's making any more
+
+than before.  Perhaps it is just an old elf secret.  
+
+"
+335 9 1509949540 3 0
+499 17 1509949540 -1 0
+503 17 1509949540 -1 0
+504 17 1509949540 -1 0
+502 17 1509949540 -1 0
+498 17 1509949540 -1 0
+-1
+S
+
+#18022
+"Base Of Branch"
+"You have come to the massive trunk from which the huge branch you stand
+
+upon, sprouts and extends west.  All around is leafy greenery and the
+
+sounds of life.  You can't even see the sky from this world of green. 
+
+There is a small oval opening into the trunk here.  
+
+"
+""
+301465665 0
+3 5 0
+D3
+""
+""
+0 -1 18019 0 5
+E
+"opening hole 1 east"
+"The opening is oval and just big enough for you to enter.  Inside you see
+
+a small room with dim light comming down from above.  
+
+"
+A
+"enter"
+"tree hole opening trunk"
+"send_to_char( #char, ch );
+
+act_notchar( #room, ch );
+
+transfer( ch, find_room( 18023 ) );
+
+act_notchar( #arr, ch );
+
+loop( followers ) {
+
+  act_notchar( #f_leave, rch );
+
+  transfer( rch, find_room( 18023 ) );
+
+  act_notchar( #f_arr, rch );
+
+  }
+
+"
+E
+"f_arr"
+"$n comes in through the hole.
+
+"
+E
+"f_leave"
+"$n leaves into the hole.
+
+"
+E
+"arr"
+"$n comes climbing in through the hole from outside.
+
+"
+E
+"room"
+"$n leaves into the hole.
+
+"
+E
+"char"
+"You duck into the hole and enter the tree.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !obj_in_room( 288, room ) ) {
+
+  send_to_room( #all, room );
+
+  obj_to_room( oload( 288 ), room );
+
+  }
+
+"
+E
+"all"
+"Something from above chitters down at you and drops some acorns at you!
+
+"
+!
+2 90 0
+481 9 1509949540 3 0
+-1
+S
+
+#18023
+"Inside Tree"
+"You stand in a small open area inside the tree.  The room seems to be a
+
+spiral stair that leads upwards from where come sounds of people.  The
+
+room is lit from light filtering from above.  
+
+"
+""
+335020101 0
+0 5 0
+D3
+""
+""
+0 -1 18022 0 5
+D4
+""
+""
+0 -1 18024 0 5
+-1
+S
+
+#18024
+"Elven General Store"
+"The room is quite large for being inside a tree, and is warm and
+
+comfortable.  The colors are predominantly brown, in all of its homely
+
+shades.  All about, on shelves and in displays are various items,
+
+pouches, torches and other general staples.  There is a hide covering an
+
+oval opening to the east, and a spiral stair leading down off in the
+
+corner.  
+
+"
+""
+301465671 0
+0 6 0
+D1
+""
+""
+0 -1 18025 0 5
+D5
+""
+""
+0 -1 18023 0 5
+A
+""
+""
+"send_to_char( #char, ch );
+
+act_notchar( #room, ch );
+
+transfer( ch, find_room( 18025 ) );
+
+act_notchar( #arr, ch );
+
+loop( followers ) {
+
+  act_notchar( #f_leave, rch );
+
+  transfer( rch, find_room( 18025 ) );
+
+  act_notchar( #f_arr, rch );
+
+  }
+
+"
+E
+"f_arr"
+"$n arrives from the west.
+
+"
+E
+"f_leave"
+"$n leaves east.
+
+"
+E
+"arr"
+"The hide is pushed aside and $n comes out.
+
+"
+E
+"room"
+"$n pushes past the hide and leaves.
+
+"
+E
+"char"
+"You push aside the hide and go out on the deck.
+
+"
+!
+3 1 2
+334 9 1509949540 3 0
+6 17 1509949540 -1 0
+20 17 1509949540 -1 0
+55 17 1509949540 -1 0
+27 17 1509949515 -1 0
+26 17 1509949540 -1 0
+5 17 1509949540 -1 0
+25 17 1509949540 -1 0
+229 17 1509949540 -1 0
+230 17 1509949540 -1 0
+330 17 1509949540 -1 0
+948 17 1509949540 -1 0
+1135 17 1509949540 -1 0
+1681 17 1509949490 -1 0
+-1
+S
+
+#18025
+"Deck - Side Of Trunk"
+"You are standing on a semicircle platform built on the side of this
+
+enormous trunk.  There are no branches nearby and a lot of open space. 
+
+In the daytime the light trickles down and shines on this spot, and in
+
+the evening there is dusky shade.  It seems to be some sort of short
+
+deck, and with its two chairs, it looks like a great place just to sit
+
+back and watch the great depths of the forest.
+
+"
+""
+301465664 0
+3 5 0
+D3
+""
+""
+0 -1 18024 0 5
+E
+"5 chairs"
+"The chairs are crafted of wood, and look sturdy, and laid-back.  They
+
+look like great chairs to lounge back in.  Comfortable.  
+
+"
+A
+""
+""
+"send_to_char( #char, ch );
+
+act_notchar( #room, ch );
+
+transfer( ch, find_room( 18024 ) );
+
+act_notchar( #arr, ch );
+
+loop( followers ) {
+
+  act_notchar( #f_leave, rch );
+
+  transfer( rch, find_room( 18024 ) );
+
+  act_notchar( #f_arr, rch );
+
+  }
+
+"
+E
+"f_arr"
+"$n arrives from the east.
+
+"
+E
+"f_leave"
+"$n leaves west.
+
+"
+E
+"arr"
+"The hide is pushed aside, and $n enters.
+
+"
+E
+"room"
+"$n pushes aside the hide, and goes inside.
+
+"
+E
+"char"
+"You push aside the hide and go inside.
+
+"
+!
+3 3 8
+-1
+S
+
+#18026
+"High Platform"
+"You are standing on a platform somewhere higher than the main level of
+
+the village, where dense branches prevent you from seeing far.  Many
+
+vines hang here, some looking like they might be used to @bswing@n on.  Above
+
+you the huge branches of the trees might be used to climb over to the
+
+altar area, or you can use one particular branch to reach another
+
+platform farther east.  
+
+"
+""
+335020097 0
+3 5 0
+D1
+""
+""
+0 -1 18027 0 5
+D5
+""
+""
+0 -1 18014 0 5
+A
+"2 swing"
+"1 west"
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+transfer( ch, find_room( 18037 ) );
+
+act_notchar( #arival, ch );
+
+send_to_char( #char_arival, ch );
+
+"
+E
+"char_arival"
+"You made it to a tree west of where you were.
+
+"
+E
+"arival"
+"$n comes swinging in from the east on a vine.
+
+"
+E
+"to_room"
+"$n grabs hold of a vine and swings to the west.
+
+"
+E
+"to_char"
+"You grab hold of a vine and swing to the west.
+
+"
+!
+0 0 0
+A
+"climb"
+"stairs branches 1 up"
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+transfer( ch, find_room( 18002 ) );
+
+act_notchar( #arival, ch );
+
+"
+E
+"arival"
+"$n comes climbing up through the branches.
+
+"
+E
+"to_room"
+"$n clims off through the branches towards the altar area.
+
+"
+E
+"to_char"
+"You climb across the branches up to the altar area.
+
+"
+!
+0 0 0
+A
+"2 swing"
+"1 south"
+"send_to_char( #to_char, ch );
+
+ act_notchar( #to_room, ch );
+
+transfer( ch, find_room( 18018 ) );
+
+act_notchar( #arival, ch );
+
+send_to_char( #char_arival, ch );
+
+"
+E
+"char_arival"
+"You made it to a tree south of you.
+
+"
+E
+"arival"
+"$n comes swinging in from the north on a vine.
+
+"
+E
+"to_room"
+"$n grabs hold of a vine and swings south.
+
+"
+E
+"to_char"
+"You grab hold of a vine and swing south.
+
+"
+!
+0 0 0
+A
+"2 swing"
+""
+"send_to_char( #error, ch );
+
+"
+E
+"error"
+"You either can't swing in that direction or that isn't a direction. 
+
+Looking around you see you can swing either west or south.  
+
+"
+!
+0 0 0
+-1
+S
+
+#18027
+"Upper Level"
+"You are standing on a small platform made from living wood.  All about you
+
+are dense branches, but a few larger ones that lead upwards look well
+
+used.  
+
+"
+""
+301465665 0
+3 5 0
+D3
+""
+""
+0 -1 18026 0 5
+D4
+""
+""
+0 -1 18028 0 5
+-1
+S
+
+#18028
+"Secluded Area"
+"This area of the tree appears to have been fashioned into a large room.  The
+
+floor is a huge, flat part of a branch wide enough for several people to sit
+
+comfortably.  The walls and ceiling are formed from woven branches and wood
+
+held together by careful design and supple vines.  A calendar has been
+
+carefully affixed to one of the branches so as not to cause the branch any harm.
+
+"
+""
+335022183 0
+3 6 0
+D4
+""
+""
+0 -1 18029 0 5
+D5
+""
+""
+0 -1 18027 0 5
+A
+"3 deposit 3 withdrawl"
+""
+"if( mob_in_room( 388, room ) ) {
+
+  send_to_char( #char, ch );
+
+  act_notchar( #room, ch );
+
+  continue;
+
+  }
+
+else
+
+  send_to_char( #dead, ch );
+
+"
+E
+"dead"
+"The Sailor isn't here to do it.
+
+"
+E
+"room"
+"The Sailor helps $n.
+
+"
+E
+"char"
+"The Sailor closes his eyes and hums.  His hands appear to be pushing or
+
+moving something you can't see and after a moment a black rectangle
+
+opens in reality, wherein lies your money.
+
+"
+!
+0 0 0
+388 9 1509949540 3 0
+3975 17 1509949540 -2 0
+-1
+S
+
+#18029
+"High Tree Top"
+"You are standing on a good sized branch far above the forest floor. 
+
+Above you the massive trunk of this enormous tree reaches toward the sky,
+
+though the size and frequency of the limbs do not allow you to ascend any
+
+further.  From this vantage point you can look out over much of the vast
+
+forest, and it is truly breathtaking.  Far off in the distance to the
+
+east, you can see one of the great rock spires vaulting from the sea of
+
+green and spearing towards the sky.  
+
+"
+""
+301465664 0
+3 5 0
+D5
+""
+""
+0 -1 18028 0 5
+E
+"rock spire"
+"The top of the forest is a sea of green, as far as the eye can see,
+
+undulating only a little.  But here and there, grey spires of stone, like
+
+spears, jab upward out of the sea, reaching toward the sky.  Their slopes
+
+are too steep for much foliage, but there is some.
+
+"
+-1
+S
+
+#18030
+"Near Herbalist and Lembas Shop"
+"You are standing on what looks like a walkway made of living wood, and looking
+
+over the side, you decide you are at least 150 feet above the forest floor.
+
+To the west you see a large tree, with the sounds of elves bartering.  To the
+
+east lies another tree, from where comes the mouth-watering smell of fresh
+
+baked bread.  The walkway also branches south from here where it looks as if
+
+it is intersected by another.
+
+"
+""
+301465665 0
+3 5 0
+D1
+""
+""
+0 -1 18031 0 5
+D2
+""
+""
+0 -1 18014 0 5
+D3
+""
+""
+0 -1 18033 0 5
+-1
+S
+
+#18031
+"The Lembas Wafer Shop"
+"The dense branches on all sides of you form the walls of this shop.  The
+
+floor is made of densely woven branches and the branches above part to
+
+form a ladder leading up.  This shop sells lembas wafers, though they are
+
+not cooked here.  To the west you see a walkway made of the same woven
+
+living branches.  
+
+"
+""
+335020103 0
+0 6 0
+D3
+""
+""
+0 -1 18030 0 5
+D4
+""
+""
+0 -1 18032 0 5
+332 9 1509949540 3 0
+236 17 1509949540 -1 0
+-1
+S
+
+#18032
+"Tree Top, Above the Lembas shop"
+"You are standing on a large branch above the lembas shop.  The branches
+
+have opened up and you can see all about the top of the forest.  Far out 
+
+in the distance you can see a tall rock spire piercing through the
+
+emerald sea of tree tops.  
+
+"
+""
+301465665 0
+3 5 0
+D5
+""
+""
+0 -1 18031 0 5
+-1
+S
+
+#18033
+"Below the Herbalist"
+"You are standing on a platform of living wood.  To the east the platform
+
+continues to meet another, and the branches above you form a nice ladder. 
+
+From above, the smell of herbs and the sounds of chanting drift down.
+
+"
+""
+301465667 0
+3 5 0
+D1
+""
+""
+0 -1 18030 0 5
+D4
+""
+""
+0 -1 18034 0 5
+-1
+S
+
+#18034
+"The Herbalist Shop"
+"This shop is formed by the dense branches all about you and a woven platform
+
+of living wood.  There is a small hole in the platform near the trunk of the
+
+tree that leads below to the main level of town.  Above you the branches form
+
+a ladder that leads above the shop.  Herbs are hung to dry on branches all
+
+about this room, and the sweet smell of delicate incense fills the air.
+
+"
+""
+335024199 0
+0 6 0
+D4
+""
+""
+0 -1 18035 0 5
+D5
+""
+""
+0 -1 18033 0 5
+333 9 1509949540 3 0
+9 17 1509949510 -1 0
+243 17 1509949540 -1 0
+221 17 1509949540 -1 0
+98 17 1509949540 -1 0
+37 17 1509949540 -1 0
+78 17 1509949540 -1 0
+230 17 1509949540 -1 0
+81 17 1509949490 -1 0
+284 17 1509949540 -1 0
+1194 17 1509949490 -1 0
+98 17 1509949540 -1 0
+415 17 1509949540 -1 0
+258 17 1509949540 -1 0
+1246 17 1509949465 -1 0
+474 17 1509949540 -1 0
+4487 17 1509949490 -1 0
+-1
+S
+
+#18035
+"Tree Top, Above the Herbalist"
+"You are standing on a large branch far above the forest floor.  Below you
+
+the smell of drying herbs rises.  And as you look out across the emerald
+
+sea of tree tops, you feel a great peace.
+
+"
+""
+301465664 0
+3 5 0
+D5
+""
+""
+0 -1 18034 0 5
+-1
+S
+
+#18036
+"North Walkway"
+"You are standing on a wide platform that runs from tree to tree.  The platform
+
+appears to made entirely from living wood, and makes you wonder at the skill
+
+to shape its growth.  The main walkway continues east and west from here.
+
+Above the branches look easy to climb, spaced much like huge steps.
+
+"
+""
+301465665 0
+3 6 0
+D1
+""
+""
+0 -1 18013 0 6
+D3
+""
+""
+0 -1 18041 0 6
+D4
+""
+""
+0 -1 18037 0 5
+-1
+S
+
+#18037
+"Upper Level"
+"You have come to a small platform somewhere above the main level of the
+
+village.  The leaves are thick here, big and green, and from the emerald
+
+depths comes the many sounds of life.  Vines hang here, and you think you
+
+might be able to @bswing@n across some of them, through the foliage.  To the west,
+
+a small wooden walkway leads to another tree.
+
+"
+""
+335020097 0
+3 5 0
+D3
+""
+""
+0 -1 18038 0 5
+D5
+""
+""
+0 -1 18036 0 5
+A
+"climb"
+"stairs branches 1 up"
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+transfer( ch, find_room( 18002 ) );
+
+act_notchar( #arr, ch );
+
+"
+E
+"arr"
+"$n comes climbing up through the branches.
+
+"
+E
+"to_room"
+"$n climbs off through the branches towards the altar.
+
+"
+E
+"to_char"
+"You climb across the branches to the altar.
+
+"
+!
+0 0 0
+A
+"2 swing"
+"1 south"
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+transfer( ch, find_room( 18006 ) );
+
+act_notchar( #arrival, ch );
+
+send_to_char( #char_arival, ch );
+
+"
+E
+"char_arival"
+"You made it to a tree south of you.
+
+"
+E
+"arrival"
+"$n comes swinging in on a vine from another tree.
+
+"
+E
+"to_room"
+"$n jumps and grabs hold of a vine and swings to another tree.
+
+"
+E
+"to_char"
+"You jump and grab hold of the vine and swing to the next tree.
+
+"
+!
+0 0 0
+A
+"2 swing"
+"1 east"
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+transfer( ch, find_room( 18026 ) );
+
+act_notchar( #arival, ch );
+
+send_to_char( #char_arival, ch );
+
+"
+E
+"char_arival"
+"You made it to a tree east of where you were.
+
+"
+E
+"arival"
+"$n comes swinging in on a vine from the west.
+
+"
+E
+"to_room"
+"$n grabs hold of a vine and swings east.
+
+"
+E
+"to_char"
+"You grab hold of a vine and swing east.
+
+"
+!
+0 0 0
+A
+"2 swing"
+""
+"send_to_char( #ch, ch );
+
+"
+E
+"ch"
+"You either can't swing in that direction or that isn't a direction.
+
+You look around and see that you can swing to the east or south.
+
+"
+!
+0 0 0
+-1
+S
+
+#18038
+"End Of Branch"
+"You stand at the end of a narrow walkway which comes through the thin leafy
+
+branches east, and ties onto a big thick branch here.  There are no other
+
+large branches near, and if it wasn't for the smaller branches with the many
+
+leaves, you might feel dizzy and unstable balancing here.  If you keep your
+
+eyes on where you walk, to avoid vertigo, you may follow the branch north or
+
+the walkway east.
+
+"
+""
+301465665 0
+3 5 0
+D0
+""
+""
+0 -1 18039 0 5
+D1
+""
+""
+0 -1 18037 0 5
+481 9 1509949540 3 0
+-1
+S
+
+#18039
+"Base Of Branch"
+"You come to the base of a large branch that grows from the trunk, and runs
+
+away to the south.  Above you, secured on three huge branches, is a stone
+
+floored building, built against the side of the trunk.  How they got that huge
+
+slab of stone up here is beyond you.  There is a flap covering an opening,
+
+which you could go up and use to enter.
+
+"
+""
+301465665 0
+3 5 0
+D2
+""
+""
+0 -1 18038 0 5
+D4
+""
+""
+0 -1 18040 0 5
+-1
+S
+
+#18040
+"Weapon Smithy"
+"You stand in a large hut with walls of leather, covered in some substance that
+
+must protect it from the stray spark.  The floor is a huge flat slab of stone,
+
+and standing in the middle is a great open hearth.  It is quite hot in here,
+
+and lit by the hearth in shifting yellows and reds.  The trunk of the tree
+
+composes the north east wall, and hanging from it and from many branches that
+
+crisscross the room, are items of war.
+
+"
+""
+301469767 0
+0 6 0
+D5
+""
+""
+0 -1 18039 0 5
+E
+"platform"
+"The platform appears to be woven from living wood.
+
+There is no obvious way that it was made, perhaps some lost skill of the elves.
+
+"
+A
+"1 order"
+""
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"You can't do that here.
+
+"
+!
+0 -1 0
+A
+"sit touch get go enter take steal"
+"fire hearth open"
+"act_tochar( #idiot, ch );
+
+act_notchar( #ridiot, ch );
+
+do_spell( burning hands, null, ch );
+
+interpret( ch, \"hop\" );
+
+acode( room, 3 );
+
+interpret( ch, \"hop\" );
+
+acode( room, 3 );
+
+interpret( ch, \"hop\" );
+
+acode( room, 3 );
+
+"
+E
+"idiot"
+"As you lean against the hearth you quickly come in contact with the
+
+blazing fire.
+
+"
+E
+"ridiot"
+"$n leans against the hearth and into the blzing fire burning $mself.
+
+"
+!
+0 0 0
+A
+""
+""
+"i = 1d6;
+
+if( i == 1 )
+
+interpret( ch, \"yell ouch!\" );
+
+if( i == 2 )
+
+interpret( ch, \"say aaaaaugh!  That burns!\" );
+
+if( i == 3 )
+
+interpret( ch, \"say Ow!  Get me some water, QUICK!\" );
+
+if( i == 4 )
+
+interpret( ch, \"say Ow, I'm gonna feel that one in the morning!\" );
+
+if( i > 5 )
+
+interpret( ch, \"say ow ow ow ow ow\" );
+
+"
+!
+0 0 0
+331 9 1509949540 3 0
+3000 17 1509949540 -1 0
+3001 17 1509949540 -1 0
+3032 17 1509949540 -1 0
+3028 17 1509949540 -1 0
+33 17 1509949540 -1 0
+3032 17 1509949540 -1 0
+3006 17 1509949540 -1 0
+3612 17 1509949460 -1 0
+3613 17 1509949450 -1 0
+3478 17 1509949455 -1 0
+1679 17 1509949448 -1 0
+3651 17 1509949540 -1 0
+3080 17 1509949540 -2 0
+-1
+S
+
+#18041
+"On the Entry Platform"
+"This is the main entry to the largest village of the Llewyrr in the Great
+
+Vaasa.  Not many guards are needed here, as trespassers are usually dealt
+
+with long before getting this close.  A rope-ladder dangles over the edge
+
+here, disappearing in the many levels of leaves and canopy foliage, and a
+
+walkway leads away east, its planks seeming to have been shaped from the
+
+large branch that supports it.  
+
+"
+""
+301465665 0
+3 6 0
+D1
+""
+""
+0 -1 18036 0 6
+D5
+""
+""
+0 -1 18046 0 6
+E
+"1 down ladder"
+"This ladder leads down to the forest floor, far below.
+
+"
+A
+""
+""
+"if( is_mounted( ch ) ) {
+
+  send_to_char( #dism, ch );
+
+  end;
+
+  }
+
+send_to_char( #char, ch );
+
+wait( 1 );
+
+if( char_in_room( ch, room ) ) {
+
+  send_to_char( #char2, ch );
+
+  act_notchar( #room, ch );
+
+  transfer( ch, find_room( 18046 ) );
+
+  act_notchar( #arr, ch );
+
+  }
+
+loop( followers ) {
+
+  act_notchar( #f_leave, rch );
+
+  transfer( rch, find_room( 18046 ) );
+
+  act_notchar( #f_arr, rch );
+
+  }
+
+"
+E
+"dism"
+"You will have to dismount.
+
+"
+E
+"f_arr"
+"$n arrives from above.
+
+"
+E
+"f_leave"
+"$n leaves down the rope.
+
+"
+E
+"arr"
+"$n comes climbing down the ladder, jumping the last couple feet.
+
+"
+E
+"room"
+"$n slips over the edge and disappears down the ladder.
+
+"
+E
+"char2"
+"After a long climb, you come to a small platform.
+
+"
+E
+"char"
+"You slip over the edge and begin the long climb down.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( is_player( ch ) || is_pet( ch ) ) {
+
+  act_tochar( \"You slip over the edge and begin the long climb down.\", ch );
+
+  act_notchar( \"$n slips over the edge and disappears down the ladder.\", ch );
+
+  continue;
+
+  }
+
+else {
+
+  act_tochar( \"Sorry, mobs may not move down here normally\", ch );
+
+  end;
+
+  }
+
+"
+!
+3 0 32
+481 9 1509949540 3 0
+617 9 1509949540 3 0
+-1
+S
+
+#18042
+"Above the Celestial Observatory"
+"From this large branch the world opens up to your eyes.  The trees far below
+
+form not a forest but a sea of emerald green.  Off in the distance spears of
+
+solid stone can be seen piercing through the canopy and jutting into the sky. 
+
+All about you the signs of peace an harmony are present; there are song birds
+
+chirping, dew covered leaves glisten in the light, and the slow rhythm of
+
+ceremonial drums can be heard drifting up from the city below.
+
+"
+""
+301465600 0
+0 4 0
+D5
+""
+""
+0 -1 18007 0 4
+E
+"forest trees emerald sea"
+"The rolling canopies form a solid layer of branches giving the appearance
+
+of an emerald sea of leaves.  The forests streches in all directions for
+
+almost as far as you can see.  
+
+"
+E
+"rocks spires spears"
+"The huge stone pillars appear to have arisen from the depths of the
+
+planet many years ago.  
+
+"
+A
+""
+""
+"send_to_char( #char, ch );
+
+act_room( #room, ch );
+
+continue;
+
+"
+E
+"room"
+"$n climbs down through the branches.
+
+"
+E
+"char"
+"You skillfully climb down the branches.
+
+"
+!
+3 5 32
+1637 17 1509949540 -2 0
+-1
+S
+
+#18043
+"A Place of Repose"
+"You are inside the hollow of a massive tree.  The tree itself must be massive
+
+for the space within is easily a score of feet across in any direction.  An
+
+enchantment lights the room with a warm, golden glow providing ample light in
+
+day or night.  The floor of the chamber is buffed to a polish from the tread
+
+of countless feet.
+
+"
+""
+301465669 0
+0 6 0
+D4
+""
+""
+0 -1 18001 0 6
+21 17 1509949540 -2 0
+588 17 1509949540 -2 0
+588 17 1509949540 -2 0
+236 17 1509949540 -2 0
+3185 17 1509949540 -2 0
+-1
+S
+
+#18044
+"Huge Branch"
+"You are standing at the base of a branch that leads away to the north. 
+
+Two enormous trunks stand close together here, limbs gnarled together. 
+
+Below you is a very sturdy looking shop of sorts, built between the two
+
+trunks and putting the gnarled limbs to good use.  
+
+"
+""
+301465665 0
+3 6 0
+D0
+""
+""
+0 -1 18019 0 5
+D5
+""
+""
+0 -1 18045 0 6
+-1
+S
+
+#18045
+"Clothier's Shoppe"
+"You have entered a well-lit elven shop.  Two walls are near-flat trunks, while
+
+the other two are tightly woven branches and living wood and look woven well
+
+enough to keep the warmth in and the cold winds out.  Covering the walls are
+
+articles of clothing, bolts of cloth, spools of thread, and scraps of
+
+leather.  Lovingly crafted dummies of living wood display a variety of
+
+completed projects awaiting their sale.
+
+"
+""
+301465667 0
+3 6 0
+D4
+""
+""
+0 -1 18044 0 6
+E
+"platform"
+"Examining the platform does no solve the mystery of it's making any more
+
+than before.  Perhaps it is just an old elf secret.  
+
+"
+2534 9 1509949540 3 0
+1644 17 1509949540 -1 0
+1642 17 1509949540 -1 0
+1643 17 1509949540 -1 0
+1653 17 1509949540 -1 0
+1641 17 1509949540 -1 0
+1629 17 1509949540 -1 0
+1651 17 1509949540 -1 0
+1649 17 1509949540 -1 0
+1650 17 1509949540 -1 0
+1640 17 1509949540 -1 0
+1652 17 1509949540 -1 0
+4017 17 1509949540 -1 0
+-1
+S
+
+#18046
+"Platform"
+"A small platform hangs out from the side of the great trunk.  There are
+
+some benches against the tree to sit and rest upon, and a couple poles
+
+that light the platform when it gets dark.  The platform extends south
+
+around the trunk a little, and a ladder hangs down from above here.  
+
+"
+""
+301465669 0
+2 6 0
+D2
+""
+""
+0 -1 18047 0 6
+D4
+""
+""
+0 -1 18041 0 6
+E
+"ladder"
+"You're not at the elven village yet. This ladder continues up towards it.
+
+"
+E
+"1 up"
+"The branches are still sparce enough to make the area feel open, but it
+
+gets thicker above.  You can't see anything yet.
+
+"
+E
+"1 down"
+"You can no longer see the forest floor.  The branches and leaves obscure
+
+the world below, from the world above.
+
+"
+E
+"light 4 poles 4 cages 6 spheres"
+"From a couple thin poles hang cages woven on branch and root.  Held
+
+inside are crystal spheres as small as a babies head which glow in
+
+shifting green-blues.
+
+"
+A
+""
+""
+"send_to_char( #char, ch );
+
+if( char_in_room( ch, room ) ) {
+
+  send_to_char( #char2, ch );
+
+  act_notchar( #room, ch );
+
+  transfer( ch, find_room( 18041 ) );
+
+  act_notchar( #arr, ch );
+
+}
+
+loop( followers ) {
+
+  act_notchar( #f_leave, rch );
+
+  transfer( rch, find_room( 18041 ) );
+
+  act_notchar( #f_arr, rch );
+
+  }
+
+"
+E
+"f_arr"
+"$n arrives from below the platform.
+
+"
+E
+"f_leave"
+"$n leaves up the rope.
+
+"
+E
+"arr"
+"$n comes climbing up the ladder, breathing hard and looking relieved.
+
+"
+E
+"room"
+"$n goes over to the rope and begins the long climb up.
+
+"
+E
+"char2"
+"With sweat beading on your skin, and arms burning, your climbing brings
+
+you to the entrance of the Elven Village.
+
+"
+E
+"char"
+"You begin the second half of the long climb upwards.
+
+"
+!
+0 0 0
+A
+""
+""
+"act_tochar( \"You begin the long climb up the ladder.\", ch );
+
+act_notchar( \"$n climbs up the ladder and disappears from site in the leaves overhead.\", ch );
+
+continue;
+
+"
+!
+3 0 16
+-1
+S
+
+#18047
+"Platform"
+"A small platform hangs out from the side of the great trunk.  There are
+
+some benches against the tree to sit and rest upon, and a couple poles
+
+that light the platform when it gets dark.  The platform extends north
+
+around the trunk a little, and a ladder hangs down into the branches
+
+below.  
+
+"
+""
+335020101 0
+2 6 0
+D0
+""
+""
+0 -1 18046 0 6
+E
+"ladder"
+"It looks like it's heading for the forest floor.  You could climb down it
+
+and see.  
+
+"
+E
+"1 up"
+"The branches are still sparce enough to make the area feel open, but it
+
+gets thicker above.  You can't see anything yet.  
+
+"
+E
+"1 down"
+"You can no longer see the forest floor.  The branches and leaves obscure
+
+the world below, from the world above.  
+
+"
+E
+"light 4 poles 4 cages 6 spheres"
+"From a couple thin poles hang cages woven on branch and root.  Held
+
+inside are crystal spheres as small as a babies head which glow in
+
+shifting green-blues.  
+
+"
+A
+"2 climb"
+"1 down ladder"
+"send_to_char( #char, ch );
+
+wait( 2 );
+
+if( char_in_room( ch, room ) ) {
+
+  send_to_char( #char2, ch );
+
+  act_notchar( #room, ch );
+
+  transfer( ch, find_room( 19050 ) );
+
+  act_notchar( #arr, ch );
+
+  }
+
+loop( followers ) {
+
+  act_notchar( #f_leave, rch );
+
+  transfer( rch, find_room( 19050 ) );
+
+  act_notchar( #f_arr, rch );
+
+  }
+
+"
+E
+"f_arr"
+"$n arrives from above.
+
+"
+E
+"f_leave"
+"$n leaves down the rope.
+
+"
+E
+"arr"
+"$n comes climbing down the ladder, jumping the last dozen feet.
+
+"
+E
+"room"
+"$n slips over the edge and disappears down the ladder.
+
+"
+E
+"char2"
+"After a long climb, you come to a small clearing on the forest floor.
+
+"
+E
+"char"
+"You slip over the edge and begin the long climb down.
+
+"
+!
+0 0 0
+-1
+S
+
+#0
+

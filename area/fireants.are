@@ -1,0 +1,2312 @@
+#AREA
+"Fire Ants"
+"Phule Tzypha"
+""
+0 0
+3
+0
+#ROOMS
+
+#43500
+"An Eerie Cave"
+"This cave echoes strangely with the crashing of ocean waves and a dull, nearly
+
+inaudible roar from the east.  Hot, steamy breaths of air flow out of the
+
+cave's mouth to the west, mixing with the cool ocean air and dry desert heat
+
+to form a most discomforting environment.  A side-passage leads off to the
+
+south.
+
+"
+"[Merior] towards the west?
+
+i think i meant that the cave's mouth is to the west
+
+[Merior] in fire ant... insectine not in my dictionary..
+
+think it's a phule word
+
+probably should be insectile
+
+"
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43501 0 6
+D2
+""
+""
+0 -1 43505 0 5
+D3
+""
+""
+0 -1 42579 0 6
+E
+"__AREA__"
+"needs to be enlarged
+
+needs queen
+
+"
+930 9 1509949540 3 0
+-1
+S
+
+#43501
+"An Eerie Cave"
+"The cave floor is smooth sandstone, but it has been scorched and blackened by
+
+an unknown source of heat.  Thousands of tiny stalactites hang from the
+
+ceiling, none of which would cause much damage if it fell.  The faint echo of
+
+crashing waves is heard from the west, the same direction a hot breathy breeze
+
+blows, heading out of the cave.  A dull roar reaches your ears from the east
+
+out of the darkness, and a faint orange-red glow can be seen.
+
+"
+""
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43502 0 6
+D3
+""
+""
+0 -1 43500 0 6
+A
+""
+""
+"send_to_room( #gout, room );
+
+"
+E
+"gout"
+"A steamy gout of air blows past you, heading out of the cave to the west.
+
+"
+!
+2 400 0
+933 9 1509949540 3 0
+-1
+S
+
+#43502
+"An Eerie Cave"
+"The cave is much narrower here, and steam seems to surround you from some
+
+unknown source.  The faintest traces of crashing waves can be heard to the
+
+west, the same direction the steam seems to be rapidly flowing as it escapes
+
+the caves like a boiling pot.  It is hot in here, the air tepid and moist, and
+
+droplets of water fall like rain from tiny stalactites on the ceiling.  A dull
+
+roar and a faint red glow come from over the side of an immense underground
+
+gorge to the east, circled by narrow ledges to the north and south.
+
+"
+"[Merior] you can hear traces?
+
+yes
+
+[Merior] i take it you cant really go south..
+
+with blink, fly i think you can
+
+[Merior] i guess i have to admit i kept looking for the queen... too many regular ants, i guess :)
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43503 0 6
+D2
+"ledge"
+""
+617 -1 43504 0 6
+D3
+""
+""
+0 -1 43501 0 6
+E
+"over ledge gorge down"
+"You look over the edge of the gorge and see a faint flicker of orange-red
+
+which quickly disappears into the grey-black darkness.
+
+"
+A
+"e ea eas east"
+""
+"act_tochar( #plummet, ch );
+
+"
+E
+"plummet"
+"You take one look over the edge of the gorge and decide that jumping into
+
+it is quite possibly not the correct course to take if you are to
+
+navigate it.
+
+"
+!
+0 0 0
+A
+""
+""
+"send_to_room( #gout, room );
+
+"
+E
+"gout"
+"A hot gout of steam burns by your cheek on its way west out of the cave.
+
+"
+!
+2 600 0
+A
+""
+""
+"if( find_stat( ch, level ) > 91 ) continue;
+
+act_tochar( #crumb, ch );
+
+close( room, south );
+
+"
+E
+"crumb"
+"The ledge starts to crumble and you turn back.
+
+"
+!
+3 0 4
+930 9 1509949540 3 0
+933 9 1509949540 3 0
+-1
+S
+
+#43503
+"A Narrow Ledge Around an Undergroud Gorge"
+"This narrow ledge ends in a shattered pile of rubble to the north and a 700
+
+foot drop into an dark, cavernous underground gorge.  To the south a massive
+
+amount of steam can be seen speeding west through the darkness, presumably
+
+towards the surface.
+
+"
+""
+301465604 0
+11 6 0
+D2
+""
+""
+0 -1 43502 0 6
+E
+"over ledge gorge down"
+"You look over the edge of the gorge and see a faint flicker of orange-red
+
+which quickly disappears into the grey-black darkness.
+
+"
+930 9 1509949540 3 0
+-1
+S
+
+#43504
+"A Narrow Ledge Around an Undergroud Gorge"
+"Under Construction.
+
+"
+"will add later
+
+possible areas:
+
+salamander men down by lava
+
+lava lions
+
+skeletal wooly mammoth
+
+duergar area
+
+drow area
+
+"
+301465604 0
+11 6 0
+D0
+"ledge"
+""
+617 -1 43502 0 6
+E
+"over ledge gorge down"
+"You look over the edge of the gorge and see a faint flicker of orange-red
+
+which quickly disappears into the grey-black darkness.
+
+"
+-1
+S
+
+#43505
+"A Side Passage in an Eerie Cave"
+"This small side passage branches off from the main tunnel to the north and
+
+tunnels deeper into the sandstone rock to the south.  The faint echo of
+
+crashing water can be heard echoing from the main tunnel.  The air here is
+
+much dryer than the steam-filled passage to the north.  The air is just as
+
+blisteringly hot, though.
+
+"
+"[Merior] worker too..  insectine?  [Merior] use of tunnels in 2 ways in
+
+first sentence makes the reader do an awful lot of work 
+
+"
+301465604 0
+11 5 0
+D0
+""
+""
+0 -1 43500 0 5
+D2
+""
+""
+0 -1 43506 0 5
+930 9 1509949540 3 0
+933 9 1509949540 3 0
+-1
+S
+
+#43506
+"A Side Passage in an Eerie Cave"
+"This small side passage burrows through the sandstone to the north where the
+
+air seems to be heavy and moving.  The tunnel curves downward into the rock
+
+here at an odd angle, not quite vertical but far from horizontal.  Hot air
+
+blows up from the shaft.
+
+"
+""
+301465604 0
+11 5 0
+D0
+""
+""
+0 -1 43505 0 5
+D5
+""
+""
+0 -1 43507 0 5
+933 9 1509949540 3 0
+930 9 1509949540 3 0
+-1
+S
+
+#43507
+"An Odd Passage in an Eerie Cave"
+"This tunnel lies at an odd angle, about 70 degrees, so you have to balance
+
+your feet correctly on the slick sandstone beneath you or you will surely
+
+plunge down the small shaft.  The stone here seems much cooler to the touch
+
+than the boiling heat above.
+
+"
+"no_mob
+
+"
+301465612 0
+11 5 0
+D4
+""
+""
+0 -1 43506 0 5
+D5
+""
+""
+0 -1 43508 0 5
+-1
+S
+
+#43508
+"A Side Passage in an Eerie Cave"
+"This small passage lies below an oddly-angled tunnel leading up at about a 70-
+
+degree angle into the sandstone above.  The rock at your feet is ancient, hard
+
+black granite, unforgivingly rigid and sprayed with pieces of crumbling
+
+sandstone and is strangely warm to the touch.  The passage leads off to the
+
+south toward a small cavern.
+
+"
+""
+301465604 0
+11 6 0
+D2
+""
+""
+0 -1 43509 0 6
+D4
+""
+""
+0 -1 43507 0 5
+1225 17 1509949485 -2 0
+-1
+S
+
+#43509
+"A Small Cavern in an Eerie Cave"
+"This small cavern seems to be a central connection between two tunnels, one
+
+going north-south and the other going east-west.  The black granite rock at
+
+your feet is warm to the touch, and the air is decidedly much warmer.  A faint
+
+rumbling can be detected, but from which direction you cannot tell as the
+
+source is lost in the echoes of this chamber.
+
+"
+"[Merior] air is warmer than what? has been warm lots of places around here
+
+"
+301465604 0
+11 7 0
+D0
+""
+""
+0 -1 43508 0 6
+D1
+""
+""
+0 -1 43512 0 6
+D2
+""
+""
+0 -1 43510 0 6
+933 9 1509949540 3 0
+-1
+S
+
+#43510
+"A Side Passage in an Eerie Cave"
+"The air here is hot, and steam reaches your face from some unseen source.  The
+
+black granite beneath your feet seems as if it wants to boil as it cracks and
+
+sizzles from intense heat and pressure.  A small cavern opens up as this
+
+tunnel intersects with another to the north, and to the south a loud hissing
+
+sound can be heard.
+
+"
+"[Merior] does this mean it is larger to the north?
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43509 0 6
+D2
+""
+""
+0 -1 43511 0 6
+933 9 1509949540 3 0
+-1
+S
+
+#43511
+"A Side Passage in an Eerie Cave"
+"In the center of this room a small fissure sends a spray of red-glowing steam
+
+into the air, sending a loud hissing noise throughout the area.  To the north
+
+the passage continues away from the fissure, disappearing into the darkness of
+
+the caverns beyond.  Looking about at the solid walls around you you realize
+
+this is a dead end.  The crackling hot black granite at your feet seems ready
+
+to burst from the heat and pressure of the fissure.
+
+"
+"[Nereus] Enter fissure acode that burns you?
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43510 0 6
+D5
+""
+""
+163 -1 43515 0 6
+E
+"fissure steam"
+"Steam sprays out of this fissure which has broken through the heated
+
+black granite, and it glows red-orange from an unseen light source below. 
+
+The sound is almost deafening.
+
+"
+A
+"climb"
+"1 down fissure"
+"i = 5d10+20;
+
+if( is_fighting( ch ) ) {
+
+  act_tochar( #flee, ch );
+
+  end;
+
+  }
+
+if( can_fly( ch ) ) {
+
+act_tochar( #fly_char, ch );
+
+act_notchar( #fly_room, ch );
+
+fire_message( ch, i, \"a blast of scolding steam\" );
+
+inflict_fire( ch, mob, i, \"a blast of scolding steam\" );
+
+transfer( ch, find_room( 43515 ) );
+
+act_notchar( #fly_arr, ch );
+
+end;
+
+}
+
+if( is_mounted( ch ) ) {
+
+  act_tochar( #nomount, ch );
+
+  end;
+
+  }
+
+if( find_skill( ch, climb ) > random( 0, 7 ) ) {
+
+  use_skill( ch, climb );
+
+  act_tochar( #climb_char, ch );
+
+  act_notchar( #climb_room, ch );
+
+  fire_message( ch, i, \"a blast of scolding steam\" );
+
+  inflict_fire( ch, mob, i, \"a blast of scolding steam\" );
+
+  transfer( ch, find_room( 43515 ) );
+
+  act_notchar( #climb_arr, ch );
+
+  }
+
+else{
+
+  act_tochar( #fail, ch );
+
+  act_notchar( #failroom, ch );
+
+  }
+
+loop( followers ) {
+
+  if( is_player( rch ) ) {
+
+    ch = rch;
+
+    acode( room, 1 );
+
+  }
+
+}
+
+"
+E
+"nomount"
+"You can't do that while mounted.
+
+"
+E
+"climb_char"
+"As you climb down the fissure a @b@R*BLAST*@n of scolding steam hits you from below!
+
+"
+E
+"climb_room"
+"As $n climbs down the fissure, a @b@R*BLASTS*@n of scolding steam hits $m from below.
+
+"
+E
+"climb_arr"
+"$n carefully climbs down from the opening of the fissure.
+
+"
+E
+"fly_char"
+"As you fly down into the fissure a @b@R*BLAST*@n of scolding steam hits you from below!
+
+"
+E
+"fly_room"
+"As $n flies down into the fissure, a @b@R*BLASTS*@n of scolding steam hits $m from below.
+
+"
+E
+"fly_arr"
+"$n carefully flies down from the opening of the fissure.
+
+"
+E
+"fail"
+"You unsuccessfully try and climb down the fissure.
+
+"
+E
+"failroom"
+"$n tries unsuccessfully to climb down the fissure.
+
+"
+E
+"flee"
+"You can not do that while fighting.  Perhaps you should flee?
+
+"
+!
+0 0 1
+940 9 1509949540 3 0
+-1
+S
+
+#43512
+"A Side Passage in an Eerie Cave"
+"This passage connects to a larger cavern to the west, and continues along a
+
+path of scalding hot black grate to the east.  The walls seem to vibrate with
+
+heat, even more so to the east.  Bits of sand fall from the sandstone walls
+
+and ceiling.
+
+"
+"[Merior] grate?
+
+"
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43513 0 6
+D3
+""
+""
+0 -1 43509 0 6
+A
+""
+""
+"send_to_room( #sand, room );
+
+"
+E
+"sand"
+"A wave of heat washes across the passage sending bits of sand raining
+
+down through the boggy air.
+
+"
+!
+2 200 0
+-1
+S
+
+#43513
+"A Side Passage in an Eerie Cave"
+"The heat here is almost unbearable.  The black granite smokes at your feet,
+
+heaving in waves of intense pressure.  This side passage appears more stable
+
+to the west, and continues into the presumed heart of the heat to the south.
+
+"
+"[Merior] granite...
+
+[Merior] why is it presumed heart?
+
+"
+301465604 0
+11 9 0
+D2
+""
+""
+0 -1 43514 0 9
+D3
+""
+""
+0 -1 43512 0 6
+940 9 1509949540 3 0
+-1
+S
+
+#43514
+"A Side Passage in an Eerie Cave"
+"The black granite rock at your feet has finally given way to intense heat and
+
+pressure, and has been cracked open to reveal a river of molten lava flowing
+
+beneath the remaining stone.  Hisses of steam and heat rise into the air and
+
+spread throughout the tunnel to the north.
+
+"
+"[Merior] hisses spread?
+
+[Merior] extras here?
+
+"
+301465604 0
+11 9 0
+D0
+""
+""
+0 -1 43513 0 9
+933 9 1509949540 3 0
+-1
+S
+
+#43515
+"Misty Tunnel Through the Rough Granite"
+"All around you, the air is filled with a misty steam.  The ceiling is very
+
+low, a measly 6 feet from the ground.  Rough and craggily, the abnormally
+
+formed walls seem to flow into the ceiling without a definate corner.  On the
+
+northern wall a fissure rests in the granite, sucking the steam out of the
+
+room.  Through the steam to the west it seems the cave might be a bit more
+
+spacious in that direction.
+
+"
+"to be consistent with what was above, this should be granite
+
+-I was thinking maybe in unstable parts of the tunnels havin pieces of granite, look into that at a latter date
+
+-make acode for taller racers to stretch out when they leave the room to the west?
+
+-acode for steam rolling in from the west
+
+-need to play with the lighting here, you're not by the lava here, there wouldnt be lighting
+
+-not sure if the second acode is right.
+
+why couldnt phule of been an rbug whore so I could know what he was thinking?
+
+right now ants aren't flagged to assist eachother or as agressive.
+
+- need to adjust weather at some time I think
+
+"
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43517 0 6
+D3
+""
+""
+0 -1 43524 0 6
+D4
+""
+""
+163 -1 43511 0 6
+A
+"climb"
+"1 up"
+"if( is_fighting( ch ) ) {
+
+  act_tochar( #yourfighting, ch );
+
+  end;
+
+}
+
+if( is_mounted( ch ) ) {
+
+  act_tochar( #nomount, ch );
+
+  end;
+
+}
+
+if( can_fly( ch ) ) {
+
+  act_tochar( #fly_up, ch );
+
+  act_notchar( #rfly_up, ch );
+
+  transfer( ch, find_room( 43511 ) );
+
+  act_notchar( #rfly_arr, ch );
+
+}
+
+else {
+
+  if( find_skill( ch, climb ) > random( 0, 7 ) ) {
+
+    use_skill( ch, climb );
+
+    act_tochar( #climb_up, ch );
+
+    act_notchar( #rclimb_up, ch );
+
+    transfer( ch, find_room( 43511 ) );
+
+    act_notchar( #rclimb_arr, ch );
+
+  }
+
+  else {
+
+    act_tochar( #fail, ch );
+
+  }
+
+}
+
+loop( followers ) {
+
+  if( is_player( rch ) ) {
+
+    ch = rch;
+
+    acode( room, 1 );
+
+  }
+
+}
+
+"
+E
+"yourfighting"
+"You're too busy fighting to even consider scaling cave walls right now!
+
+"
+E
+"nomount"
+"You can't scale a wall while mounted.
+
+"
+E
+"fly_up"
+"You fly up through the fissure into a cave above.
+
+"
+E
+"rfly_up"
+"$n flies up through the fissure and disappears.
+
+"
+E
+"rfly_arr"
+"$n flies up out of the fissure and lands on the ground.
+
+"
+E
+"climb_up"
+"With some effort you manage to scale the cave wall.
+
+"
+E
+"rclimb_up"
+"$n scales the cave wall and disappears up through the fissure.
+
+"
+E
+"rclimb_arr"
+"$n clims up out of the fissure.
+
+"
+E
+"fail"
+"As you try to scale the cave wall you slip and fall to the ground narrowly
+
+avoiding injury!
+
+"
+!
+0 0 0
+A
+""
+""
+"send_to_room (#mist,room);
+
+"
+E
+"mist"
+"Whisps of @Bmist@n roll in from the west.
+
+"
+!
+2 0 0
+-1
+S
+
+#43516
+"A Large Cavern Below a Chasm"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43547 0 6
+D1
+""
+""
+0 -1 43573 0 6
+D2
+""
+""
+0 -1 43538 0 6
+-1
+S
+
+#43517
+"A Bend in a Rough Granite Tunnel"
+""
+"-low ceiling, not higher in the south
+
+waves of heat from the south?
+
+"
+301465604 0
+11 6 0
+D2
+""
+""
+0 -1 43544 0 6
+D3
+""
+""
+0 -1 43515 0 6
+-1
+S
+
+#43518
+"A Short, Steamy Side Passage"
+"Under Construction.
+
+"
+"steam vent here
+
+spewing steam from crack in northern wall
+
+dead end
+
+-moss on the stone
+
+have it so when you search crack in wall something attacks you?
+
+"
+301465604 0
+11 6 0
+D2
+""
+""
+0 -1 43526 0 6
+-1
+S
+
+#43519
+"Wide Tunnel Through the Granite"
+"Under Construction.
+
+"
+"-little moss
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43546 0 6
+D3
+""
+""
+0 -1 43520 0 6
+-1
+S
+
+#43520
+"Tunnel Through the Rock"
+"Under Construction.
+
+"
+"-no moss
+
+shorter tunnel
+
+this section will have darker rock
+
+"
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43519 0 6
+D2
+""
+""
+0 -1 43521 0 6
+-1
+S
+
+#43521
+"Bend in a Small Tunnel"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43520 0 6
+D3
+""
+""
+0 -1 43528 0 6
+-1
+S
+
+#43522
+"A Cavernous Fire Ant Nursery"
+"The air here is rather steamy and filled with moisture.  All around you the
+
+walls, floor, and cealing are covered in a thick layer of spoungy moss, which
+
+cushions your every step.  To the east and south the cavern opens up into a
+
+spacious fire ant nursery.
+
+"
+"you wouldnt see the granite under the moss, right?
+
+"
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43523 0 6
+D2
+""
+""
+0 -1 43525 0 6
+-1
+S
+
+#43523
+"A Cavernous Fire Ant Nursery"
+"On the walls there is a layer of patchy moss, revealing the slate-grey granite
+
+beneath in various places.  All around you a veil of misty steam hangs, forming
+
+droplets of water on the cealing, which drip downward into a small puddle next
+
+to the northern wall.    The smooth cavern floor is blanketed by a thin layer
+
+of moss.  The cavern continues to the west and south.
+
+"
+""
+301465604 0
+11 6 0
+D2
+""
+""
+0 -1 43524 0 6
+D3
+""
+""
+0 -1 43522 0 6
+-1
+S
+
+#43524
+"A Cavernous Fire Ant Nursery"
+"The cealing here is covered in water droplets and small stalactites are
+
+beginning to form from the cealing from the condenstation.
+
+"
+"thinning moss
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43523 0 6
+D1
+""
+""
+0 -1 43515 0 6
+D2
+""
+""
+0 -1 43546 0 6
+D3
+""
+""
+0 -1 43525 0 6
+-1
+S
+
+#43525
+"A Cavernous Fire Ant Nursery"
+"Under Construction.
+
+"
+"steam arriving to fill nursery from the west
+
+-moss on the ground
+
+-area opens up to spacious cavern
+
+-larvae here
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43522 0 6
+D1
+""
+""
+0 -1 43524 0 6
+D2
+""
+""
+0 -1 43527 0 6
+D3
+""
+""
+0 -1 43526 0 6
+-1
+S
+
+#43526
+"Turn in a Misty Path"
+"Under Construction.
+
+"
+"small tunnel
+
+- steam filling the room from the north
+
+- some condenstation on the walls and cealing
+
+- moss coating on the ground and walls
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43518 0 6
+D1
+""
+""
+0 -1 43525 0 6
+-1
+S
+
+#43527
+"A Cavernous Fire Ant Nursery"
+"Under Construction.
+
+"
+"-moss covered
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43525 0 6
+D1
+""
+""
+0 -1 43546 0 6
+-1
+S
+
+#43528
+"Bend in a Small Tunnel"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43521 0 6
+D2
+""
+""
+0 -1 43529 0 6
+-1
+S
+
+#43529
+"Bend in a Small Tunnel"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43528 0 6
+D1
+""
+""
+0 -1 43530 0 6
+-1
+S
+
+#43530
+"A Small Tunnel Through the Rock"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43531 0 6
+D3
+""
+""
+0 -1 43529 0 6
+-1
+S
+
+#43531
+"A Small Tunnel Through the Rock"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43532 0 6
+D3
+""
+""
+0 -1 43530 0 6
+-1
+S
+
+#43532
+"A Small Tunnel Through the Rock"
+"Under Construction.
+
+"
+"tunnel widens and gets more 'spacious' to the north
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43533 0 6
+D3
+""
+""
+0 -1 43531 0 6
+-1
+S
+
+#43533
+"A Rough Tunnel Through the Rock"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43534 0 6
+D2
+""
+""
+0 -1 43532 0 6
+-1
+S
+
+#43534
+"T-Intersection in an Rough Granite Tunnel"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43535 0 6
+D2
+""
+""
+0 -1 43536 0 6
+D3
+""
+""
+0 -1 43533 0 6
+-1
+S
+
+#43535
+"Bend in a Rough Granite Tunnel"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43572 0 6
+D3
+""
+""
+0 -1 43534 0 6
+-1
+S
+
+#43536
+"An Unstable Side Passage"
+"Under Construction.
+
+"
+"small dark passage
+
+-stale air
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43534 0 6
+D2
+""
+""
+0 -1 43537 0 6
+-1
+S
+
+#43537
+"Bend in an Unstable Side Passage"
+"Under Construction.
+
+"
+"stale air
+
+-warmer here then room before
+
+(if you're coming from the north)
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43536 0 6
+D1
+""
+""
+0 -1 43545 0 6
+-1
+S
+
+#43538
+"A Large Granite Cavern"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43516 0 6
+D1
+""
+""
+0 -1 43539 0 6
+-1
+S
+
+#43539
+"Entrance to a Large Granite Cavern"
+"Under Construction.
+
+"
+"-slightly higher cealing
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43573 0 6
+D1
+""
+""
+0 -1 43540 0 6
+D2
+""
+""
+0 -1 43548 0 6
+D3
+""
+""
+0 -1 43538 0 6
+-1
+S
+
+#43540
+"A Large Granite Cavern"
+"Under Construction.
+
+"
+"-lowered cealing
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43541 0 6
+D3
+""
+""
+0 -1 43539 0 6
+-1
+S
+
+#43541
+"A Large Granite Cavern"
+"Under Construction.
+
+"
+"-lowered cealing
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43542 0 6
+D2
+""
+""
+0 -1 43540 0 6
+D3
+""
+""
+0 -1 43573 0 6
+-1
+S
+
+#43542
+"A Large Granite Cavern"
+"Under Construction.
+
+"
+"-open/bellow the fissure
+
+"
+301465604 0
+11 6 0
+D2
+""
+""
+0 -1 43541 0 6
+D3
+""
+""
+0 -1 43543 0 6
+-1
+S
+
+#43543
+"A Large Cavern Below a Chasm"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43542 0 6
+D2
+""
+""
+0 -1 43573 0 6
+D3
+""
+""
+0 -1 43547 0 6
+-1
+S
+
+#43544
+"Above a Deep Chasm"
+"You appear to be atop a rather large chasm which spreads far to the east and
+
+south.  To the east, a rough granite wall is barely visable at this distance
+
+and faint lighting and to the south you think you can make out the other side
+
+of the chasm.  From this angle, it does not seem like there are handholds to
+
+scale down the chasm walls.  The wall to the west is rather rough and warm to
+
+the touch.  The only safe exit appears to be to the north through the granite
+
+tunnel.
+
+"
+"will be entrance only from below
+
+need to fix run-on in second sentance
+
+need to note low cealing
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43517 0 6
+D5
+""
+""
+227 -1 43547 0 6
+A
+"climb"
+"down chasm"
+"if (is_fighting (ch)) {
+
+  act_tochar (#youre_fighting, ch);
+
+}
+
+else {
+
+  if (is_standing (ch)) {
+
+    act_tochar (#dont_go,ch);
+
+  }
+
+}
+
+"
+E
+"dont_go"
+"@RLooking down into the chasm you realize climbing down here might not be such a good idea.@n
+
+"
+E
+"youre_fighting"
+"You're too busy fighting to even consider that right now.
+
+"
+!
+0 0 0
+-1
+S
+
+#43545
+"Collapse in an Unstable Side Passage"
+"Under Construction.
+
+"
+"collapsed tunnel, you'll be able to search the rubble
+
+wave of heat from rocks when you touch them?
+
+"
+301465604 0
+11 6 0
+D3
+""
+""
+0 -1 43537 0 6
+-1
+S
+
+#43546
+"A Cavernous Fire Ant Nursery"
+"Under Construction.
+
+"
+"-thinning moss
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43524 0 6
+D2
+""
+""
+0 -1 43519 0 6
+D3
+""
+""
+0 -1 43527 0 6
+-1
+S
+
+#43547
+"A Large Cavern Below a Chasm"
+"You are in the corner of a large chamber under a chasm, with rough granite
+
+walls west and north of you.  To the south and west is an open space that
+
+seems to go on for a good bit.  So far infact, that it is impossible to see
+
+the wall to the west.  The ground here is bumpy, making it a bit difficult to
+
+traverse the area.  The air in this room is rather warm, but not unbarable.
+
+"
+"one way up
+
+need to add an extra too look at the wall, so you can see that there are some sort of handholds that make it possible to climb up
+
+some of these sentances are ood sounding
+
+-put a wait in with the climb with a second message, it would take more time then that to climb out of here
+
+"
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43543 0 6
+D2
+""
+""
+0 -1 43516 0 6
+D4
+""
+""
+227 -1 43544 0 6
+A
+"climb"
+"up chasm"
+"if (is_fighting (ch)) {
+
+  act_tochar(#youre_fighting, ch);
+
+  end;
+
+}
+
+if (is_mounted (ch)) {
+
+  act_tochar(#nomount, ch);
+
+  end;
+
+}
+
+if (is_standing (ch)) {
+
+  if (can_fly (ch)) {
+
+    act_tochar(#fly_up, ch);
+
+    act_notchar(#ofly_up, ch);
+
+    transfer (ch, find_room (43544));
+
+    act_notchar(#ofly_arr, ch);
+
+  }
+
+  else {
+
+    if (find_skill (ch, climb) > random (0,7)) {
+
+      use_skill (ch, climb);
+
+      act_tochar (#climb_up, ch);
+
+      act_notchar (#oclimb_up, ch);
+
+      transfer (ch, find_room (43544));
+
+      act_notchar (#oclimb_arr, ch);
+
+    }
+
+    else {
+
+      act_tochar(#fail, ch);
+
+    }
+
+  }
+
+  loop (followers) {
+
+    if (is_player (rch)) {
+
+      ch = rch;
+
+      acode (room, 1);
+
+    }
+
+  }
+
+}
+
+"
+E
+"youre_fighting"
+"The current battle has you occupied.
+
+"
+E
+"nomount"
+"Perhaps you should dismount first.
+
+"
+E
+"fly_up"
+"You fly up the chasm.
+
+"
+E
+"ofly_up"
+"$n flies up the chasm above you.
+
+"
+E
+"ofly_arr"
+"$n flies in from below.
+
+"
+E
+"climb_up"
+"Gripping the walls of the chasm, you pick your way out of the deep chasm.
+
+"
+E
+"oclimb_up"
+"$n picks their way upward along the chasm wall.
+
+"
+E
+"oclimb_arr"
+"$n climbs up from the chasm below you.
+
+"
+E
+"fail"
+"You are unable to find a hand hold in the chasm wall.
+
+"
+!
+0 0 0
+-1
+S
+
+#43548
+"An Eerie Tunnel"
+"Under Construction.
+
+"
+"-steam comin in from the south
+
+-odd coloration to the rocks
+
+-lowered cealing
+
+-have to duck in this room?
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43539 0 6
+D2
+""
+""
+0 -1 43549 0 6
+-1
+S
+
+#43549
+"T-Intersection Along the Shores of a Steamy Lake"
+"Under Construction.
+
+"
+"tunnel will fall in either way you go
+
+steamy underground lake to the east
+
+-starting here make the guardians be 'tagged' by other ants
+
+-open cealing
+
+-grab someone to show you how to make mobs tag eachother
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43548 0 6
+D2
+""
+""
+0 -1 43550 0 6
+D3
+""
+""
+0 -1 43559 0 6
+-1
+S
+
+#43550
+"Along the Shores of a Steamy Lake"
+"Under Construction.
+
+"
+"-open cealing
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43549 0 6
+D2
+""
+""
+0 -1 43551 0 6
+-1
+S
+
+#43551
+"T-Intersection Along the Shores of an Odd Lake"
+"Under Construction.
+
+"
+"-open cealing
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43550 0 6
+D1
+""
+""
+0 -1 43552 0 6
+D3
+""
+""
+0 -1 43555 0 6
+-1
+S
+
+#43552
+"Along the Shores of a Steamy Lake"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43553 0 6
+D3
+""
+""
+0 -1 43551 0 6
+-1
+S
+
+#43553
+"Bend Along the Shores of a Steamy Lake"
+"Under Construction.
+
+"
+"incline going north to queen
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43554 0 6
+D3
+""
+""
+0 -1 43552 0 6
+-1
+S
+
+#43554
+"Cliff Above a Steamy Lake"
+"Under Construction.
+
+"
+"queen here
+
+"
+301465604 0
+11 6 0
+D2
+""
+""
+0 -1 43553 0 6
+-1
+S
+
+#43555
+"An Eerie Side Path"
+"Under Construction.
+
+"
+"-odd rock, switches back to granite from sandstone
+
+-can see the seperation and veins in the rock wall
+
+"
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43551 0 6
+D3
+""
+""
+0 -1 43556 0 6
+-1
+S
+
+#43556
+"An Eerie Side Path Through Sandstone"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43557 0 6
+D1
+""
+""
+0 -1 43555 0 6
+-1
+S
+
+#43557
+"An Eerie Side Path Through Sandstone"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43558 0 6
+D2
+""
+""
+0 -1 43556 0 6
+-1
+S
+
+#43558
+"An Eerie Side Path Through Sandstone"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43559 0 6
+D3
+""
+""
+0 -1 43557 0 6
+-1
+S
+
+#43559
+"An Eerie Side Path"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+D1
+""
+""
+0 -1 43549 0 6
+D2
+""
+""
+0 -1 43558 0 6
+-1
+S
+
+#43572
+"Above a Deep Chasm"
+"Under Construction.
+
+"
+"will be a climb down
+
+(one way, wont be able to come up this way)
+
+need to finish this next time you log, ask a few questions
+
+-this extra isnt right, go over it later
+
+## Beetle ## || Is_Player: NULL character.
+
+ -- Char = Tzypha,  Mob = NULL,  Victim = NULL
+
+ -- Exit = NULL, Thing = NULL
+
+ -- i = 0,  j = 0,  k = 0
+
+ -- l = 0,  m = 0,  n = 0
+
+-that came up when you climbed down
+
+"
+301465604 0
+11 6 0
+D2
+""
+""
+0 -1 43535 0 6
+D5
+""
+""
+227 -1 43573 0 6
+A
+"climb"
+"chasm down"
+"if (is_standing(ch)) {
+
+  if (is_fighting(ch)) {
+
+    act_tochar(#yourfighting,ch);
+
+    end;
+
+  }
+
+  if (is_mounted(ch)) {
+
+    act_tochar(#mounted, ch);
+
+    end;
+
+  }
+
+  if (can_fly(ch)) {
+
+    act_tochar(#fly_down, ch);
+
+    act_notchar(#ofly_down, ch);
+
+    transfer (ch, find_room( 43573 ));
+
+    act_notchar(#ofly_arr, ch);
+
+  }
+
+  else
+
+    {
+
+    if (find_skill(ch, climb) > random (0,7)) {
+
+      use_skill (ch, climb);
+
+      act_tochar(#climb_down, ch);
+
+      act_notchar(#oclimb_down, ch);
+
+      transfer (ch, find_room( 43573 ));
+
+      act_notchar (#oclimb_arr, ch);
+
+    }
+
+    else
+
+      {
+
+      act_tochar(#fail, ch);
+
+      act_notchar(#ofail, ch);
+
+    }
+
+    loop (is_player (rch)) {
+
+      if (is_player (rch)) {
+
+        ch = rch;
+
+        acode (room, 1);
+
+      }
+
+    }
+
+  }
+
+}
+
+"
+E
+"yourfighting"
+"You are too busy fighting to even consider scaling down giant chasms.
+
+"
+E
+"mounted"
+"Dismounting might make the climb a bit easier.
+
+"
+E
+"fly_down"
+"You fly down into the depths of a large chasm.
+
+"
+E
+"ofly_down"
+"$n flies down a large chasm.
+
+"
+E
+"ofly_arr"
+"$n flies in from above.
+
+"
+E
+"climb_down"
+"Holding your breath, you slowly pick your way down the edge of a large chasm.
+
+"
+E
+"oclimb_down"
+"$n slowly begins the long climb down the wall of the chasm.
+
+"
+E
+"oclimb_arr"
+"Slowly scaling the chasm wall, $n lets go of the wall almost getting injured in the process!
+
+"
+E
+"fail"
+"As you approach the chasm you look down, realizing this might not be the best of ideas.
+
+"
+E
+"ofail"
+"Upon seeing how long the climb down is, $n scuttles away from the chasm.
+
+"
+!
+0 0 0
+-1
+S
+
+#43573
+"A Large Cavern Below a Chasm"
+""
+"because its just a big open space, make a check for flying
+
+Redo the messages for acode 1 after you do rdesc, they dont make sense right now
+
+"
+301465604 0
+11 6 0
+D0
+""
+""
+0 -1 43543 0 6
+D1
+""
+""
+0 -1 43541 0 6
+D2
+""
+""
+0 -1 43539 0 6
+D3
+""
+""
+0 -1 43516 0 6
+D4
+""
+""
+227 -1 43572 0 6
+A
+"climb"
+"up chasm"
+"if (is_standing(ch)) {
+
+  act_tochar (#no_climb, ch);
+
+  act_notchar(#ono_climb, ch);
+
+}
+
+"
+E
+"no_climb"
+"@gTry as you might, you can't seem to jump high enough to reach the edge of the chasm.@n
+
+"
+E
+"ono_climb"
+"@g$n jumps up, attempting to reach the edge of the chasm in vain.@n
+
+"
+!
+0 0 0
+-1
+S
+
+#43579
+"A Side Passage in an Eerie Cave"
+"Under Construction.
+
+"
+""
+301465604 0
+11 6 0
+-1
+S
+
+#0
+

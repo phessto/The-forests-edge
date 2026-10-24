@@ -1,0 +1,6584 @@
+#AREA
+"Dragonspire Plateau"
+"Nereus"
+"Dragonspire Plateau"
+55 0
+0
+6
+#ROOMS
+
+#29000
+"South of a Great Winter Plain"
+"At the top of this rise, you finally have a view of what lies far to the
+
+north: the great frozen wall of legend.  Even with the towering mountains
+
+visible in all directions, and the yawning spaces of the chasms on the edges
+
+of the ridge to the east and west, the frozen wall dominates the landscape at
+
+the northern end of this flat plateau stretching before you.  Snow swirls as
+
+it is blown from the plateau edges down into a torrential blizzard far south
+
+of here.  The ridge continues down a slope to the south, where some recent
+
+battle appears to have stirred the snow about.
+
+"
+"[Nereus] Room Finished.
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29001 0 9
+D2
+""
+""
+0 -1 82040 0 9
+E
+"frozen wall legend"
+"Legends of the Dragonspires tell of a marvelous frozen wall, miles tall and
+
+long.  Now it is evident that the legends were at least partially true.  The
+
+plateau stretches north for miles, flat and blindingly white; at the end the
+
+wall waits, beckoning you to get a closer view.
+
+"
+-1
+S
+
+#29001
+"Southern Edge of a Great Winter Plain"
+"Apparently the prime hunting ground for an enormous predator, the snow of this
+
+area is covered in large bear tracks, mostly leading south and east from
+
+here.  The snow has been dug away in places, leaving holes deep enough for a
+
+man to stand in.  A single patch of bright, red blood dots the snow, packed
+
+under an undisturbed footprint.  Off to the west, a misstep will carry the
+
+unmindful traveller to their death at the bottom of a drop into white
+
+nothingness.  A narrowing ridge leads southward, sloping down and off the
+
+plateau to the unknown below.
+
+"
+"[Nereus] beary good hunting ground
+
+[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29006 0 9
+D1
+""
+""
+0 -1 29002 0 9
+D2
+""
+""
+0 -1 29000 0 9
+E
+"holes"
+"Something with four very large claws has dug several holes in the snow,
+
+roughly twelve feet long and six feet deep.  At the bottom of the holes, claw
+
+marks are still evident, and massive footprints, probably those of a very
+
+large bear.
+
+"
+E
+"1 west drop chasm"
+"A chasm snakes its way north, turning east-west a bit further north of here. 
+
+The bottom is lost in the swirling snow far, far below.
+
+"
+E
+"narrowing ridge 1 south"
+"A narrowing ridge winds its way south, where the snow is even more disturbed. 
+
+Further down the ridge, a blizzard rages, tumultuous winds from the plateau
+
+swirling the snow about madly and obscuring the view of the ridge further
+
+south.
+
+"
+E
+"patch bright red blood"
+"Contrasting the pure whiteness of the snow, a single patch of blood about four
+
+feet across covers the ground, having been tracked under an enormous,
+
+well-preserved footprint.  It is unclear what the prey that this blood came
+
+from, as there is no corpse in evidence.
+
+"
+E
+"tracks"
+"Bear tracks are in abundance here, all around the holes dug into the snow, as
+
+well as leading east and south down the ridge from here.
+
+"
+2356 137 1509949540 3 0
+-1
+S
+
+#29002
+"Dragonspire Plateau - Southern Edge"
+"Swirling, hypnotic snow swirls downward, swallowed by the yawning chasm just
+
+south of the edge of this inhospitable plateau.  Tracks are common here; bear,
+
+wolf, fox, rabbit, and possibly others that have since dusted over.  The snow
+
+is covered in a thin layer of ice and is untouched along the lip of the chasm;
+
+the animals seem to know to avoid the danger of the edge.  The panorama of the
+
+Dragonspires stretches from east to west south of the plateau, snow-capped
+
+peaks visible for as far as the eye can see.  Far to the southwest, along the
+
+mountain ridge leading to the plateau, a blizzard rages, possibly caused by
+
+the wind swirling down from the plateau itself.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29003 0 9
+D3
+""
+""
+0 -1 29001 0 9
+E
+"tracks"
+"Many tracks, both old and new, have been packed into the waist-deep snow.
+
+"
+E
+"Dragonspires panorama"
+"The mountains stretch south for what seems like eternity, muted greys and
+
+whites for as far as the eye can see.
+
+"
+E
+"blizzard"
+"A constant blizzard rages along the ridge leading up to the plateau, possibly
+
+caused by the winds dropping off of the plateau and carrying snow along with
+
+it.
+
+"
+-1
+S
+
+#29003
+"South End of a Great Wintry Plain"
+"Snow deep enough to cover a man completely blankets this desolate area.  Deep
+
+trails dug by the movement of some great beast lead through the snow to the
+
+north, west, and south; the remainder of the snow is fairly easy to travel on
+
+because of a thick crust of ice which has formed atop it.  Tracks of wolves
+
+are also in evidence in the dug tracks, but it is impossible to make out more
+
+tracks on the frozen crust of the rest of the snow.  The plateau continues in
+
+all directions from here, though to the south and east looms the edge of this
+
+wintry plain.
+
+"
+"[Nereus] entering code here to activate the fox
+
+[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29016 0 9
+D1
+""
+""
+0 -1 29004 0 9
+D2
+""
+""
+0 -1 29002 0 9
+D3
+""
+""
+0 -1 29006 0 9
+E
+"trails deep"
+"The trails are roughly six feet in width, and were created by something
+
+four-legged that was extremely heavy and forcing its way through the deep
+
+snow.  Since they were made, it appears they were used by large wolves as well
+
+as bears, whose tracks are evident in the powdery snow left behind.
+
+"
+A
+""
+""
+"if( is_follower( ch ) )
+
+  continue;
+
+if( is_player( ch ) || is_pet( ch ) ) {
+
+  mob = mob_in_room( 2422, find_room( 29004 ) );
+
+  if( mob ) {
+
+    interpret( mob, \"kill white.rabbit\" );
+
+    acode( find_room( 29004 ), 1 );
+
+    }
+
+  else {
+
+    mob = mob_in_room( 2422, find_room( 29005 ) );
+
+    if( mob )
+
+      interpret( mob, \"wake\" );
+
+    }
+
+  continue;
+
+  }
+
+else
+
+  continue;
+
+"
+!
+1 0 63
+2356 9 1509949540 3 0
+-1
+S
+
+#29004
+"Snowy Hill - Edge of the Plateau"
+"From the southeastern edge of this plateau, you can see for miles off to the
+
+south and east as, below you, a cliff edge drops down into white nothingness
+
+and the splendor of the Dragonspires stretches southward forever.  The snow
+
+here, while deep, is frozen over with a thick crust of ice, making movement
+
+fairly easy.  Tracks of a rabbit, a fox, and another much larger predator are
+
+evident throughout this plateau edge, evidence of wildlife.  A steep hillside
+
+rises to the north, a small hole visible at its base, while the plateau
+
+continues to stretch off to the west.
+
+"
+"[Nereus] Action here for fox to pick up the corpse and go north into its den
+
+[Nereus] Room Finished.
+
+"
+301465600 0
+17 7 0
+D0
+""
+""
+0 -1 29005 0 2
+D3
+""
+""
+0 -1 29003 0 9
+E
+"hillside"
+"A steep, snowy hillside rises to the north, blocking any travel in that
+
+direction.  At its base, a small, dog-sized hole leads into darkness.  If you
+
+had any climbing ability, you could probably climb over the hillside.
+
+"
+E
+"hole 1 north"
+"The hole is small, roughly the size of a dog, and lined with snow.  It leads
+
+into the hillside and into darkness beyond.
+
+"
+E
+"tracks"
+"The tracks all appear to be fresh, except those of an extremely large predator
+
+-- claws are evident in some of the footprints.  Unfortunately, they have had
+
+a light dusting of snow since they were made and are now not identifiable.
+
+"
+A
+""
+""
+"wait( 2 );
+
+mob = mob_in_room( 2422, find_room( 29004 ) );
+
+if( !mob )
+
+  end;
+
+if( is_fighting( mob ) ) {
+
+  acode( room, 1 );
+
+  }
+
+else {
+
+  interpret( mob, \"get corpse.rabbit\" );
+
+  interpret( mob, \"north\" );
+
+  acode( find_room( 29005 ), 1 );
+
+  }
+
+"
+!
+0 0 0
+A
+""
+""
+"mob = mob_in_room( 2422, room );
+
+if( mob == ch )
+
+  end;
+
+continue;
+
+"
+!
+3 0 8
+A
+""
+""
+"acode( room, 1 );
+
+"
+!
+1 0 8
+A
+"climb clamber scale"
+"1 north hillside"
+"if( can_fly( ch ) ) {
+
+  act_tochar( #fly, ch );
+
+  act_notchar( #flies, ch );
+
+  transfer( ch, find_room( 29019 ) );
+
+  act_notchar( #fliesin, ch );
+
+  }
+
+else {
+
+  if( find_skill( ch, climb ) > random( 2, 11 ) ) {
+
+    act_tochar( #climb, ch );
+
+    act_notchar( #climbs, ch );
+
+    transfer( ch, find_room( 29019 ) );
+
+    act_notchar( #climbsin, ch );
+
+    }
+
+  else {
+
+    act_tochar( #no, ch );
+
+    act_notchar( #nos, ch );
+
+    }
+
+  }
+
+"
+E
+"fly"
+"You fly over the hillside and drop down the steep cliff on the other side of
+
+the hill.
+
+"
+E
+"flies"
+"$n flies over the hillside and disappears over the top of the hill.
+
+"
+E
+"fliesin"
+"$n drops down from the overhanging cliff above.
+
+"
+E
+"climb"
+"You climb the snowy hillside to the north and drop over the sheer cliff face
+
+on the other side of the hillside.
+
+"
+E
+"climbs"
+"$n climbs the snowy hillside to the north and disappears behind the top of the
+
+hill.
+
+"
+E
+"climbsin"
+"$n drops from the overhanging cliff edge to the south, landing by your feet.
+
+"
+E
+"no"
+"You try to climb the hillside to the north, but the snow comes loose and you
+
+come sliding back to the ground.
+
+"
+E
+"nos"
+"$n tries to climb the steep hillside to the north, but the snow comes loose
+
+and $e comes sliding back to the ground.
+
+"
+!
+0 0 0
+244 137 1509949540 3 0
+2422 9 1509949540 3 0
+-1
+S
+
+#29005
+"A Cozy Den"
+"This hole in the snowy hillside is not very large, and could perhaps
+
+accommodate a few dogs comfortably.  It is apparently now used as the den of
+
+some small creature in this northern wasteland -- it smells of damp fur and
+
+faintly of urine and blood.  A litter of small bones and shed fur covers the
+
+dirt floor of this cavern, making the ground cluttered but quite soft.  A
+
+small hole winds out to the outdoors to the south, its curve blocking the wind
+
+from blowing into the den.
+
+"
+"[Nereus] Room Finished
+
+"
+301596676 0
+11 3 0
+D2
+""
+""
+0 -1 29004 0 2
+E
+"bones litter fur"
+"A few tiny bones, a collection of fine, white hair, and other patches of
+
+unidentifiable fur line the floor of this cozy den.
+
+"
+A
+""
+""
+"wait( 2 );
+
+mob = mob_in_room( 2422, find_room( 29005 ) );
+
+if( !mob )
+
+  end;
+
+interpret( mob, \"drop all.corpse\" );
+
+interpret( mob, \"eat corpse\" );
+
+wait( 2 );
+
+interpret( mob, \"yawn\" );
+
+interpret( mob, \"sleep\" );
+
+"
+!
+0 0 0
+A
+""
+"bones fur hair floor den"
+"act_notchar( #searches, ch );
+
+if( 1d5 == 2 && rflag( reset0, room ) ) {
+
+  act_tochar( #find, ch );
+
+  obj_to_char( oload( 3976, 1 ), ch );
+
+}
+
+else
+
+  act_tochar( #search, ch );
+
+remove_rflag( reset0, room );
+
+"
+E
+"search"
+"You search the small bones, but don't come up with anything of interest.
+
+"
+E
+"searches"
+"$n searches through the pile of bones and fur.
+
+"
+E
+"find"
+"You search through the pile of bones and fur, and find something of interest.
+
+"
+!
+9 0 0
+-1
+S
+
+#29006
+"Near the Southern End of a Great Wintry Plain"
+"Like a slithering snake, a chasm winds its way from north to west just to the
+
+southwest of here, marking the southwestern edge of this arctic plateau.  The
+
+snow here is waist-deep, soft and powdery to the touch, and drifts in softly
+
+from the east and above.  Much less disturbed than the snow further south and
+
+the the east, the deeper snow has evident tracks and seems a bit less
+
+powdery.  In the distance to the south, the Dragonspires tower against the
+
+horizon, bleak reminders of how far you have travelled to reach this northern
+
+wasteland.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29015 0 9
+D1
+""
+""
+0 -1 29003 0 9
+D2
+""
+""
+0 -1 29001 0 9
+D3
+""
+""
+0 -1 29007 0 9
+E
+"chasm southwest"
+"The chasm yawns below you, its bottom lost in the swirling, powdery snow.  A
+
+lip of undisturbed snow has piled on the edge of the chasm, almost as if the
+
+snow itself is hesitant to get too near the edge.
+
+"
+E
+"dragonspires"
+"The Dragonspires are visible far in the distance to the south, miles of
+
+treacherous mountains that have been crossed to come here.
+
+"
+-1
+S
+
+#29007
+"Southwestern Edge of a Great Wintry Plain"
+"Before the sinkhole to the northwest opened up, it appears that the plateau
+
+stretched off to the west another couple hundred feet.  Now, only a narrow
+
+ridge of rock is traversable, a balancing act above two gorges.  The snow in
+
+this region has been well-packed down and shows the tracks of several species
+
+of animals, from tiny fox and rabbit tracks to the massive indentations of
+
+what looks to be an elephant.  The animals seem to sense the danger of the
+
+terrain to the south and west; there is a lip of undisturbed snow before the
+
+cliff edge to the south and the ridge to the west.  For as far as the eye can
+
+see to the south, the peaks of the Dragonspires dot the horizon.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29014 0 9
+D1
+""
+""
+0 -1 29006 0 9
+D3
+""
+""
+0 -1 29008 0 6
+E
+"sinkhole northwest"
+"Once probably solid rock and ice much like what you are standing on now, the
+
+ground has collapsed to the northwest and tumbled down into a rocky pit dozens
+
+of feet below.
+
+"
+E
+"1 south chasm"
+"The plateau ends abruptly to the south, over a lip of undisturbed snow.  It
+
+appears that the animals seem to sense that the ground drops away and avoid
+
+the edge.  The bottom of the chasm is lost in the snow below.
+
+"
+E
+"snow tracks"
+"There are many sets of crisscrossing tracks packing down the snow here.  Some
+
+are very small prints of rabbits or foxes, while the tracks of wolves and even
+
+larger predators can also be made out.
+
+"
+E
+"peaks dragonspires"
+"The dragonspires stretch as far as you can see to the south.  To the
+
+southeast, it is difficult to make out peaks, since a blizzard of sorts rages
+
+somewhere south of the plateau.
+
+"
+-1
+S
+
+#29008
+"Collapsing Trail - Narrow Segment"
+"The trail narrows to a handspan here, topped with crumbling stone and sheets
+
+of impossibly slick ice.  Far away in the south, the Dragonspires stretch for
+
+miles, uncaring and impressive.  The collapse of this region appears to be
+
+spreading from an enormous sinkhole to the north; between the chasm awaiting
+
+you to the south and the tons of ice and rock that lay in the pit to the
+
+north, this is not the best place to remain safely.  An even more narrow
+
+stretch awaits to the west, where a thin spire of rock rises dozens of feet
+
+overhead.
+
+"
+"[Nereus] fall to 82015 on the dragonspire trail below
+
+[Nereus] no.mount
+
+[Nereus] ** Room Finished **
+
+"
+335020040 0
+17 6 0
+D1
+""
+""
+0 -1 29007 0 6
+D3
+""
+""
+0 -1 29009 0 6
+E
+"trail 1 west"
+"This ridge is a mere inches in width at places.  Crumbling grey rock of the
+
+mountaintop is quickly being eroded from the winds that blast up the chasm
+
+walls to the south.  Slick ice has built up on the surface of the rocks,
+
+making travel almost impossible.  This ridge appears in even worse condition
+
+to the west as it climbs a narrow rock spire.
+
+"
+E
+"1 south Dragonspires"
+"The snow-capped peaks of the Dragonspires stretch below you for as far as you
+
+can see.
+
+"
+A
+""
+""
+"if( find_stat( ch, level ) > 92 )
+
+  continue;
+
+if( can_fly( ch ) )
+
+  continue;
+
+else {
+
+  if( find_stat( ch, dex ) < 1d12+16 ) {
+
+    act_tochar( #fall, ch );
+
+    act_notchar( #falls, ch );
+
+    wait( 1 );
+
+    transfer( ch, find_room( 82015 ) );
+
+    i = 2d100+45;
+
+    dam_message( ch, i, \"falling off a cliff\" );
+
+    inflict( ch, null, i, \"falling off a cliff\" );
+
+    if( !ch )
+
+      end;
+
+    set_resting( ch );
+
+    act_notchar( #fallsin, ch );
+
+    }
+
+  else {
+
+    act_tochar( #dance, ch );
+
+    continue;
+
+    }
+
+  }
+
+"
+E
+"fall"
+"A narrow segment of the trail collapses, sending you tumbling down the
+
+mountainside.
+
+"
+E
+"falls"
+"$n tries to head further west along this narrow segment of trail, but part of
+
+it collapses beneath $s feet and $e goes tumbling down the mountainside!
+
+"
+E
+"fallsin"
+"$n falls down from above, tumbling through the air and landing with a crash at
+
+your feet!
+
+"
+E
+"dance"
+"The trail begins to collapse beneath your feet, but you deftly dance away and
+
+leap to safety down the trail.
+
+"
+!
+3 0 8
+-1
+S
+
+#29009
+"Standing Above the Emptiness"
+"From this perch atop a narrow peak, one can get an appreciation for the
+
+vastness and implacability of nature.  For hundreds of miles to the south and
+
+west, the snow-capped peaks of the Dragonspires spread out below you. 
+
+Northeast of here, a plain of snow and rock has collapsed over the ages,
+
+leaving a gaping scar in the landscape.  At your feet, the snow has collected
+
+here on this rise, long since crusted over with a thin coating of ice. 
+
+Traversing the collapsing trails to the east and north would be a dangerous
+
+balancing act; a single error could send you tumbling into nothingness below.
+
+"
+"[Nereus] No.Mount
+
+"
+335020032 0
+17 6 0
+D0
+""
+""
+0 -1 29010 0 6
+D1
+""
+""
+0 -1 29008 0 6
+E
+"Dragonspires peaks 1 south 1 west"
+"A sheer drop awaits you to the west and south of this peak.  Beyond, the
+
+majesty of the Dragonspires falls away far below you.
+
+"
+E
+"northeast scar collapse"
+"A once solid region of the plateau collapsed at some time in the distant past,
+
+sending tons of rock and ice tumbling into a newly-formed chasm below.
+
+"
+E
+"trail 1 east 1 north"
+"The trails leading away from the peak are extremely narrow and very
+
+treacherous.  Whatever caused the collapse to the northeast looks to be also
+
+slowly wearing away the trails -- it is only a matter of time until this peak
+
+becomes a solitary, inaccessible perch.
+
+"
+E
+"snow"
+"A drift of snow has collected here atop this peak and has crusted over with
+
+snow.
+
+"
+A
+"pry open"
+"fist hand"
+"if( !rflag( reset0, room ) ) {
+
+  act_tochar( #no, ch );
+
+  end;
+
+  }
+
+remove_rflag( reset0, room );
+
+if( 1d50 == 3 ) {
+
+  i = find_stat( ch, align );
+
+  if( get_religion( ch ) == Lonil ) {
+
+    act_tochar( #rockon, ch );
+
+act_notchar( #opens, ch );
+
+    obj_to_char( oload( 3979, 1 ), ch );
+
+    end;
+
+    }
+
+  if( i % 3 == 0 ) {
+
+    act_tochar( #opens, ch );
+
+    act_notchar( #heopens, ch );
+
+    obj_to_char( oload( 3979, 1 ), ch );
+
+    end;
+
+    }
+
+  else if( i % 3 == 2 ) {
+
+    act_tochar( #pry, ch );
+
+    act_notchar( #pries, ch );
+
+    obj_to_char( oload( 3979, 1 ), ch );
+
+    end;
+
+    }
+
+  act_tochar( #dust, ch );
+
+  }
+
+else
+
+  act_tochar( #dust, ch );
+
+"
+E
+"no"
+"The man's frozen fist has already been pried off.
+
+"
+E
+"dust"
+"You try to pry the man's fist open, but it crumbles into icy fragments at your
+
+touch.
+
+"
+E
+"opens"
+"You reach to pry the frozen man's fist open, but the frozen fingers open on
+
+their own.  You take a small stone object from the man's open hand.
+
+"
+E
+"heopens"
+"As $n reaches for the frozen man's hand, the fingers open on their own and
+
+hand $n an object.
+
+"
+E
+"pry"
+"You manage to pry open the frozen man's hand, claiming a small stone object.
+
+"
+E
+"pries"
+"$n pries open the frozen man's hand and takes whatever he was holding.
+
+"
+E
+"rockon"
+"You reach to pry the frozen man's fist open, but the frozen fingers open on their own.  You take a small stone object from the man's open hand and feel a warmth and blessing from Lonil, comforting you.  You somehow know that this man's soul is alive and safe somewhere, in the care of Lonil.
+
+"
+!
+0 0 0
+3978 17 1509949540 -2 0
+-1
+S
+
+#29010
+"Atop a Collapsing Ridge - Treacherous Footing"
+"A handspan of narrow, crumbling grey rock lines the ridge's peak here; a
+
+single slip could send a traveller off the steep cliff edge to the west or the
+
+yawning, rubble-lined sinkhole to the east.  A thin coating of ice has
+
+collected here on the grey rock, making travel extremely hazardous.  A narrow
+
+spire of rock, covered in a thin dusting of snow, lies at the top of a ridge
+
+to the south.  Unfortunately, the top of the ridge appears to be near collapse
+
+in that direction; perhaps it would be better to turn back.
+
+"
+"[Nereus] fall from here to 82015 on the dragonspire trail below
+
+[Nereus] no.mount
+
+[Nereus] Room Finished.
+
+"
+335020032 0
+17 5 0
+D0
+""
+""
+0 -1 29011 0 5
+D2
+""
+""
+0 -1 29009 0 6
+E
+"1 east sinkhole"
+"What must have been once level with the rest of the plateau has since
+
+collapsed into a pit, leaving just the rock-covered western edge that has
+
+become the ridge you stand on.  It appears that this region is also on the
+
+verge of collapse, and soon the peak to the south will stand alone.
+
+"
+E
+"1 south spire peak"
+"The ridgeline continues to the south, where a single weathered peak defies the
+
+elements, for now.
+
+"
+A
+""
+""
+"if( find_stat( ch, level ) > 92 )
+
+  continue;
+
+if( can_fly( ch ) )
+
+  continue;
+
+else {
+
+  if( find_stat( ch, dex ) < 1d12+16 ) {
+
+    act_tochar( #fall, ch );
+
+    act_notchar( #falls, ch );
+
+    wait( 1 );
+
+    transfer( ch, find_room( 82015 ) );
+
+    i = 2d100+45;
+
+    dam_message( ch, i, \"falling off a cliff\" );
+
+    inflict( ch, null, i, \"falling off a cliff\" );
+
+    if( !ch )
+
+      end;
+
+    set_resting( ch );
+
+    act_notchar( #fallsin, ch );
+
+    }
+
+  else {
+
+    act_tochar( #dance, ch );
+
+    continue;
+
+    }
+
+  }
+
+"
+E
+"fall"
+"As you head south, a narrow segment of the ridge collapses and you tumble down
+
+the mountainside!
+
+"
+E
+"falls"
+"$n heads south, but a narrow segment of the ridge collapses and $e tumbles
+
+down the mountainside!
+
+"
+E
+"fallsin"
+"$n lands in a heap of snow at your feet with a crash!
+
+"
+E
+"dance"
+"As you head south, a narrow segment of the ridge collapses, but you manage to
+
+dance past the collapse and continue.
+
+"
+!
+3 0 4
+-1
+S
+
+#29011
+"Narrow Ridgeline Between Two Chasms"
+"The protective cliff face to the north falls away to nothingness, leaving this
+
+narrow ridge exposed to the scouring winds and dizzying depths to the north
+
+and west.  At your feet, the grey, crumbly rock of the plateau is exposed,
+
+blasted clean by the wind.  Far to the south, further up a rocky rise, a peak
+
+looms above the area.  The might of the Dragonspires continues for miles to
+
+the west, while a view of the legendary frozen wall is blocked by a nearby
+
+peak to the northeast.
+
+"
+"[Nereus] no.mount
+
+[Nereus] Room Finished.
+
+[Nereus] No.Mob
+
+"
+335020040 0
+17 5 0
+D1
+""
+""
+0 -1 29012 0 5
+D2
+""
+""
+0 -1 29010 0 5
+E
+"cliff face 1 north"
+"Further along this crumbling ridge to the east, a protective cliff face blocks
+
+the northern side of the trail, offering some protection.  Here, it has fallen
+
+away into a chasm to the north.
+
+"
+E
+"trail ridge crumbly rock"
+"The rocky ridge at your feet is made of crumbling, weatherworn rock that has
+
+been worn smooth by the scouring wind.
+
+"
+A
+""
+""
+"act_tochar( #gust, ch );
+
+interpret( ch, \"+shiver\" );
+
+"
+E
+"gust"
+"@BA swirling wind gusts fiercely in from the north, causing you to shiver with
+
+the cold.@n
+
+"
+!
+2 300 0
+-1
+S
+
+#29012
+"Narrow Trail - Hugging the Moutainside"
+"Caught between a deep sinkhole to the south and a steep, ice-slicked cliff
+
+wall to the north, a trail here has been formed by the passage of dozens of
+
+padded, dog-like feet, hugging the cliff wall.  Near the rim of the sinkhole,
+
+fresh snow has fallen and lays undisturbed by any animal activity.  The trail
+
+seems to abruptly stop as the cliff wall falls away to the west; perhaps there
+
+is some reason the animals avoid that area.
+
+"
+"[Nereus] ** Room Finished **
+
+[Maurtock] look cliff
+
+"
+335020032 0
+17 6 0
+D1
+""
+""
+0 -1 29013 0 9
+D3
+""
+""
+0 -1 29011 0 5
+E
+"trail"
+"A trail of sorts has been formed here, evidence that some large wolves or dogs
+
+frequent this area.  The trail heads east from here, leading away from the
+
+danger of the sinkhole.
+
+"
+E
+"sinkhole"
+"Probably once solid ground like what you now stand on, a collapse to the south
+
+has left only a gaping pit of ice scarring the plateau.
+
+"
+E
+"cliff 1 north"
+"The cliff wall to the north is steep and worn smooth with wind and weather.
+
+"
+2423 41 1509949540 3 0
+2423 73 1509949540 3 0
+2423 73 1509949540 3 0
+-1
+S
+
+#29013
+"Western Edge of a Great Winter Plain"
+"Sheer cliffs rise to the northwest on what now has become the western edge of
+
+this wintry plateau.  A great sinkhole has opened up to the southwest, leaving
+
+only a narrow, snow-covered ridge to the west of here.  The tracks of what
+
+appear to be several very large wolves, moving together, are visible in the
+
+snow and hugging the cliffside to the northwest -- perhaps this is their
+
+hunting area or on the way to it.  Deep drifts have collected to the north;
+
+game trails of packed down snow cut through the drifts, almost if this is the
+
+only safe route to take further north.
+
+"
+""
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29020 0 9
+D1
+""
+""
+0 -1 29017 0 9
+D2
+""
+""
+0 -1 29014 0 9
+D3
+""
+""
+0 -1 29012 0 9
+E
+"cliffs northwest"
+"A jagged mountain climbs abruptly to the northwest of this section of the
+
+plateau.  The tracks of several animals have packed down a trail hugging the
+
+cliff face as it runs east-west.
+
+"
+E
+"tracks wolves"
+"The tracks lead to the west, where they hug a cliff face and continue west;
+
+some of them also head north, cutting through a drift; others lead south along
+
+the rim of a large sinkhole.  There are too many tracks leading in the same
+
+directions to have been made by a single creature; perhaps a pack frequents
+
+this area of the plateau.
+
+"
+E
+"sinkhole southwest"
+"At one time, the section to the southwest was presumably level with the ground
+
+on which you now stand.  However, at some time in the not-so-distant past,
+
+something caused the ice and rock to collapse into a deep pit.  The nearby
+
+regions to your west and further south of the sinkhole appear to be facing
+
+similar collapse soon.
+
+"
+E
+"drifts 1 north"
+"It appears that the animals of this region all head northward through the
+
+drifts to head further on their way north.  Perhaps they are avoiding
+
+something further east, or the tunnels through the drifts offer some shelter
+
+from the weather.
+
+"
+-1
+S
+
+#29014
+"Rim of a Great Sinkhole"
+"Despite the appearance of a great deal of animal activity, the wildlife
+
+appears to stop well away from the western edge of this snowy plain, where a
+
+sinkhole has opened up and swallowed the plateau.  Trails are visible running
+
+north-south, and a fainter trail leading east, packed down by the travel of a
+
+variety of wildlife.  The snow is fairly deep here, and has piled in an
+
+undisturbed lip on the western edge before the steep drop to the bottom of the
+
+sinkhole.  Despite the peaks that rise up along the western edge of the
+
+plateau a bit north of here, the mighty frozen wall still dominates the
+
+landscape, visible far in the distance to the north.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29013 0 9
+D1
+""
+""
+0 -1 29015 0 9
+D2
+""
+""
+0 -1 29007 0 9
+E
+"sinkhole 1 west"
+"At one time, the rock and ice to the west was probably as solid as the ground
+
+you now stand on.  Since, whether from refreezing or the movement of liquid
+
+water below, the land below gave way and slid into this open pit.  It appears
+
+the collapse may be spreading, which might explain the hesitance of the
+
+wildlife to approach the sinkhole's edge.
+
+"
+E
+"trails"
+"The animal trails lead north-south and east from this area, and skirt well
+
+away from the edge of the sinkhole.  The snow has been packed down mostly by
+
+the tracks of what look like large wolves, perhaps this is a central hunting
+
+ground for them.
+
+"
+E
+"frozen wall"
+"While not many details can be made out yet, the frozen wall thrusts up from
+
+the white plateau another thousand feet vertically, dominating the landscape
+
+on the far northern edge of the plateau.
+
+"
+E
+"peaks mountains"
+"Another peak rises vertically a bit north and west of here, blocking out any
+
+view of the western half of the frozen wall.
+
+"
+A
+"climb clamber scale traverse"
+"1 down 1 west sinkhole lip pit"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"Even if you could make your way down the collapse and to the pit's bottom
+
+safely, it appears that there is nothing but lifeless rock and ice waiting
+
+there.
+
+"
+!
+0 0 0
+-1
+S
+
+#29015
+"Dragonspire Plateau"
+"This central region of the plain appears to have frequent animal activity. 
+
+Knee-deep snow is still visible in places, but most has been tracked down by
+
+large bear and wolf footprints.  Most of the tracks seem to be heading to the
+
+north and west from here; apparently the central hunting grounds of a nearby
+
+wolf pack.  To the north, the snow has been blown down to bare ice, while much
+
+farther to the north, the everpresent frozen wall looms over the plateau.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29017 0 9
+D1
+""
+""
+0 -1 29016 0 9
+D2
+""
+""
+0 -1 29006 0 9
+D3
+""
+""
+0 -1 29014 0 9
+E
+"frozen wall"
+"The frozen wall is a constant on this wintry plain, growing ever closer the
+
+further you venture north.  It towers over even nearby mountains, an
+
+implacable sheet of ice.
+
+"
+E
+"tracks footprints"
+"There are many well-preserved footprints in the snow here.  It is easy to make
+
+out the movements of a pack of wolves and also the movement of an extremely
+
+large bear through the area.
+
+"
+-1
+S
+
+#29016
+"Eastern Edge of a Great Winter Plain"
+"The plateau reaches its eastern edge here, where a steep cliff rises to the
+
+east of the plain.  Waist-deep snow, covered quickly from fresh snow blowing
+
+down from the cliff to the east, has seen animal traffic in the very recent
+
+past.  The tracks are obviously those of a very large creature, but more than
+
+that is difficult to make out because of the new-fallen snow that dusts them. 
+
+To the north, the snow has been swept west by a howling wind coming down off
+
+the cliff, leaving bare ice; the snow is deeper as one ventures southward.
+
+"
+"[Nereus] ** Room Finished **
+
+Heheh...  room extra 2.  Low to the ground?  *chuckle* I don't think so, I've
+
+seen these mammoth animals you make.  They aren't just low to the ground,
+
+they're mobile mountains in their own right.  :P j/k, it's fine.  -Talis
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29018 0 9
+D2
+""
+""
+0 -1 29003 0 9
+D3
+""
+""
+0 -1 29015 0 9
+E
+"1 north bare ice"
+"A wind whips down from the cliff face far to the north, blasting away the
+
+ground to a sheer sheet of covering ice.
+
+"
+E
+"tracks animal traffic"
+"The tracks could have been made by an extremely large bear or other low to the
+
+ground, four-legged creature.  Exact identification is impossible, however,
+
+since they are covered with a layer of fresh snow.
+
+"
+-1
+S
+
+#29017
+"Dragonspire Plateau - Windswept Ice"
+"Scoured clean to a rock-like sheet of opaque ice, this windswept section of
+
+the plateau is truly inhospitable.  Evidence of the travel of great, heavy
+
+creatures is present here: the ice is starred in places; in others, it has
+
+been marked with claws.  Sweeping from east to west, the wind swoops down from
+
+the cliffs to the east and north, tumbling west along the plateau, and
+
+carrying all the powdery snow with it.  Deep drifts of powder have collected
+
+to the west along a steep cliff face.  The ice sheet continues to the east and
+
+north; to the north, the ice seems thin and brittle and appears to be avoided
+
+by the wildlife.
+
+"
+"[Nereus] ** Room Finished **
+
+rdesc, line 3.  Starred?  As in, marked with stars?  That, or its equivalent,
+
+is the only definition I can find on the meriam-webster site.  -Talis
+
+[Nereus] The ice is starred, as if you punch ice it gets little stars in it.
+
+[Nereus] also glass in a windshield being hit with a rock
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+65536 -1 29021 0 9
+D1
+""
+""
+0 -1 29018 0 9
+D2
+""
+""
+0 -1 29015 0 9
+D3
+""
+""
+0 -1 29013 0 9
+E
+"starred claw marks evidence"
+"The travel of some extremely heavy animal has starred the ice in places.  The
+
+footprints are many feet apart; whatever made them was enormous.  Some of the
+
+footprints have claw marks evident at their ends, deep scars into the ice.
+
+"
+E
+"1 west powder"
+"Towering drifts, some as high as thirty feet tall, have collected against the
+
+cliffs further west.
+
+"
+E
+"1 north brittle ice thin"
+"The ice to the north is extremely thin and appears to become more brittle as
+
+you move north.  No tracks are evident heading that way; perhaps the wildlife
+
+avoids that region for a reason.
+
+"
+A
+""
+""
+"if( find_stat( ch, level ) > 92 )
+
+  continue;
+
+if( can_fly( ch ) || is_exhausted( ch ) )
+
+  continue;
+
+if( !rflag( reset0, find_room( 29021 ) ) ) {
+
+  act_tochar( #no, ch );
+
+  end;
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"no"
+"The brittle ice sheet has collapsed; unless you can fly, you're not going in
+
+there.
+
+"
+!
+3 0 1
+2356 9 1509949540 3 0
+-1
+S
+
+#29018
+"Dragonspire Plateau - Windswept Ice"
+"A howling wind rushes down the cliff face north of here, swirling westward
+
+along the plateau.  Tiny bits of ice and powdery snow are carried on the wind,
+
+scouring clean the icy ground and sending the snow to collect further west
+
+against another steep cliff face.  The icy ground here is starred, pitted, and
+
+scarred with the travel of some enormous creatures travelling through here
+
+some time ago.  To the east, a relatively narrow chasm offers refuge from the
+
+biting wind.
+
+"
+""
+301465600 0
+17 9 0
+D1
+""
+""
+0 -1 29019 0 9
+D2
+""
+""
+0 -1 29016 0 9
+D3
+""
+""
+0 -1 29017 0 9
+E
+"cliff face 1 north"
+"The cliff face to the north has been worn smooth by the constant, howling
+
+winds moving in from the top of the mountain westward down the slope. 
+
+Diagonal lines have been worn into the rock in places, evidence that this wind
+
+has been constant for years or even centuries.  A thin coating of ice makes
+
+ascending the cliff face an impossibility.
+
+"
+E
+"starred scarred scars pits pitted ground ice"
+"The ground is a wind-scoured sheet of bare ice.  Occasional scars, starred ice
+
+from the travel of heavy creatures, and the marks of great clawed creatures
+
+can be seen, apparently travelling randomly since the sheet of ice froze long
+
+ago.
+
+"
+A
+""
+""
+"act_tochar( #wind, ch );
+
+"
+E
+"wind"
+"@YA brisk wind howls over the cliff face to the north, carrying with it
+
+stinging ice and bits of powdery snow.@n
+
+"
+!
+2 300 0
+-1
+S
+
+#29019
+"Alcove Between Cliffs"
+"Offering more than a shelter from the wind, the entrance to this narrow alcove
+
+between cliffs seems to be too narrow for the larger predators of this snowy
+
+plateau to venture through.  Sheer, smooth cliff faces sheeted with ice mark
+
+the northern and eastern edges of the chasm; at the base of the eastern wall
+
+evidence of a long-frozen stream can still be seen.  The topmost ten feet of
+
+the southern cliff face are a smooth, grey overhang, dotted with icicles.  The
+
+snow cover is thin here, perhaps instead accumulating on the cliffs high above.
+
+"
+""
+301465600 0
+17 6 0
+D3
+""
+""
+0 -1 29018 0 9
+E
+"stream long-frozen"
+"Smooth, water-worn rocks line a hole in the base of the eastern cliff face. 
+
+What must have once been an underground stream has long ago frozen into
+
+impassible ice.
+
+"
+E
+"1 south overhang cliff"
+"The cliff only rises perhaps twenty feet to the south, but there is an
+
+overhanging portion of rock that helps to shelter this niche into the stone.
+
+It would be impossible to climb the southern cliff, although you could
+
+probably easily scale down it from above.
+
+"
+E
+"1 east 1 north"
+"The sheer cliff faces have been blown smooth, whether from ancient travel of
+
+water or more recent wind is uncertain.  A thin layer of ice covers them now,
+
+making climbing impossible.
+
+"
+E
+"icicles"
+"The overhanging southern cliff has a few dozen small icicles that cling to its
+
+surface.  They are not reachable from here.
+
+"
+A
+"climb clamber scale"
+"1 south overhang"
+"if( can_fly( ch ) ) {
+
+  act_tochar( #fly, ch );
+
+  act_notchar( #flies, ch );
+
+  transfer( ch, find_room( 29004 ) );
+
+  act_notchar( #fliesin, ch );
+
+}
+
+else
+
+  act_tochar( #no, ch );
+
+"
+E
+"fly"
+"You fly over the steep cliff to the south and down the steep hillside on the
+
+southern side.
+
+"
+E
+"flies"
+"$n flies over the steep cliff to the south and disappears from view.
+
+"
+E
+"fliesin"
+"$n flies down the steep hillside from the north.
+
+"
+E
+"no"
+"You can't climb the cliff because there is an overhang.
+
+"
+!
+0 0 0
+-1
+S
+
+#29020
+"Narrow Point in the Plateau"
+"Extremely deep drifts of snow, some as deep as a yeti is tall, have collected
+
+against the cliff face to the west.  Fortunately, the wildlife of the area
+
+seem to use this as the north-south corridor through this narrow point in the
+
+plateau; the tracks of large predators are visible underfoot, packing down a
+
+hard, ice-floored tunnel through the drifts.  The drifts deepen to the north,
+
+while to the south is the freedom of the open plateau.
+
+"
+""
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29023 0 9
+D1
+""
+""
+65536 -1 29021 0 9
+D2
+""
+""
+0 -1 29013 0 9
+E
+"tracks corridor ice-floored ground"
+"The wildlife seems to instinctively avoid the eastern side of the plateau at
+
+this narrow point, but the drifts are too deep here to make out any details in
+
+that direction.  The tracks of various large predators are evident along the
+
+ground, wolf and bear tracks being prevalent.
+
+"
+A
+""
+""
+"if( find_stat( ch, level ) > 92 )
+
+  continue;
+
+if( can_fly( ch ) || is_exhausted( ch ) )
+
+  continue;
+
+if( !rflag( reset0, find_room( 29021 ) ) ) {
+
+  act_tochar( #no, ch );
+
+  end;
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"no"
+"The brittle ice sheet has collapsed; unless you can fly, you're not going in
+
+there.
+
+"
+!
+3 0 2
+A
+"climb clamber scale traverse"
+"1 west cliff"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"Even if you could safely climb through the twenty foot drifts further west
+
+along the cliff face, it doesn't appear that climbing the cliff would take you
+
+anywhere.
+
+"
+!
+0 0 0
+-1
+S
+
+#29021
+"Plain of Brittle Ice"
+"The ground here is a brittle, inch-thin piece of ice.  At one time, the snowy
+
+ground must have been higher, but the snow melted away, leaving an icy shell. 
+
+No animal tracks are evident here; apparently the wildlife has the good sense
+
+to avoid this area.  The plateau stretches in all directions but east, where a
+
+nearly vertical cliff rises high overhead.
+
+"
+"[Nereus] No.Mob
+
+[Nereus] ** Room Finished **
+
+"
+301465608 0
+17 9 0
+D0
+""
+""
+65536 -1 29024 0 9
+D2
+""
+""
+65536 -1 29017 0 9
+D3
+""
+""
+65536 -1 29020 0 9
+E
+"ice brittle inch-thin ground"
+"The ice is extremely thin here, and it is unknown what might lie underneath. 
+
+Perhaps it would be best to escape while you can.
+
+"
+A
+""
+""
+"if( !rflag( reset0, room ) )
+
+  end;
+
+remove_rflag( reset0, room );
+
+send_to_room( #die, room );
+
+loop( all_in_room ) {
+
+  if( !can_fly( rch ) ) {
+
+    act_tochar( #bye, rch );
+
+    act_notchar( #byes, rch );
+
+    transfer( rch, find_room( 29031 ) );
+
+    act_notchar( #slides, rch );
+
+    set_resting( rch );
+
+    }
+
+  }
+
+"
+E
+"die"
+"The brittle ice sheet collapses under the weight, sending everyone plummeting
+
+into a dark hole in the ice!
+
+"
+E
+"bye"
+"You fall into a dark hole in the ice, sliding and tumbling, and eventually
+
+find yourself sliding into a warm cavern.
+
+"
+E
+"byes"
+"$n falls into a dark hole in the ice, tumbling out of view.
+
+"
+E
+"slides"
+"$n tumbles into the room from above, landing in a heap on the stony ground.
+
+"
+!
+2 1000 0
+-1
+S
+
+#29022
+"Dragonspire Plateau - Craggy Cliffs"
+"A deeply-packed trail runs west to north here along the craggy cliffside,
+
+trampling down the waist-deep snow.  The prints of an extraordinarily heavy
+
+bear cover the trail, deep indentations packing the snow into ice.  A slight
+
+overhang is visible at the top of the cliff wall, preventing climbers from
+
+continuing to the south or east over the cliff.  Just west of here, a smaller
+
+hillside rises, a dark, yawning cave opening into the ground.  To the north,
+
+the frozen wall stretches, looming over the plateau.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29037 0 9
+D3
+""
+""
+0 -1 29030 0 9
+E
+"trail prints deep indentations packing"
+"This appears to be either the hunting ground or a well-used path along the
+
+hunting ground for an extremely large bear or bears.  Prints are evident
+
+moving both north and west along a trail that has been packed into the snow.
+
+"
+E
+"cliff 1 east 1 south overhang"
+"The craggy rock of the cliff face rises roughly forty feet before it stops
+
+climbing, the last ten feet overhanging the cliff face a bit.  It is slicked
+
+with ice, but could probably be climbed were it not for the overhang.
+
+"
+E
+"cave dark yawning"
+"A cave, its mouth partially obscured by large icicles, opens into the hillside
+
+just west of here.
+
+"
+E
+"frozen wall"
+"The frozen wall stretches east to west, across the northern edge of the
+
+plateau.
+
+"
+-1
+S
+
+#29023
+"Before Great Cliffs - Deep Drifts"
+"Thirty foot drifts of blowing, white powder have collected against the sheer
+
+cliff face to the west, pushed across the plateau by the blasting wind.  Only
+
+well-packed animal trails, leading north, south, and east from here allow
+
+travel through the impossible drifts.  These trails have been packed down by
+
+the frequent travel of many heavy predators, creating almost a trench through
+
+the drifts.  Fortunately, the snow on both sides of the trails is deep enough
+
+that it offers a great deal of shelter from the elements.
+
+"
+"[Nereus] ** Room Finished **
+
+[Maurtock] look drifts
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29028 0 9
+D1
+""
+""
+0 -1 29024 0 9
+D2
+""
+""
+0 -1 29020 0 9
+E
+"animal trails"
+"These tunnels through the snow lead east and north, back to open plateau, and
+
+south along the cliffside, where the drifts continue but are not nearly as
+
+deep.
+
+"
+E
+"drifts"
+"The drifts are piled against the western cliff face, thirty feet deep in some
+
+places.  They have been tracked down with trails leading in all directions
+
+from here.
+
+"
+-1
+S
+
+#29024
+"Dragonspire Plateau - Windswept Ice"
+"Solid, wind-scarred ice covers the ground here, scoured clean by a wind
+
+carrying bits of ice from the mountains to the east.  No tracks are evident
+
+here, although if there were any activity cut into the ice it would be quickly
+
+worn away by the ice-laden gusts.  Further south from here, the ice becomes
+
+obviously more thin and brittle, perhaps even dangerously so; in all other
+
+directions, much deeper snow is visible.  A narrow trail winds through the
+
+deepening snow to the east, curving its way up to the top of a hillside.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29029 0 9
+D1
+""
+""
+0 -1 29025 0 9
+D2
+""
+""
+65536 -1 29021 0 9
+D3
+""
+""
+0 -1 29023 0 9
+E
+"1 east mountains hillside"
+"A snow-covered hillside rises to the east, shaded from the wind by a towering
+
+cliffside further to the east.
+
+"
+E
+"ground wind-scarred ice"
+"The ground is a very smooth, and very solid sheet of opaque ice.
+
+"
+E
+"1 south brittle thin"
+"The layer of ice covering the ground appears to narrow dangerously the further
+
+one ventures to the south.  It looks like further south, only a brittle shell
+
+of ice covers the ground.  No animal activity is evident there; perhaps the
+
+wildlife instinctively knows to avoid the area.
+
+"
+A
+""
+""
+"if( find_stat( ch, level ) > 92 )
+
+  continue;
+
+if( can_fly( ch ) || is_exhausted( ch ) )
+
+  continue;
+
+if( !rflag( reset0, find_room( 29021 ) ) ) {
+
+  act_tochar( #no, ch );
+
+  end;
+
+  }
+
+else
+
+  continue;
+
+"
+E
+"no"
+"The brittle ice sheet to the south has collapsed, preventing you from
+
+travelling in that direction.
+
+"
+!
+3 0 4
+-1
+S
+
+#29025
+"Dragonspire Plateau - Top of a Hill"
+"From the top of this snowy hill, the frozen wall seems to dominate the
+
+northern end of the plateau even more.  A steep drop-off on the northern peak
+
+of the hill falls thirty feet to the snow below, where a cave mouth opens,
+
+presumably leading under this same hill.  The snow here is fairly deep,
+
+perhaps fallen from the cliffs to the east; it does not seem that this region
+
+sees much animal activity.  A trail winds back down from the top of this hill
+
+towards the center of the plateau to the west, while steep cliffs block travel
+
+to the east and south.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 7 0
+D3
+""
+""
+0 -1 29024 0 9
+E
+"frozen wall"
+"Climbing up this hill, probably thirty feet above the surface of the rest of
+
+the plateau, makes it easier to see just how large and looming the frozen wall
+
+really is.  It stretches for as far as the eye can see, from the eastern edge
+
+of the plateau to the west.
+
+"
+E
+"drop-off cave mouth"
+"Looking over the drop-off north of the hill, you can see a cave mouth, mostly
+
+sheeted over with lage icicles.  The snow far below appears to be packed down
+
+as if the area sees a lot of traffic from the wildlife.  There is no way to
+
+reach it from the top of the hill save climbing back down and around to the
+
+north side.
+
+"
+E
+"trail"
+"A trail has been packed into the knee-deep snow that covers the top of this
+
+hill.  It is unclear whether the travel of animal or man is responsible for
+
+the trail, but you see no other signs of animal activity on the hillside.
+
+"
+E
+"cliffs 1 east 1 south"
+"A cliff face runs northeast to south here, craggy and ice-slicked.
+
+"
+A
+""
+""
+"if( !is_exhausted( ch ) )
+
+  act_tochar( #leave, ch );
+
+continue;
+
+"
+E
+"leave"
+"You follow the winding trail through the snow and head back down the hill.
+
+"
+!
+3 0 8
+2423 137 1509949540 3 0
+-1
+S
+
+#29026
+"Before Great Cliffs - Snowy Plateau"
+"A soft wind blows from the east, piling only the finest, powdery snow into
+
+drifts here against the western cliffs.  What snow that has not blown onto the
+
+powdery piles has frozen together in clumps and crusted over with a thin layer
+
+of ice.  Tracks are evident in the crusted-over snow, although none look
+
+particularly fresh.  The cliffs are smooth, worn from wind and ice, and tower
+
+over a hundred feet above this edge of the plateau.  North of here, the
+
+perfect flatness of the terrain and glinting of the light betray a frozen
+
+lake, stretching to the north and west until it reaches the frozen wall.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29032 0 9
+D1
+""
+""
+0 -1 29028 0 9
+E
+"tracks"
+"The tracks are those of some enormous creature, probably weighing at least a
+
+few tons.  The creature had large, flat, round feet.  If this were further
+
+south, it might reveal the passage of an elephant, but no elephant could
+
+survive in this harsh clime.
+
+"
+E
+"frozen wall"
+"The frozen wall runs east-west across the plateau, a sheet of towering opaque
+
+ice.  What lies beyond is unknown.
+
+"
+E
+"cliffs 1 west 1 south"
+"The cliffs tower over this western edge of the plateau, smooth and wind-worn.
+
+"
+E
+"lake 1 north"
+"The lake stretches westward, hugging the cliff face, and extends north from
+
+here to the frozen wall far to the north.  Patches that are cleared of snow
+
+glint brightly in the light.
+
+"
+-1
+S
+
+#29027
+"Entrance to an Icy Cavern"
+"Great icicles, running the length from ceiling to floor, seal over parts of
+
+the cavern mouth above.  The entrance to this cave is significantly warmer
+
+than outside, both because of the warmth of the earth at your feet and because
+
+of the shelter provided from the gusting wind.  The natural cavern rock that
+
+makes up the floor has been worn smooth from years of creatures travelling
+
+over it; a fine, grey dust becomes thicker as you move south into the cave. 
+
+Deeper into the cave to the south, a warm, animal musk permeates the air;
+
+perhaps it is the lair of whatever creatures call this cavern home.  Climbing
+
+a steep slope to the north will lead out of the safety of this den.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 8 0
+D2
+""
+""
+0 -1 29031 0 8
+D4
+""
+""
+0 -1 29030 0 8
+E
+"icicles"
+"The icicles cover over the left and right side of the cavern mouth, offering
+
+additional shelter from the wind and weather outside.
+
+"
+E
+"ground dust fine"
+"The ground is covered in a layer of fine, grey, dust, obviously eroded from
+
+the cavern walls and ceiling.  The dust becomes thicker as you move south.
+
+"
+2356 9 1509949540 3 0
+-1
+S
+
+#29028
+"Dragonspire Plateau"
+"Drifts, some as deep as a man, have collected in powdery piles here; as one
+
+heads west, the drifts grow deeper, eventually settling against a towering
+
+cliff face farther west.  Trails have been cleared and packed down by some
+
+enormous animal heading further south into even deeper drifts; other tracks
+
+lead north and east from here.  To the north, the glinting of ice reveals the
+
+shore of a large, frozen lake, while even farther north lies the implacable
+
+frozen wall.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29034 0 9
+D1
+""
+""
+0 -1 29029 0 9
+D2
+""
+""
+0 -1 29023 0 9
+D3
+""
+""
+0 -1 29026 0 9
+E
+"trails packed"
+"The trails mostly head north and south from here, through the deep drifts. 
+
+Based on the prints, the animal traffic seems to made up primarily of bears,
+
+but some wolf prints are also evident in the snow.
+
+"
+E
+"implacable frozen wall"
+"The frozen wall runs east to west along the entirety of the northern edge of
+
+the plateau.  From here, it seems to be hundreds of feet tall, towering over
+
+even the cliffs on either side of it.
+
+"
+2423 41 1509949540 3 0
+2423 73 1509949540 3 0
+2423 73 1509949540 3 0
+-1
+S
+
+#29029
+"Dragonspire Plateau - Center of the Plateau"
+"A howling wind gusts occasionally from east to west, sending another cloud of
+
+white, powdery snow tumbling further east.  What little snow remains here --
+
+roughly enough to cover a man's boots -- is stale and covered in a thin layer
+
+of ice.  A few heavy tracks have packed down footprints into the crust of
+
+snow, some the clawed prints of heavy predators, while others are much heavier
+
+and rounder.  Further south, the snow has been completely blown away, scoured
+
+down to a bare sheet of ice.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29035 0 9
+D1
+""
+""
+0 -1 29030 0 9
+D2
+""
+""
+0 -1 29024 0 9
+D3
+""
+""
+0 -1 29028 0 9
+E
+"tracks footprints"
+"Some of the prints are those of a large bear, while others are still heavier
+
+and rounder.  Most of the prints do not seem particularly fresh and the area
+
+seems to be generally avoided by the wildlife.
+
+"
+-1
+S
+
+#29030
+"Before a Yawning Cavern"
+"Like the jaws of a mighty beast closing over you, a yawning cavern opening
+
+into a hillside to the south looms over this region of the plateau.  Large,
+
+jagged stalactites of ice stretch all the way to the floor of the cavern
+
+entrance, completing the illusion of a hungry animal.  Despite an apparent
+
+heavy snowfall in the region, the snow up to the cavern mouth is heavily
+
+packed down into ice.  Tracks lead in all directions from and to the cave,
+
+apparently those of an enormous bear or bear-like creature.  The might of the
+
+frozen wall looms everpresent to the north, while the plateau stretches in all
+
+directions, reaching a jagged mountain range to the east.
+
+"
+"[Nereus] Only bears will wander into the cave
+
+[Nereus] ** Room Finished **
+
+[Phule] unfortunately you fubared player pets of bear race
+
+-- fixed, Phule
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29036 0 9
+D1
+""
+""
+0 -1 29022 0 9
+D3
+""
+""
+0 -1 29029 0 9
+D5
+""
+""
+0 -1 29027 0 8
+E
+"jaws yawning cavern 1 south opening hillside"
+"The cavern opening is approximately fifteen feet from top to bottom, and
+
+roughly twice as wide.  Large icicles, some as thick as a man's waist, flow
+
+from the opening's top to its floor, blocking snow and wind from entering. 
+
+The center of the cavern entrance shows signs of frequent and very recent
+
+activity -- there are tracks frozen over on the ground and icicles forming
+
+over the center of the cave mouth appear to have broken off by someone or
+
+something.
+
+"
+E
+"tracks bear bear-like"
+"The tracks were made by an extremely heavy creature, heavier and deeper in the
+
+snow even than an ordinary bear would be.  With the number of tracks leading
+
+in and out of the cavern and in all directions from here, it seems that this
+
+is the den or natural hunting grounds of this predator.
+
+"
+E
+"frozen wall"
+"The frozen wall, everpresent on this winter plain, stretches east to west
+
+along the northern edge of the plateau for miles.
+
+"
+A
+""
+""
+"if( is_player( ch ) || is_pet(ch ) )
+
+  continue;
+
+if( race( ch ) != bear )
+
+  end;
+
+continue;
+
+"
+!
+3 0 32
+-1
+S
+
+#29031
+"Cavern - Den of the Mountain Bears"
+"Warm and dank, it is immediately obvious that this natural cavern has become
+
+the home for several large mammals.  The floor of the cavern here is made of
+
+smooth, grey-black sand; dust from ages of erosion of the cave walls and stone
+
+floor.  Coarse, white fur covers the floor near the western wall where a cozy,
+
+elephant-sized alcove shows evidence of recent animal activity.  Several
+
+smooth holes line the ceiling; while they may lead somewhere they are not
+
+reachable from the ground of the cavern.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301596672 0
+11 8 0
+D0
+""
+""
+0 -1 29027 0 8
+E
+"ceiling holes"
+"The holes in the ceiling are roughly the size of an ogre, but there are
+
+several of them and not only is it not obvious where they lead, they are not
+
+reachable from your perch on the ground.
+
+"
+E
+"coarse white fur"
+"On closer examination, there are two distinct types of fur that line the
+
+cavern floor -- thick, five inch strands of yellow-white hair, and downier,
+
+shorter, hairs of purest white.
+
+"
+E
+"floor dust sand"
+"The floor of the cavern is covered in a fine, grey dust, obviously made by the
+
+erosion of the rock of the cavern walls and floor.
+
+"
+E
+"alcove 1 west"
+"The alcove in the western wall appears to have been worn away by ages of
+
+travel or use of the area as a den.  The wall has been polished to gleaming
+
+smoothness, particularly at the base where a creature or creatures have
+
+presumably been leaning.
+
+"
+A
+"search"
+"fur hair coarse white"
+"act_tochar( #no, ch );
+
+act_notchar( #nos, ch );
+
+"
+E
+"no"
+"You search through the coarse white fur that lines the western alcove, but you
+
+don't find anything of interest.
+
+"
+E
+"nos"
+"$n searches through the coarse white fur that lines the cavern floor, but
+
+doesn't find anything of interest.
+
+"
+!
+0 0 0
+A
+"search dig"
+"grey dust floor dirt sand"
+"act_tochar( #blah, ch );
+
+act_notchar( #blahs, ch );
+
+wait( 1 );
+
+interpret( ch, \"+sneeze\" );
+
+"
+E
+"blah"
+"You search through the fine dust that covers the cavern floor, but don't find
+
+anything of interest.
+
+"
+E
+"blahs"
+"$n searches through the fine grey dust that covers the cavern floor, but $e
+
+doesn't find anything of interest.
+
+"
+!
+0 0 0
+2418 169 1509949540 0 0
+2419 201 1509949540 3 0
+2419 201 1509949540 3 0
+-1
+S
+
+#29032
+"Upon a Frozen Lake"
+"A wind gusts from east to west across the plain, blowing a fine dusting of
+
+powder a few inches across the ground.  The smooth surface of the frozen lake
+
+has been blown clean of snow here, revealing the ice beneath.  The lake
+
+extends north and west from here, reaching cliffs further west and the
+
+majestic northern wall farther to the north.  Further west and to the west,
+
+drifts have piled against the mountainside, collecting in powdery heaps.
+
+"
+"[Nereus] ** Room Finished **
+
+[Maurtock] look lake/ice
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29040 0 9
+D1
+""
+""
+0 -1 29034 0 9
+D2
+""
+""
+0 -1 29026 0 9
+D3
+""
+""
+0 -1 29033 0 9
+E
+"cliffs"
+"Smooth, grey cliff faces line the edge of the frozen lake to the west.  They
+
+tower a few hundred feet above the level of the plateau.
+
+"
+E
+"frozen wall northern wall"
+"The frozen wall extends all the way across the northern end of the plateau,
+
+towering over the plain.
+
+"
+-1
+S
+
+#29033
+"Upon a Frozen Lake - Deep Drifts"
+"Windworn cliffs rise to the west and south, hundreds of feet of ice-slicked
+
+grey stone blocking passage any further.  On the southwestern corner of this
+
+frozen lake, towering drifts have been pushed up the cliff walls, to collect
+
+nearly forty feet deep where the cliff wall turns from east-west to
+
+north-south.  Most of the ice of the lake's surface is covered in at least a
+
+thin dusting of snow, with few tracks fresh enough to be made out.  Further
+
+north, against the western cliff wall, a once-thundering waterfall, now
+
+frozen, plunges over the cliff top to the lake below.
+
+"
+"[Nereus] ** Room Finished **
+
+[Maurtock] lake/ice
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29039 0 9
+D1
+""
+""
+0 -1 29032 0 9
+E
+"cliffs 1 west 1 south"
+"The cliffs are several hundred feet tall here, growing less tall the further
+
+east you venture.  The stone has been worn smooth by pounding ice and
+
+relentless wind, flowing east to west across this open plain.  A thin layer of
+
+ice has collected on the rock above the top of the powdery drifts.
+
+"
+E
+"waterfall"
+"The waterfall is a bit further north, along the western cliff face.  Once, it
+
+must have tumbled deafeningly down from the cliff's top high above, but now it
+
+is frozen, motionless and silent.
+
+"
+E
+"drifts"
+"The snow has piled in a powdery heap against the southwestern corner of the
+
+frozen lake.  The drifts slope up diagonally, increasing in height the closer
+
+you are to the rock face.  At the deepest, the drifts are almost forty feet
+
+high, held against the cliff by the wind.
+
+"
+A
+"dig search"
+"snow drifts"
+"act_tochar( #dig, ch );
+
+act_notchar( #digs, ch );
+
+modify_move( ch, -10 );
+
+"
+E
+"dig"
+"You dig through the base of the drifts, but you don't find anything but more
+
+powdery snow.
+
+"
+E
+"digs"
+"$n digs through the base of the drifts, but doesn't seem to find anything.
+
+"
+!
+0 0 0
+A
+"climb clamber scale"
+"1 west 1 south cliffs"
+"act_tochar( #nothanks, ch );
+
+"
+E
+"nothanks"
+"The rock is slick and ice-covered.  Even flying creatures would have a
+
+difficult time in the tumultuous winds further up, where you can see dusty
+
+snow swirling fiercely.
+
+"
+!
+0 0 0
+-1
+S
+
+#29034
+"Southeastern Shore of a Great Frozen Lake"
+"The snow-covered earth of the central plateau gives way to the icy surface of
+
+a frozen lake here at the shore.  A few inches of snow cover the icy ground
+
+and edge of the lake here, the snow deepening as one heads south towards
+
+wind-smoothed, grey cliffs and the drifts that have collected beneath them. 
+
+The glinting, mirror-flat surface of the lake continues to the west and north,
+
+towards the looming frozen wall that runs parallel to the northern edge of the
+
+plateau.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29041 0 9
+D1
+""
+""
+0 -1 29035 0 9
+D2
+""
+""
+0 -1 29028 0 9
+D3
+""
+""
+0 -1 29032 0 9
+E
+"frozen wall looming"
+"The frozen wall towers over the northern end of this snowy plain, running east
+
+to west.  Its opaque ice glimmers softly, seemingly beckoning you closer.
+
+"
+-1
+S
+
+#29035
+"Dragonspire Plateau"
+"Long scars of black earth stand out against the snow here like bright blood
+
+against pale flesh.  The trenches of bare earth are cut through the waist-deep
+
+snow all around the area, extending further to the east.  Enormous, round
+
+tracks made by some immensely heavy creature have trampled down other patches
+
+of snow, the tracks leading off in all directions.  Far to the north, the
+
+frozen wall dominates the landscape.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29042 0 9
+D1
+""
+""
+0 -1 29036 0 9
+D2
+""
+""
+0 -1 29029 0 9
+D3
+""
+""
+0 -1 29034 0 9
+E
+"long scars black earth"
+"These cuts have dug all the way down to the frozen soil beneath the snow,
+
+almost as if someone or something were searching the frosty ground for
+
+something.  More of the holes are visible further east, but otherwise this
+
+phenomenon seems confined to this area.
+
+"
+E
+"frozen wall far"
+"The frozen wall looms over the northern section of the plateau, blocking out
+
+part of the sky in that direction.
+
+"
+E
+"tracks"
+"The tracks are very fresh, and seem to be centered around this area and
+
+further to the east.  They were made by some enormous, heavy creature with
+
+large, round feet.
+
+"
+1706 9 1509949540 3 0
+-1
+S
+
+#29036
+"Dragonspire Plateau"
+"Sporadic trenches have been dug into the starkly contrasting black earth here,
+
+cut all the way through the waist-deep snow a few inches into the frozen
+
+soil.  More of the ruts are evident further west, where the snow is slightly
+
+less deep; the heavy tracks seem to be more pronounced in that region as
+
+well.  Far to the north, the frozen wall stretches from east to west,
+
+impossibly tall.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29043 0 9
+D1
+""
+""
+0 -1 29037 0 9
+D2
+""
+""
+0 -1 29030 0 9
+D3
+""
+""
+0 -1 29035 0 9
+E
+"frozen wall"
+"The frozen wall looms over the northern section of the plateau, blocking out
+
+part of the sky in that direction.
+
+"
+E
+"scars sporadic trenches earth"
+"These cuts have been dug all the way down to the frozen soil beneath the snow,
+
+almost as if someone or something were searching the frosty ground for
+
+something.  More of the holes are visible to the west, but otherwise this
+
+phenomenon seems confined to this area.
+
+"
+E
+"heavy tracks"
+"Deep, round indentations in the waist-deep snow cover the area, although they
+
+are more common further west.
+
+"
+-1
+S
+
+#29037
+"Dragonspire Plateau"
+"The waist-deep snow here has been packed down into a trail here with two main
+
+branches: the main traffic appears to travel mostly north to south, while the
+
+less travelled route heads east, hugging a craggy cliff face.  Bear tracks
+
+have trampled down the snow along the trail, although some smaller prints
+
+indicate that some smaller predators also use these game trails.  Northward, a
+
+tree made of ice stands out on the otherwise flat plain, the frozen wall
+
+towering a thousand feet high even further in that direction.  In the distance
+
+to the southwest, a yawning cave opening is visible, possibly the den of the
+
+bears that obviously roam this region.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29044 0 9
+D1
+""
+""
+0 -1 29038 0 9
+D2
+""
+""
+0 -1 29022 0 9
+D3
+""
+""
+0 -1 29036 0 9
+E
+"frozen wall"
+"The frozen wall looms over the plateau further north, an impossibly massive
+
+sheet of ice which parallels the northern end of the plateau.
+
+"
+E
+"tracks prints trails"
+"The trails have been packed into the snow by the frequent travel of some
+
+enormous bear or bears.  Evidence of other smaller prints, possibly those of a
+
+wolf, dog, or fox, are also evident along the trail, apparently not frightened
+
+by the presence of the bears.
+
+"
+E
+"tree"
+"The tree appears to be a flawless tree made of transparent, crystalline ice,
+
+although much detail cannot be made out from here.
+
+"
+E
+"cave opening southwest"
+"The cave mouth opens into a hillside to the southwest, large icicles covering
+
+up part of the cave opening.
+
+"
+-1
+S
+
+#29038
+"Eastern Edge of the Dragonspire Plateau - Craggy Cliffs"
+"Beneath the craggy rock of the overhanging cliff above, dozens of icicles of
+
+various sizes protrude, some large enough to reach a mere ten feet above the
+
+snow of the plateau.  Sheltered by the overhang, the frozen ground beneath is
+
+only dusted with a few inches of snow, a few broken icicles littering the
+
+snowy ground.  Away from the shelter of the overhang, the snow deepens to
+
+nearly waist level.  Large trails have been tracked down along the cliffside,
+
+the prints of a large bear evident.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29045 0 9
+D3
+""
+""
+0 -1 29037 0 9
+E
+"cliff overhang"
+"The cliff rises above the plain here, at least forty feet above the level of
+
+the ground.  An overhanging section prevents climbing, but instead offer a
+
+perfect perch for the hundred or so icicles which have taken root there.
+
+"
+E
+"tracks trails prints bear"
+"The trails lead from west to north here, hugging a few feet away from the
+
+cliffside.  Apparently, this is the favored trail for an enormous bear or
+
+bears.  Some of the prints are quite fresh, probably made in the last few
+
+hours.
+
+"
+3930 17 1509949530 -2 0
+3930 17 1509949470 -2 0
+3930 17 1509949460 -2 0
+-1
+S
+
+#29039
+"Base of a Frozen Waterfall"
+"Forever plunging over the cliff in perpetual froth, a grand frozen waterfall
+
+cascades from hundreds of feet up on the western cliff here into the frozen
+
+surface of the lake.  Against the cliff wall, where the frozen waterfall has
+
+fused against the grey rock, drifting snow has collected in a gentle powdery
+
+pile.  The icy surface of the lake is scratched, pitted, and broken with the
+
+travel of some enormous creature, some evidently with claws.  Further north,
+
+the frozen wall dominates the skyline, while the lake stretches around here in
+
+all directions.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29047 0 9
+D1
+""
+""
+0 -1 29040 0 9
+D2
+""
+""
+0 -1 29033 0 9
+E
+"frozen waterfall 1 west"
+"The waterfall is at least a few hundred feet from the frozen lake surface to
+
+the top.  High above even the top of the waterfall, it looks as if there are
+
+trails or possibly even ancient roads on winding ledges.  If you had the
+
+proper gear, climbing the waterfall would be a very difficult, but not
+
+impossible, task.  At the waterfall's base, the water has actually fused
+
+against the grey wall.
+
+"
+E
+"snow dusting drifts"
+"About a foot of fine, powdery snow has collected against the base of the cliff
+
+edge.
+
+"
+E
+"frozen wall"
+"The frozen wall runs the length of the northern edge of the plateau and
+
+dominates the skyline to the north.  It is hundreds of feet tall and made of
+
+sheer, rock hard ice.
+
+"
+E
+"broken scratched scratches pitted surface lake"
+"The surface of the lake has been scratched and broken many times since it has
+
+frozen.  Giant, round prints are sunken a bit into the surface of the ice,
+
+while other clawed prints are also evident across the surface of the lake.  It
+
+is possible that other, lighter creatures have walked along the lake, but as
+
+they left no trace of their travel it is impossible to know.
+
+"
+A
+"climb scale clamber"
+"waterfall 1 west 1 up"
+"if( can_fly( ch ) ) {
+
+  act_tochar( #fly, ch );
+
+  act_notchar( #flies, ch );
+
+  transfer( ch, find_room( 29058 ) );
+
+  act_notchar( #fliesin, ch );
+
+  }
+
+else {
+
+  if( wearing_obj( 1405, ch ) || has_obj( 2341, ch ) || has_obj( 3658, ch ) ) {
+
+    if( 1d4+5 > find_skill( ch, climb ) ) {
+
+      act_tochar( #fail, ch );
+
+      act_notchar( #fails, ch );
+
+      }
+
+    else {
+
+      act_tochar( #climb, ch );
+
+      act_notchar( #climbs, ch );
+
+      use_skill( ch, climb );
+
+      transfer( ch, find_room( 29058 ) );
+
+      if( !modify_move( ch, -100 ) )
+
+        modify_move( ch, -50 );
+
+      act_notchar( #climbsin, ch );
+
+      }
+
+    }
+
+  else
+
+    act_tochar( #cant, ch );
+
+  }
+
+"
+E
+"fly"
+"You fly up to the top of the frozen waterfall.
+
+"
+E
+"flies"
+"$n flies up to the top of the frozen waterfall and vanishes from sight.
+
+"
+E
+"fliesin"
+"$n flies in from below.
+
+"
+E
+"fail"
+"You attempt to climb the waterfall, but even with climbing gear, you slip back
+
+down to the slippery base.
+
+"
+E
+"fails"
+"$n tries to climb the frozen waterfall, but even with climbing gear, $e is
+
+unable to make the climb.
+
+"
+E
+"climbsin"
+"$n climbs up to the top of the frozen waterfall next to you.
+
+"
+E
+"climbs"
+"$n climbs up the frozen waterfall and vanishes from sight.
+
+"
+E
+"cant"
+"You can't even begin to climb the waterfall without any sort of climbing gear.
+
+"
+E
+"climb"
+"Using your climbing equipment, you climb up the frozen waterfall to the top.
+
+"
+!
+0 0 0
+-1
+S
+
+#29040
+"Upon a Frozen Lake"
+"The ice here appears somewhat unstable, as if it has been broken through by
+
+something enormously heavy in the recent past.  A gusting wind has blown all
+
+but a faint dusting of powder away from the icy surface of the frozen lake,
+
+the ice glinting faintly in the light.  Even in the newly re-frozen sections
+
+of the ice, pits and scars are evident, caused by the travel of some enormous
+
+predator.  The lake stretches in all directions from here; to the west, a
+
+frozen waterfall is locked in stillness, forever plunging over a cliff edge.
+
+"
+""
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29048 0 9
+D1
+""
+""
+0 -1 29041 0 9
+D2
+""
+""
+0 -1 29032 0 9
+D3
+""
+""
+0 -1 29039 0 9
+D5
+"sheet of ice"
+""
+227 -1 29055 0 6
+E
+"broken re-frozen ice surface lake"
+"A giant section of ice has broken in the recent past; a few holes roughly a
+
+foot across are also evident here in the center of the lake.  It is unclear
+
+why this section of the lake would have thinner ice than the rest, but it
+
+appears only a few inches thick in places.
+
+"
+E
+"waterfall"
+"Further west, from atop a steep drop many hundreds of feet up, a frozen
+
+waterfall tumbles to the surface of the lake.
+
+"
+E
+"pits scars tracks"
+"Some extremely heavy creature, evidently with claws, has starred the ice in
+
+places.  Occasional claw marks are visible where the creature's claws
+
+scratched the frozen surface.
+
+"
+A
+"break strike smash hit punch"
+"ice lake re-frozen surface"
+"if( is_open( room, down ) ) {
+
+  act_tochar( #already, ch );
+
+}
+
+obj = wield( ch );
+
+if( !obj ) {
+
+  act_tochar( #no, ch );
+
+  end;
+
+}
+
+if( weight( obj ) > 6 ) {
+
+  act_tochar( #smash, ch );
+
+  act_notchar( #smashes, ch );
+
+  open( room, down );
+
+  send_to_room( #smashy, find_room( 29055 ) );
+
+  if( !obj_in_room( 4642, room ) )
+
+    obj_to_room( oload( 4642 ), room );
+
+}
+
+else {
+
+  act_tochar( #try, ch );
+
+  act_notchar( #tries, ch );
+
+}
+
+"
+E
+"no"
+"You can't hope to smash through the ice without some sort of weapon.
+
+"
+E
+"try"
+"You try to break through the ice, but your weapon simply isn't heavy enough to
+
+break through the surface of the lake.
+
+"
+E
+"tries"
+"$n attempts to break through the lake's frozen surface, but without success.
+
+"
+E
+"smash"
+"You manage to break through the newly frozen section of ice, revealing
+
+chilling waters below.
+
+"
+E
+"smashes"
+"$n smashes a hole through the frozen surface of the lake.
+
+"
+E
+"smashy"
+"Someone or something from above has smashed the sheet of ice covering the
+
+surface of the lake.
+
+"
+E
+"already"
+"The ice has already been broken open, revealing a way down.
+
+"
+!
+0 0 0
+2356 9 1509949540 3 0
+-1
+S
+
+#29041
+"Upon a Frozen Lake"
+"Only a faint dusting of snow covers the frozen surface of the lake here.  In a
+
+few places, scars and starring in the ice betrays the passage of some enormous
+
+predator in the recent past.  In a few places, it is evident that something
+
+enormously heavy has broken through the ice in several places, although it
+
+seems to have frozen back over solidly.  More of these breakages are evident
+
+further west, where the lake continues.  Far to the north, the frozen wall
+
+stands sentinel along the northern edge of the plateau.
+
+"
+"[Nereus] ** Room Finished **
+
+Starring again, just commenting it. -Talis
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29049 0 9
+D1
+""
+""
+0 -1 29042 0 9
+D2
+""
+""
+0 -1 29034 0 9
+D3
+""
+""
+0 -1 29040 0 9
+E
+"scars starring tracks"
+"Starring in the ice reveals the passage of something enormously heavy.  Faint
+
+and deep scars in neat rows of four mark the claws of a predator.
+
+"
+E
+"breakages broken ice"
+"There are several places where the ice has been broken through by something
+
+extremely heavy, but it seems like these breakages occurred long ago, because
+
+the ice at your feet appears very solid and very thick.
+
+"
+E
+"frozen wall"
+"The frozen wall maintains a permanent watch over the northern end of the
+
+plateau, opaque ice glinting faintly in the light.
+
+"
+A
+"break smash hit"
+"ice ground breakages"
+"act_tochar( #toosolid, ch );
+
+"
+E
+"toosolid"
+"The ice is far too solid to break through.
+
+"
+!
+0 0 0
+-1
+S
+
+#29042
+"Dragonspire Plateau - Eastern Shore of a Frozen Lake"
+"The snow here is quite shallow, a few inches in most places, and completely
+
+absent in others.  What little snow has been tracked down by the movement of a
+
+large, clawed animal, prints much more visible on the snowy shore of this
+
+frozen lake.  A frozen lake, glimmering in the light, stretches to the west,
+
+the shore beginning abruptly here.  Very close to the north, the mirror-smooth
+
+surface of the frozen wall seems impossibly tall and stretches the entireity
+
+of the northern end of the plateau.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29050 0 9
+D1
+""
+""
+0 -1 29043 0 9
+D2
+""
+""
+0 -1 29035 0 9
+D3
+""
+""
+0 -1 29041 0 9
+E
+"tracks prints clawed animal"
+"The tracks are best visible in the few inches of snow after the edge of the
+
+shore begins, since the solid surface of the lake does not indent with the
+
+tread of the large predators.
+
+"
+E
+"mirror-smooth frozen wall"
+"The frozen wall towers over this northern end of the plateau.  Now that you
+
+are closer, you can begin to see that its surface is impossibly smooth, opaque
+
+ice.
+
+"
+-1
+S
+
+#29043
+"Dragonspire Plateau"
+"The snow here is nearly as deep as a man is tall at this crossroads of animal
+
+activity in the center of the plateau.  The tracks of an enormous bear,
+
+wolves, and something even larger with rounder, flatter feet are evident
+
+moving in all directions except north, trampling the snow into ice.  East of
+
+here, a tree made of purest ice stands tall over the snow of the plain, while
+
+to the north, an archway is visible, carved into the face of the frozen wall
+
+itself.
+
+"
+"[Nereus] ** Room Finished - last room finished, 19 Feb 2003 **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29051 0 9
+D1
+""
+""
+0 -1 29044 0 9
+D2
+""
+""
+0 -1 29036 0 9
+D3
+""
+""
+0 -1 29042 0 9
+E
+"frozen wall"
+"The frozen wall stretches across the northern end of the plateau, impossibly
+
+tall and smooth.  It dwarfs even the mountains to the east and west of the
+
+wall.
+
+"
+E
+"tree"
+"Just east of here, a magnificent tree made of ice sways gently in the breeze. 
+
+Its crystalline leaves glint softly in the light.
+
+"
+E
+"archway"
+"The archway appears to be the only break in the otherwise perfect surface of
+
+the sheer sheet of ice that runs the entire length of the northern end of the
+
+plateau.
+
+"
+-1
+S
+
+#29044
+"Before a Marvelous Tree of Ice"
+"A mighty tree made of ice grows here from beneath the snow, perfect in every
+
+detail.  Waist-deep snow covers this section of the plain, but has been
+
+tracked down by extremely heavy animal traffic leading in all directions. 
+
+Strangely, despite all the animal traffic in the region, a ring a few feet
+
+wide is completely undisturbed around the base of the tree.  It would appear
+
+that nothing, animal or man, has touched or climbed the tree since this snow
+
+began falling.  To the south and east, cliffs form the eastern edge of this
+
+wintry plateau; to the north, the might of the frozen wall dwarfs this tree of
+
+ice.
+
+"
+"[Nereus] ** Room Finished **
+
+room extra desc 1, sort of odd.  \"almost as if\", I'd think either they appear
+
+to \"as if\" not almost, but then again, for an animal 5 feet is not avoiding. 
+
+Avoiding tends to mean meters and meters away.  Just a thought.  -Talis
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29052 0 9
+D1
+""
+""
+0 -1 29045 0 9
+D2
+""
+""
+0 -1 29037 0 9
+D3
+""
+""
+0 -1 29043 0 9
+E
+"traffic tracks"
+"The tracks form a rough circle around the base of the tree.  None of the
+
+tracks is closer than five feet or so to the base of the tree, almost as if
+
+the wildlife avoids the tree.
+
+"
+A
+""
+""
+"act_tochar( #leaf, ch );
+
+"
+E
+"leaf"
+"The tiny crystalline leaves tinkle together softly in the wind.
+
+"
+!
+2 300 0
+A
+"climb scale clamber"
+"tree ice"
+"if( can_fly( ch ) ) {
+
+  act_tochar( #cursory, ch );
+
+  act_notchar( #fliesup, ch );
+
+  }
+
+else
+
+  acode( room, 5 );
+
+"
+E
+"cursory"
+"You fly up to the top of the tree, giving it a cursory examination, and then
+
+fly back down, having found no place to perch in the branches.
+
+"
+E
+"fliesup"
+"$n flies up to examine the top of the tree of ice, but appears to be able to
+
+find noplace to land, and returns to the snowy ground beside you.
+
+"
+E
+"bark"
+"You reach out and touch the smooth, frozen bark of the icy tree.  Instantly,
+
+powerful senses flood your mind; warm sunlight filtering through green trees,
+
+the rich scents of mulch and topsoil.  An enormous sense of sadness, loss, and
+
+icy loneliness fills you, chilling you to the bone; tormenting your soul. 
+
+Finally, you collapse to the ground, stunned by the raw emotion.
+
+"
+E
+"collapses"
+"$n reaches out and tentatively touches the smooth bark of the tree. 
+
+Instantly, $e collapses onto the snowy ground, twitching gently.
+
+"
+!
+0 0 0
+A
+"cut chop fell"
+"tree ice"
+"obj = wield( ch );
+
+if( !obj ) {
+
+  act_tochar( #moron, ch );
+
+  end;
+
+  }
+
+i = obj_value( obj, 3 );
+
+if( i != 8 ) {
+
+  act_tochar( #axe, ch );
+
+  end;
+
+  }
+
+if( weight( obj ) < 5 ) {
+
+  act_tochar( #toolight, ch );
+
+  end;
+
+  }
+
+act_tochar( #uhoh, ch );
+
+act_notchar( #uhohs, ch );
+
+wait( 1 );
+
+if( !obj )
+
+  end;
+
+if( 1d10 == 4 ) {
+
+  act_tochar( #rimes, ch );
+
+  act_notchar( #itrimes, ch );
+
+  junk_obj( obj, 1 );
+
+  }
+
+else {
+
+  act_tochar( #deathly, ch );
+
+  }
+
+"
+E
+"moron"
+"You want to chop down a tree made of solid ice with your hands?
+
+"
+E
+"axe"
+"An axe would be a more appropriate choice to attempt to chop down a tree.
+
+"
+E
+"toolight"
+"The axe you are wielding is just too light to be effective for the task of
+
+chopping down this tree.
+
+"
+E
+"uhoh"
+"With a heave, you smash your axe in a wide arc, right into the trunk of the
+
+tree of ice.  Your axe clangs off, not harming the tree in the slightest.
+
+"
+E
+"uhohs"
+"$n swings $s axe into the tree, but it clangs off the icy bark harmlessly.
+
+"
+E
+"rimes"
+"Frost rimes the blade of the axe, travelling up the handle.  Suddenly, your
+
+weapon crumbles to icy shards in your hand!
+
+"
+E
+"itrimes"
+"Frost rimes $n's axe and it shatters in $s hands!
+
+"
+E
+"deathly"
+"The blade of the axe becomes deathly cold to the touch.  You feel queasy at
+
+the jarring impact between the blade and the tree.
+
+"
+!
+0 0 0
+A
+"get take pick pluck"
+"leaf"
+"if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  if( 1d80 == 3 ) {
+
+    act_tochar( #sweet, ch );
+
+    act_notchar( #sweets, ch );
+
+    obj_to_char( oload( 4041 ), ch );
+
+    end;
+
+    }
+
+  }
+
+act_tochar( #reach, ch );
+
+act_notchar( #reaches, ch );
+
+"
+E
+"reach"
+"You reach up to a low-hanging branch and pluck an icy leaf from the tree, but
+
+it quickly melts in your hand.
+
+"
+E
+"reaches"
+"$n reaches up to a low-hanging branch and plucks an icy leaf from the tree,
+
+but it quickly melts in $s hand.
+
+"
+E
+"sweet"
+"You reach up and pick a tiny, crystalline leaf from the tree.
+
+"
+E
+"sweets"
+"$n reaches up and plucks a tiny, crystalline leaf from the tree.
+
+"
+!
+0 0 0
+A
+"touch hug stroke pat"
+"tree ice"
+"act_tochar( #bark, ch );
+
+act_notchar( #collapses, ch );
+
+set_resting( ch );
+
+set_delay( ch, 96 );
+
+wait( 1 );
+
+interpret( ch, \"shiver\" );
+
+"
+E
+"bark"
+"You reach out and touch the smooth, frozen bark of the icy tree.  Instantly,
+
+powerful senses flood your mind; warm sunlight filtering through green trees,
+
+the rich scents of mulch and topsoil.  An enormous sense of sadness, loss, and
+
+icy loneliness fills you, chilling you to the bone; tormenting your soul. 
+
+Finally, you collapse to the ground, stunned by the raw emotion of the
+
+experience.
+
+"
+E
+"collapses"
+"$n reaches out and tentatively touches the smooth bark of the icy tree. 
+
+Instantly, $e collapses to the ground, twitching slightly.
+
+"
+!
+0 0 0
+3941 17 1509949540 -2 0
+244 137 1509949540 3 0
+-1
+S
+
+#29045
+"Dragonspire Plateau - Before a Rough Cliffside"
+"Waist-deep snow covers the icy ground here, disturbed by the deep tracks of a
+
+number of large predators.  A rough cliffside rises thirty feet above the edge
+
+of the plain here, eroded strangely and composed of extremely rough, grey
+
+stone.  To the west, a large tree rises above the snow, while the frozen wall
+
+runs the length of the plateau just north of here.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D0
+""
+""
+0 -1 29053 0 9
+D2
+""
+""
+0 -1 29038 0 9
+D3
+""
+""
+0 -1 29044 0 9
+E
+"cliffside 1 east"
+"The cliff face rises perhaps thirty feet, where it ends at a ledge before the
+
+peak continues to climb.  The rock is extremely rough and weathered in a
+
+strange fashion; ice-slicked ridges have formed along the rock, providing
+
+ample hand and footholds for someone to climb to the ledge above.
+
+"
+E
+"tree"
+"The tree just west of here almost looks alive; at least, it would, were it not
+
+made of perfectly transparent, crystalline ice.
+
+"
+E
+"frozen wall"
+"The frozen wall towers over the north end of the plateau, running west from
+
+where it meets the eastern cliff face.
+
+"
+E
+"tracks snow"
+"The tracks are fairly fresh, those of what appear to be an enormous bear.  The
+
+majority of the tracks lead either west or south from here, hugging the
+
+cliffside.
+
+"
+A
+"climb clamber scale"
+"1 east cliffside 1 up"
+"if( find_skill( ch, climb ) > 0 || can_fly( ch ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #climbs, ch );
+
+  transfer( ch, find_room( 29046 ) );
+
+  act_notchar( #enters, ch );
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  }
+
+"
+E
+"climb"
+"You climb up the rough cliffside to the east and pull yourself up to a ledge
+
+above.
+
+"
+E
+"climbs"
+"$n climbs up the rough cliffside to the east and pulls $mself up to a ledge
+
+above.
+
+"
+E
+"no"
+"You don't know how to climb or fly.
+
+"
+E
+"enters"
+"$n climbs up the rough cliffside from below, pulling $mself up onto the ledge
+
+beside you.
+
+"
+!
+0 0 0
+2423 9 1509949540 3 0
+-1
+S
+
+#29046
+"Cliff Ledge Overlooking the Dragonspire Plateau"
+"Huddled on this narrow rock ledge on a cliff face, the wind whips and blusters
+
+past the cliff face, carrying tiny particles of ice and biting snow with it. 
+
+Blindingly white and magnificently flat, the surface of the Dragonspire
+
+plateau stretches out westward for miles, framed by mountains far in the
+
+distance to the west, and the humbling frozen wall to the north.  A narrow,
+
+ice-rimed fissure is visible in the cliffside to the east, possibly offering
+
+some shelter from the biting cold.  The cliff face below, while slick with
+
+ice, is cracked and rough and could probably be climbed down fairly easily.
+
+"
+"[Nereus] Room Finished.
+
+Just a thought, they can see the lake, can they see the waterfall?  Perhaps
+
+not.  -Talis
+
+"
+301465600 0
+17 6 0
+D1
+""
+""
+0 -1 29064 0 5
+E
+"plateau 1 west"
+"This is a great vantage point to see some landmarks of the plateau.  Far on
+
+the western edge, near the mountain edge, a great lake has frozen over and it
+
+glimmers in the light.  On the northern edge of the plateau is the mighty
+
+frozen wall, which continues to stretch even above some of the mountain peaks
+
+around you.  Closer, a great tree of ice rises impossibly out of the plateau a
+
+bit west of the cliff.
+
+"
+E
+"lake"
+"The lake is too far away to make out well, but stretches quite a ways along
+
+the western edge of the plateau.
+
+"
+E
+"frozen wall 1 north"
+"The frozen wall is an enormous sheet of ice, stretching vertically for perhaps
+
+a thousand feet.  What lies beyond is the stuff of legend; noone is known to
+
+have journeyed beyond it and returned.  It runs along the northern edge of the
+
+entire plateau.
+
+"
+E
+"fissure ice-rimed 1 east"
+"The edges of the fissure are coated with ice, as if the snow or ice has melted
+
+and refrozen along the edges at some time in the past.  Inside the cavern is
+
+darkness, but you can faintly smell animal smells coming from within.
+
+"
+E
+"icy ice tree"
+"Perhaps fifty feet in height, the tree sways with the breeze and glitters
+
+beautifully in the light.  It is perfectly transparent, and even from here it
+
+appears it is covered in thousands of icy leaves.
+
+"
+A
+"climb clamber scale"
+"cliff 1 west 1 down"
+"if( find_skill( ch, climb ) > 0 || can_fly( ch ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #climbs, ch );
+
+  transfer( ch, find_room( 29045 ) );
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  }
+
+"
+E
+"climb"
+"Using the plentiful hand and footholds, you make your way down the cliff back
+
+to the snowy safety of the plateau.
+
+"
+E
+"climbs"
+"$n lowers $mself over the edge of the ledge and climbs down to the plateau
+
+floor below.
+
+"
+E
+"no"
+"You don't know how to climb or fly.
+
+"
+!
+0 0 0
+-1
+S
+
+#29047
+"Upon a Frozen Lake - Northwestern Corner of the Plateau"
+"This bleak corner of the plain seems to be dominated utterly by the frozen
+
+wall, which towers over this corner of the plateau.  Even the wind is stilled
+
+here and sound seems muted.  From this close, it is evident that the wall is
+
+not an ordinary glacier or purely natural phenomenon: the ice is a soft,
+
+opaque blue-white, and the surface of the wall is perfectly smooth, almost as
+
+if it were planed stone.  A thin layer of crusted, old snow covers the surface
+
+of the lake, the occasional track visible; it has been long since any new snow
+
+fell here.  The frozen lake continues from here, to the south and east.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D1
+""
+""
+0 -1 29048 0 9
+D2
+""
+""
+0 -1 29039 0 9
+E
+"frozen wall"
+"Looming maybe a thousand feet above, the wall is somehow perfectly, impossibly
+
+vertical and perfectly smooth.  It is bitterly cold to the touch, seeming to
+
+suck away at the warmth of your lifeblood.
+
+"
+E
+"crusted old snow track"
+"A few lone tracks are visible here, made by something extremely large and
+
+extremely heavy.  The snow has been packed into solid ice in the tracks,
+
+making a determination of what made them impossible.
+
+"
+A
+"climb clamber scale"
+"1 north frozen wall 1 up"
+"act_tochar( #noway, ch );
+
+"
+E
+"noway"
+"The wall is a thousand feet of sheer, smooth ice.  Nobody could hope to climb
+
+it or even fly straight up along its surface.
+
+"
+!
+0 0 0
+1706 9 1509949540 3 0
+-1
+S
+
+#29048
+"Upon a Frozen Lake - Before the Frozen Wall"
+"Whether because of a lack of snow or because of a soft wind blowing through
+
+the area, the surface of the icy lake underfoot is clear of all but a faint
+
+dusting of snow.  The frozen wall looms over the lake, blocking out half of
+
+the sky and muting the harsh noise of the wind found elsewhere on the
+
+plateau.  The wall's perfection continues both east and west, where its
+
+opaque, mirror-smooth surface is unmarked.  The lake continues to the south,
+
+west, and a bit further east from here.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D1
+""
+""
+0 -1 29049 0 9
+D2
+""
+""
+0 -1 29040 0 9
+D3
+""
+""
+0 -1 29047 0 9
+E
+"surface icy lake underfoot"
+"The icy surface beneath your feet is immeasurably thick and very solid.  No
+
+tracks mar its surface, whether because there is no animal activity here or
+
+because it did not disturb the solid ice.  The lake continues in all
+
+directions from here.
+
+"
+E
+"frozen wall 1 north"
+"The wall stretches a thousand feet up, perfectly vertical and perfectly
+
+smooth.  It is bitterly cold to the touch, seeming to suck away at the warmth
+
+of your flesh.
+
+"
+A
+"climb clamber scale"
+"1 north frozen wall 1 up"
+"acode( find_room( 29047 ), 1 );
+
+"
+!
+0 0 0
+-1
+S
+
+#29049
+"Upon a Frozen Lake - Before the Frozen Wall"
+"Possibly because of the shelter of the looming frozen wall to the north, there
+
+is only a fine dusting of snow that has accumulated on the icy surface of the
+
+lake here.  The perfection of the wall stretches a thousand feet up from its
+
+base, mirror-smooth as it continues to the east and west along the northern
+
+edge of the plain.  There are a few tracks evident in the dusting of snow, but
+
+they have been blurred by the wind and are now impossible to make out
+
+clearly.  The lake continues to the west, south, and east, where the
+
+smoothness of the lake ends at the shoreline.
+
+"
+"[Nereus] ** Room Finished **
+
+"
+301465600 0
+17 9 0
+D1
+""
+""
+0 -1 29050 0 9
+D2
+""
+""
+0 -1 29041 0 9
+D3
+""
+""
+0 -1 29048 0 9
+E
+"tracks"
+"There is only a faint dusting of powder here, blown about by the wind since
+
+the tracks were made.  whatever made them is a fairly large quadraped, but
+
+more information than that is simply impossible to obtain.
+
+"
+E
+"1 north frozen wall"
+"The wall towers above you here, stretching into the sky, east, and west for
+
+what seems like forever.  It is bitterly cold to the touch, seeming to pull at
+
+you, whispering longingly for you to give up the heat of your body.
+
+"
+A
+"climb clamber scale"
+"1 north frozen wall 1 up"
+"acode( find_room( 29047 ), 1 );
+
+"
+!
+0 0 0
+-1
+S
+
+#29050
+"Before the Frozen Wall - Eastern Shore of a Frozen Lake"
+"The shore of the lake begins abruptly here, one moment solid ice, and the
+
+next, the crunching of hard-packed snow.  Incomprehensibly tall, the frozen
+
+wall stretches for what seems like eternity to the east and west,
+
+mirror-smooth.  To the east, past the shore of the lake, a man-sized wall of
+
+snow has been piled around a magnificent archway carved into the wall itself. 
+
+The frozen surface of the lake stretches out to the west and south, exposed
+
+ice glinting softly in the light.
+
+"
+""
+301465600 0
+17 6 0
+D1
+""
+""
+0 -1 29051 0 6
+D2
+""
+""
+0 -1 29042 0 9
+D3
+""
+""
+0 -1 29049 0 9
+E
+"frozen wall 1 north"
+"The wall is a dazzling thousand feet of pure, unbroken ice.  Its opaque
+
+surface is unbroken and is perfectly smooth.  The frozen surface is deathly
+
+cold to the touch, seeming to pull away heat from your body.
+
+"
+E
+"pile man-sized"
+"A man-sized pile of snow has been heaped here, forming a wall that runs
+
+north-south.  It almost resembles a fence, if there were any reason to keep in
+
+some cattle.
+
+"
+E
+"archway magnificent carved"
+"An archway has been carved into the smooth surface of the wall, the only place
+
+the smooth, unbroken mirror of the wall is broken that you can see.  The
+
+archway is roughly twenty feet wide and twenty feet tall, but you could
+
+probably get a closer look further along the wall to the east.
+
+"
+A
+"climb clamber scale"
+"1 north frozen wall 1 up"
+"acode( find_room( 29047 ), 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"if( is_exhausted( ch ) || can_fly( ch ) )
+
+  continue;
+
+else {
+
+  act_tochar( #wall, ch );
+
+  continue;
+
+  }
+
+"
+E
+"wall"
+"You make your way over the pile of snow and drop over the other side.
+
+"
+!
+3 0 2
+-1
+S
+
+#29051
+"Before a Great Archway - Tunnel into the Frozen Wall"
+"Deep piles of snow and ice have been shoveled along both sides of the entrance
+
+to an archway leading into the frozen wall itself.  A camp of sorts which
+
+appears to be mostly permanent has been set up here: the two piles of snow
+
+create a two-walled room roughly twenty feet across.  Along the western wall,
+
+a sort of lean-to has been constructed out of white pelts, near a rock-lined
+
+firepit.  To the north, the snow of the tunnel leading into the wall is
+
+completely undisturbed by any track.
+
+"
+"[Nereus] no.mob
+
+[Dalthas] make garant here take the angarlish furs and give them back, saying his tale about angarlishes
+
+"
+301465600 0
+17 7 0
+D0
+""
+""
+73728 -1 29054 0 7
+D1
+""
+""
+0 -1 29052 0 9
+D2
+""
+""
+0 -1 29043 0 9
+D3
+""
+""
+0 -1 29050 0 6
+E
+"piles snow ice"
+"The piles of snow are about six feet tall, pushed together by clearing the
+
+snow from the central area.
+
+"
+E
+"frozen wall archway"
+"The wall looms above you for what seems like thousands of feet, an implacable
+
+sheet of nearly smooth, opaque ice.  A grand archway, twenty feet high and
+
+twenty feet across, has been carved into the wall here, the crude camp
+
+straddling the entrance.
+
+"
+E
+"lean-to pelts"
+"Against the western snow pile, a shelter made of layers of thick, white pelts
+
+has been erected.  Snow has been piled on one side, presumably for additional
+
+insulation.  A few feet away, a firepit has been dug into the ice itself. 
+
+Thick, white furs line the edges of the firepit and the lean-to, except for
+
+one, thick brown fur that resembles that of a great mammoth.
+
+"
+E
+"firepit rock-lined"
+"A firepit has been dug directly into the ice in front of the lean-to.  Stones
+
+have been placed around it to contain sparks.  Where the wood has come from in
+
+this arctic wild is not clear.
+
+"
+A
+""
+""
+"if( is_follower( ch ) || !is_player( ch ) )
+
+  end;
+
+mob = mob_in_room( 2421, room );
+
+if( mob ) {
+
+  if( !can_see_char( mob, ch ) )
+
+    end;
+
+  interpret( mob, \"stand\" );
+
+  wait( 1 );
+
+  if( mob )
+
+    interpret( mob, \"growl\" );
+
+  wait( 1 );
+
+  rch = mob_in_room( 2420, room );
+
+  if( mob && rch ) {
+
+    if( !is_fighting( rch ) )
+
+      interpret( rch, \"pat\", mob );
+
+    if( !is_fighting( mob ) )
+
+      interpret( mob, \"rest\" );
+
+    }
+
+  }
+
+"
+!
+1 0 14
+A
+""
+""
+"mob = mob_in_room( 2420, room );
+
+if( !mob || is_follower( ch ) )
+
+  continue;
+
+if( done_quest( ch, 68 ) ) {
+
+  act_notchar( #luck, mob );
+
+  continue;
+
+  }
+
+else {
+
+  interpret( mob, \"emote moves into your path as you attempt to head north.\" );
+
+  interpret( mob, \"say I cannot allow you to pass. \" );
+
+  }
+
+"
+E
+"luck"
+"$n nods gravely and moves aside to let you move north under the archway.
+
+"
+!
+3 0 1
+A
+""
+""
+"wait( 20 );
+
+set_rflag( no.mob, find_room( 29051 ) );
+
+"
+!
+0 0 0
+2420 137 1509949540 3 0
+2421 137 1509949540 2 0
+1358 17 1509949540 -2 0
+-1
+S
+
+#29052
+"Before the Frozen Wall"
+"The infallability and perfection of the frozen wall is marred here, where
+
+hundreds of feet above, huge chunks of ice have fallen to the icy ground here,
+
+sinking deep into the snow.  Knee-deep snow has collected here above the icy
+
+ground, with the few visible tracks since mostly filled in with a dusting of
+
+snow.  To the west, beyond a heaped pile of snow that acts almost like a fence
+
+of sorts, an archway has been carved directly into the face of the wall.  The
+
+wall continues unmarred to the east, where it finally ends at a cliffside.  A
+
+towering tree of ice grows just south of here, looking almost real.
+
+"
+""
+301465600 0
+17 9 0
+D1
+""
+""
+0 -1 29053 0 9
+D2
+""
+""
+0 -1 29044 0 9
+D3
+""
+""
+0 -1 29051 0 9
+E
+"tree"
+"A tree, perhaps fifty feet in height, grows just south of here.  It glints
+
+brightly in the light, made of purely transparent crystalline ice.
+
+"
+E
+"frozen wall 1 north"
+"The wall, mirror-smooth perfection almost everywhere else along its surface,
+
+has a huge rend torn into it about halfway up.  Although it is so high up it
+
+is difficult to make out details, it seems the ice is the same opaque
+
+blue-white as the ice on the surface.  The thousand-foot tall wall of ice
+
+continues to the east and west from here, forming the edge of this plain.
+
+"
+E
+"heaped pile snow"
+"A pile of snow has been heaped just west of here, forming a crude fence that
+
+runs north-south.  It is roughly the height of a man, but it could easily be
+
+climbed.
+
+"
+E
+"archway carving"
+"A simple but magnificent archway has been carved directly into the face of the
+
+frozen wall just west of here.  It is roughly twenty feet wide and tall, but
+
+it would be easier to make out if you moved west to examine it more closely.
+
+"
+E
+"tracks"
+"The tracks appear to be those of a large bear or wolf, but it is difficult to
+
+tell, since they are mostly now filled with powdery snow.
+
+"
+A
+"climb clamber scale"
+"1 north frozen wall 1 up"
+"acode( find_room( 29047 ), 1 );
+
+"
+!
+0 0 0
+A
+""
+""
+"acode( find_room( 29050 ), 2 );
+
+continue;
+
+"
+!
+3 0 8
+4059 17 1509949540 -2 0
+2840 17 1509949475 -2 0
+2840 17 1509949455 -2 0
+-1
+S
+
+#29053
+"Before the Frozen Wall - Hemmed in by Cliffs"
+"The frozen wall finally comes to an end here at this far northeastern edge of
+
+the plateau.  Towering over the plateau, the perfect surface of the frozen
+
+wall continues east from here, unbroken as the still surface of a pond.  An
+
+overhanging cliff rises to the east; the wall meets the cliff face perfectly,
+
+leaving not even a seam where the wall appears to be fused to the rock.  To
+
+the south, the cliffs continue, while southwest of here, a great tree of ice
+
+stands out, glinting in the light.
+
+"
+""
+301465600 0
+17 9 0
+D2
+""
+""
+0 -1 29045 0 9
+D3
+""
+""
+0 -1 29052 0 9
+E
+"frozen wall"
+"The frozen wall looms over the plain here, a thousand feet from base to the
+
+top high above.  The wall is bitterly, deathly cold to the touch, seeming to
+
+suck away your body heat.
+
+"
+E
+"cliff"
+"The cliff is rough rock, apparently not very weathered by the wind and snow. 
+
+It meets the frozen wall perfectly, with no seam between the rock and the wall
+
+of ice.
+
+"
+A
+"climb clamber scale"
+"1 north frozen wall 1 up"
+"acode( find_room( 29047 ), 1 );
+
+"
+!
+0 0 0
+2356 9 1509949540 3 0
+-1
+S
+
+#29054
+"Beneath a Great Archway - Tunnel into the Ice"
+"A grand archway arcs overhead, twenty feet in height at the tallest point.  A
+
+level covering of snow blankets the ground here, having been blown in softly
+
+from the plateau to the south.  The glimmering, opaque ice of the outside of
+
+the wall is also present here in this tunnel through the wall; the walls of
+
+the ice cave are perfectly smooth and the curve of the arch is flawless and
+
+gentle.  To the north, this tunnel intersects an east-south tunnel, where an
+
+elaborately carved mural is visible.
+
+"
+"[Nereus] End of this zone
+
+[Nereus] no.mob
+
+"
+301596684 0
+11 6 0
+D0
+""
+""
+0 -1 82400 0 8
+D2
+""
+""
+73728 -1 29051 0 7
+E
+"archway overhead"
+"The archway is perfectly unornamented, simply a circular arch twenty feet
+
+above and twenty feet across at its base.  Above the top of the arch, a
+
+thousand feet of solid ice lies, waiting to fall and obliterate anything below
+
+it.
+
+"
+E
+"ground snow"
+"There is a level covering of fine, powdery snow that blankets the ground under
+
+the archway.  It is only a few inches deep, and appears to be completely
+
+undisturbed, possibly for centuries.
+
+"
+E
+"murals"
+"You are too far away to make out any details, save that some intricate colored
+
+carvings have been made along the northern wall of the passageway to the north.
+
+"
+-1
+S
+
+#29055
+"Submerged in a Frozen Lake"
+"A narrow shaft of water has thawed here, warm currents circulating from far
+
+below.  The water seems to be very fresh, with just a hint of sulphur
+
+permeating it.  Here, near the surface, the water is still almost freezing --
+
+you cannot stay here long without protection from the cold.  An ice sheet
+
+covers most of the lake above you, but it could probably be broken if you were
+
+strong enough.
+
+"
+"[Nereus] Entering room code that seals over the ice
+
+[Nereus] Freeze to death here
+
+"
+301465608 0
+7 9 0
+D4
+"sheet of ice"
+""
+195 -1 29040 0 6
+D5
+""
+""
+0 -1 29056 0 9
+A
+""
+""
+"if( is_follower( ch ) || !is_open( room, up ) )
+
+  end;
+
+wait( 5 );
+
+send_to_room( #iceup, find_room( 29055 ) );
+
+send_to_room( #icedown, find_room( 29040 ) );
+
+obj = obj_in_room( 4642, find_room( 29040 ) );
+
+if( obj )
+
+  junk_obj( obj );
+
+close( room, up );
+
+"
+E
+"iceup"
+"The ice above you freezes back over, blocking exit from the icy water.
+
+"
+E
+"icedown"
+"The hole cut into the ice at your feet freezes back over, blocking any way
+
+into the icy water.
+
+"
+!
+1 0 16
+A
+"break smash"
+"1 up ice"
+"if( is_open( room, up ) ) {
+
+act_tochar( #youfool, ch );
+
+end;
+
+}
+
+if( find_stat( ch, str ) < random( 16, 20 ) ) {
+
+  act_tochar( #no, ch );
+
+  act_notchar( #nos, ch );
+
+  }
+
+else {
+
+  act_tochar( #break, ch );
+
+  act_notchar( #breaks, ch );
+
+  open( room, up );
+
+  send_to_room( #beneath, find_room( 29040 ) );
+
+  }
+
+"
+E
+"no"
+"Unable to wield your weapon effectively underwater, you bash your shoulder
+
+against the ice above you, but it does not break.
+
+"
+E
+"nos"
+"$n attempts to break the ice blocking off the water above you, but $e is
+
+unable to.
+
+"
+E
+"break"
+"Despite not being able to use your weapon underwater, you manage to break a
+
+hole in the ice above you.
+
+"
+E
+"breaks"
+"$n manages to break a hole through the ice above you, opening a passage.
+
+"
+E
+"beneath"
+"The ice at your feet breaks with a crack, revealing a hole into the icy water
+
+below.
+
+"
+E
+"youfool"
+"The ice has already been broken, providing a passage out of the icy water.
+
+"
+!
+0 0 0
+A
+""
+""
+"wait( 10 );
+
+acode( room, 1 );
+
+"
+!
+2 700 0
+A
+""
+""
+"if( is_follower( ch ) )
+
+  end;
+
+loop( all_in_room ) {
+
+  act_tochar( #freeze, rch );
+
+  i = 4d4+30;
+
+  cold_message( rch, i, \"the freezing water\" );
+
+  inflict_cold( rch, null, i, \"freezing to death\" );
+
+  }
+
+"
+E
+"freeze"
+"@BThe freezing water chills you to the bone!@n
+
+"
+!
+2 1000 0
+-1
+S
+
+#29056
+"Submerged in a Frozen Lake"
+"It is darker here, dozens of feet below the surface of the frozen lake.  The
+
+water is warmer than above, currents rising from below that raises the
+
+temperature almost to a comfortable level.  This shaft of thawed water
+
+continues both up and down; in every other direction the water has frozen to
+
+ice and prevents travel.  Below you, you can dimly make out the rocky bottom
+
+of the lake.
+
+"
+""
+301596672 0
+7 9 0
+D4
+""
+""
+0 -1 29055 0 9
+D5
+""
+""
+0 -1 29057 0 9
+-1
+S
+
+#29057
+"Bottom of the Frozen Lake - Hot Spring"
+"From what little light filters down from through the icy water above, you can
+
+make out great stalagmites along the bottom of the lake floor.  Furnaces of
+
+geothermal heat, these hot springs emit clouds of choking brimstone and waves
+
+of scalding heat.  Above, the water is also thawed; these hot springs must be
+
+the source that allows this passage through the frozen lake to exist as
+
+water.  In all directions but up, the water has frozen to ice, creating this
+
+well of thawed water.
+
+"
+"[Nereus] Room Finished.
+
+Are they still called Stalagmites when they're underwater formations?  Or do
+
+water formations have some other name.  -Talis
+
+[Nereus] I don't know, I figured people would get the idea :)
+
+[Nereus] this is flagged as underground to make it dark
+
+"
+301596676 0
+7 9 0
+D4
+""
+""
+0 -1 29056 0 9
+E
+"hot springs stalagmites"
+"Hot springs emit clouds of sulphur and other elements, which build up to form
+
+these stalagmites at the rocky bottom of the lake.  Curiously, the bases of
+
+the stalagmites appear to be worn down, as if something huge has been sliding
+
+along them over dozens of years.
+
+"
+2426 9 1509949540 0 0
+3948 49 1677721700 -2 0
+3949 81 1509949540 -2 0
+3 65 1509949525 -2 0
+3 65 1509949480 -2 0
+3996 81 1509949442 -2 0
+3950 113 1509949490 -2 0
+3951 81 1509954560 -2 0
+16 82 1509967360 -2 0
+16 82 1509972480 -2 0
+16 82 1509959680 -2 0
+2 66 1509973760 -2 0
+2 66 1509955840 -2 0
+-1
+S
+
+#29058
+"Atop a Frozen Waterfall - Overlooking the Plateau"
+"Once, a great river flowed from a gaping hole in the grey rock of the cliff
+
+face to the west.  Now, it has frozen into a great sheet of ice, lightly
+
+dusted with powdery snow fallen from above.  When the river flowed, it might
+
+have been thirty feet across and flowed for twenty feet before tumbling into
+
+the lake below.  There is a grand view of the Dragonspire plateau to the east
+
+from this perch, as well as the legendary frozen wall.
+
+"
+""
+301465608 0
+17 7 0
+E
+"cliff 1 west"
+"The cliff extends another thirty feet up to the west.  Looking more carefully,
+
+it appears that there may be another ledge further up, if you could climb up
+
+to it from here.
+
+"
+E
+"waterfall river"
+"The river has frozen solid.  It exits from a hole in the cliff face to the
+
+west and falls to the lake below.  There are no tracks in the powdery snow
+
+here; this appears to be a truly deserted region of the plateau.  It is a
+
+several hundred foot plunge back to the surface of the lake far below, making
+
+for an exhausting climb.
+
+"
+E
+"plateau dragonspires view"
+"The plateau stretches for miles to the east and south.  Mountain peaks to the
+
+southeast block the view of the southern half of the plateau.  Immediately
+
+below the waterfall to the east, the glint of a frozen lake is evident.  On
+
+the northern edge of the plateau, the magnificent frozen wall stretches the
+
+length of the plateau.
+
+"
+A
+"climb clamber scale"
+"1 east 1 down waterfall"
+"if( can_fly( ch ) ) {
+
+  act_tochar( #fly, ch );
+
+  act_notchar( #flies, ch );
+
+  transfer( ch, find_room( 29039 ) );
+
+  act_notchar( #fliesin, ch );
+
+  }
+
+else {
+
+  if( wearing_obj( 1405, ch ) || has_obj( 2341, ch ) || has_obj( 3658, ch ) ) {
+
+    if( 1d4+5 > find_skill( ch, climb ) ) {
+
+      act_tochar( #fail, ch );
+
+      act_notchar( #fails, ch );
+
+      }
+
+    else {
+
+      act_tochar( #climb, ch );
+
+      act_notchar( #climbs, ch );
+
+      use_skill( ch, climb );
+
+      transfer( ch, find_room( 29039 ) );
+
+      if( !modify_move( ch, -100 ) )
+
+        modify_move( ch, -50 );
+
+      act_notchar( #climbsin, ch );
+
+      }
+
+    }
+
+  else
+
+    act_tochar( #cant, ch );
+
+  }
+
+"
+E
+"fly"
+"You fly down the edge of the frozen waterfall and to the surface of the frozen
+
+lake below.
+
+"
+E
+"flies"
+"$n flies over the edge of the frozen waterfall and vanishes from sight.
+
+"
+E
+"fliesin"
+"$n flies down from the top of the frozen waterfall.
+
+"
+E
+"fail"
+"You start to climb down the frozen waterfall, but slip and barely catch
+
+yourself.
+
+"
+E
+"fails"
+"$n starts to climb down the waterfall, but slips and pulls $mself back up to
+
+the safety of the frozen river.
+
+"
+E
+"climb"
+"Using your climbing equipment, you climb down the frozen waterfall to the
+
+safety of the frozen lake below.
+
+"
+E
+"climbs"
+"$n climbs over the edge of the frozen waterfall and vanishes from sight below.
+
+"
+E
+"climbsin"
+"$n climbs down the frozen waterfall and joins you on the frozen lake.
+
+"
+E
+"cant"
+"You can't climb down the waterfall without some sort of climbing equipment.
+
+"
+!
+0 0 0
+A
+"climb clamber scale"
+"1 west 1 up cliff"
+"if( can_fly( ch ) ) {
+
+  act_tochar( #flies, ch );
+
+  act_notchar( #heflies, ch );
+
+  transfer( ch, find_room( 29059 ) );
+
+  act_notchar( #fliesin, ch );
+
+  }
+
+else {
+
+  if( find_skill( ch, climb ) > 0 ) {
+
+    act_tochar( #climb, ch );
+
+    act_notchar( #climbs, ch );
+
+    transfer( ch, find_room( 29059 ) );
+
+    act_notchar( #climbsin, ch );
+
+    }
+
+  else
+
+    act_tochar( #no, ch );
+
+  }
+
+"
+E
+"flies"
+"You fly up the cliff face to the ledge above.
+
+"
+E
+"heflies"
+"$n flies up the cliff wall and disappears over the edge of a ledge high above.
+
+"
+E
+"fliesin"
+"$n flies in from below.
+
+"
+E
+"climb"
+"You climb up the cliff face to the west and pull yourself up to the ledge high
+
+above.
+
+"
+E
+"climbs"
+"$n climbs up the cliff to the west and out of sight.
+
+"
+E
+"climbsin"
+"$n climbs in from below.
+
+"
+E
+"no"
+"You don't know how to climb or fly.
+
+"
+!
+0 0 0
+-1
+S
+
+#29059
+"Wide Mountain Ledge - Parallel with the Frozen Wall"
+"This ledge along the grey cliff wall is wide and level, offering plenty of
+
+room to move about, or room to set up camp and take some well-needed rest. 
+
+Probably twenty paces across, the ledge seems almost like a trail as it slopes
+
+slightly upwards as it continues to the north.  Snow has collected at the base
+
+of the cliff ledge here, although there are a few enormous, cat-like prints
+
+smashed into the snow -- evidence that this ledge is probably not the best
+
+resting place after all.  In terms of elevation, this cliffside trail is
+
+parallel with the frozen wall, allowing the first glimpse at what lies
+
+beyond.  Off the cliff edge to the east, a frozen waterfall is visible, caught
+
+in foamy whiteness as it froze; to the south the ledge abruptly plunges into
+
+white nothingness.
+
+"
+"[Nereus] Bleeding to death acode here, don't move it please
+
+"
+301465600 0
+17 7 0
+D0
+""
+""
+0 -1 29060 0 7
+E
+"snow cat-like prints"
+"Covered in new snow, these prints are not too easily identifiable.  However,
+
+it is clear they were left by some kind of cat, although this cat would have
+
+had to be perhaps twelve feet at the shoulder.
+
+"
+E
+"frozen wall beyond"
+"This ledge, probably a thousand feet above the plateau floor far below, is
+
+finally parallel with the mass of the frozen wall.  From this vantage point,
+
+you cannot see much beyond the edge of the wall, but it appears from here that
+
+the wall is a single, frozen block which stretches for miles in all directions.
+
+"
+E
+"cliff waterfall"
+"Roughly thirty feet below, a frozen waterfall is visible, the same water
+
+tumbling for eternity out into a frozen lake far, far below.  The cliff face
+
+to the east looks rough enough that it could be easily climbed by anyone who
+
+knew how.
+
+"
+A
+""
+""
+"if( k == 0 )
+
+  k = find_stat( ch, max_hit ) / 10;
+
+remove_rflag( reset0, find_room( 29059 ) );
+
+act_tochar( #mortal, ch );
+
+wait( 1 );
+
+if( !ch ) {
+
+  end;
+
+  }
+
+i = find_stat( ch, hit );
+
+if( j == 0 || ( j != 0 && i < (k*10) && i < (j+k) ) ) {
+
+  j = find_stat( ch, hit );
+
+  dam_message( ch, find_stat( ch, max_hit ) / 10, \"The blood loss\" );
+
+  inflict( ch, null, find_stat( ch, max_hit ) / 10, \"bleeding to death\" );
+
+  if( !ch )
+
+    end;
+
+  if( find_skill( ch, bandage ) > 0 && !is_fighting( ch ) && !is_sleeping( ch ) && has_obj( 230, ch ) ) {
+
+    act_tochar( #bandage, ch );
+
+    act_notchar( #bandages, ch );
+
+    junk_obj( has_obj( 230, ch ), 1 );
+
+    set_rflag( reset0, find_room( 29059 ) );
+
+    }
+
+  else
+
+    acode( find_room( 29059 ), 1 );
+
+  }
+
+else {
+
+  act_tochar( #bleedingstops, ch );
+
+  set_rflag( reset0, find_room( 29059 ) );
+
+  }
+
+"
+E
+"mortal"
+"@YThe great cat's bite has severed a vein or artery inside you -- you will
+
+surely die very soon without aid.@n
+
+"
+E
+"bleedingstops"
+"The terrible wound has been closed.
+
+"
+E
+"bandage"
+"Using a tourniquet, you manage to staunch the flow of blood.
+
+"
+E
+"bandages"
+"Using a tourniquet, $n manages to staunch the flow of blood.
+
+"
+!
+0 0 0
+A
+"climb scramble scale clamber"
+"1 down waterfall cliff"
+"if( can_fly( ch ) ) {
+
+  act_tochar( #flies, ch );
+
+  act_notchar( #heflies, ch );
+
+  transfer( ch, find_room( 29058 ) );
+
+  act_notchar( #fliesin, ch );
+
+  }
+
+else {
+
+  if( find_skill( ch, climb ) > 0 ) {
+
+    act_tochar( #climb, ch );
+
+    act_notchar( #climbs, ch );
+
+    transfer( ch, find_room( 29058 ) );
+
+    act_notchar( #climbsin, ch );
+
+    }
+
+  else
+
+    act_tochar( #no, ch );
+
+  }
+
+"
+E
+"flies"
+"You fly over the cliff and down to the frozen waterfall below.
+
+"
+E
+"heflies"
+"$n flies over the cliff edge and down to the frozen waterfall below.
+
+"
+E
+"fliesin"
+"$n flies in from a ledge above.
+
+"
+E
+"climb"
+"You swing over the cliff edge and climb down to the frozen waterfall below.
+
+"
+E
+"climbs"
+"$n climbs over the cliff edge and down to the frozen waterfall below.
+
+"
+E
+"climbsin"
+"$n climbs down the cliff face from above.
+
+"
+E
+"no"
+"You don't know how to climb or fly.
+
+"
+!
+0 0 0
+2465 9 1509949540 3 0
+-1
+S
+
+#29060
+"Mountain Ledge Overlooking the Frozen Wall"
+"Midway up this wide, sloping mountain ledge, travellers can finally reach a
+
+vantage point above the frozen wall.  Almost immediately to the east and
+
+perhaps a hundred feet below, the frozen wall stretches east for miles, and
+
+north for as far as the eye can see.  Strangely, the mountain ledge seems to
+
+have seen much activity; despite fresh snowfall, enormous, cat-like prints are
+
+evident, churning up the snow at your feet.  The ledge continues its slope
+
+upward to the north, and slopes gently downward to the south.
+
+"
+""
+301465600 0
+17 7 0
+D0
+""
+""
+0 -1 29061 0 7
+D2
+""
+""
+0 -1 29059 0 7
+E
+"frozen wall"
+"The wall stretches beyond imagination, hundreds of feet tall and miles and
+
+miles off to the north and east.  It seems impossible for anyone or anything
+
+to live in, on, or beyond such a frozen wasteland.
+
+"
+E
+"snow prints cat-like"
+"The snowfall here seems fairly regular; there are a few inches that have
+
+collected along the surface of the rock ledge.  Giant, cat-like prints,
+
+possibly of a lion or leopard, cover the area, leading both north, south, and
+
+impossibly, up the vertical cliff wall to the west.  Whatever made them is
+
+immense and seems to put most of its weight on cruelly clawed rear legs.
+
+"
+E
+"ledge"
+"You are standing on a mountain ledge, perhaps twenty feet from the cliff edge
+
+on the east and the cliff face on the west.
+
+"
+A
+"climb scramble clamber"
+"1 west 1 east cliff"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"The cliff edge to the east drops off to the frozen wall, a hundred feet below;
+
+buffeting winds make such a climb or even a flight down to the wall
+
+impossible.  You could possibly climb the cliff to the west, but it is only
+
+about ten feet tall and appears to lead nowhere.
+
+"
+!
+0 0 0
+-1
+S
+
+#29061
+"Mountain Ledge - Handholds in a Cliff Face"
+"Whether this ledge was once part of a mountain road for travellers is now
+
+unclear; but it appears likely that this was a known route, because hand and
+
+foot holds have been scraped into the cliff face to the north.  The snow here
+
+shows continued signs of the activity of a large animal or animals, but the
+
+dusting of snow here is too light to make out any more details.  This rock
+
+ledge slopes downward while it hugs the mountainside to the south, while to
+
+the east and far below, the frozen wall stretches; unbroken ice which
+
+continues for miles.
+
+
+An ancient stone marker which has been deliberately defaced lies mostly
+
+covered by snow.
+
+"
+""
+301465600 0
+17 7 0
+D2
+""
+""
+0 -1 29060 0 7
+E
+"marker ancient stone defaced"
+"It is impossible to see whether there was any sort of writing or markings on
+
+this stone marker, but it is obvious that it once was used to mark something
+
+on this ledge.  Deliberate scratch marks cover the stone, clawing away the
+
+surface and scoring deep gouges out of the rock.  The triangular marker
+
+appears to point northward, although what it indicated or still indicates is
+
+unknowable.
+
+"
+E
+"1 north cliff handholds footholds"
+"Although now covered in a thin layer of ice, the northern cliff face has been
+
+carved with deep hand and footholds, making it easy to climb.  Another ledge
+
+is visible another twenty feet above, where presumably the trail continues.
+
+"
+A
+"clamber climb scale"
+"1 north 1 up cliff handholds"
+"if( is_exhausted( ch ) ) {
+
+  act_tochar( #tootired, ch );
+
+  end;
+
+  }
+
+if( can_fly( ch ) ) {
+
+  act_tochar( #fly, ch );
+
+  act_notchar( #flies, ch );
+
+  transfer( ch, find_room( 29062 ) );
+
+  act_notchar( #fliesin, ch );
+
+  }
+
+else {
+
+  if( find_skill( ch, climb ) > 0 ) {
+
+    act_tochar( #climb, ch );
+
+    act_notchar( #climbs, ch );
+
+    transfer( ch, find_room( 29062 ) );
+
+    act_notchar( #climbsin, ch );
+
+    }
+
+  else
+
+    act_tochar( #no, ch );
+
+  }
+
+"
+E
+"tootired"
+"You are too tired to attempt such a climb.
+
+"
+E
+"fly"
+"You fly up the cliff face to the north and onto the ledge above.
+
+"
+E
+"flies"
+"$n flies up the cliff face to the north and onto the ledge above.
+
+"
+E
+"fliesin"
+"$n flies in from below.
+
+"
+E
+"climb"
+"You climb up the handholds and make your way up to the ledge.
+
+"
+E
+"climbs"
+"$n climbs up the handholds and makes $s way up to the ledge above.
+
+"
+E
+"climbsin"
+"$n comes climbing up the handholds from below.
+
+"
+E
+"no"
+"You don't know how to climb or fly.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !is_player( ch ) && !is_pet( ch ) ) {
+
+  if( 1d3 == 1 )
+
+    interpret( ch, \"climb north\" );
+
+  else
+
+    continue;
+
+  }
+
+continue;
+
+"
+!
+3 0 4
+2465 9 1509949540 3 0
+-1
+S
+
+#29062
+"Mountain Ledge Hugging the Cliff Face"
+"Narrower than the ledge below, this section of the ledge appears to have
+
+partially collapsed along its eastern edge some time ago.  Still nearly twenty
+
+paces across from the western cliff face to the eastern edge, the ledge is
+
+level and offers an easy rest after a tiring climb.  Barely visible through
+
+the light dusting of snow here are the prints of some massive, clawed beast. 
+
+The prints seem very fresh, and also whatever made them seems to either
+
+frequent the area or travel in groups.  To the south, the ledge ends abruptly,
+
+but the cliff face appears to have had handholds carved into it, making for an
+
+easy climb down to another ledge twenty feet below.  The frozen wall,
+
+implacable and incomprehensibly large, stretches out below the cliff edge for
+
+dozens of miles.
+
+"
+"[Nereus] climb down from here
+
+[Nereus] Angarlishes can wander down
+
+"
+301465600 0
+17 7 0
+D0
+""
+""
+0 -1 29063 0 7
+E
+"prints clawed massive beast dusting snow"
+"The ledge is dusted with a very light covering of snow, but there are the
+
+fragments of scores of prints evident in the snow.  Whatever made them has
+
+very large claws and seems to spend a lot of time in this area, since the
+
+prints appear to be relatively fresh.
+
+"
+E
+"frozen wall"
+"The frozen wall is the one constant in the travels along this trail.  It is
+
+unmoving, indifferent, and stretches for miles to the east below you.
+
+"
+E
+"1 south handholds cliff"
+"The cliff to the south has had handholds crudely carved in some time in the
+
+past.  With any skill at climbing at all, it would be a simple matter to climb
+
+down to the ledge below.
+
+"
+A
+"climb clamber scale"
+"1 south 1 down cliff handholds"
+"if( is_exhausted( ch ) ) {
+
+  act_tochar( #tootired, ch );
+
+  end;
+
+  }
+
+if( can_fly( ch ) ) {
+
+  act_tochar( #fly, ch );
+
+  act_notchar( #flies, ch );
+
+  transfer( ch, find_room( 29061 ) );
+
+  act_notchar( #fliesin, ch );
+
+  }
+
+else {
+
+  if( find_skill( ch, climb ) > 0 ) {
+
+    act_tochar( #climb, ch );
+
+    act_notchar( #climbs, ch );
+
+    transfer( ch, find_room( 29061 ) );
+
+    act_notchar( #climbsin, ch );
+
+    }
+
+  else
+
+    act_tochar( #no, ch );
+
+  }
+
+"
+E
+"tootired"
+"You are too tired to attempt such a climb.
+
+"
+E
+"fly"
+"You fly down the cliff edge to the south and down to the ledge below.
+
+"
+E
+"flies"
+"$n flies down the cliff edge to the south and down to the ledge below.
+
+"
+E
+"fliesin"
+"$n flies in from above and to the north.
+
+"
+E
+"climb"
+"You swing over the cliff edge and down the handholds to the ledge below.
+
+"
+E
+"climbs"
+"$n climbs down the cliff edge to the south to the ledge below.
+
+"
+E
+"climbsin"
+"$n climbs down the handholds to the ledge beside you.
+
+"
+E
+"no"
+"You don't know how to climb or fly.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !is_player( ch ) && !is_pet( ch ) ) {
+
+  if( 1d3 == 1 )
+
+    interpret( ch, \"climb handholds\" );
+
+  else
+
+    continue;
+
+  }
+
+continue;
+
+"
+!
+3 0 1
+-1
+S
+
+#29063
+"Mountain Ledge - Slippery Footing"
+"Scoured by a fierce wind coming down the cliff face to the west, the mountain
+
+ledge, while quite wide and level, has become coated with a nearly invisible
+
+layer of ice.  Even here, the evidence of the activity of some massive
+
+predator is present; claw marks are visible scratching on the icy surface of
+
+the ledge.  The ledge narrows slightly to the south and climbs ever higher
+
+above the frozen wall to the north.
+
+"
+""
+301465600 0
+17 7 0
+D0
+""
+""
+0 -1 29065 0 7
+D2
+""
+""
+0 -1 29062 0 7
+E
+"1 west cliff face"
+"The cliff face to the west is nearly vertical, with an icy wind whipping along
+
+from the north and drafting down to the ledge here.  The ice crystals blasting
+
+into the ledge here have coated the rock with ice.
+
+"
+E
+"claw marks prints"
+"The claw marks are difficult to make out, since the area is pounded by a
+
+constant coating of ice.  It is possible to discern patterns of four scratches
+
+in a few places, evidence of recent predator travel.
+
+"
+E
+"frozen wall"
+"The frozen wall stretches off for miles to the east.  It is now possibly two
+
+hundred feet below the cliff ledge, making travel in that direction impossible.
+
+"
+A
+""
+""
+"if( can_fly( ch ) || char_affected( ch, float ) )
+
+  continue;
+
+else {
+
+  if( find_stat( ch, dex ) < 1d10+3 ) {
+
+    act_tochar( #losefooting, ch );
+
+    act_notchar( #loses, ch );
+
+    set_resting( ch );
+
+    }
+
+  else
+
+    act_tochar( #almost, ch );
+
+  }
+
+"
+E
+"losefooting"
+"You slip on the ice and lose your footing.
+
+"
+E
+"almost"
+"You slip on the ice and almost lose your balance, but you manage to catch
+
+yourself.
+
+"
+E
+"loses"
+"$n loses $s footing on a patch of ice and falls to the ground!
+
+"
+!
+1 0 5
+A
+"climb clamber scale traverse"
+"1 west cliff"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"The cliff face to the west of the ledge is nearly vertical and coated with a
+
+sheet of ice.  It would probably be nearly impossible to climb, and even if
+
+you could fly, there doesn't appear to be anything at the top to fly to.
+
+"
+!
+0 0 0
+2465 9 1509949540 3 0
+-1
+S
+
+#29064
+"A Warm Cavern"
+"Substantially warmer than the narrow ledge just outside, this shallow cave
+
+appears to serve as a den for some sort of large, predatory mammals.  Once a
+
+natural cavern perhaps ten feet tall and just as deep, the grey stone floor
+
+has been worn smooth by the tread of countless feet and the walls worn smooth.
+
+The cavern wall at the back is hot to the touch, spreading a gentle warmth
+
+throughout the cavern.  A narrow, ice-rimed fissure leads back into the cold
+
+to the west.  Small animal bones and patches of fur litter the cavern floor,
+
+further evidence this small cave is used as a den.
+
+"
+""
+301596676 0
+11 5 0
+D3
+""
+""
+0 -1 29046 0 5
+E
+"fissure 1 west"
+"An ogre could probably duck and squeeze his way through the fissure to the
+
+west and back out into the cold.  The edges of the crack are covered in ice,
+
+the only place where the outside elements are evident from here.
+
+"
+E
+"fur floor bones"
+"Fur and small animal bones, possibly those of a fox and rabbit, litter the
+
+worn stone floor.
+
+"
+A
+"search"
+"fur floor bones"
+"if( 1d15 == 2 && rflag( reset0, room ) ) {
+
+  act_tochar( #find, ch );
+
+  act_tochar( #finds, ch );
+
+  obj_to_char( oload( 4822 ), ch );
+
+  end;
+
+}
+
+act_tochar( #search, ch );
+
+act_notchar( #searches, ch );
+
+remove_rflag( reset0, room );
+
+"
+E
+"search"
+"You search through the fur and bones littering the cavern floor, but you don't
+
+find anything useful.
+
+"
+E
+"searches"
+"$n searches through the fur and bones littering the cavern floor, but $e
+
+doesn't seem to find anything to $s liking.
+
+"
+E
+"find"
+"You search through the fur and bones littering the cavern floor, and find a
+
+strange stone disc that was forgotten in the corner.
+
+"
+E
+"finds"
+"$n searches through the fur and bones littering the cavern floor, finding
+
+something.
+
+"
+!
+0 0 0
+A
+""
+""
+"mob = mob_in_room( 2482, room );
+
+if( mob && !is_pet( mob ) )
+
+  interpret( mob, \"whimper\" );
+
+"
+!
+2 250 0
+2482 137 1509949540 3 0
+-1
+S
+
+#29065
+"Mountain Ledge - Sheltered Alcove"
+"What might have once been a resting place for travellers along this mountain
+
+road has become something much more alarming: it appears this is a center of
+
+activity for whatever predators roam this part of the mountain.  The trail is
+
+wider here, and a sheltered alcove is evident on the western side of the ledge
+
+alongside the cliff face.  A slight overhang offers solace from the wind and
+
+snow falling from above.  Something has been digging in the stone to the west,
+
+clawing out chunks of the rock itself.  Further evidence of activity can be
+
+found; sticky, black droplets of blood are visible smeared along the wall of
+
+the alcove.  A brisk wind keeps the ledge here free of ice and snow, which
+
+coats the trail more as it slopes upward to the north and downward to the
+
+south.
+
+"
+""
+301465600 0
+17 7 0
+D0
+""
+""
+0 -1 82200 0 7
+D2
+""
+""
+0 -1 29063 0 7
+E
+"alcove shelter 1 west"
+"Something has made a home of sorts here in the alcove, leaving tracks in what
+
+little snow is visible.  Whatever it is, it is massive enough to have brushed
+
+away loose rock and snow from the overhanging lip of the alcove twelve feet
+
+above the surface of the ledge.  Smears of black blood can be seen along the
+
+alcove wall, standing out starkly against the grey and white of the landscape.
+
+"
+E
+"blood"
+"A few small drops of blood have been smeared against the cliff face at the
+
+base of the alcove.  The blood is still sticky to the touch.
+
+"
+2465 9 1509949540 3 0
+-1
+S
+
+#0
+

@@ -1,0 +1,1208 @@
+#AREA
+"Outcast Village"
+"Merior"
+""
+80 0
+2
+1
+#ROOMS
+
+#79000
+"Among the Sawgrass"
+"Tall blades of sawgrass bite at your legs, trying its hardest to rip
+
+everything within its grasp.  The ground is soft and several inches of water
+
+slowly move eastward, causing the sawgrass to bend slightly in that
+
+direction.  Just to the west a small rise of solid-looking ground is dotted
+
+with waist-high bushes and an occasional tree.
+
+"
+"attach to 31004 from west
+
+"
+33030144 0
+16 9 0
+D1
+""
+""
+0 -1 79001 0 6
+-1
+S
+
+#79001
+"Among the Sawgrass"
+"Tufts of sawgrass, some as high as a gnome's head, move with the slow flow of
+
+several inches of brackish water.  Flashes of light appear to be moving in the
+
+slowly flowing stream, then disappear into a murky darkness.  Far off to the
+
+west the profiles of trees can be seen; the horizon in all other directions is
+
+featureless.
+
+"
+""
+33030144 0
+16 9 0
+D1
+""
+""
+0 -1 79002 0 6
+D3
+""
+""
+0 -1 79000 0 5
+E
+"flash light murky stream"
+"Small flashes of light appear and disappear in the murky water.  They are
+
+about the size of a small fish, but it is impossible to determine if they
+
+really are fish.
+
+"
+-1
+S
+
+#79002
+"Among the Sawgrass"
+"A small pathway has been trodden into the sawgrass, making passage east and
+
+west not difficult.  Off to the east are the outlines of small huts; the swamp
+
+extends unbroken in all other directions.  Areas of brackish water not yet
+
+encroached by the sharp grass have water lillies sprinkled on their surfaces,
+
+the white flowers breaking up the green vegetation.
+
+"
+""
+33030144 0
+12 9 0
+D0
+""
+""
+0 -1 79003 0 6
+D1
+""
+""
+0 -1 79005 0 6
+D3
+""
+""
+0 -1 79001 0 5
+E
+"east hut"
+"The huts are too far away to make out any features.
+
+"
+-1
+S
+
+#79003
+"Among the Sawgrass"
+"To the south, a sea of sawgrass extends as far as the eye can see.  Inches of
+
+slowly moving water in this area are broken up by what appear to be slim
+
+sticks protruding from the muck.  A bit to the east are the outlines of huts,
+
+and blurry shapes seem to move in between the abodes.
+
+"
+""
+33030144 0
+16 6 0
+D1
+""
+""
+0 -1 79004 0 6
+D2
+""
+""
+0 -1 79002 0 5
+E
+"stick"
+"These slender sticks are the beginnings of new mangrove trees.
+
+"
+-1
+S
+
+#79004
+"Among the Sawgrass"
+"Just to the east a dozen or so thatched huts stand in a clear area.  Off in
+
+other directions, you can see the beginnings of a swamp, low grasses and
+
+brackish water leading out to the distant horizon.  A wide path made of
+
+downtrodden vegetation lies to the south, but it is possible to head east and
+
+west through the sharp grass.
+
+"
+""
+33030144 0
+12 9 0
+D1
+""
+""
+0 -1 79007 0 6
+D2
+""
+""
+0 -1 79005 0 9
+D3
+""
+""
+0 -1 79003 0 5
+-1
+S
+
+#79005
+"Among the Sawgrass"
+"A wide path of downtrodden vegetation stretches west into a field of sawgrass,
+
+and south and east to a small village composed of a dozen or so thatched
+
+huts.  The ground is soft and moist, and where there is no plant life, the
+
+prints of many-toed feet have left damp imprints.
+
+"
+""
+33030144 0
+16 9 0
+D0
+""
+""
+0 -1 79004 0 5
+D1
+""
+""
+0 -1 79006 0 6
+D2
+""
+""
+0 -1 79037 0 6
+D3
+""
+""
+0 -1 79002 0 5
+-1
+S
+
+#79006
+"In a Small Village"
+"Just to the east stands a small, thatched hut, further in that direction lie
+
+several other similar abodes.  The roofs of these dwellings are made of the
+
+grasses that grow abundantly in the nearby swamp.  The huts themselves are
+
+wood, bark-stripped and weather-worn.  The ground is firm here, the earth dark
+
+and loamy.
+
+"
+""
+33030144 0
+0 9 0
+D0
+""
+""
+0 -1 79007 0 5
+D2
+""
+""
+0 -1 79009 0 6
+D3
+""
+""
+0 -1 79005 0 5
+-1
+S
+
+#79007
+"To the North of a Small Village"
+"To the south lie several small, wooden huts with roofs made of dried grass. 
+
+You can just squeeze by one if you wish to travel south; to the east lies a
+
+narrow dirt path which appears to circumnavigate the village.  To the north
+
+and west extend the waving grasses which protrude from a great swamp.
+
+"
+""
+33030144 0
+12 9 0
+D1
+""
+""
+0 -1 79029 0 6
+D2
+""
+""
+0 -1 79006 0 6
+D3
+""
+""
+0 -1 79004 0 5
+-1
+S
+
+#79008
+"Inside a Small Hut"
+"Wooden walls of an indeterminable source, topped by a dried grass roof, form
+
+the shape of the small hut which surrounds you.  The dark earth which is the
+
+floor of the hut is firmly packed, and a faint musky scent wafts up.
+
+"
+""
+33030144 0
+0 6 0
+D2
+""
+""
+0 -1 79010 0 5
+-1
+S
+
+#79009
+"In a Small Village - Central Path"
+"A wide path made of trampled plants and earth heads east, bisecting a number
+
+of small wooden huts.  The same path, although slightly less frequented, heads
+
+north and south, appearing to circumnavigate the village.  Off to the west
+
+lies a vast swamp.
+
+"
+""
+33030144 0
+12 9 0
+D0
+""
+""
+0 -1 79006 0 5
+D1
+""
+""
+0 -1 79010 0 6
+D2
+""
+""
+0 -1 79011 0 6
+D3
+""
+""
+0 -1 79037 0 6
+-1
+S
+
+#79010
+"In a Small Village - Central Path"
+"To the north and south stand small, wooden huts.  Jutting roofs of dried grass
+
+reach out to try to touch those who get too close to the dilapidated
+
+structures.  The dried path extends west towards the swamp and continues east
+
+as it bisects a row of similar-looking huts.
+
+"
+""
+33030144 0
+12 6 0
+D0
+""
+""
+0 -1 79008 0 6
+D1
+""
+""
+0 -1 79014 0 6
+D2
+""
+""
+0 -1 79012 0 6
+D3
+""
+""
+0 -1 79009 0 5
+-1
+S
+
+#79011
+"Path Around a Small Village"
+"To the east stands a small hut made of aged wood.  Its roof is made of dried
+
+sawgrass, and looks as if it could blow away with the slightest gust of wind. 
+
+A path wide enough for a giant to trod heads north and south; tall sawgrass to
+
+the west is impenetrable.
+
+"
+""
+33030144 0
+12 9 0
+D0
+""
+""
+0 -1 79009 0 5
+D2
+""
+""
+0 -1 79030 0 6
+-1
+S
+
+#79012
+"Inside a Small Hut"
+"Uneven planks of bare wood form the walls of this building; bits of dried
+
+paint can barely be seen.  On the western wall a small crack in one of the
+
+planks runs parallel to the ground, and is too narrow to allow light in or out.
+
+"
+""
+33030144 0
+0 6 0
+D0
+""
+""
+0 -1 79010 0 5
+-1
+S
+
+#79013
+"In a Small Village - Central Path"
+"Under Construction.
+
+"
+""
+33030144 0
+0 6 0
+-1
+S
+
+#79014
+"In a Small Village - Central Path"
+"A building made of brand-new planks of a wood that could be pine stands to the
+
+north, its roof made of newly bound thatch.  The smell of just-hewn wood wafts
+
+southward from the hut.  In sharp contrast, an old building to your south of
+
+weathered planks leans westward as if a giant had given it a push.
+
+"
+""
+33030144 0
+12 9 0
+D0
+""
+""
+0 -1 79015 0 6
+D1
+""
+""
+0 -1 79017 0 6
+D2
+""
+""
+0 -1 79016 0 6
+D3
+""
+""
+0 -1 79010 0 5
+-1
+S
+
+#79015
+"Inside a New Hut"
+"The walls of this hut are smooth, the grain of the pine clear.  The smell of
+
+newly-hewn wood is strong, and the roof is made of fresh straw.  On the
+
+eastern wall a small painting has been hung, the features of an old human man
+
+quite clear.
+
+"
+""
+33030144 0
+0 6 0
+D2
+""
+""
+0 -1 79014 0 5
+E
+"painting eastern man human"
+"A small painting framed in copper hangs on the eastern wall.  It is the
+
+portrait of a human man of perhaps 60 years.  His face is wrinkled and his
+
+mouth is open, showing a few broken teeth.
+
+"
+A
+"get take move"
+"painting"
+"if( rflag( reset1, room ) ) {
+
+  remove_rflag( reset1, room);
+
+  act_tochar( #paint, ch );
+
+  act_notchar( #paints, ch );
+
+  }
+
+else {
+
+  act_tochar( #moved, ch );
+
+  }
+
+"
+E
+"paint"
+"As you touch the painting, it swings to the side and reveals a small hole in
+
+the wall.
+
+"
+E
+"paints"
+"You see $n move the painting and reveal a small hole in the wall.
+
+"
+E
+"moved"
+"You have already moved the picture to reveal a hole in the wall.
+
+"
+!
+0 0 0
+A
+"search"
+"hole"
+"if( rflag( reset1, room ) ) {
+
+  act_tochar( #nohole, ch );
+
+  }
+
+else {
+
+  if( random( 0, 10 ) == 10 ) {
+
+obj_to_char( oload( 999 ), ch );
+
+    act_tochar( #gets, ch );
+
+    act_notchar( #get, ch );
+
+    }
+
+  else {
+
+    act_tochar( #nothing, ch );
+
+    act_notchar( #empty, ch );
+
+    }
+
+  }
+
+"
+E
+"nohole"
+"There is nothing to search.
+
+"
+E
+"gets"
+"You root around in the hole and find a small gem!
+
+"
+E
+"get"
+"You see $n feel around in the hole and get a small gem!
+
+"
+E
+"nothing"
+"You feel around in the hole, but can't find anything.
+
+"
+E
+"empty"
+"You see $n feel around in the hole, but find nothing.
+
+"
+!
+0 0 0
+-1
+S
+
+#79016
+"Inside a Leaning Hut"
+"The planks forming the walls of this hut are all tilted, causing a westward
+
+slant.  The ceiling is lower on the right side than the left, adding to the
+
+impression of topsy-turviness.  The remains of a rug lie on the floor,
+
+providing little cover for the earth below.
+
+"
+""
+33030144 0
+0 6 0
+D0
+""
+""
+0 -1 79014 0 5
+E
+"rug floor ground"
+"Remnants of a rug cover a small portion of the hard earth that serves as the
+
+floor of this hut.  The colors are faded, and the entire piece is a dull brown.
+
+"
+-1
+S
+
+#79017
+"In a Small Village - Central Path"
+"A small stack of timber sits just outside a shoddy hut to the north.  The
+
+types of wood which once formed this barely habitable structure are
+
+unidentifiable.  To the south lies a slightly more stable-looking structure
+
+also made by weathered wood.
+
+"
+"smoke in north
+
+"
+33030144 0
+12 9 0
+D0
+""
+""
+0 -1 79018 0 6
+D1
+""
+""
+0 -1 79020 0 6
+D2
+""
+""
+0 -1 79019 0 6
+D3
+""
+""
+0 -1 79014 0 5
+-1
+S
+
+#79018
+"Inside a Crumbling Hut"
+"The walls of this hut are made of bits of splintered wood, and look barely
+
+strong enough to stand under the thatched roof.  A small firepit in the center
+
+of the floor provides a bit of heat and a lot of smoke.  A hole in the
+
+northern wall lets the smoke in and out, and alleviates what would otherwise
+
+be a cloud of smoke.
+
+"
+""
+33030144 0
+0 6 0
+D2
+""
+""
+0 -1 79017 0 5
+E
+"hole north"
+"A hole has apparently been cut out of the rotting wood on the northern side of the hut.
+
+"
+3198 17 1509949540 -2 0
+-1
+S
+
+#79019
+"Inside a Small Hut"
+"The walls of this small hut are unadorned, strips of wood peeling on all
+
+sides.  A small pile of cloth that could serve as bedding lies near a
+
+decrepit-looking bed.  The floor of the hut is formed by the hardened earth,
+
+but a small area along the southern wall is a bit damp, a reminder of the
+
+nearby swamp.
+
+"
+""
+33030144 0
+0 6 0
+D0
+""
+""
+0 -1 79017 0 5
+E
+"wall"
+"All the walls of this hut are made of peeling wood, their original source
+
+impossible to identify.
+
+"
+E
+"cloth bedding bed"
+"A small pile of yellowed cloth lies on the floor next to a broken bed.
+
+"
+E
+"south floor ground"
+"The ground along the southern wall of the hut is damp and cool to the touch.
+
+"
+1201 17 1509949540 -2 0
+-1
+S
+
+#79020
+"In a Small Village - Central Path"
+"A firm path of hard, dark earth traverses the village.  The swamp is visible
+
+to the east, but only huts and the signs of habitation can be seen westward. 
+
+The structure to your north is made of shuvana wood, the one to the south of
+
+bits of maple and oak.
+
+"
+"shuvana, biggest north
+
+maple and oak south
+
+knothole east
+
+"
+33030144 0
+12 9 0
+D0
+""
+""
+0 -1 79021 0 6
+D1
+""
+""
+0 -1 79023 0 6
+D2
+""
+""
+0 -1 79022 0 6
+D3
+""
+""
+0 -1 79017 0 5
+-1
+S
+
+#79021
+"In a Hut of Shuvana Wood"
+"The walls of this hut are bare, showing the grains of the shuvana wood.  The
+
+ground is hard and packed, and bits of straw, similar to those which form the
+
+roof above your head, lie about.  In the far northeastern corner of the
+
+structure is a small pile of furs.
+
+"
+""
+33030144 0
+0 6 0
+D2
+""
+""
+0 -1 79020 0 5
+E
+"pile furs"
+"A small pile of smelly furs lies in the corner of the room.  They are covered
+
+with bits of dried blood, and flies circle the heap.
+
+"
+A
+"get take"
+"pile furs heap"
+"act_tochar( #ick, ch );
+
+act_notchar( #bad, ch );
+
+"
+E
+"ick"
+"The furs are too disgusting to take.
+
+"
+E
+"bad"
+"You see $n start to reach for the furs, then back up, their nose wrinkling in disgust.
+
+"
+!
+0 0 0
+1488 17 1509949540 -2 0
+1700 17 1509949540 -2 0
+-1
+S
+
+#79022
+"Inside a Small Hut"
+"A small knothole on the eastern wall allows just a bit of air to pass through
+
+it.  The walls of the hut are made of planks of oak and maple, and a large
+
+metal hook hangs from the southern wall.  There is a small braided rug - or
+
+what was once a rug - on the dusty floor of the hut.
+
+"
+""
+33030144 0
+0 6 0
+D0
+""
+""
+0 -1 79020 0 5
+E
+"rug braided floor"
+"A braided rug made of faded rags lies on the dusty floor.
+
+"
+E
+"knothole hole"
+"A tiny knothole in a piece of wood allows just a trickle of air into the hut. 
+
+It is too small for light to seep in or out of the structure.
+
+"
+E
+"hook south"
+"A large hook of rusty metal has been affixed to the southern wall of the hut.
+
+"
+-1
+S
+
+#79023
+"Outside a Small Village"
+"A path leads north and south, allowing passage around the village, and west in
+
+a line that appears to bisect the two rows of huts.  The structure to your
+
+northwest is made of bits of shuvana wood; the one to your southwest is made
+
+of less exotic planks of maple and oak.  The swamp heads east as far as the
+
+eye can see.
+
+"
+""
+33030144 0
+12 9 0
+D0
+""
+""
+0 -1 79024 0 6
+D2
+""
+""
+0 -1 79036 0 6
+D3
+""
+""
+0 -1 79020 0 5
+-1
+S
+
+#79024
+"Outside a Small Village"
+"Directly to your west lies a hut made of shuvana wood; how it came to be used
+
+so far from its source is not apparent.  The hut itself appears to be a bit
+
+larger than the others you have passed, but is quite shabby.  The path leads
+
+north and south, you cannot enter the vast swamp to the east.
+
+"
+""
+33030144 0
+12 9 0
+D0
+""
+""
+0 -1 79025 0 6
+D2
+""
+""
+0 -1 79023 0 5
+-1
+S
+
+#79025
+"Outside a Small Village"
+"A path made of bits of trampled weed and mud heads west and south here,
+
+allowing you to circle a small village made of wooden huts.  Swamp extends to
+
+the north and east as far as the eye can see, and passage looks uninviting.
+
+"
+""
+33030144 0
+12 9 0
+D2
+""
+""
+0 -1 79024 0 5
+D3
+""
+""
+0 -1 79026 0 6
+-1
+S
+
+#79026
+"To the North of a Small Village"
+"The beaten path is quite wide here, the dark earth showing beneath bits of
+
+trampled weed.  To the north lies the great swamp that surrounds Sos-Kul;
+
+south lies one of several huts which form a small village buried in the swamp.
+
+"
+""
+33030144 0
+12 9 0
+D1
+""
+""
+0 -1 79025 0 5
+D3
+""
+""
+0 -1 79027 0 6
+-1
+S
+
+#79027
+"To the North of a Small Village"
+"Just to the south stands a battered hut made of scraps of different types of
+
+wood.  A small hole near the thatched roof allows a bit of smoke to drift into
+
+the moist air.  You can continue along the path to your east and west; the
+
+swamp to the north appears impenetrable.
+
+"
+""
+33030144 0
+12 9 0
+D1
+""
+""
+0 -1 79026 0 5
+D3
+""
+""
+0 -1 79028 0 6
+-1
+S
+
+#79028
+"To the North of a Small Village"
+"The path narrows here, and is barely wide enough for a troll to squeeze
+
+through without bumping into a new-looking hut to the south or treading on the
+
+squishy earth of the swamp.
+
+"
+""
+33030144 0
+12 9 0
+D1
+""
+""
+0 -1 79027 0 5
+D3
+""
+""
+0 -1 79029 0 6
+-1
+S
+
+#79029
+"To the North of a Small Village"
+"A well-trodden path leads east and west, just allowing you to squeeze between
+
+the swamp to the north and a battered, wooden hut to the south.  The swaying
+
+grasses of the swamp give off a fragrant odor, almost covering a slightly
+
+rancid smell coming from the building to your south.
+
+"
+""
+33030144 0
+12 9 0
+D1
+""
+""
+0 -1 79028 0 5
+D3
+""
+""
+0 -1 79007 0 5
+-1
+S
+
+#79030
+"Path Around a Small Village"
+"A wide path leads north and east, its surface mostly covered by trampled
+
+weeds.  Bits of moist earth, dark and loamy, peek through where the weeds are
+
+thin.  Clumps of sharp sawgrass, surrounded by shallow, murky water, extend to
+
+the south and west.
+
+"
+""
+33030144 0
+12 9 0
+D0
+""
+""
+0 -1 79011 0 5
+D1
+""
+""
+0 -1 79031 0 6
+-1
+S
+
+#79031
+"Trampled Path Around a Small Village"
+"A small hut, perhaps large enough to barely hold two hill giants, lies
+
+directly to the north.  It is made of aged wood, and the peeling bark emits a
+
+faint, musky odor.  Long shoots of dried grass extend from the roof, bits of
+
+moisture beading at their tips.  A path extends east and west, allowing
+
+navigation around the village.  Your path south is blocked by the encroaching
+
+swamp.
+
+"
+""
+33030144 0
+12 9 0
+D1
+""
+""
+0 -1 79032 0 6
+D3
+""
+""
+0 -1 79030 0 5
+-1
+S
+
+#79032
+"Trampled Path Around a Small Village"
+"A small hut constructed of bits of wood lies to the north.  It leans slightly
+
+towards the west, but doesn't appear likely to topple over.  A path made of
+
+trampled sawgrass and bits of bark heads east and west, providing a dry
+
+passage around the village.  Directly to the south lies a large pool of dark
+
+water, small lily pads adding dots of color to the muddy surface.
+
+"
+""
+33030144 0
+12 9 0
+D1
+""
+""
+0 -1 79033 0 6
+D3
+""
+""
+0 -1 79031 0 5
+-1
+S
+
+#79033
+"Path Around a Small Village"
+"Southward lies a mangrove swamp, slender sticks of wood rising out of the
+
+murk.  Small bits of moss cling to some of the branches, their grey-brown
+
+color barely distinguishable from the host.  Bits of the moss have reached the
+
+path beneath your feet, and are mixed with the dried weeds and mud to provide
+
+passage east and west.  To the north lie the outlines of many small wooden
+
+huts.
+
+"
+""
+33030144 0
+12 9 0
+D1
+""
+""
+0 -1 79034 0 6
+D3
+""
+""
+0 -1 79032 0 5
+-1
+S
+
+#79034
+"Path Around a Small Village"
+"Bits of battered grass and weeds cover an east-west path, just wide enough for
+
+two ogres to squeeze by without hitting the hut to the north or being forced
+
+into the swamp to the south.  The hut itself is made of scraps of maple and
+
+oak, joined together in a haphazard manner.
+
+"
+""
+33030144 0
+12 9 0
+D1
+""
+""
+0 -1 79035 0 6
+D3
+""
+""
+0 -1 79033 0 5
+-1
+S
+
+#79035
+"Path Around a Small Village"
+"The path turns here, allowing passage north and west around a hut made of
+
+planks of maple and oak.  The grasses of the swamp are tightly packed and
+
+sharp as they extend east and south, making passage impossible.
+
+"
+""
+33030144 0
+12 9 0
+D0
+""
+""
+0 -1 79036 0 6
+D3
+""
+""
+0 -1 79034 0 5
+-1
+S
+
+#79036
+"In a Small Village - Central Path"
+"Trampled bits of weed and splinters of wood line the path here; making
+
+footsteps inaudible.  To your west stands a hut made of oak and maple, the
+
+planks which form its walls made of every conceivable shape and size.  A small
+
+knothole in the wall would allow light in, but does not provide a view into
+
+the building.
+
+"
+""
+33030144 0
+12 9 0
+D0
+""
+""
+0 -1 79023 0 5
+D2
+""
+""
+0 -1 79035 0 5
+-1
+S
+
+#79037
+"In a Small Village - Central Path"
+"A dusty path leads east, apparently bisecting a number of small thatched The
+
+path also extends northward, but is covered with broken bits of vegetation.  A
+
+vast swamp extends in all other directions, with thin, leafless trees just
+
+barely visible along the horizon.
+
+"
+""
+33030144 0
+12 6 0
+D0
+""
+""
+0 -1 79005 0 5
+D1
+""
+""
+0 -1 79009 0 5
+-1
+S
+
+#0
+

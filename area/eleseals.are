@@ -1,0 +1,3439 @@
+#AREA
+"Elephant Seal Colony"
+"Kotoktok"
+"elephant seal colony"
+35 0
+0
+4
+#ROOMS
+
+#29900
+"Sheltered Cove - Pebbled Shoreline"
+"You are on a narrow strip of beach, covered in coarse sand strewn with small,
+
+smooth pebbles.  South and west, weatherbeaten seacliffs rise, partially
+
+blocking out the sky.  Relatively calm open water lies to the east, sheltered
+
+by the cliffs to the south and those far to the north.  The quaint beach
+
+continues north.
+
+"
+"[Nereus] Are we going to prevent newbies from swimming to their deaths?
+
+[Kotoktok] No, the point is to get them killed.
+
+On a lighter note, here are all the mob/item vnums which I use in the zone:
+
+Mobs:
+
+----
+
+male elephant seal - 2726
+
+female elephant seal - 2727
+
+elephant seal pup - 2728
+
+large tiger shark - 2729
+
+----
+
+Objects:
+
+----
+
+phial of invulnerability - 4476
+
+shark tooth - 1115
+
+small strip of sharkskin - 1118
+
+strip of elephant seal blubber - 4480
+
+----
+
+[Orb] Spare teh newbie!
+
+[Orb] The seal pup's long_s does not work when he is the only mob in the room.
+
+[Orb] Ugh, I hate the quoted messages.  CHange them to mpdatas, adatas, etc.
+
+[Orb] The \"looking at you\" stuff in the tiger shark desc needs to go.
+
+[Orb] The \"speak death to you\" seems a bit off, too.
+
+[Orb] The blubber needs long_s and long_p.
+
+[Orb] I like the shark
+
+[Orb] The pouch thing is nifty.
+
+
+[Nereus] Suggest code for climbing the sea cliffs
+
+[Nereus] How about loading some pebbles or sand in some of these rooms?
+
+[Nereus] Room Reviewed.
+
+[Nereus] suggest adding more verbs to the climb code, and also 1 south 1 west as valid targets
+
+
+[Nereus] add cliffs 1 south 1 west as keywords on extra 1
+
+[Kotoktok] -
+
+[Nereus] *
+
+[Kotoktok] Zone finished Tuesday, February 24, 2004.
+
+[Tevish] Female Elephant Seals are tamable. However, they are too large to be taken out of the zone. Was this done on purpose?
+
+"
+301465600 0
+14 9 0
+D0
+""
+""
+0 -1 29901 0 6
+D1
+""
+""
+0 -1 29922 0 6
+E
+"seacliffs cliffs south west"
+"These craggy walls of stone stretch far above your head to the south and west,
+
+blocking out half the sky.  White limestone shows through under some ledges
+
+where pieces have recently fallen away, but most of the surface is too stained
+
+with seepage to show its true nature.
+
+"
+E
+"sand"
+"The sand is very coarse, loaded with smooth pebbles and some jagged chips of
+
+stone.  Faint tinkling noises can be heard as the sand settles.
+
+"
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+2727 9 1509949540 3 0
+2728 9 1509949540 3 0
+1410 17 1509949510 -2 0
+-1
+S
+
+#29901
+"Sheltered Cove - Pebbled Shoreline"
+"The beach continues north and south here, its surface crunchy with pebbles and
+
+sand.  To the east is the placid water of this small harbor, tiny ripples
+
+glinting in the light.  The craggy cliffs loom to the west, stained white by
+
+years of bird droppings.  Several small pieces of driftwood rest lightly on
+
+the sand.
+
+"
+"[Nereus] Search driftwood code
+
+[Nereus] Need extras for water, cliffs, driftwood, beach
+
+[Nereus] It might be cool to put 1 room up on the cliffs, partially up the cliffs, where a nest is concealed
+
+[Nereus] Room Reviewed.
+
+[Nereus] need cliffs extra at least
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+14 9 0
+D0
+""
+""
+0 -1 29902 0 6
+D1
+""
+""
+0 -1 29910 0 6
+D2
+""
+""
+0 -1 29900 0 6
+E
+"driftwood"
+"Warped by years of water and sun, several pieces of driftwood have taken on
+
+strange shapes, unlike those of natural wood.  Sand has smoothed their once
+
+coarse lines, and they look soft to the touch.
+
+"
+E
+"cliffs west"
+"Bird droppings and mineral stains cover most of the stone, nearly all the way
+
+to the top.  Seventy feet overhead, small shrubs poke their furry appendages
+
+over the edge, clinging bravely to the cold rock.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2726 ) {
+
+  end;
+
+  }
+
+continue;
+
+"
+!
+3 0 5
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+A
+"search"
+"driftwood"
+"if( is_player( ch ) ) {
+
+  if( rflag( reset2, room ) ) {
+
+    if( random( 1, 10 ) < 4 ) {
+
+      obj_to_char( oload( 4523 ), ch );
+
+      send_to_char( #getwood, ch );
+
+      remove_rflag( reset2, room );
+
+      }
+
+    else {
+
+      send_to_char( #none, ch );
+
+      }
+
+    }
+
+  else {
+
+    send_to_char( #none, ch );
+
+    }
+
+  }
+
+"
+E
+"getwood"
+"You search through the driftwood, recovering a piece which looks suitable for burning.
+
+"
+E
+"none"
+"You search through the driftwood, but find nothing of interest.
+
+"
+!
+0 0 0
+2726 9 1509949540 3 0
+2727 9 1509949540 3 0
+2727 9 1509949540 3 0
+2728 9 1509949540 3 0
+189 17 1509949470 -2 0
+78 17 1509949515 -2 0
+-1
+S
+
+#29902
+"Sheltered Cove - Pebbled Shoreline"
+"You wend your way along this narrow stretch of beach, hemmed in on the west
+
+by towering walls of flawed limestone.  The water to the east is calm and
+
+clear, revealing a sandy bottom dotted by occasional patches of dark stone.  A
+
+gentle sea breeze plays with a patch of dried eel grass, making a small
+
+rustling sound.  The pebbled beach continues north and south.
+
+"
+"[Nereus] Try not to use you in rdescs
+
+[Nereus] extras for eel grass, cliffs, beach
+
+[Nereus] It would be cool if dig sand loaded a hole object, if !hole already in room
+
+[Nereus] you could make the hole a container and load things in it at the bottom
+
+[Nereus] Room Reviewed.
+
+[Nereus] cliff walls flawed limestone extra
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+14 9 0
+D0
+""
+""
+0 -1 29903 0 6
+D1
+""
+""
+0 -1 29911 0 6
+D2
+""
+""
+0 -1 29901 0 6
+E
+"dried eel grass"
+"Sun and wind have dried this eel grass, which washed up here at some point in
+
+the past.  Once supple and green, the leaves are now brown and brittle,
+
+rustling like papers in the breeze.
+
+"
+E
+"cliff walls flawed limestone 1 west"
+"The cliffs here are seventy feet high, and lined with shrubs at the top.  Both
+
+vertical and horizontal erosion textures can be seen all the way to the top;
+
+apparently the water level has been as high as the cliff tops in the distant
+
+past.
+
+"
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+2727 9 1509949540 3 0
+2728 9 1509949540 3 0
+4544 17 1509949490 -2 0
+-1
+S
+
+#29903
+"Sheltered Cove - Pebbled Shoreline"
+"You are at a bend on this thin beach, as it follows the rugged rocky coast
+
+south and east.  Weathered cliffs block movement both west and north, their
+
+shrubby tops barely visible in the hazy sea air.  The crunchy mixture of sand
+
+and small stones tinkles softly as the sea breeze caresses the beach.
+
+"
+"[Nereus] extras for cliffs, sand/beach
+
+[Nereus] Might be cool to have an acode for random breeze coming up on the beech
+
+[Nereus] or beach
+
+[Nereus] *
+
+"
+301465600 0
+14 9 0
+D1
+""
+""
+0 -1 29904 0 6
+D2
+""
+""
+0 -1 29902 0 6
+E
+"weathered cliffs"
+"The cliffs are far from vertical; they lean outwards slightly due to being
+
+eroded more on the bottom than the top.  Making out the tops is difficult in
+
+the shimmering air, but low trees and shrubs can just be resolved as they
+
+crowd the precipice.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2726 )
+
+  end;
+
+continue;
+
+"
+!
+3 0 4
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+2726 9 1509949540 3 0
+2727 9 1509949540 3 0
+2727 9 1509949540 3 0
+2728 9 1509949540 3 0
+-1
+S
+
+#29904
+"Sheltered Cove - Pebbled Shoreline"
+"You are on a sliver of coastline, running west and north of here along
+
+limestone escarpments.  Small animal trails in the sand crisscross each other,
+
+breaking the even texture created by the elements.  To the south and east, the
+
+still water of a cove can be seen shining in the light.  To the north, the
+
+sandy salad of pebbles and small rocks that makes up the beach becomes more
+
+coarse, strewn with larger rocks and small boulders.
+
+"
+"[Nereus] extras
+
+[Nereus] Room Reviewed.
+
+[Nereus] Small animal trails extra
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+14 9 0
+D0
+""
+""
+0 -1 29905 0 6
+D1
+""
+""
+0 -1 29913 0 6
+D2
+""
+""
+0 -1 29911 0 6
+D3
+""
+""
+0 -1 29903 0 6
+E
+"small animal trails"
+"The trails range from those that look like their were made by a worm of some
+
+kind, to the obvious tracks of a small crab, to the large webbed imprints of a
+
+gull.  The worm trails go for a short distance, then end in a soft sandy area
+
+where they burrowed in and the sand covered them.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2726 )
+
+  end;
+
+continue;
+
+"
+!
+3 0 5
+A
+""
+""
+"send_to_room ( #breeze, room );
+
+"
+E
+"breeze"
+"@cA light breeze wafts up off the water, gently caressing your cheek.@n
+
+"
+!
+2 400 0
+2727 9 1509949540 3 0
+2728 9 1509949540 3 0
+-1
+S
+
+#29905
+"Sheltered Cove - Rocky Shoreline"
+"The rocky shoreline runs south and east from this bend.  Cliffs block passage
+
+to the north and west, cracked by weather and age.  Dried eel grass and leaves
+
+of kelp cling to some of the larger rocks, giving off faint, tangy hints of
+
+vegetable decay.  Placid waters stretch south and east, surging gently against
+
+the rugged shoreline.
+
+"
+"[Nereus] extras
+
+[Nereus] perhaps climb cliff here
+
+[Nereus] Room Reviewed.
+
+[Nereus] cliffs extras
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+14 9 0
+D1
+""
+""
+0 -1 29906 0 6
+D2
+""
+""
+0 -1 29904 0 6
+E
+"eel grass kelp rocks"
+"Several man-sized rocks here are draped in dessicating sea flora, the source
+
+of this spot's rich odor.  Among the drying leaves are small sand-fleas,
+
+seeking momentary shelter before hopping off once more.
+
+"
+E
+"cliffs north west"
+"The cliffs here are over sixty-five feet high, made of ancient, cracked
+
+limestone.  Bird droppings and mineral seeps stain the walls, making them look
+
+dirty.  A narrow ledge can be seen halfway up, probably made by a deeper ocean
+
+at some point in the past.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2726 )
+
+  end;
+
+continue;
+
+"
+!
+3 0 4
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+2726 9 1509949540 3 0
+2727 9 1509949540 3 0
+2727 9 1509949540 3 0
+2728 9 1509949540 3 0
+78 17 1509949480 -2 0
+78 17 1509949470 -2 0
+-1
+S
+
+#29906
+"Sheltered Cove - Rocky Shoreline"
+"You weave between large boulders, almost climbing as you move along this
+
+rugged and narrow beach.  Detritus is piled between the rocks: driftwood
+
+sticks out at odd angles, draped with various species of seaweed.  South and
+
+east lie the luscious waters of the small harbor.  Walls of weatherbeaten
+
+limestone block movement to the north, while you can continue east or west
+
+along the beach.
+
+"
+"[Nereus] might be cool to load a boulder or a couple rocks in the rooms here, or anoher pile of driftwood
+
+[Nereus] Can water be luscious? That sounds amusingly dirty.
+
+[Nereus] Room Reviewed.
+
+[Nereus] I don't think luscious sounds correct for water
+
+[Nereus] extra for cliff walls weatherbeaten limestone 1 north 1 west
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+14 9 0
+D1
+""
+""
+0 -1 29915 0 6
+D2
+""
+""
+0 -1 29913 0 6
+D3
+""
+""
+0 -1 29905 0 6
+E
+"cliffs walls weatherbeaten limestone 1 north 1 west"
+"The cliffs here are over sixty feet high, made of heavily weathered limestone.
+
+Bird droppings and mineral seeps stain the walls, making them look dirty.  A
+
+narrow ledge can be seen halfway up, probably made by a deeper ocean at some
+
+point in the past.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2726 )
+
+  end;
+
+continue;
+
+"
+!
+3 0 6
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+2727 9 1509949540 3 0
+2728 9 1509949540 3 0
+4484 17 1509949540 -2 0
+-1
+S
+
+#29907
+"Under Construction"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+-1
+S
+
+#29908
+"Sheltered Cove - Rocky Shoreline"
+"Boulders as large as a small houses are strewn haphazardly about the area,
+
+making going quite difficult.  Craggy, weathered cliffs to the west block out
+
+half the sky, while open ocean stretches away to the east as far as you can
+
+see.  The beach continues to the south, where the boulders are smaller and
+
+less frequent.  The small stretch of beach to the north is yet more rugged
+
+than the one you are on, and appears to end in more cliffs.
+
+"
+"[Nereus] extras, cliffs, boulders (or put boulders here)
+
+[Nereus] leaving room acode might be neat to climb between a pair of very large boulders or some such
+
+[Nereus] Room Reviewed.
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+14 9 0
+D0
+""
+""
+0 -1 29909 0 6
+D1
+""
+""
+0 -1 29917 0 6
+D2
+""
+""
+0 -1 29915 0 6
+E
+"craggy weathered cliffs 1 west"
+"Limestone, stained dark by minerals leaking through, forms a formidable wall
+
+to the west.  Rising some sixty feet above your head, the tops of the cliffs
+
+are covered in wizened shrubs, barely visible through the ocean mist.
+
+"
+A
+"climb"
+"cliff up"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+2727 9 1509949540 3 0
+2728 9 1509949540 3 0
+4485 17 1509949540 -2 0
+1324 17 1509949475 -2 0
+-1
+S
+
+#29909
+"Sheltered Cove - End of Rocky Shoreline"
+"This portion of beach, such as it is, ends here.  Monstrous piles of boulders
+
+gradually build to a sheer cliff to the north, making passage impossible.  The
+
+cliffs jut out into open water to the east, standing bravely against the
+
+onslaughts of the mighty ocean.  Cliffs not quite so stern, though equally
+
+high, block movement to the west.  You may either venture into the shallows,
+
+or leave south.
+
+"
+"[Nereus] comma after high, second to last sentence
+
+[Nereus] Room Reviewed.
+
+[Nereus] monstrous piles boulders extra
+
+[Nereus] sheer cliff 1 north 1 west extra
+
+[Nereus] Let's change the cliffs code here since the cliffs are different here
+
+[Nereus] something like \"You climb up a few of the slippery boulders, but beyond the boulders the cliffs are too steep to climb.\"
+
+[Kotoktok] -
+
+[Nereus] *
+
+[Merolen] look cliff -> eachother on line 1
+
+"
+301465600 0
+14 9 0
+D1
+""
+""
+0 -1 29918 0 6
+D2
+""
+""
+0 -1 29908 0 6
+E
+"sheer cliffs monstrous boulders 1 north 1 west"
+"North and west, the huge boulders pile up against each other and slope
+
+upwards, eventually meeting the face of the cliffs.  Another forty feet above
+
+the meeting of boulders and cliff is the summit, wreathed in sea mist and
+
+topped with withered shrubs.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2726 )
+
+  end;
+
+continue;
+
+"
+!
+3 0 4
+A
+"climb"
+"cliff up 1 north"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"You manage to scramble up the boulders to the base of the cliffs, but are
+
+unable to climb any further as the cliff lacks handholds.
+
+"
+!
+0 0 0
+2726 9 1509949540 3 0
+2727 9 1509949540 3 0
+2727 9 1509949540 3 0
+2728 9 1509949540 3 0
+4484 17 1509949540 -2 0
+4484 17 1509949540 -2 0
+-1
+S
+
+#29910
+"Sheltered Cove - Shallows"
+"The water here is only a few feet deep, the shallows of a small cove.  The
+
+bottom is covered in coarse sand and small rocks, several of which are showing
+
+a few feet above the surface.  Each is smothered in all forms of sea life,
+
+both plant and animal.  Eel grass abounds, as do mussels, barnacles and small
+
+green anenomes.
+
+"
+"[Orb] Rextras.
+
+[Nereus] Room Reviewed.
+
+[Nereus] *
+
+"
+301465600 0
+13 9 0
+D0
+""
+""
+0 -1 29911 0 6
+D1
+""
+""
+0 -1 29919 0 6
+D2
+""
+""
+0 -1 29922 0 6
+D3
+""
+""
+0 -1 29901 0 6
+E
+"eel grass"
+"About the height of wheat ready to be harvested, the deep green blades wave in
+
+the water.  Some leaves are marked with various calcification patterns,
+
+perhaps the remnants of attached shellfish.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2726 ) {
+
+  end;
+
+  }
+
+continue;
+
+"
+!
+3 0 7
+681 17 1509949540 -2 14
+-1
+S
+
+#29911
+"Sheltered Cove - Shallows"
+"There is a dropoff to the east, and though the water here is not very deep, it
+
+swiftly becomes too deep to stand.  Slimy eel grass swishes back and forth in
+
+response to the gentle gyrations of the water, and small animals dart in and
+
+out of it.  To the north and west lies a narrow beach, overshadowed by large
+
+cliffs. Southwards are more shallows.
+
+"
+"[Nereus] Room Reviewed.
+
+[Nereus] extras
+
+[Nereus] extras for eel grass slimy
+
+[Nereus] extra for small animals
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+13 9 0
+D0
+""
+""
+0 -1 29904 0 6
+D1
+""
+""
+0 -1 29912 0 6
+D2
+""
+""
+0 -1 29910 0 6
+D3
+""
+""
+0 -1 29902 0 6
+E
+"eel grass slimy"
+"About half an inch wide, and a foot long, the eel grass undulates rhythmically
+
+in the water.  Small, circular white encrustations pepper many of the leaves,
+
+like salt in a dried-up tide pool.
+
+"
+E
+"small animals"
+"Hermit crabs, shrimp, and small fish all thrive in this shallow water.  The
+
+fish weave in and out of the grass, lighting on a blade and becoming
+
+invisible, then darting into motion again.  The small shrimp and crabs cling
+
+to blades, or walk along the bottom.
+
+"
+681 17 1509949540 -2 14
+-1
+S
+
+#29912
+"Sheltered Cove - Deep Water"
+"Small wavelets lap up disconcertingly around you, occasionally sending sprays
+
+of salt water into your face.  Your nostrils are assailed by the wholesome
+
+odor of seaweed and brine, constantly wafting in on the breeze.  Light
+
+reflects off the water around you, making it difficult to see what lies below.
+
+North and west, the water becomes shallow enough to stand, while to the east
+
+and south is the emerald green of deep water.
+
+"
+"[Orb] \"you tread water\"  I'm not treading water, I'm floating.
+
+[Nereus] nice
+
+[Nereus] Room Reviewed.
+
+[Nereus] *
+
+"
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 29913 0 6
+D1
+""
+""
+0 -1 29920 0 6
+D2
+""
+""
+0 -1 29919 0 6
+D3
+""
+""
+0 -1 29911 0 6
+D5
+""
+""
+0 -1 29931 0 6
+A
+""
+""
+"if( vnum( ch ) == 2729 ) {
+
+  end;
+
+  }
+
+continue;
+
+"
+!
+3 0 9
+681 17 1509949540 -2 14
+-1
+S
+
+#29913
+"Sheltered Cove - Shallows"
+"You are in the shallows of a placid cove, the water depth significantly less
+
+than your height.  The rock-studded bottom is swathed in eel grass, waving
+
+like a submarine prairie.  All manner of invertebrate life clings to the
+
+rocks, peppering the bottom with soft pastel colors.  North and west is a
+
+thin, rough beach, while to the south and east is deeper water.
+
+"
+"[Orb] Rextras.
+
+[Nereus] Room Reviewed.
+
+[Nereus] *
+
+"
+301465600 0
+13 9 0
+D0
+""
+""
+0 -1 29906 0 6
+D1
+""
+""
+0 -1 29914 0 6
+D2
+""
+""
+0 -1 29912 0 6
+D3
+""
+""
+0 -1 29904 0 6
+E
+"eel grass"
+"The half-inch wide, paper-thin grass moves in the gentle surge, alternately
+
+hiding and exposing the bottom underneath.  Small hermit crabs, most of them
+
+inhabiting discarded purplish snail shells, can be seen crawling busily around
+
+when the surge exposes the bottom.
+
+"
+E
+"invertebrate rocks"
+"Green-brown limpets and purple mussels abound on the rocks, in some cases
+
+completely obscuring the surface from view.  Small green anenomes have crowded
+
+the other animals off of some surfaces, leaving a soft squishy mass instead of
+
+stone.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2726 )
+
+  end;
+
+continue;
+
+"
+!
+3 0 7
+681 17 1509949540 -2 14
+-1
+S
+
+#29914
+"Sheltered Cove - Shallows"
+"The water here laps gently up around you, giving off a rich scent of brine.
+
+The bottom is covered in pebbles and rough sand, with small rocks coming
+
+underfoot unexpectedly.  Deep water stretches off to the south and east, while
+
+to the north is a small rocky beach.  To the west, the shallows continue,
+
+small wavelets flashing in the light.
+
+"
+"[Orb] Nice.
+
+[Nereus] Room Reviewed.
+
+[Nereus] bottom extra
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+13 9 0
+D0
+""
+""
+0 -1 29915 0 6
+D1
+""
+""
+0 -1 29921 0 6
+D2
+""
+""
+0 -1 29920 0 6
+D3
+""
+""
+0 -1 29913 0 6
+E
+"bottom"
+"Jagged and smoothed stones intermingle in the shallows below your feet.  Many
+
+of the rocks look unstable, teetering on the tops of others.  Small amounts of
+
+sea lettuce and other plants thrive, and you see the occasional invertebrate
+
+or fish among them.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2726 )
+
+  end;
+
+continue;
+
+"
+!
+3 0 8
+681 17 1509949540 -2 14
+-1
+S
+
+#29915
+"Sheltered Cove - Rocky Shoreline"
+"Boulders as large as a four-horse carriage pepper the beach here, resting
+
+uneasily in the gravelly sand.  Rough, open ocean lies to the east, while to
+
+the south is smoother sheltered water.  The beach continues to the north and
+
+west; north, the beach gets even rockier, while it smooths out some to the
+
+west.
+
+"
+"[Orb] Replace that colon with a semi-colon, and change North to lowercase.
+
+[Nereus] Room Reviewed.
+
+[Nereus] extras good
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+14 9 0
+D0
+""
+""
+0 -1 29908 0 6
+D1
+""
+""
+0 -1 29916 0 6
+D2
+""
+""
+0 -1 29914 0 6
+D3
+""
+""
+0 -1 29906 0 6
+E
+"north"
+"The shoreline to the north shifts further away from being a beach, as large
+
+rocks and boulders become more frequent, and sand virtually disappears.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2726 )
+
+  end;
+
+continue;
+
+"
+!
+3 0 9
+A
+""
+""
+"send_to_room ( #breeze, room );
+
+"
+E
+"breeze"
+"@cA light breeze wafts up off the water, gently caressing your cheek.@n
+
+"
+!
+2 500 0
+2726 9 1509949540 3 0
+2727 9 1509949540 3 0
+2727 9 1509949540 3 0
+2728 9 1509949540 3 0
+4484 17 1509949540 -2 0
+1410 17 1509949462 -2 0
+-1
+S
+
+#29916
+"Sheltered Cove - Shallows"
+"You are in the shallows towards the northern end of this small cove.  Fronds
+
+of some sea plant which look like small palm trees stand fast here, some only
+
+partially submerged.  The water to the east is deep and rough; attempting to
+
+swim the open ocean would be suicidal.  To the south are the more peaceful
+
+waters of the harbor, more than likely to be safely traversable.  North, the
+
+shallows become rougher, broken by large rocks which form tide pools.
+
+"
+"[Orb] Replace that colon with a semi-colon.
+
+[Nereus] form a tide pool, or form tide pools?
+
+[Nereus] extras
+
+[Nereus] Room Reviewed.
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+13 9 0
+D0
+""
+""
+0 -1 29917 0 6
+D2
+""
+""
+0 -1 29921 0 6
+D3
+""
+""
+0 -1 29915 0 6
+E
+"fronds sea plant"
+"The translucent green-brown stalks are bulbous and seem to maintain their
+
+turgor even out of water.  A plume of leaves the same color as the stalk
+
+radiates from the top of each stem, draping it like long hair on a human head.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2726 )
+
+  end;
+
+continue;
+
+"
+!
+3 0 5
+681 17 1509949540 -2 14
+-1
+S
+
+#29917
+"Sheltered Cove - Tide Pools"
+"This area is largely submerged in a thin layer of water, which is broken in
+
+many places by boulders sticking out at odd angles.  Several of the boulders
+
+are scooped out, forming small pools which teem with aquatic life.  To the
+
+east is open ocean, beautiful but dangerous.  West is dry land, while south
+
+are smooth shallows.
+
+"
+"[Nereus] Here you could have tides based on the phase of the moon and the time
+
+[Nereus] of course you would want to approximate this
+
+[Nereus] maybe just arbitrarily pick a time for high tide, and if it's the right phase of the moon do something
+
+[Nereus] You could pop some sort of rare starfish or crab or something that had a low pop only on a certain phase of the moon for high tide
+
+[Nereus] I know there's a word for special highest tides but I don't have a clue what it is
+
+[Nereus] Room Reviewed.
+
+[Nereus] You can do this with a describe trig and moon_phase functions
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+13 9 0
+D0
+""
+""
+0 -1 29918 0 6
+D2
+""
+""
+0 -1 29916 0 6
+D3
+""
+""
+0 -1 29908 0 6
+E
+"open ocean 1 east"
+"Ominously towering swells are visible to the east, just outside of the cove.
+
+Swirling patterns on the surface denote dangerous currents below; travel in
+
+that direction would be equivalent to suicide.
+
+"
+E
+"boulders pools"
+"Smooth scoops have somehow been made in several submerged and partially
+
+submerged boulders.  These depressions create sheltered havens for all manner
+
+of plant and animal life.  Small crabs, shrimp, and shellfish move about on
+
+the bottom, and fish flit around above them.
+
+"
+681 17 1509949540 -2 14
+-1
+S
+
+#29918
+"Sheltered Cove - Tide Pools"
+"The tide pools around you teem with life, some of them as much as fifteen feet
+
+in depth.  The water is crystal clear, allowing you to see small fish and
+
+crustaceans in the submarine emerald valleys.  The cliffs to the north hug
+
+this area protectively, and jut out into the treacherous ocean to the east.
+
+South are slick rocks broken by smaller tidepools, while to the west is a
+
+rocky shore.
+
+"
+"[Orb] Perhaps it should be \"The tide pools around you\"
+
+[Orb] I want an rextra for the fish and maybe an acode to catch one.
+
+[Nereus] I like to eat moss
+
+[Nereus] I don't know why I said that
+
+[Nereus] Room Reviewed.
+
+[Nereus] extra:  cliffs 1 north 1 east
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+13 9 0
+D2
+""
+""
+0 -1 29917 0 6
+D3
+""
+""
+0 -1 29909 0 6
+E
+"small fish"
+"These small fish are light tan in color, with stubby pectoral fins on which
+
+they rest like two tiny legs.  Pastel blue spots with black centers dot their
+
+heads and flanks, making them quite pleasing to the eye.  Some of them are in
+
+very shallow pools; perhaps you could catch one.
+
+"
+E
+"cliffs 1 north"
+"The sixty foot cliffs of weathered limestone blot out half the sky to the
+
+north, while protecting the cove to the south from the ocean's fury.  Erosion
+
+has layered the cliffs, so that long-exposed, stained stone alternates with
+
+purer limestone.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2726 )
+
+  end;
+
+continue;
+
+"
+!
+3 0 4
+A
+"catch"
+"fish"
+"if( rflag( reset1, room ) ) {
+
+  act_tochar( #mewantfish, ch );
+
+  act_notchar( #hewantfish, ch );
+
+  }
+
+else {
+
+  act_tochar( #nope , ch );
+
+  }
+
+remove_rflag( reset1, room );
+
+"
+E
+"mewantfish"
+"You attempt to grab one of the fish, but it darts into deeper water.
+
+"
+E
+"hewantfish"
+"$n attempts to grab one of the fish, but it darts into deeper water.
+
+"
+E
+"nope"
+"The fish seem to be intellectually superior to you, and are wisely keeping their distance.
+
+"
+!
+0 0 0
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+681 17 1509949540 -2 14
+-1
+S
+
+#29919
+"Sheltered Cove - Deep Water"
+"Small swells ripple across your path, moving towards the shore to the west.
+
+The breeze plays games with yellowish fragments of foam, which can be seen
+
+floating around the area in strange patterns.  The water is a rich green, and
+
+what you can see of the bottom appears dark and rocky.  Several small fish are
+
+visible in the first five feet of water, but nothing is discernable below
+
+that.  To the west is a narrow strip of beach, while to the north, east, and
+
+south, deep water continues.
+
+"
+"[Orb] \"You bob up and down\"  \"you tread water\"  I'm floating...
+
+[Nereus] 2 spaces after that, 2nd to last line
+
+[Nereus] extras
+
+[Nereus] Room Reviewed.
+
+[Nereus] extra for fish
+
+[Nereus] extra for yellowish/fragments/foam/swells
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 29912 0 6
+D1
+""
+""
+0 -1 29925 0 6
+D2
+""
+""
+0 -1 29923 0 6
+D3
+""
+""
+0 -1 29910 0 6
+D5
+""
+""
+0 -1 29930 0 6
+E
+"fish"
+"The fish are silver and fairly elongated, probably smelt or mackerel.  They
+
+dart around swiftly, sending flashes of light back towards you when they show
+
+their sides.
+
+"
+E
+"yellowish fragments foam swells"
+"Foam, tinted yellowish by small amounts of algae, has collected on the surface
+
+due to turbulence at some point, and persisted until now.  The slightest
+
+breeze move them along like little clouds, scudding over the dark water's
+
+swells.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2729 ) {
+
+  end;
+
+  }
+
+continue;
+
+"
+!
+3 0 10
+681 17 1509949540 -2 14
+-1
+S
+
+#29920
+"Sheltered Cove - Deep Water"
+"The shore seems far away to the north, although the water gets shallow enough
+
+to stand not very far in that direction.  The ocean's rhythm is comfortingly
+
+hypnotic here, and a chilly sea breeze brings tears to your eyes.  Small
+
+invertebrates as well as some fish play tricks with your vision in the water,
+
+seeming to grow and then fade.  The surface to the south and east looks at
+
+once smoother and rougher than here, and you realize that it must be a kelp
+
+mat.
+
+"
+"extras?
+
+[Nereus] Room Reviewed.
+
+[Nereus] Extras for shore 1 north
+
+[Nereus] extra for small fish invertebrates
+
+[Nereus] extra for kelp mat 1 south 1 east
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 29914 0 6
+D1
+""
+""
+0 -1 29926 0 6
+D2
+""
+""
+0 -1 29925 0 6
+D3
+""
+""
+0 -1 29912 0 6
+D5
+""
+""
+0 -1 29932 0 6
+E
+"kelp mat 1 south 1 east"
+"The surface to the east and south seems textured, yet seemingly paradoxically
+
+does not move quite so much as the water around it.  Realization dawns as you
+
+make out several individual leaves on the surface; a giant floating mat of
+
+kelp covers the surface.
+
+"
+E
+"small fish invertebrates"
+"Tiny shrimp, as well as small silver fish, flit around in the top three or
+
+four feet of water.  Sometimes what will appear to be an unbelievably tiny
+
+fish will dart upwards, revealing that it was simply further away than you
+
+thought.  The lack of distance cues in the water makes the movements of the
+
+animals seem irrational.
+
+"
+E
+"shore 1 north"
+"The shore to the north is far away, yet the water directly north of here
+
+becomes shallow enough to stand.  Dark rocks can be made out, and then cliffs
+
+past them.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2729 ) {
+
+  end;
+
+  }
+
+continue;
+
+"
+!
+3 0 7
+681 17 1509949540 -2 14
+-1
+S
+
+#29921
+"Sheltered Cove - Deep Water"
+"You are swimming on the border between the cove and the open ocean to the
+
+east.  To the south is what appears to be a kelp bed, roiling slowly in the
+
+tide as leaves stick out of the water and then flip back down.  You see
+
+several purple jellyfish and schools of small, silver fish which swiftly dart
+
+away as you approach.  To the north and west, the water is shallow enough to
+
+stand in, and laps up against a rocky shore.
+
+"
+"[Orb] \"between the cove and the open ocean\" in line one.
+
+[Orb] make a couple small stinging jellyfish mobs?
+
+[Nereus] you mention purple jellyfish somewhere else
+
+[Nereus] Room Reviewed.
+
+[Nereus] I think you should make the jellyfish into a mob here too
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 29916 0 6
+D2
+""
+""
+0 -1 29926 0 6
+D3
+""
+""
+0 -1 29914 0 6
+D5
+""
+""
+0 -1 29938 0 6
+E
+"purple jellyfish"
+"Translucent, in fact almost transparent, these jellyfish only show the
+
+slightest purple tint.  They range from the size of an acorn to the size of a
+
+small grapefruit, and lazily pump their mantles in the currents.
+
+"
+681 17 1509949540 -2 14
+-1
+S
+
+#29922
+"Sheltered Cove - Shallows"
+"You are in several feet of water here, the shallows of a small cove.  The sand
+
+is very coarse, and many small rocks jut up from the bottom, several sticking
+
+partially out of the water.  Barnacles and anenomes cling to the rocks which
+
+are only partially submerged, dripping as they are dunked in and out of the
+
+water.  Passage to the south is blocked by towering cliffs, and north is more
+
+shallows.  To the west is a small beach, while eastwards lies deeper water.
+
+"
+"[Nereus] maybe it would be cool if you had a code to stab yourself in the foot if !floating && !flying, just a thought
+
+[Nereus] extras, for cliffs
+
+[Nereus] Room Reviewed.
+
+[Nereus] cliffs extras
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+13 9 0
+D0
+""
+""
+0 -1 29910 0 6
+D1
+""
+""
+0 -1 29923 0 6
+D3
+""
+""
+0 -1 29900 0 6
+E
+"cliffs south"
+"Rising more than fifty feet overhead, the cliffs blot out half the sky.
+
+Limestone escarpments jut out at the top, and small shrubs are just visible
+
+hanging over the edges.
+
+"
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+681 17 1509949540 -2 14
+-1
+S
+
+#29923
+"Sheltered Cove - Deep Water Below Cliffs"
+"You are in the deep water of a small, placid cove.  Cliffs to the south block
+
+out rough seas from that direction, as well as half the sky.  Kelp is unable
+
+to gain a foothold on them, although various shellfish cling for dear life.
+
+All you can make out of the bottom below you is that it is rock and not sand.
+
+To the west, the water becomes shallow enough to stand in, while north and
+
+east appear of similar depth.
+
+"
+"[Nereus] cliff extra
+
+[Nereus] acode to prevent people from climbing cliff
+
+[Nereus] extras for bottom
+
+[Nereus] Room Reviewed.
+
+[Nereus] still need extras for bottom, even if vague
+
+[Nereus] need a cliff extra too, what's the big ass cliff to my south look like
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 29919 0 6
+D1
+""
+""
+0 -1 29924 0 6
+D3
+""
+""
+0 -1 29922 0 6
+D5
+""
+""
+0 -1 29929 0 6
+E
+"bottom"
+"The bottom appears to be dappled stone, and although you cannot make out any
+
+individual rocks, you can see the gradations of vegetation type on the rocky
+
+surface.
+
+"
+E
+"south cliff"
+"Horizontal ridges, seemingly carved by a different water level at some time in
+
+the distant past, are cut through by vertical channels of erosion.  Much of
+
+the cliff is stained by mineral seepage and bird droppings, but the small
+
+amount of pristine rock appears to be limestone.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2729 ) {
+
+  end;
+
+  }
+
+continue;
+
+"
+!
+3 0 8
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+681 17 1509949540 -2 14
+-1
+S
+
+#29924
+"Sheltered Cove - Deep Water Below Cliffs"
+"This spot is deep in the shadow of the towering cliffs to the south, which
+
+drive straight down from their shrubby tops into deep water below.  The stone
+
+is slick with a deep purple algae, almost black, which shows up between the
+
+thriving patches of mussels and barnacles.  Deep cracks run vertically through
+
+the stone, giving off a hissing sound as water rushes in and out.  Small green
+
+crabs peek out, their mouths bubbling gently.  To the north is a thick kelp
+
+bed, while to the east and west you can swim along the stone wall.
+
+"
+"[Nereus] swimming action requires me to be swimming instead of flying or something
+
+[Nereus] The cliffs have shrubby tops?
+
+[Nereus] Maybe you could eat the algae
+
+[Nereus] Or pick off mussels and eat them
+
+[Nereus] climb cliff -> You try to climb the cliffs, but their surfaces are simply too slick to gain purchase on.
+
+[Nereus] Room Reviewed.
+
+[Nereus] inflict here should be ( ch, null, i, \"a small green crab\" );
+
+[Nereus] Still need an algae/stone/purple extra
+
+[Nereus] Consider adding crevices as another noun in the search
+
+[Kotoktok] -
+
+[Nereus] *
+
+[Nereus] First death in this zone occurred Feb 25th, 2004 - 12 hours after the zone was open.
+
+"
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 29925 0 6
+D1
+""
+""
+0 -1 29928 0 6
+D3
+""
+""
+0 -1 29923 0 6
+D5
+""
+""
+0 -1 29934 0 6
+E
+"deep crack small green crabs"
+"Several cracks, about eight inches in width, run through the stone from as far
+
+up as you can see, down into the water.  Small green crabs have wedged
+
+themselves into the cracks in rows, looking out with small black eyes on
+
+whitish stalks.
+
+"
+E
+"algae stone purple"
+"This algae would look like tar on the stones, except that the water does not
+
+bead up and run off quite easily enough for it to be tar.  It grows in large
+
+patches, several square feet in size, which look like blots of paint from a
+
+giant brush.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2729 ) {
+
+  end;
+
+  }
+
+continue;
+
+"
+!
+3 0 1
+A
+"search"
+"crack crevice"
+"act_notchar( #rmdelvecrack, ch );
+
+act_tochar( #delvecrack , ch );
+
+i = random( 1, 6 );
+
+dam_message( ch, i, \"A small green crab's pinch\" );
+
+inflict( ch, null, i, \"a small green crab\" );
+
+"
+E
+"delvecrack"
+"As you reach into a crack, the small crabs react aggressively to defend their home.
+
+"
+E
+"rmdelvecrack"
+"As $n reaches into a crack, the small crabs react aggressively to defend their home.
+
+"
+!
+0 0 0
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+681 17 1509949540 -2 14
+-1
+S
+
+#29925
+"Sheltered Cove - Kelp Mat"
+"The large air tubes of bull kelp alternately poke out of the water and
+
+resubmerge here at the western edge of the floating canopy of a kelp forest.
+
+Green-brown leaves shade the water below them, and in the sunlit water
+
+covering the leaves, small shellfish can be seen clinging to them.  The area
+
+seems teeming with life, as does the rest of the kelp mat which you can see to
+
+the east.  North and west are the shores of the harbor, while to the south
+
+loom cliffs.
+
+"
+"[Orb] Rextras!
+
+[Nereus] haha, spider crap
+
+[Nereus] I assume that should be crab - can we move mob into a mob?
+
+[Nereus] Room Reviewed.
+
+[Kotoktok] -
+
+[Nereus] also add kelp mat extra
+
+[Nereus] *
+
+"
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 29920 0 6
+D1
+""
+""
+0 -1 29927 0 6
+D2
+""
+""
+0 -1 29924 0 6
+D3
+""
+""
+0 -1 29919 0 6
+D5
+""
+""
+0 -1 29933 0 6
+E
+"kelp mat"
+"The water's surface is textured here by large kelp leaves, which occasionally
+
+flap softly as a swell passes through.  Green-brown and about a foot long, the
+
+leaves form a complete visual shield; you can see nothing below them.
+
+"
+681 17 1509949540 -2 14
+2771 9 1509949540 3 0
+-1
+S
+
+#29926
+"Sheltered Cove - Kelp Mat"
+"You are at the edge of a large bed of kelp, stretching south and east of here.
+
+Your swimming is made difficult by the density of the kelp, and at times you
+
+must nearly climb over it.  The water at the surface here is moderately warm,
+
+but a few feet down you can feel its icy touch.  Sea birds call overhead and
+
+some float around on the kelp, yet you see none landing on open water.
+
+"
+"[Orb] Rextras for the kelp.
+
+[Nereus] you could make sea gulls here too
+
+[Nereus] you could make them fly away west, towards the gay nest
+
+[Nereus] Room Reviewed.
+
+[Nereus] extras for kelp and birds
+
+[Nereus] Suggest random code here for the birds wheeling overhead or some such
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 29921 0 6
+D2
+""
+""
+0 -1 29927 0 6
+D3
+""
+""
+0 -1 29920 0 6
+D5
+""
+""
+0 -1 29937 0 6
+E
+"kelp"
+"Large, flat leaves with slightly spiny edges lie on the surface of the water,
+
+forming a layer which is nearly a foot thick.  Each greenish-brown leaf's
+
+surface is textured, with ridges that run the length of the leaf.
+
+"
+E
+"birds"
+"The selection of birds includes sea gulls, loons, and the occasional egret or
+
+heron.  The herons and egrets stalk along on the surface of the kelp, which
+
+seems to easily support their weight.  The others wheel around overhead, or
+
+float lazily around on the kelp; strangely, they avoid landing on open water.
+
+"
+A
+""
+""
+"send_to_room(#birdz, room);
+
+"
+E
+"birdz"
+"@cSea birds wheel overhead, calling lazily to each other.@n
+
+"
+!
+2 400 0
+681 17 1509949540 -2 14
+182 137 1509949540 3 0
+-1
+S
+
+#29927
+"Sheltered Cove - Kelp Mat"
+"Open ocean lies to the east, looking as wide and dangerous as might be
+
+imagined.  For now, you are swimming safely in a small harbor, up to your neck
+
+in various species of kelp.  The outer edge of this kelp bed seems to be a
+
+rich cornucopia of life; you catch glimpses of many fish of various sizes,
+
+shapes, and colors.  The kelp continues to the north and west, while you can
+
+see walls of stone to the south.
+
+"
+"[Orb] Rextras for the kelp.
+
+[Nereus] like this room - maybe you should also mention the dangerous water to the east
+
+[Nereus] Room Reviewed.
+
+[Nereus] need extra for kelp
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 29926 0 6
+D2
+""
+""
+0 -1 29928 0 6
+D3
+""
+""
+0 -1 29925 0 6
+D5
+""
+""
+0 -1 29936 0 6
+E
+"kelp"
+"Large, flat leaves with slightly spiny edges lie on the surface of the water,
+
+forming a layer which is nearly a foot thick.  Each greenish-brown leaf's
+
+surface is textured, with ridges that run the length of the leaf.
+
+"
+681 17 1509949540 -2 14
+-1
+S
+
+#29928
+"Sheltered Cove - Deep Water Below Cliffs"
+"The water here is cold and dark, chilling you to the bone.  The currents of
+
+the ocean to the east look too dangerous to navigate, while the water becomes
+
+safer in the small natural harbor to the northwest.  The cliffs to the south
+
+jut out into the sea, ending in a pinnacle of rough stone.  There is a small
+
+gap between the end of the cliffs proper and the pinnacle; it may be possible
+
+to safely get through it to the other side.
+
+"
+"[Nereus] I suppose parts of this room are moving west - leaving for now
+
+[Nereus] pinnacle extra
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+6 9 0
+D0
+""
+""
+0 -1 29927 0 6
+D2
+""
+""
+0 -1 29939 0 6
+D3
+""
+""
+0 -1 29924 0 6
+D5
+""
+""
+0 -1 29935 0 6
+E
+"pinnacle rough stone"
+"Jutting up from the foaming water, this pinnacle is perhaps forty feet wide at
+
+the base, tapering to about twenty at the tip.  Numerous ledges are stained
+
+white with bird droppings, and open vertical faces are stained in long lines
+
+by mineral seepage.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2729 ) {
+
+  end;
+
+  }
+
+continue;
+
+"
+!
+3 0 5
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+681 17 1509949540 -2 14
+-1
+S
+
+#29929
+"Ocean Floor"
+"The sheer stone barrier to the south dominates your underwater experience
+
+here, a truly amazing sight.  Filter-feeding organisms of all shapes and sizes
+
+open themselves to the life-bringing water.  Many perch dart along the wall,
+
+their thick white lips becoming visible before their bodies.  The water
+
+becomes shallower to the west, and the bottom more sandy.  The rock wall
+
+continues to the east, and northwards the water seems more open.
+
+"
+"[Orb] Again, rextras.  This is cool, elaborate!
+
+[Nereus] I think you should remove any mention of tiny fish from the room description and make an actual cloud or school of perch mob.
+
+[Nereus] I really like the perch darting along the wall thing in the rdesc, it would be cool as a random in the room if hte mob were here
+
+[Nereus] Room Reviewed.
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+7 9 0
+D0
+""
+""
+0 -1 29930 0 6
+D1
+""
+""
+0 -1 29934 0 6
+D4
+""
+""
+0 -1 29923 0 6
+E
+"sheer stone barrier 1 south filter-feeding organisms"
+"The wall is rarely visible past the life which carpets it.  Filter-feeders
+
+including sponges, anemones, and various shellfish wave their fronds in the
+
+nutrient-rich water.  Leafy green seaweed is anchored on the upper story,
+
+undulating gracefully.
+
+"
+2729 9 1509949540 3 0
+681 17 1509949540 -2 14
+-1
+S
+
+#29930
+"Ocean Floor"
+"Small black perch dart around the landscape here, hugging the rocks.  Several
+
+wider rockfish hang motionless, staring blankly at you with large eyes.  The
+
+water is cold, yet clear; only trace amounts of debris cloud your vision at
+
+this depth.  To the west lies the relative safety of the shallows, while dark,
+
+cold water continues in all other directions.
+
+"
+"[Orb] Rextras?  Codes for the rockfish?
+
+[Nereus] <3 sharks
+
+[Nereus] Room Reviewed.
+
+[Nereus] add a rockfish here too, and remove the rockfish from the rdes
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+7 9 0
+D0
+""
+""
+0 -1 29931 0 6
+D1
+""
+""
+0 -1 29933 0 6
+D2
+""
+""
+0 -1 29929 0 6
+D4
+""
+""
+0 -1 29919 0 6
+E
+"rocks"
+"The rocks are largely bare here, only supporting a small amount of floral
+
+growth.  Several sponges cling to the sides of larger rocks.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2729 ) {
+
+  end;
+
+  }
+
+continue;
+
+"
+!
+3 0 2
+2729 9 1509949540 3 0
+681 17 1509949540 -2 14
+2772 9 1509949540 3 0
+-1
+S
+
+#29931
+"Ocean Floor"
+"The dark rocks bloom with life here, painted in soft pastels of green, orange,
+
+and beige.  Coarse sand runs in channels between jagged wedges of stone, some
+
+of which go shooting as many as fifteen feet up from the bottom.  From your
+
+vantage underwater, the surface looks like a sheet of textured blue silver.
+
+To the north, and west, the ocean floor slopes upwards, while it tilts every
+
+so slightly downwards to the east and south.
+
+"
+"[Nereus] extras, but cool
+
+[Nereus] Room Reviewed.
+
+[Nereus] dark rocks life pastels: extra
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+7 9 0
+D1
+""
+""
+0 -1 29932 0 6
+D2
+""
+""
+0 -1 29930 0 6
+D4
+""
+""
+0 -1 29912 0 6
+E
+"dark rocks life pastels"
+"The black rocks here are festooned with sponges of beautiful pastel colors.
+
+Some are as small as a human eye, and others as large as a dinner plate.
+
+Several red-leafed plants here manage to collect enough light to survive.
+
+"
+2729 9 1509949540 3 0
+681 17 1509949540 -2 0
+-1
+S
+
+#29932
+"Ocean Floor"
+"Eerie shades of light filter through the water overhead, turning the area into
+
+a rocky twilight zone.  Suspended silt catches the light oddly at certain
+
+angles, making it difficult to see very far in any one direction.  You float
+
+between rock formations, each one covered in its own assortment of life.  The
+
+water seems to get darker to the south and east, while the bottom begins to
+
+slope upward to the north.  The sombre depths continue to the west.
+
+"
+"[Orb] Rextras, describe some more of the stuff you have in this rdesc in further detail.
+
+[Nereus] Room Reviewed.
+
+[Nereus] blah, extras, maybe silt and rock formations
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+7 9 0
+D1
+""
+""
+0 -1 29937 0 6
+D2
+""
+""
+0 -1 29933 0 6
+D3
+""
+""
+0 -1 29931 0 6
+D4
+""
+""
+0 -1 29920 0 6
+E
+"silt"
+"The silt is not mineral in nature, but instead consists of small particulates
+
+of plant and animal matter.  Rubbed off kelp, fish scales, and shrimp legs can
+
+be discerned among the suspended organic detritus.
+
+"
+E
+"rock formations"
+"Ranging from majestic limestone spires fifteen feet high, to small clumps of
+
+blackened stone on the bottom, the rock formations give this area an austere
+
+air.  Sponges and various shellfish provide an ample, yet not excessive visual
+
+spread on the rocks.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2729 ) {
+
+  end;
+
+  }
+
+continue;
+
+"
+!
+3 0 6
+2729 9 1509949540 3 0
+681 17 1509949540 -2 14
+-1
+S
+
+#29933
+"Ocean Floor - Dim Kelp Forest"
+"Light comes down in shafts from gaps in the kelp above, penetrating the gloom.
+
+Small green-brown wrass dart enthusiastically between waving fronds, mouthing
+
+and spitting out tiny pieces of debris.  Purple jellyfish the size of maple
+
+leaves pulse lethargically by, riding unseen currents.  The kelp continues to
+
+the east, while you can swim to more open water in other directions.
+
+"
+"[Orb] Hrm, while I like the light stuff, light won't always be coming down.
+
+It does get dark...
+
+[Nereus] I disagree with Orbie here, some light will still penatrate from above
+
+[Nereus] mobs in rdesc -> mobs?
+
+[Nereus] Room Reviewed.
+
+[Nereus] kelp extra
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+7 9 0
+D0
+""
+""
+0 -1 29932 0 6
+D1
+""
+""
+0 -1 29936 0 6
+D2
+""
+""
+0 -1 29934 0 6
+D3
+""
+""
+0 -1 29930 0 6
+D4
+""
+""
+0 -1 29925 0 6
+E
+"purple jellyfish"
+"A translucent purplish mantle surrounds the mesoglea of each of these small
+
+jellyfish.  Traceries of whitish nerve tissue run from top to bottom, and
+
+extend into the tentacles.
+
+"
+681 17 1509949540 -2 14
+4495 17 1509949540 -2 0
+-1
+S
+
+#29934
+"Ocean Floor"
+"Giant spider crabs can be seen scaling the enormous rock wall to the south,
+
+which takes up your entire field of vision in that direction.  Soaring upwards
+
+from nearly fifty feet in depth to the water's textured surface, it is truly a
+
+spectacle.  You can continue along the wall to the east and west, or swim
+
+northwards into a dim kelp forest.
+
+"
+"[Orb] \"soaring up fifty feet in depth\"  That's an odd phrase.
+
+[Orb] Last sentence, \"You can continue along the wall\"
+
+[Nereus] Again about the mobs in the rdescs, why don't you make a crab?
+
+[Nereus] Might be cool to put a crab trap or something was on the bottom of the ocean
+
+[Nereus] not sure if this is populated or not
+
+[Nereus] What's the kelp forest look like from here (extra)
+
+[Nereus] Room Reviewed.
+
+[Nereus] Spider crab here too?
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+7 9 0
+D0
+""
+""
+0 -1 29933 0 6
+D1
+""
+""
+0 -1 29935 0 6
+D3
+""
+""
+0 -1 29929 0 6
+D4
+""
+""
+0 -1 29924 0 6
+E
+"kelp"
+"All that is visible of the forest is the first few kelp stalks, as the rest of
+
+it is cloaked in shadow.  Very little light passes through the leaves, which
+
+form a thick blanket at the surface.
+
+"
+E
+"rock wall 1 south"
+"A line of jade-colored anemones is closest to the surface, then pink, then
+
+orange, then large white ones at the bottom.  The clarity of the water and the
+
+vibrance of the colors make this a breathtaking sight.  Above and below the
+
+anemone belt are verdant growths of leafy sea plants, crawling with life.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2729 ) {
+
+  end;
+
+  }
+
+continue;
+
+"
+!
+3 0 1
+2729 9 1509949540 3 0
+681 17 1509949540 -2 14
+-1
+S
+
+#29935
+"Ocean Floor"
+"A vertical wall of rock undulates to the south, covered in all manner of life.
+
+The breathtaking colors of anemones run in enormous stripes along the
+
+underwater cliff surface, one line hanging over the other.  Various
+
+invertebrates which you do not recognize add to the clutter, some of them
+
+climbing along the wall.  To the north you can see the beginnings of a kelp
+
+forest.  You can follow the rock wall west, or swim to your death in the Sea
+
+of Stars to the east.
+
+"
+"[Orb] Rextras for some of the stuff like anemones, the wall, etc.
+
+[Nereus] Room Reviewed.
+
+[Nereus] Extra: 1 north kelp forest
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+7 9 0
+D0
+""
+""
+0 -1 29936 0 6
+D3
+""
+""
+0 -1 29934 0 6
+D4
+""
+""
+0 -1 29928 0 6
+E
+"anemones cliff wall"
+"A line of jade-colored anemones is closest to the surface, then pink, then
+
+orange, then large white ones at the bottom.  The clarity of the water and the
+
+vibrance of the colors make this a breathtaking sight.  Above and below the
+
+anemone belt are verdant growths of leafy sea plants, crawling with life.
+
+"
+E
+"1 north kelp forest"
+"The water to the north becomes darker, as it is filtered by the kelp leaves
+
+above.  Several individual stalks can be made out at the edges of the forest,
+
+but the rest are hidden in darkness.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2729 ) {
+
+  end;
+
+  }
+
+continue;
+
+"
+!
+3 0 1
+681 17 1509949540 -2 14
+-1
+S
+
+#29936
+"Ocean Floor - Dim Kelp Forest"
+"Calcified clumps of fiber bind to the rocky bottom here, anchoring long,
+
+slender vines of algae.  Large light brown rockfish float at odd angles,
+
+difficult to distinguish from leaves of kelp.  You see large fish with white
+
+spots just at the edge of your vision, but they dart away as you approach.  To
+
+the east lies open ocean and dangerous currrents, a bad idea for a casual
+
+swimmer.  North and west, the kelp continues, while to the south the canopy
+
+clears.
+
+"
+"[Orb] Create some little rockfish mobs, imo.
+
+[Nereus] good ol' rockfish mobs
+
+[Nereus] you could make them hidden, and make a couple of them, and give them a rare skin for a custom
+
+[Nereus] Room Reviewed.
+
+[Nereus] kelp extras
+
+[Nereus] another rockfish room - remove rockfish from rdesc
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+7 9 0
+D0
+""
+""
+0 -1 29937 0 6
+D2
+""
+""
+0 -1 29935 0 6
+D3
+""
+""
+0 -1 29933 0 6
+D4
+""
+""
+0 -1 29927 0 6
+681 17 1509949540 -2 14
+4495 17 1509949540 -2 0
+2772 9 1509949540 3 0
+-1
+S
+
+#29937
+"Ocean Floor - Dim Kelp Forest"
+"Vision here is restricted by the limited amount of light filtering through the
+
+canopy of green-brown leaves above.  As you surge between the stalks, small
+
+fish swim just out of reach, darting off into the dimness.  The bottom is
+
+rocky, varying by as much as twenty feet between stony rises and gaping
+
+crevasses.  Large white anenomes populate several rock faces, beautiful in
+
+their delicacy.  A shiny piece of metal between two rocks glints in the light,
+
+catching your attention.
+
+"
+"[Orb] Rextras here.
+
+[Nereus] The #nope message on the acode seems to disagree with the \"pouch seems like it might be intact\" line.  Maybe you could do one of those \"You grasp the pouch, but it crumbles in your hands\"
+
+[Nereus] Room Reviewed.
+
+[Nereus] Is 4% sufficiently low for this phial?
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+7 9 0
+D0
+""
+""
+0 -1 29938 0 6
+D2
+""
+""
+0 -1 29936 0 6
+D3
+""
+""
+0 -1 29932 0 6
+D4
+""
+""
+0 -1 29926 0 6
+E
+"shiny piece metal"
+"Upon closer inspection, you realize that you have found a corpse!  The ghastly
+
+pale face stares at you, its eyes now clouded and blank.  If this man wasn't a
+
+pirate in life, he enjoyed dressing like one; the remnants of gaudy clothing
+
+and tasteless jewelry cling to his body.  A small leather pouch at his waist
+
+seems like it might be intact.
+
+"
+A
+"get"
+"small leather pouch"
+"if( rflag( reset1, room ) ) {
+
+  obj = obj_to_char( oload( 994 ), ch );
+
+  act_tochar( \"You grab the intact pouch from the corpse's waist.\", ch );
+
+  if ( random( 1,100 ) <= 2 ) {
+
+    obj_to_container( oload( 4476 ) ,obj );
+
+  }
+
+}
+
+else {
+
+  act_tochar( #nope , ch );
+
+  act_notchar( #rmnope , ch );
+
+}
+
+remove_rflag( reset1, room );
+
+"
+E
+"nope"
+"You grasp for the pouch, but it crumbles in your grasp, rotted to the point of
+
+worthlessness.
+
+"
+E
+"rmnope"
+"$n reaches for the corpse's waist, but finds nothing useful.
+
+"
+!
+0 0 0
+681 17 1509949540 -2 14
+4495 17 1509949540 -2 0
+-1
+S
+
+#29938
+"Ocean Floor"
+"You are more than thirty feet below the surface here, swimming between stone
+
+ledges and and spires.  The rocks are covered in anenomes and various other
+
+forms of life, many of which you cannot distinguish as certainly either plant
+
+or animal.  All sizes of rockfish can occasionally be seen staring blankly at
+
+you from under ledges.  Fearsome shapes loom in the water, suddenly
+
+disappering and reappearing.  To the north and west, more light is visible as
+
+the water gets shallower.
+
+"
+"[Orb] Make rextras for rockfish.
+
+[Nereus] I would consider actually just making rockfish mobs
+
+[Nereus] if hidden they wouldn't be so bad on scan
+
+[Nereus] as visible -> is visible
+
+[Nereus] Room Reviewed.
+
+[Nereus] reset ocean here
+
+[Nereus] rockfish is half-done
+
+[Kotoktok] -
+
+[Nereus] *
+
+"
+301465600 0
+7 9 0
+D2
+""
+""
+0 -1 29937 0 6
+D4
+""
+""
+0 -1 29921 0 6
+681 17 1509949540 -2 14
+2772 137 1509949540 3 0
+-1
+S
+
+#29939
+"Water Below Cliffs"
+"Although the water immediately around you is relatively calm, dangerous
+
+currents to the east and south betray themselves by creating whorls in the
+
+flotsam.  The cliffs to the north end gradually with several breaks,
+
+terminating in a pinnacle of craggy stone.  Just between the stone spire and
+
+the rest of the cliffs is a gap through which it might be possible to swim
+
+without risking being swept into the depths.  The water gets gradually
+
+shallower to the west, where a sand bar snuggles up against the cliffs.
+
+"
+"[Nereus] No comma necessary after \"possible to swim\"
+
+[Nereus] Is sand bar one word or is the two words acceptable spelling?
+
+[Nereus] Spire/pinnacle  craggy stone extra
+
+[Nereus] Is this the room you would place your level check?
+
+[Nereus] What levels are you going to restrict people to, 30?
+
+[Nereus] Room Reviewed
+
+[Nereus] *
+
+"
+301465600 0
+6 6 0
+D0
+""
+""
+0 -1 29928 0 6
+D3
+""
+""
+0 -1 29940 0 6
+E
+"gap 1 north"
+"The stained limestone cliffs to the north get shorter and more cracked from
+
+west to east.  A jumble of boulders marks the end of the cliff proper, but a
+
+mighty spire of stone rises just to the east.  A corridor of sheltered water
+
+about twenty feet wide and fifty in length runs between the jumbled boulders
+
+and the pinnacle of stone.  It may be navigable.
+
+"
+E
+"pinnacle craggy stone"
+"Jutting up from the foaming water, this pinnacle is perhaps forty feet wide at
+
+the base, tapering to about twenty at the tip.  Numerous ledges are stained
+
+white with bird droppings, and open vertical faces are stained in long lines
+
+by mineral seepage.
+
+"
+A
+""
+""
+"if( is_player( ch ) && find_stat( ch, level ) < 20 )
+
+  send_to_char ( #nope, ch);
+
+"
+E
+"nope"
+"@eThe water to the north is deep and seems like it would be extremely dangerous.
+
+Perhaps you should turn back while you can.  @n
+
+"
+!
+1 0 8
+681 17 1509949540 -2 14
+-1
+S
+
+#29940
+"Sand Bar Below Cliffs"
+"Sand has come to rest against the barnacle-encrusted stone to the north,
+
+forming a narrow strip of shallow water.  There is a steep dropoff to the
+
+south, where the water quickly becomes too turbulent to safely navigate.
+
+Deeper water also lies to the east, but the grade is more gradual in that
+
+direction.  The sand bar continues to hug the cliff face to the west,
+
+eventually meeting a sandy beach.
+
+"
+"[Nereus] meetings -> meeting
+
+[Nereus] beach 1 west extra
+
+[Nereus] cliff barnacle-encrusted stone 1 north
+
+[Nereus] might consider having a climb cliff action in each of these rooms that doesn't let you climb the slick stone or something
+
+[Nereus] Room Reviewed
+
+[Nereus] *
+
+"
+301465600 0
+13 6 0
+D1
+""
+""
+0 -1 29939 0 6
+D3
+""
+""
+0 -1 29941 0 6
+E
+"cliff barnacle-encrusted stone 1 north"
+"The volcanic rock of the cliffs to the north has been worn smooth by years of
+
+churning sand.  A thick carpet of milk-white barnacles covers a large portion
+
+of the stone, and several species of mussel populate the remaining tidal rock.
+
+"
+E
+"beach west"
+"A sandy beach is off in the distance to the west, receving mild surf.  Mist
+
+rises and a gentle roar emanates from that direction.  The beach meets these
+
+cliffs to the north, while to the south you are unable to see the beach's end.
+
+"
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+681 17 1509949540 -2 14
+-1
+S
+
+#29941
+"Sand Bar Below Cliffs"
+"Mirages of shifting sand plague the waters, giving the impression of
+
+intelligent movement beneath the surface.  Small green anenomes cling to
+
+available stone surfaces, closing as the water leaves them high and dry.
+
+Flotsam flocks the surface, piling up against the cliff to the north like the
+
+sand below it.  Dangerous waters roil to the south; even an experienced
+
+swimmer could drown in the currents there.  East and west the sand bar extends
+
+along the cliff, providing an avenue of relative safety.
+
+"
+"[Nereus] cool room
+
+[Nereus] Anenomes extra
+
+[Nereus] cliffs extra
+
+[Nereus] Room reviewed
+
+[Nereus] *
+
+"
+301465600 0
+13 6 0
+D1
+""
+""
+0 -1 29940 0 6
+D3
+""
+""
+0 -1 29942 0 6
+E
+"anenomes cliff 1 north"
+"Anenomes above the water's current height have closed, showing a sandy brown
+
+surface which looks squishy to the touch.  White bits of shell have adhered to
+
+the brown outer layers, looking very pure next to the sandiness around them.
+
+"
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+681 17 1509949540 -2 14
+-1
+S
+
+#29942
+"Sand Bar Below Cliffs"
+"The water here is a fairly clear aqua, clouded only by a small amount of
+
+suspended sand.  Although there is a dropoff to the south, the area directly
+
+below the cliffs is shall enough to stand in; sand has been pushed up against
+
+it, perhaps by a recent storm.  Towering limestone cliffs to the north block
+
+passage, while the water to the south looks too dangerous to traverse.  The
+
+sand bar continues east and west below the stony heights.
+
+"
+"[Nereus] - Note - need to change west exit so that it links correctly
+
+[Nereus] second sentence sounds awkward, maybe you could say \"shallow enough to stand - some sand has been pushed up against the stone, perhaps...\"
+
+[Nereus] Sand extra
+
+[Nereus] Cliffs extra
+
+[Nereus] Climb cliff action?
+
+[Nereus] Room Reviewed
+
+[Nereus] *
+
+"
+301465600 0
+13 6 0
+D1
+""
+""
+0 -1 29941 0 6
+D3
+""
+""
+0 -1 22008 0 6
+E
+"cliff 1 north"
+"Although cracked by years of exposure to the elements, these cliffs stand firm
+
+against the ocean's onslaught.  Black mussels form a thick carpet over the
+
+lower portions of stone, while barnacles encrust the surface just above them.
+
+"
+A
+"climb"
+"cliff"
+"send_to_char( #youwishjerk, ch );
+
+"
+E
+"youwishjerk"
+"The cliffs are simply too steep to climb safely.
+
+"
+!
+0 0 0
+681 17 1509949540 -2 14
+-1
+S
+
+#0
+

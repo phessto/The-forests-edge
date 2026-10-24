@@ -1,0 +1,38 @@
+#AREA
+"Lava Zone"
+"Nereus"
+""
+70 0
+3
+0
+#ROOMS
+
+#82250
+"The Bottom of a Crater"
+"Under Construction.
+
+"
+"[Nereus] volcano bottom
+
+[Nereus] Need to get some kind of charm here, or all the fire spirits will seek you out and attack you, except in this room
+
+[Nereus] Use path() to make fire creatures follow anyone who doesn't have the charm
+
+[Nereus] lava type zone
+
+[Nereus] some sort of extra-planar zone
+
+[Nereus] liche in alter-ego form needs to be here if he's let out from the witch zone
+
+"
+301465600 0
+11 6 0
+D4
+""
+""
+98466 -1 82225 0 6
+-1
+S
+
+#0
+

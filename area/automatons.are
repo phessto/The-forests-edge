@@ -1,0 +1,2014 @@
+#AREA
+"Automatons"
+"Phule Nivel"
+""
+20 0
+3
+0
+#ROOMS
+
+#95050
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+"action 1 is fly east
+
+action 2 is fly west
+
+action 3 is fly north
+
+action 4 is fly south
+
+e is 95051
+
+s is boundary
+
+removing fly actions, adding roof
+
+"
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95065 0 6
+D3
+""
+""
+0 -1 95075 0 6
+E
+"__TODO__"
+"room descriptions
+
+gnome in laboratory
+
+fly code -- remove it or add it everywhere
+
+"
+E
+"__AREA__"
+"connect to room 95074
+
+"
+A
+"__FLY_EAST__"
+""
+"if( can_fly( ch ) ) {
+
+  act_tochar( \"You fly east over the ice wall.\", ch );
+
+  act_notchar( \"$n flies east over the ice wall.\", ch );
+
+  transfer( ch, room );
+
+  act_notchar( \"$n flies down from the ice wall to the west.\", ch );
+
+  }
+
+else {
+
+  act_tochar( \"You are incapable of flight.\", ch );
+
+  }
+
+"
+!
+0 0 0
+A
+"__FLY_WEST__"
+""
+"if( can_fly( ch ) ) {
+
+  act_tochar( \"You fly west over the ice wall.\", ch );
+
+  act_notchar( \"$n flies west over the ice wall.\", ch );
+
+  transfer( ch, room );
+
+  act_notchar( \"$n flies down from the ice wall to the east.\", ch );
+
+  }
+
+else {
+
+  act_tochar( \"You are incapable of flight.\", ch );
+
+  }
+
+"
+!
+0 0 0
+A
+"__FLY_NORTH__"
+""
+"if( can_fly( ch ) ) {
+
+  act_tochar( \"You fly north over the ice wall.\", ch );
+
+  act_notchar( \"$n flies north over the ice wall.\", ch );
+
+  transfer( ch, room );
+
+  act_notchar( \"$n flies down from the ice wall to the south.\", ch );
+
+  }
+
+else {
+
+  act_tochar( \"You are incapable of flight.\", ch );
+
+  }
+
+"
+!
+0 0 0
+A
+"__FLY_SOUTH__"
+""
+"if( can_fly( ch ) ) {
+
+  act_tochar( \"You fly south over the ice wall.\", ch );
+
+  act_notchar( \"$n flies south over the ice wall.\", ch );
+
+  transfer( ch, room );
+
+  act_notchar( \"$n flies down from the ice wall to the north.\", ch );
+
+  }
+
+else {
+
+  act_tochar( \"You are incapable of flight.\", ch );
+
+  }
+
+"
+!
+0 0 0
+-1
+S
+
+#95051
+"Ice Maze - End"
+"Under Construction.
+
+"
+"w is 95050
+
+n is 95066
+
+"
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 95052 0 6
+2678 9 1509949540 3 0
+-1
+S
+
+#95052
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+"e is 95074
+
+"
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95053 0 6
+D3
+""
+""
+0 -1 95051 0 6
+-1
+S
+
+#95053
+"Ice Maze - Intersection"
+"Under Construction.
+
+"
+"hut wall nw
+
+"
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95069 0 6
+D1
+""
+""
+0 -1 95054 0 6
+D2
+""
+""
+0 -1 95052 0 6
+D3
+""
+""
+0 -1 95066 0 6
+-1
+S
+
+#95054
+"Ice Maze - Branching West"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95055 0 6
+D2
+""
+""
+0 -1 95074 0 6
+D3
+""
+""
+0 -1 95053 0 6
+-1
+S
+
+#95055
+"Ice Maze - Branching East"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95056 0 6
+D1
+""
+""
+0 -1 95083 0 6
+D2
+""
+""
+0 -1 95054 0 6
+-1
+S
+
+#95056
+"Ice Maze - Branching East"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95073 0 6
+D1
+""
+""
+0 -1 95082 0 6
+D2
+""
+""
+0 -1 95055 0 6
+-1
+S
+
+#95057
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+"exit w is no.mob
+
+"
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95058 0 6
+D3
+""
+""
+16384 -1 95070 0 6
+-1
+S
+
+#95058
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D2
+""
+""
+0 -1 95057 0 6
+D3
+""
+""
+0 -1 95059 0 6
+-1
+S
+
+#95059
+"Ice Maze - Branching North"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95090 0 6
+D1
+""
+""
+0 -1 95058 0 6
+D3
+""
+""
+0 -1 95060 0 6
+-1
+S
+
+#95060
+"Ice Maze - Intersection"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95089 0 6
+D1
+""
+""
+0 -1 95059 0 6
+D2
+""
+""
+0 -1 95061 0 6
+D3
+""
+""
+0 -1 95072 0 6
+-1
+S
+
+#95061
+"Ice Maze - Corridor"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95060 0 6
+D2
+""
+""
+0 -1 95067 0 6
+-1
+S
+
+#95062
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95072 0 6
+D3
+""
+""
+0 -1 95077 0 6
+-1
+S
+
+#95063
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+"w is 95078
+
+"
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 95067 0 6
+D2
+""
+""
+0 -1 95064 0 6
+-1
+S
+
+#95064
+"Ice Maze - Corridor"
+"Under Construction.
+
+"
+"e is 95065
+
+w is 95079
+
+"
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95063 0 6
+D2
+""
+""
+0 -1 95075 0 6
+-1
+S
+
+#95065
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+"hut wall ne
+
+"
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 95066 0 6
+D2
+""
+""
+0 -1 95050 0 6
+-1
+S
+
+#95066
+"Ice Maze - Corridor"
+"Under Construction.
+
+"
+"s is 95051
+
+hut wall n
+
+"
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 95053 0 6
+D3
+""
+""
+0 -1 95065 0 6
+-1
+S
+
+#95067
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+"s is 95065
+
+hut wall e
+
+"
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95061 0 6
+D3
+""
+""
+0 -1 95063 0 6
+-1
+S
+
+#95068
+"Inside a Small Hut"
+"Thick layers of ice line the wooden walls of this frost-filled hut, where the
+
+air is so cold and humid it appears to be in a constant state of blizzard.  A
+
+frozen oak door exits the hut to the north, and if there are any windows, they
+
+are coated with such thick ice that they are no longer visible at all.  In
+
+most of the corners of the hut, piles of bent and broken iron parts lie in
+
+disheveled heaps.  A frost-covered rug rests in the center of the hut.
+
+"
+"reset1 is used to control the bar lock on the door
+
+exit n is no.mob
+
+room d is no.mob
+
+"
+301465604 0
+0 6 0
+D0
+"frosted oak door"
+""
+16515 -1 95070 0 6
+D5
+"trapdoor"
+""
+139 -1 95071 0 6
+E
+"rug"
+"The rug is covered in frost, and is nailed down at one end.
+
+"
+E
+"nails"
+"Since the carpet is nailed down at one end, it only stands to reason that it
+
+could be rolled up.
+
+"
+A
+"lift"
+"bar"
+"if( !is_open( room, north ) ) {
+
+  if( rflag( reset1, room ) ) {
+
+    acode( room, 5 );
+
+    act_tochar( #lift, ch );
+
+    act_notchar( #rlift, ch );
+
+    remove_rflag( reset1, room );
+
+    }
+
+  else {
+
+    act_tochar( #already, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #open, ch );
+
+  }
+
+"
+E
+"barred"
+"No description.
+
+"
+E
+"lift"
+"You lift the heavy bar away from the door.
+
+"
+E
+"rlift"
+"$n lifts the heavy bar away from the door.
+
+"
+E
+"already"
+"The bar has already been lifted.
+
+"
+E
+"open"
+"The door is open!
+
+"
+!
+0 0 0
+A
+"lower"
+"bar"
+"if( !is_open( room, north ) ) {
+
+  if( !rflag( reset1, room ) ) {
+
+    acode( room, 5 );
+
+    act_tochar( #lower, ch );
+
+    act_notchar( #rlower, ch );
+
+    set_rflag( reset1, room );
+
+    }
+
+  else {
+
+    act_tochar( #already, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #open, ch );
+
+  }
+
+"
+E
+"lower"
+"You lower the heavy bar, blocking the door.
+
+"
+E
+"rlower"
+"$n lowers the heavy bar, blocking the door.
+
+"
+E
+"already"
+"The bar is already lowered.
+
+"
+E
+"open"
+"The door is open!
+
+"
+!
+0 0 0
+A
+""
+""
+"acode( find_room( 95070 ), 3 );
+
+if( rflag( reset1, room ) ) {
+
+  act_tochar( #barred, ch );
+
+  act_notchar( #r_barred, ch );
+
+  send_to_room( #rattle, find_room( 95070 ) );
+
+  }
+
+else {
+
+  continue;
+
+  }
+
+"
+E
+"barred"
+"You try to open the frosted oak door, but the bar is down.
+
+"
+E
+"r_barred"
+"$n tries to open the frosted oak door, but only succeeds in rattling the
+
+handle.
+
+"
+E
+"rattle"
+"Someone rattles the iron handle of the frosted oak door from inside the hut.
+
+"
+!
+8 0 1
+A
+""
+""
+"acode( find_room( 95070 ), 3 );
+
+continue;
+
+"
+!
+10 0 1
+A
+"__BAR_COLD__"
+""
+"i = 1d11+1;
+
+cold_message( ch, i, \"the freezing iron bar\" );
+
+inflict_cold( ch, null, i, \"a cold-induced heart attack\" );
+
+"
+!
+0 0 0
+A
+"roll"
+"rug carpet"
+"if( dflag( secret, door( room, down ) ) ) {
+
+  mob = mob_in_room( 357, room );
+
+  if( mob ) {
+
+    act_tochar( #mob, ch, null, mob );
+
+    }
+
+  else {
+
+    act_tochar( #pull, ch );
+
+    act_notchar( #rpull, ch );
+
+    remove_dflag( secret, door( room, down ) );
+
+    wait( 4 );
+
+    if( !dflag( secret, door( room, down ) ) ) {
+
+      send_to_room( #roll, room );
+
+      set_dflag( secret, door( room, down ) );
+
+      }
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #already, ch );
+
+  }
+
+"
+E
+"already"
+"The rug has already been rolled up, revealing a trapdoor.
+
+"
+E
+"pull"
+"You roll the rug aside, revealing a trapdoor!
+
+"
+E
+"rpull"
+"$n rolls the rug aside, revealing a trapdoor!
+
+"
+E
+"roll"
+"The rug unrolls, hiding the trapdoor once again.
+
+"
+E
+"mob"
+"You can't roll up the rug while $N is standing on it!
+
+"
+!
+0 0 0
+A
+"unroll"
+"rug carpet"
+"if( !dflag( secret, door( room, down ) ) ) {
+
+  act_tochar( #pull, ch );
+
+  act_notchar( #rpull, ch );
+
+  set_dflag( secret, door( room, down ) );
+
+  }
+
+else {
+
+  act_tochar( #already, ch );
+
+  }
+
+"
+E
+"pull"
+"You unroll the rug, covering the trapdoor.
+
+"
+E
+"rpull"
+"$n unrolls the rug, covering the trapdoor.
+
+"
+E
+"already"
+"The rug is already covering the trapdoor.
+
+"
+!
+0 0 0
+A
+"push pull move"
+"rug carpet"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"You cannot push, pull, or otherwise move the rug.
+
+"
+!
+0 0 0
+A
+""
+""
+"if( dflag( secret, door( room, down ) ) ) {
+
+  act_tochar( #rug, ch );
+
+  }
+
+else {
+
+  continue;
+
+  }
+
+"
+E
+"rug"
+"With the rug in the way, it is kind of hard to open the trapdoor.
+
+"
+!
+8 0 32
+A
+"get"
+"rug carpet"
+"act_tochar( \"The carpet is nailed down!\", ch );
+
+"
+!
+0 0 0
+A
+""
+""
+"send_to_room( #blizzard, room );
+
+"
+E
+"blizzard"
+"Frosty air blows all around, sending bits of snow around in circles.
+
+"
+!
+2 200 0
+A
+"search"
+"corners piles parts"
+"act_tochar( \"You search through the piles of broken parts.\", ch );
+
+act_notchar( \"$n searches through the piles of broken parts.\", ch );
+
+if( rflag( reset2, room ) ) {
+
+  remove_rflag( reset2, room );
+
+  i = random( 1, 20 );
+
+  }
+
+else {
+
+  i = 0;
+
+  }
+
+if( i == 7 ) {
+
+  obj = obj_to_char( oload( 325 ), ch );
+
+  act_tochar( \"You find $p!\", ch, obj );
+
+  act_notchar( \"$n finds $p!\", ch, obj );
+
+  }
+
+else if( i == 13 ) {
+
+  act_tochar( \"You seem to disturb something!\", ch );
+
+  act_notchar( \"$n seems to disturb something!\", ch );
+
+  mob = mload( 2686, room );
+
+  set_victim( mob, ch );
+
+  }
+
+else {
+
+  act_tochar( \"You don't find anything of interest.\", ch );
+
+  }
+
+"
+!
+0 0 0
+357 9 1509949540 3 0
+-1
+S
+
+#95069
+"Ice Maze - End"
+"Under Construction.
+
+"
+"hut wall w
+
+"
+301465600 0
+0 6 0
+D2
+""
+""
+0 -1 95053 0 6
+2677 9 1509949540 3 0
+-1
+S
+
+#95070
+"Ice Maze - Before a Small Hut"
+"Under Construction.
+
+"
+"exit e is no.mob
+
+exit s is no.mob
+
+jet of frost should do more than heal
+
+it should un-slow, etc, the automaton
+
+"
+301465600 0
+0 6 0
+D1
+""
+""
+16384 -1 95057 0 6
+D2
+"frosted oak door"
+""
+16515 -1 95068 0 6
+E
+"hole"
+"The small hole looks to be just about large enough to @breach@n your arm
+
+through it.
+
+"
+A
+""
+""
+"acode( room, 3 );
+
+if( rflag( reset1, find_room( 95068 ) ) ) {
+
+  act_tochar( #barred, ch );
+
+  act_notchar( #r_barred, ch );
+
+  send_to_room( #rattle, find_room( 95068 ) );
+
+  if( char_affected( ch, fire shield ) ) {
+
+    act_tochar( #char, ch );
+
+    act_notchar( #rchar, ch );
+
+    }
+
+  }
+
+else {
+
+  continue;
+
+  }
+
+"
+E
+"barred"
+"You try to open the frosted oak door to the south, but it appears to be barred
+
+from the inside.
+
+"
+E
+"r_barred"
+"$n tries to open the frosted oak door to the south, but only succeeds in
+
+rattling the frosted iron handle.
+
+"
+E
+"rattle"
+"The frosted oak door to the north is rattled from the outside.
+
+"
+E
+"char"
+"You notice that your fire shield singed the door a bit.
+
+"
+E
+"rchar"
+"You notice that $n's fire shield singed the door a bit.
+
+"
+!
+8 0 4
+A
+""
+""
+"acode( room, 3 );
+
+continue;
+
+"
+!
+10 0 4
+A
+"__HANDLE_COLD__"
+""
+"i = 1d11+1;
+
+cold_message( ch, i, \"the freezing iron handle\" );
+
+inflict_cold( ch, null, i, \"a cold-induced heart attack\" );
+
+"
+!
+0 0 0
+A
+""
+""
+"acode( room, 5 );
+
+continue;
+
+"
+!
+13 0 4
+A
+"__DOOR_COLD__"
+""
+"i = 1d11+1;
+
+cold_message( ch, i, \"the freezing oak door\" );
+
+inflict_cold( ch, null, i, \"a cold-induced heart attack\" );
+
+"
+!
+0 0 0
+A
+""
+""
+"send_to_room( #frost, room );
+
+mob = mob_in_room( 149, room );
+
+if( mob ) {
+
+  i = 2d19+9;
+
+  act_room( #healed, mob );
+
+  heal( mob, i );
+
+  }
+
+"
+E
+"frost"
+"A small cone of frost jets out from a small @bhole@n in the wall of the hut,
+
+near the door.  Obviously it is quite cold inside!
+
+"
+E
+"healed"
+"The jet of frost seems to invigorate $n!
+
+"
+!
+2 100 0
+A
+"reach"
+"hole"
+"act_tochar( #reach, ch );
+
+act_notchar( #rreach, ch );
+
+i = 2d11+1;
+
+cold_message( ch, i, \"the chill air\" );
+
+inflict_cold( ch, null, i, \"a cold-induced heart attack\" );
+
+if( is_open( room, north ) ) {
+
+  act_tochar( #door, ch );
+
+  }
+
+else {
+
+  if( rflag( reset1, find_room( 95068 ) ) ) {
+
+    act_tochar( #pull, ch );
+
+    act_notchar( #rpull, ch );
+
+    send_to_room( #arm, find_room( 95068 ) );
+
+    remove_rflag( reset1, find_room( 95068 ) );
+
+    }
+
+  }
+
+"
+E
+"reach"
+"You reach your arm into the hole and feel around.
+
+"
+E
+"rreach"
+"$n reaches $s arm into the hole and feels around.
+
+"
+E
+"door"
+"Your hand bumps into the open door, blocking the hole from the other side.
+
+"
+E
+"pull"
+"You pull something up and over.
+
+"
+E
+"rpull"
+"$n pulls something.
+
+"
+E
+"arm"
+"An arm reaches through a hole next to the door and pulls up the bar!
+
+"
+!
+0 0 0
+149 137 1509949540 3 0
+-1
+S
+
+#95071
+"The Basement"
+"Under Construction.
+
+"
+"some treasure here, secret door south
+
+this again keeps some people from discovering real 'boss'
+
+th time they can actually get through the chute
+
+climb a chute to get s
+
+leads to 95086
+
+some kind of 'ice machine' here keeping things very cold
+
+the walls are covered with frosted panels
+
+one panel can be opened using \"lift flap\"
+
+"
+301596676 0
+0 6 0
+D2
+""
+""
+226 -1 95086 0 6
+D4
+"trapdoor"
+""
+139 -1 95068 0 6
+E
+"flap"
+"One of the panels is in fact a hinged metal flap.  It can be lifted and closed.
+
+"
+A
+"climb enter jump"
+"1 south chute"
+"obj = obj_in_room( 4336, room );
+
+if( obj ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 95086 ) );
+
+  }
+
+else {
+
+  continue;
+
+  }
+
+"
+E
+"climb"
+"You climb through the chute in the south wall.
+
+"
+E
+"rclimb"
+"$n climbs through the chute in the south wall.
+
+"
+!
+0 0 0
+A
+"lift"
+"flap"
+"obj = obj_in_room( 4336, room );
+
+if( obj ) {
+
+  act_tochar( \"The flap is already up, revealing $p.\", ch, obj );
+
+  }
+
+else {
+
+  obj = oload( 4336 );
+
+  obj_to_room( obj, room );
+
+  act_tochar( \"You lift the metal flap on the south wall, revealing $p.\", ch, obj );
+
+  act_notchar( \"$n lifts the metal flap on the south wall, revealing $p.\", ch, obj );
+
+  }
+
+"
+!
+0 0 0
+A
+"close"
+"flap"
+"obj = obj_in_room( 4336, room );
+
+if( obj ) {
+
+  act_tochar( \"You close the metal flap on the south wall, hiding $p.\", ch, obj );
+
+  act_notchar( \"$n closes the metal flap on the south wall, hiding $p.\", ch, obj );
+
+  junk_obj( obj );
+
+  }
+
+else {
+
+  act_tochar( \"The flap is already closed.\", ch );
+
+  }
+
+"
+!
+0 0 0
+A
+""
+"1 south panels"
+"act_tochar( #search, ch );
+
+"
+E
+"search"
+"You search along the paneled walls, and find that one of the panels is in fact
+
+a metal flap!
+
+"
+!
+9 0 0
+A
+""
+""
+""
+E
+"to_char"
+"$n crawls out of a chute in the south wall.
+
+"
+E
+"to_room"
+"$n crawls out of a chute in the $T wall.
+
+"
+!
+1 0 4
+-1
+S
+
+#95072
+"Ice Maze - Branching South"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 95060 0 6
+D2
+""
+""
+0 -1 95062 0 6
+D3
+""
+""
+0 -1 95076 0 6
+-1
+S
+
+#95073
+"Ice Maze - Corridor"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95092 0 6
+D2
+""
+""
+0 -1 95056 0 6
+-1
+S
+
+#95074
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+"this would be a decent connecting room
+
+crack in ice wall to s
+
+w is 95052
+
+"
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95054 0 6
+D1
+""
+""
+0 -1 95085 0 6
+-1
+S
+
+#95075
+"Ice Maze - Branching North"
+"Under Construction.
+
+"
+"s is boundary
+
+"
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95064 0 6
+D1
+""
+""
+0 -1 95050 0 6
+D3
+""
+""
+0 -1 95080 0 6
+-1
+S
+
+#95076
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+"s is 95077
+
+w is boundary
+
+"
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95087 0 6
+D1
+""
+""
+0 -1 95072 0 6
+-1
+S
+
+#95077
+"Ice Maze - End"
+"Under Construction.
+
+"
+"s is 95078
+
+w is boundary
+
+n is 95076
+
+"
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 95062 0 6
+2677 9 1509949540 3 0
+-1
+S
+
+#95078
+"Ice Maze - End"
+"Under Construction.
+
+"
+"w is boundary
+
+e is 95063
+
+n is 95077
+
+"
+301465600 0
+0 6 0
+D2
+""
+""
+0 -1 95079 0 6
+2678 9 1509949540 3 0
+-1
+S
+
+#95079
+"Ice Maze - Corridor"
+"Under Construction.
+
+"
+"w is boundary
+
+e is 95064
+
+"
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95078 0 6
+D2
+""
+""
+0 -1 95080 0 6
+-1
+S
+
+#95080
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+"w is boundary
+
+s is boundary
+
+"
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95079 0 6
+D1
+""
+""
+0 -1 95075 0 6
+-1
+S
+
+#95081
+"Ice Maze - Branching East"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95093 0 6
+D1
+""
+""
+0 -1 95095 0 6
+D2
+""
+""
+0 -1 95082 0 6
+-1
+S
+
+#95082
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95081 0 6
+D3
+""
+""
+0 -1 95056 0 6
+-1
+S
+
+#95083
+"Ice Maze - Branching South"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 95097 0 6
+D2
+""
+""
+0 -1 95084 0 6
+D3
+""
+""
+0 -1 95055 0 6
+-1
+S
+
+#95084
+"Ice Maze - Branching East"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95083 0 6
+D1
+""
+""
+0 -1 95098 0 6
+D2
+""
+""
+0 -1 95085 0 6
+-1
+S
+
+#95085
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95084 0 6
+D3
+""
+""
+0 -1 95074 0 6
+-1
+S
+
+#95086
+"The Workshop"
+"Piles of metal parts litter the room, sorted by shape and size.  Pencilled
+
+drawings line the walls, detailed diagrams which form a jumbled mess of
+
+information.  Cold air blows into the workshop from a chute in the north wall.
+
+"
+"search parts
+
+read diagrams -- confusion
+
+"
+301596676 0
+0 6 0
+D0
+""
+""
+64 -1 95071 0 6
+E
+"1 north chute"
+"No description.
+
+"
+E
+"walls diagrams"
+"No description.
+
+"
+E
+"piles metal parts"
+"No description.
+
+"
+A
+""
+""
+"continue;
+
+"
+E
+"to_char"
+"You leap through the chute.
+
+"
+E
+"to_room"
+"$n leaps through the chute.
+
+"
+!
+3 0 1
+2699 9 1509949540 3 0
+-1
+S
+
+#95087
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+"w is boundary
+
+n is boundary
+
+"
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 95088 0 6
+D2
+""
+""
+0 -1 95076 0 6
+-1
+S
+
+#95088
+"Ice Maze - Corridor"
+"Under Construction.
+
+"
+"n is boundary
+
+"
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 95089 0 6
+D3
+""
+""
+0 -1 95087 0 6
+-1
+S
+
+#95089
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+"n is boundary
+
+"
+301465600 0
+0 6 0
+D2
+""
+""
+0 -1 95060 0 6
+D3
+""
+""
+0 -1 95088 0 6
+-1
+S
+
+#95090
+"Ice Maze - End"
+"Under Construction.
+
+"
+"n is boundary
+
+"
+301465600 0
+0 6 0
+D2
+""
+""
+0 -1 95059 0 6
+2678 9 1509949540 3 0
+-1
+S
+
+#95091
+"Ice Maze - End"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 95092 0 6
+2677 9 1509949540 3 0
+-1
+S
+
+#95092
+"Ice Maze - Branching South"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 95093 0 6
+D2
+""
+""
+0 -1 95073 0 6
+D3
+""
+""
+0 -1 95091 0 6
+-1
+S
+
+#95093
+"Ice Maze - Branching South"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 95094 0 6
+D2
+""
+""
+0 -1 95081 0 6
+D3
+""
+""
+0 -1 95092 0 6
+-1
+S
+
+#95094
+"Ice Maze - End"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D3
+""
+""
+0 -1 95093 0 6
+2678 9 1509949540 3 0
+-1
+S
+
+#95095
+"Ice Maze - Bend"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D2
+""
+""
+0 -1 95096 0 6
+D3
+""
+""
+0 -1 95081 0 6
+-1
+S
+
+#95096
+"Ice Maze - Corridor"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95095 0 6
+D2
+""
+""
+0 -1 95097 0 6
+-1
+S
+
+#95097
+"Ice Maze - Branching West"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95096 0 6
+D2
+""
+""
+0 -1 95098 0 6
+D3
+""
+""
+0 -1 95083 0 6
+-1
+S
+
+#95098
+"Ice Maze - Branching West"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95097 0 6
+D2
+""
+""
+0 -1 95099 0 6
+D3
+""
+""
+0 -1 95084 0 6
+-1
+S
+
+#95099
+"Ice Maze - End"
+"Under Construction.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 95098 0 6
+2677 9 1509949540 3 0
+-1
+S
+
+#0
+

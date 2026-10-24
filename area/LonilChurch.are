@@ -1,0 +1,1713 @@
+#AREA
+"Cathedral"
+"Nereus Kotoktok Olah"
+"Lonil's Cathedral"
+55 0
+0
+4
+#ROOMS
+
+#11500
+"Rutted Road through a Copse"
+"Running along the ivy-covered stone walls of a tower to the west, this small
+
+dirt road slopes slightly downward as it runs north through this small copse,
+
+meeting trees to the north, and then turning west.  Low, dense woods line the
+
+the path to the east.  Deep ruts and a hardened central portion in the still-
+
+soft dirt of the road mark the passage of many carts and teams.  The air is
+
+slightly misty and the ground damp and a river can be heard running to the
+
+northwest.
+
+"
+"[Nereus] Hello, cathedral being constructed!
+
+[Nereus] This is going to be the first iteration of the cathedral.  As it goes through building phases, we'll swap out the later versions so it looks like the cathedral is undergoing a continual construction.
+
+-
+
+[Nereus] During the first phase of construction, the following mobs should be hanging out:
+
+[Nereus] A draughtsman, planning out the foundation of the cathedral.
+
+[Nereus] - Neutral cleric of Meriada, ex-warrior who has abandoned his warrior life to write a chronicle of the rise of the Secomber nation (also the riposte trainer), he hangs out in a wooden hut off to the west of the construction
+
+[Nereus] Team of horses plus 2 knights of medienne, plus some peasant workers should be dragging stone from a quarry on the GNR to here.  The draughtsman
+
+[Nereus] can commission good players (or any with a positive Secomber reputation) to guard the caravans.
+
+[Nereus] * Need to add a shady guy over along the voaleth cavern trail to sabotage the construction efforts.
+
+[Nereus] He can also custom some stuff with the med guards' ears, more a trophy than anything useful.
+
+[Nereus] also in first iteration - a blacksmith mob, and a forge to make horseshoes and other stuff
+
+[Nereus] need to make a counter to see who's winning
+
+[Nereus] also a storeroom where good players can leave donations.  We'll use these items in the actual finally built thing and we can grant people pray points based on what they left, or some other reward
+
+[Nereus] make the storeroom a sanc room, but also make it a storeroom that anyone can walk into and drop things but not take them back
+
+[Nereus] *
+
+[Nereus] I think I made all the mobs, but let me map this out and we can start
+
+"
+301465600 0
+12 6 0
+D0
+""
+""
+0 -1 11501 0 6
+D2
+""
+""
+32 -1 21009 0 6
+E
+"ivy-covered stone walls tower 1 west"
+"The base of this very tall tower is a perfect square, and appears to be quite
+
+old; the stone is pitted and weathered, covered in a layer of ancient ivy.
+
+"
+E
+"deep ruts dirt road 1 down"
+"This road appears to be newly formed, its dirt still soft in many places and
+
+strewn with freshly torn up roots and bushes.  Despite its young age, it is
+
+already rutted in the places where carts most often pass, indicating that it
+
+has already seen much use.
+
+"
+A
+""
+""
+"if ( vnum( ch ) == 2872 )
+
+end;
+
+if ( vnum( ch ) == 2876 )
+
+  end;
+
+else
+
+  continue;
+
+"
+!
+3 0 0
+2877 137 1509949540 3 0
+2878 137 1509949540 3 0
+2879 137 1509949540 3 0
+2441 17 1509949540 -2 0
+2907 137 1509949540 3 0
+2907 137 1509949540 3 0
+2908 137 1509949540 3 0
+2908 137 1509949540 3 0
+-1
+S
+
+#11501
+"East Bank of a River"
+"Thick stands of gnarled pine and small temperate trees crowd this small road
+
+to the north and east.  A temporary yet very sturdy-looking wooden bridge,
+
+wide enough for two teams of horse, crosses a raging river to the west.  The
+
+road looks new, judging by fresh-looking roots and stumps which have been
+
+dragged to each side of the road, yet it is already rutted as if it sees a
+
+great deal of heavy traffic.  It continues to the south, where it runs through
+
+a small copse and then turns around the base of a large square tower.
+
+"
+""
+301465600 0
+12 6 0
+D2
+""
+""
+0 -1 11500 0 6
+D3
+""
+""
+0 -1 11502 0 6
+E
+"roots stumps"
+"The mangled remains of many stumps and roots, recently torn from the ground,
+
+line each side of the road.  Covered in dark, muddy earth and showing moist,
+
+pale interiors where they have been wounded, they give off a rich, moldy odor.
+
+"
+E
+"trees stands 1 north 1 east"
+"An impenetrable forest of low, coastal trees lines the road to the north and
+
+east, their slightly-gnarled trunks growing closely together.
+
+"
+E
+"tower south"
+"The tower to the south is quite tall, with a nearly perfectly square base.
+
+Moss and ivy grow thick on its ancient, weathered-looking walls.
+
+"
+-1
+S
+
+#11502
+"Sturdy Wooden Bridge Spanning Rapids"
+"This sturdy, newly-constructed wooden bridge is made of stout, roughly-cut
+
+tree trunks bound together with thick lengths of rope, and is more than
+
+fourteen feet wide.  It creaks almost constantly, not to threaten collapse,
+
+but to settle more firmly into place.  There are no rails along the sides,
+
+just a sheer drop of about twelve feet into roiling rapids, which lightly mist
+
+the upstream side of the bridge.  The wild river to the northeast and
+
+southwest is bordered by a thick forest of low trees, many of them partially
+
+submerged.  To the northwest and southeast, the bridge can be followed onto a
+
+small, rutted road.
+
+"
+""
+301465600 0
+23 6 0
+D0
+""
+""
+0 -1 11503 0 6
+D1
+""
+""
+0 -1 11501 0 6
+E
+"bridge rope"
+"Coarse, strong-looking rope binds nine tree trunks together, spanning this
+
+part of the river.  The rope and wood are slightly damp from the misting
+
+rapids.
+
+"
+E
+"rapids river trees"
+"The river is narrow but quite powerful and rough; a huge amount of water must
+
+pass under the bridge each day.  Its banks are lined with low trees, holding
+
+the precious topsoil in place against the water's onslaught.
+
+"
+-1
+S
+
+#11503
+"Rutted Road - Nearing a Hill"
+"A raging river comes from the northeast here, running along the eastern
+
+side of the road and finally under a rough wooden bridge to the south.  The
+
+rutted road that comes in from the west is unpaved, yet this part of the road
+
+seems to have had a lot of work done to it: large, flat stones and straw have
+
+been pounded into the ground, preventing this part of the path from sliding
+
+off into the river.  Dense, low woods line the opposite bank of the river,
+
+while lighter, more open woods stand on this side of the river and line the
+
+heavily-rutted dirt road as it continues west.
+
+"
+""
+301465600 0
+12 6 0
+D2
+""
+""
+0 -1 11502 0 6
+D3
+""
+""
+0 -1 11504 0 6
+E
+"raging river 1 east"
+"The river is narrow, yet deep and swift, bouncing wildly off large rocks and
+
+its tree-lined banks.
+
+"
+E
+"road 2 down stones straw ground"
+"Large, flat grey stones have been pounded into the muddy ground, and the gaps
+
+between them lined with straw.  Dried mud cakes everything.
+
+"
+-1
+S
+
+#11504
+"Gently Sloping Dirt Road"
+"Light, low woods rich in scrub oak to the north and south crowd the edges of
+
+the dirt road.  Wide enough for two teams of horse, the path is littered with
+
+freshly-removed stumps and recently-cut roots, suggesting that it is
+
+relatively new.  Despite this, it appears to have seen heavy use, as it has
+
+been flattened in places where the wheels of carts and feet of beasts pass
+
+repeatedly.  The road slopes gently upwards into a clearing in the woods to
+
+the west, while to the east it slopes downward until it meets a river and
+
+turns south.
+
+"
+""
+301465600 0
+12 6 0
+D1
+""
+""
+0 -1 11503 0 6
+D3
+""
+""
+0 -1 11505 0 6
+E
+"woods scrub oak 1 north 1 south"
+"Trees no taller than twenty feet, including many gnarled yet healthy-looking
+
+scrub oak, grow in a light forest to the north and south of the road.  A heavy
+
+layer of underbrush blocks passage into the forest.
+
+"
+E
+"dirt road path stumps roots 1 down"
+"Two teams of horse could easily pull carts past each other on this newly-
+
+cleared dirt road.  Fresh stumps and roots have been torn up to make way for
+
+the road, and lie scattered about the area.
+
+"
+-1
+S
+
+#11505
+"Southern Edge of a Clearing - Bottom of the Hill"
+"Fresh stumps stud the ground on each side of the road here, remnants of the
+
+forest that until recently stood here.  A large, steeply-sloping hill rises to
+
+the north, a rutted dirt road going straight up it.  The top of the rise has
+
+been flattened, and the edge of a construction site, littered with large
+
+granite blocks and temporary wooden structures can be seen atop it.  A deeply-
+
+rutted dirt road slopes gently downwards to the east, where it eventually
+
+meets a river.
+
+"
+"[Nereus] caravan leader or draughtsman hangs out here
+
+"
+301465600 0
+12 6 0
+D0
+""
+""
+0 -1 11506 0 6
+D1
+""
+""
+0 -1 11504 0 6
+E
+"fresh stumps"
+"Still-living stumps of trees ranging in size from several feet in girth to
+
+mere saplings line the sides of the road, along with a jumble of torn-up
+
+stumps and roots cleared from the road itself.
+
+"
+E
+"rise construction site granite blocks temporary wooden structures 1 north"
+"Although it is impossible to tell what kind of building is being constructed
+
+at the top of the hill, it is easy to see from the size of the granite blocks
+
+and wooden scaffoldings that it is going to be very, very large.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2507 && !is_pet( ch ) ) end;
+
+continue;
+
+"
+!
+3 0 1
+-1
+S
+
+#11506
+"South of the Foundation of a Grand Cathedral"
+"The foundations of a great cathedral spread out to the north, dwarfing the
+
+surrounding landscape.  The low beginnings of great walls, one titanic block
+
+of stone stacked upon another, already show the basic rectangular shape of the
+
+building.  A gap in the low walls to the north is home to a stone archway
+
+surrounded by a wooden scaffold: it will one day be a majestic entryway.
+
+Placed against the infant wall to the west is a long, wooden structure large
+
+enough to house all the labor required in the construction effort.  A steep,
+
+impassible ravine drops off suddenly to the east, while a dirt road heads down
+
+the hill into a clearing in the forest to the south.
+
+"
+""
+301465600 0
+12 6 0
+D0
+""
+""
+0 -1 11507 0 6
+D2
+""
+""
+0 -1 11505 0 6
+D3
+""
+""
+0 -1 11508 0 6
+E
+"archway wooden scaffold"
+"Made of expertly-carved blocks of granite, the archway appears to be nearly
+
+complete.  It is still surrounded by the rough wooden scaffold that was used
+
+to support it during construction.
+
+"
+E
+"structure 1 west"
+"An open wooden longhouse has been built on the outside of the the wall to the
+
+west, protecting those within from the elements while remaining easily
+
+accessible for the comings-and-going of the construction effort.
+
+"
+E
+"ravine 1 east"
+"The cathedral appears to be built atop a plateau, and to the east is the steep
+
+edge.
+
+"
+E
+"dirt road clearing 1 south"
+"The road to the south is the only way to approach the cathedral, which is
+
+built atop a high plateau.  The road goes down the hill into a clearing, then
+
+turns east into the forest.
+
+"
+2872 137 1509949540 3 0
+-1
+S
+
+#11507
+"Cathedral Entrance"
+"Large flagstones of rough granite make up most of the floor here, with only a
+
+few gaps where new blocks must be lain to complete this part of the
+
+foundation.  Long, straight logs which have been shorn of branches and sanded
+
+smooth lay lengthwise north to south, creating a track for stones to be pulled
+
+along.  To the west are the beginnings of a wall that will one day block any
+
+movement to the west, but for now it is only a few feet high and has many gaps
+
+where blocks have not been placed.  A fragile-looking stone archway,
+
+surrounded by a wooden scaffold, rises from the low stone walls to the south,
+
+and through it leads a small dirt road.  A similar but smaller archway lies
+
+east, while to the north is a large open area with a bare dirt floor, on each
+
+side of which large, load-bearing stone columns are being erected.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11512 0 6
+D1
+""
+""
+0 -1 11510 0 6
+D2
+""
+""
+0 -1 11506 0 6
+D3
+""
+""
+0 -1 11509 0 6
+E
+"flagstones floor gaps 1 down"
+"The dark, rough granite slabs making up the floor are flat and rectangular,
+
+fitting together nearly perfectly.  However, several gaps remain where stones
+
+have not yet been placed.
+
+"
+E
+"long straight logs track"
+"Heavily-warped yet holding together, the logs laid side by side obviously
+
+serve as a surface to move stone blocks over without damaging the stone that
+
+have already been put in place.
+
+"
+E
+"wall 1 west"
+"The wall to the west is mostly just foundation, large granite blocks making
+
+the base for the cathedral to come.  It would be easy to pick one's way
+
+between the blocks and continue west.
+
+"
+E
+"fragile-looking archway scaffold 1 south"
+"Made of expertly-carved blocks of granite, the archway appears to be nearly
+
+complete.  It is still surrounded by the rough wooden scaffold that was used
+
+to support it during construction.
+
+"
+E
+"smaller archway 2 east"
+"Made of expertly-carved blocks of granite, the archway appears to be nearly
+
+complete.  It leads into a small side room to the east.
+
+"
+-1
+S
+
+#11508
+"Inside a Wooden Longhouse"
+"The growing cathedral wall to the north forms one side of this long wooden
+
+structure, with multiple bunks placed against it.  Wooden posts with thin logs
+
+supported between them form the other side of the room to the south, while
+
+thatch supported by wooden beams provides a makeshift yet effective roof.  The
+
+longhouse extends slightly farther west than the wall to the north, forming a
+
+wide doorway through which one can follow the wall around the corner as it
+
+turns northwards.
+
+"
+""
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 11509 0 6
+D1
+""
+""
+0 -1 11506 0 6
+4826 17 1509949540 -2 0
+4826 17 1509949540 -2 0
+4826 17 1509949540 -2 0
+-1
+S
+
+#11509
+"West of the Cathedral Wall"
+"Dominating the scene are the in-progress foundations of a colossal cathedral
+
+to the east.  Huge, perfectly-cut blocks of granite have been set into the
+
+freshly-dug earth, which will eventually support the tremendous weight of the
+
+building above it.  North from here is a small, comfortable-looking sort of
+
+half-hut, nestled against the growing cathedral wall to the east.  To the west
+
+is a roofed cabin, with a large, sliding door that allows the majority of the
+
+wall to be opened up.  To the south, a dirt path leads into a spacious
+
+longhouse built against the low granite wall to the east.
+
+"
+"[Nereus] Code here - when players enter after hours the blacksmith shop will stay locked
+
+[Hedrack] This is outside?
+
+[Kotoktok] yeah
+
+"
+301465600 0
+0 6 0
+D0
+"simple wooden door"
+""
+1 -1 11513 0 6
+D1
+""
+""
+0 -1 11507 0 6
+D2
+""
+""
+0 -1 11508 0 6
+D3
+""
+""
+0 -1 11517 0 6
+E
+"foundations colossal cathedral blocks granite 1 east"
+"Enormous granite blocks are being laid as the foundations of a wall which will
+
+rise to the east.  They have not been stacked high enough yet to impede
+
+passage in that direction.
+
+"
+E
+"small half-hut 1 north"
+"Only two walls of wood were necessary to create the building to the north, as
+
+its north and east walls are formed by the growing cathedral.  A simple wooden
+
+door in the southern wall leads inside.
+
+"
+E
+"cabin 1 west"
+"The entrance of the cabin to the west is large enough to accommodate a horse
+
+or the back of a cart with ease.  A wide-bored tin chimney adorns the peak of
+
+its slate roof.
+
+"
+A
+""
+""
+"if( is_follower( ch ) )
+
+  end;
+
+if( time_hour() > 18 && time_hour() < 6 ) {
+
+  act_room( \"The door swings shut and locked behind you.\", ch );
+
+  close( room, west );
+
+  lock( room, west );
+
+}
+
+"
+!
+1 0 8
+2911 9 1509949540 3 0
+2912 9 1509949540 3 0
+-1
+S
+
+#11510
+"Side Room - Only a Foundation"
+"Modest yet well-crafted stone archways, still sheathed in the wooden scaffolds
+
+used to help build them, have been anchored in the foundation to the west and
+
+north; a rather odd-looking situation as the walls which will hold them have
+
+not yet been raised.  To the south and east are the lower sections of the
+
+thick outer wall of the cathedral, only a fraction of their eventual height,
+
+yet still tall enough to easily block passage in those directions.  Foundation
+
+stones make up most of the floor, but gaps between stones and the occasional
+
+spot where stones have yet to be placed would make walking somewhat difficult.
+
+"
+"[Nereus] let the acolyte(s) live here?
+
+"
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11511 0 6
+D3
+""
+""
+0 -1 11507 0 6
+E
+"stone archways wooden scaffolds 1 north 1 west"
+"Made of expertly-carved blocks of granite, the archway appears to be nearly
+
+complete.  It is still surrounded by the wooden scaffold that was used to
+
+support it during construction.
+
+"
+E
+"outer wall 1 south 1 east"
+"The dark granite walls have not reached their full height yet, but still
+
+effectively block passage in that direction.
+
+"
+-1
+S
+
+#11511
+"Chapel of the Sun"
+"Thick walls of rough granite blocks grow from the foundation to the north and
+
+east, the tallest part of the building yet made.  Their tops are sheathed in
+
+wood, where the last pieces of stone have yet to be put in place.  A large,
+
+circular hole has been left in the wall to the east, looking over the edge of
+
+a steep drop towards where the sun must peek over the horizon at dawn.  Pure,
+
+beautiful alabaster tiles lie in neat stacks against the wall to the north,
+
+where some have already been used to cover the rough granite.  At the base of
+
+the wall to the east is a stack of delicate-looking, translucent sheets of
+
+rose quartz.  An archway to the south leads through a nonexistent wall into a
+
+side room off the main hallway, which lies past the columns to the west.
+
+"
+"[Kotoktok] bless acode at dawn, only in final version
+
+"
+301465604 0
+0 6 0
+D2
+""
+""
+0 -1 11510 0 6
+D3
+""
+""
+0 -1 11512 0 6
+E
+"wall 1 north"
+"The granite wall to the north looks to be nearly complete, as it is taller
+
+than any other visible part of the building.
+
+"
+E
+"2 wall east circular hole"
+"The wall to the east appears to be mostly complete, as it is quite tall.  In
+
+the center of it is a large, circular hole that looks out to where the sun
+
+rises.  Several pieces of translucent rose quartz have been placed in the
+
+hole, the beginnings of a pseudo-stained-glass window.
+
+"
+E
+"pure beautiful alabaster tiles stacks"
+"The alabaster is of the highest quality, pure quite and smooth as glass.  It
+
+is stacked in neat piles, and looks like it will be used to cover the rough
+
+granite walls of the entire interior in addition to the wall to the north.
+
+"
+E
+"translucent sheets rose quartz"
+"The sheets of breath-taking cut and polished rose quartz are long and narrow,
+
+and some have already been placed horizontally in the hole in the wall to the
+
+east to form the window pane.
+
+"
+A
+"get take"
+"alabaster rose quartz"
+"mob = mob_in_room( 871, room );
+
+if ( mob && can_see_char( mob, ch ) ) {
+
+  act_tochar( #guard, ch, null, mob );
+
+  act_notchar( #rmguard, ch, null, mob );
+
+  attack( mob, ch, 4d9+25, \"punishing blow\" );
+
+}
+
+else
+
+  act_tochar( #noyoufaggot, ch );
+
+"
+E
+"noyoufaggot"
+"The pieces of stone are too large and unwieldy to possible get away with
+
+taking.
+
+"
+E
+"guard"
+"@BAs you try to steal the building materials, $N gets angry and swings into
+
+action!@n
+
+"
+E
+"rmguard"
+"@CAs $n attempts to steal building materials, $N gets angry and swings into
+
+action!@n
+
+"
+!
+0 0 0
+871 137 1509949540 3 0
+4861 17 1509949540 -2 0
+-1
+S
+
+#11512
+"Cathedral - Grand Hallway"
+"Functionally yet artfully designed columns, made to support the tons of stone
+
+that will be above them, rise to the east and west, as yet unfinished.  Behind
+
+the row of columns to the west stands a rough yet well-made wooden scaffold,
+
+surrounding the growing outer wall of the cathedral, which is still quite low.
+
+Loose dirt makes up the floor in this section of the construction site,
+
+awaiting giant blocks of foundation stone.  To the south lies the main
+
+entrance to the young cathedral, a stone archway almost completely finished
+
+rising far above the low walls.  To the east is a side chapel, while to the
+
+north is what seems to be the center of the building.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11514 0 6
+D1
+""
+""
+0 -1 11511 0 6
+D2
+""
+""
+0 -1 11507 0 6
+E
+"columns"
+"The columns are composed of fluted segments slightly taller than they are
+
+wide, placed one on top of another to form tall, load-bearing structures.
+
+"
+E
+"well-made wooden scaffold outer wall 1 west"
+"Rough logs, bark still intact, have been lashed together to form a sturdy
+
+scaffold, used to help raise the wall to the west.  Much work must yet be done
+
+on the wall, as it stands only about twelve feet high.
+
+"
+E
+"stone archway"
+"Made of expertly-carved blocks of granite, the archway appears to be nearly
+
+complete.  It is still surrounded by the rough wooden scaffold that was used
+
+to support it during construction.
+
+"
+E
+"side chappel 1 east"
+"A small side chapel lies through the columns to the east.
+
+"
+-1
+S
+
+#11513
+"Inside a Wooden Hut"
+"Despite the fact that this is obviously a temporary structure built against
+
+the heavy granite blocks that make up the western wall of the cathedral,
+
+someone has made a very comfortable home inside this small wooden hut.  A
+
+mahogany writing desk has been placed against the eastern wall, appearing to
+
+serve the tenant as a dining table, storage closet, and workplace - clean
+
+dishes, spare clothing, and reams of neatly stacked paper cover or hang from
+
+every available surface.  A brazier burns quietly along the northern wall, a
+
+smooth and freshly-swept piece of granite kept underneath to prevent coals
+
+from falling out and starting a fire.  Considering all the furniture which
+
+fills this hut, there is barely room to stand, much less move about easily.
+
+"
+"[Nereus] riposte quest codes
+
+[Nereus] I need to load some ink in here for future scroll customs
+
+[Nereus] room extras, etc finished
+
+[Nereus] don't forget aedit 2, aset value 55
+
+[Nereus] fight mpcode not done on this guy either
+
+[Nereus] finish mpcode 5
+
+"
+301465604 0
+0 6 0
+D2
+"simple wooden door"
+""
+1 -1 11509 0 6
+E
+"heavy granite blocks 1 east"
+"Heavy blocks of dark granite, each weighing what must be several tons each,
+
+have been used as the eastern wall of this otherwise wooden structure.
+
+"
+E
+"clean dishes spare clothing reams neatly stacked paper"
+"Piles of clean, neatly-stacked dishes, folded clothes, and reams of thick
+
+parchment are arranged all across the desk, which has been pushed directly up
+
+to the dark granite of the cathedral wall.
+
+"
+E
+"brazier"
+"A simple sphere of tin serves as a brazier to remove the chill brought into
+
+the room by the granite blocks that make up the east wall of this small room.
+
+There is a small grate on the top in which a person can place additional wood
+
+or coal.  A slab of granite has been placed beneath the brazier to prevent
+
+fire.
+
+"
+A
+"practice"
+""
+"mob = mob_in_room( 2873, room );
+
+if( mob ) {
+
+  if( done_quest( ch, 63 ) ) {
+
+    if( is_name( arg, \"fourth attack\" ) && find_skill( ch, fourth attack ) < 8 ) {
+
+      interpret( mob, \"say Sorry, but I can only instruct someone further if they are already expert at fourth attack.\" );
+
+      end;
+
+    }
+
+    if( is_name( arg, \"fifth attack\" ) && find_skill( ch, fifth attack ) < 8 ) {
+
+      interpret( mob, \"say Sorry, but I can only train someone in that who is already expert at fifth attack.\" );
+
+      end;
+
+    }
+
+    continue;
+
+  }
+
+  else {
+
+    act_tochar( \"$N continues writing as if you were not even in the room.\", ch, null, mob );
+
+    interpret( mob, \"say I have much to write and never enough time.\" );
+
+    end;
+
+  }
+
+}
+
+continue;
+
+"
+!
+0 0 0
+A
+""
+""
+"mob = mob_in_room( 2873, room );
+
+act_tochar( #scratch, ch );
+
+"
+E
+"scratch"
+"The quiet scratching of quill against parchment fills the small room.
+
+"
+!
+2 55 0
+4824 17 1509949540 -2 0
+3609 49 1509949540 -2 0
+4828 82 1509950464 -2 0
+1866 19 1509949540 -2 0
+2873 4233 1509949540 2 0
+-1
+S
+
+#11514
+"Cathedral - Center"
+"Giant blocks of rough granite are strewn about this area in a semi-haphazard
+
+fashion, resting in the soft dirt.  This appears to be the center of the
+
+steadily rising cathedral, with large stone columns already placed along it to
+
+the east and west.  To the east is a small, canvas-covered pavilion that seems
+
+to serve as shelter for some of the still-homeless religious folk of the area.
+
+A small side room can be seen to the west, perched precariously on the edge of
+
+the plateau.  The nearly-finished arch of the main cathedral entrance can be
+
+seen through the hallway to the south, while to the north is an altar room.
+
+"
+""
+301465600 0
+0 6 0
+D0
+""
+""
+0 -1 11515 0 6
+D1
+""
+""
+0 -1 11516 0 6
+D2
+""
+""
+0 -1 11512 0 6
+D3
+""
+""
+0 -1 11518 0 6
+E
+"giant blocks rough granite"
+"Roughly five feet in height, each grey, heavily-textured block must weigh
+
+nearly a ton.
+
+"
+E
+"canvas-covered pavilion 1 east"
+"A sturdy wooden frame supports a large canvas cloth in the open space to the
+
+east.  Placed under it are several cots.
+
+"
+E
+"side room 1 west"
+"A few blocks have been placed to outline the wall of the room to the west, but
+
+there is still a precipitous drop threatened if you were to stray too far in
+
+that direction.
+
+"
+E
+"columns"
+"Ornate yet sturdy, the fluted columns are designed to support tons and tons of
+
+stone that will be above them.
+
+"
+E
+"arch entrance hallway 1 south"
+"At the end of the column-lined hallway to the south is a large, elegant
+
+archway that serves as the entrance to the young building.
+
+"
+-1
+S
+
+#11515
+"Back of the Cathedral - Altar"
+"Rough logs are set vertically into the ground here, supporting a ceiling made
+
+of wooden slats laid side by side.  Cliffs fall off to the east, west, and
+
+north where the cathedral's plateau comes to an abrupt end.  Directly under
+
+the ceiling is a simple but beautiful altar of polished grey marble.  South of
+
+here lies an enormous construction effort: large cubes of stone and rising
+
+columns are set into the rock-and-dirt ground of the plateau.
+
+"
+"[Nereus] Marked save.items - people will be able to leave donations for the cathedral here.
+
+[Nereus] When we build the final version we can use the items in the rdescs and such.
+
+[Nereus] Make this room no.mount
+
+[Nereus] raised dais here later and reliquary with some of the 'donations'
+
+
+[Nereus] Put altar object here now.
+
+[Olah] Opening room west to make some rooms for Consecrate trainer and quest
+
+"
+1945633538 0
+0 6 0
+D2
+""
+""
+0 -1 11514 0 6
+E
+"rough logs ceiling wooden slats 1 up"
+"The only work that has been done to the logs supporting the ceiling is to trim
+
+off the branches.  The gaps between the wooden slats making the ceiling above
+
+have been caulked with tar, creating a water-tight seal.
+
+"
+E
+"cubes stone columns 1 south"
+"Some of the stone blocks have been arranged to form a coherent foundation,
+
+while others are just placed haphazardly, not yet in their final resting
+
+place.  Columns that support nothing but air line each side of the hallway to
+
+the south, like petrified trees in a dead forest.
+
+"
+E
+"polished grey marble altar"
+"The altar is nothing more than a circular lamina of finely-polished grey
+
+marble, about eight feet in diameter.  The ground around it and the altar
+
+itself are littered with items of varying value, from rabbit skins to what
+
+might be precious gems.
+
+"
+-1
+S
+
+#11516
+"Beneath a Pavilion - Lull in the Construction"
+"A watertight roof of oiled canvas is suspended overhead, stretched over a
+
+wooden frame.  The fabric is dense enough to protect against the elements,
+
+while allowing light to penetrate easily.  Blocks of rough granite set into a
+
+solid foundation form a massive wall to the south, rising above the roof of
+
+the pavilion.  Against the wall is a large pile of roughly-cut timber, the
+
+destiny of which is not readily apparent.  There is no wall to the east,
+
+although there may as well be; a steep drop off the edge of the hill on which
+
+the cathedral stands awaits anyone who ventures in that direction.  A similar
+
+cliff lies to the north.  Large, unfinished load-bearing columns line what
+
+appears to be the central hall of the cathedral to the west.
+
+"
+"[Kotoktok] make  religion = lonil - only robe, gives fire shield, other cool stuff
+
+"
+301465600 0
+0 6 0
+D3
+""
+""
+0 -1 11514 0 6
+E
+"blocks rough granite massive wall pile roughly-cut timber 1 south"
+"Against the massively tall and thick wall to the south, no longer under the
+
+pavilion, is a pile of timber to be used in some aspect of construction.
+
+"
+E
+"steep drop 1 east"
+"The plateau on which the cathedral is being built ends to the east, leaving
+
+many feet of empty space below it.  Venturing in that direction is probably a
+
+bad idea.
+
+"
+E
+"north"
+"The plateau on which the cathedral is being built ends to the north, leaving
+
+many feet of empty space below it.  Venturing in that direction is probably a
+
+bad idea.
+
+"
+E
+"large unfinished load-bearing columns 1 west"
+"The columns are composed of fluted segments slightly taller than they are
+
+wide, placed one on top of to form tall, load-bearing structures.
+
+"
+A
+"north east"
+""
+"act_tochar( #no, ch );
+
+act_notchar( #rm, ch );
+
+"
+E
+"no"
+"You try to nerve yourself for the suicidal jump, but fail.
+
+"
+E
+"rm"
+"$n eyes the deadly fall, then loses $s nerve.
+
+"
+!
+0 0 3
+A
+"get take"
+"timber logs"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"The logs are too heavy and large to escape with.
+
+"
+!
+0 0 0
+2876 137 1509949540 3 0
+4856 17 1509949540 -2 0
+4856 17 1509949540 -2 0
+-1
+S
+
+#11517
+"Before a Smoldering Forge"
+"This wide, open cottage is obviously used as the shop for the blacksmith of
+
+this bustling construction site.  A tin hood serves as a chimney above a heavy
+
+hearth of dark brick; a bellows near the hearth is used to stoke the coals
+
+prior to working with metals.  Only the northern wall is made of brick, while
+
+the other parts of the structure are recently-cut wood.  Various hammers, iron
+
+bars, and tongs hang on hooks on the west wall.  A sliding wooden door to the
+
+east is wide enough to allow a wagon to be backed in to be loaded or for a
+
+horse to be shoed.  A narrow ladder leads upstairs into a small loft.
+
+"
+"[Nereus] this room should not change once the cathedral is done
+
+[Nereus] ladder in the corner leading up to the loft
+
+[Nereus] put barrel of water here
+
+[Nereus] add ladder acode
+
+[Nereus] add search code
+
+[Nereus] time codes here for the pair to go upstairs and sleep
+
+[Nereus] need extras
+
+[Nereus] Time trig isn't working
+
+"
+301469700 0
+0 6 0
+D1
+""
+""
+0 -1 11509 0 6
+D4
+""
+""
+1024 -1 11519 0 6
+E
+"tin hood chimney hearth dark brick"
+"The dark brick hearth has an intensely-hot fire raging within, putting out
+
+enough heat to melt even the hardest steel.  Above it, a modest tin cylinder
+
+with a flared base is supported by several iron legs, serving as a chimney.
+
+"
+E
+"hammers iron bars tongs hooks 1 west"
+"Metal hooks drilled into the wooden western wall support the various items
+
+needed by an experienced blacksmith: hammers of many sizes and shapes,
+
+different sizes of metal tongs, and iron bars which serve as a convenient
+
+source of raw metal.
+
+"
+E
+"narrow ladder loft up"
+"A ladder consisting of round wooden pegs between two long, rectangular wooden
+
+beams leads up into a small loft, most likely the smith's living quarters.
+
+"
+A
+"custom list buy sell repair value"
+""
+"mob = mob_in_room( 2875, room );
+
+if( mob ) {
+
+  interpret( mob, #no );
+
+  end;
+
+}
+
+else
+
+  continue;
+
+"
+E
+"no"
+"say Sorry, but I'm too busy with construction to take on any additional work right now.  Try back later.
+
+"
+!
+0 0 0
+A
+""
+""
+"mob = mob_in_room( 2875, room );
+
+if( mob ) {
+
+  if( players_room( room ) > 0 ) {
+
+    interpret( mob, #say );
+
+    wait( 1 );
+
+  }
+
+  interpret( mob, \"up\" );
+
+}
+
+continue;
+
+"
+E
+"say"
+"say Closin' time.  We'll be open at dawn tomorrow.
+
+"
+!
+6 1320 0
+A
+""
+""
+"if( vnum( ch ) == 2875 || vnum( ch ) == 2874 )
+
+  end;
+
+continue;
+
+"
+!
+3 0 2
+A
+""
+""
+"mob = mob_in_room( 2875, room );
+
+if ( !mob_in_room( 2874, room ) ) {
+
+  if ( mob )
+
+    interpret( mob, \"yell Get down here Thomas! There's work to do.\" );
+
+}
+
+"
+!
+6 368 0
+A
+"get"
+"hammer tongs iron bars"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"With all the guards around, stealing is probably equivalent to suicide.
+
+"
+!
+0 0 0
+2875 41 1509949540 3 0
+2874 73 1509949540 3 0
+4800 17 100 -2 0
+23 17 1509949540 -2 0
+-1
+S
+
+#11518
+"Cathedral - Side Room"
+"Here at the northwestern edge of the growing cathedral, the low walls of the
+
+granite foundation are perched precariously on the edge of a steep drop to the
+
+west and north.  The ground underfoot is mostly dirt, with as of yet only a
+
+few granite slabs placed as flooring.  Huge blocks of stone are set into the
+
+dirt blocking passage south of here, the roof of a small wooden building
+
+visible just above them.  It appears that this will be a side room off of the
+
+center of the building, which can be seen to the east.
+
+"
+"[Nereus] crypts below this eventually
+
+"
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 11514 0 6
+E
+"low walls granite foundation west north"
+"Only a few feet high, the foundation walls on the brink of the cliffs to the
+
+north and west are just enough to save the careless from a swift death, but
+
+insufficient to deter those with a death wish.
+
+"
+E
+"roof small wooden building 1 south"
+"The tops of rickety wooden walls can be seen above the eight feet of stone
+
+wall to the south, supporting a quaint roof.
+
+"
+-1
+S
+
+#11519
+"A Comfortable Loft"
+"Thick with the smells of ash and red-hot metal, this comfortable loft
+
+overlooks the smith's workshop below.  Broad, tar-soaked timbers hold up a
+
+roof made with thin tiles of stone or baked clay, presumably used instead of
+
+much cheaper straw to prevent fires from breaking out.  Towards the western
+
+edge of the loft the roof is quite low; a man would have to crawl in order to
+
+fit.  A pile of rumpled clothing and soot-stained rags has accumulated on this
+
+side of the loft -- apparently the smith is not as fastidious about his living
+
+quarters as he is about his shop.  A relatively newly-built ladder offers
+
+escape from the loft back into the workshop proper.
+
+"
+"[Nereus] no.mount, obviously
+
+[Nereus] time codes here for the pair to go back downstairs
+
+[Nereus] -
+
+[Nereus] Need extras
+
+[Nereus] This time code is not working
+
+[Nereus] Why?
+
+[Kotoktok] because you had them trying to go down before standing
+
+"
+335020036 0
+0 5 0
+D5
+""
+""
+1024 -1 11517 0 6
+E
+"roof thin tiles baked clay"
+"Supported by tarred wooden beams, the stone-tiled ceiling is not likely to
+
+catch fire as a result of stray coals hitting it.
+
+"
+E
+"pile rumpled clothing soot-stained rags"
+"Smelling of ash and the sweat of hard physical labour in a hot room, the pile
+
+of clothing is not a particularly savory piece of decor.
+
+"
+E
+"ladder 3 down"
+"Two rectangular wooden beams support cylindrical wooden pegs, newly-sanded, to
+
+form a ladder into the main smithy below.
+
+"
+A
+""
+""
+"if( vnum( ch ) == 2875 ) {
+
+  interpret( ch, \"sit bed\" );
+
+  wait( 1 );
+
+  interpret( ch, \"sleep\" );
+
+}
+
+if( vnum( ch ) == 2874 ) {
+
+  interpret( ch, \"sit matt\" );
+
+  wait( 1 );
+
+  interpret( ch, \"sleep\" );
+
+}
+
+continue;
+
+"
+!
+1 0 32
+A
+""
+""
+"mob = mob_in_room( 2875, room );
+
+if( mob ) {
+
+  interpret( mob, \"wake\" );
+
+  interpret( mob, \"stretch\" );
+
+  wait( 1 );
+
+  interpret( mob, \"stand\" );
+
+  interpret( mob, \"down\" );
+
+}
+
+"
+!
+6 360 0
+A
+""
+""
+"mob = mob_in_room( 2874, room );
+
+if( mob ) {
+
+  interpret( mob, \"wake\" );
+
+  interpret( mob, \"moan\" );
+
+  wait( 1 );
+
+  interpret( mob, \"sigh\" );
+
+  interpret( mob, \"stand\" );
+
+  interpret( mob, \"down\" );
+
+}
+
+"
+!
+6 368 0
+A
+"search"
+"pile clothing clothes rags"
+"act_tochar( #no, ch );
+
+"
+E
+"no"
+"You search through the pile of soiled cloth, but find nothing of interest.
+
+"
+!
+0 0 0
+4799 17 1509949540 -2 0
+3541 17 1509949540 -2 0
+-1
+S
+
+#11520
+"Cathedral Rear"
+"Under Construction.
+
+"
+""
+301465604 0
+0 6 0
+D0
+""
+""
+0 -1 11521 0 6
+-1
+S
+
+#11521
+"Cathedral Rear"
+"Under Construction.
+
+"
+""
+301465604 0
+0 6 0
+D2
+""
+""
+0 -1 11520 0 6
+-1
+S
+
+#0
+

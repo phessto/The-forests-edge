@@ -1,0 +1,41 @@
+#AREA
+"250 rooms"
+"Nivel"
+""
+1 0
+3
+0
+#ROOMS
+
+#23500
+"The Battle Plains"
+"Under Construction.
+
+"
+""
+33030144 0
+0 6 0
+D0
+""
+""
+0 -1 23501 0 6
+-1
+S
+
+#23501
+"The Battle Plains"
+"Under Construction.
+
+"
+""
+33030144 0
+0 6 0
+D2
+""
+""
+0 -1 23500 0 6
+-1
+S
+
+#0
+

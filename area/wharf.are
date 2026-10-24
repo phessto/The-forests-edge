@@ -1,0 +1,3345 @@
+#AREA
+"Castle"
+"Maelthar Nereus"
+""
+0 0
+3
+0
+#ROOMS
+
+#8500
+"Front Gate"
+"Inside the keep the air is filled with the smell of burning wood and pitch and
+
+shadows dance on the walls from the torches held on brackets along both walls.
+
+"
+"[Maelthar] limestone walls, lit, have guard here
+
+[Nereus] portcullis south?  Drawbridge, perhaps, or at least a big gate
+
+[Nereus] redone courtyard area
+
+[Nereus] leave general notes here
+
+[Maelthar] add more desc later, when portcullis/gate is done
+
+[Maelthar] extras
+
+[Maelthar] badass knight here
+
+[Maelthar] mob equipment should never rust here
+
+[Maelthar] maybe have knight here pop a sweet polearm
+
+[Maelthar] also maybe some horse equipment
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8501 0 6
+A
+""
+""
+"send_to_char( #to_char, ch );
+
+act_notchar( #to_room, ch );
+
+"
+E
+"to_room"
+"$n nearly loses $s balance as a loose board gives way.
+
+"
+E
+"to_char"
+"You almost lose your balance as a board squeaks beneath you.
+
+"
+!
+2 80 0
+A
+"test"
+""
+"inflict( ch, ch, 5, \"dumb\" );
+
+"
+!
+0 0 0
+-1
+S
+
+#8501
+"By the Front Gates"
+"The bare limestone walls are unmarked save for the arrow slits in either
+
+wall.  Underfoot the floor has been worn smooth by years of wear.  North of
+
+you stands a heavy wooden gate that looks as if it could withstand anything
+
+short of the heaviest siege equipment.  Far to the south you can still make
+
+out the entrance to the fort.
+
+"
+"[Maelthar] murder holes here
+
+[Nereus] gate north
+
+[Nereus] murder hole rooms are 8539, 8540
+
+[Maelthar] gate open by default, only closes if outside mob gets attacked
+
+[Maelthar] acodes for getting shot up
+
+[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8502 0 6
+D2
+""
+""
+0 -1 8500 0 5
+-1
+S
+
+#8502
+"Under the Inner Gatehouse"
+"This room is rather small and is dominated by the huge gate in the southern
+
+wall.  Two smaller versions have been set into both the eastern and western
+
+walls, both of which appear to bolt from the other side.  An archway to the
+
+north leads into a couryard.
+
+"
+"[Nereus] gate south
+
+[Nereus] doors east, west
+
+[Maelthar] doors locked if front entrance is breached violently
+
+[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8571 0 6
+D1
+""
+""
+131 -1 8503 0 6
+D2
+""
+""
+0 -1 8501 0 5
+D3
+""
+""
+131 -1 8504 0 6
+-1
+S
+
+#8503
+"East of the Gatehouse"
+"Grey limestone walls have grown nearly black from years of smoke buildup. 
+
+Sconces line the walls every few feet, providing enough light to see by but
+
+not enough for you to make out the finer details of the keep's craftsmanship.
+
+The passage through the keep's walls continues to the east, but to the west is
+
+an archway set with a wooden gate.
+
+"
+"[Nereus] secret passage south, need searching
+
+[Nereus] hallway inside wall
+
+[Maelthar] hidden, searchable
+
+[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8506 0 6
+D2
+""
+""
+2187 -1 8540 0 6
+D3
+""
+""
+131 -1 8502 0 5
+-1
+S
+
+#8504
+"West of the Gatehouse"
+"In the flickering light that torches on both walls provide you can see that
+
+the grey limestone is covered in soot and grime.  This corridor under the
+
+walls seems to be the main artery through the keep.  Far to the west the
+
+passage turns out of view and to the east an arch set with a gate stands in
+
+case of invasion.
+
+"
+"[Nereus] secret passage to murder hole room south
+
+[Nereus] hallway is inside walls of keep
+
+[Maelthar] its hidden but searchable
+
+[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+131 -1 8502 0 5
+D2
+""
+""
+2187 -1 8539 0 6
+D3
+""
+""
+0 -1 8505 0 6
+-1
+S
+
+#8505
+"Inside the Walls"
+"A slight breeze wafts into the hall here from a small chamber built into the
+
+southern wall, causing the torch flames to dance.  Though the walls are coated
+
+with soot you notice that the sconces are clean of rust and kept in good
+
+repair.  The dim hallway continues east and west.
+
+"
+"[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8504 0 5
+D2
+""
+""
+0 -1 8508 0 6
+D3
+""
+""
+0 -1 8541 0 6
+-1
+S
+
+#8506
+"Inside the Walls"
+"The hallway makes a ninety degree turn here and continues to the west and
+
+north.  To the east you can make out a set of stairs leading down.  A small
+
+niche has been built into the southern wall, and you would guess its purpose
+
+is to function as a guard room.
+
+"
+"[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8509 0 6
+D1
+""
+""
+0 -1 8625 0 6
+D2
+""
+""
+0 -1 8507 0 6
+D3
+""
+""
+0 -1 8503 0 5
+-1
+S
+
+#8507
+"Guard Post"
+"Two flickering torches set into either wall provide light for this tiny
+
+chamber.  The greyish stone walls have arrow slits every few feet that let a
+
+cool breeze into confines of the castle.  Looking to the north you can see a
+
+long corridor that continues as far as you can see.
+
+"
+"[Maelthar] average strength guard here
+
+[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8506 0 5
+-1
+S
+
+#8508
+"Guard Post"
+"The southern wall of this chamber is lined with arrow slits which allow a cool
+
+breeze into the otherwise stale air of the castle.  Two torches on the eastern
+
+and western walls are all that is required to light this tiny chamber.  A
+
+large hallway running east and west lies to the north but you can make out
+
+little of what stands in those directions from here.
+
+"
+"[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8505 0 5
+-1
+S
+
+#8509
+"Inside the Walls"
+"A faint breeze stirs the flames on the torches that line the walls.  Despite
+
+the torches the passage is still dim and smells of dampness and smoke.  You
+
+can see that the grey, undecorated walls continue to the north while to the
+
+south the main corridor appears to turn west.
+
+"
+"[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8510 0 6
+D2
+""
+""
+0 -1 8506 0 5
+-1
+S
+
+#8510
+"Inside the Walls - Before an Oaken Door"
+"Under Construction.
+
+"
+"[Nereus] tower east
+
+[Nereus] locked door east
+
+[Maelthar] door flagged reset.locked, reset.closed, up to you how it gets opened
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8521 0 6
+D1
+""
+""
+391 -1 8607 0 6
+D2
+""
+""
+0 -1 8509 0 5
+-1
+S
+
+#8511
+"Great Hall - Before a Roaring Fireplace"
+"Under Construction.
+
+"
+"[Nereus] no tables here, big ass fireplace east
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8513 0 6
+D2
+""
+""
+0 -1 8512 0 6
+D3
+""
+""
+0 -1 8623 0 6
+-1
+S
+
+#8512
+"great hall"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8511 0 5
+D3
+""
+""
+0 -1 8518 0 6
+-1
+S
+
+#8513
+"great hall"
+"Under Construction.
+
+"
+"[Nereus] secret passage upstairs to lords rooms
+
+[Nereus] that is, secret panel leading north, up, south
+
+"
+301465600 0
+1 6 0
+D2
+""
+""
+0 -1 8511 0 5
+D3
+""
+""
+0 -1 8514 0 6
+-1
+S
+
+#8514
+"great hall"
+"Under Construction.
+
+"
+"[Nereus] raised dais here, for the lord
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8513 0 5
+D2
+""
+""
+0 -1 8623 0 6
+D3
+""
+""
+0 -1 8515 0 6
+-1
+S
+
+#8515
+"great hall"
+"Under Construction.
+
+"
+"[Maelthar] small door here to kitchen
+
+[Nereus] door west
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8514 0 5
+D2
+""
+""
+0 -1 8516 0 6
+D3
+"wooden kitchen door"
+""
+131 -1 8519 0 6
+-1
+S
+
+#8516
+"great hall"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8515 0 5
+D1
+""
+""
+0 -1 8623 0 6
+D2
+""
+""
+0 -1 8517 0 6
+-1
+S
+
+#8517
+"great hall"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8516 0 5
+D1
+""
+""
+0 -1 8518 0 6
+-1
+S
+
+#8518
+"great hall"
+"Under Construction.
+
+"
+"[Nereus] the great hall's pretty small
+
+[Nereus] maybe it should be another 3 rooms, with a big ass table occupying the center
+
+[Nereus] or multiple tables
+
+[Nereus] mongrel dogs sitting under the tables feasting on scraps
+
+[Nereus] fireplace somewhere in here
+
+[Nereus] actually it's big enough
+
+[Nereus] fireplace e n
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8623 0 6
+D1
+""
+""
+0 -1 8512 0 5
+D2
+""
+""
+0 -1 8578 0 5
+D3
+""
+""
+0 -1 8517 0 5
+-1
+S
+
+#8519
+"Kitchen"
+"Under Construction.
+
+"
+"[Nereus] door east
+
+"
+301465600 0
+1 6 0
+D1
+"wooden kitchen door"
+""
+131 -1 8515 0 5
+D2
+""
+""
+0 -1 8520 0 6
+-1
+S
+
+#8520
+"Kitchen"
+"Under Construction.
+
+"
+"[Nereus] scullery boys should have a room with straw pallets south of here
+
+[Nereus] door west
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8519 0 5
+D2
+""
+""
+0 -1 8598 0 6
+D3
+""
+""
+0 -1 8615 0 6
+-1
+S
+
+#8521
+"Inside the Walls"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8522 0 6
+D2
+""
+""
+0 -1 8510 0 5
+-1
+S
+
+#8522
+"hallway"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D2
+""
+""
+0 -1 8521 0 5
+D3
+""
+""
+0 -1 8523 0 6
+-1
+S
+
+#8523
+"hallway"
+"Under Construction.
+
+"
+"[Nereus] locked steel door north
+
+[Nereus] locked steel door south also, to barracks
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8591 0 6
+D1
+""
+""
+0 -1 8522 0 5
+D2
+""
+""
+0 -1 8588 0 6
+D3
+""
+""
+0 -1 8524 0 6
+-1
+S
+
+#8524
+"hallway"
+"Under Construction.
+
+"
+"[Nereus] circular stairway leading up inside walls
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8523 0 5
+D3
+""
+""
+0 -1 8563 0 5
+D4
+""
+""
+0 -1 8525 0 6
+-1
+S
+
+#8525
+"2nd floor hallway"
+"Under Construction.
+
+"
+"[Nereus] 2nd floor should match wall configuration of floor below
+
+[Nereus] that means wall goes to three east of here
+
+[Nereus] bedrooms on east side of hallway, bedchambers
+
+[Nereus] I don't think we need a third floor
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8527 0 6
+D3
+""
+""
+0 -1 8526 0 6
+D5
+""
+""
+0 -1 8524 0 5
+-1
+S
+
+#8526
+"hallway"
+"Under Construction.
+
+"
+"[Maelthar] guard post
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8525 0 5
+-1
+S
+
+#8527
+"2nd floor hallway"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8528 0 6
+D3
+""
+""
+0 -1 8525 0 5
+-1
+S
+
+#8528
+"2nd floor hallway"
+"Under Construction.
+
+"
+"[Nereus] bedchamber north too
+
+"
+301465600 0
+1 6 0
+D2
+""
+""
+0 -1 8529 0 6
+D3
+""
+""
+0 -1 8527 0 5
+-1
+S
+
+#8529
+"2nd floor hallway"
+"Under Construction.
+
+"
+"[Maelthar] door west
+
+[Nereus] no, east
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8528 0 5
+D1
+""
+""
+0 -1 8530 0 6
+D2
+""
+""
+0 -1 8531 0 6
+-1
+S
+
+#8530
+"Bedchamber"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D3
+""
+""
+0 -1 8529 0 5
+-1
+S
+
+#8531
+"2nd floor hallway"
+"Under Construction.
+
+"
+"[Nereus] mage tower east of here
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8529 0 5
+D2
+""
+""
+0 -1 8532 0 6
+-1
+S
+
+#8532
+"2nd floor hallway"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8531 0 5
+D2
+""
+""
+0 -1 8533 0 6
+-1
+S
+
+#8533
+"2nd floor hallway"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8532 0 5
+D2
+""
+""
+0 -1 8534 0 6
+-1
+S
+
+#8534
+"2nd floor hallway"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8533 0 5
+D2
+""
+""
+0 -1 8535 0 6
+-1
+S
+
+#8535
+"2nd floor hallway"
+"Under Construction.
+
+"
+"[Nereus] more bedrooms up here
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8534 0 5
+-1
+S
+
+#8536
+"hallway"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8537 0 6
+-1
+S
+
+#8537
+"hallway"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D2
+""
+""
+0 -1 8536 0 5
+D3
+""
+""
+0 -1 8538 0 6
+-1
+S
+
+#8538
+"chapel entrance"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8537 0 5
+-1
+S
+
+#8539
+"Behind the Murder Hole"
+"This room is only slightly larger than a closet.  Its only purpose to allow
+
+archers to fire mercilessly upon anyone attempting to invade the castle.  A
+
+single torch bracket on the western side of the wall holds the only
+
+illumination for this cramped chamber.
+
+"
+"[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+2187 -1 8504 0 5
+-1
+S
+
+#8540
+"Behind the Murder Hole"
+"This room is only slightly larger than a closet, its only purpose to allow
+
+archers to fire mercilessly upon anyone attempting to invade the castle.  A
+
+single torch bracket on the eastern side of the wall holds the only source of
+
+illumination for this cramped chamber.
+
+"
+"[Nereus] secret passage north
+
+[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+2187 -1 8503 0 5
+-1
+S
+
+#8541
+"Inside the Walls"
+"The passage through the walls makes a ninety degree turn from east to south
+
+here.  It stretches to the east as far as you can see in the dim light and to
+
+the south you can see that the passage makes another turn to the west.  A
+
+large crack in the western wall from floor to ceiling has been repaired here.
+
+"
+""
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8505 0 5
+D2
+""
+""
+0 -1 8542 0 6
+-1
+S
+
+#8542
+"Inside the Walls"
+"The air here is relatively fresh as arrow slits along the southern wall allow
+
+a slight breeze in.  Flickering torches line the grey limestone walls, each
+
+leaving trail of black soot.  The passage continues as far as you can see to
+
+the west, but the only thing you can make out to the north is that the passage
+
+turns once again back to the east.
+
+"
+"[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8541 0 5
+D3
+""
+""
+0 -1 8543 0 6
+-1
+S
+
+#8543
+"Inside the Walls"
+"Fresh air from the numerous arrow slits in the southern wall causes the
+
+torches here to flicker.  A large part of the wall appears to have been
+
+recently repaired as it hasn't yet acquired a thick layer of soot.  The
+
+corridor continues to the east and west.
+
+"
+"[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8542 0 5
+D3
+""
+""
+0 -1 8544 0 6
+-1
+S
+
+#8544
+"Inside the Walls"
+"The hallway turns ninety degrees here and continues to the north and east.
+
+"
+"[Nereus] door west
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8545 0 6
+D1
+""
+""
+0 -1 8543 0 5
+D3
+""
+""
+131 -1 8603 0 6
+-1
+S
+
+#8545
+"Inside the Walls - By a Staircase"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D2
+""
+""
+0 -1 8544 0 5
+D3
+""
+""
+0 -1 8546 0 6
+D4
+""
+""
+0 -1 8604 0 6
+-1
+S
+
+#8546
+"Inside the walls"
+"Under Construction.
+
+"
+"[Nereus] door south
+
+[Nereus] door west
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8547 0 6
+D1
+""
+""
+0 -1 8545 0 5
+D2
+""
+""
+131 -1 8603 0 6
+D3
+""
+""
+0 -1 8629 0 6
+-1
+S
+
+#8547
+"hallway"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D2
+""
+""
+0 -1 8546 0 5
+D3
+""
+""
+0 -1 8548 0 6
+-1
+S
+
+#8548
+"hallway"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8549 0 6
+D1
+""
+""
+0 -1 8547 0 5
+-1
+S
+
+#8549
+"Under a Great Stone Archway"
+"Under Construction.
+
+"
+"[Nereus] chapel west
+
+[Nereus] door west
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8552 0 6
+D1
+""
+""
+0 -1 8551 0 6
+D2
+""
+""
+0 -1 8548 0 5
+D3
+""
+""
+131 -1 8550 0 6
+-1
+S
+
+#8550
+"Chapel Entrance"
+"Unlike the simplistic design of the rest of the fortress this chamber has a
+
+vaulted ceiling and is richly decorated.  A huge set of double doors on the
+
+eastern wall have been carved with images of Lonil.  The floor is smooth and
+
+to either side of a long carpet mosaics of battles have been carefully built
+
+into the stone floor.  To the west you can see an altar and a huge
+
+stained-glass window.
+
+"
+"[Nereus] chapel area
+
+[Nereus] or hallway to chapels here
+
+[Nereus] big ass door east
+
+[Maelthar] extras
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+131 -1 8549 0 5
+D3
+""
+""
+0 -1 8592 0 6
+-1
+S
+
+#8551
+"West End of Courtyard - East of an Archway"
+"Under Construction.
+
+"
+"[Nereus] castle wall south
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8565 0 6
+D1
+""
+""
+0 -1 8564 0 6
+D3
+""
+""
+0 -1 8549 0 5
+-1
+S
+
+#8552
+"hallway inside walls"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D2
+""
+""
+0 -1 8549 0 5
+D3
+""
+""
+0 -1 8553 0 6
+-1
+S
+
+#8553
+"hallway inside walls"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8554 0 6
+D1
+""
+""
+0 -1 8552 0 5
+-1
+S
+
+#8554
+"hallway inside walls"
+"Under Construction.
+
+"
+"[Nereus] locked west, need headmistresses' key to get in
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8555 0 6
+D2
+""
+""
+0 -1 8553 0 5
+D3
+""
+""
+0 -1 8630 0 6
+-1
+S
+
+#8555
+"hallway inside walls"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8556 0 6
+D2
+""
+""
+0 -1 8554 0 5
+D3
+""
+""
+0 -1 8624 0 6
+-1
+S
+
+#8556
+"hallway inside walls"
+"Under Construction.
+
+"
+"[Nereus] door north
+
+[Nereus] need servants' key to get in
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8618 0 6
+D1
+""
+""
+0 -1 8557 0 6
+D3
+""
+""
+0 -1 8555 0 5
+-1
+S
+
+#8557
+"hallway inside walls"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8558 0 6
+D3
+""
+""
+0 -1 8556 0 5
+-1
+S
+
+#8558
+"Guard Post"
+"Under Construction.
+
+"
+"[Nereus] guard post here
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8559 0 6
+D3
+""
+""
+0 -1 8557 0 5
+-1
+S
+
+#8559
+"Archway"
+"Under Construction.
+
+"
+"[Nereus] doors east, west, into walls
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8578 0 6
+D1
+""
+""
+0 -1 8560 0 6
+D2
+""
+""
+0 -1 8579 0 6
+D3
+""
+""
+0 -1 8558 0 5
+-1
+S
+
+#8560
+"Guard Post"
+"Under Construction.
+
+"
+"[Nereus] guardpost here, door west
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8561 0 6
+D3
+""
+""
+0 -1 8559 0 5
+-1
+S
+
+#8561
+"hallway inside walls"
+"Under Construction.
+
+"
+"[Nereus] door north
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8631 0 6
+D1
+""
+""
+0 -1 8562 0 6
+D3
+""
+""
+0 -1 8560 0 5
+-1
+S
+
+#8562
+"hallway inside walls"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D2
+""
+""
+0 -1 8563 0 6
+D3
+""
+""
+0 -1 8561 0 5
+-1
+S
+
+#8563
+"hallway inside walls"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8562 0 5
+D1
+""
+""
+0 -1 8524 0 6
+-1
+S
+
+#8564
+"West End of Courtyard"
+"Under Construction.
+
+"
+"[Nereus] south is a stable
+
+[Nereus] Climb vine action here
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8581 0 6
+D1
+""
+""
+0 -1 8566 0 6
+D3
+""
+""
+0 -1 8551 0 5
+A
+"climb scale"
+"vines stable"
+"if( find_skill( ch, climb ) < 3 ) {
+
+  act_tochar( #no, ch );
+
+  act_notchar( #nos, ch );
+
+  }
+
+else {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #climbs, ch );
+
+  transfer( ch, find_room( 8635 ) );
+
+  act_notchar( #arrives, ch );
+
+  }
+
+"
+E
+"no"
+"You try to climb up the vines, but slip back down to the ground.
+
+"
+E
+"nos"
+"$n tries to scale the vines to the south, but loses $s grip and slides back
+
+down to the ground.
+
+"
+E
+"climb"
+"You climb up the vines to the stable roof.
+
+"
+E
+"climbs"
+"$n climbs up the vines and disappears over the top of the wall.
+
+"
+E
+"arrives"
+"$n climbs up from below.
+
+"
+!
+0 0 0
+-1
+S
+
+#8565
+"West End of Courtyard"
+"Under Construction.
+
+"
+"[Nereus] could put a structure north
+
+[Nereus] rubbish heap here
+
+[Nereus] smithy north
+
+[Nereus] dogs rooting in rubbish here
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8581 0 6
+D2
+""
+""
+0 -1 8551 0 5
+-1
+S
+
+#8566
+"Courtyard - Near a Well"
+"Under Construction.
+
+"
+"[Nereus] south is a stable
+
+[Nereus] well here on raised area
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8580 0 6
+D1
+""
+""
+0 -1 8567 0 6
+D3
+""
+""
+0 -1 8564 0 5
+-1
+S
+
+#8567
+"Courtyard"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8583 0 6
+D1
+""
+""
+0 -1 8568 0 6
+D2
+""
+""
+0 -1 8574 0 6
+D3
+""
+""
+0 -1 8566 0 5
+-1
+S
+
+#8568
+"Courtyard"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8584 0 6
+D1
+""
+""
+0 -1 8569 0 6
+D2
+""
+""
+0 -1 8573 0 6
+D3
+""
+""
+0 -1 8567 0 5
+-1
+S
+
+#8569
+"Courtyard"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8570 0 6
+D2
+""
+""
+0 -1 8572 0 6
+D3
+""
+""
+0 -1 8568 0 5
+-1
+S
+
+#8570
+"Courtyard - Barracks Entrance"
+"Under Construction.
+
+"
+"[Nereus] barracks doors north, east
+
+[Nereus] this area is tidy and swept clean
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8589 0 5
+D1
+""
+""
+0 -1 8586 0 6
+D2
+""
+""
+0 -1 8571 0 6
+D3
+""
+""
+0 -1 8569 0 5
+-1
+S
+
+#8571
+"Southern Courtyard - Near a Gatehouse"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8570 0 5
+D2
+""
+""
+0 -1 8502 0 5
+D3
+""
+""
+0 -1 8572 0 6
+-1
+S
+
+#8572
+"Courtyard"
+"Under Construction.
+
+"
+"[Nereus] peddler here
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8569 0 5
+D1
+""
+""
+0 -1 8571 0 5
+D3
+""
+""
+0 -1 8573 0 6
+-1
+S
+
+#8573
+"Courtyard"
+"Under Construction.
+
+"
+"[Nereus] juggler here
+
+[Nereus] well, maybe not a juggler, maybe a drunk or something
+
+[Maelthar] maybe he should know something about the evil zone
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8568 0 5
+D1
+""
+""
+0 -1 8572 0 5
+D3
+""
+""
+0 -1 8574 0 6
+-1
+S
+
+#8574
+"courtyard - Stable entrance"
+"Under Construction.
+
+"
+"[Nereus] Courtyard - Stable entrance
+
+[Nereus] stable west
+
+[Nereus] hitching posts and such here
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8567 0 5
+D1
+""
+""
+0 -1 8573 0 5
+D3
+""
+""
+0 -1 8575 0 6
+-1
+S
+
+#8575
+"Stable"
+"Under Construction.
+
+"
+"[Nereus] couple horses here
+
+[Nereus] stalls west, south
+
+[Nereus] stablemaster here
+
+[Nereus] He doesn't sell horses, since there's a demand from knights
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8574 0 5
+D2
+""
+""
+0 -1 8576 0 6
+D3
+""
+""
+0 -1 8577 0 6
+-1
+S
+
+#8576
+"Stable Stall"
+"Under Construction.
+
+"
+"[Nereus] 2 or 3 horses here too
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8575 0 5
+-1
+S
+
+#8577
+"Stable Stall"
+"Under Construction.
+
+"
+"[Nereus] 2 or 3 horses here
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8575 0 5
+-1
+S
+
+#8578
+"Entry Hall into Great Hall"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8518 0 6
+D2
+""
+""
+0 -1 8559 0 5
+-1
+S
+
+#8579
+"Northern Courtyard - Near an Archway"
+"Under Construction.
+
+"
+"[Nereus] building west
+
+[Nereus] smithy west, perhsp
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8559 0 5
+D1
+""
+""
+0 -1 8582 0 6
+D2
+""
+""
+0 -1 8580 0 6
+D3
+""
+""
+0 -1 8600 0 6
+-1
+S
+
+#8580
+"Northern Courtyard"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8579 0 5
+D1
+""
+""
+0 -1 8583 0 6
+D2
+""
+""
+0 -1 8566 0 5
+D3
+""
+""
+0 -1 8581 0 6
+-1
+S
+
+#8581
+"West End of Courtyard"
+"Under Construction.
+
+"
+"[Nereus] building north, maybe a shop
+
+[Nereus] smithy entrance is north of here
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8600 0 6
+D1
+""
+""
+0 -1 8580 0 5
+D2
+""
+""
+0 -1 8564 0 5
+D3
+""
+""
+0 -1 8565 0 5
+-1
+S
+
+#8582
+"Northern Courtyard - Near a Wagon"
+"Under Construction.
+
+"
+"[Nereus] something go here
+
+[Nereus] A Wagon
+
+[Nereus] a couple wagon wheels here
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8585 0 6
+D2
+""
+""
+0 -1 8583 0 6
+D3
+""
+""
+0 -1 8579 0 5
+-1
+S
+
+#8583
+"Courtyard"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8582 0 5
+D1
+""
+""
+0 -1 8584 0 6
+D2
+""
+""
+0 -1 8567 0 5
+D3
+""
+""
+0 -1 8580 0 5
+-1
+S
+
+#8584
+"Courtyard"
+"Under Construction.
+
+"
+"[Nereus] another peddler
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8585 0 5
+D2
+""
+""
+0 -1 8568 0 5
+D3
+""
+""
+0 -1 8583 0 5
+-1
+S
+
+#8585
+"Courtyard - Northeastern Corner"
+"Under Construction.
+
+"
+"[Nereus] Set up a peddler here selling trinkets, and maybe playing some sort of game
+
+"
+301465600 0
+1 6 0
+D2
+""
+""
+0 -1 8584 0 6
+D3
+""
+""
+0 -1 8582 0 5
+-1
+S
+
+#8586
+"Barracks - Hallway"
+"Under Construction.
+
+"
+"[Nereus] entry hallway
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8588 0 6
+D2
+""
+""
+0 -1 8587 0 6
+D3
+""
+""
+0 -1 8570 0 5
+-1
+S
+
+#8587
+"Barracks - Sleeping Quarters"
+"Under Construction.
+
+"
+"[Nereus] bunks, chest
+
+[Nereus] 2 sleeping, 1 resting guy here
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8586 0 5
+-1
+S
+
+#8588
+"Barracks - Common Room"
+"Under Construction.
+
+"
+"[Nereus] tables, shelves, chairs, dice, men hang out here
+
+[Nereus] steel door north
+
+[Nereus] locked
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8523 0 5
+D2
+""
+""
+0 -1 8586 0 5
+D3
+""
+""
+0 -1 8589 0 6
+-1
+S
+
+#8589
+"Barracks - hallway"
+"Under Construction.
+
+"
+"[Nereus] entry hallway
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8588 0 5
+D2
+""
+""
+0 -1 8570 0 6
+D3
+""
+""
+0 -1 8590 0 6
+-1
+S
+
+#8590
+"Barracks - Sleeping quarters"
+"Under Construction.
+
+"
+"[Nereus] bunks, chest
+
+[Nereus] sleeping guy here
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8589 0 5
+-1
+S
+
+#8591
+"Armoury"
+"Under Construction.
+
+"
+"[Nereus] down to secret door here?
+
+[Maelthar] have a search turn up steel meltables here
+
+"
+301465600 0
+1 6 0
+D2
+""
+""
+0 -1 8523 0 5
+-1
+S
+
+#8592
+"Chapel"
+"Under Construction.
+
+"
+"[Nereus] monk's quarters south
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8550 0 5
+D2
+""
+""
+0 -1 8593 0 6
+D3
+""
+""
+0 -1 8594 0 6
+-1
+S
+
+#8593
+"Monk's Quarters"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8592 0 5
+2375 9 1509949540 3 0
+-1
+S
+
+#8594
+"Chapel"
+"Under Construction.
+
+"
+"[Nereus] door south
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8592 0 5
+D2
+""
+""
+0 -1 8595 0 6
+D3
+""
+""
+0 -1 8596 0 6
+-1
+S
+
+#8595
+"Monk's Quarters"
+"Under Construction.
+
+"
+"[Maelthar] hes pretty whupass
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8594 0 5
+2374 9 1509949540 3 0
+-1
+S
+
+#8596
+"In Front of the Altar"
+"Under Construction.
+
+"
+"[Nereus] window here, this section of the keep is on a cliff overlooking the forest
+
+[Maelthar] no.pray here
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8594 0 5
+D2
+""
+""
+0 -1 8597 0 6
+-1
+S
+
+#8597
+"Priest's Quarters"
+""
+"[Maelthar] priest will call the monks
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8596 0 5
+2376 9 1509949540 3 0
+-1
+S
+
+#8598
+"Back Room"
+"Under Construction.
+
+"
+"[Nereus] pots, pans, scullery boys' pallets here
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8520 0 5
+D5
+""
+""
+0 -1 8599 0 6
+-1
+S
+
+#8599
+"Cellar"
+"Under Construction.
+
+"
+"[Nereus] big cellars, storerooms and stuff have to be down here
+
+[Nereus] mo' secret passages
+
+[Nereus] more cellars down here, we need a wine cellar also
+
+"
+301465600 0
+1 6 0
+D4
+""
+""
+0 -1 8598 0 5
+-1
+S
+
+#8600
+"Courtyard - Smithy Entrance"
+"Under Construction.
+
+"
+"[Nereus] if the smith's in the room west, make hammering sounds echo through courtyard
+
+[Nereus] Make apprentice here, shoeing a horse
+
+[Nereus] horse here too
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8579 0 5
+D2
+""
+""
+0 -1 8581 0 5
+D3
+""
+""
+0 -1 8601 0 6
+-1
+S
+
+#8601
+"Smithy - Near a Forge"
+"Under Construction.
+
+"
+"[Nereus] heavy leather curtain west
+
+[Nereus] smith here normaly
+
+[Nereus] smith's apprentice esat
+
+[Maelthar] have a search acode here turn up something, ingots or some horseshoes or something
+
+"
+301465600 0
+0 6 0
+D1
+""
+""
+0 -1 8600 0 5
+D3
+"heavy leather curtain"
+""
+131 -1 8602 0 6
+-1
+S
+
+#8602
+"Back Room - Smith's Quarters"
+"This small back room has been built directly against the limestone blocks of
+
+the castle wall.  Cold, green-tinged blocks of stone line the west and north
+
+walls, while a sturdily constructed wall of wooden planks lies to the south. 
+
+The area is evidently used as a sleeping chamber for the smith and his
+
+apprentice; personal effects cover a shelf against the north wall and a pile
+
+of discarded clothing lies next to one of the straw mattresses.  A heavy
+
+leather curtain blocks off the heat and light from the forge to the east.
+
+"
+"[Nereus] smith sleeps here, cot for apprentice also
+
+[Nereus] heavy leather curtain shuts off east
+
+"
+301465600 0
+0 6 0
+D1
+"heavy leather curtain"
+""
+131 -1 8601 0 5
+E
+"stone wall west north"
+"Large, green-tinged stone blocks make up the castle wall.
+
+"
+E
+"shelf personal effects"
+"Small trinkets and soiled woolen clothing is strewn about on a shelf against
+
+the northern wall and a pile on the floor.  It doesn't appear that anything
+
+here would be worth taking.
+
+"
+A
+""
+"pile shelf clothing"
+"act_tochar( #search, ch );
+
+act_notchar( #searches, ch );
+
+"
+E
+"search"
+"You search through the trinkets on the shelf and the pile of soiled clothing,
+
+but find nothing worth taking.
+
+"
+E
+"searches"
+"$n searches through the trinkets on the shelf and through the pile of soiled
+
+clothing on the floor, but $e doesn't take anything.
+
+"
+!
+9 0 0
+3541 17 1509949540 -2 0
+3541 17 1509949540 -2 0
+-1
+S
+
+#8603
+"Guard Post"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+131 -1 8546 0 5
+D1
+""
+""
+131 -1 8544 0 5
+-1
+S
+
+#8604
+"hallway"
+"Under Construction.
+
+"
+"[Nereus] here's another stairway up
+
+"
+301465600 0
+1 6 0
+D2
+""
+""
+0 -1 8606 0 6
+D3
+""
+""
+0 -1 8605 0 6
+D5
+""
+""
+0 -1 8545 0 5
+-1
+S
+
+#8605
+"hallway"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8604 0 5
+-1
+S
+
+#8606
+"hallway"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8604 0 5
+-1
+S
+
+#8607
+"Bottom of a tower"
+"Under Construction.
+
+"
+"[Nereus] door west
+
+[Nereus] trapdoor down
+
+"
+301465600 0
+1 6 0
+D3
+""
+""
+391 -1 8510 0 5
+D4
+""
+""
+0 -1 8609 0 6
+D5
+""
+""
+0 -1 8608 0 6
+-1
+S
+
+#8608
+"Cluttered Cellar"
+"Under Construction.
+
+"
+"[Nereus] tower cellar, make reageants searchable here
+
+[Nereus] secret door here to somewhere else in the castle
+
+"
+301465600 0
+1 6 0
+D4
+""
+""
+0 -1 8607 0 5
+-1
+S
+
+#8609
+"Winding Staircase"
+"Under Construction.
+
+"
+"[Nereus] more tower p
+
+[Nereus] up
+
+"
+301465600 0
+1 6 0
+D4
+""
+""
+0 -1 8610 0 6
+D5
+""
+""
+0 -1 8607 0 5
+-1
+S
+
+#8610
+"Winding Staircase"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D4
+""
+""
+0 -1 8611 0 6
+D5
+""
+""
+0 -1 8609 0 5
+-1
+S
+
+#8611
+"Winding Staircase"
+"Under Construction.
+
+"
+"[Nereus] put something here
+
+[Nereus] something hidden behind a loose stone, a secret door covered by illusion, something
+
+"
+301465600 0
+1 6 0
+D4
+""
+""
+0 -1 8612 0 6
+D5
+""
+""
+0 -1 8610 0 5
+-1
+S
+
+#8612
+"Winding Staircase"
+"Under Construction.
+
+"
+"[Nereus] east is laboratory
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8613 0 6
+D5
+""
+""
+0 -1 8611 0 5
+-1
+S
+
+#8613
+"Chaotic Laboratory"
+"Under Construction.
+
+"
+"[Nereus] Mage's Laboratory
+
+[Nereus] remove up exit eventually
+
+[Nereus] Portal to enter top of tower from here
+
+[Nereus] room is somehow more spacious than the staircase below
+
+"
+301465600 0
+1 6 0
+D3
+""
+""
+0 -1 8612 0 5
+D4
+""
+""
+0 -1 8614 0 6
+-1
+S
+
+#8614
+"Mage's Private Quarters"
+"Under Construction.
+
+"
+"[Nereus] Mage's Private Quarters
+
+[Nereus] books, etc
+
+[Nereus] Enter this from a portal in the laboratory - must have a key from the mage's inventory to do that
+
+"
+301465600 0
+1 6 0
+D5
+""
+""
+0 -1 8613 0 5
+-1
+S
+
+#8615
+"Hallway Near Kitchen - Servants' Entrance"
+"Under Construction.
+
+"
+"[Nereus] door east
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8520 0 5
+D2
+""
+""
+0 -1 8616 0 6
+D3
+""
+""
+0 -1 8619 0 6
+-1
+S
+
+#8616
+"Hallway"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8615 0 5
+D2
+""
+""
+0 -1 8618 0 6
+D3
+""
+""
+0 -1 8617 0 6
+-1
+S
+
+#8617
+"Headmistresses' quarters"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8616 0 5
+-1
+S
+
+#8618
+"Hallway - Near Kitchen"
+"Under Construction.
+
+"
+"[Nereus] servants' hallway
+
+[Nereus] door south, need servants' keys to get in
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8616 0 5
+D1
+""
+""
+0 -1 8621 0 6
+D2
+""
+""
+0 -1 8556 0 5
+D3
+""
+""
+0 -1 8622 0 6
+-1
+S
+
+#8619
+"Laundry"
+"Under Construction.
+
+"
+"[Nereus] door east
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8620 0 6
+D1
+""
+""
+0 -1 8615 0 5
+-1
+S
+
+#8620
+"Laundry - Back Room"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D2
+""
+""
+0 -1 8619 0 5
+-1
+S
+
+#8621
+"Maids' Quarters"
+"Under Construction.
+
+"
+"[Nereus] Two pallets here for 2 maids
+
+"
+301465600 0
+1 6 0
+D3
+""
+""
+0 -1 8618 0 5
+-1
+S
+
+#8622
+"Servants' Quarters"
+"Under Construction.
+
+"
+"[Nereus] servant here
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8618 0 5
+-1
+S
+
+#8623
+"Great Hall"
+"Under Construction.
+
+"
+"[Maelthar] might delete this room and have a table here
+
+[Nereus] I think we should have a crapload of tables, one in almost all of these rooms
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8514 0 5
+D1
+""
+""
+0 -1 8511 0 5
+D2
+""
+""
+0 -1 8518 0 5
+D3
+""
+""
+0 -1 8516 0 5
+-1
+S
+
+#8624
+"Servants' Quarters"
+"Under Construction.
+
+"
+"[Nereus] more servants here
+
+[Nereus] door east
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8555 0 5
+-1
+S
+
+#8625
+"Stairway"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D3
+""
+""
+0 -1 8506 0 5
+D5
+""
+""
+0 -1 8626 0 6
+-1
+S
+
+#8626
+"Bottom of Stairway - Unused Cellar"
+"Under Construction.
+
+"
+"[Nereus] unused area of castle
+
+[Maelthar] have a bunch of junk down here
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8627 0 6
+D2
+""
+""
+0 -1 8628 0 6
+D4
+""
+""
+0 -1 8625 0 5
+-1
+S
+
+#8627
+"Nothing here"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D3
+""
+""
+0 -1 8626 0 5
+-1
+S
+
+#8628
+"Abandoned Cell"
+"Under Construction.
+
+"
+"[Nereus] no furniture here
+
+"
+301465600 0
+1 6 0
+D0
+""
+""
+0 -1 8626 0 5
+-1
+S
+
+#8629
+"Latrine"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8546 0 5
+-1
+S
+
+#8630
+"Abandonded Servants' Quarters"
+"Under Construction.
+
+"
+"[Nereus] unused, bed here but empty room
+
+"
+301465600 0
+1 6 0
+D1
+""
+""
+0 -1 8554 0 5
+-1
+S
+
+#8631
+"Latrine"
+"Under Construction.
+
+"
+""
+301465600 0
+1 6 0
+D2
+""
+""
+0 -1 8561 0 5
+-1
+S
+
+#8635
+"On the Stable Roof"
+"This perch two dozen feet above the stone cobblestones of the courtyard offers
+
+a grand vantage point to view the keep's layout.  Smoke rises slowly from the
+
+northern end of the courtyard, where the dim ring of hammering can be heard
+
+echoing off the stone walls.  Further north is a high wall; thicker smoke
+
+rises from beyond the wall although its source is blocked from view.  A
+
+towering stone tower dwarfs the eastern wall of the castle, its stone a
+
+gleaming white against the dingy grey of the limestone walls.  The roof here
+
+is made of wide, thin limestone slabs, some cracked with age.  The wall to the
+
+south and west blocks any view of that section of the castle and is too smooth
+
+to climb.  A few vines curl over the edge of the roof and have twined
+
+searching roots between the cracked slabs of the roof.
+
+"
+"[Nereus] climb down action
+
+[Nereus] familiar here, some sort of bird, or bat perhaps
+
+[Nereus] still need extras here
+
+[Maelthar] should be a bird probably as the mage will be good
+
+[Nereus] test
+
+"
+301465600 0
+1 6 0
+A
+"climb"
+"down vines"
+"act_tochar( #down, ch );
+
+act_notchar( #downs, ch );
+
+transfer( ch, find_room( 8564 ) );
+
+act_notchar( #arrive, ch );
+
+"
+E
+"down"
+"You climb down the vines and scramble to the stones below.
+
+"
+E
+"arrive"
+"$n climbs down from the roof of the stable to the south, dropping to the
+
+stones next to you.
+
+"
+E
+"downs"
+"$n grabs a hold of the vines and disappears over the edge of the roof.
+
+"
+!
+0 0 0
+-1
+S
+
+#0
+

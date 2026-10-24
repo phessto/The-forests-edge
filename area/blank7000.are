@@ -1,0 +1,1883 @@
+#AREA
+"Woodworms"
+"Talis Amon Athyle"
+"woodworms"
+5 0
+0
+1
+#ROOMS
+
+#7000
+"Just Inside the Tree"
+"Now just inside the tree you can see that the tree has been eaten by
+
+something.  Small gnaw marks are visible on the dead wood.  The crack in the
+
+wood and bark leads both south into the forest and north into the dead tree.
+
+"
+""
+301465612 0
+0 5 0
+D0
+""
+""
+0 -1 7001 0 5
+D2
+""
+""
+0 -1 94623 0 6
+A
+""
+""
+"send_to_char( #ch, ch );
+
+continue;
+
+"
+E
+"ch"
+"You squeeze through the crack out of the hollow tree.
+
+"
+!
+3 0 4
+A
+""
+""
+"i = random( 1, 3 );
+
+if( i == 1 ) {
+
+  send_to_area( #creak, room );
+
+  end;
+
+  }
+
+if( i == 2 ) {
+
+  send_to_area( #chitter, room );
+
+  end;
+
+  }
+
+if( i == 3 ) {
+
+  send_to_area( #crumble, room );
+
+  end;
+
+  }
+
+"
+E
+"creak"
+"The instability of the tree causes it to creak and moans around you as it
+
+shifts under your weight.
+
+"
+E
+"chitter"
+"You hear the chittering of insects, rather large ones, from somewhere in the
+
+darkness.
+
+"
+E
+"crumble"
+"A section of the rotting wood crumbles away dropping somewhat moistened wood
+
+splinters on you.
+
+"
+!
+4 50 0
+-1
+S
+
+#7001
+"Bend in the Crack"
+"The dead wood about you groans and creaks as you squeeze though the tight
+
+crack.  On the floor at your feet lies a strange loam of sawdust, which is
+
+very dark and sticky.  The crack has torn open heading east and south.
+
+"
+""
+301465604 0
+0 5 0
+D1
+""
+""
+0 -1 7002 0 5
+D2
+""
+""
+0 -1 7000 0 5
+632 9 1509949540 3 0
+-1
+S
+
+#7002
+"Inside the Tree"
+"You have entered a medium cavern within the tree.  The area seems to have
+
+been hollowed out by the gnawing of woodworms.  They have long since
+
+killed the tree.  To the north lies a smaller cavern, and to the east a
+
+low tight tunnel leads off.  
+
+"
+""
+301465604 0
+0 5 0
+D0
+""
+""
+0 -1 7027 0 5
+D1
+""
+""
+0 -1 7003 0 5
+D3
+""
+""
+0 -1 7001 0 5
+632 9 1509949540 3 0
+-1
+S
+
+#7003
+"A Low Tight Tunnel"
+"The woodworms seem to have carved this passage with their destructive
+
+appetite.  Strangely enough the floor is padded with a sort of sticky sawdust
+
+substance.  To the east and west the tunnel leads to other parts inside the
+
+tree.
+
+"
+""
+301465604 0
+0 5 0
+D1
+""
+""
+0 -1 7004 0 5
+D3
+""
+""
+0 -1 7002 0 5
+-1
+S
+
+#7004
+"A Small Chamber Inside the Shuvana Tree"
+"This chamber, hewn from the now dead wood of a great shuvana, is slightly
+
+smaller than the one to the west.  A shaft leads down from here,
+
+following the path of what used to be a root.  To the north is a very
+
+small tunnel.  
+
+"
+""
+301465604 0
+0 5 0
+D0
+""
+""
+0 -1 7005 0 3
+D3
+""
+""
+0 -1 7003 0 5
+D5
+""
+""
+0 -1 7006 0 5
+-1
+S
+
+#7005
+"A Dead End"
+"This incredibly small room dead-ends where the woodworms have neglected to
+
+finish their job.  They seem to have left the job unfinished for better
+
+feeding grounds.  To the south the passage leads back to a small chamber.
+
+"
+""
+301465604 0
+0 3 0
+D2
+""
+""
+0 -1 7004 0 3
+-1
+S
+
+#7006
+"In a Descending Root"
+"The roughly hewn walls of the hollow root are strangely slippery and it's
+
+hard for you to keep your grip.  Above you the root leads to the base of
+
+the tree, whereas below you the root leads deeper into the earth.  
+
+"
+""
+301465604 0
+0 5 0
+D4
+""
+""
+0 -1 7004 0 5
+D5
+""
+""
+0 -1 7007 0 5
+A
+""
+""
+"if( can_fly( ch ) )
+
+  continue;
+
+if( random( 1, 10 ) < 3 ) {
+
+  if( find_skill( ch, climb ) < 3 ) {
+
+    use_skill( ch, climb );
+
+    act_tochar( #ch, ch );
+
+    act_notchar( #r, ch );
+
+    transfer( ch, find_room( 7007 ) );
+
+    inflict( ch, mob, 2d4, \"falling\" );
+
+    act_notchar( #ar, ch );
+
+  }
+
+  else
+
+    continue;
+
+}
+
+"
+E
+"ar"
+"@b$n falls from the passage above onto the ground next to you!@n
+
+"
+E
+"r"
+"@b$n slips as $e enters from above and falls below!@n
+
+"
+E
+"ch"
+"@b@RYou slip climbing down the root and fall!@n
+
+"
+!
+1 5 32
+A
+"2 sleep"
+""
+"act_tochar( #ch, ch );
+
+act_notchar( #r, ch );
+
+transfer( ch, find_room( 7007 ) );
+
+i = 2d4;
+
+dam_message( ch, i, \"the fall\" );
+
+inflict( ch, mob, i, \"falling\" );
+
+act_notchar( #ar, ch );
+
+"
+E
+"ch"
+"You attempt to find a comfortable place to sleep, but only manage to lose
+
+your grasp and fall down the root shaft.
+
+"
+E
+"r"
+"$n releases $s grip on the roots and plummets downward.
+
+"
+E
+"ar"
+"$n comes plumeting in from above landing on the ground with a hard,
+
+jarring sound.
+
+"
+!
+0 0 0
+-1
+S
+
+#7007
+"Center of the Root Ball"
+"You are standing inside the massive root ball of a once great and
+
+majestic shuvana.  Moons ago the woodworms began to feed on the luscious
+
+pulp and now all that is left is the dead hulking shell of it.  Tunneled
+
+roots radiate like arms from the root ball, leading out through the soft
+
+soil under the Vaasa.  Above you, you can climb back up to ground level.
+
+"
+""
+301465604 0
+0 5 0
+D0
+""
+""
+0 -1 7008 0 5
+D1
+""
+""
+0 -1 7021 0 5
+D2
+""
+""
+0 -1 7012 0 5
+D3
+""
+""
+0 -1 7015 0 5
+D4
+""
+""
+0 -1 7006 0 5
+570 9 1509949540 3 0
+-1
+S
+
+#7008
+"Inside a Root Tunnel"
+"You are in a long tunnel formed from the once living roots of a massive
+
+shuvana tree.  To the north the dark and damp tunnel leads out towards
+
+the tip of the root, while to the south you see a large chamber.  
+
+"
+""
+301465604 0
+0 5 0
+D0
+""
+""
+0 -1 7009 0 5
+D2
+""
+""
+0 -1 7007 0 5
+-1
+S
+
+#7009
+"Inside a Root Tunnel"
+"Small chew marks on the walls and a multitude of tiny tracks in the
+
+sticky black substance on the floor indicate the cause of this trees
+
+demise, woodworms.  They have burrowed out all of the once majestic
+
+tree's roots and it no longer has any living wood in it.  To the east and
+
+west the hollow root continues.  
+
+"
+""
+301465604 0
+0 5 0
+D1
+""
+""
+0 -1 7010 0 4
+D2
+""
+""
+0 -1 7008 0 5
+570 9 1509949540 3 0
+-1
+S
+
+#7010
+"Inside a Root"
+"The hollowed out root bends to the north and west here as it burrows its
+
+way through the dirt of the Vaasa.  The walls of the tunnel twist and
+
+turn to conform to the gigantic root.  
+
+"
+""
+301465604 0
+0 4 0
+D0
+""
+""
+0 -1 7011 0 3
+D3
+""
+""
+0 -1 7009 0 4
+632 9 1509949540 3 0
+-1
+S
+
+#7011
+"Dead-end of a root tunnel"
+"The tunnel ends abruptly as the root becomes too small for even the
+
+woodworms to tunnel.  The walls of the root have become very rough and
+
+there is a layer of black, sticky sawdust coating everything.  To the
+
+south you see the root becomes much larger.  
+
+"
+""
+301465604 0
+0 3 0
+D2
+""
+""
+0 -1 7010 0 3
+632 9 1509949540 3 0
+-1
+S
+
+#7012
+"Food Room"
+"This small chamber, hewn from a root of a shuvana, serves as a storeroom
+
+for the pulp-wood food of the woodworms.  Large piles of stored pulp line
+
+the walls, waiting to be fed to the young grubs.  A branch of the root
+
+heads east, where you see a small chamber.  While to the south the
+
+hollowed root continues.
+
+"
+""
+301465604 0
+0 5 0
+D0
+""
+""
+0 -1 7007 0 5
+D1
+""
+""
+0 -1 7013 0 5
+D2
+""
+""
+0 -1 7014 0 5
+-1
+S
+
+#7013
+"A Small Chamber"
+"This small chamber is filled with small piles of wood-pulp and some strange
+
+piles of a whitish goo.  The walls have been gnawed from every possible
+
+direction and are extremely rough.  To the west you see a storage room full of
+
+wood-pulp.
+
+"
+""
+301465612 0
+0 5 0
+D3
+""
+""
+0 -1 7012 0 5
+566 9 1509949540 3 0
+566 9 1509949540 3 0
+566 9 1509949540 3 0
+-1
+S
+
+#7014
+"Egg Store Room"
+"This small chamber is often filled with the eggs of woodworms waiting to
+
+hatch.  Right now only a few shards of the last remaining clutch of eggs,
+
+already hatched, remains in the room waiting to be cleared out.  To the north
+
+the root tunnels back towards the root ball.
+
+"
+"This small chamber is filled with the eggs of the woodworms.  Through the
+
+semi-translucent shells you see small woodworm grubs developing.  To the
+
+north the root tunnels back towards the root ball.  
+
+"
+301465604 0
+0 5 0
+D0
+""
+""
+0 -1 7012 0 5
+-1
+S
+
+#7015
+"T Intersection in a Hollowed Out Root"
+"Just west of the root ball, the hollow root you are in is absolutely
+
+massive.  The height allows you to stand up completely with no problem. 
+
+To the south you see a small chamber filled with what appears to be
+
+eggs.  To the east and west the root continues.  
+
+"
+""
+301465604 0
+0 5 0
+D1
+""
+""
+0 -1 7007 0 5
+D2
+""
+""
+0 -1 7016 0 5
+D3
+""
+""
+0 -1 7017 0 5
+-1
+S
+
+#7016
+"Hatchery"
+"This small chamber is filled with the large semi-translucent eggs that appear
+
+to be now empty.  Large holes in the eggs indicate that the young grubs are no
+
+longer in the eggs.  The old eggs appear to simply dissolve in time and soak
+
+into the wood in which this chamber is hewn from.  To the north you see the
+
+hollowed out root.
+
+"
+""
+301465604 0
+0 5 0
+D0
+""
+""
+0 -1 7015 0 5
+A
+"1 look 2 search 2 get"
+"3 eggs"
+"act_tochar( #looking, ch );
+
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 3 ) == 1 ) {
+
+    obj_to_char( oload( 4616 ), ch );
+
+    act_tochar( #success, ch );
+
+    remove_rflag( reset0, room );
+
+    end;
+
+    }
+
+  }
+
+act_tochar( #fail, ch );
+
+"
+E
+"looking"
+"You search through the eggs for one that isn't broken.
+
+"
+E
+"success"
+"and you manage to find one!
+
+"
+E
+"fail"
+"but you don't manage to find one this time.
+
+"
+!
+0 0 0
+-1
+S
+
+#7017
+"Inside a Root Tunnel"
+"As the giant root curves you feel the sheer awesome size of this once majestic
+
+shuvana.  This root used to carry the life sustaining nutrients that made this
+
+tree grand.  To the north and east you can follow the inside of the root.
+
+"
+""
+301465604 0
+0 5 0
+D0
+""
+""
+0 -1 7018 0 5
+D1
+""
+""
+0 -1 7015 0 5
+570 9 1509949540 3 0
+-1
+S
+
+#7018
+"Intersection in the Root Tunnels"
+"A portion of the tunneled out root seems to have collapsed to the west.  There
+
+is now a hole in the western wall, through which you see a small dirt chamber.
+
+To the north and south the once life supporting root continues.
+
+"
+""
+301465604 0
+0 5 0
+D0
+""
+""
+0 -1 7019 0 4
+D2
+""
+""
+0 -1 7017 0 5
+D3
+""
+""
+0 -1 7020 0 5
+632 9 1509949540 3 0
+-1
+S
+
+#7019
+"Dead End in the Root"
+"Directly to the north the tunneled out root ends at a wall of dirt.  The
+
+woodworms fed on this root as much as they could, then simply moved to
+
+other, more luscious, parts of the tree.  To the south the tunneled out
+
+root tunnels back toward the root ball.
+
+"
+""
+301465604 0
+0 4 0
+D2
+""
+""
+0 -1 7018 0 4
+-1
+S
+
+#7020
+"Small Dirt Chamber"
+"This small chamber is not one made by the woodworms, the walls are of dirt and
+
+not wood and no signs of gnawing are present.  It appears that this is the
+
+habitat of some other creature that lives far below the ground of the Vaasa.
+
+To the east you see the tunneled out root.
+
+"
+""
+301465612 0
+0 5 0
+D1
+""
+""
+0 -1 7018 0 5
+397 9 1509949500 3 0
+-1
+S
+
+#7021
+"Inside a Tunneled Out Root"
+"You are at the entrance to one of the many massive, now hollow, roots of the
+
+shuvana tree.  To the west you see a large chamber where many more hollow
+
+roots intersect.  And to the east the root narrows slightly as it heads away
+
+from the core of the tree.
+
+"
+""
+301465604 0
+0 5 0
+D1
+""
+""
+0 -1 7022 0 5
+D3
+""
+""
+0 -1 7007 0 5
+-1
+S
+
+#7022
+"Inside a Tunneled Out Root"
+"One of the massive life lines of the once great shuvana tree has been eaten
+
+hollow by the woodworms and is now the tunnel in which you are standing.  To
+
+the south the tunneled out root continues.  While to the west, a little in the
+
+distance, you see a massive chamber.
+
+"
+""
+301465604 0
+0 5 0
+D2
+""
+""
+0 -1 7023 0 5
+D3
+""
+""
+0 -1 7021 0 5
+-1
+S
+
+#7023
+"Inside a Tunneled Out Root"
+"The walls of this tunnel are roughly hewn by the mouths of the woodworms
+
+and eaten as food to support their race.  The large tunneled out root
+
+turns to the north and east here, continuing on its journey.  
+
+"
+""
+301465604 0
+0 5 0
+D0
+""
+""
+0 -1 7022 0 5
+D1
+""
+""
+0 -1 7024 0 5
+632 9 1509949540 3 0
+-1
+S
+
+#7024
+"At the End of the Root"
+"Here the root of the completely dead shuvana ends, trailing off into a
+
+dirt tunnel.  The woodworms have seemingly dug the tunnel to the east to
+
+form a bridge between this tree and a new fresh tree.  To the east and
+
+west the tunnel continues.  
+
+"
+""
+301465604 0
+0 5 0
+D1
+""
+""
+0 -1 7025 0 5
+D3
+""
+""
+0 -1 7023 0 5
+-1
+S
+
+#7025
+"Dirt Tunnel"
+"The dirt tunnel continues to both the east and west as it joins the roots
+
+of the now completely dead shuvana to the roots of a new tree.  It amazes
+
+you that such a race as the woodworms could so easily conquer the mighty
+
+shuvana trees.  
+
+"
+""
+301465612 0
+0 5 0
+D1
+""
+""
+0 -1 7026 0 5
+D3
+""
+""
+0 -1 7024 0 5
+-1
+S
+
+#7026
+"Tunnel End - At A Root"
+"The dirt tunnel ends as it runs into the root of another shuvana tree. 
+
+Though it appears the woodworms have just begun to tap into the life
+
+force of the new tree, the tree is already dying.  On the tip of the live
+
+root small gnaw marks are visible.  The dirt tunnel leads back to the
+
+west.  
+
+"
+"[Dinorwig] The last line of the message when someone else successfully gets the root needs to start with a capital
+
+"
+301465604 0
+0 5 0
+D3
+""
+""
+0 -1 7025 0 5
+A
+"1 get 2 take"
+"pebble wood piece"
+"if( rflag( reset0, room ) )
+
+  send_to_char( #ch, ch );
+
+else
+
+  send_to_char( #no, ch );
+
+"
+E
+"no"
+"There is no such object here.
+
+"
+E
+"ch"
+"It's still connected to the root.
+
+"
+!
+0 0 0
+A
+"cut slice"
+"pebble wood root"
+"if( !is_player( ch ) )
+
+  end;
+
+if( rflag( reset0, room ) ) {
+
+  if( race( ch ) == elf ) {
+
+    acode( room, 5 );
+
+    act_notchar( #room, ch );
+
+    end;
+
+    }
+
+  if( race( ch ) == ent ) {
+
+    acode( room, 5 );
+
+    act_notchar( #room, ch );
+
+    end;
+
+    }
+
+  if( class( ch ) == ranger ) {
+
+    acode( room, 5 );
+
+    act_notchar( #room, ch );
+
+    end;
+
+    }
+
+  else {
+
+    acode( room, 6 );
+
+    act_notchar( #room, ch );
+
+    end;
+
+    }
+
+  }
+
+else act_tochar( #no_stone, ch );
+
+"
+E
+"no"
+"@MDespite your diligent care, you slip, shattering the stone.  The living
+
+wood around the stone quickly withers in your hand and appears somehow
+
+dead now.@n
+
+"
+E
+"nch"
+"$n kneels down before the living root and begins to speak to it in a low
+
+peaceful voice.  $e then cuts a small piece of wood from the root and
+
+takes it with $m.
+
+"
+E
+"ch2"
+"@GYou carefully slice away the small piece of wood containing the pebble
+
+and take it with you.@n
+
+"
+E
+"ch"
+"@YYou kneel down before the large root and ask for the ancient wisdom of
+
+the shuvanas to be instilled in this small morsel of wood.  You also ask
+
+for the forgiveness of the tree to which you are about to cut.@n
+
+"
+E
+"ch3"
+"@YYou kneel down before the large root and begin to carefully cut away the
+
+piece of wood that contains the pebble.@n
+
+"
+E
+"no_stone"
+"Better look again, there seems to be no such thing to cut.
+
+"
+E
+"room"
+"$n leans over a root protruding from the earthen wall and seems to be
+
+cutting at it.
+
+"
+!
+0 0 0
+A
+"1 look"
+"root wood tip"
+"send_to_char( #ch, ch );
+
+if( rflag( reset0, room ) )
+
+  send_to_char( #yes, ch );
+
+"
+E
+"yes"
+"Tucked into a small pocket of the root a small pebble has been imbedded
+
+in the living wood.
+
+"
+E
+"ch"
+"Several large lacerations cover the moist surface of the root.  It
+
+appears that the woodworms have just begun feeding on this root and have
+
+not yet completely killed the tree.
+
+"
+!
+0 0 0
+A
+"1 look"
+"pebble pocket"
+"if( rflag( reset0, room ) )
+
+  send_to_char( #ch, ch );
+
+else
+
+  send_to_char( #no, ch );
+
+"
+E
+"no"
+"You don't see that here.
+
+"
+E
+"ch"
+"The small pebble, no larger than your small finger, lies imbedded in the
+
+soft wood-flesh of the tree.  One of the deep lacerations in the tree has
+
+almost severed the small chunk of wood surrounding the pebble.
+
+"
+!
+0 0 0
+A
+""
+""
+"remove_rflag(reset0, room );
+
+act_tochar( #ch, ch );
+
+wait( 1 );
+
+if( random( 1, 20 ) > 17 ) {
+
+  act_notchar( #nch, ch );
+
+  act_tochar( #ch2, ch );
+
+  obj_to_char( oload( 583 ), ch );
+
+  }
+
+else
+
+  act_tochar( #no, ch );
+
+"
+E
+"ch"
+"@YYou kneel down before the large root and ask for the ancient wisdom of
+
+the shuvanas to be instilled in this small morsel of wood.
+
+You also ask for the forgiveness of the tree to which you are about to cut.@n
+
+"
+E
+"nch"
+"$n kneels down before the living root and begins to speak to it in a low
+
+peaceful voice.  $e then cuts a small piece of wood from the root and
+
+takes it with $m.
+
+"
+E
+"ch2"
+"@GYou carefully slice away the small piece of wood containing the pebble
+
+and take it with you.@n 
+
+"
+E
+"no"
+"@MDespite your diligent care, you slip, shattering the stone.  The living
+
+wood around the stone quickly withers in your hand and appears somehow
+
+dead now.@n 
+
+"
+!
+0 0 0
+A
+""
+""
+"remove_rflag( reset0, room );
+
+act_tochar( #ch3, ch );
+
+wait( 1 );
+
+if( random( 1, 20 ) > 18 ) {
+
+  act_notchar( #nch, ch );
+
+  act_tochar( #ch2, ch );
+
+  obj_to_char( oload( 583 ), ch );
+
+  remove_rflag( reset0, room );
+
+  }
+
+else
+
+  act_tochar( #no, ch );
+
+"
+E
+"ch3"
+"@YYou kneel down before the large root and begin to carefully cut away
+
+the piece of wood that contains the pebble.@n 
+
+"
+E
+"nch"
+"$n kneels before the living root and begins to cut at it.  $e manages to
+
+cut away a small piece of wood from the root and takes it with $m.
+
+"
+E
+"ch2"
+"@GYou carefully slice away the small piece of wood containing the pebble
+
+and take it with you.@n 
+
+"
+E
+"no"
+"@MDespite your diligent care, you slip, shattering the stone.  The living
+
+wood around the stone quickly withers in your hand and appears somehow
+
+dead now.@n 
+
+"
+!
+0 0 0
+632 9 1509949540 3 0
+570 9 1509949540 3 0
+570 9 1509949540 3 0
+-1
+S
+
+#7027
+"A Small Chamber Inside a Shuvana"
+"The tree pulp that once filled this chamber has become the food for an
+
+elven-feared race of parasite.  Now all that is left is a passage leading up
+
+the inside of the tree and a passage to the south.  
+
+"
+""
+301465612 0
+0 5 0
+D2
+""
+""
+0 -1 7002 0 5
+D4
+""
+""
+0 -1 7028 0 5
+-1
+S
+
+#7028
+"A Small Chamber"
+"This chamber has been hewn from the pulp of a massive shuvana tree.  A
+
+large hole leads down to the base of the tree, whereas to the east a
+
+tunnel leads off through the eaten passages of the tree.  
+
+"
+""
+301465604 0
+0 5 0
+D1
+""
+""
+0 -1 7029 0 5
+D5
+""
+""
+0 -1 7027 0 5
+-1
+S
+
+#7029
+"An Irregular Chamber"
+"This chamber is strangely shaped as it curves with the curve of the
+
+outside trunk of the tree.  A strange sticky sawdust type residue coats
+
+the floor, sticking to your feet as you walk.  A small tunnel leads off
+
+to the west and south from here.  
+
+"
+""
+301465604 0
+0 5 0
+D2
+""
+""
+0 -1 7030 0 5
+D3
+""
+""
+0 -1 7028 0 5
+570 9 1509949540 3 0
+570 9 1509949540 3 0
+-1
+S
+
+#7030
+"A Chamber in the Hollow Tree"
+"The small chamber curves to contour the outside shape of the shuvana.  A
+
+large hole has been bored above you, which leads up the inside of the
+
+tree.  To the north a small passage way leads to another chamber.  
+
+"
+""
+301465604 0
+0 5 0
+D0
+""
+""
+0 -1 7029 0 5
+D4
+""
+""
+0 -1 7031 0 5
+-1
+S
+
+#7031
+"Small Chute"
+"Climbing through this chute, large drops of an unknown black sticky
+
+substance drips on your head and shoulders.  The small chute is hewn
+
+through the once living pulp of a massive shuvana and the walls are very
+
+rough and make climbing up and down easy.
+
+"
+""
+301465604 0
+0 5 0
+D4
+""
+""
+0 -1 7032 0 5
+D5
+""
+""
+0 -1 7030 0 5
+-1
+S
+
+#7032
+"A Small Chamber in the Chute"
+"The small chute below you has opened up into the small chamber where the
+
+woodworms seemingly stopped to eat.  The walls have been literally chewed out
+
+of the pulp of the once majestic shuvana tree.  To the north you see another
+
+small chamber while a chute leads both up and down from this chamber.
+
+"
+"rflagged no_mob to keep adults from infesting lower newbie rooms.
+
+"
+301465612 0
+0 5 0
+D0
+""
+""
+0 -1 7033 0 5
+D4
+""
+""
+0 -1 7034 0 5
+D5
+""
+""
+0 -1 7031 0 5
+-1
+S
+
+#7033
+"Small Chamber"
+"The malicious appetites of the woodworms have burrowed this small chamber into
+
+the once living pulp of the shuvana tree.  There are large gnaw marks on the
+
+roughly hewn walls and a loam of sticky black sawdust coats the floor.  To the
+
+south there lies yet another small chamber carved by the teeth of the
+
+woodworms.
+
+"
+"[Dinorwig] oans should be oan
+
+"
+301465604 0
+0 5 0
+D2
+""
+""
+0 -1 7032 0 5
+570 9 1509949540 3 0
+-1
+S
+
+#7034
+"A Medium-Sized Chamber"
+"This chamber of dead wood is larger than those near the base of the tree, and
+
+seems newer also.  A large hole in the center of the room leads down the tree,
+
+while a passage leads off to the west to another large chamber.
+
+"
+""
+301465604 0
+0 5 0
+D3
+""
+""
+0 -1 7035 0 5
+D5
+""
+""
+0 -1 7032 0 5
+633 9 1509949540 3 0
+633 9 100 3 0
+-1
+S
+
+#7035
+"A Medium Chamber"
+"To the north you see the sunlight of day shining in through a large hole that
+
+has been eaten through the bark of the shuvana.  Above you, yet another tunnel
+
+leads up towards the top of the tree.  And to the east you see another good-
+
+sized chamber.
+
+"
+""
+301465604 0
+0 5 0
+D0
+""
+""
+0 -1 7036 0 5
+D1
+""
+""
+0 -1 7034 0 5
+D4
+""
+""
+0 -1 7038 0 5
+570 9 1509949540 3 0
+-1
+S
+
+#7036
+"Out on a Lower Branch"
+"Now out on the large branch of the dead shuvana tree you appreciate the
+
+stability of being inside the trunk of the tree.  Far below, past many
+
+other dead branches you see the lush green floor of the forest.  To the
+
+north you can edge your way out on the branch further, while to the south
+
+you can enter into the trunk of the tree.  
+
+"
+""
+301465600 0
+3 5 0
+D0
+""
+""
+0 -1 7037 0 5
+D2
+""
+""
+0 -1 7035 0 5
+-1
+S
+
+#7037
+"End of the Lower Branch"
+"The branch you are on suddenly narrows and makes it impossible for you to
+
+continue any further.  Though far above the ground you are not yet in the
+
+canopy of the forest.  Looking up you see there is still a few hundred
+
+feet to go until you are there.  To the south you can make your way along
+
+the branch back to the tree.  
+
+"
+""
+301465600 0
+3 5 0
+D2
+""
+""
+0 -1 7036 0 5
+-1
+S
+
+#7038
+"Vertical Shaft in the Shuvana"
+"This shaft is well worn and the ever present loam of sticky black sawdust is
+
+not present, thus indicating the common use of this shaft by the woodworms.
+
+Below you, you see a small chamber which funnels into this chute which leads
+
+further up into the tree.
+
+"
+""
+301465604 0
+0 5 0
+D4
+""
+""
+0 -1 7039 0 5
+D5
+""
+""
+0 -1 7035 0 5
+-1
+S
+
+#7039
+"At a Hole in the Vertical Shaft"
+"A large hole in the wall of the smooth vertical shaft allows exit onto
+
+one of the branches of this dead shuvana.  Through the hole you smell the
+
+freshness over the forest over the dry rot smell of the inside of the
+
+dead tree.  Above you and below you the shaft continues.  
+
+"
+""
+301465604 0
+0 5 0
+D3
+""
+""
+0 -1 7040 0 5
+D4
+""
+""
+0 -1 7041 0 5
+D5
+""
+""
+0 -1 7038 0 5
+633 9 1509949540 3 0
+633 9 50 3 0
+570 9 100 3 0
+-1
+S
+
+#7040
+"Out on a Branch"
+"Now outside of the tree you notice you are in the low canopy, which
+
+continues much further up into the tree tops.  The end of the branch to
+
+the west has been gnawed off by the malicious woodworms.  To the east you
+
+can re-enter the tree.  
+
+"
+""
+301465600 0
+3 5 0
+D1
+""
+""
+0 -1 7039 0 5
+-1
+S
+
+#7041
+"Small Chamber"
+"Now at the top of the tree you notice a large room to the south with much
+
+commotion in it.  While below you a hole leads to a shaft down the tree. 
+
+The walls about you have become much smoother and the loam of black
+
+sticky sawdust is no longer present.  
+
+"
+""
+301465604 0
+0 5 0
+D2
+""
+""
+0 -1 7042 0 5
+D5
+""
+""
+0 -1 7039 0 5
+-1
+S
+
+#7042
+"Queen's Chamber"
+"This chamber is absolutely massive for its height up in the tree.  You
+
+figure the trunk of the shuvana should be far smaller than this by this
+
+time.  This appears very orderly, the walls are smooth and the passage
+
+ways are neat.  To the north, east, and west you see passages off to
+
+other, smaller, chambers.
+
+"
+"[Dinorwig] the message about instability should read moan, not moans
+
+"
+301465604 0
+0 8 0
+D0
+""
+""
+0 -1 7041 0 5
+D1
+""
+""
+0 -1 7044 0 5
+D3
+""
+""
+0 -1 7043 0 5
+634 9 1509949540 3 0
+570 9 1509949540 3 0
+570 9 1509949540 3 0
+633 9 50 3 0
+-1
+S
+
+#7043
+"An Abandoned Chamber"
+"This good sized chamber appears to have once been the storage room for
+
+the strange food the queen eats.  It was abandoned for reasons unknown to
+
+you.  To the east you see a very large room with much commotion in it.  
+
+"
+""
+301465604 0
+0 5 0
+D1
+""
+""
+0 -1 7042 0 5
+633 9 1509949540 3 0
+633 9 50 3 0
+-1
+S
+
+#7044
+"Smaller Chamber"
+"This small chamber has seen better days, the wall to the east has
+
+degraded and there is now a large hole leading out into the canopy of the
+
+forest.  Through the hole you hear the life sounds of the forest.  To the
+
+south you see a small storage type room, and to the west you see a large
+
+busy chamber.  
+
+"
+""
+301465604 0
+0 5 0
+D1
+""
+""
+0 -1 7046 0 5
+D2
+""
+""
+0 -1 7045 0 4
+D3
+""
+""
+0 -1 7042 0 5
+633 9 1509949540 3 0
+633 9 1509949490 3 0
+-1
+S
+
+#7045
+"Food Storage Chamber"
+"This chamber is filled with strange, broken golden globules.  From what you
+
+can see, these globules appear to be some sort of excretion from some insect
+
+that feeds on the buds of the shuvana trees.  It seems that these globules are
+
+what the queen eats for food.  To the north you see another small chamber hewn
+
+from the dead wood of the tree.
+
+"
+""
+301465604 0
+0 4 0
+D0
+""
+""
+0 -1 7044 0 4
+E
+"golden globules"
+"These small golden globules are the excretion of a race of insect-like
+
+creatures that live in the Vaasa.  The queen of the woodworms eats these
+
+and then excretes a gene laced liquid on the new buds of the Shuvana
+
+trees, these buds are eaten by the insects and then the genes are carried
+
+to other woodworm queens, thus freshening the gene pool.
+
+"
+A
+"search 3 examine 1 get take"
+"4 globules"
+"act_tochar( #search, ch );
+
+act_notchar( #rsearch, ch );
+
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 5 ) == 1 ) {
+
+    act_tochar( #found_one, ch );
+
+    obj_to_char( oload( 3797 ), ch );
+
+    }
+
+  else
+
+    act_tochar( #fail, ch );
+
+  if( random( 1, 4 ) == 1 )
+
+    remove_rflag( reset0, room );
+
+  end;
+
+  }
+
+else
+
+  act_tochar( #none, ch );
+
+"
+E
+"search"
+"You search through the globules for an unbroken one.
+
+"
+E
+"rsearch"
+"$n searches through the broken globules.
+
+"
+E
+"found_one"
+"You manage to find an unbroken globule!
+
+"
+E
+"fail"
+"You only manage to find broken globules.
+
+"
+E
+"none"
+"After a thorough search, you conclude that every globule in the chamber has
+
+already been broken open.
+
+"
+!
+0 0 0
+570 9 1509949540 3 0
+-1
+S
+
+#7046
+"Up in the Canopy"
+"The sounds and sights of the canopy are flourishing all about you.  Birds
+
+and other animals call to each other with a tone of happiness.  To the
+
+east you can make your way out farther on the branch while to the west
+
+you can go back into the dead shuvana.  
+
+"
+""
+301465600 0
+3 6 0
+D1
+""
+""
+0 -1 7047 0 5
+D3
+""
+""
+0 -1 7044 0 5
+-1
+S
+
+#7047
+"Out Along a Limb"
+"You are standing on one of the many, now dead, limbs of this massive
+
+shuvana.  The branches of this tree and other shuvanas mingle to form a
+
+sort of platform in which you can walk on.  While to the east you can
+
+step onto the branch of another tree.  And to the west you can go back
+
+towards the mighty shuvana.  
+
+"
+""
+301465600 0
+19 5 0
+D0
+""
+""
+0 -1 7048 0 4
+D1
+""
+""
+0 -1 7049 0 5
+D3
+""
+""
+0 -1 7046 0 5
+-1
+S
+
+#7048
+"Entwined Limbs"
+"You are standing on a large mat of naturally entwined branches in the
+
+middle canopy.  The height you are from the ground causes you to ponder
+
+the time these silent giants have been growing for.  Small birds flit
+
+about you as you intrude upon their peaceful habitat.  To the south you
+
+can climb back to the main branch.  
+
+"
+""
+301465600 0
+3 4 0
+D2
+""
+""
+0 -1 7047 0 4
+-1
+S
+
+#7049
+"Another Tree's Limb"
+"You have crossed over the entwined branches to the west to get onto the
+
+branch of another tree.  You cannot, however, continue any further
+
+without much more effort.  To the west you can scramble across the
+
+branches back towards the great dead shuvana.  
+
+"
+""
+301465600 0
+19 5 0
+D3
+""
+""
+0 -1 7047 0 5
+-1
+S
+
+#0
+

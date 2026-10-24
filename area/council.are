@@ -1,0 +1,1843 @@
+#AREA
+"Council of Dragons"
+"Darkwind"
+""
+90 0
+3
+0
+#ROOMS
+
+#87000
+"Center of a Massive Cavern"
+"The sheer enormity of the cavern is overwhelming here.
+
+"
+"Prismic Dragon's repop spot when all council members are killed
+
+"
+368574468 0
+5 9 0
+D0
+""
+""
+0 -1 87002 0 9
+D1
+""
+""
+0 -1 87001 0 9
+D2
+""
+""
+0 -1 87004 0 9
+D3
+""
+""
+0 -1 87003 0 9
+D4
+""
+""
+0 -1 87036 0 5
+E
+"floor pattern runic"
+"The center of the pattern is marked by a small depression.  From this central
+
+point four lines extend outward reaching the outer edge of the almost circular
+
+pattern.  A different set of runes lies within each section created by the
+
+four lines and all appear as if they were only carved a day earlier.
+
+"
+-1
+S
+
+#87001
+"Bottom of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D0
+""
+""
+0 -1 87010 0 9
+D1
+""
+""
+0 -1 87006 0 9
+D2
+""
+""
+0 -1 87011 0 9
+D3
+""
+""
+0 -1 87000 0 9
+-1
+S
+
+#87002
+"Bottom of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D0
+""
+""
+0 -1 87008 0 9
+D1
+""
+""
+0 -1 87010 0 9
+D2
+""
+""
+0 -1 87000 0 9
+D3
+""
+""
+0 -1 87009 0 9
+-1
+S
+
+#87003
+"Bottom of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D0
+""
+""
+0 -1 87009 0 9
+D1
+""
+""
+0 -1 87000 0 9
+D2
+""
+""
+0 -1 87012 0 9
+D3
+""
+""
+0 -1 87005 0 9
+-1
+S
+
+#87004
+"Bottom of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574480 0
+5 9 0
+D0
+""
+""
+0 -1 87000 0 9
+D1
+""
+""
+0 -1 87011 0 9
+D2
+""
+""
+0 -1 87007 0 9
+D3
+""
+""
+0 -1 87012 0 9
+D4
+""
+""
+0 -1 87017 0 9
+-1
+S
+
+#87005
+"Before a Blackened Door"
+"Under Construction.
+
+"
+"Nothing to fear but fear itself
+
+"
+368574464 0
+5 9 0
+D1
+""
+""
+0 -1 87003 0 9
+D3
+""
+""
+151 -1 87013 0 9
+A
+"say yell"
+"fear"
+"if( rflag( reset0, room ) && cflag( 101, ch ) ) {
+
+  remove_rflag( reset0, room );
+
+  remove_rflag( reset1,room );
+
+  set_rflag( no.recall,room );
+
+  act_tochar( #say, ch );
+
+  act_notchar( #rsay, ch );
+
+  wait( 2 );
+
+  act_room( #open1, ch );
+
+  loop( all_in_room) {
+
+    if( is_player( rch ) || is_pet( rch ) ) {
+
+      do_spell( paralyze, null, rch,7 );
+
+    }
+
+  }
+
+  wait( 3 );
+
+  act_room( #open2, ch );
+
+  wait( 2 );
+
+  open( room,west );
+
+  act_room( #open, ch);
+
+  loop( all_in_room) {
+
+    if( is_player( rch ) || is_pet( rch ) ) {
+
+      do_spell( slow, null, rch, 7 );
+
+    }
+
+  }
+
+  set_rflag( reset1,room );
+
+  remove_rflag( no.recall, room );
+
+}
+
+else
+
+  if( !cflag( 101, ch ) )
+
+    act_tochar( #language, ch );
+
+"
+E
+"language"
+"You cannot speak draconic.
+
+"
+E
+"say"
+"@GYou take a deep breath, square your shoulders, and speak the draconic word
+
+for \"Fear\".@n
+
+"
+E
+"rsay"
+"@G$n squares $s shoulders and speaks a single word.@n
+
+"
+E
+"open1"
+"@rYou are wreathed in a darkness ripped from your most horrific nightmare, a
+
+palatte on which is drawn incomprehensible, unspeakable images that paralyze
+
+you with their frightening intensity.@n
+
+"
+E
+"open2"
+"@rThe darkness is torn away, replaced by the overwhelming terror all prey feel
+
+moments before the snapping jaws of a predator prematurely end its life.@n
+
+"
+E
+"open"
+"@rThe feeling fades, leaving you drained and tired.  The blackened door to the
+
+west has been opened.@n
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !rflag( reset1, room ) )
+
+  end;
+
+else
+
+  continue;
+
+"
+!
+3 0 2
+-1
+S
+
+#87006
+"Before a Quartz Wall"
+"Under Construction.
+
+"
+"The giver of life.
+
+adata kind of sucks
+
+"
+368574464 0
+5 9 0
+D1
+""
+""
+151 -1 87015 0 9
+D3
+""
+""
+0 -1 87001 0 9
+A
+"say yell"
+"light"
+"if( rflag( reset0, room ) && cflag( 101, ch ) ) {
+
+  remove_rflag( reset0, room );
+
+  remove_rflag( reset1, room );
+
+  set_rflag( no.recall, room );
+
+  act_tochar( #say,ch );
+
+  act_notchar( #rsay, ch );
+
+  wait( 1 );
+
+  act_room( #open2, ch );
+
+  wait( 1 );
+
+  act_room( #open3, ch );
+
+  wait( 2 );
+
+  open( room,east );
+
+  act_room( #open, ch);
+
+  loop( all_in_room) {
+
+    if( is_player( rch ) || is_pet( rch ) ) {
+
+      do_spell( blind, null, rch, 7 );
+
+    }
+
+  }
+
+  set_rflag( reset1, room );
+
+  remove_rflag( no.recall, room );
+
+}
+
+else
+
+  act_tochar( #language,ch );
+
+"
+E
+"open"
+"@YThe eastern wall suddenly disintegrates in a blinding flash of intense light!@n
+
+"
+E
+"language"
+"You cannot speak draconic.
+
+"
+E
+"say"
+"@GYou take a deep breath, square your shoulders, and speak the draconic word
+
+for \"Light\".@n
+
+"
+E
+"open2"
+"@YLight begins to emanate from the eastern wall.@n
+
+"
+E
+"open3"
+"@YThe glow slowly becomes more intense, and rays of golden light begin to
+
+pierce their way through the wall.@n
+
+"
+E
+"rsay"
+"@G$n squares $s shoulders and speaks a single word.@n
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !rflag( reset1, room ) )
+
+  end;
+
+else
+
+  continue;
+
+"
+!
+3 0 8
+-1
+S
+
+#87007
+"Wide, Dead-End Tunnel"
+"Under Construction.
+
+"
+"The greatest symbol of strength.
+
+Weak adata on 1, make it better.
+
+"
+368574464 0
+5 9 0
+D0
+""
+""
+0 -1 87004 0 9
+D2
+""
+""
+151 -1 87016 0 9
+A
+"say yell"
+"earth"
+"if( rflag( reset0, room ) && cflag( 101, ch ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #say,ch );
+
+  act_notchar( #rsay,ch );
+
+  remove_rflag( reset1, room );
+
+  set_rflag( no.recall, room );
+
+  wait( 1 );
+
+  act_room( #open, ch);
+
+  wait( 1 );
+
+  act_room( #open2, ch);
+
+  wait( 2 );
+
+  act_room( #open3, ch );
+
+  open( room,south );
+
+  wait( 1 );
+
+  act_room( #hand, ch );
+
+  loop( all_in_room) {
+
+    if( is_player( rch ) || is_pet( rch ) ) {
+
+      transfer( rch, find_room( 87016 ) );
+
+    }
+
+  }
+
+  set_rflag( reset1, room );
+
+  remove_rflag( no.recall, room );
+
+}
+
+else
+
+  act_tochar( #language, ch );
+
+"
+E
+"open"
+"@yA low rumbling comes from behind the door, and the ground begins to
+
+vibrate.  Small pebbles tatter around you, shaken loose from the ceiling.@n
+
+"
+E
+"open2"
+"@yThe rumbling grows louder, and the rock face begins to split vertically in a
+
+jagged line.@n
+
+"
+E
+"open3"
+"@yThe crack expands violently, slicing open a jagged tunnel leading south.@n
+
+"
+E
+"say"
+"@GYou take a deep breath, square your shoulders, and speak the draconic word
+
+for \"Earth\".@n
+
+"
+E
+"rsay"
+"@G$n squares $s shoulders and speaks a single word.@n
+
+"
+E
+"language"
+"You cannot speak draconic.
+
+"
+E
+"hand"
+"@YA gigantic stone hand LUNGES through the opening, envelops you, and pulls
+
+you into the tunnel!
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !rflag( reset1, room ) )
+
+  end;
+
+else
+
+  continue;
+
+"
+!
+3 0 1
+A
+""
+""
+"if( !rflag( reset1, room ) )
+
+  end;
+
+else
+
+  continue;
+
+"
+!
+3 0 4
+-1
+S
+
+#87008
+"Before an Ancient Wooden Door"
+"Under Construction.
+
+"
+"The dominion of dragons.
+
+"
+368574464 0
+5 9 0
+D0
+""
+""
+151 -1 87014 0 9
+D2
+""
+""
+0 -1 87002 0 9
+A
+"say yell"
+"sky skies"
+"if( rflag( reset0, room ) && cflag( 101, ch ) ) {
+
+  remove_rflag( reset0, room );
+
+  remove_rflag( reset1,room );
+
+  set_rflag( no.recall,room );
+
+  act_tochar( #say,ch );
+
+  act_notchar( #rsay,ch );
+
+  wait( 1 );
+
+  act_room( #open2, ch );
+
+  wait( 1 );
+
+  act_room( #open3, ch );
+
+  wait( 2 );
+
+  open( room,north );
+
+  act_room( #open, ch);
+
+  loop( all_in_room) {
+
+    if( is_player( rch ) || is_pet( rch ) ) {
+
+      i = dice( 5, 10, 50 );
+
+      dam_message( rch, i, \"the impact\" );
+
+      inflict( rch, mob, i, \"gale of wind\" );
+
+      set_resting ( rch );
+
+    }
+
+  }
+
+  set_rflag( reset1,room );
+
+  remove_rflag( no.recall, room );
+
+}
+
+else
+
+  act_tochar( #language, ch );
+
+"
+E
+"open"
+"@CThe ancient wooden double-doors slam outward, and an instant later you are
+
+knocked to the ground by a tempestuous gust of wind!@n
+
+"
+E
+"say"
+"@GYou take a deep breath, square your shoulders, and speak the draconic word
+
+for \"Sky\".@n
+
+"
+E
+"open2"
+"@CA low whistling begins to emerge from behind the double doors, growing until
+
+the decible level reaches a painful height.@n
+
+"
+E
+"open3"
+"@CThe doors creak dangerously...@n
+
+"
+E
+"language"
+"You cannot speak draconic.
+
+"
+E
+"rsay"
+"@G$n squares $s shoulders and speaks a single word.@n
+
+"
+!
+0 0 0
+A
+""
+""
+"if( !rflag( reset1, room ) )
+
+  end;
+
+else
+
+  continue;
+
+"
+!
+3 0 4
+-1
+S
+
+#87009
+"On an Enormous Dias"
+"Under Construction.
+
+"
+"Sky dragon's dias
+
+Ion shield
+
+"
+368574464 0
+5 9 0
+D1
+""
+""
+0 -1 87002 0 9
+D2
+""
+""
+0 -1 87003 0 9
+-1
+S
+
+#87010
+"On an Enormous Dias"
+"Under Construction.
+
+"
+"Gold Dragon's dias
+
+Heals
+
+Slay
+
+"
+368574464 0
+5 9 0
+D2
+""
+""
+0 -1 87001 0 9
+D3
+""
+""
+0 -1 87002 0 9
+-1
+S
+
+#87011
+"On an Enormous Dias"
+"Under Construction.
+
+"
+"Earthen Dragon's dias
+
+bashes
+
+"
+368574464 0
+5 9 0
+D0
+""
+""
+0 -1 87001 0 9
+D3
+""
+""
+0 -1 87004 0 9
+-1
+S
+
+#87012
+"On an Enormous Dias"
+"Under Construction.
+
+"
+"Shadow Dragon's dias
+
+Dragon fear
+
+"
+368574464 0
+5 9 0
+D0
+""
+""
+0 -1 87003 0 9
+D1
+""
+""
+0 -1 87004 0 9
+-1
+S
+
+#87013
+"Opulent Chamber"
+"Under Construction.
+
+"
+"Shadow Dragon's servant, holds key to his summoning
+
+Necromancer 1246
+
+"
+368574464 0
+5 9 0
+D1
+""
+""
+151 -1 87005 0 9
+-1
+S
+
+#87014
+"On a Comfortable Cloud"
+"Under Construction.
+
+"
+"Sky dragon's servant, holds key to summoning
+
+Cloud Giant possibly
+
+"
+368574464 0
+5 9 0
+D2
+""
+""
+151 -1 87008 0 9
+-1
+S
+
+#87015
+"In a Sparse Chamber"
+"Under Construction.
+
+"
+"Gold dragon's servant, holds key to summoning
+
+Lizardman Paladin
+
+paladin 1798
+
+"
+368574464 0
+5 9 0
+D3
+""
+""
+151 -1 87006 0 9
+-1
+S
+
+#87016
+"A Chamber Encircled by Lava"
+"Under Construction.
+
+"
+"Earthen dragon's servant, holds key to summoning
+
+Forty foot tall pyroclastic golem
+
+Golem 593
+
+"
+368574464 0
+5 9 0
+D0
+""
+""
+151 -1 87007 0 9
+-1
+S
+
+#87017
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574472 0
+5 9 0
+D1
+""
+""
+0 -1 87018 0 9
+D5
+""
+""
+0 -1 87004 0 9
+A
+""
+""
+"if( rflag( reset0, room ) ) {
+
+  i = 87036;
+
+  j = num_in_room( find_room( i ) );
+
+  if( j > 0 && is_player( ch ) ) {
+
+    remove_rflag( reset0, room );
+
+    remove_rflag( reset1, room );
+
+    set_rflag( no.recall, room );
+
+    mob = rand_char( find_room( i ) );
+
+    if( j == 1 ) {
+
+      act_room( #lastpounce, ch );
+
+    }
+
+    else {
+
+      act_room( #pounce, ch );
+
+    }
+
+    transfer( mob, room );
+
+    mpcode( mob, 2 );
+
+    wait( 2 );
+
+    remove_rflag( no.recall, room );
+
+    set_rflag( reset1, room );
+
+  }
+
+}
+
+"
+E
+"lastpounce"
+"The last dragon pounces!
+
+"
+E
+"pounce"
+"A dragon pounces!
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 34
+A
+""
+""
+"acode( find_room( 87036 ), 3 );
+
+"
+!
+2 500 0
+-1
+S
+
+#87018
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D0
+""
+""
+0 -1 87019 0 9
+D3
+""
+""
+0 -1 87017 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 9
+-1
+S
+
+#87019
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D0
+""
+""
+0 -1 87020 0 9
+D2
+""
+""
+0 -1 87018 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 5
+A
+""
+""
+"acode( find_room( 87036 ), 3 );
+
+"
+!
+2 500 0
+-1
+S
+
+#87020
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D2
+""
+""
+0 -1 87019 0 9
+D3
+""
+""
+0 -1 87021 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 12
+-1
+S
+
+#87021
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D1
+""
+""
+0 -1 87020 0 9
+D3
+""
+""
+0 -1 87022 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 10
+A
+""
+""
+"acode( find_room( 87036 ), 3 );
+
+"
+!
+2 500 0
+-1
+S
+
+#87022
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D1
+""
+""
+0 -1 87021 0 9
+D2
+""
+""
+0 -1 87023 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 6
+-1
+S
+
+#87023
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D0
+""
+""
+0 -1 87022 0 9
+D2
+""
+""
+0 -1 87024 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 5
+A
+""
+""
+"acode( find_room( 87036 ), 3 );
+
+"
+!
+2 500 0
+-1
+S
+
+#87024
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D0
+""
+""
+0 -1 87023 0 9
+D4
+""
+""
+0 -1 87025 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 17
+-1
+S
+
+#87025
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D1
+""
+""
+0 -1 87026 0 9
+D5
+""
+""
+0 -1 87024 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 34
+-1
+S
+
+#87026
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D1
+""
+""
+0 -1 87027 0 9
+D3
+""
+""
+0 -1 87025 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 10
+A
+""
+""
+"acode( find_room( 87036 ), 3 );
+
+"
+!
+2 500 0
+-1
+S
+
+#87027
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D0
+""
+""
+0 -1 87028 0 9
+D3
+""
+""
+0 -1 87026 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 9
+-1
+S
+
+#87028
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D0
+""
+""
+0 -1 87029 0 9
+D2
+""
+""
+0 -1 87027 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 5
+A
+""
+""
+"acode( find_room( 87036 ), 3 );
+
+"
+!
+2 500 0
+-1
+S
+
+#87029
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D2
+""
+""
+0 -1 87028 0 9
+D3
+""
+""
+0 -1 87030 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 12
+-1
+S
+
+#87030
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D1
+""
+""
+0 -1 87029 0 9
+D3
+""
+""
+0 -1 87031 0 9
+A
+""
+""
+"acode( find_room( 87036 ), 3 );
+
+"
+!
+2 500 0
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 10
+-1
+S
+
+#87031
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D1
+""
+""
+0 -1 87030 0 9
+D2
+""
+""
+0 -1 87032 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 128
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 6
+-1
+S
+
+#87032
+"Trail on the Side of a Massive Cavern"
+"Under Construction.
+
+"
+""
+368574465 0
+5 9 0
+D0
+""
+""
+0 -1 87031 0 9
+D4
+""
+""
+0 -1 87033 0 9
+A
+""
+""
+"acode( find_room( 87036 ),1 );
+
+"
+!
+1 0 0
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 0
+-1
+S
+
+#87033
+"Entrance to a Massive Cavern"
+""
+""
+368574464 0
+5 9 0
+D3
+""
+""
+0 -1 87034 0 9
+D5
+""
+""
+0 -1 87032 0 9
+-1
+S
+
+#87034
+"Tunnel Below a River of Lava"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D1
+""
+""
+0 -1 87033 0 9
+D3
+""
+""
+0 -1 87035 0 9
+-1
+S
+
+#87035
+"Tunnel Below a River of Lava"
+"Under Construction.
+
+"
+""
+368574464 0
+5 9 0
+D1
+""
+""
+0 -1 87034 0 9
+-1
+S
+
+#87036
+"Dragon Hatchery"
+"This room holds the spawns for some of the non-static pops in the area.
+
+
+NOTE: Please do not idle in this room as there are acodes in the area which
+
+examine its contents.
+
+
+Warning!!! - This room contains acodes the entire zone uses.  Do not screw it up!
+
+
+-----------------------------------------------------------------
+
+ 500 - Topaz   , 564 - Onyx   , 565 - Jade      , 580 - Sapphire
+
+ 581 - Hematite, 583 - Kunzite, 585 - Bloodstone, 592 - Sunstone
+
+-----------------------------------------------------------------
+
+"
+"[Xami] darkwind, will players be able to enter this room at all?
+
+[DW] Nope, the door down will eventually be removed.
+
+"
+368574496 0
+5 9 0
+D5
+""
+""
+0 -1 87000 0 5
+A
+""
+""
+"if( 1d4 == 1 && rflag( reset0, room ) ) {
+
+  i = 87036;
+
+  j = num_in_room( find_room( i ) );
+
+  if( j > 0 && is_player( ch ) ) {
+
+    remove_rflag( reset0, room );
+
+    remove_rflag( reset1, room );
+
+    set_rflag( no.recall, room );
+
+    mob = rand_char( find_room( i ) );
+
+    mpcode( mob, 3 );
+
+    transfer( mob, room );
+
+    mpcode( mob, 2 );
+
+    wait( 2 );
+
+    remove_rflag( no.recall, room );
+
+    set_rflag( reset1, room );
+
+  }
+
+}
+
+"
+!
+1 0 0
+A
+""
+""
+"if( !rflag( reset1, room )  )
+
+  end;
+
+else {
+
+  continue;
+
+}
+
+"
+!
+3 0 0
+A
+""
+""
+"i = 87036;
+
+j = num_in_room( find_room( i ) );
+
+if( j > 0 ) {
+
+  mob = rand_char( find_room( i ) );
+
+  mpcode( mob, 1 );
+
+}
+
+"
+!
+0 0 0
+581 9 1509949490 3 0
+564 8 1509949540 3 0
+592 9 1509949490 3 0
+585 8 1509949540 3 0
+500 9 1509949490 3 0
+580 8 1509949540 3 0
+583 9 1509949490 3 0
+565 8 1509949540 3 0
+-1
+S
+
+#0
+
