@@ -1,0 +1,49 @@
+# /usr/lib/tmpfiles.d/tfe.conf
+#
+# TFE opens everything relative to its working directory as ../<dir>/
+# (src/file.h), so the game root is /var/lib/tfe and the service runs in
+# /var/lib/tfe/bin. The root and bin/ are root-owned: tfe cannot replace the
+# binaries it runs. Every directory the game writes is tfe:tfe 0750.
+# The RPM owns the same directories; these lines recreate any that go missing.
+# Keep in sync with RUN_DIRS in cicd/tfe-build.
+d /var/lib/tfe                     0750 root tfe -
+d /var/lib/tfe/bin                 0755 root root -
+# World data, seeded from /usr/share/tfe by tfe-run on first start.
+d /var/lib/tfe/area                0750 tfe tfe -
+d /var/lib/tfe/files               0750 tfe tfe -
+d /var/lib/tfe/tables              0750 tfe tfe -
+d /var/lib/tfe/notes               0750 tfe tfe -
+d /var/lib/tfe/notes/clans         0750 tfe tfe -
+d /var/lib/tfe/player              0750 tfe tfe -
+d /var/lib/tfe/public_html         0750 tfe tfe -
+# Runtime state.
+d /var/lib/tfe/backup              0750 tfe tfe -
+d /var/lib/tfe/clans               0750 tfe tfe -
+d /var/lib/tfe/deleted             0750 tfe tfe -
+d /var/lib/tfe/deleted/area        0750 tfe tfe -
+d /var/lib/tfe/deleted/player      0750 tfe tfe -
+d /var/lib/tfe/logs                0750 tfe tfe -
+d /var/lib/tfe/logs/immortal       0750 tfe tfe -
+d /var/lib/tfe/logs/mob            0750 tfe tfe -
+d /var/lib/tfe/logs/object         0750 tfe tfe -
+d /var/lib/tfe/logs/player         0750 tfe tfe -
+d /var/lib/tfe/logs/room           0750 tfe tfe -
+d /var/lib/tfe/lost+found          0750 tfe tfe -
+d /var/lib/tfe/mail                0750 tfe tfe -
+d /var/lib/tfe/prev                0750 tfe tfe -
+d /var/lib/tfe/prev/area           0750 tfe tfe -
+d /var/lib/tfe/prev/files          0750 tfe tfe -
+d /var/lib/tfe/prev/player         0750 tfe tfe -
+d /var/lib/tfe/prev/rooms          0750 tfe tfe -
+d /var/lib/tfe/prev/tables         0750 tfe tfe -
+d /var/lib/tfe/reimb               0750 tfe tfe -
+d /var/lib/tfe/rooms               0750 tfe tfe -
+d /var/lib/tfe/var                 0750 tfe tfe -
+d /var/lib/tfe/var/control         0750 tfe tfe -
+d /var/lib/tfe/var/html            0750 tfe tfe -
+d /var/lib/tfe/var/log             0750 tfe tfe -
+d /var/lib/tfe/var/run             0750 tfe tfe -
+d /var/lib/tfe/var/swap            0750 tfe tfe -
+d /var/lib/tfe/var/swap/action     0750 tfe tfe -
+d /var/lib/tfe/var/swap/room       0750 tfe tfe -
+d /var/lib/tfe/var/tmp             0750 tfe tfe -

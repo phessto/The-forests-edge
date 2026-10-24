@@ -1,0 +1,58 @@
+#!/bin/bash
+# /usr/libexec/tfe/tfe-run — start TFE for tfe.service (runs as user tfe)
+#
+# 1. On first start, seed the world under /var/lib/tfe from the pristine copy
+#    in /usr/share/tfe/world (never overwrites anything; marker var/seeded).
+# 2. Run tfe in /var/lib/tfe/bin, where it finds ../area, ../player, ...
+# 3. Map how tfe exited to an exit status systemd can act on. tfe exits 1 for
+#    shutdown, reboot and panic alike, and says which in var/control/:
+#      reboot file                -> exit 1  (Restart=on-failure restarts it)
+#      shutdown "failed boot ..." -> exit 2  (RestartPreventExitStatus=2: no loop)
+#      shutdown file              -> exit 0  (clean in-game shutdown, stays down)
+#      none (crash, signal)       -> tfe's status (restarted)
+set -u
+
+ROOT=/var/lib/tfe
+SHARE=/usr/share/tfe
+CONTROL="$ROOT/var/control"
+
+SEEDED="$ROOT/var/seeded"
+
+# First start only (no var/seeded yet): copy the pristine world in without
+# overwriting anything already there. Later starts leave the world alone, so
+# files an admin or builder removed do not come back.
+if [[ ! -e "$SEEDED" ]]; then
+    for d in area files tables notes public_html; do
+        echo "tfe-run: seeding $ROOT/$d from $SHARE/world/$d"
+        cp -rn --preserve=mode,timestamps "$SHARE/world/$d/." "$ROOT/$d/"
+    done
+    date > "$SEEDED"
+fi
+if [[ "${TFE_SEED_TEST_LOGIN:-no}" == yes ]]; then
+    for f in files/accounts player/TempImm; do
+        if [[ ! -e "$ROOT/$f" ]]; then
+            echo "tfe-run: adding test login file $f"
+            cp --preserve=mode "$SHARE/test-login/$f" "$ROOT/$f" || exit 1
+        fi
+    done
+fi
+
+cd "$ROOT/bin" || exit 1
+# shellcheck disable=SC2086 # TFE_FLAGS is a list of flags
+./tfe ${TFE_FLAGS:-} "${TFE_PORT:-4000}"
+rc=$?
+
+if [[ -e "$CONTROL/reboot" ]]; then
+    echo "tfe-run: reboot requested: $(cat "$CONTROL/reboot")"
+    exit 1
+fi
+if [[ -e "$CONTROL/shutdown" ]]; then
+    reason="$(cat "$CONTROL/shutdown")"
+    echo "tfe-run: shutdown: $reason"
+    case "$reason" in
+        *"failed boot sequence"*) exit 2 ;;
+    esac
+    exit 0
+fi
+echo "tfe-run: tfe exited with status $rc and no control file"
+exit "$rc"

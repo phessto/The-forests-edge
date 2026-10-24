@@ -1,0 +1,50 @@
+# tfe — The Forest's Edge MUD server
+#
+# Install path (RPM): /usr/lib/systemd/system/tfe.service
+#
+# User / Group
+# ------------
+# Runs as system user tfe. Nothing needs root.
+#
+# Paths
+# -----
+#   Game root:   /var/lib/tfe        (root:tfe 0750; see tfe.tmpfiles)
+#   Working dir: /var/lib/tfe/bin    (root-owned; symlinks to /usr/libexec/tfe)
+#   Data:        /var/lib/tfe/{area,files,tables,player,notes,...} (tfe:tfe)
+#   Seed world:  /usr/share/tfe/world (copied in on first start by tfe-run)
+#   Settings:    /etc/tfe/tfe.env    (port, lock flags, test login)
+#   Logs:        /var/lib/tfe/files/bugs.txt and logs/; stderr to the journal
+#
+# Stopping
+# --------
+# TFE has no signal handler for SIGTERM, so `systemctl stop` kills it without
+# the save that the in-game `shutdown` command does. Players are saved on
+# their own as they play; for a clean stop, use `shutdown` in game.
+# In-game `reboot` restarts the service; in-game `shutdown` leaves it stopped.
+
+[Unit]
+Description=The Forest's Edge MUD server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=tfe
+Group=tfe
+EnvironmentFile=-/etc/tfe/tfe.env
+WorkingDirectory=/var/lib/tfe/bin
+ExecStart=/usr/libexec/tfe/tfe-run
+
+Restart=on-failure
+RestartSec=5
+RestartPreventExitStatus=2
+
+# Hardening (keep modest until a policy is defined)
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/tfe
+
+[Install]
+WantedBy=multi-user.target
