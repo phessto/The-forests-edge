@@ -72,6 +72,25 @@ typedef class   Wizard_Data        wizard_data;
 #include "math.h"
 #include "string.h"
 
+/*
+ *   Declarations needed before the templates in macros.h and file.h:
+ *   modern compilers use two-phase lookup, so overloads taking basic
+ *   types must be declared before the templates that call them.
+ */
+
+inline const char*   name      ( char* );
+inline const char*   name      ( const char* );
+
+inline char          tostring  ( char, char_data* );
+inline int           tostring  ( int, char_data* );
+inline unsigned      tostring  ( unsigned, char_data* );
+inline long          tostring  ( long, char_data* );
+inline unsigned long tostring  ( unsigned long, char_data* );
+inline long long     tostring  ( long long, char_data* );
+inline long long     tostring  ( unsigned long long, char_data* );
+inline double        tostring  ( double, char_data* );
+inline const char   *tostring  ( const char*, char_data* );
+
 #include "macros.h"
 
 #include "bit.h"
