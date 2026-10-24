@@ -18,3 +18,19 @@ using c++ (GCC) 4.1.2 20080704 (Red Hat 4.1.2-52)
 
 
 
+
+## Building (modern-build branch) ##
+TFE needs a 32-bit build (`-m32`): its scripting engine keeps pointers in `int`.
+`make -C src` works with GCC 8 to 14 when the 32-bit glibc and libstdc++
+headers are installed (Fedora: `gcc-c++ make glibc-devel.i686 libstdc++-devel.i686`).
+
+`./build.sh` builds `tfe`, `daemon` and an RPM in Podman images (`tfe-base`,
+`tfe-build`) into `dist/`. `./build.sh -u` runs a smoke test first (boot the
+world, log in as TempImm, shut down from in game); `-b ubi8|ubi9` picks the
+builder base; `-r` rebuilds the images. See `./build.sh --help`.
+
+To run by hand, the binaries must be started from a directory beside the data
+(`bin/` next to `area/`, `files/`, `player/`, ...), since every path is
+`../<dir>/`; see the directory list in `packaging/tfe.tmpfiles`.
+The RPM installs `tfe.service` (disabled), running as user `tfe` in
+`/var/lib/tfe/bin`, with settings in `/etc/tfe/tfe.env`.
