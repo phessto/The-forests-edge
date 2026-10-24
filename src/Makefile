@@ -4,7 +4,12 @@ CPP     = c++
 DEBUG   = -g
 WARN    = -Wall
 OPT     = -O2
-CFLAGS  = $(DEBUG) ${OPT} $(WARN) $(PROF) -m32
+# -m32: the scripting code stores pointers in int, so TFE must be built
+# 32-bit. -std, -fno-strict-aliasing and -fno-delete-null-pointer-checks
+# keep current GCC from optimising on rules this 2000s-era code breaks
+# (it type-puns pointers and null-checks inside its own strcasecmp).
+STD     = -std=gnu++17 -fno-strict-aliasing -fno-delete-null-pointer-checks
+CFLAGS  = $(DEBUG) ${OPT} $(WARN) $(PROF) $(STD) -m32
 C_FLAGS = $(CFLAGS) 
 VPATH   = ./OBJ
 
@@ -67,6 +72,7 @@ depend: $(C_FILES)
 	makedepend -- $(CFLAGS) -- $(C_FILES)
 
 .cc.o:
+	@mkdir -p $(DIR)
 	$(CPP) -c $(C_FLAGS) -I. $< -o $(DIR)/$@
 
 install: all
