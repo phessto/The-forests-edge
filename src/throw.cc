@@ -272,7 +272,7 @@ void do_throw( char_data* ch, const char *argument )
 
   if( !bad_spell
       && obj->pIndexData->item_type == ITEM_POTION
-      && !levellimit( obj, victim ) ) {
+      && !levellimit( obj, victim, 0 ) ) {
     bad_spell = true;
   }
 

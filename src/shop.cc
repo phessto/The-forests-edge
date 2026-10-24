@@ -604,7 +604,7 @@ static thing_data *sell_stolen( thing_data* thing, char_data* ch, thing_data *th
   if( is_set( keeper->pShop->flags, SHOP_STOLEN ) )
     return thing;
 
-  return stolen( thing, ch );
+  return stolen( thing, ch, 0 );
 
   //  if( !obj->Belongs( ch ) )
   //    return 0;

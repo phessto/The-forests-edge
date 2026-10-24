@@ -199,7 +199,7 @@ void do_quaff( char_data* ch, const char *argument )
     return;
   }
   
-  if( !antiobj( obj, ch ) ) {
+  if( !antiobj( obj, ch, 0 ) ) {
     fsend( ch, "You attempt to quaff %s, but the taste is so abhorrent you cannot swallow even a tiny sip.", obj );
     return;
   }
@@ -211,7 +211,7 @@ void do_quaff( char_data* ch, const char *argument )
 
   int spell = obj->value[0];
 
-  if( !levellimit( obj, ch )
+  if( !levellimit( obj, ch, 0 )
       || spell < 0
       || spell >= table_max[TABLE_SKILL_SPELL] ) {
     send( ch, "Nothing seems to happen.\n\r" );
@@ -332,12 +332,12 @@ bool recite( char_data *ch, const char *argument, obj_data *scroll )
     return false;
   }
 
-  if( !levellimit( scroll, ch ) ) {
+  if( !levellimit( scroll, ch, 0 ) ) {
     fsend( ch, "You can't understand the words written on %s.", scroll );
     return false;
   }
 
-  if( !antiobj( scroll, ch ) ) {
+  if( !antiobj( scroll, ch, 0 ) ) {
     fsend( ch, "You begin to recite %s, but the words are so abhorrent you cannot continue.", scroll );
     return false;
   }

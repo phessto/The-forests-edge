@@ -200,7 +200,7 @@ void do_put( char_data* ch, const char *argument )
 	if( flammable && obj->materials == flammable ) {
 	  fuel += obj;
 	  weight += obj->Weight( obj->Selected( ) );
-	} else if( !cursed( obj, ch ) ) {
+	} else if( !cursed( obj, ch, 0 ) ) {
 	  nodrop += obj;
 	} else {
 	  non_fuel += obj;

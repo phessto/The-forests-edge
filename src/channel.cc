@@ -955,7 +955,7 @@ void do_yell( char_data* ch, const char *argument )
   for( int i = 0; i < *ch->array; ++i ) {
     if( ( rch = character( ch->array->list[i] ) )
 	&& rch != ch ) {
-      hear_yell( rch, ch, msg );
+      hear_yell( rch, ch, msg, 0, 0, 100, 50 );
     }
   }
 

@@ -65,12 +65,12 @@ static bool can_auction( char_data* ch, obj_array* array )
 	return false;
       }
       
-      if( !stolen( obj, ch ) ) {
+      if( !stolen( obj, ch, 0 ) ) {
 	send( ch, "You can't auction items which you don't own.\n\r" );
 	return false;
       }
 
-      if( !stolen_contents( obj, ch ) ) {
+      if( !stolen_contents( obj, ch, 0 ) ) {
 	send( ch, "You can't auction items containing something you don't own.\n\r" );
 	return false;
       }

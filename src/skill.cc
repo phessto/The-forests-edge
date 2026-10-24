@@ -325,7 +325,7 @@ void do_inspect( char_data* ch, const char *argument )
 	&& trap->pIndexData->item_type == ITEM_TRAP ) {
       exist = true;
       if ( trap->Seen( ch )
-	   && levellimit( trap, ch )
+	   && levellimit( trap, ch, 0 )
 	   //	   && trap->pIndexData->level <= ch->Level( )
 	   && ch->check_skill( SKILL_INSPECT, 10 ) ) {
 	if( !found ) {
@@ -406,7 +406,7 @@ void do_untrap( char_data *ch, const char *argument )
     if( ( trap = object( obj->contents[i] ) )
 	&& trap->pIndexData->item_type == ITEM_TRAP ) {
       if( trap->Seen( ch )
-	   && levellimit( trap, ch )
+	   && levellimit( trap, ch, 0 )
 	   && ch->check_skill( SKILL_INSPECT ) ) {
 	trap->Select( 1 );
 	oprog_data *oprog;

@@ -285,7 +285,7 @@ void do_sacrifice( char_data* ch, const char *argument )
     return;
   }
 
-  if( !forbidden( obj, ch ) ) {
+  if( !forbidden( obj, ch, 0 ) ) {
     fsend( ch, "You are forbidden from sacrificing %s.", obj );
     fsend( ch, "%s grows angry at your impudence!", religion_table[i].name );
     spell_affect( 0, ch, 10, 0, SPELL_CURSE, AFF_CURSE );

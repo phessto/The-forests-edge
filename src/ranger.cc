@@ -73,7 +73,7 @@ static void finish_skin( char_data *ch,
     
     for( int i = 0; i < *list; ) {
       obj_data *obj = list->list[i];
-      if( !heavy( obj, ch ) || !many( obj, ch ) ) {
+      if( !heavy( obj, ch, 0 ) || !many( obj, ch, 0 ) ) {
 	obj->To( ch->in_room );
 	++i;
       } else {

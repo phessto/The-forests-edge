@@ -280,7 +280,7 @@ static thing_data *nojunk( thing_data* thing, char_data *ch, thing_data* )
   if( !( obj = object( thing ) ) )
     return thing;
  
-  if( !stolen( obj, ch ) || !stolen_contents( obj, ch ) )
+  if( !stolen( obj, ch, 0 ) || !stolen_contents( obj, ch, 0 ) )
     return 0;
 
   return is_set( obj->extra_flags, OFLAG_NO_JUNK ) ? 0 : thing;

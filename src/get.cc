@@ -12,7 +12,7 @@
 
 bool valid_container( char_data *ch, obj_data *obj, bool msg )
 {
-  if( obj != forbidden( obj, ch ) ) {
+  if( obj != forbidden( obj, ch, 0 ) ) {
     if( msg )
       send( ch, "You can't steal from that corpse.\n\r" );
     return false;

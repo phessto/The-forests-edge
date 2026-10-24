@@ -131,10 +131,9 @@ class thing_array: public Array<thing_data*> {};
 typedef void         do_func     ( char_data*, const char *argument );
 typedef bool         spell_func  ( char_data*, char_data*, void*, int, int );
 typedef bool         path_func   ( char_data*, thing_data*, const char*,
-				   int = 0, int = 0,
-				   int = 100, int = 50 );
+				   int, int, int, int );
 typedef bool         set_func    ( char_data*, const char *, const char*& );
-typedef thing_data*  thing_func  ( thing_data*, char_data*, thing_data* = 0 );
+typedef thing_data*  thing_func  ( thing_data*, char_data*, thing_data* );
 typedef void         event_func  ( event_data* );
 
 

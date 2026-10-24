@@ -783,15 +783,15 @@ static thing_data *needremove( thing_data* t1, char_data* ch, thing_data* t2 )
 
 bool could_wear( char_data *ch, obj_data *obj, bool trying )
 {
-  if( obj != cantwear( obj, ch )
-      || obj != wrongsize( obj, ch )
-      || obj != antiobj( obj, ch ) ) {
+  if( obj != cantwear( obj, ch, 0 )
+      || obj != wrongsize( obj, ch, 0 )
+      || obj != antiobj( obj, ch, 0 ) ) {
     //      || obj != needremove( obj, ch ) ) {
     return false;
   }
   
   if( trying
-      && obj != needremove( obj, ch ) )
+      && obj != needremove( obj, ch, 0 ) )
     return false;
 
   return true;
@@ -933,7 +933,7 @@ void wear( char_data *ch, thing_array& stuff )
   rehash( ch, subset[10] );
   for( int i = 0; i < subset[10]; ++i ) {
     if( subset[10][i]->Shown( ) ) {
-      if( !needremove( subset[10][i], ch )
+      if( !needremove( subset[10][i], ch, 0 )
 	  && !blocking_list.is_empty( ) ) {
 	rehash( ch, blocking_list );
 	for( int j = 0; j < blocking_list; ++j ) {
@@ -1037,7 +1037,7 @@ void put_on( char_data* ch, thing_array* array, char_data* victim )
   rehash( ch, subset[10] );
   for( int i = 0; i < subset[10]; ++i ) {
     if( subset[10][i]->Shown( ) ) {
-      if( !needremove( subset[10][i], victim )
+      if( !needremove( subset[10][i], victim, 0 )
 	  && !blocking_list.is_empty( ) ) {
 	rehash( ch, blocking_list );
 	for( int j = 0; j < blocking_list; ++j ) {

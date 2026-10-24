@@ -82,7 +82,7 @@ bool can_eat( char_data* ch, obj_data* obj, bool msg )
 	send( ch, "What a disgusting suggestion!\n\r" );
       return false;
     }
-    if( obj != forbidden( obj, ch ) ) {
+    if( obj != forbidden( obj, ch, 0 ) ) {
       if( msg )
 	fsend( ch,
 	       "You feel the gods would be unduly displeased if you ate %s.",

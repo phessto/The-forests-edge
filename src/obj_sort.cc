@@ -61,7 +61,7 @@ thing_data *corpse( thing_data* thing, char_data* ch, thing_data* )
     return 0;
 
   for( int i = 0; i < obj->contents; ++i )
-    if( !corpse( obj->contents[i], ch ) )
+    if( !corpse( obj->contents[i], ch, 0 ) )
       return 0;
 
   return obj;
@@ -92,8 +92,8 @@ thing_data *stolen_contents( thing_data* thing, char_data* ch, thing_data* )
     //      return 0;
     
     for( int i = 0; i < obj->contents; ++i ) {
-      if( !stolen( obj->contents[i], ch )
-	  || !stolen_contents( obj->contents[i], ch ) )
+      if( !stolen( obj->contents[i], ch, 0 )
+	  || !stolen_contents( obj->contents[i], ch, 0 ) )
 	return 0;
     }
   }

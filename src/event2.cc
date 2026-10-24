@@ -449,7 +449,7 @@ bool behave( char_data *ch, exit_data *exit, bool urgent )
 	if( obj->reset || obj->for_sale )
 	  continue;
 	if( obj->pIndexData->item_type == ITEM_TRASH
-	    && obj == cursed( obj, ch ) ) {
+	    && obj == cursed( obj, ch, 0 ) ) {
 	  obj->Select_All( );
 	  trash += obj;
 	} else if( could_wear( ch, obj, true ) ) {
