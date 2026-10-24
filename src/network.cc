@@ -35,11 +35,11 @@ static bool   process_output       ( link_data* );
 bool   read_link            ( link_data* );
 static void   stop_idling          ( player_data* );
 
-const char go_ahead_str  [] = { IAC, GA, '\0' };
-const char echo_off_str  [] = { IAC, WILL, TELOPT_ECHO, '\0' };
-const char echo_on_str   [] = { IAC, WONT, TELOPT_ECHO, '\0' };
-const char refuse_tm_str [] = { IAC, WONT, TELOPT_TM, '\0' };
-const char accept_tm_str [] = { IAC, WILL, TELOPT_TM, '\0' };
+const char go_ahead_str  [] = { char( IAC ), char( GA ), '\0' };
+const char echo_off_str  [] = { char( IAC ), char( WILL ), TELOPT_ECHO, '\0' };
+const char echo_on_str   [] = { char( IAC ), char( WONT ), TELOPT_ECHO, '\0' };
+const char refuse_tm_str [] = { char( IAC ), char( WONT ), TELOPT_TM, '\0' };
+const char accept_tm_str [] = { char( IAC ), char( WILL ), TELOPT_TM, '\0' };
 
 
 bool link_data::past_password() const
