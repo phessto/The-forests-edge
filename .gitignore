@@ -1,0 +1,7 @@
+# Build output
+src/OBJ/
+src/tfe
+src/daemon
+src/core
+src/core.*
+dist/
