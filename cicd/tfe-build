@@ -1,0 +1,214 @@
+#!/usr/bin/env bash
+# =============================================================================
+# tfe-build — compile TFE + RPM (or run the smoke test) inside the tfe-build image
+# =============================================================================
+# Expected mounts (set by build.sh / podman run):
+#   /src  — repo root (source; read only as far as this script is concerned)
+#   /out  — output directory for binaries and RPMs (e.g. ./dist)
+#
+# Modes (env TFE_MODE, set by build.sh):
+#   build (default) — compile tfe + daemon and the RPMs into /out
+#   test            — smoke test: compile in a scratch copy, boot the world
+#                     from the repo on a scratch run directory, log in as the
+#                     README's test immortal, check the world loaded, shut the
+#                     MUD down from inside the game; writes nothing to /out
+#
+# The compile always runs in a scratch copy under /tmp, so no root-owned
+# src/OBJ or binaries are left in the mounted repo.
+#
+# Artifacts written:
+#   /out/tfe
+#   /out/daemon
+#   /out/rpm/*.rpm          (binary + source RPM from packaging/tfe.spec)
+# =============================================================================
+set -euo pipefail
+
+SPEC_FILE="packaging/tfe.spec"
+# Writable directories TFE expects beside src/ (paths in src/file.h).
+# Keep in sync with packaging/tfe.tmpfiles.
+RUN_DIRS="backup clans deleted/area deleted/player logs/immortal logs/mob
+logs/object logs/player logs/room lost+found mail notes/clans prev/area
+prev/files prev/player prev/rooms prev/tables reimb rooms var/control var/html
+var/log var/run var/swap/action var/swap/room var/tmp"
+WORLD_DIRS="area files tables notes player public_html"
+
+log()  { echo -e "\033[32m[+] $1\033[0m"; }
+fail() { echo -e "\033[31m[!] $1\033[0m" >&2; exit 1; }
+
+[[ -d /src ]] || fail "missing /src mount"
+cd /src
+
+# Copy the tree (no .git, no dist) to a scratch dir and run make there.
+compile_scratch() {
+    local dir="$1"
+    mkdir -p "$dir"
+    tar -C /src -cf - \
+        --exclude='./.git' --exclude='./dist' \
+        --exclude='./src/OBJ' --exclude='./src/tfe' --exclude='./src/daemon' \
+        . | tar -C "$dir" -xf -
+    log "Compiling in $dir ($(g++ --version | head -1))"
+    make -C "$dir/src" -j"$(nproc)"
+}
+
+smoke_test() {
+    local work=/tmp/tfe-smoke root port=4000 pid rc
+    compile_scratch "$work"
+    root="$work/run"
+    mkdir -p "$root/bin"
+    for d in $WORLD_DIRS; do cp -a "$work/$d" "$root/$d"; done
+    for d in $RUN_DIRS; do mkdir -p "$root/$d"; done
+    cp -a "$work/src/tfe" "$work/src/daemon" "$root/bin/"
+    : > "$root/files/bugs.txt"
+
+    log "Booting TFE on port $port in $root"
+    ( cd "$root/bin" && exec ./tfe "$port" ) > "$root/var/log/stdout.log" 2>&1 &
+    pid=$!
+    for _ in $(seq 1 180); do
+        grep -q 'MUD BOOTED' "$root/files/bugs.txt" 2>/dev/null && break
+        kill -0 "$pid" 2>/dev/null || { cat "$root/files/bugs.txt" "$root/var/log/stdout.log" >&2; fail "tfe exited during boot"; }
+        sleep 1
+    done
+    grep -q 'MUD BOOTED' "$root/files/bugs.txt" || { kill "$pid"; fail "tfe did not finish booting in 180s"; }
+
+    # Anything logged between STARTING and BOOTED is a boot-time bug.
+    local bootbugs
+    bootbugs="$(sed -n '/STARTING MUD/,/MUD BOOTED/p' "$root/files/bugs.txt" | grep -v 'STARTING MUD\|MUD BOOTED' || true)"
+    if [[ -n "$bootbugs" ]]; then
+        echo "$bootbugs" >&2
+        kill "$pid"
+        fail "boot logged bugs (above)"
+    fi
+    log "Boot clean; logging in as TempImm"
+
+    if ! python3 - "$port" <<'PY'
+import re, socket, sys, time
+port = int(sys.argv[1])
+host = socket.gethostbyname(socket.gethostname())   # TFE binds the hostname's address
+s = socket.create_connection((host, port), timeout=10)
+
+def read(wait=1.5):
+    out, end = b"", time.time() + wait
+    s.settimeout(0.3)
+    while time.time() < end:
+        try:
+            d = s.recv(65536)
+        except socket.timeout:
+            continue
+        if not d:
+            break
+        out += d
+        end = max(end, time.time() + 0.4)
+    out = re.sub(rb"\xff[\xfb-\xfe].|\xff[\xf0-\xfa]", b"", out)
+    return re.sub(r"\x1b\[[0-9;]*[A-Za-z]", "", out.decode("latin-1")).replace("\r", "")
+
+def cmd(line, wait=1.5, more=False):
+    s.sendall(line.encode() + b"\r\n")
+    out = read(wait)
+    while more and "-- MORE --" in out[-200:]:
+        s.sendall(b"\r\n")
+        out += read(1)
+    return out
+
+def need(cond, what):
+    print(("ok   " if cond else "FAIL ") + what)
+    if not cond:
+        sys.exit(1)
+
+need("Choice:" in read(3), "greeting and login menu")
+need("Password" in cmd("TempImm"), "name accepted")
+cmd("llama", 3); cmd("", 2); out = cmd("", 3)
+need("Path of Death" in out or "Vnum:" in out, "logged in and placed in a room")
+mem = cmd("memory", 3, more=True)
+counts = {k: int(v) for k, v in re.findall(r"^\s*(Areas|Rooms|Mobs|Objects|Exits|Resets|Species|Shops)\s+(\d+)", mem, re.M)}
+print("     world:", " ".join(f"{k}={v}" for k, v in counts.items()))
+need(counts.get("Areas", 0) > 0 and counts.get("Rooms", 0) > 0, "world loaded (areas and rooms > 0)")
+need("You leave north" in cmd("north"), "walked north")
+need("Vnum: 33750" in cmd("look"), "look shows the next room")
+need("TempImm" in cmd("who"), "who lists the player")
+need("saved" in cmd("save"), "save")
+cmd("shutdown", 5)
+print("ok   shutdown sent")
+PY
+    then
+        kill "$pid" 2>/dev/null || true
+        tail -20 "$root/files/bugs.txt" >&2
+        fail "smoke test failed"
+    fi
+
+    rc=0
+    for _ in $(seq 1 60); do kill -0 "$pid" 2>/dev/null || break; sleep 1; done
+    if kill -0 "$pid" 2>/dev/null; then kill -9 "$pid"; fail "tfe did not exit after shutdown"; fi
+    wait "$pid" || rc=$?
+    [[ -f "$root/var/control/shutdown" ]] || fail "no var/control/shutdown after in-game shutdown (exit $rc)"
+    log "TFE shut down from in game: $(cat "$root/var/control/shutdown")"
+    log "Smoke test passed"
+}
+
+MODE="${TFE_MODE:-build}"
+case "$MODE" in
+    build) [[ -d /out ]] || fail "missing /out mount" ;;
+    test)  smoke_test; exit 0 ;;
+    *) echo "unknown TFE_MODE: $MODE (build, test)" >&2; exit 2 ;;
+esac
+
+WORK="$(mktemp -d /tmp/tfe-compile.XXXXXX)"
+compile_scratch "$WORK"
+install -m 0755 "$WORK/src/tfe" "$WORK/src/daemon" /out/
+rm -rf "$WORK"
+
+log "Compile finished → /out"
+ls -la /out
+
+# -----------------------------------------------------------------------------
+# RPM: package prebuilt /out binaries via packaging/tfe.spec
+# -----------------------------------------------------------------------------
+command -v rpmbuild >/dev/null 2>&1 || fail "rpmbuild not found in image; rebuild tfe-base (./build.sh -r)"
+[[ -f "$SPEC_FILE" ]] || fail "missing $SPEC_FILE"
+
+VERSION="$(awk '/^Version:/{print $2; exit}' "$SPEC_FILE")"
+[[ -n "$VERSION" ]] || fail "could not parse Version from $SPEC_FILE"
+
+log "Building RPM (tfe-${VERSION}) from prebuilt dist/ artifacts"
+
+RPM_TOPDIR="$(mktemp -d /tmp/tfe-rpmbuild.XXXXXX)"
+STAGE="$(mktemp -d /tmp/tfe-rpmsrc.XXXXXX)"
+cleanup_rpm() { rm -rf "$RPM_TOPDIR" "$STAGE"; }
+trap cleanup_rpm EXIT
+
+mkdir -p "$RPM_TOPDIR"/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
+STAGEDIR="$STAGE/tfe-${VERSION}"
+mkdir -p "$STAGEDIR"
+
+# Stage a clean source tree; exclude VCS, build output and prior RPMs.
+tar -C /src -cf - \
+    --exclude='./.git' \
+    --exclude='*.rpm' \
+    --exclude='./dist' \
+    --exclude='./src/OBJ' \
+    --exclude='./src/tfe' \
+    --exclude='./src/daemon' \
+    . | tar -C "$STAGEDIR" -xf -
+
+# Ship the binaries we just compiled so %build can use them.
+mkdir -p "$STAGEDIR/dist"
+install -m 0755 /out/tfe /out/daemon "$STAGEDIR/dist/"
+
+tar -C "$STAGE" -czf "$RPM_TOPDIR/SOURCES/tfe-${VERSION}.tar.gz" "tfe-${VERSION}"
+cp "$SPEC_FILE" "$RPM_TOPDIR/SPECS/tfe.spec"
+
+# --nodeps: BuildRequires use the (x86-32) virtual provides, which a
+# UBI image may not resolve the same way; the toolchain is in tfe-base.
+rpmbuild \
+    --define "_topdir $RPM_TOPDIR" \
+    --nodeps \
+    -ba \
+    "$RPM_TOPDIR/SPECS/tfe.spec"
+
+mkdir -p /out/rpm
+find "$RPM_TOPDIR/RPMS" "$RPM_TOPDIR/SRPMS" -type f -name '*.rpm' -exec cp -a {} /out/rpm/ \;
+
+trap - EXIT
+cleanup_rpm
+
+log "RPM finished → /out/rpm"
+ls -la /out /out/rpm

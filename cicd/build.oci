@@ -1,0 +1,22 @@
+# cicd/build.oci — compile image for TFE artifact builds
+#
+# FROM the deps-only base. COPYs only cicd/tfe-build (the compile entrypoint).
+# Project source is NOT baked in: bind-mount at run time.
+#
+# Build (context = cicd/ so COPY tfe-build works):
+#   podman build --squash-all --rm --force-rm -t tfe-build -f cicd/build.oci cicd/
+#
+# Compile:
+#   podman run --rm -v "$PWD":/src:Z -v "$PWD/dist":/out:Z tfe-build
+ARG BASE_TAG=tfe-base
+FROM ${BASE_TAG}
+
+WORKDIR /src
+
+# Compile entrypoint lives in the image; source stays on the host mount.
+COPY --chmod=755 tfe-build /usr/local/bin/tfe-build
+
+LABEL org.opencontainers.image.title="tfe-build" \
+      org.opencontainers.image.description="Compile image: ENTRYPOINT tfe-build; source via /src mount"
+
+ENTRYPOINT ["/usr/local/bin/tfe-build"]

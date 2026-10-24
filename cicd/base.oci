@@ -1,0 +1,30 @@
+# cicd/base.oci — deps-only / toolchain base for TFE
+#
+# Fedora (or UBI) + g++ with 32-bit (i686) glibc/libstdc++ headers + rpmbuild.
+# TFE must be built -m32 (see src/Makefile). No project source is COPYed.
+#
+# Prefer: podman build --squash-all --rm --force-rm -t tfe-base -f cicd/base.oci <empty-dir>
+ARG BASE_IMAGE=fedora:40
+FROM ${BASE_IMAGE}
+
+# Package list per base (build.sh -b passes it). Default = Fedora list.
+# UBI 8: no rpmdevtools/systemd-rpm-macros (macros ship in systemd).
+# UBI 9: no rpmdevtools.
+ARG BASE_PKGS="ca-certificates git rpm-build rpmdevtools systemd-rpm-macros"
+# Toolchain for the -m32 build, plus python3 for the -u smoke test client.
+# libstdc++-devel is listed for both arches: x86_64 g++ -m32 reads its
+# headers from the x86_64 package's 32/ directory and links the i686 libs.
+ARG TOOLCHAIN_PKGS="gcc-c++ make glibc-devel.i686 libstdc++-devel.i686 libstdc++-devel.x86_64 libgcc.i686 python3"
+
+# Single RUN so --squash-all / prune leave fewer intermediate layers.
+RUN set -eux; \
+    dnf -y install ${BASE_PKGS} ${TOOLCHAIN_PKGS} \
+    && dnf clean all; \
+    g++ --version; \
+    rpmbuild --version
+
+WORKDIR /src
+
+# Intentionally no COPY of the project tree; source is mounted at compile time.
+
+CMD ["sleep", "infinity"]
