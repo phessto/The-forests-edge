@@ -2111,7 +2111,7 @@ void save_table( int num )
   char **pntr;
 
   for( int j = 0; j < table_max[num]; ++j ) {
-    for( int k = 0; table_field[num][k] != '\0'; ++k ) {
+    for( int k = 0; table_field[num][k] != 0; ++k ) {
       int n = max( 0,num-MAX_PLYR_RACE );
       if( table_entry[n][k].save ) {
 	pntr = (char**)table_pntr( num,k,j );
