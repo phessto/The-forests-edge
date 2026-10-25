@@ -233,7 +233,7 @@ static void gen_confirm( account_data *account )
 static void send_email( link_data* link, bool change )
 {  
   char                 tmp1  [ MAX_INPUT_LENGTH ];
-  char                 tmp2  [ MAX_INPUT_LENGTH ];
+  char                 tmp2  [ MAX_STRING_LENGTH ];
   FILE*                 fp;
 
   account_data *account = link->account;
@@ -267,7 +267,7 @@ static void send_email( link_data* link, bool change )
 
   fclose( fp );
 
-  snprintf( tmp2, MAX_INPUT_LENGTH,
+  snprintf( tmp2, MAX_STRING_LENGTH,
 	    "(cat \"%s\" | /usr/lib/sendmail -i -F\"%s\" -r\"%s\" \"%s\"; rm -f \"%s\") &",
 	    tmp1, admin_name, admin_email, account->new_email, tmp1 );
   system( tmp2 );
@@ -578,7 +578,7 @@ void nanny_acnt_menu( link_data* link, const char *argument )
 void nanny_acnt_request( link_data* link, const char *argument )
 {
   char               tmp1  [ MAX_INPUT_LENGTH ];
-  char               tmp2  [ THREE_LINES ];
+  char               tmp2  [ MAX_STRING_LENGTH ];
   account_data*  account;
   bool             found  = false;
   FILE*               fp;
@@ -623,7 +623,7 @@ void nanny_acnt_request( link_data* link, const char *argument )
 
   fclose( fp );
 
-  snprintf( tmp2, THREE_LINES,
+  snprintf( tmp2, MAX_STRING_LENGTH,
 	    "(cat \"%s\" | /usr/lib/sendmail -i -F\"%s\" -r\"%s\" \"%s\"; rm -f \"%s\") &",
 	    tmp1, admin_name, admin_email, account->email, tmp1 );
   system( tmp2 );
