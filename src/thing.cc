@@ -109,11 +109,12 @@ thing_data* one_shown( thing_array& array )
   int j = -1;
 
   for( int i = 0; i < array; i++ )
-    if( array[i]->Shown( ) > 0 )
+    if( array[i]->Shown( ) > 0 ) {
       if( j == -1 ) 
         j = i;
       else
         return 0;
+    }
 
   return j == -1 ? 0 : array[j];
 }  

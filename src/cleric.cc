@@ -229,11 +229,12 @@ bool spell_remove_curse( char_data* ch, char_data* victim, void*,
     obj->Extract( );
   }
   
-  if( count == 0 ) 
+  if( count == 0 ) {
     if( victim == ch ) 
       send( ch, "You weren't carrying anything cursed.\n\r" );
     else 
       fsend( ch, "%s wasn't carrying anything cursed.", victim );
+  }
 
   return any;
 }

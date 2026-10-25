@@ -388,11 +388,12 @@ bool toggle( char_data* ch, const char *arg, const char* text,
   } else 
     return false;
   
-  if( text )
+  if( text ) {
     if( already )
       fsend( ch, "%s already %s.", text, arg );
     else
       fsend( ch, "%s turned %s.", text, arg );
+  }
 
   return true;
 }

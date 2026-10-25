@@ -1003,12 +1003,13 @@ const char *float3( int x, bool left )
   if( x < 0 || x > 99949 )
     return "***";
 
-  if( x == 0 )
+  if( x == 0 ) {
     if( left ) {
       return "0";
     } else {
       return "  0";
     }
+  }
 
   if( x < 100 )
     if( left ) {

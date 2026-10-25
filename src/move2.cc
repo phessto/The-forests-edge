@@ -555,12 +555,13 @@ void Obj_Data :: To( Content_Array& where )
       return;
 
     } else if( where == ch->contents ) {
-      if( !in_place )
+      if( !in_place ) {
 	if( player( ch ) )
 	  set_owner( this, ch, 0 );
 	else if( is_set( ch->status, STAT_PET )
 		 && player( ch->leader ) )
 	  set_owner( this, ch->leader, 0 );
+      }
     }
     
   } else if( ( room = Room( where.where ) ) ) {
