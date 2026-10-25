@@ -355,10 +355,8 @@ static void page_sources( char_data *ch, char_data *victim, bool all )
       }
       bool first = true;
       const char *name = aff_char_table[sn].score_name;
-      bool nl = false;
       
       if( strlen( name ) > 49 ) {
-	nl = true;
 	page( ch, "%s\n\r", trunc( name, 79 ) );
 	name = empty_string;
       }

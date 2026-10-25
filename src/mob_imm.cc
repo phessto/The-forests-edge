@@ -2272,9 +2272,6 @@ void do_mstat( char_data* ch, const char *argument )
 
 static void mistat( char_data *ch, char_data *victim )
 {
-  player_data *pc = player( victim );
-  mob_data *npc = mob( victim );
-
   in_character = false;
 
   page_title( ch, victim->Seen_Name( ) );
@@ -2340,7 +2337,6 @@ void do_miflag( char_data* ch, const char *argument )
     return;
 
   player_data *pc = player( victim );
-  mob_data *npc = mob( victim );
 
   in_character = false;
   

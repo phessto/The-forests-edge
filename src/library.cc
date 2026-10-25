@@ -1621,7 +1621,6 @@ const void *code_summon( const void **argument )
 const void *code_reputation( const void **argument )
 {
   char_data *ch = (char_data*)(thing_data*) argument[0];
-  const int nation = (int) argument[1];
 
   if( !ch ) {
     code_bug( "Reputation: Null character." );

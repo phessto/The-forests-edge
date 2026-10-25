@@ -280,8 +280,7 @@ void do_throw( char_data* ch, const char *argument )
   bool miss = ( roll <= 88 );
 
   bool dodge = false,
-       catches = false,
-       hit = false;
+       catches = false;
 
   if( !miss ) {
     if( can_defend( victim, ch ) ) {
@@ -292,7 +291,6 @@ void do_throw( char_data* ch, const char *argument )
       }
       dodge = !catches && ( roll <= ( victim->Dexterity() * 2 ) );
     }
-    hit = !dodge && !catches;
   }
 
   remove_bit( ch->status, STAT_WIMPY );

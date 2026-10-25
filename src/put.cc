@@ -119,8 +119,6 @@ void do_put( char_data* ch, const char *argument )
   bool spec_put_in = false,
     spec_put_on = false;
 
-  int sel;
-
   if( contains_word( argument, "in", arg ) ) {
     spec_put_in = true;
     if( !( container = one_object( ch, argument, "put things in",
@@ -128,7 +126,6 @@ void do_put( char_data* ch, const char *argument )
 				   &ch->wearing,
 				   ch->array ) ) )
       return;
-    sel = container->temp;
   } else if( contains_word( argument, "on", arg ) ) {
     spec_put_on = true;
     if( !( target = one_thing( ch, argument, "put things on",
@@ -152,7 +149,6 @@ void do_put( char_data* ch, const char *argument )
   if( target ) {
     container = object( target );
     victim = character( target );
-    sel = target->temp;
   }
 
   if( !container && !victim ) {

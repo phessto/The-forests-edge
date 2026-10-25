@@ -1032,11 +1032,10 @@ static int select_hfind( help_data *help, char_data *ch, const char *argument )
       }
     }
 
-    bool negative = false;
     skip_spaces( argument );
     
     if( *argument == '!' ) {
-      negative = true;
+      // A leading '!' is accepted, but negation was never implemented.
       ++argument;
     }
     
