@@ -2589,7 +2589,9 @@ static bool edit_object( obj_data *obj, obj_clss_data *clss = 0 )
     return false;
   }
 
-  if( !obj->Is_Valid( ) )
+  // obj is only null together with a non-null clss (handled above); the
+  // explicit test stops GCC's inliner warning about a null 'this'.
+  if( !obj || !obj->Is_Valid( ) )
     return false;
 
   // Edit instances.
