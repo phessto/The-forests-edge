@@ -432,9 +432,11 @@ void open_ssh( int game_port )
     { SSH_BIND_OPTIONS_BANNER,             "TFE" },
   };
   for( size_t i = 0; i < sizeof( opts )/sizeof( opts[0] ); ++i )
-    if( ssh_bind_options_set( ssh_binder, opts[i].opt, opts[i].val ) < 0 )
-      panic( "Open_Ssh: Bad libssh option %s: %s.",
-	     opts[i].val, ssh_get_error( ssh_binder ) );
+    if( ssh_bind_options_set( ssh_binder, opts[i].opt, opts[i].val ) < 0 ) {
+      sshlog( "SSH: libssh rejected option %d '%s': %s\n", (int) opts[i].opt,
+	      opts[i].val, ssh_get_error( ssh_binder ) );
+      panic( "Open_Ssh: libssh rejected an algorithm list (see stdout)." );
+    }
 
   ssh_events = ssh_event_new( );
   if( !ssh_events )
