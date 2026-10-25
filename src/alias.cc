@@ -64,7 +64,7 @@ void do_alias( char_data* ch, const char *argument )
       alias_data *alias = pc->alias[i];
       const unsigned indent = 18;
       if( strlen( alias->command )+indent < ch->pcdata->columns ) {
-	page( ch, "%-12s  %c   %s\n\r",
+	page( ch, "%-12s  %c   %.16000s\n\r",
 	      alias->abbrev,
 	      alias->length ? alias->length + '0' : ' ',
 	      alias->command );

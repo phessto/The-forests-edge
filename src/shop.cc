@@ -556,7 +556,7 @@ void do_list( char_data* ch, const char *argument )
 	    obj->Shown( ),
 	    obj->condition_name( ch, true ) );
     } else {
-      page( ch, "%s\n\r", name );
+      page( ch, "%.16000s\n\r", name );
       page( ch, "%-32s%8d%8.2f%7s%8d  %-s\n\r",
 	    "",
 	    get_cost( keeper, ch, obj, true, 1 ),

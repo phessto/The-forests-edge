@@ -171,7 +171,7 @@ static void msg_other( char_data *victim, char_data *ch, const char* dt,
   char_data*          rch;
 
   if( victim->link ) {
-    snprintf( tmp, MAX_STRING_LENGTH, "%s %s%s%s you%c", dt,
+    snprintf( tmp, MAX_STRING_LENGTH, "%.1000s %s%.1000s%s you%c", dt,
 	      to_self( victim ), word, normal( victim ), punct );
     *tmp = toupper( *tmp );
     fsend( victim, tmp );
@@ -188,7 +188,7 @@ static void msg_other( char_data *victim, char_data *ch, const char* dt,
 	|| (rch != ch && !is_set( rch->pcdata->message, flag ))
 	|| !rch->Can_See( ) )
       continue;
-    snprintf( tmp, MAX_STRING_LENGTH, "%s %s%s%s %s%c", dt,
+    snprintf( tmp, MAX_STRING_LENGTH, "%.1000s %s%.1000s%s %.1000s%c", dt,
 	      damage_color( rch, ch, victim ), word, normal( rch ),
 	      victim->Name( rch ), punct );
     *tmp = toupper( *tmp );

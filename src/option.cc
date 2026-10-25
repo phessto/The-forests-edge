@@ -120,7 +120,7 @@ void do_info( char_data* ch, const char *argument )
 		    ltime( info->when, false, ch ),
 		    string );
 	    } else {
-	      page( ch, "%s\n\r", string );
+	      page( ch, "%.16000s\n\r", string );
 	    }
 	  } else {
 	    const char *s = string;

@@ -404,7 +404,7 @@ static void display_custom( char_data* ch, mob_data* keeper )
 		level );
       capitalize( tmp );
     } else {
-      page( ch, "%s\n\r", name );
+      page( ch, "%.16000s\n\r", name );
       snprintf( tmp, FIVE_LINES, "%-27s%6d%8.2f%5s  ",
 		"",
 		haggle( ch, custom->cost ),
