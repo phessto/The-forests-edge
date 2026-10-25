@@ -387,10 +387,10 @@ void high_mob( char_data *ch, const char *argument )
   send( ch, "\n\r\n\r" );
 
   char tmp [ TWO_LINES ];
-  char r1 [ 8 ];
+  char r1 [ 16 ];
 
   for( int i = 0; i < 20; ++i ) {
-    snprintf( r1, 8, "[%d]", start+i+1 );
+    snprintf( r1, 16, "[%d]", start+i+1 );
     if( !is_builder( ch ) ) {
       snprintf( tmp, TWO_LINES, "%8s  %s\n\r",
 		r1, score_name( high[start+i], scores[start+i] ) );

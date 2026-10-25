@@ -42,12 +42,12 @@ void do_wimpy( char_data* ch, const char *argument )
 
   if( !*argument ) {
     send( ch, wimpy_info[0] );
-    char buf [11];
+    char buf [20];
     for( int i = 0; i < 4; ++i ) {
       if( value[i] > 0 ) {
-	snprintf( buf, 11, "(%d hp)", value[i]*ch->max_hit/100 );
+	snprintf( buf, 20, "(%d hp)", value[i]*ch->max_hit/100 );
       } else {
-	snprintf( buf, 11, "(off)" );
+	snprintf( buf, 20, "(off)" );
       }
       const char c = (i%2) ? '\\' : '/';
       send( ch, wimpy_info[1], c, wimpy_word[i], value[i], buf, c );

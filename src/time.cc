@@ -234,6 +234,7 @@ static void order( int *list, double *value, int label, double num )
 void do_lag( char_data* ch, const char *argument )
 {
   char      tmp  [ TWO_LINES ];
+  char    delay  [ 16 ];
   int     flags;
   int      i, j;
 
@@ -280,10 +281,10 @@ void do_lag( char_data* ch, const char *argument )
     send_underlined( ch,
       "Sec. Delay     Cycles     % Cycles        % CPU       % Time        % Lag\n\r" );
     for( j = 0, i = 0; i < 10; ++i, j = ( j == 0 ? 1 : 2*j ) ) {
-      snprintf( tmp, TWO_LINES, "%.3f", (double) j/PULSE_PER_SECOND );
+      snprintf( delay, 16, "%.3f", (double) j/PULSE_PER_SECOND );
       snprintf( tmp+10, TWO_LINES-10, "%8s %12d %12.2f %12.2f %12.2f %12.2f\n\r",
 		i == 0 ? "none" :
-		( i == 9 ? "more" : tmp ),
+		( i == 9 ? "more" : delay ),
 		time_history[i],
 		100.0 * ( (double) time_history[i] ) / sum,
 		100.0 * ( (double) time_total[i] ) / total,

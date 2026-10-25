@@ -1173,8 +1173,8 @@ static const char* score_name( pfile_data **list, int limit,
 void do_high( char_data* ch, const char *argument )
 {
   char       tmp  [ TWO_LINES ];
-  char        r1  [ 8 ];
-  char        r2  [ 8 ];
+  char        r1  [ 16 ];
+  char        r2  [ 16 ];
   int        who  [ 20 ];
   int     c1 = 0, c2;
   int          i;
@@ -1298,8 +1298,8 @@ void do_high( char_data* ch, const char *argument )
   send( ch, "\n\r\n\r" );
   
   for( i = 0; i < 10; ++i ) {
-    snprintf( r1, 8, "[%d]", c1+i );
-    snprintf( r2, 8, "[%d]", c2+i );
+    snprintf( r1, 16, "[%d]", c1+i );
+    snprintf( r2, 16, "[%d]", c2+i );
     snprintf( tmp, TWO_LINES, "%12s  %-20s %5s  %s\n\r",
 	      r1, score_name( list, limit, who[i], ch ),
 	      r2, score_name( list, limit, who[10+i], ch ) );
