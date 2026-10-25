@@ -61,7 +61,11 @@ smoke_test() {
     cp -a "$work/src/tfe" "$work/src/daemon" "$root/bin/"
     : > "$root/files/bugs.txt"
 
-    # SSH on: the environment says 4122, the command line 4022; the command
+    # SSH ships off: the packaged tfe.env must not set a port.
+    if grep -q '^[[:space:]]*TFE_SSH_PORT=' packaging/tfe.env; then
+        fail "packaging/tfe.env sets TFE_SSH_PORT; SSH must ship off (leave it commented out)"
+    fi
+    # The test turns SSH on itself: the environment says 4122, the command line 4022; the command
     # line must win (checked below).
     log "Booting TFE on port $port (SSH $ssh_port) in $root"
     ( cd "$root/bin" && TFE_SSH_PORT=4122 exec ./tfe "$port" --ssh-port "$ssh_port" ) \

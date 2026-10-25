@@ -154,13 +154,13 @@ if [ "$1" -eq 1 ]; then
   echo "tfe:   1. edit /etc/tfe/tfe.env (port; TFE_SEED_TEST_LOGIN=yes adds the"
   echo "tfe:      upstream test immortal TempImm, password llama)"
   echo "tfe:   2. systemctl enable --now tfe"
-  echo "tfe:   3. telnet <host> 4000, or ssh -p 4022 play@<host>; at 'Choice:'"
-  echo "tfe:      type TempImm, then llama (open 4000/tcp and 4022/tcp in the"
-  echo "tfe:      firewall for remote players)"
+  echo "tfe:   3. telnet <host> 4000; at 'Choice:' type TempImm, then llama"
+  echo "tfe:      (open 4000/tcp in the firewall for remote players)"
+  echo "tfe: SSH is off. To offer ssh -p 4022 play@<host>, uncomment"
+  echo "tfe: TFE_SSH_PORT=4022 in /etc/tfe/tfe.env, restart tfe, open 4022/tcp."
 elif ! grep -q '^TFE_SSH_PORT=' %{_sysconfdir}/tfe/tfe.env 2>/dev/null; then
-  echo "tfe: this version can listen for SSH. Your /etc/tfe/tfe.env was kept, so"
-  echo "tfe: SSH stays off; to turn it on add TFE_SSH_PORT=4022 (see the comments"
-  echo "tfe: in /etc/tfe/tfe.env.rpmnew) and restart tfe."
+  echo "tfe: this version can listen for SSH (off until TFE_SSH_PORT is set in"
+  echo "tfe: /etc/tfe/tfe.env; see the comments there or in tfe.env.rpmnew)."
 fi
 
 %preun
@@ -191,8 +191,8 @@ fi
 
 %changelog
 * Sun Oct 25 2026 Joshua D <58604081+phessto@users.noreply.github.com> - 1.0-3
-- SSH listener in tfe (libssh): TFE_SSH_PORT (default 4022 in tfe.env),
-  TFE_SSH_USER, TFE_SSH_MAX_SESSIONS, TFE_SSH_LOGIN_TIMEOUT,
+- SSH listener in tfe (libssh), off until TFE_SSH_PORT is set in tfe.env
+  (example 4022, user play); also TFE_SSH_USER, TFE_SSH_MAX_SESSIONS, TFE_SSH_LOGIN_TIMEOUT,
   TFE_SSH_HOSTKEY_DIR; host keys in /var/lib/tfe/ssh
 - needs 32-bit libssh
 

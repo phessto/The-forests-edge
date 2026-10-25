@@ -50,17 +50,22 @@ start it, and upgrading does not restart it. To use the RPM:
     # optional: test login. Set TFE_SEED_TEST_LOGIN=yes in /etc/tfe/tfe.env
     systemctl enable --now tfe
     telnet <host> 4000        # Choice: TempImm   Password: llama
-    ssh -p 4022 play@<host>   # same login, encrypted
     # remote players: open the ports
-    firewall-cmd --permanent --add-port=4000-4001/tcp --add-port=4022/tcp
-    firewall-cmd --reload
+    firewall-cmd --permanent --add-port=4000-4001/tcp && firewall-cmd --reload
+    # optional: SSH (off by default). Uncomment TFE_SSH_PORT=4022 in
+    # /etc/tfe/tfe.env, then:
+    systemctl restart tfe
+    firewall-cmd --permanent --add-port=4022/tcp && firewall-cmd --reload
+    ssh -p 4022 play@<host>   # same login, encrypted
 
 If it will not start, `journalctl -u tfe` says why (status 2 means TFE failed
 to boot, and the unit is not restarted). After fixing it:
 `systemctl reset-failed tfe; systemctl start tfe`.
 
 ## SSH ##
-TFE can also accept players over SSH (libssh, inside the game process). Each
+TFE can also accept players over SSH (libssh, inside the game process). It
+is off until you set a port: TFE_SSH_PORT (or --ssh-port); with the RPM,
+uncomment `TFE_SSH_PORT=4022` in `/etc/tfe/tfe.env` and restart tfe. Each
 SSH session gets the same login screen as telnet; SSH itself lets in one user
 name with no password, and the in-game account password stays the real
 login, now encrypted. Bans, `users`/`who` sites, idle and lost-link handling
@@ -78,7 +83,7 @@ service). A command-line option overrides the variable; empty means default;
 a bad value stops the boot with a message.
 
     Variable               Option                 Default
-    TFE_SSH_PORT           --ssh-port N           off (tfe.env: 4022); off or 0 disables
+    TFE_SSH_PORT           --ssh-port N           off; e.g. 4022 (off or 0 disables)
     TFE_SSH_USER           --ssh-user NAME        play (* = any name)
     TFE_SSH_MAX_SESSIONS   --ssh-max-sessions N   32 (1-1024)
     TFE_SSH_LOGIN_TIMEOUT  --ssh-login-timeout S  30 seconds (5-600) to reach the game
