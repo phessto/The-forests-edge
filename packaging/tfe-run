@@ -3,11 +3,24 @@
 #
 # 1. On first start, seed the world under /var/lib/tfe from the pristine copy
 #    in /usr/share/tfe/world (never overwrites anything; marker var/seeded).
-# 2. Run tfe in /var/lib/tfe/bin, where it finds ../area, ../player, ...
-# 3. Map how tfe exited to an exit status systemd can act on. tfe exits 1 for
+#    On every start, put back any missing tables/ or notes/ file (the game
+#    cannot boot without them) without touching ones that exist.
+# 2. TFE_SEED_TEST_LOGIN=yes (/etc/tfe/tfe.env): make sure the upstream test
+#    login exists as a pair, the "temp" account in files/accounts and the
+#    TempImm character in player/, adding whichever half is missing and
+#    never changing an existing account or player.
+# 3. Pre-flight: TFE stops at boot if any player file names an account that
+#    files/accounts lacks. Check that first and say exactly how to fix it.
+# 4. Run tfe in /var/lib/tfe/bin, where it finds ../area, ../player, ...
+#    Its output goes to the journal with the carriage returns stripped (TFE
+#    ends lines with LF CR, which journald would show as "[blob data]").
+# 5. Map how tfe exited to an exit status systemd can act on. tfe exits 1 for
 #    shutdown, reboot and panic alike, and says which in var/control/:
 #      reboot file                -> exit 1  (Restart=on-failure restarts it)
-#      shutdown "failed boot ..." -> exit 2  (RestartPreventExitStatus=2: no loop)
+#      shutdown "failed boot ..." -> exit 2  (RestartPreventExitStatus=2: no
+#                                    restart loop; the journal shows why, and
+#                                    after fixing it: systemctl reset-failed
+#                                    tfe && systemctl start tfe)
 #      shutdown file              -> exit 0  (clean in-game shutdown, stays down)
 #      none (crash, signal)       -> tfe's status (restarted)
 set -u
@@ -17,29 +30,126 @@ SHARE=/usr/share/tfe
 CONTROL="$ROOT/var/control"
 
 SEEDED="$ROOT/var/seeded"
+ACCOUNTS="$ROOT/files/accounts"
+ACCT_TOOL=/usr/libexec/tfe/tfe-accounts
+
+say() { echo "tfe-run: $*"; }
+fail_boot() {
+    # Exit 2 keeps systemd from restarting into the same failure.
+    say "NOT STARTING TFE: $*"
+    say "After fixing it: systemctl reset-failed tfe; systemctl start tfe"
+    exit 2
+}
 
 # First start only (no var/seeded yet): copy the pristine world in without
 # overwriting anything already there. Later starts leave the world alone, so
 # files an admin or builder removed do not come back.
 if [[ ! -e "$SEEDED" ]]; then
     for d in area files tables notes public_html; do
-        echo "tfe-run: seeding $ROOT/$d from $SHARE/world/$d"
+        say "seeding $ROOT/$d from $SHARE/world/$d"
         cp -rn --preserve=mode,timestamps "$SHARE/world/$d/." "$ROOT/$d/"
     done
     date > "$SEEDED"
 fi
-if [[ "${TFE_SEED_TEST_LOGIN:-no}" == yes ]]; then
-    for f in files/accounts player/TempImm; do
-        if [[ ! -e "$ROOT/$f" ]]; then
-            echo "tfe-run: adding test login file $f"
-            cp --preserve=mode "$SHARE/test-login/$f" "$ROOT/$f" || exit 1
+# Every start: tables and noteboards are required at boot; restore any that
+# are missing (existing ones are never touched).
+for d in tables notes; do
+    for f in $(cd "$SHARE/world/$d" && find . -type f); do
+        if [[ ! -e "$ROOT/$d/$f" ]]; then
+            say "restoring missing $d/${f#./} from $SHARE/world/$d"
+            mkdir -p "$(dirname "$ROOT/$d/$f")"
+            cp -n --preserve=mode,timestamps "$SHARE/world/$d/$f" "$ROOT/$d/$f"
         fi
     done
+done
+
+# files/accounts: TFE writes it itself ("0" plus a blank line when there are
+# no accounts), but cannot boot from a zero-byte one ("Fread_number: bad
+# format"), and logs a scary Open_File bug when it is missing. A zero-byte
+# file is never written by the game or the RPM: it comes from a save cut
+# short (tfe killed mid-write) or from being created by hand. Replace it
+# with the game's previous copy (prev/files/accounts) when that parses, else
+# with an empty account list; the zero-byte file is kept aside.
+if [[ -e "$ACCOUNTS" && ! -s "$ACCOUNTS" ]]; then
+    aside="$ACCOUNTS.empty-$(date +%Y%m%d-%H%M%S)"
+    mv -f "$ACCOUNTS" "$aside"
+    say "files/accounts was empty (0 bytes), which TFE cannot boot from; moved it to ${aside#"$ROOT"/}"
+    if [[ -s "$ROOT/prev/files/accounts" ]] \
+        && "$ACCT_TOOL" -v mode=names "$ROOT/prev/files/accounts" > /dev/null; then
+        cp "$ROOT/prev/files/accounts" "$ACCOUNTS"
+        say "restored files/accounts from the game's previous copy, prev/files/accounts"
+    fi
 fi
+if [[ ! -e "$ACCOUNTS" ]]; then
+    printf '0\n\n' > "$ACCOUNTS" || fail_boot "could not write $ACCOUNTS"
+    say "created an empty account list in files/accounts"
+fi
+
+# Account names in files/accounts, one per line (none if it does not exist).
+account_names() {
+    [[ -s "$ACCOUNTS" ]] || return 0
+    "$ACCT_TOOL" -v mode=names "$ACCOUNTS"
+}
+# The account a player file belongs to (the "Acnt" field, src/save.cc:
+# tag, one length byte, the name), or nothing if it has none.
+player_account() {
+    local off len
+    off=$(LC_ALL=C grep -abo Acnt "$1" | head -n 1 | cut -d: -f1)
+    [[ -n "$off" ]] || return 0
+    len=$(od -An -tu1 -j $((off + 4)) -N1 "$1" | tr -d ' ')
+    [[ -n "$len" ]] || return 0
+    dd if="$1" bs=1 skip=$((off + 5)) count="$len" status=none
+}
+has_account() {   # case-insensitive, as the game compares
+    account_names | grep -qixF -- "$1"
+}
+
+if [[ "${TFE_SEED_TEST_LOGIN:-no}" == yes ]]; then
+    # The test character and its account only work as a pair.
+    if ! has_account temp; then
+        say "adding the test account \"temp\" to files/accounts"
+        tmp="$ACCOUNTS.tfe-run.$$"
+        if [[ -s "$ACCOUNTS" ]]; then
+            "$ACCT_TOOL" -v mode=merge "$ACCOUNTS" "$SHARE/test-login/files/accounts" > "$tmp" \
+                || { rm -f "$tmp"; fail_boot "could not add the temp account to $ACCOUNTS (does it parse?)"; }
+            cp -p "$ACCOUNTS" "$ROOT/prev/files/accounts.before-test-login" 2>/dev/null
+        else
+            cp "$SHARE/test-login/files/accounts" "$tmp" || fail_boot "could not write $ACCOUNTS"
+        fi
+        chmod 0644 "$tmp" && mv -f "$tmp" "$ACCOUNTS" || fail_boot "could not write $ACCOUNTS"
+    fi
+    if [[ ! -e "$ROOT/player/TempImm" ]]; then
+        say "adding the test character player/TempImm"
+        cp --preserve=mode "$SHARE/test-login/player/TempImm" "$ROOT/player/TempImm" \
+            || fail_boot "could not write $ROOT/player/TempImm"
+    fi
+fi
+
+# Pre-flight: every player's account must exist, or TFE panics at boot with
+# "Fread_Char: Non-existent account".
+names="$(account_names)" || fail_boot "$ACCOUNTS does not parse; the previous copy is in $ROOT/prev/files/accounts"
+bad=0
+for p in "$ROOT"/player/*; do
+    [[ -f "$p" ]] || continue
+    a="$(player_account "$p")"
+    [[ -n "$a" ]] || continue
+    grep -qixF -- "$a" <<< "$names" && continue
+    bad=1
+    say "player/${p##*/} belongs to account \"$a\", which is not in files/accounts"
+    if [[ "${p##*/}" == TempImm && "${a,,}" == temp ]]; then
+        say "  That is the upstream test login. Either set TFE_SEED_TEST_LOGIN=yes in"
+        say "  /etc/tfe/tfe.env (tfe-run then adds the temp account), or move it aside:"
+        say "    mv $ROOT/player/TempImm $ROOT/lost+found/"
+    else
+        say "  Restore the account (an earlier files/accounts is in $ROOT/prev/files/),"
+        say "  or move the character aside: mv $p $ROOT/lost+found/"
+    fi
+done
+[[ $bad == 0 ]] || fail_boot "TFE would stop at boot with \"Fread_Char: Non-existent account\" (see above)"
 
 cd "$ROOT/bin" || exit 1
 # shellcheck disable=SC2086 # TFE_FLAGS is a list of flags
-./tfe ${TFE_FLAGS:-} "${TFE_PORT:-4000}"
+./tfe ${TFE_FLAGS:-} "${TFE_PORT:-4000}" > >(sed -u 's/\r//g') 2>&1
 rc=$?
 
 if [[ -e "$CONTROL/reboot" ]]; then
@@ -50,7 +160,18 @@ if [[ -e "$CONTROL/shutdown" ]]; then
     reason="$(cat "$CONTROL/shutdown")"
     echo "tfe-run: shutdown: $reason"
     case "$reason" in
-        *"failed boot sequence"*) exit 2 ;;
+        *"failed boot sequence"*)
+            say "TFE FAILED TO BOOT. files/bugs.txt says:"
+            sed -n '/\*\* STARTING MUD \*\*/h; /\*\* STARTING MUD \*\*/!H; ${x;p}' \
+                "$ROOT/files/bugs.txt" 2>/dev/null | tr -d '\r' | sed 's/^/tfe-run:   /'
+            if grep -q 'Error binding port' "$ROOT/files/bugs.txt" 2>/dev/null; then
+                say "TFE binds the address its hostname ($(uname -n)) resolves to:"
+                say "  $(getent ahostsv4 "$(uname -n)" | awk 'NR==1{print $1}')"
+                say "That address must be on this host and ports ${TFE_PORT:-4000} and $(( ${TFE_PORT:-4000} + 1 )) free"
+                say "(check: ss -ltnp | grep ':${TFE_PORT:-4000}\b')."
+            fi
+            say "After fixing it: systemctl reset-failed tfe; systemctl start tfe"
+            exit 2 ;;
     esac
     exit 0
 fi

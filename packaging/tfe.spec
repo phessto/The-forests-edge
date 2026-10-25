@@ -25,7 +25,7 @@
 
 Name:           tfe
 Version:        1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 # build.sh increments the number above on each run so rpm -U / dnf can upgrade.
 Summary:        The Forest's Edge (TFE) Classic MUD server
 
@@ -48,6 +48,8 @@ BuildRequires:  systemd
 BuildRequires:  systemd-rpm-macros
 %endif
 Requires(pre):  shadow-utils
+# tfe-run and tfe-accounts
+Requires:       /usr/bin/awk coreutils grep sed
 Requires(post): systemd
 Requires(preun): systemd
 Requires(postun): systemd
@@ -93,6 +95,7 @@ install -d -m 0755 %{buildroot}%{_libexecdir}/tfe
 install -p -m 0755 dist/tfe             %{buildroot}%{_libexecdir}/tfe/tfe
 install -p -m 0755 dist/daemon          %{buildroot}%{_libexecdir}/tfe/daemon
 install -p -m 0755 packaging/tfe-run    %{buildroot}%{_libexecdir}/tfe/tfe-run
+install -p -m 0755 packaging/tfe-accounts %{buildroot}%{_libexecdir}/tfe/tfe-accounts
 
 # Pristine world, seeded into /var/lib/tfe by tfe-run. The upstream test
 # login (TempImm / temp account) is kept apart and only seeded on request.
@@ -143,12 +146,21 @@ exit 0
 %post
 %tmpfiles_create tfe.conf
 %systemd_post tfe.service
+if [ "$1" -eq 1 ]; then
+  echo "tfe: installed, not enabled and not started. Next:"
+  echo "tfe:   1. edit /etc/tfe/tfe.env (port; TFE_SEED_TEST_LOGIN=yes adds the"
+  echo "tfe:      upstream test immortal TempImm, password llama)"
+  echo "tfe:   2. systemctl enable --now tfe"
+  echo "tfe:   3. telnet <host> 4000; at 'Choice:' type TempImm, then llama"
+fi
 
 %preun
 %systemd_preun tfe.service
 
 %postun
-%systemd_postun_with_restart tfe.service
+# No restart on upgrade: systemctl restart kills tfe without the in-game
+# save. The new binaries take effect at the next in-game reboot or restart.
+%systemd_postun tfe.service
 
 %files -f tfe-dirs.files
 %doc README
@@ -156,6 +168,7 @@ exit 0
 %{_libexecdir}/tfe/tfe
 %{_libexecdir}/tfe/daemon
 %{_libexecdir}/tfe/tfe-run
+%{_libexecdir}/tfe/tfe-accounts
 %{_datadir}/tfe
 %{_unitdir}/tfe.service
 %{_presetdir}/90-tfe.preset
@@ -168,6 +181,14 @@ exit 0
 %{_localstatedir}/lib/tfe/bin/daemon
 
 %changelog
+* Sun Oct 25 2026 Joshua D <58604081+phessto@users.noreply.github.com> - 1.0-2
+- tfe-run: seed the test login as a pair (temp account + TempImm), on any
+  start; pre-flight check that every player's account exists; replace a
+  zero-byte files/accounts; restore missing tables/notes; show why a boot
+  failed in the journal (output without CRs, bugs.txt excerpt)
+- tfe.service: recreate missing directories before start
+- no service restart on upgrade; %post prints the next steps
+
 * Sat Oct 24 2026 Joshua D <58604081+phessto@users.noreply.github.com> - 1.0-1
 - Initial RPM: 32-bit tfe and daemon, tfe-run wrapper, systemd unit,
   tfe system user, world seeded from /usr/share/tfe into /var/lib/tfe

@@ -3,6 +3,14 @@
 Login: TempImm
 Password: llama
 
+(Modern-build note: TempImm is a character in the account "temp", whose
+password is also llama. At the greeting's "Choice:" prompt type the character
+name TempImm, then the password, then press Return twice. The account menu,
+option 1, is only for creating accounts. The game will not boot if
+player/TempImm is present but files/accounts has no "temp" account, so the
+two files go together. With the RPM, set TFE_SEED_TEST_LOGIN=yes in
+/etc/tfe/tfe.env and (re)start tfe.service to add them; see that file.)
+
 The only 3 rooms are those that are needed for the code to run:
 
 #2: Limbo
@@ -33,4 +41,14 @@ To run by hand, the binaries must be started from a directory beside the data
 (`bin/` next to `area/`, `files/`, `player/`, ...), since every path is
 `../<dir>/`; see the directory list in `packaging/tfe.tmpfiles`.
 The RPM installs `tfe.service` (disabled), running as user `tfe` in
-`/var/lib/tfe/bin`, with settings in `/etc/tfe/tfe.env`.
+`/var/lib/tfe/bin`, with settings in `/etc/tfe/tfe.env`. Installing does not
+start it, and upgrading does not restart it. To use the RPM:
+
+    dnf install tfe-*.x86_64.rpm
+    # optional: test login. Set TFE_SEED_TEST_LOGIN=yes in /etc/tfe/tfe.env
+    systemctl enable --now tfe
+    telnet <host> 4000        # Choice: TempImm   Password: llama
+
+If it will not start, `journalctl -u tfe` says why (status 2 means TFE failed
+to boot, and the unit is not restarted). After fixing it:
+`systemctl reset-failed tfe; systemctl start tfe`.

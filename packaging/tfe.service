@@ -13,7 +13,14 @@
 #   Data:        /var/lib/tfe/{area,files,tables,player,notes,...} (tfe:tfe)
 #   Seed world:  /usr/share/tfe/world (copied in on first start by tfe-run)
 #   Settings:    /etc/tfe/tfe.env    (port, lock flags, test login)
-#   Logs:        /var/lib/tfe/files/bugs.txt and logs/; stderr to the journal
+#   Logs:        /var/lib/tfe/files/bugs.txt and logs/; game output and
+#                tfe-run's checks go to the journal (journalctl -u tfe)
+#
+# Failed boot
+# -----------
+# If TFE cannot boot (or tfe-run's pre-flight finds a problem) the unit fails
+# with status 2 and is not restarted; `journalctl -u tfe` says why. After
+# fixing it: systemctl reset-failed tfe; systemctl start tfe
 #
 # Stopping
 # --------
@@ -33,6 +40,8 @@ User=tfe
 Group=tfe
 EnvironmentFile=-/etc/tfe/tfe.env
 WorkingDirectory=/var/lib/tfe/bin
+# Recreate any missing game directory (as root, hence the +) before tfe-run.
+ExecStartPre=+/usr/bin/systemd-tmpfiles --create tfe.conf
 ExecStart=/usr/libexec/tfe/tfe-run
 
 Restart=on-failure
