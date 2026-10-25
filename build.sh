@@ -284,9 +284,9 @@ if [[ -d "$OUTPUT_DIR/rpm" ]]; then
     ls -1 "$OUTPUT_DIR"/rpm/*.rpm 2>/dev/null | sed 's/^/  /' || true
 fi
 echo ""
-echo "Install: dnf install $OUTPUT_DIR/rpm/tfe-*.x86_64.rpm   (pulls 32-bit glibc/libstdc++)"
+echo "Install: dnf install $OUTPUT_DIR/rpm/tfe-*.x86_64.rpm   (pulls 32-bit glibc/libstdc++/libssh)"
 echo "Then:    edit /etc/tfe/tfe.env (TFE_SEED_TEST_LOGIN=yes for the TempImm/llama test login),"
-echo "         systemctl enable --now tfe.service   (telnet <host> 4000)"
+echo "         systemctl enable --now tfe.service   (telnet <host> 4000, ssh -p 4022 play@<host>)"
 echo ""
 echo "If you still see dangling <none> images after an older build:"
 echo "  podman image prune -f && ./build.sh -r"
