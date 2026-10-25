@@ -1194,7 +1194,7 @@ void do_shout( char_data* ch, const char *argument )
  */
 
 
-static void tell_message( char_data* ch, char* msg, char_data* victim, char *s = 0 )
+static void tell_message( char_data* ch, const char* msg, char_data* victim, const char *s = 0 )
 {
   char tmp  [ THREE_LINES ];
 
@@ -1441,7 +1441,7 @@ static void trigger_say( char_data* ch, char_data* mob, const char *argument )
 }
 
 
-static void ic_tell( char_data* ch, const char *argument, char* verb,
+static void ic_tell( char_data* ch, const char *argument, const char* verb,
 		     tell_data *player_data::*list, bool silent  )
 {
   char              buf  [ MAX_STRING_LENGTH ];

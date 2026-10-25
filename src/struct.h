@@ -811,7 +811,7 @@ void   lose_level         ( char_data *ch, bool );
 void   make_tracks        ( char_data*, room_data*, int );
 void   modify_reputation  ( char_data*, char_data*, int );
 bool   obj_clss_arg       ( char_data*, const char*&,
-			    obj_clss_data*, obj_data*, char*, int& );
+			    obj_clss_data*, obj_data*, const char*, int& );
 void   show_resists       ( char_data*, char_data*, bool = true );
 bool   plague             ( char_data *ch, int duration, bool consume );
 bool   poison             ( char_data *ch, int level, int duration, bool consume );

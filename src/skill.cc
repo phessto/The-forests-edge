@@ -230,7 +230,7 @@ bool char_data :: check_skill( int i, int base )
  */
 
 
-static char *consider_string( double ratio )
+static const char *consider_string( double ratio )
 {
   if( ratio > 16 )  return "Attacking and suicide are equivalent.\n\r";
   if( ratio > 8 )   return "You would require divine intervention.\n\r";

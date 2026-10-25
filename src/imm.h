@@ -79,7 +79,7 @@ extern char const*  imm_title        [ ];
 
 
 bool   has_permission  ( const char_data*, int*, bool = false );
-bool   mortal          ( char_data*, char* );
+bool   mortal          ( char_data*, const char* );
 int    invis_level     ( const char_data * );
 bool   privileged      ( const char_data *, int = LEVEL_APPRENTICE );
 bool   has_holylight   ( const char_data* );

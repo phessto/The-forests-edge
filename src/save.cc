@@ -11,7 +11,7 @@ typedef class Save_Entry  save_entry;
 class Save_Entry
 {
 public:
-  char*             name;
+  const char*       name;
   char              type;
   int             length;
   void*             pntr;
@@ -1349,8 +1349,8 @@ static void null_object( FILE* fp, Content_Array& array, Save_Data *save, char* 
 {
   char      buf1  [ ONE_LINE ];
   char      buf2  [ ONE_LINE ];
-  char*    text1  = "End!";
-  char*    text2  = "Cntn";
+  const char* text1  = "End!";
+  const char* text2  = "Cntn";
   int          i;
   int          j;
 

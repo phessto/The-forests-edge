@@ -459,7 +459,7 @@ void show_who( char_data *ch, bool pager, bool bw_titles )
     
       clan_data *clan = wch->pcdata->pfile->clan;
       wizard_data *imm    = wizard( wch );
-      char *abbrev = "  ";
+      const char *abbrev = "  ";
     
       if( wch->Level() >= LEVEL_APPRENTICE ) {
         const char *lvl_title = ( imm

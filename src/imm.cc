@@ -54,7 +54,7 @@ bool has_holylight( const char_data *ch )
 }
 
 
-bool mortal( char_data* ch, char* command )
+bool mortal( char_data* ch, const char* command )
 {
   if( !ch->species && ch->Level() >= LEVEL_APPRENTICE ) 
     return false;

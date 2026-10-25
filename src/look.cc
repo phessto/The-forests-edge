@@ -1415,7 +1415,7 @@ void show( char_data* ch, thing_data* thing )
  */
 
 
-static char *room_flags( room_data* room )
+static const char *room_flags( room_data* room )
 {
   char *tmp = static_string( );
   int t;

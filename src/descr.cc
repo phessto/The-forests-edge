@@ -424,7 +424,7 @@ const char* after_descr( obj_clss_data* obj )
 
 
 bool edit_extra( extra_array& array, wizard_data* wizard, int offset,
-		 const char *argument, char* text )
+		 const char *argument, const char* text )
 {
   char            arg  [ MAX_INPUT_LENGTH ];
   extra_data*      ed;

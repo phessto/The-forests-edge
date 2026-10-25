@@ -30,7 +30,7 @@ static void  record_time         ( time_data& );
 /* Definition of the signal handler. */
 void sighandler( int sig )
 {
-  char* name;
+  const char* name;
 
   switch( sig ) {
   case SIGPIPE :   name = "broken pipe";  break;

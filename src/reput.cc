@@ -349,7 +349,7 @@ void do_wanted( char_data*, const char * )
  */
 
 
-static char *relation_string( int rel )
+static const char *relation_string( int rel )
 {
   if( rel > 90 )  return "+++";		// 10%
   else if( rel > 75 )  return "+ +";	// 15%

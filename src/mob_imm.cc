@@ -346,7 +346,7 @@ void do_mfind( char_data* ch, const char *argument )
  */
 
 
-static char *status( mob_data* mob )
+static const char *status( mob_data* mob )
 {
   if( mob->leader
     && is_set( mob->status, STAT_PET ) ) {

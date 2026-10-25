@@ -8,7 +8,10 @@
 #include "struct.h"
 
 
-char *const empty_string = "";
+// Many fields are char* and default to empty_string, so it keeps its old
+// type. It still points at the read-only literal: a write through it
+// faults exactly as it did before.
+char *const empty_string = const_cast<char*>( "" );
 
 
 #define STATIC_STRINGS 30

@@ -20,8 +20,8 @@ class direction_type
  public:
   const char *const name;
   int            reverse;
-  char*      arrival_msg;  
-  char*            where;
+  const char* arrival_msg;  
+  const char*      where;
 };
 
 

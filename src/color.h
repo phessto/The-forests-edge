@@ -91,7 +91,7 @@ typedef const char* term_func  ( int );
 class Term_Type
 {
   public:
-    char*                name;
+    const char*          name;
     int               entries;
     const char**       format;
     term_func*          codes;

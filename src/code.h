@@ -48,7 +48,7 @@ typedef const void* cfunc     ( const void** );
 class Var_Data
 {
 public:
-  char*        name;
+  const char*  name;
   void*        pointer;
   arg_enum     type;  
 };

@@ -41,7 +41,7 @@ public:
 bool  obj_descr     ( char_data*, thing_array&, char* );
 bool  room_descr    ( char_data*, extra_data*, char* );
 void  show_extras   ( char_data*, const extra_array& );
-bool  edit_extra    ( extra_array&, wizard_data*, int, const char *, char* );
+bool  edit_extra    ( extra_array&, wizard_data*, int, const char *, const char* );
 void  read_extras   ( FILE*, extra_array& );
 void  write_extras  ( FILE*, const extra_array& );
 void  obj_act_spam  ( int, char_data*, obj_data*, char_data*,

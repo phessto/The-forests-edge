@@ -1095,7 +1095,7 @@ void do_oload( char_data* ch, const char *argument )
 
 bool obj_clss_arg( char_data *ch, const char *& argument,
 		   obj_clss_data *clss, obj_data *obj,
-		   char *name, int& val )
+		   const char *name, int& val )
 {
   if( !matches( argument, name ) )
     return false;
