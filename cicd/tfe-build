@@ -98,6 +98,8 @@ def read(wait=1.5):
             break
         out += d
         end = max(end, time.time() + 0.4)
+    global raw
+    raw = out
     out = re.sub(rb"\xff[\xfb-\xfe].|\xff[\xf0-\xfa]", b"", out)
     return re.sub(r"\x1b\[[0-9;]*[A-Za-z]", "", out.decode("latin-1")).replace("\r", "")
 
@@ -124,6 +126,9 @@ print("     world:", " ".join(f"{k}={v}" for k, v in counts.items()))
 need(counts.get("Areas", 0) > 0 and counts.get("Rooms", 0) > 0, "world loaded (areas and rooms > 0)")
 need("You leave north" in cmd("north"), "walked north")
 need("Vnum: 33750" in cmd("look"), "look shows the next room")
+# TFE ends lines with LF CR. World text with CR LF CR LF in it (the damaged
+# 2009 area files) shows as a blank line after every line.
+need(b"\r\n\r\n" not in raw, "room description is not double-spaced")
 need("TempImm" in cmd("who"), "who lists the player")
 need("saved" in cmd("save"), "save")
 cmd("shutdown", 5)
