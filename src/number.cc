@@ -633,7 +633,7 @@ int number_range( int from, int to )
   static int value;
   static int width = 0;
 
-  register int bits, power, number;
+  int bits, power, number;
   
   if( ( to -= from ) <= 0 )
     return from;
