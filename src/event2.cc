@@ -330,7 +330,7 @@ bool behave( char_data *ch, exit_data *exit, bool urgent )
 {
   if( ch->pcdata
       || is_entangled( ch )
-      || ch->leader && !ch->leader->species
+      || (ch->leader && !ch->leader->species)
       || opponent( ch ) )
     return false;
 

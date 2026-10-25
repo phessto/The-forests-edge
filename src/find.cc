@@ -451,7 +451,7 @@ visible_array *several_visible( char_data* ch, const char *argument, const char 
 	  }
 	}
 	if( !visible->Seen( ch )
-	    || *tmp && !( score = is_name( tmp, visible->Keywords( ch ), scored ) )
+	    || (*tmp && !( score = is_name( tmp, visible->Keywords( ch ), scored ) ))
 	    || ( number == INT_MIN && ch == visible ) )
 	  continue;
 	if( !scored ) {

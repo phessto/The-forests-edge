@@ -266,7 +266,7 @@ void enter_room( char_data* ch )
       || ch->pcdata->pfile->last_on > boot_time		// logged on since reboot
       || ch->Level() >= LEVEL_APPRENTICE
       || !is_set( ch->pcdata->pfile->flags, PLR_PORTAL )
-      || prison && ch->was_in_room == prison ) {
+      || (prison && ch->was_in_room == prison) ) {
     ch->To( ch->was_in_room ? ch->was_in_room : get_temple( ch ) );
     return;
   }

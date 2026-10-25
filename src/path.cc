@@ -89,7 +89,7 @@ void mark_range( thing_data *th, int range, path_func *function,
         exit_data *exit = room->exits[k];
 	exit_data *back = reverse( exit );
 	if( !back
-	    || ignore && ignore->includes( back ) )
+	    || (ignore && ignore->includes( back )) )
 	  continue;
         room_data *to_room = exit->to_room;
         if( to_room->distance == INT_MAX ) {
@@ -1025,7 +1025,7 @@ static bool plot( char (*map)[143], int (*color)[143], int (*nums)[143],
   }
 
   if( map[y][x] != ' ' ) {
-    if( map[y][x] != letter || vnum > 0 && nums[y][x] != vnum ) {
+    if( map[y][x] != letter || (vnum > 0 && nums[y][x] != vnum) ) {
       color[y][x] = COLOR_BOLD_RED;
     }
     if( map[y][x] != letter && map[y][x] != '*' ) {
@@ -1264,7 +1264,7 @@ void show_map( char_data* ch, room_data *room, int length, int width, bool mono,
   int k = 0;
   int s = 0;
 
-  for( int i = 0; i <= bottom-top || key[k] || t > 0 && !mono; ++i ) {
+  for( int i = 0; i <= bottom-top || key[k] || (t > 0 && !mono); ++i ) {
     *buf = '\0';
     int b = 0;
     int last_color = COLOR_DEFAULT;

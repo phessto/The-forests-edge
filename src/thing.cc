@@ -59,8 +59,8 @@ void visible_data :: Show( int num )
 bool standard_delay( char_data *ch, const thing_array& array, const obj_data *container )
 {
   if( array.is_empty( )
-      || container && ( !container->Is_Valid( ) 
-			|| ch == container->array->where ) )
+      || (container && ( !container->Is_Valid( ) 
+			|| ch == container->array->where )) )
     return false;
 
   set_delay( ch, min( 15, 3 + 2*array.size ) );

@@ -244,7 +244,7 @@ bool garrote( char_data *ch, char_data *victim )
   }
   
   if( ch->Seen( victim ) ||
-      victim->position > POS_SLEEPING && victim->aggressive.includes( ch ) ) {
+      (victim->position > POS_SLEEPING && victim->aggressive.includes( ch )) ) {
     fsend( ch, "%s is too wary of you for garrote to succeed.", victim );
     return false;
   }
@@ -383,7 +383,7 @@ bool backstab( char_data *ch, char_data *victim )
   }
 
   if( ch->Seen( victim ) ||
-      victim->position > POS_SLEEPING && victim->aggressive.includes( ch ) ) {
+      (victim->position > POS_SLEEPING && victim->aggressive.includes( ch )) ) {
     fsend( ch, "%s is too wary of you for backstab to succeed.", victim );
     return false;
   }
@@ -512,8 +512,8 @@ void do_steal( char_data* ch, const char *argument )
 
   if( obj ) {
     if( obj->pIndexData->item_type != ITEM_CONTAINER
-	|| !is_set( obj->value[1], CONT_CLOSED )
-	   && obj->contents.is_empty( ) ) {
+	|| (!is_set( obj->value[1], CONT_CLOSED )
+	   && obj->contents.is_empty( )) ) {
       if( obj->array == &victim->wearing ) {
 	if( victim->position > POS_SLEEPING ) {
 	  fsend( ch, "You can't steal something %s is wearing!", victim );
@@ -599,7 +599,7 @@ void do_steal( char_data* ch, const char *argument )
   }
   
   if( !obj->droppable( 0 )
-      || obj->array == &victim->wearing && !obj->removable( 0 )
+      || (obj->array == &victim->wearing && !obj->removable( 0 ))
       || is_set( obj->extra_flags, OFLAG_NO_STEAL ) ) {
     fsend( ch, "You can't pry %s away from %s.", obj, victim );
     return;

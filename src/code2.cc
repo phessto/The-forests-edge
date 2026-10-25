@@ -350,8 +350,8 @@ arg_type *read_expression( const char*& code, op_type *up, const arg_enum type )
       }
       if( !oper->func->func_call
 	  || ( oper->func->arg[0] != NONE
-	       && ( oper->func->arg[0] != ANY && oper->func->arg[0] != oper->arg[0]->type
-		    || oper->func->arg[1] != ANY && oper->func->arg[1] != oper->arg[1]->type ) ) ) {
+	       && ( (oper->func->arg[0] != ANY && oper->func->arg[0] != oper->arg[0]->type)
+		    || (oper->func->arg[1] != ANY && oper->func->arg[1] != oper->arg[1]->type) ) ) ) {
 	snprintf( error_buf, MAX_INPUT_LENGTH,
 		  "Bad argument types for operator '%s'.",
 		  op_list[oper->func - op_list].name );
@@ -376,8 +376,8 @@ arg_type *read_expression( const char*& code, op_type *up, const arg_enum type )
     }
     if( !oper->func->func_call
 	|| ( oper->func->arg[0] != NONE
-	     && ( oper->func->arg[0] != ANY && oper->func->arg[0] != oper->arg[0]->type
-		  || oper->func->arg[1] != ANY && oper->func->arg[1] != oper->arg[1]->type ) )  ){
+	     && ( (oper->func->arg[0] != ANY && oper->func->arg[0] != oper->arg[0]->type)
+		  || (oper->func->arg[1] != ANY && oper->func->arg[1] != oper->arg[1]->type) ) )  ){
       snprintf( error_buf, MAX_INPUT_LENGTH,
 		"Bad argument types for operator '%s'.",
 		op_list[oper->func - op_list].name );

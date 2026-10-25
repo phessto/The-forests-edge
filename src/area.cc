@@ -628,7 +628,7 @@ void do_areas( char_data* ch, const char *argument )
   for( area = area_list; area; area = area->next ) {
     if( ( all || area->help != empty_string )
 	&& area->status == AREA_OPEN
-	&& ( !level || area->level >= start && area->level <= stop ) ) {
+	&& ( !level || (area->level >= start && area->level <= stop) ) ) {
       areas[count] = area;
       if( !strncasecmp( area->name, "the ", 4 ) ) {
 	area_names[count] = area->name + 4;
@@ -877,7 +877,7 @@ void do_areas( char_data* ch, const char *argument )
     area = areas[ sorted[i] ];
     const char *name = area_names[ sorted[i] ];
     if( !strncasecmp( name, argument, length )
-	|| name != area->name && !strncasecmp( area->name, argument, length ) ) {
+	|| (name != area->name && !strncasecmp( area->name, argument, length )) ) {
       page( ch, "         Name: %s\n\r", area->name );
       page( ch, "      Creator: %s\n\r", area->creator );
       
@@ -927,8 +927,8 @@ void do_roomlist( char_data* ch, const char *argument )
     bool found = false;
     bool stuff = false;
 
-    if( !noncomments && !nonmobs && !nonspelling
-	|| *room2->Comments( ) && comments ) {
+    if( (!noncomments && !nonmobs && !nonspelling)
+	|| (*room2->Comments( ) && comments) ) {
       found = true;
       page( ch, "%-6d   ", room2->vnum );
       page_color( ch, COLOR_ROOM_NAME, "%s\n\r", room2->name );

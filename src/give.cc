@@ -139,8 +139,8 @@ void do_give( char_data* ch, const char *argument )
   }
 
   if( victim->pcdata
-      && ( ch->pcdata && ch->pcdata != victim->pcdata
-	   || is_set( ch->status, STAT_PET ) && ch->leader->pcdata && ch->leader->pcdata != victim->pcdata )
+      && ( (ch->pcdata && ch->pcdata != victim->pcdata)
+	   || (is_set( ch->status, STAT_PET ) && ch->leader->pcdata && ch->leader->pcdata != victim->pcdata) )
       && get_trust( ch ) < LEVEL_APPRENTICE
       && is_set( victim->pcdata->pfile->flags, PLR_NO_GIVE ) ) {
     fsend( ch, "%s politely refuses your gift.", victim );

@@ -157,11 +157,11 @@ void do_disarm( char_data* ch, const char * )
     }
   }
 
-  if( !wield || secondary && number_range( 1, 4 ) == 1 )
+  if( !wield || (secondary && number_range( 1, 4 ) == 1) )
     wield = secondary;
 
   if( skill == 10 &&
-      ( !wield || shield && number_range( 1, 5 ) == 1 ) )
+      ( !wield || (shield && number_range( 1, 5 ) == 1) ) )
     wield = shield;
 
   if( !wield ) {
@@ -410,7 +410,7 @@ void do_melee( char_data* ch, const char *arg )
       if( rch->fighting == ch
 	  || ch->fighting == rch
 	  || rch->fighting->leader == ch
-	  || is_same_group( rch->fighting, ch ) && !is_same_group( rch, ch ) ) {
+	  || (is_same_group( rch->fighting, ch ) && !is_same_group( rch, ch )) ) {
 	if( !found ) {
 	  found = true;
 	  remove_bit( ch->status, STAT_WIMPY );

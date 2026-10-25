@@ -1520,7 +1520,7 @@ void do_rowhere( char_data* ch, const char *argument )
 
   for( int index = 1; index <= obj_clss_max; ++index ) {
     if( !( obj_clss = obj_index_list[index] )
-	|| vnum > 0 && index != vnum ) {
+	|| (vnum > 0 && index != vnum) ) {
       continue;
     }
     
@@ -1832,7 +1832,7 @@ void do_rmwhere( char_data* ch, const char *argument )
 
   for( int index = 1; index <= species_max; ++index ) { 
     if( !( species = species_list[index] )
-	|| vnum > 0 && index != vnum ) {
+	|| (vnum > 0 && index != vnum) ) {
       continue;
     }
     

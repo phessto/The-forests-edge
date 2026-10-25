@@ -676,9 +676,9 @@ bool cast_triggers( int spell, char_data *ch,
 	const int result = action->execute( );
 	pop( );
 	if( !result
-	    || ch && !ch->Is_Valid( )
-	    || victim && !victim->Is_Valid( )
-	    || obj && !obj->Is_Valid( )
+	    || (ch && !ch->Is_Valid( ))
+	    || (victim && !victim->Is_Valid( ))
+	    || (obj && !obj->Is_Valid( ))
 	    )
 	  return true;
 	if( *action->target )
@@ -769,7 +769,7 @@ bool cast_triggers( int spell, char_data *ch,
 	pop( );
 	if( !result
 	    || !victim->Is_Valid( )
-	    || ch && !ch->Is_Valid( )
+	    || (ch && !ch->Is_Valid( ))
 	    )
 	  return true;
 	if( *mprog->string )
@@ -794,8 +794,8 @@ bool cast_triggers( int spell, char_data *ch,
 	pop( );
 	if( !result
 	    || !obj->Is_Valid( )
-	    || victim && !victim->Is_Valid( )
-	    || ch && !ch->Is_Valid( )
+	    || (victim && !victim->Is_Valid( ))
+	    || (ch && !ch->Is_Valid( ))
 	    )
 	  return true;
 	if( *oprog->target )

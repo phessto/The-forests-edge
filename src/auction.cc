@@ -184,8 +184,8 @@ void do_auction( char_data* ch, const char *argument )
   
   if( !strcasecmp( arg, "undo" ) ) {
     int slot = -1;
-    if( *argument && ( !number_arg( argument, slot )
-		       || slot < 0 )
+    if( (*argument && ( !number_arg( argument, slot )
+		       || slot < 0 ))
 	|| *argument ) {
       send( ch, "Syntax: Auction undo [<slot>]\n\r" );
       return;

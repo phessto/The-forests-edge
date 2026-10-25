@@ -185,7 +185,7 @@ static void msg_other( char_data *victim, char_data *ch, const char* dt,
     if( !( rch = character( victim->array->list[i] ) )
 	|| rch == victim
 	|| !rch->link
-	|| rch != ch && !is_set( rch->pcdata->message, flag )
+	|| (rch != ch && !is_set( rch->pcdata->message, flag ))
 	|| !rch->Can_See( ) )
       continue;
     snprintf( tmp, MAX_STRING_LENGTH, "%s %s%s%s %s%c", dt,
@@ -264,7 +264,7 @@ const char *condition_prep( char_data *ch )
 const char *condition_word( char_data* ch )
 {
   if( ch->hit <= -11
-      || ch->species && ch->species->dies_at_zero( ) && ch->hit <= 0 )
+      || (ch->species && ch->species->dies_at_zero( ) && ch->hit <= 0) )
     return "DEAD!";
   if( ch->hit <= -6 )
     return "mortally wounded";
@@ -316,7 +316,7 @@ const char *condition_short( char_data* ch, char_data* victim )
 const char *condition_short( char_data* ch )
 {
   if( ch->hit <= -11
-      || ch->species && ch->species->dies_at_zero( ) && ch->hit <= 0 )
+      || (ch->species && ch->species->dies_at_zero( ) && ch->hit <= 0) )
     return "DEAD!";
   if( ch->hit <= -6 )
     return "dying";
@@ -398,7 +398,7 @@ bool inflict( char_data* victim, char_data* ch, int dam, const char *dt, bool pa
       victim->position = POS_SLEEPING;
     }
     if( !passive
-	|| !slept && number_range( 1, 2 ) == 1 ) {
+	|| (!slept && number_range( 1, 2 ) == 1) ) {
       if( victim->position == POS_SLEEPING ) {
 	send( victim, "You are suddenly awakened by the feeling of pain.\n\r" );
 	fsend_seen( victim, "%s wakes up in obvious pain.", victim );

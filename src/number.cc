@@ -1243,8 +1243,8 @@ static double_complex fevaluate( const char *string, bool& error, double v1, dou
 
 static bool qround( double x )
 {
-  if( x > 0 && x < FUNC_EPSILON
-      || x < 0 && x > -FUNC_EPSILON )
+  if( (x > 0 && x < FUNC_EPSILON)
+      || (x < 0 && x > -FUNC_EPSILON) )
     return true;
 
   return false;

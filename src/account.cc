@@ -186,7 +186,7 @@ static account_data *existing_email( const char *argument, const account_data *s
 {
   for( int i = 0; i < max_account; i++ )
     if( !strcasecmp( account_list[i]->email, argument ) 
-	|| account_list[i] != skip && !strcasecmp( account_list[i]->new_email, argument ) )
+	|| (account_list[i] != skip && !strcasecmp( account_list[i]->new_email, argument )) )
       return account_list[i];
 
   return 0;

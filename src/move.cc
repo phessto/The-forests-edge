@@ -173,9 +173,9 @@ bool char_data :: can_hold_light( ) const
   int swim = get_skill( SKILL_SWIMMING );
 
   return !( is_set( tflags, TFLAG_SUBMERGED )
-	    || swim < 10 && is_set( tflags, TFLAG_DEEP ) && is_set( tflags, TFLAG_FLOWING )
-	    || swim < 7 && is_set( tflags, TFLAG_DEEP )
-	    || swim < 7 && Size() < SIZE_DOG );
+	    || (swim < 10 && is_set( tflags, TFLAG_DEEP ) && is_set( tflags, TFLAG_FLOWING ))
+	    || (swim < 7 && is_set( tflags, TFLAG_DEEP ))
+	    || (swim < 7 && Size() < SIZE_DOG) );
 }
 
 
@@ -489,7 +489,7 @@ bool char_data :: Can_Move( char_data *lead,
 	    }
 	  }
 	  if( !result
-	      || !mprog && ( rch->aggressive.includes( mover ) || rch->aggressive.includes( this ) ) ) {
+	      || (!mprog && ( rch->aggressive.includes( mover ) || rch->aggressive.includes( this ) )) ) {
 	    act( this, prog_msg( mprog, blocking_msg[0] ),
 		 this, rch, 0, 0, exit );
 	    act_notchar( prog_msg( mprog, blocking_msg[1] ),
@@ -503,7 +503,7 @@ bool char_data :: Can_Move( char_data *lead,
   }
 
   const bool forced = is_set( status, STAT_FORCED )
-                      || mount && is_set( mount->status, STAT_FORCED );
+                      || (mount && is_set( mount->status, STAT_FORCED ));
 
   // Can't move to/from unopen areas.
   if( from_room->area != to_room->area
@@ -557,13 +557,13 @@ bool char_data :: Can_Move( char_data *lead,
     if( !sub_from
 	&& sub_to
 	&& ( !can_breathe_underwater( )
-	     || mount && !mount->can_breathe_underwater( ) ) ) {
+	     || (mount && !mount->can_breathe_underwater( )) ) ) {
       return false;
     }
     // Entering/leaving deep water.
-    if( ( deep_from && !deep_to || !deep_from && deep_to )
+    if( ( (deep_from && !deep_to) || (!deep_from && deep_to) )
 	&& ( !is_affected( AFF_WATER_WALKING )
-	     || mount && !mount->is_affected( AFF_WATER_WALKING ) ) ) {
+	     || (mount && !mount->is_affected( AFF_WATER_WALKING )) ) ) {
       return false;
     }
   }
@@ -641,7 +641,7 @@ bool char_data :: Can_Move( char_data *lead,
     } else if( is_set( from_flags, TFLAG_DEEP ) ) {
       // River or surface.
       if( mover->can_float()
-	  || !mover->species && mover->is_affected( AFF_WATER_WALKING )
+	  || (!mover->species && mover->is_affected( AFF_WATER_WALKING ))
 	  || flies ) {
 	move_from = ( mount ? 2 : 1 );
       } else if( !mover->can_swim() ) {
@@ -651,7 +651,7 @@ bool char_data :: Can_Move( char_data *lead,
     } else {
       // Shallows.
       if( mover->can_float()
-	  || !mover->species && mover->is_affected( AFF_WATER_WALKING )
+	  || (!mover->species && mover->is_affected( AFF_WATER_WALKING ))
 	  || flies ) {
 	move_from = ( mount ? 2 : 1 );
       } else if( mover->Size() < SIZE_DOG ) {
@@ -697,7 +697,7 @@ bool char_data :: Can_Move( char_data *lead,
 	if( type == MOVE_WALK )
 	  type = MOVE_FLY;
       } else if( mover->can_float()
-		 || !mover->species && mover->is_affected( AFF_WATER_WALKING ) ) {
+		 || (!mover->species && mover->is_affected( AFF_WATER_WALKING )) ) {
 	move_to = ( mount ? 2 : 1 );
 	if( type == MOVE_WALK )
 	  type = MOVE_GLIDE;
@@ -717,7 +717,7 @@ bool char_data :: Can_Move( char_data *lead,
 	if( type == MOVE_WALK )
 	  type = MOVE_FLY;
       } else if( mover->can_float()
-		 || !mover->species && mover->is_affected( AFF_WATER_WALKING ) ) {
+		 || (!mover->species && mover->is_affected( AFF_WATER_WALKING )) ) {
 	move_to = ( mount ? 2 : 1 );
 	if( type == MOVE_WALK )
 	  type = MOVE_GLIDE;
@@ -1613,9 +1613,9 @@ bool move_char( char_data *ch, int door, bool flee, bool fall )
 		  // Is other's follow message identical?
 		  if( olead != leader
 		      || other->species != follower->species
-		      || !follower->mount && !other->mount && otype != type
-		      || follower->mount && !other->mount
-		      || !follower->mount && other->mount
+		      || (!follower->mount && !other->mount && otype != type)
+		      || (follower->mount && !other->mount)
+		      || (!follower->mount && other->mount)
 		      || !look_same( rch, follower, other, true ) )
 		    continue;
 
@@ -1759,9 +1759,9 @@ bool move_char( char_data *ch, int door, bool flee, bool fall )
 		// Is other's follow message identical?
 		if( olead != leader
 		    || other->species != follower->species
-		    || !follower->mount && !other->mount && otype != type
-		    || follower->mount && !other->mount
-		    || !follower->mount && other->mount
+		    || (!follower->mount && !other->mount && otype != type)
+		    || (follower->mount && !other->mount)
+		    || (!follower->mount && other->mount)
 		    || !look_same( rch, follower, other, true ) )
 		  continue;
 		

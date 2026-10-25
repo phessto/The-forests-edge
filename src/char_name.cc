@@ -841,13 +841,13 @@ bool look_same( char_data *ch, char_data* ch1, char_data* ch2, bool auction )
       return false;
     }
     
-    if( ch1->mount && !ch2->mount
-	|| ch2->mount && !ch1->mount ) {
+    if( (ch1->mount && !ch2->mount)
+	|| (ch2->mount && !ch1->mount) ) {
       return false;
     }
     
-    if( ch1->rider && !ch2->rider
-	|| ch2->rider && !ch1->rider ) {
+    if( (ch1->rider && !ch2->rider)
+	|| (ch2->rider && !ch1->rider) ) {
       return false;
     }
     

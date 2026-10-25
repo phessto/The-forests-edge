@@ -272,7 +272,7 @@ int find_command( const char_data *ch, const char *argument, bool exact )
   int length = strlen( argument );
   int cmd = search( command_table, table_max[ TABLE_COMMAND ], argument );
 
-  if( cmd < 0 || ch && !has_permission( ch, command_table[cmd].level ) ) {
+  if( cmd < 0 || (ch && !has_permission( ch, command_table[cmd].level )) ) {
     if( exact )
       return -1;
     if( cmd < 0 )

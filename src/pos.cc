@@ -95,7 +95,7 @@ int char_data :: mod_position( ) const
 	return ( position < POS_STANDING ) ? position : POS_FLYING;
       }
       if( can_float()
-	  || !species && is_affected( AFF_WATER_WALKING ) ) {
+	  || (!species && is_affected( AFF_WATER_WALKING )) ) {
 	return ( position < POS_STANDING ) ? position : POS_HOVERING;
       }
       if( !can_swim( ) ) {
@@ -114,7 +114,7 @@ int char_data :: mod_position( ) const
       return ( position < POS_STANDING ) ? position : POS_FLYING;
     }
     if( can_float()
-	|| !species && is_affected( AFF_WATER_WALKING ) ) {
+	|| (!species && is_affected( AFF_WATER_WALKING )) ) {
       return ( position < POS_STANDING ) ? position : POS_HOVERING;
     }
     if( Size() < SIZE_DOG ) {
@@ -164,7 +164,7 @@ const char *char_data :: position_name( char_data *ch ) const
   if( pos != POS_STANDING
       || movement < 0
       || !*movement_table[ movement ].position
-      || ch && ch->is_affected( AFF_HALLUCINATE ) )
+      || (ch && ch->is_affected( AFF_HALLUCINATE )) )
     return pos_name[ pos ];
 
   return movement_table[ movement ].position;
@@ -372,7 +372,7 @@ void update_pos( char_data* ch )
   }
 
   if( ch->hit <= -11
-      || ch->species && ch->species->dies_at_zero( ) && ch->hit <= 0 )
+      || (ch->species && ch->species->dies_at_zero( ) && ch->hit <= 0) )
     ch->position = POS_DEAD;
   else if( ch->hit <= -6 )
     ch->position = POS_MORTAL;

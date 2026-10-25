@@ -437,7 +437,7 @@ void update_links( )
      idling and interpret the command.  Otherwise get the nanny on his ass. */
   for( link = link_list; link; link = link_next ) {
     link_next = link->next;
-    if( link->command = ( receive = link->receive ) ) {
+    if( (link->command = ( receive = link->receive )) ) {
       ampersand( receive );
       if( !receive->cont ) {
 	link->receive = receive->next;
@@ -665,8 +665,8 @@ bool read_link( link_data* link )
 
     // Update telnet command state.
     link->in_option = !link->in_command && link->after_iac && ( c >= WILL && c <= DONT );
-    link->in_command = !link->in_command && link->after_iac && ( c == SB )
-                       || link->in_command && !(link->after_iac && ( c == SE ) );
+    link->in_command = (!link->in_command && link->after_iac && ( c == SB ))
+                       || (link->in_command && !(link->after_iac && ( c == SE ) ));
     link->after_iac = ( c == IAC && !link->after_iac );
   }
 

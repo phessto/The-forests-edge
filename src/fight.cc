@@ -575,8 +575,8 @@ bool switch_victim( char_data* ch, char_data* victim )
     return true;
   }
 
-  if( !( victim->pcdata && is_set( victim->pcdata->pfile->flags, PLR_PARRY )
-	 || victim->active.time != -1 && is_set( victim->status, STAT_WAITING ) )
+  if( !( (victim->pcdata && is_set( victim->pcdata->pfile->flags, PLR_PARRY ))
+	 || (victim->active.time != -1 && is_set( victim->status, STAT_WAITING )) )
       || number_range( 0, 4 ) != 0 )
     return false;
   
@@ -673,18 +673,18 @@ void damage_modifiers( char_data* ch, char_data* victim, obj_data* wield,
   damage += (int) ch->Damroll( wield );
   
   if( wield ) {
-    if( is_set( wield->extra_flags, OFLAG_GOOD ) && is_evil( victim )
-	|| is_set( wield->extra_flags, OFLAG_EVIL ) && is_good( victim ) ) {
+    if( (is_set( wield->extra_flags, OFLAG_GOOD ) && is_evil( victim ))
+	|| (is_set( wield->extra_flags, OFLAG_EVIL ) && is_good( victim )) ) {
       damage += 2;
-    } else if( is_set( wield->extra_flags, OFLAG_GOOD ) && is_good( victim )
-	|| is_set( wield->extra_flags, OFLAG_EVIL ) && is_evil( victim )) {
+    } else if( (is_set( wield->extra_flags, OFLAG_GOOD ) && is_good( victim ))
+	|| (is_set( wield->extra_flags, OFLAG_EVIL ) && is_evil( victim ))) {
       damage -= 2;
     }
-    if( is_set( wield->extra_flags, OFLAG_LAWFUL ) && is_chaotic( victim )
-	|| is_set( wield->extra_flags, OFLAG_CHAOTIC ) && is_lawful( victim ) ) {
+    if( (is_set( wield->extra_flags, OFLAG_LAWFUL ) && is_chaotic( victim ))
+	|| (is_set( wield->extra_flags, OFLAG_CHAOTIC ) && is_lawful( victim )) ) {
       damage += 2;
-    } else if( is_set( wield->extra_flags, OFLAG_LAWFUL ) && is_lawful( victim )
-	|| is_set( wield->extra_flags, OFLAG_CHAOTIC ) && is_chaotic( victim ) ) {
+    } else if( (is_set( wield->extra_flags, OFLAG_LAWFUL ) && is_lawful( victim ))
+	|| (is_set( wield->extra_flags, OFLAG_CHAOTIC ) && is_chaotic( victim )) ) {
       damage -= 2;
     }
   }
@@ -1063,7 +1063,7 @@ bool gouge_attack( char_data *ch, char_data *victim, int& damage )
   if( skill == UNLEARNT
       || ch->is_affected( AFF_HALLUCINATE )
       || !victim->Seen( ch )
-      || victim->species && !is_set( victim->species->act_flags, ACT_HAS_EYES )
+      || (victim->species && !is_set( victim->species->act_flags, ACT_HAS_EYES ))
       || victim->is_affected( AFF_BLIND )
       || skill + ( ch->Dexterity( ) - victim->Dexterity( ) )/ 2 < number_range( 1, 250 ) ) {
     return false;
@@ -1264,18 +1264,18 @@ int damage_armor( char_data *ch, char_data* victim, int loc, int& global, obj_da
 	} else {
 	  absorbed += number_range( 0, val );
 	}
-	if( is_set( armor->extra_flags, OFLAG_GOOD ) && is_evil( ch )
-	    || is_set( armor->extra_flags, OFLAG_EVIL ) && is_good( ch ) ) {
+	if( (is_set( armor->extra_flags, OFLAG_GOOD ) && is_evil( ch ))
+	    || (is_set( armor->extra_flags, OFLAG_EVIL ) && is_good( ch )) ) {
 	  absorbed += 2;
-	} else if( is_set( armor->extra_flags, OFLAG_GOOD ) && is_good( ch )
-		   || is_set( armor->extra_flags, OFLAG_EVIL ) && is_evil( ch )) {
+	} else if( (is_set( armor->extra_flags, OFLAG_GOOD ) && is_good( ch ))
+		   || (is_set( armor->extra_flags, OFLAG_EVIL ) && is_evil( ch ))) {
 	  absorbed -= 2;
 	}
-	if( is_set( armor->extra_flags, OFLAG_LAWFUL ) && is_chaotic( ch )
-	    || is_set( armor->extra_flags, OFLAG_CHAOTIC ) && is_lawful( ch ) ) {
+	if( (is_set( armor->extra_flags, OFLAG_LAWFUL ) && is_chaotic( ch ))
+	    || (is_set( armor->extra_flags, OFLAG_CHAOTIC ) && is_lawful( ch )) ) {
 	  absorbed += 2;
-	} else if( is_set( armor->extra_flags, OFLAG_LAWFUL ) && is_lawful( ch )
-		   || is_set( armor->extra_flags, OFLAG_CHAOTIC ) && is_chaotic( ch ) ) {
+	} else if( (is_set( armor->extra_flags, OFLAG_LAWFUL ) && is_lawful( ch ))
+		   || (is_set( armor->extra_flags, OFLAG_CHAOTIC ) && is_chaotic( ch )) ) {
 	  absorbed -= 2;
 	}
       }
@@ -1943,7 +1943,7 @@ bool parry( char_data* ch, char_data* victim,
   }
 
   const bool water = is_submerged( victim );
-  const int skill3 = ( water || victim->mount && mount == 0 ) ? UNLEARNT : victim->get_skill( SKILL_RIPOSTE );
+  const int skill3 = ( water || (victim->mount && mount == 0) ) ? UNLEARNT : victim->get_skill( SKILL_RIPOSTE );
 
   if( vwield ) {
     roll -= 3*skill1 + 2*skill3 + dex/2 + mount;

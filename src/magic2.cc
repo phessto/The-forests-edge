@@ -265,9 +265,9 @@ bool check_target( int& spell, char_data *& ch,
       }
       return false;
     }
-    if( ch && in_sanctuary( ch, false )
-	|| victim && in_sanctuary( victim, false )
-	|| room && is_set( room->room_flags, RFLAG_SAFE ) ) {
+    if( (ch && in_sanctuary( ch, false ))
+	|| (victim && in_sanctuary( victim, false ))
+	|| (room && is_set( room->room_flags, RFLAG_SAFE )) ) {
       return false;
     }
     break;

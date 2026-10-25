@@ -699,7 +699,7 @@ static bool write_pfile( pfile_data *pfile, player_data *player = 0 )
   for( int i = 0; i < pfile->corpses; ) {
     obj_data *corpse = pfile->corpses[i];
     Save_Data *save = corpse->save;
-    if( save && save != pfile
+    if( (save && save != pfile)
 	|| corpse->contents.is_empty( ) ) {
       pfile->corpses.remove( i );
     } else {
@@ -711,7 +711,7 @@ static bool write_pfile( pfile_data *pfile, player_data *player = 0 )
   for( int i = 0; i < pfile->caches; ) {
     obj_data *cache = pfile->caches[i];
     Save_Data *save = cache->save;
-    if( save && save != pfile
+    if( (save && save != pfile)
 	|| !Room( cache->array->where )
 	|| cache->contents.is_empty( ) ) {
       pfile->caches.remove( i );

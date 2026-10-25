@@ -1532,7 +1532,7 @@ static bool can_see( const char_data *ch, int table )
   
   // MISC_TABLES will work for all tables.
   if( table == TABLE_SOC_DEFAULT
-      || table <= MAX_PLYR_RACE && table == ch->shdata->race+1 ) {
+      || (table <= MAX_PLYR_RACE && table == ch->shdata->race+1) ) {
     if( has_permission( ch, PERM_SOCIALS ) ) {
       flag = PERM_SOCIALS;
     }

@@ -129,8 +129,8 @@ thing_data* forbidden( thing_data* thing, char_data* ch, thing_data* )
  
   //  pfile_data *pfile;
 
-  if( obj->pIndexData->vnum != OBJ_CORPSE_PC
-      && obj->pIndexData->vnum != OBJ_CORPSE_PET
+  if( (obj->pIndexData->vnum != OBJ_CORPSE_PC
+      && obj->pIndexData->vnum != OBJ_CORPSE_PET)
       || !obj->owner
       )
     return obj;
@@ -172,7 +172,7 @@ static thing_data *trigger( thing_data *thing, char_data *ch, thing_data *contai
   obj_data *obj = (obj_data*) thing;
 
   if( !obj->Is_Valid( )
-      || cont && !cont->Is_Valid( ) )
+      || (cont && !cont->Is_Valid( )) )
     return 0;
 
   if( cont ) {

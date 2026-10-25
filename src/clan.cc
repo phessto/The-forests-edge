@@ -55,7 +55,7 @@ Clan_Data ::~Clan_Data( )
 
 static bool knows( char_data* ch, clan_data* clan )
 {
-  return( ch && ch->pcdata->pfile->clan == clan
+  return( (ch && ch->pcdata->pfile->clan == clan)
 	  || ( is_set( clan->flags, CLAN_APPROVED )
 	       && is_set( clan->flags, CLAN_KNOWN ) )
 	  || has_permission( ch, PERM_CLANS ) );

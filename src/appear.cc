@@ -215,7 +215,7 @@ void request_message( player_data *pl )
   int trust = get_trust( pl );
 
   if( trust < LEVEL_AVATAR
-      || trust == LEVEL_AVATAR && !has_permission( pl, PERM_APPROVE ) ) {
+      || (trust == LEVEL_AVATAR && !has_permission( pl, PERM_APPROVE )) ) {
     return;
   }
 
@@ -398,7 +398,7 @@ void do_approve( char_data* ch, const char *argument )
   }
   
   if( !( player = imm->player_edit )
-       || *argument && flags == 0 ) {
+       || (*argument && flags == 0) ) {
     argument = one_argument( argument, arg );
     if( !( player = one_player( ch, arg, "approve",
 				(thing_array*) &player_list ) ) ) {

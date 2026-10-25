@@ -735,7 +735,7 @@ void random_update( )
       pl = rand_player( room );
     }
     if( action->trigger == TRIGGER_RANDOM_ALWAYS
-	|| pl && action->trigger == TRIGGER_RANDOM ) {
+	|| (pl && action->trigger == TRIGGER_RANDOM) ) {
       if( number_range( 0, 999 ) < action->value ) {
 	clear_variables( );
 	var_room = room; 

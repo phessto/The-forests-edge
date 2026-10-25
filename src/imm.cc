@@ -1302,7 +1302,7 @@ void do_purge( char_data* ch, const char *argument )
       thing_data *thing = ch->array->list[i];
       if( char_data *victim = character( thing ) ) {
 	if( victim->pcdata
-	    || is_set( victim->status, STAT_PET ) && !victim->leader->species )
+	    || (is_set( victim->status, STAT_PET ) && !victim->leader->species) )
 	  continue;
 
       } else if( obj_data *obj = object( thing ) ) {
@@ -1352,7 +1352,7 @@ void do_purge( char_data* ch, const char *argument )
 	if( mob->Is_Valid( )
 	    && mob->species->vnum == vnum
 	    && ( !is_set( mob->status, STAT_PET )
-		 || mob->leader && mob->leader->species ) ) {
+		 || (mob->leader && mob->leader->species) ) ) {
 	  if( mob->array ) {
 	    rehash( 0, *mob->array );
 	  }
@@ -1363,7 +1363,7 @@ void do_purge( char_data* ch, const char *argument )
 	if( mob->Is_Valid( )
 	    && mob->species->vnum == vnum
 	    && ( !is_set( mob->status, STAT_PET )
-		 || mob->leader && mob->leader->species ) ) {
+		 || (mob->leader && mob->leader->species) ) ) {
 	  if( mob->Shown() != 0 ) {
 	    fsend_seen( mob, "%s disappear%s in a cloud of greasy, black smoke.",
 			mob,

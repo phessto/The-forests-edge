@@ -199,7 +199,7 @@ void do_pets( char_data* ch, const char *argument )
       }
       room_data *room = loaded ? pet->was_in_room : pet->in_room;
       if( ( has_permission( ch, PERM_PLAYERS )
-	    || victim == ch && is_apprentice( ch ) )
+	    || (victim == ch && is_apprentice( ch )) )
 	  && room ) {
 	page( ch, "%3d  %-24s %s [%d]\n\r", ++j, 
 	      pet->Seen_Name( ch ),

@@ -1114,7 +1114,7 @@ bool spell_eagle_eye( char_data* ch, char_data* victim, void*, int level, int )
     return false;
   }
   
-  if( victim->in_room->area->status != AREA_OPEN && ch->Level( ) < LEVEL_APPRENTICE
+  if( (victim->in_room->area->status != AREA_OPEN && ch->Level( ) < LEVEL_APPRENTICE)
       || is_set( victim->in_room->room_flags, RFLAG_NO_MAGIC )
       || ( victim->Level() >= LEVEL_BUILDER
 	   && get_trust( ch ) < get_trust( victim ) ) ) {
@@ -1152,7 +1152,7 @@ bool spell_scry( char_data* ch, char_data* victim, void*, int level, int )
     return false;
   }
 
-  if( victim->in_room->area->status != AREA_OPEN && ch->Level( ) < LEVEL_APPRENTICE
+  if( (victim->in_room->area->status != AREA_OPEN && ch->Level( ) < LEVEL_APPRENTICE)
       || is_set( victim->in_room->room_flags, RFLAG_NO_MAGIC )
       || ( victim->Level() >= LEVEL_BUILDER
 	 && get_trust( ch ) < get_trust( victim ) ) ) {
@@ -1191,7 +1191,7 @@ bool spell_hawks_view( char_data* ch, char_data* victim, void*, int level, int )
     return false;
   }
   
-  if( victim->in_room->area->status != AREA_OPEN && ch->Level( ) < LEVEL_APPRENTICE
+  if( (victim->in_room->area->status != AREA_OPEN && ch->Level( ) < LEVEL_APPRENTICE)
       || is_set( victim->in_room->room_flags, RFLAG_NO_MAGIC )
       || ( victim->Level() >= LEVEL_BUILDER
 	   && get_trust( ch ) < get_trust( victim ) ) ) {

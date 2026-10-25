@@ -113,7 +113,7 @@ static int get_cost( mob_data* keeper, char_data* ch, obj_data* obj, bool buy, i
   /* NOTE: also see calculation in skill.cc:do_appraise() */
 
   if( !obj
-      || !buy && is_set( obj->extra_flags, OFLAG_NO_SELL )
+      || (!buy && is_set( obj->extra_flags, OFLAG_NO_SELL ))
       || !will_trade( keeper, obj, buy ) )
     return 0;
 

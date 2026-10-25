@@ -698,7 +698,7 @@ const void *code_is_aggressive( const void **argument )
   }
 
   return (void*) ( ch->aggressive.includes( victim1 )
-	   || victim2 && ch->aggressive.includes( victim2 ) );
+	   || (victim2 && ch->aggressive.includes( victim2 )) );
 }
 
 
@@ -1913,7 +1913,7 @@ const void *code_do_spell( const void **argument )
     var_list = (thing_array&) audience;
     const bool result = tprog->execute( );
     if( !result
-	|| ch && !ch->Is_Valid( ) ) {
+	|| (ch && !ch->Is_Valid( )) ) {
       pop( );
       finish_spell( start, spell );
       return 0;

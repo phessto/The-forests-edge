@@ -296,12 +296,12 @@ void do_sacrifice( char_data* ch, const char *argument )
   const int align2 = ch->Align_Law_Chaos( );
 
   if( !any_altar ) {
-    if( align == 0 && !good_altar
-	|| align == 1 && !neut_altar
-	|| align == 2 && !evil_altar
-	|| align2 == 0 && !law_altar
-	|| align2 == 1 && !neut2_altar
-	|| align2 == 2 && !chaos_altar ) {
+    if( (align == 0 && !good_altar)
+	|| (align == 1 && !neut_altar)
+	|| (align == 2 && !evil_altar)
+	|| (align2 == 0 && !law_altar)
+	|| (align2 == 1 && !neut2_altar)
+	|| (align2 == 2 && !chaos_altar) ) {
       fsend( ch, "%s disappears with a flash.", obj );
       fsend_seen( ch, "%s disappears with a flash.", obj );
       send( ch, "You hear the gods' faint laughter in the distance.\n\r" );
@@ -368,31 +368,31 @@ void do_sacrifice( char_data* ch, const char *argument )
   bool bonus, penalty;
 
   if( any_altar ) {
-    bonus = align == 0 && good_altar
-      || align == 1 && neut_altar
-      || align == 2 && evil_altar
-      || align2 == 0 && law_altar
-      || align2 == 1 && neut2_altar
-      || align2 == 2 && chaos_altar;
-    penalty = corp_align == 0 && good_altar
-      || corp_align == 1 && neut_altar
-      || corp_align == 2 && evil_altar
-      || corp_align2 == 0 && law_altar
-      || corp_align2 == 1 && neut2_altar
-      || corp_align2 == 2 && chaos_altar;
+    bonus = (align == 0 && good_altar)
+      || (align == 1 && neut_altar)
+      || (align == 2 && evil_altar)
+      || (align2 == 0 && law_altar)
+      || (align2 == 1 && neut2_altar)
+      || (align2 == 2 && chaos_altar);
+    penalty = (corp_align == 0 && good_altar)
+      || (corp_align == 1 && neut_altar)
+      || (corp_align == 2 && evil_altar)
+      || (corp_align2 == 0 && law_altar)
+      || (corp_align2 == 1 && neut2_altar)
+      || (corp_align2 == 2 && chaos_altar);
   } else {
-    bonus = corp_align == 0 && !good_altar
-      || corp_align == 1 && !neut_altar
-      || corp_align == 2 && !evil_altar
-      || corp_align2 == 0 && !law_altar
-      || corp_align2 == 1 && !neut2_altar
-      || corp_align2 == 2 && !chaos_altar;
-    penalty = corp_align == 0 && good_altar
-      || corp_align == 1 && neut_altar
-      || corp_align == 2 && evil_altar
-      || corp_align2 == 0 && law_altar
-      || corp_align2 == 1 && neut2_altar
-      || corp_align2 == 2 && chaos_altar;
+    bonus = (corp_align == 0 && !good_altar)
+      || (corp_align == 1 && !neut_altar)
+      || (corp_align == 2 && !evil_altar)
+      || (corp_align2 == 0 && !law_altar)
+      || (corp_align2 == 1 && !neut2_altar)
+      || (corp_align2 == 2 && !chaos_altar);
+    penalty = (corp_align == 0 && good_altar)
+      || (corp_align == 1 && neut_altar)
+      || (corp_align == 2 && evil_altar)
+      || (corp_align2 == 0 && law_altar)
+      || (corp_align2 == 1 && neut2_altar)
+      || (corp_align2 == 2 && chaos_altar);
   }
 
   if( bonus && !penalty ) {

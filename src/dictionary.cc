@@ -203,7 +203,7 @@ static const char *spell_word( const char *word, char_data *ch )
 	const char *t = s;
 	while( *s &&
 	       ( isalpha( *s ) ||
-		 ( *s == '\'' || *s == '-' ) && isalpha( *(s+1) ) ) ) {
+		 (( *s == '\'' || *s == '-' ) && isalpha( *(s+1) )) ) ) {
 	  ++s;
 	}
 	char term = *s;

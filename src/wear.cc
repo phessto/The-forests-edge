@@ -700,8 +700,8 @@ static thing_data *waterlight( thing_data* t1, char_data* ch, thing_data* t2 )
 {
   obj_data *obj = (obj_data*) t1;
 
-  if ( obj->pIndexData->item_type != ITEM_LIGHT
-       && obj->pIndexData->item_type != ITEM_LIGHT_PERM
+  if ( (obj->pIndexData->item_type != ITEM_LIGHT
+       && obj->pIndexData->item_type != ITEM_LIGHT_PERM)
        || is_set( obj->extra_flags, OFLAG_WATER_PROOF ) ) {
     return obj;
   }

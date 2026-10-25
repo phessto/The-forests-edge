@@ -13,10 +13,10 @@ static void throw_message( char_data* ch, char_data* victim, obj_data* obj,
 
   for( int i = 0; i < *ch->array; i++ ) {
     if( ( rch = character( ch->array->list[i] ) )
-	&& ( rch == victim && ( !seen || victim->Can_See( ) )
+	&& ( (rch == victim && ( !seen || victim->Can_See( ) ))
 	     || rch == ch
 	     || ch->Seen( rch )
-	     || rch != victim && victim->Seen( rch ) ) ) {
+	     || (rch != victim && victim->Seen( rch )) ) ) {
       snprintf( tmp, THREE_LINES, text,
 		rch == ch ? "You" : ch->Name( rch ),
 		rch == ch ? "" : "s", obj->Name( rch ),
@@ -152,7 +152,7 @@ static void throw_drink_con( char_data* ch, char_data* victim, obj_data* obj, bo
   int spell = liquid_table[liquid].spell;
 
   if( spell >= SPELL_FIRST+table_max[ TABLE_SKILL_SPELL ]
-      || spell >= 0 && spell < SPELL_FIRST ) {
+      || (spell >= 0 && spell < SPELL_FIRST) ) {
     bug( "Throw_Drink_Con: spell out of range." );
     bad_spell = true;
   } else if( spell < 0 ) {

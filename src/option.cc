@@ -291,7 +291,7 @@ void info( int none, const char* arg1, int level, const char* arg2, int flag,
     const char *string = empty_string;
     if( trust >= none ) {
       if( trust < level
-	  || pfile && pfile == victim->pcdata->pfile ) {
+	  || (pfile && pfile == victim->pcdata->pfile) ) {
 	if( array ) {
 	  snprintf( tmp3, MAX_STRING_LENGTH, arg1, list_name( link->character, array ).c_str() );
 	  string = tmp3;

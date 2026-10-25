@@ -143,9 +143,9 @@ void do_mount( char_data* ch, const char *argument )
 {
   char_data *victim;
   
-  if( !*argument
+  if( (!*argument
       && ( victim = has_mount( ch, false ) )
-      && victim->array == ch->array
+      && victim->array == ch->array)
       || ( victim = one_character( ch, argument, "mount",
 				   ch->array ) ) ) {
     victim->Select( 1 );

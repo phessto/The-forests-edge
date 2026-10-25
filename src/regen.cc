@@ -191,7 +191,7 @@ void gain_condition( char_data* ch, int iCond, int value, bool regen )
   
   ch->condition[ iCond ] = new_cond;
     
-  if( value < 0 || value == 0 && regen ) {
+  if( value < 0 || (value == 0 && regen) ) {
     if( iCond == COND_FULL
 	&& new_cond < 0
 	&& ch->pcdata
@@ -289,8 +289,8 @@ void execute_regen( event_data *event )
     confused_char( ch );
   }
 
-  if( ch->species && ch->Is_Valid( )
-      || !ch->species && ch->In_Game( ) && !ch->was_in_room ) {
+  if( (ch->species && ch->Is_Valid( ))
+      || (!ch->species && ch->In_Game( ) && !ch->was_in_room) ) {
     if( ch->position >= POS_STUNNED )
       regenerate( ch );
     if( ch->position == POS_STUNNED )

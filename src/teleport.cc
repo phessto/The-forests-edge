@@ -219,7 +219,7 @@ bool spell_summon( char_data* ch, char_data* victim, void*, int, int )
   }
 
   if( privileged( victim, LEVEL_BUILDER )
-      || victim->species && ( !is_set( victim->status, STAT_PET ) || victim->leader != ch )
+      || (victim->species && ( !is_set( victim->status, STAT_PET ) || victim->leader != ch ))
       || is_set( victim->in_room->room_flags, RFLAG_NO_RECALL )
       || victim->Size( ) > ch->in_room->size
       || ( victim->mount

@@ -614,7 +614,7 @@ void do_help( char_data* ch, const char *argument )
 	continue;
       if( search_text( help->name, argument )
 	  || search_text( help->text, argument )
-	  || is_apprentice( ch ) && search_text( help->immortal, argument ) ) {
+	  || (is_apprentice( ch ) && search_text( help->immortal, argument )) ) {
 	if( count == 0 ) {
 	  page_title( ch, "Help Topic Search Results" );
 	}

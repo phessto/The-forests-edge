@@ -817,8 +817,8 @@ static bool scan_room( char_data* ch, room_data* room, const char* word,
   for( int i = 0; i < room->contents; ++i ) {
     if( !( rch = character( room->contents[i] ) )
 	|| rch->Shown( ) == 0
-	|| rch->species && is_set( rch->species->act_flags, ACT_NO_SCAN )
-	|| rch->species && is_set( rch->species->act_flags, ACT_MIMIC ) )
+	|| (rch->species && is_set( rch->species->act_flags, ACT_NO_SCAN ))
+	|| (rch->species && is_set( rch->species->act_flags, ACT_MIMIC )) )
       continue;
     
     //    if( rch->Seen( ch ) ) {

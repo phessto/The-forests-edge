@@ -649,7 +649,7 @@ void do_appraise( char_data *ch, const char *argument )
   }    
 
   if( !is_set( obj->extra_flags, OFLAG_IDENTIFIED )
-      && ( obj->pIndexData->fakes != 0 && get_obj_index( obj->pIndexData->fakes )
+      && ( (obj->pIndexData->fakes != 0 && get_obj_index( obj->pIndexData->fakes ))
 	   || obj->pIndexData->item_type == ITEM_GEM ) ) {
 
     Content_Array *array = obj->array;
