@@ -1293,6 +1293,11 @@ void load_noteboard( char* file, note_data**& list, int& max, int noteboard )
 
   FILE *fp = open_file( file, "r" );
 
+  // A missing board file used to crash the boot (fread_word on a null
+  // FILE*). open_file() has already logged it; start the board empty.
+  if( !fp )
+    return;
+
   if( strcmp( fread_word( fp ), "#NOTES" ) )
     panic( "Load_notes: missing header" );
 
