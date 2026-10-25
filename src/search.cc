@@ -254,9 +254,10 @@ bool search_oload( char_data *ch, const arg_type *arg, void *target,
     } else if( afunc->func->func_call == &code_replace_obj
 	&& afunc->arg[1]
 	&& afunc->arg[1]->family == constant ) {
-      if( (int)( afunc->arg[1]->value ) == (int) target )
+      if( (int)( afunc->arg[1]->value ) == (int) target ) {
 	display_search( ch, afunc->func->name, type, num, name, vnum, text );
 	found = true;
+      }
     }
     for( int i = 0; i < 6 && afunc->arg[i]; i++ )
       found = search_oload( ch, afunc->arg[i], target, type, num, name, vnum, text ) || found;
@@ -301,9 +302,10 @@ bool search_mload( char_data *ch, const arg_type *arg, void *target,
 	  || afunc->func->func_call == &code_mprog )
 	&& afunc->arg[0]
 	&& afunc->arg[0]->family == constant ) {
-      if( (int)( afunc->arg[0]->value ) == (int) target )
+      if( (int)( afunc->arg[0]->value ) == (int) target ) {
 	display_search( ch, afunc->func->name, type, num, name, vnum, text );
 	found = true;
+      }
     }
     for( int i = 0; i < 6 && afunc->arg[i]; i++ )
       found = search_mload( ch, afunc->arg[i], target, type, num, name, vnum, text ) || found;
@@ -351,9 +353,10 @@ bool search_quest( char_data *ch, const arg_type *arg, void *target,
 	  || afunc->func->func_call == &code_set_quest )
 	&& afunc->arg[1]
 	&& afunc->arg[1]->family == constant ) {
-      if( (int)( afunc->arg[1]->value ) == (int) target )
+      if( (int)( afunc->arg[1]->value ) == (int) target ) {
 	display_search( ch, afunc->func->name, type, num, name, vnum, text );
 	found = true;
+      }
     }
     for( int i = 0; i < 6 && afunc->arg[i]; i++ )
       found = search_quest( ch, afunc->arg[i], target, type, num, name, vnum, text ) || found;
@@ -397,9 +400,10 @@ bool search_cflag( char_data *ch, const arg_type *arg, void *target,
 	  || afunc->func->func_call == &code_set_cflag )
 	&& afunc->arg[0]
 	&& afunc->arg[0]->family == constant ) {
-      if( (int)( afunc->arg[0]->value ) == (int) target )
+      if( (int)( afunc->arg[0]->value ) == (int) target ) {
 	display_search( ch, afunc->func->name, type, num, name, vnum, text );
 	found = true;
+      }
     }
     for( int i = 0; i < 6 && afunc->arg[i]; i++ )
       found = search_cflag( ch, afunc->arg[i], target, type, num, name, vnum, text ) || found;
