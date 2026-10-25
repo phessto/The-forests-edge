@@ -10,21 +10,14 @@
 #33750
 "** DEATH **"
 "You come through the smoke surrounding the entrance and stop dead in your
-
-tracks in amazement...  You have entered a cavernous room, replete with Gothic
-
-archways and stained-glass windows depicting battles, hunting parties, ocean
-
-waves, hangman's gibbets and other scenes where Death may appear.  A huge
-
-throne of onyx stands before you, and seated upon it is Death himself.  @CA
-
-leather-bound book hovers in midair before you.@n
-
-"
+tracks in amazement...  You have entered a cavernous room, replete with Gothic
+archways and stained-glass windows depicting battles, hunting parties, ocean
+waves, hangman's gibbets and other scenes where Death may appear.  A huge
+throne of onyx stands before you, and seated upon it is Death himself.  @CA
+leather-bound book hovers in midair before you.@n
+"
 "no magic to prevent abuse
-
-"
+"
 301465719 0
 0 5 0
 D0
@@ -38,150 +31,101 @@ D2
 E
 "leather bound book"
 "You move toward the book, and it opens on its own.  The pages slowly
-
-flip over by an unseen hand, and it falls open to a page written in
-
-elegant script...  
-
-   
-
-       The cities of the land are herein recorded:
-
-   
-
-             Chiiron
-
-             Medienne
-
-             Kha-Da
-
-             Vaasa
-
-             Darkhaven
-
-             Pennan
-
-             Sos-kul
-
-             Denab-Knur
-
-             Voaleth
-
-             Brithbarad
-
-             Narak
-
-      
-
-{ type: @GTO skeletal <cityname>@n when you have chosen a city }
-
-"
+flip over by an unseen hand, and it falls open to a page written in
+elegant script...  
+   
+       The cities of the land are herein recorded:
+   
+             Chiiron
+             Medienne
+             Kha-Da
+             Vaasa
+             Darkhaven
+             Pennan
+             Sos-kul
+             Denab-Knur
+             Voaleth
+             Brithbarad
+             Narak
+      
+{ type: @GTO skeletal <cityname>@n when you have chosen a city }
+"
 A
 "get take"
 "book"
 "send_to_char( #get, ch );
-
-"
+"
 E
 "get"
 "You move forward to take the book but one look from Death and you decide
-
-it would not be wise.  
-
-"
+it would not be wise.  
+"
 !
 0 0 0
 A
 ""
 ""
 "act_room( #smoke, ch );
-
-"
+"
 E
 "smoke"
 "Death takes a long drag on a tobacco pipe.  C'mon, what's it gonna do to
-
-@bhim@n?
-
-"
+@bhim@n?
+"
 !
 2 50 0
 A
 ""
 ""
 "if( find_stat( ch, level ) < 91 )
-
-  act_tochar( #tap, ch );
-
-"
+  act_tochar( #tap, ch );
+"
 E
 "tap"
 "Death taps you on the shoulder.
-
-"
+"
 !
 2 100 0
 A
 ""
 ""
 "if( find_stat( ch, level ) < 91 ) {
-
-  if( get_religion( ch ) != Morr ) {
-
-    act_tochar( \"@MDeath will not let you pass.\", ch );
-
-    act_tochar( #no, ch );
-
-    end;
-
-    }
-
-  if( find_stat( ch, level ) < 10 )
-
-    act_tochar( #not_yet, ch );
-
-  else {
-
-    obj_to_room( oload( 14 ), find_room( 5 ) );
-
-    continue;
-
-    }
-
-  }
-
-else
-
-  continue;
-
-"
+  if( get_religion( ch ) != Morr ) {
+    act_tochar( \"@MDeath will not let you pass.\", ch );
+    act_tochar( #no, ch );
+    end;
+    }
+  if( find_stat( ch, level ) < 10 )
+    act_tochar( #not_yet, ch );
+  else {
+    obj_to_room( oload( 14 ), find_room( 5 ) );
+    continue;
+    }
+  }
+else
+  continue;
+"
 E
 "not_yet"
 "Death tells you, \"@MYou are not ready to enter there yet.  Return to the world
-
-for now and continue to learn more of it and perhaps some day you will be
-
-permitted to enter.@n\"
-
-"
+for now and continue to learn more of it and perhaps some day you will be
+permitted to enter.@n\"
+"
 E
 "no"
 "Death informs you, \"@MOnly the faithful of Morr may pass beyond this point.@n\"
-
-"
+"
 !
 3 0 1
 A
 "tell"
 "death"
 "act_tochar( #note, ch );
-
-"
+"
 E
 "note"
 "@e[Note: use 'to' to communicate with things that aren't other players. eg 'to death medienne']@n
-
-"
+"
 !
 0 0 0
 4301 17 1509949540 -2 0
@@ -193,27 +137,17 @@ S
 #33751
 "The Path of Death"
 "Pain flashes across your consciousness and you writhe under its intensity.
-
-You are surrounded by bright light and billows of smoke and the sound of
-
-screams from millions of dead souls who've come this way before...  And then
-
-there is silence.  And you.  Still coughing from the smoke, you look around
-
-you.  You are on a suspended pathway of stone, like a bridge arching from one
-
-plane to the next.  Billows of white smoke float up on either side of the
-
-archway, and you see the path stretching before you to the north.  You have no
-
-choice but to move forward to meet your fate.
-
-"
+You are surrounded by bright light and billows of smoke and the sound of
+screams from millions of dead souls who've come this way before...  And then
+there is silence.  And you.  Still coughing from the smoke, you look around
+you.  You are on a suspended pathway of stone, like a bridge arching from one
+plane to the next.  Billows of white smoke float up on either side of the
+archway, and you see the path stretching before you to the north.  You have no
+choice but to move forward to meet your fate.
+"
 "no_magic to prevent player abuse
-
-[Nereus] Added a code here to destroy object 4312, if the players die in battle with the mob
-
-"
+[Nereus] Added a code here to destroy object 4312, if the players die in battle with the mob
+"
 301498421 0
 21 6 0
 D0
@@ -224,47 +158,34 @@ A
 "1 pray"
 ""
 "if( is_resting( ch ) )
-
-  act_tochar( #nopray, ch );
-
-else
-
-  continue;
-
-"
+  act_tochar( #nopray, ch );
+else
+  continue;
+"
 E
 "nopray"
 "As you pray you feel a cold chill touch your soul, you doubt there will
-
-be any aid forthcoming.
-
-"
+be any aid forthcoming.
+"
 !
 0 0 4
 A
 ""
 ""
 "if( has_obj( 4312, ch ) )
-
-  junk_obj( has_obj( 4312, ch ) );
-
-continue;
-
-"
+  junk_obj( has_obj( 4312, ch ) );
+continue;
+"
 !
 3 0 1
 A
 "__Destroying_Marker_object__"
 ""
 "loop( all_in_room ) {
-
-  if( has_obj( 4312, rch ) )
-
-    junk_obj( has_obj( 4312, rch ) );
-
-  }
-
-"
+  if( has_obj( 4312, rch ) )
+    junk_obj( has_obj( 4312, rch ) );
+  }
+"
 !
 0 0 0
 A
@@ -279,18 +200,12 @@ S
 #33752
 "Room of the Shimmering Portal"
 "You stand before a shimmering portal filled with flittering images, giving you
-
-a whirlwind tour of The Forest's Edge.  Chiiron, Medienne, Voaleth, and all
-
-the other cities flash fleetingly across the view of the portal.  Inscribed
-
-along the arch of the portal are the keywords which, when told to the portal,
-
-will instantly teleport the speaker to the place of his choice.  Who knows
-
-what remains of the souls who told the portal a false destination.....
-
-"
+a whirlwind tour of The Forest's Edge.  Chiiron, Medienne, Voaleth, and all
+the other cities flash fleetingly across the view of the portal.  Inscribed
+along the arch of the portal are the keywords which, when told to the portal,
+will instantly teleport the speaker to the place of his choice.  Who knows
+what remains of the souls who told the portal a false destination.....
+"
 ""
 301498487 0
 0 9 0
@@ -298,56 +213,39 @@ A
 "look"
 "portal"
 "send_to_char( #look, ch );
-
-if( find_stat( ch, level ) < 15 ) {
-
-  send_to_char( #look2, ch );
-
-  }
-
-"
+if( find_stat( ch, level ) < 15 ) {
+  send_to_char( #look2, ch );
+  }
+"
 E
 "look"
 "The shimmering portal stands before you, images spinning madly through it. 
-
-Where one second you saw the flitting image of a Pennan farmhouse, you
-
-now see the dark grey walls of Medienne streaking by.
-
-Inscribed on the portal, in bold, elegant runes, are the following words:
-
-@b@W
-
+Where one second you saw the flitting image of a Pennan farmhouse, you
+now see the dark grey walls of Medienne streaking by.
+Inscribed on the portal, in bold, elegant runes, are the following words:
+@b@W
 
 @IChiiron   ::    Medienne   ::   Pennan
-
-@ISos-kul   ::    Voaleth    ::   Denab-knur
-
-@IKha-da    ::    Brithbarad ::   Vaasa
-
-@I          ::    Narak      ::
-
-@n
-
-"
+@ISos-kul   ::    Voaleth    ::   Denab-knur
+@IKha-da    ::    Brithbarad ::   Vaasa
+@I          ::    Narak      ::
+@n
+"
 E
 "look2"
 "@e[For example, to travel to Medienne, type 'to portal Medienne']
-
-"
+"
 !
 0 0 6
 A
 "tell"
 "portal"
 "act_tochar( #note, ch );
-
-"
+"
 E
 "note"
 "@e[Note: use 'to' to communicate with things that aren't other players. eg 'to portal medienne']@n
-
-"
+"
 !
 0 0 0
 123 9 1509949540 3 0
@@ -357,18 +255,12 @@ S
 #33753
 "Room of the Bright Portal"
 "You stand before a shimmering portal filled with flittering images, giving you
-
-a whirlwind tour of The Forest's Edge.  Chiiron, Medienne, Pennan, and all the
-
-other cities flash fleetingly across the view of the portal.  Inscribed along
-
-the arch of the portal are the keywords which, when told to the portal, will
-
-instantly teleport the speaker to the place of his choice.  Who knows what
-
-remains of the souls who told the portal a false destination.....
-
-"
+a whirlwind tour of The Forest's Edge.  Chiiron, Medienne, Pennan, and all the
+other cities flash fleetingly across the view of the portal.  Inscribed along
+the arch of the portal are the keywords which, when told to the portal, will
+instantly teleport the speaker to the place of his choice.  Who knows what
+remains of the souls who told the portal a false destination.....
+"
 ""
 301498487 0
 0 9 0
@@ -376,53 +268,37 @@ A
 "look"
 "portal"
 "send_to_char( #look, ch );
-
-if( find_stat( ch, level ) < 15 ) {
-
-  send_to_char( #look2, ch );
-
-}
-
-"
+if( find_stat( ch, level ) < 15 ) {
+  send_to_char( #look2, ch );
+}
+"
 E
 "look"
 "The shimmering portal stands before you, images spinning madly through it. 
-
-Where one second you saw the flitting image of a Pennan farmhouse, you
-
-now see the dark grey walls of Medienne streaking by.
-
-Inscribed on the portal, in bold, elegant runes, are the following words:
-
-@b@W
-
-@IChiiron    ::    Medienne    ::    Kha-Da
-
-@IVaasa      ::    Sos-Kul     ::    Pennan
-
-@I           ::     Narak      ::
-
-@n
-
-"
+Where one second you saw the flitting image of a Pennan farmhouse, you
+now see the dark grey walls of Medienne streaking by.
+Inscribed on the portal, in bold, elegant runes, are the following words:
+@b@W
+@IChiiron    ::    Medienne    ::    Kha-Da
+@IVaasa      ::    Sos-Kul     ::    Pennan
+@I           ::     Narak      ::
+@n
+"
 E
 "look2"
 "@e[For example, to travel to Medienne, type 'to portal Medienne']@n
-
-"
+"
 !
 0 0 6
 A
 "tell"
 "portal"
 "act_tochar( #note, ch );
-
-"
+"
 E
 "note"
 "@e[Note: use 'to' to communicate with things that aren't other players. eg 'to portal medienne']@n
-
-"
+"
 !
 0 0 0
 2254 137 1509949540 3 0
@@ -432,18 +308,12 @@ S
 #33754
 "Room of the Dark Portal"
 "You stand before a shimmering portal filled with flittering images, giving you
-
-a whirlwind tour of The Forest's Edge.  Voaleth, Medienne, Brithbarad, and
-
-many other cities flash fleetingly across the view of the portal.  Inscribed
-
-along the arch of the portal are the keywords which, when told to the portal,
-
-will instantly teleport the speaker to the place of his choice.  Who knows
-
-what remains of the souls who told the portal a false destination.....
-
-"
+a whirlwind tour of The Forest's Edge.  Voaleth, Medienne, Brithbarad, and
+many other cities flash fleetingly across the view of the portal.  Inscribed
+along the arch of the portal are the keywords which, when told to the portal,
+will instantly teleport the speaker to the place of his choice.  Who knows
+what remains of the souls who told the portal a false destination.....
+"
 ""
 301498455 0
 0 9 0
@@ -451,51 +321,36 @@ A
 "look"
 "portal"
 "send_to_char( #look, ch );
-
-if( find_stat( ch, level ) < 15 ) {
-
-send_to_char( #look2, ch );
-
-}
-
-"
+if( find_stat( ch, level ) < 15 ) {
+send_to_char( #look2, ch );
+}
+"
 E
 "look"
 "The shimmering portal stands before you, images spinning madly through it. 
-
-Where one second you saw the flitting image of a dark Voaleth cavern, you
-
-now see the dark grey walls of Medienne streaking by.
-
-Inscribed on the portal, in bold, elegant runes, are the following words:
-
-@b@W
-
-@IMedienne ::  Darkhaven   ::  Pennan     ::  Sos-Kul
-
-@IVoaleth  ::  Denab-knur  ::  Brithbarad ::  Narak
-
-@n
-
-"
+Where one second you saw the flitting image of a dark Voaleth cavern, you
+now see the dark grey walls of Medienne streaking by.
+Inscribed on the portal, in bold, elegant runes, are the following words:
+@b@W
+@IMedienne ::  Darkhaven   ::  Pennan     ::  Sos-Kul
+@IVoaleth  ::  Denab-knur  ::  Brithbarad ::  Narak
+@n
+"
 E
 "look2"
 "@e[For example, to travel to Medienne, type 'to portal Medienne']@n
-
-"
+"
 !
 0 0 6
 A
 "tell"
 "portal"
 "act_tochar( #note, ch );
-
-"
+"
 E
 "note"
 "@e[Note: use 'to' to communicate with things that aren't other players. eg 'to portal medienne']@n
-
-"
+"
 !
 0 0 0
 2255 137 1509949540 3 0
@@ -505,12 +360,9 @@ S
 #33755
 "The Abyss"
 "You seem to be floating in a great nothingness.  There is no light but you can
-
-somehow see.  Unfortunately there is nothing to see in this great vast plane
-
-of nothing.
-
-"
+somehow see.  Unfortunately there is nothing to see in this great vast plane
+of nothing.
+"
 ""
 335020159 0
 0 9 0
@@ -522,23 +374,16 @@ A
 ""
 ""
 "act_tochar( #smoke, ch );
-
-act_notchar( \"$n seems to have disappeared but you didn't see $m leave.\", ch );
-
-transfer( ch, find_room( 33751 ) );
-
-act_notchar( \"$n appears out of the smoke.\", ch );
-
-"
+act_notchar( \"$n seems to have disappeared but you didn't see $m leave.\", ch );
+transfer( ch, find_room( 33751 ) );
+act_notchar( \"$n appears out of the smoke.\", ch );
+"
 E
 "smoke"
 "@CThe infinite emptiness around you seems to swirl and coalesce until suddenly
-
-you realize you arround surrounded by smoke.  A sudden bright flash of searing
-
-light blinds you momentarily and when you can see again...
-
-"
+you realize you arround surrounded by smoke.  A sudden bright flash of searing
+light blinds you momentarily and when you can see again...
+"
 !
 2 5 0
 -1
@@ -547,29 +392,18 @@ S
 #33756
 "The Halls of Death"
 "You are in a very large room where countless skeletons and ghosts shuffle
-
-about doing administrative tasks.  Some appear to be writing scrolls though,
-
-if you look closely, the writing is strange and so faint you really can't make
-
-anything legible out.  Others appear to be carrying burdens from one place to
-
-another and often they wink into or out of existence without any sign of
-
-transport.  Whenever you get close enough to interact with any of these
-
-things, they seem to disapear from sight as if eluding contact with you.  A
-
-long, narrow plush carpet of black lined on either side with embroidered
-
-lilies stretches from the large, gothic arch in the southern wall to the
-
-larger gothic arch in the northern wall.
-
-"
+about doing administrative tasks.  Some appear to be writing scrolls though,
+if you look closely, the writing is strange and so faint you really can't make
+anything legible out.  Others appear to be carrying burdens from one place to
+another and often they wink into or out of existence without any sign of
+transport.  Whenever you get close enough to interact with any of these
+things, they seem to disapear from sight as if eluding contact with you.  A
+long, narrow plush carpet of black lined on either side with embroidered
+lilies stretches from the large, gothic arch in the southern wall to the
+larger gothic arch in the northern wall.
+"
 "room 43279 comes here
-
-"
+"
 301465719 0
 0 9 0
 D0
@@ -583,66 +417,38 @@ D2
 E
 "carpet"
 "Its a long runner that provides a path between the two doors that leave this
-
-place.  Although black, it is comfortingly plush and significantly warmer than
-
-the cold stone it rests atop.  The liliess embroided along either side provide
-
-detail to break the otherwise blank blackness of the carpet.
-
-"
+place.  Although black, it is comfortingly plush and significantly warmer than
+the cold stone it rests atop.  The liliess embroided along either side provide
+detail to break the otherwise blank blackness of the carpet.
+"
 A
 ""
 ""
 "if( find_stat( ch, level ) < 91 ) {
-
-  if( get_religion( ch ) != Morr ) {
-
-    act_tochar( \"A magical force prevents you\", ch );
-
-    end;
-
-    }
-
-  if( find_stat( ch, prayer ) < 500 ) {
-
-    act_tochar( \"A magical force prevents you, perhaps you've called on Morr too much.\", ch );
-
-    act_tochar( \"You feel a tingle as Morr reprimands you for testing his patience.\", ch );
-
-    drain_stat( ch, prayer, 0, -400 );
-
-    obj_to_room( oload( 12 ), find_room( 5 ) );
-
-    end;
-
-    }
-
-  else {
-
-    act_tochar( \"With a silent prayer to Morr, you are permitted passage.\", ch );
-
-    act_tochar( \"Taking up your god's time takes its toll on your prayer points.\", ch );
-
-    if ( wearing_obj( 4135, ch ) )
-
-      drain_stat( ch, prayer, 0, -400 );
-
-    else
-
-      drain_stat( ch, prayer, 0, -800 );
-
-    }
-
-  }
-
-if( find_stat( ch, level ) < 91 )
-
-  obj_to_room( oload( 2 ), find_room( 5 ) );
-
-continue;
-
-"
+  if( get_religion( ch ) != Morr ) {
+    act_tochar( \"A magical force prevents you\", ch );
+    end;
+    }
+  if( find_stat( ch, prayer ) < 500 ) {
+    act_tochar( \"A magical force prevents you, perhaps you've called on Morr too much.\", ch );
+    act_tochar( \"You feel a tingle as Morr reprimands you for testing his patience.\", ch );
+    drain_stat( ch, prayer, 0, -400 );
+    obj_to_room( oload( 12 ), find_room( 5 ) );
+    end;
+    }
+  else {
+    act_tochar( \"With a silent prayer to Morr, you are permitted passage.\", ch );
+    act_tochar( \"Taking up your god's time takes its toll on your prayer points.\", ch );
+    if ( wearing_obj( 4135, ch ) )
+      drain_stat( ch, prayer, 0, -400 );
+    else
+      drain_stat( ch, prayer, 0, -800 );
+    }
+  }
+if( find_stat( ch, level ) < 91 )
+  obj_to_room( oload( 2 ), find_room( 5 ) );
+continue;
+"
 !
 3 0 1
 2578 137 1509949540 3 0
@@ -652,26 +458,16 @@ S
 #33757
 "The Throne Room of Death"
 "You stand in a room with all dark appearance of a gothic cathedral built in
-
-epic proportions.  Large stone slabs form the bricks of the walls and ornately
-
-carved pillars rise up to meet the vaulted ceiling.  An otherworldly light
-
-suffuses the place allowing you to see without any hint of the light source
-
-yet shadows seem to lurk in every corner.  There are no windows here and no
-
-other exits save the one you came in by.  A raised dais set into the north
-
-wall provides the only break in the contour of the floor with a black carpet
-
-lined in embroidered lilies leading up to stop just short of it.  Above the
-
-dais, hanging suspended in mid-air several feet above the floor is the God of
-
-Death himself.
-
-"
+epic proportions.  Large stone slabs form the bricks of the walls and ornately
+carved pillars rise up to meet the vaulted ceiling.  An otherworldly light
+suffuses the place allowing you to see without any hint of the light source
+yet shadows seem to lurk in every corner.  There are no windows here and no
+other exits save the one you came in by.  A raised dais set into the north
+wall provides the only break in the contour of the floor with a black carpet
+lined in embroidered lilies leading up to stop just short of it.  Above the
+dais, hanging suspended in mid-air several feet above the floor is the God of
+Death himself.
+"
 ""
 301465717 0
 0 9 0
@@ -686,85 +482,52 @@ D2
 E
 "dais"
 "A raised platform of stone, this dais measures some three feet in height above
-
-the rest of the floor.  It is made from the same dark slabs of stone that form
-
-the rest of this place.
-
-"
+the rest of the floor.  It is made from the same dark slabs of stone that form
+the rest of this place.
+"
 E
 "carpet"
 "Its a long runner that providse a path from the southern entrance almost up to
-
-the dais.  Although black, it is comfortingly plush and significantly warmer
-
-than the cold stone it rests atop.  The liliess embroided along either side
-
-provide detail to break the otherwise blank blackness of the carpet.
-
-"
+the dais.  Although black, it is comfortingly plush and significantly warmer
+than the cold stone it rests atop.  The liliess embroided along either side
+provide detail to break the otherwise blank blackness of the carpet.
+"
 A
 ""
 ""
 "mob = mob_in_room( 2575, room );
-
-wait( 2 );
-
-if( !char_in_room( ch, room ) )
-
-  end;
-
-if( mob ) {
-
-  if( class( ch ) == cleric || class( ch ) == paladin ) {
-
-    act_tochar( #cgreet, ch );
-
-    do_spell( bless, null, ch, 10 );
-
-    }
-
-  else
-
-    act_tochar( #greet, ch );
-
-  do_spell( revitalize, null, ch, 10 );
-
-  }
-
-"
+wait( 2 );
+if( !char_in_room( ch, room ) )
+  end;
+if( mob ) {
+  if( class( ch ) == cleric || class( ch ) == paladin ) {
+    act_tochar( #cgreet, ch );
+    do_spell( bless, null, ch, 10 );
+    }
+  else
+    act_tochar( #greet, ch );
+  do_spell( revitalize, null, ch, 10 );
+  }
+"
 E
 "cgreet"
 "The Dark Angel looks down at you and into you and, with an actual smile says,
-
-\"@MGreetings $n.  Welcome to my domain.  I am quite busy now but recognize
-
-your service to me as one of my loyal disciples.  Have this, my blessing, then
-
-return to the world of life that you may continue in your service to me.@n\" So
-
-saying, Morr seems to lose interest in you as he turns to deal with one of the
-
-countless spirits that are continually popping into and out of existence
-
-around his head.
-
-"
+\"@MGreetings $n.  Welcome to my domain.  I am quite busy now but recognize
+your service to me as one of my loyal disciples.  Have this, my blessing, then
+return to the world of life that you may continue in your service to me.@n\" So
+saying, Morr seems to lose interest in you as he turns to deal with one of the
+countless spirits that are continually popping into and out of existence
+around his head.
+"
 E
 "greet"
 "The Dark Angel looks down at you and nods in recognition of your arrival.  He
-
-seems too busy just now to converse with you as there is a continual stream of
-
-spirits popping into and out of existence around his head and he seems largely
-
-to be dealing with them.  Sparing another glance in your direction he waves
-
-his hand once and you feel refreshed then he points towards the door and seems
-
-to lose interest in you again.
-
-"
+seems too busy just now to converse with you as there is a continual stream of
+spirits popping into and out of existence around his head and he seems largely
+to be dealing with them.  Sparing another glance in your direction he waves
+his hand once and you feel refreshed then he points towards the door and seems
+to lose interest in you again.
+"
 !
 1 0 4
 2575 9 1509949540 3 0

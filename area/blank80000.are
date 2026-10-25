@@ -10,21 +10,14 @@
 #80000
 "At the Bottom of a Massive Chasm"
 "Huge stalagmites have formed over the years, creating a forest of impassable
-
-rock in most places.  Bones are piled haphazardly on the floor, some so old
-
-they crumble to dust beneath your feet.  The air is still, and reeks of
-
-decomposing flesh.  Clefts in the rock wall to the north lead to a ledge far
-
-above you.  Stalagmites block any passage west, but there is a clearing from
-
-east to south to move about in.
-
-"
+rock in most places.  Bones are piled haphazardly on the floor, some so old
+they crumble to dust beneath your feet.  The air is still, and reeks of
+decomposing flesh.  Clefts in the rock wall to the north lead to a ledge far
+above you.  Stalagmites block any passage west, but there is a clearing from
+east to south to move about in.
+"
 "[Ahni] Climb acode
-
-"
+"
 301596672 0
 0 6 0
 D0
@@ -45,17 +38,12 @@ S
 #80001
 "Dead End Among the Stalagmites"
 "The air here is fetid with the stench of decomposition.  Bones litter the
-
-floor, gnawed clean by vermin.  Tattered bits of clothing have gathered
-
-against the bases of the stalagmites towering around you.  The stalagmites are
-
-so large they block further passage, forcing you to backtrack westward.
-
-"
+floor, gnawed clean by vermin.  Tattered bits of clothing have gathered
+against the bases of the stalagmites towering around you.  The stalagmites are
+so large they block further passage, forcing you to backtrack westward.
+"
 "[Ahni] dust acode
-
-"
+"
 301596672 0
 0 6 0
 D3
@@ -65,30 +53,21 @@ D3
 E
 "bone clothing stalagmites"
 "Hundreds of years of dripping mineral water have nurtured these massive
-
-stalagmites into a veritable forest.  Bits of discarded clothing and bone
-
-gather in the spaces against the bases of the stalagmites.  A decomposing leg
-
-of some large humanoid, most likely an ogre, hangs down, its body impaled upon
-
-the top of one of the stalagmites.
-
-"
+stalagmites into a veritable forest.  Bits of discarded clothing and bone
+gather in the spaces against the bases of the stalagmites.  A decomposing leg
+of some large humanoid, most likely an ogre, hangs down, its body impaled upon
+the top of one of the stalagmites.
+"
 -1
 S
 
 #80002
 "Clearing Among the Stalagmites"
 "A smooth stone wall rises high above you to the north.  Bones, rotting cloth
-
-and decomposing flesh are discarded in random piles on the stone floor,
-
-creating a rather unfavorably scented atmosphere.  A forest of large, spiky
-
-stalagmites surrounds the clearing that extends east, south and west of you.
-
-"
+and decomposing flesh are discarded in random piles on the stone floor,
+creating a rather unfavorably scented atmosphere.  A forest of large, spiky
+stalagmites surrounds the clearing that extends east, south and west of you.
+"
 ""
 301596672 0
 0 6 0
@@ -107,24 +86,18 @@ D3
 E
 "delete"
 "No description.
-
-"
+"
 -1
 S
 
 #80003
 "Among the Stalagmites"
 "The stalagmite forest begins to close in on you here, restricting your
-
-movements to only the east and west.  The layer of bones, flash and cloth in
-
-various states of decomposition completely covers the chasm floor leaving you
-
-shin-deep in a putrid mess.  Looking eastward, you see a clearing in the
-
-stalagmites, and west of you is a bend around a particularly large stalagmite..
-
-"
+movements to only the east and west.  The layer of bones, flash and cloth in
+various states of decomposition completely covers the chasm floor leaving you
+shin-deep in a putrid mess.  Looking eastward, you see a clearing in the
+stalagmites, and west of you is a bend around a particularly large stalagmite..
+"
 ""
 301596672 0
 0 6 0
@@ -142,21 +115,14 @@ S
 #80004
 "Among the Stalagmites"
 "Thick, clustered formations of stalagmites completely block movement to the
-
-north and west.  Debris, humanoid and otherwise, litters the floor here,
-
-adding a crunch to your increasingly unsure step.  Dripping water creates a
-
-noise that resounds through the chasm eerily.  The path, if you can call it
-
-that, leads southward towards what appears to be a dead end, and eastward
-
-towards a clearing.
-
-"
+north and west.  Debris, humanoid and otherwise, litters the floor here,
+adding a crunch to your increasingly unsure step.  Dripping water creates a
+noise that resounds through the chasm eerily.  The path, if you can call it
+that, leads southward towards what appears to be a dead end, and eastward
+towards a clearing.
+"
 "[Ahni] stumbling acode
-
-"
+"
 301596672 0
 0 6 0
 D1
@@ -173,17 +139,12 @@ S
 #80005
 "Among the Stalagmites - Stagnant Pool"
 "The sound of water dripping at a steady rate is amplified here; the noise is
-
-nearly maddening.  Excess water sluiced off from a carved-out stalagmite has
-
-collected here in a pool that is becoming stagnant.  Towering stalagmites
-
-surround you, making passage in any direction but north impossible.
-
-"
+nearly maddening.  Excess water sluiced off from a carved-out stalagmite has
+collected here in a pool that is becoming stagnant.  Towering stalagmites
+surround you, making passage in any direction but north impossible.
+"
 "[Ahni] Add dripping acode.
-
-"
+"
 301596672 0
 0 6 0
 D0
@@ -196,16 +157,11 @@ S
 #80006
 "Clearing Among the Stalagmites"
 "Far around you rises a forest of gray stalagmites.  The sound of dripping
-
-water echoes eerily in the chasm, accompanied occasionally by the sound of
-
-gnawing and crunching bones.  Corpses in various states of decomposition
-
-create a stench that seems to stay with you.  The clearing in the stalagmites
-
-srrounds you on all sides.
-
-"
+water echoes eerily in the chasm, accompanied occasionally by the sound of
+gnawing and crunching bones.  Corpses in various states of decomposition
+create a stench that seems to stay with you.  The clearing in the stalagmites
+srrounds you on all sides.
+"
 ""
 301596672 0
 0 6 0
@@ -231,19 +187,13 @@ S
 #80007
 "Clearing Among the Stalagmites"
 "The clearing ends here with the stalagmite forest encroaching upon you to the
-
-east and south.  Lying in discarded heaps on the floor are a few newer
-
-corpses, festering on top of older remains and creating a wondrous stench. 
-
-Off in the distance, you hear the noise of water dripping steadily echoing
-
-throughout the chasm.  The clearing opens up to the north and west.
-
-"
+east and south.  Lying in discarded heaps on the floor are a few newer
+corpses, festering on top of older remains and creating a wondrous stench. 
+Off in the distance, you hear the noise of water dripping steadily echoing
+throughout the chasm.  The clearing opens up to the north and west.
+"
 "[Ahni] corpse here to rise
-
-"
+"
 301596672 0
 0 6 0
 D0
@@ -260,25 +210,16 @@ S
 #80008
 "Among the Stalagmites"
 "Two exceptionally large stalagmites stand here, like ancient twin columns of a
-
-gathering-place long destroyed.  Ancient bones have drifted into the area,
-
-collecting in random piles against stalagmites.  The stench is not so bad
-
-here, away from the majority of the decay and rot.  The huge stalagmites block
-
-passage east and west, forcing you to choose between going north into a
-
-clearing, or press on south, farther into the stalagmites.
-
-"
+gathering-place long destroyed.  Ancient bones have drifted into the area,
+collecting in random piles against stalagmites.  The stench is not so bad
+here, away from the majority of the decay and rot.  The huge stalagmites block
+passage east and west, forcing you to choose between going north into a
+clearing, or press on south, farther into the stalagmites.
+"
 "[Ahni] Farther, or further? I can never remember.
-
-Farther.  Farther is physical distance, further is metaphorical distance.  For
-
-example, farther on down the road I will further the cause of the revolution.
-
-"
+Farther.  Farther is physical distance, further is metaphorical distance.  For
+example, farther on down the road I will further the cause of the revolution.
+"
 301596672 0
 0 6 0
 D0
@@ -295,19 +236,13 @@ S
 #80009
 "Among the Stalagmites"
 "The stalagmites encroach further upon the area, but there's still plenty of
-
-room to move east, west and north, though a wall of uneven stalagmites rises
-
-to the south, looking a little odd.  The sound of water dripping is constant,
-
-but echoes so that you cannot tell which direction it's coming from.  No air
-
-stirs here, and the stench is becoming worse.
-
-"
+room to move east, west and north, though a wall of uneven stalagmites rises
+to the south, looking a little odd.  The sound of water dripping is constant,
+but echoes so that you cannot tell which direction it's coming from.  No air
+stirs here, and the stench is becoming worse.
+"
 "[Ahni] Crumbly stalagmite here.
-
-"
+"
 301596672 0
 0 6 0
 D0
@@ -330,39 +265,27 @@ A
 "push"
 "stalagmite south"
 "if( !is_open( room, south ) ) {
-
-  send_to_char( #open, ch );
-
-  act_notchar( #ropen, ch );
-
-  open( room, south );
-
-  }
-
-else
-
-  send_to_char( #already, ch );
-
-"
+  send_to_char( #open, ch );
+  act_notchar( #ropen, ch );
+  open( room, south );
+  }
+else
+  send_to_char( #already, ch );
+"
 E
 "open"
 "With a hearty push, you topple the stalagmite to the floor, revealing an
-
-opening to the south.
-
-"
+opening to the south.
+"
 E
 "ropen"
 "With a hearty push, $n topples the stalagmite to the floor, revealing an
-
-opening to the south.
-
-"
+opening to the south.
+"
 E
 "already"
 "There's nothing left to push on!
-
-"
+"
 !
 0 0 0
 -1
@@ -371,18 +294,12 @@ S
 #80010
 "Dead End Among the Stalagmites"
 "The stalagmites here are dry and appear aged.  To the west, the stalagmites
-
-have deep gashes in them, as if someone tried deperately to hack through
-
-them.  The floor is littered with bits of bone and cloth, mostly gathering at
-
-the bases of the stalagmites.  The sounds of water dripping seem far off; the
-
-air here is stale and dry.  The only way out of this dead end is to head back
-
-east.
-
-"
+have deep gashes in them, as if someone tried deperately to hack through
+them.  The floor is littered with bits of bone and cloth, mostly gathering at
+the bases of the stalagmites.  The sounds of water dripping seem far off; the
+air here is stale and dry.  The only way out of this dead end is to head back
+east.
+"
 ""
 301596672 0
 0 6 0
@@ -396,21 +313,14 @@ S
 #80011
 "Among the Stalagmites"
 "An exceptionally large stalagmite restricts passage to the north, while an
-
-impassable wall of stalagmites rises to the east and south.  Several corpses
-
-are piled against the eastern wall, creating a revolting stench of rot.  Bones
-
-litter the floor, making it difficult to move around.  The area opens up more
-
-to the west.
-
-"
+impassable wall of stalagmites rises to the east and south.  Several corpses
+are piled against the eastern wall, creating a revolting stench of rot.  Bones
+litter the floor, making it difficult to move around.  The area opens up more
+to the west.
+"
 "[Ahni] Search corpses to find the opening east.
-
-[Ahni] Maybe make one rise, first.
-
-"
+[Ahni] Maybe make one rise, first.
+"
 301596672 0
 0 6 0
 D1
@@ -425,91 +335,62 @@ A
 "move"
 "corpses"
 "if( rflag( reset0, room ) ) {
-
-  interpret( ch, \"search corpse\" );
-
-  end;
-
-  }
-
-else
-
-  if( !is_open( room, east ) ) {
-
-  send_to_char( #search, ch );
-
-  act_notchar( #rsearch, ch );
-
-  wait( 4 );
-
-  send_to_char( #open, ch );
-
-  open( room, east );
-
-  }
-
-else
-
-  send_to_char( #already, ch );
-
-"
+  interpret( ch, \"search corpse\" );
+  end;
+  }
+else
+  if( !is_open( room, east ) ) {
+  send_to_char( #search, ch );
+  act_notchar( #rsearch, ch );
+  wait( 4 );
+  send_to_char( #open, ch );
+  open( room, east );
+  }
+else
+  send_to_char( #already, ch );
+"
 E
 "open"
 "After searching the first few corpses, you notice an opening behind them.
-
-"
+"
 E
 "search"
 "Taking a deep breath, you begin to search through the corpses.
-
-"
+"
 E
 "rsearch"
 "$n takes a deep breath, and begins searching through the pile of corpses.
-
-"
+"
 E
 "already"
 "The pile of corpses seem pretty well picked-through.
-
-"
+"
 !
 0 0 0
 A
 "search"
 "corpses"
 "if( rflag( reset0, room ) ) {
-
-  send_to_char( #hole, ch );
-
-  act_room( #corpse, ch );
-
-  mload( 2598, room );
-
-  remove_rflag( reset0, room );
-
-  }
-
-else
-
-  send_to_char( #already, ch );
-
-"
+  send_to_char( #hole, ch );
+  act_room( #corpse, ch );
+  mload( 2598, room );
+  remove_rflag( reset0, room );
+  }
+else
+  send_to_char( #already, ch );
+"
 E
 "hole"
 "You begin searching through the pile of corpses.
-
-"
+"
 E
 "corpse"
 "A corpse rises, disturbed by your searching!
-
-"
+"
 E
 "already"
 "The other corpses seem completely lifeless.  It should be safe to move them.
-
-"
+"
 !
 0 0 0
 -1
@@ -518,18 +399,12 @@ S
 #80012
 "Tunnel Through the Stalagmites"
 "Cold, damp stone encloses the area, creating a chilly, slightly humid
-
-atmosphere.  The ceiling is only about eight feet above the floor, and the
-
-tunnel is not much wider.  The tunnel doesn't seem carved out, but formed over
-
-the years over an old wooden structure.  A hole large enough for an ogre to
-
-walk through lies to the west.  A sturdy, iron-reinforced wooden door is set
-
-into the wall to the north.
-
-"
+atmosphere.  The ceiling is only about eight feet above the floor, and the
+tunnel is not much wider.  The tunnel doesn't seem carved out, but formed over
+the years over an old wooden structure.  A hole large enough for an ogre to
+walk through lies to the west.  A sturdy, iron-reinforced wooden door is set
+into the wall to the north.
+"
 ""
 301596736 0
 0 5 0
@@ -545,37 +420,26 @@ A
 "push"
 "hole corpses"
 "if( !is_open( room, west ) ) {
-
-send_to_char( #push, ch );
-
-act_notchar( #rpush, ch );
-
-open( room, west );
-
-}
-
-else
-
-send_to_char( #already, ch );
-
-"
+send_to_char( #push, ch );
+act_notchar( #rpush, ch );
+open( room, west );
+}
+else
+send_to_char( #already, ch );
+"
 E
 "push"
 "You push through the corpses blocking the hole, trying not to get too much
-
-filth on yourself.
-
-"
+filth on yourself.
+"
 E
 "rpush"
 "$n sticks half $s torso through the hole, muttering to $mself.
-
-"
+"
 E
 "already"
 "There seems to be enough room to go through the hole already.
-
-"
+"
 !
 0 0 0
 2644 9 1509949540 3 0
@@ -585,19 +449,13 @@ S
 #80013
 "A Small Treasure Trove"
 "This crowded room appears to be a perfect square, completely enclosed by
-
-smooth gray stone.  Weapons, clothing, and artifacts clutter the room in
-
-haphazard piles, rusting and rotting in open chests against the walls.  A
-
-sturdy, iron-reinforced wooden door to the south is the only apparent way out
-
-of this small trove.
-
-"
+smooth gray stone.  Weapons, clothing, and artifacts clutter the room in
+haphazard piles, rusting and rotting in open chests against the walls.  A
+sturdy, iron-reinforced wooden door to the south is the only apparent way out
+of this small trove.
+"
 "[Ahni] Chest here.
-
-"
+"
 301596672 0
 0 6 0
 D2
@@ -610,11 +468,9 @@ S
 #80014
 "Among the Stalagmites"
 "Under Construction.
-
-"
+"
 "[Ahni] No.mob perhaps.
-
-"
+"
 301596672 0
 0 6 0
 D0
@@ -629,39 +485,27 @@ A
 "push"
 "stalagmite north"
 "if( !is_open( room, north ) ) {
-
-  send_to_char( #open, ch );
-
-  act_notchar( #ropen, ch );
-
-  open( room, north );
-
-  }
-
-else
-
-  send_to_char( #already, ch );
-
-"
+  send_to_char( #open, ch );
+  act_notchar( #ropen, ch );
+  open( room, north );
+  }
+else
+  send_to_char( #already, ch );
+"
 E
 "open"
 "With a hearty push, you topple the stalagmite to the floor, revealing an
-
-opening to the north.
-
-"
+opening to the north.
+"
 E
 "ropen"
 "With a hearty push, $n topples the stalagmite to the floor, revealing an
-
-opening to the north.
-
-"
+opening to the north.
+"
 E
 "already"
 "There's nothing left to push on!
-
-"
+"
 !
 0 0 0
 -1
@@ -670,8 +514,7 @@ S
 #80015
 "Clearing Among the Stalagmites"
 "Under Construction.
-
-"
+"
 ""
 301596672 0
 0 6 0
@@ -693,8 +536,7 @@ S
 #80016
 "Clearing Among the Stalagmites"
 "Under Construction.
-
-"
+"
 ""
 301596672 0
 0 6 0
@@ -716,8 +558,7 @@ S
 #80017
 "Clearing Among the Stalagmites"
 "Under Construction.
-
-"
+"
 ""
 301596672 0
 0 6 0
@@ -735,8 +576,7 @@ S
 #80018
 "Clearing Among the Stalagmites"
 "Under Construction.
-
-"
+"
 ""
 301596672 0
 0 6 0
@@ -754,8 +594,7 @@ S
 #80019
 "Clearing Among the Stalagmites"
 "Under Construction.
-
-"
+"
 ""
 301596672 0
 0 6 0
@@ -777,8 +616,7 @@ S
 #80020
 "Clearing Among the Stalagmites - Before a Door of Bone"
 "Under Construction.
-
-"
+"
 ""
 301596672 0
 0 6 0
@@ -800,8 +638,7 @@ S
 #80021
 "Inside a Crudely Carved Tunnel"
 "Under Construction.
-
-"
+"
 ""
 301596672 0
 0 6 0
@@ -819,27 +656,17 @@ S
 #80022
 "Inside a Carved-out Dwelling"
 "Crudely carved from the solid stone into a roughly eight-foot square, this
-
-room is a simple little hovel.  A foul little bed of stained, patchworked
-
-cloth stuffed with straw rests against the east wall.  The yellowed bones of
-
-large humanoid creatures bound together serves as a door in the northern
-
-wall.  The rough stone floor is covered in a considerable layer of grit,
-
-adorned only by a worn, threadbare rug near the bed.  The southern wall is
-
-covered by a large tapestry from which a pair of repulsive blood-red eyes seem
-
-to watch you.
-
-"
+room is a simple little hovel.  A foul little bed of stained, patchworked
+cloth stuffed with straw rests against the east wall.  The yellowed bones of
+large humanoid creatures bound together serves as a door in the northern
+wall.  The rough stone floor is covered in a considerable layer of grit,
+adorned only by a worn, threadbare rug near the bed.  The southern wall is
+covered by a large tapestry from which a pair of repulsive blood-red eyes seem
+to watch you.
+"
 "[Ahni] Tapestry, move it to find stairs down.
-
-[Ahni] 39520
-
-"
+[Ahni] 39520
+"
 301596672 0
 0 6 0
 D0
@@ -861,67 +688,50 @@ A
 "move"
 "tapestry"
 "if( !is_open( room, down ) ) {
-
-  send_to_char( #move, ch );
-
-  act_notchar( #rmove, ch );
-
-  open( room, down );
-
-  }
-
-else
-
-  send_to_char( #already, ch );
-
-"
+  send_to_char( #move, ch );
+  act_notchar( #rmove, ch );
+  open( room, down );
+  }
+else
+  send_to_char( #already, ch );
+"
 E
 "move"
 "You carefully move the tapestry aside, revealing a dimly lit staircase leading
-
-down.
-
-"
+down.
+"
 E
 "rmove"
 "$n carefully moves the tapestry aside, revealing a dimly lit staircase leading
-
-down.
-
-"
+down.
+"
 E
 "already"
 "The tapestry has already been moved aside.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "act_tochar( #draft, ch );
-
-"
+"
 E
 "draft"
 "The tapestry on the wall ripples, eerily causing the eyes to appear to move.
-
-"
+"
 !
 2 200 0
 A
 ""
 ""
 "act_tochar( #leave, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "leave"
 "You carefully pick your way down the narrow passage.
-
-"
+"
 !
 3 0 32
 -1
@@ -930,11 +740,9 @@ S
 #80023
 "A Crude Shrine to Morkith"
 "Under Construction.
-
-"
+"
 "[Ahni] Key on necro.
-
-"
+"
 301596672 0
 0 6 0
 D4
@@ -945,15 +753,12 @@ A
 ""
 ""
 "act_tochar( #leave, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "leave"
 "You carefully pick your way up the narrow passage.
-
-"
+"
 !
 3 0 16
 -1
@@ -962,25 +767,16 @@ S
 #80024
 "A Simple Bedroom"
 "The sterile cleanliness of this small room is incongruous with the filth of
-
-the surrounding area.  Sturdy wooden walls have been erected, complete with
-
-ceiling and floor to make this room appear as if it were part of a house, were
-
-it not for the lack of windows.  Simple whitewashed furniture decorates the
-
-room, along with tapestries of woodland scenes.  A thick, shaggy rug covers
-
-most of the floor from bed to desk.  A small cast-iron wood stove is set
-
-against the wall opposite the bed.
-
-"
+the surrounding area.  Sturdy wooden walls have been erected, complete with
+ceiling and floor to make this room appear as if it were part of a house, were
+it not for the lack of windows.  Simple whitewashed furniture decorates the
+room, along with tapestries of woodland scenes.  A thick, shaggy rug covers
+most of the floor from bed to desk.  A small cast-iron wood stove is set
+against the wall opposite the bed.
+"
 "[Ahni] Sister's room, clues to find her.
-
-[Ahni] Search desk acode.
-
-"
+[Ahni] Search desk acode.
+"
 301596672 0
 0 6 0
 D1
@@ -990,54 +786,36 @@ D1
 E
 "wooden walls ceiling floor rug"
 "The walls and ceiling are painted a gentle off-white color, with no evident
-
-signs of wear, such as peeling or cracking.  The floor appears to be made of
-
-the same type of wood, smoothed and varnished with a deep brown color.  The
-
-rug is dark blue with flecks of white, and a good two inches thick, looking to
-
-be very comfortable to walk on barefoot.
-
-"
+signs of wear, such as peeling or cracking.  The floor appears to be made of
+the same type of wood, smoothed and varnished with a deep brown color.  The
+rug is dark blue with flecks of white, and a good two inches thick, looking to
+be very comfortable to walk on barefoot.
+"
 E
 "furniture desk cast-iron stove"
 "The furniture is simply, yet sturdily made with some amount of care.  While
-
-there are no carvings or fancy decorations, they have been whitewashed and the
-
-lines are true.  A small dark-varnished writing desk stands out from the rest
-
-of the furniture against the western wall.  Though the room is kept pristine,
-
-a very fine layer of dust can be found on the furniture, as if the room has
-
-not been occupied for a week or two.  The stove is made of heavy cast-iron,
-
-using wood as a heating source.  A large frying pan rests on the top, also
-
-with a fine layer of dust inside.
-
-"
+there are no carvings or fancy decorations, they have been whitewashed and the
+lines are true.  A small dark-varnished writing desk stands out from the rest
+of the furniture against the western wall.  Though the room is kept pristine,
+a very fine layer of dust can be found on the furniture, as if the room has
+not been occupied for a week or two.  The stove is made of heavy cast-iron,
+using wood as a heating source.  A large frying pan rests on the top, also
+with a fine layer of dust inside.
+"
 E
 "desk"
 "This small writing desk stands apart from the rest of the room as it has been
-
-varnished a dark brown color.  Neat stacks of papers and books rest atop the
-
-desk, as well as several quills and pots of various colored ink.  All of this
-
-is covered by an almost imperceptible layer of dust.
-
-"
+varnished a dark brown color.  Neat stacks of papers and books rest atop the
+desk, as well as several quills and pots of various colored ink.  All of this
+is covered by an almost imperceptible layer of dust.
+"
 -1
 S
 
 #80025
 "Hurtling Through the Darkness"
 "Flying through the air, about to land.
-
-"
+"
 ""
 301596672 0
 0 6 0
@@ -1049,34 +827,23 @@ A
 ""
 ""
 "i = 5d20+50;
-
-Wait( 4 );
-
-act_tochar( #owie, ch );
-
-transfer( ch, find_room( 80006 ) );
-
-act_notchar( #fall, ch );
-
-dam_message( ch, i, \"Landing directly on a stalagmite\" );
-
-inflict( ch, mob, i, \"being impaled by a stalagmite\" );
-
-"
+Wait( 4 );
+act_tochar( #owie, ch );
+transfer( ch, find_room( 80006 ) );
+act_notchar( #fall, ch );
+dam_message( ch, i, \"Landing directly on a stalagmite\" );
+inflict( ch, mob, i, \"being impaled by a stalagmite\" );
+"
 E
 "owie"
 "@rYou begin your descent rapidly as gravity pulls you towards the bottom of
-
-the chasm!@n
-
-"
+the chasm!@n
+"
 E
 "fall"
 "@gYou hear the sounds of screaming from above and you look up to see $n
-
-falling straight towards a large, pointy stalagmite!@n
-
-"
+falling straight towards a large, pointy stalagmite!@n
+"
 !
 0 0 0
 -1

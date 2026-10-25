@@ -10,29 +10,18 @@
 #76000
 "Within a Darkened Wagon"
 "Very little light penetrates this darkened area.  The sole source of
-
-illumination is a single oil lamp, flickering feebly on the table in the
-
-center of the room.  Shelves line the walls of this small room, each
-
-displaying a chaotic variety of items.  Heavy curtains shroud the single
-
-window in layers of faded crimson and violet brocade.  A thick layer of dust
-
-coats everything in this stuffy room, further softening the already faded
-
-colors of the cloth draped over the walls and table.  Directly in the center
-
-of the small, square table sits a crystalline sphere, absorbing the light of
-
-the nearby lamp.
-
-"
+illumination is a single oil lamp, flickering feebly on the table in the
+center of the room.  Shelves line the walls of this small room, each
+displaying a chaotic variety of items.  Heavy curtains shroud the single
+window in layers of faded crimson and violet brocade.  A thick layer of dust
+coats everything in this stuffy room, further softening the already faded
+colors of the cloth draped over the walls and table.  Directly in the center
+of the small, square table sits a crystalline sphere, absorbing the light of
+the nearby lamp.
+"
 "[Minqa] Reset crystal ball, takeable if Shora is dead.
-
-[Minqa] Wagon 1
-
-"
+[Minqa] Wagon 1
+"
 301465605 0
 2 8 0
 D2
@@ -43,15 +32,12 @@ A
 ""
 ""
 "act_tochar( #smoke, ch );
-
-"
+"
 E
 "smoke"
 "@wThe stiflingly sweet fragrance of jasmine wafts towards you from a nearby
-
-cone of incense.@n
-
-"
+cone of incense.@n
+"
 !
 2 100 0
 2584 9 1509949540 3 0
@@ -61,23 +47,15 @@ S
 #76001
 "Before a Large Wagon"
 "A richly colored wagon looms just ahead, painted in deep, luxurious shades of
-
-crimson and violet.  Cascades of willow branches fall to either side of the
-
-spacious abode, the leafy tendrils haloing the jewel toned colors with an aura
-
-of pale, silvery green.  Even outside the wagon, the fragrance of incense long
-
-since burned to dust lingers, heavy and sweet in the still air.  Tufts of
-
-verdant grass grow wild, reaching ankle high, adding their fresh aroma to the
-
-incense-laden air.
-
-"
+crimson and violet.  Cascades of willow branches fall to either side of the
+spacious abode, the leafy tendrils haloing the jewel toned colors with an aura
+of pale, silvery green.  Even outside the wagon, the fragrance of incense long
+since burned to dust lingers, heavy and sweet in the still air.  Tufts of
+verdant grass grow wild, reaching ankle high, adding their fresh aroma to the
+incense-laden air.
+"
 "[Minqa] Acode, enter wagon
-
-"
+"
 301465601 0
 2 8 0
 D0
@@ -94,18 +72,12 @@ S
 #76002
 "Within the Gypsy Camp"
 "Wild colors run rampant here, like splashes of paint from an artist's palette
-
-scattered over the ground.  Brilliant scarlets, lush greens, deep blues and
-
-royal purples can be see everywhere you look, almost blinding in their
-
-flamboyance.  A trail worn down by the passage of many feet threads its way
-
-through the high grass, leading east and west.  A grove of willows lies just
-
-to the north, while a large, elaborate wagon rests immediately to the south.
-
-"
+scattered over the ground.  Brilliant scarlets, lush greens, deep blues and
+royal purples can be see everywhere you look, almost blinding in their
+flamboyance.  A trail worn down by the passage of many feet threads its way
+through the high grass, leading east and west.  A grove of willows lies just
+to the north, while a large, elaborate wagon rests immediately to the south.
+"
 ""
 301465601 0
 2 8 0
@@ -127,8 +99,7 @@ S
 #76003
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -151,8 +122,7 @@ S
 #76004
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -170,11 +140,9 @@ S
 #76005
 "Wagon"
 "Under Construction.
-
-"
+"
 "[Minqa] Wagon 3
-
-"
+"
 301465605 0
 2 8 0
 D2
@@ -187,8 +155,7 @@ S
 #76006
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -210,8 +177,7 @@ S
 #76007
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -237,11 +203,9 @@ S
 #76008
 "Wagon"
 "Under Construction.
-
-"
+"
 "[Minqa] Wagon 7
-
-"
+"
 301465605 0
 2 8 0
 D2
@@ -254,8 +218,7 @@ S
 #76009
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -273,11 +236,9 @@ S
 #76010
 "Wagon"
 "Under Construction.
-
-"
+"
 "[Minqa] Wagon 4
-
-"
+"
 301465601 0
 2 8 0
 D1
@@ -290,8 +251,7 @@ S
 #76011
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -313,8 +273,7 @@ S
 #76012
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -336,8 +295,7 @@ S
 #76013
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -363,23 +321,15 @@ S
 #76014
 "Inside a Lavishly Decorated Wagon"
 "An abundance of light spills into this large wagon through many windows cut
-
-neatly into its sides.  Furnishings hewn of golden toned oak, polished to a
-
-bright lustre and adorned with cushions and pillows in a myriad of colors,
-
-decorate the living space, giving the place a comfortably lived in
-
-appearance.  Both ends of the wagon are divided from the main living area by
-
-intricately woven curtains, depicting beautiful patterns of abstract color. 
-
-The light scent of a tangy herbal mixture lingers in the air.
-
-"
+neatly into its sides.  Furnishings hewn of golden toned oak, polished to a
+bright lustre and adorned with cushions and pillows in a myriad of colors,
+decorate the living space, giving the place a comfortably lived in
+appearance.  Both ends of the wagon are divided from the main living area by
+intricately woven curtains, depicting beautiful patterns of abstract color. 
+The light scent of a tangy herbal mixture lingers in the air.
+"
 "[Minqa] Wagon 2
-
-"
+"
 301465605 0
 0 8 0
 D0
@@ -393,8 +343,7 @@ S
 #76015
 "Amidst the Circle of Campfires"
 "Under Construction.
-
-"
+"
 ""
 301465609 0
 2 8 0
@@ -421,8 +370,7 @@ S
 #76016
 "Amidst the Circle of Campfires"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -441,11 +389,9 @@ S
 #76017
 "Amidst the Circle of Campfires"
 "Under Construction.
-
-"
+"
 "[Minqa] Reset musicians.
-
-"
+"
 301465601 0
 2 8 0
 D0
@@ -466,8 +412,7 @@ S
 #76018
 "Amidst the Circle of Campfires"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -486,8 +431,7 @@ S
 #76019
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -505,8 +449,7 @@ S
 #76020
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -532,8 +475,7 @@ S
 #76021
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -551,11 +493,9 @@ S
 #76022
 "Wagon"
 "Under Construction.
-
-"
+"
 "[Minqa] Wagon 6
-
-"
+"
 301465601 0
 2 8 0
 D1
@@ -568,8 +508,7 @@ S
 #76023
 "Wagon"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -583,8 +522,7 @@ S
 #76024
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -602,8 +540,7 @@ S
 #76025
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -631,11 +568,9 @@ S
 #76026
 "Path Out"
 "Under Construction.
-
-"
+"
 "[Minqa] Put some sort of acode to prevent mobs from wandering out.
-
-"
+"
 301465609 0
 2 8 0
 D0
@@ -652,8 +587,7 @@ S
 #76027
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -671,8 +605,7 @@ S
 #76028
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 8 0
@@ -694,11 +627,9 @@ S
 #76029
 "Wagon"
 "Under Construction.
-
-"
+"
 "[Minqa] Wagon 5
-
-"
+"
 301465605 0
 2 8 0
 D3
@@ -711,11 +642,9 @@ S
 #76030
 "Within the Gypsy Camp"
 "Under Construction.
-
-"
+"
 "[Minqa] Make a gate east
-
-"
+"
 301465601 0
 2 8 0
 D0
@@ -736,11 +665,9 @@ S
 #76031
 "Wagon"
 "Under Construction.
-
-"
+"
 "[Minqa] Wagon 8
-
-"
+"
 301465605 0
 2 8 0
 D2
@@ -753,20 +680,13 @@ S
 #76032
 "Fenced-in Pastureland"
 "A silver-green swath of ankle-high grass whispers soothingly with every
-
-dancing breeze, the verdant pasture stretching a good distance to the east and
-
-north before meeting the rough-hewn fence.  Here and there, small patches of
-
-lilies of the valley raise their heads skywards, drinking in whatever light
-
-comes their way.  The air filled with the smells of earth, grass and horses,
-
-not an unpleasant mixture.  The calls of several traders plying their wares
-
-echo through the area.
-
-"
+dancing breeze, the verdant pasture stretching a good distance to the east and
+north before meeting the rough-hewn fence.  Here and there, small patches of
+lilies of the valley raise their heads skywards, drinking in whatever light
+comes their way.  The air filled with the smells of earth, grass and horses,
+not an unpleasant mixture.  The calls of several traders plying their wares
+echo through the area.
+"
 ""
 301465601 0
 2 8 0
@@ -788,18 +708,12 @@ S
 #76033
 "Fenced-in Pastureland"
 "Pale, silvery green grass stretches across the pasture, lush and thick as an
-
-expensive carpet.  A wagon, smaller than many of those in this encampment,
-
-stand just beyond the rough wooden fence to the west, its trappings a blaze of
-
-chaotic color.  The enclosure extends to the east and south, bordered to the
-
-north by the picketed fence.  The fresh smells of wind and rain mingle with
-
-the odors of horses and hay, the comingling odd, but not entirely unpleasant.
-
-"
+expensive carpet.  A wagon, smaller than many of those in this encampment,
+stand just beyond the rough wooden fence to the west, its trappings a blaze of
+chaotic color.  The enclosure extends to the east and south, bordered to the
+north by the picketed fence.  The fresh smells of wind and rain mingle with
+the odors of horses and hay, the comingling odd, but not entirely unpleasant.
+"
 ""
 301465601 0
 2 8 0
@@ -818,20 +732,13 @@ S
 #76034
 "Fenced-in Pastureland"
 "The expanse of soft, pale green grass continues here, both inside this
-
-enclosure and beyond the fence running to the east and north.  A clump of shy
-
-violets take shelter in the slight shade provided by the rather shoddily
-
-constructed fence, the lush purple hued petals a strong contrast to the
-
-lighter tones of the grass.  Bright spots of burgundy are scattered throughout
-
-the grassy area, undoubtedly clover blossoms.  Eastward, the southern trade
-
-road can be glimpsed beyond the flower-dotted carpet of silvery green.
-
-"
+enclosure and beyond the fence running to the east and north.  A clump of shy
+violets take shelter in the slight shade provided by the rather shoddily
+constructed fence, the lush purple hued petals a strong contrast to the
+lighter tones of the grass.  Bright spots of burgundy are scattered throughout
+the grassy area, undoubtedly clover blossoms.  Eastward, the southern trade
+road can be glimpsed beyond the flower-dotted carpet of silvery green.
+"
 ""
 301465601 0
 2 8 0
@@ -849,23 +756,15 @@ S
 #76035
 "Fenced-in Pastureland"
 "A heap of fodder lies stacked in the southeastern corner of the pasture,
-
-smelling sweetly of alfalfa and clover.  Wisps of golden hay lay strewn on the
-
-pale grass, slivers of color against the unvarying silver-green backdrop.  A
-
-single pine tree reaches heavenward just outside the fence, its outstretched
-
-branches providing a measure of shade to this corner of the enclosure.  A
-
-cloud of dust seems to hover over the road a ways to the east, evidence of the
-
-passage of many travellers.
-
-"
+smelling sweetly of alfalfa and clover.  Wisps of golden hay lay strewn on the
+pale grass, slivers of color against the unvarying silver-green backdrop.  A
+single pine tree reaches heavenward just outside the fence, its outstretched
+branches providing a measure of shade to this corner of the enclosure.  A
+cloud of dust seems to hover over the road a ways to the east, evidence of the
+passage of many travellers.
+"
 "[Minqa] Horsetrader
-
-"
+"
 301465601 0
 2 8 0
 D0

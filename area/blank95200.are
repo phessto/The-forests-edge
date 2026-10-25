@@ -10,13 +10,10 @@
 #95200
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "start
-
-short desc, it'll depend where this is linked
-
-"
+short desc, it'll depend where this is linked
+"
 33030144 0
 12 9 0
 D1
@@ -29,11 +26,9 @@ S
 #95201
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "curve with eroded bluff eastwards
-
-"
+"
 33030144 0
 12 6 0
 D0
@@ -54,11 +49,9 @@ S
 #95202
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "canyon
-
-"
+"
 33030144 0
 12 6 0
 D0
@@ -75,11 +68,9 @@ S
 #95203
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "pleasant glade
-
-"
+"
 33030144 0
 3 6 0
 D2
@@ -92,13 +83,10 @@ S
 #95204
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "dim canyon
-
-rutted trail, mud patches
-
-"
+rutted trail, mud patches
+"
 33030144 0
 12 6 0
 D2
@@ -115,13 +103,10 @@ S
 #95205
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "canyon northwards between hills
-
-muddy path
-
-"
+muddy path
+"
 33030144 0
 12 6 0
 D0
@@ -138,11 +123,9 @@ S
 #95206
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "muddy path with drop-off westwards to marshy patch between hills
-
-"
+"
 33030144 0
 12 6 0
 D1
@@ -159,11 +142,9 @@ S
 #95207
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "muddy patch with trickling water downhill
-
-"
+"
 33030144 0
 12 6 0
 D0
@@ -184,11 +165,9 @@ S
 #95208
 "Slate Hills"
 "Under Construction.
-
-"
+"
 "muddy swampy bit at valley base
-
-"
+"
 33030144 0
 3 6 0
 D0
@@ -205,11 +184,9 @@ S
 #95209
 "Slate Hills"
 "Under Construction.
-
-"
+"
 "muddy swampy bit at valley base
-
-"
+"
 33030144 0
 3 6 0
 D2
@@ -222,11 +199,9 @@ S
 #95210
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "trail curves around meadow
-
-"
+"
 33030144 0
 12 6 0
 D0
@@ -247,11 +222,9 @@ S
 #95211
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "trail passes meadowy valley
-
-"
+"
 33030144 0
 12 6 0
 D1
@@ -272,13 +245,10 @@ S
 #95212
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "trail passes meadowy valley
-
-offshoot southwards
-
-"
+offshoot southwards
+"
 33030144 0
 12 6 0
 D1
@@ -299,11 +269,9 @@ S
 #95213
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "trail curves around eroded, worn bluff
-
-"
+"
 33030144 0
 12 6 0
 D1
@@ -324,15 +292,11 @@ S
 #95214
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "trail starts to rise around hairpin turn
-
-tight-angled corner in valley
-
-dust falls
-
-"
+tight-angled corner in valley
+dust falls
+"
 33030144 0
 12 6 0
 D2
@@ -349,15 +313,11 @@ S
 #95215
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "trail rises over hillcrest eastwards
-
-hairpin turn northwards
-
-scramble down westwards
-
-"
+hairpin turn northwards
+scramble down westwards
+"
 33030144 0
 12 6 0
 D0
@@ -378,15 +338,11 @@ S
 #95216
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "trail climbs over hill
-
-valley west
-
-tussock-yellow hilltops with grey boulders
-
-"
+valley west
+tussock-yellow hilltops with grey boulders
+"
 33030144 0
 12 6 0
 D1
@@ -403,13 +359,10 @@ S
 #95217
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "tussuck-yellow hilltops drifting like water
-
-winding rutted trail
-
-"
+winding rutted trail
+"
 33030144 0
 12 6 0
 D0
@@ -426,11 +379,9 @@ S
 #95218
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "trail twists around towards high ground to NE
-
-"
+"
 33030144 0
 12 6 0
 D1
@@ -447,11 +398,9 @@ S
 #95219
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "trail curves north, heavily overgrown
-
-"
+"
 33030144 0
 12 6 0
 D0
@@ -472,11 +421,9 @@ S
 #95220
 "Slate Hills - Trail"
 "Under Construction.
-
-"
+"
 "walking trail, can see cart trail turning into hills to west, through waving tussock, hills all around
-
-"
+"
 33030144 0
 12 6 0
 D2
@@ -493,11 +440,9 @@ S
 #95221
 "Slate Hills - Wagon Trail"
 "Under Construction.
-
-"
+"
 "scattered matagouri around trail as it drops between hills eastwards, rising north
-
-"
+"
 33030144 0
 12 6 0
 D0
@@ -514,11 +459,9 @@ S
 #95222
 "Slate Hills - Trail"
 "Under Construction.
-
-"
+"
 "trail stalks around rolling hill, easy climb to crest
-
-"
+"
 33030144 0
 12 6 0
 D0
@@ -539,13 +482,10 @@ S
 #95223
 "Slate Hills - Overlook"
 "Under Construction.
-
-"
+"
 "hillcrest - waving thornbushes northwards
-
-describe nearby landmarks depending on location
-
-"
+describe nearby landmarks depending on location
+"
 33030144 0
 12 6 0
 D2
@@ -558,11 +498,9 @@ S
 #95224
 "Slate Hills - Trail"
 "Under Construction.
-
-"
+"
 "trail dropping from hills
-
-"
+"
 33030144 0
 12 6 0
 D0
@@ -579,8 +517,7 @@ S
 #95225
 "Slate Hills - Trail"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 12 6 0
@@ -598,11 +535,9 @@ S
 #95226
 "Slate Hills - Trail"
 "Under Construction.
-
-"
+"
 "animal track, dropping into dry riverbed
-
-"
+"
 33030144 0
 12 6 0
 D2
@@ -619,11 +554,9 @@ S
 #95227
 "Slate Hills - Dry Riverbed"
 "Under Construction.
-
-"
+"
 "base of hills to either side, dried up long ago
-
-"
+"
 33030144 0
 12 6 0
 D0
@@ -644,11 +577,9 @@ S
 #95228
 "Slate Hills - Mossy Bridge"
 "Under Construction.
-
-"
+"
 "bridge to nowhere - path actually follows riverbed, under worn bridge from long ago
-
-"
+"
 33030144 0
 12 6 0
 D3
@@ -661,8 +592,7 @@ S
 #95229
 "Slate Hills - Dry Valley"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 4 9 0
@@ -701,8 +631,7 @@ S
 #95231
 "Slate Hills - Dry Valley"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 4 9 0
@@ -720,8 +649,7 @@ S
 #95232
 "Slate Hills - Dry Valley"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 4 9 0
@@ -739,8 +667,7 @@ S
 #95233
 "Slate Hills - Quarry Trail"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 4 6 0
@@ -758,8 +685,7 @@ S
 #95234
 "Slate Hills - Quarry Trail"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 4 6 0
@@ -785,8 +711,7 @@ S
 #95235
 "Slate Hills - Quarry Trail"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 4 6 0
@@ -800,8 +725,7 @@ S
 #95236
 "Slate Hills - Quarry Trail"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 4 6 0
@@ -819,8 +743,7 @@ S
 #95237
 "Slate Hills - Quarry Trail"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 4 6 0
@@ -838,8 +761,7 @@ S
 #95238
 "Slate Hills - Quarry Trail"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 4 6 0
@@ -857,13 +779,10 @@ S
 #95239
 "Slate Hills - Glade"
 "Under Construction.
-
-"
+"
 "meadow sheltered
-
-climb east to catch trail as it leaves
-
-"
+climb east to catch trail as it leaves
+"
 33030144 0
 2 6 0
 D0
@@ -888,11 +807,9 @@ S
 #95240
 "Slate Hills - Glade"
 "Under Construction.
-
-"
+"
 "campsite
-
-"
+"
 33030144 0
 2 6 0
 D0
@@ -917,11 +834,9 @@ S
 #95241
 "Slate Hills - Glade"
 "Under Construction.
-
-"
+"
 "scattered bushes at valley base
-
-"
+"
 33030144 0
 2 6 0
 D0
@@ -942,11 +857,9 @@ S
 #95242
 "Slate Hills - Glade"
 "Under Construction.
-
-"
+"
 "white-flowered meadow
-
-"
+"
 33030144 0
 2 6 0
 D0
@@ -971,8 +884,7 @@ S
 #95243
 "Slate Hills - Glade"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 2 6 0
@@ -990,11 +902,9 @@ S
 #95244
 "Slate Hills - Glade"
 "Under Construction.
-
-"
+"
 "scattered bushes
-
-"
+"
 33030144 0
 2 6 0
 D0
@@ -1011,11 +921,9 @@ S
 #95245
 "Slate Hills - Glade"
 "Under Construction.
-
-"
+"
 "white-flowered meadow, worn bluffs around
-
-"
+"
 33030144 0
 2 6 0
 D0

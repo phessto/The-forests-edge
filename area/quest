@@ -384,18 +384,12 @@
 0
 "Convince Caedmon the Bold to teach you what he knows."
 "Status = 2 : Player has found the gladius, but not yet returned it.
-
-Status = 3 : Player has returned the gladius to Caedmon (Sighere)
-
-Status = 4 : Player has found the first text (obj 4851)
-
-Status = 5 : Player has returned the first text (obj 4851) to Caedmon (Sighere).
-
-Status = 6 : Player has retrieved the vials for Xalia.
-
-Status = 7 : Player has returned the second text (obj 4852) to Caedmon (Sighere).
-
-"
+Status = 3 : Player has returned the gladius to Caedmon (Sighere)
+Status = 4 : Player has found the first text (obj 4851)
+Status = 5 : Player has returned the first text (obj 4851) to Caedmon (Sighere).
+Status = 6 : Player has retrieved the vials for Xalia.
+Status = 7 : Player has returned the second text (obj 4852) to Caedmon (Sighere).
+"
 
 #64 64
 2
@@ -480,7 +474,6 @@ Status = 7 : Player has returned the second text (obj 4852) to Caedmon (Sighere)
 0
 "Destroy the white witch and unbind the arch-liche from the ebon tomb."
 "After players pass through the obsidian arch in 82425, the quest status changes to 2
-
-"
+"
 
 #-1

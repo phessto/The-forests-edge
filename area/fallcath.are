@@ -10,19 +10,13 @@
 #1500
 "Before a Ruined Cathedral"
 "The massive, broken gates of a once-mighty cathedral stand open, rotting on
-
-their rusted iron hinges.  The dull howling sound of rushing wind accompanies
-
-stale, warm air which issues from the darkness beyond the gates.  The stones
-
-of the cathedral's construction appear blackened, charred, as if by dragonfire.
-
-"
+their rusted iron hinges.  The dull howling sound of rushing wind accompanies
+stale, warm air which issues from the darkness beyond the gates.  The stones
+of the cathedral's construction appear blackened, charred, as if by dragonfire.
+"
 "extras 'PLANS', 'WEAPONS', 'MOBS' , 'QUESTIONS'
-
-move WEAPONS, etc to be __WEAPONS__, etc
-
-"
+move WEAPONS, etc to be __WEAPONS__, etc
+"
 301465600 0
 12 9 0
 D0
@@ -32,119 +26,77 @@ D0
 E
 "PLANS"
 "massive, ruined cathedral modeled after the Wells Cathedral
-
-scissor arch, etc.
-
-the lower levels are demons living in the quarters
-
-the choir and balconies still defended by angels
-
-and archangel in the bell tower
-
-URL: http://www.wellscathedral.org.uk/index.php
-
-good religion: Lonil
-
-- Radiances, the Radiant One, etc
-
-evil religion: temohpab
-
-MAP: http://www.wellscathedral.org.uk/visiting/travel_map_cathedral.shtml
-
-quests for each side
-
-path to west leads along s wall of cloister
-
-leading NPCs will grant flight spell for special quests
-
-"
+scissor arch, etc.
+the lower levels are demons living in the quarters
+the choir and balconies still defended by angels
+and archangel in the bell tower
+URL: http://www.wellscathedral.org.uk/index.php
+good religion: Lonil
+- Radiances, the Radiant One, etc
+evil religion: temohpab
+MAP: http://www.wellscathedral.org.uk/visiting/travel_map_cathedral.shtml
+quests for each side
+path to west leads along s wall of cloister
+leading NPCs will grant flight spell for special quests
+"
 E
 "WEAPONS"
 "etheral weapons of Light (Lonil) and Darkness (Temohpab)
-
--- destoyred on mortal touch, small chance of popping lesser weapon
-
---- explode on mortal touch of 'wrong' alignment for damage
-
+-- destoyred on mortal touch, small chance of popping lesser weapon
+--- explode on mortal touch of 'wrong' alignment for damage
 
 the light flicker white flame and do additional damage to evil
-
-the dark flicker black flame and do additoinal damage to good
-
-"
+the dark flicker black flame and do additoinal damage to good
+"
 E
 "MOBS"
 "level 55:
-
-lesser Radiance, lesser Darkness
-
-coded as 2353 and 2354 respectively
-
+lesser Radiance, lesser Darkness
+coded as 2353 and 2354 respectively
 
 level 65:
-
-greater Radiance, greater Darkness
-
-greater Darkness coded as 2424
-
+greater Radiance, greater Darkness
+greater Darkness coded as 2424
 
 level 75:
-
-named Radiance, Darkness NPCs
-
+named Radiance, Darkness NPCs
 
 "
 E
 "QUESTIONS"
 "Should this be a pkill zone?
-
-How much in the way of questing should happen?
-
-"
+How much in the way of questing should happen?
+"
 A
 "__FALL__"
 "__CODE__"
 "if( !can_fly( ch ) ) {
-
-  rch = mount( ch );
-
-  if( rch ) {
-
-    if( can_fly( rch ) ) {
-
-      end;
-
-      }
-
-    }
-
-  i = 2d10+5;
-
-  dam_message( ch, i, \"the fall\" );
-
-  inflict( ch, null, i, \"the fall\" );
-
-  }
-
-"
+  rch = mount( ch );
+  if( rch ) {
+    if( can_fly( rch ) ) {
+      end;
+      }
+    }
+  i = 2d10+5;
+  dam_message( ch, i, \"the fall\" );
+  inflict( ch, null, i, \"the fall\" );
+  }
+"
 !
 0 0 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You $t $T into the cathedral.
-
-"
+"
 E
 "to_room"
 "$n $t $T into the cathedral.
-
-"
+"
 !
 3 0 1
 -1
@@ -153,19 +105,13 @@ S
 #1501
 "Ruined Gates"
 "This massive, empty archway of stone once held a pair of magnificent iron
-
-gates, now broken and ruined, warped by fire and rended beyond repair.  To the
-
-north, the archway opens into the mighty nave of a massive cathedral.  To the
-
-south, a path leads away from the gates.
-
-"
+gates, now broken and ruined, warped by fire and rended beyond repair.  To the
+north, the archway opens into the mighty nave of a massive cathedral.  To the
+south, a path leads away from the gates.
+"
 "perhaps a vision here of what is going on?
-
-ruined by dragonfire, smashed, rended
-
-"
+ruined by dragonfire, smashed, rended
+"
 301465604 0
 0 9 0
 D0
@@ -180,36 +126,30 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You $t $T out of the cathedral.
-
-"
+"
 E
 "to_room"
 "$n $t $T out of the cathedral.
-
-"
+"
 !
 3 0 4
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You $t $T into the nave.
-
-"
+"
 E
 "to_room"
 "$n $t $T into the nave.
-
-"
+"
 !
 3 0 1
 -1
@@ -218,29 +158,18 @@ S
 #1502
 "The Nave - South End"
 "Overturned and burned benches are scattered about the south end of the nave,
-
-the remnant of some catastrophe which befell this cathedral.  The once-proud
-
-windows of stained glass stand broken, only gritty fragments of colour remain,
-
-still clinging to the charred window frames.  The cathedral ceiling rises high
-
-overhead, where an intricately-fashioned ceiling is supported by a series of
-
-sturdy wooden arches, still standing firm despite bearing several gashes and
-
-holes.  A pair of ruined gates lead out of the cathedral to the south, while
-
-to the north, the nape continues.
-
-"
+the remnant of some catastrophe which befell this cathedral.  The once-proud
+windows of stained glass stand broken, only gritty fragments of colour remain,
+still clinging to the charred window frames.  The cathedral ceiling rises high
+overhead, where an intricately-fashioned ceiling is supported by a series of
+sturdy wooden arches, still standing firm despite bearing several gashes and
+holes.  A pair of ruined gates lead out of the cathedral to the south, while
+to the north, the nape continues.
+"
 "ravaged by fire
-
-extras
-
-search benches, etc
-
-"
+extras
+search benches, etc
+"
 301465604 0
 0 9 0
 D0
@@ -259,8 +188,7 @@ A
 ""
 ""
 "acode( find_room( 1500 ), 1 );
-
-"
+"
 !
 1 0 16
 -1
@@ -269,23 +197,15 @@ S
 #1503
 "The Nave - North End"
 "This is the north end of the nave of a once-spectacular cathedral.  Flying
-
-arches support an ornate ceiling, scorched by fire but not completely
-
-destroyed.  Dominating the view from the nave is the spectacular archway to
-
-the north, a massive scissor arch which gives entrance to the altar.  To the
-
-south, the nave continues through a maze of broken benches and shattered glass.
-
-"
+arches support an ornate ceiling, scorched by fire but not completely
+destroyed.  Dominating the view from the nave is the spectacular archway to
+the north, a massive scissor arch which gives entrance to the altar.  To the
+south, the nave continues through a maze of broken benches and shattered glass.
+"
 "scissor arch to n enters the altar
-
-ravaged by fire
-
-extras
-
-"
+ravaged by fire
+extras
+"
 301465604 0
 0 9 0
 D0
@@ -304,26 +224,22 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You $t $T through the scissor arch.
-
-"
+"
 E
 "to_room"
 "$n $t $T through the scissor arch.
-
-"
+"
 !
 3 0 1
 A
 ""
 ""
 "acode( find_room( 1500 ), 1 );
-
-"
+"
 !
 1 0 16
 -1
@@ -332,19 +248,13 @@ S
 #1504
 "The Altar"
 "The altar of this
-
-"
+"
 "scissor arch to s leads to nave
-
-scissor arch to n enter quire
-
-scissor arch to e
-
-scissor arch to w
-
-w and e are the 'transepts'
-
-"
+scissor arch to n enter quire
+scissor arch to e
+scissor arch to w
+w and e are the 'transepts'
+"
 301465732 0
 0 9 0
 D0
@@ -371,28 +281,23 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You $t $T through the scissor arch.
-
-"
+"
 E
 "to_room"
 "$n $t $T through the scissor arch.
-
-"
+"
 !
 3 0 15
 A
 ""
 ""
 "acode( find_room( 1500 ), 1 );
-
-continue;
-
-"
+continue;
+"
 !
 1 0 16
 -1
@@ -401,11 +306,9 @@ S
 #1505
 "The Quire"
 "Under Construction.
-
-"
+"
 "scissor arch to s enters the altar
-
-"
+"
 301465604 0
 0 8 0
 D2
@@ -420,8 +323,7 @@ A
 ""
 ""
 "acode( find_room( 1500 ), 1 );
-
-"
+"
 !
 1 0 16
 -1
@@ -430,13 +332,10 @@ S
 #1506
 "East Transept"
 "Under Construction.
-
-"
+"
 "hallway n
-
-scissor arch to w
-
-"
+scissor arch to w
+"
 301465604 0
 0 9 0
 D0
@@ -455,8 +354,7 @@ A
 ""
 ""
 "acode( find_room( 1500 ), 1 );
-
-"
+"
 !
 1 0 16
 -1
@@ -465,11 +363,9 @@ S
 #1507
 "West Transept"
 "Under Construction.
-
-"
+"
 "arch s to cloisters
-
-"
+"
 301465604 0
 0 9 0
 D0
@@ -492,8 +388,7 @@ A
 ""
 ""
 "acode( find_room( 1500 ), 1 );
-
-"
+"
 !
 1 0 16
 -1
@@ -502,8 +397,7 @@ S
 #1508
 "Crumbling Hallway"
 "Under Construction.
-
-"
+"
 ""
 301465604 0
 0 8 0
@@ -521,13 +415,10 @@ S
 #1509
 "Broken Steps"
 "Under Construction.
-
-"
+"
 "steps lead up to the north to the chapter house
-
-small hallway this, s is cloister
-
-"
+small hallway this, s is cloister
+"
 301465604 0
 0 6 0
 D0
@@ -544,11 +435,9 @@ S
 #1510
 "Chapter House"
 "Under Construction.
-
-"
+"
 "down to demons
-
-"
+"
 301465604 0
 0 6 0
 D2
@@ -565,8 +454,7 @@ S
 #1511
 "Crumbling Hallway"
 "Under Construction.
-
-"
+"
 ""
 301465604 0
 0 8 0
@@ -584,11 +472,9 @@ S
 #1512
 "Crumbling Hallway"
 "Under Construction.
-
-"
+"
 "door n to chapel
-
-"
+"
 301465604 0
 0 8 0
 D0
@@ -609,8 +495,7 @@ S
 #1513
 "Crumbling Hallway"
 "Under Construction.
-
-"
+"
 ""
 301465604 0
 0 8 0
@@ -628,8 +513,7 @@ S
 #1514
 "Crumbling Hallway"
 "Under Construction.
-
-"
+"
 ""
 301465604 0
 0 8 0
@@ -647,11 +531,9 @@ S
 #1515
 "Cloister Walk"
 "Under Construction.
-
-"
+"
 "cath. wall e
-
-"
+"
 301465604 0
 0 6 0
 D0
@@ -672,11 +554,9 @@ S
 #1516
 "Cloister Walk"
 "Under Construction.
-
-"
+"
 "cath. wall e
-
-"
+"
 301465604 0
 0 6 0
 D0
@@ -697,13 +577,10 @@ S
 #1517
 "Cloister Walk"
 "Under Construction.
-
-"
+"
 "wall s
-
-cathedral wall e
-
-"
+cathedral wall e
+"
 301465604 0
 0 6 0
 D0
@@ -720,11 +597,9 @@ S
 #1518
 "Cloister Walk"
 "Under Construction.
-
-"
+"
 "wall s
-
-"
+"
 301465604 0
 0 6 0
 D0
@@ -745,13 +620,10 @@ S
 #1519
 "Cloister Walk"
 "Under Construction.
-
-"
+"
 "wall s
-
-wall w
-
-"
+wall w
+"
 301465604 0
 0 6 0
 D0
@@ -768,11 +640,9 @@ S
 #1520
 "Cloister Walk"
 "Under Construction.
-
-"
+"
 "wall w
-
-"
+"
 301465604 0
 0 6 0
 D0
@@ -793,11 +663,9 @@ S
 #1521
 "Cloister Walk"
 "Under Construction.
-
-"
+"
 "wall w, n
-
-"
+"
 301465604 0
 0 6 0
 D1
@@ -814,11 +682,9 @@ S
 #1522
 "Cloister Walk"
 "Under Construction.
-
-"
+"
 "hall n leads to steps
-
-"
+"
 301465604 0
 0 6 0
 D0
@@ -843,11 +709,9 @@ S
 #1523
 "Ruined Garden"
 "Under Construction.
-
-"
+"
 "climb into well room 1550
-
-"
+"
 301465604 0
 16 6 0
 D0
@@ -874,10 +738,8 @@ A
 "climb"
 "1 down well"
 "act_tochar( \"You climb into the well.\", ch );
-
-transfer( ch, find_room( 1550 ) );
-
-"
+transfer( ch, find_room( 1550 ) );
+"
 !
 0 0 0
 -1
@@ -886,15 +748,11 @@ S
 #1524
 "Blackened Stairs"
 "Under Construction.
-
-"
+"
 "u is chapter house
-
-these stairs are charred by the passage of firy demons
-
-d to the monk's chambers
-
-"
+these stairs are charred by the passage of firy demons
+d to the monk's chambers
+"
 301596676 0
 0 6 0
 D4
@@ -911,13 +769,10 @@ S
 #1525
 "Chapel to Lonil"
 "Under Construction.
-
-"
+"
 "'radiance' here
-
-stone spiral stair up to angels
-
-"
+stone spiral stair up to angels
+"
 301465604 0
 0 8 0
 D2
@@ -934,8 +789,7 @@ S
 #1526
 "Balcony Entrance"
 "Under Construction.
-
-"
+"
 ""
 301465604 0
 0 6 0
@@ -953,13 +807,10 @@ S
 #1527
 "Balcony Overlooking the Quire"
 "Under Construction.
-
-"
+"
 "s and d is quire
-
-can see scissor arches from here
-
-"
+can see scissor arches from here
+"
 301465604 0
 0 7 0
 D0
@@ -984,13 +835,10 @@ S
 #1528
 "Balcony Walk"
 "Under Construction.
-
-"
+"
 "se is quire
-
-grt. radiance
-
-"
+grt. radiance
+"
 301465604 0
 0 7 0
 D1
@@ -1007,8 +855,7 @@ S
 #1529
 "Balcony Walk"
 "Under Construction.
-
-"
+"
 ""
 301465604 0
 0 7 0
@@ -1026,13 +873,10 @@ S
 #1530
 "Balcony Overlooking the West Transept"
 "Under Construction.
-
-"
+"
 "e is quire, s is w transept
-
-w is hall above chapter house
-
-"
+w is hall above chapter house
+"
 301465604 0
 0 7 0
 D0
@@ -1057,11 +901,9 @@ S
 #1531
 "Balcony Overlooking the East Transept"
 "Under Construction.
-
-"
+"
 "w is quire, s is e transept
-
-"
+"
 301465604 0
 0 7 0
 D0
@@ -1082,15 +924,11 @@ S
 #1532
 "Broken Hallway"
 "Under Construction.
-
-"
+"
 "this is hall above chapter house
-
-up to bell tower
-
-grt. radiance
-
-"
+up to bell tower
+grt. radiance
+"
 301465604 0
 0 6 0
 D1
@@ -1107,8 +945,7 @@ S
 #1533
 "Bell Tower Stair"
 "Under Construction.
-
-"
+"
 ""
 301465604 0
 0 6 0
@@ -1126,13 +963,10 @@ S
 #1534
 "Bell Tower"
 "Under Construction.
-
-"
+"
 "named radiance
-
-ring bell is something
-
-"
+ring bell is something
+"
 301465604 0
 0 6 0
 D5
@@ -1145,8 +979,7 @@ S
 #1535
 "Blackened Hall"
 "Under Construction.
-
-"
+"
 ""
 301596676 0
 0 6 0
@@ -1164,8 +997,7 @@ S
 #1536
 "Blackened Hall"
 "Under Construction.
-
-"
+"
 ""
 301596676 0
 0 6 0
@@ -1183,11 +1015,9 @@ S
 #1537
 "Blackened Hall"
 "Under Construction.
-
-"
+"
 "this is directly below the quire
-
-"
+"
 301596676 0
 0 6 0
 D1
@@ -1208,11 +1038,9 @@ S
 #1538
 "Blackened Hall"
 "Under Construction.
-
-"
+"
 "this is directly below the altar
-
-"
+"
 301596676 0
 0 6 0
 D0
@@ -1237,11 +1065,9 @@ S
 #1539
 "Blackened Hall"
 "Under Construction.
-
-"
+"
 "this is below the north end of the nave
-
-"
+"
 301596676 0
 0 6 0
 D0
@@ -1258,11 +1084,9 @@ S
 #1540
 "Monk's Quarters"
 "Under Construction.
-
-"
+"
 "bunks for several monks who used to live here
-
-"
+"
 301596676 0
 0 7 0
 D3
@@ -1275,11 +1099,9 @@ S
 #1541
 "Monk's Quarters"
 "Under Construction.
-
-"
+"
 "bunks for several monks who used to live here
-
-"
+"
 301596676 0
 0 6 0
 D3
@@ -1292,8 +1114,7 @@ S
 #1542
 "High Priest's Chambers"
 "Under Construction.
-
-"
+"
 ""
 301596676 0
 0 6 0
@@ -1307,8 +1128,7 @@ S
 #1543
 "Monk's Quarters"
 "Under Construction.
-
-"
+"
 ""
 301596676 0
 0 6 0
@@ -1322,13 +1142,10 @@ S
 #1544
 "Above the Nave - South End"
 "Under Construction.
-
-"
+"
 "flying
-
-no.mob exit d
-
-"
+no.mob exit d
+"
 301465604 0
 9 8 0
 D0
@@ -1346,15 +1163,11 @@ S
 #1545
 "Above the Nave - North End"
 "Under Construction.
-
-"
+"
 "top of scissor arch to n to above altar
-
-flying
-
-no.mob d exit
-
-"
+flying
+no.mob d exit
+"
 301465604 0
 9 8 0
 D0
@@ -1376,15 +1189,11 @@ S
 #1546
 "Above the Altar"
 "Under Construction.
-
-"
+"
 "flying
-
-no.mob exit d
-
-in the center of the top of 4 scissor arches
-
-"
+no.mob exit d
+in the center of the top of 4 scissor arches
+"
 301465604 0
 9 7 0
 D0
@@ -1414,15 +1223,11 @@ S
 #1547
 "Above the East Transept"
 "Under Construction.
-
-"
+"
 "flying
-
-top of scissor arch to w
-
-no.mob exit n, d
-
-"
+top of scissor arch to w
+no.mob exit n, d
+"
 301465604 0
 9 8 0
 D0
@@ -1441,18 +1246,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You $t $T onto a balcony.
-
-"
+"
 E
 "to_room"
 "$n $t $T onto a balcony.
-
-"
+"
 !
 3 0 1
 -1
@@ -1461,15 +1263,11 @@ S
 #1548
 "Above the West Transept"
 "Under Construction.
-
-"
+"
 "flying
-
-no.mob exit d
-
-no.mob exit n
-
-"
+no.mob exit d
+no.mob exit n
+"
 301465604 0
 9 8 0
 D0
@@ -1488,18 +1286,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You $t $T onto a balcony.
-
-"
+"
 E
 "to_room"
 "$n $t $T onto a balcony.
-
-"
+"
 !
 3 0 1
 -1
@@ -1508,11 +1303,9 @@ S
 #1549
 "Above the Quire"
 "Under Construction.
-
-"
+"
 "no.mob exit d, w, n, e
-
-"
+"
 301465604 0
 9 7 0
 D0
@@ -1539,18 +1332,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You $t $T onto a balcony.
-
-"
+"
 E
 "to_room"
 "$n $t $T onto a balcony.
-
-"
+"
 !
 3 0 11
 2353 9 1509949540 3 0
@@ -1561,11 +1351,9 @@ S
 #1550
 "In a Well"
 "Under Construction.
-
-"
+"
 "up is 1523
-
-"
+"
 301465604 0
 6 6 0
 D4
@@ -1582,8 +1370,7 @@ S
 #1551
 "Down a Well"
 "Under Construction.
-
-"
+"
 ""
 301465604 0
 7 6 0

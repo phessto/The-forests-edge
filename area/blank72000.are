@@ -10,8 +10,7 @@
 #72000
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -29,8 +28,7 @@ S
 #72001
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -52,8 +50,7 @@ S
 #72002
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -75,8 +72,7 @@ S
 #72003
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -98,8 +94,7 @@ S
 #72004
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -125,8 +120,7 @@ S
 #72005
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -148,8 +142,7 @@ S
 #72006
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -175,8 +168,7 @@ S
 #72007
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -202,11 +194,9 @@ S
 #72008
 "Under Construction"
 "Under Construction.
-
-"
+"
 "[Zithuan] Dwarf Catapult 1
-
-"
+"
 301465600 0
 0 9 0
 D0
@@ -229,42 +219,27 @@ A
 ""
 ""
 "if( vnum( ch ) != 2730 )
-
-  continue;
-
-"
+  continue;
+"
 !
 3 0 128
 A
 ""
 ""
 "i = 0;
-
-loop( all_in_room ) {
-
-  if( vnum( rch ) == 2730 )
-
-    i = i + 1;
-
-  }
-
-mob = mob_in_room( 2730, room );
-
-if( mob && i < 3 ) {
-
-  interpret( mob, \"language dwarvish\" );
-
-  interpret( mob, \"yell We need another dwarf on the northern catapult!\" );
-
-  }
-
-if( i == 3 ) {
-
-  interpret( mob, \"fire catapult\" );
-
-  }
-
-"
+loop( all_in_room ) {
+  if( vnum( rch ) == 2730 )
+    i = i + 1;
+  }
+mob = mob_in_room( 2730, room );
+if( mob && i < 3 ) {
+  interpret( mob, \"language dwarvish\" );
+  interpret( mob, \"yell We need another dwarf on the northern catapult!\" );
+  }
+if( i == 3 ) {
+  interpret( mob, \"fire catapult\" );
+  }
+"
 !
 6 -1 0
 4478 17 1509949540 -2 0
@@ -277,8 +252,7 @@ S
 #72009
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -308,8 +282,7 @@ S
 #72010
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -331,8 +304,7 @@ S
 #72011
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -358,8 +330,7 @@ S
 #72012
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -385,8 +356,7 @@ S
 #72013
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -412,8 +382,7 @@ S
 #72014
 "D5"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -435,8 +404,7 @@ S
 #72015
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -458,8 +426,7 @@ S
 #72016
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -485,8 +452,7 @@ S
 #72017
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -512,11 +478,9 @@ S
 #72018
 "Under Construction"
 "Under Construction.
-
-"
+"
 "[Zithuan] Dwarf Catapult 2
-
-"
+"
 301465600 0
 0 9 0
 D0
@@ -539,42 +503,27 @@ A
 ""
 ""
 "if( vnum( ch ) != 2730 )
-
-  continue;
-
-"
+  continue;
+"
 !
 3 0 128
 A
 ""
 ""
 "i = 0;
-
-loop( all_in_room ) {
-
-  if( vnum( rch ) == 2730 )
-
-    i = i + 1;
-
-  }
-
-mob = mob_in_room( 2730, room );
-
-if( mob && i < 3 ) {
-
-  interpret( mob, \"language dwarvish\" );
-
-  interpret( mob, \"yell We need another dwarf on the southern catapult!\" );
-
-  }
-
-if( i == 3 ) {
-
-  interpret( mob, \"fire catapult\" );
-
-  }
-
-"
+loop( all_in_room ) {
+  if( vnum( rch ) == 2730 )
+    i = i + 1;
+  }
+mob = mob_in_room( 2730, room );
+if( mob && i < 3 ) {
+  interpret( mob, \"language dwarvish\" );
+  interpret( mob, \"yell We need another dwarf on the southern catapult!\" );
+  }
+if( i == 3 ) {
+  interpret( mob, \"fire catapult\" );
+  }
+"
 !
 6 -1 0
 4478 17 1509949540 -2 0
@@ -587,8 +536,7 @@ S
 #72019
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -618,8 +566,7 @@ S
 #72020
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -637,8 +584,7 @@ S
 #72021
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -660,8 +606,7 @@ S
 #72022
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -683,8 +628,7 @@ S
 #72023
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -706,8 +650,7 @@ S
 #72024
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -733,8 +676,7 @@ S
 #72025
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -764,8 +706,7 @@ S
 #72026
 "C5"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -787,8 +728,7 @@ S
 #72027
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -814,8 +754,7 @@ S
 #72028
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -837,8 +776,7 @@ S
 #72029
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -860,8 +798,7 @@ S
 #72030
 "A5"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -883,8 +820,7 @@ S
 #72031
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -906,8 +842,7 @@ S
 #72032
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -925,8 +860,7 @@ S
 #72033
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -956,8 +890,7 @@ S
 #72034
 "B5"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -979,11 +912,9 @@ S
 #72035
 "Under Construction"
 "Under Construction.
-
-"
+"
 "[Zithuan] Orc Catapult 1
-
-"
+"
 301465600 0
 0 9 0
 D0
@@ -1006,42 +937,27 @@ A
 ""
 ""
 "if( vnum( ch ) != 2731 )
-
-  continue;
-
-"
+  continue;
+"
 !
 3 0 128
 A
 ""
 ""
 "i = 0;
-
-loop( all_in_room ) {
-
-  if( vnum( rch ) == 2731 )
-
-    i = i + 1;
-
-  }
-
-mob = mob_in_room( 2731, room );
-
-if( mob && i < 3 ) {
-
-  interpret( mob, \"language orcish\" );
-
-  interpret( mob, \"yell We need another orc on the northern catapult!\" );
-
-  }
-
-if( i == 3 ) {
-
-  interpret( mob, \"fire catapult\" );
-
-  }
-
-"
+loop( all_in_room ) {
+  if( vnum( rch ) == 2731 )
+    i = i + 1;
+  }
+mob = mob_in_room( 2731, room );
+if( mob && i < 3 ) {
+  interpret( mob, \"language orcish\" );
+  interpret( mob, \"yell We need another orc on the northern catapult!\" );
+  }
+if( i == 3 ) {
+  interpret( mob, \"fire catapult\" );
+  }
+"
 !
 6 -1 0
 4478 17 1509949540 -2 0
@@ -1054,8 +970,7 @@ S
 #72036
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1081,8 +996,7 @@ S
 #72037
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1108,8 +1022,7 @@ S
 #72038
 "C4"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -1135,8 +1048,7 @@ S
 #72039
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1158,8 +1070,7 @@ S
 #72040
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1189,8 +1100,7 @@ S
 #72041
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1216,8 +1126,7 @@ S
 #72042
 "A4"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -1243,8 +1152,7 @@ S
 #72043
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1270,8 +1178,7 @@ S
 #72044
 "D4"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -1297,8 +1204,7 @@ S
 #72045
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1324,8 +1230,7 @@ S
 #72046
 "B4"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -1351,8 +1256,7 @@ S
 #72047
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1374,8 +1278,7 @@ S
 #72048
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1405,11 +1308,9 @@ S
 #72049
 "Under Construction"
 "Under Construction.
-
-"
+"
 "[Zithuan] Orc Catapult 2
-
-"
+"
 301465600 0
 0 9 0
 D0
@@ -1432,42 +1333,27 @@ A
 ""
 ""
 "if( vnum( ch ) != 2731 )
-
-  continue;
-
-"
+  continue;
+"
 !
 3 0 128
 A
 ""
 ""
 "i = 0;
-
-loop( all_in_room ) {
-
-  if( vnum( rch ) == 2731 )
-
-    i = i + 1;
-
-  }
-
-mob = mob_in_room( 2731, room );
-
-if( mob && i < 3 ) {
-
-  interpret( mob, \"language orcish\" );
-
-  interpret( mob, \"yell We need another orc on the southern catapult!\" );
-
-  }
-
-if( i == 3 ) {
-
-  interpret( mob, \"fire catapult\" );
-
-  }
-
-"
+loop( all_in_room ) {
+  if( vnum( rch ) == 2731 )
+    i = i + 1;
+  }
+mob = mob_in_room( 2731, room );
+if( mob && i < 3 ) {
+  interpret( mob, \"language orcish\" );
+  interpret( mob, \"yell We need another orc on the southern catapult!\" );
+  }
+if( i == 3 ) {
+  interpret( mob, \"fire catapult\" );
+  }
+"
 !
 6 -1 0
 4478 17 1509949540 -2 0
@@ -1480,8 +1366,7 @@ S
 #72050
 "C3"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -1507,8 +1392,7 @@ S
 #72051
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1534,8 +1418,7 @@ S
 #72052
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1561,8 +1444,7 @@ S
 #72053
 "D2"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -1588,8 +1470,7 @@ S
 #72054
 "B3"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -1615,8 +1496,7 @@ S
 #72055
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1638,8 +1518,7 @@ S
 #72056
 "D3"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -1665,8 +1544,7 @@ S
 #72057
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1692,8 +1570,7 @@ S
 #72058
 "A3"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -1719,8 +1596,7 @@ S
 #72059
 "E2"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -1746,8 +1622,7 @@ S
 #72060
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1769,8 +1644,7 @@ S
 #72061
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1792,8 +1666,7 @@ S
 #72062
 "C2"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 9 0
@@ -1819,8 +1692,7 @@ S
 #72063
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -1838,8 +1710,7 @@ S
 #72064
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1861,8 +1732,7 @@ S
 #72065
 "D1"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1884,8 +1754,7 @@ S
 #72066
 "B2"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1911,8 +1780,7 @@ S
 #72067
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1930,8 +1798,7 @@ S
 #72068
 "E3"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1957,8 +1824,7 @@ S
 #72069
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1980,8 +1846,7 @@ S
 #72070
 "A2"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -2007,8 +1872,7 @@ S
 #72071
 "E1"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -2030,8 +1894,7 @@ S
 #72072
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -2053,8 +1916,7 @@ S
 #72073
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -2076,8 +1938,7 @@ S
 #72074
 "C1"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -2099,8 +1960,7 @@ S
 #72075
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -2118,8 +1978,7 @@ S
 #72076
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -2137,8 +1996,7 @@ S
 #72077
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -2160,8 +2018,7 @@ S
 #72078
 "B1"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -2183,8 +2040,7 @@ S
 #72079
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -2206,8 +2062,7 @@ S
 #72080
 "E4"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -2233,8 +2088,7 @@ S
 #72081
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -2256,8 +2110,7 @@ S
 #72082
 "A1"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -2279,8 +2132,7 @@ S
 #72083
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -2298,8 +2150,7 @@ S
 #72092
 "E5"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0

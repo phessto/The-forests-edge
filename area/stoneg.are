@@ -10,16 +10,11 @@
 #71500
 "Below Hark's Finger"
 "The small trail leads directly to the base of the steep rock formation known
-
-as Hark's Finger.  To your south you see a patch of total destruction,
-
-completely out of place with the rest of the forest.  Trees have been scarred,
-
-branches smashed, plants trampled and some even appear to be burnt.  The trail
-
-begins its ascent to the north.
-
-"
+as Hark's Finger.  To your south you see a patch of total destruction,
+completely out of place with the rest of the forest.  Trees have been scarred,
+branches smashed, plants trampled and some even appear to be burnt.  The trail
+begins its ascent to the north.
+"
 ""
 301465600 0
 3 7 0
@@ -34,28 +29,20 @@ D3
 E
 "south tree branch plant"
 "The plant life that once grew to the south has been destroyed.  Signs of fire
-
-have left the trees charred.  Nearby plants are trampled, and branches have
-
-been torn off nearby trees and lie broken on the ground.
-
-"
+have left the trees charred.  Nearby plants are trampled, and branches have
+been torn off nearby trees and lie broken on the ground.
+"
 -1
 S
 
 #71501
 "Below Hark's Finger"
 "Leading up the trail everywhere are signs of intrusion and destruction.  To
-
-the west, large branches have been ripped off the trees and it appears from
-
-the trail of leaves that they were dragged up into the rock formations.  To
-
-the south the trail leads back into the forest, whereas above you the path
-
-continues up the spire.
-
-"
+the west, large branches have been ripped off the trees and it appears from
+the trail of leaves that they were dragged up into the rock formations.  To
+the south the trail leads back into the forest, whereas above you the path
+continues up the spire.
+"
 ""
 301465600 0
 5 7 0
@@ -70,31 +57,22 @@ D4
 E
 "branch tree west"
 "To the west, the trees have been stripped of their branches up to about five
-
-meters in height.  Dead and dying leaves form a trail that heads straight up
-
-along the path.
-
-"
+meters in height.  Dead and dying leaves form a trail that heads straight up
+along the path.
+"
 -1
 S
 
 #71502
 "The Rough-Cut Trail on Hark's Finger"
 "The rocky trail winds its way up the lower portion of the pinnacle-like
-
-rock, leading a good distance to what looks like a ledge far above.  You
-
-are still below the canopy of the forest so you can see nothing other
-
-than the branches of trees about you.  The trail leads down to the forest
-
-floor below you, and up the peak to the north.  
-
-"
+rock, leading a good distance to what looks like a ledge far above.  You
+are still below the canopy of the forest so you can see nothing other
+than the branches of trees about you.  The trail leads down to the forest
+floor below you, and up the peak to the north.  
+"
 "branches, trees, ledge extra
-
-"
+"
 301465600 0
 5 7 0
 D0
@@ -108,17 +86,13 @@ D5
 E
 "ledge above up"
 "High above your head lies a narrow rocky ledge.  The trees that surround you
-
-block a clear view of anything else.
-
-"
+block a clear view of anything else.
+"
 E
 "tree branch forest"
 "The top few meters of giant shuvana trees soar above your head, blocking all
-
-else from view.
-
-"
+else from view.
+"
 415 17 1509949540 -2 0
 -1
 S
@@ -126,16 +100,11 @@ S
 #71503
 "The Rough-Cut Trail on Hark's Finger"
 "This portion of the rocky trail is wide enough for an ogre to walk comfortably
-
-without concern.  To the south the trail stays wide and leads into the giant
-
-trees of the forest.  The only other direction possible is up; and the weeds
-
-which cling for life along the side of the spire block a clear view in that
-
-direction.
-
-"
+without concern.  To the south the trail stays wide and leads into the giant
+trees of the forest.  The only other direction possible is up; and the weeds
+which cling for life along the side of the spire block a clear view in that
+direction.
+"
 ""
 301465600 0
 5 7 0
@@ -151,28 +120,20 @@ A
 ""
 ""
 "if( !is_exhausted( ch ) ) {
-
-  send_to_char( \"You slowly climb up the spire.\", ch );
-
-  transfer_all( room, find_room( 71504 ) );
-
-  if( find_stat( ch, level ) < 10 )
-
-    act_tochar( #danger, ch );
-
-  }
-
-"
+  send_to_char( \"You slowly climb up the spire.\", ch );
+  transfer_all( room, find_room( 71504 ) );
+  if( find_stat( ch, level ) < 10 )
+    act_tochar( #danger, ch );
+  }
+"
 E
 "to_all"
 ""
 E
 "danger"
 "@RBeyond this point is a high-level zone.  You probably aren't ready to
-
-survive the zone and its advisable you turn back.  You have been warned.@n
-
-"
+survive the zone and its advisable you turn back.  You have been warned.@n
+"
 !
 3 -1 16
 494 17 1509949540 -2 0
@@ -182,14 +143,10 @@ S
 #71504
 "The Rough-Cut Trail on Hark's Finger"
 "You are on a narrow edge jutting out from the rock of Hark's Finger.  Below
-
-you is the forest canopy; your vision to the west and south is unobscured.
-
-Far in the distance to the west you see a darker mountain range.  To the east
-
-or below you the trail continues.
-
-"
+you is the forest canopy; your vision to the west and south is unobscured.
+Far in the distance to the west you see a darker mountain range.  To the east
+or below you the trail continues.
+"
 ""
 301465608 0
 5 7 0
@@ -204,20 +161,15 @@ D5
 E
 "mountain range west"
 "Far off along the western horizon you can see the tips of a dark mountain
-
-range.  It is not clear if they are capped with snow or if it's simply a
-
-strange reflection of the far-off light.
-
-"
+range.  It is not clear if they are capped with snow or if it's simply a
+strange reflection of the far-off light.
+"
 A
 ""
 ""
 "send_to_char( \"You carefully head down the slope.\", ch );
-
-transfer_all( room, find_room( 71503) );
-
-"
+transfer_all( room, find_room( 71503) );
+"
 !
 3 -1 32
 -1
@@ -226,19 +178,13 @@ S
 #71505
 "Dark Cave"
 "To the south you can see a high cave lit by a cook-fire.  This portion of the
-
-cave is dim and dingy; even the brightest of lights would fade as it tried to
-
-brighten the dark walls.  The cave narrows to the north as it seems to head
-
-down into pitch blackness.
-
-"
+cave is dim and dingy; even the brightest of lights would fade as it tried to
+brighten the dark walls.  The cave narrows to the north as it seems to head
+down into pitch blackness.
+"
 "changed attack_weapon to attack in drudge's mpcode
-
-*SC
-
-"
+*SC
+"
 301465605 0
 0 9 0
 D2
@@ -256,14 +202,10 @@ S
 #71506
 "Before a Large Cave on Hark's Finger"
 "Before you, to the north, lies the mouth of a narrow but tall cave mouth.  The
-
-entrance is unseen from anywhere but right before it, where you are, due to
-
-its shape and nearby vertical ridge.  The trail continues down and to the west
-
-towards Hark's Finger, and east, up it.
-
-"
+entrance is unseen from anywhere but right before it, where you are, due to
+its shape and nearby vertical ridge.  The trail continues down and to the west
+towards Hark's Finger, and east, up it.
+"
 ""
 301465608 0
 5 7 0
@@ -285,16 +227,11 @@ S
 #71507
 "A Large Cave"
 "You stand in a large cave with many signs of habitation.  A huge bonfire
-
-dominates the area, and upon it are several immense pots.  A pole has
-
-been strung across the fire to support several roasting deer carcasses. 
-
-Scattered about the ground are several large piles of branches with
-
-leaves intact.
-
-"
+dominates the area, and upon it are several immense pots.  A pole has
+been strung across the fire to support several roasting deer carcasses. 
+Scattered about the ground are several large piles of branches with
+leaves intact.
+"
 ""
 301465601 0
 5 7 0
@@ -305,48 +242,32 @@ D2
 E
 "fire deers"
 "Two deer carcasses turn on spits over the fire.  Several immense pots
-
-rest on the coals, containing a bubbling concoction.
-
-"
+rest on the coals, containing a bubbling concoction.
+"
 E
 "branches leaves"
 "The piles are very large and seem to be the bedding for some large
-
-creature.  
-
-"
+creature.  
+"
 A
 ""
 ""
 "end;
-
-mob = mob_in_room( 501, room );
-
-if( find_stat( ch, level ) > 90 )
-
-  end;
-
-if( mob ) {
-
-  if( !is_fighting( mob ) ) {
-
-    act_tochar( #ch, ch );
-
-    attack( mob, ch, 7d5+10, \"stone-like punch\" );
-
-    attack( mob, ch, 7d5+10, \"powerful backhand\" );
-
-    }
-
-  }
-
-"
+mob = mob_in_room( 501, room );
+if( find_stat( ch, level ) > 90 )
+  end;
+if( mob ) {
+  if( !is_fighting( mob ) ) {
+    act_tochar( #ch, ch );
+    attack( mob, ch, 7d5+10, \"stone-like punch\" );
+    attack( mob, ch, 7d5+10, \"powerful backhand\" );
+    }
+  }
+"
 E
 "ch"
 "@bAs you enter the giant jumps up and attacks!@n
-
-"
+"
 !
 1 -1 63
 491 9 1509949540 3 0
@@ -360,14 +281,10 @@ S
 #71508
 "The Rough-Cut Trail on Hark's Finger"
 "The rough trail clings to the cliff as it winds farther up the spire to the
-
-north.  Large granite outcroppings reach out from the main spire known to the
-
-locals as Hark's Finger.  To the west, the trail begins a gradual descent
-
-towards the tree tops far below.
-
-"
+north.  Large granite outcroppings reach out from the main spire known to the
+locals as Hark's Finger.  To the west, the trail begins a gradual descent
+towards the tree tops far below.
+"
 ""
 301465600 0
 5 7 0
@@ -385,12 +302,9 @@ S
 #71509
 "The Rough-Cut Trail on Hark's Finger"
 "As the trail parts from the sheer cliff it enters a large cleft, through which
-
-the wind howls much as a wolf does during a full moon.  You cannot see beyond
-
-the cleft to your north; and graite outcroppings also block your view south.
-
-"
+the wind howls much as a wolf does during a full moon.  You cannot see beyond
+the cleft to your north; and graite outcroppings also block your view south.
+"
 ""
 301465600 0
 5 7 0
@@ -412,14 +326,10 @@ S
 #71510
 "The Rough-Cut Trail on Hark's Finger"
 "On both sides, grey sheer cliff faces rise up to tower in the sky.  This
-
-portion of the trail feels far more secure than the more precariously placed
-
-sections of trail by the cliffs.  The trail continues in the cleft to the
-
-south, and to the north it leads back towards the edge of the spire.
-
-"
+portion of the trail feels far more secure than the more precariously placed
+sections of trail by the cliffs.  The trail continues in the cleft to the
+south, and to the north it leads back towards the edge of the spire.
+"
 ""
 301465600 0
 5 7 0
@@ -437,14 +347,10 @@ S
 #71511
 "The Rough-Cut Trail on Hark's Finger"
 "As the rough trail rounds the corner of Hark's Finger you catch a glimpse of
-
-something moving farther above you, west.  The ledge the trail is on continues
-
-towards the peak of the spire to the west, whereas it leads to the depths of
-
-the forest to the south.
-
-"
+something moving farther above you, west.  The ledge the trail is on continues
+towards the peak of the spire to the west, whereas it leads to the depths of
+the forest to the south.
+"
 ""
 301465600 0
 5 7 0
@@ -463,16 +369,11 @@ S
 #71512
 "The Rough-Cut Trail on Hark's Finger"
 "The rough hewn trail continues its trek from the forest floor up Hark's
-
-Finger.  A small patch of vegetation grows in a crevice to the south of you.
-
-The harsh conditions and steep smooth slope have kept most of the grey stony
-
-pinnacle free of green vegetation spots.  The trail continues steeply up
-
-towards and west, and drops off sharply as it heads east.
-
-"
+Finger.  A small patch of vegetation grows in a crevice to the south of you.
+The harsh conditions and steep smooth slope have kept most of the grey stony
+pinnacle free of green vegetation spots.  The trail continues steeply up
+towards and west, and drops off sharply as it heads east.
+"
 ""
 301465600 0
 5 7 0
@@ -490,14 +391,10 @@ S
 #71513
 "The Rough-Cut Trail on Hark's Finger"
 "The ancient trail is mostly over-grown with weeds and bits of rock lie
-
-everywhere.  A small tree, stunted in growth by the altitude and conditions,
-
-grows out of a small crevice on the rock face.  The trail spirals down the
-
-conical face east, and upwards towards the south.
-
-"
+everywhere.  A small tree, stunted in growth by the altitude and conditions,
+grows out of a small crevice on the rock face.  The trail spirals down the
+conical face east, and upwards towards the south.
+"
 ""
 301465600 0
 5 7 0
@@ -516,14 +413,10 @@ S
 #71514
 "The Rough-Cut Trail on Hark's Finger"
 "Far off in the distance to the west, over the large range of mountains, you
-
-see a dark form of some very large winged creature.  Fear tickles your senses
-
-even from this great distance.  The trails leads down and to the south and
-
-north along a ledge along the high spire.
-
-"
+see a dark form of some very large winged creature.  Fear tickles your senses
+even from this great distance.  The trails leads down and to the south and
+north along a ledge along the high spire.
+"
 ""
 301465608 0
 5 7 0
@@ -541,15 +434,11 @@ S
 #71515
 "High Cave on Hark's Finger"
 "Just to the north you can see the yawning mouth of a cave set high up on the
-
-thin mountain spire.  A narrowing path continues east and up around from view.
-
-To the south the path seems to widen a bit.
-
-"
+thin mountain spire.  A narrowing path continues east and up around from view.
+To the south the path seems to widen a bit.
+"
 "*SC
-
-"
+"
 301465600 0
 5 9 0
 D0
@@ -571,19 +460,13 @@ S
 #71516
 "Bone-Strewn Cavemouth"
 "The mouth of the cave is wide and dark, and you can't see what lies beyond.
-
-Drops of water slowly form a puddle just inside the cave, each drop making a
-
-splash and subsiding into the dark moisture.  To the south lies the narrow
-
-path which winds its way up and down Hark's Finger.
-
-"
+Drops of water slowly form a puddle just inside the cave, each drop making a
+splash and subsiding into the dark moisture.  To the south lies the narrow
+path which winds its way up and down Hark's Finger.
+"
 "second extra is what?
-
-*SC
-
-"
+*SC
+"
 335020036 0
 0 9 0
 D0
@@ -597,8 +480,7 @@ D2
 E
 "1 north"
 "Waiting darkness looks back at you.
-
-"
+"
 E
 "n 71517"
 "No description"
@@ -606,13 +488,11 @@ A
 "listen"
 ""
 "send_to_char( #sound, ch );
-
-"
+"
 E
 "sound"
 "Still silence. And then the soft sound of scales sliding across stone.
-
-"
+"
 !
 0 0 0
 -1
@@ -621,27 +501,17 @@ S
 #71517
 "Cave - By the Fire"
 "The cave walls open up into a larger cavern towards the north, and lead to a
-
-wide cave mouth south.  A large fire sits in the middle of the ground, and a
-
-tiny hole in the ceiling lets a breath of fresh air in.  Around the fire are
-
-several battered, grease-stained pots and pans, and a haunch of some large
-
-animal hangs on a spit above the fire.
-
-"
+wide cave mouth south.  A large fire sits in the middle of the ground, and a
+tiny hole in the ceiling lets a breath of fresh air in.  Around the fire are
+several battered, grease-stained pots and pans, and a haunch of some large
+animal hangs on a spit above the fire.
+"
 "action to have random chance of getting raw or partially cooked animal meat?
-
-cook's mpcode fixed a bit such as has_obj to wearing_obj, using is_pet check
-
-too, and inflict_fire string changed
-
-frying pan's damage roll needs changing from 3d4+4 to something like 5d5 without that +
-
-*SC
-
-"
+cook's mpcode fixed a bit such as has_obj to wearing_obj, using is_pet check
+too, and inflict_fire string changed
+frying pan's damage roll needs changing from 3d4+4 to something like 5d5 without that +
+*SC
+"
 301465613 0
 0 9 0
 D0
@@ -655,21 +525,15 @@ D2
 E
 "pots pans"
 "Several battered pots and pans lie strewn about the floor.  They are covered
-
-with grease and dried bits of what is probably food, and are not tempting to
-
-take.
-
-"
+with grease and dried bits of what is probably food, and are not tempting to
+take.
+"
 E
 "haunch animal meat spit"
 "The haunch of a large animal, perhaps a white stag, has been skewered and
-
-placed on a spit above the fire.  It is only partially cooked, and blood
-
-slowly seeps from it into the fire.
-
-"
+placed on a spit above the fire.  It is only partially cooked, and blood
+slowly seeps from it into the fire.
+"
 3198 17 1509949540 -2 0
 2365 9 1509949540 3 0
 -1
@@ -678,17 +542,12 @@ S
 #71518
 "The Rough Cut Trail on Hark's Finger"
 "The ancient trail, carved by the elves of old to their lookout tower,
-
-continues its trek up the steep rock formation.  The lookout platform has long
-
-since been abandoned due to the deaths of the old threats, or so you have
-
-heard.  The ledge-like trail heads upwards east and downwards west.
-
-"
+continues its trek up the steep rock formation.  The lookout platform has long
+since been abandoned due to the deaths of the old threats, or so you have
+heard.  The ledge-like trail heads upwards east and downwards west.
+"
 "*SC
-
-"
+"
 301465600 0
 5 7 0
 D1
@@ -705,19 +564,13 @@ S
 #71519
 "The Rough Cut Trail on Hark's Finger"
 "As you gaze about the surrounding Vaasa, you realize why anyone would want to
-
-claim this area.  You can see for miles from this spire: far off to the west
-
-are the Dragonspire mountains, in all other directions you can see the
-
-forestland of the Vaasa.  The trail zigs and zags north and west as it wends
-
-it way around the spire.
-
-"
+claim this area.  You can see for miles from this spire: far off to the west
+are the Dragonspire mountains, in all other directions you can see the
+forestland of the Vaasa.  The trail zigs and zags north and west as it wends
+it way around the spire.
+"
 "*SC
-
-"
+"
 301465600 0
 5 7 0
 D0
@@ -734,19 +587,13 @@ S
 #71520
 "The Rough Cut Trail on Hark's Finger"
 "To the northeast lies a large granite outcropping, upon the top of which sits
-
-a large nest.  You wouldn't call it a trail here, but a narrow ledge on the
-
-face of a smooth vertical and conical slope.  The pinnacle narrows to a
-
-pointed summit somewhere above.  The narrow trail also heads south as it
-
-clings to the side of the rock.
-
-"
+a large nest.  You wouldn't call it a trail here, but a narrow ledge on the
+face of a smooth vertical and conical slope.  The pinnacle narrows to a
+pointed summit somewhere above.  The narrow trail also heads south as it
+clings to the side of the rock.
+"
 "*SC
-
-"
+"
 301465600 0
 5 7 0
 D2
@@ -760,10 +607,8 @@ D4
 E
 "nest ne"
 "You wouldn't be able to get to it.  Not from here.  It would take ropes
-
-and rock spikes.  
-
-"
+and rock spikes.  
+"
 493 9 1509949540 3 0
 -1
 S
@@ -771,21 +616,14 @@ S
 #71521
 "The Rough Cut Trail on Hark's Finger"
 "Looking out over the eastern and southern portions of the ancient forest, you
-
-feel small compared to the forces that have been at work here.  You are high
-
-above the forest now, and only a few bushes and an occasional tree can cling
-
-to the steep and smooth slopes of this pinnacle.  The trail leads down a steep
-
-incline below you, heading towards the forest, whereas it heads north on a
-
-more gradual slope.
-
-"
+feel small compared to the forces that have been at work here.  You are high
+above the forest now, and only a few bushes and an occasional tree can cling
+to the steep and smooth slopes of this pinnacle.  The trail leads down a steep
+incline below you, heading towards the forest, whereas it heads north on a
+more gradual slope.
+"
 "*SC
-
-"
+"
 301465600 0
 5 7 0
 D0
@@ -802,19 +640,13 @@ S
 #71522
 "The Rough Cut Trail on Hark's Finger"
 "A shrill wind whips around your body, implanting fear and double doubt into
-
-your soul.  A large outcropping of granite to the east prevents you from
-
-seeing the eastern parts of the Vaasa from here, however you can see a large
-
-dark mountain range far off to the north.  The trail zig-zags up the steep and
-
-narrowing conical side to the west, and downward south.
-
-"
+your soul.  A large outcropping of granite to the east prevents you from
+seeing the eastern parts of the Vaasa from here, however you can see a large
+dark mountain range far off to the north.  The trail zig-zags up the steep and
+narrowing conical side to the west, and downward south.
+"
 "*SC
-
-"
+"
 301465600 0
 5 7 0
 D2
@@ -832,16 +664,11 @@ S
 #71523
 "The Rough Cut Trail on Hark's Finger"
 "Far out over the slightly waving sea of treetops, you see a flock of large
-
-birds flying in perfect unison.  Far off to the north past all of the
-
-beautiful green, you see a large ominous mountain range with snow-capped
-
-peaks.  To the east the rocky trail drops quickly down the side of Hark's
-
-Finger, and above you the trail goes steeply up.
-
-"
+birds flying in perfect unison.  Far off to the north past all of the
+beautiful green, you see a large ominous mountain range with snow-capped
+peaks.  To the east the rocky trail drops quickly down the side of Hark's
+Finger, and above you the trail goes steeply up.
+"
 ""
 301465600 0
 5 7 0
@@ -859,17 +686,12 @@ S
 #71524
 "End of the Trail"
 "You have come as far as you can go.  The pointed finger of the spire still
-
-rises above, but it is nearly vertical and smooth, without handholds.  A
-
-platform of grey weathered wood leans in disrepair here, from which you have
-
-an almost 360 degree view of the surrounding Vaasa.
-
-"
+rises above, but it is nearly vertical and smooth, without handholds.  A
+platform of grey weathered wood leans in disrepair here, from which you have
+an almost 360 degree view of the surrounding Vaasa.
+"
 "we should add an extra for the platform
-
-"
+"
 301465608 0
 5 7 0
 D5
@@ -879,40 +701,28 @@ D5
 E
 "platform"
 "The view from the platform is awe inspiring.  You stand high above even
-
-the mighty Shuvana trees, their crests forming secret valleys and hills
-
-only now visible to you.
-
-"
+the mighty Shuvana trees, their crests forming secret valleys and hills
+only now visible to you.
+"
 A
 "open pick untrap"
 "a closed battered iron chest"
 "mob = mob_in_room( 1631, room );
-
-  if( mob ) {
-
-    act_tochar( #mob, ch );
-
-    end;
-
-    }
-
-  else
-
-    continue;
-
-"
+  if( mob ) {
+    act_tochar( #mob, ch );
+    end;
+    }
+  else
+    continue;
+"
 E
 "nope"
 "The chest is already empty.
-
-"
+"
 E
 "mob"
 "You cannot open the chest while the leader is in here.
-
-"
+"
 !
 0 0 0
 1631 137 1509949540 3 0
@@ -930,12 +740,9 @@ S
 #71525
 "In the Betholar's Stomach"
 "@b@RThe tissue walls are wet and slick, taut and hot, pinning you to
-
-near immobility.  Strong acids fill available space quickly, burning
-
-you like fire.
-
-"
+near immobility.  Strong acids fill available space quickly, burning
+you like fire.
+"
 ""
 301465601 0
 5 6 0
@@ -943,37 +750,29 @@ A
 "cut slice"
 "stomach lining out"
 "acode( find_room( 71517 ), 1 );
-
-"
+"
 !
 0 0 0
 A
 "exit leave out enter climb"
 "hole"
 "acode( find_room( 71517 ), 2 );
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 494, find_room( 71517 ) );
-
-loop( all_in_room ) {
-
-  act_tochar( #acid, rch );
-
-  inflict( rch, mob, 3d75, \"Betholar stomach acids\" );
-
-  }
-
-"
+loop( all_in_room ) {
+  act_tochar( #acid, rch );
+  inflict( rch, mob, 3d75, \"Betholar stomach acids\" );
+  }
+"
 E
 "acid"
 "@b@YBurning stomach acids continue to burn through your skin.
-
-"
+"
 !
 2 1000 0
 -1
@@ -982,16 +781,11 @@ S
 #71526
 "Dark Cave - Foyer"
 "This small portion of the cave opens into a larger, well-lit area to the south
-
-and heads up and to the north into an impenetrable greyness.  A small rug made
-
-out of what appears to be elf-skin sits in the middle of the floor.  A small
-
-pile of furs by the western wall are neatly stacked, a skinning knife lies
-
-bloody nearby.
-
-"
+and heads up and to the north into an impenetrable greyness.  A small rug made
+out of what appears to be elf-skin sits in the middle of the floor.  A small
+pile of furs by the western wall are neatly stacked, a skinning knife lies
+bloody nearby.
+"
 ""
 301465604 0
 0 9 0
@@ -1010,87 +804,62 @@ D5
 E
 "rug carpet skin"
 "This small rug is made out of the skin of an entire elf, hair, fingers, and
-
-just about every other outer part, save the ears.
-
-"
+just about every other outer part, save the ears.
+"
 E
 "furs knife west"
 "Furs from animals which dwell in the forest below lie in a small heap.  Not
-
-all are recognizable, but certainly furs belonging to fades as well as
-
-deerskin can be identified.  A bloody skinning knife rests nearby.
-
-"
+all are recognizable, but certainly furs belonging to fades as well as
+deerskin can be identified.  A bloody skinning knife rests nearby.
+"
 A
 "take move"
 "rug skin"
 "if( is_open( room, down ) ) {
-
-  act_tochar( #close, ch );
-
-  act_notchar( #closed, ch );
-
-  close( room, down );
-
-  send_to_room( #rclosed, find_room( 71531 ) );
-
-}
-
-else {
-
-  send_to_char ( #open, ch );
-
-  act_notchar( #opened, ch );
-
-  open( room, down );
-
-  send_to_room( #ropen, find_room( 71531 ) );
-
-}
-
-"
+  act_tochar( #close, ch );
+  act_notchar( #closed, ch );
+  close( room, down );
+  send_to_room( #rclosed, find_room( 71531 ) );
+}
+else {
+  send_to_char ( #open, ch );
+  act_notchar( #opened, ch );
+  open( room, down );
+  send_to_room( #ropen, find_room( 71531 ) );
+}
+"
 E
 "open"
 "You move the rug and discover that a tunnel leads downwards.
-
-"
+"
 E
 "opened"
 "You see $n move the rug and notice that a tunnel leads downwards.
-
-"
+"
 E
 "close"
 "You move the rug back in place to conceal the tunnel leading down.
-
-"
+"
 E
 "closed"
 "You see $n move a rug to conceal a tunnel leading down.
-
-"
+"
 E
 "ropen"
 "Something is moved aside revealing an opening overhead.
-
-"
+"
 E
 "rclosed"
 "Something is placed across the opening overhead.
-
-"
+"
 !
 0 0 0
 A
 "take get fur knife"
 "fur fade knife"
 "act_tochar( \"You start to take the tanners work, then reconsider.\", ch );
-
-act_notchar( \"You see $n reach for the pile of furs, then stop.\", ch );
-
-"
+act_notchar( \"You see $n reach for the pile of furs, then stop.\", ch );
+"
 !
 0 0 0
 2366 9 1509949540 3 0
@@ -1100,19 +869,13 @@ S
 #71527
 "Dark Cave - Living Area"
 "This portion of the cave gives an appearance of being lived-in; a pile of rags
-
-lies on the eastern side of the room; a small tree-stump has been propped
-
-against the western wall, and is surrounded by a semi-circle of smaller
-
-stumps.  The cave itself leads north to a small foyer and south into a larger
-
-well-lit area.
-
-"
+lies on the eastern side of the room; a small tree-stump has been propped
+against the western wall, and is surrounded by a semi-circle of smaller
+stumps.  The cave itself leads north to a small foyer and south into a larger
+well-lit area.
+"
 "*SC
-
-"
+"
 301465605 0
 0 9 0
 D0
@@ -1126,28 +889,22 @@ D2
 E
 "tree stump"
 "One large stump of hickory-wood stands near the wall.  It is surrounded on
-
-three sides by a semi-circle of smaller maple trunks.
-
-"
+three sides by a semi-circle of smaller maple trunks.
+"
 E
 "maple"
 "Six maple tree stumps have been set up in a semi-circle around a larger oak stump.
-
-"
+"
 E
 "rags east"
 "A few, perhaps half a dozen at most, bits of brightly colored cloth lie along
-
-the eastern wall.
-
-"
+the eastern wall.
+"
 A
 "get take search"
 "cloth rags"
 "act_tochar( \"These bits of cloth aren't worth taking.\", ch );
-
-"
+"
 !
 0 0 0
 3879 17 1509949540 -2 0
@@ -1157,14 +914,10 @@ S
 #71528
 "Dark Cave - Living Area"
 "A firepit in the center of this area of the cave keeps it bright and almost
-
-cheerful.  A small pile of rags, which resemble bits of clothing, lies off to
-
-the side, On the north wall you can see a painting of a large humanoid who
-
-appears to be chasing after an elf.
-
-"
+cheerful.  A small pile of rags, which resemble bits of clothing, lies off to
+the side, On the north wall you can see a painting of a large humanoid who
+appears to be chasing after an elf.
+"
 ""
 301465605 0
 0 9 0
@@ -1183,77 +936,48 @@ D3
 E
 "picture painting elf humanoid giant"
 "This wall painting is quite crude, but a recognizable figure of a stone giant
-
-is depicted as chasing an elven hunter.  The elf carries a large bow, and
-
-seems to be running away from a spire quite similar to the one which houses
-
-this cave.
-
-"
+is depicted as chasing an elven hunter.  The elf carries a large bow, and
+seems to be running away from a spire quite similar to the one which houses
+this cave.
+"
 E
 "rag clothing pile"
 "This pile of rags upon closer inspection is really a jumble of clothing.  You
-
-can see huge dresses, pants, and at least one shirt, all made out of a
-
-burlap-type material.
-
-"
+can see huge dresses, pants, and at least one shirt, all made out of a
+burlap-type material.
+"
 A
 "get take search"
 "pile clothing rags"
 "if( is_player( ch ) ) {
-
-  if( rflag( reset1, room ) ) {
-
-    i = random( 1, 10 );
-
-    remove_rflag( reset1, room );
-
-    if( i > 8 ) {
-
-      obj = oload( 2159 );
-
-      act_tochar( #got, ch, obj );
-
-      act_notchar( #gotit, ch, obj );
-
-      obj_to_char( obj, ch );
-
-      }
-
-    else {
-
-      act_tochar( \"There is nothing you can take from the pile.\", ch );
-
-      act_notchar( \"You see $n root around in the pile but come up empty-handed.\", ch );
-
-      }
-
-    }
-
-  else {
-
-    act_notchar( \"You see $n root around in the pile and come up empty-handed.\", ch );
-
-    act_tochar( \"There is nothing you can take from the pile.\", ch );
-
-    }
-
-  }
-
-"
+  if( rflag( reset1, room ) ) {
+    i = random( 1, 10 );
+    remove_rflag( reset1, room );
+    if( i > 8 ) {
+      obj = oload( 2159 );
+      act_tochar( #got, ch, obj );
+      act_notchar( #gotit, ch, obj );
+      obj_to_char( obj, ch );
+      }
+    else {
+      act_tochar( \"There is nothing you can take from the pile.\", ch );
+      act_notchar( \"You see $n root around in the pile but come up empty-handed.\", ch );
+      }
+    }
+  else {
+    act_notchar( \"You see $n root around in the pile and come up empty-handed.\", ch );
+    act_tochar( \"There is nothing you can take from the pile.\", ch );
+    }
+  }
+"
 E
 "got"
 "You reach around in the pile and find a rag that looks worth taking.
-
-"
+"
 E
 "gotit"
 "You see $n reach around in the pile, and pull out a rag.
-
-"
+"
 !
 0 0 0
 2363 9 1509949540 3 0
@@ -1264,16 +988,11 @@ S
 #71529
 "Dark Cave - Sleeping Alcove"
 "Several pallets have been laid out in this eastern alcove; furred blankets
-
-tossed aside as if the inhabitants had risen quickly.  A torch has been built
-
-into the eastern wall, providing light for the area.  Mounds of discarded
-
-clothing lie about in disarray, and several pairs of huge boots lie discarded
-
-by the wall.
-
-"
+tossed aside as if the inhabitants had risen quickly.  A torch has been built
+into the eastern wall, providing light for the area.  Mounds of discarded
+clothing lie about in disarray, and several pairs of huge boots lie discarded
+by the wall.
+"
 ""
 301465605 0
 0 9 0
@@ -1284,21 +1003,17 @@ D3
 E
 "clothing boot clothes"
 "Giant-sized clothing and boots are scattered about the area.
-
-"
+"
 E
 "pallet blanket bedding bed"
 "Several giant-sized pallets made of straw have been placed in this alcove. 
-
-Huge furred blankets made of yeti-skin are heaped near them.
-
-"
+Huge furred blankets made of yeti-skin are heaped near them.
+"
 A
 "take get"
 "clothes boots"
 "act_tochar( \"You start to take the clothing, but then decide not to.\", ch );
-
-"
+"
 !
 0 0 0
 2363 9 1509949540 3 0
@@ -1308,16 +1023,11 @@ S
 #71530
 "Dark Cave - Eating Area"
 "This portion of the cave seems to be set aside for dining.  A large oak table,
-
-covered with grease, has half a dozen food-encrusted salvers littering its
-
-surface.  Eight small tree trunks encircle the table, bits of food and bones
-
-stuck to their surface.  The light of a firepit to the east keeps this area
-
-well-lit.
-
-"
+covered with grease, has half a dozen food-encrusted salvers littering its
+surface.  Eight small tree trunks encircle the table, bits of food and bones
+stuck to their surface.  The light of a firepit to the east keeps this area
+well-lit.
+"
 ""
 301465605 0
 0 9 0
@@ -1328,21 +1038,15 @@ D1
 E
 "tree trunk chair stool"
 "Eight small tree stumps are used as stools for dining.  They are covered with
-
-bits of food and animal bone, and it is impossible to ascertain the type of
-
-wood used.
-
-"
+bits of food and animal bone, and it is impossible to ascertain the type of
+wood used.
+"
 E
 "table salver food grease"
 "The surface of the table is covered with a thick coat of grease and congealed
-
-food.  Half a dozen moldy salvers are scattered about the surface; food
-
-swimming in dried grease.
-
-"
+food.  Half a dozen moldy salvers are scattered about the surface; food
+swimming in dried grease.
+"
 3880 17 1509949540 -2 0
 3879 17 1509949540 -2 0
 -1
@@ -1351,18 +1055,12 @@ S
 #71531
 "Storeroom"
 "This small chamber is a storeroom for all sorts of things.  Against one wall
-
-you can see a large pile of furs, against another is a stack of bones about
-
-two feet high.  Against the northern wall is a heap of rocks; why they need to
-
-be stored underground is hard to imagine.  The southern wall is bare save for
-
-a single, broken bow.  The stone beneath your feet seems strangely fragile.  A
-
-trapdoor is in the roof.
-
-"
+you can see a large pile of furs, against another is a stack of bones about
+two feet high.  Against the northern wall is a heap of rocks; why they need to
+be stored underground is hard to imagine.  The southern wall is bare save for
+a single, broken bow.  The stone beneath your feet seems strangely fragile.  A
+trapdoor is in the roof.
+"
 ""
 301465604 0
 0 9 0
@@ -1377,212 +1075,141 @@ D5
 E
 "fur"
 "This pile of animal furs stands about three feet high.  Certainly yeti and
-
-fade furs are in the pile, as well as some tanned hides.
-
-"
+fade furs are in the pile, as well as some tanned hides.
+"
 E
 "bone"
 "Hundreds of bones, large and small, lie in a stack about two feet in height. 
-
-Some are large enough to have come from the stone giants themselves; others
-
-are small enough to be from a jay or other local bird.
-
-"
+Some are large enough to have come from the stone giants themselves; others
+are small enough to be from a jay or other local bird.
+"
 E
 "north heap rock"
 "A jumbled heap of rocks lies stacked against the northern wall of this
-
-chamber.  Most are closer in size to a boulder than a pebble.
-
-"
+chamber.  Most are closer in size to a boulder than a pebble.
+"
 E
 "south bow"
 "A single bow similar to those used by the elven hunters in the Vaasa lies broken by the southern wall.
-
-"
+"
 A
 "open"
 "door up trapdoor"
 "if( is_open( room, up ) ) {
-
-  act_tochar( \"The trapdoor is already open.\", ch );
-
-}
-
-else {
-
-  act_tochar( \"You manage to open the trapdoor above your head.\", ch );
-
-  act_notchar( \"You see $n open the trapdoor above your head.\", ch );
-
-  open( room, up );
-
-  send_to_room( \"The rug is moved aside from below!\", find_room( 71526 ) );
-
-}
-
-"
+  act_tochar( \"The trapdoor is already open.\", ch );
+}
+else {
+  act_tochar( \"You manage to open the trapdoor above your head.\", ch );
+  act_notchar( \"You see $n open the trapdoor above your head.\", ch );
+  open( room, up );
+  send_to_room( \"The rug is moved aside from below!\", find_room( 71526 ) );
+}
+"
 !
 0 0 0
 A
 "search move get take"
 "furs"
 "if( is_player( ch ) ) {
-
-  if( rflag( reset1, room ) ) {
-
-    i = random( 1, 10 );
-
-    remove_rflag( reset1, room );
-
-    if( i > 8 )
-
-      obj = oload ( 989 );
-
-    else
-
-      obj = oload( 40 );
-
-    act_tochar( #find, ch, obj );
-
-    act_notchar( #rfind, ch, obj );
-
-    obj_to_char( obj, ch );
-
-    end;
-
-    }
-
-  act_tochar( \"There are no more furs you can take.\", ch );
-
-  }
-
-"
+  if( rflag( reset1, room ) ) {
+    i = random( 1, 10 );
+    remove_rflag( reset1, room );
+    if( i > 8 )
+      obj = oload ( 989 );
+    else
+      obj = oload( 40 );
+    act_tochar( #find, ch, obj );
+    act_notchar( #rfind, ch, obj );
+    obj_to_char( obj, ch );
+    end;
+    }
+  act_tochar( \"There are no more furs you can take.\", ch );
+  }
+"
 E
 "find"
 "You rummage through the pile of furs and find one!
-
-"
+"
 E
 "rfind"
 "You see $n rummage through the pile of furs and pull one out!
-
-"
+"
 !
 0 0 0
 A
 "get take"
 "bow broken bone rock"
 "act_tochar( \"This isn't worth taking.\" ch );
-
-"
+"
 !
 0 0 0
 A
 "search"
 "rocks pile rubble"
 "if( is_open( room, down ) ) {
-
-  act_tochar( #already, ch );
-
-  end;
-
-}
-
-if( !is_player( ch ) )
-
-  end;
-
-if( find_skill( ch, searching ) > random( 3,5 ) ) {
-
-  act_tochar( #char, ch );
-
-  act_notchar( #room, ch );
-
-  send_to_room( #down, find_room( 71532 ) );
-
-  open( room, down );
-
-}
-
-else
-
-  act_tochar( #nogo, ch );
-
-"
+  act_tochar( #already, ch );
+  end;
+}
+if( !is_player( ch ) )
+  end;
+if( find_skill( ch, searching ) > random( 3,5 ) ) {
+  act_tochar( #char, ch );
+  act_notchar( #room, ch );
+  send_to_room( #down, find_room( 71532 ) );
+  open( room, down );
+}
+else
+  act_tochar( #nogo, ch );
+"
 E
 "char"
 "You discover a narrow crevice buried beneath the mounds of stone.  It appears
-
-to lead deeper into the interior of Hark's Finger.
-
-"
+to lead deeper into the interior of Hark's Finger.
+"
 E
 "room"
 "$n discovers a well-hidden crevice among the pile of stones, leading deeper
-
-into the rock which form's Hark's Finger.
-
-"
+into the rock which form's Hark's Finger.
+"
 E
 "nogo"
 "You kick the rocks around some, but it doesn't look that interesting.
-
-"
+"
 E
 "already"
 "The rocks have been cleared already.
-
-"
+"
 E
 "down"
 "The crevice is cleared from above in a shower of pebbles and dust.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "if( is_open( room, down ) ) {
-
-  send_to_char( #opendown, ch );
-
-} else {
-
-  send_to_char( #normal, ch );
-
-}
-
-"
+  send_to_char( #opendown, ch );
+} else {
+  send_to_char( #normal, ch );
+}
+"
 E
 "normal"
 "This small chamber is a storeroom for all sorts of things.  Against one wall
-
-you can see a large pile of furs, against another is a stack of bones about
-
-Against the northern wall is a heap of rocks; why they need to be stored
-
-underground is hard to imagine.  The southern wall is bare save for a single,
-
-broken bow.  A trapdoor is in the roof.
-
-"
+you can see a large pile of furs, against another is a stack of bones about
+Against the northern wall is a heap of rocks; why they need to be stored
+underground is hard to imagine.  The southern wall is bare save for a single,
+broken bow.  A trapdoor is in the roof.
+"
 E
 "opendown"
 "This small chamber is a storeroom for all sorts of things.  Against one wall
-
-you can see a large pile of furs, against another is a stack of bones about
-
-Against the northern wall is a heap of rocks; they have been carefully
-
-excavated to reveal a crevice leading further into the caves.  The southern
-
-wall is bare save for a single, broken bow.  A trapdoor is in the roof.
-
-"
+you can see a large pile of furs, against another is a stack of bones about
+Against the northern wall is a heap of rocks; they have been carefully
+excavated to reveal a crevice leading further into the caves.  The southern
+wall is bare save for a single, broken bow.  A trapdoor is in the roof.
+"
 !
 17 0 0
 2366 393 1509949540 3 0
@@ -1592,14 +1219,10 @@ S
 #71532
 "Abandoned Cave"
 "This large cave is dark and dank.  It smells of mildew and mold, and appears
-
-to be in disuse.  The rock is slightly scraped at your feet, evidence that
-
-this has been used in aeons past.  The cave looms open to the north, west, and
-
-east; to your south the rock is cold and hard.
-
-"
+to be in disuse.  The rock is slightly scraped at your feet, evidence that
+this has been used in aeons past.  The cave looms open to the north, west, and
+east; to your south the rock is cold and hard.
+"
 ""
 301465604 0
 0 9 0
@@ -1622,101 +1245,69 @@ D4
 E
 "rock wall south cave mildew mold"
 "The dark rock is of unascertainable origin.  It is cold and clammy to the
-
-touch, and much of it is covered with mold and mildew.
-
-"
+touch, and much of it is covered with mold and mildew.
+"
 E
 "rubble crevice upwards"
 "A slanting crevice leads upwards.
-
-"
+"
 A
 ""
 ""
 "if( is_open( room, up ) ) {
-
-  send_to_char( #open, ch );
-
-} else {
-
-  send_to_char( #normal, ch );
-
-}
-
-"
+  send_to_char( #open, ch );
+} else {
+  send_to_char( #normal, ch );
+}
+"
 E
 "normal"
 "This large cave is dark and dank.  It smells of mildew and mold, and appears
-
-to be in disuse.  The rock is slightly scraped at your feet, evidence that
-
-this has been used in aeons past.  The cave looms open to the north, west, and
-
-east; to your south the rock is cold and hard.  Rubble chokes a slanting
-
-crevice rising upwards.
-
-"
+to be in disuse.  The rock is slightly scraped at your feet, evidence that
+this has been used in aeons past.  The cave looms open to the north, west, and
+east; to your south the rock is cold and hard.  Rubble chokes a slanting
+crevice rising upwards.
+"
 E
 "open"
 "This large cave is dark and dank.  It smells of mildew and mold, and appears
-
-to be in disuse.  The rock is slightly scraped at your feet, evidence that
-
-this has been used in aeons past.  The cave looms open to the north, west, and
-
-east; to your south the rock is cold and hard.  A slanting crevice upwards has
-
-been cleared of rubble.
-
-"
+to be in disuse.  The rock is slightly scraped at your feet, evidence that
+this has been used in aeons past.  The cave looms open to the north, west, and
+east; to your south the rock is cold and hard.  A slanting crevice upwards has
+been cleared of rubble.
+"
 !
 17 0 0
 A
 "clear move dig"
 "upwards rubble crevice"
 "if( is_open( room, up ) ) {
-
-act_tochar( #nope, ch );
-
-end;
-
-}
-
-act_tochar( #clear,ch );
-
-act_notchar( #oclear, ch );
-
-send_to_room( #above, find_room( 71531 ) );
-
-open( room, up );
-
-"
+act_tochar( #nope, ch );
+end;
+}
+act_tochar( #clear,ch );
+act_notchar( #oclear, ch );
+send_to_room( #above, find_room( 71531 ) );
+open( room, up );
+"
 E
 "nope"
 "The crevice is already clear.
-
-"
+"
 E
 "clear"
 "You spend a moment pulling the larger pieces of rock out of the way - the
-
-smaller rocks slide in a clattering mess once the jam is loosened, revealing
-
-the crevice upwards.
-
-"
+smaller rocks slide in a clattering mess once the jam is loosened, revealing
+the crevice upwards.
+"
 E
 "oclear"
 "$n clears the crevice leading upwards in a cloud of dust.
-
-"
+"
 E
 "above"
 "With a crash, rocks move from below, and aa crevice downwards is revealed.
-
-"
+"
 !
 0 0 0
 -1
@@ -1725,16 +1316,11 @@ S
 #71533
 "Abandoned Cave"
 "This small northern niche, like the rest of this area, is made of
-
-mildew-covered dark rock.  The walls are damp to the touch, though no actual
-
-source of water is apparent.  Aged bits of straw are scattered about on the
-
-ground, and a few bits of disintegrating cloth add a small splash of color to
-
-the area.
-
-"
+mildew-covered dark rock.  The walls are damp to the touch, though no actual
+source of water is apparent.  Aged bits of straw are scattered about on the
+ground, and a few bits of disintegrating cloth add a small splash of color to
+the area.
+"
 ""
 301465604 0
 0 9 0
@@ -1745,70 +1331,43 @@ D2
 E
 "straw cloth ground"
 "A few bits of aged straw lie on the cave floor here.  There are also a few
-
-bits of faded red and green cloth.
-
-"
+bits of faded red and green cloth.
+"
 A
 "move touch get take search"
 "straw cloth"
 "if( mob_in_room( 2417, room ) )
-
-  end;
-
-if( !is_player( ch ) )
-
-  end;
-
-if( rflag( reset1, room ) ) {
-
-  remove_rflag( reset1, room );
-
-  if( random( i, 2 ) == 1 ) {
-
-    act_tochar( #ghost, ch );
-
-    act_notchar( #ghosts, ch );
-
-    mob = mob_in_room( 2417, room );
-
-    mload( 2417, room );
-
-    victim = ch;
-
-    attack_weapon( mob, victim, 5d7+9, \"frosty anger\" );
-
-    }
-
-  else {
-
-    act_tochar( \"Nothing happens as you try to move the straw.\", ch );
-
-    act_notchar( \"Nothing happens as $n tries to move the straw.\", ch );
-
-    }
-
-  }
-
-else {
-
-  act_tochar( \"Nothing happens as you try to move the straw.\", ch );
-
-  act_notchar( \"Nothing happens as $n moves the straw.\", ch );
-
-  }
-
-"
+  end;
+if( !is_player( ch ) )
+  end;
+if( rflag( reset1, room ) ) {
+  remove_rflag( reset1, room );
+  if( random( i, 2 ) == 1 ) {
+    act_tochar( #ghost, ch );
+    act_notchar( #ghosts, ch );
+    mob = mob_in_room( 2417, room );
+    mload( 2417, room );
+    victim = ch;
+    attack_weapon( mob, victim, 5d7+9, \"frosty anger\" );
+    }
+  else {
+    act_tochar( \"Nothing happens as you try to move the straw.\", ch );
+    act_notchar( \"Nothing happens as $n tries to move the straw.\", ch );
+    }
+  }
+else {
+  act_tochar( \"Nothing happens as you try to move the straw.\", ch );
+  act_notchar( \"Nothing happens as $n moves the straw.\", ch );
+  }
+"
 E
 "ghost"
 "@RYou have disturbed the remains of something very ancient!@n
-
-"
+"
 E
 "ghosts"
 "@R$n has disturbed the ghost of something very ancient!@n
-
-"
+"
 !
 0 0 0
 -1
@@ -1817,23 +1376,15 @@ S
 #71534
 "Abandoned Cave"
 "This eastern nook of the cave has a low, jagged ceiling.  Rough edges of rock
-
-hang down, ready to snag the hair of an unsuspecting giant.  A shallow
-
-indentation has been carved out of the wall, similar to one which is often
-
-used for sacrifice.
-
-"
+hang down, ready to snag the hair of an unsuspecting giant.  A shallow
+indentation has been carved out of the wall, similar to one which is often
+used for sacrifice.
+"
 "added is_pet check in elf hunter ghost's mpcode
-
-for its mreset, need to flag mithril sword to right_hand and not make it
-
-rust.  also might need to reprogram it to check for wearing_obj 365 or 2432 to
-
-slash with it
-
-"
+for its mreset, need to flag mithril sword to right_hand and not make it
+rust.  also might need to reprogram it to check for wearing_obj 365 or 2432 to
+slash with it
+"
 301465732 0
 0 9 0
 D3
@@ -1843,63 +1394,41 @@ D3
 E
 "rock ceiling up jagged"
 "Dozens of tiny fingers of rock hang down from the ceiling.  They are sharp and
-
-jagged, and would easily catch something in their domain.
-
-"
+jagged, and would easily catch something in their domain.
+"
 E
 "indentation wall east"
 "A small indentation about the size of an altar has been carved into the
-
-eastern wall.  The rock around it is worn smooth as if by hundreds of years of
-
-touch.
-
-"
+eastern wall.  The rock around it is worn smooth as if by hundreds of years of
+touch.
+"
 A
 ""
 "west"
 "if( mob_in_room( 2417, room  ) )
-
-  end;
-
-if( !is_player( ch ) )
-
-  end;
-
-if( rflag( reset1, room ) ) {
-
-  remove_rflag( reset1, room );
-
-  act_tochar( #disturb, ch );
-
-  act_notchar( #disturbs, ch );
-
-  mob = mob_in_room( 2417, room );
-
-  mload( 2417, room );
-
-  victim = ch;
-
-  attack( mob, victim, 4d8+10, \"ghostly anger\" );
-
-  }
-
-else
-
-  continue;
-
-"
+  end;
+if( !is_player( ch ) )
+  end;
+if( rflag( reset1, room ) ) {
+  remove_rflag( reset1, room );
+  act_tochar( #disturb, ch );
+  act_notchar( #disturbs, ch );
+  mob = mob_in_room( 2417, room );
+  mload( 2417, room );
+  victim = ch;
+  attack( mob, victim, 4d8+10, \"ghostly anger\" );
+  }
+else
+  continue;
+"
 E
 "disturb"
 "@BYou seem to have disturbed the ghost of one who once resided here!@n
-
-"
+"
 E
 "disturbs"
 "@B$n has disturbed the ghost of one who once resided here!@n
-
-"
+"
 !
 1 0 8
 -1
@@ -1908,16 +1437,11 @@ S
 #71535
 "Abandoned Cave"
 "To the east the cave opens up into a larger area; here you are quite cramped
-
-and the air is old and stale.  If you are very still, you can imagine yourself
-
-hearing the sounds of the great Vaasa; chirps of birds are almost audible. 
-
-The wall, when touched, seems to vibrate, though you can see no source of the
-
-motion.
-
-"
+and the air is old and stale.  If you are very still, you can imagine yourself
+hearing the sounds of the great Vaasa; chirps of birds are almost audible. 
+The wall, when touched, seems to vibrate, though you can see no source of the
+motion.
+"
 ""
 301465604 0
 0 9 0
@@ -1929,8 +1453,7 @@ A
 ""
 ""
 "act_tochar( \"The wall of the cave seems to vibrate, almost as if it were alive.\", ch );
-
-"
+"
 !
 2 0 0
 -1

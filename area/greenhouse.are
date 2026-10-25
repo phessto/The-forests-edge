@@ -10,19 +10,13 @@
 #44500
 "Windowed Entryway"
 "Panes of green-colored glass surround you on all sides of this small, ten feet
-
-by ten feet entryway.  The ceiling itself is also made of the greenish glass,
-
-nearly thirty feet overhead.  Sliding doors lead out of the greenhouse to the
-
-west and into its interior to the east.
-
-"
+by ten feet entryway.  The ceiling itself is also made of the greenish glass,
+nearly thirty feet overhead.  Sliding doors lead out of the greenhouse to the
+west and into its interior to the east.
+"
 "[Maegheera] This area seems to be a combination of Wizard of Oz and Around the World in 80 days.
-
-[Maegheera] Or Invasion of the Giant Tomatoes.
-
-"
+[Maegheera] Or Invasion of the Giant Tomatoes.
+"
 301465600 0
 0 5 0
 D1
@@ -37,18 +31,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You carefully slide open the door.
-
-"
+"
 E
 "to_room"
 "$n carefully slides open the door.
-
-"
+"
 !
 8 0 10
 1 17 1509949540 -2 0
@@ -58,20 +49,13 @@ S
 #44501
 "Inside the Greenhouse - Small Potted Plants"
 "This large, expansive section of the greenhouse is filled with tables holding
-
-nearly two hundred potted plants and flowers of all varieties.  The room
-
-measures approximately fifty feet in length and width, with the sloped green-
-
-glass ceiling about sixty-five feet overhead.  A sliding glass door leads to
-
-the greenhouse's entryway to the west and a small glass-enclosed hallway leads
-
-east out of the room.  Above that eastern exit a large, prominent sign hangs
-
-conspicuously.
-
-"
+nearly two hundred potted plants and flowers of all varieties.  The room
+measures approximately fifty feet in length and width, with the sloped green-
+glass ceiling about sixty-five feet overhead.  A sliding glass door leads to
+the greenhouse's entryway to the west and a small glass-enclosed hallway leads
+east out of the room.  Above that eastern exit a large, prominent sign hangs
+conspicuously.
+"
 ""
 301465600 0
 0 9 0
@@ -86,39 +70,27 @@ D3
 E
 "sign"
 "The sign reads in bold, firm print:
-
- 
-
-@I WARNING!  TRAINED PERSONNEL ONLY!
-
- 
-
-@I @I ENTER AT YOUR OWN RISK.
-
-"
+ 
+@I WARNING!  TRAINED PERSONNEL ONLY!
+ 
+@I @I ENTER AT YOUR OWN RISK.
+"
 E
 "potted plants flowers"
 "From tomatoes to strawberries, orchids to daffodils, the collection of foliage
-
-is immense.
-
-"
+is immense.
+"
 -1
 S
 
 #44502
 "Yellow Brick Path"
 "This narrow path of sandstone bricks leads up to a building of green-colored
-
-glass to the east and to a clearing in the sand to the west.  The small yellow
-
-brick road is well-kept and clean, but one brick seems to be out of place.  A
-
-small sign hangs off a sliding glass door which enters the greenhouse to the
-
-east.
-
-"
+glass to the east and to a clearing in the sand to the west.  The small yellow
+brick road is well-kept and clean, but one brick seems to be out of place.  A
+small sign hangs off a sliding glass door which enters the greenhouse to the
+east.
+"
 ""
 301465600 0
 12 8 0
@@ -133,78 +105,56 @@ D3
 E
 "brick"
 "The brick appears to be very loose, and is raised about a half inch above
-
-the other bricks as if something were hidden under it.  The brick also
-
-bears a strange set of initials: \"ROYGBIV\".
-
-"
+the other bricks as if something were hidden under it.  The brick also
+bears a strange set of initials: \"ROYGBIV\".
+"
 E
 "sign"
 "The sign reads:
-
-PRIVATE PROPERTY.  KEEP OUT.
-
-"
+PRIVATE PROPERTY.  KEEP OUT.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You carefully slide open the glass door.
-
-"
+"
 !
 8 0 2
 A
 "lift search push pull poke move"
 "brick"
 "if( rflag( reset0, room ) ) {
-
-  act_tochar( #lift, ch );
-
-  act_notchar( #rlift, ch );
-
-  obj_to_char( oload( 1278 ), ch );
-
-  remove_rflag( reset0, room );
-
-  }
-
-else {
-
-  act_tochar( #noth, ch );
-
-  act_notchar( #rnoth, ch );
-
-  }
-
-"
+  act_tochar( #lift, ch );
+  act_notchar( #rlift, ch );
+  obj_to_char( oload( 1278 ), ch );
+  remove_rflag( reset0, room );
+  }
+else {
+  act_tochar( #noth, ch );
+  act_notchar( #rnoth, ch );
+  }
+"
 E
 "lift"
 "You lift up the brick and discover a small glass key beneath it. 
-
-Amazingly the glass has not been shattered by the weight of the brick.
-
-"
+Amazingly the glass has not been shattered by the weight of the brick.
+"
 E
 "rlift"
 "$n lifts an out of place brick and gets something from underneath it.
-
-"
+"
 E
 "noth"
 "You lift the brick but don't find anything.
-
-"
+"
 E
 "rnoth"
 "$n lifts an out of place brick but doesn't seem to find anything.
-
-"
+"
 !
 0 0 0
 -1
@@ -213,14 +163,10 @@ S
 #44503
 "Inside the Greenhouse - Glass Enclosement"
 "This small, ten by ten by ten enclosure seems to serve as a connection between
-
-the main area of the greenhouse to the west and another section to the east.
-
-The air seems strangely more still to the east, as if even the air chooses to
-
-avoid entering the greenhouse's dark recesses in that direction.
-
-"
+the main area of the greenhouse to the west and another section to the east.
+The air seems strangely more still to the east, as if even the air chooses to
+avoid entering the greenhouse's dark recesses in that direction.
+"
 ""
 301465600 0
 0 9 0
@@ -238,18 +184,12 @@ S
 #44504
 "Inside the Greenhouse - Rare Plant Viewing Room"
 "Through sliding doors to the north, east, and south stand large glass-enclosed
-
-rooms where the sultan's most prized vegetative possessions are kept.  From
-
-the descriptive sign beside the north door, you gather that to the north an
-
-enormous, elephant-sized venus flytrap is tended, but no signs are posted to
-
-the east or south.  To the west, a small glass-enclosed tunnel leads back to
-
-the main area of he greenhouse.
-
-"
+rooms where the sultan's most prized vegetative possessions are kept.  From
+the descriptive sign beside the north door, you gather that to the north an
+enormous, elephant-sized venus flytrap is tended, but no signs are posted to
+the east or south.  To the west, a small glass-enclosed tunnel leads back to
+the main area of he greenhouse.
+"
 ""
 301465600 0
 0 9 0
@@ -276,14 +216,10 @@ S
 #44505
 "Inside the Greenhouse - Venus Fly Trap"
 "This large, glass-enclosed room is bare.  Completely bare.  The only thing
-
-visible aside from dust and a few blood splotches is an extremely large clay
-
-pot filled with soil in the center of the room.  A sliding glass door leads
-
-south out of the room.
-
-"
+visible aside from dust and a few blood splotches is an extremely large clay
+pot filled with soil in the center of the room.  A sliding glass door leads
+south out of the room.
+"
 ""
 301465600 0
 0 9 0
@@ -298,21 +234,14 @@ S
 #44506
 "Inside the Greenhouse - Predatory Daisy"
 "The glass which encloses this enormous room is tinted a bright shade of
-
-yellow, probably to suit whatever plant is kept here.  A few empty barrels sit
-
-in the corners of this room, apparently used to hold water for its inhabitant
-
-as one is still damp.  A sliding glass door leads out of the room to the west.
-
-"
+yellow, probably to suit whatever plant is kept here.  A few empty barrels sit
+in the corners of this room, apparently used to hold water for its inhabitant
+as one is still damp.  A sliding glass door leads out of the room to the west.
+"
 "[Merior] isnt daisy kinda intelligent?
-
-[Phule] it wants to take over the world
-
-[Elfir] Extra for barrels
-
-"
+[Phule] it wants to take over the world
+[Elfir] Extra for barrels
+"
 301465600 0
 0 9 0
 D3
@@ -322,10 +251,8 @@ D3
 E
 "barrels"
 "These barrels appear to have recently held water or a similar liquid.  Looking
-
-closely, you can see a type of root ensnaring the barrels.
-
-"
+closely, you can see a type of root ensnaring the barrels.
+"
 967 9 1509949540 3 0
 -1
 S
@@ -333,21 +260,14 @@ S
 #44507
 "Inside the Greenhouse - Plant Beast"
 "The glass of the greenhouse walls are much thicker here than elsewhere, and
-
-has thousands and thousands of tiny spores embedded into its panes.  The
-
-shattered remains of a few water barrels lie smashed against the southern
-
-wall, hurled by some powerful force.  A sliding glass door leads north out of
-
-the large room.
-
-"
+has thousands and thousands of tiny spores embedded into its panes.  The
+shattered remains of a few water barrels lie smashed against the southern
+wall, hurled by some powerful force.  A sliding glass door leads north out of
+the large room.
+"
 "[Elfir] This thing's definately more powerful than it's level indicates
-
-what level you do you think it is?
-
-"
+what level you do you think it is?
+"
 301465600 0
 0 9 0
 D0
@@ -357,10 +277,8 @@ D0
 E
 "remains"
 "Mostly splinters, and the odd nail.  The nails are so rusty that the
-
-slightest touch may shatter them.
-
-"
+slightest touch may shatter them.
+"
 321 9 1509949540 3 0
 -1
 S
@@ -368,19 +286,13 @@ S
 #44508
 "Balloon Landing Area"
 "A perfect circle of large red rocks surround this flat section of sand, a
-
-marker from the ground as a fixture of guidance from above.  A short path of
-
-yellow brick leads east towards a large building of green-colored glass.  A
-
-small sign is staked into the ground nearby, beside a small silver bell.
-
-"
+marker from the ground as a fixture of guidance from above.  A short path of
+yellow brick leads east towards a large building of green-colored glass.  A
+small sign is staked into the ground nearby, beside a small silver bell.
+"
 "[Phule] habib is room 36186
-
-[Phule] balloon is 44509
-
-"
+[Phule] balloon is 44509
+"
 301465600 0
 12 9 0
 D1
@@ -390,86 +302,54 @@ D1
 E
 "sign"
 "Enjoy your visit.
-
- 
-
-Ring the bell when you wish to return.
-
-"
+ 
+Ring the bell when you wish to return.
+"
 E
 "small silver bell"
 "This small silver bell has a small chain which can be pulled to ring the bell.
-
-"
+"
 A
 "pull ring"
 "chain bell"
 "if( rflag( reset0, room ) ) {
-
-  remove_rflag( reset0, room );
-
-  act_tochar( \"You ring the small silver bell.\", ch );
-
-  act_notchar( \"$n rings the small silver bell.\", ch );
-
-  wait( 3 );
-
-  send_to_room( \"A hot air balloon descends from the sky, landing nearby.\", room );
-
-  obj_to_room( oload( 3917 ), room );
-
-  wait( 1 );
-
-  send_to_room( #voice, room );
-
-  wait( 3 );
-
-  obj = obj_in_room( 3917, room );
-
-  junk_obj( obj );
-
-  acode( find_room( 44509 ), 1 );
-
-  set_rflag( reset0, room );
-
-  }
-
-else
-
-  act_tochar( \"You decide not to ring the bell again so soon.\", ch );
-
-"
+  remove_rflag( reset0, room );
+  act_tochar( \"You ring the small silver bell.\", ch );
+  act_notchar( \"$n rings the small silver bell.\", ch );
+  wait( 3 );
+  send_to_room( \"A hot air balloon descends from the sky, landing nearby.\", room );
+  obj_to_room( oload( 3917 ), room );
+  wait( 1 );
+  send_to_room( #voice, room );
+  wait( 3 );
+  obj = obj_in_room( 3917, room );
+  junk_obj( obj );
+  acode( find_room( 44509 ), 1 );
+  set_rflag( reset0, room );
+  }
+else
+  act_tochar( \"You decide not to ring the bell again so soon.\", ch );
+"
 E
 "voice"
 "You hear a voice shout from the balloon:
-
-@I \"ALL ABOARD!\"
-
-"
+@I \"ALL ABOARD!\"
+"
 !
 0 0 0
 A
 "board enter climb"
 "hot air balloon"
 "if( obj_in_room( 3917, room ) ) {
-
-  act_tochar( \"You board the balloon.\", ch );
-
-  act_notchar( \"$n boards the balloon.\", ch );
-
-  transfer( ch, find_room( 44509 ) );
-
-  act_notchar( \"$n boards the balloon.\", ch );
-
-  }
-
-else {
-
-  act_tochar( \"You don't see any balloon here.\", ch );
-
-  }
-
-"
+  act_tochar( \"You board the balloon.\", ch );
+  act_notchar( \"$n boards the balloon.\", ch );
+  transfer( ch, find_room( 44509 ) );
+  act_notchar( \"$n boards the balloon.\", ch );
+  }
+else {
+  act_tochar( \"You don't see any balloon here.\", ch );
+  }
+"
 !
 0 0 0
 -1
@@ -478,53 +358,33 @@ S
 #44509
 "Inside a Hot Air Balloon"
 "This is the passenger cabin for a small hot air balloon.
-
-"
+"
 "[Phule] safe
-
-[Phule] landing is 44508
-
-[Phule] habib is 36186
-
-"
+[Phule] landing is 44508
+[Phule] habib is 36186
+"
 301465602 0
 12 6 0
 A
 "__BALLOON_MOVE_CODE__"
 ""
 "send_to_room( \"The balloon takes off and disappears over the desert sands.\", room );
-
-send_to_room( \"With a jolt, the balloon lifts off.\", find_room( 44509 ) );
-
-rflag( reset0, room );
-
-wait( 3 );
-
-send_to_room( \"With a *THUD*, the balloon lands and you disembark.\", find_room( 44509 ) );
-
-i = 1;
-
-loop( i == 1 ) {
-
-  rch = rand_char( find_room( 44509 ) );
-
-  if( rch ) {
-
-    transfer( rch, find_room( 36186 ) );
-
-    act_notchar( \"$n disembarks from the hot air balloon.\", ch );
-
-  }
-
-  else {
-
-    i = 2;
-
-  }
-
-}
-
-"
+send_to_room( \"With a jolt, the balloon lifts off.\", find_room( 44509 ) );
+rflag( reset0, room );
+wait( 3 );
+send_to_room( \"With a *THUD*, the balloon lands and you disembark.\", find_room( 44509 ) );
+i = 1;
+loop( i == 1 ) {
+  rch = rand_char( find_room( 44509 ) );
+  if( rch ) {
+    transfer( rch, find_room( 36186 ) );
+    act_notchar( \"$n disembarks from the hot air balloon.\", ch );
+  }
+  else {
+    i = 2;
+  }
+}
+"
 !
 0 0 0
 -1

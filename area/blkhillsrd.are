@@ -10,21 +10,14 @@
 #43250
 "Black Hills - Foothill Trail"
 "A small trace appears slowly out of nowhere, as a clearing gives way to
-
-more rough terrain.  To the east, the trail becomes more and more
-
-discernable as it heads up into larger hills, while it disappears
-
-elsewhere as the ground to the east descends into what looks like a large
-
-meadow.  Obscured by hills, the incessant roar of the Elhanni's rushing
-
-waters signal that the river is not far.
-
-"
+more rough terrain.  To the east, the trail becomes more and more
+discernable as it heads up into larger hills, while it disappears
+elsewhere as the ground to the east descends into what looks like a large
+meadow.  Obscured by hills, the incessant roar of the Elhanni's rushing
+waters signal that the river is not far.
+"
 "w is 39031
-
-"
+"
 301465600 0
 4 7 0
 D1
@@ -42,14 +35,10 @@ S
 #43251
 "Cairn Mountains - Foothill Trail"
 "The small footpath becomes clearer to the south here, in this area at the base
-
-of the Cairn Mountain range.  What here are low, craggy hills signal a change,
-
-as the rocks begin a steady climb to the east, where somewhere the Elhanni
-
-cuts through the great range of mountains, ever in search of the sea, and rest.
-
-"
+of the Cairn Mountain range.  What here are low, craggy hills signal a change,
+as the rocks begin a steady climb to the east, where somewhere the Elhanni
+cuts through the great range of mountains, ever in search of the sea, and rest.
+"
 ""
 301465600 0
 4 9 0
@@ -67,14 +56,10 @@ S
 #43252
 "Cairn Mountains - Foothill Trail"
 "The trail winds north and east here, crossing ever-steepening inclines as it
-
-leads east into the Cairn range proper.  A few bushes grow about the area, and
-
-the carpet of grass has begun to thin somewhat with a gradual increase in
-
-altitude from the Black Hills Valley below, off to the west somewhere.
-
-"
+leads east into the Cairn range proper.  A few bushes grow about the area, and
+the carpet of grass has begun to thin somewhat with a gradual increase in
+altitude from the Black Hills Valley below, off to the west somewhere.
+"
 ""
 301465600 0
 21 9 0
@@ -89,8 +74,7 @@ D1
 E
 "bushes"
 "The bushes are low and thick.
-
-"
+"
 755 9 1509949540 3 0
 -1
 S
@@ -98,16 +82,11 @@ S
 #43253
 "Cairn Mountains - Foothill Trail"
 "The trail continues, following a fairly sure east-west line across the
-
-foothills of the Cairn Mountain Range.  South of here, the hills rise
-
-toward a wooded, hilly range, while somewhere to the east you hear the
-
-roar of the Elhanni and, further off, loom the vast Cairn Mountains
-
-themselves.
-
-"
+foothills of the Cairn Mountain Range.  South of here, the hills rise
+toward a wooded, hilly range, while somewhere to the east you hear the
+roar of the Elhanni and, further off, loom the vast Cairn Mountains
+themselves.
+"
 ""
 301465600 0
 21 9 0
@@ -129,16 +108,11 @@ S
 #43254
 "Cairn Mountains - Foothill Trail"
 "The trail continues, following a fairly sure east-west line across the
-
-foothills of the Cairn Mountain Range.  South of here, the hills rise
-
-toward a wooded, hilly range, while somewhere to the east you hear the
-
-roar of the Elhanni and, further off, loom the vast Cairn Mountains
-
-themselves.
-
-"
+foothills of the Cairn Mountain Range.  South of here, the hills rise
+toward a wooded, hilly range, while somewhere to the east you hear the
+roar of the Elhanni and, further off, loom the vast Cairn Mountains
+themselves.
+"
 ""
 301465600 0
 21 9 0
@@ -157,18 +131,12 @@ S
 #43255
 "Cairn Mountains - Overlooking the Elhanni"
 "The trail winds west and south here, across a sloped hillside.  To the
-
-southwest, a smaller group of hills, in parts forested, rise above you, while
-
-directly below you to the east the turbid waters of the Elhanni roar by,
-
-flowing south in a headlong rush.  On the other side of the river, the
-
-greatest peaks of the Cairn Mountains loom, silent and indifferent to your
-
-skeptical eye.
-
-"
+southwest, a smaller group of hills, in parts forested, rise above you, while
+directly below you to the east the turbid waters of the Elhanni roar by,
+flowing south in a headlong rush.  On the other side of the river, the
+greatest peaks of the Cairn Mountains loom, silent and indifferent to your
+skeptical eye.
+"
 ""
 301465600 0
 21 9 0
@@ -186,16 +154,11 @@ S
 #43256
 "Near the Bridge"
 "You stand on a narrow path, almost a road, which cuts its way through steep
-
-hills.  To the east, a steep bridge, covered with intricate carvings and
-
-marked by several crumbled obelisks, crosses the raging Elhanni river, which
-
-flows below it, running north and south of it.  You may follow the bridge or
-
-head north from here.
-
-"
+hills.  To the east, a steep bridge, covered with intricate carvings and
+marked by several crumbled obelisks, crosses the raging Elhanni river, which
+flows below it, running north and south of it.  You may follow the bridge or
+head north from here.
+"
 ""
 301465600 0
 21 9 0
@@ -213,31 +176,19 @@ S
 #43257
 "The Bridge of Tears"
 "Ageless stone carvings adorn a stone bridge which spans the Elhanni here, its
-
-steep arch rising and falling like the curve of the distant silent sun.  Once,
-
-careful, level steps were cut into its rising and falling curve, but thousands
-
-of feet, nameless and forgotten, have worn them away, leaving few right angles
-
-behind for your eye to inspect.  At each end of this bridge, the cracked
-
-remains of a giant obelisk stand, shattered, the remains of once-great stones
-
-which signaled this location as one of great importance to a bygone age.  A
-
-series of simple yet elegant runes have been carved into the stone.
-
-"
+steep arch rising and falling like the curve of the distant silent sun.  Once,
+careful, level steps were cut into its rising and falling curve, but thousands
+of feet, nameless and forgotten, have worn them away, leaving few right angles
+behind for your eye to inspect.  At each end of this bridge, the cracked
+remains of a giant obelisk stand, shattered, the remains of once-great stones
+which signaled this location as one of great importance to a bygone age.  A
+series of simple yet elegant runes have been carved into the stone.
+"
 "elhanni river rushes below 
-
-need to rewrite, awk
-
-this was a bridge of the dwarves...legend that a hero gave his life to save them from a horde of orcs or some such 
-
-no mob
-
-"
+need to rewrite, awk
+this was a bridge of the dwarves...legend that a hero gave his life to save them from a horde of orcs or some such 
+no mob
+"
 301465608 0
 23 6 0
 D1
@@ -251,21 +202,17 @@ D3
 E
 "message runes"
 "Harand-Da, the Single-Handed - Whose sacrifice has not gone unremembered.
-
-"
+"
 A
 ""
 ""
 "act_room( #string, ch );
-
-"
+"
 E
 "string"
 "The Elhanni River roars underneath the bridge, casting a light mist over
-
-the bridge.
-
-"
+the bridge.
+"
 !
 2 50 0
 -1
@@ -274,27 +221,17 @@ S
 #43258
 "High Mountain Trail End - Above the Spiral Stair"
 "The high mountain trail comes to an end here in a small, level clearing.  To
-
-the west, the ground plummets several hundred feet down toward the churning
-
-waters of the Elhanni, far below.  From here, you notice a stone bridge
-
-spanning the wild river.  A wide flight of worn spiral stairs is cut into the
-
-mountainside, leading downward into the dark recesses of the Cairn Mountains.
-
-"
+the west, the ground plummets several hundred feet down toward the churning
+waters of the Elhanni, far below.  From here, you notice a stone bridge
+spanning the wild river.  A wide flight of worn spiral stairs is cut into the
+mountainside, leading downward into the dark recesses of the Cairn Mountains.
+"
 "stairs down
-
-r/w
-
-rename stairs
-
-rewrite.
-
-altitude 4
-
-"
+r/w
+rename stairs
+rewrite.
+altitude 4
+"
 301465600 0
 5 9 0
 D0
@@ -319,16 +256,11 @@ S
 #43259
 "High Mountain Trail - Atop a Cliff"
 "The trail leads north and south across treacherous terrain, navigating a
-
-perilous course near the edge of a cliff.  Hundreds of feet below to the west,
-
-you spy the Elhanni River flowing southward in its tumbling, headlong rush of
-
-foaming waters, and further in the distance, a sea of green vegetation and
-
-meadow.
-
-"
+perilous course near the edge of a cliff.  Hundreds of feet below to the west,
+you spy the Elhanni River flowing southward in its tumbling, headlong rush of
+foaming waters, and further in the distance, a sea of green vegetation and
+meadow.
+"
 ""
 301465600 0
 3 9 0
@@ -346,14 +278,10 @@ S
 #43260
 "High Mountain Trail -  Atop a Cliff"
 "The trail continues to edge its way along the cliff, narrowing here slightly
-
-as it overlooks the thunder and crash of the Elhanni's waters far below the
-
-cliff to the west.  To the east, the sheer rock of the Cairn Mountains juts
-
-up, rising nearly straight toward the sky and out of view.
-
-"
+as it overlooks the thunder and crash of the Elhanni's waters far below the
+cliff to the west.  To the east, the sheer rock of the Cairn Mountains juts
+up, rising nearly straight toward the sky and out of view.
+"
 ""
 301465600 0
 5 7 0
@@ -371,27 +299,17 @@ S
 #43261
 "High Mountain Trail - Atop a Cliff"
 "The trail hugs the face of a rocky cliff to the southeast, as it winds east
-
-and south.  To the east, it enters a narrow chasm between the sides of the
-
-craggy Cairn Mountains.  South of here, the trail clings to the faces of the
-
-mountains themselves, winding its way parallel to the edge of a cliff to the
-
-west.  Below the cliff, far below to the west, you can see the ribbon of the
-
-Elhanni River flowing north and south, and further off in the distance, a
-
-greenish valley.  Slung low against the horizon is the faintest hint of the
-
-Black Hills.
-
-"
+and south.  To the east, it enters a narrow chasm between the sides of the
+craggy Cairn Mountains.  South of here, the trail clings to the faces of the
+mountains themselves, winding its way parallel to the edge of a cliff to the
+west.  Below the cliff, far below to the west, you can see the ribbon of the
+Elhanni River flowing north and south, and further off in the distance, a
+greenish valley.  Slung low against the horizon is the faintest hint of the
+Black Hills.
+"
 "[Maegheera] 8000 used to connect north.
-
-[Altimeas] west will enter into HOPE Stronghold
-
-"
+[Altimeas] west will enter into HOPE Stronghold
+"
 301465601 0
 5 9 0
 D1
@@ -413,14 +331,10 @@ S
 #43262
 "High Mountain Trail"
 "The trail leads up and then down a steep rise in the mountains here, following
-
-a sure path which includes several flights of worn, confidently-constructed
-
-stone stairs.  Designed for those with smallish strides, the steps allow you
-
-to quicken your pace in this otherwise forlorn landscape.
-
-"
+a sure path which includes several flights of worn, confidently-constructed
+stone stairs.  Designed for those with smallish strides, the steps allow you
+to quicken your pace in this otherwise forlorn landscape.
+"
 ""
 301465600 0
 5 9 0
@@ -438,19 +352,13 @@ S
 #43263
 "High Mountain Trail"
 "Winding between the unfeeling spires of the Cairn Mountains, the trail leads
-
-west and south from here.  To the north, a small path leads a few steps away
-
-from the trail and into what appears to be a small, half-cave or alcove
-
-sheltered from the wind and other elements.
-
-"
+west and south from here.  To the north, a small path leads a few steps away
+from the trail and into what appears to be a small, half-cave or alcove
+sheltered from the wind and other elements.
+"
 "s is 43264
-
-r/w
-
-"
+r/w
+"
 301465600 0
 5 9 0
 D0
@@ -471,17 +379,12 @@ S
 #43264
 "High Mountain Trail - Bend"
 "The trail turns sharply here, picking its way between the greatest peaks of
-
-the Cairn Mountains to the northeast, and a single, jagged mountain which
-
-rises up overhead to the south.  Rock walls rising straight skyward all around
-
-you, and you sense the formations dampening your footfalls.
-
-"
+the Cairn Mountains to the northeast, and a single, jagged mountain which
+rises up overhead to the south.  Rock walls rising straight skyward all around
+you, and you sense the formations dampening your footfalls.
+"
 "r/w
-
-"
+"
 301465600 0
 5 9 0
 D0
@@ -499,16 +402,11 @@ S
 #43265
 "High Mountain Trail"
 "Plunging down a surprisingly tricky slope to the east and climbing that same
-
-rise to the west, the high mountain trail continues on its course through the
-
-Cairn Mountains.  Off to the west, you spy a turn as the trail veers to avoid
-
-a particularly steep spire of rock, while above you to the east you spy the
-
-trail becoming more narrow.
-
-"
+rise to the west, the high mountain trail continues on its course through the
+Cairn Mountains.  Off to the west, you spy a turn as the trail veers to avoid
+a particularly steep spire of rock, while above you to the east you spy the
+trail becoming more narrow.
+"
 ""
 301465600 0
 5 9 0
@@ -527,17 +425,12 @@ S
 #43266
 "High Mountain Trail - Pass"
 "The craggy rock walls of the Cairn Mountains pinch in together here, forming a
-
-narrow pass.  You detect bits of worked stone, and several large blocks on the
-
-ground, shattered and broken.  The trail continues east and west, widening in
-
-both directions as it continues on its way.
-
-"
+narrow pass.  You detect bits of worked stone, and several large blocks on the
+ground, shattered and broken.  The trail continues east and west, widening in
+both directions as it continues on its way.
+"
 "r/w and develop
-
-"
+"
 301465600 0
 5 7 0
 D1
@@ -554,14 +447,10 @@ S
 #43267
 "High Mountain Trail"
 "The ground is sloped here, the trail winding its way around great boulders and
-
-steep inclines to take the easiest line through the great Cairn Mountains.  To
-
-the east, the trail continues upwards, toward a more open area which you spy
-
-in the distance.
-
-"
+steep inclines to take the easiest line through the great Cairn Mountains.  To
+the east, the trail continues upwards, toward a more open area which you spy
+in the distance.
+"
 ""
 301465600 0
 5 9 0
@@ -579,17 +468,12 @@ S
 #43268
 "High Mountain Trail"
 "The trail leads across the mountains here, cutting its way between two steep
-
-ridges, with the earth rising up to the north and south of you.  The terrain
-
-is too rough to explore to the north and south, but the trail leads west
-
-further into the Cairn Mountains and east toward a more open area.
-
-"
+ridges, with the earth rising up to the north and south of you.  The terrain
+is too rough to explore to the north and south, but the trail leads west
+further into the Cairn Mountains and east toward a more open area.
+"
 "e is 26552
-
-"
+"
 301465600 0
 5 9 0
 D1
@@ -608,12 +492,9 @@ S
 #43269
 "The Spiral Stair"
 "Smallish steps twist in a never-ending vertical swirl, cutting their way
-
-through the dark stone of the Cairn Mountains.  You may continue following the
-
-grand spiral stairs up and down from here.
-
-"
+through the dark stone of the Cairn Mountains.  You may continue following the
+grand spiral stairs up and down from here.
+"
 ""
 301465600 0
 0 6 0
@@ -631,12 +512,9 @@ S
 #43270
 "The Spiral Stair"
 "Smallish steps twist in a never-ending vertical swirl, cutting their way
-
-through the dark stone of the Cairn Mountains.  You may continue following the
-
-grand spiral stairs up and down from here.
-
-"
+through the dark stone of the Cairn Mountains.  You may continue following the
+grand spiral stairs up and down from here.
+"
 ""
 301465600 0
 0 6 0
@@ -654,17 +532,12 @@ S
 #43271
 "The Spiral Stair"
 "Smallish steps twist in a never-ending vertical swirl, cutting their way
-
-through the dark stone of the Cairn Mountains.  You may continue following the
-
-grand spiral stairs up and down from here.  The ground is slightly slick, and
-
-you are thankful that you stand upon stairs, and not a mere ramp.
-
-"
+through the dark stone of the Cairn Mountains.  You may continue following the
+grand spiral stairs up and down from here.  The ground is slightly slick, and
+you are thankful that you stand upon stairs, and not a mere ramp.
+"
 "r/w
-
-"
+"
 301465600 0
 0 6 0
 D4
@@ -681,27 +554,17 @@ S
 #43272
 "Beneath the Spiral Stair - Near the Bridge"
 "You stand in a small alcove, cut into the belly of some grand peak in the
-
-Cairn Mountain chain.  To the west, a long, arched stone bridge stretches out
-
-to the west, spanning the thundering, churning waters of the Elhanni River.  A
-
-flight of worn stone stairs has been cut into the wall here, the smallish
-
-stones leading upwards into the mountain in a swirling spiral path into
-
-darkness.  The way upwards is large enough for horses, and the small size of
-
-the individual steps suggest to you that their makers were of, at best,
-
-moderate stature.
-
-"
+Cairn Mountain chain.  To the west, a long, arched stone bridge stretches out
+to the west, spanning the thundering, churning waters of the Elhanni River.  A
+flight of worn stone stairs has been cut into the wall here, the smallish
+stones leading upwards into the mountain in a swirling spiral path into
+darkness.  The way upwards is large enough for horses, and the small size of
+the individual steps suggest to you that their makers were of, at best,
+moderate stature.
+"
 "stairs themselves need work
-
-altitude 0
-
-"
+altitude 0
+"
 301465600 0
 5 9 0
 D3
@@ -718,17 +581,12 @@ S
 #43273
 "Cairn Mountains - Sheltered Alcove"
 "You have entered a small alcove, cut into the side of a mountain and sheltered
-
-from the elements on three sides.  Soot and stones from past fires indicate
-
-that this is a popular stopping place for travelers.
-
-"
+from the elements on three sides.  Soot and stones from past fires indicate
+that this is a popular stopping place for travelers.
+"
 "safe? no mob? perhaps....
-
-no mob
-
-"
+no mob
+"
 301465608 0
 5 5 0
 D0
@@ -742,112 +600,73 @@ D2
 E
 "soot"
 "The soot is nothing more than the long cold remains of a fire that once burned
-
-here.
-
-"
+here.
+"
 E
 "5 stones 4 rocks"
 "They look like ordinary stones crumbled from the same dark stone of the
-
-mountains.  There is some variation hue in the different stones and one is
-
-remarkably @Wwhite@n.  It is remarkable only because the rest of the stones are
-
-pretty much black or brown.
-
-"
+mountains.  There is some variation hue in the different stones and one is
+remarkably @Wwhite@n.  It is remarkable only because the rest of the stones are
+pretty much black or brown.
+"
 E
 "white"
 "Upon closer examination, it looks as if a faded symbol, almost like an ellipse
-
-with sharpened ends resting inside a circle has been faintly etched into this
-
-bone-white stone.  You also notice that this stone, unlike the rest, isn't
-
-just a small stone but the weathered outcropping of a much larger stone
-
-buried in the earth and far too heavy to move.
-
-"
+with sharpened ends resting inside a circle has been faintly etched into this
+bone-white stone.  You also notice that this stone, unlike the rest, isn't
+just a small stone but the weathered outcropping of a much larger stone
+buried in the earth and far too heavy to move.
+"
 A
 "touch"
 "white"
 "if( cflag( 166, ch ) ) {
-
-  act_tochar( #speak, ch );
-
-  act_notchar( #rspeak, ch );
-
-  wait( 1 );
-
-  if( !is_open( room, north ) ) {
-
-    act_room( #melt, ch );
-
-    open( room, north );
-
-    wait( 6 );
-
-    act_room( #unmelt, ch );
-
-    close( room, north );
-
-    }
-
-  else
-
-    act_tochar( #already_open, ch );
-
-  }
-
-else
-
-  act_tochar( #nothing, ch );
-
-"
+  act_tochar( #speak, ch );
+  act_notchar( #rspeak, ch );
+  wait( 1 );
+  if( !is_open( room, north ) ) {
+    act_room( #melt, ch );
+    open( room, north );
+    wait( 6 );
+    act_room( #unmelt, ch );
+    close( room, north );
+    }
+  else
+    act_tochar( #already_open, ch );
+  }
+else
+  act_tochar( #nothing, ch );
+"
 E
 "speak"
 "Touching the rock, you speak the words the priest of Morr taught you.
-
-"
+"
 E
 "rspeak"
 "Bends down, does something on the ground that you do not see then speaks odd,
-
-whispery words that leave slip from your mind almost as quickly as you hear
-
-them.
-
-"
+whispery words that leave slip from your mind almost as quickly as you hear
+them.
+"
 E
 "melt"
 "With a rasping sound, a section of the stony wall to the north appears to
-
-weather and crumble as if millenia were passing, aging the stone in seconds. 
-
-When it stops, a rough-hewn cave mouth gapes where once stood only solid stone.
-
-"
+weather and crumble as if millenia were passing, aging the stone in seconds. 
+When it stops, a rough-hewn cave mouth gapes where once stood only solid stone.
+"
 E
 "unmelt"
 "With a groaning sound like the stone of the earth itself being rent, the rocks
-
-around the opening to the north begin to melt and grow until there is no
-
-longer an opening.
-
-"
+around the opening to the north begin to melt and grow until there is no
+longer an opening.
+"
 E
 "nothing"
 "You touch the white stone but nothing unusual happens.
-
-"
+"
 E
 "already_open"
 "Nothing momentus seems to have happened.
-
-"
+"
 !
 0 0 0
 246 17 1509950730 -2 0
@@ -859,18 +678,12 @@ S
 #43274
 "Cairn Mountains"
 "Standing on a huge angled shelf of rock, you take stock of the grand, craggy
-
-mountains which tower above this spot.  To the north and east, their giant
-
-forms dwarf your own, while the ground slopes steadily downward to the south
-
-and west from here.  To the west, you spy a clear area, and further off, the
-
-ground seems to drop away and the mountains give way to more hospitable
-
-terrain.
-
-"
+mountains which tower above this spot.  To the north and east, their giant
+forms dwarf your own, while the ground slopes steadily downward to the south
+and west from here.  To the west, you spy a clear area, and further off, the
+ground seems to drop away and the mountains give way to more hospitable
+terrain.
+"
 ""
 301465600 0
 5 9 0
@@ -888,17 +701,12 @@ S
 #43275
 "Cairn Mountains - Before a Sealed Cave"
 "As grand and looming as ever, the Cairn Mountains rise up around this small
-
-space between their unwelcoming slopes, making you feel quite small and
-
-unimportant.  A small cave entrance to the east lies sealed, covered with tons
-
-of rock by a recent landslide.
-
-"
+space between their unwelcoming slopes, making you feel quite small and
+unimportant.  A small cave entrance to the east lies sealed, covered with tons
+of rock by a recent landslide.
+"
 "dig east for tomb
-
-"
+"
 301465600 0
 5 9 0
 D0
@@ -917,62 +725,46 @@ A
 "dig"
 "1 east stone rocks pile landslide"
 "if( !is_open( room, east ) ) {
-
-  act_tochar( #dig, ch );
-
-  act_notchar( #rdig, ch );
-
-  open( room, east );
-
-  send_to_room( #digr, find_room( 43278 ) );
-
-  }
-
-else
-
-  act_tochar( #already, ch );
-
-"
+  act_tochar( #dig, ch );
+  act_notchar( #rdig, ch );
+  open( room, east );
+  send_to_room( #digr, find_room( 43278 ) );
+  }
+else
+  act_tochar( #already, ch );
+"
 E
 "digr"
 "Someone digs through the landslide from outside the cave.
-
-"
+"
 E
 "rdig"
 "$n digs through the massive pile of rocks, clearing the way into a cave
-
-to the east.
-
-"
+to the east.
+"
 E
 "dig"
 "You dig east through the pile of rocks, clearing the way into a cave.
-
-"
+"
 E
 "already"
 "The way in that direction is already clear.
-
-"
+"
 E
 "closed"
 "The Tomb of Harand-Da is closed pending review/revisal/removal.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "closed"
 "The tomb is closed pending review/revisal/removal.
-
-"
+"
 !
 3 0 2
 205 9 1509949540 3 0
@@ -982,14 +774,10 @@ S
 #43276
 "Cairn Mountains"
 "The terrain here is rough, and makes for slow going, with loose rocks
-
-scattering and clattering about the area with each footfall in that
-
-direction.  To the west, the ground drops straight downwards for several
-
-hundred feet; a fall in that direction would surely be fatal.
-
-"
+scattering and clattering about the area with each footfall in that
+direction.  To the west, the ground drops straight downwards for several
+hundred feet; a fall in that direction would surely be fatal.
+"
 ""
 301465600 0
 5 9 0
@@ -1007,20 +795,13 @@ S
 #43277
 "Cairn Mountains - Clearing in the Foothills"
 "You stand in a small clearing in the foothills of the Cairn Mountains. 
-
-All about you, their rugged lines signal the presence, not too far off
-
-now, of the great mountain range, which stands somewhere off to the east,
-
-on the opposite bank of the Elhanni River.  To the north, you spy a path
-
-make its way between the hills and slopes, while in other directions the
-
-foothills rise up about you.  A small, stone-lined path leads south
-
-towards an alabaster tower.
-
-"
+All about you, their rugged lines signal the presence, not too far off
+now, of the great mountain range, which stands somewhere off to the east,
+on the opposite bank of the Elhanni River.  To the north, you spy a path
+make its way between the hills and slopes, while in other directions the
+foothills rise up about you.  A small, stone-lined path leads south
+towards an alabaster tower.
+"
 ""
 301465600 0
 2 9 0
@@ -1038,14 +819,10 @@ S
 #43278
 "A Dark, Cold Hole in a Mountain"
 "The uncarved, craggy horizon of the Cairn Mountains gives way to a dark,
-
-unwelcoming cave.  This small cavern is nearly cubical in shape, walls smooth
-
-and cold.  To the west a large pile of rocks mark a landslide.  A narrow,
-
-twisting staircase carved into the stone leads down into the mountain.
-
-"
+unwelcoming cave.  This small cavern is nearly cubical in shape, walls smooth
+and cold.  To the west a large pile of rocks mark a landslide.  A narrow,
+twisting staircase carved into the stone leads down into the mountain.
+"
 ""
 301465614 0
 11 9 0
@@ -1060,52 +837,37 @@ D5
 E
 "rocks"
 "The rocks are heavy and large.  It would take no small feat of strength
-
-to move them.
-
-"
+to move them.
+"
 A
 "dig"
 "1 west stone rocks pile landslide"
 "if( !is_open( room, west ) ) {
-
-  act_tochar( #dig, ch );
-
-  act_notchar( #rdig, ch );
-
-  open( room, west );
-
-  send_to_room( #digr, find_room( 43275 ) );
-
-  }
-
-else
-
-  act_tochar( #already, ch );
-
-"
+  act_tochar( #dig, ch );
+  act_notchar( #rdig, ch );
+  open( room, west );
+  send_to_room( #digr, find_room( 43275 ) );
+  }
+else
+  act_tochar( #already, ch );
+"
 E
 "digr"
 "Someone digs through the landslide from within the cave.
-
-"
+"
 E
 "rdig"
 "$n digs through the massive pile of rocks, clearing a way out of the cave
-
-to the west.
-
-"
+to the west.
+"
 E
 "dig"
 "You dig west through the pile of rocks, clearing a way out of the cave.
-
-"
+"
 E
 "already"
 "The way is already clear in that direction.
-
-"
+"
 !
 0 0 0
 -1
@@ -1114,24 +876,15 @@ S
 #43279
 "A Secret Altar"
 "You are in a rough-hewn cave of great size lit by an other-wordly light that
-
-appears to have no source.  The vaulted ceiling high overhead is unreachable
-
-and throws back whispering echoes of every sound made here.  The walls, rough
-
-though they are, are without large obstructions or sharp rocks, without cracks
-
-or crevices and appear completely solid.  There are only two objects of note
-
-that appear to be permanent fixtures of the cave.  The first is a large stone
-
-altar somewhat north of the caves relative center.  The second is a glowing
-
-black portal like some gaping maw leading into eternal darkness hanging
-
-suspended in the air just in front of the southern-most section of cave wall.
-
-"
+appears to have no source.  The vaulted ceiling high overhead is unreachable
+and throws back whispering echoes of every sound made here.  The walls, rough
+though they are, are without large obstructions or sharp rocks, without cracks
+or crevices and appear completely solid.  There are only two objects of note
+that appear to be permanent fixtures of the cave.  The first is a large stone
+altar somewhat north of the caves relative center.  The second is a glowing
+black portal like some gaping maw leading into eternal darkness hanging
+suspended in the air just in front of the southern-most section of cave wall.
+"
 ""
 1375338639 0
 11 6 0
@@ -1142,224 +895,147 @@ D2
 E
 "portal"
 "The portal is a large oval, roughly larger than an ogre, of infinitely
-
-depthless black.  Its edges are beyond razor sharp and, when you look at it
-
-from the side it simply no longer seems to exist.  It is like some tear in the
-
-fabric of reality itself.  Its edges occasionally seem to crackle with a
-
-faint, almost unseen shimmer of arcing purple light.
-
-"
+depthless black.  Its edges are beyond razor sharp and, when you look at it
+from the side it simply no longer seems to exist.  It is like some tear in the
+fabric of reality itself.  Its edges occasionally seem to crackle with a
+faint, almost unseen shimmer of arcing purple light.
+"
 E
 "altar"
 "A massive oblong altar carved from a single piece of onyx.  The altar measures
-
-roughly ten feet long, five feet wide and three feet tall.  Upon its surface
-
-is an inlay of bone-white ivory in the shape of a white circle broken only by
-
-an ellipse with pointed edges like some great dark, ever-watchful eye.
-
-"
+roughly ten feet long, five feet wide and three feet tall.  Upon its surface
+is an inlay of bone-white ivory in the shape of a white circle broken only by
+an ellipse with pointed edges like some great dark, ever-watchful eye.
+"
 A
 "enter go"
 "portal"
 "if( is_exhausted( ch ) ) {
-
-  act_tochar( \"You're too tired to do that.\", ch );
-
-  end;
-
-  }
-
-act_tochar( #enter, ch );
-
-act_notchar( #renter, ch );
-
-transfer( ch, find_room( 43273 ) );
-
-act_notchar( #arr, ch );
-
-"
+  act_tochar( \"You're too tired to do that.\", ch );
+  end;
+  }
+act_tochar( #enter, ch );
+act_notchar( #renter, ch );
+transfer( ch, find_room( 43273 ) );
+act_notchar( #arr, ch );
+"
 E
 "enter"
 "@MYou step into the glowing black portal and are envoloped by light.  When the
-
-light clears you find yourself elsewhere...
-
-"
+light clears you find yourself elsewhere...
+"
 E
 "renter"
 "@M$n steps into the glowing black portal and disappears into its fathomless
-
-depths.
-
-"
+depths.
+"
 E
 "arr"
 "$n is here though you didn't see them arrive.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "acode( room, 1 );
-
-"
+"
 !
 3 0 4
 A
 ""
 ""
 "act_notchar( #portal, ch );
-
-"
+"
 E
 "portal"
 "@M$n steps from the portal into the cave.@n
-
-"
+"
 !
 1 0 4
 A
 "3 sacrifice"
 "self"
 "if( get_religion( ch ) != Morr ) {
-
-  act_tochar( #no, ch );
-
-  end;
-
-  }
-
-act_tochar( #offer, ch );
-
-act_notchar( #roffer, ch );
-
-wait( 1 );
-
-if( find_stat( ch, level ) < 10 ) {
-
-  act_tochar( \"Nothing seems to happen.\", ch );
-
-  end;
-
-  }
-
-if( find_stat( ch, prayer ) > 800 ) {
-
-  act_tochar( #success, ch );
-
-  act_notchar( #flash, ch );
-
-  transfer( ch, find_room( 33756 ) );
-
-  act_notchar( #arr, ch );
-
-  drain_stat( ch, prayer, 0, -800 );
-
-  if( !cflag( 167, ch ) ) {
-
-    set_cflag( 167, ch );
-
-    wait( 1 );
-
-    mpcode( mob_in_room( 2578, find_room( 33756 ) ), 5 );
-
-    }
-
-  }
-
-else {
-
-  act_tochar( #failure, ch );
-
-  wait( 1 );
-
-  act_tochar( #anger, ch );
-
-  act_notchar( #ranger, ch );
-
-  drain_stat( ch, prayer, 0, -200 );
-
-  dam_message( ch, 10000, \"Divine Wrath of Morr\" );
-
-  inflict( ch, null, 10000, \"Divine Wrath of Morr\" );
-
-  }
-
-"
+  act_tochar( #no, ch );
+  end;
+  }
+act_tochar( #offer, ch );
+act_notchar( #roffer, ch );
+wait( 1 );
+if( find_stat( ch, level ) < 10 ) {
+  act_tochar( \"Nothing seems to happen.\", ch );
+  end;
+  }
+if( find_stat( ch, prayer ) > 800 ) {
+  act_tochar( #success, ch );
+  act_notchar( #flash, ch );
+  transfer( ch, find_room( 33756 ) );
+  act_notchar( #arr, ch );
+  drain_stat( ch, prayer, 0, -800 );
+  if( !cflag( 167, ch ) ) {
+    set_cflag( 167, ch );
+    wait( 1 );
+    mpcode( mob_in_room( 2578, find_room( 33756 ) ), 5 );
+    }
+  }
+else {
+  act_tochar( #failure, ch );
+  wait( 1 );
+  act_tochar( #anger, ch );
+  act_notchar( #ranger, ch );
+  drain_stat( ch, prayer, 0, -200 );
+  dam_message( ch, 10000, \"Divine Wrath of Morr\" );
+  inflict( ch, null, 10000, \"Divine Wrath of Morr\" );
+  }
+"
 E
 "no"
 "The God to which this altar is devoted does not accept your sacrifice and you
-
-remain alive.  If you truly wish to sacrifice yourself, perhaps you can find
-
-something larger and more dangerous than yourself and go try and kill it?
-
-"
+remain alive.  If you truly wish to sacrifice yourself, perhaps you can find
+something larger and more dangerous than yourself and go try and kill it?
+"
 E
 "offer"
 "You kneel down before the altar and offer your very life to your god.
-
-"
+"
 E
 "roffer"
 "$n kneels down in fervent suplication before the altar and begs $s god to take
-
-$s life as a gift of $s true devotion.
-
-"
+$s life as a gift of $s true devotion.
+"
 E
 "success"
 "@MYou suddenly thrown into complete and utter darkness.  Not a cold, uncaring
-
-darkness but a warm, comforting darkness like a canvas on which the light of
-
-life is simply waiting to be drawn.  Slowly, light returns and you find
-
-youself somewhere else...
-
-"
+darkness but a warm, comforting darkness like a canvas on which the light of
+life is simply waiting to be drawn.  Slowly, light returns and you find
+youself somewhere else...
+"
 E
 "flash"
 "There is a flash of bright, blinding light and when you can see again nothing
-
-remains where $n was kneeling.
-
-"
+remains where $n was kneeling.
+"
 E
 "arr"
 "In a flash of light $n appears.
-
-"
+"
 E
 "failure"
 "You have prayed for Morr's assistance far too often of late and pestering him
-
-for his attention yet again has only served to anger him.  He has agreed to
-
-grant your offering but the cost will be higher than anticipated.
-
-"
+for his attention yet again has only served to anger him.  He has agreed to
+grant your offering but the cost will be higher than anticipated.
+"
 E
 "anger"
 "@MMorr turns his righteous holy wrath upon you!
-
-"
+"
 E
 "ranger"
 "@MThe symbol on the altar appears to glow with an angry violet light then,
-
-suddenly, a bolt of blackness that seems to absorb the light shoots out from
-
-the symbol to envelop $n.
-
-"
+suddenly, a bolt of blackness that seems to absorb the light shoots out from
+the symbol to envelop $n.
+"
 !
 0 0 0
 -1

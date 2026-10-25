@@ -10,23 +10,15 @@
 #94000
 "Mountain Cavern"
 "You stand within a large natural cavern deep in the heart of the earth.
-
-Patches of naturally luminescent moss adhere to the cavern ceiling high
-
-overhead providing a fair bit of light.  South of here lies a massive chasm
-
-that cuts a wide swatch across the entire cavern.  Further still you can make
-
-out another ledge opposite this one but it is clearly much too far to reach
-
-even if you were to jump.  To the north a tall arch, well larger than an ogre,
-
-is formed by cleanly dressed stones set into the cavern wall.
-
-"
+Patches of naturally luminescent moss adhere to the cavern ceiling high
+overhead providing a fair bit of light.  South of here lies a massive chasm
+that cuts a wide swatch across the entire cavern.  Further still you can make
+out another ledge opposite this one but it is clearly much too far to reach
+even if you were to jump.  To the north a tall arch, well larger than an ogre,
+is formed by cleanly dressed stones set into the cavern wall.
+"
 "need tram code
-
-"
+"
 33161220 0
 0 9 0
 D0
@@ -43,27 +35,17 @@ S
 #94001
 "Neatly Squared Cave"
 "You are within a large room carved directly from the stone of the mountain.
-
-Someone has obviously gone to a lot of effort to make the room perfectly
-
-squared off as if it had been built of dressed stones rather than simply hewn
-
-haphazardly from rock.  Unlike the walls, the ceiling and floor appear to be
-
-made of heavily reinforced wooden platforms.  Thick chains connect the floor
-
-to the ceiling in each of the four corners of the room.  The dominant feature
-
-of this entire room appears to be a large lever set in a small wooden dais
-
-built into the center of the floor.  An arch set into the southern wall
-
-appears to be the only visible sign of exit from this room.
-
-"
+Someone has obviously gone to a lot of effort to make the room perfectly
+squared off as if it had been built of dressed stones rather than simply hewn
+haphazardly from rock.  Unlike the walls, the ceiling and floor appear to be
+made of heavily reinforced wooden platforms.  Thick chains connect the floor
+to the ceiling in each of the four corners of the room.  The dominant feature
+of this entire room appears to be a large lever set in a small wooden dais
+built into the center of the floor.  An arch set into the southern wall
+appears to be the only visible sign of exit from this room.
+"
 "need lever code for all elevator rooms
-
-"
+"
 33161220 0
 0 6 0
 D2
@@ -84,35 +66,21 @@ S
 #94002
 "mine tunnel"
 "You are within a large room carved directly from the stone of the mountain.
-
-Someone has obviously gone to a lot of effort to make the room perfectly
-
-squared off as if it had been built of dressed stones rather than simply hewn
-
-haphazardly from rock.  Unlike the walls, the ceiling and floor appear to be
-
-made of heavily reinforced wooden platforms.  Thick chains connect the floor
-
-to the ceiling in each of the four corners of the room.  The dominant feature
-
-of this entire room appears to be a large lever set in a small wooden dais
-
-built into the center of the floor.  Arches set into the northern and southern
-
-walls appear to be the only visible sign of exit from this room.
-
-"
+Someone has obviously gone to a lot of effort to make the room perfectly
+squared off as if it had been built of dressed stones rather than simply hewn
+haphazardly from rock.  Unlike the walls, the ceiling and floor appear to be
+made of heavily reinforced wooden platforms.  Thick chains connect the floor
+to the ceiling in each of the four corners of the room.  The dominant feature
+of this entire room appears to be a large lever set in a small wooden dais
+built into the center of the floor.  Arches set into the northern and southern
+walls appear to be the only visible sign of exit from this room.
+"
 "Mine, Layer 1
-
-clockwork miners - aggressive
-
-clockwork miner - 1 that isn't aggressive, quest mob
-
-a couple gnomish ghosts - some quests
-
-need to set mine rooms to size ogre
-
-"
+clockwork miners - aggressive
+clockwork miner - 1 that isn't aggressive, quest mob
+a couple gnomish ghosts - some quests
+need to set mine rooms to size ogre
+"
 33161220 0
 0 6 0
 D0
@@ -137,33 +105,20 @@ S
 #94003
 "Neatly Squared Cave"
 "You are within a large room carved directly from the stone of the mountain.
-
-Someone has obviously gone to a lot of effort to make the room perfectly
-
-squared off as if it had been built of dressed stones rather than simply hewn
-
-haphazardly from rock.  Unlike the walls, the ceiling and floor appear to be
-
-made of heavily reinforced wooden platforms.  Thick chains connect the floor
-
-to the ceiling in each of the four corners of the room.  The dominant feature
-
-of this entire room appears to be a large lever set in a small wooden dais
-
-built into the center of the floor.
-
-An arch set into the southern wall appears to be the only visible sign of exit from this room.
-
-"
+Someone has obviously gone to a lot of effort to make the room perfectly
+squared off as if it had been built of dressed stones rather than simply hewn
+haphazardly from rock.  Unlike the walls, the ceiling and floor appear to be
+made of heavily reinforced wooden platforms.  Thick chains connect the floor
+to the ceiling in each of the four corners of the room.  The dominant feature
+of this entire room appears to be a large lever set in a small wooden dais
+built into the center of the floor.
+An arch set into the southern wall appears to be the only visible sign of exit from this room.
+"
 "Mine, Layer 2
-
-the \"evil bad\" gnome is hiding down here.  He's making the clockworks all bad.  Quest to kill him.
-
-More clockwork miners
-
-Some clockwork sentinels
-
-"
+the \"evil bad\" gnome is hiding down here.  He's making the clockworks all bad.  Quest to kill him.
+More clockwork miners
+Some clockwork sentinels
+"
 33161220 0
 0 6 0
 D4
@@ -176,27 +131,17 @@ S
 #94004
 "Neatly Squared Cave"
 "You are within a large room carved directly from the stone of the mountain.
-
-Someone has obviously gone to a lot of effort to make the room perfectly
-
-squared off as if it had been built of dressed stones rather than simply hewn
-
-haphazardly from rock.  Unlike the walls, the ceiling and floor appear to be
-
-made of heavily reinforced wooden platforms.  Thick chains connect the floor
-
-to the ceiling in each of the four corners of the room.  The dominant feature
-
-of this entire room appears to be a large lever set in a small wooden dais
-
-built into the center of the floor.  An arch set into the northern wall
-
-appears to be the only visible sign of exit from this room.
-
-"
+Someone has obviously gone to a lot of effort to make the room perfectly
+squared off as if it had been built of dressed stones rather than simply hewn
+haphazardly from rock.  Unlike the walls, the ceiling and floor appear to be
+made of heavily reinforced wooden platforms.  Thick chains connect the floor
+to the ceiling in each of the four corners of the room.  The dominant feature
+of this entire room appears to be a large lever set in a small wooden dais
+built into the center of the floor.  An arch set into the northern wall
+appears to be the only visible sign of exit from this room.
+"
 "Merchant Layer
-
-"
+"
 33161220 0
 0 6 0
 D0
@@ -217,27 +162,17 @@ S
 #94005
 "Neatly Squared Cave"
 "You are within a large room carved directly from the stone of the mountain.
-
-Someone has obviously gone to a lot of effort to make the room perfectly
-
-squared off as if it had been built of dressed stones rather than simply hewn
-
-haphazardly from rock.  Unlike the walls, the ceiling and floor appear to be
-
-made of heavily reinforced wooden platforms.  Thick chains connect the floor
-
-to the ceiling in each of the four corners of the room.  The dominant feature
-
-of this entire room appears to be a large lever set in a small wooden dais
-
-built into the center of the floor.
-
-An arch set into the southern wall appears to be the only visible sign of exit from this room.
-
-"
+Someone has obviously gone to a lot of effort to make the room perfectly
+squared off as if it had been built of dressed stones rather than simply hewn
+haphazardly from rock.  Unlike the walls, the ceiling and floor appear to be
+made of heavily reinforced wooden platforms.  Thick chains connect the floor
+to the ceiling in each of the four corners of the room.  The dominant feature
+of this entire room appears to be a large lever set in a small wooden dais
+built into the center of the floor.
+An arch set into the southern wall appears to be the only visible sign of exit from this room.
+"
 "Casters Layer
-
-"
+"
 33161220 0
 0 6 0
 D0
@@ -254,11 +189,9 @@ S
 #94006
 "other"
 "Under Construction.
-
-"
+"
 "should there be an entry fee?  Quest of some kind to come in?
-
-"
+"
 33161220 0
 0 6 0
 D0
@@ -275,11 +208,9 @@ S
 #94007
 "other"
 "Under Construction.
-
-"
+"
 "central hall
-
-"
+"
 33161220 0
 0 6 0
 D0
@@ -304,11 +235,9 @@ S
 #94008
 "other"
 "Under Construction.
-
-"
+"
 "central hall
-
-"
+"
 33161220 0
 0 6 0
 D1
@@ -329,11 +258,9 @@ S
 #94009
 "other"
 "Under Construction.
-
-"
+"
 "toy vendor
-
-"
+"
 33161220 0
 0 6 0
 D1
@@ -346,11 +273,9 @@ S
 #94010
 "other"
 "Under Construction.
-
-"
+"
 "gadget vendor
-
-"
+"
 33161220 0
 0 6 0
 D3
@@ -363,11 +288,9 @@ S
 #94011
 "other"
 "Under Construction.
-
-"
+"
 "pet vendor
-
-"
+"
 33161220 0
 0 6 0
 D1
@@ -380,11 +303,9 @@ S
 #94012
 "other"
 "Under Construction.
-
-"
+"
 "empty?  Quest vendor?  custom Component piece vendor?
-
-"
+"
 33161220 0
 0 6 0
 D3
@@ -397,13 +318,10 @@ S
 #94013
 "Neatly Squared Cave"
 "Under Construction.
-
-"
+"
 "mages go west
-
-clerics go east
-
-"
+clerics go east
+"
 33161220 0
 0 6 0
 D1
@@ -424,11 +342,9 @@ S
 #94014
 "Neatly Squared Cave"
 "Under Construction.
-
-"
+"
 "quests for mages group happen here
-
-"
+"
 33161220 0
 0 6 0
 D1
@@ -441,11 +357,9 @@ S
 #94015
 "Neatly Squared Cave"
 "Under Construction.
-
-"
+"
 "quests for clerics group happen here
-
-"
+"
 33161220 0
 0 6 0
 D3
@@ -458,11 +372,9 @@ S
 #94016
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 "use town pull lever / knocking code to get back in
-
-"
+"
 33161220 0
 0 6 0
 D0
@@ -477,64 +389,41 @@ A
 "push pull"
 "lever"
 "act_tochar( #pull, ch );
-
-act_notchar( #rpull, ch );
-
-if( is_open( room, north ) ) {
-
-  act_room( #close, ch );
-
-  close( room, north );
-
-}
-
-else {
-
-  act_room( #open, ch );
-
-  open( room, north );
-
-}
-
-wait( 3 );
-
-if( is_open( room, north ) ) {
-
-  close( room, north );
-
-  send_to_room( #close, room );
-
-}
-
-"
+act_notchar( #rpull, ch );
+if( is_open( room, north ) ) {
+  act_room( #close, ch );
+  close( room, north );
+}
+else {
+  act_room( #open, ch );
+  open( room, north );
+}
+wait( 3 );
+if( is_open( room, north ) ) {
+  close( room, north );
+  send_to_room( #close, room );
+}
+"
 E
 "pull"
 "You pull the lever set next to the door and there is an immediate clatter of
-
-gears and cogs in action within the walls.
-
-"
+gears and cogs in action within the walls.
+"
 E
 "rpull"
 "$n pulls the lever set next to the door and there is an immediate clatter of
-
-gears and cogs in action within the walls.
-
-"
+gears and cogs in action within the walls.
+"
 E
 "close"
 "With a heavy @rCLANG!@n the northern door swings shut and all the mechanical
-
-sounds cease within the walls.
-
-"
+sounds cease within the walls.
+"
 E
 "open"
 "Amidst the whirring and clattering sounds the @ycreeeeaaak@n of the northern door
-
-is added as it swings open.
-
-"
+is added as it swings open.
+"
 !
 0 0 0
 -1
@@ -543,11 +432,9 @@ S
 #94017
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 "use town pull lever / knocking code to get back in
-
-"
+"
 33161220 0
 0 6 0
 D0
@@ -562,64 +449,41 @@ A
 ""
 ""
 "act_tochar( #pull, ch );
-
-act_notchar( #rpull, ch );
-
-if( is_open( room, north ) ) {
-
-  act_room( #close, ch );
-
-  close( room, north );
-
-}
-
-else {
-
-  act_room( #open, ch );
-
-  open( room, north );
-
-}
-
-wait( 3 );
-
-if( is_open( room, north ) ) {
-
-  close( room, north );
-
-  send_to_room( #close, room );
-
-}
-
-"
+act_notchar( #rpull, ch );
+if( is_open( room, north ) ) {
+  act_room( #close, ch );
+  close( room, north );
+}
+else {
+  act_room( #open, ch );
+  open( room, north );
+}
+wait( 3 );
+if( is_open( room, north ) ) {
+  close( room, north );
+  send_to_room( #close, room );
+}
+"
 E
 "pull"
 "You pull the lever set next to the door and there is an immediate clatter of
-
-gears and cogs in action within the walls.
-
-"
+gears and cogs in action within the walls.
+"
 E
 "rpull"
 "$n pulls the lever set next to the door and there is an immediate clatter of
-
-gears and cogs in action within the walls.
-
-"
+gears and cogs in action within the walls.
+"
 E
 "close"
 "With a heavy @rCLANG!@n the northern door swings shut and all the mechanical
-
-sounds cease within the walls.
-
-"
+sounds cease within the walls.
+"
 E
 "open"
 "Amidst the whirring and clattering sounds the @ycreeeeaaak@n of the northern door
-
-is added as it swings open.
-
-"
+is added as it swings open.
+"
 !
 0 0 0
 -1
@@ -628,8 +492,7 @@ S
 #94018
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -651,8 +514,7 @@ S
 #94019
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -674,8 +536,7 @@ S
 #94020
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -693,8 +554,7 @@ S
 #94021
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -712,8 +572,7 @@ S
 #94022
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -735,8 +594,7 @@ S
 #94023
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -758,8 +616,7 @@ S
 #94024
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -781,8 +638,7 @@ S
 #94025
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -804,8 +660,7 @@ S
 #94026
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -827,8 +682,7 @@ S
 #94027
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -850,8 +704,7 @@ S
 #94028
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -873,8 +726,7 @@ S
 #94029
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -896,8 +748,7 @@ S
 #94030
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -915,8 +766,7 @@ S
 #94031
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -938,8 +788,7 @@ S
 #94032
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -957,8 +806,7 @@ S
 #94033
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -980,8 +828,7 @@ S
 #94034
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -999,8 +846,7 @@ S
 #94035
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1018,8 +864,7 @@ S
 #94036
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1041,8 +886,7 @@ S
 #94037
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1060,8 +904,7 @@ S
 #94038
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1083,8 +926,7 @@ S
 #94039
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1102,8 +944,7 @@ S
 #94040
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1125,8 +966,7 @@ S
 #94041
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1148,8 +988,7 @@ S
 #94042
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1171,8 +1010,7 @@ S
 #94043
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1190,8 +1028,7 @@ S
 #94044
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1209,8 +1046,7 @@ S
 #94045
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1232,8 +1068,7 @@ S
 #94046
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1251,8 +1086,7 @@ S
 #94047
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1274,8 +1108,7 @@ S
 #94048
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1297,8 +1130,7 @@ S
 #94049
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1316,8 +1148,7 @@ S
 #94050
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1335,8 +1166,7 @@ S
 #94051
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1358,8 +1188,7 @@ S
 #94052
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1381,8 +1210,7 @@ S
 #94053
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1404,8 +1232,7 @@ S
 #94054
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1423,8 +1250,7 @@ S
 #94055
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1442,8 +1268,7 @@ S
 #94056
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1457,8 +1282,7 @@ S
 #94057
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1476,8 +1300,7 @@ S
 #94058
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1499,8 +1322,7 @@ S
 #94059
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1518,8 +1340,7 @@ S
 #94060
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1541,8 +1362,7 @@ S
 #94061
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1560,8 +1380,7 @@ S
 #94062
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1579,8 +1398,7 @@ S
 #94063
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1598,8 +1416,7 @@ S
 #94064
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1617,8 +1434,7 @@ S
 #94065
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1636,8 +1452,7 @@ S
 #94066
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1655,8 +1470,7 @@ S
 #94067
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1674,8 +1488,7 @@ S
 #94068
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1693,8 +1506,7 @@ S
 #94069
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1712,8 +1524,7 @@ S
 #94070
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1731,8 +1542,7 @@ S
 #94071
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1750,8 +1560,7 @@ S
 #94072
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1769,8 +1578,7 @@ S
 #94073
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1788,8 +1596,7 @@ S
 #94074
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1807,8 +1614,7 @@ S
 #94075
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1826,8 +1632,7 @@ S
 #94076
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1841,8 +1646,7 @@ S
 #94077
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1860,8 +1664,7 @@ S
 #94078
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1875,8 +1678,7 @@ S
 #94079
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1890,8 +1692,7 @@ S
 #94080
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1905,8 +1706,7 @@ S
 #94081
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1920,8 +1720,7 @@ S
 #94082
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1935,8 +1734,7 @@ S
 #94083
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0
@@ -1950,8 +1748,7 @@ S
 #94084
 "Fortified Stone Room"
 "Under Construction.
-
-"
+"
 ""
 33161220 0
 0 6 0

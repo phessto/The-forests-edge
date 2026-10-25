@@ -10,19 +10,13 @@
 #92000
 "Narrow Ledge over the Inner Sea"
 "You are on a narrow lip of rock far above the pounding surf of the Inner Sea.
-
-This ledge is only a few feet across and would be impossible to see from
-
-above.  It hugs the steep cliff wall to the east and drops away sharply to the
-
-distant waters below.  The ledge is impossible to follow south, but to the
-
-north it slants down steeply and winds around a small outcropping.
-
-"
+This ledge is only a few feet across and would be impossible to see from
+above.  It hugs the steep cliff wall to the east and drops away sharply to the
+distant waters below.  The ledge is impossible to follow south, but to the
+north it slants down steeply and winds around a small outcropping.
+"
 "[Olah] up to med rock, 21096
-
-"
+"
 301465600 0
 5 6 0
 D0
@@ -33,29 +27,22 @@ A
 "climb"
 "1 up cliff"
 "act_tochar( #climb, ch );
-
-act_notchar( #nclimb, ch );
-
-transfer( ch, find_room( 21096 ) );
-
-act_notchar( #narrive, ch );
-
-"
+act_notchar( #nclimb, ch );
+transfer( ch, find_room( 21096 ) );
+act_notchar( #narrive, ch );
+"
 E
 "climb"
 "You climb slowly up the steep cliff.
-
-"
+"
 E
 "nclimb"
 "$n slowly climbs up the steep cliff.
-
-"
+"
 E
 "narrive"
 "$n comes climbing slowly up from the cliff.
-
-"
+"
 !
 0 0 0
 -1
@@ -64,14 +51,10 @@ S
 #92001
 "Narrow Ledge - Before a Bridge"
 "The narrow path against the weathered stone to the east widens considerably to
-
-the north as it approaches a long wooden bridge.  Over the edge, the west is
-
-open air all the way down to the Inner Sea below.  A narrow trail leads south
-
-around an outcropping of stone.
-
-"
+the north as it approaches a long wooden bridge.  Over the edge, the west is
+open air all the way down to the Inner Sea below.  A narrow trail leads south
+around an outcropping of stone.
+"
 ""
 301465600 0
 5 6 0
@@ -89,14 +72,10 @@ S
 #92002
 "A Wooden Bridge"
 "This bridge is huge, stretching from a narrow ledge on the cliffs to the south
-
-to a small island to the north.  The rough planks are sturdy and the bridge
-
-appears wide enough to accommodate a wagon.  Far below, the waters of the
-
-Inner Sea pound the cliffs and the rocks around the island.
-
-"
+to a small island to the north.  The rough planks are sturdy and the bridge
+appears wide enough to accommodate a wagon.  Far below, the waters of the
+Inner Sea pound the cliffs and the rocks around the island.
+"
 ""
 301465600 0
 5 6 0
@@ -111,54 +90,36 @@ D2
 E
 "3 wooden 3 bridge 3 planks"
 "The bridge is constructed almost entirely from wood, save for the huge bolts
-
-and bracings that hold the beams together.  The planks that make the surface
-
-of the bridge are rough wood, but appear to be newly laid as they are yet
-
-unweathered.
-
-"
+and bracings that hold the beams together.  The planks that make the surface
+of the bridge are rough wood, but appear to be newly laid as they are yet
+unweathered.
+"
 E
 "3 island 3 north"
 "A small island of stone juts from the surface of the sea.  A stone
-
-fortification has been built on the shore of the island where the bridge meets
-
-the land.  The gates, however, stand wide open, and the roofs of several
-
-buildings can be seen over the top of the wall.  One structure, a large
-
-citadel of dark stone, towers over the others and appears to stand in the
-
-center of the isle.
-
-"
+fortification has been built on the shore of the island where the bridge meets
+the land.  The gates, however, stand wide open, and the roofs of several
+buildings can be seen over the top of the wall.  One structure, a large
+citadel of dark stone, towers over the others and appears to stand in the
+center of the isle.
+"
 E
 "3 ledge 3 cliff"
 "A smallish ledge juts out from the cliffs to the south and appears to climb
-
-the cliff face and continue south around an outcropping of rock.
-
-"
+the cliff face and continue south around an outcropping of rock.
+"
 -1
 S
 
 #92003
 "Before the Gates"
 "A towering stone wall cuts off this narrow strip of land from the rest of the
-
-island.  From this angle it is impossible to see what might lie on the other
-
-side of the wall save what you can see through the open gates.  Directly above
-
-the gates are crenalated battlements, ready to repel any unwelcome visitors. 
-
-South of here is a massive wooden bridge that spans the choppy waters of the
-
-sea below.
-
-"
+island.  From this angle it is impossible to see what might lie on the other
+side of the wall save what you can see through the open gates.  Directly above
+the gates are crenalated battlements, ready to repel any unwelcome visitors. 
+South of here is a massive wooden bridge that spans the choppy waters of the
+sea below.
+"
 ""
 301465600 0
 5 6 0
@@ -173,41 +134,28 @@ D2
 E
 "3 gates wall"
 "The wall is constructed of a dark stone and mortared almost seamlessly into
-
-place.  Gates of thick wood shod with iron appear as if they could withstand
-
-all but the heaviest blows from a ram or catapult, though they are thrown wide
-
-at this time.
-
-"
+place.  Gates of thick wood shod with iron appear as if they could withstand
+all but the heaviest blows from a ram or catapult, though they are thrown wide
+at this time.
+"
 E
 "3 bridge 1 south"
 "The bridge to the south is built of huge beams and heavy wooden planks.  It
-
-appears to be fairly new as the wood has yet to take on the greyish color of
-
-aged wood.  The bridge is mounted on two massive pins that, if removed, would
-
-cause the bridge to plummet into the sea below.
-
-"
+appears to be fairly new as the wood has yet to take on the greyish color of
+aged wood.  The bridge is mounted on two massive pins that, if removed, would
+cause the bridge to plummet into the sea below.
+"
 -1
 S
 
 #92004
 "Inside the Gates"
 "A wide road paved with stones runs through a massive gate set into a heavily
-
-fortified stone wall to the south and continues toward a large structure built
-
-of stone to the north.  Several smaller buildings line the road on either
-
-side, and another road intersects this one just to the north.  The buildings
-
-and road seem well maintained and solidly built.
-
-"
+fortified stone wall to the south and continues toward a large structure built
+of stone to the north.  Several smaller buildings line the road on either
+side, and another road intersects this one just to the north.  The buildings
+and road seem well maintained and solidly built.
+"
 ""
 301465600 0
 12 6 0
@@ -222,38 +170,28 @@ D2
 E
 "3 gate"
 "The gates are thick planks of wood banded with steel.  At this time they stand
-
-wide open.
-
-"
+wide open.
+"
 E
 "3 road"
 "The road is arrow straight and built of tightly spaced paving stones.
-
-"
+"
 E
 "3 wall"
 "The wall is more than thirty feet high, though only long enough to wall off a
-
-small portion of the island.
-
-"
+small portion of the island.
+"
 -1
 S
 
 #92005
 "Crossroads"
 "Two roads intersect here, the wider heading north toward a towering structure
-
-of dark stone and south towards a fortified gate, and the smaller east and
-
-west.  A fountain with a statue depicting a vyan putting a human into chains
-
-stands in the heart intersection.  Buildings line the road on either side,
-
-some two or even three stories.
-
-"
+of dark stone and south towards a fortified gate, and the smaller east and
+west.  A fountain with a statue depicting a vyan putting a human into chains
+stands in the heart intersection.  Buildings line the road on either side,
+some two or even three stories.
+"
 ""
 301465600 0
 12 6 0
@@ -272,18 +210,12 @@ S
 #92006
 "Before a Fortress of Dark Stone"
 "A tall, ominous building constructed of a dark colored stone towers over the
-
-other structures of the island.  Its walls continue for hundreds of feet in
-
-either direction, broken only by a single portal set into the center of the
-
-wall.  No other buildings have been constructed close to the fortress; its
-
-isolation only makes it appear larger and more menacing.  A stone-paved road
-
-leads away from the fortress toward a crossroads south of here.
-
-"
+other structures of the island.  Its walls continue for hundreds of feet in
+either direction, broken only by a single portal set into the center of the
+wall.  No other buildings have been constructed close to the fortress; its
+isolation only makes it appear larger and more menacing.  A stone-paved road
+leads away from the fortress toward a crossroads south of here.
+"
 ""
 301465600 0
 12 6 0
@@ -298,45 +230,30 @@ D2
 E
 "3 stone 3 walls 3 building 3 fortress"
 "Large, interlocking blocks of a darkish stone, possibly granite, have been
-
-fitted almost seemlessly into place to form this building.  Each block looks
-
-to weigh several tons and the faces have been polished smooth to prevent
-
-scaling.  The building is immense and topped with crenelated battlements.  It
-
-is obviously key to the defense of this small island.
-
-"
+fitted almost seemlessly into place to form this building.  Each block looks
+to weigh several tons and the faces have been polished smooth to prevent
+scaling.  The building is immense and topped with crenelated battlements.  It
+is obviously key to the defense of this small island.
+"
 E
 "3 portal 3 door 3 gate"
 "A single heavy gate is the only crack in the building's outer facade.  The
-
-gate's heavy wooden planks have been banded with iron to increase strength. 
-
-Anyone attempting the shatter the gates would be subject to a rain of arrows
-
-and rocks from the walls above.
-
-"
+gate's heavy wooden planks have been banded with iron to increase strength. 
+Anyone attempting the shatter the gates would be subject to a rain of arrows
+and rocks from the walls above.
+"
 -1
 S
 
 #92007
 "Inside a Fortress of Dark Stone"
 "Murder holes in the ceiling indicate that this stronghold was built chiefly
-
-for defense.  The hallways are narrow and barely high enough for a troll to
-
-stand in upright.  Though the floor has been polished smooth, the walls have
-
-been left rough and undecorated.  A single heavy door has been set into the
-
-walls in every direction, each made of heavy wooden planks and banded with
-
-iron.
-
-"
+for defense.  The hallways are narrow and barely high enough for a troll to
+stand in upright.  Though the floor has been polished smooth, the walls have
+been left rough and undecorated.  A single heavy door has been set into the
+walls in every direction, each made of heavy wooden planks and banded with
+iron.
+"
 ""
 301465604 0
 0 6 0
@@ -351,35 +268,24 @@ D2
 E
 "3 door"
 "The door to the south has been built with the hinges on this side, while the
-
-other three have been built with the hinges on the other side.  Apparently, if
-
-the outer door is breached the other doors can be used to trap invaders in
-
-this room.
-
-"
+other three have been built with the hinges on the other side.  Apparently, if
+the outer door is breached the other doors can be used to trap invaders in
+this room.
+"
 -1
 S
 
 #92008
 "Great Hall"
 "This room is large and open with high ceilings and a large fireplace built
-
-into the eastern and western walls.  The fires illuminate the room dimly and
-
-seem to be the only sources of light in the hall.  A long wooden table ringed
-
-with benches stands in the center of the room, laden with food.  The southern
-
-wall has a reinforced wooden door set into it, while the northern wall is only
-
-blank stone, save for a button shaped like a skull on the corner.
-
-"
+into the eastern and western walls.  The fires illuminate the room dimly and
+seem to be the only sources of light in the hall.  A long wooden table ringed
+with benches stands in the center of the room, laden with food.  The southern
+wall has a reinforced wooden door set into it, while the northern wall is only
+blank stone, save for a button shaped like a skull on the corner.
+"
 "[Olah] to armory, 92009
-
-"
+"
 301465605 0
 0 9 0
 D2
@@ -389,85 +295,58 @@ D2
 E
 "3 fireplace"
 "The fireplaces are massive and provide warmth as well as a dim light for the
-
-entire hall.  A few logs are burning in each, occasionally popping and
-
-cracking and filling the air with the scent of smoke.
-
-"
+entire hall.  A few logs are burning in each, occasionally popping and
+cracking and filling the air with the scent of smoke.
+"
 E
 "button"
 "The button protrudes a few inches from the wall and is about the size of a
-
-goblin's clenched fist.  Its skull-like shape is angular, reminiscent of an
-
-elf's.
-
-"
+goblin's clenched fist.  Its skull-like shape is angular, reminiscent of an
+elf's.
+"
 A
 "push press"
 "button"
 "act_tochar( #press, ch );
-
-act_notchar( #npress, ch );
-
-wait( 1 );
-
-if( is_player( ch ) ) {
-
-  if( is_name( \"Prot\", clan_abbrev( ch ) ) ) {
-
-    act_tochar( #poof, ch );
-
-    act_notchar( #npoof, ch );
-
-    transfer( ch, find_room( 92009 ) );
-
-    act_notchar( #narr, ch );
-
-    }
-
-  else
-
-    act_tochar( #fail, ch );
-
-  }
-
-else
-
-  act_tochar( #fail, ch );
-
-"
+act_notchar( #npress, ch );
+wait( 1 );
+if( is_player( ch ) ) {
+  if( is_name( \"Prot\", clan_abbrev( ch ) ) ) {
+    act_tochar( #poof, ch );
+    act_notchar( #npoof, ch );
+    transfer( ch, find_room( 92009 ) );
+    act_notchar( #narr, ch );
+    }
+  else
+    act_tochar( #fail, ch );
+  }
+else
+  act_tochar( #fail, ch );
+"
 E
 "press"
 "You press the button on the wall.
-
-"
+"
 E
 "npress"
 "$n presses the button on the wall.
-
-"
+"
 E
 "poof"
 "You feel yourself dematerialize and are transported to another location.
-
-"
+"
 E
 "npoof"
 "$n suddenly dematerializes.
-
-"
+"
 E
 "narr"
 "@c$n suddenly materializes out of thin air.@n
-
-"
+"
 E
 "fail"
 "You feel a slight tugging sensation which soon fades.
-
-"
+"
 !
 0 0 0
 4225 17 1509949540 -2 0
@@ -483,85 +362,58 @@ S
 #92009
 "Armoury"
 "This room is dedicated to storing various objects, especially weapons and
-
-armor.  A large weapons rack stands against the eastern wall and several
-
-chests have been stacked against the western wall.  The floor is littered with
-
-various oddities.  A button can be seen protruding from the eastern wall.
-
-"
+armor.  A large weapons rack stands against the eastern wall and several
+chests have been stacked against the western wall.  The floor is littered with
+various oddities.  A button can be seen protruding from the eastern wall.
+"
 "[Olah] to great hall, 92008
-
-[Olah] storage room.  DO NOT PURGE!
-
-"
+[Olah] storage room.  DO NOT PURGE!
+"
 301467685 0
 0 6 0
 A
 "press push"
 "button"
 "act_tochar( #press, ch );
-
-act_notchar( #npress, ch );
-
-wait( 1 );
-
-if( is_player( ch ) ) {
-
-  if( is_name( \"Prot\", clan_abbrev( ch ) ) ) {
-
-    act_tochar( #poof, ch );
-
-    act_notchar( #npoof, ch );
-
-    transfer( ch, find_room( 92008 ) );
-
-    act_notchar( #narr, ch );
-
-    }
-
-  else
-
-    act_tochar( #fail, ch );
-
-  }
-
-else
-
-  act_tochar( #fail, ch );
-
-"
+act_notchar( #npress, ch );
+wait( 1 );
+if( is_player( ch ) ) {
+  if( is_name( \"Prot\", clan_abbrev( ch ) ) ) {
+    act_tochar( #poof, ch );
+    act_notchar( #npoof, ch );
+    transfer( ch, find_room( 92008 ) );
+    act_notchar( #narr, ch );
+    }
+  else
+    act_tochar( #fail, ch );
+  }
+else
+  act_tochar( #fail, ch );
+"
 E
 "press"
 "You press the button on the wall.
-
-"
+"
 E
 "npress"
 "$n presses the button on the wall.
-
-"
+"
 E
 "poof"
 "You feel yourself dematerialize and are transported to another location.
-
-"
+"
 E
 "npoof"
 "$n suddenly dematerializes.
-
-"
+"
 E
 "narr"
 "@c$n suddenly materializes out of thin air.@n
-
-"
+"
 E
 "fail"
 "You feel a slight tugging sensation which soon fades.
-
-"
+"
 !
 0 0 0
 -1

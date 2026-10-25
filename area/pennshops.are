@@ -10,21 +10,14 @@
 #41001
 "Hattiers' Shop"
 "Tapestries, hung from the ceiling, create the semblance of space, defining
-
-this shop into several smaller rooms.  Several counters and tables are evenly
-
-spaced about the room, on each table lying on a bed of white cloth, is a
-
-gleaming piece of head armor.  Caps, helms, greathelms, all are laid out for
-
-the customer to survey.
-
-"
+this shop into several smaller rooms.  Several counters and tables are evenly
+spaced about the room, on each table lying on a bed of white cloth, is a
+gleaming piece of head armor.  Caps, helms, greathelms, all are laid out for
+the customer to survey.
+"
 "rivets!
-
-used to up to 37059
-
-"
+used to up to 37059
+"
 335020039 0
 0 5 0
 D0
@@ -46,18 +39,12 @@ S
 #41002
 "Hattiers Shop"
 "A long table lies along the north wall, underneath an arching multi-paned
-
-window.  Many utensils are scattered across the table, calipers, saws,
-
-augers, and several you can't place.  Evenly placed about the room are
-
-curious wooden stands, a long thin rod topped by a round ball.  A
-
-veritable forest of plumes, feathers, caps, and helms top the stands. 
-
-Passage east is blocked by a metal-banded, heavily locked door.
-
-"
+window.  Many utensils are scattered across the table, calipers, saws,
+augers, and several you can't place.  Evenly placed about the room are
+curious wooden stands, a long thin rod topped by a round ball.  A
+veritable forest of plumes, feathers, caps, and helms top the stands. 
+Passage east is blocked by a metal-banded, heavily locked door.
+"
 ""
 301465607 0
 0 6 0
@@ -76,19 +63,13 @@ S
 #41003
 "Road Through Light Woods"
 "Mottled trunks of thin beech rise around the road, sprouting from between old,
-
-moss-covered stumps.  Through the thin forest structures are visible to the
-
-west.  Uphill, undergrowth knots tightly between older trees.  The road is
-
-heavily rutted with dried remnants of puddles forming muddy bogs in the cart
-
-tracks.
-
-"
+moss-covered stumps.  Through the thin forest structures are visible to the
+west.  Uphill, undergrowth knots tightly between older trees.  The road is
+heavily rutted with dried remnants of puddles forming muddy bogs in the cart
+tracks.
+"
 "added to make map line up - Hed
-
-"
+"
 301465600 0
 12 9 0
 D0
@@ -105,15 +86,11 @@ S
 #41004
 "Hattiers' Shop"
 "Huge windows flood the shop with light, sunbeams dancing along fancifull
-
-plumes and feathers which lie next to shiny mithril and bronze plates.  A
-
-large forge occupies the western wall, quiet now, but looking well-used.
-
-"
+plumes and feathers which lie next to shiny mithril and bronze plates.  A
+large forge occupies the western wall, quiet now, but looking well-used.
+"
 "quite now? or new?
-
-"
+"
 335024133 0
 0 5 0
 D2
@@ -126,11 +103,9 @@ S
 #41010
 "Nothing"
 "Under Construction.
-
-"
+"
 "Nothing here
-
-"
+"
 301465605 0
 1 9 0
 D3

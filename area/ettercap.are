@@ -10,20 +10,13 @@
 #70100
 "Overgrown Path into the Dense Woods"
 "The path, if so narrow and twisted a thing could be called such, winds its
-
-course through the near-impenetrable trees, skirting the gnarled brambles
-
-that make up most of the undergrowth here.  The trees, mostly old-growth oak
-
-and green-needled pines, stand side-by-side, their branches intertwining
-
-intimately to block passage from the south-west leading trail.  A grey-white
-
-mound lies beside the stump of a long-felled tree, one end partially blocking
-
-the trail.  The air is cool and heavy with mist, the promise of rain to come.
-
-"
+course through the near-impenetrable trees, skirting the gnarled brambles
+that make up most of the undergrowth here.  The trees, mostly old-growth oak
+and green-needled pines, stand side-by-side, their branches intertwining
+intimately to block passage from the south-west leading trail.  A grey-white
+mound lies beside the stump of a long-felled tree, one end partially blocking
+the trail.  The air is cool and heavy with mist, the promise of rain to come.
+"
 ""
 301465608 0
 3 5 0
@@ -38,50 +31,39 @@ D3
 E
 "grey white mound stump"
 "The mound, man-sized in shape, is wrapped in a cocoon of silvery white webs
-
-and lies beneath the rotting tree stump.  Through the transparent film, the
-
-gruesome shape of a desecrated corpse can be seen, clothed in a fading cassock.
-
-"
+and lies beneath the rotting tree stump.  Through the transparent film, the
+gruesome shape of a desecrated corpse can be seen, clothed in a fading cassock.
+"
 E
 "gnarled brambles undergrowth"
 "Tangled bushes with wickedly sharp thorns surround the trees alongside the
-
-path, their thorny branches reaching into the path to scratch and grab
-
-passersby.
-
-"
+path, their thorny branches reaching into the path to scratch and grab
+passersby.
+"
 A
 ""
 ""
 "send_to_room( #fog, find_room( 70100 ) );
-
-"
+"
 E
 "fog"
 "@cTendrils of light fog creep across the ground, hiding the trail underfoot.@n
-
-"
+"
 !
 2 150 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@cSqueezing between the close-growing trees, you leave south.@n
-
-"
+"
 E
 "to_room"
 "@cSqueezing between the close-growing trees, $n leaves south.@n
-
-"
+"
 !
 3 0 4
 -1
@@ -90,21 +72,14 @@ S
 #70101
 "An Old, Overgrown Path"
 "Webs festoon the intertwining branches of the forest giants growing here,
-
-their gossamer strands dancing lightly on a passing breeze.  Clusters of
-
-mistletoe hang from an old oak, drawing life from its twisted limbs. 
-
-Underfoot, the path lies buried beneath an eon's accumulation of fallen leaves
-
-and debris, damp still from a recent rain.  Ground-hugging fingers of fog
-
-weave in and out amidst the trees, disturbed by the currents of your passage.
-
-"
+their gossamer strands dancing lightly on a passing breeze.  Clusters of
+mistletoe hang from an old oak, drawing life from its twisted limbs. 
+Underfoot, the path lies buried beneath an eon's accumulation of fallen leaves
+and debris, damp still from a recent rain.  Ground-hugging fingers of fog
+weave in and out amidst the trees, disturbed by the currents of your passage.
+"
 "[Maurtock] maybe a fog extra
-
-"
+"
 301465600 0
 3 6 0
 D1
@@ -118,138 +93,95 @@ D3
 E
 "webs branches strands gossamer"
 "Giant spider webs, woven from tree to tree, form a shimmering curtain of
-
-gossamer silver threads.  Stretching across the path, they drape from from the
-
-lower branches nearly to the ground.
-
-"
+gossamer silver threads.  Stretching across the path, they drape from from the
+lower branches nearly to the ground.
+"
 E
 "mistletoe oak limbs"
 "Dense clusters of mistletoe hang suspended from the old gnarled oak branches
-
-over head.  Finger-sized, round, gray-green leaves and pearl white berries,
-
-thrive in the cool, misty air of the ancient forest.
-
-"
+over head.  Finger-sized, round, gray-green leaves and pearl white berries,
+thrive in the cool, misty air of the ancient forest.
+"
 A
 ""
 ""
 "if( find_stat( ch, level ) < 20 ) {
-
-  act_tochar( #spider, ch );
-
-  }
-
-"
+  act_tochar( #spider, ch );
+  }
+"
 E
 "spider"
 "@cAs you make your way between the trees, you hear rustling overhead and see
-
-several large spiders peering at you in anticipation, sensing easy prey.@n
-
-"
+several large spiders peering at you in anticipation, sensing easy prey.@n
+"
 !
 1 0 10
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@cSweeping the spider webs aside, you continue along the path to the $T.@n
-
-"
+"
 E
 "to_char"
 "@cSweeping the webs aside, $n continues along the path to the $T.@n
-
-"
+"
 !
 3 0 10
 A
 "pick get"
 "mistletoe"
 "if( is_player( ch ) ) {
-
-  act_tochar( #stretch, ch );
-
-  act_notchar( #rmstretch, ch );
-
-  wait( 1 );
-
-  i = 1d20;
-
-  if( rflag( reset1, room ) ) {
-
-    if( i < 3 ) {
-
-      obj = oload( 667 );
-
-      obj_to_char( obj, ch );
-
-      act_tochar( #got, ch );
-
-      act_notchar( #rmgot, ch );
-
-      remove_rflag( reset1, room );
-
-      end;
-
-      }
-
-    act_tochar( #not, ch );
-
-    act_notchar( #rmnot, ch );
-
-    remove_rflag( reset1, room );
-
-    }
-
-  else {
-
-    act_tochar( #not, ch );
-
-    act_notchar( #rmnot, ch );
-
-    }
-
-  }
-
-"
+  act_tochar( #stretch, ch );
+  act_notchar( #rmstretch, ch );
+  wait( 1 );
+  i = 1d20;
+  if( rflag( reset1, room ) ) {
+    if( i < 3 ) {
+      obj = oload( 667 );
+      obj_to_char( obj, ch );
+      act_tochar( #got, ch );
+      act_notchar( #rmgot, ch );
+      remove_rflag( reset1, room );
+      end;
+      }
+    act_tochar( #not, ch );
+    act_notchar( #rmnot, ch );
+    remove_rflag( reset1, room );
+    }
+  else {
+    act_tochar( #not, ch );
+    act_notchar( #rmnot, ch );
+    }
+  }
+"
 E
 "stretch"
 "You stretch as far as you can, reaching to pull off a sprig of mistletoe.
-
-"
+"
 E
 "rmstretch"
 "$n stretches as far as $e can, reaching to pull off a sprig of mistletoe.
-
-"
+"
 E
 "got"
 "You manage to pull off a sprig of mistletoe!
-
-"
+"
 E
 "rmgot"
 "$n manages to pull off a sprig of mistletoe.
-
-"
+"
 E
 "not"
 "You can't quite reach the mistletoe.
-
-"
+"
 E
 "rmnot"
 "$n can't quite reach the mistletoe.
-
-"
+"
 !
 9 0 0
 -1
@@ -258,20 +190,13 @@ S
 #70102
 "An Old, Overgrown Path"
 "The thick canopy overhead blocks out nearly all view of the sky, and spider
-
-webs spun between the branches sway slightly on a light breeze.  There are no
-
-insects flying through air and no signs of recently entrapped insects in the
-
-webs.  The trees themselves twist together as if woven that way, so close as
-
-to make travel impossible except to the north and east.  Through a few small
-
-openings in the trees, you can see a hint of red stone the northwest, though
-
-not enough is visible enough to make out what it could be.
-
-"
+webs spun between the branches sway slightly on a light breeze.  There are no
+insects flying through air and no signs of recently entrapped insects in the
+webs.  The trees themselves twist together as if woven that way, so close as
+to make travel impossible except to the north and east.  Through a few small
+openings in the trees, you can see a hint of red stone the northwest, though
+not enough is visible enough to make out what it could be.
+"
 ""
 301465600 0
 3 6 0
@@ -286,59 +211,42 @@ D1
 E
 "canopy sky webs branches"
 "The sky is almost completely blocked off by the layers of branches and
-
-gossamer blanket overhead.  The trees are huge, their large leaves
-
-overlapping, perfectly blocking out the sky.
-
-"
+gossamer blanket overhead.  The trees are huge, their large leaves
+overlapping, perfectly blocking out the sky.
+"
 A
 ""
 ""
 "if( find_stat( ch, level ) > 20 || mob_in_room( 843, room ) )
-
-  end;
-
-if( random( 1, 5 ) > 1 )
-
-  end;
-
-send_to_room( #spider, room );
-
-mload( 843, room );
-
-mob = mob_in_room( 843, room );
-
-victim = rand_player( room );
-
-attack( mob, victim, 1d7+3, \"scratch\" );
-
-"
+  end;
+if( random( 1, 5 ) > 1 )
+  end;
+send_to_room( #spider, room );
+mload( 843, room );
+mob = mob_in_room( 843, room );
+victim = rand_player( room );
+attack( mob, victim, 1d7+3, \"scratch\" );
+"
 E
 "spider"
 "Suddenly, a giant black and grey @bwooly spider@n leaps down from the
-
-branches above!
-
-"
+branches above!
+"
 !
 1 0 3
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@cYou push through the thick trees, continuing along the path to the north.@n
-
-"
+"
 E
 "to_room"
 "$n pushes through the thick trees, continuing along the path to the north.
-
-"
+"
 !
 3 0 1
 -1
@@ -347,20 +255,13 @@ S
 #70103
 "Path Near a Broken Abbey"
 "The path follows alongside a large, red sandstone abbey on the western side. 
-
-Thick trees block the eastern side of the path.  The glass of a window, too
-
-high to reach, is broken in several panes, the holes strung with web.  The
-
-branches overhead reach across the path, right up to the sandstone wall, every
-
-branch entangled with webs.  The trees crowd so close around the path leading
-
-south that, though there is just enough room to pass now, with a few more
-
-years of growth it will be impossible.
-
-"
+Thick trees block the eastern side of the path.  The glass of a window, too
+high to reach, is broken in several panes, the holes strung with web.  The
+branches overhead reach across the path, right up to the sandstone wall, every
+branch entangled with webs.  The trees crowd so close around the path leading
+south that, though there is just enough room to pass now, with a few more
+years of growth it will be impossible.
+"
 ""
 301465600 0
 12 6 0
@@ -375,76 +276,52 @@ D2
 E
 "glass window pane holes web branches"
 "A tree branch reaches into the abbey through a cracked upper window and in
-
-the intersection is an impressive spider web.  Nothing can be seen through
-
-the window, for the inside of the abbey is devoid of light.
-
-"
+the intersection is an impressive spider web.  Nothing can be seen through
+the window, for the inside of the abbey is devoid of light.
+"
 E
 "red sandstone abbey"
 "Massive sandstone blocks are piled upon one another, making up the wall of
-
-this old abbey.  The stones are old and worn, beaten smooth by the elements
-
-and crumbling in some places.  Trees grow right up against the wall, trying
-
-to retake the land that man has stolen.
-
-"
+this old abbey.  The stones are old and worn, beaten smooth by the elements
+and crumbling in some places.  Trees grow right up against the wall, trying
+to retake the land that man has stolen.
+"
 E
 "south trees path"
 "The trees encroach upon the path to the south, branches reaching out, trying
-
-to retake the path for their own.  Travelling along the path further south
-
-appears to grow progressively more difficult, though it is still possible to
-
-push through.
-
-"
+to retake the path for their own.  Travelling along the path further south
+appears to grow progressively more difficult, though it is still possible to
+push through.
+"
 A
 ""
 ""
 "if( find_stat( ch, level ) > 20 || mob_in_room( 843, room ) )
-
-  end;
-
-if( random( 1, 5 ) > 1 )
-
-  end;
-
-send_to_room( #spider, room );
-
-mload( 843, room );
-
-mob = mob_in_room( 843, room );
-
-victim = rand_player( room );
-
-attack( mob, victim, 1d7+3, \"scratch\" );
-
-"
+  end;
+if( random( 1, 5 ) > 1 )
+  end;
+send_to_room( #spider, room );
+mload( 843, room );
+mob = mob_in_room( 843, room );
+victim = rand_player( room );
+attack( mob, victim, 1d7+3, \"scratch\" );
+"
 E
 "spider"
 "Suddenly, a giant black and grey @bwooly spider@n leaps down from the
-
-branches above!
-
-"
+branches above!
+"
 !
 1 0 5
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@cYou push through the thick trees to the more precarious path to the south.@n
-
-"
+"
 !
 3 0 4
 -1
@@ -453,25 +330,16 @@ S
 #70104
 "Before a Crumbling Abbey"
 "The trees surrounding the abbey entrance reach in towards it but have not yet
-
-managed to block it off entirely.  Spider webs are spread between the trees
-
-and abbey, so thickly that light is filtered and greatly lessoned by the time
-
-it reaches the ground.  The doors of the abbey are in the process of decaying,
-
-but they still manage to cling to their hinges with the unlikely assistance of
-
-a dark thorny vine.  The sandstone making up the walls is crumbling and in a
-
-few places, a red dust seems to float alongside the wall due to a tiny amount
-
-of webbing.
-
-"
+managed to block it off entirely.  Spider webs are spread between the trees
+and abbey, so thickly that light is filtered and greatly lessoned by the time
+it reaches the ground.  The doors of the abbey are in the process of decaying,
+but they still manage to cling to their hinges with the unlikely assistance of
+a dark thorny vine.  The sandstone making up the walls is crumbling and in a
+few places, a red dust seems to float alongside the wall due to a tiny amount
+of webbing.
+"
 "[Dalthas] A climb vine acode might be cool here
-
-"
+"
 301465608 0
 12 6 0
 D2
@@ -485,59 +353,39 @@ D3
 E
 "sandstone red dust abbey"
 "The abbey is made of large blocks of sandstone, surely very impressive
-
-when it was first constructed, but has long since fallen into disrepair.
-
-The sandstone is crumbling in both large and small pieces: from stones
-
-that lie alongside the wall to a light red dust that sticks to the
-
-collection of spider webs.
-
-"
+when it was first constructed, but has long since fallen into disrepair.
+The sandstone is crumbling in both large and small pieces: from stones
+that lie alongside the wall to a light red dust that sticks to the
+collection of spider webs.
+"
 E
 "spider web trees up"
 "Between the trees, whose branches brush right up against the abbey
-
-wall, and the spider webs that criss-cross between every branch,
-
-the sky is hardly visible.
-
-"
+wall, and the spider webs that criss-cross between every branch,
+the sky is hardly visible.
+"
 E
 "vine thorny"
 "The vine twists up alongside the building, around the door hinges and along
-
-each edge of the stones.  Large, wicked thorns, a darker shade of green than
-
-the vine itself, line the length of it.
-
-"
+each edge of the stones.  Large, wicked thorns, a darker shade of green than
+the vine itself, line the length of it.
+"
 -1
 S
 
 #70105
 "In the Ruins of an Abbey"
 "This must have once been the entrance hall for this now-ruined abbey.  The red
-
-sandstone walls are cracked and crumbling in many places, and small rock
-
-fragments litter the rotting, wooden floor.  An acrid stench of decay wifts
-
-through the area on a faint breeze, though it is too dark to see where such a
-
-breeze could have come from.  To the west, it appears that the ceiling
-
-collapsed, and an enormous pile of rubble blocks passage in that direction. 
-
-To the north and south, darkness lies beyond shredded doorways.
-
-"
+sandstone walls are cracked and crumbling in many places, and small rock
+fragments litter the rotting, wooden floor.  An acrid stench of decay wifts
+through the area on a faint breeze, though it is too dark to see where such a
+breeze could have come from.  To the west, it appears that the ceiling
+collapsed, and an enormous pile of rubble blocks passage in that direction. 
+To the north and south, darkness lies beyond shredded doorways.
+"
 "acode( find_room( 70105 ), 2 ); == Web Trap
-
-acode( find_room( 70105 ), 3 ); == Untrap Web
-
-"
+acode( find_room( 70105 ), 3 ); == Untrap Web
+"
 301465604 0
 0 6 0
 D0
@@ -567,262 +415,172 @@ D5
 E
 "red sandstone walls"
 "The sandstone is crumbling bit by bit and small cracks run through each red
-
-block.  The stones making up the wall are thick and no cracks to the outside
-
-are visible, though there is a faint breeze coming from somewhere unseen.
-
-"
+block.  The stones making up the wall are thick and no cracks to the outside
+are visible, though there is a faint breeze coming from somewhere unseen.
+"
 E
 "small rock fragments litter rotting wooden floor"
 "Fragments of red stone are scattered across the floor, though most of it has
-
-formed small piles along the edge of the wall.  The floorboards are old and
-
-rotting, and some of them appear to be a bit loose.  A light dusting of red
-
-powder coats the floor.
-
-"
+formed small piles along the edge of the wall.  The floorboards are old and
+rotting, and some of them appear to be a bit loose.  A light dusting of red
+powder coats the floor.
+"
 E
 "west ceiling emormous pile rubble"
 "The ceiling to the west has fallen and with it a great deal of rubble.  There
-
-is no way get past the rubble except finding a way around it through other
-
-rooms.  There is a crack in the ceiling that might be large enough for a small
-
-creature to climb through, but any attempts to climb might bring the rest of
-
-the ceiling down on top of you.
-
-"
+is no way get past the rubble except finding a way around it through other
+rooms.  There is a crack in the ceiling that might be large enough for a small
+creature to climb through, but any attempts to climb might bring the rest of
+the ceiling down on top of you.
+"
 E
 "ceiling up strange thread"
 "There appears to be a large net-like mass of spiderwebs bound together to form
-
-a crude trap.
-
-"
+a crude trap.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "Cobwebs brush against your face as you pass through what remains of the door frame.
-
-"
+"
 !
 3 0 5
 A
 "untrap"
 "web net thread"
 "if( !rflag( reset0, room ) )
-
-  end;
-
-if( check_skill( ch, untrap ) ) {
-
-  use_skill( ch, untrap );
-
-  act_tochar( #untrap, ch );
-
-  act_notchar( #runtrap, ch );
-
-  }
-
-else {
-
-  send_to_room( #web, room );
-
-  mob = mob_in_room( 2274, find_room( 70135 ) );
-
-  loop( all_in_room ) {
-
-    if( race( rch ) != arachnid ) {
-
-      if( char_in_room( ch, room ) )
-
-        do_spell( web, mob, ch );
-
-      }
-
-    }
-
-  }
-
-remove_rflag( reset0, room );
-
-"
+  end;
+if( check_skill( ch, untrap ) ) {
+  use_skill( ch, untrap );
+  act_tochar( #untrap, ch );
+  act_notchar( #runtrap, ch );
+  }
+else {
+  send_to_room( #web, room );
+  mob = mob_in_room( 2274, find_room( 70135 ) );
+  loop( all_in_room ) {
+    if( race( rch ) != arachnid ) {
+      if( char_in_room( ch, room ) )
+        do_spell( web, mob, ch );
+      }
+    }
+  }
+remove_rflag( reset0, room );
+"
 E
 "untrap"
 "You carefully cut a few select pieces of webbing and successfully disable
-
-the trap.
-
-"
+the trap.
+"
 E
 "runtrap"
 "$n carefully cuts a few select pieces of webbing and successfully disables the trap.
-
-"
+"
 E
 "web"
 "Suddenly, a large, sticky, web-like net falls from the ceiling!
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "if( num_in_room( room ) != players_room( room ) )
-
-  end;
-
-mob = mload( 2274, room );
-
-do_spell( poison cloud, mob );
-
-junk_mob( mob );
-
-"
+  end;
+mob = mload( 2274, room );
+do_spell( poison cloud, mob );
+junk_mob( mob );
+"
 !
 0 200 0
 A
 ""
 ""
 "room = get_room( ch );
-
-if( race( ch ) == arachnid ) {
-
-  show( ch, room, west );
-
-  show( ch, room, up );
-
-  end;
-
-  }
-
-if( check_skill( ch, searching, 10 ) && rflag( reset0, room ) ) {
-
-  act_tochar( \">> You notice a strange thread leading up to the ceiling. <<\", ch );
-
-  use_skill( ch, searching );
-
-  }
-
-wait( random( 3, 5 ) );
-
-if( !rflag( reset0, room ) )
-
-  end;
-
-send_to_room( #web, room );
-
-mob = mob_in_room( 2274, find_room( 70135 ) );
-
-transfer( mob, room );
-
-mob = mob_in_room( 2274, room );
-
-loop( all_in_room ) {
-
-  if( race( rch ) != arachnid ) {
-
-    if( rch )
-
-      do_spell( web, mob, rch );
-
-    }
-
-  }
-
-transfer( mob, find_room( 70135 ) );
-
-remove_rflag( reset0, room );
-
-"
+if( race( ch ) == arachnid ) {
+  show( ch, room, west );
+  show( ch, room, up );
+  end;
+  }
+if( check_skill( ch, searching, 10 ) && rflag( reset0, room ) ) {
+  act_tochar( \">> You notice a strange thread leading up to the ceiling. <<\", ch );
+  use_skill( ch, searching );
+  }
+wait( random( 3, 5 ) );
+if( !rflag( reset0, room ) )
+  end;
+send_to_room( #web, room );
+mob = mob_in_room( 2274, find_room( 70135 ) );
+transfer( mob, room );
+mob = mob_in_room( 2274, room );
+loop( all_in_room ) {
+  if( race( rch ) != arachnid ) {
+    if( rch )
+      do_spell( web, mob, rch );
+    }
+  }
+transfer( mob, find_room( 70135 ) );
+remove_rflag( reset0, room );
+"
 E
 "web"
 "Suddenly, a large sticky web-like net falls from the ceiling!
-
-"
+"
 !
 1 0 7
 A
 ""
 ""
 "if( race( ch ) == arachnid ) {
-
-  show( ch, room, west );
-
-  show( ch, room, up );
-
-  }
-
-"
+  show( ch, room, west );
+  show( ch, room, up );
+  }
+"
 !
 1 0 24
 A
 ""
 ""
 "mob = mob_in_room( 2274, find_room( 70132 ) );
-
-if( mob )
-
-  send_to_room( #pit, room );
-
-open( room, down );
-
-interpret( mob, \"up\" );
-
-"
+if( mob )
+  send_to_room( #pit, room );
+open( room, down );
+interpret( mob, \"up\" );
+"
 E
 "pit"
 "@ySuddenly, the floor begins to stir and a hideous spider-like beast climbs up
-
-from a pit beneath you!@n
-
-"
+from a pit beneath you!@n
+"
 !
 0 600 0
 A
 ""
 ""
 "send_to_room( #smell, room );
-
-"
+"
 E
 "smell"
 "@cAn unpleasantly pungent smell drifts through the room, though you cannot
-
-identify the source.@n
-
-"
+identify the source.@n
+"
 !
 0 50 0
 A
 ""
 ""
 "i = 1d10;
-
-if( i < 7 )
-
-  acode( find_room( 70105 ), 3 );
-
-if( i > 8 )
-
-  acode( find_room( 70105 ), 6 );
-
-if( i == 8 )
-
-  acode( find_room( 70105 ), 7 );
-
-"
+if( i < 7 )
+  acode( find_room( 70105 ), 3 );
+if( i > 8 )
+  acode( find_room( 70105 ), 6 );
+if( i == 8 )
+  acode( find_room( 70105 ), 7 );
+"
 !
 2 900 0
 2274 9 1509949540 3 0
@@ -832,18 +590,12 @@ S
 #70106
 "In the Ruined Abbey"
 "In addition to the broken rubble that fills the area, a large, partially
-
-destroyed table sits in the center of this room.  Many shattered and
-
-splintered wooden chairs lie strewn about, and mangled pieces of silverware
-
-are scattered amongst the rest of the debris.  On the eastern and southern
-
-walls, several small windows have all been destroyed to varying degrees, and
-
-it is virtually impossible to see much of the outside world.
-
-"
+destroyed table sits in the center of this room.  Many shattered and
+splintered wooden chairs lie strewn about, and mangled pieces of silverware
+are scattered amongst the rest of the debris.  On the eastern and southern
+walls, several small windows have all been destroyed to varying degrees, and
+it is virtually impossible to see much of the outside world.
+"
 ""
 301465604 0
 0 6 0
@@ -866,107 +618,75 @@ D5
 E
 "large destroyed table"
 "The table might have once hoasted fine feasts for over a dozen people, but now
-
-it is not fit to serve any.  The wood has split entirely across the middle and
-
-the two sides have caved in towards each other.  It's legs may have featured
-
-ornate carving, but now most of that is blackened by a small fire that didn't
-
-last long enough to finish it's destruction.  The polished surface has be
-
-scraped raw and is completely useless now.
-
-"
+it is not fit to serve any.  The wood has split entirely across the middle and
+the two sides have caved in towards each other.  It's legs may have featured
+ornate carving, but now most of that is blackened by a small fire that didn't
+last long enough to finish it's destruction.  The polished surface has be
+scraped raw and is completely useless now.
+"
 E
 "small window"
 "Broken glass still clings to some of the window panes but is all opaque due to
-
-the dirt and ash covering it.  The very little you can see outside the abbey
-
-is blocked by thick growth right up against the wall.
-
-"
+the dirt and ash covering it.  The very little you can see outside the abbey
+is blocked by thick growth right up against the wall.
+"
 E
 "shattered splintered wooden chairs"
 "The remains of a set of chairs, matching the table in both construction method
-
-and degree of damage, are strewn about the floor.  None of them are usable as
-
-chairs anymore and have little use except possibly as kindling.
-
-"
+and degree of damage, are strewn about the floor.  None of them are usable as
+chairs anymore and have little use except possibly as kindling.
+"
 A
 ""
 ""
 "acode( find_room( 70105 ), 4 );
-
-continue;
-
-"
+continue;
+"
 !
 1 0 9
 A
 "untrap"
 "web net"
 "acode( find_room( 70105 ), 2 );
-
-continue;
-
-"
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "if( !rflag( reset1, room ) )
-
-  end;
-
-mob = mob_in_room( 2274, find_room( 70135 ) );
-
-transfer( mob, find_room( 70106 ) );
-
-do_spell( poison cloud, mob );
-
-mob = mob_in_room( 2274, find_room( 70106 ) );
-
-transfer( mob, find_room( 70135 ) );
-
-"
+  end;
+mob = mob_in_room( 2274, find_room( 70135 ) );
+transfer( mob, find_room( 70106 ) );
+do_spell( poison cloud, mob );
+mob = mob_in_room( 2274, find_room( 70106 ) );
+transfer( mob, find_room( 70135 ) );
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2274, find_room( 70133 ) );
-
-if( mob )
-
-  send_to_room( #pit, room );
-
-open( room, down );
-
-interpret( mob, \"up\" );
-
-"
+if( mob )
+  send_to_room( #pit, room );
+open( room, down );
+interpret( mob, \"up\" );
+"
 E
 "pit"
 "@ySuddenly, the floor begins to stir and a hideous spider-like beast climbs up
-
-from a pit beneath you!@n
-
-"
+from a pit beneath you!@n
+"
 !
 0 0 0
 A
 ""
 ""
 "i = 1d2+2;
-
-acode( find_room( 70106 ), i );
-
-"
+acode( find_room( 70106 ), i );
+"
 !
 2 600 0
 -1
@@ -975,18 +695,12 @@ S
 #70107
 "In the Ruined Abbey"
 "This once large room now more resembles a crater than a room.  Faint
-
-scorch marks dot the rubble-strewn floorboards, and most of the ceiling
-
-to the east appears to have collapsed, blocking passage in that direction. 
-
-The western wall still apears to be in fairly good condition, though much
-
-of the wall is streaked with dark ash.  A rotting oak door rests deep in
-
-the western wall, as though it might fall into the room beyond.
-
-"
+scorch marks dot the rubble-strewn floorboards, and most of the ceiling
+to the east appears to have collapsed, blocking passage in that direction. 
+The western wall still apears to be in fairly good condition, though much
+of the wall is streaked with dark ash.  A rotting oak door rests deep in
+the western wall, as though it might fall into the room beyond.
+"
 ""
 301465604 0
 0 6 0
@@ -1013,67 +727,46 @@ D4
 E
 "scorch marks rubble-strewn floorboards"
 "Under the the rubble, the floorboards are blackened, perhaps by fire or
-
-something else.  The boards are still solidly in place despite their apparent
-
-damage, though the bottoms of your feet may track black ash for a while after
-
-walking here.
-
-"
+something else.  The boards are still solidly in place despite their apparent
+damage, though the bottoms of your feet may track black ash for a while after
+walking here.
+"
 E
 "east ceiling"
 "The ceiling has caved in to the east, creating a huge, inpenetrable pile of
-
-rubble.  The rubble is barely in balance and any attempts to clear it might
-
-bring the rest of the ceiling down on top of you.
-
-"
+rubble.  The rubble is barely in balance and any attempts to clear it might
+bring the rest of the ceiling down on top of you.
+"
 E
 "wall ash"
 "The western wall is in almost as good condition as the rest of the abbey must
-
-have been before the destruction.  The only evidence of the damage around it
-
-is a series of black ashen streaks, but even those seem somewhat faded,
-
-especially near the top of the wall.
-
-"
+have been before the destruction.  The only evidence of the damage around it
+is a series of black ashen streaks, but even those seem somewhat faded,
+especially near the top of the wall.
+"
 A
 ""
 ""
 "mob = mob_in_room( 2274, find_room( 70112 ) );
-
-if( mob && !is_open( room, west ) )
-
-  send_to_room( #west, room );
-
-open( room, west );
-
-interpret( mob, \"east\" );
-
-"
+if( mob && !is_open( room, west ) )
+  send_to_room( #west, room );
+open( room, west );
+interpret( mob, \"east\" );
+"
 E
 "west"
 "The rotting oak door to the west opens.
-
-"
+"
 !
 2 700 0
 A
 ""
 ""
 "if( race( ch ) == arachnid ) {
-
-  show( ch, room, east );
-
-  show( ch, room, up );
-
-  }
-
-"
+  show( ch, room, east );
+  show( ch, room, up );
+  }
+"
 !
 1 0 29
 -1
@@ -1082,20 +775,13 @@ S
 #70108
 "In the Ruined Abbey"
 "Tufts of pale, sickly grass poke through the gaps in the stone floor
-
-here; the floorboards appear to have long since been reduced to rotting
-
-splinters.  Dark vines creep in through the windows in an attempt to
-
-reclaim this forsaken place for nature.  The faint sound of wind can be
-
-heard through the cracks in the crumbling stone wall to the east, and to
-
-the west cobwebs appear to hang like tattered curtains.  To the north, a
-
-carved oaken door rests on rusted hinges.
-
-"
+here; the floorboards appear to have long since been reduced to rotting
+splinters.  Dark vines creep in through the windows in an attempt to
+reclaim this forsaken place for nature.  The faint sound of wind can be
+heard through the cracks in the crumbling stone wall to the east, and to
+the west cobwebs appear to hang like tattered curtains.  To the north, a
+carved oaken door rests on rusted hinges.
+"
 ""
 301465604 0
 0 6 0
@@ -1118,77 +804,57 @@ D4
 E
 "tufts pale sickly grass gaps stone floor"
 "The grass has just barely fought it's way up through the gaps in the floor and
-
-is now struggling to live in this lightless place, nourished only by the
-
-rotting remains of floorboards.
-
-"
+is now struggling to live in this lightless place, nourished only by the
+rotting remains of floorboards.
+"
 E
 "dark vines windows cracks crumbling wall east"
 "All that can be seen through the broken, dirt-clouded glass of the windows are
-
-thick, dark green, almost brown, vines.  They poke through the window,
-
-reaching inwards, and leaves of the same plant push in through the cracks in
-
-the red eastern wall.
-
-"
+thick, dark green, almost brown, vines.  They poke through the window,
+reaching inwards, and leaves of the same plant push in through the cracks in
+the red eastern wall.
+"
 E
 "cobwebs tattered curtains"
 "Silky webbing clings to the wall at the top, but hang loosely at the bottom in
-
-a way that makes it move with even the slightest of breezes much like a silk
-
-curtain, though more transparent.
-
-"
+a way that makes it move with even the slightest of breezes much like a silk
+curtain, though more transparent.
+"
 E
 "carved oaken door"
 "The door is old and dry but has survived the years without too much
-
-damage by weather and other elements.  The carvings are chipped but
-
-still distinguishable is an hourglass shape surrounded by odd designs.
-
-"
+damage by weather and other elements.  The carvings are chipped but
+still distinguishable is an hourglass shape surrounded by odd designs.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You part the light curtain of cobwebs and continue deeper into the abbey.
-
-"
+"
 !
 3 0 8
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "Cobwebs brush against your face as you pass through what remains of the
-
-door frame.
-
-"
+door frame.
+"
 !
 3 0 4
 A
 ""
 ""
 "if( race( ch ) == arachnid )
-
-  show( ch, room, up );
-
-"
+  show( ch, room, up );
+"
 !
 1 0 29
 -1
@@ -1197,18 +863,12 @@ S
 #70109
 "In the Ruined Abbey"
 "There is little left in this corner of the abbey to even justify calling
-
-it a room.  The southern wall is comparable to a cliff face in terms of
-
-craftsmanship and the western wall is little better, with a rotting oak
-
-door barely hanging in the doorframe.  The wooden floorboards here are
-
-quite decayed, and in several places you can see darkness below you, as
-
-if there were another level underneath.
-
-"
+it a room.  The southern wall is comparable to a cliff face in terms of
+craftsmanship and the western wall is little better, with a rotting oak
+door barely hanging in the doorframe.  The wooden floorboards here are
+quite decayed, and in several places you can see darkness below you, as
+if there were another level underneath.
+"
 ""
 301465604 0
 0 6 0
@@ -1235,97 +895,70 @@ D5
 E
 "wooden floorboards"
 "The floorboards are made of very old and decayed oak.  The boards warp,
-
-creating gaps through which you can see what might be another level beneath.
-
-"
+creating gaps through which you can see what might be another level beneath.
+"
 E
 "oak door doorframe"
 "The door may have once been quite sturdy but is now barely holding together,
-
-much less staying in its frame.  The hingest are rusted but still functioning
-
-somehow and the shape of the doorframe has been destorted over time.
-
-"
+much less staying in its frame.  The hingest are rusted but still functioning
+somehow and the shape of the doorframe has been destorted over time.
+"
 A
 ""
 ""
 "mob = mob_in_room( 2274, find_room( 70111 ) );
-
-if( mob && !is_open( room, west ) )
-
-  send_to_room( #west, room );
-
-open( room, west );
-
-interpret( mob, \"east\" );
-
-"
+if( mob && !is_open( room, west ) )
+  send_to_room( #west, room );
+open( room, west );
+interpret( mob, \"east\" );
+"
 E
 "west"
 "The rotting oak door to the west opens.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "acode( find_room( 70105 ), 4 );
-
-continue;
-
-"
+continue;
+"
 !
 1 0 11
 A
 "untrap"
 "web net"
 "acode( find_room( 70105 ), 2 );
-
-continue;
-
-"
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2274, find_room( 70134 ) );
-
-if( mob )
-
-  send_to_room( #pit, room );
-
-open( room, down );
-
-interpret( mob, \"up\" );
-
-"
+if( mob )
+  send_to_room( #pit, room );
+open( room, down );
+interpret( mob, \"up\" );
+"
 E
 "pit"
 "@ySuddenly, the floor begins to stir and a hideous spider-like beast climbs up
-
-from a pit beneath you!@n
-
-"
+from a pit beneath you!@n
+"
 !
 0 0 0
 A
 ""
 ""
 "i = 1d10;
-
-if( i < 5 )
-
-  acode( find_room( 70109 ), 1 );
-
-if( i > 6 )
-
-  acode( find_room( 70109 ), 4 );
-
-"
+if( i < 5 )
+  acode( find_room( 70109 ), 1 );
+if( i > 6 )
+  acode( find_room( 70109 ), 4 );
+"
 !
 2 900 0
 -1
@@ -1334,22 +967,14 @@ S
 #70110
 "The Base of a Crumbling Spiral Staircase"
 "This chamber feels rather large compared to the other rooms in the abbey.  The
-
-walls here have crumbled away, rather than inwards like much of the rest of
-
-the abbey.  To south, it appears that this room once continued smoothly, but
-
-the ceiling to the south has collapsed enough to effectively split the room in
-
-two.  In the northwest corner, a decrepit stone staircase winds it's way up
-
-into the darkness above you.  Flanking the crumbling steps on the northern and
-
-western walls are rotting oak doors that only barely cling to their rusted
-
-hinges.
-
-"
+walls here have crumbled away, rather than inwards like much of the rest of
+the abbey.  To south, it appears that this room once continued smoothly, but
+the ceiling to the south has collapsed enough to effectively split the room in
+two.  In the northwest corner, a decrepit stone staircase winds it's way up
+into the darkness above you.  Flanking the crumbling steps on the northern and
+western walls are rotting oak doors that only barely cling to their rusted
+hinges.
+"
 ""
 301465604 0
 0 6 0
@@ -1380,60 +1005,44 @@ D5
 E
 "decrepit stone staircase"
 "The stairs, each one a single massive stone, are crumbling away, gradually
-
-becoming a slope before it finally falls completely into ruin.  There might
-
-have been a railing of some kind once, but now travellers must walk close to
-
-the wall and hope they do not step on a loose piece of sandstone.
-
-"
+becoming a slope before it finally falls completely into ruin.  There might
+have been a railing of some kind once, but now travellers must walk close to
+the wall and hope they do not step on a loose piece of sandstone.
+"
 E
 "rotting oak doors"
 "The doors hang crookedly, holes rotted all the way through in some places
-
-along the bottom.  They show no sign of once featuring decoration but perhaps
-
-it has all been rotted away.
-
-"
+along the bottom.  They show no sign of once featuring decoration but perhaps
+it has all been rotted away.
+"
 A
 ""
 ""
 "mob = mob_in_room( 2274, find_room( 70113 ) );
-
-if( mob && !is_open( room, west ) )
-
-  send_to_room( #west, room );
-
-open( room, west );
-
-interpret( mob, \"east\" );
-
-"
+if( mob && !is_open( room, west ) )
+  send_to_room( #west, room );
+open( room, west );
+interpret( mob, \"east\" );
+"
 E
 "west"
 "The rotting oak door to the west opens.
-
-"
+"
 !
 2 700 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You carefully climb the aged and worn stone steps.
-
-"
+"
 E
 "to_room"
 "$n climbs the aged and worn stone steps.
-
-"
+"
 !
 3 0 16
 -1
@@ -1442,16 +1051,11 @@ S
 #70111
 "Sleeping Quarters"
 "This chamber is rather cramped as most of the red sandstone walls have
-
-crumbled inwards.  Enough of the walls remain to prevent any attempts to
-
-leave this room other than through the remains of the eastern door.  A
-
-few sleeping mats are here, but those that are not covered in rubble seem
-
-to have been shredded into useless scraps of cloth.
-
-"
+crumbled inwards.  Enough of the walls remain to prevent any attempts to
+leave this room other than through the remains of the eastern door.  A
+few sleeping mats are here, but those that are not covered in rubble seem
+to have been shredded into useless scraps of cloth.
+"
 ""
 301465604 0
 0 5 0
@@ -1462,14 +1066,10 @@ D1
 E
 "sleeping mat rubble scraps cloth"
 "The mattresses were probably only two inches or so thick, but now all have
-
-been either flattened by heavy rubble or ripped into useless shreds.  They
-
-were very plain, made of white cloth, which is now light brown with spots of
-
-darker colors, including an unpleasant shade of red.
-
-"
+been either flattened by heavy rubble or ripped into useless shreds.  They
+were very plain, made of white cloth, which is now light brown with spots of
+darker colors, including an unpleasant shade of red.
+"
 2274 9 1509949540 3 0
 -1
 S
@@ -1477,16 +1077,11 @@ S
 #70112
 "Sleeping Quarters"
 "The room seems oddly intact structurally, as if some force attempted to
-
-protect it from the devastation which struck elsewhere.  It is oddly quiet,
-
-lacking the whistling breeze streaming through the cracked walls in other
-
-parts of the abbey.  A pair of broken wooden cots lie in opposite corners of
-
-this room, and even the damage to them appears oddly minimal.
-
-"
+protect it from the devastation which struck elsewhere.  It is oddly quiet,
+lacking the whistling breeze streaming through the cracked walls in other
+parts of the abbey.  A pair of broken wooden cots lie in opposite corners of
+this room, and even the damage to them appears oddly minimal.
+"
 ""
 301465604 0
 0 5 0
@@ -1497,44 +1092,30 @@ D1
 E
 "broken wooden cot"
 "The cots are only two feet tall and suprisingly well-preserved, even the thin
-
-mattresses appear to be free from infestation that would normally have occured
-
-after a long period of neglect.
-
-"
+mattresses appear to be free from infestation that would normally have occured
+after a long period of neglect.
+"
 E
 "up ceiling above"
 "The ceiling is undamaged and quite clean, without even the smallest cobwebs in
-
-the corners.  It seems quite unnatural that it be in such good condition
-
-surrounded by such destruction.
-
-"
+the corners.  It seems quite unnatural that it be in such good condition
+surrounded by such destruction.
+"
 A
 ""
 ""
 "loop( all_in_room ) {
-
-  if( char_affected( rch, detect magic ) ) {
-
-    act_tochar( #sense, rch );
-
-    interpret( rch, \"shiver\" );
-
-    }
-
-  }
-
-"
+  if( char_affected( rch, detect magic ) ) {
+    act_tochar( #sense, rch );
+    interpret( rch, \"shiver\" );
+    }
+  }
+"
 E
 "sense"
 "@cYou suddenly feel uneasy, and are sure you sense an eerie magical presence
-
-from directly above you.@n
-
-"
+from directly above you.@n
+"
 !
 2 300 0
 2274 9 1509949540 3 0
@@ -1544,18 +1125,12 @@ S
 #70113
 "Sleeping Quarters"
 "The masonry of this room has degraded a great deal over time, leaving
-
-mostly loose rocks to form an unsteady wall.  Various mosses and other
-
-tenacious plants attempt to fill the void between the crumbling bricks,
-
-but a cool breeze still manages to find its way through the cracks.  The
-
-rotted remains of a wooden cot have been gathered together and bound with
-
-silk webbing to form a sort of crude nest in the corner of the room.
-
-"
+mostly loose rocks to form an unsteady wall.  Various mosses and other
+tenacious plants attempt to fill the void between the crumbling bricks,
+but a cool breeze still manages to find its way through the cracks.  The
+rotted remains of a wooden cot have been gathered together and bound with
+silk webbing to form a sort of crude nest in the corner of the room.
+"
 ""
 301465604 0
 0 5 0
@@ -1566,30 +1141,21 @@ D1
 E
 "wooden cot silk webbing nest"
 "The cot has been broken into pieces that are now held together by strong silk
-
-webbing.  There is more webbing at each joint, but it also substitutes a
-
-mattress across the middle.  A thin curtain of webbing encircles the nest,
-
-attached to the wall several feet above.
-
-"
+webbing.  There is more webbing at each joint, but it also substitutes a
+mattress across the middle.  A thin curtain of webbing encircles the nest,
+attached to the wall several feet above.
+"
 E
 "mosses tenacious plants void"
 "Dark green and brown mosses cling to the rubble, flourishing in the gloom
-
-here.  Long dark vines creep out from small cracks in the wall.
-
-"
+here.  Long dark vines creep out from small cracks in the wall.
+"
 E
 "rocks wall masonry"
 "The walls are slowly caving in on this room and that which remains holds up
-
-the ceiling tenuously.  Chunks of rock that have already fallen line the sides
-
-of the wall, reinforcing it for the time being.
-
-"
+the ceiling tenuously.  Chunks of rock that have already fallen line the sides
+of the wall, reinforcing it for the time being.
+"
 2274 9 1509949540 3 0
 -1
 S
@@ -1597,20 +1163,13 @@ S
 #70114
 "In a Destroyed Worship Chamber"
 "The pews of this long chamber are cracked, torn, ripped, and scattered about
-
-randomly, but it must have been a church of sorts long ago.  Shredded scraps
-
-of paper are scattered among the pews, the remnants of old prayer books
-
-surely, though nothing remains intact enough to identify what religion.  In
-
-the corner sits an overturned table, one leg missing and another broken in
-
-two.  The top is blackened and around it the puddled remains of candles
-
-remain, smelling slightly of rosemary.
-
-"
+randomly, but it must have been a church of sorts long ago.  Shredded scraps
+of paper are scattered among the pews, the remnants of old prayer books
+surely, though nothing remains intact enough to identify what religion.  In
+the corner sits an overturned table, one leg missing and another broken in
+two.  The top is blackened and around it the puddled remains of candles
+remain, smelling slightly of rosemary.
+"
 ""
 301465604 0
 0 6 0
@@ -1625,49 +1184,34 @@ D2
 E
 "shredded scraps paper prayer books"
 "Scraps of paper lie scattered across the floor, some entire pages torn from
-
-books and some shredded into tiny pieces, but all unreadable.
-
-"
+books and some shredded into tiny pieces, but all unreadable.
+"
 E
 "table puddle candle"
 "It appears that this table once held a great collection of candles, but when
-
-the table was destroyed, the candles, still burning, lit the table on fire for
-
-a time before burning themselves out.  The wax is very solidly stuck to the
-
-floor now and gives the corner an odd smell, of rosemary scented candles.
-
-"
+the table was destroyed, the candles, still burning, lit the table on fire for
+a time before burning themselves out.  The wax is very solidly stuck to the
+floor now and gives the corner an odd smell, of rosemary scented candles.
+"
 E
 "pews"
 "It seems as though each pew has been destroyed in a slightly different way,
-
-from one that has been sliced into long strips of wood to another which was
-
-broken into kindling.
-
-"
+from one that has been sliced into long strips of wood to another which was
+broken into kindling.
+"
 -1
 S
 
 #70115
 "Before a Shattered Alter"
 "This long chamber must have once been a church of some sort, though the pews
-
-have been nearly all shredded, toppled, and strewn about at random.  Among the
-
-splinters of wood, many scraps of paper, remains of prayer books most likely,
-
-lie scattered in the debris.  This room feels not unlike a cave due to the
-
-sagging boards in the ceiling overhead.
-
-"
+have been nearly all shredded, toppled, and strewn about at random.  Among the
+splinters of wood, many scraps of paper, remains of prayer books most likely,
+lie scattered in the debris.  This room feels not unlike a cave due to the
+sagging boards in the ceiling overhead.
+"
 "[Dalthas] Search book acode would be nice
-
-"
+"
 301465604 0
 0 6 0
 D1
@@ -1685,44 +1229,33 @@ D3
 E
 "scraps paper prayer books"
 "Most of the scraps of paper appear to have been burned partially but the fire
-
-obviously did not get very far.  The scraps of paper have been trampled into
-
-the floor by completely inhuman feet and are so distorted by time and
-
-mistreatment to be unreadable.
-
-"
+obviously did not get very far.  The scraps of paper have been trampled into
+the floor by completely inhuman feet and are so distorted by time and
+mistreatment to be unreadable.
+"
 E
 "pews"
 "The remains of the pews are piled atop each other, broken and shredded, the
-
-fragments thrown about the room randomly.
-
-"
+fragments thrown about the room randomly.
+"
 E
 "boards ceiling"
 "The boards overhead hang precariously, some so close to rotting through that
-
-perhaps it would not be a bad idea to move out from underneath quickly.
-
-"
+perhaps it would not be a bad idea to move out from underneath quickly.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You leave east, making your way up the pile of rubble to the broken altar.
-
-"
+"
 E
 "to_room"
 "$n leaves east, making $s way up the pile of rubble to the broken altar.
-
-"
+"
 !
 3 0 2
 -1
@@ -1731,20 +1264,13 @@ S
 #70116
 "Upon a Shattered Altar"
 "This section of the room is higher than the rest of the room, and not solely
-
-due to the amount of rubble strewn about.  An intricately carved altar has
-
-been smashed and toppled, now apparently serving as a table to the feral beasts
-
-that now live here.  Shattered stained glass litters the floor here, and ivy
-
-from outside the abbey creeps in through the broken windows.  The smell of
-
-scented candles still hangs in the air here, despite the occasional breezes
-
-filtering through the cracked walls.
-
-"
+due to the amount of rubble strewn about.  An intricately carved altar has
+been smashed and toppled, now apparently serving as a table to the feral beasts
+that now live here.  Shattered stained glass litters the floor here, and ivy
+from outside the abbey creeps in through the broken windows.  The smell of
+scented candles still hangs in the air here, despite the occasional breezes
+filtering through the cracked walls.
+"
 ""
 301465604 0
 0 5 0
@@ -1755,32 +1281,22 @@ D3
 E
 "stained glass"
 "Shattered pieces of colored glass crunches underfoot in various colors,
-
-though with more white and blue than any other color.  The pattern once
-
-held in the window is lost forever; it can only be certain that it was
-
-a magnificant picture for the amount of glass littered about.
-
-"
+though with more white and blue than any other color.  The pattern once
+held in the window is lost forever; it can only be certain that it was
+a magnificant picture for the amount of glass littered about.
+"
 E
 "ivy broken window"
 "Ivy creeps through where a stained glass window once was.  It has grown long
-
-and coils around the remains of an altar while other tendrils seem to pull at
-
-the stones, trying to bring down the manmade walls.
-
-"
+and coils around the remains of an altar while other tendrils seem to pull at
+the stones, trying to bring down the manmade walls.
+"
 E
 "intricately carved altar table"
 "This altar was once beautiful, but now it lies broken and overturned, covered
-
-with various unpleasant smelling substances, only a small amount of which is
-
-blood.
-
-"
+with various unpleasant smelling substances, only a small amount of which is
+blood.
+"
 2274 9 1509949540 3 0
 -1
 S
@@ -1788,19 +1304,13 @@ S
 #70117
 "In a Ruined Library"
 "The winding stone staircase pauses at the landing here before continuing to
-
-ascend into the darkness above.  To the south stretches a dusty corridor
-
-littered with rotted books and broken shelves, while to the east, a similar
-
-passageway appears to not extend as far.  The air in here is quite stale and
-
-carries with it a dry, acidic smell.
-
-"
+ascend into the darkness above.  To the south stretches a dusty corridor
+littered with rotted books and broken shelves, while to the east, a similar
+passageway appears to not extend as far.  The air in here is quite stale and
+carries with it a dry, acidic smell.
+"
 "no.mob to separate the floors and prevent too much clustering.
-
-"
+"
 301465612 0
 0 5 0
 D1
@@ -1822,32 +1332,22 @@ D5
 E
 "winding stone staircase"
 "The spiral staircase is old and worn, at some places looking more like a slide
-
-than a set of stairs.  It has no handrail of any kind, neither leading up into
-
-a vast darkness nor spiraling down and out of view.
-
-"
+than a set of stairs.  It has no handrail of any kind, neither leading up into
+a vast darkness nor spiraling down and out of view.
+"
 -1
 S
 
 #70118
 "In a Ruined Library"
 "Books and shredded papers lie strewn about the eastern side of this hallway,
-
-with little but cobwebs and dust occupying the shelves.  Oddly enough, the
-
-western wall seems almost untouched by whatever destructive force ripped
-
-through this area, and the carved briarwood door appears completely free from
-
-the rot and damage other doors in the abbey have suffered.  There is an almost
-
-visible radius of several feet from the door where the floor is completely
-
-dust free, and no wayward scraps of paper have dared to lie.
-
-"
+with little but cobwebs and dust occupying the shelves.  Oddly enough, the
+western wall seems almost untouched by whatever destructive force ripped
+through this area, and the carved briarwood door appears completely free from
+the rot and damage other doors in the abbey have suffered.  There is an almost
+visible radius of several feet from the door where the floor is completely
+dust free, and no wayward scraps of paper have dared to lie.
+"
 ""
 301465604 0
 0 5 0
@@ -1874,32 +1374,24 @@ D5
 E
 "books shredded papers eastern"
 "The bookshelf to the east is almost empty and seems to lean oddly away from
-
-you.  Scraps of paper and books lie on the lower shelves and floor, but the
-
-mess ends abruptly less than halfway across the room.
-
-"
+you.  Scraps of paper and books lie on the lower shelves and floor, but the
+mess ends abruptly less than halfway across the room.
+"
 A
 ""
 ""
 "if( race( ch ) == arachnid ) {
-
-  show( ch, room, east );
-
-  show( ch, room, down );
-
-  }
-
-"
+  show( ch, room, east );
+  show( ch, room, down );
+  }
+"
 !
 1 0 39
 A
 "get take search"
 "books"
 "acode( find_room( 70120 ), 2 );
-
-"
+"
 !
 0 0 0
 2368 9 1509949540 3 0
@@ -1909,20 +1401,13 @@ S
 #70119
 "In a Ruined Library"
 "The fourth shelf of the western bookcase has broken in two, its books and
-
-some from the third spill out onto the floor.  The remaining shelves show
-
-signs of soon giving up against the strain of their contents as well, though
-
-the molded manuscripts remain for now.  In front of the southern shelves is a
-
-battered trunk, its lid ripped aside.  Within are things worthless to any but
-
-the former residents of this abbey: stained recipes, old torn records in
-
-unreadable script, and the shredded remains of a small black book.
-
-"
+some from the third spill out onto the floor.  The remaining shelves show
+signs of soon giving up against the strain of their contents as well, though
+the molded manuscripts remain for now.  In front of the southern shelves is a
+battered trunk, its lid ripped aside.  Within are things worthless to any but
+the former residents of this abbey: stained recipes, old torn records in
+unreadable script, and the shredded remains of a small black book.
+"
 ""
 301465604 0
 0 5 0
@@ -1941,43 +1426,31 @@ D5
 E
 "manuscripts"
 "The covers of the manuscripts are adorned with a dark fuzzy growth that is
-
-slowly eating away at the books.  The mold is thriving on these abandoned
-
-papers and grows out towards other shelves nearby.
-
-"
+slowly eating away at the books.  The mold is thriving on these abandoned
+papers and grows out towards other shelves nearby.
+"
 E
 "trunk recipes records book"
 "Silver paint peels from the trim on the neglected trunk and flakes sit atop
-
-it's contents.  A pile of aged papers, ink blurred by water, lies within. 
-
-Most is unreadable except for a handful of words, some measurements and
-
-perhaps values of items.  A small, black, leather-bound book rests in the
-
-corner, cover scratched and pages freyed.  It appears to have been dipped in a
-
-puddle of ink before being stored here, for every page is stained black.
-
-"
+it's contents.  A pile of aged papers, ink blurred by water, lies within. 
+Most is unreadable except for a handful of words, some measurements and
+perhaps values of items.  A small, black, leather-bound book rests in the
+corner, cover scratched and pages freyed.  It appears to have been dipped in a
+puddle of ink before being stored here, for every page is stained black.
+"
 A
 ""
 ""
 "if( race( ch ) == arachnid )
-
-  show( ch, room, down );
-
-"
+  show( ch, room, down );
+"
 !
 1 0 35
 A
 "get take search"
 "books"
 "acode( find_room( 70120 ), 2 );
-
-"
+"
 !
 0 0 0
 -1
@@ -1986,18 +1459,12 @@ S
 #70120
 "In a Ruined Library"
 "Sagging shelves line the walls, filled with partially decayed texts and
-
-ancient, crumbling scrolls, their knowledge forever lost to the sands of
-
-time.  Flecks of gold lettering on a few of the better preserved books still
-
-reflect light tiredly.  A dried-out vial of ink lies on the floor a few inches
-
-from the east shelf and the broken remains of the quill lies half next to it,
-
-half on the fifth shelf.
-
-"
+ancient, crumbling scrolls, their knowledge forever lost to the sands of
+time.  Flecks of gold lettering on a few of the better preserved books still
+reflect light tiredly.  A dried-out vial of ink lies on the floor a few inches
+from the east shelf and the broken remains of the quill lies half next to it,
+half on the fifth shelf.
+"
 ""
 301465604 0
 0 5 0
@@ -2016,136 +1483,82 @@ D5
 E
 "dried-out vial ink quill"
 "The cap of this vial of ink has been broken completely off and it's contents
-
-are bone dry, never to be useful again to anyone.  A dry black puddle
-
-surrounds the bottle and on it lies a broken quill, falling apart and barely
-
-recognizable anymore.
-
-"
+are bone dry, never to be useful again to anyone.  A dry black puddle
+surrounds the bottle and on it lies a broken quill, falling apart and barely
+recognizable anymore.
+"
 E
 "texts scrolls"
 "The books smell of mildew and look as though they've been sitting in the same
-
-place for years.  The scrolls fair little better, threatening to crumble into
-
-dust at the lightest touch.
-
-"
+place for years.  The scrolls fair little better, threatening to crumble into
+dust at the lightest touch.
+"
 A
 ""
 ""
 "if( race( ch ) == arachnid )
-
-  show( ch, room, down );
-
-"
+  show( ch, room, down );
+"
 !
 1 0 41
 A
 "get take search"
 "book texts"
 "if( !rflag( reset0, room ) ) {
-
-  act_tochar( #nope, ch );
-
-  end;
-
-  }
-
-i = 1d8;
-
-obj = obj_to_char( oload( 3648 ), ch );
-
-set_obj_value( obj, 0, i );
-
-if( i == 1 ) {
-
-  set_singular( obj, \"small, battered text\" );
-
-  set_plural( obj, \"small, battered texts\" );
-
-  }
-
-if( i == 2 ) {
-
-  set_singular( obj, \"wax-stained tome\" );
-
-  set_plural( obj, \"wax-stained tomes\" );
-
-  }
-
-if( i == 3 ) {
-
-  set_singular( obj, \"unusually lightweight tome\" );
-
-  set_plural( obj, \"unusually lightweight tomes\" );
-
-  }
-
-if( i == 4 ) {
-
-  set_singular( obj, \"dusty tome bound in red leather\" );
-
-  set_plural( obj, \"dusty tomes bound in red leather\" );
-
-  }
-
-if( i == 5 ) {
-
-  set_singular( obj, \"dun-colored, water-damaged text\" );
-
-  set_plural( obj, \"dun-colored, water-damaged texts\" );
-
-  }
-
-if( i == 6 ) {
-
-  set_singular( obj, \"book with yellowed pages\" );
-
-  set_plural( obj, \"books with yellowed pages\" );
-
-  }
-
-if( i == 7 ) {
-
-  set_singular( obj, \"small, dog-eared book\" );
-
-  set_plural( obj, \"small, dog-eared books\" );
-
-  }
-
-if( i == 8 ) {
-
-  set_singular( obj, \"thick, stained book\" );
-
-  set_plural( obj, \"thick, stained books\" );
-
-  }
-
-act_tochar( #find, ch, obj, mob );
-
-act_notchar( #rfind, ch, obj, mob );
-
-remove_rflag( reset0, room );
-
-"
+  act_tochar( #nope, ch );
+  end;
+  }
+i = 1d8;
+obj = obj_to_char( oload( 3648 ), ch );
+set_obj_value( obj, 0, i );
+if( i == 1 ) {
+  set_singular( obj, \"small, battered text\" );
+  set_plural( obj, \"small, battered texts\" );
+  }
+if( i == 2 ) {
+  set_singular( obj, \"wax-stained tome\" );
+  set_plural( obj, \"wax-stained tomes\" );
+  }
+if( i == 3 ) {
+  set_singular( obj, \"unusually lightweight tome\" );
+  set_plural( obj, \"unusually lightweight tomes\" );
+  }
+if( i == 4 ) {
+  set_singular( obj, \"dusty tome bound in red leather\" );
+  set_plural( obj, \"dusty tomes bound in red leather\" );
+  }
+if( i == 5 ) {
+  set_singular( obj, \"dun-colored, water-damaged text\" );
+  set_plural( obj, \"dun-colored, water-damaged texts\" );
+  }
+if( i == 6 ) {
+  set_singular( obj, \"book with yellowed pages\" );
+  set_plural( obj, \"books with yellowed pages\" );
+  }
+if( i == 7 ) {
+  set_singular( obj, \"small, dog-eared book\" );
+  set_plural( obj, \"small, dog-eared books\" );
+  }
+if( i == 8 ) {
+  set_singular( obj, \"thick, stained book\" );
+  set_plural( obj, \"thick, stained books\" );
+  }
+act_tochar( #find, ch, obj, mob );
+act_notchar( #rfind, ch, obj, mob );
+remove_rflag( reset0, room );
+"
 E
 "nope"
 "You find nothing of any apparant value among the debris.
-
-"
+"
 E
 "find"
 "You find $p among the destroyed books.
-
-"
+"
 E
 "rfind"
 "$n finds $p among the destroyed books.
-
-"
+"
 !
 0 0 0
 2368 9 1509949540 3 0
@@ -2156,21 +1569,14 @@ S
 #70121
 "In a Ruined Library"
 "Molding texts weigh heavily on the old shelves, some showing visible strain by
-
-drooping as much as three inches in the middle.  The western shelf, not quite
-
-a proper wall, leans in towards you slightly, unbalanced by a long crack in
-
-the floor.  A small footstool sits on it's side, a missing leg lying several
-
-feet away in the dust.
-
-"
+drooping as much as three inches in the middle.  The western shelf, not quite
+a proper wall, leans in towards you slightly, unbalanced by a long crack in
+the floor.  A small footstool sits on it's side, a missing leg lying several
+feet away in the dust.
+"
 "[Maurtock] it's should be its
-
-[Dalthas] it's -> its
-
-"
+[Dalthas] it's -> its
+"
 301465604 0
 0 5 0
 D0
@@ -2192,124 +1598,85 @@ D5
 E
 "footstool leg"
 "When it could stand, this footstool was approximately two feet tall, but now
-
-its legs are cracked and one missing entirely.
-
-"
+its legs are cracked and one missing entirely.
+"
 E
 "crack floor western shelf"
 "The floor has caved in partially along the western shelf, which leans in
-
-towards you because of the unbalance, and there is a long crack where the the
-
-damage is greatest.  The crack isn't very large, but with some effort, it
-
-might be possible to climb down through it.
-
-"
+towards you because of the unbalance, and there is a long crack where the the
+damage is greatest.  The crack isn't very large, but with some effort, it
+might be possible to climb down through it.
+"
 E
 "shelves drooping molding texts"
 "The books on the shelves are now the home to a dark purple speckled
-
-variaty of mold.  The shelves are loosing the battle against the
-
-weight of their contents, drooping heavily.
-
-"
+variaty of mold.  The shelves are loosing the battle against the
+weight of their contents, drooping heavily.
+"
 A
 ""
 ""
 "if( race( ch ) == arachnid ) {
-
-  show( ch, room, west );
-
-  show( ch, room, down );
-
-  }
-
-"
+  show( ch, room, west );
+  show( ch, room, down );
+  }
+"
 !
 1 0 45
 A
 "3 climb 3 enter"
 "1 down 3 crack"
 "if( size( ch ) > 4 ) {
-
-  act_tochar( #toobig, ch );
-
-  end;
-
-  }
-
-if( size( ch ) == 4 ) {
-
-  act_tochar( #scrape, ch );
-
-  act_notchar( #rscrape, ch );
-
-  i = 1d15;
-
-  inflict( ch, mob_in_room( 2274, find_room( 70135 ) ), i, \"jagged floorboard\" );
-
-  dam_message( ch, i, \"The jagged floorboard\" );
-
-  }
-
-else {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #rclimb, ch );
-
-  }
-
-transfer( ch, find_room( 70105 ) );
-
-act_notchar( #climb2, ch );
-
-"
+  act_tochar( #toobig, ch );
+  end;
+  }
+if( size( ch ) == 4 ) {
+  act_tochar( #scrape, ch );
+  act_notchar( #rscrape, ch );
+  i = 1d15;
+  inflict( ch, mob_in_room( 2274, find_room( 70135 ) ), i, \"jagged floorboard\" );
+  dam_message( ch, i, \"The jagged floorboard\" );
+  }
+else {
+  act_tochar( #climb, ch );
+  act_notchar( #rclimb, ch );
+  }
+transfer( ch, find_room( 70105 ) );
+act_notchar( #climb2, ch );
+"
 E
 "toobig"
 "You are too large to fit through the small crack in the floor.
-
-"
+"
 E
 "climb"
 "You easily climb down through a crack in the floorboards.
-
-"
+"
 E
 "scrape"
 "As you try to fit through the small crack, you scrape against the jagged
-
-floorboards.
-
-"
+floorboards.
+"
 E
 "rscrape"
 "As $n tries to fit through the small crack, $e scrapes against the jagged
-
-floorboards.
-
-"
+floorboards.
+"
 E
 "rclimb"
 "$n easily climbs down through a crack in the floorboards.
-
-"
+"
 E
 "climb2"
 "$n climbs down through a crack in the ceiling.
-
-"
+"
 !
 0 0 0
 A
 "get take search"
 "books texts"
 "acode( find_room( 70120 ), 2 );
-
-"
+"
 !
 0 0 0
 -1
@@ -2318,18 +1685,12 @@ S
 #70122
 "In a Ruined Library"
 "Shelves line the walls from floor to ceiling, every inch packed with ancient
-
-manuscripts, molding scrolls, and tomes whose titles have been worn beyond
-
-readibility.  An old ladder leans against a pole lining the highest shelves
-
-and it rests upon chipped wheels on the ground.  Several rungs are missing and
-
-the remaining are barely holding on.  Massive spiderwebs dominate the corner
-
-of the ceiling, running between shelves.
-
-"
+manuscripts, molding scrolls, and tomes whose titles have been worn beyond
+readibility.  An old ladder leans against a pole lining the highest shelves
+and it rests upon chipped wheels on the ground.  Several rungs are missing and
+the remaining are barely holding on.  Massive spiderwebs dominate the corner
+of the ceiling, running between shelves.
+"
 ""
 301465604 0
 0 5 0
@@ -2348,45 +1709,32 @@ D5
 E
 "ladder pole wheels"
 "Along the length of the ladder are several round holes where rungs once fit
-
-and of those that remain, no more than two are intact.  One of the wheels is
-
-missing a large piece and is therefore incapable of rolling anymore.  The pole
-
-the ladder leans against is reasonably well-preserved, though it is entangled
-
-in webbing.
-
-"
+and of those that remain, no more than two are intact.  One of the wheels is
+missing a large piece and is therefore incapable of rolling anymore.  The pole
+the ladder leans against is reasonably well-preserved, though it is entangled
+in webbing.
+"
 E
 "ancient manuscript molding scrolls tomes"
 "Books and papers are packed together as tightly as possible, and still
-
-a few scrolls are packed into small gaps along the top.  Every one of
-
-the manuscripts is damaged in a slightly different way, from a set of
-
-mildowing tomes to scrolls that have been burned along the edges and
-
-threaten to turn to dust at the lightest touch.
-
-"
+a few scrolls are packed into small gaps along the top.  Every one of
+the manuscripts is damaged in a slightly different way, from a set of
+mildowing tomes to scrolls that have been burned along the edges and
+threaten to turn to dust at the lightest touch.
+"
 A
 ""
 ""
 "if( race( ch ) == arachnid )
-
-  show( ch, room, down );
-
-"
+  show( ch, room, down );
+"
 !
 1 0 44
 A
 "get take search"
 "books tomes"
 "acode( find_room( 70120 ), 2 );
-
-"
+"
 !
 0 0 0
 2368 9 1509949540 3 0
@@ -2396,8 +1744,7 @@ S
 #70123
 ""
 "Under Construction.
-
-"
+"
 ""
 301465604 0
 0 9 0
@@ -2407,29 +1754,18 @@ S
 #70124
 "In a Decrepit Library"
 "This room differs from the other rooms so far in that it appears to be well
-
-maintained.  The bookshelves on the northern and southern walls appear to be
-
-perfectly organized and dust free.  A few books lie strewn about the floor,
-
-but for the most part, this office is remarkably well-maintained given the
-
-condition of the rest of this abbey.  A clear glass window in the western wall
-
-allows one to look out onto the surrounding wilderness.
-
-"
+maintained.  The bookshelves on the northern and southern walls appear to be
+perfectly organized and dust free.  A few books lie strewn about the floor,
+but for the most part, this office is remarkably well-maintained given the
+condition of the rest of this abbey.  A clear glass window in the western wall
+allows one to look out onto the surrounding wilderness.
+"
 "Book explaining creation of universe (Algesa, Ulthi, Meriada)
-
-Book explaining creation of world (Kantos, Osse, etc)
-
-Book talking about Ebon Triumvirate (Morr, Morkith, Xiroce)
-
-Book detailing battle between Lonil and Temohpab
-
-[Zithuan] ask progs
-
-"
+Book explaining creation of world (Kantos, Osse, etc)
+Book talking about Ebon Triumvirate (Morr, Morkith, Xiroce)
+Book detailing battle between Lonil and Temohpab
+[Zithuan] ask progs
+"
 301465612 0
 0 5 0
 D1
@@ -2439,164 +1775,105 @@ D1
 E
 "glass window western wilderness"
 "The western window overlooks a thick and tangled forest, easily visible for
-
-the glass is clean and clear.  Many of the trees are much taller than this
-
-room and so it is impossible to see very far.
-
-"
+the glass is clean and clear.  Many of the trees are much taller than this
+room and so it is impossible to see very far.
+"
 A
 ""
 ""
 "mob = mob_in_room( 2283, room );
-
-if( !mob )
-
-  end;
-
-if( is_fighting( mob ) )
-
-  end;
-
-if( rflag( reset0, room ) ) {
-
-  act_room( #begin, mob );
-
-  set_long_s( mob, \"is here, silently shelving books.\" );
-
-  remove_rflag( reset0, room );
-
-  end;
-
-  }
-
-if( rflag( reset1, room ) ) {
-
-  act_room( #shelve, mob );
-
-  set_long_s( mob, \"quietly dusts the shelves.\" );
-
-  remove_rflag( reset1, room );
-
-  end;
-
-  }
-
-if( is_altered( mob ) ) {
-
-  act_room( #dust, mob );
-
-  reset_appear( mob );
-
-  }
-
-"
+if( !mob )
+  end;
+if( is_fighting( mob ) )
+  end;
+if( rflag( reset0, room ) ) {
+  act_room( #begin, mob );
+  set_long_s( mob, \"is here, silently shelving books.\" );
+  remove_rflag( reset0, room );
+  end;
+  }
+if( rflag( reset1, room ) ) {
+  act_room( #shelve, mob );
+  set_long_s( mob, \"quietly dusts the shelves.\" );
+  remove_rflag( reset1, room );
+  end;
+  }
+if( is_altered( mob ) ) {
+  act_room( #dust, mob );
+  reset_appear( mob );
+  }
+"
 E
 "shelve"
 "@cThe ghostly librarian places the last book onto the shelf and begins
-
-dusting.@n
-
-"
+dusting.@n
+"
 E
 "dust"
 "@cSatisfied that the library is free from dust, the ghostly librarian silently
-
-waits for the next task.@n
-
-"
+waits for the next task.@n
+"
 E
 "begin"
 "@cLooking at the mess on the floor, the ghostly librarian sighs inaudibly and
-
-begins shelving the books.@n
-
-"
+begins shelving the books.@n
+"
 !
 2 500 0
 A
 "look"
 "bookshelves north south"
 "if( rflag( reset0, room ) ) {
-
-  act_tochar( #clutter, ch );
-
-  end;
-
-  }
-
-if( rflag( reset1, room ) ) {
-
-  act_tochar( #dusty, ch );
-
-  end;
-
-  }
-
-act_tochar( #clean, ch );
-
-"
+  act_tochar( #clutter, ch );
+  end;
+  }
+if( rflag( reset1, room ) ) {
+  act_tochar( #dusty, ch );
+  end;
+  }
+act_tochar( #clean, ch );
+"
 E
 "clutter"
 "Many of the books stand at odd angles, leaning against one another and the
-
-sides of each shelf.  There is plenty of room for books that are not properly
-
-shelved, though the ones that are on the shelves appear to be in the proper
-
-order.
-
-"
+sides of each shelf.  There is plenty of room for books that are not properly
+shelved, though the ones that are on the shelves appear to be in the proper
+order.
+"
 E
 "dusty"
 "The books on the shelves are not packed in but stand perfectly lined up in
-
-order, easy to take out and put back.  The covers are a bit dull in color and
-
-the shelves look rather dusty despite their organization.
-
-"
+order, easy to take out and put back.  The covers are a bit dull in color and
+the shelves look rather dusty despite their organization.
+"
 E
 "clean"
 "The shelves are filled with books, lined up in perfect order by subject, then
-
-author's last name.  Many of the texts appear to be religious in nature, but
-
-there is a fair selection lining these well-organized shelves.
-
-"
+author's last name.  Many of the texts appear to be religious in nature, but
+there is a fair selection lining these well-organized shelves.
+"
 !
 0 0 0
 A
 "look"
 "floor"
 "if( rflag( reset0, room ) ) {
-
-  act_tochar( #clutter, ch );
-
-  end;
-
-  }
-
-act_tochar( #clean, ch );
-
-"
+  act_tochar( #clutter, ch );
+  end;
+  }
+act_tochar( #clean, ch );
+"
 E
 "clutter"
 "Books lie strewn about the floor without any sort of organization.  A handful
-
-of unfortunate texts lie open, their pages wrinkled beneath them while others
-
-just lie in odd, precarious stacks.
-
-"
+of unfortunate texts lie open, their pages wrinkled beneath them while others
+just lie in odd, precarious stacks.
+"
 E
 "clean"
 "The wooden floor is very clean and even a bit shiny when the light catches it
-
-just right.
-
-"
+just right.
+"
 !
 0 0 0
 2283 9 1509949540 3 0
@@ -2607,24 +1884,15 @@ S
 #70125
 "The Conservatory"
 "This circular room appears to have once had a glass ceiling, but most of the
-
-glass now crunches underfoot and reflects the few beams of light that
-
-penetrate the dense, arching foliage overhead.  Fragments of broken pottery
-
-and clumps of damp soil are also here with a few rare plants trying to dig
-
-their roots into the cracks between the rotting floorboards.  The smooth stone
-
-walls stop about four feet above the floor, and beyond the shattered glass,
-
-one can see the towering twisted trees in the surrounding forest.  The south
-
-section of the wall gently rises above the rest of the wall and lends support
-
-to the domed stone ceiling of the room to the south.
-
-"
+glass now crunches underfoot and reflects the few beams of light that
+penetrate the dense, arching foliage overhead.  Fragments of broken pottery
+and clumps of damp soil are also here with a few rare plants trying to dig
+their roots into the cracks between the rotting floorboards.  The smooth stone
+walls stop about four feet above the floor, and beyond the shattered glass,
+one can see the towering twisted trees in the surrounding forest.  The south
+section of the wall gently rises above the rest of the wall and lends support
+to the domed stone ceiling of the room to the south.
+"
 ""
 301465600 0
 0 5 0
@@ -2639,58 +1907,37 @@ D5
 E
 "shattered broken glass ceiling floor"
 "The domed glass ceiling that once covered this room must have at one time been
-
-a marvel to behold.  Now, all that remains are delicate fragments of thin,
-
-lightly smoky blue and green glass.
-
-"
+a marvel to behold.  Now, all that remains are delicate fragments of thin,
+lightly smoky blue and green glass.
+"
 E
 "fragments pottery clumps soil plants roots cracks floorboards"
 "It appears that several rare potted plants were once evenly spaced along the
-
-walls here, but now those that have not died from malnourishment are feebly
-
-trying to draw sustenance from the rotting floorboards.
-
-"
+walls here, but now those that have not died from malnourishment are feebly
+trying to draw sustenance from the rotting floorboards.
+"
 E
 "south domed ceiling smooth stone walls"
 "The red sandstone walls show surprisingly little wear considering their
-
-exposure to the elements and the destruction seen elsewhere in the abbey.  The
-
-walls still have pieces of the glass frame that was once part of the ceiling
-
-and to the south, the walls rise up to merge with the stone domed room to the
-
-south.
-
-"
+exposure to the elements and the destruction seen elsewhere in the abbey.  The
+walls still have pieces of the glass frame that was once part of the ceiling
+and to the south, the walls rise up to merge with the stone domed room to the
+south.
+"
 A
 ""
 ""
 "mob = mob_in_room( 2372, find_room( 70126 ) );
-
-if( !mob && rflag( reset0, find_room( 70126 ) ) ) {
-
-  mob = mload( 2372, find_room( 70126 ) );
-
-  }
-
-if( mob ) {
-
-  if( !wearing_obj( 3618, mob ) ) {
-
-    interpret( mob, \"wear talisman\" );
-
-    }
-
-  }
-
-continue;
-
-"
+if( !mob && rflag( reset0, find_room( 70126 ) ) ) {
+  mob = mload( 2372, find_room( 70126 ) );
+  }
+if( mob ) {
+  if( !wearing_obj( 3618, mob ) ) {
+    interpret( mob, \"wear talisman\" );
+    }
+  }
+continue;
+"
 !
 1 0 32
 732 17 1509949540 -2 0
@@ -2700,23 +1947,15 @@ S
 #70126
 "The Abbot's Study"
 "This circular room appears to have served several functions before it was
-
-ravaged by an unknown force.  Several broken bookshelves and shredded papers
-
-lie on the western edge of the room, while on the opposite side, a small altar
-
-has been smashed to pieces.  Dominating the floor of this room is a large
-
-arcane circle with the drawing of an hourglass and an infinity symbol
-
-intertwined.  The edges of the circle are marked with ancient runes of no
-
-known language.
-
-"
+ravaged by an unknown force.  Several broken bookshelves and shredded papers
+lie on the western edge of the room, while on the opposite side, a small altar
+has been smashed to pieces.  Dominating the floor of this room is a large
+arcane circle with the drawing of an hourglass and an infinity symbol
+intertwined.  The edges of the circle are marked with ancient runes of no
+known language.
+"
 "[Dalthas] add a search shelves/papers acode in abbot room
-
-"
+"
 301465612 0
 0 5 0
 D0
@@ -2726,62 +1965,42 @@ D0
 E
 "broken bookshelves shredded papers western"
 "These shelves once stored a great deal of mystical knowledge, now lost,
-
-perhaps forever, to the destruction that has passed through this abbey.
-
-Every page of every book is torn, shredded, and scattered so much that it
-
-might take a lifetime to piece even a single page back together.
-
-"
+perhaps forever, to the destruction that has passed through this abbey.
+Every page of every book is torn, shredded, and scattered so much that it
+might take a lifetime to piece even a single page back together.
+"
 E
 "small altar smashed pieces"
 "The remains of a small, personal altar lie by the east wall.  Broken into
-
-three pieces, it is still possible to make out a silver-painted crest in the
-
-shape of a great bird.
-
-"
+three pieces, it is still possible to make out a silver-painted crest in the
+shape of a great bird.
+"
 E
 "floor arcane circle drawing hourglass infinity symbol"
 "The hourglass and infinity symbol are drawn on the floor in silver, red, and
-
-white sand that has been melted onto the stone floor, to remain there until
-
-the stones themselves are destroyed.
-
-"
+white sand that has been melted onto the stone floor, to remain there until
+the stones themselves are destroyed.
+"
 A
 "1 look read"
 "edge ancient runes language"
 "if( char_affected( ch, tongues ) ) {
-
-  act_tochar( #translate, ch );
-
-  }
-
-else {
-
-  act_tochar( #nope, ch );
-
-  }
-
-"
+  act_tochar( #translate, ch );
+  }
+else {
+  act_tochar( #nope, ch );
+  }
+"
 E
 "nope"
 "You try to read the strange language, but it is nothing you've ever seen
-
-before.
-
-"
+before.
+"
 E
 "translate"
 "\"As time flows like a river, let the fisherman's net be cast downstream to
-
-bring us knowledge of what lies ahead.\"
-
-"
+bring us knowledge of what lies ahead.\"
+"
 !
 0 0 0
 2372 9 1509949440 3 0
@@ -2792,17 +2011,12 @@ S
 #70127
 "In a Crumbling Basement"
 "Some very angry creature has been through this room, destroying everything in
-
-its path.  Discarded and unused furniture has been thrown about with great
-
-force.  Chunks of wood and detritus litter the floor, making it even more
-
-difficult to weave between the maze of broken chairs, casks, and crates.
-
-"
+its path.  Discarded and unused furniture has been thrown about with great
+force.  Chunks of wood and detritus litter the floor, making it even more
+difficult to weave between the maze of broken chairs, casks, and crates.
+"
 "dex check entering room
-
-"
+"
 301465604 0
 0 5 0
 D0
@@ -2832,132 +2046,95 @@ D5
 E
 "east"
 "An old splintered door designed to swing both directions.
-
-"
+"
 A
 ""
 ""
 "mob = mob_in_room( 2274, find_room( 70130 ) );
-
-if( mob && !is_open( room, north ) )
-
-  send_to_room( #north, room );
-
-open( room, north );
-
-interpret( mob, \"south\" );
-
-"
+if( mob && !is_open( room, north ) )
+  send_to_room( #north, room );
+open( room, north );
+interpret( mob, \"south\" );
+"
 E
 "north"
 "The thin decaying door to the north opens.
-
-"
+"
 !
 0 300 0
 A
 ""
 ""
 "mob = mob_in_room( 2274, find_room( 70131 ) );
-
-if( mob && !is_open( room, south ) )
-
-  send_to_room( #south, room );
-
-open( room, south );
-
-interpret( mob, \"north\" );
-
-"
+if( mob && !is_open( room, south ) )
+  send_to_room( #south, room );
+open( room, south );
+interpret( mob, \"north\" );
+"
 E
 "south"
 "The thin decaying door to the south opens.
-
-"
+"
 !
 0 700 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You push your way past the swinging door to the east.
-
-"
+"
 E
 "to_room"
 "$n pushes through the old swinging door to the east.
-
-"
+"
 !
 3 0 2
 A
 ""
 ""
 "if( is_player( ch ) ) {
-
-   i = random( 5, 18 );
-
-   if( find_stat( ch, dex ) < i ) {
-
-     if( random( 1, 5 ) < 5 ) {
-
-       act_tochar( #noslip, ch );
-
-       act_notchar( #onoslip, ch );
-
-       }
-
-     else {
-
-       act_tochar( #slip, ch );
-
-       act_notchar( #oslip, ch );
-
-       interpret( ch, \"sit\" );
-
-       }
-
-     }
-
-   }
-
-"
+   i = random( 5, 18 );
+   if( find_stat( ch, dex ) < i ) {
+     if( random( 1, 5 ) < 5 ) {
+       act_tochar( #noslip, ch );
+       act_notchar( #onoslip, ch );
+       }
+     else {
+       act_tochar( #slip, ch );
+       act_notchar( #oslip, ch );
+       interpret( ch, \"sit\" );
+       }
+     }
+   }
+"
 E
 "noslip"
 "@eYou catch your foot on something amongst the trash, but manage to catch
-
-yourself before falling.@n
-
-"
+yourself before falling.@n
+"
 E
 "onoslip"
 "@e$n almost loses $s footing amongst the trash, but manages to catch $mself.@n
-
-"
+"
 E
 "slip"
 "@eYou trip on something amongst the trash, and fall to the floor!@n
-
-"
+"
 E
 "oslip"
 "@e$n trips over something and falls to the floor.@n
-
-"
+"
 !
 1 0 15
 A
 ""
 ""
 "i = 1d2;
-
-acode( find_room( 70127 ), i );
-
-"
+acode( find_room( 70127 ), i );
+"
 !
 2 700 0
 -1
@@ -2966,21 +2143,14 @@ S
 #70128
 "Among Old Wooden Racks"
 "This room contains the remaining supply of the Abbey's wine.  Casks and
-
-bottles fill the half-dozen racks that occupy most of this room from floor to
-
-ceiling.  Unfortunately, it seems the destructive force in the main room has
-
-visited here as well; most of the casks and bottles are smashed or damaged in
-
-some way, leaving behind only a musky vinegar stench.
-
-"
+bottles fill the half-dozen racks that occupy most of this room from floor to
+ceiling.  Unfortunately, it seems the destructive force in the main room has
+visited here as well; most of the casks and bottles are smashed or damaged in
+some way, leaving behind only a musky vinegar stench.
+"
 "[Calamus] search loads obj 3623, which in turn can either be sold for cash or
-
-'opened', which swaps in 3615.
-
-"
+'opened', which swaps in 3615.
+"
 301465604 0
 0 5 0
 D1
@@ -2990,87 +2160,56 @@ D1
 E
 "racks shelves"
 "Several racks fill this room, though the bottles and casks on the foremost
-
-shelves are years past use.  The glint of light on dark glass near the back of
-
-the room, however, catches your attention.
-
-"
+shelves are years past use.  The glint of light on dark glass near the back of
+the room, however, catches your attention.
+"
 A
 "search"
 "racks"
 "if( !is_player( ch ) )
-
-  end;
-
-if( !can_see_room( ch, room ) ) {
-
-  send_to_char( #dark, ch );
-
-  end;
-
-  }
-
-if( rflag( reset0, room ) ) {
-
-  if( random( 1, 10 ) < 3 ) {
-
-    send_to_char( #none, ch );
-
-    act_notchar( #none2, ch );
-
-    remove_rflag( reset0, room );
-
-    }
-
-  else {
-
-    obj_to_char( oload( 3623 ), ch );
-
-    send_to_char( #ch, ch );
-
-    act_notchar( #ch2, ch );
-
-    remove_rflag( reset0, room );
-
-    }
-
-  }
-
-else {
-
-  send_to_char( #none, ch );
-
-  act_notchar( #none2, ch );
-
-  }
-
-"
+  end;
+if( !can_see_room( ch, room ) ) {
+  send_to_char( #dark, ch );
+  end;
+  }
+if( rflag( reset0, room ) ) {
+  if( random( 1, 10 ) < 3 ) {
+    send_to_char( #none, ch );
+    act_notchar( #none2, ch );
+    remove_rflag( reset0, room );
+    }
+  else {
+    obj_to_char( oload( 3623 ), ch );
+    send_to_char( #ch, ch );
+    act_notchar( #ch2, ch );
+    remove_rflag( reset0, room );
+    }
+  }
+else {
+  send_to_char( #none, ch );
+  act_notchar( #none2, ch );
+  }
+"
 E
 "ch2"
 "$n looks through the racks of bottles and seems to find something.
-
-"
+"
 E
 "ch"
 "You find an old bottle of wine that still seems intact!
-
-"
+"
 E
 "none2"
 "$n looks through the old racks.
-
-"
+"
 E
 "none"
 "You search through the racks of old bottles, but find nothing of interest.
-
-"
+"
 E
 "dark"
 "It is too dark to search anything in here.
-
-"
+"
 !
 0 0 0
 -1
@@ -3079,27 +2218,17 @@ S
 #70129
 "Abandoned Pantry"
 "Two heavy wooden tables dominate this room.  A few deep, sturdy shelves line
-
-the walls, apparently once used for food storage; several half-rotted burlap
-
-sacks of flour and other consumables still lie there.  Cobwebs shift lazily in
-
-the corners of the room, undisturbed for ages.  The walls and flooring is a
-
-mix of dirt and rough-cut native stone.
-
-"
+the walls, apparently once used for food storage; several half-rotted burlap
+sacks of flour and other consumables still lie there.  Cobwebs shift lazily in
+the corners of the room, undisturbed for ages.  The walls and flooring is a
+mix of dirt and rough-cut native stone.
+"
 "[Calamus] Tables too big to move, look bags leads to look ceiling, loading
-
-small, annoying mob meant mostly to be cautionary.  Searching bags douses
-
-searcher in flour and gives them the plague :)
-
-[Maurtock] extras for walls
-
-[Maurtock] need extra for shelvs
-
-"
+small, annoying mob meant mostly to be cautionary.  Searching bags douses
+searcher in flour and gives them the plague :)
+[Maurtock] extras for walls
+[Maurtock] need extra for shelvs
+"
 301465604 0
 0 5 0
 D3
@@ -3109,160 +2238,112 @@ D3
 E
 "table tables"
 "The tables are scarred, but this seems simply the result of food preparation
-
-tasks from years ago, not violence.
-
-"
+tasks from years ago, not violence.
+"
 E
 "west"
 "An old splintered door designed to swing both directions.
-
-"
+"
 E
 "bags flour sacks sack bag rotted rot"
 "The old burlap of these food sacks is no longer strong enough to withstand any
-
-sort of handling.  The cobwebs hanging from the room's ceiling look stronger.
-
-"
+sort of handling.  The cobwebs hanging from the room's ceiling look stronger.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You push your way past the swinging door to the west.
-
-"
+"
 E
 "to_room"
 "$n pushes through the old swinging door to the west.
-
-"
+"
 !
 3 0 8
 A
 "get lift"
 "table tables"
 "act_tochar( #nah, ch );
-
-act_notchar( #rnah, ch );
-
-"
+act_notchar( #rnah, ch );
+"
 E
 "nah"
 "Even if you could lift one of the massive tables, there is no way to get it
-
-out of the room.  Both tables were obviously built in place, and are far too
-
-large for the room's only exit.
-
-"
+out of the room.  Both tables were obviously built in place, and are far too
+large for the room's only exit.
+"
 E
 "rnah"
 "$n ponders the large tables and the room's small exit for a few moments.
-
-"
+"
 !
 0 0 0
 A
 "look l"
 "up cobwebs ceiling"
 "if( rflag( reset1, room ) ) {
-
-  remove_rflag( reset1, room );
-
-  if( !mob_in_room( 293, room ) ) {
-
-    act_tochar( #web, ch );
-
-    act_notchar( #nweb, ch );
-
-    mload( 293, room );
-
-    mload( 293, room );
-
-    if( random( 1, 5 ) > 3 )
-
-      mload( 293, room );
-
-    if( random( 1, 4 ) > 2 )
-
-      mload( 293, room );
-
-    if( random( 1, 4 ) > 2 )
-
-      mload( 293, room );
-
-    if( random( 1, 3 ) > 2 )
-
-      mload( 293, room );
-
-    }
-
-  end;
-
-  }
-
-send_to_char( #empty, ch );
-
-act_notchar( #nothing, ch );
-
-"
+  remove_rflag( reset1, room );
+  if( !mob_in_room( 293, room ) ) {
+    act_tochar( #web, ch );
+    act_notchar( #nweb, ch );
+    mload( 293, room );
+    mload( 293, room );
+    if( random( 1, 5 ) > 3 )
+      mload( 293, room );
+    if( random( 1, 4 ) > 2 )
+      mload( 293, room );
+    if( random( 1, 4 ) > 2 )
+      mload( 293, room );
+    if( random( 1, 3 ) > 2 )
+      mload( 293, room );
+    }
+  end;
+  }
+send_to_char( #empty, ch );
+act_notchar( #nothing, ch );
+"
 E
 "empty"
 "You glace upwards, but the cobwebs are just that: cobwebs and nothing more.
-
-"
+"
 E
 "nothing"
 "$n glances at the ceiling.
-
-"
+"
 E
 "web"
 "You glance upwards, and notice with a start that several cat-sized spiders are
-
-hiding in the rafters, trying to avoid notice.  Seeing your upturned face,
-
-they attack!
-
-"
+hiding in the rafters, trying to avoid notice.  Seeing your upturned face,
+they attack!
+"
 E
 "nweb"
 "$n glances at the ceiling, $s eyes widening suddenly.
-
-"
+"
 !
 0 0 0
 A
 "search dig move get"
 "bag bags sack sacks flour"
 "send_to_char( #empty, ch );
-
-act_notchar( #nothing, ch );
-
-wait( 2 );
-
-plague( ch );
-
-"
+act_notchar( #nothing, ch );
+wait( 2 );
+plague( ch );
+"
 E
 "empty"
 "As soon as you touch a sack, the burlap splits, filling the air with powder
-
-and leaving you dusted in a rotten white film.
-
-"
+and leaving you dusted in a rotten white film.
+"
 E
 "nothing"
 "$n fiddles with the flour sacks on one of the room's higher shelves.  The
-
-rotten bag splits and douses $m in white powder and other, less wholesome bits.
-
-"
+rotten bag splits and douses $m in white powder and other, less wholesome bits.
+"
 !
 0 0 0
 -1
@@ -3271,14 +2352,10 @@ S
 #70130
 "In a Small Storage Room"
 "This room is lined in matted webbing, hair, bones and other bits of odd
-
-garbage that has been shaped into nests.  Chunks of furred flesh and small
-
-bones lie about the room, and maggots and other carrion insects swarm to feast
-
-on the remains.
-
-"
+garbage that has been shaped into nests.  Chunks of furred flesh and small
+bones lie about the room, and maggots and other carrion insects swarm to feast
+on the remains.
+"
 ""
 301465604 0
 0 5 0
@@ -3289,24 +2366,18 @@ D2
 E
 "grasses hair bones garbage nests"
 "The trash has been fashioned into several nests, which pockmark the foor here
-
-like small craters.
-
-"
+like small craters.
+"
 E
 "chunks flesh bones"
 "These bits of bone with meat still adhering to them look like the remains of
-
-the most recent ettercap meal, as the meat, while filthy, is not yet rotten.
-
-"
+the most recent ettercap meal, as the meat, while filthy, is not yet rotten.
+"
 E
 "maggots insects carrion"
 "Attracted by the meat, various carrion-eaters crawl amongst the trash here,
-
-looking to feed on the plenty.
-
-"
+looking to feed on the plenty.
+"
 2274 9 1509949540 3 0
 -1
 S
@@ -3314,17 +2385,12 @@ S
 #70131
 "In a Small Storage Room"
 "The smell in this room is indescribable.  The source of the stench is quite
-
-obvious: the carcasses of several animals lie scattered about the floor.  The
-
-meat has not yet been removed from the bone, and flies feast hungrily on the
-
-remains.
-
-"
+obvious: the carcasses of several animals lie scattered about the floor.  The
+meat has not yet been removed from the bone, and flies feast hungrily on the
+remains.
+"
 "[Calamus] pondering an acode to load some sort of poisoned meat
-
-"
+"
 301465604 0
 0 5 0
 D0
@@ -3334,12 +2400,9 @@ D0
 E
 "carcasses animals remains flies"
 "The corpses have been left here, partially wrapped in webbing, apparently to
-
-'ferment' a bit before consumption.  These carcases are crawling with flies
-
-and other insects, attracted by the ripe meat.
-
-"
+'ferment' a bit before consumption.  These carcases are crawling with flies
+and other insects, attracted by the ripe meat.
+"
 2274 9 1509949540 3 0
 -1
 S
@@ -3347,16 +2410,11 @@ S
 #70132
 "A Pit in the Ruins of an Abbey"
 "The dirt floor is covered with a thin layer of fine red dust.  The walls of
-
-the pit are made of oak boards, nailed together in a careless, uneven way.  A
-
-board against the western wall hangs loosely, the nails missing on one end,
-
-and there is a small gap through which you can make out another wall on the
-
-other side.
-
-"
+the pit are made of oak boards, nailed together in a careless, uneven way.  A
+board against the western wall hangs loosely, the nails missing on one end,
+and there is a small gap through which you can make out another wall on the
+other side.
+"
 ""
 301465604 0
 0 9 0
@@ -3371,14 +2429,10 @@ S
 #70133
 "A Pit in the Ruins of an Abbey"
 "The dirt floor is cold and solid with a small amount of debris fallen from the
-
-room above: shattered china, splinters of glass, and twisted silverware.  The
-
-walls are steep oak boards, damaged in some places by cuts and indentations;
-
-they should be fairly easy to scale.
-
-"
+room above: shattered china, splinters of glass, and twisted silverware.  The
+walls are steep oak boards, damaged in some places by cuts and indentations;
+they should be fairly easy to scale.
+"
 ""
 301465604 0
 0 9 0
@@ -3389,14 +2443,10 @@ D4
 E
 "debris china glass silverware"
 "On the larger pieces of china you can see portions of a geometric design
-
-painted in blue.  Small soup spoons have fallen through the cracks in the
-
-floorboards above, all mangled beyond hope.  Shards of glass are sprinkled in
-
-between these other remnants.
-
-"
+painted in blue.  Small soup spoons have fallen through the cracks in the
+floorboards above, all mangled beyond hope.  Shards of glass are sprinkled in
+between these other remnants.
+"
 2274 9 1509949540 3 0
 210 17 1509949460 -2 0
 -1
@@ -3405,17 +2455,12 @@ S
 #70134
 "A Pit in the Ruins of an Abbey"
 "The floor is packed dirt, with a few footprints visible as well as claw
-
-marks.  The walls are old oak boards, nailed together tightly but unevenly. 
-
-The southwest corner shows signs of water damage but the damage is not yet
-
-major.
-
-"
+marks.  The walls are old oak boards, nailed together tightly but unevenly. 
+The southwest corner shows signs of water damage but the damage is not yet
+major.
+"
 "[Maurtock] need extras here for foot/claw prints
-
-"
+"
 301465604 0
 0 9 0
 D4
@@ -3425,10 +2470,8 @@ D4
 E
 "southwest corner water damage"
 "The corner of the wall is rotting slowly, the dirt in a small circle around
-
-that part of the wall, a sign of some water source outside the abbey walls.
-
-"
+that part of the wall, a sign of some water source outside the abbey walls.
+"
 2274 9 1509949540 3 0
 -1
 S
@@ -3436,17 +2479,12 @@ S
 #70135
 "The Trap Master's Lair"
 "Under Construction.
-
-"
+"
 "[Zithuan] No player should ever see this room
-
-[Zithuan] The Ettercap here is the one who 'sets' the traps and any trap damage is
-
-traced back to him for xp calculations.
-
-[Zithuan] This is the room the phase spiders phase to when they go ethereal.
-
-"
+[Zithuan] The Ettercap here is the one who 'sets' the traps and any trap damage is
+traced back to him for xp calculations.
+[Zithuan] This is the room the phase spiders phase to when they go ethereal.
+"
 301465614 0
 13 5 0
 D4

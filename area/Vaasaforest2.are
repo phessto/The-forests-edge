@@ -10,19 +10,13 @@
 #70400
 "On the Windlass"
 "Twisting and turning its way between the ancient shuvanas, the river carries
-
-nutrients to the tangled roots that dip into it.  Erosion from the ever
-
-flowing waters has cut away much of the fertile soil here, and the steep walls
-
-of the river bank seem to grow higher as it digs its way deeper into the earth.
-
-"
+nutrients to the tangled roots that dip into it.  Erosion from the ever
+flowing waters has cut away much of the fertile soil here, and the steep walls
+of the river bank seem to grow higher as it digs its way deeper into the earth.
+"
 "[Zithuan] spellchecked
-
-[Elfir] extra: river bank erosion root, etc
-
-"
+[Elfir] extra: river bank erosion root, etc
+"
 301465600 0
 8 9 0
 D1
@@ -37,15 +31,12 @@ A
 ""
 ""
 "act_tochar( #ahhh, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "ahhh"
 "You use available tree roots to lever yourself out of the Windlass.
-
-"
+"
 !
 3 0 2
 324 17 1509949540 -2 0
@@ -55,21 +46,14 @@ S
 #70401
 "On the Bank of the Windlass"
 "The water cuts away at the bank here creating a steep, yet not dangerous,
-
-descent into the Windlass.  Tufts of grass and plants find frail purchase on
-
-the edge where erosion has worn away the softer soil leaving behind hard
-
-earth.  Roots from nearby trees poke out of the side, hanging in tangled
-
-masses just over and sometimes in the water.
-
-"
+descent into the Windlass.  Tufts of grass and plants find frail purchase on
+the edge where erosion has worn away the softer soil leaving behind hard
+earth.  Roots from nearby trees poke out of the side, hanging in tangled
+masses just over and sometimes in the water.
+"
 "[Zithuan] spellchecked
-
-[Hedrack] checked
-
-"
+[Hedrack] checked
+"
 301465600 0
 3 9 0
 D0
@@ -83,41 +67,30 @@ D3
 E
 "water windlass river"
 "The crystalline waters of the windlass flow by bearing the occasional leaf or
-
-twig upon it.
-
-"
+twig upon it.
+"
 E
 "roots"
 "Roots, the things that anchor a tree to the ground and provide it water and
-
-nourishment from the soil.  These happen to be sticking out of the earth and
-
-resting in the flowing waters of the Windlass.
-
-"
+nourishment from the soil.  These happen to be sticking out of the earth and
+resting in the flowing waters of the Windlass.
+"
 E
 "grass plants tufts"
 "The river waters cut away at the bank, leaving the shore vegetation in a
-
-precarious position.
-
-"
+precarious position.
+"
 A
 ""
 ""
 "act_tochar( #sploosh, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "sploosh"
 "You use the tree roots for footing as you climb down into the chill of the
-
-Windlass.
-
-"
+Windlass.
+"
 !
 3 0 8
 324 17 1509949540 -2 0
@@ -127,19 +100,13 @@ S
 #70402
 "Faint Trail"
 "The abundant greenery of the forest floor is broken where a well-traveled
-
-trail winds its way through the vegetation.  The sheer density of the
-
-undergrowth crossing the path impedes progress, however the trail could be
-
-followed east or south with a little effort.  To the north, a thin game trail
-
-leads into deeper vegetation.
-
-"
+trail winds its way through the vegetation.  The sheer density of the
+undergrowth crossing the path impedes progress, however the trail could be
+followed east or south with a little effort.  To the north, a thin game trail
+leads into deeper vegetation.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -157,49 +124,34 @@ D2
 E
 "trail 1 east 1 south"
 "The trail is overrun with plants as if it is seldom used.  Fortunately enough
-
-of it remains open to see where it generally is and you are able to follow it
-
-either east or south from here.
-
-"
+of it remains open to see where it generally is and you are able to follow it
+either east or south from here.
+"
 E
 "game 1 north"
 "Not much more than a small break in the greenery.  Animals must use this way
-
-to pass through the woods.
-
-"
+to pass through the woods.
+"
 E
 "greenery vegetation"
 "Countless varieties of plants; from low-lying ferns to large shrubs and even
-
-massive trees.  In places you can make out stands of barberry among the
-
-sumac.  In others you can see honeysuckle twining its way among the alders,
-
-dogwoods, and shuvanas.
-
-"
+massive trees.  In places you can make out stands of barberry among the
+sumac.  In others you can see honeysuckle twining its way among the alders,
+dogwoods, and shuvanas.
+"
 -1
 S
 
 #70403
 "Faint Trail"
 "A thin trail carves the only path through the dense vegetation of the forest
-
-floor.  The small openings between the forest growths are barely big enough
-
-for birds, rabbits and other small game to use.  Even deer are restricted to
-
-the paths here.  The narrow path you traverse heads on only a short way in
-
-either direction before it turns out of sight.
-
-"
+floor.  The small openings between the forest growths are barely big enough
+for birds, rabbits and other small game to use.  Even deer are restricted to
+the paths here.  The narrow path you traverse heads on only a short way in
+either direction before it turns out of sight.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D1
@@ -213,42 +165,29 @@ D3
 E
 "greenery vegetation"
 "The variety is surprisingly diverse even in this small section of the great
-
-forest.  Amidst the elms, oaks and shuvanas you see stands of barberry, privet
-
-and honeysuckle.
-
-"
+forest.  Amidst the elms, oaks and shuvanas you see stands of barberry, privet
+and honeysuckle.
+"
 E
 "1 west 1 east path trail"
 "The trail heads east and west for a short distance than turns out of sight. 
-
-Leaves and branches from the honeysuckle and privet are the primary offenders
-
-that cross the path in a rampant attempt to reclaim it for the plants.
-
-"
+Leaves and branches from the honeysuckle and privet are the primary offenders
+that cross the path in a rampant attempt to reclaim it for the plants.
+"
 -1
 S
 
 #70404
 "The Vaasa"
 "The greenery of the forest rises up on either side of you clearly
-
-defining the game trail upon which you travel.  Several breaks in the
-
-line of tall grasses and leafy plants reveal the presence of a small
-
-hollow to the west.  From this point it would be easy to push your way
-
-through the plants and into the hollow, or continue along either north or
-
-south along the small game trail.
-
-"
+defining the game trail upon which you travel.  Several breaks in the
+line of tall grasses and leafy plants reveal the presence of a small
+hollow to the west.  From this point it would be easy to push your way
+through the plants and into the hollow, or continue along either north or
+south along the small game trail.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -266,26 +205,21 @@ D3
 E
 "greenery plants"
 "Primarily large stands of elderberry and firethorn that fill the spaces
-
-between the giant trees.
-
-"
+between the giant trees.
+"
 E
 "1 west"
 "Looks like a clearing that has formed around the base of a large oak tree.
-
-"
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You push aside some of the vegetation and make your way into the clearing.
-
-"
+"
 !
 3 0 8
 -1
@@ -294,21 +228,14 @@ S
 #70405
 "At the Base of an Oak Tree"
 "You stand in a small hollow in the woods, at the center of which stand a large
-
-oak tree.  The ground about the base is littered in acorn fragments, chewed
-
-through by foraging animals long ago.  Gnarled oak roots occasionally break
-
-the uniform surface of the ground.  Dense vegetation surrounds the hollow on
-
-all sides except the east.  In that direction the vegetation is thin enough to
-
-push through and reach what seems to be a trail.
-
-"
+oak tree.  The ground about the base is littered in acorn fragments, chewed
+through by foraging animals long ago.  Gnarled oak roots occasionally break
+the uniform surface of the ground.  Dense vegetation surrounds the hollow on
+all sides except the east.  In that direction the vegetation is thin enough to
+push through and reach what seems to be a trail.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D1
@@ -318,211 +245,139 @@ D1
 E
 "acorns fragments"
 "The empty husks left behind by hungry squirrels and the like.
-
-"
+"
 E
 "1 east"
 "You could push through the vegetation to the east easily enough and reach a
-
-game trail that is just visible in that direction.
-
-"
+game trail that is just visible in that direction.
+"
 E
 "roots"
 "The thick bark of the tree covers the exposed roots as thoroughly as the rest
-
-of it.  The roots break ground only briefly, to return back into the earth
-
-within inches of where they surfaced.
-
-"
+of it.  The roots break ground only briefly, to return back into the earth
+within inches of where they surfaced.
+"
 E
 "greenery vegetation"
 "Surprisingly dense stands of hydrangea mingle with honeysuckle and chokeberry
-
-to cut off passage in any direction except the east where you can push through
-
-to an old game trail.
-
-"
+to cut off passage in any direction except the east where you can push through
+to an old game trail.
+"
 E
 "roots 1 down"
 "The gnarled roots are thick near the trees base, but get thinner as they move
-
-away.  Acorn husks are scattered everywhere, but lie in greatest profusion up
-
-against the roots where they gather in the small crevices.
-
-"
+away.  Acorn husks are scattered everywhere, but lie in greatest profusion up
+against the roots where they gather in the small crevices.
+"
 E
 "tree oak 1 up"
 "The oak, though obviously ancient, is dwarfed by nearby shuvana trees.  Its
-
-nearest branches are still high overhead, yet enough rough protrusions in the
-
-bark and several vines on its side might make it possible to make the
-
-dangerous ascent up its sheer side.  If you could just make it safely to the
-
-lower branches, the rest of the climb should be relatively easy.
-
-"
+nearest branches are still high overhead, yet enough rough protrusions in the
+bark and several vines on its side might make it possible to make the
+dangerous ascent up its sheer side.  If you could just make it safely to the
+lower branches, the rest of the climb should be relatively easy.
+"
 A
 "climb"
 "oak tree 1 up"
 "if( can_fly( ch ) ) {
-
-  send_to_char( #fly, ch );
-
-  act_notchar( #flying, ch );
-
-  transfer( ch, find_room( 70465 ) );
-
-  act_notchar( #fly_arr, ch );
-
-  end;
-
-  }
-
-if( is_mounted( ch ) ) {
-
-  send_to_char( #nomount, ch );
-
-  end;
-
-  }
-
-if( find_skill( ch, climb ) > random( 4, 8 ) ) {
-
-  use_skill( ch, climb );
-
-  send_to_char( #char, ch );
-
-  act_notchar( #room, ch );
-
-  transfer( ch, find_room( 70465 ) );
-
-  act_notchar( #arr, ch );
-
-  }
-
-else{
-
-  if( find_stat( ch, dex ) < 15 ) {
-
-    if( random( 0, 10 ) < 4 ){
-
-      act_tochar( #pain, ch );
-
-      i = 2d5;
-
-      act_notchar( #rmpain, ch );
-
-      dam_message( ch, i, \"The fall\" );
-
-      inflict( ch, mob, i, \"falling\" );
-
-      }
-
-    else{
-
-      send_to_char( #fail, ch );
-
-      act_notchar( #failed, ch );
-
-      }
-
-    }
-
-  else{
-
-    send_to_char( #fail, ch );
-
-    act_notchar( #failed, ch );
-
-    }
-
-  }
-
-loop( followers ) {
-
-  ch = rch;
-
-  acode( room, 1 );
-
-  }
-
-"
+  send_to_char( #fly, ch );
+  act_notchar( #flying, ch );
+  transfer( ch, find_room( 70465 ) );
+  act_notchar( #fly_arr, ch );
+  end;
+  }
+if( is_mounted( ch ) ) {
+  send_to_char( #nomount, ch );
+  end;
+  }
+if( find_skill( ch, climb ) > random( 4, 8 ) ) {
+  use_skill( ch, climb );
+  send_to_char( #char, ch );
+  act_notchar( #room, ch );
+  transfer( ch, find_room( 70465 ) );
+  act_notchar( #arr, ch );
+  }
+else{
+  if( find_stat( ch, dex ) < 15 ) {
+    if( random( 0, 10 ) < 4 ){
+      act_tochar( #pain, ch );
+      i = 2d5;
+      act_notchar( #rmpain, ch );
+      dam_message( ch, i, \"The fall\" );
+      inflict( ch, mob, i, \"falling\" );
+      }
+    else{
+      send_to_char( #fail, ch );
+      act_notchar( #failed, ch );
+      }
+    }
+  else{
+    send_to_char( #fail, ch );
+    act_notchar( #failed, ch );
+    }
+  }
+loop( followers ) {
+  ch = rch;
+  acode( room, 1 );
+  }
+"
 E
 "fly"
 "You fly up into the canopy and find a branch to rest on.
-
-"
+"
 E
 "flying"
 "$n flies up into the forest canopy and disapears.
-
-"
+"
 E
 "fly_arr"
 "$n flies up and lands on one of the branches here.
-
-"
+"
 E
 "nomount"
 "You can't do that while mounted.
-
-"
+"
 E
 "char"
 "You carefully climb the tree until you find a good branch to stop a moment and
-
-rest.
-
-"
+rest.
+"
 E
 "room"
 "$n carefully climbs an oak tree, disapearing into the canopy.
-
-"
+"
 E
 "arr"
 "$n climbs up into the tree.
-
-"
+"
 E
 "pain"
 "@RYou slip and fall from the tree back to the ground below.@n
-
-"
+"
 E
 "rmpain"
 "@R$n slips and falls from the tree, landing hard on the ground.
-
-"
+"
 E
 "fail"
 "You slip and almost hurt yourself as you attempt to climb the tree.
-
-"
+"
 E
 "failed"
 "$n slips and almost gets hurt as $e tries to climb a tree.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You push aside some vegetation and make your way to the trail.
-
-"
+"
 !
 3 0 2
 672 17 1509949500 -2 0
@@ -533,21 +388,14 @@ S
 #70406
 "The Vaasa"
 "A thin game trail arcs to avoid the massive roots of an ancient shuvana
-
-tree.  small, green plants have begun to grow in the nooks and hollows
-
-created where the huge roots fold over and under each other.  The whole
-
-effect begins to look like a terraced garden of sorts, only the growth is
-
-all wild and unplanned.  The game trail leads away from here heading east
-
-and south.
-
-"
+tree.  small, green plants have begun to grow in the nooks and hollows
+created where the huge roots fold over and under each other.  The whole
+effect begins to look like a terraced garden of sorts, only the growth is
+all wild and unplanned.  The game trail leads away from here heading east
+and south.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D1
@@ -561,37 +409,25 @@ D2
 E
 "plants nooks hollows root terraced garden growth"
 "The small plants are numerous in the ample space created by the nooks and
-
-hollows of the root.  They range in variety and color here as much as anywhere
-
-else in the vastness of the Vaasa.  Miniature stands of cinquefoil and azalea
-
-seem most predominant though, their white and pink flowers a contrast the dark
-
-bark of the root.
-
-"
+hollows of the root.  They range in variety and color here as much as anywhere
+else in the vastness of the Vaasa.  Miniature stands of cinquefoil and azalea
+seem most predominant though, their white and pink flowers a contrast the dark
+bark of the root.
+"
 -1
 S
 
 #70407
 "Faint Trail"
 "Cool drops of dew fall from overhead plants, relieving you of some of the
-
-heat.  All about you, the massive boles of giant trees rise up out of a lush
-
-carpet of greenery that stands as tall as, and often taller than, you.  There
-
-is an old trail here that runs off into the woods heading north and east.  A
-
-low break in the vegetation to the west is all that defines an old game trail
-
-leading deeper into the woods.
-
-"
+heat.  All about you, the massive boles of giant trees rise up out of a lush
+carpet of greenery that stands as tall as, and often taller than, you.  There
+is an old trail here that runs off into the woods heading north and east.  A
+low break in the vegetation to the west is all that defines an old game trail
+leading deeper into the woods.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -609,43 +445,31 @@ D3
 E
 "greenery"
 "Oleaster, alder and buckthorn seem most prevalent though other plants are
-
-readily apparent to the observant viewer.
-
-"
+readily apparent to the observant viewer.
+"
 E
 "1 west vegetation"
 "A narrow break in the greenery is all that marks the start of an old animal
-
-trail leading to the west.
-
-"
+trail leading to the west.
+"
 E
 "trail 1 north 1 east"
 "The trail looks long unused because of the many branches that cross it
-
-unbroken to the north and east.  Testing a branch nearby you can tell that
-
-appearances can be deceiving as the branch springs easily back into place
-
-after you pass with an impressive resilience.
-
-"
+unbroken to the north and east.  Testing a branch nearby you can tell that
+appearances can be deceiving as the branch springs easily back into place
+after you pass with an impressive resilience.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@gAs you push through the plants trying to overrun the trail you find youself
-
-suddenly under several arcing shuvana roots the vegetation concealed from
-
-sight.@n
-
-"
+suddenly under several arcing shuvana roots the vegetation concealed from
+sight.@n
+"
 !
 3 0 1
 -1
@@ -654,21 +478,14 @@ S
 #70408
 "Faint Trail"
 "The massive roots of an immense shuvana tree arc overhead forcing you to
-
-duck under them in several places as you follow the trail.  Patches of
-
-moss have found purchase on the underside of the roots in the deep
-
-shadows that know little or no light.  The natural tunnel runs for nearly
-
-a score of feet with only occasional breaks in the walls and roof where
-
-the roots pull apart and weave back together.
-
-"
+duck under them in several places as you follow the trail.  Patches of
+moss have found purchase on the underside of the roots in the deep
+shadows that know little or no light.  The natural tunnel runs for nearly
+a score of feet with only occasional breaks in the walls and roof where
+the roots pull apart and weave back together.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -682,38 +499,27 @@ D2
 E
 "moss 1 up roots"
 "The moss is thick with this season's new growth.  Small red buds hang down
-
-from stiff red stems where tiny flowers will soon open their blooms to the
-
-world for the first time.  The underside of the great shuvana roots are barely
-
-visible through the plush swathe of moss covering it.
-
-"
+from stiff red stems where tiny flowers will soon open their blooms to the
+world for the first time.  The underside of the great shuvana roots are barely
+visible through the plush swathe of moss covering it.
+"
 E
 "greenery plants bushes vegetation"
 "The greenery consists of the large, moss-covered roots arcing low overhead. 
-
-The only other plants are a few small buckthorn specimens that have found
-
-small patches of light to grow in beneath breaks in the roots.  The leaves
-
-strive to reach the narrow breaks in the roots overhead that yield up
-
-life-giving light.
-
-"
+The only other plants are a few small buckthorn specimens that have found
+small patches of light to grow in beneath breaks in the roots.  The leaves
+strive to reach the narrow breaks in the roots overhead that yield up
+life-giving light.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@gMoving the barricade of plants aside, you step out from under the roots.@n
-
-"
+"
 !
 3 0 5
 -1
@@ -722,21 +528,14 @@ S
 #70409
 "Faint Trail"
 "The thick woodland growth has directed the path of the trail over the
-
-years as it prevented people and animals from walking in any direction
-
-they choose.  In past years constant use of the path kept it denuded of
-
-the vegetation that has once again begun to overtake it.  The thick
-
-branches filled out with lush greenery form an effective barricade on
-
-either side of the trail.
-
-"
+years as it prevented people and animals from walking in any direction
+they choose.  In past years constant use of the path kept it denuded of
+the vegetation that has once again begun to overtake it.  The thick
+branches filled out with lush greenery form an effective barricade on
+either side of the trail.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D2
@@ -750,40 +549,28 @@ D3
 E
 "path"
 "It curves a bit now running west and south amidst the greenery.
-
-"
+"
 E
 "greenery vegetation branches barricade"
 "The vegetation appears to consist primarily of common barberry.  Amidst the
-
-sharp thorns of the barberry, the trees stand unmolested, protected by their
-
-thick bark.
-
-"
+sharp thorns of the barberry, the trees stand unmolested, protected by their
+thick bark.
+"
 -1
 S
 
 #70410
 "Faint Trail"
 "The trail meanders a bit as it is forced to avoid growing trees and a few
-
-water-filled dips in the ground.  The gentle arcs in the path are
-
-overshadowed by low hanging branches from nearby bushes and young trees
-
-providing the suggestion of arches just overhead.  In the midst of one
-
-swaying curve you can make out a break in the greenery to the east, as if
-
-a clearing were just on the other side of the thin barrier of leaves and
-
-branches.
-
-"
+water-filled dips in the ground.  The gentle arcs in the path are
+overshadowed by low hanging branches from nearby bushes and young trees
+providing the suggestion of arches just overhead.  In the midst of one
+swaying curve you can make out a break in the greenery to the east, as if
+a clearing were just on the other side of the thin barrier of leaves and
+branches.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -801,49 +588,34 @@ D2
 E
 "water dips water-filled"
 "Shallow puddles of murky water filled with things best left untasted.  There
-
-is too little in any one place to gather a fair drink from.  what remains are
-
-slippery little mud slicks that offer a nuisance best walked around.
-
-"
+is too little in any one place to gather a fair drink from.  what remains are
+slippery little mud slicks that offer a nuisance best walked around.
+"
 E
 "bushes"
 "The branches of such shrubs as leatherleaf and huckleberry overhang the trail
-
-withing grasping distance if you were so inclined.
-
-"
+withing grasping distance if you were so inclined.
+"
 E
 "1 east clearing"
 "A break in the narrow-leaved branches of leatherleaf provides a partial view
-
-of an opening to the east.  A strand of the leatherleaf's white bell-shaped
-
-flowers frame the view with near perfection.
-
-"
+of an opening to the east.  A strand of the leatherleaf's white bell-shaped
+flowers frame the view with near perfection.
+"
 -1
 S
 
 #70411
 "Faint Trail"
 "Verdant green leaves line, and often overlay, the thin trail that stretches
-
-away north and west.  Branches from unruly bushes are numerous enough that it
-
-is nearly impossible to push them all out of the way.  The result is that you
-
-are constantly poked, prodded and snagged by little branches every step of the
-
-way.
-
-"
+away north and west.  Branches from unruly bushes are numerous enough that it
+is nearly impossible to push them all out of the way.  The result is that you
+are constantly poked, prodded and snagged by little branches every step of the
+way.
+"
 "trail runs north and west here
-
-[Zithuan] spellchecked
-
-"
+[Zithuan] spellchecked
+"
 301465600 0
 3 9 0
 D0
@@ -861,37 +633,25 @@ D3
 E
 "bushes branches greenery vegetation"
 "The unruly branches of the leatherleaf and the privet snag at you even as your
-
-feet tend to get tangled in the lower branches of the honeysuckle snaking its
-
-way slowly onto the path.  While the heavier branches are a direct nuisance,
-
-the subtle way the honeysuckle has of getting tangled about your legs is a
-
-more insidious threat.
-
-"
+feet tend to get tangled in the lower branches of the honeysuckle snaking its
+way slowly onto the path.  While the heavier branches are a direct nuisance,
+the subtle way the honeysuckle has of getting tangled about your legs is a
+more insidious threat.
+"
 -1
 S
 
 #70412
 "The Vaasa"
 "The broad leaves of the plants here provide cooling shade as well as
-
-managing to obscure sight.  Though packed close enough to prevent getting
-
-much of an idea what may lay ahead in any direction, the broad leaves
-
-hang loosely enough to be easily pushed aside to let you walk onward.  To
-
-the south and west the thick, tangled roots of ancient shuvanas impede
-
-your progress forcing you to choose some other direction.
-
-"
+managing to obscure sight.  Though packed close enough to prevent getting
+much of an idea what may lay ahead in any direction, the broad leaves
+hang loosely enough to be easily pushed aside to let you walk onward.  To
+the south and west the thick, tangled roots of ancient shuvanas impede
+your progress forcing you to choose some other direction.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -905,27 +665,20 @@ D1
 E
 "broad leaves plants"
 "The plants seem to be a particularly broad-leaved variety of witch-hazel. 
-
-Narrow-leaved pale yellow flowers grow from their buds among the broad leaves.
-
-"
+Narrow-leaved pale yellow flowers grow from their buds among the broad leaves.
+"
 -1
 S
 
 #70413
 "The Vaasa"
 "The broad-leaved plants grow thick together here, often impeding your
-
-progress.  Frequently you have to backtrack a few steps before you can
-
-find a way forward again.  To the south the greenery comes to an abrupt
-
-halt where an overhanging shuvana root casts its deep shade.
-
-"
+progress.  Frequently you have to backtrack a few steps before you can
+find a way forward again.  To the south the greenery comes to an abrupt
+halt where an overhanging shuvana root casts its deep shade.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D2
@@ -939,40 +692,28 @@ D3
 E
 "broad leaf leaved plants greenery"
 "The greenery seems to be mostly a broad-leaved variety of witch-hazel, though
-
-you can see several chokeberry bushes nearby as well.
-
-"
+you can see several chokeberry bushes nearby as well.
+"
 E
 "1 south shuvana root"
 "You can glimpse the root between the occasional breaks in the greenery as it
-
-rises over the shrubbery like some wooden idol in worship of the trees that
-
-surround you.
-
-"
+rises over the shrubbery like some wooden idol in worship of the trees that
+surround you.
+"
 -1
 S
 
 #70414
 "The Vaasa - Under a Shuvana Root"
 "You stand, more or less crouch really, under a low hanging and quite
-
-broad shuvana root.  The massive root forms a cave of sorts where the
-
-near total darkness has deterred the growth of more plants.  The overhead
-
-root arcs up from the west and stretches off to the east, while another
-
-root to the south closes off the back of this artificial cave.
-
-"
+broad shuvana root.  The massive root forms a cave of sorts where the
+near total darkness has deterred the growth of more plants.  The overhead
+root arcs up from the west and stretches off to the east, while another
+root to the south closes off the back of this artificial cave.
+"
 "Rextra 1 indicates fire hazard
-
-[Zithuan] spellchecked
-
-"
+[Zithuan] spellchecked
+"
 301465604 0
 3 6 0
 D0
@@ -986,45 +727,32 @@ D1
 E
 "root 1 up"
 "Moss has found purchase in several places amidst the crenelations on the
-
-underside of the root's dark bark.  Perhaps use with an open flame should be
-
-carefully moderated in here lest it catches on fire and falls down upon you to
-
-see if you burn well.
-
-"
+underside of the root's dark bark.  Perhaps use with an open flame should be
+carefully moderated in here lest it catches on fire and falls down upon you to
+see if you burn well.
+"
 E
 "1 east"
 "The root curves back into the ground somewhere east of here.
-
-"
+"
 E
 "1 north"
 "The broad leaves of the witch-hazel neatly conceal sight of anything past the
-
-end of the cave.
-
-"
+end of the cave.
+"
 -1
 S
 
 #70415
 "The Vaasa - Under a Shuvana Root"
 "You hunch over under the low hanging massive root that looms overhead. 
-
-For all its massive size, it manages to hold itself up easily.  It arcs
-
-out of the ground to the east stretches off to the west.  Where there
-
-should be another opening to the south, another massive root blocks the
-
-opening turning this into a cave.
-
-"
+For all its massive size, it manages to hold itself up easily.  It arcs
+out of the ground to the east stretches off to the west.  Where there
+should be another opening to the south, another massive root blocks the
+opening turning this into a cave.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465604 0
 3 9 0
 D0
@@ -1038,43 +766,31 @@ D3
 E
 "1 west"
 "The root curves back into the ground somewhere west of here.
-
-"
+"
 E
 "1 north"
 "The broad leaves of the witch-hazel neatly conceal sight of anything past the
-
-end of the cave.
-
-"
+end of the cave.
+"
 E
 "root 1 up"
 "Moss has found purchase in several places amidst the crenelations on the
-
-underside of the root's dark bark.  Perhaps use with an open flame should be
-
-carefully moderated in here lest it catches on fire and falls down upon you to
-
-see if you burn well.
-
-"
+underside of the root's dark bark.  Perhaps use with an open flame should be
+carefully moderated in here lest it catches on fire and falls down upon you to
+see if you burn well.
+"
 -1
 S
 
 #70416
 "The Vaasa"
 "Broad-leaved plants hinder sight and impede progress with their mingling
-
-branches.  Fortunately the intertwined branches are flexible and can be
-
-separated with some effort.  Through a break in the branches it is
-
-possible to see the massive roots of a shuvana tree off to the south.
-
-"
+branches.  Fortunately the intertwined branches are flexible and can be
+separated with some effort.  Through a break in the branches it is
+possible to see the massive roots of a shuvana tree off to the south.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -1092,25 +808,17 @@ D2
 E
 "1 south root shuvana"
 "You can glimpse roots between the occasional breaks in the greenery as it
-
-rises over the shrubbery like some wooden idol in worship of the trees that
-
-surround you.
-
-"
+rises over the shrubbery like some wooden idol in worship of the trees that
+surround you.
+"
 E
 "plants greenery vegetations broad-leaved"
 "The leaves on the mingling branches seem to identify these plants as some sort
-
-of witch-hazel though there is plentiful evidence that they are not the only
-
-plants in the area.  the serrated edges of raspberry leaves mingle as freely
-
-with the witch-hazel as do the narrow ground-level leaves of the St. 
-
-John's-wort growing here.
-
-"
+of witch-hazel though there is plentiful evidence that they are not the only
+plants in the area.  the serrated edges of raspberry leaves mingle as freely
+with the witch-hazel as do the narrow ground-level leaves of the St. 
+John's-wort growing here.
+"
 2441 17 1509949540 -2 0
 -1
 S
@@ -1118,21 +826,14 @@ S
 #70417
 "The Vaasa"
 "Deep within the Vaasa, you are surrounded on all sides by the trunks of
-
-the giant shuvana trees.  When it is possible to see the bases of the
-
-mighty giants, each seems to rise out of a dense tangle of lush greenery
-
-where the occasional roots arc out like a spray of water from a fountain. 
-
-Though no trail lines the way, the forest growth seems to create a
-
-natural passage that will lead you north or south from here.
-
-"
+the giant shuvana trees.  When it is possible to see the bases of the
+mighty giants, each seems to rise out of a dense tangle of lush greenery
+where the occasional roots arc out like a spray of water from a fountain. 
+Though no trail lines the way, the forest growth seems to create a
+natural passage that will lead you north or south from here.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -1146,25 +847,17 @@ D2
 E
 "shuvana"
 "The shuvana are the mighty giants of the Vaasa.  The dark bark of their
-
-massive boles stretch high into the forest canopy overhead.
-
-"
+massive boles stretch high into the forest canopy overhead.
+"
 E
 "vegetation plants tangle greenery"
 "The dense tangle of vegetation consists primarily of thick raspberry stands
-
-mingling with honeysuckle.  The raspberry plants seem the more troublesome of
-
-the two as the thick, thorny bushes have a tendancy to cross the path at every
-
-opportunity forcing you to backtrack often or face their thorny ire.  The
-
-occasional stand of witch-hazel is interspersed among the growth, but seems
-
-heavier to the south and southwest.
-
-"
+mingling with honeysuckle.  The raspberry plants seem the more troublesome of
+the two as the thick, thorny bushes have a tendancy to cross the path at every
+opportunity forcing you to backtrack often or face their thorny ire.  The
+occasional stand of witch-hazel is interspersed among the growth, but seems
+heavier to the south and southwest.
+"
 2441 17 1509949540 -2 0
 -1
 S
@@ -1172,30 +865,19 @@ S
 #70418
 "The Vaasa"
 "The broad leaved plants around you hinder sight nearly completely now as they
-
-grow even closer together.  Every step you take involves a few moments of work
-
-untangling the mesh of braches that have spent years growing together.  Dark
-
-shapes nestled deep amid the tangled branches hint at bird and squirrel nests
-
-hidden in the greenery.
-
+grow even closer together.  Every step you take involves a few moments of work
+untangling the mesh of braches that have spent years growing together.  Dark
+shapes nestled deep amid the tangled branches hint at bird and squirrel nests
+hidden in the greenery.
 
 Rapid, darting movements within the branches accompanied by the flutter of
-
-wings startle you each time a bird takes flight from its hidden perch within
-
-the greenery.
-
-"
+wings startle you each time a bird takes flight from its hidden perch within
+the greenery.
+"
 "new witch-hazel and St. John's-wort
-
-needs more rdescs.
-
-[Zithuan] spellchecked
-
-"
+needs more rdescs.
+[Zithuan] spellchecked
+"
 301465600 0
 3 9 0
 D1
@@ -1209,35 +891,24 @@ D3
 E
 "bushes branches greenery vegetation plants shrubbery foliage"
 "The relatively smooth-barked branches of the fifteen foot tall witch-hazel
-
-plants are criss-crossed and mingled until they form a tough mesh.  Sheer
-
-strength alone is not enough to bully your way through the tangle.  Only
-
-through diligent work can you move enough branches to force your way through
-
-the next few steps.  Mingling lower among the tangling grenery the narrow
-
-leaves and fluffy yellow flowers of St.  John's-wort add their own distinctive
-
-touch.
-
-"
+plants are criss-crossed and mingled until they form a tough mesh.  Sheer
+strength alone is not enough to bully your way through the tangle.  Only
+through diligent work can you move enough branches to force your way through
+the next few steps.  Mingling lower among the tangling grenery the narrow
+leaves and fluffy yellow flowers of St.  John's-wort add their own distinctive
+touch.
+"
 A
 ""
 ""
 "act_tochar( #plants, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "plants"
 "The tangled branches of the broad-leaved plants slow your movement but you
-
-manage to finally extricate yourself from them and move on.
-
-"
+manage to finally extricate yourself from them and move on.
+"
 !
 3 0 15
 2441 17 1509949470 -2 0
@@ -1247,21 +918,14 @@ S
 #70419
 "The Vaasa"
 "The dense tangle of woodland greenery completely surrounds you.  Large
-
-bushes with variegated green and magenta leaves mingle with shorter,
-
-broad leaved plants.  The great boles of giant shuvana trees rise out of
-
-the hills and valleys formed by the shrubbery like mighty pillars high
-
-into the canopy.
-
-"
+bushes with variegated green and magenta leaves mingle with shorter,
+broad leaved plants.  The great boles of giant shuvana trees rise out of
+the hills and valleys formed by the shrubbery like mighty pillars high
+into the canopy.
+"
 "dawnberries should be dummy acode at least, maybe a real picking
-
-[Zithuan] spellchecked
-
-"
+[Zithuan] spellchecked
+"
 301465600 0
 3 9 0
 D2
@@ -1275,49 +939,34 @@ D3
 E
 "greenery tangle dense shrubbery"
 "The greenery consists primarily of currant, diapensia and knotweed growing in
-
-profusion about the lower levels of the dawnberry bushes.
-
-"
+profusion about the lower levels of the dawnberry bushes.
+"
 E
 "variegated green magenta leaves bush"
 "The dawnberry bushes with the variegated green and magenta leaves seem to
-
-overshadow the smaller variety of greenery in the area.
-
-"
+overshadow the smaller variety of greenery in the area.
+"
 E
 "shuvana"
 "Immense trees that grow only here in the Vaasa amidst the magical nature of
-
-the land and the elves.  The tall oaks standing next to them look small in
-
-comparison.
-
-"
+the land and the elves.  The tall oaks standing next to them look small in
+comparison.
+"
 -1
 S
 
 #70420
 "Small Clearing by a Fallen Oak"
 "The remains of a fallen oak rests on the ground offering a relatively
-
-comfortable place for bipeds to sit a while and admire the view.  The
-
-fall of the oak managed to crush several of the bushes and small trees in
-
-its path providing a small clearing of sorts.  Where a few crushed bushes
-
-still manage to grow the branches of new growth and of old growth, still
-
-struggling to recover from the devastating blow, hang over the fallen
-
-bole.
-
-"
+comfortable place for bipeds to sit a while and admire the view.  The
+fall of the oak managed to crush several of the bushes and small trees in
+its path providing a small clearing of sorts.  Where a few crushed bushes
+still manage to grow the branches of new growth and of old growth, still
+struggling to recover from the devastating blow, hang over the fallen
+bole.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -1335,49 +984,34 @@ D3
 E
 "greenery shrubbery plants bushes branches"
 "The plants around the perimeter seem to consist primarily of leatherleaf, with
-
-its thin green leaves and small, white bell flowers and knotweed with its
-
-broad, spade-like flowers and chains of small flowers.
-
-"
+its thin green leaves and small, white bell flowers and knotweed with its
+broad, spade-like flowers and chains of small flowers.
+"
 E
 "view"
 "The view is pretty much what you'd expect of a forest.  Trees, shrubs, and
-
-various other flora.  In places you see branches and leaves shifting from
-
-either a gentle breeze or the occasional squirrel or other specimen of
-
-wildlife.
-
-"
+various other flora.  In places you see branches and leaves shifting from
+either a gentle breeze or the occasional squirrel or other specimen of
+wildlife.
+"
 E
 "crushed"
 "The crushed bushes seem to be the remains of a stand of leatherleaf.  Though
-
-the perimeter of the small clearing is lined with it, the specimens under the
-
-fallen tree are hampered in their growth by its bulk.
-
-"
+the perimeter of the small clearing is lined with it, the specimens under the
+fallen tree are hampered in their growth by its bulk.
+"
 -1
 S
 
 #70421
 "The Vaasa"
 "You are encircled by the prodding and poking branches of leafy bushes. 
-
-Beneath you is a lush carpet of mosses, grasses and weeds.  Overhead is
-
-the verdant canopy obscures sight of the sky.  The dense forest growth
-
-surrounds you on all sides.
-
-"
+Beneath you is a lush carpet of mosses, grasses and weeds.  Overhead is
+the verdant canopy obscures sight of the sky.  The dense forest growth
+surrounds you on all sides.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D1
@@ -1391,70 +1025,46 @@ D2
 E
 "bushes branches greenery vegetation plants shrubbery foliage"
 "The prodding and poking branches turn out to be the branches of many densely
-
-packed leatherleaf shrubs.  The narrow leaves, though not so tightly clustered
-
-as some growths, grow in such profusion that they quickly obscure sight.  As
-
-you move about the leaves brush against you; somewhat rough-textured with
-
-scores of tiny dots covering their surface.
-
-"
+packed leatherleaf shrubs.  The narrow leaves, though not so tightly clustered
+as some growths, grow in such profusion that they quickly obscure sight.  As
+you move about the leaves brush against you; somewhat rough-textured with
+scores of tiny dots covering their surface.
+"
 E
 "leaves leaf"
 "The leaves are longer than they are wide, and rounded at both ends giving them
-
-a narrow appearance.  The surface of the leaves are textured with many small
-
-bumps which give them a rough, almost leathery feel.  Though a few of the
-
-leaves have curling brown ends where insects have devoured them, most of them
-
-are a healthy green.
-
-"
+a narrow appearance.  The surface of the leaves are textured with many small
+bumps which give them a rough, almost leathery feel.  Though a few of the
+leaves have curling brown ends where insects have devoured them, most of them
+are a healthy green.
+"
 E
 "mosses grasses weeds 1 down"
 "Despite the ample vegetation you can make out the rare patch of bare soil. 
-
-The grasses are short, and pale existing on as little sunlight as possible
-
-this far down in the forest growth.  The moss, in striking contrast, is a
-
-vibrant green and must subside on the nutrients in the soil moreso than the
-
-sunlight to have such a healthy appearance in an area so long devoid of direct
-
-sunlight.
-
-"
+The grasses are short, and pale existing on as little sunlight as possible
+this far down in the forest growth.  The moss, in striking contrast, is a
+vibrant green and must subside on the nutrients in the soil moreso than the
+sunlight to have such a healthy appearance in an area so long devoid of direct
+sunlight.
+"
 E
 "canopy 1 up sky"
 "High overhead the canopy forms a sky of green.  No seam or break mars the
-
-completeness of the mighty trees' crowns.
-
-"
+completeness of the mighty trees' crowns.
+"
 -1
 S
 
 #70422
 "The Vaasa"
 "A spray of color forms where countless little flowers, the largest
-
-growing no bigger than an inch across, grow from various points on frail
-
-vines.  The twining vines wrap their way up around the boles of the oaks,
-
-maples and shuvanas nearby in great profusion, nearly hiding the trees
-
-from sight.
-
-"
+growing no bigger than an inch across, grow from various points on frail
+vines.  The twining vines wrap their way up around the boles of the oaks,
+maples and shuvanas nearby in great profusion, nearly hiding the trees
+from sight.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -1472,57 +1082,38 @@ D3
 E
 "flowers"
 "There are literally thousands of flowers growing from the abundance of vines. 
-
-The colors range from a soft lavenders and periwinkle blues to bright yellows
-
-and bold crimsons.  In the middle of each little five petaled flower are
-
-striations of deeper colors that nicely offset the little blossoms.
-
-"
+The colors range from a soft lavenders and periwinkle blues to bright yellows
+and bold crimsons.  In the middle of each little five petaled flower are
+striations of deeper colors that nicely offset the little blossoms.
+"
 E
 "vines"
 "The flower-bedecked vines are actually quite frail when you look closely at
-
-them.  Their thin, wispy runners would provide no sense of support for
-
-climbing use, though they do seem sturdy enough for the blossoms that grow
-
-from them.
-
-"
+them.  Their thin, wispy runners would provide no sense of support for
+climbing use, though they do seem sturdy enough for the blossoms that grow
+from them.
+"
 E
 "trees oaks maples shuvanas"
 "A multitude of trees surround you.  This is, after all, a forest.  Among their
-
-number you count many types of trees, from elm and maple to yew and ash,
-
-though most notable of all are the giant shuvanas that make even the oaks
-
-appear small in contrast.
-
-"
+number you count many types of trees, from elm and maple to yew and ash,
+though most notable of all are the giant shuvanas that make even the oaks
+appear small in contrast.
+"
 -1
 S
 
 #70423
 "The Vaasa"
 "A break in the nearly seamless mass of the canopy high overhead provides
-
-quite a dramatic change in the level of light.  In daylight the break
-
-provides a swath of light wherein flattened grasses show that animals
-
-must like to rest.  At night the difference must be equally striking as
-
-the only star and moonlight to reach the forest floor breaks the complete
-
-darkness that exists everywhere else. 
-
-"
+quite a dramatic change in the level of light.  In daylight the break
+provides a swath of light wherein flattened grasses show that animals
+must like to rest.  At night the difference must be equally striking as
+the only star and moonlight to reach the forest floor breaks the complete
+darkness that exists everywhere else. 
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D2
@@ -1536,49 +1127,34 @@ D3
 E
 "break canopy 1 up"
 "A break in the forest canopy is visible as an absence of leaves while the
-
-densely packed leaves of the trees conceals all us from sight high above.
-
-"
+densely packed leaves of the trees conceals all us from sight high above.
+"
 E
 "grasses flattened 1 down ground"
 "The lush, green grasses growing here lay at odd angles from repeated pressing
-
-into the ground.  Oval depressions form amidst straighter stalks where animals
-
-have decided to lay down to bask or nap here during daylight hours.
-
-"
+into the ground.  Oval depressions form amidst straighter stalks where animals
+have decided to lay down to bask or nap here during daylight hours.
+"
 E
 "bushes branches greenery vegetation plants shrubbery foliage"
 "Though thick bushes grow nearby, the dominant plant lining the trail seems to
-
-be a lush green grass that grows several feet high in places.  The healthy
-
-grass bends easily to oncoming people and animals making this section of the
-
-woods perhaps easier to cross than some of the overgrown trails you've seen.
-
-"
+be a lush green grass that grows several feet high in places.  The healthy
+grass bends easily to oncoming people and animals making this section of the
+woods perhaps easier to cross than some of the overgrown trails you've seen.
+"
 -1
 S
 
 #70424
 "The Vaasa"
 "Sheltered in the deep of the Vaasa, you are surrounded on all sides by
-
-lush vegetation.  Green and brown vines wrap themselves around tall trees
-
-hoping to reach the pure sunlight high over head.  Small wildflowers
-
-blossom in random smatterings along the forest floor alongside stands of
-
-wild grasses and moss.
-
-"
+lush vegetation.  Green and brown vines wrap themselves around tall trees
+hoping to reach the pure sunlight high over head.  Small wildflowers
+blossom in random smatterings along the forest floor alongside stands of
+wild grasses and moss.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D1
@@ -1592,64 +1168,43 @@ D3
 E
 "vines"
 "The vines are alive, though somewhat frail in this world where sunlight is
-
-hard-won.  Most are unclimbable, though a few show promise and perhaps you
-
-could climb one of them.
-
-"
+hard-won.  Most are unclimbable, though a few show promise and perhaps you
+could climb one of them.
+"
 E
 "wildflowers flowers"
 "Small flowers growing in clusters wherever their seeds fell, they have
-
-produces small oases of color amidst the lush greenery of the Vaasa forest
-
-floor.  The majority of them seem to be a sky blue color, though others in
-
-pinks and soft yellows are scattered throughout as well.
-
-"
+produces small oases of color amidst the lush greenery of the Vaasa forest
+floor.  The majority of them seem to be a sky blue color, though others in
+pinks and soft yellows are scattered throughout as well.
+"
 E
 "grasses moss"
 "The grasses and moss that grow here look much as it does everywhere else. 
-
-They range in colors from lush green to light yellow or even brown.  In the
-
-deep shade of the forest floor its amazing that anything at all manages to
-
-grow.
-
-"
+They range in colors from lush green to light yellow or even brown.  In the
+deep shade of the forest floor its amazing that anything at all manages to
+grow.
+"
 E
 "trees elms"
 "A stand of elms that grow rather large for their species, though they still
-
-look small in comparison to nearby shuvanas.  A tangle of vines have sent
-
-creepers spiraling up the sides of some of the nearby elms.
-
-"
+look small in comparison to nearby shuvanas.  A tangle of vines have sent
+creepers spiraling up the sides of some of the nearby elms.
+"
 -1
 S
 
 #70425
 "The Vaasa"
 "Amidst the variety of shrubs and trees a multitude of flowers has taken
-
-root on the shallow hillside.  The flowers seem to have sprung up in an
-
-area curiously denuded of larger greenery and rest nestled amidst low
-
-lying weeds in the dark soil.  The relative spaciousness caused is
-
-short-lived, however, as the dense foliage quickly recovers at the
-
-periphery of the colorful growth.
-
-"
+root on the shallow hillside.  The flowers seem to have sprung up in an
+area curiously denuded of larger greenery and rest nestled amidst low
+lying weeds in the dark soil.  The relative spaciousness caused is
+short-lived, however, as the dense foliage quickly recovers at the
+periphery of the colorful growth.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -1663,70 +1218,46 @@ D1
 E
 "flowers"
 "Fragrant clusters of little flowers with blossoms of blue, violet and amber. 
-
-Each bloom has precisely five petals growing from its short stalk measuring
-
-anywhere from one to four inches from where it meets the dark soil.
-
-"
+Each bloom has precisely five petals growing from its short stalk measuring
+anywhere from one to four inches from where it meets the dark soil.
+"
 E
 "soil"
 "The dark soil lays in a long swath along the ground and seems to be the bed
-
-for the mass of colorful flowers.  The patch of soil doesn't seem to have been
-
-transported here, rather it seems a natural result of a decayed tree in its
-
-final stage.  Whatever shrubs once held dominance in this are must have fallen
-
-prey to the toppled giants that now provide nutrients for the new growth.
-
-"
+for the mass of colorful flowers.  The patch of soil doesn't seem to have been
+transported here, rather it seems a natural result of a decayed tree in its
+final stage.  Whatever shrubs once held dominance in this are must have fallen
+prey to the toppled giants that now provide nutrients for the new growth.
+"
 E
 "weeds"
 "Broad leaves with little spikes around their fringe lay close to the ground
-
-covering large sections of the dark soil.  The weeds seem to be vying with
-
-the flowers for control of the fertile soil.  At this point it seems to remain
-
-a stalemate as to which will win.  Perhaps if you are willing to sit here and
-
-wait a season or so you will find out which wins out, the weeds or the flowers.
-
-"
+covering large sections of the dark soil.  The weeds seem to be vying with
+the flowers for control of the fertile soil.  At this point it seems to remain
+a stalemate as to which will win.  Perhaps if you are willing to sit here and
+wait a season or so you will find out which wins out, the weeds or the flowers.
+"
 E
 "bushes branches greenery vegetation plants shrubbery foliage"
 "Around the periphery you see dense clusters of shrubs ranging in all sizes and
-
-manners.  Glossy green-leaved azaleas sprouting colorful flowers mingle with
-
-stands of broad-leaved knotweed and berry-laden elderberry bushes.
-
-"
+manners.  Glossy green-leaved azaleas sprouting colorful flowers mingle with
+stands of broad-leaved knotweed and berry-laden elderberry bushes.
+"
 -1
 S
 
 #70426
 "The Vaasa"
 "The immense boles of shuvana trees are intermingled with younger species
-
-like oak and elm providing a treescape of many layers.  Around you and
-
-overhead the bushes and younger trees provide several layers of random
-
-growth.  Above the mass of growths the tiers of life become more orderly
-
-as the mature trees top out at average heights.  The oaks, slightly
-
-taller than the elms, overshadowing their smaller siblings and highest of
-
-all the immense mass of the shuvanas hiding the sky.
-
-"
+like oak and elm providing a treescape of many layers.  Around you and
+overhead the bushes and younger trees provide several layers of random
+growth.  Above the mass of growths the tiers of life become more orderly
+as the mature trees top out at average heights.  The oaks, slightly
+taller than the elms, overshadowing their smaller siblings and highest of
+all the immense mass of the shuvanas hiding the sky.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D1
@@ -1744,55 +1275,37 @@ D3
 E
 "bushes branches greenery vegetation plants shrubbery foliage"
 "The serrated-edged leaves and bramble-laden branches quickly distinguish the
-
-raspberry plants that are rapidly taking over this small corner of the woods
-
-from the less painful flora.  Smaller stands of elderberry and spicebush are
-
-visible in various directions but it seems the raspberry bushes are wining out
-
-over all.
-
-"
+raspberry plants that are rapidly taking over this small corner of the woods
+from the less painful flora.  Smaller stands of elderberry and spicebush are
+visible in various directions but it seems the raspberry bushes are wining out
+over all.
+"
 E
 "oak"
 "A tree perhaps considered large anywhere else in the world, the oak is little
-
-more than a small cousin compared to the ancient shuvanas.  Acorn fragments
-
-littler the ground around the bases of the oaks, victims of hungry squirrels.
-
-"
+more than a small cousin compared to the ancient shuvanas.  Acorn fragments
+littler the ground around the bases of the oaks, victims of hungry squirrels.
+"
 E
 "shuvanas"
 "The largest known trees in the realms are these mighty giants found only here
-
-in the Vaasa.  The smooth bark of their boles stretches high above the tops of
-
-most other trees before the lowest branches even begin to branch outward.
-
-"
+in the Vaasa.  The smooth bark of their boles stretches high above the tops of
+most other trees before the lowest branches even begin to branch outward.
+"
 -1
 S
 
 #70427
 "The Vaasa"
 "Forest greenery in all its many forms surrounds you as far as the eye can
-
-see.  As you wander aimlessly through the woods you are forced to move aside
-
-branches holding broad green leaves, narrow yellow-green leaves, and thick
-
-fern-like leaves with a burgandy hue lining each stem.  The variety appears
-
-nearly endless as you find at one moment you trod on gentle grasses and the
-
-next a variety of soft, spongy brown moss.
-
-"
+see.  As you wander aimlessly through the woods you are forced to move aside
+branches holding broad green leaves, narrow yellow-green leaves, and thick
+fern-like leaves with a burgandy hue lining each stem.  The variety appears
+nearly endless as you find at one moment you trod on gentle grasses and the
+next a variety of soft, spongy brown moss.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D1
@@ -1806,53 +1319,36 @@ D3
 E
 "bushes branches greenery vegetation plants shrubbery foliage"
 "The shrubbery is nearly completely dominated by spiceweed and sweet shrub in
-
-various stages of growth and development.  The fragrance of the two plants
-
-fill the air with an almost cloying sweetness due to the profusion with which
-
-they fill the area.
-
-"
+various stages of growth and development.  The fragrance of the two plants
+fill the air with an almost cloying sweetness due to the profusion with which
+they fill the area.
+"
 E
 "moss spongy brown"
 "The spongy brown moss, like so many others of its kind, provides a soft,
-
-almost carpet-like covering for the forest floor.  Closer examination of the
-
-moss reveals that it is formed of soft, fluffy fibres that intertwine in
-
-countless, random patterns.
-
-"
+almost carpet-like covering for the forest floor.  Closer examination of the
+moss reveals that it is formed of soft, fluffy fibres that intertwine in
+countless, random patterns.
+"
 E
 "sweet spiceweed leaves"
 "The spear-head shaped leaves of the foliage provide a variety of color to the
-
-view in this area.  A scent very similar to that of spiced apples seems to be
-
-coming from these colorful plants.
-
-"
+view in this area.  A scent very similar to that of spiced apples seems to be
+coming from these colorful plants.
+"
 -1
 S
 
 #70428
 "Faint Trail"
 "You hear the gentle sussurration of leaves as one of the forest animals,
-
-a raccoon perhaps, makes its way unseen through the bushes nearby.  Broad
-
-leaves grow close together on the densely packed bushes that make up the
-
-vegetation.  In places, the vegetation threatens to completely obscure
-
-the faint north-south running trail.
-
-"
+a raccoon perhaps, makes its way unseen through the bushes nearby.  Broad
+leaves grow close together on the densely packed bushes that make up the
+vegetation.  In places, the vegetation threatens to completely obscure
+the faint north-south running trail.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -1870,52 +1366,34 @@ D2
 E
 "vegetation plants bushes greenery"
 "This little corner of the world seems to have been taken over by a grove of
-
-sweet shrub and spiceweed.  Amidst the large plants that seem to dominate this
-
-place smaller yellow-root shrubs poke through.  The yellowish bark and stems
-
-of the small yellow-root contrasting with the deeper shades of green produced
-
-by the dominant plants.
-
-"
+sweet shrub and spiceweed.  Amidst the large plants that seem to dominate this
+place smaller yellow-root shrubs poke through.  The yellowish bark and stems
+of the small yellow-root contrasting with the deeper shades of green produced
+by the dominant plants.
+"
 E
 "leaves"
 "The leaves of the sweet shrub are a deep green and soft on the underside. 
-
-Where they come together at the stem you can sometimes find its red brown
-
-strawberry-scented flowers.  The somewhat larger spiceweed, gorwing up to
-
-about fifteen feet, has flowers of a lighter shade that nicely show off its
-
-light yellow flowers and red berries.  At ground level the primarily green
-
-coloration of the flora shifts to yellow where the smaller yellow-root shrubs
-
-peek through.
-
-"
+Where they come together at the stem you can sometimes find its red brown
+strawberry-scented flowers.  The somewhat larger spiceweed, gorwing up to
+about fifteen feet, has flowers of a lighter shade that nicely show off its
+light yellow flowers and red berries.  At ground level the primarily green
+coloration of the flora shifts to yellow where the smaller yellow-root shrubs
+peek through.
+"
 -1
 S
 
 #70429
 "Faint Trail"
 "The forest growth seems somewhat less dense here forming a gentle glade
-
-split by a faint trail.  The soft plants and grasses are flattened in
-
-places where deer and other animal have recently laid down to sleep. 
-
-Towards the periphery the small glade is unevenly ringed by dense forest
-
-growth of thick bushes and massive trees.
-
-"
+split by a faint trail.  The soft plants and grasses are flattened in
+places where deer and other animal have recently laid down to sleep. 
+Towards the periphery the small glade is unevenly ringed by dense forest
+growth of thick bushes and massive trees.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -1929,55 +1407,37 @@ D2
 E
 "ring periphery shrubs bushes growth"
 "Most of the plants along the periphery are large sweet-shrub plants filling
-
-the air with an aromatic scent.  Tufts of red appear amidst their deep green
-
-leaves where the flowers have grown.  An occassional, lonely spiceweed
-
-overshadows the over shrubs seperated from its kin by the clusters of sweet
-
-shrub.
-
-"
+the air with an aromatic scent.  Tufts of red appear amidst their deep green
+leaves where the flowers have grown.  An occassional, lonely spiceweed
+overshadows the over shrubs seperated from its kin by the clusters of sweet
+shrub.
+"
 E
 "massive shuvana trees"
 "An immense shuvana grows nearby to the southwest and others are visible nearby
-
-as well.  Closer at hand you can see other trees too; oaks, elms, birch and
-
-maple making up the majority of the nearby trees.
-
-"
+as well.  Closer at hand you can see other trees too; oaks, elms, birch and
+maple making up the majority of the nearby trees.
+"
 E
 "grasses greenery"
 "Bushes ring the gentle glade obscuring it from easy sight.  The soft grasses
-
-inside are cropped to a tolerable height by the constant grazing of animals
-
-that come here to rest.  Flattened grasses show where animals have lay down to
-
-rest, by the size probably a small herd of deer.
-
-"
+inside are cropped to a tolerable height by the constant grazing of animals
+that come here to rest.  Flattened grasses show where animals have lay down to
+rest, by the size probably a small herd of deer.
+"
 -1
 S
 
 #70430
 "Faint Trail"
 "The faint trail narrows considerably as forest growth does its best to reclaim
-
-the fertile soil.  Untended branches grow partway into the trail and have to
-
-be moved aside or you run the risk of getting poked in the eye.  Underfoot,
-
-the ground is covered in large mossy patches which show evidence that a few
-
-people have walked this way to tear the ground with their hardened footwear.
-
-"
+the fertile soil.  Untended branches grow partway into the trail and have to
+be moved aside or you run the risk of getting poked in the eye.  Underfoot,
+the ground is covered in large mossy patches which show evidence that a few
+people have walked this way to tear the ground with their hardened footwear.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D1
@@ -1991,40 +1451,28 @@ D2
 E
 "bushes branches greenery vegetation plants shrubbery"
 "Most of the branches that bar the trail belong to the sweet shrub plants that
-
-live here, their red-brown flower giving off a scent like strawberries. 
-
-Mingling with the sweet shrub, stands of fragrant sumac also grow dense enough
-
-to become a nuisance as each tripping step release their scent into the air.
-
-"
+live here, their red-brown flower giving off a scent like strawberries. 
+Mingling with the sweet shrub, stands of fragrant sumac also grow dense enough
+to become a nuisance as each tripping step release their scent into the air.
+"
 E
 "moss"
 "The moss has a marbled pattern of swirling yellows and greens where several
-
-closesly related species vie for control of the moist ground.
-
-"
+closesly related species vie for control of the moist ground.
+"
 -1
 S
 
 #70431
 "Faint Trail"
 "An animal trail runs east and west here winding its way around many
-
-shuvana roots, some of which are quite large.  There is a vague
-
-impression that the trail also broke away north from here, but the dense
-
-undergrowth has reclaimed it now.  To the east, the trail disappears into
-
-the shadows cast by one of the great shuvana roots.
-
-"
+shuvana roots, some of which are quite large.  There is a vague
+impression that the trail also broke away north from here, but the dense
+undergrowth has reclaimed it now.  To the east, the trail disappears into
+the shadows cast by one of the great shuvana roots.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -2042,67 +1490,43 @@ D3
 E
 "bushes branches greenery vegetation plants shrubbery undergrowth"
 "The trefoil pattern of rounded-edged leaflets of fragrant sumac form the
-
-majority of the undergrowth.  Whatever nutrients the plants seek must be found
-
-in abundance here where the plants have overrun nearly everything.  The dense
-
-bushes grow as tall as eight feet in several areas and would form a formidable
-
-task for either a nimble elf or a strong ent to pass through.
-
-"
+majority of the undergrowth.  Whatever nutrients the plants seek must be found
+in abundance here where the plants have overrun nearly everything.  The dense
+bushes grow as tall as eight feet in several areas and would form a formidable
+task for either a nimble elf or a strong ent to pass through.
+"
 E
 "roots shuvanas"
 "The roots of the shuvanas stretch far from the base of their great boles and
-
-even this far out they are large enough to be a hindrance.  Between the dense
-
-vegetation in the area and the meanderings caused by the presence of abundant
-
-shuvana roots the trail is easily lost, only to be found again through
-
-perseverence.
-
-"
+even this far out they are large enough to be a hindrance.  Between the dense
+vegetation in the area and the meanderings caused by the presence of abundant
+shuvana roots the trail is easily lost, only to be found again through
+perseverence.
+"
 E
 "1 north trail"
 "Between the densely packed greenery that thrives in this section of the woods
-
-and the large roots that force the trail to meander about it is hard to keep
-
-track of where the trail actually exists.  In places it seems to disappear
-
-completely in the wild growth only to continue again a few paces away. 
-
-Through a break in the greenery it almost looks as if the trail once led
-
-northward as well, but has now been completely consumed by the abundant
-
-shrubbery.
-
-"
+and the large roots that force the trail to meander about it is hard to keep
+track of where the trail actually exists.  In places it seems to disappear
+completely in the wild growth only to continue again a few paces away. 
+Through a break in the greenery it almost looks as if the trail once led
+northward as well, but has now been completely consumed by the abundant
+shrubbery.
+"
 -1
 S
 
 #70432
 "The Vaasa"
 "The great boles of the shuvana trees surround you, visible as great
-
-columns reaching skyward out of the dense foliage that enmeshes you. 
-
-Leafy vegetation and thick shrubbery offer excellent concealment for the
-
-animals and beings that dwell here.  The constant rustling of branches
-
-and leaves around you by unseen sources is ample evidence of the
-
-effectiveness of the concealment.
-
-"
+columns reaching skyward out of the dense foliage that enmeshes you. 
+Leafy vegetation and thick shrubbery offer excellent concealment for the
+animals and beings that dwell here.  The constant rustling of branches
+and leaves around you by unseen sources is ample evidence of the
+effectiveness of the concealment.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -2116,50 +1540,33 @@ D2
 E
 "boles shuvanas trees"
 "The shuvanas lance upwards out of the greenery like great pillars holding up
-
-the emerald canopy that is the sky of this forest realm.  Smaller trees like
-
-oak and ash try to grow where they can, mingling with the shuvanas but looking
-
-nothing so much like large bushes in contrast to their larger cousins.
-
-"
+the emerald canopy that is the sky of this forest realm.  Smaller trees like
+oak and ash try to grow where they can, mingling with the shuvanas but looking
+nothing so much like large bushes in contrast to their larger cousins.
+"
 E
 "bushes branches greenery vegetation plants shrubbery foliage"
 "The foliage is a blend of countless varieties common to the region, though a
-
-few seem to be gaining a greater claim than others.  Among the larger
-
-groupings you see stands of sweet pepperbush dotted with clusters of little
-
-white flowers.  Greenish-yellow leaves tipped with a pink blush dot the
-
-branches of the abundant menziesia bushes creating a nice contrast to the
-
-sweet pepperbushes.  Southward the way seems dominated by growths of fragrant
-
-sumac that only grow denser the further you go in that direction.
-
-"
+few seem to be gaining a greater claim than others.  Among the larger
+groupings you see stands of sweet pepperbush dotted with clusters of little
+white flowers.  Greenish-yellow leaves tipped with a pink blush dot the
+branches of the abundant menziesia bushes creating a nice contrast to the
+sweet pepperbushes.  Southward the way seems dominated by growths of fragrant
+sumac that only grow denser the further you go in that direction.
+"
 -1
 S
 
 #70433
 "Under a Great Root"
 "Animal tracks in the fertile soil show that the trail passes under the
-
-great root.  The root rises from the base of a shuvana tree south of
-
-here, arching overhead only to dip deep down into the ground again just
-
-north of here.  Proliferant vegetation grows right up to the edge of the
-
-openings to the east and west beyond which lies the rest of the forest.
-
-"
+great root.  The root rises from the base of a shuvana tree south of
+here, arching overhead only to dip deep down into the ground again just
+north of here.  Proliferant vegetation grows right up to the edge of the
+openings to the east and west beyond which lies the rest of the forest.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465604 0
 3 9 0
 D1
@@ -2173,40 +1580,28 @@ D3
 E
 "1 up root"
 "The massive shuvana root forms a what could either be a wide arch or a short
-
-tunnel.  Small plants, mostly mosses have found purchase in the nearly
-
-lightless soil on the ground or on the cool underbark of the root.
-
-"
+tunnel.  Small plants, mostly mosses have found purchase in the nearly
+lightless soil on the ground or on the cool underbark of the root.
+"
 E
 "bushes branches greenery vegetation plants shrubbery foliage"
 "The opening to the west is jammed with the scented leaves of fragrant sumac. 
-
-To the east the opening is crowded by the glossy, dark green clusters of
-
-azalea leaves.
-
-"
+To the east the opening is crowded by the glossy, dark green clusters of
+azalea leaves.
+"
 -1
 S
 
 #70434
 "Faint Trail"
 "The animal trail twists and turns here, avoiding branches and roots often. 
-
-For the most part it seems to run predominantly west and south of here. 
-
-Particularly large ferns dapple the ground in shadow and light, their
-
-large fronds arcing overhead.  A break in the dense foliage to the south
-
-shows a large clearing in that direction.
-
-"
+For the most part it seems to run predominantly west and south of here. 
+Particularly large ferns dapple the ground in shadow and light, their
+large fronds arcing overhead.  A break in the dense foliage to the south
+shows a large clearing in that direction.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D2
@@ -2220,57 +1615,38 @@ D3
 E
 "bushes branches greenery vegetation plants shrubbery foliage"
 "The loamy soil seems to have provided a good ground for the growth of azaleas
-
-and ferns that seem to own this little spot of the forest.  The azaleas seem
-
-densest to the north and west displaying their flowers in beautiful sprays of
-
-yellow, orange and red.  As your gaze travels east and south of the azaleas
-
-the mix terns to lush, green ferns of giant proportions that form efficient
-
-walls to block easy sight in those directions.
-
-"
+and ferns that seem to own this little spot of the forest.  The azaleas seem
+densest to the north and west displaying their flowers in beautiful sprays of
+yellow, orange and red.  As your gaze travels east and south of the azaleas
+the mix terns to lush, green ferns of giant proportions that form efficient
+walls to block easy sight in those directions.
+"
 E
 "1 west root"
 "It looks like there's a large shuvana root arcing over the trail west of
-
-here.  In the shadows of the root it is hard to make anything out though by
-
-the vegetation surrounding the root its probably safe to assume the forest
-
-continues on the other side.
-
-"
+here.  In the shadows of the root it is hard to make anything out though by
+the vegetation surrounding the root its probably safe to assume the forest
+continues on the other side.
+"
 E
 "1 south clearing field"
 "Where the trail leads south there is a parting between two large ferns wherein
-
-you can see a large field of tall grass and heather.
-
-"
+you can see a large field of tall grass and heather.
+"
 -1
 S
 
 #70435
 "Clearing"
 "Lavender kissed waves of verdant heather ripple across this sprawling field. 
-
-From this vantage point in the northwest corner of the meadow, the shuvana
-
-trees, rising in the distant south and east, seem almost normal in size. 
-
-Those closer, to the north and west, remove any illusion that this is a lesser
-
-forest.  A thinning in the greenery reveals a game trail northward, where
-
-animals enter and leave the woodlands.
-
-"
+From this vantage point in the northwest corner of the meadow, the shuvana
+trees, rising in the distant south and east, seem almost normal in size. 
+Those closer, to the north and west, remove any illusion that this is a lesser
+forest.  A thinning in the greenery reveals a game trail northward, where
+animals enter and leave the woodlands.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 2 9 0
 D0
@@ -2288,44 +1664,30 @@ D2
 E
 "heather lavender waves verdant"
 "Fleshy, deep green leaves bedecked with vibrant, lavender flowers ripple in a
-
-sea of green across the spreading field.  Multi-hued butterflies dart in and
-
-around the low-growing, evergreen clusters.
-
-"
+sea of green across the spreading field.  Multi-hued butterflies dart in and
+around the low-growing, evergreen clusters.
+"
 E
 "thinning greenery trail north"
 "A wall of greenery, vines and the thinning undergrowth of the forest, form a
-
-wall of sorts along the northern border of the meadow.  At one point, some
-
-distance to the east, a well-traveled game trail leads northward through a
-
-thinning in the lush and vibrant vegetation.
-
-"
+wall of sorts along the northern border of the meadow.  At one point, some
+distance to the east, a well-traveled game trail leads northward through a
+thinning in the lush and vibrant vegetation.
+"
 -1
 S
 
 #70436
 "Clearing"
 "Small, powder-puff balls float on a gentle breeze, the pollen of some plant
-
-that thrives in the fertile soil of the Vaasa.  You stand in the northeast
-
-corner of a sprawling meadow alive with waves of rippling heather.  Off in the
-
-distance the mighty shuvana trees look almost mundane in size.  East of here,
-
-the foliage and heavy undergrowth of the encroaching forest thins, revealing a
-
-well-traveled game trail leading north.
-
-"
+that thrives in the fertile soil of the Vaasa.  You stand in the northeast
+corner of a sprawling meadow alive with waves of rippling heather.  Off in the
+distance the mighty shuvana trees look almost mundane in size.  East of here,
+the foliage and heavy undergrowth of the encroaching forest thins, revealing a
+well-traveled game trail leading north.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 2 9 0
 D1
@@ -2343,57 +1705,38 @@ D3
 E
 "balls puff"
 "Surround by hundreds of snow-white, feathery filaments, the small, light brown
-
-seeds float through the air, dancing lightly on the breeze, never touching
-
-each other.
-
-"
+seeds float through the air, dancing lightly on the breeze, never touching
+each other.
+"
 E
 "heather meadow waves rippling"
 "A surprising break in the forest, the meadow stretches outward, bounded on all
-
-four sides by ancient shuvana trees.  Growing rife in the field, clusters of
-
-low growing heather and a handful of other plants add brilliant color to the
-
-otherwise simple, green field.  The difference in height of the various bushes
-
-seems to ripple like a rough sea on a windy day.
-
-"
+four sides by ancient shuvana trees.  Growing rife in the field, clusters of
+low growing heather and a handful of other plants add brilliant color to the
+otherwise simple, green field.  The difference in height of the various bushes
+seems to ripple like a rough sea on a windy day.
+"
 E
 "foliage forest trail"
 "The Vaasa crowds close to the edge of the clearing on all four sides, the
-
-furthest reaches of the canopy lost to site lost into the mists of distance. 
-
-Towering shuvana and other lesser trees loom over the lush undergrowth
-
-covering the forest floor.  A break in the westward-lying foliage reveals an
-
-obscure game trail leading north.
-
-"
+furthest reaches of the canopy lost to site lost into the mists of distance. 
+Towering shuvana and other lesser trees loom over the lush undergrowth
+covering the forest floor.  A break in the westward-lying foliage reveals an
+obscure game trail leading north.
+"
 -1
 S
 
 #70437
 "Clearing"
 "Undulating like ponderous waves in a seaward blowing breeze, the heather wafts
-
-fragrant into the lavender-hued field.  Startled by an unseen menace, a flock
-
-of ulannu jays take flight, wings beating rhythmically as they disappear into
-
-the distant canopy.  To the north and west the meadow continues, bounded by
-
-the forest's edge.
-
-"
+fragrant into the lavender-hued field.  Startled by an unseen menace, a flock
+of ulannu jays take flight, wings beating rhythmically as they disappear into
+the distant canopy.  To the north and west the meadow continues, bounded by
+the forest's edge.
+"
 "[Zithuan] spellchecked
-
-"
+"
 301465600 0
 2 9 0
 D0
@@ -2407,55 +1750,37 @@ D3
 E
 "heather waves field"
 "Deep green in color, the leaves of the evergreen heather are topped by minute
-
-purple flowers.  The small-size shrubs undulate back and forth like waves in a
-
-breezy sea, wafting a fresh clean scent into the air.  Save for a few, odd
-
-berry bushes the heather dominates the broad clearing set deep within the
-
-Vaasa's heart.
-
-"
+purple flowers.  The small-size shrubs undulate back and forth like waves in a
+breezy sea, wafting a fresh clean scent into the air.  Save for a few, odd
+berry bushes the heather dominates the broad clearing set deep within the
+Vaasa's heart.
+"
 E
 "flock ulannu jays"
 "The whoosh of flapping wings disturbs the silence as a flock of ulannu jays
-
-takes flight, disturbed by some unknown menace.  The brilliant
-
-sapphire-colored birds rise quickly into the foliage of the canopy, soon
-
-disappearing from site among the branches of a nearby shuvana.
-
-"
+takes flight, disturbed by some unknown menace.  The brilliant
+sapphire-colored birds rise quickly into the foliage of the canopy, soon
+disappearing from site among the branches of a nearby shuvana.
+"
 E
 "canopy"
 "The forest canopy, formed by the lofty shuvana trees, melts into the distant
-
-sky, towering over the lesser oaks and elms whose crests lie below the lowest
-
-branches of the stately forest giants.
-
-"
+sky, towering over the lesser oaks and elms whose crests lie below the lowest
+branches of the stately forest giants.
+"
 -1
 S
 
 #70438
 "The Vaasa"
 "Though there are no actual trails appearing here, countless animal tracks
-
-cross the ground here as if it were a popular gathering spot.  The tracks
-
-seem to lead off mostly to the north and east, deeper into the forest, or
-
-westward into a large clearing.
-
-"
+cross the ground here as if it were a popular gathering spot.  The tracks
+seem to lead off mostly to the north and east, deeper into the forest, or
+westward into a large clearing.
+"
 "[Zithuan] spellchecked
-
-[Zithuan] needs extras
-
-"
+[Zithuan] needs extras
+"
 301465600 0
 3 9 0
 D0
@@ -2476,17 +1801,12 @@ S
 #70439
 "Game Trail in the Vaasa"
 "The green vegetation begins to thicken to the north, forcing the ambling
-
-tracks of the animals onto a single game trail.  To the south the
-
-undergrowth is less dense and the tracks widen out onto several paths.
-
-"
+tracks of the animals onto a single game trail.  To the south the
+undergrowth is less dense and the tracks widen out onto several paths.
+"
 "[Zithuan] spellchecked
-
-[Zithuan] needs extras
-
-"
+[Zithuan] needs extras
+"
 301465600 0
 3 9 0
 D0
@@ -2503,23 +1823,15 @@ S
 #70440
 "The Vaasa"
 "A good number of obvious animal tracks lead in from the west only to
-
-rapidly disappear as the ground becomes less yielding to the east.  The
-
-low bushes begin to gain size and mass toward the east as well, their
-
-root systems leeching more of the moisture from the ground to dry it.  As
-
-the vegetation grows thicker, the way becomes harder forcing you to
-
-frequently move branches that obstruct your path.
-
-"
+rapidly disappear as the ground becomes less yielding to the east.  The
+low bushes begin to gain size and mass toward the east as well, their
+root systems leeching more of the moisture from the ground to dry it.  As
+the vegetation grows thicker, the way becomes harder forcing you to
+frequently move branches that obstruct your path.
+"
 "[Zithuan] spellchecked
-
-[Zithuan] needs extras
-
-"
+[Zithuan] needs extras
+"
 301465600 0
 3 9 0
 D2
@@ -2536,25 +1848,16 @@ S
 #70441
 "The Vaasa"
 "The thick tangle of branches from the dense shrubbery around you makes
-
-progress a little difficult.  As you travel about you are buffeted by
-
-thick branches that yield only with hard work on your part.  Countless
-
-leaves on the branches tend to obscure your sight beyond a few feet in
-
-any direction.  No matter how many of the branches you break back or move
-
-aside, there always seems to be two more ready to spring into the space
-
-created.
-
-"
+progress a little difficult.  As you travel about you are buffeted by
+thick branches that yield only with hard work on your part.  Countless
+leaves on the branches tend to obscure your sight beyond a few feet in
+any direction.  No matter how many of the branches you break back or move
+aside, there always seems to be two more ready to spring into the space
+created.
+"
 "[Zithuan] spellchecked
-
-[Zithuan] needs extras
-
-"
+[Zithuan] needs extras
+"
 301465600 0
 3 9 0
 D0
@@ -2571,23 +1874,15 @@ S
 #70442
 "The Vaasa"
 "A gentle breeze carries on it the gentle sound of birdsong from almost
-
-every direction.  multi-colored flowers and leaves spring forth from the
-
-various and sundry levels of forest growths that is the undisputed master
-
-of this terrain.  Between the mosses and grasses on the ground, the
-
-multitude of small and large shrubs and the great trees, not a bare patch
-
-of earth is visible anywhere.
-
-"
+every direction.  multi-colored flowers and leaves spring forth from the
+various and sundry levels of forest growths that is the undisputed master
+of this terrain.  Between the mosses and grasses on the ground, the
+multitude of small and large shrubs and the great trees, not a bare patch
+of earth is visible anywhere.
+"
 "[Zithuan] spellchecked
-
-[Zithuan] needs extras
-
-"
+[Zithuan] needs extras
+"
 301465600 0
 3 9 0
 D0
@@ -2608,21 +1903,14 @@ S
 #70443
 "The Vaasa"
 "A dying elm stands here, its last years forlorn of leaves like some kind of
-
-wooden skeleton.  Where its proud foliage should add to the lower canopy,
-
-only a gaping hole remains giving clear view of the upper canopy that
-
-consists solely of shuvana trees.  Around the elm, nearby foliage seems
-
-healthy and green.
-
-"
+wooden skeleton.  Where its proud foliage should add to the lower canopy,
+only a gaping hole remains giving clear view of the upper canopy that
+consists solely of shuvana trees.  Around the elm, nearby foliage seems
+healthy and green.
+"
 "[Zithuan] spellchecked
-
-[Zithuan] needs more extras
-
-"
+[Zithuan] needs more extras
+"
 301465600 0
 3 9 0
 D1
@@ -2636,35 +1924,24 @@ D2
 E
 "elm"
 "The leaves are all gone and its branches shortened by decay to short, thick
-
-stubs.  Insects have worked away at it for quite some time and it is nearly
-
-devoid of its bark.  Sections of it break away and crumble into a dry,
-
-splintery pulp.  Nothing seems inordinately wrong with it.  Some natural
-
-malady must have occured and its time was past.
-
-"
+stubs.  Insects have worked away at it for quite some time and it is nearly
+devoid of its bark.  Sections of it break away and crumble into a dry,
+splintery pulp.  Nothing seems inordinately wrong with it.  Some natural
+malady must have occured and its time was past.
+"
 -1
 S
 
 #70444
 "The Vaasa"
 "The ground here is thoroughly covered in a thick carpet of lush moss.  The
-
-moss runs from green to yellow, from dull to vibrant in a patchwork quilt of
-
-color.  Around you the densely packed trees continue to stand their guard, the
-
-silent sentinels of the forest.
-
-"
+moss runs from green to yellow, from dull to vibrant in a patchwork quilt of
+color.  Around you the densely packed trees continue to stand their guard, the
+silent sentinels of the forest.
+"
 "[Zithuan] spellchecked
-
-[Zithuan] needs extras
-
-"
+[Zithuan] needs extras
+"
 301465600 0
 3 9 0
 D0
@@ -2681,21 +1958,14 @@ S
 #70445
 "The Vaasa"
 "The dense greenery provides little choice of where to go.  Each step is
-
-dictated by what can or can't be moved and several times you are forced to
-
-backtrack to find a way around a tangle too dense to push through.  Tangles
-
-like this form excellent warrens for smaller animals that can hide from larger
-
-predators such as you.
-
-"
+dictated by what can or can't be moved and several times you are forced to
+backtrack to find a way around a tangle too dense to push through.  Tangles
+like this form excellent warrens for smaller animals that can hide from larger
+predators such as you.
+"
 "[Elfir] Spellchecked
-
-[Elfir] Acode to find mob in tangles
-
-"
+[Elfir] Acode to find mob in tangles
+"
 301465600 0
 3 9 0
 D2
@@ -2712,25 +1982,16 @@ S
 #70446
 "The Vaasa"
 "The thick undergrowth tangles about you catching in armor and tearing at
-
-your clothing managing to slow you down.  Every step must be carefully
-
-chosen lest you catch your foot on a root or low branch and chance
-
-twisting an ankle or worse.  Green ivy has wrapped itself around the
-
-branches of most of the plants and grows rampant in this section of the
-
-woods.
-
-"
+your clothing managing to slow you down.  Every step must be carefully
+chosen lest you catch your foot on a root or low branch and chance
+twisting an ankle or worse.  Green ivy has wrapped itself around the
+branches of most of the plants and grows rampant in this section of the
+woods.
+"
 "[Elfir] Needs acode for first sentence
-
-[Elfir] Walking annoyance acode
-
-[Elfir] Spellchecked
-
-"
+[Elfir] Walking annoyance acode
+[Elfir] Spellchecked
+"
 301465600 0
 3 9 0
 D0
@@ -2747,29 +2008,18 @@ S
 #70447
 "The Vaasa"
 "As you wend your way through the trail-less woodland you are forced to
-
-contend with unyielding branches, troublesome roots and tricky footing
-
-over rock and leaf-filled depressions.  Though difficult and at times
-
-even treacherous to get here, the woods yield as many rewards as it does
-
-dangers.  The crystal drops of clear dew hanging from tilted leaves yield
-
-up such treasures as small rainbows in the air.  The gentle breeze
-
-carries with it the aromatic bouquet of nearby flowers and the sound of a
-
-nearby brook burbles along with it.
-
-"
+contend with unyielding branches, troublesome roots and tricky footing
+over rock and leaf-filled depressions.  Though difficult and at times
+even treacherous to get here, the woods yield as many rewards as it does
+dangers.  The crystal drops of clear dew hanging from tilted leaves yield
+up such treasures as small rainbows in the air.  The gentle breeze
+carries with it the aromatic bouquet of nearby flowers and the sound of a
+nearby brook burbles along with it.
+"
 "[Elfir] Spellchecked
-
-[Elfir] Walking annoyance acode
-
-[Elfir] Look rainbows
-
-"
+[Elfir] Walking annoyance acode
+[Elfir] Look rainbows
+"
 301465600 0
 3 9 0
 D2
@@ -2786,23 +2036,15 @@ S
 #70448
 "Near a Decomposing Shuvana"
 "Amidst the proliferation of vegetation, both ground shrubbery and
-
-high-rising trees, you have come across the remains of shuvana that has
-
-spent years decomposing.  Surrounded on all sides by greenery, the
-
-remains have become the focal point for a horde of insects.  Trails of
-
-termites and wood ants, among other things, swarm over parts of the
-
-fallen giant assisting the natural forces of decay that are slowly
-
-creating enriched soil for the new growth.
-
-"
+high-rising trees, you have come across the remains of shuvana that has
+spent years decomposing.  Surrounded on all sides by greenery, the
+remains have become the focal point for a horde of insects.  Trails of
+termites and wood ants, among other things, swarm over parts of the
+fallen giant assisting the natural forces of decay that are slowly
+creating enriched soil for the new growth.
+"
 "[Elfir] Something with the insects and dead shuvana
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -2819,19 +2061,13 @@ S
 #70449
 "Under a Shuvana Root"
 "The root of a large shuvana tree arcs overhead here creating a brief
-
-tunnel in the midst of the dense foliage.  Healthy green ivies dangle
-
-down from their perch atop the roots forming living curtains that must be
-
-parted as you pass through them.
-
-"
+tunnel in the midst of the dense foliage.  Healthy green ivies dangle
+down from their perch atop the roots forming living curtains that must be
+parted as you pass through them.
+"
 "[Elfir] Spellchecked
-
-[Elfir] No.scan exits and leaving acode made
-
-"
+[Elfir] No.scan exits and leaving acode made
+"
 301465604 0
 3 9 0
 D1
@@ -2846,18 +2082,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@gYou push aside the ivy as you $t $T.@n
-
-"
+"
 E
 "to_room"
 "$n pushes aside the ivy as $e $t $T.
-
-"
+"
 !
 3 0 6
 -1
@@ -2866,23 +2099,15 @@ S
 #70450
 "The Vaasa"
 "A small clearing, no more than a lessening of the dense foliage really,
-
-has formed in this place.  Flattened grasses and plants show where
-
-animals have come to lay for a time either to rest or drink at the edge
-
-of the crystal clear sylvan pool that has formed here.  A steady drip of
-
-water falls from high overhead to collect in conspicuously well-placed
-
-plant leaves that funnel all the water neatly into the pool.
-
-"
+has formed in this place.  Flattened grasses and plants show where
+animals have come to lay for a time either to rest or drink at the edge
+of the crystal clear sylvan pool that has formed here.  A steady drip of
+water falls from high overhead to collect in conspicuously well-placed
+plant leaves that funnel all the water neatly into the pool.
+"
 "[Elfir] Spellchecked
-
-[Elfir] Mob here
-
-"
+[Elfir] Mob here
+"
 301465600 0
 3 9 0
 D0
@@ -2897,15 +2122,12 @@ A
 ""
 ""
 "send_to_room( #drip, room );
-
-"
+"
 E
 "drip"
 "$gWater drips down from the trees overhead, hitting the plant leaves and
-
-running down into the pool.@n
-
-"
+running down into the pool.@n
+"
 !
 2 200 0
 1519 17 1509949540 -2 0
@@ -2915,21 +2137,14 @@ S
 #70451
 "The Vaasa"
 "Amidst the tangle of smaller shrubbery and giant shuvanas, large ferns
-
-have taken root in just about every available space.  While some are
-
-quite large, larger than an ent in some cases, many are no taller than an
-
-elf and some smaller still.  The ferns are slowly spreading eastward
-
-taking over new ground one plant at a time over the years.
-
-"
+have taken root in just about every available space.  While some are
+quite large, larger than an ent in some cases, many are no taller than an
+elf and some smaller still.  The ferns are slowly spreading eastward
+taking over new ground one plant at a time over the years.
+"
 "[Elfir] Spellchecked
-
-[Elfir] Fern rextra
-
-"
+[Elfir] Fern rextra
+"
 301465600 0
 3 9 0
 D1
@@ -2946,23 +2161,15 @@ S
 #70452
 "The Vaasa"
 "Some very large ferns grow here, with great fronds that arch overhead
-
-sheltering you.  In places where fern fronds arch overhead on both sides
-
-they almost create tunnels.  Fortunately, the large fronds bend with
-
-little effort and are easily moved aside to permit passage when they
-
-block you.
-
-"
+sheltering you.  In places where fern fronds arch overhead on both sides
+they almost create tunnels.  Fortunately, the large fronds bend with
+little effort and are easily moved aside to permit passage when they
+block you.
+"
 "enter ferns to get to Ael's area. -Talis
-
-[Elfir] Spellchecked
-
-[Elfir] Maybe no.scan exits
-
-"
+[Elfir] Spellchecked
+[Elfir] Maybe no.scan exits
+"
 301465600 0
 3 9 0
 D1
@@ -2976,66 +2183,50 @@ D2
 E
 "1 north 4 ferns"
 "The ferns grow huge and lush here, hemming in all sides.  Looking into the
-
-depths of the ferns on the north side, you see a small clearing beyond.  Maybe
-
-you can get to it from here.
-
-"
+depths of the ferns on the north side, you see a small clearing beyond.  Maybe
+you can get to it from here.
+"
 E
 "clearing"
 "Through the leafy fronds you see a small clearing.  Your eye registers
-
-movement, but you can't spot it.  Perhaps it was just a small animal or a bird
-
-flitting through the branches that line the clearing's perimeter.
-
-"
+movement, but you can't spot it.  Perhaps it was just a small animal or a bird
+flitting through the branches that line the clearing's perimeter.
+"
 A
 "3 enter"
 "4 ferns"
 "act_tochar( #char, ch );
-
-act_notchar( #room, ch );
-
-transfer( ch, find_room( 70454 ) );
-
-act_notchar( #arr, ch );
-
-"
+act_notchar( #room, ch );
+transfer( ch, find_room( 70454 ) );
+act_notchar( #arr, ch );
+"
 E
 "room"
 "Looking around, you become aware that $n is no longer with you.
-
-"
+"
 E
 "char"
 "Walking slowly, you carefully push through the heavy ferns.
-
-"
+"
 E
 "arr"
 "$n comes pushing through the ferns to the south.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@gYou push the large fronds aside as you $t $T.@n
-
-"
+"
 E
 "to_room"
 "$n pushes the large fronds aside as $e $t $T.
-
-"
+"
 !
 3 0 6
 -1
@@ -3044,21 +2235,14 @@ S
 #70453
 "The Vaasa"
 "Plants with large, broad leaves mingle with enormous ferns in a chaos of
-
-greens tinted with yellows and reds.  The ferns grow in clusters,
-
-managing to somehow find root and keep the more densely packed plants at
-
-bay.  The broad-leaved plants appear to have completely taken over to the
-
-west, whereas the large ferns seem more proliferate to the north.
-
-"
+greens tinted with yellows and reds.  The ferns grow in clusters,
+managing to somehow find root and keep the more densely packed plants at
+bay.  The broad-leaved plants appear to have completely taken over to the
+west, whereas the large ferns seem more proliferate to the north.
+"
 "[Elfir] Extras for different kinds of plants maybe
-
-[Elfir] Spellchecked
-
-"
+[Elfir] Spellchecked
+"
 301465600 0
 3 9 0
 D0
@@ -3075,27 +2259,17 @@ S
 #70454
 "Edge of a Secluded Glade"
 "The edges of this secluded glade are lined by tall, densely packed
-
-greenery.  The natural walls created by the bushes on the glades fringes
-
-are held back as if trimmed into position, though there is no sign that
-
-any blade has ever touched them.  The ground is covered in a uniformly
-
-lush, green grass that would probably feel quite good beneath your bare
-
-feet.
-
-"
+greenery.  The natural walls created by the bushes on the glades fringes
+are held back as if trimmed into position, though there is no sign that
+any blade has ever touched them.  The ground is covered in a uniformly
+lush, green grass that would probably feel quite good beneath your bare
+feet.
+"
 "Aelinfael (cleric of Tarafas) goes here.
-
-For part of the second shuvana quest -Talis
-
-[Elfir] Spellchecked
-
-needs extra
-
-"
+For part of the second shuvana quest -Talis
+[Elfir] Spellchecked
+needs extra
+"
 301465600 0
 3 9 0
 D2
@@ -3108,17 +2282,12 @@ S
 #70455
 "Game Trail in the Vaasa"
 "The massive roots of a shuvana tree forces the winding animal path to
-
-turn here.  Frail, young ivies grow over the vegetation here, doing their
-
-best to win in the struggle for what little nourishing light penetrates
-
-the dense forest canopy.
-
-"
+turn here.  Frail, young ivies grow over the vegetation here, doing their
+best to win in the struggle for what little nourishing light penetrates
+the dense forest canopy.
+"
 "[Elfir] Spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D1
@@ -3132,31 +2301,22 @@ D2
 E
 "ivy ivies"
 "It is still young, but in plant terms it is rapidly overtaking the surrounding
-
-growth.  The ivies are too frail to assist in any climbing; perhaps when they
-
-grow older they will be more useful for such purposes.
-
-"
+growth.  The ivies are too frail to assist in any climbing; perhaps when they
+grow older they will be more useful for such purposes.
+"
 -1
 S
 
 #70456
 "Game Trail in the Vaasa"
 "The trail narrows here as the dense vegetation attempts to overgrow it. 
-
-Nibble marks on the greenery - as well as tracks in the soft dirt - show
-
-that the path is just too well used by the animals for the vegetation to
-
-win over at this time.
-
-"
+Nibble marks on the greenery - as well as tracks in the soft dirt - show
+that the path is just too well used by the animals for the vegetation to
+win over at this time.
+"
 "[Elfir] Spellchecked
-
-[Elfir] Animals along here
-
-"
+[Elfir] Animals along here
+"
 301465600 0
 3 9 0
 D1
@@ -3173,21 +2333,14 @@ S
 #70457
 "Game Trail Around a Shuvana"
 "The game trail is forced to turn as it works its way around a shuvana
-
-tree.  It twists and turns as it avoids large roots that break out of the
-
-ground only to arc back down into it later.  What little vegetation grows
-
-in the shadow of the arboreal giant shows a great deal of nibbling from
-
-the animals that use this trail.
-
-"
+tree.  It twists and turns as it avoids large roots that break out of the
+ground only to arc back down into it later.  What little vegetation grows
+in the shadow of the arboreal giant shows a great deal of nibbling from
+the animals that use this trail.
+"
 "[Elfir] Spellchecked
-
-[Elfir] Rextra roots/shuvana/tree
-
-"
+[Elfir] Rextra roots/shuvana/tree
+"
 301465600 0
 3 9 0
 D2
@@ -3204,23 +2357,15 @@ S
 #70458
 "Game Train Between Two Shuvana"
 "You stand nearly between two of the massive shuvana trees, one to the
-
-west and one just a little north of being to the east.  Looking upward
-
-into the forest canopy they almost appear to be some sort of great living
-
-pillars holding up a sky of emerald impossibly high overhead.  Between
-
-such giants as these even a dragon must feel dwarfed in size.  Following
-
-the tangled path of the massive roots the trail is forced into sinuous
-
-curves.
-
-"
+west and one just a little north of being to the east.  Looking upward
+into the forest canopy they almost appear to be some sort of great living
+pillars holding up a sky of emerald impossibly high overhead.  Between
+such giants as these even a dragon must feel dwarfed in size.  Following
+the tangled path of the massive roots the trail is forced into sinuous
+curves.
+"
 "[Elfir] Spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -3237,19 +2382,13 @@ S
 #70459
 "Game Trail in the Vaasa"
 "The gentle sounds of birdsong filter down from high above you in the
-
-forest canopy.  For whatever reason, this must be a popular spot with the
-
-birds.  In the dense bushes that line the trail you can see the small
-
-dark masses of countless nests amidst the tangled branches.
-
-"
+forest canopy.  For whatever reason, this must be a popular spot with the
+birds.  In the dense bushes that line the trail you can see the small
+dark masses of countless nests amidst the tangled branches.
+"
 "[Elfir] Spellchecked
-
-[Elfir] Birds happy here
-
-"
+[Elfir] Birds happy here
+"
 301465600 0
 3 9 0
 D1
@@ -3266,21 +2405,14 @@ S
 #70460
 "Game Trail in the Vaasa"
 "The bushes that line the trail grow together overhead forming a vault of
-
-greenery.  The tangled branches show enough gaps to let enough
-
-leaf-filtered light through to see during the day, though the trail is
-
-cast in gentle shadow even then.  In one space, ringed by a corona of
-
-lush moss is the water-filled basin of a small spring.
-
-"
+greenery.  The tangled branches show enough gaps to let enough
+leaf-filtered light through to see during the day, though the trail is
+cast in gentle shadow even then.  In one space, ringed by a corona of
+lush moss is the water-filled basin of a small spring.
+"
 "[Elfir] Spellchecked
-
-[Elfir] Spring here
-
-"
+[Elfir] Spring here
+"
 301465600 0
 3 9 0
 D0
@@ -3298,17 +2430,12 @@ S
 #70461
 "Bush-Lined Game Trail"
 "Verdant bushes line the sides of the game trail with their thick branches
-
-and lush green leaves.  The trail itself meanders as it winds its way
-
-around the ages old plants that form the homes and playgrounds for
-
-countless birds and beasts.
-
-"
+and lush green leaves.  The trail itself meanders as it winds its way
+around the ages old plants that form the homes and playgrounds for
+countless birds and beasts.
+"
 "[Elfir] Spellchecked
-
-"
+"
 301465600 0
 3 9 0
 D1
@@ -3325,23 +2452,15 @@ S
 #70462
 "Game Trail Ending at a Ravine"
 "A ravine cuts a jagged swath into the forest floor, disrupting the growth
-
-of the greenery.  The giant roots of a few massive shuvana trees bridge
-
-the gap, forming a tenuous connection with the other side.  A game trail
-
-leads west, deeper into the lush foliage.
-
-"
+of the greenery.  The giant roots of a few massive shuvana trees bridge
+the gap, forming a tenuous connection with the other side.  A game trail
+leads west, deeper into the lush foliage.
+"
 "East across log is blocked, too slippery.
-
-being saved for an expanded area, maybe a fairy circle for fun. -Talis
-
-[Elfir] Spellchecked
-
-[Elfir] Climb down is one-way
-
-"
+being saved for an expanded area, maybe a fairy circle for fun. -Talis
+[Elfir] Spellchecked
+[Elfir] Climb down is one-way
+"
 301465600 0
 3 9 0
 D1
@@ -3355,204 +2474,131 @@ D3
 E
 "ravine down"
 "Looking down over the edge of the ravine, you see that it is not that far to
-
-the bottom.  Certainly a fall from the height would be harmful, perhaps even
-
-lethal, but the abundance of roots protruding from the steep side might make
-
-the climb down possible.
-
-"
+the bottom.  Certainly a fall from the height would be harmful, perhaps even
+lethal, but the abundance of roots protruding from the steep side might make
+the climb down possible.
+"
 E
 "shuvana roots bridge 1 east"
 "Water from somewhere high overhead slowly drips down onto the large roots that
-
-stretch over the ravine.  Slick mosses have found purchase on the roots,
-
-living off the sunlight and ample water.  Unfortunately, you find that the end
-
-result has produced a natural bridge that is slippery and
-
-dangerous almost to the point of impossibility.
-
-"
+stretch over the ravine.  Slick mosses have found purchase on the roots,
+living off the sunlight and ample water.  Unfortunately, you find that the end
+result has produced a natural bridge that is slippery and
+dangerous almost to the point of impossibility.
+"
 A
 "climb"
 "1 east 1 down 3 ravine"
 "if( can_fly( ch ) ) {
-
-  act_tochar( #fly, ch );
-
-  act_notchar( #rfly, ch );
-
-  transfer( ch, find_room( 19250 ) );
-
-  act_notchar( #flyarr, ch );
-
-  end;
-
-  }
-
-if( is_mounted( ch ) ) {
-
-  act_tochar( #nomount, ch );
-
-  end;
-
-  }
-
-if( find_skill( ch, climb ) < 1 ) {
-
-  act_tochar( #afraid, ch );
-
-  act_notchar( #rafraid, ch );
-
-  end;
-
-  }
-
-if( find_skill( ch, climb ) > random( 4, 8 ) ) {
-
-  act_tochar( #cldown, ch );
-
-  act_notchar( #rcldown, ch );
-
-  transfer( ch, find_room( 19250 ) );
-
-  act_notchar( #clarr, ch );
-
-  end;
-
-  }
-
-else{
-
-  act_tochar( #fall, ch );
-
-  act_notchar( #rfall, ch );
-
-  transfer( ch, find_room( 19250 ) );
-
-  act_notchar( #fallarr, ch );
-
-  set_resting( ch );
-
-  i = 6d10;
-
-  dam_message( ch, i, \"The fall\" );
-
-  inflict( ch, ch, i, \"falling off a ravine edge\" );
-
-  }
-
-"
+  act_tochar( #fly, ch );
+  act_notchar( #rfly, ch );
+  transfer( ch, find_room( 19250 ) );
+  act_notchar( #flyarr, ch );
+  end;
+  }
+if( is_mounted( ch ) ) {
+  act_tochar( #nomount, ch );
+  end;
+  }
+if( find_skill( ch, climb ) < 1 ) {
+  act_tochar( #afraid, ch );
+  act_notchar( #rafraid, ch );
+  end;
+  }
+if( find_skill( ch, climb ) > random( 4, 8 ) ) {
+  act_tochar( #cldown, ch );
+  act_notchar( #rcldown, ch );
+  transfer( ch, find_room( 19250 ) );
+  act_notchar( #clarr, ch );
+  end;
+  }
+else{
+  act_tochar( #fall, ch );
+  act_notchar( #rfall, ch );
+  transfer( ch, find_room( 19250 ) );
+  act_notchar( #fallarr, ch );
+  set_resting( ch );
+  i = 6d10;
+  dam_message( ch, i, \"The fall\" );
+  inflict( ch, ch, i, \"falling off a ravine edge\" );
+  }
+"
 E
 "afraid"
 "Walking carefully to the ravine's edge, you glance over the side.  The way
-
-down looks treacherous, perhaps you should learn to climb small trees before
-
-you begin rapelling down ravine edges.
-
-"
+down looks treacherous, perhaps you should learn to climb small trees before
+you begin rapelling down ravine edges.
+"
 E
 "rafraid"
 "$n walks over to the ravine and cautiously peers over the edge.
-
-"
+"
 E
 "fly"
 "You fly over the edge and down into the ravine.
-
-"
+"
 E
 "rfly"
 "$n flies over the edge and down into the ravine.
-
-"
+"
 E
 "flyarr"
 "$n flies down from above.
-
-"
+"
 E
 "nomount"
 "That is not something you can do while mounted.
-
-"
+"
 E
 "cldown"
 "With skill and care you begin the descent over the edge.  Amidst the crumbling
-
-dirt, you find ample handholds of the sturdy roots.
-
-"
+dirt, you find ample handholds of the sturdy roots.
+"
 E
 "rcldown"
 "$n begins a careful descent down the side of the rvine, using protruding roots
-
-for handholds.
-
-"
+for handholds.
+"
 E
 "clarr"
 "$n arrives from above, showering you in loose dirt and gravel from $s descent
-
-down the ravine edge.
-
-"
+down the ravine edge.
+"
 E
 "fall"
 "You begin the descent over the edge, only to find the ground giving way
-
-beneath you.
-
-"
+beneath you.
+"
 E
 "rfall"
 "$n works $s way over the edge of the ravine, then suddenly you hear a loud
-
-yell of surprise.  You make it to the edge and see $n lying sprawled in a pile
-
-on the ravine floor after $s fall.
-
-"
+yell of surprise.  You make it to the edge and see $n lying sprawled in a pile
+on the ravine floor after $s fall.
+"
 E
 "fallarr"
 "Preceded by a loud yell, $n lands in a heap before you.  Either $e just failed
-
-$s flying lessons or $e must have fallen off the edge of the ravine.
-
-"
+$s flying lessons or $e must have fallen off the edge of the ravine.
+"
 !
 0 0 0
 A
 ""
 ""
 "if( find_stat( ch, level ) < 90 )
-
-  act_tochar( #no, ch );
-
-else {
-
-  act_tochar( \"Moving east currently disabled for players.\", ch );
-
-  continue;
-
-  }
-
-"
+  act_tochar( #no, ch );
+else {
+  act_tochar( \"Moving east currently disabled for players.\", ch );
+  continue;
+  }
+"
 E
 "no"
 "The roots are slick with wet moss and unsure footing.  This is not the sort of
-
-thing you wish to undertake as lightly as by casually strolling eastward.  If
-
-you weren't to take your time and climb up onto the root first, you might fall
-
-to your death.
-
-"
+thing you wish to undertake as lightly as by casually strolling eastward.  If
+you weren't to take your time and climb up onto the root first, you might fall
+to your death.
+"
 !
 3 0 2
 -1
@@ -3561,21 +2607,14 @@ S
 #70463
 "The Vaasa"
 "Thick Vaasan foliage makes travel through here difficult.  Almost every
-
-step of the way is marked by the constant need to move branches heavy
-
-with greenery out of your way or walk blindly forward.  Only a gentle
-
-light manages to pierce the dense canopy formed by the ages old shuvana
-
-trees around you, casting everything in soft shadows.
-
-"
+step of the way is marked by the constant need to move branches heavy
+with greenery out of your way or walk blindly forward.  Only a gentle
+light manages to pierce the dense canopy formed by the ages old shuvana
+trees around you, casting everything in soft shadows.
+"
 "[Elfir] Spellchecked
-
-will connect to 19380
-
-"
+will connect to 19380
+"
 301465600 0
 3 9 0
 D2
@@ -3585,55 +2624,37 @@ D2
 E
 "shrubbery greenery plants bushes branches"
 "The greenery is a complex tangle of countless plants in all their splendor. 
-
-Among the mass of verdant growth you see the yellow tinged leaves of
-
-euonymous, the serrated leaves of black alder and holly.  To the south the mix
-
-of vegetation is sparsely dotted by little white flowers that identify the
-
-plants as sweet pepperbush.
-
-"
+Among the mass of verdant growth you see the yellow tinged leaves of
+euonymous, the serrated leaves of black alder and holly.  To the south the mix
+of vegetation is sparsely dotted by little white flowers that identify the
+plants as sweet pepperbush.
+"
 E
 "canopy"
 "Two distinct layers can be seen from the forest floor.  The closest is sparse
-
-and formed by the smaller trees; oaks, maples, birch and the like.  Higher
-
-above that canopy exists the lush, verdant canopy formed by the shuvana trees
-
-as their lower branches arc outwards and mingle with each other.
-
-"
+and formed by the smaller trees; oaks, maples, birch and the like.  Higher
+above that canopy exists the lush, verdant canopy formed by the shuvana trees
+as their lower branches arc outwards and mingle with each other.
+"
 E
 "shuvanas trees"
 "While shuvanas form the majority of the trees in the woods, other species do
-
-mingle in large numbers as well.  Among them you can make out oaks, maples,
-
-birch, and elm nearby.
-
-"
+mingle in large numbers as well.  Among them you can make out oaks, maples,
+birch, and elm nearby.
+"
 -1
 S
 
 #70464
 "Clearing"
 "The forest ends here in an arc, opening into a broad clearing of low growing
-
-heather.  The tree line, composed mostly of shuvana that tower over other,
-
-more mundane trees and heavy undergrowth, forms an irregularly shaped circle
-
-around the meadow.  A break in the vegetation to the west reveals a game
-
-trail, where the local fauna enters and leaves the forest.
-
-"
+heather.  The tree line, composed mostly of shuvana that tower over other,
+more mundane trees and heavy undergrowth, forms an irregularly shaped circle
+around the meadow.  A break in the vegetation to the west reveals a game
+trail, where the local fauna enters and leaves the forest.
+"
 "[Elfir] Spellchecked
-
-"
+"
 301465600 0
 2 9 0
 D0
@@ -3651,61 +2672,40 @@ D3
 E
 "break vegetation 1 west"
 "The forest's undergrowth, heavy with nettles, brambles and green-frond ferns
-
-taller than a man's head, thins to the west.  Trampled vegetation, broken
-
-branches and other signs of animal passing, mark this a game trail much used
-
-by the local fauna.
-
-"
+taller than a man's head, thins to the west.  Trampled vegetation, broken
+branches and other signs of animal passing, mark this a game trail much used
+by the local fauna.
+"
 E
 "heather clearing"
 "The forest opens into a vast clearing, heavily grown with heather and a few
-
-hardy berry bushes.  Rooted firmly in the fertile soil, the green fleshy
-
-leaves are crowned with tiny, bell-shaped flowers.  Close by, a patch of the
-
-low-growing bushes are missing flowers and few of their leaves, indicating
-
-that the sweet-smelling plant has a use other than its beauty.
-
-"
+hardy berry bushes.  Rooted firmly in the fertile soil, the green fleshy
+leaves are crowned with tiny, bell-shaped flowers.  Close by, a patch of the
+low-growing bushes are missing flowers and few of their leaves, indicating
+that the sweet-smelling plant has a use other than its beauty.
+"
 E
 "arc forest undergrowth shuvana trees circle"
 "The forest comes to an abrupt end, bordering a clearing overgrown with heather
-
-and a few berry bushes in a roughly shaped circle.  Majestic shuvana tower
-
-over oak and elm trees, their lower branches starting where the lesser trees
-
-top growth ends.  Lush undergrowth sprouts on the forest floor, giant ferns
-
-and prickly brambles, blocking off passage in most directions.
-
-"
+and a few berry bushes in a roughly shaped circle.  Majestic shuvana tower
+over oak and elm trees, their lower branches starting where the lesser trees
+top growth ends.  Lush undergrowth sprouts on the forest floor, giant ferns
+and prickly brambles, blocking off passage in most directions.
+"
 -1
 S
 
 #70465
 "Halfway Up an Oak Tree"
 "The thick branches of the ancient oak must measure nearly four feet in 
-
-diameter on average.  Green leaves surround you as they sprout from the
-
-ends of smaller branches.  You are in the lower branches of this ancient
-
-oak.  It looks as if it would much easier to climb further up now that
-
-there are ample branches for hand and foot holds, however, the way back
-
-down looks quite difficult.
-
-"
+diameter on average.  Green leaves surround you as they sprout from the
+ends of smaller branches.  You are in the lower branches of this ancient
+oak.  It looks as if it would much easier to climb further up now that
+there are ample branches for hand and foot holds, however, the way back
+down looks quite difficult.
+"
 "[Elfir] Spellchecked
-
-"
+"
 301465600 0
 3 7 0
 D4
@@ -3715,182 +2715,117 @@ D4
 E
 "branches"
 "They look like normal branches and leaves.  Nothing unusual about them.
-
-You wouldn't want to get too far from the trunk of the tree, the branches
-
-might snap towards their ends.
-
-"
+You wouldn't want to get too far from the trunk of the tree, the branches
+might snap towards their ends.
+"
 E
 "leaves"
 "Oak leaves, they have simple design with one main leaf blade on the leaf stalk
-
-and serrations evident along the edges.
-
-"
+and serrations evident along the edges.
+"
 E
 "1 down"
 "The climb down looks a bit treacherous.  Why does it always seem easier to
-
-climb up a tree than down?
-
-"
+climb up a tree than down?
+"
 E
 "1 up"
 "The top of the tree is that way and further still is the lower edge of the
-
-canopy of shuvana leaves.
-
-"
+canopy of shuvana leaves.
+"
 A
 "climb"
 "tree oak 1 down"
 "if( can_fly( ch ) ) {
-
-  send_to_char( #fly, ch );
-
-  act_notchar( #flying, ch );
-
-  transfer( ch, find_room( 70405 ) );
-
-  act_notchar( #arr, ch );
-
-  end;
-
-  }
-
-if( is_mounted( ch ) ) {
-
-  send_to_char( #nomount, ch );
-
-  end;
-
-  }
-
-if( find_skill( ch, climb ) > random( 4, 7 ) ) {
-
-  use_skill( ch, climb );
-
-  send_to_char( #char, ch );
-
-  act_notchar( #room, ch );
-
-  transfer( ch, find_room( 70405 ) );
-
-  act_notchar( #arr, ch );
-
-  }
-
-else{
-
-  if( find_stat( ch, dex ) < 15 ) {
-
-    if( random( 0, 10 ) < 4 ){
-
-      transfer( ch, find_room( 70405 ) );
-
-      act_tochar( #pain, ch );
-
-      act_notchar( #rmpain, ch );
-
-      i = 2d4+4;
-
-      dam_message( ch, i, #dam );
-
-      inflict( ch, mob, i, \"falling\" );
-
-      end;
-
-      }
-
-    else{
-
-      transfer( ch, find_room( 70405 ) );
-
-      send_to_char( #near_fall, ch );
-
-      act_notchar( #room, ch );
-
-      }
-
-    }
-
-  else{
-
-    transfer( ch, find_room( 70405 ) );
-
-    send_to_char( #near_fall, ch );
-
-    act_notchar( #room, ch );
-
-    }
-
-  }
-
-loop( followers ){
-
-  ch = rch;
-
-  acode( room, 1 );
-
-  }
-
-"
+  send_to_char( #fly, ch );
+  act_notchar( #flying, ch );
+  transfer( ch, find_room( 70405 ) );
+  act_notchar( #arr, ch );
+  end;
+  }
+if( is_mounted( ch ) ) {
+  send_to_char( #nomount, ch );
+  end;
+  }
+if( find_skill( ch, climb ) > random( 4, 7 ) ) {
+  use_skill( ch, climb );
+  send_to_char( #char, ch );
+  act_notchar( #room, ch );
+  transfer( ch, find_room( 70405 ) );
+  act_notchar( #arr, ch );
+  }
+else{
+  if( find_stat( ch, dex ) < 15 ) {
+    if( random( 0, 10 ) < 4 ){
+      transfer( ch, find_room( 70405 ) );
+      act_tochar( #pain, ch );
+      act_notchar( #rmpain, ch );
+      i = 2d4+4;
+      dam_message( ch, i, #dam );
+      inflict( ch, mob, i, \"falling\" );
+      end;
+      }
+    else{
+      transfer( ch, find_room( 70405 ) );
+      send_to_char( #near_fall, ch );
+      act_notchar( #room, ch );
+      }
+    }
+  else{
+    transfer( ch, find_room( 70405 ) );
+    send_to_char( #near_fall, ch );
+    act_notchar( #room, ch );
+    }
+  }
+loop( followers ){
+  ch = rch;
+  acode( room, 1 );
+  }
+"
 E
 "fly"
 "You fly down out of the tree to the forest floor.
-
-"
+"
 E
 "flying"
 "$n flies down out of the tree.
-
-"
+"
 E
 "fly_arr"
 "$n flies down out of the forest canopy and lands on the ground.
-
-"
+"
 E
 "nomount"
 "You can't do that while mounted.
-
-"
+"
 E
 "char"
 "You carefully climb down the side of the tree.
-
-"
+"
 E
 "room"
 "$n climbs down out of the forest canopy and back to the ground.
-
-"
+"
 E
 "pain"
 "@RYou slip on the way down and fall the rest of the way to the ground.@n
-
-"
+"
 E
 "rmpain"
 "@R$n slips and falls from the tree, landing hard on the ground.@n
-
-"
+"
 E
 "dam"
 "The fall
-
-"
+"
 E
 "near_fall"
 "After a few near mishaps, you manage to make it safely to the ground.
-
-"
+"
 E
 "arr"
 "$n climbs down out of the forest canopy and back to the ground.
-
-"
+"
 !
 0 0 0
 -1
@@ -3899,19 +2834,13 @@ S
 #70466
 "Atop an Oak Tree"
 "This is as high as the thinning branches will allow you to safely climb. 
-
-Any higher and they would probably snap, and falling from this height
-
-would most assuredly be fatal.  You are close enough to the top that you
-
-can see past the thinning branches and leaves.  Not so far overhead now
-
-are the lower branches of the shuvanas that form the dense forest canopy.
-
-"
+Any higher and they would probably snap, and falling from this height
+would most assuredly be fatal.  You are close enough to the top that you
+can see past the thinning branches and leaves.  Not so far overhead now
+are the lower branches of the shuvanas that form the dense forest canopy.
+"
 "[Elfir] Spellchecked
-
-"
+"
 301465600 0
 3 7 0
 D5
@@ -3921,23 +2850,18 @@ D5
 E
 "1 up canopy shuvanas"
 "The lower branches of the shuvanas are dozens of feet overhead.  In comparison
-
-to the height you've had to climb to get this far it is a small distance, yet,
-
-it is too far for you to reach from here.
-
-"
+to the height you've had to climb to get this far it is a small distance, yet,
+it is too far for you to reach from here.
+"
 -1
 S
 
 #70467
 "Talis needs to remake old room desc here"
 "Under Construction.
-
-"
+"
 "[Nereus] It'd be cool if this was a fallen Shuvana tree over the ravine
-
-"
+"
 301465600 0
 3 6 0
 D1
@@ -3955,25 +2879,16 @@ S
 "Faerie circle starts near here"
 "old decription... old room name A Satyr's Well
 
-
 You have entered a part of the forest that is cut off from eveything else.  To
-
-the south is the only way to go.  Dug into the ground here is a little well,
-
-with a water pouring statue of a satyr at its center.  The well seems to be a
-
-watering place for many animals, as you see alot of evidence of paw and hoof
-
-prints.  It is very peaceful and quiet here.
-
-"
+the south is the only way to go.  Dug into the ground here is a little well,
+with a water pouring statue of a satyr at its center.  The well seems to be a
+watering place for many animals, as you see alot of evidence of paw and hoof
+prints.  It is very peaceful and quiet here.
+"
 "This desc preserved here from old Medienne woods room before it was changed to
-
-Anor's temple.  Made sense since Pan isn't a god we use.  I do want to use the
-
-idea here somewhere in the Vaasa.  A satyr in the woods would be nice.
-
-"
+Anor's temple.  Made sense since Pan isn't a god we use.  I do want to use the
+idea here somewhere in the Vaasa.  A satyr in the woods would be nice.
+"
 301465600 0
 3 6 0
 D3

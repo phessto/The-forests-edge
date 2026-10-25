@@ -10,31 +10,19 @@
 #5000
 "Behind a Rushing Waterfall"
 "This damp cavern leads into the limestone rock to the east, away from a
-
-rushing wall of water to the west.  The floor is slick with spray from the
-
-waterfall as it crashes, sending a fine mist into the cool air of the cavern.
-
-"
+rushing wall of water to the west.  The floor is slick with spray from the
+waterfall as it crashes, sending a fine mist into the cool air of the cavern.
+"
 "no.mob
-
-w is waterfall at 4008
-
-extra __AREA__
-
-extra __TODO__
-
-add extras for waterfall
-
-need more rdesc here
-
-[Hedrack] extra: water/waterfall
-
--- added
-
-[Hedrack] Desc checked.
-
-"
+w is waterfall at 4008
+extra __AREA__
+extra __TODO__
+add extras for waterfall
+need more rdesc here
+[Hedrack] extra: water/waterfall
+-- added
+[Hedrack] Desc checked.
+"
 301465676 0
 11 6 0
 D1
@@ -48,48 +36,35 @@ D3
 E
 "__AREA__"
 "[Phule] area for small, lightning-prone creatures for level 20 mages
-
-and clerics with silence
-
-cavern with hanging shriekers which fall and do sound damage
-
-area leads through cave of shriekers and other assorted monsters, to big
-
-shrieker, aka the 'howler'.
-
-"
+and clerics with silence
+cavern with hanging shriekers which fall and do sound damage
+area leads through cave of shriekers and other assorted monsters, to big
+shrieker, aka the 'howler'.
+"
 E
 "__TODO__"
 "run-through
-
-help file
-
-extras
-
-"
+help file
+extras
+"
 E
 "waterfall"
 "The waterfall is a rush of cold, clear water, cascading down in front of the
-
-cave mouth.
-
-"
+cave mouth.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You $t $T into the rushing waterfall.
-
-"
+"
 E
 "to_room"
 "$n $t $T into the rushing waterfall.
-
-"
+"
 !
 3 0 8
 -1
@@ -98,23 +73,15 @@ S
 #5001
 "Dark Cavern Floor"
 "The floor of this massive cavern is riddled with stalagmites jutting upwards
-
-like mighty dragons' teeth.  Some stretch to the very top of the cavern,
-
-naturally curving as they form limestone columns of bright pinks and dull
-
-greens.  The floor is riddled with shards of broken stalactites that have
-
-recently fallen.  Clear puddles have formed in almost every depression of the
-
-cavern floor, and the air is saturated with water.
-
-"
+like mighty dragons' teeth.  Some stretch to the very top of the cavern,
+naturally curving as they form limestone columns of bright pinks and dull
+greens.  The floor is riddled with shards of broken stalactites that have
+recently fallen.  Clear puddles have formed in almost every depression of the
+cavern floor, and the air is saturated with water.
+"
 "entering code checks up for mob
-
-[Hedrack] Desc checked.
-
-"
+[Hedrack] Desc checked.
+"
 301465668 0
 11 9 0
 D0
@@ -137,13 +104,11 @@ A
 ""
 ""
 "acode( find_room( 5003 ), 1 );
-
-"
+"
 E
 "scuttle_up"
 "The faintest scuttling sound is heard in the darkness overhead.
-
-"
+"
 !
 1 0 11
 2670 9 1509949475 3 0
@@ -153,19 +118,13 @@ S
 #5002
 "Above a Dark Cavern"
 "The ceiling here consists mostly of the broken-off trunks of stalagtites which
-
-have recently fallen, if the sharpness of the rock is any indication.  Here
-
-and there a rock column braces the ceiling; the largest looks as if it is
-
-about to collapse, as large chunks are missing from it.
-
-"
+have recently fallen, if the sharpness of the rock is any indication.  Here
+and there a rock column braces the ceiling; the largest looks as if it is
+about to collapse, as large chunks are missing from it.
+"
 "sheer rock face above cavern floor
-
-[Hedrack] Desc checked.
-
-"
+[Hedrack] Desc checked.
+"
 301465668 0
 9 9 0
 D0
@@ -191,29 +150,18 @@ S
 #5003
 "Dark Cavern Floor"
 "Darkness stretches in all directions, even overhead, from this cold, dark
-
-cavern floor.  At the center of this cavern lies a large pool, no more than a
-
-few feet deep, and crystal clear.  Shards of light reflect off it and form
-
-eerie shadows on four great columns of limestone which surround the pool
-
-naturally.  Huge stalactites have fallen here, many crumbled, but some still
-
-intact, jagged teeth with cracklines running through the formation.
-
-"
+cavern floor.  At the center of this cavern lies a large pool, no more than a
+few feet deep, and crystal clear.  Shards of light reflect off it and form
+eerie shadows on four great columns of limestone which surround the pool
+naturally.  Huge stalactites have fallen here, many crumbled, but some still
+intact, jagged teeth with cracklines running through the formation.
+"
 "[Hedrack] pool object
-
--- added
-
-[Hedrack] extra columns
-
--- added
-
-[Hedrack] Desc checked.
-
-"
+-- added
+[Hedrack] extra columns
+-- added
+[Hedrack] Desc checked.
+"
 301465668 0
 11 9 0
 D0
@@ -239,71 +187,45 @@ D4
 E
 "columns"
 "The four columns appear to move in the reflected light of the pool.
-
-"
+"
 A
 ""
 ""
 "if( is_player( ch ) ) {
-
-  mob = mob_in_room( 2667, leads_to( door( room, up ) ) );
-
-  if( mob ) {
-
-    if( !is_fighting( mob ) ) {
-
-      if( random( 0, 5 ) < 5 ) {
-
-        if( rflag( reset0, room ) ) {
-
-          remove_rflag( reset0, room );
-
-          act_room( \"$n scuttles along the ceiling.\", mob );
-
-          send_to_room( #scuttle, room );
-
-          wait( 1 );
-
-          if( char_in_room( ch, room ) ) {
-
-            transfer( mob, room );
-
-            act_tochar( #swoop, ch, null, mob );
-
-            act_notchar( #rswoop, ch, null, mob );
-
-            attack( mob, ch, 2d5+3, \"swooping bite\" );
-
-            }
-
-          set_rflag( reset0, room );
-
-          }
-
-        }
-
-      }
-
-    }
-
-  }
-
-"
+  mob = mob_in_room( 2667, leads_to( door( room, up ) ) );
+  if( mob ) {
+    if( !is_fighting( mob ) ) {
+      if( random( 0, 5 ) < 5 ) {
+        if( rflag( reset0, room ) ) {
+          remove_rflag( reset0, room );
+          act_room( \"$n scuttles along the ceiling.\", mob );
+          send_to_room( #scuttle, room );
+          wait( 1 );
+          if( char_in_room( ch, room ) ) {
+            transfer( mob, room );
+            act_tochar( #swoop, ch, null, mob );
+            act_notchar( #rswoop, ch, null, mob );
+            attack( mob, ch, 2d5+3, \"swooping bite\" );
+            }
+          set_rflag( reset0, room );
+          }
+        }
+      }
+    }
+  }
+"
 E
 "scuttle"
 "The faintest scuttling sound is heard in the darkness overhead.
-
-"
+"
 E
 "swoop"
 "$N swoops down at you from the darkness overhead!
-
-"
+"
 E
 "rswoop"
 "$N swoops down at $n from the darkness overhead!
-
-"
+"
 !
 1 0 15
 2670 9 1509949475 3 0
@@ -314,25 +236,16 @@ S
 #5004
 "Dark Cavern Floor"
 "Rounding out the southwest corner of this huge, pockmarked cavern are many
-
-broken stalactites lying fallen on the ground.  Most have fractured into pink and
-
-green chunks of limestone that lie in various pools within the cavern.  Some
-
-stalactites still remain above, but the majority have crumbled to the ground. 
-
-One particularly large column which has grown from floor up to ceiling is
-
-cracked and may fall at any time.
-
-"
+broken stalactites lying fallen on the ground.  Most have fractured into pink and
+green chunks of limestone that lie in various pools within the cavern.  Some
+stalactites still remain above, but the majority have crumbled to the ground. 
+One particularly large column which has grown from floor up to ceiling is
+cracked and may fall at any time.
+"
 "maybe pieces from the column fall down and plunk people on the head.
-
-redit broken stalactites
-
-[Hedrack] Desc checked.
-
-"
+redit broken stalactites
+[Hedrack] Desc checked.
+"
 301465668 0
 11 9 0
 D0
@@ -350,27 +263,20 @@ D4
 E
 "broken stalactites chunks limestone crumbled pockmarks fractured"
 "The limestone here is chipped and cracked in many places where chunks of the
-
-rock have fallen to the ground.  The damage is recent, judging by the sharp
-
-edges of the broken rock in an otherwise smooth cavern.  It may have been
-
-caused by an earthquake or similar force.
-
-"
+rock have fallen to the ground.  The damage is recent, judging by the sharp
+edges of the broken rock in an otherwise smooth cavern.  It may have been
+caused by an earthquake or similar force.
+"
 E
 "pools water"
 "Small pools and puddles of crystal-clear water have formed from the cool temperatures and
-
-water-saturated air of the cavern.
-
-"
+water-saturated air of the cavern.
+"
 A
 ""
 ""
 "acode( find_room( 5003 ), 1 );
-
-"
+"
 !
 1 0 3
 2670 9 1509949475 3 0
@@ -381,27 +287,17 @@ S
 #5005
 "Dark Cavern Floor"
 "In the southeast corner of this cavern, a small spherical niche has formed, a
-
-space roughly the size and shape of a large boulder.  In it, thousands of
-
-intricate crystalline stalagmites and stalactites have grown, mostly clear in
-
-color.  Having risen no more than a few inches on either side, the niche
-
-sparkles invitingly.  However the tiny teeth are thin and razor sharp, and
-
-combined with the pink of the limestone, the niche has the appearance of a
-
-giant crystal wyrm's mouth.
-
-"
+space roughly the size and shape of a large boulder.  In it, thousands of
+intricate crystalline stalagmites and stalactites have grown, mostly clear in
+color.  Having risen no more than a few inches on either side, the niche
+sparkles invitingly.  However the tiny teeth are thin and razor sharp, and
+combined with the pink of the limestone, the niche has the appearance of a
+giant crystal wyrm's mouth.
+"
 "[Hedrack] people are going to try entering the geode.
-
-[Hedrack] and searching it.
-
-[Hedrack] Desc checked.
-
-"
+[Hedrack] and searching it.
+[Hedrack] Desc checked.
+"
 301465668 0
 11 9 0
 D0
@@ -420,8 +316,7 @@ A
 ""
 ""
 "acode( find_room( 5003 ), 1 );
-
-"
+"
 !
 1 0 9
 2670 9 1509949475 3 0
@@ -431,41 +326,24 @@ S
 #5006
 "Dark Cavern Floor"
 "Walled off to the west but for a small cave entrance, this massive cavern of
-
-green and pink limestone stretches into the darkness above.  Clear water has
-
-formed in tiny pools and puddles, and trickles down along stalagmites like
-
-saliva dripping from great teeth.  The formations have been recently disturbed
-
-however, judging by the broken-off chunks of stalactites which have fallen
-
-from above.
-
-"
+green and pink limestone stretches into the darkness above.  Clear water has
+formed in tiny pools and puddles, and trickles down along stalagmites like
+saliva dripping from great teeth.  The formations have been recently disturbed
+however, judging by the broken-off chunks of stalactites which have fallen
+from above.
+"
 "w is no.mob
-
-limestone cavern
-
-is damp on west side, dry on east side
-
-no stalgtites (ceiling) because of howls
-
-wouldn't mind some stalagmites (floor up) I spose
-
-maybe some fall down, check dex and high int > 22
-
-[Hedrack] extra: stalactites, stalagmites
-
--- nah
-
-[Hedrack] cool death-from-above maneuver
-
--- thanks
-
-[Hedrack] Desc checked.
-
-"
+limestone cavern
+is damp on west side, dry on east side
+no stalgtites (ceiling) because of howls
+wouldn't mind some stalagmites (floor up) I spose
+maybe some fall down, check dex and high int > 22
+[Hedrack] extra: stalactites, stalagmites
+-- nah
+[Hedrack] cool death-from-above maneuver
+-- thanks
+[Hedrack] Desc checked.
+"
 301465668 0
 11 9 0
 D0
@@ -492,8 +370,7 @@ A
 ""
 ""
 "acode( find_room( 5003 ), 1 );
-
-"
+"
 !
 1 0 15
 2670 9 1509949475 3 0
@@ -503,21 +380,14 @@ S
 #5007
 "Dark Cavern Floor"
 "This massive cavern floor is riddled with chunks of blue-green limestone that
-
-have fallen from up above.  Two great limestone columns rise up like giant
-
-teeth at the entrance to a small tunnel to the east; a foul smell emanates
-
-from the tunnel's mouth.
-
-"
+have fallen from up above.  Two great limestone columns rise up like giant
+teeth at the entrance to a small tunnel to the east; a foul smell emanates
+from the tunnel's mouth.
+"
 "[Hedrack] climb columns?
-
--- added
-
-[Hedrack] Desc checked.
-
-"
+-- added
+[Hedrack] Desc checked.
+"
 301465668 0
 11 9 0
 D0
@@ -544,16 +414,14 @@ A
 ""
 ""
 "acode( find_room( 5003 ), 1 );
-
-"
+"
 !
 1 0 15
 A
 "climb"
 "columns"
 "act_tochar(\"The limestone columns are slick with condensation and cannot be climbed.\",ch );
-
-"
+"
 !
 0 0 0
 2670 9 1509949475 3 0
@@ -563,19 +431,13 @@ S
 #5008
 "Dark Cavern Floor"
 "This huge cavern stretches into darkness in all directions but north, where a
-
-strange limestone wall has formed.  Like a frozen waterfall, tiny fingers of
-
-rock sediment stream down to the floor, giving the formation a feel of flow. 
-
-However, many of the tiny fingers have broken off as if hit by an earthquake.
-
-"
+strange limestone wall has formed.  Like a frozen waterfall, tiny fingers of
+rock sediment stream down to the floor, giving the formation a feel of flow. 
+However, many of the tiny fingers have broken off as if hit by an earthquake.
+"
 "n is no.mob
-
-[Hedrack] Desc checked.
-
-"
+[Hedrack] Desc checked.
+"
 301465668 0
 11 9 0
 D1
@@ -597,20 +459,15 @@ D4
 E
 "formation fingers limestone broken"
 "Made from deposits over a period of eons, these tiny fingers have formed over
-
-the rock face.  Colored a light yellow hue and with motes of green interwoven,
-
-the entire cluster looks like a frozen series of waterfalls.  Some of the
-
-fingers are chipped in places, however, and the damage looks fairly new.
-
-"
+the rock face.  Colored a light yellow hue and with motes of green interwoven,
+the entire cluster looks like a frozen series of waterfalls.  Some of the
+fingers are chipped in places, however, and the damage looks fairly new.
+"
 A
 ""
 ""
 "acode( find_room( 5003 ), 1 );
-
-"
+"
 !
 1 0 14
 2670 9 1509949475 3 0
@@ -620,21 +477,14 @@ S
 #5009
 "Dark Cavern Floor"
 "Here at the northeast corner of this massive limestone cavern are signs of
-
-expedition.  A small glass-blown canteen covered in deteriorating canvas lies
-
-in shards on the ground, and small bits of bone adorn the area around it.  The
-
-area is littered with other debris; cloth smelling of torch oil, a piece of
-
-old, moldy bread, and the broken pieces of a knife hilt lie among the wrecked
-
-chunks of broken pink limestone.
-
-"
+expedition.  A small glass-blown canteen covered in deteriorating canvas lies
+in shards on the ground, and small bits of bone adorn the area around it.  The
+area is littered with other debris; cloth smelling of torch oil, a piece of
+old, moldy bread, and the broken pieces of a knife hilt lie among the wrecked
+chunks of broken pink limestone.
+"
 "[Hedrack] Desc checked.
-
-"
+"
 301465668 0
 11 9 0
 D2
@@ -652,59 +502,45 @@ D4
 E
 "debris"
 "Looking at the debris, it appears anything of value was taken long ago. 
-
-Chunks of broken limestone now cover much of it.
-
-"
+Chunks of broken limestone now cover much of it.
+"
 E
 "knife hilt"
 "This knife hilt lies in three broken pieces on the ground.  It was made from
-
-the bones of some animal, possibly a deer.
-
-"
+the bones of some animal, possibly a deer.
+"
 E
 "shards canteen"
 "This canteen looks to have been exquisitely made, but has been shattered into
-
-small fragments and is now broken and useless.
-
-"
+small fragments and is now broken and useless.
+"
 E
 "cloth"
 "This strip of cloth smells of torch oil and was probably once wrapped around a
-
-torch.
-
-"
+torch.
+"
 E
 "fossilized bread"
 "This moldy bread is now white and green, noticeable only as bread by its round
-
-shape.  It has not fared well in the cool, wet confines of this limestone
-
-cavern.
-
-"
+shape.  It has not fared well in the cool, wet confines of this limestone
+cavern.
+"
 A
 ""
 ""
 "acode( find_room( 5003 ), 1 );
-
-"
+"
 !
 1 0 12
 A
 "get take grab search"
 "debris hilt knife cloth bread bone canteen shards"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You search through the debris but find nothing of value.
-
-"
+"
 !
 0 0 0
 2670 9 1509949475 3 0
@@ -714,37 +550,22 @@ S
 #5010
 "Dark Cavern Floor"
 "Great limestone columns rise into the ceiled darkness of this limestone
-
-cavern.  Many of them are strangely pocked in places like open wounds, and
-
-shards of the limestone litter the floor here and there, created when
-
-stalactites fell from the ceiling.  The limestone here is a bright pink with
-
-spatters of blood red, and the cavern has the appearance of the maw of some
-
-great fossilized beast.
-
-"
+cavern.  Many of them are strangely pocked in places like open wounds, and
+shards of the limestone litter the floor here and there, created when
+stalactites fell from the ceiling.  The limestone here is a bright pink with
+spatters of blood red, and the cavern has the appearance of the maw of some
+great fossilized beast.
+"
 "[Hedrack] 'ceiled'? good word.
-
--- I can only guess Nivel meant 'veiled' ?
-
-[Hedrack] checked mobs
-
-[Hedrack] climb columns?
-
-[Hedrack] extra: shards/limestone
-
-[Hedrack] search pocks/wounds?
-
-[Hedrack] Desc checked.
-
-[Hedrack] 'ceiled' is actually a word, I looked it up ;)
-
--- changed back. wow!
-
-"
+-- I can only guess Nivel meant 'veiled' ?
+[Hedrack] checked mobs
+[Hedrack] climb columns?
+[Hedrack] extra: shards/limestone
+[Hedrack] search pocks/wounds?
+[Hedrack] Desc checked.
+[Hedrack] 'ceiled' is actually a word, I looked it up ;)
+-- changed back. wow!
+"
 301465668 0
 11 9 0
 D1
@@ -763,8 +584,7 @@ A
 ""
 ""
 "acode( find_room( 5003 ), 1 );
-
-"
+"
 !
 1 0 6
 2670 9 1509949475 3 0
@@ -774,19 +594,13 @@ S
 #5011
 "Above a Dark Cavern"
 "Darkness descends below you at the upper southwest corner of this pink-green
-
-limestone cavern.  The air is damp and dank, and a foul odor seems to come
-
-from splotches of a white substance which has formed on the ceiling here and
-
-glows faintly.  Great columns of rock rise up to the ceiling here, showing
-
-signs of wear in many places where large chunks of rock have broken off.
-
-"
+limestone cavern.  The air is damp and dank, and a foul odor seems to come
+from splotches of a white substance which has formed on the ceiling here and
+glows faintly.  Great columns of rock rise up to the ceiling here, showing
+signs of wear in many places where large chunks of rock have broken off.
+"
 "[Hedrack] Desc checked.
-
-"
+"
 301465668 0
 9 9 0
 D0
@@ -808,17 +622,12 @@ S
 #5012
 "Above a Dark Cavern"
 "High up in this limestone cavern, darkness stretches endlessly downward.  The
-
-stalagtites on the ceiling here have been destroyed; only a few remain, the
-
-majority nothing but trunks of pink rock.  An odor emanates from a white
-
-phosphorescent residue on the ceiling which glows very dimly.
-
-"
+stalagtites on the ceiling here have been destroyed; only a few remain, the
+majority nothing but trunks of pink rock.  An odor emanates from a white
+phosphorescent residue on the ceiling which glows very dimly.
+"
 "[Hedrack] Desc checked.
-
-"
+"
 301465668 0
 9 9 0
 D0
@@ -844,15 +653,11 @@ S
 #5013
 "Above a Dark Cavern"
 "High above this limestone cavern, darkness stretches below you.  The trunks of
-
-broken-off stalactites make up the majority of the ceiling, and a dank
-
-smell seems to emanate from the rock.
-
-"
+broken-off stalactites make up the majority of the ceiling, and a dank
+smell seems to emanate from the rock.
+"
 "[Hedrack] Desc checked.
-
-"
+"
 301465668 0
 9 9 0
 D1
@@ -874,19 +679,13 @@ S
 #5014
 "Above a Dark Cavern"
 "Facing the upper northern wall of this limestone cavern, you can see an
-
-intricate formation of stone where the limestone has formed into delicate
-
-fingers of rock that trace downward like a waterfall into the darkness below. 
-
-The air here is saturated in the spray of cool water, and a slight breeze
-
-flows into the cavern from a dark hole in the rock wall.
-
-"
+intricate formation of stone where the limestone has formed into delicate
+fingers of rock that trace downward like a waterfall into the darkness below. 
+The air here is saturated in the spray of cool water, and a slight breeze
+flows into the cavern from a dark hole in the rock wall.
+"
 "[Hedrack] Desc checked.
-
-"
+"
 301465668 0
 9 9 0
 D1
@@ -912,17 +711,12 @@ S
 #5015
 "Above a Dark Cavern"
 "At the center of the upper portion of this massive cavern of rock, four great
-
-natural columns of limestone rise up here to form the foundation of the
-
-ceiling.  Darkness extends in all directions but above, where a foul-smelling
-
-white residue on the rock here provides a faint glow.
-
-"
+natural columns of limestone rise up here to form the foundation of the
+ceiling.  Darkness extends in all directions but above, where a foul-smelling
+white residue on the rock here provides a faint glow.
+"
 "[Hedrack] Desc checked.
-
-"
+"
 301465668 0
 9 9 0
 D0
@@ -952,21 +746,14 @@ S
 #5016
 "Above a Dark Cavern"
 "High above the ground in the southwest corner of the cavern, a great cluster
-
-of curtain-shaped stalactites has formed in the center.  Made from green-blue
-
-limestone, it is almost completely covered in a white, very dimly glowing
-
-substance.  Many large chunks have broken from it, however, and it looks like
-
-it may fall at any moment.
-
-"
+of curtain-shaped stalactites has formed in the center.  Made from green-blue
+limestone, it is almost completely covered in a white, very dimly glowing
+substance.  Many large chunks have broken from it, however, and it looks like
+it may fall at any moment.
+"
 "Maybe falling below? who knows.
-
-[Hedrack] Desc checked.
-
-"
+[Hedrack] Desc checked.
+"
 301465668 0
 9 9 0
 D0
@@ -988,17 +775,12 @@ S
 #5017
 "Above a Dark Cavern"
 "Two large columns of limestone form a natural archway of rock in the eastern
-
-face of this massive cavern.  Two veins of blue-green and pink limestone meet
-
-here, forming swirls of color in the rock.  The ceiling here is also lightly
-
-spotted by a white, phosphorus residue which emits a foul odor.
-
-"
+face of this massive cavern.  Two veins of blue-green and pink limestone meet
+here, forming swirls of color in the rock.  The ceiling here is also lightly
+spotted by a white, phosphorus residue which emits a foul odor.
+"
 "[Hedrack] Desc checked.
-
-"
+"
 301465668 0
 9 9 0
 D0
@@ -1024,17 +806,12 @@ S
 #5018
 "Above a Dark Cavern"
 "The air is foul and stagnant here where large splotches of a white substance
-
-cover the pink and green limestone rock.  There are no stalactites in this
-
-upper area of the cavern where the rock is smooth and curving, and darkness is
-
-at every edge of vision.
-
-"
+cover the pink and green limestone rock.  There are no stalactites in this
+upper area of the cavern where the rock is smooth and curving, and darkness is
+at every edge of vision.
+"
 "[Hedrack] Desc checked.
-
-"
+"
 301465668 0
 9 9 0
 D2
@@ -1056,21 +833,14 @@ S
 #5019
 "Dark Tunnel"
 "Winding its way from west to east, this curvy tunnel is filled with a decaying
-
-stench emanating from the east.  Echoes seem to reverberate off the walls
-
-here, where the rock walls are very smooth and dry.  Small shards of broken
-
-rock litter the floor here and there, making passage difficult for those on
-
-foot.
-
-"
+stench emanating from the east.  Echoes seem to reverberate off the walls
+here, where the rock walls are very smooth and dry.  Small shards of broken
+rock litter the floor here and there, making passage difficult for those on
+foot.
+"
 "no.mob
-
-[Hedrack] Desc checked.
-
-"
+[Hedrack] Desc checked.
+"
 301465676 0
 11 6 0
 D1
@@ -1087,29 +857,18 @@ S
 #5020
 "Before a Dark Lair"
 "A tunnel from the west ends here, before a large cavern to the east.  The
-
-walls here have lost their smoothness in places where thin shards of broken
-
-rock litter the floor; it looks as though an earthquake had knocked the
-
-limestone from the wall.  A foul, nauseous air blows into the tunnel from the
-
-cavern, smelling like decaying flesh.
-
-"
+walls here have lost their smoothness in places where thin shards of broken
+rock litter the floor; it looks as though an earthquake had knocked the
+limestone from the wall.  A foul, nauseous air blows into the tunnel from the
+cavern, smelling like decaying flesh.
+"
 "no stalagtites
-
-no.mob
-
-[Hedrack] Hmm, not sure where the deafen code is, but I got
-
-[Hedrack] 'Intense howling jangles you.'
-
--- changed to 'The intense howling'
-
-[Hedrack] Desc checked.
-
-"
+no.mob
+[Hedrack] Hmm, not sure where the deafen code is, but I got
+[Hedrack] 'Intense howling jangles you.'
+-- changed to 'The intense howling'
+[Hedrack] Desc checked.
+"
 301465676 0
 11 6 0
 D1
@@ -1126,31 +885,19 @@ S
 #5021
 "A Dark Lair"
 "Like a scene from some macabre vision of a massacre, a dark cavern floor
-
-spreads out to the east, away from a tunnel mouth to the west.  Littered with
-
-bloated, half-decomposing bodies, a foul stench permeates the room,
-
-threatening to overpower those with weak stomachs.  Bits of gore are
-
-splattered along the limestone walls, and a particularly gruesome corpse has
-
-been impaled on a sharp stalagmite near the cavern's center.
-
-"
+spreads out to the east, away from a tunnel mouth to the west.  Littered with
+bloated, half-decomposing bodies, a foul stench permeates the room,
+threatening to overpower those with weak stomachs.  Bits of gore are
+splattered along the limestone walls, and a particularly gruesome corpse has
+been impaled on a sharp stalagmite near the cavern's center.
+"
 "w is no.mob
-
-[Hedrack] extras: corpses
-
--- added
-
-[Hedrack] search corpse
-
--- all you can catch is... the PLAGUE
-
-[Hedrack] Desc checked.
-
-"
+[Hedrack] extras: corpses
+-- added
+[Hedrack] search corpse
+-- all you can catch is... the PLAGUE
+[Hedrack] Desc checked.
+"
 301465668 0
 11 8 0
 D3
@@ -1164,81 +911,53 @@ D4
 E
 "decaying corpses bloated bodies"
 "The corpses are a foul, disgusting sight.  They look blackened somehow, with
-
-rot gnawing on their bones.  I wouldn't get too close if I were you!
-
-"
+rot gnawing on their bones.  I wouldn't get too close if I were you!
+"
 A
 ""
 ""
 "if( is_player( ch ) ) {
-
-  mob = mob_in_room( 2669, leads_to( door( room, up ) ) );
-
-  if( mob ) {
-
-    if( !is_fighting( mob ) ) {
-
-      if( rflag( reset0, room ) ) {
-
-        remove_rflag( reset0, room );
-
-        act_room( \"$n scuttles along the ceiling.\", mob );
-
-        send_to_room( #scuttle, room );
-
-        wait( 1 );
-
-        if( char_in_room( ch, room ) ) {
-
-          transfer( mob, room );
-
-          act_tochar( #swoop, ch, null, mob );
-
-          act_notchar( #rswoop, ch, null, mob );
-
-          attack( mob, ch, 2d15+9, \"swooping bite\" );
-
-          }
-
-        set_rflag( reset0, room );
-
-        }
-
-      }
-
-    }
-
-  }
-
-"
+  mob = mob_in_room( 2669, leads_to( door( room, up ) ) );
+  if( mob ) {
+    if( !is_fighting( mob ) ) {
+      if( rflag( reset0, room ) ) {
+        remove_rflag( reset0, room );
+        act_room( \"$n scuttles along the ceiling.\", mob );
+        send_to_room( #scuttle, room );
+        wait( 1 );
+        if( char_in_room( ch, room ) ) {
+          transfer( mob, room );
+          act_tochar( #swoop, ch, null, mob );
+          act_notchar( #rswoop, ch, null, mob );
+          attack( mob, ch, 2d15+9, \"swooping bite\" );
+          }
+        set_rflag( reset0, room );
+        }
+      }
+    }
+  }
+"
 E
 "scuttle"
 "The sound of flapping wings is heard overhead.
-
-"
+"
 E
 "swoop"
 "$N swoops out of the darkness at you!
-
-"
+"
 E
 "rswoop"
 "$N swoops out of the darkness at $n!
-
-"
+"
 !
 1 0 8
 A
 "search"
 "corpse"
 "act_tochar( \"You plunge your hand into the decomposing corpse!\", ch );
-
-act_notchar( \"$n plunges $s hand into the decomposing corpse!\", ch );
-
-plague( ch );
-
-"
+act_notchar( \"$n plunges $s hand into the decomposing corpse!\", ch );
+plague( ch );
+"
 !
 0 0 0
 -1
@@ -1247,29 +966,18 @@ S
 #5022
 "Above a Dark Lair"
 "You are high above a gruesome lair, at the top of a large cavern.  The
-
-limestone walls and ceiling are cracked, with large chunks missing from the
-
-rock.  A foul stench wafts up from the lair below, a nearly overpowering
-
-assault smelling of rotting flesh.  The largest of the cracks in the wall
-
-produces a steady stream of water which oozes down the limestone wall.
-
-"
+limestone walls and ceiling are cracked, with large chunks missing from the
+rock.  A foul stench wafts up from the lair below, a nearly overpowering
+assault smelling of rotting flesh.  The largest of the cracks in the wall
+produces a steady stream of water which oozes down the limestone wall.
+"
 "codes spread howling if howler is here
-
-exit d is no.mob to prevent wander down, only up
-
-if the howler howls in here and is hurt, it heals him
-
-up is 5025
-
-[Hedrack] Desc checked.
-
-[Nereus] Foul-stenched breath when this thing howls is not gramatically correct
-
-"
+exit d is no.mob to prevent wander down, only up
+if the howler howls in here and is hurt, it heals him
+up is 5025
+[Hedrack] Desc checked.
+[Nereus] Foul-stenched breath when this thing howls is not gramatically correct
+"
 301465668 0
 9 7 0
 D4
@@ -1284,233 +992,136 @@ A
 "__HOWL_CODE__"
 ""
 "mob = mob_in_room( 2669, room );
-
-if( mob ) {
-
-  if( !is_fighting( mob ) ) {
-
-    if( !is_silenced( mob ) ) {
-
-      act_room( #above_lair, mob );
-
-      loop( all_in_room ) {
-
-        if( rch != mob ) {
-
-          if( can_hear( rch ) ) {
-
-            i = 3d21+3;
-
-            sound_message( rch, i, \"the intense howling\" );
-
-            inflict( rch, mob, i, \"The Howler\" );
-
-            j = i / 10;
-
-            if( j > 10 ) {
-
-              j = 10;
-
-              }
-
-            if( j > 0 ) {
-
-              if( rch ) {
-
-                do_spell( deafen, mob, rch, j );
-
-                }
-
-              }
-
-            }
-
-          }
-
-        else {
-
-          if( can_hear( rch ) ) {
-
-            if( find_stat( rch, hit ) < find_stat( rch, max_hit ) ) {
-
-              do_spell( cure serious, mob, rch );
-
-              }
-
-            }
-
-          }
-
-        }
-
-      room = find_room( 5021 );
-
-      send_to_room( #lair, room );
-
-      loop( all_in_room ) {
-
-        if( can_hear( rch ) ) {
-
-          i = 3d13+3;
-
-          sound_message( rch, i, \"the intense howling\" );
-
-          inflict( rch, null, i, \"The Howler\" );
-
-          j = i / 10;
-
-          if( j > 10 ) {
-
-            j = 10;
-
-            }
-
-          if( j > 0 ) {
-
-            if( rch ) {
-
-              do_spell( deafen, null, rch, j );
-
-              }
-
-            }
-
-          }
-
-        }
-
-      room = find_room( 5020 );
-
-      send_to_room( #before_lair, room );
-
-      loop( all_in_room ) {
-
-        if( can_hear( rch ) ) {
-
-          i = 3d7+3;
-
-          sound_message( rch, i, \"the intense howling\" );
-
-          inflict( rch, null, i, \"The Howler\" );
-
-          j = i / 10;
-
-          if( j > 10 ) {
-
-            j = 10;
-
-            }
-
-          if( j > 0 ) {
-
-            if( rch ) {
-
-              do_spell( deafen, null, rch, j );
-
-              }
-
-            }
-
-          }
-
-        }
-
-      room = find_room( 5019 );
-
-      send_to_room( #beyond_lair, room );
-
-      i = 5001;
-
-      loop( i < 5019 ) {
-
-        room = find_room( i );
-
-        send_to_room( #cavern, room );
-
-        i = i + 1;
-
-        }
-
-      }
-
-    }
-
-  }
-
-"
+if( mob ) {
+  if( !is_fighting( mob ) ) {
+    if( !is_silenced( mob ) ) {
+      act_room( #above_lair, mob );
+      loop( all_in_room ) {
+        if( rch != mob ) {
+          if( can_hear( rch ) ) {
+            i = 3d21+3;
+            sound_message( rch, i, \"the intense howling\" );
+            inflict( rch, mob, i, \"The Howler\" );
+            j = i / 10;
+            if( j > 10 ) {
+              j = 10;
+              }
+            if( j > 0 ) {
+              if( rch ) {
+                do_spell( deafen, mob, rch, j );
+                }
+              }
+            }
+          }
+        else {
+          if( can_hear( rch ) ) {
+            if( find_stat( rch, hit ) < find_stat( rch, max_hit ) ) {
+              do_spell( cure serious, mob, rch );
+              }
+            }
+          }
+        }
+      room = find_room( 5021 );
+      send_to_room( #lair, room );
+      loop( all_in_room ) {
+        if( can_hear( rch ) ) {
+          i = 3d13+3;
+          sound_message( rch, i, \"the intense howling\" );
+          inflict( rch, null, i, \"The Howler\" );
+          j = i / 10;
+          if( j > 10 ) {
+            j = 10;
+            }
+          if( j > 0 ) {
+            if( rch ) {
+              do_spell( deafen, null, rch, j );
+              }
+            }
+          }
+        }
+      room = find_room( 5020 );
+      send_to_room( #before_lair, room );
+      loop( all_in_room ) {
+        if( can_hear( rch ) ) {
+          i = 3d7+3;
+          sound_message( rch, i, \"the intense howling\" );
+          inflict( rch, null, i, \"The Howler\" );
+          j = i / 10;
+          if( j > 10 ) {
+            j = 10;
+            }
+          if( j > 0 ) {
+            if( rch ) {
+              do_spell( deafen, null, rch, j );
+              }
+            }
+          }
+        }
+      room = find_room( 5019 );
+      send_to_room( #beyond_lair, room );
+      i = 5001;
+      loop( i < 5019 ) {
+        room = find_room( i );
+        send_to_room( #cavern, room );
+        i = i + 1;
+        }
+      }
+    }
+  }
+"
 E
 "above_lair"
 "$n expands as $e inhales, then unleashes a blood-curdling howl of
-
-foul-stenched breath.
-
-"
+foul-stenched breath.
+"
 E
 "lair"
 "The rushing wind of a piercing howl echos from the darkness above.
-
-"
+"
 E
 "before_lair"
 "The rushing wind of a piercing howl echos from the darkness of the lair to the
-
-east.
-
-"
+east.
+"
 E
 "beyond_lair"
 "A foul air accompanies a baleful howl from the dark tunnel to the east.
-
-"
+"
 E
 "cavern"
 "A baleful howl echoes through the cavern.
-
-"
+"
 !
 4 300 0
 A
 "__DEATH_CODE__"
 ""
 "open( find_room( 5025 ), down );
-
-send_to_room( #crack, find_room( 5022 ) );
-
-send_to_room( #rcrack, find_room( 5025 ) );
-
-obj = obj_in_room( 118, find_room( 5025 ) );
-
-if( obj ) {
-
-  obj_to_room( obj, find_room( 5022 ) );
-
-  send_to_room( #chest_fall, find_room( 5025 ) );
-
-  send_to_room( #chest_arrive, find_room( 5022 ) );
-
-  }
-
-"
+send_to_room( #crack, find_room( 5022 ) );
+send_to_room( #rcrack, find_room( 5025 ) );
+obj = obj_in_room( 118, find_room( 5025 ) );
+if( obj ) {
+  obj_to_room( obj, find_room( 5022 ) );
+  send_to_room( #chest_fall, find_room( 5025 ) );
+  send_to_room( #chest_arrive, find_room( 5022 ) );
+  }
+"
 E
 "crack"
 "A crack forms in the ceiling.
-
-"
+"
 E
 "rcrack"
 "A crack opens up underneath you!
-
-"
+"
 E
 "chest_fall"
 "The chest falls through a crack in the floor.
-
-"
+"
 E
 "chest_arrive"
 "A chest falls from the crack in the ceiling.
-
-"
+"
 !
 0 0 0
 2669 9 1509949540 3 0
@@ -1520,37 +1131,22 @@ S
 #5023
 "Damp Tunnel"
 "Damp limestone lines this cavern passage, condensation collecting on the cool
-
-stone in such quantities that it sends droplets from the ceiling to form small
-
-puddles on the cavern floor.  The cacophonous sound of rushing water assaults
-
-the cavern from the west, amplified by echoes until it reaches a near-painful
-
-intensity.  To the east, the terrain dips sharply, as the limestone cavern
-
-drops into darkness.
-
-"
+stone in such quantities that it sends droplets from the ceiling to form small
+puddles on the cavern floor.  The cacophonous sound of rushing water assaults
+the cavern from the west, amplified by echoes until it reaches a near-painful
+intensity.  To the east, the terrain dips sharply, as the limestone cavern
+drops into darkness.
+"
 "no.mob
-
-perhaps a \"listen\" action here which deafens?
-
-[Hedrack] Desc checked.
-
-[Hedrack] water source - puddle
-
--- added
-
-[Hedrack] extras: puddles
-
--- added via object
-
-[Hedrack] maybe a fake search - puddle
-
--- added real search
-
-"
+perhaps a \"listen\" action here which deafens?
+[Hedrack] Desc checked.
+[Hedrack] water source - puddle
+-- added
+[Hedrack] extras: puddles
+-- added via object
+[Hedrack] maybe a fake search - puddle
+-- added real search
+"
 301465676 0
 11 6 0
 D3
@@ -1564,130 +1160,85 @@ D5
 E
 "1 east"
 "The descent is made fairly precarious due to the dampness of the limestone.  A
-
-misstep could result in a serious fall.
-
-"
+misstep could result in a serious fall.
+"
 A
 "climb"
 "1 down"
 "interpret( ch, \"down\" );
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "if( can_fly( ch ) )
-
-  continue;
-
-else {
-
-  i = find_skill( ch, climb );
-
-  if( i > random( 1, 3 ) )
-
-    continue;
-
-  else {
-
-    act_tochar( #fall, ch );
-
-    act_notchar( #rfall, ch );
-
-    transfer( ch, find_room( 5024 ) );
-
-    act_tochar( #land, ch );
-
-    act_notchar( #rland, ch );
-
-    j = 2d10+3;
-
-    dam_message( ch, j, \"the fall\" );
-
-    inflict( ch, null, j, \"the fall\" );
-
-    set_resting( ch );
-
-    }
-
-  }
-
-"
+  continue;
+else {
+  i = find_skill( ch, climb );
+  if( i > random( 1, 3 ) )
+    continue;
+  else {
+    act_tochar( #fall, ch );
+    act_notchar( #rfall, ch );
+    transfer( ch, find_room( 5024 ) );
+    act_tochar( #land, ch );
+    act_notchar( #rland, ch );
+    j = 2d10+3;
+    dam_message( ch, j, \"the fall\" );
+    inflict( ch, null, j, \"the fall\" );
+    set_resting( ch );
+    }
+  }
+"
 E
 "to_char"
 "You $t $T the limestone face.
-
-"
+"
 E
 "to_room"
 "$n $t $T the limestone face.
-
-"
+"
 E
 "fall"
 "You slip on the limestone and fall into the darkness below!
-
-"
+"
 E
 "rfall"
 "$n slips on the limestone and falls out of sight!
-
-"
+"
 E
 "land"
 "You land heavily on the limestone floor.
-
-"
+"
 E
 "rland"
 "$n falls in from above.
-
-"
+"
 !
 3 0 32
 A
 "search"
 "puddle"
 "act_tochar( \"You plunge your hands into the cold water of the puddle.\", ch );
-
-act_notchar( \"$n reaches $s hands into the cold water of the puddle.\", ch );
-
-i = 0;
-
-if( rflag( reset0, room ) ) {
-
-  remove_rflag( reset0, room );
-
-  j = find_skill( ch, searching );
-
-  if( j > random( 0, 10 ) ) {
-
-    i = 1;
-
-    }
-
-  }
-
-if( i == 1 ) {
-
-  obj = obj_to_char( oload( 14 ), ch );
-
-  act_tochar( \"You find $p!\", ch, obj );
-
-  act_notchar( \"$n finds $p!\", ch, obj );
-
-  }
-
-else {
-
-  act_tochar( \"You find nothing, only succeeding in washing your hands.\", ch );
-
-  }
-
-"
+act_notchar( \"$n reaches $s hands into the cold water of the puddle.\", ch );
+i = 0;
+if( rflag( reset0, room ) ) {
+  remove_rflag( reset0, room );
+  j = find_skill( ch, searching );
+  if( j > random( 0, 10 ) ) {
+    i = 1;
+    }
+  }
+if( i == 1 ) {
+  obj = obj_to_char( oload( 14 ), ch );
+  act_tochar( \"You find $p!\", ch, obj );
+  act_notchar( \"$n finds $p!\", ch, obj );
+  }
+else {
+  act_tochar( \"You find nothing, only succeeding in washing your hands.\", ch );
+  }
+"
 !
 0 0 0
 3795 17 1509949540 -2 0
@@ -1697,31 +1248,19 @@ S
 #5024
 "Damp Tunnel"
 "Thin ribbons of water trickle down a slope to the west, collecting in shallow
-
-pools on the limestone floor of this cavern.  The faint echo of rushing water
-
-beyond the rise can be heard in the chamber at the level of a whisper.  To the
-
-east, the tunnel opens into a vast cavern.
-
-"
+pools on the limestone floor of this cavern.  The faint echo of rushing water
+beyond the rise can be heard in the chamber at the level of a whisper.  To the
+east, the tunnel opens into a vast cavern.
+"
 "faint echo of waterfall to the west (up)
-
-[Hedrack] water source - pools
-
--- added object
-
-[Hedrack] Desc checked.
-
-[Hedrack] extra: pools, slope, cavern?
-
--- pools added via object
-
--- slope extra added
-
--- cavern extra is this room's description?
-
-"
+[Hedrack] water source - pools
+-- added object
+[Hedrack] Desc checked.
+[Hedrack] extra: pools, slope, cavern?
+-- pools added via object
+-- slope extra added
+-- cavern extra is this room's description?
+"
 301465676 0
 11 6 0
 D1
@@ -1735,80 +1274,60 @@ D4
 E
 "1 west slope"
 "The sheer limestone face looks quite slippery.
-
-"
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You $t $T into a dark cavern.
-
-"
+"
 E
 "to_room"
 "$n $t $T into a dark cavern.
-
-"
+"
 !
 3 0 2
 A
 ""
 ""
 "if( can_fly( ch ) )
-
-  continue;
-
-else {
-
-  i = find_skill( ch, climb );
-
-  if( i > random( 1, 3 ) )
-
-    continue;
-
-  else {
-
-    act_tochar( #climb, ch );
-
-    act_notchar( #rclimb, ch );
-
-    }
-
-  }
-
-"
+  continue;
+else {
+  i = find_skill( ch, climb );
+  if( i > random( 1, 3 ) )
+    continue;
+  else {
+    act_tochar( #climb, ch );
+    act_notchar( #rclimb, ch );
+    }
+  }
+"
 E
 "to_char"
 "You $t $T the limestone face.
-
-"
+"
 E
 "to_room"
 "$n $t $T the limestone face.
-
-"
+"
 E
 "rclimb"
 "$n climbs about halfway up the limestone face, then slides back down.
-
-"
+"
 E
 "climb"
 "You climb about halfway up the limestone face, then slide back down.
-
-"
+"
 !
 3 0 16
 A
 "climb"
 "1 up"
 "interpret( ch, \"up\" );
-
-"
+"
 !
 0 0 0
 3796 17 1509949540 -2 0
@@ -1818,11 +1337,9 @@ S
 #5025
 "A Crack in the Ceiling"
 "This narrow fissure is a crack in solid limestone.
-
-"
+"
 "down is 5022
-
-"
+"
 301465668 0
 11 0 0
 D5

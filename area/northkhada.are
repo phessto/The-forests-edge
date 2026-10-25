@@ -10,15 +10,11 @@
 #33000
 "Cairn Mountain Road"
 "The trail is reasonably flat level here, though it still clings precariously
-
-to the side of the mountain and gives you a magnificent view down the side of
-
-the mountain.
-
-"
+to the side of the mountain and gives you a magnificent view down the side of
+the mountain.
+"
 "[Vlad] this room has grammar problems, and it is only a one line rdesc.
-
-"
+"
 301465600 0
 5 6 0
 D0
@@ -40,16 +36,11 @@ S
 #33001
 "Cairn Mountain Road"
 "The trail reaches the top of a huge bluff, the bare rock face drops away to
-
-the west down a five hundred foot cliff.  To the east looms the rest of Cairn
-
-mountain which disappears up into the misty clouds.  Snow and ice cover the
-
-trail and it is only the presence of a number of marker stones which stop you
-
-from wandering into a crevasse.
-
-"
+the west down a five hundred foot cliff.  To the east looms the rest of Cairn
+mountain which disappears up into the misty clouds.  Snow and ice cover the
+trail and it is only the presence of a number of marker stones which stop you
+from wandering into a crevasse.
+"
 ""
 301465600 0
 5 6 0
@@ -67,23 +58,15 @@ S
 #33002
 "Cairn Mountain Road - Atop the Crest"
 "To the north the trail starts down the side of the mountain, the track has
-
-been cut out of the rock in the more dangerous places but it will still take
-
-much care.  To the south the trail has levelled off and follows a reasonably
-
-flat path through the ice and snow.  Following the mountain, just this side of
-
-the crest, yet another pathway winds among the boulders, leading west.
-
-"
+been cut out of the rock in the more dangerous places but it will still take
+much care.  To the south the trail has levelled off and follows a reasonably
+flat path through the ice and snow.  Following the mountain, just this side of
+the crest, yet another pathway winds among the boulders, leading west.
+"
 "[Maegheera] needs leaving down here.. this place is sooooo boring.
-
-[Maegheera] Road to Wrath Wyrms west.
-
-altitude 4
-
-"
+[Maegheera] Road to Wrath Wyrms west.
+altitude 4
+"
 301465600 0
 5 6 0
 D2
@@ -101,32 +84,24 @@ D5
 E
 "1 west boulders pathway"
 "A gap between two boulders lying trailside, cuts westward through the
-
-mountains, just this side of the crest.  The opening is just wide enough
-
-to squeeze through.
-
-"
+mountains, just this side of the crest.  The opening is just wide enough
+to squeeze through.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@CAfter finally squeezing past the gap in the boulders, you move westward
-
-along the rough-cut trail.@n 
-
-"
+along the rough-cut trail.@n 
+"
 E
 "to_room"
 "@CSqueezing past the boulders, $n moves westward along the rough-cut
-
-trail.@n 
-
-"
+trail.@n 
+"
 !
 3 0 8
 -1
@@ -135,13 +110,10 @@ S
 #33003
 "Cairn Mountain Road - Icy Slope"
 "The track here follows a north-south route up and down the mountain.  Snow and
-
-ice cover most of the track making it quite slippery and dangerous.
-
-"
+ice cover most of the track making it quite slippery and dangerous.
+"
 "altitude 3
-
-"
+"
 301465600 0
 5 6 0
 D4
@@ -158,21 +130,14 @@ S
 #33004
 "Cairn Mountain Road - Slope"
 "The trail is following a relatively straight line north and south up and down
-
-the mountain here.  The snow that covers the trail has in some places harden
-
-to ice making the path quite slippery and dangerous.  To the west you get a
-
-magnificent view out over the forested valley below and to the east the bulk
-
-of Cairn Mountain looms above you, its top shrouded in clouds.
-
-"
+the mountain here.  The snow that covers the trail has in some places harden
+to ice making the path quite slippery and dangerous.  To the west you get a
+magnificent view out over the forested valley below and to the east the bulk
+of Cairn Mountain looms above you, its top shrouded in clouds.
+"
 "[Boku Laton] has in some place harden to ice
-
-altitude 2
-
-"
+altitude 2
+"
 301465600 0
 5 6 0
 D0
@@ -189,12 +154,9 @@ S
 #33005
 "Cairn Mountain Road - Start of Snowline"
 "This is the snowline, where the forest meets the alpine snow and ice.  Further
-
-down the mountain, the slopes are covered by a deep forest.  Up the mountain
-
-is only snow and ice, with the odd small alpine shrub.
-
-"
+down the mountain, the slopes are covered by a deep forest.  Up the mountain
+is only snow and ice, with the odd small alpine shrub.
+"
 ""
 301465600 0
 5 6 0
@@ -212,14 +174,10 @@ S
 #33006
 "Cairn Mountain Road - Forested Mountain Slopes"
 "The forest is quite thin here the tree this near the snowline have problems
-
-growing and it is only the most hardy of them that survive.  This gives the
-
-area under the trees a other-worldly look with twisted and gnarled stumps of
-
-trees and half-dead trees.
-
-"
+growing and it is only the most hardy of them that survive.  This gives the
+area under the trees a other-worldly look with twisted and gnarled stumps of
+trees and half-dead trees.
+"
 ""
 301465600 0
 3 6 0
@@ -237,21 +195,14 @@ S
 #33007
 "Cairn Mountain Road - Fork in Path"
 "High on the mountain the road is not far from the start of the snow and ice.
-
-Here the road breaks into two with a track off to the west while the main road
-
-continues north and south.  This high on the slopes the trees under the forest
-
-canopy have a twisted and half-dead look to them.  Life at this altitude must
-
-be hard for them.
-
-"
+Here the road breaks into two with a track off to the west while the main road
+continues north and south.  This high on the slopes the trees under the forest
+canopy have a twisted and half-dead look to them.  Life at this altitude must
+be hard for them.
+"
 "no mob
-
-[Dalthas] please remove this exit
-
-"
+[Dalthas] please remove this exit
+"
 301465608 0
 3 6 0
 D0
@@ -270,36 +221,25 @@ E
 "sign"
 "The sign reads:
 
-
 South - Kha-Da
-
-West - Forest Valley, Black Hills Road and Valley (Under Construction)
-
+West - Forest Valley, Black Hills Road and Valley (Under Construction)
 
 "
 A
 "1 north"
 ""
 "if( !find_stat( ch, level ) < 91 )
-
-  continue;
-
-send_to_char( #closed, ch );
-
-"
+  continue;
+send_to_char( #closed, ch );
+"
 E
 "closed"
 "Looking northward, you see a large group of boulders have slid down the
-
-hillside, blocking the trail.  Small hack marks in the boulders make it
-
-appear that they are being broken down, bit by bit, so the northern trail
-
-may once again become passable.  You should probably just go west or
-
-south for now.
-
-"
+hillside, blocking the trail.  Small hack marks in the boulders make it
+appear that they are being broken down, bit by bit, so the northern trail
+may once again become passable.  You should probably just go west or
+south for now.
+"
 !
 0 0 0
 210 17 1509949490 -2 0
@@ -309,21 +249,14 @@ S
 #33008
 "Cairn Mountains -- Cliff's Edge"
 "The trail across the plateau comes dangerously close to the cliff's edge, with
-
-little but thin air between the path and certain death below.  Much of the
-
-dry, loose snow crystals have been blown away here, where nothing protects it
-
-from the blowing wind.  The ledge turns sharply, following the cliff wall
-
-northward and to the west.  The row of pines begins to thin out as it becomes
-
-more exposed to the weather.
-
-"
+little but thin air between the path and certain death below.  Much of the
+dry, loose snow crystals have been blown away here, where nothing protects it
+from the blowing wind.  The ledge turns sharply, following the cliff wall
+northward and to the west.  The row of pines begins to thin out as it becomes
+more exposed to the weather.
+"
 "[Dalthas] how about a look down, look cliff
-
-"
+"
 301465600 0
 5 6 0
 D0
@@ -342,12 +275,9 @@ S
 #33009
 "Forest - Mountain Track"
 "The trail is quite muddy and boggy as it follows a reasonably flat route.
-
-There are many mud holes where people in order to avoid the mud have skirted
-
-around the edge of the mud simply making the mud hole bigger.
-
-"
+There are many mud holes where people in order to avoid the mud have skirted
+around the edge of the mud simply making the mud hole bigger.
+"
 ""
 301465600 0
 3 6 0
@@ -365,14 +295,10 @@ S
 #33010
 "Forest - Mountain Track"
 "Quite boggy, the track continues along a bit of a plateau to the east and down
-
-the mountain to the west.  Large mud-bogs cover the track in places making you
-
-go around them.  The forest here is quite stunted, the trees are mostly scrub
-
-and scrappy undergrowth.
-
-"
+the mountain to the west.  Large mud-bogs cover the track in places making you
+go around them.  The forest here is quite stunted, the trees are mostly scrub
+and scrappy undergrowth.
+"
 ""
 301465600 0
 3 6 0
@@ -394,18 +320,12 @@ S
 #33011
 "Forest - Mountain Track"
 "The trail reaches the top of a reasonably steep cliff which the trail
-
-cuts it way down to the west.  In the forested valley below you can see a
-
-pinnacle of rock which thrusts up from the middle of the valley floor. 
-
-Although is is quite far away you can clearly see a tower on top of the
-
-pinnacle.  The boggy trail leads along the plateau to the east or down
-
-the trail to the west.  
-
-"
+cuts it way down to the west.  In the forested valley below you can see a
+pinnacle of rock which thrusts up from the middle of the valley floor. 
+Although is is quite far away you can clearly see a tower on top of the
+pinnacle.  The boggy trail leads along the plateau to the east or down
+the trail to the west.  
+"
 ""
 301465600 0
 3 6 0
@@ -427,14 +347,10 @@ S
 #33012
 "Forest - Mountain Track"
 "This is the eastern edge of a high valley in the mountains.  To the south you
-
-can see the almost conical shape of Cairn mountain.  The valley is quite
-
-thickly forested since it is quite sheltered, and the hunting in this area
-
-should be quite good.
-
-"
+can see the almost conical shape of Cairn mountain.  The valley is quite
+thickly forested since it is quite sheltered, and the hunting in this area
+should be quite good.
+"
 ""
 301465600 0
 3 6 0
@@ -460,14 +376,10 @@ S
 #33013
 "Forest Mountain Track"
 "This thickly forested valley is nestled between two very large mountains. 
-
-To the east, you catch glimpses of the Cairn Mountains, while another
-
-mountain looms to the west.  The beech forest all around you is quite
-
-healthy, as the valley is sheltered from the worst of the storms.
-
-"
+To the east, you catch glimpses of the Cairn Mountains, while another
+mountain looms to the west.  The beech forest all around you is quite
+healthy, as the valley is sheltered from the worst of the storms.
+"
 ""
 301465600 0
 3 6 0
@@ -495,12 +407,9 @@ S
 #33014
 "Forest - Mountain Track (Stream Crossing)"
 "There is a small mountain stream running from south to north here, the
-
-trail simply leads through it and the water doesn't look more than ankle
-
-deep.  The stream looks quite clear and safe to drink from.  
-
-"
+trail simply leads through it and the water doesn't look more than ankle
+deep.  The stream looks quite clear and safe to drink from.  
+"
 ""
 301465600 0
 13 9 0
@@ -527,19 +436,13 @@ S
 #33015
 "Forest - Mountain Track (Break in the Path)"
 "The path splits in two here, a smaller trail leads off to the south while the
-
-main trail turns from the north to the east.  To the east you can see a small
-
-stream which babbles happily by.  A small path has been worn into the grass to
-
-the west, leading between several boulders.
-
-"
+main trail turns from the north to the east.  To the east you can see a small
+stream which babbles happily by.  A small path has been worn into the grass to
+the west, leading between several boulders.
+"
 "[Nereus] make western exit secret
-
-[Nereus] do *not* announce this when it is opened
-
-"
+[Nereus] do *not* announce this when it is opened
+"
 301465600 0
 3 6 0
 D0
@@ -565,16 +468,11 @@ S
 #33016
 "Forest Valley - Outside a Cottage"
 "You are standing outside a small mud and thatch cottage.  The cottage looks
-
-like it has been here many years as it looks as much a part of the landscape
-
-as the surrounding trees.  To the east you can hear the the babbling of a
-
-mountain stream.  The cottage looks lived in as there is smoke coming out of
-
-the chimney.
-
-"
+like it has been here many years as it looks as much a part of the landscape
+as the surrounding trees.  To the east you can hear the the babbling of a
+mountain stream.  The cottage looks lived in as there is smoke coming out of
+the chimney.
+"
 ""
 301465608 0
 3 6 0
@@ -592,12 +490,9 @@ S
 #33017
 "Forest Valley"
 "This portion of the valley is quite thickly forested.  Tall, heavily-branched
-
-pine trees grow all along the valley, with smaller trees growing near their
-
-roots.  A small mountain stream lies alongside the path to the west.
-
-"
+pine trees grow all along the valley, with smaller trees growing near their
+roots.  A small mountain stream lies alongside the path to the west.
+"
 ""
 301465600 0
 3 6 0
@@ -615,12 +510,9 @@ S
 #33018
 "Pinnacle Track"
 "The trail starts to climb out of the valley and along the southern, rocky
-
-spine of a rocky pinnacle.  At the top of the pinnacle you can see a large
-
-stone tower.
-
-"
+spine of a rocky pinnacle.  At the top of the pinnacle you can see a large
+stone tower.
+"
 ""
 301465600 0
 5 6 0
@@ -638,16 +530,11 @@ S
 #33019
 "Pinnacle Track"
 "The track becomes quite tricky, not much protects you from either side of this
-
-ridge as it leads up the rocky, southern spine of the pinnacle.  To the north
-
-is the stone tower at the top of the pinnacle.  All around you are the
-
-magnificent snow-capped mountains of the region.  Their tops shrouded in
-
-cloud, the lower slopes covered in beech forest.
-
-"
+ridge as it leads up the rocky, southern spine of the pinnacle.  To the north
+is the stone tower at the top of the pinnacle.  All around you are the
+magnificent snow-capped mountains of the region.  Their tops shrouded in
+cloud, the lower slopes covered in beech forest.
+"
 ""
 301465600 0
 5 6 0
@@ -665,12 +552,9 @@ S
 #33020
 "Cliff - Edge of Bogs"
 "This is the top of quite a steep cliff which falls away to the west down
-
-into a forested valley.  This area is mainly scrub and tussock, it is
-
-quite wet and boggy underfoot.  
-
-"
+into a forested valley.  This area is mainly scrub and tussock, it is
+quite wet and boggy underfoot.  
+"
 ""
 301465600 0
 3 6 0
@@ -693,12 +577,9 @@ S
 #33021
 "Forest - Small Bog"
 "Wet and boggy the tussock and scrub in this area makes for difficult
-
-going.  To the east of here the mountain becomes much steeper and the
-
-brush too thick to continue.  
-
-"
+going.  To the east of here the mountain becomes much steeper and the
+brush too thick to continue.  
+"
 ""
 301465600 0
 3 6 0
@@ -721,12 +602,9 @@ S
 #33022
 "Small Bog"
 "This area is just one big muddy bog.  You have to hop from clump of scrub
-
-to clump of scrub just to get around.  The way looks pretty impassable
-
-any further south.  
-
-"
+to clump of scrub just to get around.  The way looks pretty impassable
+any further south.  
+"
 ""
 301465600 0
 3 6 0
@@ -755,14 +633,10 @@ S
 #33023
 "Cliff - Near Bog"
 "To the west a cliff falls away and with no apparent track down it. 
-
-Otherwise it is still quite wet and boggy underfoot.  There looks like
-
-there might have been a crude hut here at one time but it has now fallen
-
-down and is now a pile of lumber.  
-
-"
+Otherwise it is still quite wet and boggy underfoot.  There looks like
+there might have been a crude hut here at one time but it has now fallen
+down and is now a pile of lumber.  
+"
 ""
 301465600 0
 3 6 0
@@ -777,40 +651,28 @@ D1
 E
 "crude hut pile of lumber"
 "It looks like it once was a trapper's hut as there is still a few
-
-bedraggled furs lying around and now that you look closely you can see
-
-that the hut was in fact burnt down.  
-
-"
+bedraggled furs lying around and now that you look closely you can see
+that the hut was in fact burnt down.  
+"
 A
 "l look"
 "crude hut pile of lumber"
 "if( rflag( reset0, room ) ) {
-
-  send_to_char( #to_char, ch );
-
-  act_notchar( #to_room, ch );
-
-  mload( 2513, room );
-
-  remove_rflag( reset0, room );
-
-  }
-
-continue;
-
-"
+  send_to_char( #to_char, ch );
+  act_notchar( #to_room, ch );
+  mload( 2513, room );
+  remove_rflag( reset0, room );
+  }
+continue;
+"
 E
 "to_room"
 "A small brown ferret leaps out of the wood pile to attack $n.
-
-"
+"
 E
 "to_char"
 "A small brown ferret leaps out of the wood pile to attack you.
-
-"
+"
 !
 0 0 0
 -1
@@ -819,12 +681,9 @@ S
 #33024
 "Forest Valley - Eastern Edge"
 "A lush beech forest covers the floor of this high mountain valley, to the
-
-immediate east now is an unpassable cliff.  There are many deer trails, in
-
-this area so the hunting must be good hereabouts.
-
-"
+immediate east now is an unpassable cliff.  There are many deer trails, in
+this area so the hunting must be good hereabouts.
+"
 ""
 301465600 0
 3 6 0
@@ -847,12 +706,9 @@ S
 #33025
 "Forest Valley - Eastern Edge"
 "The steep cliff to the east overhangs this area slightly and is quite tall
-
-since not even the tall beech trees here reach to even half of the cliffs
-
-height.
-
-"
+since not even the tall beech trees here reach to even half of the cliffs
+height.
+"
 ""
 301465600 0
 3 6 0
@@ -874,12 +730,9 @@ S
 #33026
 "Forest Valley - Eastern Edge"
 "The forest opens out into a nice grassy glade here, up against the wall of the
-
-cliff to the east is a cave entrance.  On the ground here are a number of bear
-
-tracks.
-
-"
+cliff to the east is a cave entrance.  On the ground here are a number of bear
+tracks.
+"
 ""
 301465608 0
 3 6 0
@@ -902,14 +755,10 @@ S
 #33027
 "Bear Cave"
 "This cave is about fifteen feet tall and goes back about thirty-five feet.
-
-The walls of the cave are decorated with crude paintings that look very old.
-
-Upon the floor lies a heap of dead leaves intermixed with bones.  The mouth of
-
-the cave is just to the west.  Beyond it you can see a forest valley.
-
-"
+The walls of the cave are decorated with crude paintings that look very old.
+Upon the floor lies a heap of dead leaves intermixed with bones.  The mouth of
+the cave is just to the west.  Beyond it you can see a forest valley.
+"
 ""
 301465604 0
 11 6 0
@@ -921,35 +770,25 @@ A
 ""
 ""
 "if( find_stat( ch, level ) < 3 && !is_race( ch, bear ) ) {
-
-  send_to_char( #to_char_flee, ch );
-
-  act_notchar( #rflee, ch );
-
-  transfer( ch, find_room( 33026 ) );
-
-  act_notchar( #oflee, ch );
-
-}
-
-"
+  send_to_char( #to_char_flee, ch );
+  act_notchar( #rflee, ch );
+  transfer( ch, find_room( 33026 ) );
+  act_notchar( #oflee, ch );
+}
+"
 E
 "to_char_flee"
 "The smell of a big black bear is enough to send you fleeing for your
-
-life.  
-
-"
+life.  
+"
 E
 "rflee"
 "The smell of a big black bear is enough to send $n fleeing for $s life.
-
-"
+"
 E
 "oflee"
 "$n comes fleeing in from the east.
-
-"
+"
 !
 1 -1 8
 2500 9 1509949540 3 0
@@ -959,14 +798,10 @@ S
 #33028
 "Forest Valley"
 "The tall beech trees fill this valley and the area does not look like it
-
-has ever felt the touch of a woodsman's axe.  To the west you can here
-
-the soft bubbling of a mountain stream, as the water runs swiftly over
-
-the stones in the streambed.  
-
-"
+has ever felt the touch of a woodsman's axe.  To the west you can here
+the soft bubbling of a mountain stream, as the water runs swiftly over
+the stones in the streambed.  
+"
 ""
 301465600 0
 3 6 0
@@ -995,14 +830,10 @@ S
 #33029
 "Forest Valley"
 "The thick luscious forest continues to fill this valley as you meander along
-
-the animal trails.  To the south you see a dense thicket of trees.  You notice
-
-a small barely visible path that wanders into the heart of the thicket.  It
-
-looks like no one has used it for many years.
-
-"
+the animal trails.  To the south you see a dense thicket of trees.  You notice
+a small barely visible path that wanders into the heart of the thicket.  It
+looks like no one has used it for many years.
+"
 ""
 301465600 0
 3 6 0
@@ -1025,21 +856,14 @@ S
 #33030
 "Subtle Path"
 "A narrow path has been worn into the yellowed grass here, clambering between
-
-boulders and heading up west to a knife-cut gap in a sharp ridge.  East, it
-
-descends to join a well-worn path as it leaves a glinting mountain stream
-
-running through thick forest.  High peaks slash the sky all around, the
-
-treeline not far above you.
-
-"
+boulders and heading up west to a knife-cut gap in a sharp ridge.  East, it
+descends to join a well-worn path as it leaves a glinting mountain stream
+running through thick forest.  High peaks slash the sky all around, the
+treeline not far above you.
+"
 "[Kotoktok] added extras
-
-[Nereus] *
-
-"
+[Nereus] *
+"
 301465600 0
 5 9 0
 D1
@@ -1053,33 +877,23 @@ D3
 E
 "narrow path yellowed grass boulders sharp ridge 1 west"
 "The path seems to be rarely travelled by anything but moderate-sized beasts,
-
-and it cuts its way east and west through the yellowed grass.  It leads up to
-
-the western ridge, disappearing into a gap in the stone.
-
-"
+and it cuts its way east and west through the yellowed grass.  It leads up to
+the western ridge, disappearing into a gap in the stone.
+"
 -1
 S
 
 #33031
 "Forest Valley, Mountain Slope"
 "This lush valley floor, surrounded by limestone cliffs, is layered with mist
-
-from some water source nearby, obscuring far vision.  A slick, grass-covered
-
-slope rises to some lower peak westwards, and a tricky-looking scree slope
-
-descends from above down the east valley wall.
-
-"
+from some water source nearby, obscuring far vision.  A slick, grass-covered
+slope rises to some lower peak westwards, and a tricky-looking scree slope
+descends from above down the east valley wall.
+"
 "dex check to leave up
-
-altitude 1
-
-[Kotoktok] added extras
-
-"
+altitude 1
+[Kotoktok] added extras
+"
 301465600 0
 3 9 0
 D0
@@ -1093,65 +907,45 @@ D4
 E
 "lush valley floor"
 "What appears to be bright green grass covers a significant portion of the
-
-valley floor, with shrubs and yellow grass covering most of the rest.
-
-"
+valley floor, with shrubs and yellow grass covering most of the rest.
+"
 E
 "scree slope 1 up 1 east"
 "Gravel and small pieces of loose shale cover the slope to the east.  They look
-
-like they would shift dangerously when walked upon.
-
-"
+like they would shift dangerously when walked upon.
+"
 A
 ""
 ""
 "if( can_fly( ch ) || char_affected( ch, float ) ) {
-
-  continue;
-
-}
-
-if( find_stat( ch, dex ) < random( 1, 10 ) ) {
-
-  act_tochar( #nope, ch );
-
-  act_notchar( #ono, ch );
-
-  set_resting( ch );
-
-  end;
-
-}
-
-continue;
-
-"
+  continue;
+}
+if( find_stat( ch, dex ) < random( 1, 10 ) ) {
+  act_tochar( #nope, ch );
+  act_notchar( #ono, ch );
+  set_resting( ch );
+  end;
+}
+continue;
+"
 E
 "to_char"
 "You carefully negotiate the gravel slope to the top.
-
-"
+"
 E
 "to_room"
 "$n carefully navigates the slope and reaches the top.
-
-"
+"
 E
 "nope"
 "@rYou pick your way up the gravel slope, but halfway up the gravel gives way
-
-beneath you, sending you sliding back down in a shower of small stones.  @n
-
-"
+beneath you, sending you sliding back down in a shower of small stones.  @n
+"
 E
 "ono"
 "@r$n begins clambering upwards, but shortly after comes sliding back down
-
-trailing dust and gravel.@n
-
-"
+trailing dust and gravel.@n
+"
 !
 3 0 16
 1974 17 1509949540 -2 0
@@ -1163,14 +957,10 @@ S
 #33032
 "Mountain Meadow"
 "The signs of a path wind through an open meadow here, shrouds of mist drifting
-
-past and obscuring long-distance vision.  Crumbling white limestone cliffs
-
-line the valley walls, long yellow grass clustered thickly around.  The air is
-
-clean and chill.
-
-"
+past and obscuring long-distance vision.  Crumbling white limestone cliffs
+line the valley walls, long yellow grass clustered thickly around.  The air is
+clean and chill.
+"
 ""
 301465600 0
 3 9 0
@@ -1185,29 +975,21 @@ D3
 E
 "cliffs grass limestone"
 "The thick grass lines the visible valley, particularly high near the cliffs,
-
-perhaps from not being trampled by animals.
-
-"
+perhaps from not being trampled by animals.
+"
 -1
 S
 
 #33033
 "Damp Meadow"
 "The earth here is damp, with groundwater puddling in depressions between the
-
-long yellow grasses and bright shrubs.  Mist blurs the view of the lumpy
-
-limestone slopes rising northwards, but the lower slopes are full of cracks
-
-and ridges, looking quite rough.  A faint path leads to drier ground
-
-eastwards, and a series of easily-leapt rocks heads further into the marsh.
-
-"
+long yellow grasses and bright shrubs.  Mist blurs the view of the lumpy
+limestone slopes rising northwards, but the lower slopes are full of cracks
+and ridges, looking quite rough.  A faint path leads to drier ground
+eastwards, and a series of easily-leapt rocks heads further into the marsh.
+"
 "[Kotoktok] added rextras
-
-"
+"
 301465600 0
 16 9 0
 D0
@@ -1225,61 +1007,43 @@ D3
 E
 "earth depressions yellow grasses bright shrubs"
 "The soil here is soft and yielding, and would be a muddy mess were it not for
-
-the grass and shrubs which grow thickly in this area.
-
-"
+the grass and shrubs which grow thickly in this area.
+"
 E
 "lumpy limestone slopes cracks ridges 1 north"
 "Covered in many cracks and pitted from years of harsh weather, the limestone
-
-to the north looks like it would be easy to climb.  What lies above is
-
-impossible discern, due to the steep angle of the slope.
-
-"
+to the north looks like it would be easy to climb.  What lies above is
+impossible discern, due to the steep angle of the slope.
+"
 A
 "climb"
 "up north slopes limestone"
 "if( find_skill( ch, climb ) > random( 0, 5 ) ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #oclimb, ch );
-
-  transfer( ch, find_room( 33086 ) );
-
-} else {
-
-  act_tochar( #fail, ch );
-
-  act_notchar( #ofail, ch );
-
-}
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #oclimb, ch );
+  transfer( ch, find_room( 33086 ) );
+} else {
+  act_tochar( #fail, ch );
+  act_notchar( #ofail, ch );
+}
+"
 E
 "climb"
 "@gYou clamber up the limestone slope, pulling yourself onto a ledge.@n
-
-"
+"
 E
 "oclimb"
 "@g$n scrambles up into the mist.@n
-
-"
+"
 E
 "fail"
 "@rYou try the trivial-looking climb up the rock-face, but tumble back down to
-
-land with a splash.@n
-
-"
+land with a splash.@n
+"
 E
 "ofail"
 "@r$n tries to scramble up the north face, but slides back down into the swamp.  @n
-
-"
+"
 !
 0 0 0
 415 17 1509949540 -2 0
@@ -1289,17 +1053,12 @@ S
 #33034
 "Slab to Slab"
 "Algae-covered water sits a few inches deep here, curls of mist twisting across
-
-the surface and thickening in the distance.  However, there are enough flat,
-
-weathered slabs of lichen-speckled limestone to avoid the necessity to wade. 
-
-The trail of stone continues into the mist in both directions.
-
-"
+the surface and thickening in the distance.  However, there are enough flat,
+weathered slabs of lichen-speckled limestone to avoid the necessity to wade. 
+The trail of stone continues into the mist in both directions.
+"
 "[Kotoktok] added extra
-
-"
+"
 301465600 0
 3 9 0
 D1
@@ -1313,14 +1072,10 @@ D3
 E
 "algae-covered water flat weathered slabs limestone"
 "A thick layer of bright green algae covers the stagnant water which has
-
-collected in the valley.  The path would be quite treacherous were it not for
-
-the chunks of limestone that stick up from the water, forming a convenient
-
-path.
-
-"
+collected in the valley.  The path would be quite treacherous were it not for
+the chunks of limestone that stick up from the water, forming a convenient
+path.
+"
 2683 9 1509949540 3 0
 -1
 S
@@ -1328,23 +1083,15 @@ S
 #33035
 "Ledge"
 "What appears to be a natural sloping ledge rises out of the valley here, grass
-
-clinging to the convenient path as it angles up the valley wall southwards.
-
-At the base of the ledge are pools of stagnant water, coated by lush green algae
-
-that almost looks like fresh grass.  Slabs and boulders of fallen white-gray
-
-limestone protrude from the water, an easy pathway out into the mist-shrouded
-
-valley.
-
-"
+clinging to the convenient path as it angles up the valley wall southwards.
+At the base of the ledge are pools of stagnant water, coated by lush green algae
+that almost looks like fresh grass.  Slabs and boulders of fallen white-gray
+limestone protrude from the water, an easy pathway out into the mist-shrouded
+valley.
+"
 "[Orb] Rextra for the water.
-
-[Kotoktok] filled out extra
-
-"
+[Kotoktok] filled out extra
+"
 301465600 0
 4 9 0
 D1
@@ -1358,14 +1105,10 @@ D2
 E
 "water pond pool algae grass slabs boulders white-gray limestone"
 "At first glance, the pools of water look like lush, fresh grass, but the
-
-pleasant meadow is revealed to be algae-covered water as it slowly drifts in
-
-the breeze.  Sunken boulders and slabs of rock stick up several feet from the
-
-water, forming an easily traversable path over the stagnant pond.
-
-"
+pleasant meadow is revealed to be algae-covered water as it slowly drifts in
+the breeze.  Sunken boulders and slabs of rock stick up several feet from the
+water, forming an easily traversable path over the stagnant pond.
+"
 4628 17 1509949540 -2 0
 -1
 S
@@ -1373,21 +1116,14 @@ S
 #33036
 "Narrows"
 "The ledge narrows alarmingly here, the lichen-spattered limestone bluff
-
-bulging out and making the traverse tricky.  The layer of mist does not
-
-obscure the blunt boulders and alarming jagged corners below.  However, the
-
-deeply-rooted yellow grass that has claimed the ledge for itself provides good
-
-footing.
-
-"
+bulging out and making the traverse tricky.  The layer of mist does not
+obscure the blunt boulders and alarming jagged corners below.  However, the
+deeply-rooted yellow grass that has claimed the ledge for itself provides good
+footing.
+"
 "[Orb] Reviewed.
-
-[Kotoktok] added extras
-
-"
+[Kotoktok] added extras
+"
 301465600 0
 4 9 0
 D0
@@ -1401,19 +1137,14 @@ D2
 E
 "ledge limestone bluff yellow grass"
 "The ledge leads north and south along limestone bluffs which tower to the
-
-west.  Yellow grass is rooted firmly in the thin, gravelly soil, providing
-
-good footing.
-
-"
+west.  Yellow grass is rooted firmly in the thin, gravelly soil, providing
+good footing.
+"
 E
 "mist blunt boulders jagged corners"
 "Veiled in mist, the grey rock formations below do not look like a good place
-
-to land.
-
-"
+to land.
+"
 755 9 1509949540 3 0
 -1
 S
@@ -1421,23 +1152,15 @@ S
 #33037
 "Mountain Slope"
 "From here, the valley eastwards is partially obscured by drifting mist - only
-
-the tips of brush and taller ridges are clearly visible.  Roundish, the valley
-
-is surrounded by broken, cracked limestone bluffs, most higher than this
-
-point.  Beyond, mountain peaks stab skywards.  A short walk up to the crest of
-
-the hill westwards would be easy, and a rutted animal track points to a grassy
-
-ledge descending into the valley.
-
-"
+the tips of brush and taller ridges are clearly visible.  Roundish, the valley
+is surrounded by broken, cracked limestone bluffs, most higher than this
+point.  Beyond, mountain peaks stab skywards.  A short walk up to the crest of
+the hill westwards would be easy, and a rutted animal track points to a grassy
+ledge descending into the valley.
+"
 "[Orb] Reviewed.
-
-[Kotoktok] added extras
-
-"
+[Kotoktok] added extras
+"
 301465600 0
 4 9 0
 D0
@@ -1451,45 +1174,32 @@ D3
 E
 "valley drifting mist 1 east"
 "The valley is visible as a pool of mist, surrounded by weathered bluffs of
-
-grey limestone.
-
-"
+grey limestone.
+"
 E
 "mountain peaks"
 "Sharp, snowy peaks cut into the sky, looking harsh and forbidding.
-
-"
+"
 E
 "rutted animal track grassy ledge"
 "The track is dark brown dirt, with chunks of shale embedded in it.  It is
-
-rutted from years of snowmelt, which probably flows over the grassy ledge into
-
-the valley to the east.
-
-"
+rutted from years of snowmelt, which probably flows over the grassy ledge into
+the valley to the east.
+"
 -1
 S
 
 #33038
 "Hillcrest"
 "The wind is chill at the highest ridge of this line of hills.  Scattered grey
-
-limestone lies on the grassy slopes like fallen blocks.  Westwards, a wide
-
-valley descends towards distant black hills.  Eastwards, thick brush lines a
-
-pocket in the rolling hills, quickly rising beyond into knife-edge peaks
-
-garnished with ice.
-
-"
+limestone lies on the grassy slopes like fallen blocks.  Westwards, a wide
+valley descends towards distant black hills.  Eastwards, thick brush lines a
+pocket in the rolling hills, quickly rising beyond into knife-edge peaks
+garnished with ice.
+"
 "[Orb] Reviewed.
-
-[Kotoktok] added extras
-
-"
+[Kotoktok] added extras
+"
 301465600 0
 4 9 0
 D1
@@ -1503,44 +1213,30 @@ D3
 E
 "scattered grey limestone fallen blocks"
 "The huge chunks of stone rise up from the grass, casting sharp shadows.
-
-Lichen grows in profusion from the base to the top of each one, adding the
-
-warmth of color to their cold surfaces.
-
-"
+Lichen grows in profusion from the base to the top of each one, adding the
+warmth of color to their cold surfaces.
+"
 E
 "thick brush pocket knife-edge peaks"
 "Thick grey-green brush to the east crowds a small pocket in the hills.  Above,
-
-jagged grey peaks lined with snow and ice stab into the sky.
-
-"
+jagged grey peaks lined with snow and ice stab into the sky.
+"
 -1
 S
 
 #33039
 "Mountain Slope"
 "It's only a little distance further east and up to reach the crest of this
-
-hill, but it looks like several miles to the base of the valley, where the
-
-dark smudge of a river flows.  Huge chunks of karst limestone are spotted
-
-around, rising out of the yellowed grass like ramparts.  To head downhill from
-
-here requires skirting a huge patch of thornbushes northwards, cutting through
-
-a dense cluster of stone - the hillcrest, however, is a short and clear walk.
-
-"
+hill, but it looks like several miles to the base of the valley, where the
+dark smudge of a river flows.  Huge chunks of karst limestone are spotted
+around, rising out of the yellowed grass like ramparts.  To head downhill from
+here requires skirting a huge patch of thornbushes northwards, cutting through
+a dense cluster of stone - the hillcrest, however, is a short and clear walk.
+"
 "[Orb] How do I know what Karst limestone is?  (I don't.)
-
-[Orb] Describe instead of identify?
-
-[Hedrack] Added an extra to explain.
-
-"
+[Orb] Describe instead of identify?
+[Hedrack] Added an extra to explain.
+"
 301465600 0
 4 9 0
 D0
@@ -1554,40 +1250,28 @@ D1
 E
 "karst limestone chunks stone"
 "Erosion has twisted these huge limestone boulders into oddly organic shapes,
-
-the surface pitted and worn.  Fissures split the larger outcrops into pieces,
-
-rainwater pooling in the crevices.
-
-"
+the surface pitted and worn.  Fissures split the larger outcrops into pieces,
+rainwater pooling in the crevices.
+"
 E
 "hill crest hillcrest 1 east"
 "The top of the hill is covered in yellow grass, and littered with enormous
-
-blocks of grey limestone.
-
-"
+blocks of grey limestone.
+"
 -1
 S
 
 #33040
 "Hilly Slope"
 "Protruding from the dry yellow grass of this hill are many huge weatherworn
-
-limestone outcroppings.  Some over twenty feet high, the white-gray stones
-
-must be visible for miles.  The line of stones at the hillcrest above is
-
-several hundred feet long, and it looks like quite a maze of cracks and alleys.
-
-"
+limestone outcroppings.  Some over twenty feet high, the white-gray stones
+must be visible for miles.  The line of stones at the hillcrest above is
+several hundred feet long, and it looks like quite a maze of cracks and alleys.
+"
 "rock formations
-
-altitude 0
-
-[Kotoktok] added extras
-
-"
+altitude 0
+[Kotoktok] added extras
+"
 301465600 0
 4 9 0
 D3
@@ -1601,44 +1285,30 @@ D4
 E
 "huge weatherworn limestone outcroppings"
 "The white-gray limestone formations are rounded and warp by weather and time.
-
-Many colors of lichen, including red, yellow, and green, cling to the rocks,
-
-like splashes of paint left by some careless artist.
-
-"
+Many colors of lichen, including red, yellow, and green, cling to the rocks,
+like splashes of paint left by some careless artist.
+"
 E
 "line stones hillcrest maze cracks alleys 1 up 1 east"
 "The white-gray outcroppings grow steadily closer together and taller towards
-
-the crest of the hill.  A reddish hue can be seen around the base of many of
-
-them, like blood around a wound.
-
-"
+the crest of the hill.  A reddish hue can be seen around the base of many of
+them, like blood around a wound.
+"
 -1
 S
 
 #33041
 "Hilly Slope"
 "The trail twists through an open area of hillside here, splitting and
-
-rejoining around isolated squat thornbushes.  West, the thick vegetation
-
-becomes denser, and the track descends and disappears into miles of dark brown
-
-tangle.  In the distance beyond, black hills scrape the sky.  Upwards and
-
-eastwards, this hill crests with jagged castle-like rocks standing like teeth,
-
-snow-capped mountains beyond.
-
-"
+rejoining around isolated squat thornbushes.  West, the thick vegetation
+becomes denser, and the track descends and disappears into miles of dark brown
+tangle.  In the distance beyond, black hills scrape the sky.  Upwards and
+eastwards, this hill crests with jagged castle-like rocks standing like teeth,
+snow-capped mountains beyond.
+"
 "[Kotoktok] added extras
-
-[Nereus] *
-
-"
+[Nereus] *
+"
 301465600 0
 4 9 0
 D1
@@ -1652,21 +1322,15 @@ D3
 E
 "trail"
 "Gravelly dirt and shale cover the surface of the rutted trail here, making
-
-small tinkling noises as they settle.  It winds lazily more or less east to
-
-west up the hillside.
-
-"
+small tinkling noises as they settle.  It winds lazily more or less east to
+west up the hillside.
+"
 E
 "thick vegetation dark brown tangle black hills 1 west"
 "Brambles crowd the trail to the west as it winds through the brush.  Straight
-
-west can be seen the winding line of a river, and then a panorama of the Black
-
-Hills.
-
-"
+west can be seen the winding line of a river, and then a panorama of the Black
+Hills.
+"
 358 17 1509949540 -2 0
 2505 9 1509949540 3 0
 -1
@@ -1675,27 +1339,17 @@ S
 #33042
 "Hilly Slope"
 "Knotted vines with inch-long ridged spines tangle together the bushes and
-
-shrubs surrounding this deeply rutted dirt path or dry stream.  The tiny green
-
-leaves of the bushes are contrasted by the occasional bright flower.  There is
-
-no way to see where this path goes - it twists to work through gaps between
-
-the vegetation, limiting sight.
-
-"
+shrubs surrounding this deeply rutted dirt path or dry stream.  The tiny green
+leaves of the bushes are contrasted by the occasional bright flower.  There is
+no way to see where this path goes - it twists to work through gaps between
+the vegetation, limiting sight.
+"
 "no.mob
-
-[Orb] Reviewed.
-
-[Kotoktok] added extras, pick flower code
-
-[Nereus] *
-
-[Kotoktok] -
-
-"
+[Orb] Reviewed.
+[Kotoktok] added extras, pick flower code
+[Nereus] *
+[Kotoktok] -
+"
 301465608 0
 3 9 0
 D1
@@ -1709,49 +1363,34 @@ D3
 E
 "knotted vines inch-long spines bushes shrubs flower green leaves 1 north 1 south"
 "The usual foothill scrub brush lining the trail to the north and south has
-
-been overtaken by brambles, which wind sinuously around the limbs of each
-
-bush.  The small leaves and flowers of the bushes look sad and frightened,
-
-trapped in a prison of needle-sharp spines and knobby, grey vines.
-
-"
+been overtaken by brambles, which wind sinuously around the limbs of each
+bush.  The small leaves and flowers of the bushes look sad and frightened,
+trapped in a prison of needle-sharp spines and knobby, grey vines.
+"
 E
 "rutted dirt path dry stream 1 down"
 "A course of rough shale and dirt, rutted by the flowing of water sometime in
-
-the past, winds through the briar-infested scrub brush.  It is impossible to
-
-tell whether the path was designed for travelling, or whether it is simply a
-
-dry gulch.
-
-"
+the past, winds through the briar-infested scrub brush.  It is impossible to
+tell whether the path was designed for travelling, or whether it is simply a
+dry gulch.
+"
 A
 "pick"
 "flowers"
 "act_notchar( #rmouch, ch );
-
-act_tochar( #ouch , ch );
-
-i = 1d11;
-
-dam_message( ch, i, \"A needle-sharp spine\" );
-
-inflict( ch, null, i, \"clumsiness\" );
-
-"
+act_tochar( #ouch , ch );
+i = 1d11;
+dam_message( ch, i, \"A needle-sharp spine\" );
+inflict( ch, null, i, \"clumsiness\" );
+"
 E
 "ouch"
 "You attempt to get one of the flowers, but get stabbed by one of the spines.
-
-"
+"
 E
 "rmouch"
 "$n attempts to get one of the flowers, but is stabbed by one of the spines.
-
-"
+"
 !
 0 0 0
 755 9 1509949540 3 0
@@ -1761,8 +1400,7 @@ S
 #33043
 "Rocky Riverbank"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 9 0
@@ -1772,37 +1410,22 @@ S
 #33044
 "Black Hills View"
 "The rutted, narrow animal trail here reaches a high point, a good vantage over
-
-the meadowy grasslands to the west.  The yellow grass between the occasional
-
-tree contrasts with the dark stretch of river as it coils in a serpentine
-
-fashion around, a line of division against the dark hills beyond.  The trail
-
-is engulfed by brambles eastward.
-
-"
+the meadowy grasslands to the west.  The yellow grass between the occasional
+tree contrasts with the dark stretch of river as it coils in a serpentine
+fashion around, a line of division against the dark hills beyond.  The trail
+is engulfed by brambles eastward.
+"
 "elhanni river, south of here it flows by the black hills valley to the
-
-west of it, cairn mountains to east, then is crossed by the path which
-
-connects southern black hills valley to the high mountain bluff.
-
-eventually flows between pennan and chiiron
-
-[Orb] Engulfed by brambles?  I see none.
-
-added
-
-[Nereus] I'd make the brambles actually block the path until cut or cleared here
-
-[Kotoktok] beefed up extra
-
-[Nereus] code leaving east?
-
-[Kotoktok] -
-
-"
+west of it, cairn mountains to east, then is crossed by the path which
+connects southern black hills valley to the high mountain bluff.
+eventually flows between pennan and chiiron
+[Orb] Engulfed by brambles?  I see none.
+added
+[Nereus] I'd make the brambles actually block the path until cut or cleared here
+[Kotoktok] beefed up extra
+[Nereus] code leaving east?
+[Kotoktok] -
+"
 301465600 0
 3 9 0
 D1
@@ -1816,27 +1439,20 @@ D3
 E
 "brambles 1 east trail"
 "The path looks like it may have originally been an animal trail, but later was
-
-widened by the movements of the intelligent races.  Tough, black-spined bushes
-
-cluster close around the trail to the east as it leads towards the distant
-
-peaks.
-
-"
+widened by the movements of the intelligent races.  Tough, black-spined bushes
+cluster close around the trail to the east as it leads towards the distant
+peaks.
+"
 A
 ""
 ""
 "act_tochar( #bram, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "bram"
 "@bYou push aside some of the brambles, following the trail to the east.@n
-
-"
+"
 !
 3 0 2
 78 17 1509949515 -2 0
@@ -1846,33 +1462,20 @@ S
 #33045
 "Meadowy Riverbank"
 "The Elhanni swirls past here, cutting away at the yellow-grassed bank.  It's
-
-possible to cross with care, as the river is wide and shallow.  On the far
-
-bank, hunched trees trail their branches in the water.  Animal trails cut
-
-through the long grass, heading in all directions.  The riverbank itself has
-
-crumbled away in a few places, where countless animal visits have worn away
-
-the grass.
-
-"
+possible to cross with care, as the river is wide and shallow.  On the far
+bank, hunched trees trail their branches in the water.  Animal trails cut
+through the long grass, heading in all directions.  The riverbank itself has
+crumbled away in a few places, where countless animal visits have worn away
+the grass.
+"
 "[Orb] The last sentence is odd.  Perhaps restructure it to say something like,
-
-\"Animal trails cut through the long grass, heading in all directions.  The
-
-riverbank itself has crumbled away in a few places where countless animal
-
-visits have worn away the grass.\"
-
-changed.
-
-[Kotoktok] extras done
-
-[Nereus] *
-
-"
+\"Animal trails cut through the long grass, heading in all directions.  The
+riverbank itself has crumbled away in a few places where countless animal
+visits have worn away the grass.\"
+changed.
+[Kotoktok] extras done
+[Nereus] *
+"
 301465600 0
 3 9 0
 D1
@@ -1890,25 +1493,17 @@ D3
 E
 "Elhanni river hunched trees 1 west"
 "The water appears to be less than two feet deep in the middle, running swiftly
-
-over smooth, rounded stones.  Crossing could be hazardous to the clumsy, but
-
-appears manageable.  The far bank looks like it would be easy to climb, and is
-
-the home of many willows which dip their drooping branches into the water.
-
-"
+over smooth, rounded stones.  Crossing could be hazardous to the clumsy, but
+appears manageable.  The far bank looks like it would be easy to climb, and is
+the home of many willows which dip their drooping branches into the water.
+"
 E
 "animal trails long grass riverbank"
 "Animal trails crisscross the straw-yellow grass, all meeting the river at some
-
-point.  The bank has begun to crumble away where several of the trails go down
-
-to the water, evidence of heavy use.  Prints of raccoon, otter, beaver, and
-
-many other small creatures are quite apparent.
-
-"
+point.  The bank has begun to crumble away where several of the trails go down
+to the water, evidence of heavy use.  Prints of raccoon, otter, beaver, and
+many other small creatures are quite apparent.
+"
 901 9 1509949540 3 0
 324 17 1509949540 -2 0
 -1
@@ -1917,21 +1512,14 @@ S
 #33046
 "Meadowy Riverbank"
 "Animal tracks twist through waist-high yellowed grass here on the riverbank.
-
-The earth emits a curious scent of mixed rot and musk which is somehow
-
-pleasant.  The ground is moist and yielding, especially near the gurgling
-
-river.  Thick brambles are knotted together further inland, inch-long spines
-
-presenting an unattractive frontage.
-
-"
+The earth emits a curious scent of mixed rot and musk which is somehow
+pleasant.  The ground is moist and yielding, especially near the gurgling
+river.  Thick brambles are knotted together further inland, inch-long spines
+presenting an unattractive frontage.
+"
 "[Kotoktok] added extras
-
-[Nereus] *
-
-"
+[Nereus] *
+"
 301465600 0
 3 9 0
 D0
@@ -1941,25 +1529,17 @@ D0
 E
 "thick brambles spines 1 south 1 east"
 "Thorny brambles over six feet high grow thickly to the south and east, the
-
-only openings in them being tiny animal trails.  Painful-looking spines over
-
-an inch long grow like hair on the tough, waxy bark of the briar.  Passage
-
-appears impossible.
-
-"
+only openings in them being tiny animal trails.  Painful-looking spines over
+an inch long grow like hair on the tough, waxy bark of the briar.  Passage
+appears impossible.
+"
 E
 "earth ground animal tracks yellowed grass"
 "The heavily-used trails of small animals run through the yellowed grass here,
-
-many leading between the brambles and the riverbank.  Closer to the river, the
-
-ground is soft and wet, no longer showing animal trails, but the tracks of
-
-individual creatures.
-
-"
+many leading between the brambles and the riverbank.  Closer to the river, the
+ground is soft and wet, no longer showing animal trails, but the tracks of
+individual creatures.
+"
 324 17 1509949540 -2 0
 -1
 S
@@ -1967,31 +1547,19 @@ S
 #33047
 "Among the Karst"
 "Here, deep among the white-gray outcroppings, the sky is only visible in
-
-patches.  All around warped slabs of rounded rock form a labyrinth of narrow
-
-cracks and open grassy glades.  Red lichen clusters around the base of the
-
-stones where they enter the earth, like splattered blood.
-
-"
+patches.  All around warped slabs of rounded rock form a labyrinth of narrow
+cracks and open grassy glades.  Red lichen clusters around the base of the
+stones where they enter the earth, like splattered blood.
+"
 "maze of stones - int check to leave room, exhaust slightly if failed.
-
-altitude 1
-
-[Orb] Odd room name.
-
-[Orb] Why is it named this?
-
-[Orb] Oh, well, if it's so labrynthine, I think it should be made a lot
-
-clearer.  It doesn't really indicate to me that it's such a big deal.
-
-addressed
-
-[Kotoktok] added keywords to extra
-
-"
+altitude 1
+[Orb] Odd room name.
+[Orb] Why is it named this?
+[Orb] Oh, well, if it's so labrynthine, I think it should be made a lot
+clearer.  It doesn't really indicate to me that it's such a big deal.
+addressed
+[Kotoktok] added keywords to extra
+"
 301465600 0
 4 9 0
 D2
@@ -2005,46 +1573,31 @@ D5
 E
 "karst limestone rock stones outcroppings slabs rounded"
 "Erosion has twisted these huge limestone boulders into oddly organic shapes,
-
-the surface pitted and worn.  Fissures split the larger outcrops into pieces,
-
-rainwater pooling in the crevices.
-
-"
+the surface pitted and worn.  Fissures split the larger outcrops into pieces,
+rainwater pooling in the crevices.
+"
 A
 ""
 ""
 "if( is_player( ch ) ) {
-
-if( find_stat( ch, int ) < random( 1, 10 ) ) {
-
-  act_tochar( #lost, ch );
-
-  modify_move( ch, -25 );
-
-  end;
-
-  }
-
-}
-
-act_tochar( #notlost, ch );
-
-continue;
-
-"
+if( find_stat( ch, int ) < random( 1, 10 ) ) {
+  act_tochar( #lost, ch );
+  modify_move( ch, -25 );
+  end;
+  }
+}
+act_tochar( #notlost, ch );
+continue;
+"
 E
 "lost"
 "@YYou set off, but quickly get turned around in the labyrinth of stone, and
-
-wind up where you started, exhausted.@n
-
-"
+wind up where you started, exhausted.@n
+"
 E
 "notlost"
 "@gYou quickly navigate through the stones, keeping your sense of direction.@n
-
-"
+"
 E
 "#setoff"
 ""
@@ -2054,20 +1607,16 @@ A
 "pick get scrape"
 "red lichen clusters moss"
 "act_tochar( #nope, ch );
-
-act_notchar( #onope, ch );
-
-"
+act_notchar( #onope, ch );
+"
 E
 "nope"
 "The lichen crumbles and flakes away.
-
-"
+"
 E
 "onope"
 "$n scrapes briefly at the red lichen.
-
-"
+"
 !
 0 0 0
 -1
@@ -2076,21 +1625,14 @@ S
 #33048
 "Forest Valley, Mountain Slope"
 "The hillcrest here is a jagged, scarred knife of rock, cutting the sky in two.
-
-East, a crack allows travel through into another valley.  Below and west,
-
-however, a shawl of mist softens the view of this valley, treetops and rounded
-
-knolls jutting through into solidity, but nothing else clear.  A dangerous-
-
-looking scree slide descends into the fog.
-
-"
+East, a crack allows travel through into another valley.  Below and west,
+however, a shawl of mist softens the view of this valley, treetops and rounded
+knolls jutting through into solidity, but nothing else clear.  A dangerous-
+looking scree slide descends into the fog.
+"
 "altitude 2
-
-[Kotoktok] added extras
-
-"
+[Kotoktok] added extras
+"
 301465600 0
 5 9 0
 D1
@@ -2104,50 +1646,36 @@ D5
 E
 "scree slope 1 down"
 "The slope is not solid - it is only rock fragments and gravel, forming a slide.
-
-"
+"
 E
 "shawl mist valley 1 west"
 "Treetops, rounded knolls covered in yellow grass, and the occasional limestone
-
-chunk stick up out of the mist in the roughly circular valley to the west.
-
-"
+chunk stick up out of the mist in the roughly circular valley to the west.
+"
 E
 "crack 1 east"
 "A crack in the limestone cliffs to the east allows glimpses of another valley
-
-in that direction.  Travel through the crack looks quick and safe.
-
-"
+in that direction.  Travel through the crack looks quick and safe.
+"
 A
 ""
 ""
 "if( can_fly( ch ) || char_affected( ch, float ) )
-
-  continue;
-
-act_tochar( #whee, ch );
-
-act_notchar( #owhee, ch );
-
-continue;
-
-"
+  continue;
+act_tochar( #whee, ch );
+act_notchar( #owhee, ch );
+continue;
+"
 E
 "whee"
 "The slick gravel slides beneath you as you descend much faster than you
-
-intended.  You slide the last thirty feet horizontally.@n
-
-"
+intended.  You slide the last thirty feet horizontally.@n
+"
 E
 "owhee"
 "@r$n slides downhill, sending bouncing gravel everywhere in a cloud of dust
-
-and a cacophonous clatter.@n
-
-"
+and a cacophonous clatter.@n
+"
 !
 3 0 32
 -1
@@ -2156,12 +1684,9 @@ S
 #33049
 "Forest Valley - Streambed"
 "A small mountain stream bubbles over smooth stones here, running this way
-
-and that through the beech woods.  To the north, the stream becomes quite
-
-shallow as a path crosses the stream.
-
-"
+and that through the beech woods.  To the north, the stream becomes quite
+shallow as a path crosses the stream.
+"
 ""
 301465600 0
 13 9 0
@@ -2180,12 +1705,9 @@ S
 #33050
 "Forest Valley - Eastern Edge"
 "The mountain valley is thickly forested here, with many old trees finding
-
-shelter in the area.  All about the horizon, great peaks rise up to
-
-nearly obscure it - nonetheless, the vistas are spectacular.
-
-"
+shelter in the area.  All about the horizon, great peaks rise up to
+nearly obscure it - nonetheless, the vistas are spectacular.
+"
 ""
 301465600 0
 3 9 0
@@ -2200,24 +1722,18 @@ D3
 E
 "old tree"
 "Vines almost completely obscure a large hole on the side of the most
-
-majestic tree.
-
-"
+majestic tree.
+"
 -1
 S
 
 #33051
 "Forest Valley"
 "Mountains rise up to enclose this valley on all sides, yet the forest
-
-cover here is thick and dense, sheltered from the worst of the storms by
-
-the great peaks.  To the east and south, the valley continues.  A stream
-
-flows by to the west.
-
-"
+cover here is thick and dense, sheltered from the worst of the storms by
+the great peaks.  To the east and south, the valley continues.  A stream
+flows by to the west.
+"
 ""
 301465600 0
 3 9 0
@@ -2240,16 +1756,11 @@ S
 #33052
 "Forest Valley - Stream"
 "A stream flows by here, making its way from south to north through the upland,
-
-forested valley.  It is shallow, and its waters look extremely frigid.  The
-
-source of the stream is not immediately apparent, though it is likely that
-
-much of the water flows from the melting of the snowcaps which loom far up
-
-around you on all sides.  The forest valley opens up the the east.
-
-"
+forested valley.  It is shallow, and its waters look extremely frigid.  The
+source of the stream is not immediately apparent, though it is likely that
+much of the water flows from the melting of the snowcaps which loom far up
+around you on all sides.  The forest valley opens up the the east.
+"
 ""
 301465600 0
 13 9 0
@@ -2268,18 +1779,12 @@ S
 #33053
 "Flat Ledge Deep in the Cairns"
 "A trail of flattened snow follows the ledge to the west and east, bordered on
-
-either side but scattered, frost-kissed stones.  On the north, butted against
-
-the cliff wall, a line of pine trees survives in this inclement place.  The
-
-shelf of rock ends some way to the west, where the mountain drops down into a
-
-mist-shrouded valley far below.  Overhead, the crest rises skyward through a
-
-bank of snow-heavy clouds hanging there.
-
-"
+either side but scattered, frost-kissed stones.  On the north, butted against
+the cliff wall, a line of pine trees survives in this inclement place.  The
+shelf of rock ends some way to the west, where the mountain drops down into a
+mist-shrouded valley far below.  Overhead, the crest rises skyward through a
+bank of snow-heavy clouds hanging there.
+"
 ""
 301465600 0
 5 6 0
@@ -2299,16 +1804,11 @@ S
 #33054
 "Flat Ledge Deep in the Cairns"
 "A wide, relatively flat, ledge stretches to the north and west here at the top
-
-of the rise.  A thick layer of new fallen snow blankets the ground underfoot,
-
-and hoarfrost sketches lacy patterns on the larger stones.  A thin line of
-
-gnarled, blue-green pines shelters against the cliff wall, protected from the
-
-worst of the weather.
-
-"
+of the rise.  A thick layer of new fallen snow blankets the ground underfoot,
+and hoarfrost sketches lacy patterns on the larger stones.  A thin line of
+gnarled, blue-green pines shelters against the cliff wall, protected from the
+worst of the weather.
+"
 ""
 301465600 0
 5 6 0
@@ -2327,16 +1827,11 @@ S
 #33055
 "Rough-Cut Trail Through the Cairns"
 "Skirting the cliff wall, the path turns sharply northward, coming to an
-
-end at an incline, leading up the mountain closer to the crest.  Although
-
-the climb is steep, there are ample hand and footholds afforded by the
-
-cracks and protrusions of the stone itself.  A few pines cling
-
-tenaciously to the rocky soil, stunted by the frigid air.
-
-"
+end at an incline, leading up the mountain closer to the crest.  Although
+the climb is steep, there are ample hand and footholds afforded by the
+cracks and protrusions of the stone itself.  A few pines cling
+tenaciously to the rocky soil, stunted by the frigid air.
+"
 ""
 301465600 0
 5 6 0
@@ -2354,18 +1849,12 @@ S
 #33056
 "Rough-Cut Trail Through the Cairns"
 "The trail, although it can hardly be called a trail, turns northward,
-
-following the line of a sheer cliff wall that rises toward the crest
-
-above.  The footing here is awkward, only open spaces between loose
-
-fallen rocks marking the way.  Nearby, to the east, a pair of boulders
-
-stand side by side, like stoic sentinels on silent guard.  A knife-thin
-
-gap between the stones leads to a mountain road beyond.
-
-"
+following the line of a sheer cliff wall that rises toward the crest
+above.  The footing here is awkward, only open spaces between loose
+fallen rocks marking the way.  Nearby, to the east, a pair of boulders
+stand side by side, like stoic sentinels on silent guard.  A knife-thin
+gap between the stones leads to a mountain road beyond.
+"
 ""
 301465608 0
 5 6 0
@@ -2380,26 +1869,21 @@ D1
 E
 "1 east boulder"
 "The pair of grim gray boulders flank the path.  Only a narrow gap lies
-
-between the two, just wide enough to pass through.
-
-"
+between the two, just wide enough to pass through.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@CSqueezing past the boulders, you continue along the path.@n
-
-"
+"
 E
 "to_room"
 "@CSqueezing past the boulder, $n continues along the path.@n
-
-"
+"
 !
 3 0 2
 -1
@@ -2408,14 +1892,10 @@ S
 #33058
 "Small Bog"
 "You stand in a morass of mud, in what is a small bog cut in between
-
-gigantic slabs of rocks which constitute the mountain range.  Somewhere,
-
-a trickling spring must feed this miniature wetlands, but the terrain
-
-prevents even the most persistent investigations.
-
-"
+gigantic slabs of rocks which constitute the mountain range.  Somewhere,
+a trickling spring must feed this miniature wetlands, but the terrain
+prevents even the most persistent investigations.
+"
 ""
 301465600 0
 3 9 0
@@ -2434,14 +1914,10 @@ S
 #33059
 "Small Bog"
 "You stand in a morass of mud, in what is a small bog cut in between
-
-gigantic slabs of rocks which constitute the mountain range.  Somewhere,
-
-a trickling spring must feed this miniature wetlands, but the terrain
-
-prevents even the most persistent investigations.
-
-"
+gigantic slabs of rocks which constitute the mountain range.  Somewhere,
+a trickling spring must feed this miniature wetlands, but the terrain
+prevents even the most persistent investigations.
+"
 ""
 301465600 0
 3 9 0
@@ -2459,14 +1935,10 @@ S
 #33060
 "Small Bog"
 "You stand in a morass of mud, in what is a small bog cut in between
-
-gigantic slabs of rocks which constitute the mountain range.  Somewhere,
-
-a trickling spring must feed this miniature wetlands, but the terrain
-
-prevents even the most persistent investigations.
-
-"
+gigantic slabs of rocks which constitute the mountain range.  Somewhere,
+a trickling spring must feed this miniature wetlands, but the terrain
+prevents even the most persistent investigations.
+"
 ""
 301465600 0
 3 9 0
@@ -2484,16 +1956,11 @@ S
 #33081
 "In the Shelter of the Cliff"
 "Protected on two sides from the weather by a jog in the cliff face, this
-
-portion of the ledge forms an alcove, surrounded by scattered boulders and a
-
-few twisted pines.  Underfoot the ground is clear of snow, but frozen, and
-
-fallen needles from the trees offer an insulation of sorts from the cold.  The
-
-path lies close to the mountainside, following it to the west and southward.
-
-"
+portion of the ledge forms an alcove, surrounded by scattered boulders and a
+few twisted pines.  Underfoot the ground is clear of snow, but frozen, and
+fallen needles from the trees offer an insulation of sorts from the cold.  The
+path lies close to the mountainside, following it to the west and southward.
+"
 ""
 301465608 0
 5 6 0
@@ -2516,21 +1983,14 @@ S
 #33082
 "Flat Ledge Deep in the Cairns"
 "The snow is deep here and disturbed, its pristine beauty a tumble of white,
-
-dirt and rock.  Near the base of the cliff, a wide hole has been tunneled
-
-through the stone into the mountain itself, although a thick sheet of
-
-transparent ice covers it now.  Minute traces of green streak the ground
-
-around the hole, and most of the torn up patches of snow.  The path continues
-
-onward around the mountain to the north and east.
-
-"
+dirt and rock.  Near the base of the cliff, a wide hole has been tunneled
+through the stone into the mountain itself, although a thick sheet of
+transparent ice covers it now.  Minute traces of green streak the ground
+around the hole, and most of the torn up patches of snow.  The path continues
+onward around the mountain to the north and east.
+"
 "[Dalthas] how about a break/smash ice code
-
-"
+"
 301465600 0
 5 6 0
 D0
@@ -2544,39 +2004,27 @@ D1
 E
 "hole stone sheet ice"
 "The hole, although high and wide enough to enter, is covered by a thick
-
-sheet of solid ice as hard as the mountain's stone.  Frozen streaks of
-
-dull green slime surround the hole, as if left there to protect from
-
-intruders.
-
-"
+sheet of solid ice as hard as the mountain's stone.  Frozen streaks of
+dull green slime surround the hole, as if left there to protect from
+intruders.
+"
 E
 "traces green streak"
 "The streaks of green, frozen matter surround the ground near the vast
-
-hole through the mountain and mark the tousled piles of snow, rock and
-
-dirt.  Although frozen solid, a noxious odor still rises from them.
-
-"
+hole through the mountain and mark the tousled piles of snow, rock and
+dirt.  Although frozen solid, a noxious odor still rises from them.
+"
 -1
 S
 
 #33083
 "Flat Ledge Deep in the Cairns"
 "The plateau comes to an end at rise up the mountainside, approaching the
-
-crest.  Nearby, holes of various sizes tunnel through the stone, though none
-
-are big enough to enter.  The snow lies deep here in sheltered pockets of
-
-shade where sunlight never reaches.  You can climb the ridge to the north, or
-
-move southward along the ledge.
-
-"
+crest.  Nearby, holes of various sizes tunnel through the stone, though none
+are big enough to enter.  The snow lies deep here in sheltered pockets of
+shade where sunlight never reaches.  You can climb the ridge to the north, or
+move southward along the ledge.
+"
 ""
 301465600 0
 5 6 0
@@ -2591,35 +2039,27 @@ D4
 E
 "holes tunnel"
 "The holes riddle the stone of the mountain like gaping wounds.  None are
-
-large enough to enter and the streaks of sickly green slime deter closer
-
-investigation.
-
-"
+large enough to enter and the streaks of sickly green slime deter closer
+investigation.
+"
 E
 "rise mountainside ridge"
 "The incline of the rise is gradual, the climb fairly easy except for a
-
-few patches of slick ice across the trail.
-
-"
+few patches of slick ice across the trail.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@CYou carefully make your way along the rise of the slope.@n
-
-"
+"
 E
 "to_room"
 "@C$n carefully makes $s way along the rise of the slope.@n
-
-"
+"
 !
 3 0 16
 1121 9 1509949540 3 0
@@ -2630,16 +2070,11 @@ S
 #33084
 "Cairn Mountains - Trail's End"
 "The slope comes to an abrupt end near a great gaping hole, elder brother to
-
-the smaller ones seen down the mountainside.  Here upon the jutting stone,
-
-there is little protection from buffeting winds or blowing snow, and underfoot
-
-the ground is slick with a paper-thin layer of ice.  You can climb through the
-
-hole to the east or leave the projection for the shelter of the ledge below.
-
-"
+the smaller ones seen down the mountainside.  Here upon the jutting stone,
+there is little protection from buffeting winds or blowing snow, and underfoot
+the ground is slick with a paper-thin layer of ice.  You can climb through the
+hole to the east or leave the projection for the shelter of the ledge below.
+"
 ""
 301465608 0
 5 6 0
@@ -2654,46 +2089,37 @@ D5
 E
 "hold gaping hole"
 "A gaping hole tunnels through the stone, into the depths of the mountain
-
-and the lightless passage there.  A fetid odor wafts outward from the
-
-darkness.
-
-"
+and the lightless passage there.  A fetid odor wafts outward from the
+darkness.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@CYou pick your way down the rise, to the ledge below.@n
-
-"
+"
 E
 "to_room"
 "@C$n picks $s way down the rise to the ledge below.@n
-
-"
+"
 !
 3 0 32
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@yKneeling, you wiggle through the hole into the darkness beyond.@n
-
-"
+"
 E
 "to_room"
 "@yKneeling, $n wiggles through the hole into the darkness beyond.@n
-
-"
+"
 !
 3 0 2
 -1
@@ -2702,10 +2128,8 @@ S
 #33085
 "Rock Spire"
 "Under Construction.
-
-user
-
-"
+user
+"
 ""
 301465600 0
 4 6 0
@@ -2715,27 +2139,17 @@ S
 #33086
 "Crevice"
 "The rough grey limestone is close on both sides here, leaving barely enough
-
-room to lead a horse through.  The stony ground is covered in chunks of shale
-
-and small bits of gravel, which are slightly moist due to periodic drips from
-
-the ceiling.  Steadily widening to the north, the crevice leads into a small,
-
-dry cave nestled in the dark limestone.  A rough, rocky slope cuts steeply
-
-downwards into the mist to the south, but looks like it would be a fairly easy
-
-climb.
-
-"
+room to lead a horse through.  The stony ground is covered in chunks of shale
+and small bits of gravel, which are slightly moist due to periodic drips from
+the ceiling.  Steadily widening to the north, the crevice leads into a small,
+dry cave nestled in the dark limestone.  A rough, rocky slope cuts steeply
+downwards into the mist to the south, but looks like it would be a fairly easy
+climb.
+"
 "[Nereus] what goes here :)
-
-[Kotoktok] down to 33033
-
-[Kotoktok] added room
-
-"
+[Kotoktok] down to 33033
+[Kotoktok] added room
+"
 301465600 0
 11 6 0
 D0
@@ -2749,72 +2163,50 @@ D2
 E
 "stony ground shale"
 "A thin layer of soil covers the limestone floor, which is scattered liberally
-
-with gravel and chunks of shale.  Moisture is much in evidence, coming from
-
-the ceiling above.
-
-"
+with gravel and chunks of shale.  Moisture is much in evidence, coming from
+the ceiling above.
+"
 E
 "ceiling 1 up"
 "The ceiling is lost in darkness, but occasional drops of water from above
-
-betray its presence.
-
-"
+betray its presence.
+"
 E
 "rough rocky slope 1 south 1 down"
 "The slope is nearly vertical, but very rough and probably covered in good
-
-handholds.  It disappears into the mist shrouding the valley below, which is
-
-surrounded by limestone cliffs on all sides.  The only signs of the valley
-
-floor and a few treetops, boulders, and grassy knolls.
-
-"
+handholds.  It disappears into the mist shrouding the valley below, which is
+surrounded by limestone cliffs on all sides.  The only signs of the valley
+floor and a few treetops, boulders, and grassy knolls.
+"
 A
 "climb"
 "rocky slope down south"
 "if( find_skill( ch, climb ) > random( 0, 5 ) ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #oclimb, ch );
-
-transfer( ch, find_room( 33033 ) );
-
-} else {
-
-  act_tochar( #fail, ch );
-
-  act_notchar( #ofail, ch );
-
-}
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #oclimb, ch );
+transfer( ch, find_room( 33033 ) );
+} else {
+  act_tochar( #fail, ch );
+  act_notchar( #ofail, ch );
+}
+"
 E
 "climb"
 "@gYou clamber down the limestone slope, finally coming to the bottom.@n
-
-"
+"
 E
 "oclimb"
 "@g$n scrambles down into the mist.@n
-
-"
+"
 E
 "fail"
 "@rYou try the trivial-looking climb down the rock-face, but almost slip and
-
-fall.@n
-
-"
+fall.@n
+"
 E
 "ofail"
 "@r$n tries to scramble down the slope to the south, but nearly slips and falls.@n
-
-"
+"
 !
 0 0 0
 1974 17 1509949480 -2 0
@@ -2824,27 +2216,17 @@ S
 #33087
 "Cave in the Limestone"
 "Smooth limestone walls encircle this small, conical cave in all directions
-
-except for south, where a small crevice leads out.  The walls seem to have
-
-been smoothed over by years of running water, yet for some reason are
-
-perfectly dry at the moment.  Any ceiling there might be is hidden in the
-
-darkness overhead; the lack of a ceiling makes this cave seem much larger than
-
-it actually is.  The floor is surprisingly smooth and dry, free of all debris
-
-except for a few chunks of loose shale.
-
-"
+except for south, where a small crevice leads out.  The walls seem to have
+been smoothed over by years of running water, yet for some reason are
+perfectly dry at the moment.  Any ceiling there might be is hidden in the
+darkness overhead; the lack of a ceiling makes this cave seem much larger than
+it actually is.  The floor is surprisingly smooth and dry, free of all debris
+except for a few chunks of loose shale.
+"
 "[Kotoktok] added room
-
-[Kotoktok] added reset for a barb scout out on patrol hanging out in here
-
-[Kotoktok] he pops ring of endurance, boots of travel, and rucksack in addition to normal gear
-
-"
+[Kotoktok] added reset for a barb scout out on patrol hanging out in here
+[Kotoktok] he pops ring of endurance, boots of travel, and rucksack in addition to normal gear
+"
 301465600 0
 11 7 0
 D2
@@ -2854,14 +2236,10 @@ D2
 E
 "limestone walls crevice 1 south"
 "The walls are quite smooth, with vertical patterns of color, probably due to
-
-mineral seepage sometime in the past.  Strangely, they show no signs of
-
-current moisture.  On the southern wall is a small crevice, just large enough
-
-to lead a horse through.
-
-"
+mineral seepage sometime in the past.  Strangely, they show no signs of
+current moisture.  On the southern wall is a small crevice, just large enough
+to lead a horse through.
+"
 2841 9 1509949515 3 0
 -1
 S
@@ -2869,8 +2247,7 @@ S
 #33088
 "Cairn Mountain Road - Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -2888,8 +2265,7 @@ S
 #33089
 "Cairn Mountain Road - Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -2907,8 +2283,7 @@ S
 #33090
 "Cairn Mountain Road - Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -2926,11 +2301,9 @@ S
 #33091
 "Forested Valley - Bandit Camp"
 "Under Construction.
-
-"
+"
 "[Kotoktok] tents around, firest, big tent in middle
-
-"
+"
 301465600 0
 3 6 0
 D1
@@ -2943,8 +2316,7 @@ S
 #33092
 "Cairn Mountain Road - Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0

@@ -10,17 +10,12 @@
 #2001
 "Raven Wood"
 "Tree limbs dip low, hanging heavy in a thin, chill mist which shrouds the
-
-forest in darkness.  A faint path disappears south into the mist, along a
-
-jutting rock face to the west.  More dark trees line the gorge to the north,
-
-spreading east away from the rotting rope bridge.
-
-"
+forest in darkness.  A faint path disappears south into the mist, along a
+jutting rock face to the west.  More dark trees line the gorge to the north,
+spreading east away from the rotting rope bridge.
+"
 "[Phule] nomob
-
-"
+"
 301498381 0
 0 9 0
 D0
@@ -38,89 +33,54 @@ D2
 E
 "1 north rotting rope bridge"
 "A frail-looking bridge made of rotting, cracked boards which cross the
-
-gorge.
-
-"
+gorge.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You step $T onto a creaky old rope bridge.
-
-"
+"
 !
 3 0 1
 A
 "search"
 "skeleton pile bones"
 "mob = mob_in_room( 2277, room );
-
-if( mob ) {
-
-  act_tochar(\"As you try to reach for the skeleton, the raven screeches in anger!\", ch );
-
-  act_notchar(\"As $n reaches for the skeleton, the raven screeches in anger!\", ch );
-
-  if( !is_fighting( mob ) )
-
-    attack( mob, ch, 1d1, \"angry scratch\" );
-
-  }
-
-else {
-
-  obj = obj_in_room( 3446, room );
-
-  if( obj ) {
-
-    act_tochar(\"As you touch the skeleton, it shatters into a thousand fragments.\", ch );
-
-    act_notchar(\"As $n touches the skeleton, it shatters into a thousand fragments.\", ch );
-
-    junk_obj( obj, 1 );
-
-    if( rflag( reset0, room ) ) {
-
-      remove_rflag( reset0, room );
-
-      i = random( 1, 21 );
-
-      if( i > 5 )
-
-        act_tochar( \"You find nothing.\", ch );
-
-      else {
-
-        act_tochar(\"You find a small gem!\", ch );
-
-        act_notchar(\"$n finds a small gem.\", ch );
-
-        if( random( 1, 9 ) == 1 )
-
-          obj_to_char( oload( 2117 ), ch );
-
-        else
-
-          obj_to_char( oload( 3393 ), ch );
-
-        }
-
-      }
-
-    }
-
-  else
-
-    act_tochar( \"There is no skeleton to search.\", ch );
-
-  }
-
-"
+if( mob ) {
+  act_tochar(\"As you try to reach for the skeleton, the raven screeches in anger!\", ch );
+  act_notchar(\"As $n reaches for the skeleton, the raven screeches in anger!\", ch );
+  if( !is_fighting( mob ) )
+    attack( mob, ch, 1d1, \"angry scratch\" );
+  }
+else {
+  obj = obj_in_room( 3446, room );
+  if( obj ) {
+    act_tochar(\"As you touch the skeleton, it shatters into a thousand fragments.\", ch );
+    act_notchar(\"As $n touches the skeleton, it shatters into a thousand fragments.\", ch );
+    junk_obj( obj, 1 );
+    if( rflag( reset0, room ) ) {
+      remove_rflag( reset0, room );
+      i = random( 1, 21 );
+      if( i > 5 )
+        act_tochar( \"You find nothing.\", ch );
+      else {
+        act_tochar(\"You find a small gem!\", ch );
+        act_notchar(\"$n finds a small gem.\", ch );
+        if( random( 1, 9 ) == 1 )
+          obj_to_char( oload( 2117 ), ch );
+        else
+          obj_to_char( oload( 3393 ), ch );
+        }
+      }
+    }
+  else
+    act_tochar( \"There is no skeleton to search.\", ch );
+  }
+"
 !
 0 0 0
 2275 137 1509949540 3 0
@@ -130,16 +90,11 @@ S
 #2002
 "Faint Trail in Raven Wood"
 "Mist clings to the ground, nearly swallowing the faint trail which leads
-
-through the dark woods.  The trail curves to the east around a jutting
-
-rock outcropping to the south, and leads north toward a rope bridge.  To
-
-the west, the sheer rock wall of the mountain climbs into the clouds,
-
-while to the east, the dark woods beckon.
-
-"
+through the dark woods.  The trail curves to the east around a jutting
+rock outcropping to the south, and leads north toward a rope bridge.  To
+the west, the sheer rock wall of the mountain climbs into the clouds,
+while to the east, the dark woods beckon.
+"
 ""
 301498372 0
 0 9 0
@@ -154,29 +109,24 @@ D1
 E
 "1 down faint trail"
 "The trail is faint and thin, leading north and east.
-
-"
+"
 E
 "1 south jutting rock outcropping"
 "The vertical rock outcropping to the south is smooth and cannot be
-
-climbed.
-
-"
+climbed.
+"
 A
 "1 south 1 up"
 ""
 "interpret( ch, \"look south\" );
-
-"
+"
 !
 0 0 0
 A
 "climb fly"
 "veritcal rock outcropping jutting 1 up 1 south"
 "interpret( ch, \"look south\" );
-
-"
+"
 !
 0 0 0
 -1
@@ -185,18 +135,12 @@ S
 #2003
 "Faint Trail in Raven Wood"
 "The faint trail curves west and south, around a jutting rock to the
-
-southwest.  The mist of the dark forest clings to the ground:  the
-
-lowhanging branches reaching out to choke passers-by.  To the northeast,
-
-the ground drops off into a deep gorge.  Strangely, one of the twisted
-
-dark trees grows out nearly horizontal to the ground, reaching out over
-
-the edge.
-
-"
+southwest.  The mist of the dark forest clings to the ground:  the
+lowhanging branches reaching out to choke passers-by.  To the northeast,
+the ground drops off into a deep gorge.  Strangely, one of the twisted
+dark trees grows out nearly horizontal to the ground, reaching out over
+the edge.
+"
 ""
 301498372 0
 0 9 0
@@ -219,49 +163,31 @@ D3
 E
 "southwest jutting rock"
 "The vertical rock outcropping to the southwest is smooth and cannot be
-
-climbed.
-
-"
+climbed.
+"
 E
 "twisted horizontal out"
 "The tree is twisted so much, the root juts horizontally to the ground,
-
-hanging out over the gorge to the northeast.
-
-"
+hanging out over the gorge to the northeast.
+"
 A
 "climb"
 "1 up tree out limb twisted northeast"
 "if( can_fly( ch ) ) {
-
-  act_tochar(\"You fly out onto the tree.\", ch );
-
-  act_notchar( \"$n flies out onto the tree.\", ch );
-
-  transfer( ch, find_room( 2004 ) );
-
-  act_notchar( \"$n flies out from the forest.\", ch );
-
-  }
-
-else {
-
-  if( find_skill( ch, climb ) > 0 ) {
-
-    act_tochar( \"You climb out onto the tree.\", ch );
-
-    act_notchar( \"$n climbs out onto the tree.\", ch );
-
-    transfer( ch, find_room( 2004 ) );
-
-    act_notchar( \"$n climbs out from the forest.\", ch );
-
-    }
-
-  }
-
-"
+  act_tochar(\"You fly out onto the tree.\", ch );
+  act_notchar( \"$n flies out onto the tree.\", ch );
+  transfer( ch, find_room( 2004 ) );
+  act_notchar( \"$n flies out from the forest.\", ch );
+  }
+else {
+  if( find_skill( ch, climb ) > 0 ) {
+    act_tochar( \"You climb out onto the tree.\", ch );
+    act_notchar( \"$n climbs out onto the tree.\", ch );
+    transfer( ch, find_room( 2004 ) );
+    act_notchar( \"$n climbs out from the forest.\", ch );
+    }
+  }
+"
 !
 0 0 0
 2276 9 1509949540 3 0
@@ -271,103 +197,67 @@ S
 #2004
 "Out on a Limb"
 "This gnarled old tree has grown out horizontally away from the cliff to
-
-the southwest, overhanging a rocky gorge far below.  To the northwest, a
-
-rope bridge connects one side of the gorge to the other, passing over the
-
-high mountain river which can be heard rushing by below.  A large
-
-knothole sits face-up at the end of the tree.
-
-"
+the southwest, overhanging a rocky gorge far below.  To the northwest, a
+rope bridge connects one side of the gorge to the other, passing over the
+high mountain river which can be heard rushing by below.  A large
+knothole sits face-up at the end of the tree.
+"
 "[Phule] raven woon is 2003
-
-[Phule] search keyhole is a frustrate point
-
-[Phule] pruning knife can cut limb
-
-[Phule] fall down into gorge, cut hand, etc.
-
-[Phule] d is 4043
-
-[Lelak] good.  missing an acode for cut branch though
-
-[Phule] yup i don't want them to fal into river yet (river unfinished)
-
-[Phule] added 'notyet' code.
-
-"
+[Phule] search keyhole is a frustrate point
+[Phule] pruning knife can cut limb
+[Phule] fall down into gorge, cut hand, etc.
+[Phule] d is 4043
+[Lelak] good.  missing an acode for cut branch though
+[Phule] yup i don't want them to fal into river yet (river unfinished)
+[Phule] added 'notyet' code.
+"
 301498368 0
 0 9 0
 E
 "tree"
 "The tree is an old oak, blackened by the curse which hangs over the wood.
-
-One of the limbs appears ready to fall off, only needing perhaps a slight
-
-cut.
-
-"
+One of the limbs appears ready to fall off, only needing perhaps a slight
+cut.
+"
 A
 "climb fly"
 "1 down back"
 "if( can_fly( ch ) ) {
-
-  act_tochar(\"You fly back into the forest.\", ch );
-
-  act_notchar( \"$n flies back into the forest.\", ch );
-
-  transfer( ch, find_room( 2003 ) );
-
-  act_notchar( \"$n flies in from the horizontal tree.\", ch );
-
-  }
-
-else {
-
-  if( find_skill( ch, climb ) > 0 ) {
-
-    act_tochar( \"You climb back into the forest.\", ch );
-
-    act_notchar( \"$n climbs back into the forest.\", ch );
-
-    transfer( ch, find_room( 2003 ) );
-
-    act_notchar( \"$n climbs in from the horizontal tree.\", ch );
-
-    }
-
-  }
-
-"
+  act_tochar(\"You fly back into the forest.\", ch );
+  act_notchar( \"$n flies back into the forest.\", ch );
+  transfer( ch, find_room( 2003 ) );
+  act_notchar( \"$n flies in from the horizontal tree.\", ch );
+  }
+else {
+  if( find_skill( ch, climb ) > 0 ) {
+    act_tochar( \"You climb back into the forest.\", ch );
+    act_notchar( \"$n climbs back into the forest.\", ch );
+    transfer( ch, find_room( 2003 ) );
+    act_notchar( \"$n climbs in from the horizontal tree.\", ch );
+    }
+  }
+"
 E
 "search"
 "No description.
-
-"
+"
 !
 0 0 0
 A
 "search"
 "knothole"
 "act_tochar(\"You search the knothole.\", ch );
-
-act_notchar( \"$n searches the knothole.\", ch );
-
-act_tochar(\"You come away emptyhanded.\", ch );
-
-act_notchar( \"$n comes away emptyhanded.\", ch );
-
-"
+act_notchar( \"$n searches the knothole.\", ch );
+act_tochar(\"You come away emptyhanded.\", ch );
+act_notchar( \"$n comes away emptyhanded.\", ch );
+"
 !
 0 0 0
 A
 "cut"
 "branch"
 "act_tochar( \"You cannot cut the branch. Yet.\", ch );
-
-"
+"
 !
 0 0 0
 -1
@@ -376,14 +266,10 @@ S
 #2005
 "Raven Wood"
 "The dark trees encroach upon the edge of a gorge, low limbs overhanging the
-
-hundred-foot drop to the the rocks below.  The forest continues to the south
-
-and west, as the gorge juts toward the southeast.  Out across the gorge to the
-
-northwest, a flimsy rope bridge sways to and fro, tossed by the wind.
-
-"
+hundred-foot drop to the the rocks below.  The forest continues to the south
+and west, as the gorge juts toward the southeast.  Out across the gorge to the
+northwest, a flimsy rope bridge sways to and fro, tossed by the wind.
+"
 ""
 301498372 0
 0 9 0
@@ -399,8 +285,7 @@ A
 "1 north 1 east"
 ""
 "acode( find_room( 2025 ), 1 );
-
-"
+"
 !
 0 0 0
 -1
@@ -409,16 +294,11 @@ S
 #2006
 "Faint Trail in Raven Wood"
 "A moss-covered rock juts out of the mountain to the west and this trail
-
-leads north and south along it.  Dark, lichen-covered tree limbs seem
-
-translucent, as a chill mist clings to both bough and ground.  The forest
-
-thickens to the east, as in the distance, brambles peek out of the
-
-swirling fog.
-
-"
+leads north and south along it.  Dark, lichen-covered tree limbs seem
+translucent, as a chill mist clings to both bough and ground.  The forest
+thickens to the east, as in the distance, brambles peek out of the
+swirling fog.
+"
 ""
 301498372 0
 0 9 0
@@ -440,16 +320,11 @@ S
 #2007
 "Faint Trail in Raven Wood"
 "A faint, mist-shrouded trail leads east into the thickening wood,
-
-disappearing into darkness.  To the north, the trail leads alongside a
-
-massive rock which juts out of the mountain to the northwest.  To the
-
-south and west, small patches of crabapple trees find purchase betwixt
-
-the choking boughs of the dark wood and the rock of the mountain.
-
-"
+disappearing into darkness.  To the north, the trail leads alongside a
+massive rock which juts out of the mountain to the northwest.  To the
+south and west, small patches of crabapple trees find purchase betwixt
+the choking boughs of the dark wood and the rock of the mountain.
+"
 ""
 301498372 0
 12 9 0
@@ -476,16 +351,11 @@ S
 #2008
 "Raven Wood - Crabapples"
 "A massive rock outcropping lies to the north, jutting out from the
-
-granite wall of the mountain to the west.  This is a small, crooked grove
-
-of squat, twisted crabapple trees which continues to the southeast,
-
-curving around a small clearing to the south.  A faint path appears
-
-through the patches of mist to the east.
-
-"
+granite wall of the mountain to the west.  This is a small, crooked grove
+of squat, twisted crabapple trees which continues to the southeast,
+curving around a small clearing to the south.  A faint path appears
+through the patches of mist to the east.
+"
 ""
 301498372 0
 3 9 0
@@ -504,21 +374,14 @@ S
 #2009
 "Raven Wood - Black Well"
 "In the shadowed corner of a dark wood, framed by the massive granite
-
-walls of the mountain slope to the west and south, this dark patch of
-
-ground is as dank a place as in all existence.  The choking mists settle
-
-upon the moss and mildew which coat the stones of an ancient well, now
-
-grown black and putrid.  Crabapple trees squat in small, crooked groves
-
-to the north and east.
-
-"
+walls of the mountain slope to the west and south, this dark patch of
+ground is as dank a place as in all existence.  The choking mists settle
+upon the moss and mildew which coat the stones of an ancient well, now
+grown black and putrid.  Crabapple trees squat in small, crooked groves
+to the north and east.
+"
 "[Phule] nomob
-
-"
+"
 301498376 0
 2 9 0
 D0
@@ -533,68 +396,37 @@ A
 "search"
 "skeleton"
 "mob = mob_in_room( 2277, room );
-
-if( mob ) {
-
-  act_tochar(\"As you try to reach for the skeleton, the crow screeches in anger!\", ch );
-
-  act_notchar(\"As $n reaches for the skeleton, the crow screeches in anger!\", ch );
-
-  if( !is_fighting( mob ) )
-
-    attack( mob, ch, 1d1, \"angry scratch\" );
-
-  }
-
-else {
-
-  obj = obj_in_room( 3446, room );
-
-  if( obj ) {
-
-    act_tochar(\"As you touch the skeleton, it shatters into a thousand fragments.\", ch );
-
-    act_notchar(\"As $n touches the skeleton, it shatters into a thousand fragments.\", ch );
-
-    junk_obj( obj, 1 );
-
-    if( rflag( reset0, room ) ) {
-
-      remove_rflag( reset0, room );
-
-      i = random( 1, 21 );
-
-      if( i > 5 )
-
-        act_tochar( \"You find nothing.\", ch );
-
-      else {
-
-        act_tochar(\"You find a small gem!\", ch );
-
-        act_notchar(\"$n finds a small gem.\", ch );
-
-        if( random( 1, 9 ) == 1 )
-
-          obj_to_char( oload( 3438 ), ch );
-
-        else
-
-          obj_to_char( oload( 3437 ), ch );
-
-        }
-
-      }
-
-    }
-
-  else
-
-    act_tochar( \"There is no skeleton to search.\", ch );
-
-  }
-
-"
+if( mob ) {
+  act_tochar(\"As you try to reach for the skeleton, the crow screeches in anger!\", ch );
+  act_notchar(\"As $n reaches for the skeleton, the crow screeches in anger!\", ch );
+  if( !is_fighting( mob ) )
+    attack( mob, ch, 1d1, \"angry scratch\" );
+  }
+else {
+  obj = obj_in_room( 3446, room );
+  if( obj ) {
+    act_tochar(\"As you touch the skeleton, it shatters into a thousand fragments.\", ch );
+    act_notchar(\"As $n touches the skeleton, it shatters into a thousand fragments.\", ch );
+    junk_obj( obj, 1 );
+    if( rflag( reset0, room ) ) {
+      remove_rflag( reset0, room );
+      i = random( 1, 21 );
+      if( i > 5 )
+        act_tochar( \"You find nothing.\", ch );
+      else {
+        act_tochar(\"You find a small gem!\", ch );
+        act_notchar(\"$n finds a small gem.\", ch );
+        if( random( 1, 9 ) == 1 )
+          obj_to_char( oload( 3438 ), ch );
+        else
+          obj_to_char( oload( 3437 ), ch );
+        }
+      }
+    }
+  else
+    act_tochar( \"There is no skeleton to search.\", ch );
+  }
+"
 !
 0 0 0
 2277 137 1509949540 3 0
@@ -605,14 +437,10 @@ S
 #2010
 "Raven Wood - Crabapples"
 "Squat, twisted crabapple trees grow in a crooken grove, beneath the
-
-shrouding weight of chill mist which permeates the air.  To the west, a
-
-small clearing reveals an ancient well, while to the north and east, the
-
-edges of forest paths peek out through the fog.
-
-"
+shrouding weight of chill mist which permeates the air.  To the west, a
+small clearing reveals an ancient well, while to the north and east, the
+edges of forest paths peek out through the fog.
+"
 ""
 301498372 0
 3 9 0
@@ -635,16 +463,11 @@ S
 #2011
 "Faint Trail in Raven Wood"
 "A faint trail leads east, along the north shore of a mist-covered lake,
-
-beneath the low-hanging branches of a dark wood.  To the west, a small,
-
-crooked grove of dark crabapple trees hunch together, weighed down by the
-
-everpresent chill mist.  To the south, the trail continues, threading its
-
-way between the lake and the mountain face to the southwest.
-
-"
+beneath the low-hanging branches of a dark wood.  To the west, a small,
+crooked grove of dark crabapple trees hunch together, weighed down by the
+everpresent chill mist.  To the south, the trail continues, threading its
+way between the lake and the mountain face to the southwest.
+"
 ""
 301498372 0
 12 9 0
@@ -671,16 +494,11 @@ S
 #2012
 "North of a Small Lake - A Pile of Stones"
 "Here, at the north end of a small lake, a pile of stones has been erected:
-
-its placement too subtle to be natural.  The lake that has formed to the south
-
-is very still; only the occasional ripple or bubble forms on its surface
-
-and the water is shrouded in a thick grey mist.  A faint trail seems to
-
-wind its way from west to east, following the shore of the lake.
-
-"
+its placement too subtle to be natural.  The lake that has formed to the south
+is very still; only the occasional ripple or bubble forms on its surface
+and the water is shrouded in a thick grey mist.  A faint trail seems to
+wind its way from west to east, following the shore of the lake.
+"
 ""
 301498372 0
 12 9 0
@@ -700,56 +518,37 @@ A
 "search move push remove"
 "stones pile"
 "if( !rflag( reset0, room ) )
-
-  act_tochar( #nomove, ch );
-
-else {
-
-  remove_rflag( reset0, room );
-
-  act_tochar( #move, ch );
-
-  act_notchar( #rmove, ch );
-
-  wait( 1 );
-
-  send_to_room( #hand, room );
-
-  mload( 2280, room );
-
-  if( char_in_room( ch, room ) ) {
-
-    mob = mob_in_room( 2280, room );
-
-    attack( mob, ch, 1d1, \"angry swipe\" );
-
-    }
-
-  }
-
-"
+  act_tochar( #nomove, ch );
+else {
+  remove_rflag( reset0, room );
+  act_tochar( #move, ch );
+  act_notchar( #rmove, ch );
+  wait( 1 );
+  send_to_room( #hand, room );
+  mload( 2280, room );
+  if( char_in_room( ch, room ) ) {
+    mob = mob_in_room( 2280, room );
+    attack( mob, ch, 1d1, \"angry swipe\" );
+    }
+  }
+"
 E
 "move"
 "@eYou carefully begin removing stones from the pile.@n
-
-"
+"
 E
 "nomove"
 "@eMany of the stones have already been removed from the pile.@n
-
-"
+"
 E
 "rmove"
 "@e$n begins removing stones from the pile.@n
-
-"
+"
 E
 "hand"
 "@eA bony hand thrusts itself out of the pile of stones as a skeleton
-
-emerges from the pile of stones.@n
-
-"
+emerges from the pile of stones.@n
+"
 !
 0 0 0
 -1
@@ -758,16 +557,11 @@ S
 #2013
 "Faint Trail in Raven Wood"
 "A small trail runs its course, bending from west to south as it follows
-
-the shore of a small lake.  The trail narrows to the south as it runs
-
-between a sheer wall of mountainous rock to the southeast and the lake to
-
-the southwest.  The muted sounds of rushing water can be heard to the
-
-east, while the forest of tangled black oaks lies to the north.
-
-"
+the shore of a small lake.  The trail narrows to the south as it runs
+between a sheer wall of mountainous rock to the southeast and the lake to
+the southwest.  The muted sounds of rushing water can be heard to the
+east, while the forest of tangled black oaks lies to the north.
+"
 ""
 301498372 0
 12 9 0
@@ -794,23 +588,15 @@ S
 #2014
 "Raven Wood - At the Edge of a Steep Gorge"
 "A massive wall of rock to the south and a deep gorge to the east mark the
-
-southeast end of this forest.  The rock face is covered for several feet
-
-with a thin layer of blackish-green slime.  A small, black oak tree has
-
-somehow grown on the wall itself but its branches are weak and the tree
-
-itself looks dry and dead.
-
-"
+southeast end of this forest.  The rock face is covered for several feet
+with a thin layer of blackish-green slime.  A small, black oak tree has
+somehow grown on the wall itself but its branches are weak and the tree
+itself looks dry and dead.
+"
 "[Lelak] again, there seems to be a lack of extras...red herrings so-to-speak
-
-[Lelak] goos
-
-[Phule] i will endeaver to bribe nivel to write me some extras
-
-"
+[Lelak] goos
+[Phule] i will endeaver to bribe nivel to write me some extras
+"
 301498372 0
 3 9 0
 D0
@@ -825,8 +611,7 @@ A
 "1 east"
 ""
 "acode( find_room( 2025 ), 1 );
-
-"
+"
 !
 0 0 0
 -1
@@ -835,18 +620,12 @@ S
 #2015
 "Raven Wood - At the Edge of a Steep Gorge"
 "The land slopes steeply downward to the east, where twisted, tangled
-
-trees grow even to the very edge.  There the ground abruptly gives way to
-
-a steep gorge, below which a mighty river flows.  The muted sound of
-
-rushing water from the river is all that can be heard in this quiet
-
-forest.  Most of the trees here are blackened and lifeless, and there
-
-is little brush or foliage.
-
-"
+trees grow even to the very edge.  There the ground abruptly gives way to
+a steep gorge, below which a mighty river flows.  The muted sound of
+rushing water from the river is all that can be heard in this quiet
+forest.  Most of the trees here are blackened and lifeless, and there
+is little brush or foliage.
+"
 ""
 301498372 0
 3 9 0
@@ -866,8 +645,7 @@ A
 "1 east"
 ""
 "acode( find_room( 2025 ), 1 );
-
-"
+"
 !
 0 0 0
 2276 9 1509949540 3 0
@@ -877,23 +655,15 @@ S
 #2016
 "Raven Wood"
 "Small brush and the occasional thicket of briar grow in the shallow
-
-depression of this forest.  Much of the ground is shadowed by the
-
-branches of a great black oak tree which rises up to the west.  Few trees
-
-grow here, and those that do are small and stunted, their lifeless limbs
-
-frozen in a gnarled, twisted attempt to find sunlight in this
-
-mist-covered forest.
-
-"
+depression of this forest.  Much of the ground is shadowed by the
+branches of a great black oak tree which rises up to the west.  Few trees
+grow here, and those that do are small and stunted, their lifeless limbs
+frozen in a gnarled, twisted attempt to find sunlight in this
+mist-covered forest.
+"
 "[Phule] w is giant tree
-
-[Lelak] good
-
-"
+[Lelak] good
+"
 301498372 0
 3 9 0
 D0
@@ -918,35 +688,21 @@ S
 #2017
 "Raven Wood - Base of a Black Oak"
 "A massive, black oak rises high into the air, its circumference a
-
-staggering thirty feet of knots and ruined bark.  An easy climb leads up
-
-into the broad lower branches of the tree.  A faint trail leads west and
-
-south away from the oak, into the misty woods.
-
-"
+staggering thirty feet of knots and ruined bark.  An easy climb leads up
+into the broad lower branches of the tree.  A faint trail leads west and
+south away from the oak, into the misty woods.
+"
 "[Phule] GIANT TREE
-
-[Phule] on path, goes w, s
-
-[Phule] action leaving up
-
-[Phule] make sure up req.climb
-
-[Lelak] measurement in new terms, you should try to sta in medieval...before henry VIII
-
-[Phule] like stones, or hands?
-
-[Phule] cubits? i dunno much about anything but feet :(
-
-[Phule] okay i wrote a help measurements file.
-
-[Phule] btw there was both a roman and assyrian 'foot', both about 12 inches.
-
-[Lelak] they had big feet, what can I say
-
-"
+[Phule] on path, goes w, s
+[Phule] action leaving up
+[Phule] make sure up req.climb
+[Lelak] measurement in new terms, you should try to sta in medieval...before henry VIII
+[Phule] like stones, or hands?
+[Phule] cubits? i dunno much about anything but feet :(
+[Phule] okay i wrote a help measurements file.
+[Phule] btw there was both a roman and assyrian 'foot', both about 12 inches.
+[Lelak] they had big feet, what can I say
+"
 301498372 0
 0 9 0
 D0
@@ -973,18 +729,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You $t $T onto a low branch of the massive oak.
-
-"
+"
 E
 "to_room"
 "$n $t $T onto a low branch of the massive oak.
-
-"
+"
 !
 3 0 16
 2276 9 1509949540 3 0
@@ -995,19 +748,13 @@ S
 #2018
 "Faint Trail in Raven Wood"
 "In the shadow of the dark, crouching trees of raven wood, a faint trail
-
-makes its way east and west.  Through the chill mist, the apparition of a
-
-giant black oak tree rises to the east, its leafless, gnarled branches
-
-twisted into knots.
-
-"
+makes its way east and west.  Through the chill mist, the apparition of a
+giant black oak tree rises to the east, its leafless, gnarled branches
+twisted into knots.
+"
 "[Phule] path goes w,e
-
-[Lelak] good
-
-"
+[Lelak] good
+"
 301498372 0
 0 9 0
 D0
@@ -1032,23 +779,15 @@ S
 #2019
 "Raven Wood"
 "The thin, taut branches of stunted black oaks seem to reach out like
-
-tentacles across this pathless, mostly barren forest.  The damp, dewy
-
-stench of decay can be smelled where occasional carpets of moss and slime
-
-have formed upon tree trunks and fallen logs.
-
-"
+tentacles across this pathless, mostly barren forest.  The damp, dewy
+stench of decay can be smelled where occasional carpets of moss and slime
+have formed upon tree trunks and fallen logs.
+"
 "[Phule] trail is w,s
-
-[Phule] giant tree se
-
-[Lelak] good...checked spelling of dewy
-
-[Phule] thanks :)
-
-"
+[Phule] giant tree se
+[Lelak] good...checked spelling of dewy
+[Phule] thanks :)
+"
 301498372 0
 0 9 0
 D0
@@ -1073,23 +812,15 @@ S
 #2020
 "Raven Wood"
 "The forest is crowded with the stunted black boles of oak trees, their
-
-lifeless, leafless branches reaching out like eerie fingers.  Many are
-
-dotted with blue-green lichens, although many of the trees are slick with
-
-a coating of shiny black slime.  Not far to the south, a great black oak
-
-towers above the rest, its branches extending over and casting shadows
-
-upon much of the forest here.
-
-"
+lifeless, leafless branches reaching out like eerie fingers.  Many are
+dotted with blue-green lichens, although many of the trees are slick with
+a coating of shiny black slime.  Not far to the south, a great black oak
+towers above the rest, its branches extending over and casting shadows
+upon much of the forest here.
+"
 "[Phule] giant tree to s
-
-[Lelak] doog
-
-"
+[Lelak] doog
+"
 301498372 0
 3 9 0
 D0
@@ -1114,29 +845,18 @@ S
 #2021
 "Raven Wood - Remains of a Campfire"
 "The black, tangled forest gives way to a small clearing here, although
-
-thick vines and vegetation seem to be encroaching upon it.  A small ring
-
-of stones in the center are all that remains of what must have been a
-
-camp at one time, although there are no ashes and the stones are covered
-
-with a thin coat of slime.
-
-"
+thick vines and vegetation seem to be encroaching upon it.  A small ring
+of stones in the center are all that remains of what must have been a
+camp at one time, although there are no ashes and the stones are covered
+with a thin coat of slime.
+"
 "[Phule] giant tree sw
-
-[Phule] gorge ne
-
-[Lelak] center of teh clearing?
-
-[Lelak] no extras here?
-
-[Phule] added one
-
-[Lelak] uninventive...oh well
-
-"
+[Phule] gorge ne
+[Lelak] center of teh clearing?
+[Lelak] no extras here?
+[Phule] added one
+[Lelak] uninventive...oh well
+"
 301498368 0
 3 9 0
 D0
@@ -1158,8 +878,7 @@ D3
 E
 "1 down small ring stones clearing campfire thin coat slime camp"
 "The stones are covered with a thin coat of dark green slime.
-
-"
+"
 2276 9 1509949540 3 0
 -1
 S
@@ -1167,19 +886,13 @@ S
 #2022
 "Raven Wood - At the Edge of a Steep Gorge"
 "The forest slopes steeply downward to the north and east here, trailing
-
-off to end at a deep gorge.  The ground here is thick with vines and
-
-vegetation, but a white mist covers the ground, making it difficult to
-
-walk.  The trees here look the worse for wear, their branches leafless
-
-and their boles covered in moss and slime.
-
-"
+off to end at a deep gorge.  The ground here is thick with vines and
+vegetation, but a white mist covers the ground, making it difficult to
+walk.  The trees here look the worse for wear, their branches leafless
+and their boles covered in moss and slime.
+"
 "[Lelak] gppd
-
-"
+"
 301498372 0
 3 9 0
 D2
@@ -1194,8 +907,7 @@ A
 "1 north 1 east"
 ""
 "acode( find_room( 2025 ), 1 );
-
-"
+"
 !
 0 0 0
 -1
@@ -1204,17 +916,12 @@ S
 #2023
 "Raven Wood - At the Edge of a Steep Gorge"
 "Gnarled, twisted trunks rise out of the ground in swirls of black:  their
-
-dark green leaves like razor-edged teeth.  Just to the north, the ground
-
-slopes steeply off into a deep gorge.  The forest is quiet but for the
-
-hushed sound of rapids far below.
-
-"
+dark green leaves like razor-edged teeth.  Just to the north, the ground
+slopes steeply off into a deep gorge.  The forest is quiet but for the
+hushed sound of rapids far below.
+"
 "[Lelak] good
-
-"
+"
 301498372 0
 0 9 0
 D1
@@ -1233,8 +940,7 @@ A
 "1 north"
 ""
 "acode( find_room( 2025 ), 1 );
-
-"
+"
 !
 0 0 0
 -1
@@ -1243,21 +949,14 @@ S
 #2024
 "Raven Wood - At the Edge of a Steep Gorge"
 "The trees here are blackened and stunted, their tangled and twisted
-
-branches stretching around and about each other like weeds.  Not far to
-
-the south, the bole of a giant black oak rises over the forest.  North,
-
-the forest slopes steeply downward toward a deep gorge.
-
-"
+branches stretching around and about each other like weeds.  Not far to
+the south, the bole of a giant black oak rises over the forest.  North,
+the forest slopes steeply downward toward a deep gorge.
+"
 "[Lelak] two similies in one sentence?
-
-[Lelak] okay besides that
-
-[Phule] good point. removed the first
-
-"
+[Lelak] okay besides that
+[Phule] good point. removed the first
+"
 301498372 0
 3 9 0
 D1
@@ -1276,8 +975,7 @@ A
 "1 north"
 ""
 "acode( find_room( 2025 ), 1 );
-
-"
+"
 !
 0 0 0
 2276 9 1509949540 3 0
@@ -1287,17 +985,12 @@ S
 #2025
 "Raven Wood - At the Edge of a Steep Gorge"
 "The forest gives way to a small rock ledge overlooking a deep gorge.
-
-Tangled vines and dark vegetation choke the ledge and make walking
-
-difficult.  Far below, white water rapids can be seen through the grey
-
-mist which hangs over it.
-
-"
+Tangled vines and dark vegetation choke the ledge and make walking
+difficult.  Far below, white water rapids can be seen through the grey
+mist which hangs over it.
+"
 "[Lelak] good
-
-"
+"
 301498372 0
 3 9 0
 D2
@@ -1312,16 +1005,14 @@ A
 "__walk_off_ledge__"
 ""
 "act_tochar( \"You walk right to the edge, and stop.\", ch );
-
-"
+"
 !
 0 0 0
 A
 "1 north 1 east"
 ""
 "acode( find_room( 2025 ), 1 );
-
-"
+"
 !
 0 0 0
 -1
@@ -1330,25 +1021,16 @@ S
 #2026
 "Path Along the Edge of a Small Lake"
 "This small, narrow path lies between a wall of rock to the northeast and
-
-a small lake to your west and south.  The path continues to the east and
-
-forms a ring around the lake.  The ground is wet and covered with a thin
-
-layer of moss and slime.  Small bubbles occasionally appear on the
-
-otherwise silent and still lake.
-
-"
+a small lake to your west and south.  The path continues to the east and
+forms a ring around the lake.  The ground is wet and covered with a thin
+layer of moss and slime.  Small bubbles occasionally appear on the
+otherwise silent and still lake.
+"
 "[Phule] nomob
-
-[Lelak] that first sentence is big time run-on
-
-[Lelak] good but for that
-
-[Phule] fixed i think
-
-"
+[Lelak] that first sentence is big time run-on
+[Lelak] good but for that
+[Phule] fixed i think
+"
 301498376 0
 2 9 0
 D0
@@ -1365,23 +1047,15 @@ S
 #2027
 "Path Along the Edge of a Small Lake"
 "This narrow strip of land follows the shore of the lake and forms a ring
-
-as it runs a path between the lake and sheer mountain walls.  The ground
-
-is green, covered with a thick layer of pungent moss.  The air here is
-
-thick with the same mist which covers the lake and obscures much of the
-
-water.
-
-"
+as it runs a path between the lake and sheer mountain walls.  The ground
+is green, covered with a thick layer of pungent moss.  The air here is
+thick with the same mist which covers the lake and obscures much of the
+water.
+"
 "[Phule] skel code
-
-[Lelak] ooooohhhhhh, I like this
-
-[Phule] :)
-
-"
+[Lelak] ooooohhhhhh, I like this
+[Phule] :)
+"
 301498368 0
 2 9 0
 D2
@@ -1396,32 +1070,19 @@ A
 ""
 ""
 "if( rflag( reset0, room ) ) {
-
-  mob = mob_in_room( 2281, room );
-
-  if( !mob ) {
-
-    remove_rflag( reset0, room );
-
-    send_to_room( \"Something churns from the bottom of the lake...\", room );
-
-    wait( 2 );
-
-    send_to_room( \"A moss-covered skeleton emerges from the lake!\", room );
-
-    mload( 2281, room );
-
-    rch = rand_player( room );
-
-    if( rch )
-
-      attack( mob, rch, 1d1, \"angry swipe\" );
-
-    }
-
-  }
-
-"
+  mob = mob_in_room( 2281, room );
+  if( !mob ) {
+    remove_rflag( reset0, room );
+    send_to_room( \"Something churns from the bottom of the lake...\", room );
+    wait( 2 );
+    send_to_room( \"A moss-covered skeleton emerges from the lake!\", room );
+    mload( 2281, room );
+    rch = rand_player( room );
+    if( rch )
+      attack( mob, rch, 1d1, \"angry swipe\" );
+    }
+  }
+"
 !
 1 0 12
 -1
@@ -1430,23 +1091,15 @@ S
 #2028
 "Path Along the Edge of a Small Lake"
 "This small ring of land between mountain rock to the east and lake to the
-
-west forms a small path that runs from south to north.  A large slab of
-
-rock to the east sticks out along the path and narrows the gap between
-
-wall and lake to a few feet.  It is surprisingly bare of moss, something
-
-which has formed over much of the mountain side and along the ground.
-
-"
+west forms a small path that runs from south to north.  A large slab of
+rock to the east sticks out along the path and narrows the gap between
+wall and lake to a few feet.  It is surprisingly bare of moss, something
+which has formed over much of the mountain side and along the ground.
+"
 "[Lelak] I really don't think this first sentence is okay...you have a to the west and no to the east
-
-[Lelak] other than that...good
-
-[Phule] fixed, thanks musta brain dead been... something...
-
-"
+[Lelak] other than that...good
+[Phule] fixed, thanks musta brain dead been... something...
+"
 301498368 0
 2 9 0
 D0
@@ -1463,17 +1116,12 @@ S
 #2029
 "Path Along the Edge of a Small Lake"
 "The misty surface of a black lake glimmers to the northwest, and a small
-
-path follows its shoreline along the mountain rock to the south and east.
-
-The path, a thin patch of dirt between water and granite, continues north
-
-and west.
-
-"
+path follows its shoreline along the mountain rock to the south and east.
+The path, a thin patch of dirt between water and granite, continues north
+and west.
+"
 "[Phule] skel
-
-"
+"
 301498368 0
 2 9 0
 D0
@@ -1488,32 +1136,19 @@ A
 ""
 ""
 "if( rflag( reset0, room ) ) {
-
-  mob = mob_in_room( 2281, room );
-
-  if( !mob ) {
-
-    remove_rflag( reset0, room );
-
-    send_to_room( \"Something churns from the bottom of the lake...\", room );
-
-    wait( 2 );
-
-    send_to_room( \"A moss-covered skeleton emerges from the lake!\", room );
-
-    mload( 2281, room );
-
-    rch = rand_player( room );
-
-    if( rch )
-
-      attack( mob, rch, 1d1, \"angry swipe\" );
-
-    }
-
-  }
-
-"
+  mob = mob_in_room( 2281, room );
+  if( !mob ) {
+    remove_rflag( reset0, room );
+    send_to_room( \"Something churns from the bottom of the lake...\", room );
+    wait( 2 );
+    send_to_room( \"A moss-covered skeleton emerges from the lake!\", room );
+    mload( 2281, room );
+    rch = rand_player( room );
+    if( rch )
+      attack( mob, rch, 1d1, \"angry swipe\" );
+    }
+  }
+"
 !
 1 0 9
 -1
@@ -1522,19 +1157,13 @@ S
 #2030
 "Path Along the Edge of a Small Lake"
 "This narrow, east-west path leads along the edge of a black, misty lake
-
-to the north.  To the south, the sheer rock face of the mountain rises
-
-into the clouds.  A pile of scattered stones lies in a hollow in the path.
-
-"
+to the north.  To the south, the sheer rock face of the mountain rises
+into the clouds.  A pile of scattered stones lies in a hollow in the path.
+"
 "[Phule] stones
-
-[Sunyata] When you 'search stone', it says 'You just get yours hands dirty.'
-
-[Phule] fixed
-
-"
+[Sunyata] When you 'search stone', it says 'You just get yours hands dirty.'
+[Phule] fixed
+"
 301498368 0
 2 9 0
 D1
@@ -1548,40 +1177,25 @@ D3
 E
 "pile scattered stones hollow 1 down path"
 "A small pile of stones, most likely debris fallen from the rocks above.
-
-"
+"
 A
 "search"
 "pile stones"
 "act_tochar( \"You rummage through the pile of stones.\", ch );
-
-act_notchar( \"$n rummages through the pile of stones.\", ch );
-
-i = 0;
-
-if( rflag( reset0, room ) ) {
-
-  remove_rflag( reset0, room );
-
-  if( random( 0, 1 ) == 1 )
-
-    i = 1;
-
-  }
-
-if( i == 1 ) {
-
-  act_tochar( \"You find a nice-looking pebble!\", ch );
-
-  obj_to_char( oload( 78 ), ch );
-
-  }
-
-else
-
-  act_tochar( \"You just get your hands dirty.\", ch );
-
-"
+act_notchar( \"$n rummages through the pile of stones.\", ch );
+i = 0;
+if( rflag( reset0, room ) ) {
+  remove_rflag( reset0, room );
+  if( random( 0, 1 ) == 1 )
+    i = 1;
+  }
+if( i == 1 ) {
+  act_tochar( \"You find a nice-looking pebble!\", ch );
+  obj_to_char( oload( 78 ), ch );
+  }
+else
+  act_tochar( \"You just get your hands dirty.\", ch );
+"
 !
 0 0 0
 -1
@@ -1590,37 +1204,22 @@ S
 #2031
 "Path Along the Edge of a Small Lake"
 "The path is wider here, narrowing to thin patches of dirt as it stretches
-
-to the east and west.  A dark, misty lake lies to the north, beyond which
-
-looms a dark, forbidding forest.  To the south rises the sheer granite of
-
-the mountain.
-
-"
+to the east and west.  A dark, misty lake lies to the north, beyond which
+looms a dark, forbidding forest.  To the south rises the sheer granite of
+the mountain.
+"
 "[Phule] skel captain
-
-[Phule] nomob
-
-[Phule] captain is 2282
-
-[Phule] sword is ench vs. undead
-
-[Phule] dive n into lake, find chest... underwater mine
-
-(notyet)
-
-[Phule] water is 2040
-
-[Lelak] the skeletal captain's breath weapon has an error in it.
-
-[Lelak] gppd
-
-[Phule] fixed i think
-
-[Phule] wtf did I do with this code??
-
-"
+[Phule] nomob
+[Phule] captain is 2282
+[Phule] sword is ench vs. undead
+[Phule] dive n into lake, find chest... underwater mine
+(notyet)
+[Phule] water is 2040
+[Lelak] the skeletal captain's breath weapon has an error in it.
+[Lelak] gppd
+[Phule] fixed i think
+[Phule] wtf did I do with this code??
+"
 301498376 0
 2 9 0
 D1
@@ -1634,80 +1233,51 @@ D3
 E
 "1 north dark misty lake"
 "Something glimmers from beneath the lake's murky surface.
-
-"
+"
 A
 ""
 ""
 "if( rflag( reset0, room ) ) {
-
-  remove_rflag( reset0, room );
-
-  mob = mob_in_room( 2282, room );
-
-  if( !mob ) {
-
-    send_to_room( \"Something churns from the bottom of the lake...\", room );
-
-    wait( 2 );
-
-    send_to_room( \"A massive skeletal creature emerges from the lake!\", room );
-
-    mload( 2282, room );
-
-    rch = rand_player( room );
-
-    if( rch )
-
-      attack( mob, rch, 1d1, \"angry swipe\" );
-
-    }
-
-  }
-
-"
+  remove_rflag( reset0, room );
+  mob = mob_in_room( 2282, room );
+  if( !mob ) {
+    send_to_room( \"Something churns from the bottom of the lake...\", room );
+    wait( 2 );
+    send_to_room( \"A massive skeletal creature emerges from the lake!\", room );
+    mload( 2282, room );
+    rch = rand_player( room );
+    if( rch )
+      attack( mob, rch, 1d1, \"angry swipe\" );
+    }
+  }
+"
 !
 1 0 10
 A
 "1 north"
 ""
 "act_tochar( \"You will have to dive into the water.\", ch );
-
-"
+"
 !
 0 0 0
 A
 "dive jump leap cannonball"
 "1 north lake water in"
 "if( mob_in_room( 2282, room ) ) { 
-
-  act_tochar( \"You don't think the skeletal captain would like that very much.\", ch );
-
-  end;
-
-  }
-
-else if( rflag( reset0, room ) ) { 
-
-  act_tochar( \"You are startled by movement in the water.\", ch );
-
-  acode( room, 1 );
-
-  }
-
-else {
-
-  act_tochar( \"You dive into the murky water.\", ch );
-
-  act_notchar( \"$n dives into the murky water and disappears from sight.\", ch );
-
-  transfer( ch, find_room( 2040 ) );
-
-  act_notchar( \"$n dives in from the shore above.\", ch );
-
-  }
-
-"
+  act_tochar( \"You don't think the skeletal captain would like that very much.\", ch );
+  end;
+  }
+else if( rflag( reset0, room ) ) { 
+  act_tochar( \"You are startled by movement in the water.\", ch );
+  acode( room, 1 );
+  }
+else {
+  act_tochar( \"You dive into the murky water.\", ch );
+  act_notchar( \"$n dives into the murky water and disappears from sight.\", ch );
+  transfer( ch, find_room( 2040 ) );
+  act_notchar( \"$n dives in from the shore above.\", ch );
+  }
+"
 !
 0 0 0
 -1
@@ -1716,21 +1286,14 @@ S
 #2032
 "Path Along the Edge of a Small Lake"
 "The path widens to the east, nearing the center of the south shore of a
-
-black, mist-covered lake which lies to the north.  To the south, the
-
-granite face of the mountain is spotted with patches of moss.  The path,
-
-a narrow dirt ledge between the lake and the mountain, continues to the
-
-west as well.
-
-"
+black, mist-covered lake which lies to the north.  To the south, the
+granite face of the mountain is spotted with patches of moss.  The path,
+a narrow dirt ledge between the lake and the mountain, continues to the
+west as well.
+"
 "[Phule] grass from w meets moss from e
-
-[Lelak] good
-
-"
+[Lelak] good
+"
 301498368 0
 2 9 0
 D1
@@ -1747,17 +1310,12 @@ S
 #2033
 "Path Along the Edge of a Small Lake"
 "This narrow path curves around the southwest corner of a small, dark lake.
-
-The path is not much more than a narrow strip of earth and grass which
-
-clings to the sheer rock face of the mountain to the south and west.
-
-"
+The path is not much more than a narrow strip of earth and grass which
+clings to the sheer rock face of the mountain to the south and west.
+"
 "[Phule] status flag used by skeleton
-
-[Lelak] good
-
-"
+[Lelak] good
+"
 301498368 0
 2 9 0
 D0
@@ -1772,32 +1330,19 @@ A
 ""
 ""
 "if( rflag( reset0, room ) ) {
-
-  mob = mob_in_room( 2281, room );
-
-  if( !mob ) {
-
-    remove_rflag( reset0, room );
-
-    send_to_room( \"Something churns from the bottom of the lake...\", room );
-
-    wait( 2 );
-
-    send_to_room( \"A moss-covered skeleton emerges from the lake!\", room );
-
-    mload( 2281, room );
-
-    rch = rand_player( room );
-
-    if( rch )
-
-      attack( mob, rch, 1d1, \"angry swipe\" );
-
-    }
-
-  }
-
-"
+  mob = mob_in_room( 2281, room );
+  if( !mob ) {
+    remove_rflag( reset0, room );
+    send_to_room( \"Something churns from the bottom of the lake...\", room );
+    wait( 2 );
+    send_to_room( \"A moss-covered skeleton emerges from the lake!\", room );
+    mload( 2281, room );
+    rch = rand_player( room );
+    if( rch )
+      attack( mob, rch, 1d1, \"angry swipe\" );
+    }
+  }
+"
 !
 1 0 3
 -1
@@ -1806,17 +1351,12 @@ S
 #2034
 "Path Along the Edge of a Small Lake"
 "A narrow strip of scraggly grass and dirt forms a path which leads north
-
-and south.  To the east, a small, dark lake breathes mist into the chill
-
-air.  To the west, the sheer rock wall of the mountain rises high
-
-overhead, leading into darkness.
-
-"
+and south.  To the east, a small, dark lake breathes mist into the chill
+air.  To the west, the sheer rock wall of the mountain rises high
+overhead, leading into darkness.
+"
 "[Lelak] good
-
-"
+"
 301498368 0
 2 9 0
 D0
@@ -1833,19 +1373,13 @@ S
 #2035
 "Path Along the Edge of a Small Lake"
 "The narrow path edges its way between the vertical stone of the mountain
-
-to the northwest and the small, mist-covered lake to the southeast.
-
-There is no vegetation here, save a few scraggly grasses and the odd
-
-patch of moss.
-
-"
+to the northwest and the small, mist-covered lake to the southeast.
+There is no vegetation here, save a few scraggly grasses and the odd
+patch of moss.
+"
 "[Phule] skel code
-
-[Lelak] good
-
-"
+[Lelak] good
+"
 301498368 0
 2 9 0
 D1
@@ -1860,32 +1394,19 @@ A
 ""
 ""
 "if( rflag( reset0, room ) ) {
-
-  mob = mob_in_room( 2281, room );
-
-  if( !mob ) {
-
-    remove_rflag( reset0, room );
-
-    send_to_room( \"Something churns from the bottom of the lake...\", room );
-
-    wait( 2 );
-
-    send_to_room( \"A moss-covered skeleton emerges from the lake!\", room );
-
-    mload( 2281, room );
-
-    rch = rand_player( room );
-
-    if( rch )
-
-      attack( mob, rch, 1d1, \"angry swipe\" );
-
-    }
-
-  }
-
-"
+  mob = mob_in_room( 2281, room );
+  if( !mob ) {
+    remove_rflag( reset0, room );
+    send_to_room( \"Something churns from the bottom of the lake...\", room );
+    wait( 2 );
+    send_to_room( \"A moss-covered skeleton emerges from the lake!\", room );
+    mload( 2281, room );
+    rch = rand_player( room );
+    if( rch )
+      attack( mob, rch, 1d1, \"angry swipe\" );
+    }
+  }
+"
 !
 1 0 6
 -1
@@ -1894,21 +1415,14 @@ S
 #2036
 "Path Along the Edge of a Small Lake"
 "This small path is little more than a narrow ring of dirt and grass which
-
-winds its way between the towering cliff walls and a small, mist-covered
-
-lake.  Small ripples and bubbles occasionally appear on the lake's
-
-surface, but little else disturbs the lake and no sounds seem to
-
-penetrate through the mist which has formed atop it.
-
-"
+winds its way between the towering cliff walls and a small, mist-covered
+lake.  Small ripples and bubbles occasionally appear on the lake's
+surface, but little else disturbs the lake and no sounds seem to
+penetrate through the mist which has formed atop it.
+"
 "[Phule] nomob
-
-[Lelak] good
-
-"
+[Lelak] good
+"
 301498376 0
 2 9 0
 D0
@@ -1925,21 +1439,14 @@ S
 #2037
 "Black Oak - Low Branch"
 "The massive trunk of the oak sports a large hole, offering entrance
-
-into the dark recesses of the tree.  An easy climb along broad branches
-
-leads up to a higher branch, and a short drop would leave you on the
-
-forest floor below.
-
-"
+into the dark recesses of the tree.  An easy climb along broad branches
+leads up to a higher branch, and a short drop would leave you on the
+forest floor below.
+"
 "[Phule] enter hole
-
-[Phule] in is 2039
-
-[Lelak] woot
-
-"
+[Phule] in is 2039
+[Lelak] woot
+"
 301498372 0
 3 5 0
 D4
@@ -1954,58 +1461,44 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You drop gently $T to the forest floor.
-
-"
+"
 E
 "to_room"
 "$n drops gently $T to the forest floor.
-
-"
+"
 !
 3 0 32
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You $t $T onto a high branch of the massive oak.
-
-"
+"
 E
 "to_room"
 "$n $t $T onto a high branch of the massive oak.
-
-"
+"
 !
 3 0 16
 A
 "enter squeeze"
 "in large hole trunk"
 "if( size( ch ) < 6 ) {
-
-  act_tochar( \"You squeeze into the trunk of the oak.\", ch );
-
-  act_notchar( \"$n squeezes into the trunk of the oak.\", ch );
-
-  transfer( ch, find_room( 2039 ) );
-
-  act_notchar( \"$n squeezes in through the hole overhead.\", ch );
-
-  }
-
-else
-
-  act_tochar( \"You are too big to fit into the hole.\", ch );
-
-"
+  act_tochar( \"You squeeze into the trunk of the oak.\", ch );
+  act_notchar( \"$n squeezes into the trunk of the oak.\", ch );
+  transfer( ch, find_room( 2039 ) );
+  act_notchar( \"$n squeezes in through the hole overhead.\", ch );
+  }
+else
+  act_tochar( \"You are too big to fit into the hole.\", ch );
+"
 !
 0 0 0
 -1
@@ -2014,27 +1507,17 @@ S
 #2038
 "Black Oak - High Branch"
 "Atop the largest tree in the forest, the view of the surrounding
-
-desolation sweeps all around.  What once must have been a lush green haven
-
-of life has turned into death itself.  Gnarled, twisted trees cast their
-
-black shadows into the chill mist, which sits like a low cloud engulfing
-
-the woods.
-
-"
+desolation sweeps all around.  What once must have been a lush green haven
+of life has turned into death itself.  Gnarled, twisted trees cast their
+black shadows into the chill mist, which sits like a low cloud engulfing
+the woods.
+"
 "[Phule] king raven
-
-[Phule] nomob
-
-[Phule] raven is involved in a few quests (notyet) 
-
-[Lelak] you know, I have always wondered why, with a panoramic view, you can't look east or west...
-
-[Lelak] spelling and all that satuff is good
-
-"
+[Phule] nomob
+[Phule] raven is involved in a few quests (notyet) 
+[Lelak] you know, I have always wondered why, with a panoramic view, you can't look east or west...
+[Lelak] spelling and all that satuff is good
+"
 301498376 0
 3 5 0
 D5
@@ -2045,18 +1528,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You $t $T onto a broad branch.
-
-"
+"
 E
 "to_room"
 "$n $t $T onto a broad branch.
-
-"
+"
 !
 3 0 32
 2279 137 1509949540 3 0
@@ -2066,37 +1546,25 @@ S
 #2039
 "Within the Black Oak"
 "The massive, hollow trunk of a large tree surrounds you:  the moist,
-
-putrid smell of rotting wood permeating the air.  A hole leads up and out
-
-of the trunk.  Large chunks are missing from the walls of the trunk, as if
-
-something has been eating away at the wood.
-
-"
+putrid smell of rotting wood permeating the air.  A hole leads up and out
+of the trunk.  Large chunks are missing from the walls of the trunk, as if
+something has been eating away at the wood.
+"
 "[Phule] out is 2037
-
-[Phule] oakworm
-
-[Phule] has 25 moves, 300 hp, and is blind
-
-[Lelak] good
-
-"
+[Phule] oakworm
+[Phule] has 25 moves, 300 hp, and is blind
+[Lelak] good
+"
 301629444 0
 11 5 0
 A
 "climb"
 "1 up out"
 "act_tochar( \"You climb out onto a wide branch.\", ch );
-
-act_notchar( \"$n climbs out onto a wide branch.\", ch );
-
-transfer( ch, find_room( 2037 ) );
-
-act_notchar( \"$n emerges from the hole in the trunk.\", ch );
-
-"
+act_notchar( \"$n climbs out onto a wide branch.\", ch );
+transfer( ch, find_room( 2037 ) );
+act_notchar( \"$n emerges from the hole in the trunk.\", ch );
+"
 !
 0 0 0
 2278 9 1509949540 3 0
@@ -2106,43 +1574,31 @@ S
 #2040
 "In a Murky Mountain Lake"
 "The murky water of a chill mountain lake surrounds you.  You can climb up
-
-onto the shore, but you cannot make out the depths below or around, for
-
-the water is too opaque with moss and slime to see much of anything.
-
-"
+onto the shore, but you cannot make out the depths below or around, for
+the water is too opaque with moss and slime to see much of anything.
+"
 "[Phule] up is 2031
-
-[Lelak] good
-
-"
+[Lelak] good
+"
 301498376 0
 7 7 0
 A
 "climb swim"
 "1 up out shore"
 "act_tochar( \"You climb out onto the shore.\", ch );
-
-act_notchar( \"$n climbs out onto the shore.\", ch );
-
-room = find_room( 2031 );
-
-transfer( ch, room );
-
-act_notchar( \"$n swims out of the lake.\", ch );
-
-acode( room, 1 );
-
-"
+act_notchar( \"$n climbs out onto the shore.\", ch );
+room = find_room( 2031 );
+transfer( ch, room );
+act_notchar( \"$n swims out of the lake.\", ch );
+acode( room, 1 );
+"
 !
 0 0 0
 A
 "1 up"
 ""
 "interpret( ch, \"climb up\" );
-
-"
+"
 !
 0 0 0
 2215 49 1509949540 -2 0

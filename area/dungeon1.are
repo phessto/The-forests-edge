@@ -10,23 +10,15 @@
 #83000
 "A Subterranean Stream"
 "The cavern opens up here to a much larger dimension than would be anticipated
-
-by the small opening to the east.  A hint of fresh air stirs the heavy air, a
-
-welcome relief from the stale, dank environment.  A clear, cold stream crashes
-
-into a tall step along the west side of this cavern, sinking into a crevice in
-
-the center of the rocky floor.  The channel of the raging stream leaves the
-
-rest of the granite floor mostly dry, with puddles here and there from the
-
-nearby river.
-
-"
+by the small opening to the east.  A hint of fresh air stirs the heavy air, a
+welcome relief from the stale, dank environment.  A clear, cold stream crashes
+into a tall step along the west side of this cavern, sinking into a crevice in
+the center of the rocky floor.  The channel of the raging stream leaves the
+rest of the granite floor mostly dry, with puddles here and there from the
+nearby river.
+"
 "Dungeon, Floor 1, 53 Rooms
-
-"
+"
 301596676 0
 13 6 0
 D1
@@ -40,60 +32,41 @@ D3
 E
 "puddle"
 "This small puddle is filled with a clear liquid.  Most of the water being
-
-supplied to the puddle is dripping off the moist ceiling.  As the water
-
-dripping from the ceiling hits the puddle it sends ripples that seam to just
-
-dance across the surface.
-
-"
+supplied to the puddle is dripping off the moist ceiling.  As the water
+dripping from the ceiling hits the puddle it sends ripples that seam to just
+dance across the surface.
+"
 A
 ""
 ""
 "if( size( ch ) >= 5 ) {
-
-  act_tochar( #large, ch );
-
-  act_notchar( #clarge, ch );
-
-  }
-
-if( size( ch ) == 4 ) {
-
-  act_tochar( #med, ch );
-
-  act_notchar( #cmed, ch );
-
-  }
-
-continue;
-
-"
+  act_tochar( #large, ch );
+  act_notchar( #clarge, ch );
+  }
+if( size( ch ) == 4 ) {
+  act_tochar( #med, ch );
+  act_notchar( #cmed, ch );
+  }
+continue;
+"
 E
 "large"
 "You squeeze through the tight opening out of the cavern.
-
-"
+"
 E
 "clarge"
 "$n squeezes through the opening, barely large enough for $m to fit through,
-
-out of the cavern.
-
-"
+out of the cavern.
+"
 E
 "med"
 "You're forced to duck under the low stone entryway to pass into the outdoor
-
-river.
-
-"
+river.
+"
 E
 "cmed"
 "$n ducks under the low stone entryway as $e leaves the cavern.
-
-"
+"
 !
 3 0 2
 398 17 1509949540 -2 0
@@ -103,20 +76,13 @@ S
 #83001
 "A Subterranean Stream"
 "A powerful stream of water flows from the east along a crevice in the floor,
-
-emptying out abruptly across a series of descending small waterfalls to the
-
-west.  The air within the cavern feels thick with humidity, contrasting the
-
-biting wind which blows in from the east - it's eerie sounds bouncing along
-
-the corridor.  The somewhat melodic sound of water rippling down the small
-
-waterfalls is distracting.  The sharp edges of each level seem unnatural and
-
-somewhat resemble a rugged stairwell.
-
-"
+emptying out abruptly across a series of descending small waterfalls to the
+west.  The air within the cavern feels thick with humidity, contrasting the
+biting wind which blows in from the east - it's eerie sounds bouncing along
+the corridor.  The somewhat melodic sound of water rippling down the small
+waterfalls is distracting.  The sharp edges of each level seem unnatural and
+somewhat resemble a rugged stairwell.
+"
 ""
 301596676 0
 13 6 0
@@ -131,33 +97,26 @@ D5
 E
 "3 crevice"
 "This small crevice, containing a small amount of water, indents into the
-
-floor's surface.
-
-"
+floor's surface.
+"
 E
 "3 stream"
 "The small stream rushes forth, pouring downward over each 'step' with
-
-increasing force.  The water itself does not appear to be drinkable.
-
-"
+increasing force.  The water itself does not appear to be drinkable.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You carefully work your way $T the waterfall-like staircase.
-
-"
+"
 E
 "to_room"
 "$n works $m way $T the waterfall-like staircase.
-
-"
+"
 !
 3 0 32
 -1
@@ -166,25 +125,16 @@ S
 #83002
 "Slick Granite Stairs"
 "Whether a set of stairs was at some point carved into the stone upon which you
-
-stand, you cannot be certain.  Perhaps the ages had simply pulled away all
-
-leaving only a series of waterfalls upon pure granite.  Irregardless, it
-
-becomes very obvious that the powerful flow of the stream is tugging your feet
-
-downward.  You'd have no choice but comply were it not for a series of holes
-
-pocked into the walls just large enough for you to wrap a few of your fingers
-
-in.
-
-"
+stand, you cannot be certain.  Perhaps the ages had simply pulled away all
+leaving only a series of waterfalls upon pure granite.  Irregardless, it
+becomes very obvious that the powerful flow of the stream is tugging your feet
+downward.  You'd have no choice but comply were it not for a series of holes
+pocked into the walls just large enough for you to wrap a few of your fingers
+in.
+"
 "[Altimeas] The action for this room should move the PC down with pain.
-
-[Areradon] And it does.
-
-"
+[Areradon] And it does.
+"
 301596684 0
 13 6 0
 D4
@@ -198,176 +148,123 @@ D5
 E
 "hole"
 "You are looking at a hole in the floors surface.  The hole was probably formed
-
-by erosion after many years.  The hole you are looking at is probably a good
-
-arm length down and about as round as your head.
-
-"
+by erosion after many years.  The hole you are looking at is probably a good
+arm length down and about as round as your head.
+"
 A
 ""
 ""
 "if( random( 1, 8 ) < 3 ) {
-
-  if( find_stat( ch, dex ) < 1d4+12 ) {
-
-    act_tochar( #ch, ch );
-
-    act_notchar( #r, ch );
-
-    transfer( ch, find_room( 83003 ) );
-
-    i = 2d6;
-
-    dam_message( ch, i, \"Falling down stairs\" );
-
-    inflict( ch, mob, i, \"falling down stairs\" );
-
-    act_notchar( #ar, ch );
-
-    }
-
-  else
-
-    continue;
-
-  }
-
-"
+  if( find_stat( ch, dex ) < 1d4+12 ) {
+    act_tochar( #ch, ch );
+    act_notchar( #r, ch );
+    transfer( ch, find_room( 83003 ) );
+    i = 2d6;
+    dam_message( ch, i, \"Falling down stairs\" );
+    inflict( ch, mob, i, \"falling down stairs\" );
+    act_notchar( #ar, ch );
+    }
+  else
+    continue;
+  }
+"
 E
 "ch"
 "@BYou slip on the wet steps and tumble down to the base of the waterfall!@n
-
-"
+"
 E
 "r"
 "@B$n slips on the wet steps and tumbles down the waterfall!@n
-
-"
+"
 E
 "ar"
 "@B$n arrives, tumbling down the wet staircase!@n
-
-"
+"
 !
 1 0 48
 A
 "2 sleep"
 ""
 "exit = door( room, down );
-
-act_tochar( #ch, ch );
-
-act_notchar( #rch, ch );
-
-transfer( ch, leads_to( exit ) );
-
-i = 2d6;
-
-dam_message( ch, i, \"Hitting the floor at the bottom of the wet staircase\" );
-
-inflict( ch, mob, i, \"Hitting the floor at the bottom of the wet staircase\" );
-
-act_notchar( #ar, ch );
-
-set_resting( ch );
-
-"
+act_tochar( #ch, ch );
+act_notchar( #rch, ch );
+transfer( ch, leads_to( exit ) );
+i = 2d6;
+dam_message( ch, i, \"Hitting the floor at the bottom of the wet staircase\" );
+inflict( ch, mob, i, \"Hitting the floor at the bottom of the wet staircase\" );
+act_notchar( #ar, ch );
+set_resting( ch );
+"
 E
 "ch"
 "@BYou attempt to lie down to sleep, but slip and tumble down to the base of
-
-the waterfall staircase!@n
-
-"
+the waterfall staircase!@n
+"
 E
 "rch"
 "@B$n attempts to lie down to sleep, but slips and tumbles down to the base of
-
-the waterfall staircase!@n
-
-"
+the waterfall staircase!@n
+"
 E
 "ar"
 "@B$n arrives, tumbling down the wet staircase!@n
-
-"
+"
 !
 0 0 0
 A
 "sit"
 ""
 "exit = door( room, down );
-
-act_tochar( #ch, ch );
-
-act_notchar( #rch, ch );
-
-transfer( ch, leads_to( exit ) );
-
-i = 2d6;
-
-dam_message( ch, i, \"Hitting the floor at the bottom of the wet staircase\" );
-
-inflict( ch, mob, i, \"Hitting the floor at the bottom of the wet staircase\" );
-
-act_notchar( #ar, ch );
-
-set_resting( ch );
-
-"
+act_tochar( #ch, ch );
+act_notchar( #rch, ch );
+transfer( ch, leads_to( exit ) );
+i = 2d6;
+dam_message( ch, i, \"Hitting the floor at the bottom of the wet staircase\" );
+inflict( ch, mob, i, \"Hitting the floor at the bottom of the wet staircase\" );
+act_notchar( #ar, ch );
+set_resting( ch );
+"
 E
 "ch"
 "@BYou attempt to sit down upon the wet surface, but slip and tumble down to the
-
-base of the waterfall-like staircase!@n
-
-"
+base of the waterfall-like staircase!@n
+"
 E
 "rch"
 "@B$n attempts to sit down on the wet floor, but the current pulls $s legs our
-
-from under $m, dragging $m to the base of the waterfall-like staircase!@n
-
-"
+from under $m, dragging $m to the base of the waterfall-like staircase!@n
+"
 E
 "ar"
 "@B$n tumbles down the wet staircase, landing at the floor at your feet.@n
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You carefully work your way $T the waterfall-like staircase.
-
-"
+"
 E
 "to_room"
 "$n works $m way $T the waterfall-like staircase.
-
-"
+"
 !
 3 0 32
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "Clinging to the walls, you fight the current and work your way $T the
-
-waterfall-like staircase.
-
-"
+waterfall-like staircase.
+"
 !
 3 0 16
 -1
@@ -376,18 +273,12 @@ S
 #83003
 "Hewn Granite Cavern"
 "Water pools at the base of what appears to be a flight of stairs leading
-
-upward.  The water flows rapidly down the apparent stairwell then runs from
-
-the overflowing puddle across the floor to the west.  The stones appear to
-
-have been worn smooth by the constant flow of water.  The walls appear to be
-
-nothing more than massive granite blocks.  Above, slabs of stone seal off
-
-whatever is beyond, whether sky, soil, or stream.
-
-"
+upward.  The water flows rapidly down the apparent stairwell then runs from
+the overflowing puddle across the floor to the west.  The stones appear to
+have been worn smooth by the constant flow of water.  The walls appear to be
+nothing more than massive granite blocks.  Above, slabs of stone seal off
+whatever is beyond, whether sky, soil, or stream.
+"
 ""
 301596676 0
 27 6 0
@@ -402,64 +293,46 @@ D4
 E
 "3 puddle"
 "A miniature waterfall pours into this hollow basin formed in the granite. 
-
-Droplets of water splash up into the surrounding area creating a fine mist
-
-that hovers eerily over the small pool of water.  The water looks clear and
-
-refreshing.
-
-"
+Droplets of water splash up into the surrounding area creating a fine mist
+that hovers eerily over the small pool of water.  The water looks clear and
+refreshing.
+"
 A
 ""
 ""
 "i = 1d3;
-
-if( i == 1 )
-
-  send_to_area( #scuttle, find_room( 83003 ) );
-
-else if( i == 2 )
-
-  send_to_area( #drip, find_room( 83003 ) );
-
-else
-
-  continue;
-
-"
+if( i == 1 )
+  send_to_area( #scuttle, find_room( 83003 ) );
+else if( i == 2 )
+  send_to_area( #drip, find_room( 83003 ) );
+else
+  continue;
+"
 E
 "scuttle"
 "You hear the faint echo of a small creature scuttling across the stone floor.
-
-"
+"
 E
 "drip"
 "Off in the distance, you hear the sounds of water dripping.
-
-"
+"
 !
 4 20 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "Clinging to the walls, you fight the current and work your way $T waterfall-
-
-like staircase.
-
-"
+like staircase.
+"
 E
 "to_room"
 "Clinging to the walls, $n fights the current, working $m way $T the waterfall-
-
-like staircase.
-
-"
+like staircase.
+"
 !
 3 0 16
 3782 17 1509949540 -2 0
@@ -469,16 +342,11 @@ S
 #83004
 "Hewn Granite Cavern"
 "A narrow but steady stream of water flows down the slightly inclined hallway
-
-from east to west.  The granite stones are slightly smooth where the water has
-
-flown.  Blocks of granite make up the walls, piled high to form the ceiling
-
-far overhead.  On the north wall there is a small blackened spot, perhaps soot
-
-from a burning torch.
-
-"
+from east to west.  The granite stones are slightly smooth where the water has
+flown.  Blocks of granite make up the walls, piled high to form the ceiling
+far overhead.  On the north wall there is a small blackened spot, perhaps soot
+from a burning torch.
+"
 ""
 301596676 0
 0 6 0
@@ -493,19 +361,14 @@ D3
 E
 "puddle"
 "Water flowing into this small indentation in the granit floor has formed a
-
-small puddle.  The water looks very clear and quite drinkable.  As the water
-
-flows into the indentation it trickles loudly.
-
-"
+small puddle.  The water looks very clear and quite drinkable.  As the water
+flows into the indentation it trickles loudly.
+"
 E
 "blackened spot"
 "The blackened spot on the wall was probably made by the soot of a torch held
-
-by some earlier explorer.
-
-"
+by some earlier explorer.
+"
 398 17 1509949540 -2 0
 -1
 S
@@ -513,23 +376,15 @@ S
 #83005
 "Hewn Granite Cavern"
 "A stream flows across the floor from the east, directly into a small crevice
-
-roughly a foor away from the west wall.  By the smoothe texture of the stones
-
-which the stream runs over, it is clear this water has flowed steadily here
-
-for a very long time.  The passage turns from east to south here, and how far
-
-is difficult to see in the gloom.
-
-"
+roughly a foor away from the west wall.  By the smoothe texture of the stones
+which the stream runs over, it is clear this water has flowed steadily here
+for a very long time.  The passage turns from east to south here, and how far
+is difficult to see in the gloom.
+"
 "[Voraster] look crevice --- \"crevice formi\" ?
-
-[Rashir] This rooms description seems to need to be formatted.  I refuse to look at the room until you format it Talis.
-
-[Elchyen] double line spacing on one line of room desc.
-
-"
+[Rashir] This rooms description seems to need to be formatted.  I refuse to look at the room until you format it Talis.
+[Elchyen] double line spacing on one line of room desc.
+"
 301596676 0
 0 6 0
 D1
@@ -543,14 +398,10 @@ D2
 E
 "4 crevice"
 "You are looking at a small crevice to the west.  It was probably formed by the
-
-the running water over the years.  The water flows into the crevice from a
-
-small waterfall.  As the water flows into the crevice it splashes small drops
-
-of water onto you.
-
-"
+the running water over the years.  The water flows into the crevice from a
+small waterfall.  As the water flows into the crevice it splashes small drops
+of water onto you.
+"
 398 17 1509949540 -2 0
 -1
 S
@@ -558,19 +409,13 @@ S
 #83006
 "Hewn Granite Cavern"
 "The dark grey granite walls seem to almost absorb the light around you, making
-
-it difficult to see just how far the corridor goes to the north and south.
-
-The soft, steady sound of trickling water echos in from the north.  A decemt
-
-amount of moisture clings to the walls and the rough floor, probably
-
-condensation from the flowing water somewhere to the north.
-
-"
+it difficult to see just how far the corridor goes to the north and south.
+The soft, steady sound of trickling water echos in from the north.  A decemt
+amount of moisture clings to the walls and the rough floor, probably
+condensation from the flowing water somewhere to the north.
+"
 "done
-
-"
+"
 301596676 0
 0 6 0
 D0
@@ -587,19 +432,13 @@ S
 #83007
 "Hewn Granite Cavern"
 "The south wall features shallow scratches made from a set of sharp, powerful
-
-claws.  Tiny fragments of rock lie at the base of the wall with coarse dust. 
-
-The corridor leads away from this corner by a long passage lost in the
-
-darkness to the east and north towards darkness and the sound of flowing water.
-
-"
+claws.  Tiny fragments of rock lie at the base of the wall with coarse dust. 
+The corridor leads away from this corner by a long passage lost in the
+darkness to the east and north towards darkness and the sound of flowing water.
+"
 "done
-
-rextras done
-
-"
+rextras done
+"
 301596684 0
 0 6 0
 D0
@@ -613,26 +452,19 @@ D1
 E
 "3 shallow 3 scratches dust rock 4 fragments"
 "Half an inch to a quarter inch deep, four evenly spaced indentions are the
-
-only thing to mar the wall's surface.  The scratches would not even be very
-
-impressive were the walls not solid granite.
-
-"
+only thing to mar the wall's surface.  The scratches would not even be very
+impressive were the walls not solid granite.
+"
 -1
 S
 
 #83008
 "Hewn Granite Cavern"
 "The rough granite hallway forks to the east, west, and south here, with a
-
-small orb of light embedded in the northern wall illuminates a very small
-
-radius, beyond which all is lost in the darkness.  The floor and walls are
-
-made of fairly flat granite but it is rough to the touch, unpolished and dull.
-
-"
+small orb of light embedded in the northern wall illuminates a very small
+radius, beyond which all is lost in the darkness.  The floor and walls are
+made of fairly flat granite but it is rough to the touch, unpolished and dull.
+"
 ""
 301596677 0
 0 6 0
@@ -651,16 +483,11 @@ D3
 E
 "orb 2 li 1 northern wall"
 "Imbedded within the northern wall, this yellowish-green orb glows with a dim
-
-and steady light.  The affects of the light do not appear to extend beyond the
-
-intersection in which you currently stand.  Half buried in the granite itself,
-
-it appears to be a permanent fixture.  It is, however, impossible to tell just
-
-how it may have gotten there.
-
-"
+and steady light.  The affects of the light do not appear to extend beyond the
+intersection in which you currently stand.  Half buried in the granite itself,
+it appears to be a permanent fixture.  It is, however, impossible to tell just
+how it may have gotten there.
+"
 764 9 1509949540 3 0
 -1
 S
@@ -668,14 +495,10 @@ S
 #83009
 "Hewn Granite Cavern"
 "Few details of this north-south passage exist, and those that are noticable are
-
-hardly noteworthy.  Like the rest of this complex, ancient blocks of granite
-
-form the ceiling, walls and floor.  A few abandoned, tattered cobwebs hide in
-
-the upper corners of this crude hallway.
-
-"
+hardly noteworthy.  Like the rest of this complex, ancient blocks of granite
+form the ceiling, walls and floor.  A few abandoned, tattered cobwebs hide in
+the upper corners of this crude hallway.
+"
 ""
 301596676 0
 0 6 0
@@ -693,17 +516,12 @@ S
 #83010
 "Hewn Granite Cavern"
 "The stone blocks that form the walls of this corridor appear to be extremely
-
-old and roughly formed.  Small slivers of stone lie amidst larger chunks of
-
-rock at the edges of this hallway, pieces of the walls and ceiling that have
-
-been knocked loose ages ago.
-
-"
+old and roughly formed.  Small slivers of stone lie amidst larger chunks of
+rock at the edges of this hallway, pieces of the walls and ceiling that have
+been knocked loose ages ago.
+"
 "done
-
-"
+"
 301596676 0
 0 6 0
 D1
@@ -720,21 +538,14 @@ S
 #83011
 "Hewn Granite Cavern"
 "From cracks in the stone blocks that make up the eastern wall, a wet,
-
-unpleasant breeze gusts through the area.  The foul stench of rotting plant
-
-life is fairly unmistakable, and unfortunately, inescapable.  The stone
-
-passageway bends here, allowing travel to the south, or west with the
-
-stenchful wind.
-
-"
+unpleasant breeze gusts through the area.  The foul stench of rotting plant
+life is fairly unmistakable, and unfortunately, inescapable.  The stone
+passageway bends here, allowing travel to the south, or west with the
+stenchful wind.
+"
 "done
-
-[Maurtock] crack extra
-
-"
+[Maurtock] crack extra
+"
 301596676 0
 0 6 0
 D2
@@ -751,19 +562,13 @@ S
 #83012
 "Hewn Granite Cavern"
 "Few details of this north-south passage exist, and those that are noticable are
-
-hardly noteworthy.  Like the rest of this complex, ancient blocks of granite
-
-form the ceiling, walls and floor.  A few abandoned, tattered cobwebs hide in
-
-the upper corners of this crude hallway.
-
-"
+hardly noteworthy.  Like the rest of this complex, ancient blocks of granite
+form the ceiling, walls and floor.  A few abandoned, tattered cobwebs hide in
+the upper corners of this crude hallway.
+"
 "done
-
-[Maurtock] cobweb extra and something about the wall/granite/blocks
-
-"
+[Maurtock] cobweb extra and something about the wall/granite/blocks
+"
 301596676 0
 0 6 0
 D0
@@ -780,19 +585,13 @@ S
 #83013
 "Hewn Granite Cavern"
 "A bend in the granite corridor leads to the north and west.  Piled blocks of
-
-granite make up the south wall, ceiling and floor.  To the east a metal-banded
-
-oakenwood door is set firmly into the stone, providing a formal entrance to
-
-whatever lies east.
-
-"
+granite make up the south wall, ceiling and floor.  To the east a metal-banded
+oakenwood door is set firmly into the stone, providing a formal entrance to
+whatever lies east.
+"
 "[Sadis] thin line of light glows from a gap below the door ... even when the door is open
-
-[Aeradon] Fixed.
-
-"
+[Aeradon] Fixed.
+"
 301596677 0
 0 6 0
 D0
@@ -810,39 +609,26 @@ D3
 E
 "blocks pile"
 "Upon closer inspection, you find that the blocks making up the wall to the
-
-south are comprised of hard granite slabs.  Each slab is shaped like a
-
-pentagram or a hexagrams, creating a rather complex pattern.  No gaps appear
-
-between the smooth edges of the rock making it impossible for any blocks to be
-
-removed in any way.
-
-"
+south are comprised of hard granite slabs.  Each slab is shaped like a
+pentagram or a hexagrams, creating a rather complex pattern.  No gaps appear
+between the smooth edges of the rock making it impossible for any blocks to be
+removed in any way.
+"
 A
 "look"
 "1 east door"
 "if ( !is_open( door( room, east ) ) ) {
-
-act_tochar( #light, ch );
-
-}
-
-else {
-
-  continue;
-
-}
-
-"
+act_tochar( #light, ch );
+}
+else {
+  continue;
+}
+"
 E
 "light"
 "A thin line of light glows from a gap below the door, indicating a definite
-
-light source to the east.
-
-"
+light source to the east.
+"
 !
 17 0 0
 2475 9 1509949540 3 0
@@ -852,25 +638,16 @@ S
 #83014
 "Hewn Granite Cavern"
 "The rough granite passage forks to the south, east, and west, illuminated by a
-
-small glowing orb, embedded into the north wall, in a small radius before all
-
-disappears into darkness.  The walls are large granite blocks, rough to the
-
-touch, unpolished and dull.  The floor is made of the same material, sloping
-
-very slightly down to the south.
-
-"
+small glowing orb, embedded into the north wall, in a small radius before all
+disappears into darkness.  The walls are large granite blocks, rough to the
+touch, unpolished and dull.  The floor is made of the same material, sloping
+very slightly down to the south.
+"
 "done
-
-[Maurtock] extra for orb
-
-[Maurtock] one for walls as well
-
-[Sidenti] The orb's description looks terrible.
-
-"
+[Maurtock] extra for orb
+[Maurtock] one for walls as well
+[Sidenti] The orb's description looks terrible.
+"
 301596677 0
 0 6 0
 D1
@@ -888,48 +665,32 @@ D3
 E
 "orb"
 "This small orb luminates this room well.  Its green surface glares into your
-
-eyes as you gaze at it The green hue coming from the orb glints off the
-
-walls,which helps with the elumination.
-
-"
+eyes as you gaze at it The green hue coming from the orb glints off the
+walls,which helps with the elumination.
+"
 E
 "walls"
 "These granite walls are very textured and rough to your touch.  The blocks are
-
-stacked very neatly and are a very dull color.  The walls have a slight green
-
-color from the orb floating nearby.
-
-"
+stacked very neatly and are a very dull color.  The walls have a slight green
+color from the orb floating nearby.
+"
 -1
 S
 
 #83015
 "Meeting Hall"
 "You are standing in a large room with walls hastily plastered.  A large iron
-
-chandelier hangs tilted from the stone above, cracks bearing relief from the
-
-weight.  The insulating plaster of the walls is chipping and bare stone is
-
-seen at random spots behind.  A long rectangular table sits central to the
-
-room with chairs strewn about.  Several heads of various beasts hang mounted
-
-along the wall against chipped wooden plaques.  An assortment of small weapons
-
-lay in one corner.  To the east lays an entranceway using a sliding slab of
-
-stone while to the west is a more formal wooden door.
-
-"
+chandelier hangs tilted from the stone above, cracks bearing relief from the
+weight.  The insulating plaster of the walls is chipping and bare stone is
+seen at random spots behind.  A long rectangular table sits central to the
+room with chairs strewn about.  Several heads of various beasts hang mounted
+along the wall against chipped wooden plaques.  An assortment of small weapons
+lay in one corner.  To the east lays an entranceway using a sliding slab of
+stone while to the west is a more formal wooden door.
+"
 "[Maurtock] should be an extra for chandelier
-
-[Maurtock] need one for the plaques too
-
-"
+[Maurtock] need one for the plaques too
+"
 301596677 0
 0 6 0
 D1
@@ -944,42 +705,27 @@ A
 ""
 ""
 "wait( 2 );
-
-mob = mob_in_room( 2213, room );
-
-if( !mob )
-
-  end;
-
-if( !wield( mob ) ) {
-
-  interpret( mob, \"get weapon rack\" );
-
-  interpret( mob, \"wear weapon\" );
-
-  }
-
-"
+mob = mob_in_room( 2213, room );
+if( !mob )
+  end;
+if( !wield( mob ) ) {
+  interpret( mob, \"get weapon rack\" );
+  interpret( mob, \"wear weapon\" );
+  }
+"
 !
 1 0 10
 A
 "open move shove push"
 "1 east slab"
 "if( !is_open( room, east ) ) {
-
-  open( room, east );
-
-  act_tochar( \"You open the stone slab to the east.\", ch );
-
-  act_notchar( \"$n opens the stone slab to the east.\", ch );
-
-  }
-
-else
-
-  act_tochar( \"The stone slab to the east is already open.\", ch );
-
-"
+  open( room, east );
+  act_tochar( \"You open the stone slab to the east.\", ch );
+  act_notchar( \"$n opens the stone slab to the east.\", ch );
+  }
+else
+  act_tochar( \"The stone slab to the east is already open.\", ch );
+"
 !
 0 0 0
 3392 49 1509949540 -2 0
@@ -1002,16 +748,11 @@ S
 #83016
 "Hewn Granite Cavern"
 "The granite corridor turns here, leading north and east.  Unlike the other
-
-walls, the southern border appears to be made of dressed stone, into which a
-
-heavy, wooden door is set.  The door, while better quality than most things
-
-through these endless stone avenues, seems to see little use, the brass handle
-
-dusty and faded.
-
-"
+walls, the southern border appears to be made of dressed stone, into which a
+heavy, wooden door is set.  The door, while better quality than most things
+through these endless stone avenues, seems to see little use, the brass handle
+dusty and faded.
+"
 ""
 301596676 0
 0 6 0
@@ -1033,21 +774,14 @@ S
 #83017
 "Dusty Room"
 "Oddly, this side-chamber appears to be walled with dressed, interlocking stone
-
-blocks, in contrast to the exterior corridor.  The thick layer of dust on the
-
-floor has been recently disturbed, as evidenced by a set of small, humanoid
-
-footprints.  The footprints seem to disappear behind a prominent pine
-
-wardrobe, which appears to be the room's only furnishing.
-
-"
+blocks, in contrast to the exterior corridor.  The thick layer of dust on the
+floor has been recently disturbed, as evidenced by a set of small, humanoid
+footprints.  The footprints seem to disappear behind a prominent pine
+wardrobe, which appears to be the room's only furnishing.
+"
 "search dust, search/move wardrobe
-
-done
-
-"
+done
+"
 301596676 0
 0 7 0
 D0
@@ -1057,116 +791,81 @@ D0
 E
 "dust"
 "A thick layer of dust carpets the floor of this chamber, broken only by a set
-
-of small, almost-human footprints.
-
-"
+of small, almost-human footprints.
+"
 E
 "footprint footprints"
 "The footprints in the dust seem humanoid, but small.  They start at the
-
-northern door, and disappear into the small space behind the pine wardrobe.
-
-"
+northern door, and disappear into the small space behind the pine wardrobe.
+"
 A
 "search move"
 "pine wardrobe"
 "send_to_char( #search, ch );
-
-act_notchar( #searches, ch );
-
-if( rflag( reset0, room ) ) {
-
-  act_room( #emerge, ch );
-
-  mob = mload( 148, room );
-
-  attack_weapon( mob, ch, 1d5+1, \"punch\" );
-
-  remove_rflag( reset0, room );
-
-  } else {
-
-send_to_char( #nothing, ch );
-
-act_notchar( #rnothing, ch );
-
-}
-
-"
+act_notchar( #searches, ch );
+if( rflag( reset0, room ) ) {
+  act_room( #emerge, ch );
+  mob = mload( 148, room );
+  attack_weapon( mob, ch, 1d5+1, \"punch\" );
+  remove_rflag( reset0, room );
+  } else {
+send_to_char( #nothing, ch );
+act_notchar( #rnothing, ch );
+}
+"
 E
 "emerge"
 "@CA small, scruffy-looking kobold sidles out from behind the wardrobe!@n
-
-"
+"
 E
 "search"
 "You search behind the wardrobe.
-
-"
+"
 E
 "searches"
 "$n searches behind the wardrobe.
-
-"
+"
 E
 "nothing"
 "You find nothing behind the wardrobe.
-
-"
+"
 E
 "rnothing"
 "$e comes up empty-handed.
-
-"
+"
 !
 0 0 0
 A
 "search"
 "dust"
 "if( rflag( reset1, room ) ) {
-
-  remove_rflag( reset1, room );
-
-  if( random( 1, 4 ) == 1 ) {
-
-    send_to_char( #find, ch );
-
-    act_notchar( #rfind, ch );
-
-    obj_to_char( oload( 75, 1 ), ch );
-
-    end;
-
-    }
-
-  }
-
-send_to_char( #nothing, ch );
-
-act_notchar( #rnothing, ch );
-
-"
+  remove_rflag( reset1, room );
+  if( random( 1, 4 ) == 1 ) {
+    send_to_char( #find, ch );
+    act_notchar( #rfind, ch );
+    obj_to_char( oload( 75, 1 ), ch );
+    end;
+    }
+  }
+send_to_char( #nothing, ch );
+act_notchar( #rnothing, ch );
+"
 E
 "nothing"
 "You root around in the dust and come up with nothing.
-
-"
+"
 E
 "rnothing"
 "$n roots around in the dust and comes up empty-handed.
-
-"
+"
 E
 "find"
 "Rooting around in the dust, you find a steel ring!
-
-"
+"
 E
 "rfind"
 "Rooting around in the dust, $n finds a steel ring!
-
-"
+"
 !
 0 0 0
 760 49 1509949540 -2 0
@@ -1180,21 +879,14 @@ S
 #83018
 "Hewn Granite Cavern"
 "Layers of tattered cobwebs dominate the northeast corner of this passageway,
-
-though there are no spiders in sight.  Tiny concentrations of web are
-
-scattered sparingly through the abandoned webbing, the remains of long-
-
-abandoned prey.  The granite corridor leads both west and south into the
-
-darkness from this corner.
-
-"
+though there are no spiders in sight.  Tiny concentrations of web are
+scattered sparingly through the abandoned webbing, the remains of long-
+abandoned prey.  The granite corridor leads both west and south into the
+darkness from this corner.
+"
 "spider web 25%
-
-[Maurtock] cobweb extra
-
-"
+[Maurtock] cobweb extra
+"
 301596676 0
 0 6 0
 D2
@@ -1212,19 +904,13 @@ S
 #83019
 "Hewn Granite Cavern"
 "The stone blocks that form the walls of this corridor appear to be extremely
-
-old and roughly formed.  Small slivers of stone lie amidst larger chunks of
-
-rock at the edges of this hallway, pieces of the walls and ceiling that have
-
-been knocked loose ages ago.
-
-"
+old and roughly formed.  Small slivers of stone lie amidst larger chunks of
+rock at the edges of this hallway, pieces of the walls and ceiling that have
+been knocked loose ages ago.
+"
 "small rock 25%
-
-[Maurtock] sliver extra, stone/block/wall extra
-
-"
+[Maurtock] sliver extra, stone/block/wall extra
+"
 301596676 0
 0 6 0
 D1
@@ -1242,21 +928,14 @@ S
 #83020
 "Hewn Granite Cavern"
 "The coarse granite passage forks to the north, east, and south.  The walls are
-
-large granite blocks, rough to the touch, apt to snag loose threads of any who
-
-are not careful.  The floor is made of the same material, sloping very
-
-slightly down to the south.  Tiny fragments of stone are scattered along the
-
-west wall, but the center of the corridor is free from obstruction.
-
-"
+large granite blocks, rough to the touch, apt to snag loose threads of any who
+are not careful.  The floor is made of the same material, sloping very
+slightly down to the south.  Tiny fragments of stone are scattered along the
+west wall, but the center of the corridor is free from obstruction.
+"
 "done
-
-[Maurtock] granite/block extra as well as fragment extra
-
-"
+[Maurtock] granite/block extra as well as fragment extra
+"
 301596676 0
 0 6 0
 D0
@@ -1278,17 +957,12 @@ S
 #83021
 "Hewn Granite Cavern"
 "Few details of this north-south passage exist, and those that are noticable are
-
-hardly noteworthy.  Like the rest of this complex, ancient blocks of granite
-
-form the ceiling, walls and floor.  A few abandoned, tattered cobwebs hide in
-
-the upper corners of this crude hallway.
-
-"
+hardly noteworthy.  Like the rest of this complex, ancient blocks of granite
+form the ceiling, walls and floor.  A few abandoned, tattered cobwebs hide in
+the upper corners of this crude hallway.
+"
 "[Maurtock] cobweb extra granite/block extra
-
-"
+"
 301596676 0
 0 6 0
 D0
@@ -1305,25 +979,16 @@ S
 #83022
 "Hewn Granite Cavern"
 "The only thing of notice in this part of the corridor is a stone slab door. 
-
-Dust thickly covers this door as if it has been closed for some time.  Large
-
-granite blocks form the walls, ceiling and floor of the corridor.  Small
-
-cracks can be seen in the blocks.  Little chips of granite can be seen on the
-
-floor underneath the cracks.
-
-"
+Dust thickly covers this door as if it has been closed for some time.  Large
+granite blocks form the walls, ceiling and floor of the corridor.  Small
+cracks can be seen in the blocks.  Little chips of granite can be seen on the
+floor underneath the cracks.
+"
 "[Berax] stone slab door
-
-[Maurtock] large/granit/block extra
-
-[Maurtock] crack extra
-
-[Maurtock] chip extra
-
-"
+[Maurtock] large/granit/block extra
+[Maurtock] crack extra
+[Maurtock] chip extra
+"
 301596676 0
 0 6 0
 D0
@@ -1344,19 +1009,13 @@ S
 #83023
 "Hewn Granite Cavern"
 "The hall turns sharply to the west here, and the granite walls not quite as
-
-wide as they are just to the south.  The floor is covered by a very thin layer
-
-of dust, ununiformed by many thin scratch or claw marks, though no harm has
-
-been done to the granite itself.
-
-"
+wide as they are just to the south.  The floor is covered by a very thin layer
+of dust, ununiformed by many thin scratch or claw marks, though no harm has
+been done to the granite itself.
+"
 "done
-
-[Maurtock] dust extra, granite/wall extra
-
-"
+[Maurtock] dust extra, granite/wall extra
+"
 301596676 0
 0 6 0
 D2
@@ -1373,19 +1032,13 @@ S
 #83024
 "Hewn Granite Cavern"
 "A once finely made wooden door stands in the doorway to the south, now all
-
-rotten and broken.  One of the hinges has fallen off while the other has
-
-rusted.  The corridor is made from granite blocks and ends here at this door. 
-
-A small crack can be seen on the west wall dripping water making the floor
-
-slightly wet.
-
-"
+rotten and broken.  One of the hinges has fallen off while the other has
+rusted.  The corridor is made from granite blocks and ends here at this door. 
+A small crack can be seen on the west wall dripping water making the floor
+slightly wet.
+"
 "[Maurtock] extra for crack, granite/block
-
-"
+"
 301596676 0
 0 6 0
 D1
@@ -1400,52 +1053,29 @@ A
 ""
 ""
 "room = find_room( 83025 );
-
-if( !rflag( reset1, room ) )
-
-  continue;
-
-remove_rflag( reset1, room );
-
-obj = obj_in_room( 1560, room );
-
-i = 1d4;
-
-if( i == 1 ) {
-
-  set_before( obj, \"\" );
-
-  set_after( obj, \"\" );
-
-  }
-
-if( i == 2 ) {
-
-  set_before( obj, \"slightly rotted\" );
-
-  set_after( obj, \"slightly rotted\" );
-
-  }
-
-if( i == 3 ) {
-
-  set_before( obj, \"rotted\" );
-
-  set_after( obj, \"rotted\" );
-
-  }
-
-if( i == 4 ) {
-
-  set_before( obj, \"very rotted\" );
-
-  set_after( obj, \"very rotted\" );
-
-  }
-
-continue;
-
-"
+if( !rflag( reset1, room ) )
+  continue;
+remove_rflag( reset1, room );
+obj = obj_in_room( 1560, room );
+i = 1d4;
+if( i == 1 ) {
+  set_before( obj, \"\" );
+  set_after( obj, \"\" );
+  }
+if( i == 2 ) {
+  set_before( obj, \"slightly rotted\" );
+  set_after( obj, \"slightly rotted\" );
+  }
+if( i == 3 ) {
+  set_before( obj, \"rotted\" );
+  set_after( obj, \"rotted\" );
+  }
+if( i == 4 ) {
+  set_before( obj, \"very rotted\" );
+  set_after( obj, \"very rotted\" );
+  }
+continue;
+"
 !
 3 0 4
 -1
@@ -1454,25 +1084,16 @@ S
 #83025
 "Domed Chamber"
 "Painted blocks of granite form the walls of this domed chamber and lead up to
-
-the cracked, vaulted ceiling.  The once white paint is peeling and worn away
-
-in many places, and in others, spots of dried blood coat the walls.  Two large
-
-wooden coffins sit side by side on a raised dais in the center of the room.
-
-"
+the cracked, vaulted ceiling.  The once white paint is peeling and worn away
+in many places, and in others, spots of dried blood coat the walls.  Two large
+wooden coffins sit side by side on a raised dais in the center of the room.
+"
 "[Maurtock] extra for ceiling, painted/block/granite
-
-[Maurtock] extra for blood too
-
-[Maurtock] shouldnt there be two coffins also?
-
-[Tagen] desc says two coffins, only seems to be one
-
-[Sidenti] Says there's two coffins in here, when there's just one.
-
-"
+[Maurtock] extra for blood too
+[Maurtock] shouldnt there be two coffins also?
+[Tagen] desc says two coffins, only seems to be one
+[Sidenti] Says there's two coffins in here, when there's just one.
+"
 301596676 0
 0 6 0
 D0
@@ -1483,44 +1104,28 @@ A
 "open"
 "partially rotted wooden coffin"
 "if( !rflag( reset0, room ) )
-
-  continue;
-
-else {
-
-  remove_rflag( reset0, room );
-
-  obj = obj_in_room( 1560, room );
-
-  mob = mload( 995, room );
-
-  act_tochar( #open, ch, obj, mob );
-
-  act_notchar( #ropen, ch, obj, mob );
-
-  victim = ch;
-
-  attack_weapon( mob, victim, 2d4, \"bony fist\" );
-
-  }
-
-continue;
-
-"
+  continue;
+else {
+  remove_rflag( reset0, room );
+  obj = obj_in_room( 1560, room );
+  mob = mload( 995, room );
+  act_tochar( #open, ch, obj, mob );
+  act_notchar( #ropen, ch, obj, mob );
+  victim = ch;
+  attack_weapon( mob, victim, 2d4, \"bony fist\" );
+  }
+continue;
+"
 E
 "open"
 "@RAs you open $p, suddenly a clawed hand grips the lid and $N forces $S way
-
-out of the coffin!@n
-
-"
+out of the coffin!@n
+"
 E
 "ropen"
 "@RAs $n opens $p, suddenly a clawed hand grips the lid and $N forces $S way
-
-out of the coffin!@n
-
-"
+out of the coffin!@n
+"
 !
 0 0 0
 995 9 1509949540 3 0
@@ -1535,25 +1140,16 @@ S
 #83026
 "A Dead End"
 "The granite stone masonry recedes to a muddy hollow here.  Loose soil forms a
-
-slope that makes up the west wall.  Two wooden beams press out holding some
-
-semblance of walls but the ceiling look like it could collapse at any moment. 
-
-The ground is slightly damp and muddy, leaving footprints quite visible.  A
-
-few globs of a foreign sludgy substance lay mixed and muddied on the ground. 
-
-It looks as though this room was intended to be a continuing passage towards
-
-the west that has since been abandoned.
-
-"
+slope that makes up the west wall.  Two wooden beams press out holding some
+semblance of walls but the ceiling look like it could collapse at any moment. 
+The ground is slightly damp and muddy, leaving footprints quite visible.  A
+few globs of a foreign sludgy substance lay mixed and muddied on the ground. 
+It looks as though this room was intended to be a continuing passage towards
+the west that has since been abandoned.
+"
 "[Maurtock] need extras for soil, ground, footprints, glob/sludgy
-
-[Tagen] not aggro?
-
-"
+[Tagen] not aggro?
+"
 301596676 0
 0 6 0
 D1
@@ -1568,14 +1164,10 @@ S
 #83027
 "Hewn Granite Cavern"
 "Few details of this north-south passage exist, and those that are noticable are
-
-hardly noteworthy.  Like the rest of this complex, ancient blocks of granite
-
-form the ceiling, walls and floor.  A few abandoned, tattered cobwebs hide in
-
-the upper corners of this crude hallway.
-
-"
+hardly noteworthy.  Like the rest of this complex, ancient blocks of granite
+form the ceiling, walls and floor.  A few abandoned, tattered cobwebs hide in
+the upper corners of this crude hallway.
+"
 ""
 301596676 0
 0 6 0
@@ -1593,16 +1185,11 @@ S
 #83028
 "A Narrow Spiral Stair"
 "You are standing at the top of a stone spiral stair.  Very steep and narrow,
-
-the stairway is dimly lit by torches set in iron racks in the wall.  Few and
-
-far between, the torches do not aid in the ease of passage, and the narrow
-
-steps are treacherous to those who are not careful.  A doorway near by leads
-
-off to the west, while the stairway heads downward.
-
-"
+the stairway is dimly lit by torches set in iron racks in the wall.  Few and
+far between, the torches do not aid in the ease of passage, and the narrow
+steps are treacherous to those who are not careful.  A doorway near by leads
+off to the west, while the stairway heads downward.
+"
 ""
 301596676 0
 0 5 0
@@ -1617,35 +1204,25 @@ D5
 E
 "door doorway 1 west"
 "The door to the west is made up of solid oak planks and bound around with iron.
-
-"
+"
 E
 "torch torches"
 "Wooden torches are spaced fairly evenly, if far apart, on the way down the
-
-stairwell.  Occasionally one sputters on the verge of going out, but then
-
-rekindles with a new flame.  They are set in iron grates which are somehow
-
-bolted into the stone wall.
-
-"
+stairwell.  Occasionally one sputters on the verge of going out, but then
+rekindles with a new flame.  They are set in iron grates which are somehow
+bolted into the stone wall.
+"
 -1
 S
 
 #83029
 "Hewn Granite Cavern"
 "Cracked stone walls meet at a crumbled pile of broken rubble in what was once
-
-the southwestern corner of this hallway.  The eastern and northern sections of
-
-wall appear to be quite a bit more stable, and the ceiling too appears to be
-
-mostly free from structural damage.  In a few spots where the rock has fallen
-
-away, packed dirt can be seen.
-
-"
+the southwestern corner of this hallway.  The eastern and northern sections of
+wall appear to be quite a bit more stable, and the ceiling too appears to be
+mostly free from structural damage.  In a few spots where the rock has fallen
+away, packed dirt can be seen.
+"
 ""
 301596676 0
 0 6 0
@@ -1663,17 +1240,12 @@ S
 #83030
 "Hewn Granite Cavern"
 "The hewn stone walls are cracked and crumbling in many places, though a
-
-noticable amount of the damage appears to be gashes such as would have been
-
-caused by weapons.  Small bits of bone and rock litter the edges of the
-
-hallway, and tattered cobwebs hang from the ceiling.
-
-"
+noticable amount of the damage appears to be gashes such as would have been
+caused by weapons.  Small bits of bone and rock litter the edges of the
+hallway, and tattered cobwebs hang from the ceiling.
+"
 "[Maurtock] bits/bone extra, cobweb extra
-
-"
+"
 301596676 0
 0 6 0
 D1
@@ -1690,14 +1262,10 @@ S
 #83031
 "Hewn Granite Cavern"
 "The stone blocks that form the walls of this corridor appear to be extremely
-
-old and roughly formed.  Small slivers of stone lie amidst larger chunks of
-
-rock at the edges of this hallway, pieces of the walls and ceiling that have
-
-been knocked loose ages ago.
-
-"
+old and roughly formed.  Small slivers of stone lie amidst larger chunks of
+rock at the edges of this hallway, pieces of the walls and ceiling that have
+been knocked loose ages ago.
+"
 ""
 301596676 0
 0 6 0
@@ -1715,17 +1283,12 @@ S
 #83032
 "Hewn Granite Cavern"
 "The corridor turns here, to the featureless darkness to the west and an
-
-unclean pile of rubbish to the north.  Small patches of dark green mildew
-
-cling to the walls, thriving in the slight moisture in the air here, though
-
-you cannot see an obvious source of humidity.
-
-"
+unclean pile of rubbish to the north.  Small patches of dark green mildew
+cling to the walls, thriving in the slight moisture in the air here, though
+you cannot see an obvious source of humidity.
+"
 "[Maurtock] patch/mildew/wall extra
-
-"
+"
 301596676 0
 0 6 0
 D0
@@ -1739,32 +1302,24 @@ D3
 E
 "mildew"
 "The mildew you are looking at is a green ,blackish color.  The mildew as a
-
-putrid stench and looks discusting.  It has grown onto the walls surface and
-
-continually spreads troughout the room.
-
-"
+putrid stench and looks discusting.  It has grown onto the walls surface and
+continually spreads troughout the room.
+"
 E
 "patch of mildew on the wall"
 "You are looking at a patch of mildew growing on the wall.  The mildew has a
-
-grengy texture and a horrible smell.  The mildew continuse to grow throughout
-
-the room.
-
-"
+grengy texture and a horrible smell.  The mildew continuse to grow throughout
+the room.
+"
 A
 ""
 ""
 "act_room( #smell, ch );
-
-"
+"
 E
 "smell"
 "A putrid stench waffs in on a light breeze from the north.
-
-"
+"
 !
 2 100 0
 764 9 1509949540 3 0
@@ -1774,23 +1329,15 @@ S
 #83033
 "Hewn Granite Cavern"
 "A large pile of rubbish has accumulated in this short, little-used coridor
-
-connecting the halls to the north and south.  While it may contain something
-
-of value, the majority is completely useless and has a pungent odor of decay
-
-from things burried within.  The rubbish is centered against the east wall and
-
-spreads outward from there.
-
-"
+connecting the halls to the north and south.  While it may contain something
+of value, the majority is completely useless and has a pungent odor of decay
+from things burried within.  The rubbish is centered against the east wall and
+spreads outward from there.
+"
 "reset0 = rubbish search
-
-reset1 = rubbish clearing
-
-[Nereus] this room blows
-
-"
+reset1 = rubbish clearing
+[Nereus] this room blows
+"
 301596676 0
 0 6 0
 D0
@@ -1808,154 +1355,103 @@ D2
 E
 "pile of rubbish"
 "You are looking at a pile of rubbish.  The rubbish looks like pieces of the
-
-walls and ceiling.  The rubbish is blocking your path to the east.
-
-"
+walls and ceiling.  The rubbish is blocking your path to the east.
+"
 A
 "search"
 "rubbish east"
 "if( !is_player( ch ) ) {
-
-  act_tochar( #nope, ch );
-
-  end;
-
-  }
-
-act_tochar( #search, ch );
-
-act_notchar( #csearch, ch );
-
-if( rflag( reset0, room ) ) {
-
-  remove_rflag( reset0, room );
-
-  i = random( 1, 5 );
-
-  if( i <= 2 ) {
-
-    act_tochar( #coin, ch );
-
-    obj_to_char( oload( 14, 1d2+1 ), ch );
-
-    }
-
-  if( i == 3 ) {
-
-    act_tochar( #cater, ch );
-
-    act_notchar( #ccater, ch );
-
-    mload( 2179, room );
-
-    }
-
-  if( i >= 4 )
-
-    act_tochar( #nope, ch );
-
-  }
-
-else
-
-  act_tochar( #nope, ch );
-
-"
+  act_tochar( #nope, ch );
+  end;
+  }
+act_tochar( #search, ch );
+act_notchar( #csearch, ch );
+if( rflag( reset0, room ) ) {
+  remove_rflag( reset0, room );
+  i = random( 1, 5 );
+  if( i <= 2 ) {
+    act_tochar( #coin, ch );
+    obj_to_char( oload( 14, 1d2+1 ), ch );
+    }
+  if( i == 3 ) {
+    act_tochar( #cater, ch );
+    act_notchar( #ccater, ch );
+    mload( 2179, room );
+    }
+  if( i >= 4 )
+    act_tochar( #nope, ch );
+  }
+else
+  act_tochar( #nope, ch );
+"
 E
 "search"
 "You search through the pile of rubbish along the east wall.
-
-"
+"
 E
 "csearch"
 "$n searches through the pile of rubbish along the east wall.
-
-"
+"
 E
 "nope"
 "You find nothing of value.
-
-"
+"
 E
 "coin"
 "You find several silver coins burried in the rubbish.
-
-"
+"
 E
 "ccater"
 "In $s search $e uncovers a small mushroom caterpillar, angry at being
-
-disturbed.
-
-"
+disturbed.
+"
 E
 "cater"
 "In sifting through the rubbish, you uncover a now angry small mushroom
-
-caterpillar.
-
-"
+caterpillar.
+"
 !
 0 0 0
 A
 "clear"
 "rubbish east"
 "if( !rflag( reset1, room ) ) {
-
-  act_tochar( #done, ch );
-
-  end;
-
-  }
-
-act_tochar( #clear, ch );
-
-act_notchar( #cclear, ch );
-
-remove_rflag( reset1, room );
-
-show( ch, room, east );
-
-"
+  act_tochar( #done, ch );
+  end;
+  }
+act_tochar( #clear, ch );
+act_notchar( #cclear, ch );
+remove_rflag( reset1, room );
+show( ch, room, east );
+"
 E
 "done"
 "The rubbish is already cleared enough to reach the door in the east wall.
-
-"
+"
 E
 "clear"
 "You clear the rubbish to the side and uncover an old wooden door in the east
-
-wall.
-
-"
+wall.
+"
 E
 "cclear"
 "$n clears away the rubbish and uncovers an old wooden door in the east wall.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "if( rflag( reset1, room ) ) {
-
-  act_tochar( #noopen, ch );
-
-  }
-
-else
-
-  continue;
-
-"
+  act_tochar( #noopen, ch );
+  }
+else
+  continue;
+"
 E
 "noopen"
 "There is too much rubbish in the way to get the door open.
-
-"
+"
 !
 8 0 2
 -1
@@ -1964,19 +1460,13 @@ S
 #83034
 "Centipede Nest"
 "Decomposed leaves and straw cover the floor, piled the thickest along the
-
-walls and in the corners, creating a sort of putrid nest of decay.  The north
-
-wall is moist from water slowly flowing down through an invisible crack in the
-
-ceiling, gathering in a puddle of stagnant, discolored water.
-
-"
+walls and in the corners, creating a sort of putrid nest of decay.  The north
+wall is moist from water slowly flowing down through an invisible crack in the
+ceiling, gathering in a puddle of stagnant, discolored water.
+"
 "done
-
-3 centipedes, 1 larger centipede but I don't like 202
-
-"
+3 centipedes, 1 larger centipede but I don't like 202
+"
 301596676 0
 0 6 0
 D3
@@ -1987,95 +1477,61 @@ A
 "search"
 "nest leaves straw"
 "if( !is_player( ch ) ) {
-
-  act_tochar( #nope, ch );
-
-  end;
-
-  }
-
-act_tochar( #search, ch );
-
-act_notchar( #csearch, ch );
-
-if( rflag( reset0, room ) ) {
-
-  remove_rflag( reset0, room );
-
-  i = random( 1, 5 );
-
-  if( i <= 2 ) {
-
-    act_tochar( #coin, ch );
-
-    obj_to_char( oload( 2 ), ch );
-
-    }
-
-  if( i == 3 ) {
-
-    act_tochar( #centi, ch );
-
-    act_notchar( #ccenti, ch );
-
-    mload( 2475, room );
-
-    }
-
-  if( i >= 4 ) {
-
-    act_tochar( #potion, ch );
-
-    obj_to_char( oload( 9 ), ch );
-
-    }
-
-  }
-
-else
-
-  act_tochar( #nope, ch );
-
-"
+  act_tochar( #nope, ch );
+  end;
+  }
+act_tochar( #search, ch );
+act_notchar( #csearch, ch );
+if( rflag( reset0, room ) ) {
+  remove_rflag( reset0, room );
+  i = random( 1, 5 );
+  if( i <= 2 ) {
+    act_tochar( #coin, ch );
+    obj_to_char( oload( 2 ), ch );
+    }
+  if( i == 3 ) {
+    act_tochar( #centi, ch );
+    act_notchar( #ccenti, ch );
+    mload( 2475, room );
+    }
+  if( i >= 4 ) {
+    act_tochar( #potion, ch );
+    obj_to_char( oload( 9 ), ch );
+    }
+  }
+else
+  act_tochar( #nope, ch );
+"
 E
 "nope"
 "You cannot find anything of interest in the nest of decaying leaves and straw.
-
-"
+"
 E
 "search"
 "You root around in the unpleasantly moist nest of decaying leaves and straw.
-
-"
+"
 E
 "csearch"
 "$n roots around in the nest of decaying leaves and straw, searching for
-
-anything of value.
-
-"
+anything of value.
+"
 E
 "coin"
 "You find a gold coin!
-
-"
+"
 E
 "centi"
 "Your search has awakened a slumbering centipede, which angrily emerges, ready
-
-to attack!
-
-"
+to attack!
+"
 E
 "ccenti"
 "$n's search awakens a centipede, which bursts out of the nest to attack!
-
-"
+"
 E
 "potion"
 "You uncover a bubbly potion in a small bottle, sealed with a cork.
-
-"
+"
 !
 0 0 0
 2234 137 1509949540 3 0
@@ -2088,17 +1544,12 @@ S
 #83035
 "Hewn Granite Cavern"
 "A damp breeze lightly gusts from further down the dark corridor to the east,
-
-bringing with it the light stench of rotting vegetation.  The hewn stone walls
-
-are cracked and crumbling in many places, though a noticable amount of the
-
-damage appears to be gashes such as would have been caused by weapons.
-
-"
+bringing with it the light stench of rotting vegetation.  The hewn stone walls
+are cracked and crumbling in many places, though a noticable amount of the
+damage appears to be gashes such as would have been caused by weapons.
+"
 "[Maurtock] gash extra
-
-"
+"
 301596676 0
 0 6 0
 D1
@@ -2116,19 +1567,13 @@ S
 #83036
 "Hewn Granite Cavern"
 "A faint, damp breeze carries with it the smell of rotting vegetation from down
-
-the hall to the east.  Small bits of bone and rock litter the edges of the
-
-hallway, and tattered cobwebs hang from the ceiling.  The stone walls seem to
-
-lean in on each other, as though weary of supporting the weight of what lies
-
-above.
-
-"
+the hall to the east.  Small bits of bone and rock litter the edges of the
+hallway, and tattered cobwebs hang from the ceiling.  The stone walls seem to
+lean in on each other, as though weary of supporting the weight of what lies
+above.
+"
 "done
-
-"
+"
 301596676 0
 0 6 0
 D1
@@ -2145,17 +1590,12 @@ S
 #83037
 "Hewn Granite Cavern"
 "Grey dust covers the cold granite floor, with many thin scratches left in the
-
-dust by the passing of many-clawed beasts.  The walls lean in slightly towards
-
-the center of this intersection but a set of blocks that make up the ceiling
-
-hold everything in place and show no signs of giving way.
-
-"
+dust by the passing of many-clawed beasts.  The walls lean in slightly towards
+the center of this intersection but a set of blocks that make up the ceiling
+hold everything in place and show no signs of giving way.
+"
 "[Maurtock] dust extra
-
-"
+"
 301596676 0
 0 6 0
 D0
@@ -2177,14 +1617,10 @@ S
 #83038
 "Hewn Granite Cavern"
 "The stone blocks that form the walls of this corridor appear to be extremely
-
-old and roughly formed.  Small slivers of stone lie amidst larger chunks of
-
-rock at the edges of this hallway, pieces of the walls and ceiling that have
-
-been knocked loose ages ago.
-
-"
+old and roughly formed.  Small slivers of stone lie amidst larger chunks of
+rock at the edges of this hallway, pieces of the walls and ceiling that have
+been knocked loose ages ago.
+"
 ""
 301596676 0
 0 6 0
@@ -2202,18 +1638,12 @@ S
 #83039
 "Hewn Granite Cavern"
 "Cracked stone walls meet at a crumbled pile of broken rubble in what was once
-
-the southwestern corner of this hallway.  The eastern and northern sections of
-
-wall appear to be quite a bit more stable, and the ceiling too appears to be
-
-mostly free from structural damage.  At the base of the rubble pile a few
-
-bones poke out, suggesting that some hapless creature met its end here long
-
-ago.
-
-"
+the southwestern corner of this hallway.  The eastern and northern sections of
+wall appear to be quite a bit more stable, and the ceiling too appears to be
+mostly free from structural damage.  At the base of the rubble pile a few
+bones poke out, suggesting that some hapless creature met its end here long
+ago.
+"
 ""
 301596676 0
 0 6 0
@@ -2231,20 +1661,13 @@ S
 #83040
 "Hewn Granite Cavern"
 "The corridor leads to the south and west.  The wall to the north west look as
-
-though it could do with a new lease on life, as the walls and ceiling no
-
-longer meet where they should, and could potentially collapse on an
-
-unsuspecting victim.  The door to the east is comprised of ironwood, and has a
-
-frame of old bones.  Appearing slightly too small for the door frame, light
-
-radiates through a gap above the door, brightest on the sides and dimming in
-
-the middle, suggesting two light sources or an obstruction of the light.
-
-"
+though it could do with a new lease on life, as the walls and ceiling no
+longer meet where they should, and could potentially collapse on an
+unsuspecting victim.  The door to the east is comprised of ironwood, and has a
+frame of old bones.  Appearing slightly too small for the door frame, light
+radiates through a gap above the door, brightest on the sides and dimming in
+the middle, suggesting two light sources or an obstruction of the light.
+"
 ""
 301596677 0
 0 6 0
@@ -2263,14 +1686,10 @@ D3
 E
 "walls ceiling north"
 "Falling victim to disrepair, the north west wall has begun to crumble, and the
-
-once perfectly constructed cavern looks ready to give in and collapse.  Where
-
-the ceiling and wall used to meet, all that remains is a small gap, large
-
-enough for a small mouse to fit in.
-
-"
+once perfectly constructed cavern looks ready to give in and collapse.  Where
+the ceiling and wall used to meet, all that remains is a small gap, large
+enough for a small mouse to fit in.
+"
 764 9 1509949540 3 0
 -1
 S
@@ -2278,16 +1697,11 @@ S
 #83041
 "Hewn Granite Cavern"
 "The dark, oppressive gloom mixed with the dank smell of decaying plants
-
-wafting in from the east creates a rather loathsome environment.  The
-
-crumbling stone walls lean wearily inward causing the ceiling to sag a bit
-
-lower here than elsewhere.  The thought of the ceiling collapsing is at least
-
-enough to distract one from the omnipresent stench.
-
-"
+wafting in from the east creates a rather loathsome environment.  The
+crumbling stone walls lean wearily inward causing the ceiling to sag a bit
+lower here than elsewhere.  The thought of the ceiling collapsing is at least
+enough to distract one from the omnipresent stench.
+"
 ""
 301596676 0
 0 6 0
@@ -2305,19 +1719,13 @@ S
 #83042
 "Storage Room"
 "Many barrels are piled up and line the eastern wall of this small storage
-
-chamber.  This room appears to be fairly regularly trafficked, judging by the
-
-multitude of footprints smudged together on the stone floor.  A pair of
-
-sconces on the west wall flank the door and provide light for this room.
-
-"
+chamber.  This room appears to be fairly regularly trafficked, judging by the
+multitude of footprints smudged together on the stone floor.  A pair of
+sconces on the west wall flank the door and provide light for this room.
+"
 "Door locked
-
-[Berax] key pops room 83025
-
-"
+[Berax] key pops room 83025
+"
 301596677 0
 0 6 0
 D3
@@ -2343,19 +1751,13 @@ S
 #83043
 "Hewn Granite Cavern"
 "This part of the corridor has fallen in to disrepair and collapsed.  The wall
-
-to the north east has begun to colaspe exposing leaving part of the ceiling
-
-hanging free but stable for now.  To the east and the south are still well
-
-intact.
-
-"
+to the north east has begun to colaspe exposing leaving part of the ceiling
+hanging free but stable for now.  To the east and the south are still well
+intact.
+"
 "[Voraster] colapse s/b collapse
-
-[Sidenti] Misspelling of \"collapse\", English could use cleaning up.
-
-"
+[Sidenti] Misspelling of \"collapse\", English could use cleaning up.
+"
 301596676 0
 0 6 0
 D1
@@ -2372,16 +1774,11 @@ S
 #83044
 "Hewn Granite Cavern"
 "The long stone lane runs directly north to south, the only obstruction being a
-
-large stone slab, leaning against the west wall.  A thick stench of cheap wine
-
-hangs in the air though it's impossible to tell which direction it comes
-
-from.  The cold granite floor is devoid of dust or any other sign of disuse,
-
-but there is no real sign of use either.
-
-"
+large stone slab, leaning against the west wall.  A thick stench of cheap wine
+hangs in the air though it's impossible to tell which direction it comes
+from.  The cold granite floor is devoid of dust or any other sign of disuse,
+but there is no real sign of use either.
+"
 ""
 301596676 0
 0 6 0
@@ -2403,14 +1800,10 @@ S
 #83045
 "Hewn Granite Cavern"
 "Few details of this north-south passage exist, and those that are noticable are
-
-hardly noteworthy.  Like the rest of this complex, ancient blocks of granite
-
-form the ceiling, walls and floor.  A few abandoned, tattered cobwebs hide in
-
-the upper corners of this crude hallway.
-
-"
+hardly noteworthy.  Like the rest of this complex, ancient blocks of granite
+form the ceiling, walls and floor.  A few abandoned, tattered cobwebs hide in
+the upper corners of this crude hallway.
+"
 ""
 301596676 0
 0 6 0
@@ -2428,14 +1821,10 @@ S
 #83046
 "Hewn Granite Cavern"
 "The east wall features one-inch deep scratches made from a very strong set of
-
-claws.  Tiny fragments of rock lie at the base of the wall with coarse grey
-
-dust.  The corridor leads away from this corner by a long passage lost in the
-
-darkness to the north and a shorter one heading west.
-
-"
+claws.  Tiny fragments of rock lie at the base of the wall with coarse grey
+dust.  The corridor leads away from this corner by a long passage lost in the
+darkness to the north and a shorter one heading west.
+"
 ""
 301596676 0
 0 6 0
@@ -2454,19 +1843,13 @@ S
 #83047
 "Hewn Granite Cavern"
 "Carved in the middle of the granite wall to the west is a small opening,
-
-covered by a decayed wooden panel.  The corridor curves around east shortly to
-
-the south and to the east it curves north.  The floor is encrusted with some
-
-sort of white powder, concentrated around the wooden panel.
-
-"
+covered by a decayed wooden panel.  The corridor curves around east shortly to
+the south and to the east it curves north.  The floor is encrusted with some
+sort of white powder, concentrated around the wooden panel.
+"
 "done
-
-[Maurtock] powder extra
-
-"
+[Maurtock] powder extra
+"
 301596676 0
 0 6 0
 D1
@@ -2487,23 +1870,15 @@ S
 #83048
 "Abandoned Workshop"
 "Aged and broken wooden shelves line each wall from floor to ceiling, most of
-
-their contents spilled across the thin rug upon the floor.  A table, stained
-
-with paint and scraps of dried clay, stands at the center of the room, without
-
-a chair or bench to sit on while using the table.  In fact, the only place to
-
-sit in the room is an old hammock of coarse, knotted rope, already occupied by
-
-the skeleton of a long-dead humanoid.
-
-"
+their contents spilled across the thin rug upon the floor.  A table, stained
+with paint and scraps of dried clay, stands at the center of the room, without
+a chair or bench to sit on while using the table.  In fact, the only place to
+sit in the room is an old hammock of coarse, knotted rope, already occupied by
+the skeleton of a long-dead humanoid.
+"
 "glass eye - 20%
-
-[Maurtock] table extra
-
-"
+[Maurtock] table extra
+"
 301596676 0
 0 5 0
 D1
@@ -2513,32 +1888,22 @@ D1
 E
 "hammock skeleton humanoid"
 "The former owner of this workshop died, rotted away, and sleeps still in this
-
-rope hammock, which holds together strongly still.  The skeleton has become
-
-entangled in the ropes, becoming undetachable from its strange hanging coffin.
-
-"
+rope hammock, which holds together strongly still.  The skeleton has become
+entangled in the ropes, becoming undetachable from its strange hanging coffin.
+"
 E
 "rug floor"
 "Perhaps this rug was once colorful and thick, but now it does little to stave
-
-off the cold of the stone beneath.  Holes have been eaten through it by pests
-
-and it would probably fall apart completely if someone so much as lifted it.
-
-"
+off the cold of the stone beneath.  Holes have been eaten through it by pests
+and it would probably fall apart completely if someone so much as lifted it.
+"
 E
 "shelves shelf wall"
 "By the few things not smashed upon the floor, it seems that the owner of this
-
-workshop was some sort of toymaker specializing in clay marionettes.  All that
-
-remains has been eaten by time and quite a few less pleasant things,
-
-recognizable but worthless.
-
-"
+workshop was some sort of toymaker specializing in clay marionettes.  All that
+remains has been eaten by time and quite a few less pleasant things,
+recognizable but worthless.
+"
 2225 9 1509949540 3 0
 -1
 S
@@ -2546,16 +1911,11 @@ S
 #83049
 "Hewn Granite Cavern"
 "In the corner of this intersection is a small pile of broken stone from a gap
-
-in the granite wall several feet above the floor.  Visible through a tiny
-
-crack in at the very back of that gap is a bit of brown packed dirt, a few
-
-bits spilled in over the broken stones.  The corridor continues into the
-
-darkness, north and east.
-
-"
+in the granite wall several feet above the floor.  Visible through a tiny
+crack in at the very back of that gap is a bit of brown packed dirt, a few
+bits spilled in over the broken stones.  The corridor continues into the
+darkness, north and east.
+"
 ""
 301596676 0
 0 6 0
@@ -2573,14 +1933,10 @@ S
 #83050
 "Hewn Granite Cavern"
 "The stone blocks that form the walls of this corridor appear to be extremely
-
-old and roughly formed.  Small slivers of stone lie amidst larger chunks of
-
-rock at the edges of this hallway, pieces of the walls and ceiling that have
-
-been knocked loose ages ago.
-
-"
+old and roughly formed.  Small slivers of stone lie amidst larger chunks of
+rock at the edges of this hallway, pieces of the walls and ceiling that have
+been knocked loose ages ago.
+"
 ""
 301596676 0
 0 6 0
@@ -2598,19 +1954,13 @@ S
 #83051
 "Hewn Granite Cavern"
 "This corridor takes a sharp bend here heading north into a dark expanse or
-
-west towards a dead end.  The floor is less dusty here and a few random pieces
-
-of straw are seen lying about.  To the south the stone wall looks primitive
-
-and carelessly constructed with a door warped from moisture hanging insecurely
-
-in its frame.
-
-"
+west towards a dead end.  The floor is less dusty here and a few random pieces
+of straw are seen lying about.  To the south the stone wall looks primitive
+and carelessly constructed with a door warped from moisture hanging insecurely
+in its frame.
+"
 "[Maurtock] straw extra
-
-"
+"
 301596676 0
 0 6 0
 D0
@@ -2631,23 +1981,15 @@ S
 #83052
 "A Long Room"
 "This room is long and narrow as though it is nothing more than a continuation
-
-of the outside corridor.  Several large patches of colorful fabric hang as
-
-though they are tapestries.  Random bits of straw lay nestled between corner. 
-
-Even so the room is noticeably warmer than the rest of this dungeon.
-
-"
+of the outside corridor.  Several large patches of colorful fabric hang as
+though they are tapestries.  Random bits of straw lay nestled between corner. 
+Even so the room is noticeably warmer than the rest of this dungeon.
+"
 "[Altimeas] I claim this room for Radshik the Gnoll!
-
-[Maurtock] straw extra
-
-[Krinex] Random bits of straw lay nestled between corner. Sounds wrong doesn't it?
-
-[Julianna] line 3: Random bits of straw lay nestled between corner. (not sure what was meant for this sentence0
-
-"
+[Maurtock] straw extra
+[Krinex] Random bits of straw lay nestled between corner. Sounds wrong doesn't it?
+[Julianna] line 3: Random bits of straw lay nestled between corner. (not sure what was meant for this sentence0
+"
 301596676 0
 0 6 0
 D0
@@ -2657,10 +1999,8 @@ D0
 E
 "patches fabric tapestries"
 "Bright in color but worn and rough with wear these pieces of fabric seem to be
-
-nothing more than assorted cloaks and clothes torn and hung on the wall.
-
-"
+nothing more than assorted cloaks and clothes torn and hung on the wall.
+"
 2212 9 1509949540 3 0
 -1
 S
@@ -2668,17 +2008,12 @@ S
 #83053
 "Hewn Granite Cavern"
 "The stone blocks that form the walls of this corridor appear to be extremely
-
-old and roughly formed.  Small slivers of stone lie amidst larger chunks of
-
-rock at the edges of this hallway, pieces of the walls and ceiling that have
-
-been knocked loose ages ago.
-
-"
+old and roughly formed.  Small slivers of stone lie amidst larger chunks of
+rock at the edges of this hallway, pieces of the walls and ceiling that have
+been knocked loose ages ago.
+"
 "done
-
-"
+"
 301596676 0
 0 6 0
 D1
@@ -2695,14 +2030,10 @@ S
 #83054
 "Hewn Granite Cavern"
 "The passage from the east ends abruptly here with a large stone door to the
-
-south allowing further passage.  There is little of the dust or cobwebs found
-
-elsewhere in this area, and for some reason, even the walls and floor appear
-
-to be less cracked.
-
-"
+south allowing further passage.  There is little of the dust or cobwebs found
+elsewhere in this area, and for some reason, even the walls and floor appear
+to be less cracked.
+"
 ""
 301596676 0
 0 6 0
@@ -2720,27 +2051,17 @@ S
 #83055
 "Massive, Circular Chamber"
 "This massive, circular chamber appears to be much better maintained than the
-
-surrounding rooms.  The granite blocks of this chamber's walls are smooth,
-
-almost appearing polished.  Gently leading up to a vaulted ceiling with six
-
-evenly spaced supporting pillars, this room displays an intricate level of
-
-architectural detail that has been long lost in the rest of the complex.
-
-"
+surrounding rooms.  The granite blocks of this chamber's walls are smooth,
+almost appearing polished.  Gently leading up to a vaulted ceiling with six
+evenly spaced supporting pillars, this room displays an intricate level of
+architectural detail that has been long lost in the rest of the complex.
+"
 "[Altimeas] pop key to north exit
-
-[Altimeas] dragon here, stairs to level two added east
-
-[Maurtock] pillar extra
-
-[Maurtock] vaulted/ceiling extra
-
-[Maurtock] ceiling/pillar/column extra
-
-"
+[Altimeas] dragon here, stairs to level two added east
+[Maurtock] pillar extra
+[Maurtock] vaulted/ceiling extra
+[Maurtock] ceiling/pillar/column extra
+"
 301596676 0
 0 7 0
 D0
@@ -2762,16 +2083,11 @@ S
 #83056
 "Hewn Granite Cavern"
 "The western corridor ends here at a damaged stone door set in the northern
-
-wall.  Large claw marks have been made in the floor and walls, and there also
-
-appear to be small crater-like indentations where the floor seems to have been
-
-dissolved in places.  There is no trace of dust or cobwebs to be found here,
-
-though there is a faint smell of long dried blood hanging in the stale air.
-
-"
+wall.  Large claw marks have been made in the floor and walls, and there also
+appear to be small crater-like indentations where the floor seems to have been
+dissolved in places.  There is no trace of dust or cobwebs to be found here,
+though there is a faint smell of long dried blood hanging in the stale air.
+"
 ""
 301596676 0
 0 6 0
@@ -2789,8 +2105,7 @@ S
 #83057
 "Hidden Treasure Room"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 0 6 0

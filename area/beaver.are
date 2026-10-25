@@ -10,12 +10,9 @@
 #73001
 "Inside the Wooden Dam"
 "The walls of the beaver dam are very thick; made up of felled logs, branches,
-
-and packed mud.  There is a crevice just large enough for a beaver to enter
-
-and exit the dam.  Below you there is a hole leading below the dam.
-
-"
+and packed mud.  There is a crevice just large enough for a beaver to enter
+and exit the dam.  Below you there is a hole leading below the dam.
+"
 ""
 301596677 0
 3 5 0
@@ -26,52 +23,40 @@ D5
 E
 "crevice exit"
 "The crevice is just large enough for a beaver to exit the dam.  You might even
-
-be able to fit through.
-
-"
+be able to fit through.
+"
 E
 "down hole"
 "At your feet there is a hole, probably about two feet across, that leads
-
-into the tunnels under the beaver dam.
-
-"
+into the tunnels under the beaver dam.
+"
 A
 "exit"
 "dam crevice"
 "act_tochar( #hole, ch );
-
-act_notchar( #nchole, ch );
-
-transfer( ch, find_room( 527 ) );
-
-act_notchar( #arr, ch );
-
-"
+act_notchar( #nchole, ch );
+transfer( ch, find_room( 527 ) );
+act_notchar( #arr, ch );
+"
 E
 "hole"
 "You step through the tight crevice exiting the dam.
-
-"
+"
 E
 "nchole"
 "$n steps through the tight crevice disappearing from sight.
-
-"
+"
 E
 "arr"
 "$n arrives from within the dam.
-
-"
+"
 !
 0 0 0
 A
 "enter"
 "crevice"
 "acode( room, 1 );
-
-"
+"
 !
 0 0 0
 27 9 1509949540 3 0
@@ -81,14 +66,10 @@ S
 #73002
 "Under the Wooden Dam"
 "Above your head is a ceiling of sticks carefully arranged and placed to
-
-minimize the amount of water falling to the dirt floor.  On the western and
-
-eastern walls, mud-covered branches provide insulation from the cold ground. 
-
-Built into the wooden ceiling is a hole leading to the inside of the dam.
-
-"
+minimize the amount of water falling to the dirt floor.  On the western and
+eastern walls, mud-covered branches provide insulation from the cold ground. 
+Built into the wooden ceiling is a hole leading to the inside of the dam.
+"
 ""
 301596676 0
 3 5 0
@@ -107,10 +88,8 @@ D4
 E
 "hole ceiling up"
 "Above you there is a hole, about two feet diameter, that leads inside the
-
-dark wooden dam.
-
-"
+dark wooden dam.
+"
 27 9 1509949540 3 0
 -1
 S
@@ -118,14 +97,10 @@ S
 #73003
 "An Underground Intersection"
 "The underground labyrinth splits in four different directions here.  Small
-
-animal tracks lead off to the northern and southern paths, but little evidence
-
-of travel exists on the eastern and western paths.  Poking through the
-
-interwoven branches in the ceiling are several green weeds.
-
-"
+animal tracks lead off to the northern and southern paths, but little evidence
+of travel exists on the eastern and western paths.  Poking through the
+interwoven branches in the ceiling are several green weeds.
+"
 ""
 301596676 0
 3 5 0
@@ -151,16 +126,11 @@ S
 #73004
 "A Dead End"
 "Unearthed sticks lie scattered about the single-exit path.  All of the
-
-branches still have their bark and are colored dark brown from all the
-
-moisture that has been absorbed.  A few drops of water splash down from
-
-the ceiling into a small puddle.  Across the surface of the puddle you
-
-notice a gleaming light.
-
-"
+branches still have their bark and are colored dark brown from all the
+moisture that has been absorbed.  A few drops of water splash down from
+the ceiling into a small puddle.  Across the surface of the puddle you
+notice a gleaming light.
+"
 ""
 301596676 0
 3 5 0
@@ -171,41 +141,30 @@ D2
 E
 "sticks branches"
 "There are teeth marks on either end of the stick, but it is otherwise
-
-intact.
-
-"
+intact.
+"
 E
 "puddle small light"
 "The water has dirt mixed in, but seems almost clean, considering the
-
-circumstances.  A bit of light reflects off of the puddle that does not
-
-seem to come from your light source.
-
-"
+circumstances.  A bit of light reflects off of the puddle that does not
+seem to come from your light source.
+"
 E
 "up ceiling"
 "The ceiling in this part of the tunnel doesn't seem to be quite as solid
-
-as other parts.  Faint light from outside seeps through, just as small
-
-drops of water do.
-
-"
+as other parts.  Faint light from outside seeps through, just as small
+drops of water do.
+"
 A
 ""
 ""
 "send_to_room( #drip, room );
-
-"
+"
 E
 "drip"
 "A drop of water falls from the ceiling into a small puddle with a small
-
-splash.
-
-"
+splash.
+"
 !
 2 500 0
 27 9 1509949540 3 0
@@ -215,16 +174,11 @@ S
 #73005
 "Under the Wooden Dam"
 "This part of the labyrinth appears to be less used than the rest, with
-
-some of the soil underfoot hardly packed down at all.  The carefully
-
-arranged sticks that make up the ceiling allow little water to seep
-
-through.  To the west lies an intersection more used than this passage
-
-The passage to the south turns sharply to the east.
-
-"
+some of the soil underfoot hardly packed down at all.  The carefully
+arranged sticks that make up the ceiling allow little water to seep
+through.  To the west lies an intersection more used than this passage
+The passage to the south turns sharply to the east.
+"
 ""
 301596676 0
 3 5 0
@@ -242,14 +196,10 @@ S
 #73006
 "Under the Wooden Dam"
 "This tunnel has obviously been used little by the creatures who dug it.
-
-The top layer of sticks and dirt on the ground is somewhat loose and not
-
-packed down by frequent travel.  It curves to the north and east though
-
-you can't see far in either direction.
-
-"
+The top layer of sticks and dirt on the ground is somewhat loose and not
+packed down by frequent travel.  It curves to the north and east though
+you can't see far in either direction.
+"
 ""
 301596676 0
 3 5 0
@@ -268,14 +218,10 @@ S
 #73007
 "Under the Wooden Dam"
 "Tiny mushrooms are growing near the wall and little bits of green poke
-
-out of the ceiling.  To the north, the tunnel seems to grow more narrow,
-
-ending in a dead end.  To the west, the tunnel curves around and you
-
-cannot see very far.
-
-"
+out of the ceiling.  To the north, the tunnel seems to grow more narrow,
+ending in a dead end.  To the west, the tunnel curves around and you
+cannot see very far.
+"
 ""
 301596676 0
 3 5 0
@@ -290,77 +236,51 @@ D3
 E
 "mushrooms"
 "The tiny mushrooms have probably just started to grow here, but are
-
-already thriving on the soil and dead branches that make up the floor.
-
-"
+already thriving on the soil and dead branches that make up the floor.
+"
 A
 "pick"
 "mushroom"
 "act_tochar( #pick, ch );
-
-if( rflag( reset1, room ) ) {
-
-  i = random( 1, 150);
-
-  if( i == 1 ) {
-
-    act_tochar( #dark, ch );
-
-    obj_to_char( oload( 1286 ), ch );
-
-    remove_rflag( reset1, room );
-
-    end;
-
-    }
-
-  else {
-
-    act_tochar( #ndigo, ch );
-
-    obj_to_char( oload( 3191 ), ch );
-
-    remove_rflag( reset1, room );
-
-    }
-
-  }
-
-else {
-
-  act_tochar( #nope, ch );
-
-  act_notchar( #rmnope, ch );
-
-  }
-
-"
+if( rflag( reset1, room ) ) {
+  i = random( 1, 150);
+  if( i == 1 ) {
+    act_tochar( #dark, ch );
+    obj_to_char( oload( 1286 ), ch );
+    remove_rflag( reset1, room );
+    end;
+    }
+  else {
+    act_tochar( #ndigo, ch );
+    obj_to_char( oload( 3191 ), ch );
+    remove_rflag( reset1, room );
+    }
+  }
+else {
+  act_tochar( #nope, ch );
+  act_notchar( #rmnope, ch );
+  }
+"
 E
 "ndigo"
 "@GYou pick a small indigo mushroom.@n
-
-"
+"
 E
 "dark"
 "@GYou pick a small dark mushroom.@n
-
-"
+"
 E
 "nope"
 "@GAll the mature mushrooms have already been picked.@n
-
-"
+"
 E
 "rmnope"
 "@G$n looks at the mushrooms.@n
-
-"
+"
 E
 "pick"
 "@GYou look at the mushrooms.@n
-
-"
+"
 !
 0 0 0
 -1
@@ -369,14 +289,10 @@ S
 #73008
 "Under the Wooden Dam"
 "The little-used tunnel ends here with a dead end.  Small branches stick
-
-out of the walls with bits of dirt and dried mud clinging to them. 
-
-Against the north wall in the ground is a small muddy puddle where water
-
-has seeped in through the wall.
-
-"
+out of the walls with bits of dirt and dried mud clinging to them. 
+Against the north wall in the ground is a small muddy puddle where water
+has seeped in through the wall.
+"
 ""
 301596676 0
 3 4 0
@@ -391,14 +307,10 @@ S
 #73009
 "Under the Wooden Dam"
 "The tunnel splits here:  all directions appearing to be equally well-
-
-maintained.  The eastern tunnel is noticeably smaller than the other two.
-
-The northern tunnel goes relatively straight for as far as you can see,
-
-but the one to the west curves abruptly to the north.
-
-"
+maintained.  The eastern tunnel is noticeably smaller than the other two.
+The northern tunnel goes relatively straight for as far as you can see,
+but the one to the west curves abruptly to the north.
+"
 ""
 301596684 0
 3 5 0
@@ -421,14 +333,10 @@ S
 #73010
 "Under the Wooden Dam"
 "The walls in this hallway slope inwards, with less and less room to move,
-
-as it continues to the east.  The floor seems very solid:  its wood packed
-
-down tightly with dried mud.  No bits of green grow from the floor or walls
-
-here.
-
-"
+as it continues to the east.  The floor seems very solid:  its wood packed
+down tightly with dried mud.  No bits of green grow from the floor or walls
+here.
+"
 ""
 301596676 0
 3 4 0
@@ -450,17 +358,12 @@ S
 #73011
 "Under the Wooden Dam"
 "A small branch, about a foot long, sticks down at an angle from the
-
-ceiling.  It seems firmly placed there, surrounded by the soil and wood
-
-that make an almost flat ceiling.  The walls are equally as flat as the
-
-ceiling, as well.  The passage continues east as far as you can see.
-
-"
+ceiling.  It seems firmly placed there, surrounded by the soil and wood
+that make an almost flat ceiling.  The walls are equally as flat as the
+ceiling, as well.  The passage continues east as far as you can see.
+"
 "[Elfir] extra for branch
-
-"
+"
 301596676 0
 3 4 0
 D1
@@ -477,14 +380,10 @@ S
 #73012
 "Under the Wooden Dam"
 "Two long corridors intersect here, both continuing straight as far as you
-
-can see to the north and west.  To the south, the tunnel curves away. 
-
-The floor is made up of fragments of wood on top of mud, and the walls
-
-and ceiling seem tightly packed with the same materials.
-
-"
+can see to the north and west.  To the south, the tunnel curves away. 
+The floor is made up of fragments of wood on top of mud, and the walls
+and ceiling seem tightly packed with the same materials.
+"
 ""
 301596684 0
 3 4 0
@@ -506,16 +405,11 @@ S
 #73013
 "Under the Wooden Dam"
 "Small chew marks along the bottom of the wall indicate the likelihood
-
-that small, teething beavers may frequent this area of the tunnels.  The
-
-tunnel goes as far as you can see to the north, but ends not far to the
-
-west.  It is surprisingly dry, considering the crude construction of the
-
-tunnel.
-
-"
+that small, teething beavers may frequent this area of the tunnels.  The
+tunnel goes as far as you can see to the north, but ends not far to the
+west.  It is surprisingly dry, considering the crude construction of the
+tunnel.
+"
 ""
 301596676 0
 3 4 0
@@ -533,14 +427,10 @@ S
 #73014
 "Under the Wooden Dam"
 "Though the tunnel wall to the east seems thick with wood and mud, you can
-
-faintly hear the sounds of running water on the other side.  It goes on
-
-for a long ways both north and south and it's too dark to tell quite how
-
-far.
-
-"
+faintly hear the sounds of running water on the other side.  It goes on
+for a long ways both north and south and it's too dark to tell quite how
+far.
+"
 ""
 301596676 0
 3 4 0
@@ -556,25 +446,19 @@ A
 "listen hear"
 "faint sound water wall"
 "send_to_char( #watersound, ch );
-
-act_notchar( #csound, ch );
-
-"
+act_notchar( #csound, ch );
+"
 E
 "watersound"
 "You put your ear to the wall and listen.
 
-
 There is definately a river running just on the other side of the wall,
-
-and you get the impression that the current is very strong.
-
-"
+and you get the impression that the current is very strong.
+"
 E
 "csound"
 "$n puts $s ear against the wall and listens intently.
-
-"
+"
 !
 0 0 0
 27 9 1509949540 3 0
@@ -584,14 +468,10 @@ S
 #73015
 "Under the Wooden Dam"
 "Though you are not near any visible exit to this tunnel, the air does not
-
-smell at all stale, only filled with potent scents of wood and soil.  The
-
-tunnel continues straight for a long ways to the south and curves to
-
-the north.
-
-"
+smell at all stale, only filled with potent scents of wood and soil.  The
+tunnel continues straight for a long ways to the south and curves to
+the north.
+"
 ""
 301596676 0
 3 4 0
@@ -609,14 +489,10 @@ S
 #73016
 "Under the Wooden Dam"
 "The tunnel curves here:  from the relatively short bit of tunnel to your
-
-east to the southern corridor that goes on and on and on.  The walls
-
-seem to be very solid in this area, as if they were a part of the ground
-
-and not an animal-made structure.
-
-"
+east to the southern corridor that goes on and on and on.  The walls
+seem to be very solid in this area, as if they were a part of the ground
+and not an animal-made structure.
+"
 ""
 301596676 0
 3 4 0
@@ -635,14 +511,10 @@ S
 #73017
 "Under the Wooden Dam"
 "You seem to be in a wide curve in one of the labyrinth's tunnels, but it
-
-is hard to tell whether or not the tunnel continues much farther to the
-
-east.  The western curve looks to go around to the south, but it is too
-
-dark to see any more than that.
-
-"
+is hard to tell whether or not the tunnel continues much farther to the
+east.  The western curve looks to go around to the south, but it is too
+dark to see any more than that.
+"
 ""
 301596676 0
 3 4 0
@@ -660,14 +532,10 @@ S
 #73018
 "Under the Wooden Dam"
 "The long, winding corridor appears to end here with a dead end.  The
-
-walls to the north and east look very solidly built, as if they are
-
-really miles of solid dirt thick.  The wall to the south seems to be
-
-recently made, though:  some of the wood being slightly green.
-
-"
+walls to the north and east look very solidly built, as if they are
+really miles of solid dirt thick.  The wall to the south seems to be
+recently made, though:  some of the wood being slightly green.
+"
 ""
 301596676 0
 3 4 0
@@ -683,68 +551,49 @@ A
 "dig"
 "south wall"
 "if( is_open( room, south ) )
-
-send_to_char( #nothing, ch );
-
-else {
-
-send_to_char( #dig, ch );
-
-act_notchar( #cdig, ch );
-
-act_room( #wall, ch );
-
-open( room, south );
-
-}
-
-"
+send_to_char( #nothing, ch );
+else {
+send_to_char( #dig, ch );
+act_notchar( #cdig, ch );
+act_room( #wall, ch );
+open( room, south );
+}
+"
 E
 "dig"
 "You begin to dig at the wall to the south.
-
-"
+"
 E
 "cdig"
 "$m starts to dig at the southern wall.
-
-"
+"
 E
 "wall"
 "The southern wall caves in, revealing a passage continuing to the south.
-
-"
+"
 E
 "nothing"
 "There isn't much left of the southern wall except torn down dirt and wood
-
-at your feet.
-
-"
+at your feet.
+"
 !
 0 0 0
 A
 "look"
 "south wall"
 "if( is_open( room, south ) )
-
-    act_tochar( #nothere, ch );
-
-else
-
-    act_tochar( #there, ch );
-
-"
+    act_tochar( #nothere, ch );
+else
+    act_tochar( #there, ch );
+"
 E
 "there"
 "The wall to the south looks new and very weak.
-
-"
+"
 E
 "nothere"
 "The tunnel continues to the south through a broken down wall.
-
-"
+"
 !
 0 0 0
 27 9 1509949540 3 0
@@ -754,14 +603,10 @@ S
 #73019
 "Under the Wooden Dam"
 "The walls of this part of the tunnel seem mismatched.  The south and east
-
-walls are solidly constructed and have probably been there for a long
-
-while, but the west and north look to be nearly falling apart.  It
-
-probably wouldn't take much to destroy those walls.
-
-"
+walls are solidly constructed and have probably been there for a long
+while, but the west and north look to be nearly falling apart.  It
+probably wouldn't take much to destroy those walls.
+"
 ""
 301596676 0
 3 4 0
@@ -776,96 +621,68 @@ D3
 E
 "north west"
 "The wall looks very flimsy.  You doubt it would last long if someone were
-
-to try to dig through.
-
-"
+to try to dig through.
+"
 A
 "dig"
 "north"
 "if( is_open( room, north ) )
-
-send_to_char( #nothing, ch );
-
-else {
-
-send_to_char( #dig, ch );
-
-act_notchar( #cdig, ch );
-
-act_room( #southwall, ch );
-
-open( room, north );
-
-}
-
-"
+send_to_char( #nothing, ch );
+else {
+send_to_char( #dig, ch );
+act_notchar( #cdig, ch );
+act_room( #southwall, ch );
+open( room, north );
+}
+"
 E
 "dig"
 "You begin to dig at the wall to the north.
-
-"
+"
 E
 "cdig"
 "$n starts to dig at the northern wall.
-
-"
+"
 E
 "southwall"
 "The northern wall caves in, revealing a passage continuing to the north.
-
-"
+"
 E
 "nothing"
 "There isn't much left of the northern wall except torn down dirt and
-
-wood at your feet.
-
-"
+wood at your feet.
+"
 !
 0 0 0
 A
 "dig"
 "west"
 "if( is_open( room, west ) )
-
-send_to_char( #nothing, ch );
-
-else {
-
-send_to_char( #dig, ch );
-
-act_notchar( #cdig, ch );
-
-act_room( #wall, ch );
-
-open( room, west );
-
-}
-
-"
+send_to_char( #nothing, ch );
+else {
+send_to_char( #dig, ch );
+act_notchar( #cdig, ch );
+act_room( #wall, ch );
+open( room, west );
+}
+"
 E
 "dig"
 "You begin to dig at the wall to the west.
-
-"
+"
 E
 "cdig"
 "$m starts to dig at the western wall.
-
-"
+"
 E
 "wall"
 "The western wall caves in, revealing a passage continuing to the west.
-
-"
+"
 E
 "nothing"
 "There isn't much left of the western wall except torn down dirt and wood
-
-at your feet.
-
-"
+at your feet.
+"
 !
 0 0 0
 -1
@@ -874,14 +691,10 @@ S
 #73020
 "Under the Wooden Dam"
 "The walls of the tunnel are solid, made of packed dirt and wood.  The
-
-eastern wall seems out of place:  somehow weaker; almost flimsy.  Above
-
-you, the ceiling also seems out of place.  It doesn't seem to be made
-
-with much dirt at all:  more like a blanket of leaves and branches.
-
-"
+eastern wall seems out of place:  somehow weaker; almost flimsy.  Above
+you, the ceiling also seems out of place.  It doesn't seem to be made
+with much dirt at all:  more like a blanket of leaves and branches.
+"
 ""
 335151116 0
 3 4 0
@@ -896,98 +709,69 @@ D4
 E
 "ceiling up blanket leaves branches"
 "Leaves are interwoven with branches to create a crude but well-built
-
-blanket over the ceiling.
-
-"
+blanket over the ceiling.
+"
 A
 "dig"
 "east wall"
 "if( is_open( room, east ) )
-
-send_to_char( #nothing, ch );
-
-else {
-
-send_to_char( #dig, ch );
-
-act_notchar( #cdig, ch );
-
-act_room( #wall, ch );
-
-open( room, east );
-
-}
-
-"
+send_to_char( #nothing, ch );
+else {
+send_to_char( #dig, ch );
+act_notchar( #cdig, ch );
+act_room( #wall, ch );
+open( room, east );
+}
+"
 E
 "dig"
 "You begin to dig at the wall to the east.
-
-"
+"
 E
 "cdig"
 "$m starts to dig at the eastern wall.
-
-"
+"
 E
 "wall"
 "The eastern wall caves in, revealing a passage continuing to the east.
-
-"
+"
 E
 "nothing"
 "There isn't much left of the eastern wall except torn down dirt and wood
-
-at your feet.
-
-"
+at your feet.
+"
 !
 0 0 0
 A
 "move"
 "ceiling blanket leaves branches"
 "if( !is_open( room, up ) ) {
-
-act_tochar( #open, ch );
-
-act_notchar( #copen, ch );
-
-open( room, up );
-
-}
-
-else {
-
-act_tochar( #close, ch );
-
-act_notchar( #cclose, ch );
-
-close( room, up );
-
-}
-
-"
+act_tochar( #open, ch );
+act_notchar( #copen, ch );
+open( room, up );
+}
+else {
+act_tochar( #close, ch );
+act_notchar( #cclose, ch );
+close( room, up );
+}
+"
 E
 "open"
 "You move the leafy blanket aside, revealing a hole going up.
-
-"
+"
 E
 "close"
 "You move the leafy blanket into place, closing off the hole above you.
-
-"
+"
 E
 "copen"
 "$n moves the leafy blanket above you and reveals a hole going up.
-
-"
+"
 E
 "cclose"
 "$n moves the leafy blanket into place, closing off the hole above you.
-
-"
+"
 !
 0 0 0
 -1
@@ -996,14 +780,10 @@ S
 #73021
 "Under the Wooden Dam"
 "The corridor ends here with a thick wall of old wood and dried mud.  All
-
-of the walls seem to be insulated against the outside world.  The floor
-
-is littered with small twigs and leaves arranged to make a sort of
-
-bedding.
-
-"
+of the walls seem to be insulated against the outside world.  The floor
+is littered with small twigs and leaves arranged to make a sort of
+bedding.
+"
 ""
 301596676 0
 3 5 0
@@ -1014,10 +794,8 @@ D1
 E
 "twigs leaves bedding floor"
 "The twigs and leaves are woven together to make a small, but snug looking
-
-bed for a few beavers.
-
-"
+bed for a few beavers.
+"
 2272 9 1509949540 3 0
 2272 9 1509949540 3 0
 -1
@@ -1026,12 +804,9 @@ S
 #73022
 "Under the Wooden Dam"
 "The tunnel ends abruptly here at a slightly leaking, loose dirt wall;
-
-perhaps the owner never quite finished building it.  There are bits of
-
-green grass poking out of the ceiling and matted leaves on the ground. 
-
-"
+perhaps the owner never quite finished building it.  There are bits of
+green grass poking out of the ceiling and matted leaves on the ground. 
+"
 ""
 301596676 0
 3 5 0
@@ -1042,24 +817,18 @@ D0
 E
 "leaves ground matted"
 "Brown leaves cover the ground, some half covered with mud and others
-
-simply lie upon the ground.
-
-"
+simply lie upon the ground.
+"
 -1
 S
 
 #73023
 "Under the Wooden Dam"
 "The tunnel curves to a dead end to the north and a longer passage to the
-
-east.  The wooden walls and ceiling seem to be very solid and well-built. 
-
-The floor is made up of packed, dried mud and a mix of small twigs and
-
-leaves.
-
-"
+east.  The wooden walls and ceiling seem to be very solid and well-built. 
+The floor is made up of packed, dried mud and a mix of small twigs and
+leaves.
+"
 ""
 301596676 0
 3 5 0
@@ -1077,12 +846,9 @@ S
 #73024
 "Under the Wooden Dam"
 "This dead end appears to be used for food storage during the colder months.
-
-The walls are well insulated against weather and water from the outside;  the
-
-wood is tightly packed with mud.
-
-"
+The walls are well insulated against weather and water from the outside;  the
+wood is tightly packed with mud.
+"
 ""
 301596676 0
 3 5 0
@@ -1099,14 +865,10 @@ S
 #73025
 "A Sharp Turn in the Dam"
 "Green weeds and moss poke out through crevices in the wooden south wall. 
-
-Several of the branches making up the wall are broken, allowing a steady
-
-stream of ground water to flow out of the wall into a small channel on
-
-the ground.  On the surface of the water are little bits of wood.
-
-"
+Several of the branches making up the wall are broken, allowing a steady
+stream of ground water to flow out of the wall into a small channel on
+the ground.  On the surface of the water are little bits of wood.
+"
 ""
 301596676 0
 3 5 0
@@ -1121,10 +883,8 @@ D1
 E
 "stream"
 "A stream of dirty but drinkable water with bits of wood floating on the
-
-surface.
-
-"
+surface.
+"
 27 9 1509949540 3 0
 398 17 1509949540 -2 0
 -1
@@ -1133,16 +893,11 @@ S
 #73026
 "A Flooded Corridor"
 "The floor slants steeply downwards from the south, with about a foot of
-
-water on it.  Not much farther to the north, the tunnel is completely
-
-submerged.  The parts of the walls above water seem solid enough, but the
-
-areas below the water level seem like they would fall apart if not for
-
-the sticks and branches holding them together.
-
-"
+water on it.  Not much farther to the north, the tunnel is completely
+submerged.  The parts of the walls above water seem solid enough, but the
+areas below the water level seem like they would fall apart if not for
+the sticks and branches holding them together.
+"
 ""
 301596676 0
 13 5 0
@@ -1157,20 +912,16 @@ D2
 E
 "floor water"
 "The water at your feet seems to be fairly fresh, probably from a river or
-
-lake.
-
-"
+lake.
+"
 E
 "north"
 "The corridor to the north is completely flooded.
-
-"
+"
 E
 "stream"
 "Water has flooded this part of the dam.
-
-"
+"
 398 17 1509949540 -2 0
 -1
 S
@@ -1178,16 +929,11 @@ S
 #73027
 "A Flooded Corridor"
 "Water fills this corridor completely, up to the ceiling.  The walls are
-
-made up of mud and wood, holding together though it seems like they
-
-shouldn't.  The tunnel ends here with mud just thick enough to prevent
-
-you from continuing out to the rest of the river, but it looks like the
-
-south may lead up into air.
-
-"
+made up of mud and wood, holding together though it seems like they
+shouldn't.  The tunnel ends here with mud just thick enough to prevent
+you from continuing out to the rest of the river, but it looks like the
+south may lead up into air.
+"
 ""
 301596676 0
 6 9 0
@@ -1198,15 +944,12 @@ D2
 E
 "mud"
 "This mud is very thick and sticky, and you can't see any way to get
-
-through it.
-
-"
+through it.
+"
 E
 "stream"
 "Dirty water fills the corridor completely.
-
-"
+"
 27 9 1509949540 3 0
 398 17 1509949540 -2 0
 -1

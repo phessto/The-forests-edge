@@ -10,21 +10,14 @@
 #4600
 "A Secluded Grove"
 "A large druid ring made of white granite dominates the center of this wooded
-
-grove.  Soft, thick grass blankets the ground underneath towering aged trees. 
-
-A hedge forms the boundaries of the grove, which has a octagonal shape.  The
-
-grove is quiet, disturbed rarely by a chirping bird or a rustle of leaves,
-
-giving the area a sense of reverence.  The only gap you can see in the hedges
-
-is a small path that leads north.
-
-"
+grove.  Soft, thick grass blankets the ground underneath towering aged trees. 
+A hedge forms the boundaries of the grove, which has a octagonal shape.  The
+grove is quiet, disturbed rarely by a chirping bird or a rustle of leaves,
+giving the area a sense of reverence.  The only gap you can see in the hedges
+is a small path that leads north.
+"
 "[Ahni] Maybe an enter circle acode?
-
-"
+"
 335020045 0
 0 4 0
 D0
@@ -37,16 +30,11 @@ S
 #4601
 "A Path Through the Hedges"
 "Loose sand crunches under your feet as you walk along the white sanded path. 
-
-The thick hedges are closely trimmed on each side of the path, making a narrow
-
-passageway.  The hedges muffle noise so that the air has an almost eerie
-
-quality; even your own sounds make hardly any noise.  The path leads south
-
-towards a secluded grove and north to a set of gates.
-
-"
+The thick hedges are closely trimmed on each side of the path, making a narrow
+passageway.  The hedges muffle noise so that the air has an almost eerie
+quality; even your own sounds make hardly any noise.  The path leads south
+towards a secluded grove and north to a set of gates.
+"
 ""
 301465637 0
 0 6 0
@@ -64,10 +52,8 @@ S
 #4602
 "Before Some Vine-entwined Silver Gates"
 "Beautifully wrought silver gates twined with thick ropes of ivy bar the way
-
-north.
-
-"
+north.
+"
 ""
 301465637 0
 0 6 0
@@ -85,8 +71,7 @@ S
 #4603
 "Within a Courtyard"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -112,8 +97,7 @@ S
 #4604
 "Within a Courtyard"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -131,8 +115,7 @@ S
 #4605
 "Within a Courtyard"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -150,8 +133,7 @@ S
 #4606
 "Within a Courtyard"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -177,8 +159,7 @@ S
 #4607
 "Within a Courtyard"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -196,8 +177,7 @@ S
 #4608
 "Within a Courtyard"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -215,8 +195,7 @@ S
 #4609
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -242,8 +221,7 @@ S
 #4610
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -261,8 +239,7 @@ S
 #4611
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -284,8 +261,7 @@ S
 #4612
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -299,8 +275,7 @@ S
 #4613
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -326,8 +301,7 @@ S
 #4614
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -345,8 +319,7 @@ S
 #4615
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -364,8 +337,7 @@ S
 #4616
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -379,8 +351,7 @@ S
 #4617
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -398,8 +369,7 @@ S
 #4618
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -417,8 +387,7 @@ S
 #4619
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -432,8 +401,7 @@ S
 #4620
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -447,8 +415,7 @@ S
 #4621
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -466,8 +433,7 @@ S
 #4622
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -489,8 +455,7 @@ S
 #4623
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -504,8 +469,7 @@ S
 #4624
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -531,23 +495,15 @@ S
 #4625
 "Living Quarters"
 "Under Construction.
-
-"
+"
 "[Ahni] 4620 North White Marble
-
-[Ahni] 4632 Northeast Sunstone
-
-[Ahni] 4629 East Earth
-
-[Ahni] 4626 Southeast Smoky Gray Obsidian
-
-[Ahni] 4627 Southwest Mist-shrouded
-
-[Ahni] 4628 West Air
-
-[Ahni] 4631 Northwest Moonstone
-
-"
+[Ahni] 4632 Northeast Sunstone
+[Ahni] 4629 East Earth
+[Ahni] 4626 Southeast Smoky Gray Obsidian
+[Ahni] 4627 Southwest Mist-shrouded
+[Ahni] 4628 West Air
+[Ahni] 4631 Northwest Moonstone
+"
 301465637 0
 0 6 0
 D0
@@ -570,127 +526,86 @@ A
 "enter"
 "white marble archway"
 "act_tochar( #wmenter, ch );
-
-act_notchar( #rwmenter, ch );
-
-transfer( ch, find_room( 4630 ) );
-
-room = find_room( 4630 );
-
-act_notchar( #owmenter, ch);
-
-room = find_room( 4625 );
-
-loop( followers ) {
-
-ch = rch;
-
-acode( room, 1 );
-
-}
-
-"
+act_notchar( #rwmenter, ch );
+transfer( ch, find_room( 4630 ) );
+room = find_room( 4630 );
+act_notchar( #owmenter, ch);
+room = find_room( 4625 );
+loop( followers ) {
+ch = rch;
+acode( room, 1 );
+}
+"
 E
 "wmenter"
 "You step through the polished white marble archway and enter a room quiet
-
-enough to be a mausoleum.
-
-"
+enough to be a mausoleum.
+"
 E
 "rwmenter"
 "You see $n step through the polished white marble archway.
-
-"
+"
 E
 "owmenter"
 "$n arrives through the white marble archway to the south.
-
-"
+"
 !
 0 0 0
 A
 "enter"
 "mist-shrouded archway"
 "act_tochar( #msenter, ch );
-
-act_notchar( #rmsenter, ch );
-
-transfer( ch, find_room( 4627 ) );
-
-room = find_room( 4627 );
-
-act_notchar( #osmenter, ch ) ;
-
-room = find_room( 4625 );
-
-loop( followers ) {
-
-ch = rch;
-
-acode( room, 2);
-
-}
-
-"
+act_notchar( #rmsenter, ch );
+transfer( ch, find_room( 4627 ) );
+room = find_room( 4627 );
+act_notchar( #osmenter, ch ) ;
+room = find_room( 4625 );
+loop( followers ) {
+ch = rch;
+acode( room, 2);
+}
+"
 E
 "msenter"
 "Droplets of the fine mist condense on you as you step through the archway,
-
-leaving you not a little damp.
-
-"
+leaving you not a little damp.
+"
 E
 "rmsenter"
 "You see $n step through the mist-shrouded doorway to the southwest.
-
-"
+"
 E
 "osmenter"
 "$n arrives through the arch to the northeast, looking a little more wet than usual.
-
-"
+"
 !
 0 0 0
 A
 "enter"
 "sparkling sunstone archway"
 "act_tochar( #ssenter, ch );
-
-act_notchar( #rssenter, ch );
-
-transfer( ch, find_room( 4632 ) );
-
-room = find_room( 4632 );
-
-act_notchar( #ossenter, ch );
-
-room = find_room( 4625 );
-
-loop( followers ) {
-
-ch = rch;
-
-acode( room, 3);
-
-}
-
-"
+act_notchar( #rssenter, ch );
+transfer( ch, find_room( 4632 ) );
+room = find_room( 4632 );
+act_notchar( #ossenter, ch );
+room = find_room( 4625 );
+loop( followers ) {
+ch = rch;
+acode( room, 3);
+}
+"
 E
 "ssenter"
 "The sunstone sparkles as you open the door and step through.
-
-"
+"
 E
 "rssenter"
 "The sunstone sparkles as $n opens the door and steps through.
-
-"
+"
 E
 "ossenter"
 "You see $n step through the sparkling sunstone archway to the southwest.
-
-"
+"
 !
 0 0 0
 -1
@@ -699,8 +614,7 @@ S
 #4626
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -718,8 +632,7 @@ S
 #4627
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -735,43 +648,29 @@ A
 "enter"
 "mist-shrouded doorway"
 "act_tochar( #msenter, ch );
-
-act_notchar( #rmsenter, ch );
-
-transfer( ch, find_room( 4625 ) );
-
-room = find_room( 4625 );
-
-act_notchar( #osmenter, ch );
-
-room = find_room( 4627 );
-
-loop( followers ) {
-
-ch = rch;
-
-acode( room, 1);
-
-}
-
-"
+act_notchar( #rmsenter, ch );
+transfer( ch, find_room( 4625 ) );
+room = find_room( 4625 );
+act_notchar( #osmenter, ch );
+room = find_room( 4627 );
+loop( followers ) {
+ch = rch;
+acode( room, 1);
+}
+"
 E
 "msenter"
 "Droplets of the fine mist condense on you as you step through the doorway,
-
-leaving you not a little damp.
-
-"
+leaving you not a little damp.
+"
 E
 "rmsenter"
 "$n steps through the mist-shrouded doorway to the northeast.
-
-"
+"
 E
 "osmenter"
 "$n comes through the mist-shrouded doorway, looking a little more wet than usual.
-
-"
+"
 !
 0 0 0
 -1
@@ -780,8 +679,7 @@ S
 #4628
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -803,8 +701,7 @@ S
 #4629
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -826,8 +723,7 @@ S
 #4630
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -847,41 +743,28 @@ A
 "enter"
 "white marble door"
 "act_tochar( #wmenter, ch );
-
-act_notchar( #rwmenter, ch );
-
-transfer( ch, find_room( 4625 ) );
-
-room = find_room( 4625 );
-
-act_notchar( #owmenter, ch);
-
-room = find_room( 4630 );
-
-loop( followers ) {
-
-ch = rch;
-
-acode( room, 1 );
-
-}
-
-"
+act_notchar( #rwmenter, ch );
+transfer( ch, find_room( 4625 ) );
+room = find_room( 4625 );
+act_notchar( #owmenter, ch);
+room = find_room( 4630 );
+loop( followers ) {
+ch = rch;
+acode( room, 1 );
+}
+"
 E
 "wmenter"
 "You step through the white marble door to the south.
-
-"
+"
 E
 "rwmenter"
 "$n steps through the white marble door to the south.
-
-"
+"
 E
 "owmenter"
 "$n comes through the white marble door to the north.
-
-"
+"
 !
 0 0 0
 -1
@@ -890,8 +773,7 @@ S
 #4631
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -909,8 +791,7 @@ S
 #4632
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -928,8 +809,7 @@ S
 #4633
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -947,8 +827,7 @@ S
 #4634
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0
@@ -966,8 +845,7 @@ S
 #4635
 "Living Quarters"
 "Under Construction.
-
-"
+"
 ""
 301465637 0
 0 6 0

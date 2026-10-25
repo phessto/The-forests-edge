@@ -10,16 +10,11 @@
 #38750
 "Secluded Road Through the Dragonspire Mountains"
 "This secluded road branches off from a better defined path to the east and
-
-continues along the side of a steep mountain.  To the south, a sheer, rocky
-
-cliff dotted with craggy outcroppings covered in layers of snow and ice
-
-appears impossible to climb.  A deep gully opens up into a dizzying drop north
-
-of the trail, spiralling downward into a blur of gray and white.
-
-"
+continues along the side of a steep mountain.  To the south, a sheer, rocky
+cliff dotted with craggy outcroppings covered in layers of snow and ice
+appears impossible to climb.  A deep gully opens up into a dizzying drop north
+of the trail, spiralling downward into a blur of gray and white.
+"
 ""
 301465608 0
 5 7 0
@@ -33,23 +28,15 @@ S
 #38751
 "On the Edge of a Dense Forest"
 "Large jagged rocks like twisting black spears pierce through the sheet of
-
-white snow making the area similar to a bed of spikes.  A faint trail leads
-
-across the snowy field weaving its way around ice and rock.  Blowing across
-
-the snow, a cold, skin-nipping wind brushes against all that stand in its
-
-path, as if having been angered from being trapped by the surrounding
-
-mountains.  The road continues on to the west into a forest of pine and east
-
-toward the other side of the mountains.
-
-"
+white snow making the area similar to a bed of spikes.  A faint trail leads
+across the snowy field weaving its way around ice and rock.  Blowing across
+the snow, a cold, skin-nipping wind brushes against all that stand in its
+path, as if having been angered from being trapped by the surrounding
+mountains.  The road continues on to the west into a forest of pine and east
+toward the other side of the mountains.
+"
 "jagged rocks
-
-"
+"
 301465600 0
 5 7 0
 D1
@@ -66,25 +53,16 @@ S
 #38752
 "Dense Pine Forest"
 "Thick, tall pine trees lie clustered together forming an almost solid wall of
-
-wood around the western area leaving only a few sparse openings among their
-
-midst.  No visible road lies ahead, and if one ever existed, it would have
-
-been covered up long ago by the deep drifts of snow.  Carried along by the
-
-wind, a howl echoes, followed by a faint wailing that beckons those closer
-
-into the forest.  Lending to a lighter atmosphere, the chirping of snow birds
-
-rings high overhead and from the forest ahead.  Two choices are present,
-
-plunge into the forest or retreat toward the east.
-
-"
+wood around the western area leaving only a few sparse openings among their
+midst.  No visible road lies ahead, and if one ever existed, it would have
+been covered up long ago by the deep drifts of snow.  Carried along by the
+wind, a howl echoes, followed by a faint wailing that beckons those closer
+into the forest.  Lending to a lighter atmosphere, the chirping of snow birds
+rings high overhead and from the forest ahead.  Two choices are present,
+plunge into the forest or retreat toward the east.
+"
 "pine trees wall openings
-
-"
+"
 301465600 0
 3 8 0
 D0
@@ -109,38 +87,23 @@ S
 #38753
 "Dense Pine Forest"
 "Small piles of snow cover the forest floor like tiny burial mounds.  Impaled
-
-in the snow are dozens of fallen twigs and small branches broken off by the
-
-heavy burden of snow while surrounding them is a blanket of brown and green
-
-pine needles.  The aged pine trees which make up the forest are dark in color
-
-with vibrant green needles, some scarred and damaged from natural hazards. 
-
-Virtually untouched by the rigors of time, the trees have all survived except
-
-those that have collapsed from the snow or broken under the wind's will.  A
-
-medium-sized boulder stands in the center of the grove, alone in its winter
-
-slumber.
-
-"
+in the snow are dozens of fallen twigs and small branches broken off by the
+heavy burden of snow while surrounding them is a blanket of brown and green
+pine needles.  The aged pine trees which make up the forest are dark in color
+with vibrant green needles, some scarred and damaged from natural hazards. 
+Virtually untouched by the rigors of time, the trees have all survived except
+those that have collapsed from the snow or broken under the wind's will.  A
+medium-sized boulder stands in the center of the grove, alone in its winter
+slumber.
+"
 "mortals will have to dig in the snow with a random chance of finding the
-
-frozen body of the ghost.  An item of two(not too powerful) will be on the
-
-body.  once they discovered the body...mortals will have to pull it from the
-
-snow either using some sort of equipment or a mort with a good deal of
-
-strength.
-
+frozen body of the ghost.  An item of two(not too powerful) will be on the
+body.  once they discovered the body...mortals will have to pull it from the
+snow either using some sort of equipment or a mort with a good deal of
+strength.
 
 mounds snow | boulder
-
-"
+"
 301465600 0
 3 7 0
 D2
@@ -154,37 +117,25 @@ D3
 E
 "boulder rock"
 "This gray boulder stands alone in the snow covered in a sheet of thick, light
-
-blue ice.  Upon the slightest touch the rocky, icy surface feels smooth and
-
-freezing.  Scanning the boulders surface reveals frozen droplets of blood
-
-encased in solid ice like crystallized deep red tears.  If the boulder could
-
-speak, perhaps it has a story to tell.
-
-"
+blue ice.  Upon the slightest touch the rocky, icy surface feels smooth and
+freezing.  Scanning the boulders surface reveals frozen droplets of blood
+encased in solid ice like crystallized deep red tears.  If the boulder could
+speak, perhaps it has a story to tell.
+"
 -1
 S
 
 #38754
 "On the Edge of a Dense Forest"
 "Barely visible in the snow is an old, faded trail winding up the icy mountain
-
-walls.  Gently rising upwards, the snowy ground edges its way from the pine
-
-forest and toward a steep, rocky slope.  Some frozen plant life such as bushes
-
-and snow flowers grow along the sides of the faint, barely-visible trail. 
-
-Travel is possible up the slope of the mountain, as well as east into the
-
-dense pine forest.
-
-"
+walls.  Gently rising upwards, the snowy ground edges its way from the pine
+forest and toward a steep, rocky slope.  Some frozen plant life such as bushes
+and snow flowers grow along the sides of the faint, barely-visible trail. 
+Travel is possible up the slope of the mountain, as well as east into the
+dense pine forest.
+"
 "bushes flowers
-
-"
+"
 301465600 0
 5 6 0
 D1
@@ -201,18 +152,12 @@ S
 #38755
 "Windswept Mountain Path"
 "Jagged, ice-covered rocks surrounded by tiny blades of frozen grass rest along
-
-the slope.  Growing few in number towards the north, pine trees covered in
-
-white snow loom along the rocky mountain side.  Snow gathered upon the faint
-
-trail easily mounts to a few feet at least making travel ever more difficult. 
-
-Visible in the white blanket of powder, deer and hare tracks cross each other
-
-in wavy patterns.
-
-"
+the slope.  Growing few in number towards the north, pine trees covered in
+white snow loom along the rocky mountain side.  Snow gathered upon the faint
+trail easily mounts to a few feet at least making travel ever more difficult. 
+Visible in the white blanket of powder, deer and hare tracks cross each other
+in wavy patterns.
+"
 ""
 301465600 0
 5 6 0
@@ -230,14 +175,10 @@ S
 #38756
 "Path Along the Mountainside"
 "The wind beats upon those charging up the slope of the mountain like an angry
-
-giant with his club.  Drifting across the slope, snow tumbles along, piling up
-
-into small mounds along the jagged rocks and stone, while to the south a
-
-sparse stand of pine trees have prospered.
-
-"
+giant with his club.  Drifting across the slope, snow tumbles along, piling up
+into small mounds along the jagged rocks and stone, while to the south a
+sparse stand of pine trees have prospered.
+"
 ""
 301465600 0
 5 6 0
@@ -255,16 +196,11 @@ S
 #38757
 "Barren Mountain Trail"
 "Narrowing in-between a line of frozen grey boulders, the barely visible trail
-
-twists upward along the snowy mountain slope.  Charging downward, the wind
-
-hurtles against anyone that would make the climb, chilling every bone in their
-
-body.  Occasional snow tumbles down the slopes in harmless slides, but one can
-
-only wonder if an avalanche could occur in a matter of time.
-
-"
+twists upward along the snowy mountain slope.  Charging downward, the wind
+hurtles against anyone that would make the climb, chilling every bone in their
+body.  Occasional snow tumbles down the slopes in harmless slides, but one can
+only wonder if an avalanche could occur in a matter of time.
+"
 ""
 301465600 0
 5 6 0
@@ -282,25 +218,16 @@ S
 #38758
 "Atop a Steep Cliff"
 "The deep white snow has buried the trail beneath its icy grasp.  Lining the
-
-north is a wall of jagged gray rock matted in ice and frozen mud.  Slanting
-
-south is a steep cliff, impassible by normal means.  However, it presents a
-
-majestic a view of a dense pine forest gathered around the base of the
-
-mountain.  The scene is like a blanket of pointed green spikes tipped with
-
-ice.  Nestled amongst a shelter of rocks to the west, steam rises from a
-
-rippling pool of warm water.  Squeezing through a pile of large boulders the
-
-path leads down the slope.
-
-"
+north is a wall of jagged gray rock matted in ice and frozen mud.  Slanting
+south is a steep cliff, impassible by normal means.  However, it presents a
+majestic a view of a dense pine forest gathered around the base of the
+mountain.  The scene is like a blanket of pointed green spikes tipped with
+ice.  Nestled amongst a shelter of rocks to the west, steam rises from a
+rippling pool of warm water.  Squeezing through a pile of large boulders the
+path leads down the slope.
+"
 "shelter pool water
-
-"
+"
 301465600 0
 5 6 0
 D3
@@ -317,34 +244,21 @@ S
 #38759
 "Narrow Mountain Pass"
 "The wind continues to beat down upon all that attempt to travel through the
-
-steep crags, sapping their reserve of strength.  A bank of snow piles up on
-
-the northern mountain's southern face as more ice and frozen debris is
-
-constantly being blown into the ever-growing mound.  Cradled within the rocks
-
-offset from the trail to the south, a large pool of water sends steam skyward
-
-as it cools in the cold, mountain air.  Vast amounts of heat radiate from the
-
-pool's surface resembling a slow cooking pot.  Beinging within close proximity
-
-to this natural hot spring warms the body, easing the cold, numbing feeling
-
-from the bones.  Parts of the road sheltered from the wind seem clear of deep
-
-snow, allowing it to be followed to the east or west along the contour of the
-
-mountainside.
-
-"
+steep crags, sapping their reserve of strength.  A bank of snow piles up on
+the northern mountain's southern face as more ice and frozen debris is
+constantly being blown into the ever-growing mound.  Cradled within the rocks
+offset from the trail to the south, a large pool of water sends steam skyward
+as it cools in the cold, mountain air.  Vast amounts of heat radiate from the
+pool's surface resembling a slow cooking pot.  Beinging within close proximity
+to this natural hot spring warms the body, easing the cold, numbing feeling
+from the bones.  Parts of the road sheltered from the wind seem clear of deep
+snow, allowing it to be followed to the east or west along the contour of the
+mountainside.
+"
 "place rocks or boulders to sit on to rest
 
-
 bank face mound | pool water hot spring
-
-"
+"
 301465600 0
 5 6 0
 D1
@@ -358,38 +272,25 @@ D3
 E
 "pool spring"
 "Pushed to the rocky surface, this natural spring is caused by heat generated
-
-inside the mountain.  The water is constantly fed geothermal heat and thus
-
-will never freeze over as long as the mountain remains.  The scent around the
-
-pool contains a tad of sulfur, but is quite safe to drive into the water. 
-
-Sloshing against anything that would dive or fall in, the heated water would
-
-keep them warm.
-
-"
+inside the mountain.  The water is constantly fed geothermal heat and thus
+will never freeze over as long as the mountain remains.  The scent around the
+pool contains a tad of sulfur, but is quite safe to drive into the water. 
+Sloshing against anything that would dive or fall in, the heated water would
+keep them warm.
+"
 -1
 S
 
 #38760
 "Secluded Road Through the Dragonspire Mountains"
 "Large snow covered boulders line the sides of the road acting like road
-
-markers across the slope of the mountain.  Flurries of spinning snow and wind
-
-whip hard against the rocks and those wishing to travel the road.  Standing
-
-tall to the north upon a bank are several pine trees acting like a row of
-
-soldiers at attention overlooking all that move into their gaze beneath the
-
-bank.  Off to the east, steam arises from a pool of water, while the west
-
-moves to the edge of the western slope.
-
-"
+markers across the slope of the mountain.  Flurries of spinning snow and wind
+whip hard against the rocks and those wishing to travel the road.  Standing
+tall to the north upon a bank are several pine trees acting like a row of
+soldiers at attention overlooking all that move into their gaze beneath the
+bank.  Off to the east, steam arises from a pool of water, while the west
+moves to the edge of the western slope.
+"
 ""
 301465600 0
 5 6 0
@@ -407,22 +308,14 @@ S
 #38761
 "A Breath-taking View"
 "Towards the northeast, the mountains open up allowing a striking view of the
-
-distant peeks of the Dragonspire range.  Mist clings to the base of the
-
-far-off mountains as if worn like a skirt while their snowy caps appear to
-
-pierce the sky with their sharp contrast.  Looking down the side of this
-
-mountain, ice-covered cliffs and boulders create a sea of grey and white,
-
-broken only by the occasional grouping of hardy conifers.  The trail, almost
-
-completely burried in snow, leads precariously down the west side of the
-
-mountain, while a less dangerous route is available to the south.
-
-"
+distant peeks of the Dragonspire range.  Mist clings to the base of the
+far-off mountains as if worn like a skirt while their snowy caps appear to
+pierce the sky with their sharp contrast.  Looking down the side of this
+mountain, ice-covered cliffs and boulders create a sea of grey and white,
+broken only by the occasional grouping of hardy conifers.  The trail, almost
+completely burried in snow, leads precariously down the west side of the
+mountain, while a less dangerous route is available to the south.
+"
 ""
 301465600 0
 5 6 0
@@ -440,18 +333,12 @@ S
 #38762
 "An Almost Vertical Trail"
 "The road here turns into a twisting trail like a corkscrew burrowing down the
-
-mountainside.  Piercing upward through the ground are chunks of ice similar in
-
-form to spearheads.  With every step the trail is slippery from black ice
-
-beneath the white snow.  One hard slip can send anything hurtling over the
-
-edge to their death below.  Even a glance below to a small ledge seems less
-
-inviting than up the slope.
-
-"
+mountainside.  Piercing upward through the ground are chunks of ice similar in
+form to spearheads.  With every step the trail is slippery from black ice
+beneath the white snow.  One hard slip can send anything hurtling over the
+edge to their death below.  Even a glance below to a small ledge seems less
+inviting than up the slope.
+"
 ""
 301465600 0
 5 6 0
@@ -469,22 +356,14 @@ S
 #38763
 "On a Rocky Ledge"
 "The trail yields here to a small narrow ledge around five yards in length and
-
-allows footing big enough for a small mount.  Black ice forms on the solid,
-
-jagged rocky wall to the north allowing little grip to ease footing along the
-
-ledge.  Slipping across with every step is normal, but the wrong slide would
-
-send one over the edge and pummeling into a set of jagged long spear shaped
-
-rocks stretched out like a claw a few feet below the ledge.  To the west the
-
-ledge continues to be less inviting while the slippery trail above seems much
-
-safer.
-
-"
+allows footing big enough for a small mount.  Black ice forms on the solid,
+jagged rocky wall to the north allowing little grip to ease footing along the
+ledge.  Slipping across with every step is normal, but the wrong slide would
+send one over the edge and pummeling into a set of jagged long spear shaped
+rocks stretched out like a claw a few feet below the ledge.  To the west the
+ledge continues to be less inviting while the slippery trail above seems much
+safer.
+"
 ""
 301465600 0
 5 6 0
@@ -502,20 +381,13 @@ S
 #38764
 "On a Rocky Ledge"
 "Squeezing along a jagged, black ice covered rocky wall, this small ledge is
-
-slippery, enough to be dangerous for an experienced mountain climber.  The
-
-view below the ledge is just as treacherous, revealing a clawed shaped
-
-yielding spear shaped rocks which could easily impale something upon them. 
-
-Only an icy trail spirals down the side down to a much safer and inviting
-
-rounded area covered in white snow.  Glancing east, the ledge seems intimating
-
-almost inviting one to their death.
-
-"
+slippery, enough to be dangerous for an experienced mountain climber.  The
+view below the ledge is just as treacherous, revealing a clawed shaped
+yielding spear shaped rocks which could easily impale something upon them. 
+Only an icy trail spirals down the side down to a much safer and inviting
+rounded area covered in white snow.  Glancing east, the ledge seems intimating
+almost inviting one to their death.
+"
 ""
 301465600 0
 5 7 0
@@ -533,18 +405,12 @@ S
 #38765
 "At the Base of a Massive Peak"
 "Below the ledge, the view is much more pleasant, revealing a less dangerous
-
-atmosphere.  A pure white blanket of snow covers the base of the mountain
-
-peak.  Surrounding nearly on all sides are a collection of ice and rock walls
-
-hugging a narrow path between them tightly.  A tiny glimpse in the center of
-
-the narrow passage reveals a plain of snow a short distance away.  To the up
-
-the ledge leads around the mountain side.
-
-"
+atmosphere.  A pure white blanket of snow covers the base of the mountain
+peak.  Surrounding nearly on all sides are a collection of ice and rock walls
+hugging a narrow path between them tightly.  A tiny glimpse in the center of
+the narrow passage reveals a plain of snow a short distance away.  To the up
+the ledge leads around the mountain side.
+"
 ""
 301465600 0
 5 7 0
@@ -562,14 +428,10 @@ S
 #38766
 "Mountain Trail - A Tight Fit"
 "The massive Dragonspire range rises up like enormous titans of rock all around
-
-this narrow pass.  Cloaked in shadow the majority of the time, magnificent ice
-
-formations which radiate an aura of pristine beauty have developed along the
-
-walls of the trail.  The path allows for cautious travel to the west and south.
-
-"
+this narrow pass.  Cloaked in shadow the majority of the time, magnificent ice
+formations which radiate an aura of pristine beauty have developed along the
+walls of the trail.  The path allows for cautious travel to the west and south.
+"
 ""
 301465600 0
 5 6 0
@@ -587,20 +449,13 @@ S
 #38767
 "On the Edge of a Secluded Valley"
 "The snow-covered trail seems to end here at the edge of a secluded valley to
-
-the west.  Huddled together in numerous clusters, low-lying leather tents dot
-
-the sheltered plain of snow and rock.  Obvious signs that the inhabitants
-
-traveled this way recently may be seen on the ground at your feet; large paw
-
-prints of a bipedal humanoid creature.  Only allowing room enough for a small
-
-wagon to pass through, the steep mountain crags press in upon the trail
-
-towards the east.
-
-"
+the west.  Huddled together in numerous clusters, low-lying leather tents dot
+the sheltered plain of snow and rock.  Obvious signs that the inhabitants
+traveled this way recently may be seen on the ground at your feet; large paw
+prints of a bipedal humanoid creature.  Only allowing room enough for a small
+wagon to pass through, the steep mountain crags press in upon the trail
+towards the east.
+"
 ""
 301465608 0
 17 7 0
@@ -615,33 +470,23 @@ D1
 E
 "paw prints tracks"
 "The overall print is quite round, showing four smaller toe pads with a lobed
-
-heel pad possessing a double scallop at the rear.  It appears the individual
-
-wasn't in a hurry, as the stride of the prints isn't very far apart.
-
-"
+heel pad possessing a double scallop at the rear.  It appears the individual
+wasn't in a hurry, as the stride of the prints isn't very far apart.
+"
 -1
 S
 
 #38768
 "Dense Pine Forest"
 "Toppled by the weight of an overabundance of snow, a few fallen trees cross
-
-each other like a series of giant wooden X's.  Snow rises deeply from the
-
-forest floor and drifts across the area, piling up into small lumps of white
-
-mixed with brown and green pine needles.  Along the frosted white ground are
-
-dozens of animal tracks, such as birds and deer, as well as a set of canine
-
-tracks which seem to wander the area.
-
-"
+each other like a series of giant wooden X's.  Snow rises deeply from the
+forest floor and drifts across the area, piling up into small lumps of white
+mixed with brown and green pine needles.  Along the frosted white ground are
+dozens of animal tracks, such as birds and deer, as well as a set of canine
+tracks which seem to wander the area.
+"
 "fallen trees | lumps snow
-
-"
+"
 301465600 0
 3 8 0
 D1
@@ -655,33 +500,23 @@ D2
 E
 "tracks canine"
 "Unlike the smaller, shallower tracks of the other animals, the large canine
-
-tracks press deeply into the snow.
-
-"
+tracks press deeply into the snow.
+"
 -1
 S
 
 #38769
 "Dense Pine Forest"
 "Small plants matted down with frost grow in the surrounding area.  Snow and
-
-ice blow about the forest here as strong gusts of wind find a breach in the
-
-forest's dense canopy.  Due to the swirling mist of ice, vision is
-
-occasionally impaired for those who travel through this part of the wooded
-
-valley.  When the winds aren't punishing the area with their powerful force,
-
-only a calm chilly breeze dances through the pine trees causing loose green
-
-and brown needles to fall onto the snowy ground.
-
-"
+ice blow about the forest here as strong gusts of wind find a breach in the
+forest's dense canopy.  Due to the swirling mist of ice, vision is
+occasionally impaired for those who travel through this part of the wooded
+valley.  When the winds aren't punishing the area with their powerful force,
+only a calm chilly breeze dances through the pine trees causing loose green
+and brown needles to fall onto the snowy ground.
+"
 "plants
-
-"
+"
 301465600 0
 3 8 0
 D0
@@ -702,32 +537,20 @@ S
 #38770
 "Dense Pine Forest"
 "In the heart of the forest, eighteen trees form two circles, an inner and an
-
-outer circle.  A small, blue sapphire in the form of a triangle sits in the
-
-center of the inner circle.  Emanating from the triangle is a bright, icy-blue
-
-corona of light.  Bits of snow and ice drop from the tree branches, producing
-
-the effect of a mini snow fall which collect on the forest floor around the
-
-triangle.  Listening careful, soft song sung by a lovely voice echoes like a
-
-sweet melody carried through the tree tops can be heard.  No animals appear to
-
-have made their homes in the circles of trees.
-
-"
+outer circle.  A small, blue sapphire in the form of a triangle sits in the
+center of the inner circle.  Emanating from the triangle is a bright, icy-blue
+corona of light.  Bits of snow and ice drop from the tree branches, producing
+the effect of a mini snow fall which collect on the forest floor around the
+triangle.  Listening careful, soft song sung by a lovely voice echoes like a
+sweet melody carried through the tree tops can be heard.  No animals appear to
+have made their homes in the circles of trees.
+"
 "A cruel wizard has imprisioned the spirit of the girl/woman and the ice
-
-medallion will allow her spirit to use the triangle to pass on to the next
-
-realm.
-
+medallion will allow her spirit to use the triangle to pass on to the next
+realm.
 
 sapphire blue triangle
-
-"
+"
 301465600 0
 3 8 0
 D0
@@ -749,40 +572,26 @@ D3
 E
 "triangle"
 "Cut from pure sapphire this triangle rests upon the snow ground upon a snow
-
-covered tree stump.  A bright icy blue aura surrounds the triangle and waivers
-
-as its touched.  Further investigation reveals the triangle is embedded in the
-
-pedestal of wood and wont pulled loose from the greatest muscle strength. 
-
-Only the power of a god could pull the triangle free.  However, no evil
-
-presence surrounds the triangle, and although no animals made their home
-
-around it, perhaps it's out of respect.
-
-"
+covered tree stump.  A bright icy blue aura surrounds the triangle and waivers
+as its touched.  Further investigation reveals the triangle is embedded in the
+pedestal of wood and wont pulled loose from the greatest muscle strength. 
+Only the power of a god could pull the triangle free.  However, no evil
+presence surrounds the triangle, and although no animals made their home
+around it, perhaps it's out of respect.
+"
 -1
 S
 
 #38771
 "The Edge of a Secluded Valley"
 "A vast plain of snow stretches out against the surrounding mountains and snow
-
-glaciers in the distance.  Resembling a giant white blanket, the valley of
-
-snow is nothing more than a fierce cold wasteland.  Snow rolls and tumbles
-
-from a fierce wind, like a cracking whip against all those in its way.  The
-
-cold constantly nips at the skin, making any living thing freeze in a matter
-
-of minutes without suitable protection.  A small mountain stands across from
-
-the passage to the south, overlooking the valley.
-
-"
+glaciers in the distance.  Resembling a giant white blanket, the valley of
+snow is nothing more than a fierce cold wasteland.  Snow rolls and tumbles
+from a fierce wind, like a cracking whip against all those in its way.  The
+cold constantly nips at the skin, making any living thing freeze in a matter
+of minutes without suitable protection.  A small mountain stands across from
+the passage to the south, overlooking the valley.
+"
 ""
 301465600 0
 17 9 0
@@ -808,21 +617,14 @@ S
 #38772
 "Dense Pine Forest"
 "Light-grey, child-sized rocks, fallen from the nearby cliffs, lie scattered
-
-across the snowy forest floor.  Sweeping through the area, a chilling wind
-
-howls through the forest while tumbling snow and ice along with its powerful
-
-force.  A few rotting, broken, snow-covered trunks, the remains of numerous
-
-fallen trees, form a natural fence of wood that keeps larger creatures from
-
-passing through this part of the pine forest.
-
-"
+across the snowy forest floor.  Sweeping through the area, a chilling wind
+howls through the forest while tumbling snow and ice along with its powerful
+force.  A few rotting, broken, snow-covered trunks, the remains of numerous
+fallen trees, form a natural fence of wood that keeps larger creatures from
+passing through this part of the pine forest.
+"
 "rocks | rotting broken trunks fallen fence
-
-"
+"
 301465600 0
 3 8 0
 D0
@@ -836,34 +638,23 @@ D3
 E
 "tracks canine"
 "Unlike the other animal tracks, these belong to a canine pressed into the
-
-snow.  In the outer edges and center of the tracks are fresh spots of red
-
-blood glistening against the ice.  This is either indication the animal has
-
-been wounded or perhaps has just killed something or perhaps someone.
-
-"
+snow.  In the outer edges and center of the tracks are fresh spots of red
+blood glistening against the ice.  This is either indication the animal has
+been wounded or perhaps has just killed something or perhaps someone.
+"
 -1
 S
 
 #38773
 "Dense Pine Forest"
 "The pine trees grow in thick, dense clusters here as the secluded grove
-
-approaches the side of a very large mountain to the south.  Silence permeates
-
-the area as if the animals who live here are afraid to disturb the peaceful
-
-tranquility that the serene white surroundings provide.  A tall stand of pines
-
-forms an irregular circle, opening a hole in the canopy which lends a direct
-
-view of the sky.  Snow falls gently through the hole, landing softly upon the
-
-ground, blanketing the forest floor in a cold, pure white.
-
-"
+approaches the side of a very large mountain to the south.  Silence permeates
+the area as if the animals who live here are afraid to disturb the peaceful
+tranquility that the serene white surroundings provide.  A tall stand of pines
+forms an irregular circle, opening a hole in the canopy which lends a direct
+view of the sky.  Snow falls gently through the hole, landing softly upon the
+ground, blanketing the forest floor in a cold, pure white.
+"
 ""
 301465600 0
 3 8 0
@@ -885,30 +676,19 @@ S
 #38774
 "Dense Pine Forest"
 "Frozen in the center of the snow covered ground are three small pools of
-
-water.  Thick sheets of ice have formed over the water acting as a crystalline
-
-mirror.  A dark-grey, jagged wall of rock rises to the west and south
-
-preventing any escape in those directions.  Old decaying branches from almost
-
-needless pine trees seem to reach out and grasp those that come within reach. 
-
-Hurling itself against the ancient trees, the wind snaps branches and whirls
-
-pine needles around in a spinning vortex of white debris.
-
-"
+water.  Thick sheets of ice have formed over the water acting as a crystalline
+mirror.  A dark-grey, jagged wall of rock rises to the west and south
+preventing any escape in those directions.  Old decaying branches from almost
+needless pine trees seem to reach out and grasp those that come within reach. 
+Hurling itself against the ancient trees, the wind snaps branches and whirls
+pine needles around in a spinning vortex of white debris.
+"
 "Spirit will reset here.
-
-Spirit can reward mortal...with silver bracelet of ghostly friendship
-
-Item would be minor item...+mana or something that any level could use.
-
+Spirit can reward mortal...with silver bracelet of ghostly friendship
+Item would be minor item...+mana or something that any level could use.
 
 pools water crystalline mirror
-
-"
+"
 301465600 0
 3 8 0
 D0
@@ -925,27 +705,17 @@ S
 #38775
 "Dense Pine Forest"
 "This large stand of pines provides the area with an abundant source of homes
-
-for a wide variety of wildlife.  Lining the ground here are discarded needles
-
-from the trees, as well as a decent amount of pine cones.  The large amounts
-
-of snow seen in the other parts of the range is not to be found here, as the
-
-dense growth of trees shelters this spot of the mountains.  A solid wall of
-
-rock lies to the north, blocking passage in that direction.  Looking more
-
-closely, a small cave opening can be seen in the side of the mountain to the
-
-west.
-
-"
+for a wide variety of wildlife.  Lining the ground here are discarded needles
+from the trees, as well as a decent amount of pine cones.  The large amounts
+of snow seen in the other parts of the range is not to be found here, as the
+dense growth of trees shelters this spot of the mountains.  A solid wall of
+rock lies to the north, blocking passage in that direction.  Looking more
+closely, a small cave opening can be seen in the side of the mountain to the
+west.
+"
 "reset pine cones?
-
-cave opening
-
-"
+cave opening
+"
 301465600 0
 3 8 0
 D1
@@ -960,37 +730,26 @@ A
 "enter crawl"
 "cave opening west"
 "act_tochar( #den, ch );
-
-act_notchar( #rden, ch );
-
-transfer( ch, find_room( 38776 ) );
-
-act_notchar( #aden, ch );
-
-loop( followers ) {
-
- ch = rch;
-
- acode( room, 1 );
-
- }
-
-"
+act_notchar( #rden, ch );
+transfer( ch, find_room( 38776 ) );
+act_notchar( #aden, ch );
+loop( followers ) {
+ ch = rch;
+ acode( room, 1 );
+ }
+"
 E
 "den"
 "You ease your way into the narrow entrance of the dark cave.
-
-"
+"
 E
 "rden"
 "$n slowly eases $s way into the narrow entrance of the dark cave.
-
-"
+"
 E
 "aden"
 "$n emerges from the cave's entrance to the east.
-
-"
+"
 !
 0 0 0
 -1
@@ -999,14 +758,10 @@ S
 #38776
 "Dark Cave"
 "Dark and cold, this cave appears empty at first glance.  However, upon closer
-
-inspection, a large mound of skeletons and fur can be seen towards the back of
-
-the cave.  Oddly, as if something deliberately unleashed an ice storm here, a
-
-layer of frost covers the entire inside of this natural crevice.
-
-"
+inspection, a large mound of skeletons and fur can be seen towards the back of
+the cave.  Oddly, as if something deliberately unleashed an ice storm here, a
+layer of frost covers the entire inside of this natural crevice.
+"
 ""
 301465604 0
 11 5 0
@@ -1018,27 +773,18 @@ A
 ""
 ""
 "send_to_room( #chill, room );
-
-i = 7d5;
-
-loop( all_in_room ) {
-
-  if( is_player( rch ) ) {
-
-    inflict_cold( rch, null, i, \"wave of freezing cold\" );
-
-    cold_message( rch, i, \"Drawing the heat from your body, a wave of freezing cold\" );
-
-    }
-
-  }
-
-"
+i = 7d5;
+loop( all_in_room ) {
+  if( is_player( rch ) ) {
+    inflict_cold( rch, null, i, \"wave of freezing cold\" );
+    cold_message( rch, i, \"Drawing the heat from your body, a wave of freezing cold\" );
+    }
+  }
+"
 E
 "chill"
 "An unnatural frost lines the walls of the cave, emanating a bone-chilling cold.
-
-"
+"
 !
 2 500 0
 -1
@@ -1047,29 +793,18 @@ S
 #38777
 "The Edge of a Secluded Valley"
 "Snow drifts across the snowy wasteland, carried by the rolling winds. 
-
-Shifting constantly, piles of snow are decimated and then reform a few feet
-
-away into small white bumps.  No visible plant life dwells on the surface of
-
-the snow, only beneath its icy cover frozen for eternity.  Watching from the
-
-south, a small steep mountain views every step like an ancient giant of frozen
-
-rock.  Passage to the south would nearly be impossible for any mortal being. 
-
-Off to the north barely visible in the snow flurries stands a large tent of
-
-thick furry hides, poles, and wood.  Perhaps there is some sort of life
-
-dwelling across this snowy plain after all.
-
-"
+Shifting constantly, piles of snow are decimated and then reform a few feet
+away into small white bumps.  No visible plant life dwells on the surface of
+the snow, only beneath its icy cover frozen for eternity.  Watching from the
+south, a small steep mountain views every step like an ancient giant of frozen
+rock.  Passage to the south would nearly be impossible for any mortal being. 
+Off to the north barely visible in the snow flurries stands a large tent of
+thick furry hides, poles, and wood.  Perhaps there is some sort of life
+dwelling across this snowy plain after all.
+"
 "steep mountain south
-
-tent north
-
-"
+tent north
+"
 301465600 0
 17 8 0
 D1
@@ -1086,8 +821,7 @@ S
 #38778
 "Dense Pine Forest"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1097,27 +831,17 @@ S
 #38779
 "Snowy Plain"
 "A pyramid, yet rectangular tent of heavy furs, iron poles, and wood is visible
-
-to the north in tiny windows of visibility from the fierce snow flurries and
-
-storms raging across the snow plain.  Pushing anything back into the jagged
-
-ice covered mouth to the south, the winds rage unleashes a barrage of hits
-
-intended to stop any advancement.  The mountains slopes to the south seem
-
-almost impossible to climb as small avalanches tumble down the sides missing
-
-this area completely.  The harshness of the snow plain seems more comforting
-
-than the mountains.
-
-"
+to the north in tiny windows of visibility from the fierce snow flurries and
+storms raging across the snow plain.  Pushing anything back into the jagged
+ice covered mouth to the south, the winds rage unleashes a barrage of hits
+intended to stop any advancement.  The mountains slopes to the south seem
+almost impossible to climb as small avalanches tumble down the sides missing
+this area completely.  The harshness of the snow plain seems more comforting
+than the mountains.
+"
 "tent north
-
-steep mountain south
-
-"
+steep mountain south
+"
 301465600 0
 17 8 0
 D1
@@ -1134,13 +858,10 @@ S
 #38780
 "Between Two Tents"
 "Under Construction.
-
-"
+"
 "tent east and west
-
-fire?
-
-"
+fire?
+"
 301465600 0
 17 8 0
 D0
@@ -1165,15 +886,11 @@ S
 #38781
 "Inside a Low-Built Tent"
 "Under Construction.
-
-"
+"
 "sentry tent
-
-no.mob
-
-single sconce provides light
-
-"
+no.mob
+single sconce provides light
+"
 335020045 0
 0 5 0
 D3
@@ -1186,15 +903,11 @@ S
 #38782
 "Inside a Low-Built Tent"
 "Under Construction.
-
-"
+"
 "sentry tent
-
-no.mob
-
-single sconce provides light
-
-"
+no.mob
+single sconce provides light
+"
 335020045 0
 0 5 0
 D1
@@ -1207,21 +920,14 @@ S
 #38783
 "Snowy Plain"
 "A small mountain prevents passage to the south, resembling a jagged arrow head
-
-that would be impossible to even attempt to climb over it.  Sinking downward
-
-with nearly every step, the snow is very deep over the frozen ground lying
-
-below it.  Heavy snow flurries beat against the face and body, preventing
-
-little windows of sight every now and then.  Visible in the brief windows of
-
-the snow flurries, a tent of furs, wood, and poles lies to the northeast.
-
-"
+that would be impossible to even attempt to climb over it.  Sinking downward
+with nearly every step, the snow is very deep over the frozen ground lying
+below it.  Heavy snow flurries beat against the face and body, preventing
+little windows of sight every now and then.  Visible in the brief windows of
+the snow flurries, a tent of furs, wood, and poles lies to the northeast.
+"
 "steep mountain south
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -1242,11 +948,9 @@ S
 #38784
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent east
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -1267,23 +971,15 @@ S
 #38785
 "Snowy Plain"
 "Standing out like a twisted, jagged pyramid of rock, a small mountain blocks
-
-off the south, preventing any passage there.  Tiny avalanches tumble down from
-
-the distant slopes of the mountain, way out of harm's way.  Cracked pools of
-
-solid pools of ice lie off to the west, making a walk across there too
-
-dangerous.  Only the way across the edge of the snow covered valley and a path
-
-toward the north of the snowy plains are left open to take as the snow beats
-
-upon all relentlessly from above.
-
-"
+off the south, preventing any passage there.  Tiny avalanches tumble down from
+the distant slopes of the mountain, way out of harm's way.  Cracked pools of
+solid pools of ice lie off to the west, making a walk across there too
+dangerous.  Only the way across the edge of the snow covered valley and a path
+toward the north of the snowy plains are left open to take as the snow beats
+upon all relentlessly from above.
+"
 "steep mountain south
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -1300,25 +996,16 @@ S
 #38786
 "Snowy Plain"
 "A jagged glacier about half the size of a mountain lies to the southwest
-
-across the plain of snow.  across the plain of snow.  Gaining in size over
-
-many years, the glacier appears like no one would be able to climb over the
-
-ice.  Instead it leaves the choice of continuing along the snow plain and its
-
-fierce chilly winds and the near zero visibility as snows pound against all in
-
-their way.  Humanoid sized animal tracks cross back and forth across the snow
-
-leaving a trail in all directions.  Most of the tracks appear to be very
-
-recent.
-
-"
+across the plain of snow.  across the plain of snow.  Gaining in size over
+many years, the glacier appears like no one would be able to climb over the
+ice.  Instead it leaves the choice of continuing along the snow plain and its
+fierce chilly winds and the near zero visibility as snows pound against all in
+their way.  Humanoid sized animal tracks cross back and forth across the snow
+leaving a trail in all directions.  Most of the tracks appear to be very
+recent.
+"
 "steep mountain southwest
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -1343,8 +1030,7 @@ S
 #38787
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -1370,11 +1056,9 @@ S
 #38788
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent south
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -1395,8 +1079,7 @@ S
 #38789
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -1422,25 +1105,16 @@ S
 #38790
 "Snowy Plain"
 "Without mercy, the cold chilly winds beat upon all across the snow plain like
-
-a giant with his club.  The harsh cold climate causes even the bravest and
-
-strongest to buckle slightly against the will of nature.  Appearing lifeless,
-
-the snow plains have all but buried specs of frozen plants beneath the surface
-
-in a deep grave of white ice.  With visibility dimming for moments at a time,
-
-a ice covered mountain to south appears to be impassable.  Instead the
-
-mountain acts like a barrier holding the snow plain in the center of the
-
-mountain range.
-
-"
+a giant with his club.  The harsh cold climate causes even the bravest and
+strongest to buckle slightly against the will of nature.  Appearing lifeless,
+the snow plains have all but buried specs of frozen plants beneath the surface
+in a deep grave of white ice.  With visibility dimming for moments at a time,
+a ice covered mountain to south appears to be impassable.  Instead the
+mountain acts like a barrier holding the snow plain in the center of the
+mountain range.
+"
 "steep mountain south
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -1461,25 +1135,16 @@ S
 #38791
 "Snowy Plain"
 "A black appearing mountain of ice and cold stone to the south stares down
-
-icily upon all those crossing the snow plain.  Lurking near the base of the
-
-mountain is a half-mountain sized glacier of solid jagged ice.  Both these
-
-objects of the cold are impassable and appear more treacherous than the snow
-
-plain.  The wind whips like an ice, cold bee sting, again, and again, and
-
-again.  Small hills of white snow drift across the frozen snow covered ground
-
-and reform just a few feet away.  The snow plain appears to shift its shape
-
-from the constant snow drifts making the ground somewhat new every few hours.
-
-"
+icily upon all those crossing the snow plain.  Lurking near the base of the
+mountain is a half-mountain sized glacier of solid jagged ice.  Both these
+objects of the cold are impassable and appear more treacherous than the snow
+plain.  The wind whips like an ice, cold bee sting, again, and again, and
+again.  Small hills of white snow drift across the frozen snow covered ground
+and reform just a few feet away.  The snow plain appears to shift its shape
+from the constant snow drifts making the ground somewhat new every few hours.
+"
 "steep mountain south
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -1500,21 +1165,14 @@ S
 #38792
 "Snowy Plain"
 "With each step, it seems to sink downward, deep into the snow.  Atop this
-
-ground, the snow appears soft unlike the other ground across the snow plain,
-
-making it easy to sink into the clutches of the white ice.  The ground
-
-although very dangerous, appears less dangerous than the constant avalanches
-
-on the slopes of the southern mountain.  Luckily the avalanche fails to cover
-
-this distance.
-
-"
+ground, the snow appears soft unlike the other ground across the snow plain,
+making it easy to sink into the clutches of the white ice.  The ground
+although very dangerous, appears less dangerous than the constant avalanches
+on the slopes of the southern mountain.  Luckily the avalanche fails to cover
+this distance.
+"
 "steep mountain south
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -1535,23 +1193,15 @@ S
 #38793
 "Snowy Plain"
 "Large mounds of snow cover the grounds to the west before a large jagged
-
-glacier.  Passage through there would be not only treacherous but chances of
-
-survival close to none.  A worn trail of clawed humanoid like tracks tread the
-
-center of the snow to the north and just dabbling at the east.  Taking days to
-
-wear in, the trail seems to be re-covering itself with the aid of the snow
-
-drifts.  Another mountain which appears to have collapsed partly in lies to
-
-the south, preventing passage there.
-
-"
+glacier.  Passage through there would be not only treacherous but chances of
+survival close to none.  A worn trail of clawed humanoid like tracks tread the
+center of the snow to the north and just dabbling at the east.  Taking days to
+wear in, the trail seems to be re-covering itself with the aid of the snow
+drifts.  Another mountain which appears to have collapsed partly in lies to
+the south, preventing passage there.
+"
 "steep mountain south
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -1568,11 +1218,9 @@ S
 #38794
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "bonfire?  stacks of bones?
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -1597,8 +1245,7 @@ S
 #38795
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -1624,8 +1271,7 @@ S
 #38796
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -1651,11 +1297,9 @@ S
 #38797
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent north
-
-"
+"
 301465600 0
 17 8 0
 D1
@@ -1676,11 +1320,9 @@ S
 #38798
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the southwest
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -1705,11 +1347,9 @@ S
 #38799
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent south
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -1730,8 +1370,7 @@ S
 #38800
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -1757,13 +1396,10 @@ S
 #38801
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent west
-
-steep mountain southeast
-
-"
+steep mountain southeast
+"
 301465600 0
 17 8 0
 D0
@@ -1784,23 +1420,15 @@ S
 #38802
 "Snowy Plain"
 "Still visible in the windows of sight from the fierce snow flurries and
-
-storms, a tent of heavy furs, poles, and wood stands to the northwest.  Like a
-
-army of madmen, the snow and wind beat down in a fury of hits causing just a
-
-waiver in stance against survival in the snow plains.  Nipping at the skin,
-
-the ice and cold attempts to numb every bit of warmth that it can.  Large
-
-animal humanoid tracks are visible in the deep snow trailing to the north and
-
-northwest.
-
-"
+storms, a tent of heavy furs, poles, and wood stands to the northwest.  Like a
+army of madmen, the snow and wind beat down in a fury of hits causing just a
+waiver in stance against survival in the snow plains.  Nipping at the skin,
+the ice and cold attempts to numb every bit of warmth that it can.  Large
+animal humanoid tracks are visible in the deep snow trailing to the north and
+northwest.
+"
 "steep mountain south
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -1817,11 +1445,9 @@ S
 #38803
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the west
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -1838,11 +1464,9 @@ S
 #38804
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent east
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -1863,8 +1487,7 @@ S
 #38805
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -1890,11 +1513,9 @@ S
 #38806
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent south
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -1915,8 +1536,7 @@ S
 #38807
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -1942,11 +1562,9 @@ S
 #38808
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent opening west
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -1971,13 +1589,10 @@ S
 #38809
 "Inside a Low-Built Tent"
 "Under Construction.
-
-"
+"
 "sconces provide light
-
-no.mob
-
-"
+no.mob
+"
 335020045 0
 0 6 0
 D1
@@ -1994,8 +1609,7 @@ S
 #38810
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2021,11 +1635,9 @@ S
 #38811
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent opening north
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -2050,13 +1662,10 @@ S
 #38812
 "Inside a Low-Built Tent"
 "Under Construction.
-
-"
+"
 "sconces provide light
-
-no.mob
-
-"
+no.mob
+"
 301465613 0
 0 6 0
 D2
@@ -2073,8 +1682,7 @@ S
 #38813
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2100,8 +1708,7 @@ S
 #38814
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2127,11 +1734,9 @@ S
 #38815
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent east
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -2152,8 +1757,7 @@ S
 #38816
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2179,11 +1783,9 @@ S
 #38817
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent south
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -2204,8 +1806,7 @@ S
 #38818
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2231,11 +1832,9 @@ S
 #38819
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent west
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -2256,8 +1855,7 @@ S
 #38820
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2283,8 +1881,7 @@ S
 #38821
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2310,11 +1907,9 @@ S
 #38822
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep mountain south
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -2331,11 +1926,9 @@ S
 #38823
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "mountains to southeast, slope downward to valley northeast
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -2360,11 +1953,9 @@ S
 #38824
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent north
-
-"
+"
 301465600 0
 17 8 0
 D1
@@ -2385,13 +1976,10 @@ S
 #38825
 "Inside a Low-Built Tent"
 "Under Construction.
-
-"
+"
 "sconces provide light
-
-no.mob
-
-"
+no.mob
+"
 301465613 0
 0 6 0
 D3
@@ -2408,8 +1996,7 @@ S
 #38826
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2435,8 +2022,7 @@ S
 #38827
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2462,8 +2048,7 @@ S
 #38828
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2489,8 +2074,7 @@ S
 #38829
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2516,11 +2100,9 @@ S
 #38830
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent west
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -2541,8 +2123,7 @@ S
 #38831
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2568,11 +2149,9 @@ S
 #38832
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent south
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -2593,8 +2172,7 @@ S
 #38833
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2620,11 +2198,9 @@ S
 #38834
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent opening east
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -2649,8 +2225,7 @@ S
 #38835
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2676,8 +2251,7 @@ S
 #38836
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2703,8 +2277,7 @@ S
 #38837
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2730,11 +2303,9 @@ S
 #38838
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent north
-
-"
+"
 301465600 0
 17 8 0
 D1
@@ -2755,11 +2326,9 @@ S
 #38839
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent opening west
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -2784,15 +2353,11 @@ S
 #38840
 "Inside a Low-Built Tent"
 "Under Construction.
-
-"
+"
 "leader's tent
-
-sconces keep the tent lit
-
-no.mob
-
-"
+sconces keep the tent lit
+no.mob
+"
 301465613 0
 0 6 0
 D1
@@ -2809,8 +2374,7 @@ S
 #38841
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2836,8 +2400,7 @@ S
 #38842
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2863,11 +2426,9 @@ S
 #38843
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent north
-
-"
+"
 301465600 0
 17 9 0
 D1
@@ -2888,11 +2449,9 @@ S
 #38844
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the southwest
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -2917,11 +2476,9 @@ S
 #38845
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the west
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -2938,11 +2495,9 @@ S
 #38846
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent east
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -2963,8 +2518,7 @@ S
 #38847
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -2990,11 +2544,9 @@ S
 #38848
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent south
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -3015,8 +2567,7 @@ S
 #38849
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -3042,8 +2593,7 @@ S
 #38850
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -3069,8 +2619,7 @@ S
 #38851
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -3096,11 +2645,9 @@ S
 #38852
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the west
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3117,11 +2664,9 @@ S
 #38853
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the southwest
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3146,11 +2691,9 @@ S
 #38854
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the west
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3171,11 +2714,9 @@ S
 #38855
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the west
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3196,11 +2737,9 @@ S
 #38856
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the west
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3221,11 +2760,9 @@ S
 #38857
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent opening east
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -3250,13 +2787,10 @@ S
 #38858
 "Inside a Low-Built Tent"
 "Under Construction.
-
-"
+"
 "sconces keep the tent lit
-
-no.mob
-
-"
+no.mob
+"
 301465613 0
 0 6 0
 D3
@@ -3273,11 +2807,9 @@ S
 #38859
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to east
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3294,11 +2826,9 @@ S
 #38860
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to east
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3319,11 +2849,9 @@ S
 #38861
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to east
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3344,11 +2872,9 @@ S
 #38862
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to east
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3369,11 +2895,9 @@ S
 #38863
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to east
-
-"
+"
 301465600 0
 17 9 0
 D2
@@ -3390,11 +2914,9 @@ S
 #38864
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to north/east
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3419,8 +2941,7 @@ S
 #38865
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -3446,11 +2967,9 @@ S
 #38866
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent west
-
-"
+"
 301465600 0
 17 8 0
 D0
@@ -3471,8 +2990,7 @@ S
 #38867
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -3498,11 +3016,9 @@ S
 #38868
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent south
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3523,8 +3039,7 @@ S
 #38869
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -3550,8 +3065,7 @@ S
 #38870
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 6 0
@@ -3561,8 +3075,7 @@ S
 #38871
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 8 0
@@ -3588,11 +3101,9 @@ S
 #38872
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent north
-
-"
+"
 301465600 0
 17 9 0
 D1
@@ -3613,8 +3124,7 @@ S
 #38873
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 8 0
@@ -3640,11 +3150,9 @@ S
 #38874
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent east
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3665,13 +3173,10 @@ S
 #38875
 "Inside a Low-Built Tent"
 "Under Construction.
-
-"
+"
 "no.mob
-
-sconces provide light
-
-"
+sconces provide light
+"
 301465613 0
 0 6 0
 D1
@@ -3688,11 +3193,9 @@ S
 #38876
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent opening west
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3717,8 +3220,7 @@ S
 #38877
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -3744,8 +3246,7 @@ S
 #38878
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -3771,11 +3272,9 @@ S
 #38879
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the west
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3796,11 +3295,9 @@ S
 #38880
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the northwest
-
-"
+"
 301465600 0
 17 9 0
 D1
@@ -3817,11 +3314,9 @@ S
 #38881
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the northwest
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3846,11 +3341,9 @@ S
 #38882
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the northwest
-
-"
+"
 301465600 0
 17 9 0
 D1
@@ -3867,11 +3360,9 @@ S
 #38883
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the northwest
-
-"
+"
 301465600 0
 17 9 0
 D1
@@ -3892,11 +3383,9 @@ S
 #38884
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable cliff to the northwest
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -3921,11 +3410,9 @@ S
 #38885
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "Further expansion north in the future.  Faint trail between the mountains.
-
-"
+"
 301465600 0
 17 9 0
 D1
@@ -3942,11 +3429,9 @@ S
 #38886
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable mountain to the north
-
-"
+"
 301465600 0
 17 9 0
 D1
@@ -3967,11 +3452,9 @@ S
 #38887
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable mountain to the north
-
-"
+"
 301465600 0
 17 9 0
 D1
@@ -3992,11 +3475,9 @@ S
 #38888
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "steep, unclimbable mountain to the north
-
-"
+"
 301465600 0
 17 9 0
 D1
@@ -4017,13 +3498,10 @@ S
 #38889
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to north/east
-
-steep, unclimbable mountain to the north
-
-"
+steep, unclimbable mountain to the north
+"
 301465600 0
 17 9 0
 D2
@@ -4040,11 +3518,9 @@ S
 #38890
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to north/east
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -4069,11 +3545,9 @@ S
 #38891
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to north/east
-
-"
+"
 301465600 0
 17 9 0
 D2
@@ -4090,11 +3564,9 @@ S
 #38892
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to north/east
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -4119,11 +3591,9 @@ S
 #38893
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to north
-
-"
+"
 301465600 0
 17 9 0
 D1
@@ -4144,11 +3614,9 @@ S
 #38894
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to north
-
-"
+"
 301465600 0
 17 9 0
 D1
@@ -4169,11 +3637,9 @@ S
 #38895
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to north/east
-
-"
+"
 301465600 0
 17 9 0
 D2
@@ -4190,11 +3656,9 @@ S
 #38896
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to north/east
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -4219,11 +3683,9 @@ S
 #38897
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to east
-
-"
+"
 301465600 0
 17 9 0
 D2
@@ -4240,11 +3702,9 @@ S
 #38898
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to north/east
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -4269,11 +3729,9 @@ S
 #38899
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "gradual slope down to distant valley - to east
-
-"
+"
 301465600 0
 17 9 0
 D2
@@ -4290,8 +3748,7 @@ S
 #38900
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4317,8 +3774,7 @@ S
 #38901
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4344,8 +3800,7 @@ S
 #38902
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4371,8 +3826,7 @@ S
 #38903
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4398,8 +3852,7 @@ S
 #38904
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4425,8 +3878,7 @@ S
 #38905
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4452,11 +3904,9 @@ S
 #38906
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "tent south
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -4477,8 +3927,7 @@ S
 #38907
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4504,8 +3953,7 @@ S
 #38908
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4531,8 +3979,7 @@ S
 #38909
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4558,8 +4005,7 @@ S
 #38910
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4585,8 +4031,7 @@ S
 #38911
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4612,11 +4057,9 @@ S
 #38912
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 "Martigan (arctic ranger) and snow leopard reset here.
-
-"
+"
 301465600 0
 17 9 0
 D0
@@ -4641,8 +4084,7 @@ S
 #38913
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4668,8 +4110,7 @@ S
 #38914
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4695,8 +4136,7 @@ S
 #38915
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4722,8 +4162,7 @@ S
 #38916
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4749,8 +4188,7 @@ S
 #38917
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4776,8 +4214,7 @@ S
 #38918
 "Snowy Plain"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 17 9 0
@@ -4803,8 +4240,7 @@ S
 #38919
 "Beneath the Ice"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 11 5 0
@@ -4830,8 +4266,7 @@ S
 #38920
 "Icy Hallway"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 11 5 0
@@ -4849,8 +4284,7 @@ S
 #38921
 "Three-Way Intersection in the Ice"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 11 5 0
@@ -4872,11 +4306,9 @@ S
 #38922
 "Inside a Low-Built Tent"
 "Under Construction.
-
-"
+"
 "catpeople (feral'n) family
-
-"
+"
 301596677 0
 11 7 0
 D1
@@ -4889,11 +4321,9 @@ S
 #38923
 "Inside a Low-Built Tent"
 "Under Construction.
-
-"
+"
 "catpeople (feral'n) family
-
-"
+"
 301596677 0
 11 7 0
 D3
@@ -4906,8 +4336,7 @@ S
 #38924
 "Icy Hallway"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 11 5 0
@@ -4925,8 +4354,7 @@ S
 #38925
 "Hallway Beneath the Icy"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 11 5 0
@@ -4944,11 +4372,9 @@ S
 #38926
 "Beneath the Ice"
 "Under Construction.
-
-"
+"
 "catpeople (feral'n) family
-
-"
+"
 301596677 0
 11 7 0
 D0
@@ -4961,17 +4387,12 @@ S
 #38927
 "Heated Pool of Water"
 "Under Construction.
-
-"
+"
 "heated pool of water for bathing and such
-
-dias/statue in the middle holding a light orb
-
-marble pool holds the water... built into the ice
-
-numerous bathers scattered about
-
-"
+dias/statue in the middle holding a light orb
+marble pool holds the water... built into the ice
+numerous bathers scattered about
+"
 301596677 0
 13 7 0
 D0
@@ -4992,8 +4413,7 @@ S
 #38928
 "Heated Pool of Water"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 13 7 0
@@ -5011,8 +4431,7 @@ S
 #38929
 "Heated Pool of Water"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 13 7 0
@@ -5030,8 +4449,7 @@ S
 #38930
 "Heated Pool of Water"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 13 7 0
@@ -5049,8 +4467,7 @@ S
 #38931
 "Under the Ice"
 "Under Construction.
-
-"
+"
 ""
 301465613 0
 11 5 0
@@ -5068,8 +4485,7 @@ S
 #38932
 "Long Hallway Underneath the Ice"
 "Under Construction.
-
-"
+"
 ""
 301465613 0
 11 5 0
@@ -5091,17 +4507,12 @@ S
 #38933
 "Under the Ice"
 "Under Construction.
-
-"
+"
 "dias/statue in the center of the pool
-
-statue holds a large light orb
-
-steam permeates the area
-
-marble pool set into the ice holds the water
-
-"
+statue holds a large light orb
+steam permeates the area
+marble pool set into the ice holds the water
+"
 301465613 0
 13 7 0
 D0
@@ -5122,8 +4533,7 @@ S
 #38934
 "Under the Ice"
 "Under Construction.
-
-"
+"
 ""
 301465613 0
 13 7 0
@@ -5141,8 +4551,7 @@ S
 #38935
 "Long Hallway Underneath the Ice"
 "Under Construction.
-
-"
+"
 ""
 301465613 0
 11 5 0
@@ -5168,8 +4577,7 @@ S
 #38936
 "Under the Ice"
 "Under Construction.
-
-"
+"
 ""
 301465613 0
 13 7 0
@@ -5191,8 +4599,7 @@ S
 #38937
 "Under the Ice"
 "Under Construction.
-
-"
+"
 ""
 301465613 0
 13 7 0
@@ -5210,8 +4617,7 @@ S
 #38938
 "Long Hallway Underneath the Ice"
 "Under Construction.
-
-"
+"
 ""
 301465613 0
 11 5 0
@@ -5229,8 +4635,7 @@ S
 #38939
 "An Icy Intersection"
 "Under Construction.
-
-"
+"
 ""
 301465613 0
 11 5 0
@@ -5252,11 +4657,9 @@ S
 #38940
 "Under the Ice"
 "Under Construction.
-
-"
+"
 "family of (feral'n) cat people
-
-"
+"
 301465613 0
 11 7 0
 D0
@@ -5269,11 +4672,9 @@ S
 #38941
 "Under the Ice"
 "Under Construction.
-
-"
+"
 "family of (feral'n) cat people
-
-"
+"
 301465613 0
 11 7 0
 D2
@@ -5286,8 +4687,7 @@ S
 #38942
 "Brightly Lit Hall of Ice"
 "Under Construction.
-
-"
+"
 ""
 301465613 0
 11 5 0
@@ -5309,8 +4709,7 @@ S
 #38943
 "Brightly Lit Intersection of Ice"
 "Under Construction.
-
-"
+"
 ""
 301465613 0
 11 5 0
@@ -5332,11 +4731,9 @@ S
 #38944
 "Under the Ice"
 "Under Construction.
-
-"
+"
 "family of (feral'n) cat people
-
-"
+"
 301465613 0
 11 7 0
 D1
@@ -5349,11 +4746,9 @@ S
 #38945
 "Under the Ice"
 "Under Construction.
-
-"
+"
 "family of (feral'n) cat people
-
-"
+"
 301465613 0
 11 7 0
 D3
@@ -5366,11 +4761,9 @@ S
 #38946
 "Under the Ice"
 "Under Construction.
-
-"
+"
 "stairway of ice leads up
-
-"
+"
 301596677 0
 11 5 0
 D1
@@ -5391,8 +4784,7 @@ S
 #38947
 "Path Around the Pool"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 11 5 0
@@ -5414,8 +4806,7 @@ S
 #38948
 "Path Around the Pool"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 11 5 0
@@ -5433,8 +4824,7 @@ S
 #38949
 "Path Around the Pool"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 11 5 0
@@ -5460,8 +4850,7 @@ S
 #38950
 "Path Around the Pool"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 11 5 0
@@ -5479,8 +4868,7 @@ S
 #38951
 "Heated Pool"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 13 7 0
@@ -5502,8 +4890,7 @@ S
 #38952
 "Heated Pool"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 13 7 0
@@ -5521,19 +4908,13 @@ S
 #38953
 "Heated Pool"
 "Under Construction.
-
-"
+"
 "dias/statue in the middle of the pool
-
-statue holds a large glowing light orb
-
-steam fills the area
-
-marble pool set into the ice
-
-bathers scattered about
-
-"
+statue holds a large glowing light orb
+steam fills the area
+marble pool set into the ice
+bathers scattered about
+"
 301596677 0
 13 7 0
 D0
@@ -5558,8 +4939,7 @@ S
 #38954
 "Heated Pool"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 13 7 0
@@ -5581,8 +4961,7 @@ S
 #38955
 "Hall of Ice"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 11 5 0
@@ -5604,8 +4983,7 @@ S
 #38956
 "Hall of Ice"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 11 5 0
@@ -5623,11 +5001,9 @@ S
 #38957
 "Path Around the Pool"
 "Under Construction.
-
-"
+"
 "family of (feral'n) cat people
-
-"
+"
 301596677 0
 11 7 0
 D3
@@ -5640,11 +5016,9 @@ S
 #38958
 "Icy Room"
 "Under Construction.
-
-"
+"
 "family of (feral'n) cat people
-
-"
+"
 301596677 0
 11 7 0
 D3
@@ -5657,11 +5031,9 @@ S
 #38959
 "Under the Ice"
 "Under Construction.
-
-"
+"
 "stairs leading up
-
-"
+"
 301596677 0
 11 5 0
 D3
@@ -5678,11 +5050,9 @@ S
 #38960
 "Under the Ice"
 "Under Construction.
-
-"
+"
 "stairs of ice leading up
-
-"
+"
 301596677 0
 11 5 0
 D3
@@ -5699,13 +5069,10 @@ S
 #38961
 "Hall of Shimmering Ice"
 "Under Construction.
-
-"
+"
 "crystalline orbs/globes hanging from the ceiling provide light
-
-runed arch
-
-"
+runed arch
+"
 301596677 0
 11 5 0
 D1
@@ -5722,11 +5089,9 @@ S
 #38962
 "Hall of Shimmering Ice"
 "Under Construction.
-
-"
+"
 "crystalline orbs/globes hanging from the ceiling provide light
-
-"
+"
 301596677 0
 11 5 0
 D0
@@ -5743,11 +5108,9 @@ S
 #38963
 "Hall of Shimmering Ice"
 "Under Construction.
-
-"
+"
 "crystalline orbs/globes hanging from the ceiling provide light
-
-"
+"
 301596677 0
 11 5 0
 D0
@@ -5772,11 +5135,9 @@ S
 #38964
 "Hall of Shimmering Ice"
 "Under Construction.
-
-"
+"
 "crystalline orbs/globes hanging from the ceiling provide light
-
-"
+"
 301596677 0
 11 5 0
 D0
@@ -5801,17 +5162,12 @@ S
 #38965
 "Crystalline Audiance Chamber"
 "Under Construction.
-
-"
+"
 "leader and attendants
-
-furs everywhere
-
-chairs and table of ivory/bone
-
-statues holding glowing orbs placed about the room
-
-"
+furs everywhere
+chairs and table of ivory/bone
+statues holding glowing orbs placed about the room
+"
 301596677 0
 11 7 0
 D2
@@ -5824,13 +5180,10 @@ S
 #38966
 "Icy Alcove"
 "Under Construction.
-
-"
+"
 "guard alcove?  statues that animate?
-
-spirit in the statue
-
-"
+spirit in the statue
+"
 301596677 0
 11 4 0
 D3
@@ -5843,13 +5196,10 @@ S
 #38967
 "Icy Alcove"
 "Under Construction.
-
-"
+"
 "guard alcove?  statues that animate?
-
-spirit in the statue
-
-"
+spirit in the statue
+"
 301596677 0
 11 4 0
 D1
@@ -5862,13 +5212,10 @@ S
 #38968
 "Icy Alcove"
 "Under Construction.
-
-"
+"
 "guard alcove?  statues that animate?
-
-spirit in the statue
-
-"
+spirit in the statue
+"
 301596677 0
 11 4 0
 D1
@@ -5881,13 +5228,10 @@ S
 #38969
 "Icy Alcove"
 "Under Construction.
-
-"
+"
 "guard alcove?  statues that animate?
-
-spirit in the statue
-
-"
+spirit in the statue
+"
 301596677 0
 11 4 0
 D3
@@ -5900,11 +5244,9 @@ S
 #38970
 "Underneath the Ice"
 "Under Construction.
-
-"
+"
 "stairs of ice leading up
-
-"
+"
 301596677 0
 11 5 0
 D0
@@ -5925,8 +5267,7 @@ S
 #38971
 "Icy Hallway"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 11 5 0
@@ -5952,8 +5293,7 @@ S
 #38972
 "Icy Hallway"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 11 5 0
@@ -5975,11 +5315,9 @@ S
 #38973
 "Room of Ice"
 "Under Construction.
-
-"
+"
 "family of cat people
-
-"
+"
 301596677 0
 11 7 0
 D1
@@ -5992,11 +5330,9 @@ S
 #38974
 "Room of Ice"
 "Under Construction.
-
-"
+"
 "family of cat people
-
-"
+"
 301596677 0
 11 7 0
 D3
@@ -6009,11 +5345,9 @@ S
 #38975
 "Room of Ice"
 "Under Construction.
-
-"
+"
 "family of cat people
-
-"
+"
 301596677 0
 11 7 0
 D3
@@ -6026,11 +5360,9 @@ S
 #38976
 "Room of Ice"
 "Under Construction.
-
-"
+"
 "family of cat people
-
-"
+"
 301596677 0
 11 7 0
 D1
@@ -6043,11 +5375,9 @@ S
 #38977
 "Icy Hallway"
 "Under Construction.
-
-"
+"
 "crystal statues lining the east wall?
-
-"
+"
 301596677 0
 11 5 0
 D0
@@ -6068,11 +5398,9 @@ S
 #38978
 "Icy Hallway"
 "Under Construction.
-
-"
+"
 "crystal statues lining the east wall?
-
-"
+"
 301596677 0
 11 5 0
 D0
@@ -6089,8 +5417,7 @@ S
 #38979
 "Heated Pool"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 13 7 0
@@ -6112,8 +5439,7 @@ S
 #38980
 "Heated Pool"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 13 7 0
@@ -6131,11 +5457,9 @@ S
 #38981
 "Heated Pool"
 "Under Construction.
-
-"
+"
 "see other pools for notes
-
-"
+"
 301596677 0
 13 7 0
 D1
@@ -6156,8 +5480,7 @@ S
 #38982
 "Heated Pool"
 "Under Construction.
-
-"
+"
 ""
 301596677 0
 13 7 0

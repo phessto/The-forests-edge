@@ -10,18 +10,12 @@
 #70000
 "Hillside Beyond the Brush"
 "You stand at the base of a large hill that rises to the south.  The sound
-
-of water can be heard lapping in the distance and the air is thick with
-
-the fragrance of a variety of weeds and flowers that grow across this
-
-side of the hill.  To the west the brush is extremely thick with brambles
-
-and bushes making movement in that direction impassible.  A trail of some
-
-sort can be seen rising to the north beyond the horizon.
-
-"
+of water can be heard lapping in the distance and the air is thick with
+the fragrance of a variety of weeds and flowers that grow across this
+side of the hill.  To the west the brush is extremely thick with brambles
+and bushes making movement in that direction impassible.  A trail of some
+sort can be seen rising to the north beyond the horizon.
+"
 ""
 301465600 0
 4 9 0
@@ -37,36 +31,27 @@ A
 "1 west"
 ""
 "act_tochar( #char, ch );
-
-"
+"
 E
 "char"
 "The brush is far too thick to move to the west.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "if( !is_exhausted( ch ) ) {
-
-send_to_char( #rise, ch );
-
-continue;
-
-}
-
-else
-
-continue;
-
-"
+send_to_char( #rise, ch );
+continue;
+}
+else
+continue;
+"
 E
 "rise"
 "You hike up the slope of the hill.
-
-"
+"
 !
 3 2 4
 755 9 1509949540 3 0
@@ -77,18 +62,12 @@ S
 #70001
 "Top of the Hill"
 "This large grassy hill gives an excellent view to the surrounding area.  To
-
-the north you can see deep brush that borders a worn path.  The sound of waves
-
-can be heard rolling against the muddied hillside to the east.  To the south,
-
-a thick forest looms ominously, surrounding this hill on the west, until the
-
-foliage thins into a dirt path leading southward.  Oddly a red pennant can be
-
-seen flying farther in the distance to the southwest.
-
-"
+the north you can see deep brush that borders a worn path.  The sound of waves
+can be heard rolling against the muddied hillside to the east.  To the south,
+a thick forest looms ominously, surrounding this hill on the west, until the
+foliage thins into a dirt path leading southward.  Oddly a red pennant can be
+seen flying farther in the distance to the southwest.
+"
 ""
 301465600 0
 4 9 0
@@ -107,26 +86,19 @@ D2
 E
 "red pennant southwest"
 "The red pennant appears to be off in the distance, and you can not make out
-
-the heraldic insignia from this far away.
-
-"
+the heraldic insignia from this far away.
+"
 -1
 S
 
 #70002
 "Overlooking the Sea"
 "You are on the side of a hill with a muddy slope towards the east that
-
-slides steeply down into the water of a vast sea.  Far to the north at a
-
-much lower elevation the crashing of waves can be seen on a small beach. 
-
-More hills lie to the west while the east is edged by water that
-
-stretches to the horizon.
-
-"
+slides steeply down into the water of a vast sea.  Far to the north at a
+much lower elevation the crashing of waves can be seen on a small beach. 
+More hills lie to the west while the east is edged by water that
+stretches to the horizon.
+"
 ""
 301465600 0
 4 9 0
@@ -138,15 +110,12 @@ A
 "1 east"
 ""
 "act_tochar( #char, ch );
-
-"
+"
 E
 "char"
 "The slope appears dangerously slick and the water too rough to safely
-
-travel east.
-
-"
+travel east.
+"
 !
 0 0 0
 182 9 1509949540 3 0
@@ -156,18 +125,12 @@ S
 #70003
 "The Wilderness Fringe"
 "The forest here is a wild, unkempt mass of all manners of vegetation. 
-
-Various shrubs and brambles fight for survival among the roots of the
-
-towering trees.  The faint sounds of the Inner Sea are muffled by the
-
-dense cluster of trees to the east.  To the north, you can see where the
-
-forest thins out, and the dense vegetation westward appears not to be
-
-impassable.
-
-"
+Various shrubs and brambles fight for survival among the roots of the
+towering trees.  The faint sounds of the Inner Sea are muffled by the
+dense cluster of trees to the east.  To the north, you can see where the
+forest thins out, and the dense vegetation westward appears not to be
+impassable.
+"
 ""
 301465600 0
 3 9 0
@@ -186,18 +149,12 @@ S
 #70004
 "The Wilderness Fringe"
 "The thick tangle of forest thins out slightly here, and to the west the
-
-forest appears to open up even more.  To the south and east, the forest
-
-continues, though it appears to be barely traversable.  For the most
-
-part, the normal sounds of wildlife are not present here, but to the west
-
-you can hear strange, bird-like screeching sounds.  On the ground here,
-
-you can see a few unusually large, bloodied feathers.
-
-"
+forest appears to open up even more.  To the south and east, the forest
+continues, though it appears to be barely traversable.  For the most
+part, the normal sounds of wildlife are not present here, but to the west
+you can hear strange, bird-like screeching sounds.  On the ground here,
+you can see a few unusually large, bloodied feathers.
+"
 ""
 301465600 0
 3 9 0
@@ -216,31 +173,22 @@ D3
 E
 "feathers bloodied unusual"
 "These feathers are over a foot long and mostly white, except for the
-
-spots of blood on them.  Curiously, there are a few golden hairs at the
-
-base of each feather, making you wonder what manner of creature lives
-
-nearby.
-
-"
+spots of blood on them.  Curiously, there are a few golden hairs at the
+base of each feather, making you wonder what manner of creature lives
+nearby.
+"
 A
 "listen"
 "west strange bird-like screeching sounds"
 "act_tochar( #listen, ch );
-
-"
+"
 E
 "listen"
 "The screeching sounds you can hear to the west sound quite similar to
-
-those that would be made by a large bird of prey such as an eagle or a
-
-condor.  However, the sounds are not as high pitched as most birds' would
-
-be.  In fact, one is reminded of the gutteral roar of a lion or bear.
-
-"
+those that would be made by a large bird of prey such as an eagle or a
+condor.  However, the sounds are not as high pitched as most birds' would
+be.  In fact, one is reminded of the gutteral roar of a lion or bear.
+"
 !
 0 0 0
 2506 9 1509949540 3 0
@@ -250,22 +198,14 @@ S
 #70005
 "An Overgrown Forest"
 "The highest branches of the trees all around reach towards each other,
-
-intertwining and blocking most of the sky from view.  At ground level, ferns
-
-and other shorter foliage similarly encroach upon the less than obvious path. 
-
-A pale, broken feather has caught on the thorns of a short shrub with
-
-yellow-orange flowers.  The shrub is near the northern end of the path, where
-
-it connects to a more open path.  The undergrowth is thick with thorny shrubs
-
-and tangled branches all around, too thick to allow passage in most directions
-
-except north and west.
-
-"
+intertwining and blocking most of the sky from view.  At ground level, ferns
+and other shorter foliage similarly encroach upon the less than obvious path. 
+A pale, broken feather has caught on the thorns of a short shrub with
+yellow-orange flowers.  The shrub is near the northern end of the path, where
+it connects to a more open path.  The undergrowth is thick with thorny shrubs
+and tangled branches all around, too thick to allow passage in most directions
+except north and west.
+"
 ""
 301465600 0
 3 9 0
@@ -283,20 +223,13 @@ S
 #70006
 "The End of a Dirt Path"
 "Here is the beginning (or perhaps the end) of a wide, dirt path leading
-
-off to the west.  A thick tangle of dense forest flanks the path,
-
-preventing travellers from exploring more than a few feet. To the
-
-east, the forest appears less dense to the point where travel would be
-
-possible.  There is a stench of death here, and feral screeching sounds
-
-can be heard from further down the path.  On either side of the path,
-
-tall torches have been planted firmly in the ground.
-
-"
+off to the west.  A thick tangle of dense forest flanks the path,
+preventing travellers from exploring more than a few feet. To the
+east, the forest appears less dense to the point where travel would be
+possible.  There is a stench of death here, and feral screeching sounds
+can be heard from further down the path.  On either side of the path,
+tall torches have been planted firmly in the ground.
+"
 ""
 301465609 0
 12 8 0
@@ -311,42 +244,32 @@ D3
 E
 "tall torches"
 "These torches are over a gnome in height, and are topped with a small
-
-cage to prevent the fire from escaping into the forest.
-
-"
+cage to prevent the fire from escaping into the forest.
+"
 A
 "listen"
 "west strange bird-like screeching sounds"
 "act_tochar( #listen, ch );
-
-"
+"
 E
 "listen"
 "The screeching sounds you can hear to the west sound quite similar to
-
-those that would be made by a large bird of prey such as an eagle or a
-
-condor.  However, the sounds are not as high pitched as most birds would
-
-be.  In fact, one is reminded of the gutteral roar of a lion or bear.
-
-"
+those that would be made by a large bird of prey such as an eagle or a
+condor.  However, the sounds are not as high pitched as most birds would
+be.  In fact, one is reminded of the gutteral roar of a lion or bear.
+"
 !
 0 0 0
 A
 ""
 ""
 "send_to_area( #screech, room );
-
-"
+"
 E
 "screech"
 "Out of nowhere, you hear the bloodcurdling screeching of what must be an
-
-extremely large, extremely angry bird of prey.
-
-"
+extremely large, extremely angry bird of prey.
+"
 !
 4 50 0
 3432 17 1509949540 -2 0
@@ -356,18 +279,12 @@ S
 #70007
 "A Cluttered Dirt Path"
 "The dirt path continues here to the east and west, and the forest forms
-
-an impenetrable wall to the north and south.  Along the path, you can see
-
-a few broken wooden boards, bits of torn blue cloth, and dried blood
-
-spattered on most of the debris.  To the southwest, you can see what
-
-vaguely appears to be a large stone statue, though of exactly what, you
-
-cannot yet tell.
-
-"
+an impenetrable wall to the north and south.  Along the path, you can see
+a few broken wooden boards, bits of torn blue cloth, and dried blood
+spattered on most of the debris.  To the southwest, you can see what
+vaguely appears to be a large stone statue, though of exactly what, you
+cannot yet tell.
+"
 ""
 301465600 0
 12 8 0
@@ -382,39 +299,27 @@ D3
 E
 "few broken wooden boards"
 "These boards appear to be rather unremarkable, and could have been pieces
-
-of almost any wooden construct.  By now though, they are broken and
-
-scattered into useless fragments.
-
-"
+of almost any wooden construct.  By now though, they are broken and
+scattered into useless fragments.
+"
 E
 "bits torn blue cloth"
 "These pieces of cloth, those that aren't too badly blood-stained, feel
-
-like silk, though it would be difficult to reconstruct the original
-
-garment from mere scraps of bloody cloth.
-
-"
+like silk, though it would be difficult to reconstruct the original
+garment from mere scraps of bloody cloth.
+"
 E
 "dried blood spattered debris"
 "Nearly everything in your immediate vicinity appears to have at least
-
-some dried blood on it.  From the scraps of blue cloth to the broken
-
-boards that litter the area, this path has seen it's share of carnage.
-
-"
+some dried blood on it.  From the scraps of blue cloth to the broken
+boards that litter the area, this path has seen it's share of carnage.
+"
 E
 "southwest west large stone statue"
 "The stone shape to the southwest looks shaped enough to be a statue,
-
-though it does not to be of anything humanoid, so without getting closer,
-
-guessing would be futile.
-
-"
+though it does not to be of anything humanoid, so without getting closer,
+guessing would be futile.
+"
 2267 137 1509949540 3 0
 -1
 S
@@ -422,18 +327,12 @@ S
 #70009
 "Before a Smashed Carriage"
 "Though the path continues to the west and east, what is most noticeable here
-
-is the smashed horse carriage to the north.  It looks like it might have been
-
-of the type normally used in trade caravans, though by now it serves as an odd
-
-shelter for some unknown creature.  On the southern side of the path, there is
-
-a tall torch standing in the ground.  Remnants of a similar torch lie broken
-
-on the northern side of the path.
-
-"
+is the smashed horse carriage to the north.  It looks like it might have been
+of the type normally used in trade caravans, though by now it serves as an odd
+shelter for some unknown creature.  On the southern side of the path, there is
+a tall torch standing in the ground.  Remnants of a similar torch lie broken
+on the northern side of the path.
+"
 ""
 301465601 0
 12 8 0
@@ -452,42 +351,30 @@ D3
 E
 "tall torch"
 "Located almost close enough to the encroaching forest to the south to be
-
-a hazard, the tall torch burns a clean light.  It is approximately four
-
-feet tall, with the flame adding about two inches.
-
-"
+a hazard, the tall torch burns a clean light.  It is approximately four
+feet tall, with the flame adding about two inches.
+"
 E
 "smashed horse carriage north"
 "The remains of a magnificent carriage lie overturned to the north of
-
-here, shredded black cloth scattered around it.
-
-"
+here, shredded black cloth scattered around it.
+"
 E
 "remnants broken"
 "This torch may have once been rather tall, but now it lies broken in
-
-three large parts, smaller fragments littered around it.  Whatever caused
-
-this damage, the torch is now forever worthless to anyone.
-
-"
+three large parts, smaller fragments littered around it.  Whatever caused
+this damage, the torch is now forever worthless to anyone.
+"
 -1
 S
 
 #70010
 "A Bend in the Dirt Path"
 "Here, the path bends to the east and south, and the forest to the north
-
-encroaches further, blocking any travel to the west.  Faintly, through the
-
-trees to the west, you can vaguely see a large mass of irregularly shaped
-
-stone, possibly the beginnings of a statue.
-
-"
+encroaches further, blocking any travel to the west.  Faintly, through the
+trees to the west, you can vaguely see a large mass of irregularly shaped
+stone, possibly the beginnings of a statue.
+"
 ""
 301465600 0
 12 8 0
@@ -502,12 +389,9 @@ D2
 E
 "irregularly shaped stone statue"
 "From here, you can barely make out the general outline of a large mass of
-
-stone.  Its formation does not appear to be natural, and it gives the
-
-impression of an attempt at some sort of monument.
-
-"
+stone.  Its formation does not appear to be natural, and it gives the
+impression of an attempt at some sort of monument.
+"
 2267 9 1509949540 3 0
 -1
 S
@@ -515,18 +399,12 @@ S
 #70011
 "A Dirt Path"
 "The forest seems almost restrained to the northwest, especially when compared
-
-to the chaotic tangles south and east of here.  The dirty path continues to
-
-the north, and to the west it leads up to a large statue of some sort, but you
-
-would have to get closer to identify what it is meant to resemble.  A tall
-
-torch is planted partway in the ground, holding it somewhat upright, and near
-
-it are the burnt remains of another torch.
-
-"
+to the chaotic tangles south and east of here.  The dirty path continues to
+the north, and to the west it leads up to a large statue of some sort, but you
+would have to get closer to identify what it is meant to resemble.  A tall
+torch is planted partway in the ground, holding it somewhat upright, and near
+it are the burnt remains of another torch.
+"
 ""
 301465601 0
 12 8 0
@@ -541,26 +419,19 @@ D3
 E
 "torch"
 "The torch is stuck far enough into the ground that it probably won't fall
-
-anytime soon.  From where the torch enters the ground to the tip of it's
-
-flame, it is nearly four feet tall.
-
-"
+anytime soon.  From where the torch enters the ground to the tip of it's
+flame, it is nearly four feet tall.
+"
 -1
 S
 
 #70012
 "A Wide Path Through the Forest"
 "The forest seems to encroach less upon the path here than at other points.  To
-
-the west, the path widens even further and splits around a giant statue.  From
-
-this distance, the statue appears to be of a winged lion, though you cannot
-
-see the head to know exactly what the statue is supposed to be.
-
-"
+the west, the path widens even further and splits around a giant statue.  From
+this distance, the statue appears to be of a winged lion, though you cannot
+see the head to know exactly what the statue is supposed to be.
+"
 ""
 301465600 0
 12 8 0
@@ -579,18 +450,12 @@ S
 #70013
 "Behind a Stone Monument"
 "You stand before a large stone statue of what appears to be the rear end of a
-
-sphinx.  It is quite an odd sight, but thankfully, whoever crafted this statue
-
-was not a very skilled artisan.  Two torches are planted in the ground here,
-
-and they provide a bizarre frame for the sight before you.  The path from the
-
-east leads away to the south, around the giant sphinx statue, but a smaller
-
-path leads off to the north.
-
-"
+sphinx.  It is quite an odd sight, but thankfully, whoever crafted this statue
+was not a very skilled artisan.  Two torches are planted in the ground here,
+and they provide a bizarre frame for the sight before you.  The path from the
+east leads away to the south, around the giant sphinx statue, but a smaller
+path leads off to the north.
+"
 ""
 301465601 0
 12 8 0
@@ -609,30 +474,21 @@ D2
 E
 "rear end statue sphinx odd sight"
 "The large statue to the west is facing directly away from you, giving you
-
-a direct view of the hindquarters of a large, winged feline.  Thankfully,
-
-the artisan was not very skilled, and you are afforded the luxury of
-
-imagining that the statue is merely an oddly shaped rock.
-
-"
+a direct view of the hindquarters of a large, winged feline.  Thankfully,
+the artisan was not very skilled, and you are afforded the luxury of
+imagining that the statue is merely an oddly shaped rock.
+"
 -1
 S
 
 #70014
 "Faint Path Behind a Sphinx"
 "This appears to be little more than an access path to allow the artisans
-
-working on the statue to be able to get to all angles of the statue.  Many
-
-small bushes and weeds reach out from the thick forest here, as if very few
-
-travellers have ever contested the plant life for control of this section of
-
-dirt.
-
-"
+working on the statue to be able to get to all angles of the statue.  Many
+small bushes and weeds reach out from the thick forest here, as if very few
+travellers have ever contested the plant life for control of this section of
+dirt.
+"
 ""
 301465600 0
 2 8 0
@@ -651,18 +507,12 @@ S
 #70015
 "Dusty Clearing Behind a Sphinx"
 "The forest here seems to have been cut back and the dry dirt of the path
-
-has been stirred up by recent activity.  There is no small amount of dust
-
-in the area.  There are several oddly shaped stones on the edge of the
-
-clearing, crushing some of the smaller plants beneath their weight.  The
-
-path leading away to the north and west appears to be less dusty than the
-
-clearing it leads from.
-
-"
+has been stirred up by recent activity.  There is no small amount of dust
+in the area.  There are several oddly shaped stones on the edge of the
+clearing, crushing some of the smaller plants beneath their weight.  The
+path leading away to the north and west appears to be less dusty than the
+clearing it leads from.
+"
 ""
 301465600 0
 12 8 0
@@ -677,156 +527,104 @@ D3
 E
 "oddly shaped stones"
 "The stones are of various shapes most seem to just be broken rocks but
-
-there are a few distinct triangular shapes as well.  The stones are the
-
-same color as the statue.  Underneath them, some small plants are crushed.
-
-"
+there are a few distinct triangular shapes as well.  The stones are the
+same color as the statue.  Underneath them, some small plants are crushed.
+"
 A
 "move push"
 "stones"
 "if( !rflag(reset1, room ) )
-
-  act_tochar( #already, ch );
-
-else {
-
-remove_rflag( reset1, room );
-
-  act_tochar( #move, ch );
-
-  act_notchar( #rmove, ch );
-
-  }
-
-"
+  act_tochar( #already, ch );
+else {
+remove_rflag( reset1, room );
+  act_tochar( #move, ch );
+  act_notchar( #rmove, ch );
+  }
+"
 E
 "already"
 "The stones have already been pushed out of the way.
-
-"
+"
 E
 "move"
 "You push the heavy stones off to the edge of the clearing, allowing you
-
-to see the crushed plants beneath.
-
-"
+to see the crushed plants beneath.
+"
 E
 "rmove"
 "$n pushes the large stones off to the edge of the clearing.
-
-"
+"
 !
 0 0 0
 A
 "pick get take"
 "clover"
 "if( rflag( reset1, room ) )
-
-  act_tochar( #nope, ch );
-
-else {
-
-  if( rflag( reset0, room ) ) {
-
-    i = random( 1, 200 );
-
-    if( i == 1 ) {
-
-      act_tochar( #four, ch );
-
-      obj_to_char( oload( 407 ), ch );
-
-      remove_rflag( reset0, room );
-
-      }
-
-    if( i == 2 ) {
-
-      act_tochar( #red, ch );
-
-      obj_to_char( oload( 2047 ), ch );
-
-      remove_rflag( reset0, room );
-
-      }
-
-    if( i > 2 ) {
-
-      act_tochar( #three, ch );
-
-      obj_to_char( oload( 1619 ), ch );
-
-      remove_rflag( reset0, room );
-
-      }
-
-    }
-
-  else
-
-    act_tochar( #gone, ch );
-
-  }
-
-"
+  act_tochar( #nope, ch );
+else {
+  if( rflag( reset0, room ) ) {
+    i = random( 1, 200 );
+    if( i == 1 ) {
+      act_tochar( #four, ch );
+      obj_to_char( oload( 407 ), ch );
+      remove_rflag( reset0, room );
+      }
+    if( i == 2 ) {
+      act_tochar( #red, ch );
+      obj_to_char( oload( 2047 ), ch );
+      remove_rflag( reset0, room );
+      }
+    if( i > 2 ) {
+      act_tochar( #three, ch );
+      obj_to_char( oload( 1619 ), ch );
+      remove_rflag( reset0, room );
+      }
+    }
+  else
+    act_tochar( #gone, ch );
+  }
+"
 E
 "nope"
 "You do not see any clover here.
-
-"
+"
 E
 "four"
 "You search through the small clover patch, and manage to find a four leaf clover!
-
-"
+"
 E
 "red"
 "You manage to find a small piece of red clover hidden in the patch.
-
-"
+"
 E
 "three"
 "You take a bit of clover.
-
-"
+"
 E
 "gone"
 "It appears that there is no clover worth taking.
-
-"
+"
 !
 0 0 0
 A
 "look"
 "crushed plants beneath clover"
 "if( rflag( reset1, room ) )
-
-  act_tochar( #look1, ch );
-
-else
-
-  act_tochar( #look2, ch );
-
-"
+  act_tochar( #look1, ch );
+else
+  act_tochar( #look2, ch );
+"
 E
 "look2"
 "The stones had been carelessly placed on a small patch of clover, and
-
-most of them appear to be crushed beyond any worth.
-
-"
+most of them appear to be crushed beyond any worth.
+"
 E
 "look1"
 "You see a few plants that have been crushed beneath the large stones,
-
-mostly blades of grass sticking out, but also a few clovers, and a couple
-
-mangled flowers.
-
-"
+mostly blades of grass sticking out, but also a few clovers, and a couple
+mangled flowers.
+"
 !
 0 0 0
 -1
@@ -835,16 +633,11 @@ S
 #70016
 "On the Right Side of a Sphinx Statue"
 "From this point, you cannot see the rest of the statue, as the sphinx's right
-
-wing appears to simply be a large, untouched block of stone.  Some effort has
-
-been made to begin chiselling away some of the stone, but one would only know
-
-it would eventually become a wing by examining the rest of the statue.  The
-
-faint path continues on to the east and west.
-
-"
+wing appears to simply be a large, untouched block of stone.  Some effort has
+been made to begin chiselling away some of the stone, but one would only know
+it would eventually become a wing by examining the rest of the statue.  The
+faint path continues on to the east and west.
+"
 ""
 301465600 0
 2 8 0
@@ -863,16 +656,11 @@ S
 #70017
 "Faint Path Around a Sphinx"
 "You stand between a huge statue and a dense forest.  The statue has a large
-
-wing spanning to the east, and to the south you see what appears to be a
-
-female torso and head.  You would have to get a closer look to be sure of what
-
-it is intended to resemble.  The forest to the north and west is far too dense
-
-to see very far at all.
-
-"
+wing spanning to the east, and to the south you see what appears to be a
+female torso and head.  You would have to get a closer look to be sure of what
+it is intended to resemble.  The forest to the north and west is far too dense
+to see very far at all.
+"
 ""
 301465600 0
 2 8 0
@@ -891,16 +679,11 @@ S
 #70018
 "Before a Giant Sphinx"
 "Before you sits a huge, partially completed statue of a female Sphinx.  She
-
-has the face and upper torso of a human, but it merges seamlessly with the
-
-body of a powerful lion.  Two large wings grow from her shoulders, though her
-
-right wing more closely resembles an uncut block of stone.  The flickering
-
-light from a pair of torches illuminates her crudely-sculpted features.
-
-"
+has the face and upper torso of a human, but it merges seamlessly with the
+body of a powerful lion.  Two large wings grow from her shoulders, though her
+right wing more closely resembles an uncut block of stone.  The flickering
+light from a pair of torches illuminates her crudely-sculpted features.
+"
 ""
 301465600 0
 2 8 0
@@ -915,12 +698,9 @@ D2
 E
 "statue female sphinx upper torso"
 "This female sphinx seems to be rather unrealistically ample, as if it
-
-were carved by a rather hopeful and frustrated young male.  The statue is
-
-crudely made, with most attempted details carved by large claws.
-
-"
+were carved by a rather hopeful and frustrated young male.  The statue is
+crudely made, with most attempted details carved by large claws.
+"
 2267 9 1509949540 3 0
 -1
 S
@@ -928,14 +708,10 @@ S
 #70019
 "Near a Giant Sphinx Statue"
 "A large statue of a female sphinx stands to the northeast of here, with long
-
-wings and the torso and head of a human woman.  The forest is far too thick to
-
-see far to the west.  The dirt trail goes around the statue to the north and
-
-east, and continues away from the sphinx to the south.
-
-"
+wings and the torso and head of a human woman.  The forest is far too thick to
+see far to the west.  The dirt trail goes around the statue to the north and
+east, and continues away from the sphinx to the south.
+"
 ""
 301465600 0
 12 8 0
@@ -958,8 +734,7 @@ S
 #70020
 "A Dusty Dirt Path"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -969,18 +744,12 @@ S
 #70021
 "On the Left Side of a Sphinx Statue"
 "From here, you have an excellent view of the sphinx statue's left wing,
-
-unfortunately, it is a less-than-inspiring piece of sculpture.  The wing is
-
-approximately the correct size and shape, but lacks much detail beyond that.
-
-Whether the missing texture details were to be added later, or were simply
-
-forgotten cannot be determined.  The dirt path leading between the stone wing
-
-and the dense forest is bordered by two brightly lit torches.
-
-"
+unfortunately, it is a less-than-inspiring piece of sculpture.  The wing is
+approximately the correct size and shape, but lacks much detail beyond that.
+Whether the missing texture details were to be added later, or were simply
+forgotten cannot be determined.  The dirt path leading between the stone wing
+and the dense forest is bordered by two brightly lit torches.
+"
 ""
 301465601 0
 12 8 0
@@ -995,18 +764,15 @@ D3
 E
 "brightly torches"
 "These torches are taller than a halfling, and the bright flame within is
-
-kept in check by a metal cage.
-
-"
+kept in check by a metal cage.
+"
 -1
 S
 
 #70022
 "A Dusty Dirt Path"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -1016,8 +782,7 @@ S
 #70023
 "A Dusty Dirt Path"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -1027,16 +792,11 @@ S
 #70024
 "A Bend in the Forest Path"
 "To the northeast you can see a large statue of a female sphinx in the
-
-distance.  The thick tangles of the forest seem to reach out towards you from
-
-the south and northwest.  Through the forest to the northwest, you can see a
-
-hint of red cloth, but you would have to get closer to identify it.  The
-
-mangled remains of a torch holder lays cast aside on the ground.
-
-"
+distance.  The thick tangles of the forest seem to reach out towards you from
+the south and northwest.  Through the forest to the northwest, you can see a
+hint of red cloth, but you would have to get closer to identify it.  The
+mangled remains of a torch holder lays cast aside on the ground.
+"
 ""
 301465601 0
 12 8 0
@@ -1051,16 +811,13 @@ D3
 E
 "torch"
 "The torch is slightly tilted in towards the dirt path, a hint of fallen
-
-ash directly beneath the flame.
-
-"
+ash directly beneath the flame.
+"
 A
 "1 get take"
 "holder"
 "act_tochar( \"The ruined remains of a torch holder are useless.\", ch );
-
-"
+"
 !
 0 0 0
 -1
@@ -1069,16 +826,11 @@ S
 #70025
 "A Dusty Path Through the Forest"
 "The dirt path leads away from a giant sphinx statue to the east, and towards
-
-an elaborate, regal-looking tent to the west.  A thick cluster of trees to the
-
-north, however, blocks much of your view of either.  Directly to your west,
-
-the path widens into a fairly large clearing.  To the east, the path appears
-
-to bend to the north after a short ways.
-
-"
+an elaborate, regal-looking tent to the west.  A thick cluster of trees to the
+north, however, blocks much of your view of either.  Directly to your west,
+the path widens into a fairly large clearing.  To the east, the path appears
+to bend to the north after a short ways.
+"
 ""
 301465600 0
 12 8 0
@@ -1097,16 +849,11 @@ S
 #70026
 "A Wide Clearing in the Forest"
 "The path to the east has opened up here into a relatively large clearing in
-
-the midst of the otherwise dense forest.  To the south, the forest is thin
-
-enough that you can see that you are fairly high up and a barren wasteland
-
-lies at the bottom of a steep rocky cliff.  To the northeast the clearing
-
-continues, but appears to meet more forest after a short distance.
-
-"
+the midst of the otherwise dense forest.  To the south, the forest is thin
+enough that you can see that you are fairly high up and a barren wasteland
+lies at the bottom of a steep rocky cliff.  To the northeast the clearing
+continues, but appears to meet more forest after a short distance.
+"
 ""
 301465600 0
 2 8 0
@@ -1125,47 +872,31 @@ D3
 E
 "south thin barren wasteland"
 "Between the thinning trees here, you can see a vast desert-like wasteland with
-
-very few signs of life.  A few scrub weeds fight for survival in the harsh,
-
-windswept plains, and a few rocks and boulders provide shade for whatever
-
-tenacious creatures undoubtedly live in this barren environment.  Perhaps it
-
-is a only a mirage, but occasionally, a large purple shapes seems to move out
-
-of, and then back into the dry, dusty earth.
-
-"
+very few signs of life.  A few scrub weeds fight for survival in the harsh,
+windswept plains, and a few rocks and boulders provide shade for whatever
+tenacious creatures undoubtedly live in this barren environment.  Perhaps it
+is a only a mirage, but occasionally, a large purple shapes seems to move out
+of, and then back into the dry, dusty earth.
+"
 E
 "steep rocky cliff"
 "The rocky cliff is quite steep, and appears to be composed mostly of
-
-jagged rocks, with a few tenacious weeds and small trees barely clinging
-
-on for survival.  Climbing down such a cliff would be extremely
-
-dangerous, and seeing the wasteland beyond gives little reason to wish to
-
-do so.
-
-"
+jagged rocks, with a few tenacious weeds and small trees barely clinging
+on for survival.  Climbing down such a cliff would be extremely
+dangerous, and seeing the wasteland beyond gives little reason to wish to
+do so.
+"
 -1
 S
 
 #70027
 "Edge of a Clearing"
 "You stand on the edge of a clearing made by the trees that once stood here
-
-having been ripped out of the way.  The clearing is dusty, with claw prints
-
-going every which way across the ground.  You cannot see or move very far to
-
-the north or east because the forest is too thick and tangled in those
-
-directions.
-
-"
+having been ripped out of the way.  The clearing is dusty, with claw prints
+going every which way across the ground.  You cannot see or move very far to
+the north or east because the forest is too thick and tangled in those
+directions.
+"
 ""
 301465600 0
 2 8 0
@@ -1180,28 +911,20 @@ D3
 E
 "claw prints ground"
 "The markings are rather wide, made by a creature with very large claws. 
-
-From the number of marks scratched across the ground, you assume that the
-
-creatures must travel through here often.
-
-"
+From the number of marks scratched across the ground, you assume that the
+creatures must travel through here often.
+"
 -1
 S
 
 #70028
 "Edge of a Clearing"
 "To the north on the edge of the clearing is a large, elegant tent of red and
-
-purple.  The clearing ends to the south and west with the renewal of the thick
-
-mess of a forest and a short ways to the east a path leads away from the dusty
-
-clearing.  There is a large, iron wheel lying on the edge of the clearing,
-
-with a few large splinters of wood lying nearby.
-
-"
+purple.  The clearing ends to the south and west with the renewal of the thick
+mess of a forest and a short ways to the east a path leads away from the dusty
+clearing.  There is a large, iron wheel lying on the edge of the clearing,
+with a few large splinters of wood lying nearby.
+"
 ""
 301465600 0
 2 8 0
@@ -1216,30 +939,21 @@ D1
 E
 "large iron wheel edge splinters wood"
 "This wheel must once have helped move a rather large carriage or wagon,
-
-though it is far beyond the point of being worthless by now.  Fragments
-
-of wood lie around it, none of which appear to have deteriorated much yet.
-
-"
+though it is far beyond the point of being worthless by now.  Fragments
+of wood lie around it, none of which appear to have deteriorated much yet.
+"
 -1
 S
 
 #70029
 "Before a Regal, Ornate Tent"
 "You stand directly before a huge, lavish tent made of the finest silks.  The
-
-roof of the tent is of a @Mbrilliant purple@n, and contrasts with the @rdeep red@n of
-
-the rest of the tent.  @e@wSilvery@n tassels hang at regular intervals along the
-
-purple trim, and at the top of the tent, a @Rbright red@n pennant waves.  To the
-
-east and south, the dusty clearing continues, and it appears to end in a small
-
-path to the southeast.
-
-"
+roof of the tent is of a @Mbrilliant purple@n, and contrasts with the @rdeep red@n of
+the rest of the tent.  @e@wSilvery@n tassels hang at regular intervals along the
+purple trim, and at the top of the tent, a @Rbright red@n pennant waves.  To the
+east and south, the dusty clearing continues, and it appears to end in a small
+path to the southeast.
+"
 ""
 301465600 0
 2 8 0
@@ -1258,42 +972,30 @@ D3
 E
 "silvery tassels"
 "These tassels are composed of many knotted silk threads, woven together in an
-
-intricate braid pattern.  Several of the tassels have been stained with dirt
-
-and blood, but most still appear to be in good condition.
-
-"
+intricate braid pattern.  Several of the tassels have been stained with dirt
+and blood, but most still appear to be in good condition.
+"
 E
 "bright red pennant"
 "The bright red pennant is rather large, and waves gently in the wind.  Towards
-
-the pole that holds it aloft, you can see a heraldic symbol that appears to be
-
-a black claw inside two intertwined ovals.
-
-"
+the pole that holds it aloft, you can see a heraldic symbol that appears to be
+a black claw inside two intertwined ovals.
+"
 E
 "roof brilliant purple"
 "Brilliant purple dominates the upper half of the tent, and it would be
-
-quite easy to spot this tent from the above in the midst of the green
-
-forest.  It appears, however, that those who would see it from the area,
-
-cared little for the spectacle, as there are white splotches dotted at
-
-various points.
-
-"
+quite easy to spot this tent from the above in the midst of the green
+forest.  It appears, however, that those who would see it from the area,
+cared little for the spectacle, as there are white splotches dotted at
+various points.
+"
 -1
 S
 
 #70030
 "A Dusty Dirt Path"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -1303,19 +1005,13 @@ S
 #70031
 "Within an Ornate Tent"
 "You are inside an elaborately decorated, lavish tent.  A soft gray silk cloth
-
-has been laid beneath the tent, and is covering the dirt floor.  Many @Bblue@n
-
-velvet pillows have been gathered together in a pile to make a rather
-
-luxurious bed for whoever resides here.  The faint smell of incense fills the
-
-air here, and you spy an incense burner in the far corner of the tent.
-
-"
+has been laid beneath the tent, and is covering the dirt floor.  Many @Bblue@n
+velvet pillows have been gathered together in a pile to make a rather
+luxurious bed for whoever resides here.  The faint smell of incense fills the
+air here, and you spy an incense burner in the far corner of the tent.
+"
 "[Tevish] The woman's voice can still be heard even in sleep.
-
-"
+"
 301465605 0
 2 7 0
 D1
@@ -1325,490 +1021,310 @@ D1
 E
 "soft gray silk cloth"
 "This cloth is very large to be able to cover the entire floor of the
-
-tent, probably custom made for such a purpose.  It is of extremely high
-
-quality silk.
-
-"
+tent, probably custom made for such a purpose.  It is of extremely high
+quality silk.
+"
 E
 "blue velvet pillows pile luxurious bed"
 "Dozens of matching velvet pillows have been arranged in a very
-
-comfortable looking pile.  Each pillow is of excellent craftsmanship and
-
-the finest blue velvet you have ever seen.  What a luxury such a bed must
-
-be...
-
-"
+comfortable looking pile.  Each pillow is of excellent craftsmanship and
+the finest blue velvet you have ever seen.  What a luxury such a bed must
+be...
+"
 E
 "incense burner corner"
 "The incense burner, approximately one foot long, is made of ash wood.  It
-
-has an intricate carving of a lizard running down the length of it.
-
-"
+has an intricate carving of a lizard running down the length of it.
+"
 A
 "get take"
 "incense"
 "if( skip_word( arg ) != \"\" )
-
-  continue;
-
-mob = mob_in_room( 2271, room );
-
-if( mob && rflag( reset0, room ) ) {
-
-  tell( mob, ch, #mob );
-
-  remove_rflag( reset0, room );
-
-  end;
-
-}
-
-if( mob && !rflag( reset0, room ) ) {
-
-  tell( mob, ch, #warned );
-
-  interpret( mob, \"stand\" );
-
-  victim = ch;
-
-  attack( mob, victim, 3d10+5, \"powerful claw swipe\" );
-
-  end;
-
-}
-
-if( rflag( reset1, room ) ) {
-
-  i = random( 1, 10 );
-
-  if( i == 7 ) {
-
-    act_tochar( #incense1, ch );
-
-    act_notchar( #rincense, ch );
-
-    obj_to_char( oload( 1065 ), ch );
-
-  }
-
-  else {
-
-    act_tochar( #nope, ch );
-
-    act_notchar( #rnope, ch );
-
-  }
-
-}
-
-else {
-
-  act_tochar( #nope, ch );
-
-  act_notchar( #rnope, ch );
-
-}
-
-remove_rflag( reset1, room );
-
-"
+  continue;
+mob = mob_in_room( 2271, room );
+if( mob && rflag( reset0, room ) ) {
+  tell( mob, ch, #mob );
+  remove_rflag( reset0, room );
+  end;
+}
+if( mob && !rflag( reset0, room ) ) {
+  tell( mob, ch, #warned );
+  interpret( mob, \"stand\" );
+  victim = ch;
+  attack( mob, victim, 3d10+5, \"powerful claw swipe\" );
+  end;
+}
+if( rflag( reset1, room ) ) {
+  i = random( 1, 10 );
+  if( i == 7 ) {
+    act_tochar( #incense1, ch );
+    act_notchar( #rincense, ch );
+    obj_to_char( oload( 1065 ), ch );
+  }
+  else {
+    act_tochar( #nope, ch );
+    act_notchar( #rnope, ch );
+  }
+}
+else {
+  act_tochar( #nope, ch );
+  act_notchar( #rnope, ch );
+}
+remove_rflag( reset1, room );
+"
 E
 "nope"
 "It appears that all of the incense has been used already.
-
-"
+"
 E
 "rnope"
 "$n looks at the incense burner, but does not seem to find anything.
-
-"
+"
 E
 "rincense"
 "$n searches the incense burner, and gets a stick of incense.
-
-"
+"
 E
 "incense1"
 "You get a crimson stick of incense.
-
-"
+"
 E
 "mob"
 "@BI would not be so foolish as to presume to steal one's property while
-
-its owner was watching.  Perhaps you should rethink that course of
-
-action.@n 
-
-"
+its owner was watching.  Perhaps you should rethink that course of
+action.@n 
+"
 E
 "warned"
 "@BYou were warned, now pay the price!@n
-
-"
+"
 !
 0 0 0
 A
 "flip"
 "coin platinum"
 "if( cflag( 96, ch ) ) {
-
-  interpret( ch, \"flip silver\" );
-
-  end;
-
-}
-
-mob = mob_in_room( 2271, room );
-
-if( mob && has_obj( 16, ch ) ) {
-
-  act_tochar( #flip, ch );
-
-  act_notchar( #rflip, ch );
-
-  wait( 1 );
-
-  act_room( #heads, ch );
-
-  wait( 2 );
-
-  interpret( mob, \"smile\" );
-
-  wait( 1 );
-
-  if( !char_in_room( ch, room ) )
-
-    end;
-
-  i = 9d10+40;
-
-  act_tochar( #tochar, ch );
-
-  act_notchar( #toroom, ch );
-
-  shock_message( ch, i, \"The symbol of sacrifice\" );
-
-  inflict_shock( ch, mob, i, \"The symbol of sacrifice\" );
-
-  wait( 1 );
-
-  if( !char_in_room( ch, room ) )
-
-    end;
-
-  tell( mob, ch, \"@BCongratulations, here is your reward.@n\" );
-
-  obj = oload( 305 );
-
-  obj_to_char( obj, ch );
-
-  act_tochar( #reward, ch );
-
-  set_cflag( 96, ch );
-
-}
-
-"
+  interpret( ch, \"flip silver\" );
+  end;
+}
+mob = mob_in_room( 2271, room );
+if( mob && has_obj( 16, ch ) ) {
+  act_tochar( #flip, ch );
+  act_notchar( #rflip, ch );
+  wait( 1 );
+  act_room( #heads, ch );
+  wait( 2 );
+  interpret( mob, \"smile\" );
+  wait( 1 );
+  if( !char_in_room( ch, room ) )
+    end;
+  i = 9d10+40;
+  act_tochar( #tochar, ch );
+  act_notchar( #toroom, ch );
+  shock_message( ch, i, \"The symbol of sacrifice\" );
+  inflict_shock( ch, mob, i, \"The symbol of sacrifice\" );
+  wait( 1 );
+  if( !char_in_room( ch, room ) )
+    end;
+  tell( mob, ch, \"@BCongratulations, here is your reward.@n\" );
+  obj = oload( 305 );
+  obj_to_char( obj, ch );
+  act_tochar( #reward, ch );
+  set_cflag( 96, ch );
+}
+"
 E
 "reward"
 "The gynosphinx gives you an old scroll.
-
-"
+"
 E
 "tochar"
 "The gynosphinx gazes solemnly at you, \"@BI do not reward those who are
-
-unworthy.  My gifts never come without a price.@n\" 
-
-@YWith those words, an ancient symbol appears in the air before you and
-
-blasts you with electrical energy!@n 
-
-"
+unworthy.  My gifts never come without a price.@n\" 
+@YWith those words, an ancient symbol appears in the air before you and
+blasts you with electrical energy!@n 
+"
 E
 "toroom"
 "Powerful electrical bolts explode from the gynosphinx and roll across the body of $n.
-
-"
+"
 E
 "flip"
 "Light reflects back in dazzling sparks from the platinum coin you flipped
-
-into the air.
-
-"
+into the air.
+"
 E
 "rflip"
 "$n flips a platinum coin.  Dazzling light twinkles back from it as it
-
-spins in the air.
-
-"
+spins in the air.
+"
 E
 "heads"
 "The coin comes to rest showing heads, the face of Morioh clearly visible
-
-for all to see.
-
-"
+for all to see.
+"
 !
 0 0 0
 A
 "cast"
 "fireball"
 "mob = mob_in_room( 2271, room );
-
-if( find_skill( ch, fireball ) > 0 ) {
-
-  if( has_obj( 79, ch ) ) {
-
-    act_tochar( #zero, ch );
-
-    wait( 1 );
-
-    if( !char_in_room( ch, room ) )
-
-      end;
-
-    modify_mana( ch, -40 );
-
-    act_tochar( #one, ch );
-
-    act_notchar( #rone, ch );
-
-    interpret( mob, \"frown\" );
-
-    wait( 1 );
-
-    if( !char_in_room( ch, room ) )
-
-      end;
-
-    interpret( mob, \"stand\" );
-
-    act_tochar( #two, ch );
-
-    act_notchar( #rtwo, ch );
-
-    act_room( #symbol, ch, obj, mob );
-
-    act_tochar( #disrupt, ch );
-
-    victim = ch;
-
-    attack( mob, victim, 3d10+5, \"powerful claw swipe\" );
-
-    end;
-
-  }
-
-  act_tochar( #need, ch );
-
-}
-
-"
+if( find_skill( ch, fireball ) > 0 ) {
+  if( has_obj( 79, ch ) ) {
+    act_tochar( #zero, ch );
+    wait( 1 );
+    if( !char_in_room( ch, room ) )
+      end;
+    modify_mana( ch, -40 );
+    act_tochar( #one, ch );
+    act_notchar( #rone, ch );
+    interpret( mob, \"frown\" );
+    wait( 1 );
+    if( !char_in_room( ch, room ) )
+      end;
+    interpret( mob, \"stand\" );
+    act_tochar( #two, ch );
+    act_notchar( #rtwo, ch );
+    act_room( #symbol, ch, obj, mob );
+    act_tochar( #disrupt, ch );
+    victim = ch;
+    attack( mob, victim, 3d10+5, \"powerful claw swipe\" );
+    end;
+  }
+  act_tochar( #need, ch );
+}
+"
 E
 "one"
 "You place a piece of flint between two fingers.
-
-"
+"
 E
 "rone"
 "$n places a piece of flint between two fingers.
-
-"
+"
 E
 "two"
 "Smoke pours from your hands as you rub them together.
-
-"
+"
 E
 "rtwo"
 "Smoke pours from $n's hands as $e rubs them together.
-
-"
+"
 E
 "three"
 "A small piece of flint bursts into flames.
-
-"
+"
 E
 "done"
 "+++ You cast fireball. +++
-
-"
+"
 E
 "rdone"
 "$n casts fireball.
-
-"
+"
 E
 "need"
 "You need a piece of flint to cast 'fireball'.
-
-"
+"
 E
 "zero"
 "You begin casting fireball.
-
-"
+"
 E
 "symbol"
 "@RThe air seems to tangibly become thicker as $N quickly utters arcane
-
-words of power.  The temperature quickly drops, and you can feel magical
-
-energy being drained away.@n
-
-"
+words of power.  The temperature quickly drops, and you can feel magical
+energy being drained away.@n
+"
 E
 "disrupt"
 ">> Your fireball spell is disrupted. <<
-
-"
+"
 !
 0 0 0
 A
 "pick"
 "closed small treasure chest"
 "mob = mob_in_room( 2271, room );
-
-if( mob && rflag( reset0, room ) ) {
-
-  tell( mob, ch, #mob );
-
-  remove_rflag( reset0, room );
-
-  end;
-
-}
-
-if( mob && !rflag( reset0, room ) ) {
-
-  tell( mob, ch, #warned );
-
-  interpret( mob, \"stand\" );
-
-  victim = ch;
-
-  attack( mob, victim, 3d10+5, \"powerful claw swipe\" );
-
-  end;
-
-}
-
-continue;
-
-"
+if( mob && rflag( reset0, room ) ) {
+  tell( mob, ch, #mob );
+  remove_rflag( reset0, room );
+  end;
+}
+if( mob && !rflag( reset0, room ) ) {
+  tell( mob, ch, #warned );
+  interpret( mob, \"stand\" );
+  victim = ch;
+  attack( mob, victim, 3d10+5, \"powerful claw swipe\" );
+  end;
+}
+continue;
+"
 E
 "mob"
 "@BI would not be so foolish as to presume to steal one's property while
-
-its owner was watching.  Perhaps you should rethink that course of
-
-action.@n 
-
-"
+its owner was watching.  Perhaps you should rethink that course of
+action.@n 
+"
 E
 "warned"
 "@BI warned you, now you will pay the price!@n
-
-"
+"
 !
 0 0 0
 A
 "get take search"
 "blue velvet pillows"
 "if( skip_word( arg ) != \"\" )
-
-  continue;
-
-mob = mob_in_room( 2271, room );
-
-if( mob && rflag( reset0, room ) ) {
-
-  tell( mob, ch, #mob );
-
-  remove_rflag( reset0, room );
-
-  end;
-
-}
-
-if( mob && !rflag( reset0, room ) ) {
-
-  tell( mob, ch, #warned );
-
-  interpret( mob, \"stand\" );
-
-  victim = ch;
-
-  attack( mob, victim, 3d10+5, \"powerful claw swipe\" );
-
-  end;
-
-}
-
-if( rflag( reset2, room ) ) {
-
-  if( random( 1, 5 ) == 3 ) {
-
-    act_tochar( #get, ch );
-
-    act_notchar( #cget, ch );
-
-    obj_to_char( oload( 1535 ), ch );
-
-  }
-
-  else
-
-    act_tochar( #none, ch );
-
-}
-
-else
-
-  act_tochar( #none, ch );
-
-remove_rflag( reset2, room );
-
-"
+  continue;
+mob = mob_in_room( 2271, room );
+if( mob && rflag( reset0, room ) ) {
+  tell( mob, ch, #mob );
+  remove_rflag( reset0, room );
+  end;
+}
+if( mob && !rflag( reset0, room ) ) {
+  tell( mob, ch, #warned );
+  interpret( mob, \"stand\" );
+  victim = ch;
+  attack( mob, victim, 3d10+5, \"powerful claw swipe\" );
+  end;
+}
+if( rflag( reset2, room ) ) {
+  if( random( 1, 5 ) == 3 ) {
+    act_tochar( #get, ch );
+    act_notchar( #cget, ch );
+    obj_to_char( oload( 1535 ), ch );
+  }
+  else
+    act_tochar( #none, ch );
+}
+else
+  act_tochar( #none, ch );
+remove_rflag( reset2, room );
+"
 E
 "get"
 "You take a blue velvet pillow that is still in good condition from the pile.
-
-"
+"
 E
 "cget"
 "$n gets a blue velvet pillow that is still in good condition from the pile.
-
-"
+"
 E
 "none"
 "All of the pillows are too spattered with blood to be worth taking.
-
-"
+"
 E
 "mob"
 "@BI would not be so foolish as to presume to steal one's property while
-
-its owner was watching.  Perhaps you should rethink that course of
-
-action.@n 
-
-"
+its owner was watching.  Perhaps you should rethink that course of
+action.@n 
+"
 E
 "warned"
 "@BYou were warned, now pay the price!@n
-
-"
+"
 !
 0 0 0
 2271 137 1509949540 2 0
@@ -1831,14 +1347,10 @@ S
 #70033
 "Inside a Smashed Horse Carriage"
 "What must have once been a regal and luxurious carriage has now been
-
-overturned and mostly destroyed.  The black velvet cushions have been ripped
-
-to shreds and made into some sort of crude bedding, and a few large bones
-
-attest to the fact that this carriage is now a lair for a large carnivore.
-
-"
+overturned and mostly destroyed.  The black velvet cushions have been ripped
+to shreds and made into some sort of crude bedding, and a few large bones
+attest to the fact that this carriage is now a lair for a large carnivore.
+"
 ""
 335020036 0
 0 6 0
@@ -1849,98 +1361,63 @@ D2
 E
 "black velvet cushions shreds  crude bedding"
 "The velvet seat cushions have almost all been ripped from the seats and
-
-shredded into the bed for a large beast.  In addition to the scraps of
-
-black velvet and the bits of white stuffing, there appear to be a few
-
-animal hairs in the bed, and they look like they might be from some sort
-
-of cat.
-
-"
+shredded into the bed for a large beast.  In addition to the scraps of
+black velvet and the bits of white stuffing, there appear to be a few
+animal hairs in the bed, and they look like they might be from some sort
+of cat.
+"
 E
 "large bones lair"
 "Several large bones litter the area, and they appear to be of the correct size
-
-and shape to have come from a human on demi-human being.  All of the bones
-
-have been picked clean of flesh, and very little blood is left to stain them.
-
-"
+and shape to have come from a human on demi-human being.  All of the bones
+have been picked clean of flesh, and very little blood is left to stain them.
+"
 A
 ""
 "velvet cushions"
 "mob = mob_in_room( 2267, room );
-
-if( mob && can_attack( mob, ch ) ) {
-
-  act_tochar( #hidden, ch, obj, mob );
-
-  end;
-
-  }
-
-if( rflag( reset1, room ) ) {
-
-  i = random( 1, 20 );
-
-  if( i == 17 ) {
-
-    act_tochar( #dagger, ch );
-
-    act_notchar( #rdagger, ch );
-
-    obj_to_char( oload( 773 ), ch );
-
-    }
-
-  else {
-
-    act_tochar( #nope, ch );
-
-    act_notchar( #rnope, ch );
-
-    }
-
-  }
-
-else {
-
-  act_tochar( #nope, ch );
-
-  act_notchar( #rnope, ch );
-
-  }
-
-remove_rflag( reset1, room );
-
-"
+if( mob && can_attack( mob, ch ) ) {
+  act_tochar( #hidden, ch, obj, mob );
+  end;
+  }
+if( rflag( reset1, room ) ) {
+  i = random( 1, 20 );
+  if( i == 17 ) {
+    act_tochar( #dagger, ch );
+    act_notchar( #rdagger, ch );
+    obj_to_char( oload( 773 ), ch );
+    }
+  else {
+    act_tochar( #nope, ch );
+    act_notchar( #rnope, ch );
+    }
+  }
+else {
+  act_tochar( #nope, ch );
+  act_notchar( #rnope, ch );
+  }
+remove_rflag( reset1, room );
+"
 E
 "dagger"
 "You rummage around in the shredded cushions, and find a barbed dagger!
-
-"
+"
 E
 "rdagger"
 "$n rummages around in the shredded cushions, and finds a barbed dagger!
-
-"
+"
 E
 "nope"
 "You search through the shredded cushions, but find nothing of interest.
-
-"
+"
 E
 "rnope"
 "$n searches through the shredded cushions, but finds nothing of interest.
-
-"
+"
 E
 "hidden"
 "If you were to do that, $N would surely notice your presence.
-
-"
+"
 !
 9 0 0
 2267 137 1509949540 3 0
@@ -1950,16 +1427,11 @@ S
 #70035
 "Hillside Beyond the Brush"
 "The trail, flanked by thick brambles, is so narrow that it barely counts
-
-as a trail at all.  Nearby to the south there is a large hill that
-
-probably provides a good viewpoint of the nearby area.  Beyond the
-
-brambles to the southwest, you can see a dense forest that towers over
-
-the area.
-
-"
+as a trail at all.  Nearby to the south there is a large hill that
+probably provides a good viewpoint of the nearby area.  Beyond the
+brambles to the southwest, you can see a dense forest that towers over
+the area.
+"
 ""
 301465600 0
 4 9 0
@@ -1975,42 +1447,27 @@ A
 ""
 ""
 "loop( followers ) {
-
-  ch = rch;
-
-  if( find_stat( ch, dex ) < 15 ) {
-
-    i = 1d4+2;
-
-    send_to_char( #bramble, ch );
-
-    act_notchar( #cbramble, ch );
-
-    dam_message( ch, i, \"getting scratched by a thorn\" );
-
-    inflict( ch, mob, i, \"a thorn scratch\" );
-
-    }
-
-  }
-
-continue;
-
-"
+  ch = rch;
+  if( find_stat( ch, dex ) < 15 ) {
+    i = 1d4+2;
+    send_to_char( #bramble, ch );
+    act_notchar( #cbramble, ch );
+    dam_message( ch, i, \"getting scratched by a thorn\" );
+    inflict( ch, mob, i, \"a thorn scratch\" );
+    }
+  }
+continue;
+"
 E
 "bramble"
 "As you walk past, you brush too close to the brambles and a thorn
-
-scratches you.
-
-"
+scratches you.
+"
 E
 "cbramble"
 "$n walks too close to the brambles along the trail and a thorn scratches
-
-$m.
-
-"
+$m.
+"
 !
 3 0 4
 -1
@@ -2019,17 +1476,12 @@ S
 #70036
 "Hillside Beyond the Brush"
 "The trail is almost three feet wide here, just wide enough that your
-
-clothing does not catch on the cruel brambles that line the path.  The
-
-brush grows even closer around the trail to the south, but to the north
-
-it seems to intersect with a proper trail.
-
-"
+clothing does not catch on the cruel brambles that line the path.  The
+brush grows even closer around the trail to the south, but to the north
+it seems to intersect with a proper trail.
+"
 "[Zithuan] North will lead to 21000
-
-"
+"
 301465600 0
 4 9 0
 D0
@@ -2047,20 +1499,13 @@ S
 #70037
 "Foot of the Hill"
 "Here the thick forest to the west gives way to the path on which you
-
-stand.  The path traverses the undergrowth, dusty and dry.  To the south
-
-and west, you see through the trees a hint of black that seems oddly out
-
-of place.  To look closer you would have to go around the forest for you
-
-note that nettles abound to the west.  To the east the sound of waves
-
-continues to echo in the background.  The path continues that way and you
-
-can just barely see a hint of blue through the trees.
-
-"
+stand.  The path traverses the undergrowth, dusty and dry.  To the south
+and west, you see through the trees a hint of black that seems oddly out
+of place.  To look closer you would have to go around the forest for you
+note that nettles abound to the west.  To the east the sound of waves
+continues to echo in the background.  The path continues that way and you
+can just barely see a hint of blue through the trees.
+"
 ""
 301465600 0
 3 9 0
@@ -2079,23 +1524,15 @@ S
 #70038
 "Along the Sea"
 "The dry, worn path comes in from the west and continues along a rocky overhang
-
-that looks out over water to the south.  Plants grow along the path and over
-
-the cliff towards the water, reaching down the steep bank for a greatly needed
-
-drink.  The water itself is fairly clear with a few bits of flotsam here and
-
-there.  It is a deep green-blue that lets the light shine through to the
-
-bottom, where a few fish swim about.
-
-"
+that looks out over water to the south.  Plants grow along the path and over
+the cliff towards the water, reaching down the steep bank for a greatly needed
+drink.  The water itself is fairly clear with a few bits of flotsam here and
+there.  It is a deep green-blue that lets the light shine through to the
+bottom, where a few fish swim about.
+"
 "[Merolen] Having look flotsam be an action is disconcerting.
-
-[Merolen] Also, if it's a cliff down to the water, getting stuff from the water should be harder
-
-"
+[Merolen] Also, if it's a cliff down to the water, getting stuff from the water should be harder
+"
 301465600 0
 3 9 0
 D2
@@ -2109,16 +1546,11 @@ D3
 E
 "flotsam"
 "As you get closer to the edge of the water to investigate the flotsam, you
-
-can barely reach down and grab a piece.  Turning it over in your hands, you
-
-see that it is a piece of wood that seems to have withstood the test of time
-
-well, especially when you notice the polish on it is still fresh.  You return
-
-the wood to its watery home.
-
-"
+can barely reach down and grab a piece.  Turning it over in your hands, you
+see that it is a piece of wood that seems to have withstood the test of time
+well, especially when you notice the polish on it is still fresh.  You return
+the wood to its watery home.
+"
 205 9 1509949540 3 0
 2506 9 1509949540 3 0
 -1
@@ -2127,16 +1559,11 @@ S
 #70039
 "Along the Sea"
 "From the north, the trail passes under the lazy shade of a willow tree and
-
-curves around to the east along a rocky shore.  Roots can be seen along the
-
-well-worn and dry trail just peeking above the ground level.  Looking out over
-
-the water you feel tranquil with the cool breeze blowing in and the warm sun
-
-shining down.
-
-"
+curves around to the east along a rocky shore.  Roots can be seen along the
+well-worn and dry trail just peeking above the ground level.  Looking out over
+the water you feel tranquil with the cool breeze blowing in and the warm sun
+shining down.
+"
 ""
 301465600 0
 3 9 0
@@ -2151,46 +1578,34 @@ D1
 E
 "root red gnarled"
 "Upon close inspection, you see that the root is not naturally red.  The viscous
-
-fluid covering it seems to have a familiar scent but mingled with the breeze
-
-that occasionally washes in from the west, your nostrils can not divine its
-
-source.
-
-"
+fluid covering it seems to have a familiar scent but mingled with the breeze
+that occasionally washes in from the west, your nostrils can not divine its
+source.
+"
 A
 ""
 ""
 "act_room( #sniff, ch );
-
-"
+"
 E
 "sniff"
 "@GThe momentary shift in the winds brings to you a terrible odor from the
-
-west.  Death rides this acidic smell and a hint of rot as well.@n
-
-"
+west.  Death rides this acidic smell and a hint of rot as well.@n
+"
 !
 2 250 0
 A
 "sleep"
 ""
 "act_tochar( #sleep, ch );
-
-"
+"
 E
 "sleep"
 "When you lie down to sleep nest to this willow tree, you notice that there is
-
-is something sticking in your back.  Thinking it must be another nettle, you
-
-roll over to get to a better spot to rest.  Only then do you notice that you
-
-were resting on a gnarled red root.
-
-"
+is something sticking in your back.  Thinking it must be another nettle, you
+roll over to get to a better spot to rest.  Only then do you notice that you
+were resting on a gnarled red root.
+"
 !
 0 0 0
 -1
@@ -2199,18 +1614,12 @@ S
 #70040
 "Along the Sea"
 "Here the path bends again.  To the south, you can see forest, thick as
-
-ever, but with the dry path cutting like a knife through it.  Off to the
-
-east, you see the forest's tangle of roots reach the edge of a sheer
-
-cliff that borders the sea, making passage entirely impossible.  The path
-
-works its way west along the rocky edge, a sanctum of order in the
-
-wilderness.
-
-"
+ever, but with the dry path cutting like a knife through it.  Off to the
+east, you see the forest's tangle of roots reach the edge of a sheer
+cliff that borders the sea, making passage entirely impossible.  The path
+works its way west along the rocky edge, a sanctum of order in the
+wilderness.
+"
 ""
 301465600 0
 3 9 0
@@ -2225,18 +1634,12 @@ D3
 E
 "sea inner north"
 "The sea to the north stretches out before you and you can barely make out the
-
-shore on the other side.  All around it, you see the forest that you are in
-
-currently, with little room for settlement or building.  However, some small
-
-houses and shanties peek out into the water at various points in eddies and
-
-coves along the water's edge.  You can even make out a few fishing boats on
-
-the water.
-
-"
+shore on the other side.  All around it, you see the forest that you are in
+currently, with little room for settlement or building.  However, some small
+houses and shanties peek out into the water at various points in eddies and
+coves along the water's edge.  You can even make out a few fishing boats on
+the water.
+"
 214 9 1509949540 3 0
 -1
 S
@@ -2244,16 +1647,11 @@ S
 #70041
 "Along the Sea"
 "The edge of the sea extends both east and west and the path on which you've
-
-been travelling follows.  Dry and dusty, the ground is cracked in places and
-
-at the bank, you can see the bluffs give way to small pools of water that
-
-broke off in some long-forgotten flood.  To the south the dense forest looks
-
-innocent enough, but its thickness restricts passage entirely.
-
-"
+been travelling follows.  Dry and dusty, the ground is cracked in places and
+at the bank, you can see the bluffs give way to small pools of water that
+broke off in some long-forgotten flood.  To the south the dense forest looks
+innocent enough, but its thickness restricts passage entirely.
+"
 ""
 301465600 0
 3 9 0
@@ -2272,27 +1670,17 @@ S
 #70042
 "An Overgrown Forest"
 "Only a tiny patch of sky is clearly visible through the canopy above and most
-
-of the light has a slight green tint.  Several of the trees just to the west
-
-of the path are thickly tangled with thin vines until the trees themselves are
-
-barely visible.  The forest floor is thickly crowded with ferns and bushes
-
-with wide green leaves, making the ground nearly invisible under it all.  A
-
-fallen tree lays across the path to the south, a small patch of unpleasant
-
-looking jelly-like fungus feeding off of it.
-
-"
+of the light has a slight green tint.  Several of the trees just to the west
+of the path are thickly tangled with thin vines until the trees themselves are
+barely visible.  The forest floor is thickly crowded with ferns and bushes
+with wide green leaves, making the ground nearly invisible under it all.  A
+fallen tree lays across the path to the south, a small patch of unpleasant
+looking jelly-like fungus feeding off of it.
+"
 "E: Fungus is eatable, non-poisonous, but not noutricious or appitising
-
-E: A \"vine\" isn't strong enough to support a players weight.  Some animals,
-
-perhaps.
-
-"
+E: A \"vine\" isn't strong enough to support a players weight.  Some animals,
+perhaps.
+"
 301465600 0
 15 9 0
 D1
@@ -2307,18 +1695,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You climb over a fallen tree as you travel south.
-
-"
+"
 E
 "to_room"
 "$n climbs over a fallen tree as $e travels south.
-
-"
+"
 !
 3 0 4
 -1
@@ -2327,25 +1712,16 @@ S
 #70043
 "An Overgrown Forest"
 "A pale yet vibrant green grass pokes up between the large fern leaves in thick
-
-patches on the path, tiny drops of water clinging to each blade.  In the vines
-
-wrapped around one tree, there is a thicker, darker part that might be the
-
-nest of some bird or tree-dwelling mammal.  Several trees lean against each
-
-other to the west with thick vines draped down from them, an impossible to
-
-part curtain of plant life.  A large tree has fallen across the path north,
-
-not quite large enough to make passage anything more than inconvenient, and a
-
-green, jelly-like fungus is already feeding upon it.
-
-"
+patches on the path, tiny drops of water clinging to each blade.  In the vines
+wrapped around one tree, there is a thicker, darker part that might be the
+nest of some bird or tree-dwelling mammal.  Several trees lean against each
+other to the west with thick vines draped down from them, an impossible to
+part curtain of plant life.  A large tree has fallen across the path north,
+not quite large enough to make passage anything more than inconvenient, and a
+green, jelly-like fungus is already feeding upon it.
+"
 "E: West could be adapted into a weird hut type of place
-
-"
+"
 301465600 0
 15 9 0
 D0
@@ -2360,18 +1736,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You climb over a fallen tree as you travel north.
-
-"
+"
 E
 "to_room"
 "$n climbs over a fallen tree as $e travels north.
-
-"
+"
 !
 3 0 1
 -1
@@ -2380,23 +1753,15 @@ S
 #70044
 "An Overgrown Forest"
 "The path curves around a tangled curtain of vines and trees and thorny bushes
-
-to the northwest, a potentially dangerous looking section of growth.  To the
-
-east, the forest is dense with huge ferns, each leaf nearly four feet long and
-
-at least a foot wide.  The leaves look soft to touch, light green all of
-
-them.  A huge tree leans across the path west, somehow balanced so that it
-
-does not come crashing down onto the path.  It must have very strong roots at
-
-the barely visible base of it, several yards into the undergrowth south.
-
-"
+to the northwest, a potentially dangerous looking section of growth.  To the
+east, the forest is dense with huge ferns, each leaf nearly four feet long and
+at least a foot wide.  The leaves look soft to touch, light green all of
+them.  A huge tree leans across the path west, somehow balanced so that it
+does not come crashing down onto the path.  It must have very strong roots at
+the barely visible base of it, several yards into the undergrowth south.
+"
 "E: Fern leaves look soft, are actually spiny and painful but not poison
-
-"
+"
 301465600 0
 4 9 0
 D0

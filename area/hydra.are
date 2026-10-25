@@ -11,14 +11,10 @@
 "Hydra Forest Office"
 ""
 "[Altimeas] Knuckles need to force change alignment to evil on wear
-
-[Altimeas] Amulet of Taranth
-
-[Altimeas] Resets Set
-
-[Altimeas] oistat oiset oiflag
-
-"
+[Altimeas] Amulet of Taranth
+[Altimeas] Resets Set
+[Altimeas] oistat oiset oiflag
+"
 301465600 0
 0 6 0
 D1
@@ -35,21 +31,14 @@ S
 #84001
 "A Charred and Frozen Forest"
 "As you enter, it is clearly evident that a fire has recently stopped burning
-
-here.  The smell of freshly burnt wood fills the area and warm ashes cover the
-
-ground.  The sea to the west is calm, and below you the sounds of crashing
-
-water can softly be heard.  A charred rockface towers above you to the east
-
-with a ten degree slant.
-
-"
+here.  The smell of freshly burnt wood fills the area and warm ashes cover the
+ground.  The sea to the west is calm, and below you the sounds of crashing
+water can softly be heard.  A charred rockface towers above you to the east
+with a ten degree slant.
+"
 "[Altimeas] No Mob
-
-[Altimeas] Begin Major Hydra Area
-
-"
+[Altimeas] Begin Major Hydra Area
+"
 301465608 0
 3 9 0
 D0
@@ -66,19 +55,13 @@ S
 #84002
 "A Charred and Frozen Forest"
 "A thick layer of black ash covers the ground eliminating any chance of growth
-
-for potential plant life.  Only a few burnt out tree trunks remain to show
-
-that there once was life in this treacherous terrain.  A large landslide
-
-encloses the area on the north and east sides and what lies to the south and
-
-west doesn't seem pleasant.
-
-"
+for potential plant life.  Only a few burnt out tree trunks remain to show
+that there once was life in this treacherous terrain.  A large landslide
+encloses the area on the north and east sides and what lies to the south and
+west doesn't seem pleasant.
+"
 "[Xami] landslide blocks east, continues south
-
-"
+"
 301465600 0
 3 9 0
 D2
@@ -95,21 +78,14 @@ S
 #84003
 "A Charred and Frozen Forest"
 "A savage fire has stripped this area of all its beauty and created an
-
-eyesore.  A few burnt tree stumps appear here and there, whilst ash, charcoal
-
-and debris covers the ground.  Towering high above you, the rockface to the
-
-north is badly charred, but a few carvings can still be seen.  Looking south
-
-the ground appears untraversable as a large amount of debris has amassed there.
-
-"
+eyesore.  A few burnt tree stumps appear here and there, whilst ash, charcoal
+and debris covers the ground.  Towering high above you, the rockface to the
+north is badly charred, but a few carvings can still be seen.  Looking south
+the ground appears untraversable as a large amount of debris has amassed there.
+"
 "[Altimeas] passage blocked S
-
-south appears untraversable
-
-"
+south appears untraversable
+"
 301465600 0
 3 9 0
 D1
@@ -123,31 +99,22 @@ D3
 E
 "rockface carving charred"
 "The rockface rises high enough for you to lose view of it before it peaks. 
-
-Upon its charred surface some ancient carvings can be seen, but too many have
-
-been worn away for anyone to be able to make any sense of them.
-
-"
+Upon its charred surface some ancient carvings can be seen, but too many have
+been worn away for anyone to be able to make any sense of them.
+"
 -1
 S
 
 #84004
 "Cliff Overlooking The Great Sea"
 "Burnt trees, charcoal, and ashes are all that the eye can see to the north,
-
-east, and south.  The sea lies to the west, appearing dormant and still, but
-
-momentarily colliding with the cliff below.  Little to no plant life can be
-
-found, and what life can be found is quickly slipping away.  The smell of
-
-freshly burnt wood rushes in from the north.
-
-"
+east, and south.  The sea lies to the west, appearing dormant and still, but
+momentarily colliding with the cliff below.  Little to no plant life can be
+found, and what life can be found is quickly slipping away.  The smell of
+freshly burnt wood rushes in from the north.
+"
 "[Altimeas] Northern Sea to the West
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -169,21 +136,14 @@ S
 #84005
 "Cliff Overlooking The Great Sea"
 "The charred area lacks notable features.  The ground is covered in ash and
-
-burnt tree stumps are scattered lightly around the land.  Out to the west, the
-
-beauty and tranquility of the Great Sea is definately something to take notice
-
-of.  Apart from the west where the cliffs won't allow, you are able to leave
-
-quite easily through the lifeless plain.
-
-"
+burnt tree stumps are scattered lightly around the land.  Out to the west, the
+beauty and tranquility of the Great Sea is definately something to take notice
+of.  Apart from the west where the cliffs won't allow, you are able to leave
+quite easily through the lifeless plain.
+"
 "[Altimeas] Northern Sea to the West
-
-[Altimeas] No Mob (Dont let them players know)
-
-"
+[Altimeas] No Mob (Dont let them players know)
+"
 301465608 0
 3 9 0
 D0
@@ -204,25 +164,16 @@ S
 #84006
 "A Charred and Frozen Forest"
 "The bare, lifeless land is a sight for sore eyes.  The ground has been turned
-
-black by a thick layer of ashes and charcoal.  A long tree trunk stands
-
-centrally within the area.  To the north the ground appears untraversable with
-
-a large amount of debris occupying it.  Looking south, a mysterious looking
-
-mist rises to form a wall, through which it would be unwise to travel through.
-
-"
+black by a thick layer of ashes and charcoal.  A long tree trunk stands
+centrally within the area.  To the north the ground appears untraversable with
+a large amount of debris occupying it.  Looking south, a mysterious looking
+mist rises to form a wall, through which it would be unwise to travel through.
+"
 "[Altimeas] passage blocked N/S
-
-[Xami] North appears intraversable
-
-[Xami] mysterous mist forms wall south, passing thru not wise.
-
-[Xami] put in acode to drop wis by 3 if leaving south.
-
-"
+[Xami] North appears intraversable
+[Xami] mysterous mist forms wall south, passing thru not wise.
+[Xami] put in acode to drop wis by 3 if leaving south.
+"
 301465600 0
 3 9 0
 D1
@@ -241,12 +192,9 @@ A
 ""
 ""
 "act_tochar( \"@bStepping into the mist, you suddenly feel a little dumbfounded@n\", ch );
-
-drain_stat( ch, wis, 1, -3 );
-
-continue;
-
-"
+drain_stat( ch, wis, 1, -3 );
+continue;
+"
 !
 3 0 4
 -1
@@ -255,17 +203,12 @@ S
 #84007
 "A Charred and Frozen Forest"
 "A vast black land streches as far as the eye can see.  Ash has fallen and
-
-covered all the the land in the area as well as the remains of burnt trees.  A
-
-landslide dominates the east and is obviously more recent than the fire which
-
-the ashes originate from as little to no ash covers it.
-
-"
+covered all the the land in the area as well as the remains of burnt trees.  A
+landslide dominates the east and is obviously more recent than the fire which
+the ashes originate from as little to no ash covers it.
+"
 "[Xami] landslide blocks east, continues south and north
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -286,21 +229,14 @@ S
 #84008
 "A Charred and Frozen Forest"
 "As you arrive, five rocks immediately catch your attention.  The central stone
-
-is larger than the other four, and is rounded like a sphere.  The other four
-
-are shaped as triangles, each pointing in a cordinal direction.  The layer of
-
-ash covereing the ground here is thin, allowing the dirt below it to show in a
-
-few spots.  A recent landslide resides to the east and south, leaving you
-
-little choise but to head north or west.
-
-"
+is larger than the other four, and is rounded like a sphere.  The other four
+are shaped as triangles, each pointing in a cordinal direction.  The layer of
+ash covereing the ground here is thin, allowing the dirt below it to show in a
+few spots.  A recent landslide resides to the east and south, leaving you
+little choise but to head north or west.
+"
 "[Xami] landslide blocks east, continues north
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -314,16 +250,11 @@ D3
 E
 "rocks stones smooth triangles"
 "The rocks look to be an ancient form of a compass pointing out the four
-
-cordinal direction.  The central stone looks spherical but is buried below to
-
-far to be sure.  Upon it six symbols are finely carved a quarter of an inch
-
-deep.  The four triangular stone also each bare a single symbol.  Each symbol
-
-unique from all the others.
-
-"
+cordinal direction.  The central stone looks spherical but is buried below to
+far to be sure.  Upon it six symbols are finely carved a quarter of an inch
+deep.  The four triangular stone also each bare a single symbol.  Each symbol
+unique from all the others.
+"
 2485 9 1509949540 3 0
 -1
 S
@@ -331,29 +262,18 @@ S
 #84009
 "A Charred and Frozen Forest"
 "As you enter, you slip on a camouflaged rock in the ashes that cover the
-
-grounds.  The place looks very bare and flat, without a single tree stump to
-
-be seen.  Directly to the south a heap of trees have somehow been frozen,
-
-preventing you from moving in that direction.  To the north a mysterious mist
-
-has risen and formed a wall.  You think it would be unwise to pass through it.
-
-"
+grounds.  The place looks very bare and flat, without a single tree stump to
+be seen.  Directly to the south a heap of trees have somehow been frozen,
+preventing you from moving in that direction.  To the north a mysterious mist
+has risen and formed a wall.  You think it would be unwise to pass through it.
+"
 "[Altimeas] passage blocked N
-
-[Altimeas] No Mob (Dont let them players know)
-
-fallen, frozen, unburnt trees block south
-
-[Xami] mysterous mist forms wall north, passing thru not wise.
-
-cool chill from west
-
-[Xami] put in acode to drop wis by 3 if leaving north.
-
-"
+[Altimeas] No Mob (Dont let them players know)
+fallen, frozen, unburnt trees block south
+[Xami] mysterous mist forms wall north, passing thru not wise.
+cool chill from west
+[Xami] put in acode to drop wis by 3 if leaving north.
+"
 301465600 0
 3 9 0
 D0
@@ -372,12 +292,9 @@ A
 ""
 ""
 "act_tochar( \"@bStepping into the mist, you suddenly feel a little dumbfounded@n\", ch );
-
-drain_stat( ch, wis, 1, -3 );
-
-continue;
-
-"
+drain_stat( ch, wis, 1, -3 );
+continue;
+"
 !
 3 0 1
 -1
@@ -386,23 +303,15 @@ S
 #84010
 "A Charred and Frozen Forest"
 "A charred, mutilated body encased within an icy tomb dominates this part of
-
-the wasteland.  The tree stumps here are frozen, but do not yet appear to have
-
-been burnt.  Out to the north west is a spectacular view of the Great Sea.  A
-
-view quite out of place for such a lifeless area.  Towards the south, a light
-
-smoke cloud and red-orange glow signifies a fire.
-
-"
+the wasteland.  The tree stumps here are frozen, but do not yet appear to have
+been burnt.  Out to the north west is a spectacular view of the Great Sea.  A
+view quite out of place for such a lifeless area.  Towards the south, a light
+smoke cloud and red-orange glow signifies a fire.
+"
 "[Altimeas] Northern Sea to the NorthWest
-
-[Xami] Charred body encased in icy tomb
-
-[Xami] smoke from the south
-
-"
+[Xami] Charred body encased in icy tomb
+[Xami] smoke from the south
+"
 301465600 0
 3 9 0
 D0
@@ -424,30 +333,23 @@ D3
 E
 "mutilated body tomb encased"
 "Lying in the center of the area is a large tomb of ice, holding within it the
-
-mutilated corpse of an unidentifiable would-be warrior.  His shield has what
-
-only can be described as 'a bite taken out of it' missing at the top end, and
-
-his sword lies closeby bent out of shade by an immense force.
-
-"
+mutilated corpse of an unidentifiable would-be warrior.  His shield has what
+only can be described as 'a bite taken out of it' missing at the top end, and
+his sword lies closeby bent out of shade by an immense force.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You head south into the thickening smoke.
-
-"
+"
 E
 "to_room"
 "$n heads south and disappears into the thickening smoke.
-
-"
+"
 !
 3 0 4
 -1
@@ -456,19 +358,13 @@ S
 #84011
 "Cliff Overlooking The Great Sea"
 "Overlooking the Great Sea to the west, the view at this point of the cliffside
-
-is quite soothing compared the eyesore of the desolate wasteland of charred
-
-and frozen tree trunks.  Looking out, you can see the cliffs climbing up
-
-toward the south and a rather large decline toward the south.  A small hint of
-
-smoke creeps about the area, seemingly from the east.
-
-"
+is quite soothing compared the eyesore of the desolate wasteland of charred
+and frozen tree trunks.  Looking out, you can see the cliffs climbing up
+toward the south and a rather large decline toward the south.  A small hint of
+smoke creeps about the area, seemingly from the east.
+"
 "[Altimeas] Northern Sea to the West
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -489,27 +385,17 @@ S
 #84012
 "A Charred and Frozen Forest"
 "The ground here is covered in ash and charcoal.  A light smoke cloud fills the
-
-area to, seeming to be sourced to the east.  However to the west a cool breeze
-
-seems to blow, causing the area to give you a chill from the east, but give
-
-your skin that burning feeling from the east.  Over a large hole situated to
-
-the south, the burnt remains of an old wooden bridge appear too unstable for
-
-you to cross.  To the north, the ground seems to be completely covered in a
-
-thick, brown, muddy substance.
-
-"
+area to, seeming to be sourced to the east.  However to the west a cool breeze
+seems to blow, causing the area to give you a chill from the east, but give
+your skin that burning feeling from the east.  Over a large hole situated to
+the south, the burnt remains of an old wooden bridge appear too unstable for
+you to cross.  To the north, the ground seems to be completely covered in a
+thick, brown, muddy substance.
+"
 "[Xami] smoke from the east
-
-[Xami] burnt bridge over large hole south, unstable to walk upon.
-
-[Xami] must float or fly to use north exit
-
-"
+[Xami] burnt bridge over large hole south, unstable to walk upon.
+[Xami] must float or fly to use north exit
+"
 301465600 0
 3 9 0
 D0
@@ -528,46 +414,35 @@ A
 ""
 ""
 "if( char_affected( ch, fly ) || char_affected( ch, float ) ) {
-
-  act_tochar( #leave, ch );
-
-  continue;
-
-  }
-
-act_tochar( #nope, ch );
-
-"
+  act_tochar( #leave, ch );
+  continue;
+  }
+act_tochar( #nope, ch );
+"
 E
 "leave"
 "You fly over a large crater filled with mud to the north.
-
-"
+"
 E
 "nope"
 "You begin to leave north, but find yourself sinking into the mud and quickly
-
-retreat.
-
-"
+retreat.
+"
 !
 3 0 1
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You head east into the thickening smoke.
-
-"
+"
 E
 "to_room"
 "$n heads east and disappears into the thickening smoke.
-
-"
+"
 !
 3 0 2
 -1
@@ -576,27 +451,17 @@ S
 #84013
 "Cliff Overlooking The Great Sea"
 "As you enter the area, you can't help but try to hold your breathe.
-
-Dominating the majority of the space is a large rotting corpse letting off a
-
-putrid stench.  The icy floor has been turned red by a large puddle of blood
-
-sourced from the corpse, and the surrounding burnt tree stumps also seem to
-
-have been splattered in blood.  Over to the north west, a tall cliff overlooks
-
-the Great Sea taking your mind off the corpse for just a moment before the
-
-horrid odor creeps up your nostrils once again.
-
-"
+Dominating the majority of the space is a large rotting corpse letting off a
+putrid stench.  The icy floor has been turned red by a large puddle of blood
+sourced from the corpse, and the surrounding burnt tree stumps also seem to
+have been splattered in blood.  Over to the north west, a tall cliff overlooks
+the Great Sea taking your mind off the corpse for just a moment before the
+horrid odor creeps up your nostrils once again.
+"
 "[Altimeas] Northern Sea to the NorthWest
-
-[Xami] remains of a large creature, mauled by a great force
-
-[Xami] 1 in 3 chance to slip (dangerous room) slipping makes charc sit
-
-"
+[Xami] remains of a large creature, mauled by a great force
+[Xami] 1 in 3 chance to slip (dangerous room) slipping makes charc sit
+"
 301465600 0
 3 9 0
 D0
@@ -618,36 +483,23 @@ D3
 E
 "rotting corpse blood"
 "The remains of a large creature, mauled by an great force, lies here rooting
-
-and emitting a horrid stench that even the sea-breeze from the north west
-
-can't drown it out.  A large pool of blood has formed around the corpse
-
-turning the ice-covered flood red.  Trees in the surrounding area are also
-
-blood-covered, evidence to the horrendous death this creature suffered.
-
-"
+and emitting a horrid stench that even the sea-breeze from the north west
+can't drown it out.  A large pool of blood has formed around the corpse
+turning the ice-covered flood red.  Trees in the surrounding area are also
+blood-covered, evidence to the horrendous death this creature suffered.
+"
 A
 ""
 ""
 "if( random( 1, 3 ) == 1 ) {
-
-  if( find_stat( ch, dex ) < 15 ) {
-
-    act_tochar( \"You slip on the icy floor.\", ch );
-
-    act_notchar( \"$n slips on the icy floor.\", ch );
-
-    dam_message( ch, 1d10, \"The fall\" );
-
-    set_resting( ch );
-
-    }
-
-  }
-
-"
+  if( find_stat( ch, dex ) < 15 ) {
+    act_tochar( \"You slip on the icy floor.\", ch );
+    act_notchar( \"$n slips on the icy floor.\", ch );
+    dam_message( ch, 1d10, \"The fall\" );
+    set_resting( ch );
+    }
+  }
+"
 !
 1 0 15
 -1
@@ -656,21 +508,14 @@ S
 #84014
 "A Charred and Frozen Forest"
 "Smoke fills your lungs as you enter this small inferno.  With a big black
-
-cloud of smoke hovering around you, it is hard to make out many details.  Four
-
-or five tree trunks are still burning here and seem to be the cause of the
-
-smoke filling the area.  The ground here is covered with fresh ash and
-
-charcoal, still warm from the fires.  To the east a heap of fallen trees, yet
-
-to be burnt, blocks your way.
-
-"
+cloud of smoke hovering around you, it is hard to make out many details.  Four
+or five tree trunks are still burning here and seem to be the cause of the
+smoke filling the area.  The ground here is covered with fresh ash and
+charcoal, still warm from the fires.  To the east a heap of fallen trees, yet
+to be burnt, blocks your way.
+"
 "[Xami] frozen, fallen trees prevent movement east
-
-"
+"
 301465665 0
 3 9 0
 D0
@@ -689,187 +534,140 @@ A
 "scan"
 "north south east west ea no so we n s e w"
 "act_tochar( \"There is too much smoke obscuring your vision.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_room"
 "$n begins north and disappears into the smoke.
-
-"
+"
 E
 "to_char"
 "You head blindly towards the north.
-
-"
+"
 !
 3 0 1
 A
 ""
 ""
 "if( random( 1, 10 ) == 1 ) {
-
-  act_tochar(#ember, ch );
-
-  act_notchar( #ember1, ch );
-
-  dam_message( ch, 1d10, \"The burning ember\" );
-
-  }
-
-if( random( 1, 10 ) == 1 ) {
-
-  act_tochar( \"You choke briefly on the smoke.\", ch );
-
-  act_notchar( \"$n chokes briefly on the smoke.\", ch );
-
-  }
-
-"
+  act_tochar(#ember, ch );
+  act_notchar( #ember1, ch );
+  dam_message( ch, 1d10, \"The burning ember\" );
+  }
+if( random( 1, 10 ) == 1 ) {
+  act_tochar( \"You choke briefly on the smoke.\", ch );
+  act_notchar( \"$n chokes briefly on the smoke.\", ch );
+  }
+"
 E
 "ember"
 "An ember comes flying at you from one of the fires.
-
-"
+"
 E
 "ember1"
 "An ember flies at $n from one of the fires.
-
-"
+"
 E
 "to_room"
 "$n appears out of the smoke to the north.
-
-"
+"
 !
 1 0 1
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You head blindly towards the south.
-
-"
+"
 E
 "to_room"
 "$n begins south and disappears into the smoke.
-
-"
+"
 !
 3 0 4
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You head blindly towards the west.
-
-"
+"
 E
 "to_room"
 "$n begins west and disappears into the smoke.
-
-"
+"
 !
 3 0 8
 A
 ""
 ""
 "if( random( 1, 10 ) == 1 ) {
-
-  act_tochar(#ember, ch );
-
-  act_notchar( #ember1, ch );
-
-  dam_message( ch, 1d10, \"The burning ember\" );
-
-  }
-
-if( random( 1, 10 ) == 1 ) {
-
-  act_tochar( \"You choke briefly on the smoke.\", ch );
-
-  act_notchar( \"$n chokes briefly on the smoke.\", ch );
-
-  }
-
-"
+  act_tochar(#ember, ch );
+  act_notchar( #ember1, ch );
+  dam_message( ch, 1d10, \"The burning ember\" );
+  }
+if( random( 1, 10 ) == 1 ) {
+  act_tochar( \"You choke briefly on the smoke.\", ch );
+  act_notchar( \"$n chokes briefly on the smoke.\", ch );
+  }
+"
 E
 "ember"
 "An ember comes flying at you from one of the fires.
-
-"
+"
 E
 "ember1"
 "An ember flies at $n from one of the fires.
-
-"
+"
 E
 "to_room"
 "$n appears out of the smoke to the west.
-
-"
+"
 !
 1 0 8
 A
 ""
 ""
 "if( random( 1, 10 ) == 1 ) {
-
-  act_tochar(#ember, ch );
-
-  act_notchar( #ember1, ch );
-
-  dam_message( ch, 1d10, \"The burning ember\" );
-
-  }
-
-if( random( 1, 10 ) == 1 ) {
-
-  act_tochar( \"You choke briefly on the smoke.\", ch );
-
-  act_notchar( \"$n chokes briefly on the smoke.\", ch );
-
-  }
-
-"
+  act_tochar(#ember, ch );
+  act_notchar( #ember1, ch );
+  dam_message( ch, 1d10, \"The burning ember\" );
+  }
+if( random( 1, 10 ) == 1 ) {
+  act_tochar( \"You choke briefly on the smoke.\", ch );
+  act_notchar( \"$n chokes briefly on the smoke.\", ch );
+  }
+"
 E
 "ember"
 "An ember comes flying at you from one of the fires.
-
-"
+"
 E
 "ember1"
 "An ember flies at $n from one of the fires.
-
-"
+"
 E
 "to_room"
 "$n appears out of the smoke to the south.
-
-"
+"
 !
 1 0 4
 A
 "scan"
 ""
 "act_tochar( \"There is too much smoke obscuring your vision.\", ch );
-
-"
+"
 !
 0 0 0
 -1
@@ -878,21 +676,14 @@ S
 #84015
 "Cliff Overlooking The Great Sea"
 "The views of the Great Sea as you walk along the cliffside are breath-taking. 
-
-It provides a great contrast to the barren land that lies to the south and
-
-east.  As luck would have it in this area, the spectacular sight is tainted
-
-with the splattered remains of an unfortunate traveler covering a large
-
-portion of the cliffside.
-
-"
+It provides a great contrast to the barren land that lies to the south and
+east.  As luck would have it in this area, the spectacular sight is tainted
+with the splattered remains of an unfortunate traveler covering a large
+portion of the cliffside.
+"
 "[Altimeas] Northern Sea to the NorthWest
-
-[Xami] magnificent view tainted with blood stained cliffside
-
-"
+[Xami] magnificent view tainted with blood stained cliffside
+"
 301465600 0
 3 9 0
 D1
@@ -910,21 +701,14 @@ S
 #84016
 "A Charred and Frozen Forest"
 "A thick smoke cloud pours in from the north, making it quite hard to see your
-
-surroundings.  Large gatherings of fallen trees have been frozen together,
-
-forming a great wall the the south and east.  Ash has begun to cover the
-
-floor, and continues to fall all around you.  An orange-red glow flickers
-
-faintly amidst the smoke to the north, signifying fire.
-
-"
+surroundings.  Large gatherings of fallen trees have been frozen together,
+forming a great wall the the south and east.  Ash has begun to cover the
+floor, and continues to fall all around you.  An orange-red glow flickers
+faintly amidst the smoke to the north, signifying fire.
+"
 "[Xami] frozen, fallen trees prevent movement east and south
-
-[Xami] smoke from the north
-
-"
+[Xami] smoke from the north
+"
 301465600 0
 3 9 0
 D0
@@ -939,18 +723,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You head north into the thickening smoke.
-
-"
+"
 E
 "to_room"
 "$n heads north and disappears into the thickening smoke.
-
-"
+"
 !
 3 0 1
 2239 9 1509949540 3 0
@@ -960,29 +741,18 @@ S
 #84017
 "Cliff Overlooking The Great Sea"
 "The eye-catching Great Sea rests calmly to the north, and far west on the
-
-horizon, on disturbed by it's clashing with the shores.  Looking back at the
-
-harsh reality of the arid, ash-covered, remains of a forest, you begin to
-
-question why you have come here.  Slowly, but surely, you begin to notice the
-
-smell of smoke, seemingly strongest to the south east.  Finally you attention
-
-stops and focuses on the south, where the ground seems to be covered in a
-
-thick, brown, muddy substance.
-
-"
+horizon, on disturbed by it's clashing with the shores.  Looking back at the
+harsh reality of the arid, ash-covered, remains of a forest, you begin to
+question why you have come here.  Slowly, but surely, you begin to notice the
+smell of smoke, seemingly strongest to the south east.  Finally you attention
+stops and focuses on the south, where the ground seems to be covered in a
+thick, brown, muddy substance.
+"
 "[Altimeas] Northern Sea to the North
-
-[Xami] must float or fly to use south exit
-
-[Xami] smell smoke from south east
-
-[Xami] south is the mud hole
-
-"
+[Xami] must float or fly to use south exit
+[Xami] smell smoke from south east
+[Xami] south is the mud hole
+"
 301465600 0
 3 9 0
 D1
@@ -1001,28 +771,20 @@ A
 ""
 ""
 "if( char_affected( ch, fly ) || char_affected( ch, float ) ) {
-
-  act_tochar( #leave, ch );
-
-  continue;
-
-  }
-
-act_tochar( #nope, ch );
-
-"
+  act_tochar( #leave, ch );
+  continue;
+  }
+act_tochar( #nope, ch );
+"
 E
 "leave"
 "You fly over a large crater filled with mud to the south.
-
-"
+"
 E
 "nope"
 "You begin to leave north, but find yourself sinking into the mud and quickly
-
-retreat.
-
-"
+retreat.
+"
 !
 3 0 4
 -1
@@ -1031,27 +793,17 @@ S
 #84018
 "A Charred and Frozen Forest"
 "Upon arriving, you notice right away your sense of smell is being tortured. 
-
-From the north east a light smoke cloud creeps in, and from the west a putrid
-
-smell, remsembling a rotting corpse, fills the area.  A large hole resides to
-
-the north, but the old bridge that once allowed one to pass over the hole, now
-
-appears broken, burnt, and too unstable to suuport any weight.  The south is
-
-blocked by a frozen mass of trees forming a wall.
-
-"
+From the north east a light smoke cloud creeps in, and from the west a putrid
+smell, remsembling a rotting corpse, fills the area.  A large hole resides to
+the north, but the old bridge that once allowed one to pass over the hole, now
+appears broken, burnt, and too unstable to suuport any weight.  The south is
+blocked by a frozen mass of trees forming a wall.
+"
 "[Xami] burnt bridge over large hole north, unstable to walk upon.
-
-[Xami] smell smoke from north east
-
-[Xami] south is wall of frozen trees
-
-[Xami] bad smell from west
-
-"
+[Xami] smell smoke from north east
+[Xami] south is wall of frozen trees
+[Xami] bad smell from west
+"
 301465600 0
 3 9 0
 D1
@@ -1068,19 +820,13 @@ S
 #84019
 "Cliff Overlooking The Great Sea"
 "The cliff sits at about sixty-five feet above the surface of the Great Sea
-
-below.  From this position, the water looks calm and still, although the sound
-
-of crashing water can be heard faintly.  The ground here is charred and
-
-cracked, look as though it were hit by an immense flaming hammer.  The
-
-cliffside bends to the east and south, with a small but incline to the south.
-
-"
+below.  From this position, the water looks calm and still, although the sound
+of crashing water can be heard faintly.  The ground here is charred and
+cracked, look as though it were hit by an immense flaming hammer.  The
+cliffside bends to the east and south, with a small but incline to the south.
+"
 "[Altimeas] Northern Sea to the NorthWest
-
-"
+"
 301465600 0
 3 9 0
 D1
@@ -1095,18 +841,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You follow the incline up to the south.
-
-"
+"
 E
 "to_room"
 "$n follows the incline up to the south.
-
-"
+"
 !
 3 0 4
 705 9 1509949540 3 0
@@ -1116,23 +859,15 @@ S
 #84020
 "Cliff Overlooking The Great Sea"
 "Seeing the Great Sea over the cliff to the north makes the harsh terrain you
-
-find yourself in seem all the more unpleasant.  Disturbing the relaxing smell
-
-of the sea is the foul stench of a rotting corpse, creeping in from the east. 
-
-Over to the west, you can see the cliffside continue out and to the south with
-
-a steady incline.  A large pile of stone occupies the south, and it would be
-
-unlikely that you could find any means to pass over it.
-
-"
+find yourself in seem all the more unpleasant.  Disturbing the relaxing smell
+of the sea is the foul stench of a rotting corpse, creeping in from the east. 
+Over to the west, you can see the cliffside continue out and to the south with
+a steady incline.  A large pile of stone occupies the south, and it would be
+unlikely that you could find any means to pass over it.
+"
 "[Altimeas] Northern Sea to the North
-
-[Xami] large pile of stones block south
-
-"
+[Xami] large pile of stones block south
+"
 301465600 0
 3 9 0
 D1
@@ -1149,19 +884,13 @@ S
 #84021
 "A Charred and Frozen Forest"
 "The smell pouring in from the north is terrible forcing you to hold your nose
-
-to stop the smell from making you sick.  Far west crashing water can faintly
-
-be heard whilst a chilly breeze also blows in.  The skeleton of an extremely
-
-large creature towers high abouve you, despite being half buried in the ground.
-
-To the south you can see a faint orange-red glow.
-
-"
+to stop the smell from making you sick.  Far west crashing water can faintly
+be heard whilst a chilly breeze also blows in.  The skeleton of an extremely
+large creature towers high abouve you, despite being half buried in the ground.
+To the south you can see a faint orange-red glow.
+"
 "[Xami] putrid smell from north
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -1182,18 +911,12 @@ S
 #84022
 "A Charred and Frozen Forest"
 "Evident by the large number of burnt out tree trunks, this area once was a
-
-dense forest.  Now all that stands are a few charred trunks and a large
-
-scattering of frozen lumber.  A large mass of stones has been piled up,
-
-preventing any movement to the north.  To the south an enomous block of ice
-
-acts like a wall, leaving you with the option of heading west towards a cool
-
-sea breeze, or east further into the frozen wasteland.
-
-"
+dense forest.  Now all that stands are a few charred trunks and a large
+scattering of frozen lumber.  A large mass of stones has been piled up,
+preventing any movement to the north.  To the south an enomous block of ice
+acts like a wall, leaving you with the option of heading west towards a cool
+sea breeze, or east further into the frozen wasteland.
+"
 ""
 301465600 0
 3 9 0
@@ -1211,23 +934,15 @@ S
 #84023
 "Cliff Overlooking The Great Sea"
 "The cliff stands about seventy feet above the Great Sea.  The view of the
-
-Great Sea out to the west is breathe taking.  A very contrasting view to that
-
-to the east, where a vast number of charred and frozen remains dominate the
-
-wasteland.  Just visible on the edge of the cliff, a boot sized for a human
-
-adult is lodged between two small rocks.  The cliffs continue to climb south
-
-and declines towards the north.
-
-"
+Great Sea out to the west is breathe taking.  A very contrasting view to that
+to the east, where a vast number of charred and frozen remains dominate the
+wasteland.  Just visible on the edge of the cliff, a boot sized for a human
+adult is lodged between two small rocks.  The cliffs continue to climb south
+and declines towards the north.
+"
 "[Altimeas] Northern Sea to the West
-
-[Xami] shoe stuck in edge of cliff, from person jumping off cliff in a hurry
-
-"
+[Xami] shoe stuck in edge of cliff, from person jumping off cliff in a hurry
+"
 301465600 0
 3 9 0
 D0
@@ -1245,46 +960,37 @@ D2
 E
 "boot human adult"
 "A worn, hard leather boot, sized for an adult human is lodged between two
-
-small rocks on the edge of the cliff.  There are signs around the boot that
-
-the owner had jumped off the cliff in quite a hurry.
-
-"
+small rocks on the edge of the cliff.  There are signs around the boot that
+the owner had jumped off the cliff in quite a hurry.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You follow the incline up to the south.
-
-"
+"
 E
 "to_room"
 "$n follows the incline up to the south.
-
-"
+"
 !
 3 0 4
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You follow the decline down to the north.
-
-"
+"
 E
 "to_room"
 "$n follows the decline down to the north.
-
-"
+"
 !
 3 0 1
 -1
@@ -1293,23 +999,15 @@ S
 #84024
 "Cliff Overlooking The Great Sea"
 "A great stone wall dominates the southern area.  Although it's current
-
-appearance doesn't show much hope of stnad for much longer, you can see that
-
-the wall was built with great craftsmanship, with some of the base of the wall
-
-still in good condidtion.  Out to the west the Great Sea streches out as far
-
-as the eye can see until it meets the sky on the horizon.  The cliff steadily
-
-declines to the north while to the west lies more barren wasteland.
-
-"
+appearance doesn't show much hope of stnad for much longer, you can see that
+the wall was built with great craftsmanship, with some of the base of the wall
+still in good condidtion.  Out to the west the Great Sea streches out as far
+as the eye can see until it meets the sky on the horizon.  The cliff steadily
+declines to the north while to the west lies more barren wasteland.
+"
 "[Altimeas] Northern Sea to the West
-
-[Xami] stone wall south (city wall)
-
-"
+[Xami] stone wall south (city wall)
+"
 301465600 0
 3 9 0
 D0
@@ -1324,18 +1022,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You follow the decline down to the north.
-
-"
+"
 E
 "to_room"
 "$n follows the decline down to the north.
-
-"
+"
 !
 3 0 1
 -1
@@ -1344,25 +1039,16 @@ S
 #84025
 "A Charred and Frozen Forest"
 "There is a coldness here that chills you to the bones.  The giant block of ice
-
-to the north emits an aura of freezing air, keeping it from melting.  To the
-
-south a is large stone wall that looks to be as old as time itself.  Although
-
-heavily damaged, the wall seems perfectly stable and able to hold its
-
-position.  With the north and south blocked off, you can either head west to
-
-the faint sound of water or east toward a very faint orangish glow.
-
-"
+to the north emits an aura of freezing air, keeping it from melting.  To the
+south a is large stone wall that looks to be as old as time itself.  Although
+heavily damaged, the wall seems perfectly stable and able to hold its
+position.  With the north and south blocked off, you can either head west to
+the faint sound of water or east toward a very faint orangish glow.
+"
 "[Xami] ice wall to the north
-
-[Xami] stone wall south (city wall)
-
-[Xami] \"a very faint orangish glow.\" becomes \"Darkness\" when final part open.
-
-"
+[Xami] stone wall south (city wall)
+[Xami] \"a very faint orangish glow.\" becomes \"Darkness\" when final part open.
+"
 301465600 0
 3 9 0
 D1
@@ -1379,21 +1065,14 @@ S
 #84026
 "A Charred and Frozen Forest"
 "The large ice wall to the south glows orange-red filling the area with an
-
-eerie light.  A large stone wall can be seen to the south west standing tall,
-
-like a city wall perhaps.  To the east, what looks to be a giant rib cage is
-
-half buried and forms bars as if you were looking out through the cell door of
-
-a jail.  As a small wind picks up a notch, a vial stench follows it in from
-
-the north.
-
-"
+eerie light.  A large stone wall can be seen to the south west standing tall,
+like a city wall perhaps.  To the east, what looks to be a giant rib cage is
+half buried and forms bars as if you were looking out through the cell door of
+a jail.  As a small wind picks up a notch, a vial stench follows it in from
+the north.
+"
 "[Xami] temp. no south exit, ice wall with red glow (fire behide it)
-
-"
+"
 301465601 0
 3 9 0
 D0
@@ -1415,17 +1094,12 @@ S
 #84027
 "A Demolished Archway"
 "Under Construction.
-
-"
+"
 "[Altimeas] No Mob
-
-[Altimeas] evidence of what was once a city gate
-
-[Altimeas] Greek Style Architecture
-
-[Xami] evidence of recent fire for opening. Ground is damp from ice melting.
-
-"
+[Altimeas] evidence of what was once a city gate
+[Altimeas] Greek Style Architecture
+[Xami] evidence of recent fire for opening. Ground is damp from ice melting.
+"
 301465608 0
 3 9 0
 D0
@@ -1442,8 +1116,7 @@ S
 #84028
 "Charred and Frozen Ruins"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 9 0
@@ -1469,11 +1142,9 @@ S
 #84029
 "Charred and Frozen Ruins"
 "Under Construction.
-
-"
+"
 "[Altimeas] A Dried Up Well and Ruined Town Square
-
-"
+"
 301465600 0
 3 9 0
 D0
@@ -1498,8 +1169,7 @@ S
 #84030
 "Charred and Frozen Ruins"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 9 0
@@ -1525,8 +1195,7 @@ S
 #84031
 "Charred and Frozen Ruins"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 9 0
@@ -1545,8 +1214,7 @@ S
 #84032
 "Charred and Frozen Ruins"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 9 0
@@ -1572,8 +1240,7 @@ S
 #84033
 "Charred and Frozen Ruins"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 9 0
@@ -1592,8 +1259,7 @@ S
 #84034
 "A Charred and Frozen Forest"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 9 0
@@ -1612,8 +1278,7 @@ S
 #84035
 "Charred and Frozen Ruins"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 9 0
@@ -1639,8 +1304,7 @@ S
 #84036
 "Charred and Frozen Ruins"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 9 0
@@ -1659,8 +1323,7 @@ S
 #84037
 "A Frosted Marble Building"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 9 0
@@ -1675,8 +1338,7 @@ S
 #84038
 "A Demolished Temple"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 9 0
@@ -1690,8 +1352,7 @@ S
 #84039
 "A Scorched Marble Building"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 9 0

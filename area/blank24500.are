@@ -10,15 +10,11 @@
 #24500
 "At End of Road"
 "You are standing at the end of a road before a small brick building.  Around
-
-you is a forest.  A small stream flows out of the building and down a gully.
-
-"
+you is a forest.  A small stream flows out of the building and down a gully.
+"
 "There are supposed to be two random forest rooms linked near here. Will add real rooms instead.
-
-For now, just adding non-random rooms.
-
-"
+For now, just adding non-random rooms.
+"
 33030144 0
 12 9 0
 D1
@@ -36,26 +32,19 @@ D3
 E
 "well  house brick building small wellhouse"
 "It's a small brick building. It seems to be a well house.
-
-"
+"
 E
 "road street path dirt"
 "The road is dirt, not yellow brick.
-
-"
+"
 E
 "forest tree trees oak maple grove pine spruce birch ash saplings bushes leaves berry berries hardwood"
 "The trees of the forest are large hardwood oak and maple, with an occasional
-
-grove of pine or spruce.  There is quite a bit of undergrowth, largely birch
-
-and ash saplings plus nondescript bushes of various sorts.  This time of year
-
-visibility is quite restricted by all the leaves, but travel is quite easy if
-
-you detour around the spruce and berry bushes.
-
-"
+grove of pine or spruce.  There is quite a bit of undergrowth, largely birch
+and ash saplings plus nondescript bushes of various sorts.  This time of year
+visibility is quite restricted by all the leaves, but travel is quite easy if
+you detour around the spruce and berry bushes.
+"
 398 17 1509949540 -2 0
 -1
 S
@@ -63,13 +52,10 @@ S
 #24501
 "Inside Building"
 "You are inside a building, a well house for a large spring.  The stream flows
-
-out through a pair of foot-diameter stone pipes.
-
-"
+out through a pair of foot-diameter stone pipes.
+"
 "real magic word links here.
-
-"
+"
 33030148 0
 0 6 0
 D3
@@ -79,109 +65,79 @@ D3
 E
 "spring pipes"
 "The pipes are well-worked and old, of round stone.
-
-"
+"
 A
 "enter"
 "pipes"
 "act_tochar( #pipes, ch );
-
-"
+"
 E
 "pipes"
 "Too small. The only exit is to the west.
-
-"
+"
 !
 0 0 0
 A
 "say '"
 "xyzzy"
 "if( cflag( 186, ch ) ) {
-
-act_tochar( #xyzzy, ch );
-
-act_notchar( #oxyzzy, ch );
-
-transfer( ch, find_room( 24508 ) );
-
-act_tochar( #dest, ch );
-
-act_notchar( #odest, ch );
-
-} else {
-
-continue;
-
-}
-
-"
+act_tochar( #xyzzy, ch );
+act_notchar( #oxyzzy, ch );
+transfer( ch, find_room( 24508 ) );
+act_tochar( #dest, ch );
+act_notchar( #odest, ch );
+} else {
+continue;
+}
+"
 E
 "xyzzy"
 "@bYou begin uttering: \"Xyz-@n
-
-"
+"
 E
 "oxyzzy"
 "@b$n begins uttering \"Xyz-\", and is enveloped by a whirlwind!@n
-
-"
+"
 E
 "odest"
 "@bThere's a sudden \"-zy!\" and $n appears in a whirl of dust!@n
-
-"
+"
 E
 "dest"
 "@b-zy!\", and you're elsewhere!@n
-
-"
+"
 !
 0 0 0
 A
 "say '"
 "plugh"
 "if( cflag( 187, ch ) ) {
-
-act_tochar( #plugh, ch );
-
-act_notchar( #oplugh, ch );
-
-transfer( ch, find_room( 24525 ) );
-
-act_tochar( #dest, ch );
-
-act_notchar( #odest, ch );
-
-}
-
-else {
-
-continue;
-
-}
-
-"
+act_tochar( #plugh, ch );
+act_notchar( #oplugh, ch );
+transfer( ch, find_room( 24525 ) );
+act_tochar( #dest, ch );
+act_notchar( #odest, ch );
+}
+else {
+continue;
+}
+"
 E
 "plugh"
 "@bYou begin uttering: \"Plu-@n
-
-"
+"
 E
 "oplugh"
 "@b$n begins uttering \"Plu-\" and is enveloped by a whirlwind!@n
-
-"
+"
 E
 "dest"
 "@b\"-gh!\" and you're elsewhere!@n
-
-"
+"
 E
 "odest"
 "@bThere's a sudden \"-gh!\" and $n appears in a whirl of dust!@n
-
-"
+"
 !
 0 0 0
 696 17 1509949540 -2 0
@@ -195,15 +151,11 @@ S
 #24502
 "At Hill In Road"
 "You have walked up a hill, still in the forest.  The road slopes back down the
-
-other side of the hill.  There is a building in the distance.
-
-"
+other side of the hill.  There is a building in the distance.
+"
 "Link to world to west.
-
-links to random forest N/S
-
-"
+links to random forest N/S
+"
 33030144 0
 12 9 0
 D1
@@ -213,32 +165,24 @@ D1
 E
 "hill bump incline"
 "It's just a typical hill.
-
-"
+"
 E
 "forest tree trees oak maple grove pine spruce birch ash saplings bushes leaves berry berries hardwood"
 "The trees of the forest are large hardwood oak and maple, with an occasional
-
-grove of pine or spruce.  There is quite a bit of undergrowth, largely birch
-
-and ash saplings plus nondescript bushes of various sorts.  This time of year
-
-visibility is quite restricted by all the leaves, but travel is quite easy if
-
-you detour around the spruce and berry bushes.
-
-"
+grove of pine or spruce.  There is quite a bit of undergrowth, largely birch
+and ash saplings plus nondescript bushes of various sorts.  This time of year
+visibility is quite restricted by all the leaves, but travel is quite easy if
+you detour around the spruce and berry bushes.
+"
 -1
 S
 
 #24503
 "In A Valley"
 "You are in a valley in the forest beside a stream tumbling along a rocky bed.
-
-"
+"
 "exits EW  to fforest
-
-"
+"
 33030144 0
 3 9 0
 D0
@@ -255,13 +199,10 @@ S
 #24504
 "At Slit in Streambed"
 "At your feet all the water of the stream splashes into a two-inch slit in the
-
-rock.  Downstream the streambed is bare rock.
-
-"
+rock.  Downstream the streambed is bare rock.
+"
 "exits EW to forest
-
-"
+"
 33030144 0
 3 6 0
 D0
@@ -275,14 +216,12 @@ D2
 E
 "slit two inch 2-inch two-inch"
 "It's just a two-inch slit in the rock through which the stream is flowing.
-
-"
+"
 A
 "enter"
 "slit rock crack"
 "act_tochar( \"You don't fit through a two-inch slit!\", ch );
-
-"
+"
 !
 0 0 0
 -1
@@ -291,17 +230,12 @@ S
 #24505
 "Outside Grate"
 "You are in a 20-foot depression floored with bare dirt.  Set into the dirt is
-
-a strong steel grate mounted in a slab of stone.  A dry streambed leads into the
-
-depression.
-
-"
+a strong steel grate mounted in a slab of stone.  A dry streambed leads into the
+depression.
+"
 "concrete -> slab of stone
-
-exits ESW to forest
-
-"
+exits ESW to forest
+"
 33030144 0
 3 6 0
 D0
@@ -315,23 +249,19 @@ D5
 E
 "depression dirt twenty foot bare"
 "You're standing in it.
-
-"
+"
 E
 "grate lock gate grille metal strong steel grating"
 "It just looks like an ordinary grate mounted in stone.
-
-"
+"
 -1
 S
 
 #24506
 "Below the Grate"
 "You are in a small chamber beneath a 3x3 steel grate to the surface.  A low
-
-crawl over cobbles leads inward to the west.
-
-"
+crawl over cobbles leads inward to the west.
+"
 ""
 33030148 0
 11 6 0
@@ -346,23 +276,18 @@ D4
 E
 "cobble cobbles cobblestones cobblestone stones stone"
 "They're just ordinary cobbles.
-
-"
+"
 -1
 S
 
 #24507
 "In Cobble Crawl"
 "You are crawling over cobbles in a low passage.  There is a dim light at the
-
-east end of the passage.
-
-"
+east end of the passage.
+"
 "wicker cage here?
-
-better as search
-
-"
+better as search
+"
 33030148 0
 11 6 0
 D1
@@ -376,27 +301,20 @@ D3
 E
 "cobble cobbles cobblestones cobblestone stones stone"
 "They're just ordinary cobbles.
-
-"
+"
 -1
 S
 
 #24508
 "In Debris Room"
 "You are in a debris room filled with stuff washed in from the surface.  A low
-
-wide passage with cobbles becomes plugged with mud and debris here, but an
-
-awkward canyon leads upward and west.  A scrap of parchment is pinned to the
-
-wall.
-
-"
+wide passage with cobbles becomes plugged with mud and debris here, but an
+awkward canyon leads upward and west.  A scrap of parchment is pinned to the
+wall.
+"
 "black rod here - search in debris?
-
-set xyzzy cflag here.
-
-"
+set xyzzy cflag here.
+"
 33030148 0
 11 6 0
 D1
@@ -410,60 +328,47 @@ D3
 E
 "cobble cobbles cobblestones cobblestone stones stone"
 "They're just ordinary cobbles.
-
-"
+"
 E
 "note parchment scrap"
 "The note says '@EMagic word XYZZY@n'.
-
-"
+"
 E
 "debris stuff mud"
 "Yuck.
-
-"
+"
 A
 ""
 ""
 "set_cflag( 186, ch );
-
-"
+"
 !
 1 0 2
 A
 "say '"
 "xyzzy"
 "act_tochar( #xyzzy, ch );
-
-act_notchar( #oxyzzy, ch );
-
- transfer( ch, find_room( 24501 ) );
-
-act_tochar( #dest, ch );
-
-act_notchar( #odest, ch );
-
-"
+act_notchar( #oxyzzy, ch );
+ transfer( ch, find_room( 24501 ) );
+act_tochar( #dest, ch );
+act_notchar( #odest, ch );
+"
 E
 "xyzzy"
 "@bYou begin uttering: \"Xyz-@n
-
-"
+"
 E
 "oxyzzy"
 "@b$n begins uttering \"Xyz-\", and is enveloped by a whirlwind!@n
-
-"
+"
 E
 "dest"
 "@b-zy!\", and you're elsewhere!@n
-
-"
+"
 E
 "odest"
 "@bThere's a sudden \"-zy!\" and $n appears in a whirl of dust!@n
-
-"
+"
 !
 0 0 0
 -1
@@ -472,19 +377,13 @@ S
 #24509
 "Orange River Chamber"
 "You are in a splendid chamber thirty feet high.  The walls are frozen rivers
-
-of orange stone.  An awkward canyon and a good passage exit from east and west
-
-sides of the chamber.
-
-"
+of orange stone.  An awkward canyon and a good passage exit from east and west
+sides of the chamber.
+"
 "little bird
-
-can be caught in cage
-
-scared of rod
-
-"
+can be caught in cage
+scared of rod
+"
 33030148 0
 11 6 0
 D1
@@ -501,12 +400,9 @@ S
 #24510
 "At Top of Small Pit"
 "At your feet is a small pit breathing traces of white mist.  A west passage
-
-ends here except for a small crack leading on.  Rough stone steps lead down
-
-the pit.
-
-"
+ends here except for a small crack leading on.  Rough stone steps lead down
+the pit.
+"
 ""
 33030148 0
 11 6 0
@@ -521,34 +417,25 @@ D5
 E
 "small pit"
 "The pit is breathing traces of white mist.
-
-"
+"
 E
 "crack small"
 "The crack is very small -- far too small for you to follow.
-
-"
+"
 -1
 S
 
 #24511
 "In Hall of Mists"
 "You are at one end of a vast hall stretching forward out of sight to the
-
-west.  There are openings to either side.  Nearby, a wide stone staircase
-
-leads downward.  The hall is filled with wisps of white mist swaying to and
-
-fro almost as if alive.  A cold wind blows up the staircase.  There is a
-
-passage at the top of a dome behind you.  Rough stone steps lead up the dome.
-
-"
+west.  There are openings to either side.  Nearby, a wide stone staircase
+leads downward.  The hall is filled with wisps of white mist swaying to and
+fro almost as if alive.  A cold wind blows up the staircase.  There is a
+passage at the top of a dome behind you.  Rough stone steps lead up the dome.
+"
 "Getting up the dome with a nugget kills you. Too much weight = fall?
-
-downward -> downward to the north
-
-"
+downward -> downward to the north
+"
 33030148 0
 11 6 0
 D2
@@ -570,21 +457,17 @@ D5
 E
 "wide stone staircase rough stone steps"
 "A side stone staircase leads down, while rough stone steps lead up the dome.
-
-"
+"
 -1
 S
 
 #24512
 "In South Side Chamber"
 "You are in the south side chamber.
-
-"
+"
 "Note on the wall, gold nugget treasure?
-
-Needs a guardian of some sort.
-
-"
+Needs a guardian of some sort.
+"
 33030148 0
 11 6 0
 D0
@@ -597,15 +480,11 @@ S
 #24513
 "On East Bank of Fissure"
 "You are on the east bank of a fissure slicing clear across the hall.  The mist
-
-is quite thick here, and the fissure is too wide to jump.
-
-"
+is quite thick here, and the fissure is too wide to jump.
+"
 "wave rod for crystal bridge
-
-[Hedrack] bridge handling
-
-"
+[Hedrack] bridge handling
+"
 33030148 0
 11 6 0
 D1
@@ -622,15 +501,11 @@ S
 #24514
 "West Side of Fissure"
 "You are on the west side of the fissure in the hall of mists.
-
-"
+"
 "*diamonds*
-
-exit north bounces to west
-
-[Hedrack] bridge handling?
-
-"
+exit north bounces to west
+[Hedrack] bridge handling?
+"
 33030148 0
 11 6 0
 D1
@@ -647,15 +522,11 @@ S
 #24515
 "At West End of Hall of Mists"
 "You are at the west end of the hall of mists.  A low wide crawl continues west
-
-and another goes north.  To the south is a little passage 6 feet off the floor.
-
-"
+and another goes north.  To the south is a little passage 6 feet off the floor.
+"
 "exit north bounces to east
-
-south to alike-maze 1
-
-"
+south to alike-maze 1
+"
 33030148 0
 11 6 0
 D1
@@ -678,12 +549,9 @@ S
 #24516
 "At East End of Long Hall"
 "You are at the east end of a very long hall apparently without side chambers. 
-
-To the east a low wide crawl slants up.  To the north a round two foot hole
-
-slants down.
-
-"
+To the east a low wide crawl slants up.  To the north a round two foot hole
+slants down.
+"
 ""
 33030148 0
 11 6 0
@@ -705,13 +573,10 @@ S
 #24517
 "At West End of Long Hall"
 "You are at the west end of a very long featureless hall.  The hall joins up
-
-with a narrow north/south passage.
-
-"
+with a narrow north/south passage.
+"
 "different maze to south
-
-"
+"
 33030148 0
 11 6 0
 D0
@@ -728,8 +593,7 @@ S
 #24518
 "North-south and East-west Crossover"
 "You are at a crossover of a high N/S passage and a low E/W one.
-
-"
+"
 ""
 33030148 0
 11 6 0
@@ -755,8 +619,7 @@ S
 #24519
 "Dead End"
 "You have reached a dead end.
-
-"
+"
 ""
 33030148 0
 11 6 0
@@ -770,13 +633,10 @@ S
 #24520
 "In West Side Chamber"
 "You are in the west side chamber of the hall of the mountain king.  A passage
-
-continues west and up here.
-
-"
+continues west and up here.
+"
 "*rare coins*
-
-"
+"
 33030148 0
 11 6 0
 D1
@@ -793,13 +653,10 @@ S
 #24521
 "Hall of the Mountain King"
 "You are in the hall of the mountain king, with passages off in all directions.
-
-"
+"
 "east is dupe of up
-
-*snake*
-
-"
+*snake*
+"
 33030148 0
 11 6 0
 D0
@@ -824,8 +681,7 @@ S
 #24522
 "In South Side Chamber"
 "You are in the south side chamber.
-
-"
+"
 ""
 33030148 0
 11 6 0
@@ -839,13 +695,10 @@ S
 #24523
 "Low North/South Passage"
 "You are in a low N/S passage at a hole in the floor.  The hole goes down to an
-
-E/W passage.
-
-"
+E/W passage.
+"
 "*silver bars*
-
-"
+"
 33030148 0
 11 6 0
 D0
@@ -866,10 +719,8 @@ S
 #24524
 "Dirty Passage"
 "You are in a dirty broken passage.  To the east is a crawl.  To the west is a
-
-large passage.  Above you is a hole to another passage.
-
-"
+large passage.  Above you is a hole to another passage.
+"
 ""
 33030148 0
 11 6 0
@@ -891,17 +742,12 @@ S
 #24525
 "At Y2"
 "You are in a large room, with a passage to the south, a passage to the west,
-
-and a wall of broken rock to the east.  There is a large -Y2- on a rock in the
-
-room's center.
-
-"
+and a wall of broken rock to the east.  There is a large -Y2- on a rock in the
+room's center.
+"
 "magic word 'plugh'
-
-magic word 'plover'
-
-"
+magic word 'plover'
+"
 33030148 0
 11 6 0
 D1
@@ -920,57 +766,42 @@ A
 ""
 ""
 "set_cflag( 187, ch );
-
-i = random(1, 4);
-
-if(i == 1) {
-
-act_room( #plugh, ch );
-
-}
-
-"
+i = random(1, 4);
+if(i == 1) {
+act_room( #plugh, ch );
+}
+"
 E
 "plugh"
 "@bA hollow voice says \"Plugh\".@n
-
-"
+"
 !
 1 0 31
 A
 "say '"
 "plugh"
 "act_tochar( #plugh, ch );
-
-act_notchar( #oplugh, ch );
-
-transfer( ch, find_room( 24501 ) );
-
-act_tochar( #dest, ch );
-
-act_notchar( #odest, ch );
-
-"
+act_notchar( #oplugh, ch );
+transfer( ch, find_room( 24501 ) );
+act_tochar( #dest, ch );
+act_notchar( #odest, ch );
+"
 E
 "plugh"
 "@bYou begin uttering: \"Plu-@n
-
-"
+"
 E
 "oplugh"
 "@b$n begins uttering \"Plu-\" and is enveloped by a whirlwind!@n
-
-"
+"
 E
 "dest"
 "@b\"-gh!\" and you're elsewhere!@n
-
-"
+"
 E
 "odest"
 "@bThere's a sudden \"-gh!\" and $n appears in a whirl of dust!@n
-
-"
+"
 !
 0 0 0
 -1
@@ -979,25 +810,16 @@ S
 #24526
 "At Window On Pit"
 "You're at a low window overlooking a huge pit, which extends up out of sight. 
-
-A floor is indistinctly visible over 50 feet below.  Traces of white mist
-
-cover the floor of the pit, becoming thicker to the right.  Marks in the dust
-
-around the window would seem to indicate that someone has been here recently. 
-
-Directly across the pit from you and 25 feet away there is a similar window
-
-looking into a lighted room.  A shadowy figure can be seen there.  peering
-
-back at you.
-
-"
+A floor is indistinctly visible over 50 feet below.  Traces of white mist
+cover the floor of the pit, becoming thicker to the right.  Marks in the dust
+around the window would seem to indicate that someone has been here recently. 
+Directly across the pit from you and 25 feet away there is a similar window
+looking into a lighted room.  A shadowy figure can be seen there.  peering
+back at you.
+"
 "basically, it's a mirror
-
-rewrite look figure to handle groups!
-
-"
+rewrite look figure to handle groups!
+"
 33030148 0
 11 6 0
 D1
@@ -1007,41 +829,33 @@ D1
 E
 "window low"
 "It looks like a regular window.
-
-"
+"
 E
 "huge pit deep large"
 "It's so deep you can barely make out the floor below, and the top isn't visible at all.
-
-"
+"
 E
 "marks dust"
 "Evidently you're not alone here.
-
-"
+"
 E
 "figure shadow person individual shadowy mysterious"
 "The shadowy figure seems to be trying to attract your attention.
-
-"
+"
 A
 "wave"
 ""
 "act_tochar( #wave, ch );
-
-act_notchar( #owave, ch );
-
-"
+act_notchar( #owave, ch );
+"
 E
 "wave"
 "The shadowy figure waves back at you!
-
-"
+"
 E
 "owave"
 "$n waves towards the pit, and something shadowy waves back!
-
-"
+"
 !
 0 0 0
 -1
@@ -1050,8 +864,7 @@ S
 #24527
 "Jumble of Rock"
 "You are in a jumble of rock, with cracks everywhere.
-
-"
+"
 ""
 33030148 0
 11 6 0
@@ -1069,8 +882,7 @@ S
 #24528
 "On Brink of Pit"
 "You are on the brink of a small clean climbable pit.  A crawl leads west.
-
-"
+"
 ""
 33030148 0
 11 6 0
@@ -1085,18 +897,15 @@ D5
 E
 "pit clean climbable down"
 "It looks like you might be able to climb down into it.
-
-"
+"
 -1
 S
 
 #24529
 "In Pit"
 "You are in the bottom of a small pit with a little stream, which enters and
-
-exits through tiny slits.
-
-"
+exits through tiny slits.
+"
 ""
 33030148 0
 11 6 0
@@ -1107,8 +916,7 @@ D4
 E
 "tiny slits"
 "The slits form a complex pattern in the rock.
-
-"
+"
 398 17 1509949540 -2 0
 -1
 S
@@ -1116,10 +924,8 @@ S
 #24530
 "Dusty Rock Room"
 "You are in a large room full of dusty rocks.  There is a big hole in the
-
-floor.  There are cracks everywhere, and a passage leading east.
-
-"
+floor.  There are cracks everywhere, and a passage leading east.
+"
 ""
 33030148 0
 11 6 0
@@ -1134,8 +940,7 @@ D5
 E
 "rocks dusty"
 "They're just rocks. (Dusty ones, that is.)
-
-"
+"
 A
 "rocks dusty"
 ""
@@ -1148,11 +953,9 @@ S
 #24531
 "Dusty Rock Room"
 "Under Construction.
-
-"
+"
 "complex junction - cave really branches here
-
-"
+"
 33030148 0
 11 6 0
 D4

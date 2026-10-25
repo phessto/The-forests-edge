@@ -10,23 +10,15 @@
 #82200
 "Mountain Ledge - Before a Carved Cliff Face"
 "The mountain ledge, while remaining fairly flat and level, narrows here before
-
-yet another cliff face carved with handholds.  The predatory activity evident
-
-further south is in evidence here as well; the inch-deep covering of snow has
-
-been packed down in places with tracks of an enormous cat.  Far in the
-
-distance to the east, the frozen wall stretches onward below, a monolith of
-
-solid ice stretching for miles.
-
+yet another cliff face carved with handholds.  The predatory activity evident
+further south is in evidence here as well; the inch-deep covering of snow has
+been packed down in places with tracks of an enormous cat.  Far in the
+distance to the east, the frozen wall stretches onward below, a monolith of
+solid ice stretching for miles.
 
 An ancient, stone marker which has been deliberately defaced lies near the
-
-cliff face to the north.
-
-"
+cliff face to the north.
+"
 ""
 301465600 0
 17 9 0
@@ -37,107 +29,72 @@ D2
 E
 "ancient stone marker defaced"
 "At one time, this marker apparently indicated something to the north; what
-
-that could have been is now impossible to know.  It appears to have been a
-
-taller obelisk than is present now, all but the bottom three inches of the
-
-stone marker have been broken off.  Any writing that once was on what remains
-
-has long since eroded away.
-
-"
+that could have been is now impossible to know.  It appears to have been a
+taller obelisk than is present now, all but the bottom three inches of the
+stone marker have been broken off.  Any writing that once was on what remains
+has long since eroded away.
+"
 E
 "handholds cliff face"
 "Handholds, now slick with ice, have been carved directly into the cliff face
-
-to the north.
-
-"
+to the north.
+"
 A
 "climb clamber scale"
 "1 up 1 north cliff"
 "if( is_exhausted( ch ) ) {
-
-  act_tochar( #tootired, ch );
-
-  end;
-
-  }
-
-if( can_fly( ch ) ) {
-
-  act_tochar( #fly, ch );
-
-  act_notchar( #flies, ch );
-
-  transfer( ch, find_room( 82201 ) );
-
-  act_notchar( #fliesin, ch );
-
-  }
-
-else {
-
-  if( find_skill( ch, climb ) > 0 ) {
-
-    act_tochar( #climb, ch );
-
-    act_notchar( #climbs, ch );
-
-    transfer( ch, find_room( 82201 ) );
-
-    act_notchar( #climbsin, ch );
-
-    }
-
-  else
-
-    act_tochar( #no, ch );
-
-  }
-
-"
+  act_tochar( #tootired, ch );
+  end;
+  }
+if( can_fly( ch ) ) {
+  act_tochar( #fly, ch );
+  act_notchar( #flies, ch );
+  transfer( ch, find_room( 82201 ) );
+  act_notchar( #fliesin, ch );
+  }
+else {
+  if( find_skill( ch, climb ) > 0 ) {
+    act_tochar( #climb, ch );
+    act_notchar( #climbs, ch );
+    transfer( ch, find_room( 82201 ) );
+    act_notchar( #climbsin, ch );
+    }
+  else
+    act_tochar( #no, ch );
+  }
+"
 E
 "tootired"
 "You are too tired to climb up the handholds.
-
-"
+"
 E
 "fly"
 "You fly up the cliff face to the ledge above.
-
-"
+"
 E
 "flies"
 "$n flies up the handholds to the ledge above.
-
-"
+"
 E
 "fliesin"
 "$n flies in from below.
-
-"
+"
 E
 "climb"
 "You climb up the rocky handholds to the ledge above.
-
-"
+"
 E
 "climbs"
 "$n climbs up the rocky handholds to the ledge above.
-
-"
+"
 E
 "climbsin"
 "$n climbs in from the handholds below you.
-
-"
+"
 E
 "no"
 "You don't know how to fly or climb.
-
-"
+"
 !
 0 0 0
 -1
@@ -146,30 +103,18 @@ S
 #82201
 "Cliff Ledge - Dragonspire Panorama"
 "From this highest point along the mountain trail, the marvelous panorama of
-
-the Dragonspires yawns all around.  This ledge is wide, probably twenty paces,
-
-and quite level.  A brisk but not harsh wind prevents any fine dusting of
-
-powder from collecting here, although a thin covering of ice-glazed snow has
-
-managed to adhere itself to the rock.  Below to the east, the frozen wall
-
-stretches for miles, the fangs of the Eastern Dragonspires stretching beyond. 
-
-For what seems like eternity to the south, the cloud-shrouded peaks of the
-
-Dragonspires can be seen, stretching from the east to the west side of the
-
-horizon.  The cliff ledge continues to the north, where the deeper snow has
-
-seen more traffic.  Immediately to the south, the ledge ends abruptly in a
-
-sheer cliff face, but someone or something long ago carved convenient
-
-handholds, allowing an easy climb to another ledge below.
-
-"
+the Dragonspires yawns all around.  This ledge is wide, probably twenty paces,
+and quite level.  A brisk but not harsh wind prevents any fine dusting of
+powder from collecting here, although a thin covering of ice-glazed snow has
+managed to adhere itself to the rock.  Below to the east, the frozen wall
+stretches for miles, the fangs of the Eastern Dragonspires stretching beyond. 
+For what seems like eternity to the south, the cloud-shrouded peaks of the
+Dragonspires can be seen, stretching from the east to the west side of the
+horizon.  The cliff ledge continues to the north, where the deeper snow has
+seen more traffic.  Immediately to the south, the ledge ends abruptly in a
+sheer cliff face, but someone or something long ago carved convenient
+handholds, allowing an easy climb to another ledge below.
+"
 ""
 301465600 0
 17 7 0
@@ -180,116 +125,78 @@ D0
 E
 "Dragonspires panorama"
 "The Dragonspires stretch away for miles; you must be nearing the northern end
-
-by now.  Further north, you can see a volcano that legend tells marks the
-
-northwestern edge of the range known as the Dragonspires.
-
-"
+by now.  Further north, you can see a volcano that legend tells marks the
+northwestern edge of the range known as the Dragonspires.
+"
 E
 "frozen wall"
 "The monolith of ice that is the frozen wall stretches away far below this
-
-cliff ledge, miles to the east and north covered in the sheet of solid ice.
-
-"
+cliff ledge, miles to the east and north covered in the sheet of solid ice.
+"
 E
 "handholds"
 "The handholds have been carved directly into the rock face, making a descent
-
-easy for anyone with even a bit of climbing ability.  They are roughly sized
-
-for a human and covered in a thin sheen of ice.
-
-"
+easy for anyone with even a bit of climbing ability.  They are roughly sized
+for a human and covered in a thin sheen of ice.
+"
 A
 "climb clamber scale"
 "1 down 1 south handholds cliff"
 "if( is_exhausted( ch ) ) {
-
-  act_tochar( #tootired, ch );
-
-  end;
-
-  }
-
-if( can_fly( ch ) ) {
-
-  act_tochar( #fly, ch );
-
-  act_notchar( #flies, ch );
-
-  transfer( ch, find_room( 82200 ) );
-
-  act_notchar( #fliesin, ch );
-
-  }
-
-else {
-
-  if( find_skill( ch, climb ) > 0 ) {
-
-    act_tochar( #climb, ch );
-
-    act_notchar( #climbs, ch );
-
-    transfer( ch, find_room( 82200 ) );
-
-    act_notchar( #climbsin, ch );
-
-    }
-
-  else
-
-    act_tochar( #no, ch );
-
-  }
-
-"
+  act_tochar( #tootired, ch );
+  end;
+  }
+if( can_fly( ch ) ) {
+  act_tochar( #fly, ch );
+  act_notchar( #flies, ch );
+  transfer( ch, find_room( 82200 ) );
+  act_notchar( #fliesin, ch );
+  }
+else {
+  if( find_skill( ch, climb ) > 0 ) {
+    act_tochar( #climb, ch );
+    act_notchar( #climbs, ch );
+    transfer( ch, find_room( 82200 ) );
+    act_notchar( #climbsin, ch );
+    }
+  else
+    act_tochar( #no, ch );
+  }
+"
 E
 "tootired"
 "You are too tired to climb down the handholds.
-
-"
+"
 E
 "fly"
 "You fly down to the ledge below.
-
-"
+"
 E
 "flies"
 "$n flies down to the ledge below.
-
-"
+"
 E
 "fliesin"
 "$n flies in from the ledge above.
-
-"
+"
 E
 "climb"
 "You climb down the handholds carved into the stone and drop down to the ledge
-
-below.
-
-"
+below.
+"
 E
 "climbs"
 "$n climbs down the handholds carved into the stone and drops down to the ledge
-
-below.
-
-"
+below.
+"
 E
 "climbsin"
 "$n climbs down the stone handholds and drops down next to you.
-
-"
+"
 E
 "no"
 "You don't know how to climb or fly.
-
-"
+"
 !
 0 0 0
 -1
@@ -298,25 +205,16 @@ S
 #82202
 "Mountain Ledge - Before a Carved Tunnel"
 "The mountain ledge that hugs the cliff for so long to the south of here
-
-abruptly comes to an end before a carved tunnel directly into a mountain
-
-face.  The basalt stone of the cliff face further north is much darker than
-
-the normal stone found elsewhere in the Dragonspires; perhaps this mountain
-
-has seen recent volcanic activity.  Beyond the cliff face, the tunnel opens
-
-into a carved tunnel, eight feet high and half again as wide.  Knee-deep snow
-
-has been packed down by the tread of large, humanoid feet, most likely those
-
-of trolls or ogres.
-
-"
+abruptly comes to an end before a carved tunnel directly into a mountain
+face.  The basalt stone of the cliff face further north is much darker than
+the normal stone found elsewhere in the Dragonspires; perhaps this mountain
+has seen recent volcanic activity.  Beyond the cliff face, the tunnel opens
+into a carved tunnel, eight feet high and half again as wide.  Knee-deep snow
+has been packed down by the tread of large, humanoid feet, most likely those
+of trolls or ogres.
+"
 "[Nereus] no.mob to keep the angarlishes out
-
-"
+"
 301465608 0
 17 7 0
 D0
@@ -330,66 +228,41 @@ D2
 E
 "knee-deep snow tread tracks troll ogre"
 "The tracks lead both north and south from here in what would be knee-deep
-
-snow.  As packed down as the snow is, and as many prints are evident, it would
-
-appear that this area experiences extremely heavy traffic leading south along
-
-the ledge and north into the cavern tunnel from here.  The tracks are almost
-
-certainly ogrish or trollish in size and weight.
-
-"
+snow.  As packed down as the snow is, and as many prints are evident, it would
+appear that this area experiences extremely heavy traffic leading south along
+the ledge and north into the cavern tunnel from here.  The tracks are almost
+certainly ogrish or trollish in size and weight.
+"
 E
 "carved tunnel 1 north"
 "The tunnel has been crudely carved directly into the stone face of the
-
-mountain.  Marks on the floor and uneven chisel work make it quite obvious
-
-where segments of heavy basalt had to be chipped away and where the floor and
-
-walls are naturally level.  The ground in the center of the tunnel has been
-
-worn smooth with the tread of ages.
-
-"
+mountain.  Marks on the floor and uneven chisel work make it quite obvious
+where segments of heavy basalt had to be chipped away and where the floor and
+walls are naturally level.  The ground in the center of the tunnel has been
+worn smooth with the tread of ages.
+"
 -1
 S
 
 #82203
 "Carved Cavern Tunnel"
 "Crudely chipped basalt has been worn smooth by the tread of passing feet under
-
-this carved archway through the volcano wall.  Evidence of the carving work is
-
-easier to make out along the walls and ceiling, where traffic has not worn the
-
-stone smooth.  Against the eastern wall, tiny bone fragments have accumulated;
-
-a long-dried, crimson smear against the wall and the occasional shattered
-
-fragment of a weapon reveal that this tunnel has seen frequent combat.  A
-
-narrower tunnel west of here appears to serve as a guardpost.  As one ventures
-
-south back into the weather, the snow and ice resumes, while to the north, a
-
-cinder-strewn trail meanders around the crater floor.
-
-"
+this carved archway through the volcano wall.  Evidence of the carving work is
+easier to make out along the walls and ceiling, where traffic has not worn the
+stone smooth.  Against the eastern wall, tiny bone fragments have accumulated;
+a long-dried, crimson smear against the wall and the occasional shattered
+fragment of a weapon reveal that this tunnel has seen frequent combat.  A
+narrower tunnel west of here appears to serve as a guardpost.  As one ventures
+south back into the weather, the snow and ice resumes, while to the north, a
+cinder-strewn trail meanders around the crater floor.
+"
 "[Nereus] Checks for cflag 152, 153 here - if either is true, sound alarm!
-
-[Nereus] Elves, dwarves, halflings - sound alarm!
-
-[Nereus] ** Room Finished **
-
-if reputations are ever fixed, won't cflag 153 (and maybe 152) be redundant? 
-
--Talis
-
-[Nereus] In theory, yes, if I associate some nation with the trolls here.
-
-"
+[Nereus] Elves, dwarves, halflings - sound alarm!
+[Nereus] ** Room Finished **
+if reputations are ever fixed, won't cflag 153 (and maybe 152) be redundant? 
+-Talis
+[Nereus] In theory, yes, if I associate some nation with the trolls here.
+"
 33030144 0
 11 6 0
 D0
@@ -407,127 +280,79 @@ D3
 E
 "walls ceiling carving"
 "It would seem that at one time, this was an extremely narrow natural crack
-
-through the wall of the volcano.  However, in the relatively recent past, the
-
-tunnel has been widened using crude tools to chisel away the basalt.  The
-
-chisel markings are easier to make out along the walls and ceiling, where no
-
-traffic has worn away the crude stonework.
-
-"
+through the wall of the volcano.  However, in the relatively recent past, the
+tunnel has been widened using crude tools to chisel away the basalt.  The
+chisel markings are easier to make out along the walls and ceiling, where no
+traffic has worn away the crude stonework.
+"
 E
 "crimson long-dried smear blood"
 "A wide smear of blood runs from chest height on a man down to the cavern
-
-floor.  It is very old and has dried to a crimson black, difficult to see
-
-against the dark basalt stone.
-
-"
+floor.  It is very old and has dried to a crimson black, difficult to see
+against the dark basalt stone.
+"
 A
 ""
 ""
 "if( !is_player( ch ) )
-
-  end;
-
-remove_rflag( reset0, find_room( 82204 ) );
-
-mob = mob_in_room( 2494, find_room( 82204 ) );
-
-if( !mob ) end;
-
-  interpret( mob, \"stand\" );
-
-if( can_see_char( mob, ch ) ) {
-
-  if( race( ch ) == elf || race( ch ) == dwarf || race( ch ) == halfling || race( ch ) == ent ) {
-
-    interpret( mob, \"east\" );
-
-    interpret( mob, \"yell Dirty elf-friends here!  Smash them!\" );
-
-    interpret( mob, \"kill\", ch );
-
-    summon( mob, victim );
-
-    acode( find_room( 82204 ), 1 );
-
-    }
-
-  else {
-
-    if( cflag( 152, ch ) ) {
-
-      interpret( mob, \"east\" );
-
-      interpret( mob, \"yell Young-killer come back!  Mash to goo!\" );
-
-      interpret( mob, \"kill\", ch );
-
-      summon( mob, victim );
-
-      acode( find_room( 82204 ), 1 );
-
-      }
-
-    else if( cflag( 153, ch ) ) {
-
-      interpret( mob, \"east\" );
-
-      interpret( mob, \"yell Enemy come back!  We crush then eat!\" );
-
-      interpret( mob, \"kill\", ch );
-
-      summon( mob, victim );
-
-      acode( find_room( 82204 ), 1 );
-
-      }
-
-    }
-
-  }
-
-set_rflag( reset0, find_room( 82204 ) );
-
-continue;
-
-"
+  end;
+remove_rflag( reset0, find_room( 82204 ) );
+mob = mob_in_room( 2494, find_room( 82204 ) );
+if( !mob ) end;
+  interpret( mob, \"stand\" );
+if( can_see_char( mob, ch ) ) {
+  if( race( ch ) == elf || race( ch ) == dwarf || race( ch ) == halfling || race( ch ) == ent ) {
+    interpret( mob, \"east\" );
+    interpret( mob, \"yell Dirty elf-friends here!  Smash them!\" );
+    interpret( mob, \"kill\", ch );
+    summon( mob, victim );
+    acode( find_room( 82204 ), 1 );
+    }
+  else {
+    if( cflag( 152, ch ) ) {
+      interpret( mob, \"east\" );
+      interpret( mob, \"yell Young-killer come back!  Mash to goo!\" );
+      interpret( mob, \"kill\", ch );
+      summon( mob, victim );
+      acode( find_room( 82204 ), 1 );
+      }
+    else if( cflag( 153, ch ) ) {
+      interpret( mob, \"east\" );
+      interpret( mob, \"yell Enemy come back!  We crush then eat!\" );
+      interpret( mob, \"kill\", ch );
+      summon( mob, victim );
+      acode( find_room( 82204 ), 1 );
+      }
+    }
+  }
+set_rflag( reset0, find_room( 82204 ) );
+continue;
+"
 !
 1 0 63
 A
 "search take get"
 "weapon shattered bone fragments"
 "act_tochar( #search, ch );
-
-act_notchar( #searches, ch );
-
-"
+act_notchar( #searches, ch );
+"
 E
 "search"
 "You search through the pile of tiny bone fragments and chips of stone, but
-
-don't find anything of value.
-
-"
+don't find anything of value.
+"
 E
 "searches"
 "$n searches through the pile of tiny bone fragments and chips of stone, but
-
-doesn't appear to find anything.
-
-"
+doesn't appear to find anything.
+"
 !
 0 0 0
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 -1
@@ -536,47 +361,27 @@ S
 #82204
 "Crudely Carved Cavern - Guardpost"
 "This small, crudely carved cavern is barely large enough to accommodate a
-
-handful of ducking ogres or trolls.  It appears that this cave was worked
-
-directly out of the basalt, either to serve as a guardpost or perhaps a
-
-storeroom of sorts.  A pile of large rocks has been heaped along the edge of
-
-the cave, allowing entrance only through a single narrow hole.  The dark,
-
-basalt stone ground is littered with refuse from its occupants, mostly items
-
-not even a troll would eat: tiny, sharp splinters of bone, small, broken
-
-rocks, and fragments of rocky ice.  A finely-carved horn has been built
-
-directly into the rock of the northern wall, disappearing out of the ceiling. 
-
-The cavern slopes down to the east, probably the region this guardpost was
-
-constructed to watch over.
-
-"
+handful of ducking ogres or trolls.  It appears that this cave was worked
+directly out of the basalt, either to serve as a guardpost or perhaps a
+storeroom of sorts.  A pile of large rocks has been heaped along the edge of
+the cave, allowing entrance only through a single narrow hole.  The dark,
+basalt stone ground is littered with refuse from its occupants, mostly items
+not even a troll would eat: tiny, sharp splinters of bone, small, broken
+rocks, and fragments of rocky ice.  A finely-carved horn has been built
+directly into the rock of the northern wall, disappearing out of the ceiling. 
+The cavern slopes down to the east, probably the region this guardpost was
+constructed to watch over.
+"
 "[Nereus] if someone marked comes into the room east, sound alarm
-
-[Nereus] big horn here to blow, sounds the alert
-
-[Nereus] The alarm is controlled from here.  The status0 code being present means that the zone is not under attack
-
-[Nereus] ** Room Finished **
-
-Trolls hair is both swept back and standing straight up?  I get the impression
-
-maybe you mean the hair is standing up at a backward angle but can't think of
-
-just how to put that elegantly just now.  -Talis
-
-[Sohkaar] to troll 'hi' - \"Hi yousself.\"  Should that be 'yourself'?
-
-[Sohkaar] Maybe not... trolls *are* dumb.
-
-"
+[Nereus] big horn here to blow, sounds the alert
+[Nereus] The alarm is controlled from here.  The status0 code being present means that the zone is not under attack
+[Nereus] ** Room Finished **
+Trolls hair is both swept back and standing straight up?  I get the impression
+maybe you mean the hair is standing up at a backward angle but can't think of
+just how to put that elegantly just now.  -Talis
+[Sohkaar] to troll 'hi' - \"Hi yousself.\"  Should that be 'yourself'?
+[Sohkaar] Maybe not... trolls *are* dumb.
+"
 33030144 0
 11 5 0
 D1
@@ -586,177 +391,122 @@ D1
 E
 "pile large rocks"
 "The rocks look to be comprised of the same basalt that the cavern has been
-
-carved from.  They have been stacked along the east side of the cavern,
-
-presumably to both offer shelter and to make it more difficult for attackers
-
-to storm the guardpost.
-
-"
+carved from.  They have been stacked along the east side of the cavern,
+presumably to both offer shelter and to make it more difficult for attackers
+to storm the guardpost.
+"
 E
 "finely-carved horn"
 "Definitely the work of magic or metal and stonecraft that would awe even
-
-master dwarven smiths, the horn seems to be fused directly with the rock.  How
-
-it came to be in this place guarded by ice trolls is a mystery, for certainly
-
-they had no hand in its crafting.  The metal part of the horn is made of a
-
-strange, soft, silvery metal, but where the rock of the wall begins and the
-
-metal ends is unknown.
-
-"
+master dwarven smiths, the horn seems to be fused directly with the rock.  How
+it came to be in this place guarded by ice trolls is a mystery, for certainly
+they had no hand in its crafting.  The metal part of the horn is made of a
+strange, soft, silvery metal, but where the rock of the wall begins and the
+metal ends is unknown.
+"
 E
 "sharp splinters bone broken rocks fragments ice ground"
 "The ground is littered with useless refuse, mostly splinters of bone, bits of
-
-rock, and fragments of ice.  If a troll discarded it as not being worth
-
-eating, it is likely not worth taking or searching through.
-
-"
+rock, and fragments of ice.  If a troll discarded it as not being worth
+eating, it is likely not worth taking or searching through.
+"
 A
 ""
 ""
 "mob = mob_in_room( 2494, find_room( 82204 ) );
-
-if( mob && rflag( status0, find_room( 82204 ) ) ) {
-
-  interpret( mob, \"emote blows a long blast on the warhorn.\" );
-
-  act_area( #loud, mob );
-
-  remove_rflag( status0, find_room( 82204 ) );
-
-  acode( find_room( 82209 ), 1 );
-
-  }
-
-"
+if( mob && rflag( status0, find_room( 82204 ) ) ) {
+  interpret( mob, \"emote blows a long blast on the warhorn.\" );
+  act_area( #loud, mob );
+  remove_rflag( status0, find_room( 82204 ) );
+  acode( find_room( 82209 ), 1 );
+  }
+"
 E
 "loud"
 "@YThe deep, rumbling bass of a war horn can be heard, sounding an echoing note
-
-of warning.@n
-
-"
+of warning.@n
+"
 !
 0 0 0
 A
 ""
 ""
 "if( is_player( ch ) || is_pet( ch ) )
-
-  continue;
-
-if( !rflag( status0, room ) )
-
-  continue;
-
-if( !rflag( reset0, room ) )
-
-  continue;
-
-"
+  continue;
+if( !rflag( status0, room ) )
+  continue;
+if( !rflag( reset0, room ) )
+  continue;
+"
 !
 3 0 2
 A
 "get take grab"
 "horn"
 "act_tochar( #cant, ch );
-
-"
+"
 E
 "cant"
 "The horn is built directly into the basalt wall, seemingly fused into the rock
-
-itself.  You cannot see a way to free it.
-
-"
+itself.  You cannot see a way to free it.
+"
 !
 0 0 0
 A
 "blow sound"
 "horn"
 "mob = mob_in_room( 2494, room );
-
-if( mob ) {
-
-  interpret( mob, \"stand\" );
-
-  interpret( mob, \"emote jumps in front of you, blocking you from blowing the horn.\" );
-
-  interpret( mob, \"say Yous stop or me bash yous!\" );
-
-  interpret( mob, \"rest\" );
-
-  }
-
-else {
-
-  act_tochar( #blow, ch );
-
-  act_notchar( #blows, ch );
-
-  act_area( #loud, ch );
-
-  remove_rflag( status0, room );
-
-  acode( find_room( 82209 ), 1 );
-
-  }
-
-"
+if( mob ) {
+  interpret( mob, \"stand\" );
+  interpret( mob, \"emote jumps in front of you, blocking you from blowing the horn.\" );
+  interpret( mob, \"say Yous stop or me bash yous!\" );
+  interpret( mob, \"rest\" );
+  }
+else {
+  act_tochar( #blow, ch );
+  act_notchar( #blows, ch );
+  act_area( #loud, ch );
+  remove_rflag( status0, room );
+  acode( find_room( 82209 ), 1 );
+  }
+"
 E
 "blow"
 "You take a deep breath and blow a long bass note on the horn.
-
-"
+"
 E
 "blows"
 "$n takes a deep breath and blows a long bass note on the horn.
-
-"
+"
 E
 "loud"
 "@YThe deep, rumbling bass of a war horn can be heard, sounding an echoing note
-
-of warning.@n
-
-"
+of warning.@n
+"
 !
 0 0 0
 A
 "search get take"
 "piles refuse ground"
 "act_tochar( #nothing, ch );
-
-act_notchar( #nothings, ch );
-
-"
+act_notchar( #nothings, ch );
+"
 E
 "nothing"
 "You search through the refuse collected along the ground, but find nothing of
-
-value.
-
-"
+value.
+"
 E
 "nothings"
 "$n searches through the refuse collected on the ground.
-
-"
+"
 !
 0 0 0
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 2494 9 1509949540 2 0
@@ -767,22 +517,14 @@ S
 #82205
 "Trail Along the Volcano Floor"
 "This fork along the volcano floor appears to see much activity.  Large,
-
-humanoid footprints can be seen trampling the cinder-strewn, rock floor.  In
-
-true trollish fashion, debris considered unedible for one reason or another
-
-has been thrown carelessly along the ground, mostly winding up piled against
-
-the smooth, basalt wall to the north.  A cinder-strewn trail continues east
-
-and west, wet from melting snow, presumably from persons travelling from the
-
-south into the center of the volcano proper.  To the south, a smooth stone
-
-tunnel leads out of the volcano, into the whipping winter winds.
-
-"
+humanoid footprints can be seen trampling the cinder-strewn, rock floor.  In
+true trollish fashion, debris considered unedible for one reason or another
+has been thrown carelessly along the ground, mostly winding up piled against
+the smooth, basalt wall to the north.  A cinder-strewn trail continues east
+and west, wet from melting snow, presumably from persons travelling from the
+south into the center of the volcano proper.  To the south, a smooth stone
+tunnel leads out of the volcano, into the whipping winter winds.
+"
 ""
 33030144 0
 11 7 0
@@ -801,51 +543,38 @@ D3
 E
 "large humanoid footprints"
 "The footprints are made from the bare feet of some large humanoid creature,
-
-presumably trolls.
-
-"
+presumably trolls.
+"
 E
 "debris 1 north piled carelessly"
 "The debris is mixed in with melting snow and other unidentifiable materials. 
-
-It consists of bones, sand, tiny cinders from the trail, hair, and patches of
-
-skin.  If a troll saw fit to throw it away rather than eat it, chances are you
-
-don't want anything in it.
-
-"
+It consists of bones, sand, tiny cinders from the trail, hair, and patches of
+skin.  If a troll saw fit to throw it away rather than eat it, chances are you
+don't want anything in it.
+"
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 "debris"
 "act_tochar( #no, ch );
-
-act_notchar( #nos, ch );
-
-"
+act_notchar( #nos, ch );
+"
 E
 "no"
 "You pick through the bits of melting snow, hair, bones, and sand, but there is
-
-nothing of even remote value.
-
-"
+nothing of even remote value.
+"
 E
 "nos"
 "$n picks through the debris against the northern wall, but looks to find
-
-nothing of value.
-
-"
+nothing of value.
+"
 !
 9 0 0
 -1
@@ -854,24 +583,15 @@ S
 #82206
 "Trail Along the Volcano Floor - Guardpost"
 "Once probably a mere crack for escaping magma from deeper in the mountain,
-
-this section of the trail along the volcano floor has been widened roughly
-
-enough to fit a horse comfortably through this area.  The eastern wall has
-
-been worn away, both from what appears to have been a half-hearted attempt at
-
-chiseling away a bench and the everyday wear of someone or something leaning
-
-lazily against the wall.  Unlike the wider, cinder-strewn trail to the north
-
-and west from here, the dark rock above forms a ceiling here, crudely carved
-
-out by rough tools.  To the west, the trail becomes more wet, most likely due
-
-to those tracking snow into the volcano floor from the snowy outdoors.
-
-"
+this section of the trail along the volcano floor has been widened roughly
+enough to fit a horse comfortably through this area.  The eastern wall has
+been worn away, both from what appears to have been a half-hearted attempt at
+chiseling away a bench and the everyday wear of someone or something leaning
+lazily against the wall.  Unlike the wider, cinder-strewn trail to the north
+and west from here, the dark rock above forms a ceiling here, crudely carved
+out by rough tools.  To the west, the trail becomes more wet, most likely due
+to those tracking snow into the volcano floor from the snowy outdoors.
+"
 ""
 33030144 0
 11 6 0
@@ -886,65 +606,51 @@ D3
 E
 "1 west wet"
 "The cinder-strewn trail continues to the north and west; to the west the stone
-
-is damp.
-
-"
+is damp.
+"
 E
 "ceiling above 1 up"
 "The dark rock forms a ceiling roughly eight feet above the stony ground.
-
-"
+"
 A
 ""
 ""
 "mob = mob_in_room( 2494, room );
-
-if( !mob ) end;
-
-interpret( mob, \"emote begins to doze off at his post.\" );
-
-interpret( mob, \"sit bench\" );
-
-interpret( mob, \"sleep\" );
-
-"
+if( !mob ) end;
+interpret( mob, \"emote begins to doze off at his post.\" );
+interpret( mob, \"sit bench\" );
+interpret( mob, \"sleep\" );
+"
 !
 6 840 0
 A
 ""
 ""
 "acode( room, 1 );
-
-"
+"
 !
 6 900 0
 A
 ""
 ""
 "acode( room, 1 );
-
-"
+"
 !
 6 1000 0
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2494, room );
-
-if( !mob ) end;
-
-interpret( mob, \"rest\" );
-
-"
+if( !mob ) end;
+interpret( mob, \"rest\" );
+"
 !
 6 1200 0
 4120 17 1509949540 -2 0
@@ -955,31 +661,19 @@ S
 #82207
 "Trail Along the Volcano Floor - Fork in the Trail"
 "Forking south from its east-west course through the bustling interior of the
-
-settlement, the trail also leads south through a makeshift guardpost and out
-
-of the village further to the south.  Like elsewhere in the settlement, debris
-
-has accumulated against the bases of the walls, items discarded when their
-
-owner was bored with them.  High above, the grey, wintry skies can be seen,
-
-but here between the sheltering basalt walls of the volcano, there is little
-
-wind or weather from above.  Further west, a bustling gathering place is
-
-evident, where the gutteral sounds of conversation and the noises of mundane
-
-life can be heard.  To the east, a great deal of clutter has collected along
-
-the southern wall and an alcove, where a makeshift storeroom has sprung into
-
-being.
-
-"
+settlement, the trail also leads south through a makeshift guardpost and out
+of the village further to the south.  Like elsewhere in the settlement, debris
+has accumulated against the bases of the walls, items discarded when their
+owner was bored with them.  High above, the grey, wintry skies can be seen,
+but here between the sheltering basalt walls of the volcano, there is little
+wind or weather from above.  Further west, a bustling gathering place is
+evident, where the gutteral sounds of conversation and the noises of mundane
+life can be heard.  To the east, a great deal of clutter has collected along
+the southern wall and an alcove, where a makeshift storeroom has sprung into
+being.
+"
 "[Nereus] ** Room Finished **
-
-"
+"
 33030144 0
 11 7 0
 D1
@@ -997,51 +691,38 @@ D3
 E
 "debris accumulation items"
 "The debris is primarily chips of bone, bits of rock, strands of hair, and
-
-other unidentifiable, unpleasant things.
-
-"
+other unidentifiable, unpleasant things.
+"
 E
 "grey wintry skies"
 "The wintry skies high above are filled with a soft, drifting snow which you
-
-can see from here.  Below the grey skies, the volcano walls stretch possibly a
-
-hundred feet above you, slick and smooth with thousands or millions of years
-
-of weather.
-
-"
+can see from here.  Below the grey skies, the volcano walls stretch possibly a
+hundred feet above you, slick and smooth with thousands or millions of years
+of weather.
+"
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 "debris piled accumulated"
 "act_tochar( #nothing, ch );
-
-act_notchar( #searches, ch );
-
-"
+act_notchar( #searches, ch );
+"
 E
 "nothing"
 "You search through the bits of bone, discarded stones, and accumulated hair,
-
-but don't find anything worth keeping.
-
-"
+but don't find anything worth keeping.
+"
 E
 "searches"
 "$n searches through the debris accumulated along the northern wall, but
-
-doesn't appear to find anything to $s liking.
-
-"
+doesn't appear to find anything to $s liking.
+"
 !
 9 0 0
 -1
@@ -1050,37 +731,22 @@ S
 #82208
 "Trail Along the Volcano Floor - Cluttered Alcove"
 "An overhang along the eastern wall roughly twenty feet up offers shelter from
-
-weather above, but it seems unlikely the inhabitants of this settlement took
-
-the weather into consideration when designating this section of the trail as a
-
-storeroom of sorts.  Both sides of the trail have been arbitrarily piled with
-
-various articles, although a rough organization appears to divide the articles
-
-along the southern wall into crude tools, and the eastern wall, beneath the
-
-alcove, pelts and roughly carved blocks of stone.  The ground here is strewn
-
-with cinders, assorted debris, and there are a few droppings from what appear
-
-to be large rats.  The trail continues north and west, winding along the
-
-volcano floor.
-
-"
+weather above, but it seems unlikely the inhabitants of this settlement took
+the weather into consideration when designating this section of the trail as a
+storeroom of sorts.  Both sides of the trail have been arbitrarily piled with
+various articles, although a rough organization appears to divide the articles
+along the southern wall into crude tools, and the eastern wall, beneath the
+alcove, pelts and roughly carved blocks of stone.  The ground here is strewn
+with cinders, assorted debris, and there are a few droppings from what appear
+to be large rats.  The trail continues north and west, winding along the
+volcano floor.
+"
 "[Nereus] Room 82226 is east of here but only accessible through acodes
-
-[Nereus] ** Room Finished **
-
-off that this includes what's above when the rest really dont -Talis
-
-[Nereus] there're a few rooms that talk about the sky, I did that when I got
-
-bored talking about the room
-
-"
+[Nereus] ** Room Finished **
+off that this includes what's above when the rest really dont -Talis
+[Nereus] there're a few rooms that talk about the sky, I did that when I got
+bored talking about the room
+"
 33030144 0
 11 7 0
 D0
@@ -1094,166 +760,115 @@ D3
 E
 "overhang"
 "Roughly twenty feet above, an overhang begins, blocking some of the wind and
-
-weather from high above.  While it doesn't seem that there is much weather
-
-here inside the crater, this storeroom is still relatively drier and nearly
-
-completely free of wind.
-
-"
+weather from high above.  While it doesn't seem that there is much weather
+here inside the crater, this storeroom is still relatively drier and nearly
+completely free of wind.
+"
 E
 "roughly carved blocks stone"
 "A few roughly-carved blocks of dark basalt, not remotely close to being
-
-square, have been piled in a heap a few feet wide and deep against the eastern
-
-wall.  Where they eventually are intended to be used is unknown, since they do
-
-not appear to be level enough to construct much of a structure.  They seem to
-
-be stacked very close against the wall, almost as if blocking something.
-
-"
+square, have been piled in a heap a few feet wide and deep against the eastern
+wall.  Where they eventually are intended to be used is unknown, since they do
+not appear to be level enough to construct much of a structure.  They seem to
+be stacked very close against the wall, almost as if blocking something.
+"
 E
 "debris piles"
 "The debris seems to consist primarily of old pelts, discarded tools, and
-
-roughly worked blocks of stone.  It has been piled against both the southern
-
-wall, and eastern wall, where there is an alcove of sorts.
-
-"
+roughly worked blocks of stone.  It has been piled against both the southern
+wall, and eastern wall, where there is an alcove of sorts.
+"
 E
 "droppings"
 "The droppings are scattered about, mostly along the eastern wall, intermingled
-
-with the stone blocks and piles of furs.
-
-"
+with the stone blocks and piles of furs.
+"
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 A
 "move push clear"
 "blocks roughly carved stone"
 "if( rflag( reset0, room ) ) {
-
-  remove_rflag( reset0, room );
-
-  act_tochar( #move, ch );
-
-  act_notchar( #moves, ch );
-
-  }
-
-else
-
-  act_tochar( #already, ch );
-
-"
+  remove_rflag( reset0, room );
+  act_tochar( #move, ch );
+  act_notchar( #moves, ch );
+  }
+else
+  act_tochar( #already, ch );
+"
 E
 "move"
 "You move aside some of the basalt blocks along the eastern wall, revealing a
-
-dark hole leading into a cave.
-
-"
+dark hole leading into a cave.
+"
 E
 "moves"
 "$n moves aside some of the basalt blocks along the eastern wall, revealing a
-
-dark hole leading into a cave.
-
-"
+dark hole leading into a cave.
+"
 E
 "already"
 "The blocks have already been moved away from the wall.
-
-"
+"
 !
 0 0 0
 A
 "enter crawl squeeze"
 "hole"
 "if( rflag( reset0, room ) ) {
-
-  act_tochar( #nothing, ch );
-
-  }
-
-else {
-
-  if ( size( ch ) <= size( find_room( 82226 ) ) ) {
-
-    act_tochar( #enter, ch );
-
-    act_notchar( #enters, ch );
-
-    transfer( ch, find_room( 82226 ) );
-
-    act_notchar( #arrives, ch );
-
-    }
-
-  else
-
-    act_tochar( #toobig, ch );
-
-  }
-
-"
+  act_tochar( #nothing, ch );
+  }
+else {
+  if ( size( ch ) <= size( find_room( 82226 ) ) ) {
+    act_tochar( #enter, ch );
+    act_notchar( #enters, ch );
+    transfer( ch, find_room( 82226 ) );
+    act_notchar( #arrives, ch );
+    }
+  else
+    act_tochar( #toobig, ch );
+  }
+"
 E
 "nothing"
 "You don't see that here to enter.
-
-"
+"
 E
 "enter"
 "You squeeze into the small hole and crawl into a cavern beyond.
-
-"
+"
 E
 "enters"
 "$n squeezes into the small hole and crawls into a cavern beyond.
-
-"
+"
 E
 "arrives"
 "$n crawls in from the small hole to the west.
-
-"
+"
 E
 "toobig"
 "You are much too large to fit into the hole.
-
-"
+"
 !
 0 0 0
 A
 "1 look"
 "cave hole"
 "if( rflag( reset0, room ) )
-
-  continue;
-
-act_tochar( #hole, ch );
-
-end;
-
-"
+  continue;
+act_tochar( #hole, ch );
+end;
+"
 E
 "hole"
 "At the base of the eastern wall, some basalt blocks have been moved aside.  A
-
-small, dark hole leads into a cave beyond.
-
-"
+small, dark hole leads into a cave beyond.
+"
 !
 0 0 0
 2610 9 1509949540 3 0
@@ -1268,33 +883,20 @@ S
 #82209
 "Carved Cavern - Gathering Place"
 "Large but still comfortable, littered with debris but clean in places, this
-
-large cavern is a mix of and seems central to trollish life here.  The dark,
-
-basalt walls and floor are worn to a polished smoothness, due to what could be
-
-years of activity of its inhabitants.  The southern side of the cavern seems
-
-to serve many purposes: that of a guardpost, a storeroom for accumulated
-
-debris of various sizes and a secondary sleeping area.  Cinder-strewn trails
-
-leave this central cavern to the east and west, while to the north, an
-
-unnatural quiet and dim, red glow can be observed.
-
-"
+large cavern is a mix of and seems central to trollish life here.  The dark,
+basalt walls and floor are worn to a polished smoothness, due to what could be
+years of activity of its inhabitants.  The southern side of the cavern seems
+to serve many purposes: that of a guardpost, a storeroom for accumulated
+debris of various sizes and a secondary sleeping area.  Cinder-strewn trails
+leave this central cavern to the east and west, while to the north, an
+unnatural quiet and dim, red glow can be observed.
+"
 "[Nereus] ** Important Note:  All codes to handle non-combatant movement are here! **
-
-[Nereus] Acode 1 starts all the non-combatants moving in here.  DO NOT MOVE IT
-
-[Nereus] Acode 15 makes them all go home
-
-[Nereus] ** Room Finished **
-
-[Dalthas] do something when you give him food
-
-"
+[Nereus] Acode 1 starts all the non-combatants moving in here.  DO NOT MOVE IT
+[Nereus] Acode 15 makes them all go home
+[Nereus] ** Room Finished **
+[Dalthas] do something when you give him food
+"
 33030144 0
 11 8 0
 D0
@@ -1312,514 +914,331 @@ D3
 E
 "debris"
 "Heaps of debris have been piled haphazardly around the room, between which
-
-cleared swaths of smooth cavern floor are visible.  The debris appears to be
-
-made up of things which even trolls find unpalatable, including bone
-
-fragments, bits of stone, and discarded hair.
-
-"
+cleared swaths of smooth cavern floor are visible.  The debris appears to be
+made up of things which even trolls find unpalatable, including bone
+fragments, bits of stone, and discarded hair.
+"
 A
 ""
 ""
 "acode( find_room( 82209 ), 3 );
-
-acode( find_room( 82209 ), 4 );
-
-acode( find_room( 82209 ), 5 );
-
-acode( find_room( 82209 ), 6 );
-
-acode( find_room( 82209 ), 7 );
-
-acode( find_room( 82209 ), 8 );
-
-acode( find_room( 82209 ), 9 );
-
-acode( find_room( 82209 ), 10 );
-
-wait( 1 );
-
-acode( find_room( 82209 ), 6 );
-
-acode( find_room( 82209 ), 7 );
-
-acode( find_room( 82209 ), 8 );
-
-acode( find_room( 82209 ), 9 );
-
-acode( find_room( 82209 ), 10 );
-
-wait( 1 );
-
-acode( find_room( 82209 ), 6 );
-
-"
+acode( find_room( 82209 ), 4 );
+acode( find_room( 82209 ), 5 );
+acode( find_room( 82209 ), 6 );
+acode( find_room( 82209 ), 7 );
+acode( find_room( 82209 ), 8 );
+acode( find_room( 82209 ), 9 );
+acode( find_room( 82209 ), 10 );
+wait( 1 );
+acode( find_room( 82209 ), 6 );
+acode( find_room( 82209 ), 7 );
+acode( find_room( 82209 ), 8 );
+acode( find_room( 82209 ), 9 );
+acode( find_room( 82209 ), 10 );
+wait( 1 );
+acode( find_room( 82209 ), 6 );
+"
 !
 0 0 0
 A
 ""
 ""
 "if( is_player( ch ) || is_pet( ch ) )
-
-  continue;
-
-if( vnum( ch ) == 2494 )
-
-  continue;
-
-if( rflag( status0, find_room( 82204 ) ) )
-
-  continue;
-
-"
+  continue;
+if( vnum( ch ) == 2494 )
+  continue;
+if( rflag( status0, find_room( 82204 ) ) )
+  continue;
+"
 !
 3 0 63
 A
 ""
 ""
 "mob = mob_in_room( 2526, find_room( 82223 ) );
-
-if( !mob ) end;
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"east\" );
-
-continue;
-
-"
+if( !mob ) end;
+interpret( mob, \"east\" );
+interpret( mob, \"east\" );
+interpret( mob, \"east\" );
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2567, find_room( 82211 ) );
-
-if( !mob ) end;
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"west\" );
-
-interpret( mob, \"west\" );
-
-continue;
-
-"
+if( !mob ) end;
+interpret( mob, \"south\" );
+interpret( mob, \"south\" );
+interpret( mob, \"west\" );
+interpret( mob, \"west\" );
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2583, find_room( 82217 ) );
-
-if( !mob ) end;
-
-open( find_room( 82217 ), east );
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"west\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"east\" );
-
-continue;
-
-"
+if( !mob ) end;
+open( find_room( 82217 ), east );
+interpret( mob, \"east\" );
+interpret( mob, \"south\" );
+interpret( mob, \"west\" );
+interpret( mob, \"south\" );
+interpret( mob, \"east\" );
+interpret( mob, \"east\" );
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2572, find_room( 82214 ) );
-
-if( !mob ) end;
-
-interpret( mob, \"stand\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"west\" );
-
-interpret( mob, \"west\" );
-
-continue;
-
-"
+if( !mob ) end;
+interpret( mob, \"stand\" );
+interpret( mob, \"south\" );
+interpret( mob, \"south\" );
+interpret( mob, \"east\" );
+interpret( mob, \"south\" );
+interpret( mob, \"west\" );
+interpret( mob, \"west\" );
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2570, find_room( 82214 ) );
-
-if( !mob ) end;
-
-interpret( mob, \"stand\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"west\" );
-
-interpret( mob, \"west\" );
-
-continue;
-
-"
+if( !mob ) end;
+interpret( mob, \"stand\" );
+interpret( mob, \"south\" );
+interpret( mob, \"south\" );
+interpret( mob, \"east\" );
+interpret( mob, \"south\" );
+interpret( mob, \"west\" );
+interpret( mob, \"west\" );
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2570, find_room( 82213 ) );
-
-if( !mob ) end;
-
-interpret( mob, \"stand\" );
-
-interpret( mob, \"south \" );
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"west\" );
-
-interpret( mob, \"west\" );
-
-continue;
-
-"
+if( !mob ) end;
+interpret( mob, \"stand\" );
+interpret( mob, \"south \" );
+interpret( mob, \"east\" );
+interpret( mob, \"south\" );
+interpret( mob, \"west\" );
+interpret( mob, \"west\" );
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2570, find_room( 82215 ) );
-
-if( !mob ) end;
-
-interpret( mob, \"stand\" );
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"west\" );
-
-interpret( mob, \"west\" );
-
-continue;
-
-"
+if( !mob ) end;
+interpret( mob, \"stand\" );
+interpret( mob, \"east\" );
+interpret( mob, \"south\" );
+interpret( mob, \"east\" );
+interpret( mob, \"south\" );
+interpret( mob, \"west\" );
+interpret( mob, \"west\" );
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2570, find_room( 82209 ) );
-
-if( !mob ) end;
-
-interpret( mob, \"stand\" );
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"west\" );
-
-interpret( mob, \"west\" );
-
-continue;
-
-"
+if( !mob ) end;
+interpret( mob, \"stand\" );
+interpret( mob, \"east\" );
+interpret( mob, \"south\" );
+interpret( mob, \"west\" );
+interpret( mob, \"west\" );
+continue;
+"
 !
 0 0 0
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 "debris piles heaps"
 "act_tochar( #search, ch );
-
-act_notchar( #searches, ch );
-
-"
+act_notchar( #searches, ch );
+"
 E
 "search"
 "You search through the piles of debris, but don't find anything of value.
-
-"
+"
 E
 "searches"
 "$n searches through the piles of debris, but doesn't appear to find anything.
-
-"
+"
 !
 9 0 0
 A
 "bang strike hit"
 "iron rusty heavy sheet"
 "mob = mob_in_room( 2569, room );
-
-if( mob ) {
-
-  if( stop_camouflage( ch ) )
-
-    act_tochar( \"You stop hiding and move towards the sheet of iron.\", ch );
-
-  act_tochar( \"$N moves into your path as you move towards the sheet of iron.\", ch, null, mob );
-
-  act_notchar( \"$N moves into $n's path as $e moves towards the sheet of iron.\", ch, null, mob );
-
-  interpret( mob, \"say Yous not touch, or wes fight.\" );
-
-  end;
-
-}
-
-act_tochar( #strike, ch );
-
-act_notchar( #strikes, ch );
-
-act_area( #sheet, ch );
-
-acode( room, 15 );
-
-"
+if( mob ) {
+  if( stop_camouflage( ch ) )
+    act_tochar( \"You stop hiding and move towards the sheet of iron.\", ch );
+  act_tochar( \"$N moves into your path as you move towards the sheet of iron.\", ch, null, mob );
+  act_notchar( \"$N moves into $n's path as $e moves towards the sheet of iron.\", ch, null, mob );
+  interpret( mob, \"say Yous not touch, or wes fight.\" );
+  end;
+}
+act_tochar( #strike, ch );
+act_notchar( #strikes, ch );
+act_area( #sheet, ch );
+acode( room, 15 );
+"
 E
 "strike"
 "You strike the iron sheet, causing a loud, echoing sound to ring out.
-
-"
+"
 E
 "strikes"
 "$n strikes the iron sheet, causing a loud, echoing sound to ring out.
-
-"
+"
 E
 "sheet"
 "@YA loud, echoing sound of metal being struck rings through the area.@n
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "if( 1d3 == 1 && !rflag( status0, find_room( 82204 ) ) ) {
-
-  mob = mob_in_room( 2569, room );
-
-  interpret( mob, \"emote bangs his fist on the iron sheet, signaling that the settlement is safe.\" );
-
-  act_area( #loud, mob );
-
-  acode( room, 15 );
-
-  }
-
-"
+  mob = mob_in_room( 2569, room );
+  interpret( mob, \"emote bangs his fist on the iron sheet, signaling that the settlement is safe.\" );
+  act_area( #loud, mob );
+  acode( room, 15 );
+  }
+"
 E
 "loud"
 "@YAn echoing sound of metal being banged rings through the area.@n
-
-"
+"
 !
 6 900 0
 A
 ""
 ""
 "set_rflag( status0, find_room( 82204 ) );
-
-acode( room, 16 );
-
-acode( room, 17 );
-
-acode( room, 18 );
-
-acode( room, 19 );
-
-continue;
-
-"
+acode( room, 16 );
+acode( room, 17 );
+acode( room, 18 );
+acode( room, 19 );
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2526, find_room( 82209 ) );
-
-if( !mob ) end;
-
-interpret( mob, \"west\" );
-
-interpret( mob, \"west\" );
-
-interpret( mob, \"west\" );
-
-continue;
-
-"
+if( !mob ) end;
+interpret( mob, \"west\" );
+interpret( mob, \"west\" );
+interpret( mob, \"west\" );
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2567, find_room( 82209 ) );
-
-if( !mob ) end;
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"north\" );
-
-interpret( mob, \"north\" );
-
-continue;
-
-"
+if( !mob ) end;
+interpret( mob, \"east\" );
+interpret( mob, \"east\" );
+interpret( mob, \"north\" );
+interpret( mob, \"north\" );
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2583, find_room( 82209 ) );
-
-if( !mob ) end;
-
-interpret( mob, \"west\" );
-
-interpret( mob, \"west\" );
-
-interpret( mob, \"north\" );
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"north\" );
-
-interpret( mob, \"west\" );
-
-open( find_room( 82217 ), east );
-
-interpret( mob, \"west\" );
-
-continue;
-
-"
+if( !mob ) end;
+interpret( mob, \"west\" );
+interpret( mob, \"west\" );
+interpret( mob, \"north\" );
+interpret( mob, \"east\" );
+interpret( mob, \"north\" );
+interpret( mob, \"west\" );
+open( find_room( 82217 ), east );
+interpret( mob, \"west\" );
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "loop( all_in_room ) {
-
-  if( !is_player( rch ) && !is_pet( rch ) ) {
-
-    if( vnum( rch ) == 2570 || vnum( rch ) == 2572 ) {
-
-      interpret( rch, \"east\" );
-
-      interpret( rch, \"east\" );
-
-      interpret( rch, \"north\" );
-
-      interpret( rch, \"west\" );
-
-      interpret( rch, \"north\" );
-
-      interpret( rch, \"north\" );
-
-      }
-
-    }
-
-  }
-
-continue;
-
-"
+  if( !is_player( rch ) && !is_pet( rch ) ) {
+    if( vnum( rch ) == 2570 || vnum( rch ) == 2572 ) {
+      interpret( rch, \"east\" );
+      interpret( rch, \"east\" );
+      interpret( rch, \"north\" );
+      interpret( rch, \"west\" );
+      interpret( rch, \"north\" );
+      interpret( rch, \"north\" );
+      }
+    }
+  }
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2569, find_room( 82209 ) );
-
-if( !mob ) end;
-
-interpret( mob, \"west\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"east\" );
-
-interpret( mob, \"south\" );
-
-interpret( mob, \"west\" );
-
-interpret( mob, \"rest\" );
-
-continue;
-
-"
+if( !mob ) end;
+interpret( mob, \"west\" );
+interpret( mob, \"south\" );
+interpret( mob, \"east\" );
+interpret( mob, \"south\" );
+interpret( mob, \"west\" );
+interpret( mob, \"rest\" );
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2569, room );
-
-if( mob ) {
-
-  interpret( mob, \"emote emits a deafening, terribly wet belch.\" );
-
-  send_to_room( \"An echoing belch sounds to the south.\", find_room( 82225 ) );
-
-  send_to_room( \"An echoing belch sounds to the west.\", find_room( 82207 ) );
-
-  send_to_room( \"An echoing belch sounds to the east.\", find_room( 82221 ) );
-
-  }
-
-"
+if( mob ) {
+  interpret( mob, \"emote emits a deafening, terribly wet belch.\" );
+  send_to_room( \"An echoing belch sounds to the south.\", find_room( 82225 ) );
+  send_to_room( \"An echoing belch sounds to the west.\", find_room( 82207 ) );
+  send_to_room( \"An echoing belch sounds to the east.\", find_room( 82221 ) );
+  }
+"
 !
 2 80 0
 2569 137 1509949540 3 0
@@ -1832,25 +1251,16 @@ S
 #82210
 "Trail Along the Volcano Floor - Beneath an Overhang"
 "The cinder-strewn trail winds its way from south to west here, beneath an
-
-overhanging eastern wall.  The dark basalt walls continue for perhaps a
-
-hundred feet above the volcano floor before the wintry, grey sky can finally
-
-be made out high above.  A narrow cavern entrance has been carved to the
-
-north, leading into what seems from here to be a small, cozy cavern, the dim
-
-glow of embers visible from inside.  The overhang continues along the trail to
-
-the south, while the trail to the west appears to have been completely swept
-
-clean of the cinders found here.
-
-"
+overhanging eastern wall.  The dark basalt walls continue for perhaps a
+hundred feet above the volcano floor before the wintry, grey sky can finally
+be made out high above.  A narrow cavern entrance has been carved to the
+north, leading into what seems from here to be a small, cozy cavern, the dim
+glow of embers visible from inside.  The overhang continues along the trail to
+the south, while the trail to the west appears to have been completely swept
+clean of the cinders found here.
+"
 "[Nereus] ** Last room, finished on 26 March 2003 **
-
-"
+"
 33030144 0
 11 7 0
 D0
@@ -1868,18 +1278,14 @@ D3
 E
 "narrow cavern entrance"
 "The cavern entrance looks to have been widened in the past, but is still
-
-fairly narrow for a troll-sized individual to pass through.  A cozy cavern
-
-lies beyond, though the entrance is too narrow to make out much from here.
-
-"
+fairly narrow for a troll-sized individual to pass through.  A cozy cavern
+lies beyond, though the entrance is too narrow to make out much from here.
+"
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 -1
@@ -1888,22 +1294,14 @@ S
 #82211
 "Comfortably Warm Cavern"
 "This warm, homey cavern is not what one might expect in a settlement of
-
-trolls.  A hearth, carefully shielded by several crude blocks of basalt, glows
-
-softly warm in a corner of this rounded cave.  A few well-made rugs and thick
-
-white pelts cover the stone cavern floor, clean and well kept.  The cavern is
-
-small, probably fifteen paces to a side, round, and has a ceiling roughly
-
-eight feet high, but whoever lives here is clearly given great respect to have
-
-their own personal living space.  To the south, the cinder-covered floor of
-
-the crater winds past.
-
-"
+trolls.  A hearth, carefully shielded by several crude blocks of basalt, glows
+softly warm in a corner of this rounded cave.  A few well-made rugs and thick
+white pelts cover the stone cavern floor, clean and well kept.  The cavern is
+small, probably fifteen paces to a side, round, and has a ceiling roughly
+eight feet high, but whoever lives here is clearly given great respect to have
+their own personal living space.  To the south, the cinder-covered floor of
+the crater winds past.
+"
 ""
 33030144 0
 11 7 0
@@ -1914,80 +1312,54 @@ D2
 E
 "hearth crude blocks basalt"
 "In the northwestern corner of this small cavern, a fire has been lit. 
-
-Carefully stacked blocks of basalt prevent sparks from the fire from igniting
-
-the rugs and pelts around the room.
-
-"
+Carefully stacked blocks of basalt prevent sparks from the fire from igniting
+the rugs and pelts around the room.
+"
 E
 "well-made rugs thick white pelts floor"
 "The rugs are thick, clean, and appear to have been knitted together with some
-
-varieties of grey and red fabrics.  A few pelts, possibly the white pelts of
-
-wolves, have been stacked in a corner and look to serve as a simple bed.
-
-"
+varieties of grey and red fabrics.  A few pelts, possibly the white pelts of
+wolves, have been stacked in a corner and look to serve as a simple bed.
+"
 A
 ""
 ""
 "if( is_player( ch ) || is_pet( ch ) )
-
-  continue;
-
-if( vnum( ch ) != 2567 && vnum( ch ) != 2568 )
-
-  continue;
-
-if( !rflag( status0, find_room( 82204 ) ) )
-
-  continue;
-
-"
+  continue;
+if( vnum( ch ) != 2567 && vnum( ch ) != 2568 )
+  continue;
+if( !rflag( status0, find_room( 82204 ) ) )
+  continue;
+"
 !
 3 0 4
 A
 "3 custom"
 ""
 "mob = mob_in_room( 2567, room );
-
-if( !mob ) continue;
-
-  if( race( ch ) == elf || race( ch ) == dwarf || race( ch ) == halfling || race( ch ) == ent || cflag( 152, ch ) || cflag( 153, ch ) ) {
-
-interpret( mob, #no );
-
-  }
-
-else
-
-  continue;
-
-"
+if( !mob ) continue;
+  if( race( ch ) == elf || race( ch ) == dwarf || race( ch ) == halfling || race( ch ) == ent || cflag( 152, ch ) || cflag( 153, ch ) ) {
+interpret( mob, #no );
+  }
+else
+  continue;
+"
 E
 "no"
 "say Me no custom for yous!  Go 'way!
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2567, room );
-
-rch = mob_in_room( 2568, room );
-
-if( !mob || !rch ) end;
-
-if( is_fighting( mob ) || is_fighting( rch ) ) end;
-
-interpret( mob, \"pat\", rch );
-
-interpret( rch, \"smile\" );
-
-"
+rch = mob_in_room( 2568, room );
+if( !mob || !rch ) end;
+if( is_fighting( mob ) || is_fighting( rch ) ) end;
+interpret( mob, \"pat\", rch );
+interpret( rch, \"smile\" );
+"
 !
 2 100 0
 2567 41 1509949540 3 0
@@ -1999,27 +1371,17 @@ S
 #82212
 "Trail Picked Clean Along the Volcano Floor"
 "A shiny, worn section of the dark, basalt ground here and a depression in the
-
-center are the only signs that mark the trail as it winds along the floor of
-
-the volcano here.  The flecks of cinders and chips of stone evident elsewhere
-
-along the trail have been picked completely clean, almost as if someone has
-
-regularly swept the area for debris.  On both sides of the floor, the smooth,
-
-dark basalt walls of the volcano rise to the sky, leaving a window of grey sky
-
-high above.  To the east, cinders have been strewn along the trail again as it
-
-winds southward.
-
-"
+center are the only signs that mark the trail as it winds along the floor of
+the volcano here.  The flecks of cinders and chips of stone evident elsewhere
+along the trail have been picked completely clean, almost as if someone has
+regularly swept the area for debris.  On both sides of the floor, the smooth,
+dark basalt walls of the volcano rise to the sky, leaving a window of grey sky
+high above.  To the east, cinders have been strewn along the trail again as it
+winds southward.
+"
 "[Nereus] children don't go past here unless under attack
-
-[Nereus] ** Room Finished **
-
-"
+[Nereus] ** Room Finished **
+"
 33030144 0
 11 7 0
 D0
@@ -2033,67 +1395,49 @@ D1
 E
 "walls"
 "The walls are a smooth, weatherworn, dark grey basalt stone.
-
-"
+"
 E
 "window grey sky"
 "The sky is visible high above, though the weather does not seem to affect much
-
-here at the bottom of this volcano.
-
-"
+here at the bottom of this volcano.
+"
 A
 ""
 ""
 "if( is_player( ch ) || is_pet( ch ) )
-
-  continue;
-
-if( vnum( ch ) != 2570 )
-
-  continue;
-
-if( !rflag( status0, find_room( 82204 ) ) )
-
-  continue;
-
-"
+  continue;
+if( vnum( ch ) != 2570 )
+  continue;
+if( !rflag( status0, find_room( 82204 ) ) )
+  continue;
+"
 !
 3 0 2
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2570, room );
-
-interpret( mob, \"north\" );
-
-interpret( mob, \"north\" );
-
-if( !mob ) end;
-
-interpret( mob, \"yawn\" );
-
-interpret( mob, \"sleep\" );
-
-"
+interpret( mob, \"north\" );
+interpret( mob, \"north\" );
+if( !mob ) end;
+interpret( mob, \"yawn\" );
+interpret( mob, \"sleep\" );
+"
 !
 6 1270 0
 A
 ""
 ""
 "acode( room, 2 );
-
-continue;
-
-"
+continue;
+"
 !
 6 1272 0
 -1
@@ -2102,29 +1446,18 @@ S
 #82213
 "Clean-swept Trail Along the Volcano Floor - Rock Pile"
 "The smooth basalt floor here has been picked clean of the cinders found
-
-elsewhere around the volcano floor, and the cause is evident here: someone or
-
-something has stacked a huge collection of rocks against the base of the
-
-eastern wall.  The larger rocks have generally been piled along the bottom of
-
-the stack, although there is no apparent reason to how they have been
-
-stacked.  A trail, evident only by a track worn even smoother along the basalt
-
-floor, leads south to west from here, or to the north, a wide cavern entrance
-
-has been roughly carved leading into what appears to be a communal cavern of
-
-sorts.
-
-"
+elsewhere around the volcano floor, and the cause is evident here: someone or
+something has stacked a huge collection of rocks against the base of the
+eastern wall.  The larger rocks have generally been piled along the bottom of
+the stack, although there is no apparent reason to how they have been
+stacked.  A trail, evident only by a track worn even smoother along the basalt
+floor, leads south to west from here, or to the north, a wide cavern entrance
+has been roughly carved leading into what appears to be a communal cavern of
+sorts.
+"
 "[Nereus] ** Room Finished **
-
-[Nereus] Sometimes the children sleep here too
-
-"
+[Nereus] Sometimes the children sleep here too
+"
 33030144 0
 11 7 0
 D0
@@ -2143,64 +1476,50 @@ A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2570, room );
-
-interpret( mob, \"north\" );
-
-if( !mob ) end;
-
-interpret( mob, \"yawn\" );
-
-interpret( mob, \"sleep\" );
-
-"
+interpret( mob, \"north\" );
+if( !mob ) end;
+interpret( mob, \"yawn\" );
+interpret( mob, \"sleep\" );
+"
 !
 6 1260 0
 A
 ""
 ""
 "acode( room, 2 );
-
-continue;
-
-"
+continue;
+"
 !
 6 1263 0
 A
 ""
 "pile rocks"
 "act_tochar( #search, ch );
-
-act_notchar( #searches, ch );
-
-"
+act_notchar( #searches, ch );
+"
 E
 "search"
 "You search through the pile of rocks, but don't find anything of particular
-
-value.
-
-"
+value.
+"
 E
 "searches"
 "$n searches through the rock pile.
-
-"
+"
 !
 9 0 0
 A
 ""
 ""
 "acode( find_room( 82214 ), 2 );
-
-"
+"
 !
 6 360 0
 2494 9 1509949540 3 0
@@ -2215,27 +1534,17 @@ S
 #82214
 "Communal Sleeping Cavern"
 "A yawning cavern entrance, ten feet high and twice as wide, opens to the south
-
-of what obviously serves as a communal sleeping cavern.  The cavern widens
-
-slightly as it opens just north of the southern entrance and peaks at roughly
-
-ten feet in height before narrowing to a mere crack at its northern end. 
-
-There are no chisel marks evident along the walls, ceiling, or floor, although
-
-the floor has been worn smooth both by the tramp of trollish foot and sleeping
-
-trolls laying along the ground here.  The cavern appears to be naturally
-
-formed, the rock made of the same dark gray basalt visible elsewhere in the
-
-interior of this volcano.
-
-"
+of what obviously serves as a communal sleeping cavern.  The cavern widens
+slightly as it opens just north of the southern entrance and peaks at roughly
+ten feet in height before narrowing to a mere crack at its northern end. 
+There are no chisel marks evident along the walls, ceiling, or floor, although
+the floor has been worn smooth both by the tramp of trollish foot and sleeping
+trolls laying along the ground here.  The cavern appears to be naturally
+formed, the rock made of the same dark gray basalt visible elsewhere in the
+interior of this volcano.
+"
 "[Nereus] ** Room Finished **
-
-"
+"
 33030144 0
 11 7 0
 D2
@@ -2245,48 +1554,32 @@ D2
 E
 "1 south yawning cavern entrance"
 "A wide, apparently natural cavern entrance opens to the south, beyond which a
-
-cinder-strewn trail runs south to west.
-
-"
+cinder-strewn trail runs south to west.
+"
 A
 ""
 ""
 "if( is_player( ch ) || is_pet( ch ) )
-
-  continue;
-
-if( vnum( ch ) != 2572 )
-
-  continue;
-
-if( !rflag( status0, find_room( 82204 ) ) )
-
-  continue;
-
-"
+  continue;
+if( vnum( ch ) != 2572 )
+  continue;
+if( !rflag( status0, find_room( 82204 ) ) )
+  continue;
+"
 !
 3 0 4
 A
 ""
 ""
 "loop( all_in_room ) {
-
-  if( !is_player( rch ) && !is_pet( rch ) ) {
-
-    if( vnum( rch ) == 2570 ) {
-
-      interpret( rch, \"stretch\" );
-
-      interpret( rch, \"stand\" );
-
-      }
-
-    }
-
-  }
-
-"
+  if( !is_player( rch ) && !is_pet( rch ) ) {
+    if( vnum( rch ) == 2570 ) {
+      interpret( rch, \"stretch\" );
+      interpret( rch, \"stand\" );
+      }
+    }
+  }
+"
 !
 6 360 0
 2570 9 1509949540 3 0
@@ -2304,31 +1597,19 @@ S
 #82215
 "Trail Along the Volcano Floor"
 "Marked merely by a segment of the crater floor which has been worn smoother
-
-than that around it, the trail here stretches east to west, swept almost
-
-completely free of cinders and other debris.  The dark basalt walls of the
-
-volcano stretch high above to the north and south, the outer wall of some
-
-ancient crater north of you, and a newer, darker basalt wall of the most
-
-geologically recent crater to the south.  To the east, the debris-free trail
-
-continues, while to the west, some clutter is evident.  High above, the sky is
-
-visible, a faint dusting of snow drifting past.  Perhaps being a bit
-
-underground keeps the temperature here warm enough to keep the snow from
-
-accumulating.
-
-"
+than that around it, the trail here stretches east to west, swept almost
+completely free of cinders and other debris.  The dark basalt walls of the
+volcano stretch high above to the north and south, the outer wall of some
+ancient crater north of you, and a newer, darker basalt wall of the most
+geologically recent crater to the south.  To the east, the debris-free trail
+continues, while to the west, some clutter is evident.  High above, the sky is
+visible, a faint dusting of snow drifting past.  Perhaps being a bit
+underground keeps the temperature here warm enough to keep the snow from
+accumulating.
+"
 "[Nereus] children don't go past here
-
-[Nereus] ** Room Finished **
-
-"
+[Nereus] ** Room Finished **
+"
 33030144 0
 11 7 0
 D1
@@ -2342,73 +1623,52 @@ D3
 E
 "basalt walls 1 north 1 south"
 "This trail runs along the base of two craters, along the floor of a volcano. 
-
-The older, larger wall is to the north, and is a lighter, more weathered
-
-stone.  To the south, a younger, second cone has formed.  Both walls are
-
-slicked smooth from weather over the ages and would probably not be climbable.
-
-"
+The older, larger wall is to the north, and is a lighter, more weathered
+stone.  To the south, a younger, second cone has formed.  Both walls are
+slicked smooth from weather over the ages and would probably not be climbable.
+"
 E
 "clutter 1 west"
 "The trail continues westward, but some clutter, what looks from here to just
-
-be fragments of rock or cinders, is evident along the volcano floor.
-
-"
+be fragments of rock or cinders, is evident along the volcano floor.
+"
 A
 ""
 ""
 "if( is_player( ch ) || is_pet( ch ) )
-
-  continue;
-
-if( vnum( ch ) != 2570 )
-
-  continue;
-
-if( !rflag( status0, find_room( 82204 ) ) )
-
-  continue;
-
-"
+  continue;
+if( vnum( ch ) != 2570 )
+  continue;
+if( !rflag( status0, find_room( 82204 ) ) )
+  continue;
+"
 !
 3 0 8
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2570, room );
-
-interpret( mob, \"north\" );
-
-interpret( mob, \"east\" );
-
-if( !mob ) end;
-
-interpret( mob, \"yawn\" );
-
-interpret( mob, \"sleep\" );
-
-"
+interpret( mob, \"north\" );
+interpret( mob, \"east\" );
+if( !mob ) end;
+interpret( mob, \"yawn\" );
+interpret( mob, \"sleep\" );
+"
 !
 6 1270 0
 A
 ""
 ""
 "acode( room, 3 );
-
-continue;
-
-"
+continue;
+"
 !
 6 1267 0
 -1
@@ -2417,27 +1677,17 @@ S
 #82216
 "Trail Along the Volcano Floor"
 "The trail winds around a sharp corner, created by lava flows ages ago and worn
-
-smooth by the tread of countless feet.  A side tunnel leads west from here,
-
-but a hanging curtain of pelts stitched together blocks a good view of what
-
-might lie beyond.  The debris along the walls here seems less evident than in
-
-other places along the trail, although why this section is less littered than
-
-others is a mystery.  A terrible stench, bloody footprints, and visible heaps
-
-of what look like carcasses are evident along the cinder-strewn trail further
-
-south.  To the east, the trail continues as well, although it looks to have
-
-been swept free of the cinders that are spread about the trail here.
-
-"
+smooth by the tread of countless feet.  A side tunnel leads west from here,
+but a hanging curtain of pelts stitched together blocks a good view of what
+might lie beyond.  The debris along the walls here seems less evident than in
+other places along the trail, although why this section is less littered than
+others is a mystery.  A terrible stench, bloody footprints, and visible heaps
+of what look like carcasses are evident along the cinder-strewn trail further
+south.  To the east, the trail continues as well, although it looks to have
+been swept free of the cinders that are spread about the trail here.
+"
 "[Nereus] ** Room Finished **
-
-"
+"
 33030144 0
 11 7 0
 D1
@@ -2455,67 +1705,49 @@ D3
 E
 "curtain 1 west"
 "The curtain is made of several large, white pelts which have been stitched
-
-together.  Whether it was put up to block out the sight, sound, wind, or cold
-
-is uncertain.
-
-"
+together.  Whether it was put up to block out the sight, sound, wind, or cold
+is uncertain.
+"
 E
 "debris"
 "While the debris here is much less than is evident in other sections of the
-
-trail, it would by no means be considered clean in any civilized region.  The
-
-debris appears to be comprised mostly of discarded rocks, hair, and fragments
-
-of bone.
-
-"
+trail, it would by no means be considered clean in any civilized region.  The
+debris appears to be comprised mostly of discarded rocks, hair, and fragments
+of bone.
+"
 E
 "bloody footprints"
 "A few bloody footprints, long since dried into dark crimson smears, have been
-
-tracked in from further south.
-
-"
+tracked in from further south.
+"
 E
 "heaps carcasses"
 "It is difficult to see from here, but further to the south, against the wall,
-
-heaps of furs or possibly carcasses have been stacked.  Spatters of blood,
-
-some dried, and some more fresh, are visible even from here.
-
-"
+heaps of furs or possibly carcasses have been stacked.  Spatters of blood,
+some dried, and some more fresh, are visible even from here.
+"
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 "debris"
 "act_tochar( #search, ch );
-
-act_notchar( #searches, ch );
-
-"
+act_notchar( #searches, ch );
+"
 E
 "search"
 "You pick through the sparse piles of debris along the base of the walls, but
-
-don't find anything worthwhile.
-
-"
+don't find anything worthwhile.
+"
 E
 "searches"
 "$n picks through the sparse piles of debris along the base of the walls.
-
-"
+"
 !
 9 0 0
 2494 9 1509949540 3 0
@@ -2525,33 +1757,20 @@ S
 #82217
 "Cramped, Messy Cavern - Traveller's Home"
 "Marginally cleaner than the remainder of the trollish settlement, this
-
-cramped, messy cavern has been carved directly from the basalt walls that
-
-define the sides of the volcano.  Probably once little more than an alcove in
-
-the rock, it has been roughly chiseled until it has formed a room roughly ten
-
-feet long and a bit less across.  Debris has been piled along the southern
-
-side of the room: collections of pieces of rock, teeth from various animals,
-
-furs, the strings of instruments, woodcarving implements, and other wooden
-
-pegs and pieces.  Along the northern wall, a rumpled pile of furs has been
-
-laid along the ground and presumably serves as a bed.  A curtain made from
-
-various pelts stitched together prevents some of the sounds and smells of the
-
-troll settlement from entering the cavern.
-
-"
+cramped, messy cavern has been carved directly from the basalt walls that
+define the sides of the volcano.  Probably once little more than an alcove in
+the rock, it has been roughly chiseled until it has formed a room roughly ten
+feet long and a bit less across.  Debris has been piled along the southern
+side of the room: collections of pieces of rock, teeth from various animals,
+furs, the strings of instruments, woodcarving implements, and other wooden
+pegs and pieces.  Along the northern wall, a rumpled pile of furs has been
+laid along the ground and presumably serves as a bed.  A curtain made from
+various pelts stitched together prevents some of the sounds and smells of the
+troll settlement from entering the cavern.
+"
 "[Nereus] bard trainer potentially, if someone needs one
-
-[Nereus] ** Room Finished **
-
-"
+[Nereus] ** Room Finished **
+"
 33030144 0
 11 7 0
 D1
@@ -2561,184 +1780,115 @@ D1
 E
 "carved chiseled walls ceiling basalt"
 "The walls and ceiling are covered in chisel marks, evidence of their
-
-relatively recent expansion of this cave.  The ceiling is roughly seven feet
-
-high, forcing trolls who might enter to duck.
-
-"
+relatively recent expansion of this cave.  The ceiling is roughly seven feet
+high, forcing trolls who might enter to duck.
+"
 E
 "curtain 1 east"
 "The curtain is made of several large, white pelts, stitched together to seal
-
-out the wind and noise of the rest of the settlement.
-
-"
+out the wind and noise of the rest of the settlement.
+"
 E
 "debris southern collections pieces rock teeth strings instruments woodcarving implements wooden pegs pieces"
 "Apparently agreeing with the trollish philosophy that furniture is
-
-unneccessary, the owner of this cavern has piled all his belongings in an
-
-immense heap against the southern wall of this cavern.  Rocks, teeth, furs,
-
-pieces of musical instruments, various types of carving implements, and other
-
-wooden pegs and fragments are in evidence in the pile.
-
-"
+unneccessary, the owner of this cavern has piled all his belongings in an
+immense heap against the southern wall of this cavern.  Rocks, teeth, furs,
+pieces of musical instruments, various types of carving implements, and other
+wooden pegs and fragments are in evidence in the pile.
+"
 A
 ""
 ""
 "if( is_player( ch ) || is_pet( ch ) ) {
-
-  continue;
-
-  }
-
-if( vnum( ch ) != 2583 )
-
-  continue;
-
-if( !rflag( status0, find_room( 82204 ) ) )
-
-  continue;
-
-"
+  continue;
+  }
+if( vnum( ch ) != 2583 )
+  continue;
+if( !rflag( status0, find_room( 82204 ) ) )
+  continue;
+"
 !
 3 0 2
 A
 ""
 "bed pile furs"
 "mob = mob_in_room( 2583, room );
-
-if( mob ) {
-
-  if( can_see_char( mob, ch ) ) {
-
-    interpret( mob, \"say Do not rummage through my things.\" );
-
-    end;
-
-    }
-
-  }
-
-if( rflag( reset0, room ) && 1d9 == 1 ) {
-
-  act_tochar( #find, ch );
-
-  obj_to_char( oload( 3956 ), ch );
-
-  }
-
-else
-
-  act_tochar( #nothing, ch );
-
-act_notchar( #searches, ch );
-
-remove_rflag( reset0, room );
-
-"
+if( mob ) {
+  if( can_see_char( mob, ch ) ) {
+    interpret( mob, \"say Do not rummage through my things.\" );
+    end;
+    }
+  }
+if( rflag( reset0, room ) && 1d9 == 1 ) {
+  act_tochar( #find, ch );
+  obj_to_char( oload( 3956 ), ch );
+  }
+else
+  act_tochar( #nothing, ch );
+act_notchar( #searches, ch );
+remove_rflag( reset0, room );
+"
 E
 "find"
 "You search through the pile of furs that serve as a bed, and find a valuable
-
-fur worth keeping.
-
-"
+fur worth keeping.
+"
 E
 "nothing"
 "You search through the pile of furs, but don't find anything of value.
-
-"
+"
 E
 "searches"
 "$n searches through the pile of furs that appear to serve as a bed.
-
-"
+"
 !
 9 0 0
 A
 ""
 "debris pieces teeth strings instruments implements wooden"
 "mob = mob_in_room( 2583, room );
-
-if( mob ) {
-
-  if( can_see_char( mob, ch ) ) {
-
-    interpret( mob, \"say Do not search through my things.\" );
-
-    end;
-
-    }
-
-  }
-
-if( rflag( reset1, room )  ) {
-
-  i = 1d100;
-
-  remove_rflag( reset1, room );
-
-  act_tochar( #find, ch );
-
-  act_notchar( #nothings, ch );
-
-  if( i < 30 )
-
-    obj_to_char( oload( 4083, 1 ), ch );
-
-  if( i >= 30 && i < 50 )
-
-    obj_to_char( oload( 142, 1 ), ch );
-
-  if( i >= 50 && i < 90 )
-
-    obj_to_char( oload( 14, 1 ), ch );
-
-  if( i >= 90 && i < 95 )
-
-    obj_to_char( oload( 4182, 1 ), ch );
-
-  if( i >= 95 && i <= 99 )
-
-    obj_to_char( oload( 4183, 1 ), ch );
-
-  if( i == 100 )
-
-    obj_to_char( oload( 4184, 1 ), ch );
-
-  }
-
-else {
-
-  act_tochar( #nothing, ch );
-
-  act_notchar( #nothings, ch );
-
-  }
-
-"
+if( mob ) {
+  if( can_see_char( mob, ch ) ) {
+    interpret( mob, \"say Do not search through my things.\" );
+    end;
+    }
+  }
+if( rflag( reset1, room )  ) {
+  i = 1d100;
+  remove_rflag( reset1, room );
+  act_tochar( #find, ch );
+  act_notchar( #nothings, ch );
+  if( i < 30 )
+    obj_to_char( oload( 4083, 1 ), ch );
+  if( i >= 30 && i < 50 )
+    obj_to_char( oload( 142, 1 ), ch );
+  if( i >= 50 && i < 90 )
+    obj_to_char( oload( 14, 1 ), ch );
+  if( i >= 90 && i < 95 )
+    obj_to_char( oload( 4182, 1 ), ch );
+  if( i >= 95 && i <= 99 )
+    obj_to_char( oload( 4183, 1 ), ch );
+  if( i == 100 )
+    obj_to_char( oload( 4184, 1 ), ch );
+  }
+else {
+  act_tochar( #nothing, ch );
+  act_notchar( #nothings, ch );
+  }
+"
 E
 "nothing"
 "You search through the pile of debris, but don't find anything interesting.
-
-"
+"
 E
 "nothings"
 "$n searches through the pile of debris.
-
-"
+"
 E
 "find"
 "You search through the pile of debris accumulated along the southern wall,
-
-finding something of value.
-
-"
+finding something of value.
+"
 !
 9 0 0
 2583 9 1509949540 3 0
@@ -2758,25 +1908,16 @@ S
 #82218
 "Blood-splattered Trail Along the Crater Floor"
 "Partially blockaded by carcasses and piles of gnawed-clean bones, this section
-
-of the volcano floor obviously serves as what would be considered a
-
-slaughterhouse in a human settlement.  The stone floor and the first six feet
-
-or so are splattered with the crimson stains of blood; bloody footprints lead
-
-off along the cinder-strewn ground to the north and west from here.  A
-
-horrible stench of rot exudes from the pile of corpses, furs, and cleaned
-
-bones; apparently the trolls do not differentiate between fresh and more
-
-'seasoned' meat.
-
-"
+of the volcano floor obviously serves as what would be considered a
+slaughterhouse in a human settlement.  The stone floor and the first six feet
+or so are splattered with the crimson stains of blood; bloody footprints lead
+off along the cinder-strewn ground to the north and west from here.  A
+horrible stench of rot exudes from the pile of corpses, furs, and cleaned
+bones; apparently the trolls do not differentiate between fresh and more
+'seasoned' meat.
+"
 "[Nereus] ** Room Finished **
-
-"
+"
 33030144 0
 11 7 0
 D0
@@ -2790,89 +1931,60 @@ D3
 E
 "carcasses piles gnawed-clean bones"
 "Several unrecognizable carcasses have been stacked against the corner here in
-
-the southeast.  They are in varying states of decay and dismemberment,
-
-possibly as trolls come by the room for a snack.  A pile of gnawed bones lies
-
-strewn and intermixed with the piles of the carcasses.
-
-"
+the southeast.  They are in varying states of decay and dismemberment,
+possibly as trolls come by the room for a snack.  A pile of gnawed bones lies
+strewn and intermixed with the piles of the carcasses.
+"
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 "piles carcasses corpses"
 "if( race( ch ) == troll ) {
-
-  if( rflag( reset0, room ) ) {
-
-    act_tochar( #happily, ch );
-
-    obj_to_char( oload( 4194, 1 ), ch );
-
-    }
-
-  else {
-
-    act_tochar( #happyno, ch );
-
-    }
-
-  act_notchar( #searches, ch );
-
-  remove_rflag( reset0, room );
-
-  }
-
-else {
-
-  act_tochar( #begin, ch );
-
-  act_notchar( #begins, ch );
-
-  }
-
-"
+  if( rflag( reset0, room ) ) {
+    act_tochar( #happily, ch );
+    obj_to_char( oload( 4194, 1 ), ch );
+    }
+  else {
+    act_tochar( #happyno, ch );
+    }
+  act_notchar( #searches, ch );
+  remove_rflag( reset0, room );
+  }
+else {
+  act_tochar( #begin, ch );
+  act_notchar( #begins, ch );
+  }
+"
 E
 "happily"
 "You happily search through the gruesome pile of carcasses and bones, pulling
-
-out an uneaten slab of rancid meat.
-
-"
+out an uneaten slab of rancid meat.
+"
 E
 "happyno"
 "You happily search through the gruesome pile of carcasses and bones, but don't
-
-seem to find anything that hasn't already been picked clean.
-
-"
+seem to find anything that hasn't already been picked clean.
+"
 E
 "searches"
 "$n happily searches through the gruesome pile of carcasses and bones.
-
-"
+"
 E
 "begin"
 "You begin to search through the gruesome pile of carcasses and bones, but the
-
-rancid stench forces you to stop.
-
-"
+rancid stench forces you to stop.
+"
 E
 "begins"
 "$n begins to search through the gruesome pile of carcasses and bones, but the
-
-rancid stench forces $m to stop.
-
-"
+rancid stench forces $m to stop.
+"
 !
 9 0 0
 4193 17 1509949540 -2 0
@@ -2883,29 +1995,18 @@ S
 #82219
 "Rancid Alcove Along the Volcano Floor"
 "This region obviously serves as the latrine of the area.  A deep, acrid trench
-
-parallels the basalt wall to the west with several large holes in the bottom
-
-to allow for a marginal amount of drainage.  Stains of questionable origin
-
-cover the bases of both walls, and it does not appear the trolls are very
-
-careful about using the trench; the cinder-covered stone ground is wet with
-
-some liquid better left unidentifiable.  The cinder-covered volcano floor
-
-continues south and east to cleaner sections.
-
-"
+parallels the basalt wall to the west with several large holes in the bottom
+to allow for a marginal amount of drainage.  Stains of questionable origin
+cover the bases of both walls, and it does not appear the trolls are very
+careful about using the trench; the cinder-covered stone ground is wet with
+some liquid better left unidentifiable.  The cinder-covered volcano floor
+continues south and east to cleaner sections.
+"
 "[Nereus] ** Room Finished **
-
-Any chance you want to have whatever foul room below with holes that are very
-
-small but perhaps accessable by very small mage familiars (provided the mage
-
-was that cruel to their familiar ;) -Talis
-
-"
+Any chance you want to have whatever foul room below with holes that are very
+small but perhaps accessable by very small mage familiars (provided the mage
+was that cruel to their familiar ;) -Talis
+"
 33030144 0
 11 7 0
 D1
@@ -2919,44 +2020,36 @@ D2
 E
 "stains"
 "The stains cover the bases of both the western and eastern walls.  Sadly, the
-
-trench is dug along only the western wall.
-
-"
+trench is dug along only the western wall.
+"
 A
 ""
 ""
 "act_tochar( #gag, ch );
-
-"
+"
 E
 "gag"
 "A breeze blows along the volcano floor, wafting the stench from the latrine
-
-through the area.
-
-"
+through the area.
+"
 !
 2 300 0
 A
 "search dig enter"
 "trench latrine hole"
 "act_tochar( #madness, ch );
-
-"
+"
 E
 "madness"
 "You lack the willpower to force yourself to even reach into the rancid trench.
-
-"
+"
 !
 0 0 0
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 518 9 1509949540 3 0
@@ -2968,20 +2061,13 @@ S
 #82220
 "Trail Along the Volcano Floor"
 "This section of the crater floor seems to serve as an extended storeroom for
-
-what appears to be a stable to the west.  Apparently not concerned with
-
-organization or weather, the trolls seem to have left all manner of what they
-
-would consider tools piled in various heaps along the edges of the trails. 
-
-Ruts from carts are evident against the southern crater wall, likely a place
-
-where a cart or carts have been left.  The cinder-strewn rock of the volcano
-
-floor continues east and north from here, while a cave mouth opens to the west.
-
-"
+what appears to be a stable to the west.  Apparently not concerned with
+organization or weather, the trolls seem to have left all manner of what they
+would consider tools piled in various heaps along the edges of the trails. 
+Ruts from carts are evident against the southern crater wall, likely a place
+where a cart or carts have been left.  The cinder-strewn rock of the volcano
+floor continues east and north from here, while a cave mouth opens to the west.
+"
 ""
 33030144 0
 11 7 0
@@ -3000,44 +2086,33 @@ D3
 E
 "piles tools heaps"
 "The piles contain all manner of worthless garbage that apparently qualify as
-
-tools in the eyes of ice trolls.  Sharpened pieces of stone, rocks of various
-
-shapes and sizes, and splinters of wood litter the ground, tossed casually
-
-anywhere their user was finished with it.
-
-"
+tools in the eyes of ice trolls.  Sharpened pieces of stone, rocks of various
+shapes and sizes, and splinters of wood litter the ground, tossed casually
+anywhere their user was finished with it.
+"
 A
 "search get take grab"
 "tools piles heaps"
 "act_tochar( #searches, ch );
-
-act_notchar( #hesearch, ch );
-
-"
+act_notchar( #hesearch, ch );
+"
 E
 "searches"
 "You search through the pile of tools, but don't find anything that would be
-
-worth taking.
-
-"
+worth taking.
+"
 E
 "hesearch"
 "$n searches through the pile of rocks and debris, but $e doesn't seem to find
-
-anything to $s liking.
-
-"
+anything to $s liking.
+"
 !
 0 0 0
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 4121 49 1509949540 -2 0
@@ -3052,22 +2127,14 @@ S
 #82221
 "Trail Along the Volcano Floor - Fork in the Trail"
 "The cinder-strewn trail along the volcano floor forks here, heading east-west
-
-through the bustling interior of the settlement, or through a narrow
-
-checkpoint leading out of the village to the south.  Similar to elsewhere
-
-along the volcano trail, debris has been strewn haphazardly along the base of
-
-the northern wall, where someone has scrawled what might be a face, perhaps
-
-etched into the stone by a child.  The din of chatter and mundane activity can
-
-be heard from the east, where what appears to be a central gathering place can
-
-be seen, while even more clutter lines the volcano walls further west.
-
-"
+through the bustling interior of the settlement, or through a narrow
+checkpoint leading out of the village to the south.  Similar to elsewhere
+along the volcano trail, debris has been strewn haphazardly along the base of
+the northern wall, where someone has scrawled what might be a face, perhaps
+etched into the stone by a child.  The din of chatter and mundane activity can
+be heard from the east, where what appears to be a central gathering place can
+be seen, while even more clutter lines the volcano walls further west.
+"
 ""
 33030144 0
 11 7 0
@@ -3086,53 +2153,39 @@ D3
 E
 "cinder-strewn trail floor"
 "The volcano floor, comprised of dark gray basalt, has been strewn with
-
-cinders, possibly from ancient volcanic activity, or perhaps sprinkled about
-
-the floor by the inhabitants of this settlement.  The trail leads east, west,
-
-and south from here.
-
-"
+cinders, possibly from ancient volcanic activity, or perhaps sprinkled about
+the floor by the inhabitants of this settlement.  The trail leads east, west,
+and south from here.
+"
 E
 "scrawled face etched etchings"
 "The etchings are extremely childish, what could be interpreted as a leering
-
-face.  The drawing looks to have been scratched into the stone with a chip of
-
-sharpened stone or perhaps a dull piece of metal.
-
-"
+face.  The drawing looks to have been scratched into the stone with a chip of
+sharpened stone or perhaps a dull piece of metal.
+"
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 "debris"
 "act_tochar( #nada, ch );
-
-act_notchar( #search, ch );
-
-"
+act_notchar( #search, ch );
+"
 E
 "nada"
 "You search through some of the debris accumulated along the base of the
-
-northern wall, but don't find anything of value.
-
-"
+northern wall, but don't find anything of value.
+"
 E
 "search"
 "$n searches through some of the debris accumulated along the base of the
-
-northern wall.
-
-"
+northern wall.
+"
 !
 9 0 0
 -1
@@ -3141,31 +2194,19 @@ S
 #82222
 "Trail Along the Volcano Floor - Guardpost"
 "This narrowing of the path along the volcano floor appears to serve as a
-
-checkpoint for people who are entering the bustling center of this small
-
-settlement.  A long, smooth outcropping of rock, half-carved, half-worn away
-
-by trolls, has been formed into a bench along the western wall here, giving a
-
-place for the disgruntled trolls assigned guard duty to rest.  Much like the
-
-trail east and north of here, sanitation of the community does not seem to be
-
-enforced or even contemplated; debris is strewn about along the eastern wall
-
-and piled under the stone bench.  The dry cinder-strewn volcano floor
-
-continues to the north, while to the east it is more wet, probably from those
-
-tracking melting snow in from the south.
-
-"
+checkpoint for people who are entering the bustling center of this small
+settlement.  A long, smooth outcropping of rock, half-carved, half-worn away
+by trolls, has been formed into a bench along the western wall here, giving a
+place for the disgruntled trolls assigned guard duty to rest.  Much like the
+trail east and north of here, sanitation of the community does not seem to be
+enforced or even contemplated; debris is strewn about along the eastern wall
+and piled under the stone bench.  The dry cinder-strewn volcano floor
+continues to the north, while to the east it is more wet, probably from those
+tracking melting snow in from the south.
+"
 "[Nereus] ** Room Finished **
-
-acode 2, adata 2 needs to be empty-handed, not empty handed -Talis
-
-"
+acode 2, adata 2 needs to be empty-handed, not empty handed -Talis
+"
 33030144 0
 11 6 0
 D0
@@ -3179,36 +2220,29 @@ D1
 E
 "debris piled piles"
 "Tiny splinters of bones, bits of hair, and other unidentifiable debris has
-
-accumulated on both sides of this narrow pathway.
-
-"
+accumulated on both sides of this narrow pathway.
+"
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 "debris piles"
 "act_tochar( #search, ch );
-
-act_notchar( #searches, ch );
-
-"
+act_notchar( #searches, ch );
+"
 E
 "search"
 "You search through the pile of debris, but come up empty-handed.
-
-"
+"
 E
 "searches"
 "$n searches through the pile of debris, but comes up empty-handed.
-
-"
+"
 !
 9 0 0
 4120 17 1509949540 -2 0
@@ -3219,31 +2253,19 @@ S
 #82223
 "Cavern Through the Volcano Wall"
 "Despite being a far cry from a well-maintained stable in a human settlement,
-
-this carved cavern obviously serves as a supply room of sorts for the raising
-
-of animals.  Piles of crude stone tools that might almost be referred to as
-
-farming implements are visible strewn carelessly against walls or just dropped
-
-on the ground when not in use.  This cavern probably was once a narrow crack
-
-leading from the interior of the volcano to the outside, but the basalt walls
-
-have been carved smooth by crude tools of some sort.  The low basalt ceiling
-
-has been worn smooth; only seven or so feet tall, it requires the trolls of
-
-the region to duck or, as the smoothness indicates, hit their head.  The
-
-crumbly rock of the interior is visible eastward towards the center of the
-
-volcano, while a snow-covered ledge can be seen past a stone gate to the west.
-
-"
+this carved cavern obviously serves as a supply room of sorts for the raising
+of animals.  Piles of crude stone tools that might almost be referred to as
+farming implements are visible strewn carelessly against walls or just dropped
+on the ground when not in use.  This cavern probably was once a narrow crack
+leading from the interior of the volcano to the outside, but the basalt walls
+have been carved smooth by crude tools of some sort.  The low basalt ceiling
+has been worn smooth; only seven or so feet tall, it requires the trolls of
+the region to duck or, as the smoothness indicates, hit their head.  The
+crumbly rock of the interior is visible eastward towards the center of the
+volcano, while a snow-covered ledge can be seen past a stone gate to the west.
+"
 "[Nereus] Acode #1 is for someone attacking the animals west
-
-"
+"
 33038336 0
 11 7 0
 D1
@@ -3257,128 +2279,90 @@ D3
 E
 "crude stone gate"
 "A crude stone gate which has been constructed by stacking two piles of long
-
-stones.  It is opened by actually picking up one of the rocks and then
-
-stepping through the gate.
-
-"
+stones.  It is opened by actually picking up one of the rocks and then
+stepping through the gate.
+"
 E
 "ledge"
 "A narrow ledge is visible past the gate, covered in a well-traveled layer of
-
-snow.
-
-"
+snow.
+"
 E
 "crude stone tools piles"
 "It appears the tools are mostly used to brain animals that the trolls deem fit
-
-for eating, move snow from place to place, and also buckets and sharpened
-
-pieces of obsidian of various sizes.
-
-"
+for eating, move snow from place to place, and also buckets and sharpened
+pieces of obsidian of various sizes.
+"
 A
 ""
 ""
 "mob = mob_in_room( 2526, find_room( 82223 ) );
-
-if( !mob )
-
-  end;
-
-interpret( mob, \"open west\" );
-
-interpret( mob, \"west\" );
-
-continue;
-
-"
+if( !mob )
+  end;
+interpret( mob, \"open west\" );
+interpret( mob, \"west\" );
+continue;
+"
 !
 0 0 0
 A
 ""
 ""
 "if( is_player( ch ) || is_pet( ch ) )
-
-  continue;
-
-if( vnum( ch ) != 2526 )
-
-  continue;
-
-if( !rflag( status0, find_room( 82204 ) ) )
-
-  continue;
-
-"
+  continue;
+if( vnum( ch ) != 2526 )
+  continue;
+if( !rflag( status0, find_room( 82204 ) ) )
+  continue;
+"
 !
 3 0 2
 A
 "search take get grab"
 "piles crude stone tools"
 "act_tochar( \"None of the crude tools seem worth taking.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2526, room );
-
-if( mob )
-
-  interpret( mob, \"grunt\" );
-
-"
+if( mob )
+  interpret( mob, \"grunt\" );
+"
 !
 2 200 0
 A
 "3 custom"
 ""
 "mob = mob_in_room( 2526, room );
-
-if( mob )
-
-interpret( mob, #nocus );
-
-else
-
-act_tochar( \"The shopkeeper is not around right now.\", ch );
-
-"
+if( mob )
+interpret( mob, #nocus );
+else
+act_tochar( \"The shopkeeper is not around right now.\", ch );
+"
 E
 "nocus"
 "say Me no have magic pet!  Yous buy what I have in my list!
-
-"
+"
 !
 0 0 0
 A
 "2 list 2 buy"
 ""
 "mob = mob_in_room( 2526, room );
-
-if( !mob ) continue;
-
-  if( race( ch ) == elf || race( ch ) == dwarf || race( ch ) == halfling || race( ch ) == ent || cflag( 152, ch ) || cflag( 153, ch ) ) {
-
-interpret( mob, #no );
-
-  }
-
-else
-
-  continue;
-
-"
+if( !mob ) continue;
+  if( race( ch ) == elf || race( ch ) == dwarf || race( ch ) == halfling || race( ch ) == ent || cflag( 152, ch ) || cflag( 153, ch ) ) {
+interpret( mob, #no );
+  }
+else
+  continue;
+"
 E
 "no"
 "say No!  Me not sell yous pets!
-
-"
+"
 !
 0 0 0
 2494 9 1509949540 3 0
@@ -3391,25 +2375,16 @@ S
 #82224
 "Sheltered Ledge Above Chasm"
 "A rather ingenious method, especially for trolls, has been worked out to
-
-contain the pets to this area: a walled ledge overlooking a fall into a chasm
-
-hundreds of feet below.  The snow here has been tramped down by the activity
-
-of the beasts here, but fresh snow has been piled in careful piles along the
-
-northern side of the ledge.  Far off to the west and north, the mountains
-
-begin to drop away for thousands of feet.  Miles to the north, a new mountain
-
-range begins, finally past the grip of the Dragonspires.  A crude stone gate
-
-keeps the pets from mingling with the rest of the trolls inside the mountain.
-
-"
+contain the pets to this area: a walled ledge overlooking a fall into a chasm
+hundreds of feet below.  The snow here has been tramped down by the activity
+of the beasts here, but fresh snow has been piled in careful piles along the
+northern side of the ledge.  Far off to the west and north, the mountains
+begin to drop away for thousands of feet.  Miles to the north, a new mountain
+range begins, finally past the grip of the Dragonspires.  A crude stone gate
+keeps the pets from mingling with the rest of the trolls inside the mountain.
+"
 "[Nereus] Trolls will assist the buffalo, but not the angarlish
-
-"
+"
 33030144 0
 17 8 0
 D1
@@ -3419,48 +2394,35 @@ D1
 E
 "walls walled edges"
 "The edges of the ledge have been walled crudely, by stacking unshaped blocks
-
-of solid ice along the lip of the ledge.  Presumably, this prevents the
-
-animals on the ledge from wandering to their deaths.
-
-"
+of solid ice along the lip of the ledge.  Presumably, this prevents the
+animals on the ledge from wandering to their deaths.
+"
 E
 "crude stone gate"
 "A crude gate made of two stacks of long stones, it is opened by actually
-
-lifting one of the stones aside.
-
-"
+lifting one of the stones aside.
+"
 A
 ""
 ""
 "if( !is_pet( mob ) ) {
-
-  act_notchar( #bleat, mob );
-
-  remove_rflag( reset0, room );
-
-  acode( find_room( 82223 ), 1 );
-
-  }
-
-continue;
-
-"
+  act_notchar( #bleat, mob );
+  remove_rflag( reset0, room );
+  acode( find_room( 82223 ), 1 );
+  }
+continue;
+"
 E
 "bleat"
 "No description.
-
-"
+"
 !
 0 0 0
 A
 "2 custom 2 list"
 ""
 "act_tochar( \"There doesn't appear to be a shop here.\", ch );
-
-"
+"
 !
 0 0 0
 2518 137 1509949455 3 0
@@ -3472,35 +2434,21 @@ S
 #82225
 "Heart of the Volcano - Altar of Smoke"
 "As much as trolls hate fire, it is easy to see why this area serves as an
-
-altar; a place where the ice trolls come to placate forces inside the mountain
-
-that they do not understand.  A dozen or so immense, carved stone blocks, worn
-
-smooth by the worship and curiousity of ages, have been stacked at the lip of
-
-a dimly glowing, sulphorus pit.  Above the pit, an obsidian-lined chimney
-
-rises away, drawing with it the poisonous fumes and smoke belched forth from
-
-the mountain.  Atop the blocks, various offerings have been left, obviously of
-
-no little value to the trolls who left them behind.  The cavern widens
-
-dramatically to the south, although the very high unworked cavern ceiling
-
-continues.
-
-"
+altar; a place where the ice trolls come to placate forces inside the mountain
+that they do not understand.  A dozen or so immense, carved stone blocks, worn
+smooth by the worship and curiousity of ages, have been stacked at the lip of
+a dimly glowing, sulphorus pit.  Above the pit, an obsidian-lined chimney
+rises away, drawing with it the poisonous fumes and smoke belched forth from
+the mountain.  Atop the blocks, various offerings have been left, obviously of
+no little value to the trolls who left them behind.  The cavern widens
+dramatically to the south, although the very high unworked cavern ceiling
+continues.
+"
 "[Nereus] possible link in for an area to jump into the pit here
-
-[Nereus] ** Room Finished **
-
-[Nereus] Maybe a new zone down below will be cool
-
-[Nereus] flame zone, if you have done the liche quest he's in here and will sell a more extended set of crazy other-planar items
-
-"
+[Nereus] ** Room Finished **
+[Nereus] Maybe a new zone down below will be cool
+[Nereus] flame zone, if you have done the liche quest he's in here and will sell a more extended set of crazy other-planar items
+"
 -235273186 0
 11 6 0
 D2
@@ -3514,153 +2462,104 @@ D5
 E
 "dozen immense carved stone blocks"
 "A dozen or so large blocks of basalt have been crudely carved from elsewhere
-
-and dragged up to the edge of the pit.  They stand several feet tall and have
-
-been worn smooth, probably by braver trolls taking a look over the edge, or
-
-possibly by those leaving offerings behind on the blocks for an unknown deity.
-
-"
+and dragged up to the edge of the pit.  They stand several feet tall and have
+been worn smooth, probably by braver trolls taking a look over the edge, or
+possibly by those leaving offerings behind on the blocks for an unknown deity.
+"
 E
 "dimly glowing sulphorus pit"
 "Looking over the blocks and down into the molten pit far below, you can feel
-
-waves of heat radiating from below and a distant rumble.  Apparently, the
-
-volcano still stirs.
-
-"
+waves of heat radiating from below and a distant rumble.  Apparently, the
+volcano still stirs.
+"
 E
 "obsidian-lined chimney"
 "A hole opens up in the rock above the pit, probably an ancient tube that magma
-
-once followed up to the surface far away.  Now, poisonous fumes and a haze of
-
-smoke are drawn upwards through the same channel.
-
-"
+once followed up to the surface far away.  Now, poisonous fumes and a haze of
+smoke are drawn upwards through the same channel.
+"
 E
 "various offerings"
 "Bits of bones, small teeth, entwined hairs, and pretty chips of stone make up
-
-most of the offerings here atop the basalt blocks.  While they have some value
-
-to the trolls, it is doubtful they would be valuable to anyone else.
-
-"
+most of the offerings here atop the basalt blocks.  While they have some value
+to the trolls, it is doubtful they would be valuable to anyone else.
+"
 A
 "climb jump clamber dive"
 "pit blocks glowing sulphorus"
 "act_tochar( #uhno, ch );
-
-"
+"
 E
 "uhno"
 "Jumping or climbing over the basalt blocks into the molten rock hundreds of
-
-feet below would certainly kill you.
-
-"
+feet below would certainly kill you.
+"
 !
 0 0 0
 A
 "take get search"
 "offerings blocks altar"
 "act_tochar( #search, ch );
-
-act_notchar( #searchs, ch );
-
-"
+act_notchar( #searchs, ch );
+"
 E
 "search"
 "You search through the offerings atop the basalt blocks, but you don't find
-
-anything of remote value.
-
-"
+anything of remote value.
+"
 E
 "searchs"
 "$n searches through the offerings atop the basalt blocks, but doesn't seem to
-
-find anything of value.
-
-"
+find anything of value.
+"
 !
 0 0 0
 A
 "custom"
 ""
 "mob = mob_in_room( 2566, room );
-
-if( !mob ) end;
-
-  if( is_sleeping( mob ) )
-
-  continue;
-
-if( rflag( status0, room ) ) {
-
-  interpret( mob, \"yawn\" );
-
-  act_tochar( #ignore, ch, null, mob );
-
-  interpret( mob, \"sleep\" );
-
-  }
-
-else
-
-  continue;
-
-"
+if( !mob ) end;
+  if( is_sleeping( mob ) )
+  continue;
+if( rflag( status0, room ) ) {
+  interpret( mob, \"yawn\" );
+  act_tochar( #ignore, ch, null, mob );
+  interpret( mob, \"sleep\" );
+  }
+else
+  continue;
+"
 E
 "ignore"
 "$N seems to ignore your request, or perhaps he is entirely oblivious to you
-
-being here.
-
-"
+being here.
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 2566, room );
-
-if( !mob ) end;
-
-  if( 1d3 == 2 ) {
-
-  interpret( mob, \"rest\" );
-
-  wait( 1 );
-
-  interpret( mob, \"stretch\" );
-
-  remove_rflag( status0, room );
-
-  }
-
-"
+if( !mob ) end;
+  if( 1d3 == 2 ) {
+  interpret( mob, \"rest\" );
+  wait( 1 );
+  interpret( mob, \"stretch\" );
+  remove_rflag( status0, room );
+  }
+"
 !
 6 1320 0
 A
 ""
 ""
 "mob = mob_in_room( 2566, room );
-
-if( !mob ) end;
-
-interpret( mob, \"yawn\" );
-
-wait( 1 );
-
-interpret( mob, \"sleep\" );
-
-set_rflag( status0, room );
-
-"
+if( !mob ) end;
+interpret( mob, \"yawn\" );
+wait( 1 );
+interpret( mob, \"sleep\" );
+set_rflag( status0, room );
+"
 !
 6 1380 0
 2566 137 1509949540 0 0
@@ -3672,25 +2571,16 @@ S
 #82226
 "Small Cavern - Animal Den"
 "This small, dark, dank chamber obviously serves as the den for at least a few
-
-and possibly dozens of fairly small animals.  The rocky ground is covered in
-
-bits of shredded cloth and masses of fine, tiny white hairs.  Beneath the
-
-nest-like hair and cloth substance, the ground is covered in a damp sort of
-
-mulch, probably the decay of organic material brought into this den.  The
-
-southern side of the cavern seems to have less nesting material, but is
-
-covered in pellet-shaped droppings.  A narrow squeeze leads out of this cavern
-
-to the west, the unknown lying beyond.
-
-"
+and possibly dozens of fairly small animals.  The rocky ground is covered in
+bits of shredded cloth and masses of fine, tiny white hairs.  Beneath the
+nest-like hair and cloth substance, the ground is covered in a damp sort of
+mulch, probably the decay of organic material brought into this den.  The
+southern side of the cavern seems to have less nesting material, but is
+covered in pellet-shaped droppings.  A narrow squeeze leads out of this cavern
+to the west, the unknown lying beyond.
+"
 "[Nereus] ** Room Finished **
-
-"
+"
 33030144 0
 11 3 0
 D3
@@ -3700,47 +2590,36 @@ D3
 E
 "ground cloth nest"
 "The ground, damp and mulch-like over the dark rock below, is covered in a cozy
-
-nest of sorts.  The nest consists mostly of shredded cloth, and several kinds
-
-of hair.
-
-"
+nest of sorts.  The nest consists mostly of shredded cloth, and several kinds
+of hair.
+"
 E
 "pellet-like droppings"
 "Although the cavern floor is scattered with the small, pellet-like droppings,
-
-they seem especially prevalent along the southern side of the den.
-
-"
+they seem especially prevalent along the southern side of the den.
+"
 A
 "get take grab"
 "gnawed skeleton halfling"
 "act_tochar( \"The bottom half of the skeleton is buried in rubble, preventing
-
-you from taking it.\", ch );
-
-"
+you from taking it.\", ch );
+"
 !
 0 0 0
 A
 ""
 "nest cloth shredded masses fine tiny white hair ground"
 "act_tochar( #search, ch );
-
-act_notchar( #searches, ch );
-
-"
+act_notchar( #searches, ch );
+"
 E
 "search"
 "You search through the nest of cloth and hair, but don't find anything useful.
-
-"
+"
 E
 "searches"
 "$n searches through the nest of cloth and hair.
-
-"
+"
 !
 9 0 0
 4220 49 1509949540 -2 0

@@ -10,8 +10,7 @@
 #70200
 "Elfir's Coding Playground"
 "Under Construction
-
-"
+"
 ""
 301465604 0
 0 6 0
@@ -21,47 +20,33 @@ S
 #70201
 "Market Street"
 "Under Construction.
-
-"
+"
 "Code for Market Street idea
-
-Shopkeepers must have sanctuary and sentinel flags set
-
-Will not buy back anything
-
-"
+Shopkeepers must have sanctuary and sentinel flags set
+Will not buy back anything
+"
 301465600 0
 0 6 0
 A
 ""
 ""
 "if( !mob_in_room( 2207, room ) ) {
-
-  mob = mob_in_room( 2207, find_room( 70203 ) );
-
-  transfer( mob, room );
-
-  act_room( \"$n arrives\", mob );
-
-  }
-
-"
+  mob = mob_in_room( 2207, find_room( 70203 ) );
+  transfer( mob, room );
+  act_room( \"$n arrives\", mob );
+  }
+"
 !
 14 1 0
 A
 ""
 ""
 "if( mob_in_room( 2207, room ) ) {
-
-  mob = mob_in_room( 2207, room );
-
-  act_room( \"$n packs up and leaves.\", mob );
-
-  transfer( mob, find_room( 70203 ) );
-
-  }
-
-"
+  mob = mob_in_room( 2207, room );
+  act_room( \"$n packs up and leaves.\", mob );
+  transfer( mob, find_room( 70203 ) );
+  }
+"
 !
 14 -1 0
 -1
@@ -70,21 +55,14 @@ S
 #70202
 "Corridor of Colored Clay"
 "The small doorway to the south opens up into a large dusty loft, ill-lit by
-
-several small chandeliers hanging low from the ceiling.  Not a drop of wax has
-
-fallen upon the floor of dust-covered wooden boards, a few scattered
-
-footprints marring the uniformity of the grey dust.  At the far end of the
-
-loft there is a small window that does nothing to light the room.
-
-"
+several small chandeliers hanging low from the ceiling.  Not a drop of wax has
+fallen upon the floor of dust-covered wooden boards, a few scattered
+footprints marring the uniformity of the grey dust.  At the far end of the
+loft there is a small window that does nothing to light the room.
+"
 "Though it is a loft, these rooms are called a corridor to make it seem
-
-important and for alliteration's sake
-
-"
+important and for alliteration's sake
+"
 301465604 0
 0 6 0
 D0
@@ -101,8 +79,7 @@ S
 #70203
 "Market Storage"
 "Under Construction.
-
-"
+"
 ""
 301469700 0
 0 6 0
@@ -116,20 +93,13 @@ S
 #70206
 "Corridor of Colored Clay"
 "Rows and rows of clay-molded statuettes, shaped like all mannor of strange and
-
-mundane creatures, line the walls, each one painted differently.  Some of the
-
-statuettes are so old that they hardly retain any of their original color,
-
-while others are brighter and new.  Each is as well cared for as its neighbors
-
-despite age, color, or form.  The shelves barely break to allow passage to an
-
-easily ignorable door to the east which opens outwards, for it would not be
-
-able to open inwards without hitting several of the shelves.
-
-"
+mundane creatures, line the walls, each one painted differently.  Some of the
+statuettes are so old that they hardly retain any of their original color,
+while others are brighter and new.  Each is as well cared for as its neighbors
+despite age, color, or form.  The shelves barely break to allow passage to an
+easily ignorable door to the east which opens outwards, for it would not be
+able to open inwards without hitting several of the shelves.
+"
 ""
 301465604 0
 0 6 0
@@ -149,23 +119,19 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You push the door halfway open before it hits something with a loud bang.
-
-"
+"
 E
 "to_room"
 "$n pushes the door halfway open, hitting something with a loud bang.
-
-"
+"
 E
 "to_side"
 "The door swings open, hitting the desk with a loud bang.
-
-"
+"
 !
 8 0 2
 -1
@@ -174,16 +140,11 @@ S
 #70207
 "Small Cubby-hole Office"
 "A small desk rests along the south wall, a large dusty book upon it, looking
-
-as though it has not been opened or even touched for decades.  There is no
-
-chair at the desk, serving as nothing more than a holding place for the book. 
-
-A hammock made of woven rope hangs from a rafter reaching across the center of
-
-the office, a barely-comfortable place to rest but the only place in the room.
-
-"
+as though it has not been opened or even touched for decades.  There is no
+chair at the desk, serving as nothing more than a holding place for the book. 
+A hammock made of woven rope hangs from a rafter reaching across the center of
+the office, a barely-comfortable place to rest but the only place in the room.
+"
 ""
 301465604 0
 0 5 0
@@ -195,23 +156,19 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You pull open the door and it hits the desk halfway with a loud bang.
-
-"
+"
 E
 "to_room"
 "$n pulls the door open and it hits the desk halfway.
-
-"
+"
 E
 "to_side"
 "The east door opens from within with a loud bang.
-
-"
+"
 !
 8 0 8
 -1
@@ -220,25 +177,16 @@ S
 #70208
 "The Tower Garden"
 "The treacherous stairs end here with a strange and beautiful garden.  At
-
-your feet there are small, carved trenches in the stone floor, through
-
-which water flows.  Small potted plants sit in these trenches, making an
-
-effective automatic watering system.  Yellow vines climb the walls,
-
-flowers growing along them.
-
-"
+your feet there are small, carved trenches in the stone floor, through
+which water flows.  Small potted plants sit in these trenches, making an
+effective automatic watering system.  Yellow vines climb the walls,
+flowers growing along them.
+"
 "B1
-
-An underground stream flows into the castle through here and exits into the
-
-sewers.  All of the plants thrive in darkness, including a special kind of
-
-rose that glows faintly but the light fades shortly after picking.
-
-"
+An underground stream flows into the castle through here and exits into the
+sewers.  All of the plants thrive in darkness, including a special kind of
+rose that glows faintly but the light fades shortly after picking.
+"
 301465605 0
 0 6 0
 D1
@@ -252,39 +200,27 @@ D2
 E
 "flower vine"
 "On closer examination, the flowers growing along the vines on the wall
-
-glow with a golden light, illuminating the room.  The vines themselves
-
-glow very slightly, making only enough light to give itself a translucent
-
-appearance.
-
-"
+glow with a golden light, illuminating the room.  The vines themselves
+glow very slightly, making only enough light to give itself a translucent
+appearance.
+"
 E
 "potted plant"
 "The plants are of various sizes and types, some pointed and resembling
-
-cacti, others are strange sorts of fungi.  They all flurish in this
-
-environment.
-
-"
+cacti, others are strange sorts of fungi.  They all flurish in this
+environment.
+"
 -1
 S
 
 #70209
 "Corridor of Colored Clay"
 "Shelves filled with oddly colored clay statuettes line the walls from the old
-
-wooden floor to the rafters, each one strange and unique and having little to
-
-do with its neighbors except the medium it was made with.  This corner of the
-
-loft is lit by a old metal chandelier, hanging far lower than necessary and
-
-guttering though no wax falls on the floor.
-
-"
+wooden floor to the rafters, each one strange and unique and having little to
+do with its neighbors except the medium it was made with.  This corner of the
+loft is lit by a old metal chandelier, hanging far lower than necessary and
+guttering though no wax falls on the floor.
+"
 ""
 301465604 0
 0 6 0
@@ -302,16 +238,11 @@ S
 #70210
 "Corridor of Colored Clay"
 "The endless rows of shelves break briefly for the placement of a small window
-
-in the northern wall, which allows little light through its translucent white
-
-glass.  The black shutters, barely distinguishable outside the window, are
-
-held partially closed even against the gentlest of weather.  The eyes of many
-
-oddly painted clay animals stare at you, unblinking, from the shadows.
-
-"
+in the northern wall, which allows little light through its translucent white
+glass.  The black shutters, barely distinguishable outside the window, are
+held partially closed even against the gentlest of weather.  The eyes of many
+oddly painted clay animals stare at you, unblinking, from the shadows.
+"
 ""
 301465604 0
 0 6 0
@@ -329,21 +260,14 @@ S
 #70211
 "The Tower Garden"
 "Delicate lilies float in the narrow streams of water carved in the stone
-
-floor.  A thorny vine climbs the wall to the north, soft yellow roses
-
-glowing faintly along them.  A flower pot hangs from the ceiling, long
-
-green vines draping down from it.  A strong and pleasant smell surrounds
-
-the hanging pot from flowers growing within.
-
-"
+floor.  A thorny vine climbs the wall to the north, soft yellow roses
+glowing faintly along them.  A flower pot hangs from the ceiling, long
+green vines draping down from it.  A strong and pleasant smell surrounds
+the hanging pot from flowers growing within.
+"
 "Stream flows into the garden through the wall to the north.  Most of the
-
-trenches direct it to the west and south; to the east are cactus-type plants.
-
-"
+trenches direct it to the west and south; to the east are cactus-type plants.
+"
 301465605 0
 0 6 0
 D1
@@ -364,14 +288,10 @@ S
 #70212
 "The Tower Garden"
 "A large bush grows in the center of this part of the garden, it's long,
-
-draping leaves dipping into the water that flows past in a very precisely
-
-carved trench in the stone floor.  The leaves of the bush move slightly
-
-with the flow of water, making it look almost as if it were moving itself.
-
-"
+draping leaves dipping into the water that flows past in a very precisely
+carved trench in the stone floor.  The leaves of the bush move slightly
+with the flow of water, making it look almost as if it were moving itself.
+"
 ""
 301465605 0
 0 6 0
@@ -389,14 +309,10 @@ S
 #70213
 "The Tower Garden"
 "A small tree, no more than two feet tall, grows in a large pot here,
-
-covered in rose vines which sprout light yellow roses.  Somehow both
-
-plants seem to survive in harmony.  The larger pot is circled by several
-
-smaller pots, each one containing a different thriving variety of flower.
-
-"
+covered in rose vines which sprout light yellow roses.  Somehow both
+plants seem to survive in harmony.  The larger pot is circled by several
+smaller pots, each one containing a different thriving variety of flower.
+"
 ""
 301465605 0
 0 6 0
@@ -418,17 +334,12 @@ S
 #70214
 "The Tower Garden"
 "Tiny mushrooms grow in the cracks in the floor here in every variety.  Several
-
-trenches carved in the stone floor merge into one which flows into a hole at
-
-the bottom of the southern wall.  Bits of moss grow on the wall, a plain green
-
-variety that has probably been ignored for quite some time.
-
-"
+trenches carved in the stone floor merge into one which flows into a hole at
+the bottom of the southern wall.  Bits of moss grow on the wall, a plain green
+variety that has probably been ignored for quite some time.
+"
 "Water flows out of the garden into the sewer to the south
-
-"
+"
 301465605 0
 0 6 0
 D0
@@ -445,21 +356,14 @@ S
 #70215
 "The Tower Garden"
 "A watering trench only briefly runs through this part of the garden, the
-
-plants growing nearby not requiring much.  A soft-looking green and white
-
-cactus grows in one pot, the buds of pink blossoms scattered across it. 
-
-An odd bush covered in tiny orange flowers seems to be growing out of the
-
-stone floor itself and yellow roses grow on vines that climb the stone
-
-walls.
-
-"
+plants growing nearby not requiring much.  A soft-looking green and white
+cactus grows in one pot, the buds of pink blossoms scattered across it. 
+An odd bush covered in tiny orange flowers seems to be growing out of the
+stone floor itself and yellow roses grow on vines that climb the stone
+walls.
+"
 "Northeast corner of the castle, under the main wall (not the tower)
-
-"
+"
 301465605 0
 0 6 0
 D2
@@ -476,29 +380,18 @@ S
 #70225
 "The Princess's Chamber"
 "Each of the four corners of this room are piled with old, sometimes even
-
-ancient, discarded toys, clothing, and books in no particular order.  A
-
-small triangular window on the south wall looks out onto the battlements
-
-below but is too small to get a good look at much of anything else nearby. 
-
-The walls are covered with drawings and scribbled attempts at poetry in
-
-many mediums, from charcoal to fading water paints.  A large chestnut bed
-
-against the north wall takes up most of the space in the room.
-
-"
+ancient, discarded toys, clothing, and books in no particular order.  A
+small triangular window on the south wall looks out onto the battlements
+below but is too small to get a good look at much of anything else nearby. 
+The walls are covered with drawings and scribbled attempts at poetry in
+many mediums, from charcoal to fading water paints.  A large chestnut bed
+against the north wall takes up most of the space in the room.
+"
 "Want to make moving bed reveal the closed north door
-
-Extras: small/triangular/window, drawings/scribbled/poetry,
-
-large/chestnut/bed, pile/toys/clothing/books 
-
-Search: Toys/clothing/books/pile
-
-"
+Extras: small/triangular/window, drawings/scribbled/poetry,
+large/chestnut/bed, pile/toys/clothing/books 
+Search: Toys/clothing/books/pile
+"
 301465605 0
 0 6 0
 D0
@@ -508,120 +401,83 @@ D0
 E
 "bed chestnut"
 "The blankets covering this bed are neatly made and are very dusty shades
-
-of red and pink.  Most of the chestnut frame has a thin layer of dust on
-
-it, but there are hand prints scattered around different parts of it.
-
-"
+of red and pink.  Most of the chestnut frame has a thin layer of dust on
+it, but there are hand prints scattered around different parts of it.
+"
 A
 "pull"
 "bed chestnut"
 "if( open( room, north ) )
-
-  act_tochar( #moved, ch );
-
-else {
-
-  send_to_char( #to_char, ch );
-
-  act_notchar( #to_room, ch );
-
-  if( find_stat( ch, str ) > 13 ) {
-
-    send_to_room( #open, room );
-
-    open( room, north );
-
-    }
-
-  else
-
-    send_to_room( #noopen, room );
-
-  }
-
-"
+  act_tochar( #moved, ch );
+else {
+  send_to_char( #to_char, ch );
+  act_notchar( #to_room, ch );
+  if( find_stat( ch, str ) > 13 ) {
+    send_to_room( #open, room );
+    open( room, north );
+    }
+  else
+    send_to_room( #noopen, room );
+  }
+"
 E
 "moved"
 "The bed has already been moved as far as it can be.
-
-"
+"
 E
 "to_char"
 "You try to pull the heavy bed away from the wall.
-
-"
+"
 E
 "to_room"
 "$n tries to move the heavy bed away from the wall.
-
-"
+"
 E
 "open"
 "The bed moves away from the wall, revealing a little cupboard-like door.
-
-"
+"
 E
 "noopen"
 "The bed won't budge.
-
-"
+"
 !
 0 0 0
 A
 "push"
 "bed chestnut"
 "if( !is_open( room, north ) )
-
-  act_tochar( #moved, ch );
-
-else {
-
-  send_to_char( #to_char, ch );
-
-  act_notchar( #to_room, ch );
-
-  if( find_stat( ch, str ) > 13 ) {
-
-    send_to_room( #close, room );
-
-    close( room, north );
-
-    }
-
-  else
-
-    send_to_room( #noclose, room );
-
-  }
-
-"
+  act_tochar( #moved, ch );
+else {
+  send_to_char( #to_char, ch );
+  act_notchar( #to_room, ch );
+  if( find_stat( ch, str ) > 13 ) {
+    send_to_room( #close, room );
+    close( room, north );
+    }
+  else
+    send_to_room( #noclose, room );
+  }
+"
 E
 "moved"
 "The bed is already pushed up against the wall and can go no further.
-
-"
+"
 E
 "to_char"
 "You try to push the heavy bed against the wall.
-
-"
+"
 E
 "to_room"
 "$n tries to push the heavy bed against the wall.
-
-"
+"
 E
 "close"
 "The bed moves against the wall, covering the cupboard-like door.
-
-"
+"
 E
 "noclose"
 "The bed won't budge.
-
-"
+"
 !
 0 0 0
 -1
@@ -630,29 +486,18 @@ S
 #70226
 "The Attic"
 "This room looks like it might have been used for storage sometime long,
-
-long ago but was forgotten shortly after it was filled with unwanted
-
-furniture and things.  Someone has obviously rediscovered this room more
-
-recently, newer additions piled on top of the old.  Most of a chess set
-
-is scattered around on tables and shelves and an old china doll lies in
-
-the corner, a hole broken into it's skull.  An unstable looking wooden
-
-ladder stands in the middle of the attic, leading up to a small looking
-
-platform.  A small cupboard-like door sits in the south wall, close to
-
-the floor.
-
-"
+long ago but was forgotten shortly after it was filled with unwanted
+furniture and things.  Someone has obviously rediscovered this room more
+recently, newer additions piled on top of the old.  Most of a chess set
+is scattered around on tables and shelves and an old china doll lies in
+the corner, a hole broken into it's skull.  An unstable looking wooden
+ladder stands in the middle of the attic, leading up to a small looking
+platform.  A small cupboard-like door sits in the south wall, close to
+the floor.
+"
 "Princess's secret room - search to find item stuff
-
-Extras: ladder/unstable/wooden
-
-"
+Extras: ladder/unstable/wooden
+"
 301465604 0
 0 9 0
 D2
@@ -666,40 +511,28 @@ D4
 E
 "doll china corner"
 "A fragile girl's doll, obviously impractical by the hole in it's china
-
-head, it has probably been here for several years at least.
-
-"
+head, it has probably been here for several years at least.
+"
 E
 "chess set"
 "These scattered chess pieces are each carved from marble and most of the
-
-ones you can see are still in good condition but one of the knights is
-
-broken in half.
-
-"
+ones you can see are still in good condition but one of the knights is
+broken in half.
+"
 -1
 S
 
 #70233
 "The Loft"
 "This small loft is very small and the boards making up the floor are pale
-
-and unstable.  The only furniture here are a small coffee table and a
-
-pile of faded fabric that might serve as a place to sit.  The ladder
-
-which leads down into the rest of the attic looks like it might break
-
-under too much weight or fall over if one was not careful.
-
-"
+and unstable.  The only furniture here are a small coffee table and a
+pile of faded fabric that might serve as a place to sit.  The ladder
+which leads down into the rest of the attic looks like it might break
+under too much weight or fall over if one was not careful.
+"
 "Extras: ladder
-
-F5
-
-"
+F5
+"
 301465604 0
 0 4 0
 D5

@@ -10,25 +10,16 @@
 #15000
 "Circle of Runes"
 "The cave-like surroundings are lit up with an eerie glow emanating from a
-
-circle of runes engraved into the stone floor.  The walls and ceiling are
-
-rough with jagged edges protruding out at odd angles, whilst the floor however
-
-is completely flat and smooth, except fo the runes.  Upon the northern wall
-
-appears an outline of a doorway, but no means of opening the mysterious door
-
-are clearly visible.
-
-"
+circle of runes engraved into the stone floor.  The walls and ceiling are
+rough with jagged edges protruding out at odd angles, whilst the floor however
+is completely flat and smooth, except fo the runes.  Upon the northern wall
+appears an outline of a doorway, but no means of opening the mysterious door
+are clearly visible.
+"
 "will only be accessable be a portal of some sort.
-
-'touch rune' to activate portal out of Halls Of Knowledge
-
-'trace outline' to begin quest to enter the Halls of Knowledge. transfer single player to next room
-
-"
+'touch rune' to activate portal out of Halls Of Knowledge
+'trace outline' to begin quest to enter the Halls of Knowledge. transfer single player to next room
+"
 301465605 0
 0 6 0
 D0
@@ -38,43 +29,31 @@ D0
 E
 "glow eerie runes circle floor engraved"
 "The runes upon the floor are set up almost semetrically.  Each rune emits a
-
-soft, pale-blue glow that lights up your surroundings.  A watery-looking rune
-
-is located at the central point of the circle.  Maybe you should touch it.
-
-"
+soft, pale-blue glow that lights up your surroundings.  A watery-looking rune
+is located at the central point of the circle.  Maybe you should touch it.
+"
 E
 "northern wall outline doorway mysterious"
 "Looking closely at the outline, you discover an inscription written in primal.
-
-"
+"
 E
 "inscription"
 "The inscription reads: \"You stand before the great doorway into the halls of
-
-knowledge.  To enter, one must prove oneself to be worthy of the greatness
-
-that lines boyond.  If you think you are worthy enough to pass, @Wtrace@n the
-
-@Woutline@n with you finger.
-
-"
+knowledge.  To enter, one must prove oneself to be worthy of the greatness
+that lines boyond.  If you think you are worthy enough to pass, @Wtrace@n the
+@Woutline@n with you finger.
+"
 -1
 S
 
 #15001
 "Testing Halls"
 "Little is notable about the features of this room.  The walls are a rough,
-
-dark stone, lit up by a single torch that seemingly floats in mid-air.  A
-
-small table marks the center of the room.
-
-"
+dark stone, lit up by a single torch that seemingly floats in mid-air.  A
+small table marks the center of the room.
+"
 "'say croazner' to pass this test
-
-"
+"
 301465653 0
 0 6 0
 D0
@@ -88,23 +67,18 @@ D2
 E
 "table"
 "A scroll has been pinned to the top of the table. It reads:
-
-The First Test
-
+The First Test
 
 @WSpeak the name of the liche that resides in the depths of a crypt near a
-
-city that is east of the Great Sea.@n
-
-"
+city that is east of the Great Sea.@n
+"
 -1
 S
 
 #15002
 "First Test"
 "Under Construction.
-
-"
+"
 ""
 301465653 0
 0 6 0
@@ -122,8 +96,7 @@ S
 #15003
 "First Test"
 "Under Construction.
-
-"
+"
 ""
 301465653 0
 0 6 0

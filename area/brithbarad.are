@@ -10,22 +10,14 @@
 #63500
 "Main Hall of Brithbarad"
 "This large, dark mud building seems to serve as a massive temple.  Altars
-
-covered in skulls and feathers line the walls, with a large slab of slate
-
-prominent in the center of the room.  The slate is covered in dried blood and
-
-charred bones.  A curtain hangs in the doorway to the north, while a row of
-
-beads lines the doorway to the south.  Down a few crude steps to the east you
-
-can see a gravel path, while out an open doorway to the west a dark ring of
-
-trees can be seen.  A stout spiral staircase of iron leads up to the second
-
-floor.
-
-"
+covered in skulls and feathers line the walls, with a large slab of slate
+prominent in the center of the room.  The slate is covered in dried blood and
+charred bones.  A curtain hangs in the doorway to the north, while a row of
+beads lines the doorway to the south.  Down a few crude steps to the east you
+can see a gravel path, while out an open doorway to the west a dark ring of
+trees can be seen.  A stout spiral staircase of iron leads up to the second
+floor.
+"
 ""
 301470799 0
 0 5 0
@@ -52,128 +44,96 @@ D4
 E
 "altars skulls feathers"
 "Each altar is built of thick basalt blocks stacked to form a small
-
-covered arch.  One is covered in a colorful array of feathers and small
-
-bones tied together with small strips of leather.  Another has many
-
-skulls of animals and humanoids displayed on it.  Wax candles burn in the
-
-altars, spilling melted wax over the dark stones.
-
-"
+covered arch.  One is covered in a colorful array of feathers and small
+bones tied together with small strips of leather.  Another has many
+skulls of animals and humanoids displayed on it.  Wax candles burn in the
+altars, spilling melted wax over the dark stones.
+"
 E
 "slate dried blood charred"
 "The large block of slate is apparently used for some bloody sacrifices.
-
-"
+"
 E
 "curtain"
 "A thick black curtain hands in the doorway to the north.  The fabric is
-
-heavy and covered with ash and dust.
-
-"
+heavy and covered with ash and dust.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@GYou $t out the doorway and down the small set of stairs.@n
-
-"
+"
 E
 "to-room"
 "@G$n $t out through the west doorway and down the stairs.@n 
-
-"
+"
 !
 3 0 8
 A
 ""
 ""
 "act_tochar( #beads, ch );
-
-act_notchar( #rmbeads, ch );
-
-send_to_room( #otherbeads, find_room( 63502 ) );
-
-continue;
-
-"
+act_notchar( #rmbeads, ch );
+send_to_room( #otherbeads, find_room( 63502 ) );
+continue;
+"
 E
 "beads"
 "@GYou push the beads aside.@n
-
-"
+"
 E
 "rmbeads"
 "@G$n pushes the beads aside with a soft clatter.@n
-
-"
+"
 E
 "otherbeads"
 "@GThe beads to the north jangle and part.@n
-
-"
+"
 !
 3 0 4
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@GYou $t up the iron starcaise.@n
-
-"
+"
 E
 "to_room"
 "@G$n $t up the iron staircase.@n
-
-"
+"
 !
 3 0 16
 A
 "op open o"
 "north n curtain no"
 "if( is_open( find_room( 63500 ), north ) ) {
-
-  act_tochar( #itsopen, ch );
-
-  end;
-
-  }
-
-act_tochar( #clip, ch );
-
-act_notchar( #rmclip, ch );
-
-open( room, north );
-
-end;
-
-"
+  act_tochar( #itsopen, ch );
+  end;
+  }
+act_tochar( #clip, ch );
+act_notchar( #rmclip, ch );
+open( room, north );
+end;
+"
 E
 "itsopen"
 "@GIt's already open.@n
-
-"
+"
 E
 "clip"
 "@GYou clip the curtain to the side of the doorway.@n
-
-"
+"
 E
 "rmclip"
 "@G$n clips the curtain to the side of the doorway.@n
-
-"
+"
 !
 0 0 0
 1724 9 1509949540 3 0
@@ -183,18 +143,12 @@ S
 #63501
 "Dark Grove"
 "Tall and twisted pine trees crowd together in this dark grove.  The thick
-
-canopy of intertwined branches blocks the sky above, making the area cool. 
-
-Through the close-set trees you can make out the thick and heavy shale wall of
-
-the the fort rising up into the sky.  To the east the slate and mud walls of a
-
-large building rise, and a small set of steps leads up and into an open
-
-doorway.
-
-"
+canopy of intertwined branches blocks the sky above, making the area cool. 
+Through the close-set trees you can make out the thick and heavy shale wall of
+the the fort rising up into the sky.  To the east the slate and mud walls of a
+large building rise, and a small set of steps leads up and into an open
+doorway.
+"
 ""
 301465667 0
 3 9 0
@@ -205,78 +159,59 @@ D1
 E
 "trees"
 "The pine trees are quite tall and healthy despite the layer of soot that
-
-blackens their bark and needles.  The lower branches have been clipped away
-
-creating an open space under the canopy.
-
-"
+blackens their bark and needles.  The lower branches have been clipped away
+creating an open space under the canopy.
+"
 E
 "raven"
 "You stare up at the trees for a long time, but cannot see the raven.
-
-"
+"
 E
 "fort wall"
 "The thick shale wall rises high above you just to the west of the copse
-
-of trees.
-
-"
+of trees.
+"
 A
 ""
 ""
 "send_to_room( #caw, room );
-
-"
+"
 E
 "caw"
 "@GFrom somewhere up in the trees you hear the shrill caw of a raven.@n
-
-"
+"
 !
 2 50 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@GYou climb up the stairs and head through the doorway.@n
-
-"
+"
 E
 "to_room"
 "@G$n climbs the steps and heads through the doorway.@n
-
-"
+"
 !
 3 0 2
 A
 "4 practice"
 "2 tame"
 "if( cflag( 102, ch ) ) {
-
-  mob = mob_in_room( 1719, room );
-
-  act_tochar( #no, ch, obj, mob );
-
-  end;
-
-  }
-
-else
-
-  continue;
-
-"
+  mob = mob_in_room( 1719, room );
+  act_tochar( #no, ch, obj, mob );
+  end;
+  }
+else
+  continue;
+"
 E
 "no"
 "Frowning, $N shakes $S head at your request.
-
-"
+"
 !
 0 0 0
 2397 17 1509949540 -2 0
@@ -288,18 +223,12 @@ S
 #63502
 "Dark and Smelly Room"
 "The dusty slate walls of this room are covered in skins and masks.  Various
-
-drying items hang in bunches from the rafters: feathers, leather strips and
-
-drying herbs.  A thin counter separates you from the back of the store which
-
-has even more clutter.  You notice a small sand-filled bowl against the wall,
-
-incense sticks burning and giving off a scent that assaults your senses.  A
-
-row of beads covers the doorway to the north.
-
-"
+drying items hang in bunches from the rafters: feathers, leather strips and
+drying herbs.  A thin counter separates you from the back of the store which
+has even more clutter.  You notice a small sand-filled bowl against the wall,
+incense sticks burning and giving off a scent that assaults your senses.  A
+row of beads covers the doorway to the north.
+"
 ""
 301469767 0
 0 5 0
@@ -310,73 +239,52 @@ D0
 E
 "skins"
 "Skins of many types of animals hang as decoration on the walls.  They are
-
-nailed into place with thick, square-headed nails, and reek of incense.
-
-"
+nailed into place with thick, square-headed nails, and reek of incense.
+"
 E
 "masks"
 "Grotesque and fearsome masks with distended and warped features hang as
-
-displays on the wall.  Many have horns and hideously grinning mouths
-
-filled with sharp teeth.  A small sign can be seen next to the masks.
-
-"
+displays on the wall.  Many have horns and hideously grinning mouths
+filled with sharp teeth.  A small sign can be seen next to the masks.
+"
 E
 "sign"
 "Tacked on the wall is a small sign written on a stained piece of dried
-
-leather:
-
-Me makes masks.
-
-Ask and me tell you what me custom.
-
-"
+leather:
+Me makes masks.
+Ask and me tell you what me custom.
+"
 E
 "feathers herbs strips leather bunches"
 "They hang from the ceiling in bunches, tied with frayed twine.  Some look
-
-fresher than others, but most are covered with dust and soot.
-
-"
+fresher than others, but most are covered with dust and soot.
+"
 E
 "sand bowl incense"
 "The stone bowl is filled with sand and ashes from previously burned
-
-incense sticks.  Many burnt out sticks fill the bowl, their charred
-
-remains sticking upright in the sand.
-
-"
+incense sticks.  Many burnt out sticks fill the bowl, their charred
+remains sticking upright in the sand.
+"
 A
 ""
 ""
 "act_tochar( #beads, ch );
-
-act_notchar( #rmbeads, ch );
-
-send_to_room( #otherbeads, find_room( 63500 ) );
-
-continue;
-
-"
+act_notchar( #rmbeads, ch );
+send_to_room( #otherbeads, find_room( 63500 ) );
+continue;
+"
 E
 "beads"
 "You push the beads aside.
-
-"
+"
 E
 "rmbeads"
 "$n pushes the beads aside with a soft clatter.
-
-"
+"
 E
 "otherbeads"
 "The beads to your south jangle and part.
-
-"
+"
 !
 3 0 1
 1725 9 1509949540 3 0
@@ -411,14 +319,10 @@ S
 #63503
 "A Dark and Cluttered Room"
 "Workbenches covered with half completed projects and small tools fill this
-
-room.  The everpresent soot has been collecting on some of them for some
-
-time.  Small drawers and vats filled with noxious liquids and powders are
-
-spread about behind the counter.  A curtain hangs in a doorway to the south.
-
-"
+room.  The everpresent soot has been collecting on some of them for some
+time.  Small drawers and vats filled with noxious liquids and powders are
+spread about behind the counter.  A curtain hangs in a doorway to the south.
+"
 ""
 301469767 0
 0 9 0
@@ -429,63 +333,44 @@ D2
 E
 "tools"
 "Small etching tools and small pots of sticky oils and colored pigments
-
-cover much of the top of the workbench.  Tiny hammers, pliers and bundles
-
-of wire are thrown haphazardly about the work surface.
-
-"
+cover much of the top of the workbench.  Tiny hammers, pliers and bundles
+of wire are thrown haphazardly about the work surface.
+"
 E
 "liquids powders"
 "Stinking pots and bowls of powders and liquids dot every available
-
-horizontal surface.  Many are covered in soot and dust, and from of
-
-others molds grow.
-
-"
+horizontal surface.  Many are covered in soot and dust, and from of
+others molds grow.
+"
 E
 "curtain"
 "A thick and heavy black curatain acts as a buffer between this room and
-
-the one to the south.
-
-"
+the one to the south.
+"
 A
 "op open o ope"
 "beads south so s"
 "if( is_open( find_room( 63503 ), south ) ) {
-
-  act_tochar( #itsopen, ch );
-
-  end;
-
-  }
-
-act_tochar( #clip, ch );
-
-act_notchar( #rmclip, ch );
-
-open( room, south );
-
-end;
-
-"
+  act_tochar( #itsopen, ch );
+  end;
+  }
+act_tochar( #clip, ch );
+act_notchar( #rmclip, ch );
+open( room, south );
+end;
+"
 E
 "itsopen"
 "It's already open.
-
-"
+"
 E
 "clip"
 "You clip the curtain to the side of the doorway.
-
-"
+"
 E
 "rmclip"
 "$n clips the curtain to the side of the doorway.
-
-"
+"
 !
 0 0 0
 1726 9 1509949540 3 0
@@ -499,18 +384,12 @@ S
 #63504
 "Warleader's Chamber"
 "The dark mud and slate walls of the room are covered with grisly trophies of
-
-conquest.  The worn and warped wooden floor is covered with dark stains and
-
-scattered bits of hay.  A spiraling iron staircase leads down.  Heavy pine
-
-beams support the ceiling, and cobwebs and dust are collecting in the
-
-corners.  A worn shield is mounted on sturdy brackets on the wall behind the
-
-desk.
-
-"
+conquest.  The worn and warped wooden floor is covered with dark stains and
+scattered bits of hay.  A spiraling iron staircase leads down.  Heavy pine
+beams support the ceiling, and cobwebs and dust are collecting in the
+corners.  A worn shield is mounted on sturdy brackets on the wall behind the
+desk.
+"
 ""
 301465677 0
 0 5 0
@@ -521,45 +400,35 @@ D5
 E
 "grisly trophies"
 "Mounted and stuffed animal heads line the walls.  Dented armor, and what
-
-appears to be flayed humanoid skins are nailed to the walls also.
-
-"
+appears to be flayed humanoid skins are nailed to the walls also.
+"
 E
 "iron spiraling staircase"
 "The black iron staircase spirals down to the lower level.
-
-"
+"
 E
 "beams"
 "These thick beams of ancient pine trees support the heavy slate roof.
-
-"
+"
 E
 "shield"
 "This massive and scarred shield has a scene of a black tower rising from
-
-a sickly yellow background.  Hovering above the dark tower is a deep red,
-
-unblinking eye.  The mounting brackets hold the shield securely in place.
-
-"
+a sickly yellow background.  Hovering above the dark tower is a deep red,
+unblinking eye.  The mounting brackets hold the shield securely in place.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@GYou $t down the iron staircase.@n
-
-"
+"
 E
 "rmdown"
 "@G$n $t down the iron staircase.@n
-
-"
+"
 !
 3 0 32
 2380 49 1509949540 -2 0
@@ -571,16 +440,11 @@ S
 #63505
 "Bend in Gravel Way"
 "The gravel path makes a sharp turn to the south and east here.  To the west, a
-
-large black mud and slate structure looms overhead, a full two stories high
-
-and looking very official and important.  The path squeezes between two
-
-buildings to the south, while to the east, Gravel Way winds alongside several
-
-huts and hovels.  A squat mud building blocks movement to the north.
-
-"
+large black mud and slate structure looms overhead, a full two stories high
+and looking very official and important.  The path squeezes between two
+buildings to the south, while to the east, Gravel Way winds alongside several
+huts and hovels.  A squat mud building blocks movement to the north.
+"
 ""
 301465665 0
 1 9 0
@@ -599,37 +463,26 @@ D3
 E
 "black mud"
 "The thick shale and mud walls of the two-storied building rise high above
-
-you to the west.  The black-mud covered shale seems to oppress everything
-
-around it, overshadowing and outmassing everything else.
-
-"
+you to the west.  The black-mud covered shale seems to oppress everything
+around it, overshadowing and outmassing everything else.
+"
 E
 "shale"
 "The thick shale walls of the building to the east appear quite sturdy. 
-
-No decoration of any sort adorns the walls, and only a thick layer of
-
-soot and dust covers the stones.
-
-"
+No decoration of any sort adorns the walls, and only a thick layer of
+soot and dust covers the stones.
+"
 E
 "black mud slate"
 "This towering edifice seems to loom over the path.  The walls are made of
-
-shale and plastered with a thick black mud.  There appear to be no
-
-windows, but a large open doorway is to the west of you.
-
-"
+shale and plastered with a thick black mud.  There appear to be no
+windows, but a large open doorway is to the west of you.
+"
 E
 "squat mud"
 "Thick mud walls make up what you can see of the structure to the north.
-
-It appears connected to the building off to the northeast.
-
-"
+It appears connected to the building off to the northeast.
+"
 2361 9 1509949540 3 0
 -1
 S
@@ -637,16 +490,11 @@ S
 #63506
 "North Gravel Way"
 "The gravel path leads east and west.  To the north, a large mud-brick
-
-structure leans dangerously, melting slowly into the ground.  The mud
-
-building to the north has an open doorway.  The massive walls of a large
-
-shale building rise to the south, and you see the east tower to the
-
-southeast.
-
-"
+structure leans dangerously, melting slowly into the ground.  The mud
+building to the north has an open doorway.  The massive walls of a large
+shale building rise to the south, and you see the east tower to the
+southeast.
+"
 ""
 301465665 0
 1 9 0
@@ -665,40 +513,29 @@ D3
 E
 "mud-brick structure"
 "The thick mud-brick walls of this building show signs of age and
-
-weathering.  The mud is cracked and chipped.  and the whole building
-
-appears to list to the east.
-
-"
+weathering.  The mud is cracked and chipped.  and the whole building
+appears to list to the east.
+"
 E
 "shale massive"
 "The tall shale building is quite large and stout.  Its walls appear thick
-
-and sturdy.  It has no windows or doors that you can see from this side.
-
-"
+and sturdy.  It has no windows or doors that you can see from this side.
+"
 E
 "tower"
 "You can barely see the top of the east tower from here.  You can see the
-
-thick-bodied crossbowman that man the tower moving about.
-
-"
+thick-bodied crossbowman that man the tower moving about.
+"
 -1
 S
 
 #63507
 "West Gravel Way"
 "The gravel path slinks between the walls of two buildings, a smaller
-
-shale one to the east, and a larger black mud one to the west.  The
-
-black mud structure seems to be one of no small importance, a full two
-
-stories tall and apparently the largest building in the whole fort.
-
-"
+shale one to the east, and a larger black mud one to the west.  The
+black mud structure seems to be one of no small importance, a full two
+stories tall and apparently the largest building in the whole fort.
+"
 ""
 301465665 0
 1 9 0
@@ -713,37 +550,26 @@ D2
 E
 "shale"
 "The thick shale walls of the building to the east appear quite sturdy.
-
-No decoration of any sort adorns the walls, and only a thick layer of
-
-soot and dust covers the stones.
-
-"
+No decoration of any sort adorns the walls, and only a thick layer of
+soot and dust covers the stones.
+"
 E
 "mud-brick black mud"
 "The thick shale and mud walls of the two-storied building rise high above
-
-you to the west.  The black-mud covered shale seems to oppress everything
-
-around it, overshadowing and outmassing everything else.
-
-"
+you to the west.  The black-mud covered shale seems to oppress everything
+around it, overshadowing and outmassing everything else.
+"
 -1
 S
 
 #63508
 "Grunt Hovel"
 "Stained cots are lined up against the east wall of this dank and smelly
-
-mud room.  A horrible stench comes from the west, ostensibly from the
-
-from the room next door to the west.  Straw is thrown about in heaps on
-
-the floor to keep down dust and soak up moisture.  To the south a large
-
-opening in the wall leads out onto the gravel path.
-
-"
+mud room.  A horrible stench comes from the west, ostensibly from the
+from the room next door to the west.  Straw is thrown about in heaps on
+the floor to keep down dust and soak up moisture.  To the south a large
+opening in the wall leads out onto the gravel path.
+"
 ""
 301465669 0
 0 5 0
@@ -758,33 +584,26 @@ D3
 E
 "cots"
 "Stained cots made of a heavy canvas stretched over wooden poles are
-
-scattered about the room.  The cots look sturdy and dirty.
-
-"
+scattered about the room.  The cots look sturdy and dirty.
+"
 E
 "straw"
 "There is nothing special about the straw thrown about the floor.
-
-"
+"
 A
 "search"
 "cots"
 "act_tochar( #search, ch );
-
-act_notchar( #rmsearch, ch );
-
-"
+act_notchar( #rmsearch, ch );
+"
 E
 "search"
 "@GYou search the various cots, but find nothing.@n
-
-"
+"
 E
 "rmsearch"
 "@G$n searches the cots, but finds nothing.@n
-
-"
+"
 !
 0 0 0
 1425 41 1509949540 3 0
@@ -798,16 +617,11 @@ S
 #63509
 "Latrine - Grunt Hovel"
 "A large hole in the dirt floor releases a stench that makes you nearly
-
-vomit.  Straw is littered about the floor to help soak up dampness, and
-
-the walls are covered with cobwebs and soot, as well as some
-
-indecipherable scribblings.  A doorway leads east towards more bearable
-
-surroundings.
-
-"
+vomit.  Straw is littered about the floor to help soak up dampness, and
+the walls are covered with cobwebs and soot, as well as some
+indecipherable scribblings.  A doorway leads east towards more bearable
+surroundings.
+"
 ""
 301465669 0
 0 5 0
@@ -818,47 +632,36 @@ D1
 E
 "hole"
 "The large hole is about a foot in diameter, but is dark and deep.  The
-
-ground around the hole is stained and damp.  It looks like some lime has
-
-been dumped into the pit by the powder sprinkled around it.
-
-"
+ground around the hole is stained and damp.  It looks like some lime has
+been dumped into the pit by the powder sprinkled around it.
+"
 E
 "scribblings"
 "Indecipherable scribblings are carved into the mud wall.  It looks like
-
-it was probably just some graffiti.
-
-"
+it was probably just some graffiti.
+"
 A
 "enter climb"
 "hole down"
 "act_tochar( #laugh, ch );
-
-"
+"
 E
 "laugh"
 "@GYour desire to live convinces you to rethink that action.@n
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "wait( 1 );
-
-act_tochar( #gag, ch );
-
-"
+act_tochar( #gag, ch );
+"
 E
 "gag"
 "@GThe strong smell from the pit nearly makes you gag, but you manage to
-
-control yourself.@n 
-
-"
+control yourself.@n 
+"
 !
 1 0 2
 919 137 1509949540 3 0
@@ -868,14 +671,10 @@ S
 #63510
 "North Gravel Way"
 "The gravel pathway heads east and west, winding its way between the dirty
-
-buildings.  To the north, a wooden hut has been built from warped planks, with
-
-a sign hanging from its eave.  A thick black-mud building squats to the south,
-
-black smoke belching from a chimney and obscuring the sky.
-
-"
+buildings.  To the north, a wooden hut has been built from warped planks, with
+a sign hanging from its eave.  A thick black-mud building squats to the south,
+black smoke belching from a chimney and obscuring the sky.
+"
 ""
 301465665 0
 1 9 0
@@ -894,41 +693,30 @@ D3
 E
 "sign"
 "An old board with letters burned into it reads:
-
-Klars Gudes
-
-"
+Klars Gudes
+"
 E
 "wooden hut"
 "This large structure is built entirely of wood.  The craftsmanship is
-
-poor, as loose boards hang from bent nails attest to.  It has no door,
-
-and looking inside reveals a cramped and cluttered space.
-
-"
+poor, as loose boards hang from bent nails attest to.  It has no door,
+and looking inside reveals a cramped and cluttered space.
+"
 E
 "mud squat black"
 "The squat mud-building is quite large and stout.  Its thick mud walls are
-
-warm, and have no windows that you can see.  A thick plume of black smoke
-
-pours from the chimney into the sky.  and sturdy.  It has no windows or
-
-doors that you can see from this side.
-
-"
+warm, and have no windows that you can see.  A thick plume of black smoke
+pours from the chimney into the sky.  and sturdy.  It has no windows or
+doors that you can see from this side.
+"
 A
 ""
 ""
 "send_to_room( #creak, room );
-
-"
+"
 E
 "creak"
 "@GThe wooden sign creaks and squeaks in the wind.@n
-
-"
+"
 !
 2 75 0
 -1
@@ -937,16 +725,11 @@ S
 #63511
 "Trader's Hut"
 "You have never seen such a cluttered mess.  Broken items lay scattered in
-
-heaps, and items swing from hooks on the ceiling.  It is difficult to
-
-move around in here without tripping on something or banging your head.
-
-A scarred counter separates you from the back of the shop.  Gravel Way
-
-runs by the shop to the south.
-
-"
+heaps, and items swing from hooks on the ceiling.  It is difficult to
+move around in here without tripping on something or banging your head.
+A scarred counter separates you from the back of the shop.  Gravel Way
+runs by the shop to the south.
+"
 ""
 301469767 0
 0 9 0
@@ -957,19 +740,14 @@ D2
 E
 "broken items"
 "You see nothing special about the broken and rusted items scattered
-
-about the store.
-
-"
+about the store.
+"
 E
 "counter scarred"
 "A thick counter crafted from pine separates you from the back of the
-
-store.  The top of the counter shows scars of many weapons and burns
-
-marks.
-
-"
+store.  The top of the counter shows scars of many weapons and burns
+marks.
+"
 1727 137 1509949540 3 0
 6 17 1509949540 -1 0
 79 17 1509949540 -1 0
@@ -989,18 +767,12 @@ S
 #63512
 "End of Gravel Way"
 "The ground is a mixture of thick mud and loose gravel.  Hay has been
-
-tossed about in a failed attempt to make the footing more favorable.  A
-
-large stable looms to the north, the sounds of horses mixing with the
-
-loud shouts of the orcs of the fort.  The gravel path leads west towards
-
-more buildings.  The tall shale wall of the fort blocks movement to the
-
-east.
-
-"
+tossed about in a failed attempt to make the footing more favorable.  A
+large stable looms to the north, the sounds of horses mixing with the
+loud shouts of the orcs of the fort.  The gravel path leads west towards
+more buildings.  The tall shale wall of the fort blocks movement to the
+east.
+"
 ""
 301465665 0
 1 9 0
@@ -1015,19 +787,14 @@ D3
 E
 "stable"
 "The stable is a large building built out of old pine boards.  The pine is
-
-weathered and grey, with old rusty nails sticking out from loose boards. 
-
-Inside appears to be a large open space, enough room for many horses.
-
-"
+weathered and grey, with old rusty nails sticking out from loose boards. 
+Inside appears to be a large open space, enough room for many horses.
+"
 E
 "hay"
 "Worn and muddy strands of hay lay scattered about.  Nothing special as
-
-far as you can tell.
-
-"
+far as you can tell.
+"
 78 17 1509949442 -2 0
 -1
 S
@@ -1035,21 +802,14 @@ S
 #63513
 "Brithbarad Stables"
 "Hay bales have been set up to act as a counter along the west wall, while
-
-stalls for the horses are lined against the east wall.  Large wooden rafters
-
-crisscross above your head, and various horse-related equipment hangs from
-
-most of them.  Along the wall behind the counter, horseshoes have been nailed
-
-to the wall in a seemingly random pattern.  A large open gateway leads south
-
-and out of the stable.
-
-"
+stalls for the horses are lined against the east wall.  Large wooden rafters
+crisscross above your head, and various horse-related equipment hangs from
+most of them.  Along the wall behind the counter, horseshoes have been nailed
+to the wall in a seemingly random pattern.  A large open gateway leads south
+and out of the stable.
+"
 "[Phule] good actions w/ ghrote and da stablehand
-
-"
+"
 301473863 0
 1 7 0
 D2
@@ -1063,22 +823,17 @@ D5
 E
 "counter bales"
 "The pile of hay bales acts as a counter for the stablemaster.
-
-"
+"
 E
 "stalls"
 "The dark stalls are filled with many horses.  The doors are shut, making
-
-it difficult to see anything but the horses feet.
-
-"
+it difficult to see anything but the horses feet.
+"
 E
 "equipment"
 "Old and worn tack and harness hangs from the rafters.  They appear usable
-
-still, but are so far above you that they are out of reach.
-
-"
+still, but are so far above you that they are out of reach.
+"
 1731 9 1509949540 3 0
 1732 9 1509949540 3 0
 1732 9 1509949540 3 0
@@ -1088,8 +843,7 @@ S
 #63514
 "horsehold"
 "Under Construction.
-
-"
+"
 ""
 301473861 0
 0 7 0
@@ -1107,23 +861,15 @@ S
 #63515
 "Bend in Gravel Way"
 "The gravelled walk turns sharply here, heading north and east.  Just to the
-
-east you can see a well with a bucket.  Loud cursing and clanging sounds can
-
-be heard from the squat building to the south as it belches forth the smell of
-
-hay and horse.  A medium sized shale-walled building stands to the west,
-
-imposing its dark facade on the street.  A small wooden sign is bolted to the
-
-buildings wall.
-
-"
+east you can see a well with a bucket.  Loud cursing and clanging sounds can
+be heard from the squat building to the south as it belches forth the smell of
+hay and horse.  A medium sized shale-walled building stands to the west,
+imposing its dark facade on the street.  A small wooden sign is bolted to the
+buildings wall.
+"
 "no.mob to prevent drunks from wandering
-
-[Nereus] Fixed this room - no longer no.mob
-
-"
+[Nereus] Fixed this room - no longer no.mob
+"
 301465665 0
 1 9 0
 D0
@@ -1145,10 +891,8 @@ D3
 E
 "wooden sign"
 "A worn wooden sign peeks from beneath thick layers of soot.  The sign
-
-simply has a picture of a mug of beer on it.
-
-"
+simply has a picture of a mug of beer on it.
+"
 2361 9 1509949540 3 0
 -1
 S
@@ -1156,21 +900,14 @@ S
 #63516
 "Drunken Orc Bar"
 "A long bar made of old pine planks runs from the north wall about halfway
-
-through the noisy room.  Smoke and soot fill the air, along with the sounds of
-
-drunken orcs.  Strong smells of cheap beer and sweaty orcs waft by, assaulting
-
-your senses.  A curtain of wooden beads hangs in the southern doorway.  An
-
-open doorway leads outside to the east.  The shale walls of the bar have
-
-collected a thick layer of soot and dust.
-
-"
+through the noisy room.  Smoke and soot fill the air, along with the sounds of
+drunken orcs.  Strong smells of cheap beer and sweaty orcs waft by, assaulting
+your senses.  A curtain of wooden beads hangs in the southern doorway.  An
+open doorway leads outside to the east.  The shale walls of the bar have
+collected a thick layer of soot and dust.
+"
 "custom drink :)_
-
-"
+"
 301469765 0
 0 5 0
 D1
@@ -1184,115 +921,85 @@ D2
 E
 "bar pine"
 "The long bar is made of crude pine planks that are covered with knots and
-
-splinters.
-
-"
+splinters.
+"
 E
 "beads"
 "A curtain of wooden beads hangs in the doorway to the south.  The
-
-multicolored glass-beads are of different sizes and clatter when somebody
-
-walks through them.
-
-"
+multicolored glass-beads are of different sizes and clatter when somebody
+walks through them.
+"
 A
 ""
 ""
 "i = random( 1,50 );
-
-if( i < 4 ) {
-
-  send_to_room( #creak, room );
-
-  end;
-
-  }
-
-"
+if( i < 4 ) {
+  send_to_room( #creak, room );
+  end;
+  }
+"
 E
 "creak"
 "@GThe worn wooden floor creaks and groans as it settles.@n
-
-"
+"
 !
 1 0 6
 A
 ""
 ""
 "if( mob_in_room( 1447, find_room( 63516 ) ) ) {
-
-send_to_room( #clean, room );
-
-  end;
-
-  }
-
-"
+send_to_room( #clean, room );
+  end;
+  }
+"
 E
 "clean"
 "@GThe bartender spits a green gob onto the bartop and wipes it with his
-
-dirty rag.@n
-
-"
+dirty rag.@n
+"
 !
 2 50 0
 A
 ""
 ""
 "send_to_room( #otherbeads, find_room( 63517 ) );
-
-continue;
-
-"
+continue;
+"
 E
 "to_char"
 "@GYou push the beads aside.@n
-
-"
+"
 E
 "to_room"
 "@G$n pushes the beads aside with a soft clatter.@n
-
-"
+"
 E
 "otherbeads"
 "@GThe beads to the north jangle and part.@n
-
-"
+"
 !
 3 0 4
 A
 ""
 ""
 "if( mob_in_room( 1447, find_room( 63516 ) ) ) {
-
-  send_to_room( #mug, room );
-
-  end;
-
-  }
-
-"
+  send_to_room( #mug, room );
+  end;
+  }
+"
 E
 "mug"
 "The barkeep wipes a mug 'clean' and places it on a shelf behind the bar.
-
-"
+"
 !
 2 25 0
 A
 ""
 ""
 "if( vnum( ch ) == 1074 || vnum( ch ) == 1733 )
-
-  end;
-
-continue;
-
-"
+  end;
+continue;
+"
 !
 3 0 2
 1733 9 1509949540 3 0
@@ -1307,29 +1014,18 @@ S
 #63517
 "Smokey Back Room"
 "A thick smoke wafts through the air in this dark back room.  The smell in the
-
-air is sweet, masking the barely detectable scent of orc sweat.  Guttering and
-
-dirty lensed lanterns are mounted in the corners of the room, and a small
-
-raised stage protrudes from the west wall.  The floor is bare dirt, and the
-
-patrons stand watching the show.
-
-"
+air is sweet, masking the barely detectable scent of orc sweat.  Guttering and
+dirty lensed lanterns are mounted in the corners of the room, and a small
+raised stage protrudes from the west wall.  The floor is bare dirt, and the
+patrons stand watching the show.
+"
 "These commands set off her slap:
-
-bonk drool french hug rub scratch snuggle squeeze
-
-twiddle jump sniff tickle comb massage nibble
-
-nuzzle poke slap spank taunt cry
-
-dance kiss lick pat purr tackle touch whap
-
-[Phule] add quest for eel-skin dress for beauty
-
-"
+bonk drool french hug rub scratch snuggle squeeze
+twiddle jump sniff tickle comb massage nibble
+nuzzle poke slap spank taunt cry
+dance kiss lick pat purr tackle touch whap
+[Phule] add quest for eel-skin dress for beauty
+"
 301465671 0
 0 5 0
 D0
@@ -1339,141 +1035,101 @@ D0
 E
 "stage"
 "The stage is raised about a foot off the ground and allows you to view
-
-the entertainment better.
-
-"
+the entertainment better.
+"
 E
 "lanterns"
 "Other than the grime covering them, there is nothing remarkable about the
-
-lanterns.
-
-"
+lanterns.
+"
 A
 ""
 ""
 "if( mob_in_room( 1074, find_room( 63517 ) ) ) {
-
-  send_to_room( #dance, room );
-
-  end;
-
-  }
-
-"
+  send_to_room( #dance, room );
+  end;
+  }
+"
 E
 "dance"
 "@GDancing with the accompaniment of small finger-cymbals the orc beauty
-
-mesmerizes the crowd.@n
-
-"
+mesmerizes the crowd.@n
+"
 !
 2 50 0
 A
 ""
 ""
 "if( mob_in_room( 1074, find_room( 63517 ) ) ) {
-
-  send_to_room( #dance, room );
-
-  end;
-
-  }
-
-"
+  send_to_room( #dance, room );
+  end;
+  }
+"
 E
 "dance"
 "@GWith a stinging slap the orc beauty rebuffs the unwanted advances of a
-
-drunken patron!@n
-
-"
+drunken patron!@n
+"
 !
 2 50 0
 A
 ""
 ""
 "send_to_room( #otherbeads, find_room( 63516 ) );
-
-continue;
-
-"
+continue;
+"
 E
 "to_char"
 "@GYou push the beads aside and walk through.@n
-
-"
+"
 E
 "to_room"
 "@G$n pushes the wooden beads aside with a soft clatter.@n
-
-"
+"
 E
 "otherbeads"
 "@GThe beads to the south jangle and are pushed aside.@n
-
-"
+"
 !
 3 0 1
 A
 ""
 ""
 "i = 1d4;
-
-if( i == 3 ) {
-
-  if( mob_in_room( 1074, find_room( 63517 ) ) ) {
-
-    act_tochar( #dance, ch );
-
-    end;
-
-    }
-
-  }
-
-"
+if( i == 3 ) {
+  if( mob_in_room( 1074, find_room( 63517 ) ) ) {
+    act_tochar( #dance, ch );
+    end;
+    }
+  }
+"
 E
 "dance"
 "@GThe voluptuous orc beauty winks at you as you enter.@n
-
-"
+"
 !
 1 0 1
 A
 "twiddle jump sniff tickle comb massage nibble bonk drool french hug rub scratch snuggle squeeze nuzzle poke slap spank taunt cry dance kiss lick pat purr tackle touch whap"
 "orc beauty dancer voluptuous"
 "mob = mob_in_room( 1074, find_room( 63517 ) );
-
-if( mob ) {
-
-  act_tochar( #slap, ch );
-
-  act_notchar( #rmslap, ch );
-
-  i = 2d10+30;
-
-  dam_message( ch, i, \"the stinging slap\" );
-
-  inflict( ch, mob, i, \"the stinging slap\" );
-
-}
-
-end;
-
-"
+if( mob ) {
+  act_tochar( #slap, ch );
+  act_notchar( #rmslap, ch );
+  i = 2d10+30;
+  dam_message( ch, i, \"the stinging slap\" );
+  inflict( ch, mob, i, \"the stinging slap\" );
+}
+end;
+"
 E
 "slap"
 "@YThe orc dancer skillfully avoids you and slaps you away!@n 
-
-"
+"
 E
 "rmslap"
 "@YThe orc beauty rejects $n's advances with a stinging slap!@n
-
-"
+"
 !
 0 0 0
 1074 9 1509949540 3 0
@@ -1486,14 +1142,10 @@ S
 #63518
 "Smelly Pet Shop"
 "Large cages fill the back of this building, and the stench of the captive
-
-animals is strong.  Loud barks, howls and bird-calls fill the air.  A small
-
-doorway leads north, toward Gravel Way.  Large whips, traps and cages hang
-
-from the ceiling.
-
-"
+animals is strong.  Loud barks, howls and bird-calls fill the air.  A small
+doorway leads north, toward Gravel Way.  Large whips, traps and cages hang
+from the ceiling.
+"
 ""
 301473863 0
 0 5 0
@@ -1508,43 +1160,34 @@ D5
 E
 "cages "
 "The cages are dark and covered with dirty blankets.  It is difficult to
-
-see anything in them, but you can tell something is moving inside each
-
-cages.
-
-"
+see anything in them, but you can tell something is moving inside each
+cages.
+"
 E
 "whips traps"
 "All sorts of whips and old traps hang from the walls and ceiling.  From
-
-their look, you can guess that they have all seen lots of use.
-
-"
+their look, you can guess that they have all seen lots of use.
+"
 A
 ""
 ""
 "send_to_room( #bark, room );
-
-"
+"
 E
 "bark"
 "@GYou hear the loud barking of a dog coming from the back.@n
-
-"
+"
 !
 2 50 0
 A
 ""
 ""
 "send_to_room( #screech, room );
-
-"
+"
 E
 "screech"
 "@GAn ear-piercing screech comes from one of the dark cages in back.@n 
-
-"
+"
 !
 2 50 0
 1446 9 1509949540 3 0
@@ -1554,10 +1197,8 @@ S
 #63519
 "Bhujja's Pet Shop Hold"
 "Inside the cages you find it dark and dank.  The smell of animals is
-
-overwhelming!
-
-"
+overwhelming!
+"
 ""
 301473861 0
 3 9 0
@@ -1575,14 +1216,10 @@ S
 #63520
 "Gravel Way - By a Stinking Well"
 "A small basalt well sits in the center of the muddy pathway.  Gravel has been
-
-spread all about in an attempt to make the ground more passable.  To the east
-
-and west, the gravel pathway continues, while to the north a large open-doored
-
-building sits.  A crooked large-scale hovel stands to the south.
-
-"
+spread all about in an attempt to make the ground more passable.  To the east
+and west, the gravel pathway continues, while to the north a large open-doored
+building sits.  A crooked large-scale hovel stands to the south.
+"
 ""
 301465665 0
 1 9 0
@@ -1606,17 +1243,13 @@ A
 ""
 ""
 "if( random( 1,20 ) > 18 )
-
-send_to_room( #flies, room );
-
-"
+send_to_room( #flies, room );
+"
 E
 "flies"
 "@GFlies buzz noisily around your head before disappearing into the clots
-
-of smoke.@n 
-
-"
+of smoke.@n 
+"
 !
 1 0 10
 1891 17 1509949540 -2 0
@@ -1626,23 +1259,15 @@ S
 #63521
 "Bank of Brithbarad"
 "Crude iron bars separate you from the teller here.  The massive walls are
-
-oppressive, and give you the feeling that they may collapse on you at any
-
-moment.  The dark walls' only decoration is a sooty wall calendar taking up a
-
-pitifully small amount of space on the otherwise sooty and dusty walls.  To
-
-the south is Gravel Way.  A most disagreeable stench wafts in from that
-
-direction.
-
-"
+oppressive, and give you the feeling that they may collapse on you at any
+moment.  The dark walls' only decoration is a sooty wall calendar taking up a
+pitifully small amount of space on the otherwise sooty and dusty walls.  To
+the south is Gravel Way.  A most disagreeable stench wafts in from that
+direction.
+"
 "Orc guard sneers and makes fun of goblins sometimes
-
-leave ideas for more insults so I can mix them up in the future
-
-"
+leave ideas for more insults so I can mix them up in the future
+"
 301467751 0
 0 5 0
 D2
@@ -1652,94 +1277,61 @@ D2
 E
 "bars"
 "Thick, black iron bars are set deep into the wall, keeping you from
-
-accessing the back of the bank.
-
-"
+accessing the back of the bank.
+"
 A
 ""
 ""
 "if( race( ch ) == goblin ) {
-
-  if( random( 1,10 ) > 8 ) {
-
-    wait( 1 );
-
-    if( !ch )
-
-      end;
-
-    act_tochar( #snot, ch );
-
-    act_notchar( #rmsnot, ch );
-
-    }
-
-  }
-
-else if( race( ch ) == troll ) {
-
-  if( random( 1,10 ) > 8 ) {
-
-    wait( 1 );
-
-    if( !ch )
-
-      end;
-
-    act_tochar( #troll, ch );
-
-    act_notchar( #rmtroll, ch );
-
-    }
-
-  }
-
-"
+  if( random( 1,10 ) > 8 ) {
+    wait( 1 );
+    if( !ch )
+      end;
+    act_tochar( #snot, ch );
+    act_notchar( #rmsnot, ch );
+    }
+  }
+else if( race( ch ) == troll ) {
+  if( random( 1,10 ) > 8 ) {
+    wait( 1 );
+    if( !ch )
+      end;
+    act_tochar( #troll, ch );
+    act_notchar( #rmtroll, ch );
+    }
+  }
+"
 E
 "snot"
 "The orc guard points at you and laughs, \"What we got here?!  A pile of me
-
-snot? Har har!\"
-
-"
+snot? Har har!\"
+"
 E
 "rmsnot"
 "The orc guard points at $n and says, \"What we got here?!  A pile of me 
-
-snot?! Har Har!\"
-
-"
+snot?! Har Har!\"
+"
 E
 "stinky"
 "One of the orc guards looks around sniffing the air, \"Somebody make
-
-stinky?!  It reek!\" He looks at you and says, \"Oh, it only gobbin.\" 
-
-"
+stinky?!  It reek!\" He looks at you and says, \"Oh, it only gobbin.\" 
+"
 E
 "rmstinky"
 "One of the orc guards looks around sniffing the air, \"Somebody make
-
-stinky?!  It reek!\" He looks at $n and says,
-
-\"Oh, it only gobbin.\"
-
-"
+stinky?!  It reek!\" He looks at $n and says,
+\"Oh, it only gobbin.\"
+"
 E
 "troll"
 "@GOne of the guards looks at you and says, \"No cause trouble troll!  We
-
-not like troublemakers here!\" @n 
-
-"
+not like troublemakers here!\" @n 
+"
 E
 "rmtroll"
 "@GOne of the orc guards looks at $n and says, \"No cause trouble troll! 
-
-We not like troublemakers here!\"@n 
-
-"
+We not like troublemakers here!\"@n 
+"
 !
 1 0 4
 1425 9 1509949540 3 0
@@ -1751,17 +1343,12 @@ S
 #63522
 "Brithbarad Mess Hall"
 "Long tables with large benches sit in rows in this stinking service area. 
-
-Straw is strewn in heaps about the floor and flies swarm through the sooty
-
-air.  A large counter with trays of food is set against the western wall.  The
-
-only exit is north, out the open doorway which leads onto Gravel Way.
-
-"
+Straw is strewn in heaps about the floor and flies swarm through the sooty
+air.  A large counter with trays of food is set against the western wall.  The
+only exit is north, out the open doorway which leads onto Gravel Way.
+"
 "[Phule] custom food could be cool
-
-"
+"
 301469767 0
 0 9 0
 D0
@@ -1771,12 +1358,9 @@ D0
 E
 "counter"
 "A crudely constructed counter sits against the western wall, its sooty
-
-bricks collecting dust.  Trays filled with cafeteria food cover the
-
-counter.
-
-"
+bricks collecting dust.  Trays filled with cafeteria food cover the
+counter.
+"
 1406 9 1509949540 3 0
 1222 17 1509949505 -1 0
 1221 17 1509949500 -1 0
@@ -1788,16 +1372,11 @@ S
 #63523
 "Gravel Way"
 "The gravel pathway winds through the muck, and clouds of soot blur your
-
-vision.  Two large buildings made of black adobe bricks straddle the path,
-
-which leads east and west.  To the north you can hear the ringing of metal on
-
-metal, and shouting.  To the east, a long parade ground stretches toward the
-
-gates of the city.  A foul smell drifts in from the west.
-
-"
+vision.  Two large buildings made of black adobe bricks straddle the path,
+which leads east and west.  To the north you can hear the ringing of metal on
+metal, and shouting.  To the east, a long parade ground stretches toward the
+gates of the city.  A foul smell drifts in from the west.
+"
 ""
 301465665 0
 1 9 0
@@ -1824,16 +1403,11 @@ S
 #63524
 "Weaponsmith's Shop"
 "You are greeted by a blast of heat as you enter this low building.  The air is
-
-thick with soot from the forge, and your ears ring from the clanging of
-
-hammers.  Everything in here is covered in black soot.  Sparks and steam fly
-
-as the weaponsmith pulls heated metals from the forge and works them.  The
-
-open doorway to the north leads onto Gravel Way.
-
-"
+thick with soot from the forge, and your ears ring from the clanging of
+hammers.  Everything in here is covered in black soot.  Sparks and steam fly
+as the weaponsmith pulls heated metals from the forge and works them.  The
+open doorway to the north leads onto Gravel Way.
+"
 ""
 301465671 0
 0 5 0
@@ -1844,8 +1418,7 @@ D0
 E
 "forge"
 "You find it difficult to look at the intense flames from the forge.
-
-"
+"
 1445 137 1509949540 3 0
 133 17 1509949455 -1 0
 1093 17 1509949470 -1 0
@@ -1863,18 +1436,12 @@ S
 #63525
 "Thol's Armor Shop"
 "A huge forge burning black coal burns with intense heat in this squalid
-
-building.  Broken pieces of armor lay scattered about, and hang from pegs on
-
-the wall.  This place is loud, hot and humid, and seems to be a major source
-
-of the black soot which covers nearly everything in the city.  The open
-
-doorway to the south leads onto Gravel Way.  A trapdoor leads down into an
-
-ash-filled pit.
-
-"
+building.  Broken pieces of armor lay scattered about, and hang from pegs on
+the wall.  This place is loud, hot and humid, and seems to be a major source
+of the black soot which covers nearly everything in the city.  The open
+doorway to the south leads onto Gravel Way.  A trapdoor leads down into an
+ash-filled pit.
+"
 ""
 301469767 0
 0 5 0
@@ -1889,94 +1456,70 @@ D5
 E
 "furnace"
 "The intense light from the furnace makes it hard to see much.
-
-"
+"
 A
 ""
 ""
 "i = random( 1, 2 );
-
-if( i == 1 )
-
-  send_to_room( #spark, room );
-
-if( i == 2 )
-
-  send_to_room( #soot, room );
-
-"
+if( i == 1 )
+  send_to_room( #spark, room );
+if( i == 2 )
+  send_to_room( #soot, room );
+"
 E
 "spark"
 "@YSparks fly as somebody hammers a red-hot piece of iron.@n
-
-"
+"
 E
 "soot"
 "@GA black cloud of soot from the furnace chokes your lungs.@n
-
-"
+"
 !
 2 50 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "ada"
 "@GYou lower yourself down the trapdoor.@n
-
-"
+"
 E
 "to_room"
 "@G$n slowly lowers $mself down the trapdoor.@n
-
-"
+"
 !
 3 0 32
 A
 "custom"
 "vest fish-scale fish scale "
 "act_tochar( #measure, ch );
-
-act_notchar( #rmmeasure, ch );
-
-act_tochar( #measure2, ch );
-
-act_tochar( #measure3, ch );
-
-continue;
-
-"
+act_notchar( #rmmeasure, ch );
+act_tochar( #measure2, ch );
+act_tochar( #measure3, ch );
+continue;
+"
 E
 "measure"
 "Thol pulls out a dirty piece of cord and begins taking your measurements.
-
-"
+"
 E
 "rmmeasure"
 "Thol measures $n before starting work on the fish-scale vest.
-
-"
+"
 E
 "measure2"
 "His hot breath stings your skin as he gets uncomfortably close, his thick
-
-hands pulling the cord tightly about your neck.  Your breath becomes
-
-labored and your heart begins to race before he releases the cord 
-
-and scribbles down some numbers on a small chalkboard.
-
+hands pulling the cord tightly about your neck.  Your breath becomes
+labored and your heart begins to race before he releases the cord 
+and scribbles down some numbers on a small chalkboard.
 
 "
 E
 "measure3"
 "The next step is much easier, as Thol quickly measures your waist and
-
-chest while nodding to himself.
-
+chest while nodding to himself.
 
 "
 !
@@ -1985,13 +1528,11 @@ A
 "close"
 "down trapdoor d"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "@GThol snarls at you, making you re-think that course of action.@n
-
-"
+"
 !
 0 0 0
 1426 9 1509949540 3 0
@@ -2010,20 +1551,13 @@ S
 #63526
 "Parade Ground"
 "The soot-filled air hangs heavily over the gravel field.  The heavy feet of
-
-countless orc grunts have pounded the gravel deep into the mud, almost paving
-
-this area.  Two small wooden buildings, perhaps barracks, flank the grounds,
-
-one to the north and another to the south of here.  The gravel pathway leads
-
-to the west.  To the east, a massive pair of solid pine gates interrupt the
-
-thick shale walls.  A heavy crank is set into the ground, attached to a long,
-
-thick chain looped over a pulley.  Beside the crank is mounted a heavy lever.
-
-"
+countless orc grunts have pounded the gravel deep into the mud, almost paving
+this area.  Two small wooden buildings, perhaps barracks, flank the grounds,
+one to the north and another to the south of here.  The gravel pathway leads
+to the west.  To the east, a massive pair of solid pine gates interrupt the
+thick shale walls.  A heavy crank is set into the ground, attached to a long,
+thick chain looped over a pulley.  Beside the crank is mounted a heavy lever.
+"
 ""
 301465665 0
 1 9 0
@@ -2046,122 +1580,87 @@ D3
 E
 "lever"
 "The lever releases a large counterweight which pulls the gates closed in
-
-a crash.
-
-"
+a crash.
+"
 E
 "crank"
 "The thick crank is attached to a massive pine pole that supports the gate. 
-
-It looks like if you turn it, it might open the gate.
-
-"
+It looks like if you turn it, it might open the gate.
+"
 A
 "turn"
 "crank"
 "if( is_open( room, east ) )
-
-  act_tochar( #already, ch );
-
-else {
-
-  act_tochar( #turn, ch );
-
-  act_notchar( #rturn, ch );
-
-  send_to_room( #opens, room );
-
-  open( room, east );
-
-  send_to_room( #ropens, find_room( 63531 ) );
-
-  }
-
-"
+  act_tochar( #already, ch );
+else {
+  act_tochar( #turn, ch );
+  act_notchar( #rturn, ch );
+  send_to_room( #opens, room );
+  open( room, east );
+  send_to_room( #ropens, find_room( 63531 ) );
+  }
+"
 E
 "already"
 "The gate is already open!!
-
-"
+"
 E
 "turn"
 "Straining with all your muscles, you turn the massive crank.
-
-"
+"
 E
 "rturn"
 "$n strains, turning the massive crank next to the gates.
-
-"
+"
 E
 "ropens"
 "The massive inner gates to the west swing open.
-
-"
+"
 E
 "opens"
 "The massive inner gates to the east swing open.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "wait( 1 );
-
-if( is_open( room, east ) ) {
-
-  close( room, east );
-
-  send_to_room( #closes, room );
-
-  send_to_room( #rcloses, find_room( 63531 ) );
-
-  }
-
-"
+if( is_open( room, east ) ) {
+  close( room, east );
+  send_to_room( #closes, room );
+  send_to_room( #rcloses, find_room( 63531 ) );
+  }
+"
 E
 "closes"
 "The massive inner gates to the east swing shut.
-
-"
+"
 E
 "rcloses"
 "The massive inner gates to the west swing shut.
-
-"
+"
 !
 1 0 2
 A
 "pull"
 "lever"
 "if( is_open( room, east ) ) {
-
-  send_to_room( #closes, room );
-
-  close( room, east );
-
-  send_to_room( #closes, find_room( 63531 ) );
-
-  end;
-
-  }
-
-act_tochar( #already, ch );
-
-"
+  send_to_room( #closes, room );
+  close( room, east );
+  send_to_room( #closes, find_room( 63531 ) );
+  end;
+  }
+act_tochar( #already, ch );
+"
 E
 "already"
 "The gate is already closed, so nothing happens.
-
-"
+"
 E
 "closes"
 "The gate slams shut with a crash!
-
-"
+"
 !
 0 0 0
 1425 9 1509949540 3 0
@@ -2171,16 +1670,11 @@ S
 #63527
 "North Barracks"
 "Ten worn and dirty sleeping cots are scattered about the room.  The hard
-
-packed dirt floor is covered in straw, keeping down the dust.  The wooden
-
-slats that make up the walls are scarred and covered in soot.  A large
-
-open doorway leads south, while an open trapdoor leads up a short set of
-
-stairs.
-
-"
+packed dirt floor is covered in straw, keeping down the dust.  The wooden
+slats that make up the walls are scarred and covered in soot.  A large
+open doorway leads south, while an open trapdoor leads up a short set of
+stairs.
+"
 ""
 301465669 0
 0 5 0
@@ -2195,28 +1689,22 @@ D4
 E
 "cot"
 "The large cots are big enough for an orc.  They are built out of a thick
-
-deerskin stretched over thick wooden poles.
-
-"
+deerskin stretched over thick wooden poles.
+"
 A
 "search"
 "cots"
 "act_tochar( #search, ch );
-
-act_notchar( #rmsearch, ch );
-
-"
+act_notchar( #rmsearch, ch );
+"
 E
 "search"
 "@GYou search the cots, but don't find anything.@n
-
-"
+"
 E
 "rmsearch"
 "@G$n searches the cots but finds nothing.@n
-
-"
+"
 !
 0 0 0
 1078 41 1509949540 3 0
@@ -2229,16 +1717,11 @@ S
 #63528
 "Second Floor North Barracks"
 "The second floor is even more squalid than the first.  Thick piles of
-
-straw cover the wooden floor, and the stench from below is magnified by
-
-the heat in here.  The air is almost unbreathable, the thick and musty
-
-smell of stale sweat almost drips from the walls.  Ten cots are lined
-
-along the wooden walls of the room.
-
-"
+straw cover the wooden floor, and the stench from below is magnified by
+the heat in here.  The air is almost unbreathable, the thick and musty
+smell of stale sweat almost drips from the walls.  Ten cots are lined
+along the wooden walls of the room.
+"
 ""
 301465669 0
 0 5 0
@@ -2249,28 +1732,22 @@ D5
 E
 "cots"
 "The large cots are big enough for an orc.  They are built out of a thick
-
-deerskin stretched over thick wooden poles.
-
-"
+deerskin stretched over thick wooden poles.
+"
 A
 "search"
 "cots"
 "act_tochar( #search, ch );
-
-act_notchar( #rmsearch, ch );
-
-"
+act_notchar( #rmsearch, ch );
+"
 E
 "search"
 "@GYou rummage around and underneath the cots, but don't find anything.@n
-
-"
+"
 E
 "rmsearch"
 "@G$n rummages about the cots, but comes up empty handed.@n
-
-"
+"
 !
 0 0 0
 1078 41 1509949540 3 0
@@ -2283,14 +1760,10 @@ S
 #63529
 "South Barracks"
 "Straw is strewn about the floor here, and ten worn sleeping cots are scattered
-
-about.  The air is thick and musty, smelling of orc sweat.  The ceiling is not
-
-that high, reaching just over eight feet tall, and a small wooden staircase
-
-leads up.  The doorway to the north leads outside.
-
-"
+about.  The air is thick and musty, smelling of orc sweat.  The ceiling is not
+that high, reaching just over eight feet tall, and a small wooden staircase
+leads up.  The doorway to the north leads outside.
+"
 ""
 301465669 0
 0 5 0
@@ -2306,20 +1779,16 @@ A
 "search"
 "cots beds"
 "act_tochar( #search, ch );
-
-act_notchar( #rmsearch, ch );
-
-"
+act_notchar( #rmsearch, ch );
+"
 E
 "search"
 "@GYou search the cots but find nothing of interest.@n
-
-"
+"
 E
 "rmsearch"
 "@G$n searches the cots, but comes up empty handed.@n
-
-"
+"
 !
 0 0 0
 1078 41 1509949540 3 0
@@ -2332,16 +1801,11 @@ S
 #63530
 "Barracks"
 "Ten dingy cots are spread haphazardly round the room.  Warped boards make up
-
-the floor, walls and ceiling of this room.  An open trapdoor leads down to the
-
-first floor, and a good amount of straw is spread about the floor.  The air is
-
-stale, baked by the pounding sun during the day, and trapped by the poor
-
-ventilation of the room.
-
-"
+the floor, walls and ceiling of this room.  An open trapdoor leads down to the
+first floor, and a good amount of straw is spread about the floor.  The air is
+stale, baked by the pounding sun during the day, and trapped by the poor
+ventilation of the room.
+"
 ""
 301465669 0
 0 5 0
@@ -2352,10 +1816,8 @@ D5
 E
 "cots"
 "The cots are made of deerskin stretched over thick wooden poles.  They
-
-are sturdy enough to hold the weight of an orc.
-
-"
+are sturdy enough to hold the weight of an orc.
+"
 1078 41 1509949540 3 0
 1078 73 1509949540 3 0
 1746 41 1509949540 3 0
@@ -2366,27 +1828,17 @@ S
 #63531
 "Between the Gates"
 "Gravel is spread about here to aid in walking on the muddy ground.  To the
-
-east and west massive gates built from stripped pine trees are set into the
-
-shale walls.  A tower rises high above you to the north, and a large iron door
-
-provides entrance to it.  This area is obviously intended to trap those
-
-storming the outpost.  A large crank is fixed near the east gate, with a thick
-
-chain looping high over a pulley and attached to the top of the gate.  There
-
-is also a heavy lever beside the crank, most likely a release which closes the
-
-gates in rapid fashion.
-
-"
+east and west massive gates built from stripped pine trees are set into the
+shale walls.  A tower rises high above you to the north, and a large iron door
+provides entrance to it.  This area is obviously intended to trap those
+storming the outpost.  A large crank is fixed near the east gate, with a thick
+chain looping high over a pulley and attached to the top of the gate.  There
+is also a heavy lever beside the crank, most likely a release which closes the
+gates in rapid fashion.
+"
 "[Nereus] Fixed the gates to match the guards' reactions
-
-[Nereus] Fix this again when reputations actually work better.
-
-"
+[Nereus] Fix this again when reputations actually work better.
+"
 301465665 0
 12 9 0
 D0
@@ -2404,541 +1856,355 @@ D3
 E
 "massive gates pine"
 "Each set of gates consists of two (roughly) equally-sized halves, which
-
-swing open and shut on great iron hinges.  They are operated by a complex
-
-system of pulleys and counterweights, a marvel of engineering.
-
-"
+swing open and shut on great iron hinges.  They are operated by a complex
+system of pulleys and counterweights, a marvel of engineering.
+"
 E
 "lever"
 "The lever releases a large counterweight which pulls the gates closed
-
-with a crash.
-
-"
+with a crash.
+"
 A
 "knock bang pound"
 "n north iron portcullis tower"
 "act_tochar( #bang, ch );
-
-act_notchar( #rbang, ch );
-
-if( is_open( room, east ) )
-
-  act_tochar( #mutter, ch );
-
-else {
-
-  i = reputation( ch, azak );
-
-  if( i > -49 ) {
-
-    act_tochar( #yup, ch );
-
-    open( room, east );
-
-    send_to_room( #opens, room );
-
-    send_to_room( #ropens, find_room( 63534 ) );
-
-    }
-
-  else {
-
-    mob = mob_in_room( 1398, find_room( 63533 ) );
-
-    if( mob ) {
-
-      act_tochar( #pepper, ch );
-
-      i = 2d10+10;
-
-      dam_message( ch, i, \"the volley of crossbow bolts\" );
-
-      inflict( ch, mob, i, \"death by crossbow\" );
-
-      }
-
-    if( find_stat( ch, level ) > 30 ) {
-
-      act_tochar( #big, ch );
-
-      mload( 1425, room );
-
-      mload( 1398, room );
-
-      }
-
-    else
-
-      act_tochar( #laugh, ch );
-
-    mload( 1078, room );
-
-    mob = mload( 1078, room );
-
-    attack_weapon( mob, ch, 3d4+4, \"heavy backhand\" );
-
-    interpret( mob, \"bash\" );
-
-    }
-
-  }
-
-"
+act_notchar( #rbang, ch );
+if( is_open( room, east ) )
+  act_tochar( #mutter, ch );
+else {
+  i = reputation( ch, azak );
+  if( i > -49 ) {
+    act_tochar( #yup, ch );
+    open( room, east );
+    send_to_room( #opens, room );
+    send_to_room( #ropens, find_room( 63534 ) );
+    }
+  else {
+    mob = mob_in_room( 1398, find_room( 63533 ) );
+    if( mob ) {
+      act_tochar( #pepper, ch );
+      i = 2d10+10;
+      dam_message( ch, i, \"the volley of crossbow bolts\" );
+      inflict( ch, mob, i, \"death by crossbow\" );
+      }
+    if( find_stat( ch, level ) > 30 ) {
+      act_tochar( #big, ch );
+      mload( 1425, room );
+      mload( 1398, room );
+      }
+    else
+      act_tochar( #laugh, ch );
+    mload( 1078, room );
+    mob = mload( 1078, room );
+    attack_weapon( mob, ch, 3d4+4, \"heavy backhand\" );
+    interpret( mob, \"bash\" );
+    }
+  }
+"
 E
 "non_mil"
 "A large, gruff orc peers at you through a peephole.  \"Military personnel
-
-ONLY.\"
-
-"
+ONLY.\"
+"
 E
 "bang"
 "You pound loudly on the tower's iron door.
-
-"
+"
 E
 "rbang"
 "$n pounds loudly on the iron door to the north.
-
-"
+"
 E
 "mutter"
 "An orc grunt squints at you from behind the tower door.  @b\"NAR! The outer
-
-gate is open already.\"@n With that he mutters off.
-
-"
+gate is open already.\"@n With that he mutters off.
+"
 E
 "opens"
 "The massive outer gates to the east swing open.
-
-"
+"
 E
 "ropens"
 "The massive outer gates of Brithbarad swing open.
-
-"
+"
 E
 "yup"
 "An orc grunt squints at you from inside the tower, then begins turning a
-
-massive crank.
-
-"
+massive crank.
+"
 E
 "pepper"
 "You are peppered by a volley of crossbow bolts from the tower!
-
-"
+"
 E
 "laugh"
 "You hear laughter and orcish profanity from the tower.  A pair of orc grunts
-
-arrive to deal with you.
-
-"
+arrive to deal with you.
+"
 E
 "big"
 "The heavy clomp of booted feet approaches as the powerful orcs of
-
-Brithbarad prepare to deal with your intrusion.
-
-"
+Brithbarad prepare to deal with your intrusion.
+"
 !
 0 0 0
 A
 "turn"
 "crank"
 "if( is_open( room, east ) )
-
-  act_tochar( #already, ch );
-
-else {
-
-  i = find_stat( ch, str );
-
-  if( i > 18 ) {
-
-    act_tochar( #turn, ch );
-
-    open( room, east );
-
-    send_to_room( #room, room );
-
-    send_to_room( #rroom, find_room( 63534 ) );
-
-    }
-
-  else
-
-    act_tochar( #else, ch );
-
-  }
-
-"
+  act_tochar( #already, ch );
+else {
+  i = find_stat( ch, str );
+  if( i > 18 ) {
+    act_tochar( #turn, ch );
+    open( room, east );
+    send_to_room( #room, room );
+    send_to_room( #rroom, find_room( 63534 ) );
+    }
+  else
+    act_tochar( #else, ch );
+  }
+"
 E
 "already"
 "The east gate is already open.
-
-"
+"
 E
 "turn"
 "Muscles straining, you turn the crank.
-
-"
+"
 E
 "rroom"
 "The massive gate of stripped pine to the west is slowly raised from within.
-
-"
+"
 E
 "room"
 "The massive gate of stripped pine to the east slowly raises.
-
-"
+"
 E
 "else"
 "You try your strength at the crank, but cannot seem to budge it.
-
-Maybe you should knock on the tower door to the north.
-
-"
+Maybe you should knock on the tower door to the north.
+"
 !
 0 0 0
 A
 "knock bang pound"
 "w west inner gate"
 "if( is_open( room, west ) ) {
-
-  act_tochar( #already, ch );
-
-  end;
-
-  }
-
-act_tochar( #bang, ch );
-
-act_notchar( #rbang, ch );
-
-j = 1;
-
-i = reputation( ch, azak );
-
-if( i < 0 )
-
-  j = 0;
-
-if( i < 50 ) {
-
-  j = 3;
-
-  }
-
-if( i > 200 )
-
-  j = 2;
-
-if( j == 2 || j == 1 ) {
-
-  if( race( ch ) == elf )
-
-    j = 3;
-
-  if( race( ch ) == dwarf || race( ch ) == halfling || race( ch ) == ent || race( ch ) == lizardman )
-
-    j = 0;
-
-  }
-
-if( j == 2 ) {
-
-  act_tochar( #friend, ch );
-
-  send_to_room( #opens, room );
-
-  send_to_room( #ropens, find_room( 63526 ) );
-
-  open( room, west );
-
-  }
-
-if( j == 1 ) {
-
-  act_tochar( #care, ch );
-
-  send_to_room( #opens, room );
-
-  send_to_room( #ropens, find_room( 63526 ) );
-
-  open( room, west );
-
-  }
-
-if( j == 0 ) {
-
-  act_tochar( #away, ch );
-
-  if( !is_open( room, east ) ) {
-
-    open( room, east );
-
-    send_to_room( #east, room );
-
-    send_to_room( #reast, find_room( 63534 ) );
-
-    }
-
-  }
-
-if( j == 3 ) {
-
-  act_tochar( #death, ch );
-
-  if( is_open( room, east ) ) {
-
-    close( room, east );
-
-    send_to_room( #slam, room );
-
-    send_to_room( #rslam, find_room( 63534 ) );
-
-    send_to_room( #grunts, room );
-
-    mload( 1078, room );
-
-    mload( 1078, room );
-
-    }
-
-  }
-
-"
+  act_tochar( #already, ch );
+  end;
+  }
+act_tochar( #bang, ch );
+act_notchar( #rbang, ch );
+j = 1;
+i = reputation( ch, azak );
+if( i < 0 )
+  j = 0;
+if( i < 50 ) {
+  j = 3;
+  }
+if( i > 200 )
+  j = 2;
+if( j == 2 || j == 1 ) {
+  if( race( ch ) == elf )
+    j = 3;
+  if( race( ch ) == dwarf || race( ch ) == halfling || race( ch ) == ent || race( ch ) == lizardman )
+    j = 0;
+  }
+if( j == 2 ) {
+  act_tochar( #friend, ch );
+  send_to_room( #opens, room );
+  send_to_room( #ropens, find_room( 63526 ) );
+  open( room, west );
+  }
+if( j == 1 ) {
+  act_tochar( #care, ch );
+  send_to_room( #opens, room );
+  send_to_room( #ropens, find_room( 63526 ) );
+  open( room, west );
+  }
+if( j == 0 ) {
+  act_tochar( #away, ch );
+  if( !is_open( room, east ) ) {
+    open( room, east );
+    send_to_room( #east, room );
+    send_to_room( #reast, find_room( 63534 ) );
+    }
+  }
+if( j == 3 ) {
+  act_tochar( #death, ch );
+  if( is_open( room, east ) ) {
+    close( room, east );
+    send_to_room( #slam, room );
+    send_to_room( #rslam, find_room( 63534 ) );
+    send_to_room( #grunts, room );
+    mload( 1078, room );
+    mload( 1078, room );
+    }
+  }
+"
 E
 "already"
 "The inner gate is already open!
-
-"
+"
 E
 "bang"
 "You bang as loud as you can on the solid pine of the inner gates.
-
-"
+"
 E
 "rbang"
 "$n bangs loudly on the inner gates.
-
-"
+"
 E
 "friend"
 "An orc grunt squints at you from the guard tower.  @b\"Mes can see yous is
-
-orc-friend.  Yous go inside.\"@n 
-
-"
+orc-friend.  Yous go inside.\"@n 
+"
 E
 "opens"
 "The massive inner gates of solid pine to the west swing open.
-
-"
+"
 E
 "ropens"
 "The massive inner gates of solid pine to the east swing open.
-
-"
+"
 E
 "care"
 "An orc grunt squints at you from the guard tower.  @b\"Mes can see yous is
-
-not orc-friend, but yous not orc-enemy neithers.  Yous can gos inside,
-
-but watch yer step!\"@n
-
-"
+not orc-friend, but yous not orc-enemy neithers.  Yous can gos inside,
+but watch yer step!\"@n
+"
 E
 "away"
 "An orc grunt squints at you from the guard tower.  @b\"Mes can see yous is not
-
-orc-friend!  Yous GO AWAY!\"@n
-
-"
+orc-friend!  Yous GO AWAY!\"@n
+"
 E
 "east"
 "The massive outer gates to the east swing open.
-
-"
+"
 E
 "reast"
 "The massive outer gates to the west swing open.
-
-"
+"
 E
 "slam"
 "The massive gates to the east swing shut with a crash.
-
-"
+"
 E
 "rslam"
 "The massive outer gates to the west swing shut with a crash.
-
-"
+"
 E
 "death"
 "An orc grunt squints at you from the guard tower.  @b\"Yous is orc-enemy!  Now
-
-yous die!\"@n
-
-"
+yous die!\"@n
+"
 E
 "grunts"
 "@RA pair of orc grunts arrive, grinning evilly.@n
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "wait( 1 );
-
-if( is_open( room, west ) ) {
-
-  close( room, west );
-
-  send_to_room( #closes, room );
-
-  send_to_room( #rcloses, find_room( 63526 ) );
-
-  }
-
-"
+if( is_open( room, west ) ) {
+  close( room, west );
+  send_to_room( #closes, room );
+  send_to_room( #rcloses, find_room( 63526 ) );
+  }
+"
 E
 "closes"
 "The massive inner gates to the west swing shut.
-
-"
+"
 E
 "rcloses"
 "The massive inner gates to the east swing shut.
-
-"
+"
 !
 1 0 8
 A
 ""
 ""
 "i = reputation( ch, azak );
-
-if( i < -49 ) {
-
-  if( is_open( room, west ) ) {
-
-    close( room, west );
-
-    send_to_room( #closes, room );
-
-    send_to_room( #rcloses, find_room( 63526 ) );
-
-    }
-
-  }
-
-"
+if( i < -49 ) {
+  if( is_open( room, west ) ) {
+    close( room, west );
+    send_to_room( #closes, room );
+    send_to_room( #rcloses, find_room( 63526 ) );
+    }
+  }
+"
 E
 "closes"
 "The massive inner gates to the west swing shut.
-
-"
+"
 E
 "rcloses"
 "The massive inner gates to the east swing closed.
-
-"
+"
 !
 1 0 2
 A
 "pull"
 "lever"
 "if( !is_open( room, east ) )
-
-  act_tochar( #already, ch );
-
-else {
-
-  act_tochar( #pull, ch );
-
-  act_notchar( #rpull, ch );
-
-  close( room, east );
-
-  send_to_room( #closes, find_room( 63534 ) );
-
-  }
-
-"
+  act_tochar( #already, ch );
+else {
+  act_tochar( #pull, ch );
+  act_notchar( #rpull, ch );
+  close( room, east );
+  send_to_room( #closes, find_room( 63534 ) );
+  }
+"
 E
 "already"
 "The gate is already closed.
-
-"
+"
 E
 "pull"
 "You pull the heavy lever, and the outer gates swing shut with a crash.
-
-"
+"
 E
 "rpull"
 "$n pulls the heavy lever, and the outer gates swing shut with a crash.
-
-"
+"
 E
 "closes"
 "The outer gate of Brithbarad swings shut with a crash.
-
-"
+"
 !
 0 0 0
 A
 "knock"
 ""
 "act_tochar( #knock, ch );
-
-"
+"
 E
 "knock"
 "Specify what you knock on.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "send_to_room( \"The orc crossbowmen in the watchtower glare down at you.\", room );
-
-loop( all_in_room ) {
-
-  i = reputation( rch, azak );
-
-  if( i < -50 ) {
-
-    act_tochar( \"The crossbowmen fire a volley at you!\", rch );
-
-    act_notchar( \"The crossbowmen fire a volley at $n!\", rch );
-
-    j = 4d3+12;
-
-    dam_message( rch, j, \"The volley of quarrels\" );
-
-    inflict( rch, rch, j, \"orc crossbowmen\" );
-
-    }
-
-  }
-
-"
+loop( all_in_room ) {
+  i = reputation( rch, azak );
+  if( i < -50 ) {
+    act_tochar( \"The crossbowmen fire a volley at you!\", rch );
+    act_notchar( \"The crossbowmen fire a volley at $n!\", rch );
+    j = 4d3+12;
+    dam_message( rch, j, \"The volley of quarrels\" );
+    inflict( rch, rch, j, \"orc crossbowmen\" );
+    }
+  }
+"
 !
 2 5000 0
 -1
@@ -2947,18 +2213,12 @@ S
 #63532
 "Base of the Tower"
 "The dust covered shale walls rise high above your head.  Through the
-
-cobwebs and hazy air, you can see a wooden roof high above your head.  A
-
-heavy iron gate provides exit south, while a trapdoor high above your
-
-head allows exit to the roof.  The floor is hard packed dirt; the
-
-imprints of many heavily booted feet cover its surface.  A rickety wooden
-
-ladder leads up towards the trapdoor.
-
-"
+cobwebs and hazy air, you can see a wooden roof high above your head.  A
+heavy iron gate provides exit south, while a trapdoor high above your
+head allows exit to the roof.  The floor is hard packed dirt; the
+imprints of many heavily booted feet cover its surface.  A rickety wooden
+ladder leads up towards the trapdoor.
+"
 ""
 301465669 0
 0 5 0
@@ -2973,26 +2233,21 @@ D4
 E
 "ladder"
 "Although it appears rickety, the ladder is quite sturdy when you examine
-
-it closer.
-
-"
+it closer.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@GThe ladder creaks as you $t up.@n
-
-"
+"
 E
 "to_room"
 "@GThe ladder creaks as $n $t up.@n
-
-"
+"
 !
 3 0 16
 1425 137 1509949540 3 0
@@ -3005,20 +2260,13 @@ S
 #63533
 "Roof of the Tower "
 "Rough cut pine planks make the floor here, and creak as you walk.  A
-
-trapdoor leads down.  The crenelated walls come about to chest height of
-
-the orc warriors, providing them wonderful protection from below.  The
-
-air is choked by black soot coming from down below and to the west.  A
-
-glowing torchiere of iron contains a fire that illuminates the area. 
-
-Looking out from the walls you can see the Black Hills and the open
-
-plains below.
-
-"
+trapdoor leads down.  The crenelated walls come about to chest height of
+the orc warriors, providing them wonderful protection from below.  The
+air is choked by black soot coming from down below and to the west.  A
+glowing torchiere of iron contains a fire that illuminates the area. 
+Looking out from the walls you can see the Black Hills and the open
+plains below.
+"
 ""
 301465665 0
 0 5 0
@@ -3030,18 +2278,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@GYou lower yourself into the trapdoor and begin climbing down.@n
-
-"
+"
 E
 "to_room"
 "@G$n lowers $mself into the trapdoor and begins climbing down.@n
-
-"
+"
 !
 3 0 32
 1398 9 1509949540 3 0
@@ -3054,25 +2299,16 @@ S
 #63534
 "At the Gates"
 "Looming to the west of you are the impressive gates of the orc outpost,
-
-Brithbarad.  To the immediate north of the gates rises a tall tower built of
-
-stacked shale, and guards can be seen scanning the countryside for
-
-interlopers.  The muddy ground is covered in gravel, and crunches beneath your
-
-feet.  A dark cloud of soot hangs in the air, making breathing difficult.  To
-
-the north and south, the tall grass of the Western Plains approach the walls
-
-of the city.
-
-"
+Brithbarad.  To the immediate north of the gates rises a tall tower built of
+stacked shale, and guards can be seen scanning the countryside for
+interlopers.  The muddy ground is covered in gravel, and crunches beneath your
+feet.  A dark cloud of soot hangs in the air, making breathing difficult.  To
+the north and south, the tall grass of the Western Plains approach the walls
+of the city.
+"
 "no.mob
-
-[Phule] DURN IT FOR THE LAST TIME OUTER GATES DO NOT RESET CLOSED
-
-"
+[Phule] DURN IT FOR THE LAST TIME OUTER GATES DO NOT RESET CLOSED
+"
 301465609 0
 12 9 0
 D0
@@ -3094,126 +2330,86 @@ D3
 E
 "gates"
 "Made of massive stripped pines, the gates look very sturdy.
-
-"
+"
 E
 "tower guards"
 "From the watchpost at the top of the tower, a view of the surrounding
-
-hills can be seen.  A few orcs stand watching you, cradling large
-
-crossbows.
-
-"
+hills can be seen.  A few orcs stand watching you, cradling large
+crossbows.
+"
 A
 "knock pound bang"
 "outer gates west w"
 "if( is_open( room, west ) ) {
-
-  act_tochar( #already, ch );
-
-  end;
-
-  }
-
-act_tochar( #pound, ch );
-
-act_notchar( #rpound, ch );
-
-i = reputation( ch, azak );
-
-if( i > 0 ) {
-
-  send_to_room( #opens, room );
-
-  send_to_room( #ropens, find_room( 63531 ) );
-
-  open( room, west );
-
-  }
-
-else {
-
-  mob = mob_in_room( 1398, find_room( 63533 ) );
-
-  if( mob ) {
-
-    act_tochar( #yell, ch );
-
-    act_tochar( #pepper, ch );
-
-    i = 2d10+10;
-
-    dam_message( ch, i, \"the volley of crossbow bolts\" );
-
-    inflict( ch, mob, i, \"death by crossbow\" );
-
-    }
-
-  else
-
-    act_tochar( #away, ch );
-
-  }
-
-"
+  act_tochar( #already, ch );
+  end;
+  }
+act_tochar( #pound, ch );
+act_notchar( #rpound, ch );
+i = reputation( ch, azak );
+if( i > 0 ) {
+  send_to_room( #opens, room );
+  send_to_room( #ropens, find_room( 63531 ) );
+  open( room, west );
+  }
+else {
+  mob = mob_in_room( 1398, find_room( 63533 ) );
+  if( mob ) {
+    act_tochar( #yell, ch );
+    act_tochar( #pepper, ch );
+    i = 2d10+10;
+    dam_message( ch, i, \"the volley of crossbow bolts\" );
+    inflict( ch, mob, i, \"death by crossbow\" );
+    }
+  else
+    act_tochar( #away, ch );
+  }
+"
 E
 "already"
 "The outer gates are already open!
-
-"
+"
 E
 "pound"
 "You pound heavily on the outer gates.
-
-"
+"
 E
 "rpound"
 "$n pounds heavily on the outer gates.
-
-"
+"
 E
 "opens"
 "The massive outer gates swing open.
-
-"
+"
 E
 "ropens"
 "The massive outer gates to the east swing open.
-
-"
+"
 E
 "pepper"
 "You are peppered by a volley of crossbows from the tower!!
-
-"
+"
 E
 "away"
 "You hear laughter and orcish profanities from the guard tower.  The gates
-
-do not open.
-
-"
+do not open.
+"
 E
 "yell"
 "You hear a guttural laugh as the orcs in the tower yell, \"Go away fool!\"
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "act_tochar( #inside, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "inside"
 "You step inside the outer gates.
-
-"
+"
 !
 3 0 8
 -1
@@ -3222,21 +2418,14 @@ S
 #63535
 "South End of the Armor Pit"
 "The air is filled with choking ash, and the clanging sounds of metal on metal
-
-surround you incessantly.  A small ladder leads up and out of the pit.  A
-
-large forge, glowing with coals dominates the large chamber to the north.  The
-
-dirt floor is covered in ash and scrap metal.
-
-"
+surround you incessantly.  A small ladder leads up and out of the pit.  A
+large forge, glowing with coals dominates the large chamber to the north.  The
+dirt floor is covered in ash and scrap metal.
+"
 "plates/links Anar
-
-made this nomob.... keep grunts out
-
-[Nereus] What ass made this no.mob?
-
-"
+made this nomob.... keep grunts out
+[Nereus] What ass made this no.mob?
+"
 301469767 0
 0 5 0
 D0
@@ -3259,36 +2448,30 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@YYou skirt close by the hot forge as you $t north.@n
-
-"
+"
 E
 "to_room"
 "@Y$n skirts by the hot forge as he $t north.@n
-
-"
+"
 !
 3 0 1
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@GYou walk to the ladder and begin to climb up.@n
-
-"
+"
 E
 "to_room"
 "@G$n climbs up the ladder.@n
-
-"
+"
 !
 3 0 16
 1430 9 1509949540 3 0
@@ -3298,17 +2481,12 @@ S
 #63536
 "Southwest Corner of the Armor Pit"
 "The dirt floor soaks up the heat and throws it back to you in a choking
-
-wave.  A large anvil used in the making of armor sits on the floor.  To
-
-the west you see a ladder leading up and out of the pit.  To the
-
-northeast is a blasting forge sending out waves of heat.
-
-"
+wave.  A large anvil used in the making of armor sits on the floor.  To
+the west you see a ladder leading up and out of the pit.  To the
+northeast is a blasting forge sending out waves of heat.
+"
 "arm
-
-"
+"
 301469765 0
 0 5 0
 D0
@@ -3327,17 +2505,12 @@ S
 #63537
 "Southeast Corner of the Armor Pit"
 "The large furnace belches forth sparks and heat that makes it quite hot
-
-and smothering here, despite the distance from the forge.  The blackened
-
-dirt of the floor is hardpacked and covered in scraps of metal.  To the
-
-west you see a small ladder that leads out of the pit.
-
-"
+and smothering here, despite the distance from the forge.  The blackened
+dirt of the floor is hardpacked and covered in scraps of metal.  To the
+west you see a small ladder that leads out of the pit.
+"
 "rivit man
-
-"
+"
 301469765 0
 0 5 0
 D0
@@ -3356,19 +2529,13 @@ S
 #63538
 "Northeast End of the Armor Pit"
 "This dark corner of the pit is filled with metal forms and a large anvil.
-
-Several half-built helms rest on pegs on the brick wall to the east.  To
-
-the southwest the forge rages, sparks and smoke belching from it in great
-
-gouts.  A small table with several different hammers sits against the
-
-north wall.
-
-"
+Several half-built helms rest on pegs on the brick wall to the east.  To
+the southwest the forge rages, sparks and smoke belching from it in great
+gouts.  A small table with several different hammers sits against the
+north wall.
+"
 "add ask for helm
-
-"
+"
 301469765 0
 0 5 0
 D2
@@ -3382,19 +2549,14 @@ D3
 E
 "hammers table"
 "On a well-worn wooden table several different types of hammers rest.  The
-
-hammers are almost exclusively ball-peen hammers of various weights.
-
-"
+hammers are almost exclusively ball-peen hammers of various weights.
+"
 E
 "helms"
 "The unfinished helms are in varying states of completion.  There are
-
-several empty pegs along the wall, as well as those that the helms hang
-
-on.
-
-"
+several empty pegs along the wall, as well as those that the helms hang
+on.
+"
 2504 17 1509949540 -2 0
 1765 9 1509949540 3 0
 -1
@@ -3403,12 +2565,9 @@ S
 #63539
 "North End of the Armor Pit"
 "The heat from the central forge burns your lungs and the smoke obscures your
-
-vision.  Heavy wooden poles support chains from which hang thick metal
-
-sheets.  A thick anvil provides a space to curve the metal plates into armor.
-
-"
+vision.  Heavy wooden poles support chains from which hang thick metal
+sheets.  A thick anvil provides a space to curve the metal plates into armor.
+"
 ""
 301469767 0
 0 5 0
@@ -3431,26 +2590,21 @@ D3
 E
 "poles"
 "Thick wooden poles provide support for the heavy plates that this
-
-armorer pounds into the curved plates that make up armor.
-
-"
+armorer pounds into the curved plates that make up armor.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@YYou skirt by the hot forge as you $t south.@n
-
-"
+"
 E
 "to_room"
 "@Y$n skirts past the hot forge as $e $t south.@n
-
-"
+"
 !
 3 0 4
 2504 17 1509949540 -2 0
@@ -3461,19 +2615,13 @@ S
 #63540
 "Northwest Corner of the Armor Pit"
 "Waves of heat pour from the forge to the southeast, making the air
-
-shimmer in front of your eyes.  Thick spools of wire rest on a table
-
-here, material to be made into chain links.  A heavy anvil provides space
-
-for the links to be hammered together.  The floor is littered with bent
-
-and damaged links.
-
-"
+shimmer in front of your eyes.  Thick spools of wire rest on a table
+here, material to be made into chain links.  A heavy anvil provides space
+for the links to be hammered together.  The floor is littered with bent
+and damaged links.
+"
 "chest protection
-
-"
+"
 301469765 0
 0 5 0
 D1
@@ -3492,19 +2640,13 @@ S
 #63541
 "Back of the Armor Pit"
 "Set into a large alcove, this area is filled with armorsmithing materials.
-
-Large sheets of metal sit stacked against the wall, while a large anvil
-
-commands attention in the center of the room.  A smaller forge is set
-
-against the west wall, glowing with a deep heat that assaults you.
-
-"
+Large sheets of metal sit stacked against the wall, while a large anvil
+commands attention in the center of the room.  A smaller forge is set
+against the west wall, glowing with a deep heat that assaults you.
+"
 "WILL make orc custom armor
-
-[Nereus] we should make some evil sweet darkie armor here
-
-"
+[Nereus] we should make some evil sweet darkie armor here
+"
 301465671 0
 0 5 0
 D2
@@ -3514,17 +2656,13 @@ D2
 E
 "forge"
 "This smaller forge has been set up for the smith to form ingots into
-
-plates.  The glowing anthracite and coal put out incredible heat, as well
-
-as a thick black smoke.
-
-"
+plates.  The glowing anthracite and coal put out incredible heat, as well
+as a thick black smoke.
+"
 E
 "plates"
 "Thick iron, bronze and steel plates sit against the wall.
-
-"
+"
 2504 17 1509949540 -2 0
 1770 9 1509949540 3 0
 -1

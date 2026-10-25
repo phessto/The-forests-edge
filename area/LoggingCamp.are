@@ -10,19 +10,13 @@
 #11000
 "Woodland Path"
 "The trees on either side to the west and east show definite signs of
-
-depredation.  Someone has hacked some down leaving ragged stumps.  Other
-
-trees, though currently still whole, have gouges in the side from preliminary
-
-axe-blows.  A trail narrows to a small animal trail as it heads south but
-
-quickly shows signs of widening as it moves northward.
-
-"
+depredation.  Someone has hacked some down leaving ragged stumps.  Other
+trees, though currently still whole, have gouges in the side from preliminary
+axe-blows.  A trail narrows to a small animal trail as it heads south but
+quickly shows signs of widening as it moves northward.
+"
 "First room of orc lumber jack zone.  Ent newbie zone.
-
-"
+"
 301465600 0
 24 7 0
 D0
@@ -36,30 +30,21 @@ D2
 E
 "3 stumps"
 "Low to the ground each stump shows signs of the axe work that was done to fell
-
-the tree.  Some of the stumps are small, the trees cleared simply to make
-
-room.  Some are larger and perhaps were used in the building of something.
-
-"
+the tree.  Some of the stumps are small, the trees cleared simply to make
+room.  Some are larger and perhaps were used in the building of something.
+"
 -1
 S
 
 #11001
 "Woodland Path"
 "Trees still form an effective perimeter to the path here but obvious signs of
-
-labored work to clear them is evident.  Ragged stumps dot a newly forged wide
-
-forest trail that shows many deep tracks heading in all directions as if
-
-whoever made them carried heavy loads, perhaps the trees they felled.  To the
-
-east a hastily constructed shack of poor craftsmanship sits nestled amid the
-
-trees.
-
-"
+labored work to clear them is evident.  Ragged stumps dot a newly forged wide
+forest trail that shows many deep tracks heading in all directions as if
+whoever made them carried heavy loads, perhaps the trees they felled.  To the
+east a hastily constructed shack of poor craftsmanship sits nestled amid the
+trees.
+"
 ""
 301465600 0
 24 6 0
@@ -81,20 +66,13 @@ S
 #11002
 "Woodland Path"
 "You are on a wide forest path lined with the low ragged stumps of trees and
-
-underbrush removed all around.  While the path itself runs north and south it
-
-appears someone has begun the work of foraging a new path westward where
-
-additional clear cutting of the forest has begun.  To the east a particularly
-
-large shuvana tree shows a great deal of axe work has been placed into
-
-bringing it down but its massive bole yet stands in spite of the countless
-
-chips and gashes that mar its sides.
-
-"
+underbrush removed all around.  While the path itself runs north and south it
+appears someone has begun the work of foraging a new path westward where
+additional clear cutting of the forest has begun.  To the east a particularly
+large shuvana tree shows a great deal of axe work has been placed into
+bringing it down but its massive bole yet stands in spite of the countless
+chips and gashes that mar its sides.
+"
 ""
 301465600 0
 24 6 0
@@ -116,18 +94,12 @@ S
 #11003
 "Woodland Path"
 "Many of the trees still show signs of only initial depredations with only the
-
-occasional chop mark in them where someone tested the heft of an axe or some
-
-other blade.  A few thin stumps dot the ground showing where smaller trees and
-
-underbrush have already started being cleared so work crews can begin on the
-
-larger trees.  Off to the east, a regular path can be seen leading away north
-
-and south.
-
-"
+occasional chop mark in them where someone tested the heft of an axe or some
+other blade.  A few thin stumps dot the ground showing where smaller trees and
+underbrush have already started being cleared so work crews can begin on the
+larger trees.  Off to the east, a regular path can be seen leading away north
+and south.
+"
 ""
 301465608 0
 3 6 0
@@ -139,42 +111,27 @@ A
 ""
 ""
 "room = find_room( 11003 );
-
-mob = mob_in_room( 2828, room );
-
-i = 0;
-
-loop( all_in_room ) {
-
-  if( num_mob( 2828, room ) )
-
-    i++;
-
-}
-
-if( i == 1 )
-
-send_to_room( #searching, room );
-
-if( i == 2 )
-
-  send_to_room( #hacking, room );
-
-"
+mob = mob_in_room( 2828, room );
+i = 0;
+loop( all_in_room ) {
+  if( num_mob( 2828, room ) )
+    i++;
+}
+if( i == 1 )
+send_to_room( #searching, room );
+if( i == 2 )
+  send_to_room( #hacking, room );
+"
 E
 "searching"
 "A scrawny goblin selects a tree that looks promising and takes a test swing at
-
-it with its axe.
-
-"
+it with its axe.
+"
 E
 "hacking"
 "The scrawny goblins take turns hacking at a particularly nice looking oak
-
-tree, each swing digging a gouge into its fine bark.
-
-"
+tree, each swing digging a gouge into its fine bark.
+"
 !
 2 4000 0
 2828 137 1509949540 3 0
@@ -185,23 +142,15 @@ S
 #11004
 "Poorly Built Shack"
 "The cheaply made walls of this shack almost look too haphazard to hold
-
-together yet somehow they manage to remain standing displaying more strength
-
-in effect than appearance.  A small table in the back of the shack is made
-
-from hastily cut boards laid over two roughly even stumps still rooted in the
-
-ground.  A doorway set in the western wall, slightly askew and without any
-
-door in it, appears to be the only way in or out.
-
-"
+together yet somehow they manage to remain standing displaying more strength
+in effect than appearance.  A small table in the back of the shack is made
+from hastily cut boards laid over two roughly even stumps still rooted in the
+ground.  A doorway set in the western wall, slightly askew and without any
+door in it, appears to be the only way in or out.
+"
 "command on plans to prevent taking needs fixing.
-
-works if plans are on ground but can't check room number for mob.
-
-"
+works if plans are on ground but can't check room number for mob.
+"
 301465604 0
 0 5 0
 D3
@@ -211,62 +160,42 @@ D3
 E
 "2 tables 2 stumps 2 boards"
 "The boards are rough-cut slabs nailed firmly down to two broad stumps.  The
-
-boards show many knife gouges from someone repeatedly stabbing at them and a
-
-few poorly carved letters that don't seem to spell anything in particulary.
-
-The stumps the boards are nailed to are relatively even in height measuring
-
-roughly a foot and a half off the floor.
-
-"
+boards show many knife gouges from someone repeatedly stabbing at them and a
+few poorly carved letters that don't seem to spell anything in particulary.
+The stumps the boards are nailed to are relatively even in height measuring
+roughly a foot and a half off the floor.
+"
 A
 ""
 ""
 "room = find_room( 11004 );
-
-mob = mob_in_room( 2829, room );
-
-if( mob ) {
-
-  if( is_fighting( mob ) )
-
-    end;
-
-  if( has_obj( 4709, has_obj( 4710, room ) ) )
-
-    send_to_room( #plans, room );
-
-  else
-
-    send_to_room( #noplans, room );
-
-}
-
-"
+mob = mob_in_room( 2829, room );
+if( mob ) {
+  if( is_fighting( mob ) )
+    end;
+  if( has_obj( 4709, has_obj( 4710, room ) ) )
+    send_to_room( #plans, room );
+  else
+    send_to_room( #noplans, room );
+}
+"
 E
 "plans"
 "The scrawny goblin scout examines some plans sitting on the crudely made table.
-
-"
+"
 E
 "noplans"
 "The scrawny goblin scout picks at a splinter on the table.
-
-"
+"
 !
 2 4000 0
 A
 "test"
 ""
 "room = get_room( ch );
-
-get_room( ch );
-
-bug( \"test\" );
-
-"
+get_room( ch );
+bug( \"test\" );
+"
 !
 0 0 0
 2829 137 1509949540 3 0
@@ -278,8 +207,7 @@ S
 #11005
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -305,8 +233,7 @@ S
 #11006
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -328,8 +255,7 @@ S
 #11007
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -347,8 +273,7 @@ S
 #11008
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -370,8 +295,7 @@ S
 #11009
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -393,8 +317,7 @@ S
 #11010
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -416,8 +339,7 @@ S
 #11011
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -435,8 +357,7 @@ S
 #11012
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -458,8 +379,7 @@ S
 #11013
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -477,8 +397,7 @@ S
 #11014
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -500,8 +419,7 @@ S
 #11015
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -523,8 +441,7 @@ S
 #11016
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -542,8 +459,7 @@ S
 #11017
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -561,8 +477,7 @@ S
 #11018
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -580,8 +495,7 @@ S
 #11019
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -603,8 +517,7 @@ S
 #11020
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -622,8 +535,7 @@ S
 #11021
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -641,8 +553,7 @@ S
 #11022
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -664,8 +575,7 @@ S
 #11023
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -687,8 +597,7 @@ S
 #11024
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -710,8 +619,7 @@ S
 #11025
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -729,8 +637,7 @@ S
 #11026
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -748,8 +655,7 @@ S
 #11027
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -767,8 +673,7 @@ S
 #11028
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -786,8 +691,7 @@ S
 #11029
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -809,8 +713,7 @@ S
 #11030
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -832,8 +735,7 @@ S
 #11031
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -851,8 +753,7 @@ S
 #11032
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -874,8 +775,7 @@ S
 #11033
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -893,8 +793,7 @@ S
 #11034
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -912,8 +811,7 @@ S
 #11035
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -931,8 +829,7 @@ S
 #11036
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -954,8 +851,7 @@ S
 #11037
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -977,8 +873,7 @@ S
 #11038
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1000,8 +895,7 @@ S
 #11039
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1019,8 +913,7 @@ S
 #11040
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1038,8 +931,7 @@ S
 #11041
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1061,8 +953,7 @@ S
 #11042
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1080,8 +971,7 @@ S
 #11043
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1099,8 +989,7 @@ S
 #11044
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1118,8 +1007,7 @@ S
 #11045
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1137,8 +1025,7 @@ S
 #11046
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1160,8 +1047,7 @@ S
 #11047
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1179,8 +1065,7 @@ S
 #11048
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1198,8 +1083,7 @@ S
 #11049
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1221,8 +1105,7 @@ S
 #11050
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1244,8 +1127,7 @@ S
 #11051
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1263,8 +1145,7 @@ S
 #11052
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1286,8 +1167,7 @@ S
 #11053
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1309,8 +1189,7 @@ S
 #11054
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1328,8 +1207,7 @@ S
 #11055
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1347,8 +1225,7 @@ S
 #11056
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1366,8 +1243,7 @@ S
 #11057
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1385,8 +1261,7 @@ S
 #11058
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1408,8 +1283,7 @@ S
 #11059
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1427,8 +1301,7 @@ S
 #11060
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1446,8 +1319,7 @@ S
 #11061
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1469,8 +1341,7 @@ S
 #11062
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1488,8 +1359,7 @@ S
 #11063
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1507,8 +1377,7 @@ S
 #11064
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1526,8 +1395,7 @@ S
 #11065
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1545,8 +1413,7 @@ S
 #11066
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1568,8 +1435,7 @@ S
 #11067
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1591,8 +1457,7 @@ S
 #11068
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1610,8 +1475,7 @@ S
 #11069
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0
@@ -1629,8 +1493,7 @@ S
 #11070
 "Woodland Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 6 0

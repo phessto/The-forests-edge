@@ -10,27 +10,17 @@
 #88000
 "Walls of Narak"
 "These walls, abandoned by the cityguard, have fallen into neglect. 
-
-Cobwebs litter every corner and cranny, and the scent of death permeates
-
-the air.  It is definitely more chill here between the stone walls than
-
-the desert air outside.  There is a small @blever@n on the south wall
-
-near a portcullis.
-
-"
+Cobwebs litter every corner and cranny, and the scent of death permeates
+the air.  It is definitely more chill here between the stone walls than
+the desert air outside.  There is a small @blever@n on the south wall
+near a portcullis.
+"
 "[Phule] starting room for walls of narak area
-
-extras '__WEAPONS__', '__MOBS__' and '__AREA__'
-
-[Nereus] 7 (area-wide): Is this intentionally set to a pkill zone?
-
--- fixed and have no idea how it got there
-
-[Nereus] default is for pkill so that's why it was like that
-
-"
+extras '__WEAPONS__', '__MOBS__' and '__AREA__'
+[Nereus] 7 (area-wide): Is this intentionally set to a pkill zone?
+-- fixed and have no idea how it got there
+[Nereus] default is for pkill so that's why it was like that
+"
 301465604 0
 0 6 0
 D0
@@ -44,182 +34,122 @@ D2
 E
 "lever"
 "This small grey lever is inset into a small niche beside the portcullis. 
-
-"
+"
 E
 "__MOBS__"
 "mob 771 Rasvaro, an undead dark paladin
-
-mob 774 Bornas, an undead arch-cleric
-
-mob 776 Tnelazu, an ice demon lord
-
-mob 129 Maztlan, an ashy figure in a black robe
-
-mob 983 a dark spectre
-
-mob 987 the Tourmaline Guardian, a Guardian
-
-mob 988 the Crimson Guardian, a Guardian
-
-mob 989 the Jade Adept, a slender woman cloaked in a jade-coloured robe
-
-mob 982 Ghadl Savan, a dark, broad-shouldered wizard
-
-"
+mob 774 Bornas, an undead arch-cleric
+mob 776 Tnelazu, an ice demon lord
+mob 129 Maztlan, an ashy figure in a black robe
+mob 983 a dark spectre
+mob 987 the Tourmaline Guardian, a Guardian
+mob 988 the Crimson Guardian, a Guardian
+mob 989 the Jade Adept, a slender woman cloaked in a jade-coloured robe
+mob 982 Ghadl Savan, a dark, broad-shouldered wizard
+"
 E
 "__AREA__"
 "The area is in 2 stages
 
-
 stage 1: the walls and towers
 
-
 step 1: kill the spectre wandering the walls.  this opens one of the
-
-trapdoors.  as you kill each inhabitant of the towers, the fights get harder,
-
-and the next trapdoor is opened.  Eventually you fight the ice demon in the NE
-
-corner tower, which opens a grate below the tower.  Through that grate you
-
-enter stage 2
-
+trapdoors.  as you kill each inhabitant of the towers, the fights get harder,
+and the next trapdoor is opened.  Eventually you fight the ice demon in the NE
+corner tower, which opens a grate below the tower.  Through that grate you
+enter stage 2
 
 stage 2: the guardians and final battle
 
-
 You fight the tourmaline guardian, crimson guardian, and jade adept to reveal
-
-an astral staircase ascending to a dark wizard's domain.
-
-"
+an astral staircase ascending to a dark wizard's domain.
+"
 E
 "__OBJECTS__"
 "object 820 a two-handed sword 'Wrath'
-
-object 2089 an antiquated mithril helm
-
-object 771 a dagger 'Liche-Tongue'
-
-object 989 a jade-coloured cloak
-
-object 992 a jade pendant
-
-object 1360 a bentwood staff
-
-object 1334 a brown runic cloak
-
-"
+object 2089 an antiquated mithril helm
+object 771 a dagger 'Liche-Tongue'
+object 989 a jade-coloured cloak
+object 992 a jade pendant
+object 1360 a bentwood staff
+object 1334 a brown runic cloak
+"
 E
 "cobweb corner cranny"
 "The cobwebs glisten freshly, the remnants of foolish insects dangling.
-
-"
+"
 A
 "__OPEN_PORT_CODE__"
 ""
 "if( !is_open( find_room( 88000 ), south ) ) {
-
-  send_to_room( #south, find_room( 88000 ) );
-
-  send_to_room( #north, find_room( 36001 ) );
-
-  open( find_room( 88000 ), south );
-
-  wait( 4 );
-
-  acode( find_room( 88000 ), 2 );
-
-  }
-
-"
+  send_to_room( #south, find_room( 88000 ) );
+  send_to_room( #north, find_room( 36001 ) );
+  open( find_room( 88000 ), south );
+  wait( 4 );
+  acode( find_room( 88000 ), 2 );
+  }
+"
 E
 "south"
 "The portcullis to the south opens with a clank and the winding of chains.
-
-"
+"
 E
 "north"
 "The portcullis to the north opens with a clank and the winding of chains.
-
-"
+"
 !
 0 0 0
 A
 "__CLOSE_PORT_CODE__"
 ""
 "if( is_open( find_room( 88000 ), south ) ) {
-
-  send_to_room( #south, find_room( 88000 ) );
-
-  send_to_room( #north, find_room( 36001 ) );
-
-  close( find_room( 88000 ), south );
-
-  }
-
-"
+  send_to_room( #south, find_room( 88000 ) );
+  send_to_room( #north, find_room( 36001 ) );
+  close( find_room( 88000 ), south );
+  }
+"
 E
 "south"
 "The portcullis to the south closes with a *CRASH*.
-
-"
+"
 E
 "north"
 "The portcullis to the north closes with a *CRASH*.
-
-"
+"
 !
 0 0 0
 A
 "pull"
 "lever"
 "if( !is_open( room, south ) ) {
-
-  act_tochar( \"You pull the lever.\", ch );
-
-  act_notchar( \"$n pulls the lever.\", ch );
-
-  acode( room, 1 );
-
-  }
-
-else
-
-  act_tochar( \"The lever has already been pulled.\", ch );
-
-"
+  act_tochar( \"You pull the lever.\", ch );
+  act_notchar( \"$n pulls the lever.\", ch );
+  acode( room, 1 );
+  }
+else
+  act_tochar( \"The lever has already been pulled.\", ch );
+"
 !
 0 0 0
 A
 "push"
 "lever"
 "if( is_open( room, south ) ) {
-
-  act_tochar( \"You push the lever.\", ch );
-
-  act_notchar( \"$n pushes the lever.\", ch );
-
-  acode( room, 2 );
-
-  }
-
-else
-
-  act_tochar( \"The lever has already been pushed.\", ch );
-
-"
+  act_tochar( \"You push the lever.\", ch );
+  act_notchar( \"$n pushes the lever.\", ch );
+  acode( room, 2 );
+  }
+else
+  act_tochar( \"The lever has already been pushed.\", ch );
+"
 !
 0 0 0
 A
 ""
 ""
 "wait( 1 );
-
-acode( find_room( 88000 ), 2 );
-
-"
+acode( find_room( 88000 ), 2 );
+"
 !
 1 0 4
 -1
@@ -228,21 +158,14 @@ S
 #88001
 "Walls of Narak"
 "No living thing inhabits these walls, of that there is not much
-
-uncertainty.  The sounds of rats normally thought present in the cool,
-
-damp places uninhabited by humans are absent.  The dust on the walls
-
-appears thick and undisturbed.  The guards gave up on occupying the walls
-
-several years ago.
-
-"
+uncertainty.  The sounds of rats normally thought present in the cool,
+damp places uninhabited by humans are absent.  The dust on the walls
+appears thick and undisturbed.  The guards gave up on occupying the walls
+several years ago.
+"
 "[Nereus] might add walls to keywords on 1st extra
-
--- fixed
-
-"
+-- fixed
+"
 301465604 0
 0 6 0
 D0
@@ -256,10 +179,8 @@ D2
 E
 "dust walls"
 "The dust thickly coats the walls as though no one has been through here for
-
-many years.
-
-"
+many years.
+"
 3002 9 1509949540 3 0
 -1
 S
@@ -267,29 +188,18 @@ S
 #88002
 "Walls of Narak"
 "The stillness of the air seems suffocating, as if nothing substantial
-
-draws breath within these walls.  The empty torch sconces in the walls
-
-suggest that these walls were once watched by the city guards, but have
-
-now been abandoned.  Cobwebs hang thick from the corners where the damp
-
-grey stones meet.  The hallway between the walls heads north and south.
-
-"
+draws breath within these walls.  The empty torch sconces in the walls
+suggest that these walls were once watched by the city guards, but have
+now been abandoned.  Cobwebs hang thick from the corners where the damp
+grey stones meet.  The hallway between the walls heads north and south.
+"
 "[Nereus] should cityguards be two words?
-
--- fixed
-
-[Nereus] sconces extra is missing a sentence
-
--- fixed
-
-[Nereus] probably should add cobwebs, corners extra
-
--- would prefer not
-
-"
+-- fixed
+[Nereus] sconces extra is missing a sentence
+-- fixed
+[Nereus] probably should add cobwebs, corners extra
+-- would prefer not
+"
 301465604 0
 0 6 0
 D0
@@ -303,27 +213,20 @@ D2
 E
 "sconces"
 "The dust thickly coats the walls as though no one has been through here for
-
-quite some time.
-
-"
+quite some time.
+"
 A
 ""
 ""
 "wait( 1 );
-
-i = random( 1, 3 );
-
-if( i == 2 )
-
-  send_to_room( #dust, room );
-
-"
+i = random( 1, 3 );
+if( i == 2 )
+  send_to_room( #dust, room );
+"
 E
 "dust"
 "The long settled dust is disturbed by your passing.
-
-"
+"
 !
 1 0 5
 3000 9 1509949540 3 0
@@ -333,23 +236,15 @@ S
 #88003
 "Walls of Narak"
 "You are standing below a winding stone staircase leading up into the
-
-northwest guard tower of Narak.  Whether it was the lack of any nearby
-
-enemies or the palpable creeping hand of death in the air that drove the
-
-guards from the walls, the fact remains that the bravest of the cityguard
-
-dare not step foot within these lifeless walls.
-
-"
+northwest guard tower of Narak.  Whether it was the lack of any nearby
+enemies or the palpable creeping hand of death in the air that drove the
+guards from the walls, the fact remains that the bravest of the cityguard
+dare not step foot within these lifeless walls.
+"
 "[Phule] death of arch-cleric unlocks up
-
-[Nereus] winding stone staircase extra?
-
--- fixed
-
-"
+[Nereus] winding stone staircase extra?
+-- fixed
+"
 301465604 0
 0 6 0
 D1
@@ -367,10 +262,8 @@ D4
 E
 "winding stone staircase"
 "Made of rough-hewn grey stone, the staircase is crumbling and covered in
-
-layers of cobwebs and dust.
-
-"
+layers of cobwebs and dust.
+"
 3001 9 1509949540 3 0
 3001 9 1509949540 3 0
 -1
@@ -379,25 +272,16 @@ S
 #88004
 "Walls of Narak"
 "This east-west passage is located between the two outer walls of the
-
-city, built to be manned and defended by the city guard.  Signs of life
-
-are gone now, with the dust growing thick and the cobwebs thicker.  The
-
-air here is still, damp, and chill, in stark contrast with the desert
-
-outside.
-
-"
+city, built to be manned and defended by the city guard.  Signs of life
+are gone now, with the dust growing thick and the cobwebs thicker.  The
+air here is still, damp, and chill, in stark contrast with the desert
+outside.
+"
 "[Nereus] extra comma in the second sentence
-
--- fixed
-
-[Nereus] cobwebs/dust extra, probably
-
--- would rather not go there
-
-"
+-- fixed
+[Nereus] cobwebs/dust extra, probably
+-- would rather not go there
+"
 301465604 0
 0 6 0
 D1
@@ -411,8 +295,7 @@ D3
 E
 "cobwebs dust"
 "Just abandoned, dusty shrouds.
-
-"
+"
 3002 9 1509949540 3 0
 -1
 S
@@ -420,33 +303,20 @@ S
 #88005
 "North-West Tower of Narak"
 "This watchtower adorns the northwest corner of the city of Narak, and is lit
-
-by an eerie green glow.  Shelves of books adorn the walls, most likely a new
-
-addition as the cityguard is mostly illiterate.  Rich tapestries adorn the
-
-walls as well, extravagant for a watchtower.  A winding stone staircase
-
-descends into darkness below.  The view out of the west window overlooks a
-
-land devoid of life.
-
-"
+by an eerie green glow.  Shelves of books adorn the walls, most likely a new
+addition as the cityguard is mostly illiterate.  Rich tapestries adorn the
+walls as well, extravagant for a watchtower.  A winding stone staircase
+descends into darkness below.  The view out of the west window overlooks a
+land devoid of life.
+"
 "[Nereus] Again, resists are a concern since he's only level 33
-
-[Nereus] I would consider giving him some marmor
-
-[Nereus] Since the liche can't see camo, how could he stop someone camo'd from stealing the books?
-
-[Nereus] - suggest adding a can_see_char( mob, ch ) check
-
-[Nereus] Add a west window land extra?  because you can look out thewindow?
-
-[Nereus] Rname, northwest is one word
-
--- style issue
-
-"
+[Nereus] I would consider giving him some marmor
+[Nereus] Since the liche can't see camo, how could he stop someone camo'd from stealing the books?
+[Nereus] - suggest adding a can_see_char( mob, ch ) check
+[Nereus] Add a west window land extra?  because you can look out thewindow?
+[Nereus] Rname, northwest is one word
+-- style issue
+"
 301465604 0
 0 6 0
 D5
@@ -456,105 +326,71 @@ D5
 E
 "tapestries"
 "These velvet tapestries are firmly attached to the walls, and to remove
-
-one would mean destruction of it in the process.  The illustrations on
-
-the fabric detail fantastic magical events, such as the resurrection of
-
-the dead and spellfighting a dragon.
-
-"
+one would mean destruction of it in the process.  The illustrations on
+the fabric detail fantastic magical events, such as the resurrection of
+the dead and spellfighting a dragon.
+"
 E
 "shelves books"
 "The books are written in an ancient language, perhaps a magical one, last
-
-used many centuries past.  They obviously belong to a scholar of magic--a
-
-powerful one.
-
-"
+used many centuries past.  They obviously belong to a scholar of magic--a
+powerful one.
+"
 E
 "trapdoor latch"
 "The trapdoor has a magical lock, covered in runes with no discernable
-
-meaning.  However a small latch can be flipped to mechanically unlock the
-
-trapdoor.
-
-"
+meaning.  However a small latch can be flipped to mechanically unlock the
+trapdoor.
+"
 A
 "get take grab"
 "4 books"
 "if( mob_in_room( 129, room ) )
-
-  act_tochar( #mine, ch );
-
-else {
-
-  act_tochar( #look, ch );
-
-  act_notchar( #rlook, ch );
-
-  act_tochar( #nuts, ch );
-
-  act_notchar( #rnuts, ch );
-
-  do_spell( hallucinate, null, ch );
-
-  }
-
-"
+  act_tochar( #mine, ch );
+else {
+  act_tochar( #look, ch );
+  act_notchar( #rlook, ch );
+  act_tochar( #nuts, ch );
+  act_notchar( #rnuts, ch );
+  do_spell( hallucinate, null, ch );
+  }
+"
 E
 "mine"
 "An ashy figure in a black robe stops you from stealing his precious books.
-
-\"I'm afraid those are *my* possessions.\"
-
-"
+\"I'm afraid those are *my* possessions.\"
+"
 E
 "look"
 "You look through the shelves for a book which may be of use.
-
-"
+"
 E
 "rlook"
 "$n looks through the shelves for a book which may be of use.
-
-"
+"
 E
 "nuts"
 "After only a few moments of looking at the squirming glyphs, your mind
-
-turns into mush.
-
-"
+turns into mush.
+"
 E
 "rnuts"
 "$n turns away from the shelves with a glazed look over his eyes.
-
-"
+"
 !
 0 0 0
 A
 "flip"
 "latch"
 "if( is_locked( room, down ) ) {
-
-  act_tochar( \"You flip the latch.\", ch );
-
-  act_notchar( \"$n flips the latch.\", ch );
-
-  unlock( room, down );
-
-  send_to_room( \"*CLICK*\", room );
-
-  }
-
-else
-
-  act_tochar( \"The latch has been flipped.\", ch );
-
-"
+  act_tochar( \"You flip the latch.\", ch );
+  act_notchar( \"$n flips the latch.\", ch );
+  unlock( room, down );
+  send_to_room( \"*CLICK*\", room );
+  }
+else
+  act_tochar( \"The latch has been flipped.\", ch );
+"
 !
 0 0 0
 129 9 1509949540 3 0
@@ -566,23 +402,15 @@ S
 #88006
 "Walls of Narak"
 "You are in a passage between the inner and outer walls of Narak.  To the north
-
-and south, the walls are covered with mosses and lichen.  To the east and
-
-west, the passage continues, a foul air blowing in its wake.  The area looks
-
-as though it has not been looked after in some time.
-
-"
+and south, the walls are covered with mosses and lichen.  To the east and
+west, the passage continues, a foul air blowing in its wake.  The area looks
+as though it has not been looked after in some time.
+"
 "[Nereus] mosses/lichens extra?
-
--- would rather not go there
-
-[Nereus] How about a get moss dummy code?
-
--- would rather not go there
-
-"
+-- would rather not go there
+[Nereus] How about a get moss dummy code?
+-- would rather not go there
+"
 301465604 0
 0 6 0
 D1
@@ -596,8 +424,7 @@ D3
 E
 "moss lichen"
 "Ths moss is speckled ochre and black.
-
-"
+"
 3000 9 1509949540 3 0
 -1
 S
@@ -605,27 +432,17 @@ S
 #88007
 "Walls of Narak"
 "The passage is covered in thick layers of dust and cobwebs.  The air is very
-
-musty and damp, and hangs heavily all around you.  The walls appear to be in
-
-fairly shabby condition, rubble lying in heaps because of the feasting of the
-
-local mosses.  The passage continues to the east and west.
-
-"
+musty and damp, and hangs heavily all around you.  The walls appear to be in
+fairly shabby condition, rubble lying in heaps because of the feasting of the
+local mosses.  The passage continues to the east and west.
+"
 "[Nereus] lairs -> layers
-
--- fixed, how embarassing!
-
-[Nereus] search rubble code?
-
--- rather not go there
-
-[Nereus] rubble, mosses, dust/cobwebs extras?
-
--- rather not go there
-
-"
+-- fixed, how embarassing!
+[Nereus] search rubble code?
+-- rather not go there
+[Nereus] rubble, mosses, dust/cobwebs extras?
+-- rather not go there
+"
 301465604 0
 0 6 0
 D1
@@ -639,8 +456,7 @@ D3
 E
 "rubble mosses dust cobwebs"
 "The moss coats the chunks of rubble fully, torn cobwebs entangling all.
-
-"
+"
 3001 9 1509949540 3 0
 3001 9 1509949540 3 0
 -1
@@ -649,21 +465,14 @@ S
 #88008
 "Walls of Narak"
 "This east-west passage is located between the two outer walls of the
-
-city, built to be manned and defended by the city guard.  Signs of life
-
-are gone now, with the dust growing thick and the cobwebs thicker.  The
-
-air here is still, damp, and chill, in stark contrast with the desert
-
-outside.
-
-"
+city, built to be manned and defended by the city guard.  Signs of life
+are gone now, with the dust growing thick and the cobwebs thicker.  The
+air here is still, damp, and chill, in stark contrast with the desert
+outside.
+"
 "[Nereus] extra comment, second sentence
-
--- fixed
-
-"
+-- fixed
+"
 301465604 0
 0 6 0
 D1
@@ -677,8 +486,7 @@ D3
 E
 "dust cobwebs"
 "Dust clings closely to the cobwebs.
-
-"
+"
 3002 9 1509949540 3 0
 -1
 S
@@ -686,14 +494,10 @@ S
 #88009
 "Walls of Narak"
 "You are in a passage between the inner and outer walls of Narak.  To the north
-
-and south, the walls are covered with mosses and lichen.  To the east and
-
-west, the passage continues, a foul air blowing in its wake.  The area looks
-
-as though it has not been looked after in some time.
-
-"
+and south, the walls are covered with mosses and lichen.  To the east and
+west, the passage continues, a foul air blowing in its wake.  The area looks
+as though it has not been looked after in some time.
+"
 ""
 301465604 0
 0 6 0
@@ -708,8 +512,7 @@ D3
 E
 "mosses lichen"
 "The mosses are dead here, dry and crumbling.
-
-"
+"
 3000 9 1509949540 3 0
 3002 9 1509949540 3 0
 -1
@@ -718,14 +521,10 @@ S
 #88010
 "Walls of Narak"
 "The passage is covered in thick layers of dust and cobwebs.  The air is very
-
-musty and damp, and hangs heavily all around you.  The walls appear to be in
-
-fairly shabby condition, rubble lying in heaps because of the feasting of the
-
-local mosses.  The passage continues to the east and west.
-
-"
+musty and damp, and hangs heavily all around you.  The walls appear to be in
+fairly shabby condition, rubble lying in heaps because of the feasting of the
+local mosses.  The passage continues to the east and west.
+"
 ""
 301465604 0
 0 6 0
@@ -740,15 +539,12 @@ D3
 E
 "dust cobwebs"
 "The dusty floor is trailed down the centre, as if something travels along here
-
-regularly.
-
-"
+regularly.
+"
 E
 "rubble mosses"
 "Spattered red moss is a sudden burst of color on the broken rubble.
-
-"
+"
 3001 9 1509949540 3 0
 -1
 S
@@ -756,16 +552,11 @@ S
 #88011
 "Walls of Narak"
 "This east-west passage is located between the two outer walls of the
-
-city, built to be manned and defended by the city guard.  Signs of life
-
-are gone now, with the dust growing thick and the cobwebs thicker.  The
-
-air here is still, damp, and chill, in stark contrast with the desert
-
-outside.
-
-"
+city, built to be manned and defended by the city guard.  Signs of life
+are gone now, with the dust growing thick and the cobwebs thicker.  The
+air here is still, damp, and chill, in stark contrast with the desert
+outside.
+"
 ""
 301465604 0
 0 6 0
@@ -780,22 +571,17 @@ D3
 E
 "dust cobwebs"
 "The cobwebs are thicker than normal here, layers of lacey film.
-
-"
+"
 -1
 S
 
 #88012
 "Walls of Narak"
 "You are in a passage between the inner and outer walls of Narak.  To the north
-
-and south, the walls are covered with mosses and lichen.  To the east and
-
-west, the passage continues, a foul air blowing in its wake.  The area looks
-
-as though it has not been looked after in some time.
-
-"
+and south, the walls are covered with mosses and lichen.  To the east and
+west, the passage continues, a foul air blowing in its wake.  The area looks
+as though it has not been looked after in some time.
+"
 ""
 301465604 0
 0 6 0
@@ -810,8 +596,7 @@ D3
 E
 "mosses lichen"
 "Alive here, the mosses have found some water source in the cracks.
-
-"
+"
 3000 9 1509949540 3 0
 3001 9 1509949540 3 0
 -1
@@ -820,23 +605,15 @@ S
 #88013
 "Walls of Narak"
 "Above you is the northeast guard tower of Narak.  A winding stone staircase
-
-leads to the tower.  Whether it was the lack of any nearby enemies or the
-
-palpable creeping hand of death in the air that drove the guards from the
-
-walls, the fact remains that the bravest of the city guard dare not step foot
-
-within these lifeless walls.  A massive grate of black metal is set into the
-
-stone at your feet.
-
-"
+leads to the tower.  Whether it was the lack of any nearby enemies or the
+palpable creeping hand of death in the air that drove the guards from the
+walls, the fact remains that the bravest of the city guard dare not step foot
+within these lifeless walls.  A massive grate of black metal is set into the
+stone at your feet.
+"
 "[Phule] death of arch-liche unlocks up
-
-[Phule] death of ice demon unlocks down
-
-"
+[Phule] death of ice demon unlocks down
+"
 301465604 0
 0 6 0
 D2
@@ -858,26 +635,19 @@ D5
 E
 "winding stone staircase"
 "Made of rough-hewn grey stone, the staircase is crumbling and covered in
-
-layers of cobwebs and dust.
-
-"
+layers of cobwebs and dust.
+"
 -1
 S
 
 #88014
 "Walls of Narak"
 "The stillness of the air seems suffocating, as if nothing substantial
-
-draws breath within these walls.  The empty torch sconces in the walls
-
-suggest that these walls were once watched by the cityguards, but have
-
-now been abandoned.  Cobwebs hang thick from the corners where the damp
-
-grey stones meet.  The hallway between the walls heads north and south.
-
-"
+draws breath within these walls.  The empty torch sconces in the walls
+suggest that these walls were once watched by the cityguards, but have
+now been abandoned.  Cobwebs hang thick from the corners where the damp
+grey stones meet.  The hallway between the walls heads north and south.
+"
 ""
 301465604 0
 0 6 0
@@ -892,8 +662,7 @@ D2
 E
 "sconces walls cobwebs"
 "The sconces are wrapped thick with old, dusty webbing.
-
-"
+"
 3002 9 1509949540 3 0
 -1
 S
@@ -901,33 +670,20 @@ S
 #88015
 "Walls of Narak"
 "No living thing inhabits these walls, of that there is not much uncertainty. 
-
-The sounds of rats normally thought present in the cool, damp places
-
-uninhabited by humans are absent.  The dust on the walls appears thick and
-
-undisturbed.  The guards gave up on occupying the walls several years ago.
-
-"
+The sounds of rats normally thought present in the cool, damp places
+uninhabited by humans are absent.  The dust on the walls appears thick and
+undisturbed.  The guards gave up on occupying the walls several years ago.
+"
 "[Phule] reset for dark spectre
-
-[Nereus] want to give this guy marmor?  Humanoid probably not so good.
-
--- did some changes such as armor, displace, prot vs good
-
-[Nereus] might want to set a movement on the spectre
-
--- fixed
-
-[Nereus] Does the spectre fly?
-
--- no he floats
-
-[Nereus] may also consider making spectre see invis
-
--- fixed thanks
-
-"
+[Nereus] want to give this guy marmor?  Humanoid probably not so good.
+-- did some changes such as armor, displace, prot vs good
+[Nereus] might want to set a movement on the spectre
+-- fixed
+[Nereus] Does the spectre fly?
+-- no he floats
+[Nereus] may also consider making spectre see invis
+-- fixed thanks
+"
 301465604 0
 0 6 0
 D0
@@ -941,8 +697,7 @@ D2
 E
 "dust walls"
 "The walls are choked with dust, looking to be crumbled mortar.
-
-"
+"
 983 9 1509949540 3 0
 -1
 S
@@ -950,16 +705,11 @@ S
 #88016
 "Walls of Narak"
 "These walls, abandoned by the cityguard, have fallen into neglect.  Cobwebs
-
-litter every corner and cranny, and the scent of death permeates the air.  The
-
-walls to the east and west are cracked, but none of the normal damp growing
-
-mosses fill the crevices.  A gloomy silence fills the area.  The passage
-
-continues to the north and south.
-
-"
+litter every corner and cranny, and the scent of death permeates the air.  The
+walls to the east and west are cracked, but none of the normal damp growing
+mosses fill the crevices.  A gloomy silence fills the area.  The passage
+continues to the north and south.
+"
 ""
 301465604 0
 0 6 0
@@ -974,8 +724,7 @@ D2
 E
 "cobwebs corner cranny dust crevices"
 "The crevices are all choked with dust.
-
-"
+"
 3001 9 1509949540 3 0
 3000 9 1509949540 3 0
 -1
@@ -984,19 +733,13 @@ S
 #88017
 "Walls of Narak"
 "The stillness of the air seems suffocating, as if nothing substantial
-
-draws breath within these walls.  The empty torch sconces in the walls
-
-suggest that these walls were once watched by the cityguards, but have
-
-now been abandoned.  Cobwebs hang thick from the corners where the damp
-
-grey stones meet.  The hallway between the walls heads north and south.
-
-"
+draws breath within these walls.  The empty torch sconces in the walls
+suggest that these walls were once watched by the cityguards, but have
+now been abandoned.  Cobwebs hang thick from the corners where the damp
+grey stones meet.  The hallway between the walls heads north and south.
+"
 "[Nereus] This rdesc is identical to 88014
-
-"
+"
 301465604 0
 0 6 0
 D0
@@ -1010,8 +753,7 @@ D2
 E
 "sconces cobwebs walls"
 "Cobwebs dangle limply from the sconces, trapping dust from the walls.
-
-"
+"
 3001 9 1509949540 3 0
 -1
 S
@@ -1019,17 +761,12 @@ S
 #88018
 "Walls of Narak"
 "No living thing inhabits these walls, of that there is not much uncertainty. 
-
-The sounds of rats normally thought present in the cool, damp places
-
-uninhabited by humans are absent.  The dust on the walls appears thick and
-
-undisturbed.  The guards gave up on occupying the walls several years ago.
-
-"
+The sounds of rats normally thought present in the cool, damp places
+uninhabited by humans are absent.  The dust on the walls appears thick and
+undisturbed.  The guards gave up on occupying the walls several years ago.
+"
 "[Nereus] this rdesc is identical to 88015
-
-"
+"
 301465604 0
 0 6 0
 D0
@@ -1043,8 +780,7 @@ D2
 E
 "dust walls"
 "The walls are thick-choked with abrasive dust.
-
-"
+"
 3002 9 1509949540 3 0
 -1
 S
@@ -1052,19 +788,13 @@ S
 #88019
 "Walls of Narak"
 "These walls, abandoned by the cityguard, have fallen into neglect.  Cobwebs
-
-litter every corner and cranny, and the scent of death permeates the air.  The
-
-walls to the east and west are cracked, but none of the normal damp growing
-
-mosses fill the crevices.  A gloomy silence fills the area.  The passage
-
-continues to the north and south.
-
-"
+litter every corner and cranny, and the scent of death permeates the air.  The
+walls to the east and west are cracked, but none of the normal damp growing
+mosses fill the crevices.  A gloomy silence fills the area.  The passage
+continues to the north and south.
+"
 "[Nereus] This rdesc is identical to 88016
-
-"
+"
 301465604 0
 0 6 0
 D0
@@ -1078,8 +808,7 @@ D2
 E
 "cobwebs corner cranny crack crevies"
 "The crevices contain only dusty old webs and the carcasses of spiders.
-
-"
+"
 3000 9 1509949540 3 0
 -1
 S
@@ -1087,19 +816,13 @@ S
 #88020
 "Walls of Narak"
 "The stillness of the air seems suffocating, as if nothing substantial
-
-draws breath within these walls.  The empty torch sconces in the walls
-
-suggest that these walls were once watched by the cityguards, but have
-
-now been abandoned.  Cobwebs hang thick from the corners where the damp
-
-grey stones meet.  The hallway between the walls heads north and south.
-
-"
+draws breath within these walls.  The empty torch sconces in the walls
+suggest that these walls were once watched by the cityguards, but have
+now been abandoned.  Cobwebs hang thick from the corners where the damp
+grey stones meet.  The hallway between the walls heads north and south.
+"
 "[Nereus] This rdesc is identical to 88017 and 88014
-
-"
+"
 301465604 0
 0 6 0
 D0
@@ -1113,29 +836,21 @@ D2
 E
 "sconces wall cobwebs"
 "The sconces here are clean, the webs dangling away from them for some reason.
-
-"
+"
 -1
 S
 
 #88021
 "Walls of Narak"
 "You are standing below a winding stone staircase leading up into the
-
-southeast guard tower of Narak.  Whether it was the lack of any nearby
-
-enemies or the palpable creeping hand of death in the air that drove the
-
-guards from the walls, the fact remains that the bravest of the cityguard
-
-dare not step foot within these lifeless walls.  The hallways lead
-
-between the walls to the north and west.
-
-"
+southeast guard tower of Narak.  Whether it was the lack of any nearby
+enemies or the palpable creeping hand of death in the air that drove the
+guards from the walls, the fact remains that the bravest of the cityguard
+dare not step foot within these lifeless walls.  The hallways lead
+between the walls to the north and west.
+"
 "[Phule] death of spectre unlocks up
-
-"
+"
 301465604 0
 0 6 0
 D0
@@ -1153,10 +868,8 @@ D4
 E
 "winding stone staircase"
 "Made of rough-hewn grey stone, the staircase is crumbling and covered in
-
-layers of cobwebs and dust.
-
-"
+layers of cobwebs and dust.
+"
 3000 9 1509949540 3 0
 -1
 S
@@ -1164,17 +877,12 @@ S
 #88022
 "Walls of Narak"
 "You are in a passage between the inner and outer walls of Narak.  To the north
-
-and south, the walls are covered with mosses and lichen.  To the east and
-
-west, the passage continues, a foul air blowing in its wake.  The area looks
-
-as though it has not been looked after in some time.
-
-"
+and south, the walls are covered with mosses and lichen.  To the east and
+west, the passage continues, a foul air blowing in its wake.  The area looks
+as though it has not been looked after in some time.
+"
 "[Nereus] This room is the same as some of the rdescs on the northern passage
-
-"
+"
 301465604 0
 0 6 0
 D1
@@ -1188,8 +896,7 @@ D3
 E
 "moss lichen"
 "The moss is thick and stains the walls like spilled wine.
-
-"
+"
 3002 9 1509949540 3 0
 -1
 S
@@ -1197,25 +904,16 @@ S
 #88023
 "South-East Tower of Narak"
 "This southeast guard tower has been transformed into an evil shrine.  A
-
-black symbol has been carved into the south wall, as well as the floor,
-
-and the only light is a hideous purple glow issuing from a black candle
-
-in a sconce on the wall.  A padded altar lies facing the symbol near the
-
-south wall, and a dark, unholy text rests on an ebony table.
-
-"
+black symbol has been carved into the south wall, as well as the floor,
+and the only light is a hideous purple glow issuing from a black candle
+in a sconce on the wall.  A padded altar lies facing the symbol near the
+south wall, and a dark, unholy text rests on an ebony table.
+"
 "[Nereus] This guy's resists are terribly high for a level 23 mob
-
--- tinked with
-
-[Nereus] Southeast is one word
-
--- stylistic issue
-
-"
+-- tinked with
+[Nereus] Southeast is one word
+-- stylistic issue
+"
 301466628 0
 0 6 0
 D5
@@ -1225,62 +923,42 @@ D5
 E
 "trapdoor latch"
 "The trapdoor has a magical lock, covered in runes with no discernable
-
-meaning.  However a small latch can be flipped to mechanically unlock the
-
-trapdoor.
-
-"
+meaning.  However a small latch can be flipped to mechanically unlock the
+trapdoor.
+"
 E
 "altar"
 "Obviously built for kneeling in prayer.
-
-"
+"
 E
 "black symbol"
 "This symbol must serve as some guiding representation to its worshipper,
-
-but it appears only a blob of black on black to the untrained eye.
-
-"
+but it appears only a blob of black on black to the untrained eye.
+"
 E
 "unholy text book"
 "This featureless black book is inscribed with silvery blue runes, obviously a
-
-dark religious text of great power.  Its owner's soul must be black indeed. 
-
-Black cords of energy flow over the book, seeming to chain it to the table.
-
-"
+dark religious text of great power.  Its owner's soul must be black indeed. 
+Black cords of energy flow over the book, seeming to chain it to the table.
+"
 E
 "black candle sconce"
 "This black wax candle burns with a hideous purple light, as if ignoring the
-
-brighter part of the spectrum.  Spikes on the interior of the stone clamp onto
-
-the candle making it impossible to take.
-
-"
+brighter part of the spectrum.  Spikes on the interior of the stone clamp onto
+the candle making it impossible to take.
+"
 A
 "flip"
 "latch"
 "if( is_locked( room, down ) ) {
-
-  act_tochar( \"You flip the latch.\", ch );
-
-  act_notchar( \"$n flips the latch.\", ch );
-
-  unlock( room, down );
-
-  send_to_room( \"*CLICK*\", room );
-
-  }
-
-else
-
-  act_tochar( \"The latch has been flipped.\", ch );
-
-"
+  act_tochar( \"You flip the latch.\", ch );
+  act_notchar( \"$n flips the latch.\", ch );
+  unlock( room, down );
+  send_to_room( \"*CLICK*\", room );
+  }
+else
+  act_tochar( \"The latch has been flipped.\", ch );
+"
 !
 0 0 0
 771 9 1509949540 3 0
@@ -1290,39 +968,23 @@ S
 #88024
 "North-East Tower of Narak"
 "This tower room is coated entirely with a three-inch layer of ice, and is bare
-
-save a strange, cold throne in the center of the room.  A cold, white light
-
-fills the room from a magical fire set in an otherwise empty sconce.  From
-
-somewhere intangible a hollow, ringing laughter issues forth, chilling your
-
-very blood.  A trapdoor leads down and out of the tower.
-
-"
+save a strange, cold throne in the center of the room.  A cold, white light
+fills the room from a magical fire set in an otherwise empty sconce.  From
+somewhere intangible a hollow, ringing laughter issues forth, chilling your
+very blood.  A trapdoor leads down and out of the tower.
+"
 "[Phule] room 36112
-
-[Phule] have laughter actually do cold damage!
-
-[Phule] [Elfir] Dude needs treasure and work
-
-[Nereus] Cool name
-
-[Nereus] If you want to make this actually kill someone instantly, I suggest following the example of the vorpal sword.
-
-[Nereus] Also, 1000 hp is no longer the inflict cap, 1500 is.  You can get around this by looping for hp removal until the player dies
-
-[Nereus] I would consider not auto-killing players above a certain level.
-
-[Nereus] set a weight on him?
-
-[Nereus] SConsider rlowering the fire resist, or at least one resist
-
-[Nereus] Also, I would consider making his cold damage do more.
-
-[Nereus] Rname, North-east -> northeast
-
-"
+[Phule] have laughter actually do cold damage!
+[Phule] [Elfir] Dude needs treasure and work
+[Nereus] Cool name
+[Nereus] If you want to make this actually kill someone instantly, I suggest following the example of the vorpal sword.
+[Nereus] Also, 1000 hp is no longer the inflict cap, 1500 is.  You can get around this by looping for hp removal until the player dies
+[Nereus] I would consider not auto-killing players above a certain level.
+[Nereus] set a weight on him?
+[Nereus] SConsider rlowering the fire resist, or at least one resist
+[Nereus] Also, I would consider making his cold damage do more.
+[Nereus] Rname, North-east -> northeast
+"
 301465604 0
 0 6 0
 D5
@@ -1332,44 +994,30 @@ D5
 E
 "trapdoor latch"
 "The trapdoor has a magical lock, covered in runes with no discernable
-
-meaning.  However a small latch can be flipped to mechanically unlock the
-
-trapdoor.
-
-"
+meaning.  However a small latch can be flipped to mechanically unlock the
+trapdoor.
+"
 E
 "throne"
 "The throne is sized for some huge creature, and is scratched and torn as if
-
-from spikes.
-
-"
+from spikes.
+"
 E
 "sconce fire light cold"
 "The light is chilling, the opposite of sunlight almost.
-
-"
+"
 A
 "flip"
 "latch"
 "if( is_locked( room, down ) ) {
-
-  act_tochar( \"You flip the latch.\", ch );
-
-  act_notchar( \"$n flips the latch.\", ch );
-
-  unlock( room, down );
-
-  send_to_room( \"*CLICK*\", room );
-
-  }
-
-else
-
-  act_tochar( \"The latch has been flipped.\", ch );
-
-"
+  act_tochar( \"You flip the latch.\", ch );
+  act_notchar( \"$n flips the latch.\", ch );
+  unlock( room, down );
+  send_to_room( \"*CLICK*\", room );
+  }
+else
+  act_tochar( \"The latch has been flipped.\", ch );
+"
 !
 0 0 0
 776 9 1509949540 3 0
@@ -1379,16 +1027,11 @@ S
 #88025
 "Walls of Narak"
 "This east-west passage is located between the two outer walls of the
-
-city, built to be manned and defended by the city guard.  Signs of life
-
-are gone now, with the dust growing thick and the cobwebs thicker.  The
-
-air here is still, damp, and chill, in stark contrast with the desert
-
-outside.
-
-"
+city, built to be manned and defended by the city guard.  Signs of life
+are gone now, with the dust growing thick and the cobwebs thicker.  The
+air here is still, damp, and chill, in stark contrast with the desert
+outside.
+"
 ""
 301465604 0
 0 6 0
@@ -1408,14 +1051,10 @@ S
 #88026
 "Walls of Narak"
 "The passage is covered in thick layers of dust and cobwebs.  The air is very
-
-musty and damp, and hangs heavily all around you.  The walls appear to be in
-
-fairly shabby condition, rubble lying in heaps because of the feasting of the
-
-local mosses.  The passage continues to the east and west.
-
-"
+musty and damp, and hangs heavily all around you.  The walls appear to be in
+fairly shabby condition, rubble lying in heaps because of the feasting of the
+local mosses.  The passage continues to the east and west.
+"
 ""
 301465604 0
 0 6 0
@@ -1430,10 +1069,8 @@ D3
 E
 "dust cobweb wall rubble mosses"
 "Moss crumbles away at the wall, like rust on metal.  Spiders lair in the
-
-cracks revealed.
-
-"
+cracks revealed.
+"
 3001 9 1509949540 3 0
 -1
 S
@@ -1441,14 +1078,10 @@ S
 #88027
 "Walls of Narak"
 "You are in a passage between the inner and outer walls of Narak.  To the north
-
-and south, the walls are covered with mosses and lichen.  To the east and
-
-west, the passage continues, a foul air blowing in its wake.  The area looks
-
-as though it has not been looked after in some time.
-
-"
+and south, the walls are covered with mosses and lichen.  To the east and
+west, the passage continues, a foul air blowing in its wake.  The area looks
+as though it has not been looked after in some time.
+"
 ""
 301465604 0
 0 6 0
@@ -1463,8 +1096,7 @@ D3
 E
 "moss lichen walls"
 "The moss spatters the walls like blood.
-
-"
+"
 3002 9 1509949540 3 0
 3000 9 1509949540 3 0
 -1
@@ -1473,14 +1105,10 @@ S
 #88028
 "Walls of Narak"
 "This east-west passage is located between the two outer walls of the city,
-
-built to be manned and defended by the city guard.  Signs of life are gone
-
-now, with the dust growing thick and the cobwebs thicker.  The air here is
-
-still, damp, and chill, in stark contrast with the desert outside.
-
-"
+built to be manned and defended by the city guard.  Signs of life are gone
+now, with the dust growing thick and the cobwebs thicker.  The air here is
+still, damp, and chill, in stark contrast with the desert outside.
+"
 ""
 301465604 0
 0 6 0
@@ -1495,8 +1123,7 @@ D3
 E
 "dust cobweb wall"
 "THe cobwebs are dusty and abandoned by their creators.
-
-"
+"
 3002 9 1509949540 3 0
 3001 9 1509949540 3 0
 -1
@@ -1505,14 +1132,10 @@ S
 #88029
 "Walls of Narak"
 "The passage is covered in thick layers of dust and cobwebs.  The air is very
-
-musty and damp, and hangs heavily all around you.  The walls appear to be in
-
-fairly shabby condition, rubble lying in heaps because of the feasting of the
-
-local mosses.  The passage continues to the east and west.
-
-"
+musty and damp, and hangs heavily all around you.  The walls appear to be in
+fairly shabby condition, rubble lying in heaps because of the feasting of the
+local mosses.  The passage continues to the east and west.
+"
 ""
 301465604 0
 0 6 0
@@ -1527,8 +1150,7 @@ D3
 E
 "dust cobwebs rubble moss"
 "Cobwebs tangle chunks of broken, mossy wall together.
-
-"
+"
 3000 9 1509949540 3 0
 -1
 S
@@ -1536,14 +1158,10 @@ S
 #88030
 "Walls of Narak"
 "You are in a passage between the inner and outer walls of Narak.  To the north
-
-and south, the walls are covered with mosses and lichen.  To the east and
-
-west, the passage continues, a foul air blowing in its wake.  The area looks
-
-as though it has not been looked after in some time.
-
-"
+and south, the walls are covered with mosses and lichen.  To the east and
+west, the passage continues, a foul air blowing in its wake.  The area looks
+as though it has not been looked after in some time.
+"
 ""
 301465604 0
 0 6 0
@@ -1558,24 +1176,18 @@ D3
 E
 "mosses lichen"
 "The mosses here are withered and white, crumbling from age.
-
-"
+"
 -1
 S
 
 #88031
 "Walls of Narak"
 "This east-west passage is located between the two outer walls of the
-
-city, built to be manned and defended by the city guard.  Signs of life
-
-are gone now, with the dust growing thick and the cobwebs thicker.  The
-
-air here is still, damp, and chill, in stark contrast with the desert
-
-outside.
-
-"
+city, built to be manned and defended by the city guard.  Signs of life
+are gone now, with the dust growing thick and the cobwebs thicker.  The
+air here is still, damp, and chill, in stark contrast with the desert
+outside.
+"
 ""
 301465604 0
 0 6 0
@@ -1590,8 +1202,7 @@ D3
 E
 "cobwebs"
 "The cobwebs here glisten in the light, fresh.
-
-"
+"
 3001 9 1509949540 3 0
 3001 9 1509949540 3 0
 -1
@@ -1600,19 +1211,13 @@ S
 #88032
 "Walls of Narak"
 "You are standing below a winding stone staircase leading up into the southwest
-
-guard tower of Narak.  Whether it was the lack of any nearby enemies or the
-
-palpable creeping hand of death in the air that drove the guards from the
-
-walls, the fact remains that the bravest of the city guard dare not step foot
-
-within these lifeless walls.
-
-"
+guard tower of Narak.  Whether it was the lack of any nearby enemies or the
+palpable creeping hand of death in the air that drove the guards from the
+walls, the fact remains that the bravest of the city guard dare not step foot
+within these lifeless walls.
+"
 "[Phule] death of paladin unlocks up
-
-"
+"
 301465604 0
 0 6 0
 D0
@@ -1630,27 +1235,20 @@ D4
 E
 "winding stone staircase"
 "Made of rough-hewn grey stone, the staircase is crumbling and covered in
-
-layers of cobwebs and dust.
-
-"
+layers of cobwebs and dust.
+"
 -1
 S
 
 #88033
 "Walls of Narak"
 "No living thing inhabits these walls, of that there is not much uncertainty. 
-
-The sounds of rats normally thought present in the cool, damp places
-
-uninhabited by humans are absent.  The dust on the walls appears thick and
-
-undisturbed.  The guards gave up on occupying the walls several years ago.
-
-"
+The sounds of rats normally thought present in the cool, damp places
+uninhabited by humans are absent.  The dust on the walls appears thick and
+undisturbed.  The guards gave up on occupying the walls several years ago.
+"
 "[Nereus] Duplicate rdesc
-
-"
+"
 301465604 0
 0 6 0
 D0
@@ -1668,16 +1266,11 @@ S
 #88034
 "Walls of Narak"
 "The stillness of the air seems suffocating, as if nothing substantial
-
-draws breath within these walls.  The empty torch sconces in the walls
-
-suggest that these walls were once watched by the city guards, but have
-
-now been abandoned.  Cobwebs hang thick from the corners where the damp
-
-grey stones meet.  The hallway between the walls heads north and south.
-
-"
+draws breath within these walls.  The empty torch sconces in the walls
+suggest that these walls were once watched by the city guards, but have
+now been abandoned.  Cobwebs hang thick from the corners where the damp
+grey stones meet.  The hallway between the walls heads north and south.
+"
 ""
 301465604 0
 0 6 0
@@ -1692,8 +1285,7 @@ D2
 E
 "sconces torch wall"
 "Probably brass under thick layers of corrosion, the sconces look unused.
-
-"
+"
 3002 9 1509949540 3 0
 3000 9 1509949540 3 0
 -1
@@ -1702,16 +1294,11 @@ S
 #88035
 "Walls of Narak"
 "These walls, abandoned by the cityguard, have fallen into neglect. 
-
-Cobwebs litter every corner and cranny, and the scent of death permeates
-
-the air.  It is definitely more chill here between the stone walls than
-
-the desert air outside.  There is a small @blever@n on the north wall
-
-near a portcullis.
-
-"
+Cobwebs litter every corner and cranny, and the scent of death permeates
+the air.  It is definitely more chill here between the stone walls than
+the desert air outside.  There is a small @blever@n on the north wall
+near a portcullis.
+"
 ""
 301465604 0
 0 6 0
@@ -1726,117 +1313,83 @@ D2
 E
 "lever"
 "This small grey lever is inset into a small niche beside the portcullis. 
-
-"
+"
 E
 "lever portcullis"
 "The lever, of tarnished brass, protrudes from the wall near the portcullis.
-
-"
+"
 A
 "__PORT_OPEN_CODE__"
 ""
 "if( !is_open( find_room( 36001 ), south ) ) {
-
-  send_to_room( #south, find_room( 36001 ) );
-
-  send_to_room( #north, find_room( 88035 ) );
-
-  open( find_room( 36001 ), south );
-
-  wait( 4 );
-
-  acode( find_room( 88035 ), 2 );
-
-  }
-
-"
+  send_to_room( #south, find_room( 36001 ) );
+  send_to_room( #north, find_room( 88035 ) );
+  open( find_room( 36001 ), south );
+  wait( 4 );
+  acode( find_room( 88035 ), 2 );
+  }
+"
 E
 "south"
 "The portcullis to the south opens with a clank and the winding of chains.
-
-"
+"
 E
 "north"
 "The portcullis to the north opens with a clank and the winding of chains.
-
-"
+"
 !
 0 0 0
 A
 "__PORT_CLOSE_CODE__"
 ""
 "if( is_open( find_room( 36001 ), south ) ) {
-
-  send_to_room( #south, find_room( 36001 ) );
-
-  send_to_room( #north, find_room( 88035 ) );
-
-  close( find_room( 36001 ), south );
-
-  }
-
-"
+  send_to_room( #south, find_room( 36001 ) );
+  send_to_room( #north, find_room( 88035 ) );
+  close( find_room( 36001 ), south );
+  }
+"
 E
 "south"
 "The portcullis to the south closes with a *CRASH*.
-
-"
+"
 E
 "north"
 "The portcullis to the north closes with a *CRASH*.
-
-"
+"
 !
 0 0 0
 A
 "pull"
 "lever"
 "if( !is_open( room, north ) ) {
-
-  act_tochar( \"You pull the lever.\", ch );
-
-  act_notchar( \"$n pulls the lever.\", ch );
-
-  acode( room, 1 );
-
-  }
-
-else
-
-  act_tochar( \"The lever has already been pulled.\", ch );
-
-"
+  act_tochar( \"You pull the lever.\", ch );
+  act_notchar( \"$n pulls the lever.\", ch );
+  acode( room, 1 );
+  }
+else
+  act_tochar( \"The lever has already been pulled.\", ch );
+"
 !
 0 0 0
 A
 "push"
 "lever"
 "if( is_open( room, north ) ) {
-
-  act_tochar( \"You push the lever.\", ch );
-
-  act_notchar( \"$n pushes the lever.\", ch );
-
-  acode( room, 2 );
-
-  }
-
-else
-
-  act_tochar( \"The lever has already been pushed.\", ch );
-
-"
+  act_tochar( \"You push the lever.\", ch );
+  act_notchar( \"$n pushes the lever.\", ch );
+  acode( room, 2 );
+  }
+else
+  act_tochar( \"The lever has already been pushed.\", ch );
+"
 !
 0 0 0
 A
 ""
 ""
 "wait( 1 );
-
-acode( find_room( 88035 ), 2 );
-
-"
+acode( find_room( 88035 ), 2 );
+"
 !
 1 0 1
 -1
@@ -1845,45 +1398,26 @@ S
 #88036
 "South-West Tower of Narak"
 "Implements of torture line this walls, lit by an evil red glow from a
-
-burning fire inset in the west wall.  The rack, the iron maiden, and all
-
-the usual instruments of pain fill your view, but not a prisoner in sight. 
-
-Perhaps the master of this room has been waiting for a victim to simply
-
-walk by.
-
-"
+burning fire inset in the west wall.  The rack, the iron maiden, and all
+the usual instruments of pain fill your view, but not a prisoner in sight. 
+Perhaps the master of this room has been waiting for a victim to simply
+walk by.
+"
 "[Nereus] Again, re-examine resists for a level 28 mob.
-
-[Nereus] Create a no.show fire object so people can cook off it?
-
-[Nereus] Might consider making the rack a no.show table :)
-
-[Nereus] Need extras for other torture implements.
-
-[Nereus] I would consider adding marmor, even though he is currently humanoid.
-
-[Nereus] Should the grave-cold hand do cold damage?  I suppose magic is
-
-acceptable, seems somewhat odd though.
-
--- fixed
-
-[Nereus] No reason for the death thing to be all caps.  If you want to make
-
-him emote a yell, that might be cool.
-
--- fixed
-
-[Nereus] rname, southwest is one word
-
--- style issue
-
-[Phule] also where is his whip
-
-"
+[Nereus] Create a no.show fire object so people can cook off it?
+[Nereus] Might consider making the rack a no.show table :)
+[Nereus] Need extras for other torture implements.
+[Nereus] I would consider adding marmor, even though he is currently humanoid.
+[Nereus] Should the grave-cold hand do cold damage?  I suppose magic is
+acceptable, seems somewhat odd though.
+-- fixed
+[Nereus] No reason for the death thing to be all caps.  If you want to make
+him emote a yell, that might be cool.
+-- fixed
+[Nereus] rname, southwest is one word
+-- style issue
+[Phule] also where is his whip
+"
 301465604 0
 0 6 0
 D5
@@ -1893,32 +1427,21 @@ D5
 E
 "trapdoor latch"
 "The trapdoor has a magical lock, covered in runes with no discernable
-
-meaning.  However a small latch can be flipped to mechanically unlock the
-
-trapdoor.
-
-"
+meaning.  However a small latch can be flipped to mechanically unlock the
+trapdoor.
+"
 A
 "flip"
 "latch"
 "if( is_locked( room, down ) ) {
-
-  act_tochar( \"You flip the latch.\", ch );
-
-  act_notchar( \"$n flips the latch.\", ch );
-
-  unlock( room, down );
-
-  send_to_room( \"*CLICK*\", room );
-
-  }
-
-else
-
-  act_tochar( \"The latch has been flipped.\", ch );
-
-"
+  act_tochar( \"You flip the latch.\", ch );
+  act_notchar( \"$n flips the latch.\", ch );
+  unlock( room, down );
+  send_to_room( \"*CLICK*\", room );
+  }
+else
+  act_tochar( \"The latch has been flipped.\", ch );
+"
 !
 0 0 0
 774 9 1509949540 3 0
@@ -1928,14 +1451,10 @@ S
 #88037
 "Below The Grate"
 "This dark, dank passage is narrow and small, lit by neither torch nor candle. 
-
-A massive black metal grate rests overhead, while the passage descends through
-
-the rock to the north.  A small latch is visible on the bottom of the grate,
-
-presumably a locking mechanism.
-
-"
+A massive black metal grate rests overhead, while the passage descends through
+the rock to the north.  A small latch is visible on the bottom of the grate,
+presumably a locking mechanism.
+"
 ""
 301596676 0
 0 6 0
@@ -1950,32 +1469,21 @@ D4
 E
 "latch locking mechanism"
 "While the lock is obviously magical in nature, from the sigils surrounding it,
-
-apparently the latch is a mechanical failsafe.  The small latch can by flipped
-
-to unlock the grate.
-
-"
+apparently the latch is a mechanical failsafe.  The small latch can by flipped
+to unlock the grate.
+"
 A
 "flip"
 "latch"
 "if( is_locked( room, up ) ) {
-
-  act_tochar( \"You flip the latch.\", ch );
-
-  act_notchar( \"$n flips the latch.\", ch );
-
-  unlock( room, up );
-
-  send_to_room( \"*CLICK*\", room );
-
-  }
-
-else
-
-  act_tochar( \"The latch has already been flipped.\", ch );
-
-"
+  act_tochar( \"You flip the latch.\", ch );
+  act_notchar( \"$n flips the latch.\", ch );
+  unlock( room, up );
+  send_to_room( \"*CLICK*\", room );
+  }
+else
+  act_tochar( \"The latch has already been flipped.\", ch );
+"
 !
 0 0 0
 -1
@@ -1984,19 +1492,13 @@ S
 #88038
 "Before a Dark, Mysterious Pool"
 "You stand before the smooth, mirrorlike surface of a dark pool.  Its depths
-
-hidden, the glow of white light shimmers deep beneath its surface like a false
-
-moon.  About one hundred meters in circumference, anything from a black dragon
-
-to a sunken ship could be below the surface.  Or nothing at all.  A passage
-
-leads south away from the pool.
-
-"
+hidden, the glow of white light shimmers deep beneath its surface like a false
+moon.  About one hundred meters in circumference, anything from a black dragon
+to a sunken ship could be below the surface.  Or nothing at all.  A passage
+leads south away from the pool.
+"
 "[Nereus] doesn't the passage actually lead south?
-
-"
+"
 301596676 0
 11 6 0
 D2
@@ -2013,12 +1515,9 @@ S
 #88039
 "A Dark, Mysterious Pool"
 "You are immersed in a pool of dark, shimmering water, its icy caress
-
-enveloping you in an inky womb.  The surface of the pool lies just overhead,
-
-while the pool continues to the north, toward a shimmering light.
-
-"
+enveloping you in an inky womb.  The surface of the pool lies just overhead,
+while the pool continues to the north, toward a shimmering light.
+"
 ""
 301596676 0
 7 6 0
@@ -2036,17 +1535,12 @@ S
 #88040
 "A Dark, Mysterious Pool"
 "A pale, shimmering light filters through the blackness of the pool, a faint
-
-radiance sending streams of soft white through the icy waters which surround
-
-you.  The pool continues in darkness to the south, while the surface is just
-
-overhead, toward the soft light.
-
-"
+radiance sending streams of soft white through the icy waters which surround
+you.  The pool continues in darkness to the south, while the surface is just
+overhead, toward the soft light.
+"
 "[Nereus] cool, this room is lit from above
-
-"
+"
 301596676 0
 7 6 0
 D2
@@ -2063,14 +1557,10 @@ S
 #88041
 "Massive Cavern"
 "This cavern rises at least fifty meters overhead, its cavernous space lit by a
-
-glowing sphere of white light which floats in the geometric center of the
-
-room.  The light glimmers palely in a smooth, mirrorlike pool of dark water in
-
-the center of the cavern.
-
-"
+glowing sphere of white light which floats in the geometric center of the
+room.  The light glimmers palely in a smooth, mirrorlike pool of dark water in
+the center of the cavern.
+"
 ""
 301596676 0
 11 6 0
@@ -2089,17 +1579,12 @@ S
 #88042
 "Massive Cavern"
 "An enormous cavern rises high overhead, into an empty blackness which seems to
-
-have no end.  The cavern continues to the south, where it is lit by a whispy
-
-white glow.  To the north stands a door of @b@Ctourmaline@n.
-
-"
+have no end.  The cavern continues to the south, where it is lit by a whispy
+white glow.  To the north stands a door of @b@Ctourmaline@n.
+"
 "[Nereus] Is the correct spelling of whispy wispy?
-
-[Nereus] Might want to add more rdesc here.
-
-"
+[Nereus] Might want to add more rdesc here.
+"
 301596676 0
 11 6 0
 D0
@@ -2113,51 +1598,32 @@ D2
 E
 "tourmaline door"
 "The large door is solid, without hinge or handle.  There is a small niche in
-
-its center.
-
-"
+its center.
+"
 E
 "niche"
 "The niche is about the shape of a small gem.
-
-"
+"
 A
 "insert place"
 "sea green tourmaline gem"
 "if( is_open( room, north ) ) {
-
-  act_tochar( \"The tourmaline door is already open.\", ch );
-
-  }
-
-else {
-
-  obj = has_obj( 998, ch );
-
-  if( obj ) {
-
-    act_tochar( \"You insert $p into the niche.\", ch, obj );
-
-    act_notchar( \"$n inserts $p into the niche.\", ch, obj );
-
-    act_room( \"$p fuses with the tourmaline door, and then both melt away!\", ch, obj );
-
-    junk_obj( obj, 1 );
-
-    open( room, north );
-
-    send_to_room( \"The tourmaline door melts away.\", find_room( 88043 ) );
-
-    }
-
-  else
-
-    act_tochar( \"You have no gem which fits the niche.\", ch );
-
-  }
-
-"
+  act_tochar( \"The tourmaline door is already open.\", ch );
+  }
+else {
+  obj = has_obj( 998, ch );
+  if( obj ) {
+    act_tochar( \"You insert $p into the niche.\", ch, obj );
+    act_notchar( \"$n inserts $p into the niche.\", ch, obj );
+    act_room( \"$p fuses with the tourmaline door, and then both melt away!\", ch, obj );
+    junk_obj( obj, 1 );
+    open( room, north );
+    send_to_room( \"The tourmaline door melts away.\", find_room( 88043 ) );
+    }
+  else
+    act_tochar( \"You have no gem which fits the niche.\", ch );
+  }
+"
 !
 0 0 0
 -1
@@ -2166,35 +1632,21 @@ S
 #88043
 "Tourmaline Chamber"
 "@b@CThis chamber is a sea of clouds and pale blue sky, a swirling marble
-
-palette of tourmaline and white.  It is nearly a hypnotic effect as the
-
-chamber seems to move rapidly through a noon tapestry, then rushing to a
-
-halt, then spinning madly, all without the room actually moving.  A door
-
-of similar composition stands to the south, while a door of swirling
-
-@b@RCrimson@C fire stands to the east.@n 
-
-"
+palette of tourmaline and white.  It is nearly a hypnotic effect as the
+chamber seems to move rapidly through a noon tapestry, then rushing to a
+halt, then spinning madly, all without the room actually moving.  A door
+of similar composition stands to the south, while a door of swirling
+@b@RCrimson@C fire stands to the east.@n 
+"
 "[Phule] to pass east, burn hand
-
-[Nereus] He has awfully high resists of everything
-
-[Nereus] Probably shouldn't make this stuff 100% popping on him, or if you
-
-want to, make a death code where they break most of the time
-
-[Nereus] this breastplate definitely should not be available to players 100%
-
-of the time
-
--- neither breastplate nor morningstar can be picked up
-
-[Hedrack] Cluing for burn hand?
-
-"
+[Nereus] He has awfully high resists of everything
+[Nereus] Probably shouldn't make this stuff 100% popping on him, or if you
+want to, make a death code where they break most of the time
+[Nereus] this breastplate definitely should not be available to players 100%
+of the time
+-- neither breastplate nor morningstar can be picked up
+[Hedrack] Cluing for burn hand?
+"
 301596684 0
 11 6 0
 D1
@@ -2208,89 +1660,54 @@ D2
 E
 "tourmaline door"
 "The large door is solid, without hinge or handle.  There is a small niche in
-
-its center.
-
-"
+its center.
+"
 E
 "niche"
 "The niche is about the shape of a small gem.
-
-"
+"
 A
 "insert place"
 "sea green tourmaline gem"
 "if( is_open( room, south ) ) {
-
-  act_tochar( \"The tourmaline door is already open.\", ch );
-
-  }
-
-else {
-
-  obj = has_obj( 998, ch );
-
-  if( obj ) {
-
-    act_tochar( \"You insert $p into the niche.\", ch, obj );
-
-    act_notchar( \"$n inserts $p into the niche.\", ch, obj );
-
-    act_room( \"$p fuses with the tourmaline door, and then both melt away!\", ch, obj );
-
-    junk_obj( obj, 1 );
-
-    open( room, south );
-
-    send_to_room( \"The tourmaline door melts away.\", find_room( 88042 ) );
-
-    }
-
-  else
-
-    act_tochar( \"You have no gem which fits the niche.\", ch );
-
-  }
-
-"
+  act_tochar( \"The tourmaline door is already open.\", ch );
+  }
+else {
+  obj = has_obj( 998, ch );
+  if( obj ) {
+    act_tochar( \"You insert $p into the niche.\", ch, obj );
+    act_notchar( \"$n inserts $p into the niche.\", ch, obj );
+    act_room( \"$p fuses with the tourmaline door, and then both melt away!\", ch, obj );
+    junk_obj( obj, 1 );
+    open( room, south );
+    send_to_room( \"The tourmaline door melts away.\", find_room( 88042 ) );
+    }
+  else
+    act_tochar( \"You have no gem which fits the niche.\", ch );
+  }
+"
 !
 0 0 0
 A
 "burn touch"
 "fingers hand"
 "if( is_open( room, east ) ) {
-
-  act_tochar( \"The crimson door is already open.\", ch );
-
-  }
-
-else {
-
-  act_tochar( \"You place your hand on the crimson door.\", ch );
-
-  act_notchar( \"$n places $s hand on the crimson door.\", ch );
-
-  i = 2d30+25;
-
-  inflict_fire( ch, ch, i, \"searing flame\" );
-
-  fire_message( ch, i, \"searing flame\" );
-
-  wait( 2 );
-
-  if( !is_open( room, east ) ) {
-
-    send_to_room( \"The crimson door melts away.\", room );
-
-    open( room, east );
-
-    send_to_room( \"The crimson door melts away.\", find_room( 88044 ) );
-
-    }
-
-  }
-
-"
+  act_tochar( \"The crimson door is already open.\", ch );
+  }
+else {
+  act_tochar( \"You place your hand on the crimson door.\", ch );
+  act_notchar( \"$n places $s hand on the crimson door.\", ch );
+  i = 2d30+25;
+  inflict_fire( ch, ch, i, \"searing flame\" );
+  fire_message( ch, i, \"searing flame\" );
+  wait( 2 );
+  if( !is_open( room, east ) ) {
+    send_to_room( \"The crimson door melts away.\", room );
+    open( room, east );
+    send_to_room( \"The crimson door melts away.\", find_room( 88044 ) );
+    }
+  }
+"
 !
 0 0 0
 987 9 1509949540 3 0
@@ -2300,39 +1717,23 @@ S
 #88044
 "Crimson Chamber"
 "@b@RThe glowing walls of this room swirl with undulating flames, yet give
-
-off nearly no heat despite their embering appearance.  The effect is most
-
-distracting at your feet, as the floor beneath you changes from red to
-
-orange then to an empty black as the floor visually disappears for
-
-seconds at a time, even thought the rock is as solid as ever.  A doorway
-
-of Crimson stands to the west, while a doorway of iced @n@GJade@b@R stands to
-
-the south.@n 
-
-"
+off nearly no heat despite their embering appearance.  The effect is most
+distracting at your feet, as the floor beneath you changes from red to
+orange then to an empty black as the floor visually disappears for
+seconds at a time, even thought the rock is as solid as ever.  A doorway
+of Crimson stands to the west, while a doorway of iced @n@GJade@b@R stands to
+the south.@n 
+"
 "[Phule] room 36188
-
-[Phule] open w is burn hand
-
-[Phule] open s is trace sigil
-
-[Nereus] should the bp here be anti-psionic?
-
--- fixed
-
-[Nereus] again, make this bp unavailable most of the time or it will quickly
-
-be worn by everyone on the game
-
--- cannot be picked up
-
-[Hedrack] Cluing for trace sigil?
-
-"
+[Phule] open w is burn hand
+[Phule] open s is trace sigil
+[Nereus] should the bp here be anti-psionic?
+-- fixed
+[Nereus] again, make this bp unavailable most of the time or it will quickly
+be worn by everyone on the game
+-- cannot be picked up
+[Hedrack] Cluing for trace sigil?
+"
 301596684 0
 11 6 0
 D2
@@ -2347,76 +1748,44 @@ A
 "burn touch"
 "fingers hand"
 "if( is_open( room, west ) ) {
-
-  act_tochar( \"The crimson door is already open.\", ch );
-
-  }
-
-else {
-
-  act_tochar( \"You place your hand on the crimson door.\", ch );
-
-  act_notchar( \"$n places $s hand on the crimson door.\", ch );
-
-  i = 2d30+25;
-
-  inflict_fire( ch, ch, i, \"searing flame\" );
-
-  fire_message( ch, i, \"searing flame\" );
-
-  wait( 2 );
-
-  if( !is_open( room, west ) ) {
-
-    send_to_room( \"The crimson door melts away.\", room );
-
-    open( room, west );
-
-    send_to_room( \"The crimson door melts away.\", find_room( 88043 ) );
-
-    }
-
-  }
-
-"
+  act_tochar( \"The crimson door is already open.\", ch );
+  }
+else {
+  act_tochar( \"You place your hand on the crimson door.\", ch );
+  act_notchar( \"$n places $s hand on the crimson door.\", ch );
+  i = 2d30+25;
+  inflict_fire( ch, ch, i, \"searing flame\" );
+  fire_message( ch, i, \"searing flame\" );
+  wait( 2 );
+  if( !is_open( room, west ) ) {
+    send_to_room( \"The crimson door melts away.\", room );
+    open( room, west );
+    send_to_room( \"The crimson door melts away.\", find_room( 88043 ) );
+    }
+  }
+"
 !
 0 0 0
 A
 "trace sign"
 "5 sigils"
 "if( is_open( room, south ) ) {
-
-  act_tochar( \"The jade door is already open.\", ch );
-
-  }
-
-else {
-
-  act_tochar( \"You trace along the sigils on the jade door.\", ch );
-
-  act_notchar( \"$n traces along the sigils on the jade door.\", ch );
-
-  i = 2d30+25;
-
-  inflict_cold( ch, ch, i, \"freezing ice\" );
-
-  cold_message( ch, i, \"freezing ice\" );
-
-  wait( 2 );
-
-  if( !is_open( room, south ) ) {
-
-    send_to_room( \"The jade door melts away.\", room );
-
-    open( room, south );
-
-    send_to_room( \"The jade door melts away.\", find_room( 88045 ) );
-
-    }
-
-  }
-
-"
+  act_tochar( \"The jade door is already open.\", ch );
+  }
+else {
+  act_tochar( \"You trace along the sigils on the jade door.\", ch );
+  act_notchar( \"$n traces along the sigils on the jade door.\", ch );
+  i = 2d30+25;
+  inflict_cold( ch, ch, i, \"freezing ice\" );
+  cold_message( ch, i, \"freezing ice\" );
+  wait( 2 );
+  if( !is_open( room, south ) ) {
+    send_to_room( \"The jade door melts away.\", room );
+    open( room, south );
+    send_to_room( \"The jade door melts away.\", find_room( 88045 ) );
+    }
+  }
+"
 !
 0 0 0
 988 9 1509949540 3 0
@@ -2426,25 +1795,16 @@ S
 #88045
 "Jade Chamber"
 "@GThis room glows a deep jade, as the walls, ceiling, and floor are all made
-
-of some mysterious hard rock which is coated with a jade frost.  A doorway
-
-stands to the north, and the room is otherwise strangely bare.  What might be
-
-a fire glows jade in the center of the chamber, but instead of flickering
-
-flames you see ice crystals which rise and fall almost like dancing fire.@n
-
-"
+of some mysterious hard rock which is coated with a jade frost.  A doorway
+stands to the north, and the room is otherwise strangely bare.  What might be
+a fire glows jade in the center of the chamber, but instead of flickering
+flames you see ice crystals which rise and fall almost like dancing fire.@n
+"
 "[Phule] open n is trace sigil
-
-death of adept reveals astral stair up
-
-[Nereus] death speech ruls
-
-[Nereus] rules, even
-
-"
+death of adept reveals astral stair up
+[Nereus] death speech ruls
+[Nereus] rules, even
+"
 301596676 0
 11 6 0
 D0
@@ -2459,53 +1819,34 @@ A
 "trace sign"
 "5 sigils"
 "if( is_open( room, north ) ) {
-
-  act_tochar( \"The jade door is already open.\", ch );
-
-  }
-
-else {
-
-  act_tochar( \"You trace along the sigils on the jade door.\", ch );
-
-  act_notchar( \"$n traces along the sigils on the jade door.\", ch );
-
-  i = 2d30+25;
-
-  inflict_cold( ch, ch, i, \"freezing ice\" );
-
-  cold_message( ch, i, \"freezing ice\" );
-
-  wait( 2 );
-
-  if( !is_open( room, north ) ) {
-
-    send_to_room( \"The jade door melts away.\", room );
-
-    open( room, north );
-
-    send_to_room( \"The jade door melts away.\", find_room( 88044 ) );
-
-    }
-
-  }
-
-"
+  act_tochar( \"The jade door is already open.\", ch );
+  }
+else {
+  act_tochar( \"You trace along the sigils on the jade door.\", ch );
+  act_notchar( \"$n traces along the sigils on the jade door.\", ch );
+  i = 2d30+25;
+  inflict_cold( ch, ch, i, \"freezing ice\" );
+  cold_message( ch, i, \"freezing ice\" );
+  wait( 2 );
+  if( !is_open( room, north ) ) {
+    send_to_room( \"The jade door melts away.\", room );
+    open( room, north );
+    send_to_room( \"The jade door melts away.\", find_room( 88044 ) );
+    }
+  }
+"
 !
 0 0 0
 A
 "__STAIR_CODE__"
 ""
 "send_to_room( #speech, find_room( 88045 ) );
-
-open( find_room( 88045 ), up );
-
-"
+open( find_room( 88045 ), up );
+"
 E
 "speech"
 "An astral staircase shimmers into existence.
-
-"
+"
 !
 0 0 0
 989 9 1509949540 3 0
@@ -2515,35 +1856,21 @@ S
 #88046
 "Astral Chamber"
 "@b@WTransparent flitters of glimpsed images float past in a sea of insane
-
-tranquility in this place with seemingly no up or down, east or west, or
-
-horizon.  The only firmament in sight is the strange floating island of
-
-hardwood floor you stand upon.  A nearly translucent staircase descends
-
-from this high perch amidst nothingness to a jade-glowing chamber far
-
-below.@n
-
-"
+tranquility in this place with seemingly no up or down, east or west, or
+horizon.  The only firmament in sight is the strange floating island of
+hardwood floor you stand upon.  A nearly translucent staircase descends
+from this high perch amidst nothingness to a jade-glowing chamber far
+below.@n
+"
 "[Phule] room 36190
-
-[Nereus] extras for floating island of wood, translucent staircase
-
-[Nereus] should make a dummy cloak for this guy that pops so that his description always makes sense
-
-[Nereus] I would consider changing the prismic attacks to actually use prismic missile the spell
-
-[Nereus] Same goes for the meteor swarm, I'd consider actually using meteor swarm
-
-[Nereus] staff here should probably be anti-psionic I'm guessing
-
-[Nereus] consider lowering AC on cloak, since you say in its description that it wouldn't offer much protection.
-
-[Nereus] Doesn't this fit in with another quest somewhere?
-
-"
+[Nereus] extras for floating island of wood, translucent staircase
+[Nereus] should make a dummy cloak for this guy that pops so that his description always makes sense
+[Nereus] I would consider changing the prismic attacks to actually use prismic missile the spell
+[Nereus] Same goes for the meteor swarm, I'd consider actually using meteor swarm
+[Nereus] staff here should probably be anti-psionic I'm guessing
+[Nereus] consider lowering AC on cloak, since you say in its description that it wouldn't offer much protection.
+[Nereus] Doesn't this fit in with another quest somewhere?
+"
 301596676 0
 11 6 0
 D5

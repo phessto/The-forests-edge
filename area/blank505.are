@@ -10,16 +10,11 @@
 #11600
 "An Old Cellar"
 "This room has a feeling of disuse about it, enforced by old kegs, barrels and
-
-crates which litter the floor and stand in musty corners.  The walls are
-
-slightly damp, and covered in a layer of mildew.  The floor is littered with
-
-bones of rodents, trapped here over the years.  A trapdoor is embedded in the
-
-ceiling, a rope hanging from a ring bolted to its scarred surface.
-
-"
+crates which litter the floor and stand in musty corners.  The walls are
+slightly damp, and covered in a layer of mildew.  The floor is littered with
+bones of rodents, trapped here over the years.  A trapdoor is embedded in the
+ceiling, a rope hanging from a ring bolted to its scarred surface.
+"
 ""
 301465636 0
 0 6 0
@@ -34,240 +29,167 @@ D4
 E
 "door"
 "This battered old door is covered in the same mildew which coats the rest of
-
-the room, which helped disguise it and made it appear part of the wall.  There
-
-is a small, closed hatch at eye level.
-
-"
+the room, which helped disguise it and made it appear part of the wall.  There
+is a small, closed hatch at eye level.
+"
 A
 ""
 "1 north"
 "if( rflag( reset0, room ) ) {
-
-  act_tochar( #search, ch );
-
-  act_notchar( #nsearch, ch );
-
-  remove_rflag( reset0, room );
-
-  show( ch, room, north );
-
-}
-
-else {
-
-  act_tochar( #fail, ch );
-
-  act_notchar( #nfail, ch );
-
-}
-
-"
+  act_tochar( #search, ch );
+  act_notchar( #nsearch, ch );
+  remove_rflag( reset0, room );
+  show( ch, room, north );
+}
+else {
+  act_tochar( #fail, ch );
+  act_notchar( #nfail, ch );
+}
+"
 E
 "search"
 "You search northward and find a door.
-
-"
+"
 E
 "nsearch"
 "$n searches northward and finds a door.
-
-"
+"
 E
 "fail"
 "You search northward but fail to find anything else.
-
-"
+"
 E
 "nfail"
 "$n searches northward but fail to find anything else.
-
-"
+"
 !
 9 0 0
 A
 "1 look"
 "door 1 north"
 "if( rflag( reset0, room ) )
-
-  continue;
-
-else
-
-  act_tochar( #door, ch );
-
-"
+  continue;
+else
+  act_tochar( #door, ch );
+"
 E
 "door"
 "This battered old door is covered in the same mildew which coats the rest of
-
-the room, which helped disguise it and made it appear part of the wall.  There
-
-is a small, closed hatch at eye level.
-
-"
+the room, which helped disguise it and made it appear part of the wall.  There
+is a small, closed hatch at eye level.
+"
 !
 0 0 0
 A
 "knock"
 "1 north door"
 "if( is_open( room, north ) )
-
-  act_tochar( #why, ch );
-
-else {
-
-  act_tochar( #knock, ch );
-
-  act_notchar( #nknock, ch );
-
-  wait( 2 );
-
-  if( is_name( \"STAB\", clan_abbrev( ch ) ) ) {
-
-    act_room( #open, ch );
-
-    wait( 2 );
-
-    open( room, north );
-
-    act_room( #open2, ch );
-
-  }
-
-  else
-
-    act_tochar( #no, ch );
-
-}
-
-"
+  act_tochar( #why, ch );
+else {
+  act_tochar( #knock, ch );
+  act_notchar( #nknock, ch );
+  wait( 2 );
+  if( is_name( \"STAB\", clan_abbrev( ch ) ) ) {
+    act_room( #open, ch );
+    wait( 2 );
+    open( room, north );
+    act_room( #open2, ch );
+  }
+  else
+    act_tochar( #no, ch );
+}
+"
 E
 "knock"
 "You knock on the door to the north.
-
-"
+"
 E
 "nknock"
 "$n knocks on the door.
-
-"
+"
 E
 "why"
 "The door is already open.
-
-"
+"
 E
 "open"
 "After a few seconds the small hatch opens soundlessly.  A hooded man peers
-
-through, and after a few seconds he slams the hatch shut.
-
-"
+through, and after a few seconds he slams the hatch shut.
+"
 E
 "open2"
 "The door opens without a creak.
-
-"
+"
 E
 "no"
 "After a few seconds the hatch opens soundlessly.  A hooded man peers through,
-
-takes one look at you, and slams the hatch shut in your face.
-
-"
+takes one look at you, and slams the hatch shut in your face.
+"
 !
 0 0 0
 A
 "pull"
 "rope"
 "if( is_open( room, up ) ) {
-
-  act_tochar( #close, ch );
-
-  act_notchar( #nclose, ch );
-
-  close( room, up );
-
-  send_to_room( #close2, find_room( 11609 ) );
-
-}
-
-else {
-
-  act_tochar( #pull, ch );
-
-  act_notchar( #npull, ch );
-
-  open( room, up );
-
-  send_to_room( #open, find_room( 11609 ) );
-
-}
-
-"
+  act_tochar( #close, ch );
+  act_notchar( #nclose, ch );
+  close( room, up );
+  send_to_room( #close2, find_room( 11609 ) );
+}
+else {
+  act_tochar( #pull, ch );
+  act_notchar( #npull, ch );
+  open( room, up );
+  send_to_room( #open, find_room( 11609 ) );
+}
+"
 E
 "why"
 "The trapdoor has already been open.
-
-"
+"
 E
 "pull"
 "You pull the rope hanging from the ring, and the trapdoor swings open.
-
-"
+"
 E
 "npull"
 "$n pulls the rope hanging from the ring, and the trapdoor swings open.
-
-"
+"
 E
 "close"
 "You pull the rope hanging from the ring, and the trapdoor closes shut.
-
-"
+"
 E
 "nclose"
 "$n pulls the rope hanging from the ring, and the trapdoor closes shut.
-
-"
+"
 E
 "close2"
 "The planks suddenly close from below.
-
-"
+"
 E
 "open"
 "The planks suddenly open, revealing passage downward.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "if( is_open( room, north ) ) {
-
-  act_room( #close, ch );
-
-  close( room, north );
-
-  send_to_room( #close2, find_room( 11602 ) );
-
-}
-
-"
+  act_room( #close, ch );
+  close( room, north );
+  send_to_room( #close2, find_room( 11602 ) );
+}
+"
 E
 "close"
 "The door to the north immediately closes.
-
-"
+"
 E
 "close2"
 "The door to the south closes shut.
-
-"
+"
 !
 1 0 1
 -1
@@ -276,18 +198,12 @@ S
 #11601
 "A Small Workshop"
 "This workshop is filled with shelves, stacked high with mostly unknown items.
-
-They seem to have been awaiting repair for some time, as evidenced by the
-
-coating of dust on several of the upper shelves.  A large counter against the
-
-south wall indicates that this room may double as both a storeroom and a
-
-repair workshop.  Scattered on various work benches are tools of all
-
-description and size, in a clutter so random it must be by design.
-
-"
+They seem to have been awaiting repair for some time, as evidenced by the
+coating of dust on several of the upper shelves.  A large counter against the
+south wall indicates that this room may double as both a storeroom and a
+repair workshop.  Scattered on various work benches are tools of all
+description and size, in a clutter so random it must be by design.
+"
 ""
 301471797 0
 0 8 0
@@ -305,24 +221,15 @@ S
 #11602
 "An Opulent Foyer"
 "This room stands in stark contrast to the cellar beyond.  Great care seems to
-
-have been taken in its crafting, and the walls and floor appear to shine in
-
-the light given off by a chandelier hanging from the ornately patterned
-
-ceiling.  The walls are of a creamy shade of marble, and the floor of dark
-
-obsidian colored stone.  The walls are adorned with various masterpieces of
-
-artwork, and the central walkway is covered with a thick, red carpet.  A
-
-fountain stands here, its centrepiece a cloaked and masked woman.  To the
-
-right of the entrance way is a chair behind a heavy oak desk.  An archway lies
-
-to the north.
-
-"
+have been taken in its crafting, and the walls and floor appear to shine in
+the light given off by a chandelier hanging from the ornately patterned
+ceiling.  The walls are of a creamy shade of marble, and the floor of dark
+obsidian colored stone.  The walls are adorned with various masterpieces of
+artwork, and the central walkway is covered with a thick, red carpet.  A
+fountain stands here, its centrepiece a cloaked and masked woman.  To the
+right of the entrance way is a chair behind a heavy oak desk.  An archway lies
+to the north.
+"
 ""
 301465637 0
 0 8 0
@@ -337,149 +244,105 @@ D2
 E
 "walls"
 "The walls are adorned with works of art, probably masterpieces, and no doubt
-
-illegally obtained.
-
-"
+illegally obtained.
+"
 E
 "chair desk"
 "A heavy oak desk with a chair, probably for use by a watchman.
-
-"
+"
 A
 ""
 ""
 "mob = mob_in_room( 2888, room );
-
-if( mob ) {
-
-  interpret( mob, \"bow\" );
-
-  if( get_sex( ch ) == male )
-
-    interpret( mob, #greetc );
-
-  else
-
-    interpret( mob, #greetf );
-
-}
-
-if( is_open( room, south ) ) {
-
-  close( room, south );
-
-  act_room( #shut, ch );
-
-  send_to_room( #shut2, find_room( 11600 ) );
-
-}
-
-"
+if( mob ) {
+  interpret( mob, \"bow\" );
+  if( get_sex( ch ) == male )
+    interpret( mob, #greetc );
+  else
+    interpret( mob, #greetf );
+}
+if( is_open( room, south ) ) {
+  close( room, south );
+  act_room( #shut, ch );
+  send_to_room( #shut2, find_room( 11600 ) );
+}
+"
 E
 "greetc"
 "say Greetings, sir.  Can you keep a secret?
-
-"
+"
 E
 "greetf"
 "say Greetings, Madame.  Can you keep a secret?
-
-"
+"
 E
 "shut"
 "The door to the south slams shut.
-
-"
+"
 E
 "shut2"
 "The door suddenly closes shut.
-
-"
+"
 !
 1 0 4
 A
 "open"
 "1 south door"
 "if( is_open( room, south ) )
-
-  act_tochar( #why, ch );
-
-else {
-
-  open( room, south );
-
-  act_tochar( #open, ch );
-
-  act_notchar( #nopen, ch );
-
-  send_to_room( #open2, find_room( 11600 ) );
-
-}
-
-"
+  act_tochar( #why, ch );
+else {
+  open( room, south );
+  act_tochar( #open, ch );
+  act_notchar( #nopen, ch );
+  send_to_room( #open2, find_room( 11600 ) );
+}
+"
 E
 "why"
 "The door is already open.
-
-"
+"
 E
 "open"
 "You open the door to the south.
-
-"
+"
 E
 "nopen"
 "$n opens the door to the south.
-
-"
+"
 E
 "open2"
 "The door to the north suddenly opens.
-
-"
+"
 !
 0 0 0
 A
 "close"
 "1 south door"
 "if( is_open( room, south ) ) {
-
-  act_tochar( #close, ch );
-
-  act_notchar( #nclose, ch );
-
-  close( room, south );
-
-  send_to_room( #close2, find_room( 11600 ) );
-
-}
-
-else
-
-  act_tochar( #why, ch );
-
-"
+  act_tochar( #close, ch );
+  act_notchar( #nclose, ch );
+  close( room, south );
+  send_to_room( #close2, find_room( 11600 ) );
+}
+else
+  act_tochar( #why, ch );
+"
 E
 "close"
 "You close the door to the south.
-
-"
+"
 E
 "nclose"
 "$n closes the door to the south.
-
-"
+"
 E
 "why"
 "The door to the south is already closed.
-
-"
+"
 E
 "close2"
 "The door suddenly closes.
-
-"
+"
 !
 0 0 0
 4857 17 1509949540 -2 0
@@ -490,20 +353,13 @@ S
 #11603
 "South End of a Long Hall"
 "The southern end of long hall, with a huge feast table lying in its center,
-
-surrounded by many chairs.  This table appears to have seen much use, and is
-
-scarred and pitted.  The walls and floor in this room echo the theme of this
-
-place, the walls being of a creamy shade of marble, and the floor of dark
-
-obsidian colored stone.  The walls are set with sconces, set an equal distance
-
-apart, and there are candelabra on the table, which serve to provide light for
-
-the large room.  A door on the east wall is carved with a mask motif.
-
-"
+surrounded by many chairs.  This table appears to have seen much use, and is
+scarred and pitted.  The walls and floor in this room echo the theme of this
+place, the walls being of a creamy shade of marble, and the floor of dark
+obsidian colored stone.  The walls are set with sconces, set an equal distance
+apart, and there are candelabra on the table, which serve to provide light for
+the large room.  A door on the east wall is carved with a mask motif.
+"
 ""
 301465637 0
 0 8 0
@@ -525,16 +381,11 @@ S
 #11604
 "North End of a Long Hall"
 "The northern end of a long feast hall, with a feast table as a centrepiece.
-
-The dcor here continues in the same vein as the southern end of the hall, with
-
-cream walls and obsidian floor.  A larger chair is set at this end of the
-
-table, possibly where a senior member might sit to preside over meals.  The
-
-hall continues to the east, while to the west is the distinct smell of soup.
-
-"
+The dcor here continues in the same vein as the southern end of the hall, with
+cream walls and obsidian floor.  A larger chair is set at this end of the
+table, possibly where a senior member might sit to preside over meals.  The
+hall continues to the east, while to the west is the distinct smell of soup.
+"
 ""
 301465637 0
 0 8 0
@@ -556,22 +407,14 @@ S
 #11605
 "Kitchen"
 "This kitchen looks to contain more cooking equipment than should be possible
-
-for its size.  Walls are adorned with hanging pots, pans and saucepans, and
-
-its work surfaces are covered with huge stacks of dishes and vegetables.
-
-There are large cabinets which look to be used for the curing of meat, and the
-
-storing of more crockery.  A stunning array of knives and cleavers is on one
-
-shelf, and yet more bizarre instruments adorn a row of hooks beneath it.  A
-
-huge fireplace sits against the northern wall, with a bubbling vat suspended
-
-above it.
-
-"
+for its size.  Walls are adorned with hanging pots, pans and saucepans, and
+its work surfaces are covered with huge stacks of dishes and vegetables.
+There are large cabinets which look to be used for the curing of meat, and the
+storing of more crockery.  A stunning array of knives and cleavers is on one
+shelf, and yet more bizarre instruments adorn a row of hooks beneath it.  A
+huge fireplace sits against the northern wall, with a bubbling vat suspended
+above it.
+"
 ""
 301465637 0
 0 8 0
@@ -586,24 +429,15 @@ S
 #11606
 "Altar to Ashallan"
 "This small room is hidden within heavy black shrouds, which adorn the walls
-
-and ceiling.  The floor is of the same obsidian-hued stone used elsewhere, but
-
-appears yet darker.  The lack of colour in the room as a whole would almost
-
-give the appearance of a void, if it were not for the altar against the
-
-eastern wall.  A huge block, seamlessly jutting from the floor stands here,
-
-with ornately carved masks adorning its sides.  Atop the altar are huge black-
-
-iron candelabras with red candles, which are providing light for the room.  In
-
-the center of the altar is a statue which appears to be made from pure
-
-platinum.
-
-"
+and ceiling.  The floor is of the same obsidian-hued stone used elsewhere, but
+appears yet darker.  The lack of colour in the room as a whole would almost
+give the appearance of a void, if it were not for the altar against the
+eastern wall.  A huge block, seamlessly jutting from the floor stands here,
+with ornately carved masks adorning its sides.  Atop the altar are huge black-
+iron candelabras with red candles, which are providing light for the room.  In
+the center of the altar is a statue which appears to be made from pure
+platinum.
+"
 ""
 -772275291 0
 0 8 0
@@ -614,36 +448,24 @@ D3
 E
 "altar"
 "On the altar is a statue of Ashallan, goddess of thieves, stealth and
-
-deception.  The statue is finely crafted from pure platinum, and shimmers in
-
-the candlelight.  She has obsidian chips for eyes, which can be glimpsed
-
-within her masked face, reflecting the flames light in a thousand directions.
-
-One hand is raised aloft, and it clutches a shining dagger.
-
-"
+deception.  The statue is finely crafted from pure platinum, and shimmers in
+the candlelight.  She has obsidian chips for eyes, which can be glimpsed
+within her masked face, reflecting the flames light in a thousand directions.
+One hand is raised aloft, and it clutches a shining dagger.
+"
 -1
 S
 
 #11607
 "Lounge"
 "This seating area appears to be for relaxing, full of only the most
-
-comfortable chairs and sofas, stuffed with padding.  The walls are painted
-
-with murals of all descriptions, topped with ornate scrollwork where the walls
-
-meet the ceiling.  Swooping gold sconces light the room, set in small alcoves
-
-at equidistant points on the walls where they illuminate various works of art
-
-and riches beneath them.  On the eastern wall is a large bookshelf filled with
-
-tomes of great worth and rarity.
-
-"
+comfortable chairs and sofas, stuffed with padding.  The walls are painted
+with murals of all descriptions, topped with ornate scrollwork where the walls
+meet the ceiling.  Swooping gold sconces light the room, set in small alcoves
+at equidistant points on the walls where they illuminate various works of art
+and riches beneath them.  On the eastern wall is a large bookshelf filled with
+tomes of great worth and rarity.
+"
 ""
 301465637 0
 0 8 0
@@ -659,55 +481,38 @@ A
 "pull"
 "book"
 "if( is_name( \"STAB\", clan_abbrev( ch ) ) ) {
-
-  act_tochar( #pull, ch );
-
-  act_notchar( #npull, ch );
-
-  transfer( ch, find_room( 11608 ) );
-
-  act_notchar( #napp, ch );
-
-}
-
-else {
-
-  act_tochar( #fail, ch );
-
-  act_notchar( #nfail, ch );
-
-}
-
-"
+  act_tochar( #pull, ch );
+  act_notchar( #npull, ch );
+  transfer( ch, find_room( 11608 ) );
+  act_notchar( #napp, ch );
+}
+else {
+  act_tochar( #fail, ch );
+  act_notchar( #nfail, ch );
+}
+"
 E
 "pull"
 "You pull one of the more prominent volumes on the bookcase, and the entire
-
-framework moves silently to one side, exposing a room beyond.  You step
-
-through the opening, and the case moves back behind you.
-
-"
+framework moves silently to one side, exposing a room beyond.  You step
+through the opening, and the case moves back behind you.
+"
 E
 "npull"
 "$n pulls some sort of book and disappears.
-
-"
+"
 E
 "napp"
 "$n suddenly appears from the lounge room.
-
-"
+"
 E
 "fail"
 "You pull one of the books from the bookcase, but nothing happens.
-
-"
+"
 E
 "nfail"
 "$n pulls one of the books from the bookcase.
-
-"
+"
 !
 0 0 0
 1878 17 1509949540 -2 0
@@ -719,23 +524,15 @@ S
 #11608
 "Treasure Room"
 "This is a great cavern of a room, with many shelves full of riches of all
-
-kinds.  Piles of crates and boxes can be seen stacked high into the air, their
-
-contents unknown.  Two large paintings are set into the northern wall, their
-
-presence dominating the room by their size and vibrancy.  A few chairs are
-
-scattered here, but the main object of this room is certainly not comfort.
-
-Next to the huge metal plate covering the exit is a red button.
-
-"
+kinds.  Piles of crates and boxes can be seen stacked high into the air, their
+contents unknown.  Two large paintings are set into the northern wall, their
+presence dominating the room by their size and vibrancy.  A few chairs are
+scattered here, but the main object of this room is certainly not comfort.
+Next to the huge metal plate covering the exit is a red button.
+"
 "[Elchyen] Gweran pushes the button, and the large plate glides silently to one side.  he << needs capitalisation.
-
-[Elchyen] Tools painting - line 7 should be deleted i think.
-
-"
+[Elchyen] Tools painting - line 7 should be deleted i think.
+"
 301465653 0
 0 9 0
 D2
@@ -750,37 +547,26 @@ A
 "push"
 "button"
 "act_tochar( #push, ch );
-
-act_notchar( #npush, ch );
-
-transfer( ch, find_room( 11607 ) );
-
-act_notchar( #napp, ch );
-
-"
+act_notchar( #npush, ch );
+transfer( ch, find_room( 11607 ) );
+act_notchar( #napp, ch );
+"
 E
 "push"
 "You push the button, and the large plate glides silently to one side.  You
-
-step through the opening into the lounge beyond, the plate sliding shut behind
-
-you.
-
-"
+step through the opening into the lounge beyond, the plate sliding shut behind
+you.
+"
 E
 "npush"
 "$n pushes the button, and the large plate glides silently to one side.  $e
-
-steps through the opening into the lounge beyond, the plate sliding shut
-
-behind $m.
-
-"
+steps through the opening into the lounge beyond, the plate sliding shut
+behind $m.
+"
 E
 "napp"
 "$n suddenly appears from some sort of opening which quickly disappears.
-
-"
+"
 !
 0 0 0
 -1
@@ -789,16 +575,11 @@ S
 #11609
 "Inn Basement"
 "Dust lines the floor of this forgotten room.  Some rectangular and circular
-
-shapes have formed from varying levels of dust to distinguish where items had
-
-once rested.  At each corner are cobwebs which have collected into thick
-
-bundles.  A partially splintered ladder has been left to the eastern corner to
-
-allow passage upward.
-
-"
+shapes have formed from varying levels of dust to distinguish where items had
+once rested.  At each corner are cobwebs which have collected into thick
+bundles.  A partially splintered ladder has been left to the eastern corner to
+allow passage upward.
+"
 ""
 301465636 0
 0 6 0
@@ -813,77 +594,54 @@ D5
 E
 "floor dust"
 "Examining the dust on the floor more closely, you notice some wooden planks
-
-almost completely free of dust.  Some of the corners of the planks appear to
-
-be movable.
-
-"
+almost completely free of dust.  Some of the corners of the planks appear to
+be movable.
+"
 E
 "ladder"
 "A ladder that is in serious need of repair stands at a 45 degree angle leading
-
-upstairs.
-
-"
+upstairs.
+"
 A
 "move"
 "planks"
 "if( is_open( room, down ) ) {
-
-  act_tochar( #close, ch );
-
-  act_notchar( #nclose, ch );
-
-  close( room, down );
-
-  send_to_room( #close2, find_room( 11600 ) );
-
-}
-
-else {
-
-  act_tochar( #open, ch );
-
-  act_notchar( #nopen, ch );
-
-  open( room, down );
-
-  send_to_room( #open2, find_room( 11600 ) );
-
-}
-
-"
+  act_tochar( #close, ch );
+  act_notchar( #nclose, ch );
+  close( room, down );
+  send_to_room( #close2, find_room( 11600 ) );
+}
+else {
+  act_tochar( #open, ch );
+  act_notchar( #nopen, ch );
+  open( room, down );
+  send_to_room( #open2, find_room( 11600 ) );
+}
+"
 E
 "close"
 "You move the planks, covering up the entrance downward.
-
-"
+"
 E
 "nclose"
 "$n moves the planks on the floor.
-
-"
+"
 E
 "open"
 "You move the planks to reveal an entrance downward.
-
-"
+"
 E
 "nopen"
 "$n moves the planks to reveal an entrance downward.
-
-"
+"
 E
 "close2"
 "The trapdoor above you suddenly closes.
-
-"
+"
 E
 "open2"
 "The trapdoor suddenly opens above you.
-
-"
+"
 !
 0 0 0
 -1

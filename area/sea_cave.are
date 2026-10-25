@@ -10,14 +10,10 @@
 #26250
 "Grotto by the Sea"
 "The blue water of the Sea of Stars laps gently into this secluded and
-
-peaceful grotto.  Above, the rock ceiling slopes down to meet the water
-
-deep within the cavern filling it completely.  A few fish and small sea
-
-creatures seem to be the only life inhabiting this cave.
-
-"
+peaceful grotto.  Above, the rock ceiling slopes down to meet the water
+deep within the cavern filling it completely.  A few fish and small sea
+creatures seem to be the only life inhabiting this cave.
+"
 ""
 301465608 0
 6 5 0
@@ -35,8 +31,7 @@ S
 #26251
 "Into the Grotto"
 "Under Construction.
-
-"
+"
 ""
 301465608 0
 7 5 0
@@ -54,14 +49,10 @@ S
 #26252
 "Into the Grotto"
 "Here, deep within this dark and water-filled grotto you feel pressed in on
-
-all sides by the massive rock walls.  You can see very little to the west
-
-of here because of the encroaching seaweed.  The seaweed sways here under
-
-the force of the tides.  
-
-"
+all sides by the massive rock walls.  You can see very little to the west
+of here because of the encroaching seaweed.  The seaweed sways here under
+the force of the tides.  
+"
 ""
 301465604 0
 7 6 0
@@ -79,12 +70,9 @@ S
 #26253
 "Sea Cavern"
 "This seaweed and water filled cavern tangles your feet and hands at every
-
-turn.  Strong currents attempt to pull you into the northern cavern,
-
-while waves from the east try and batter you farther west.
-
-"
+turn.  Strong currents attempt to pull you into the northern cavern,
+while waves from the east try and batter you farther west.
+"
 ""
 301465604 0
 7 6 0
@@ -106,10 +94,8 @@ S
 #26254
 "Sea Cavern"
 "Only a thin patch of seaweed slows your movements through this area.  You
-
-feel strong currents pulling you north.  
-
-"
+feel strong currents pulling you north.  
+"
 ""
 301465604 0
 7 6 0
@@ -125,38 +111,25 @@ A
 ""
 ""
 "if( rflag( reset0, room ) ) {
-
-  send_to_char( #swept, ch );
-
-  transfer( ch, find_room( 26255 ) );
-
-  send_to_char( #dash, ch );
-
-  i = dice( 20, 2 );
-
-  inflict( ch, mob, i, \"being dashed up against the rocks\" );
-
-  }
-
-"
+  send_to_char( #swept, ch );
+  transfer( ch, find_room( 26255 ) );
+  send_to_char( #dash, ch );
+  i = dice( 20, 2 );
+  inflict( ch, mob, i, \"being dashed up against the rocks\" );
+  }
+"
 E
 "dash"
 "You are dashed against the rocks....HARD!
-
-"
+"
 E
 "swept"
 "You are swept along by heavy currents...
-
-.
-
-.
-
-.
-
-.
-
-"
+.
+.
+.
+.
+"
 !
 1 -1 63
 -1
@@ -165,12 +138,9 @@ S
 #26255
 "Sea Cavern"
 "The currents in this cavern dash you against the rough rock walls.  Every
-
-passing moment is a new experience in pain.  One rock especially catches
-
-your attention.  
-
-"
+passing moment is a new experience in pain.  One rock especially catches
+your attention.  
+"
 ""
 301465612 0
 7 6 0
@@ -182,100 +152,71 @@ A
 ""
 ""
 "if( rflag( reset0, room ) ) {
-
-  send_to_room( #dash, room );
-
-  loop( all_in_room ) {
-
-    inflict( rch, mob, dice( 3, 3 ), \"being dashed against the rocks\" );
-
-    }
-
-  }
-
-"
+  send_to_room( #dash, room );
+  loop( all_in_room ) {
+    inflict( rch, mob, dice( 3, 3 ), \"being dashed against the rocks\" );
+    }
+  }
+"
 E
 "dash"
 "You are dashed against the rocks....HARD!
-
-"
+"
 !
 2 900 0
 A
 "1 look"
 "rocks"
 "send_to_char( #to_char, ch );
-
-act_notchar( #to_room, ch );
-
-"
+act_notchar( #to_room, ch );
+"
 E
 "to_room"
 "$n looks at the rocks.
-
-"
+"
 E
 "to_char"
 "You see an odd shaped rock protruding forth from the cavern wall.
-
-"
+"
 !
 0 0 0
 A
 "push"
 "rocks"
 "if( rflag( reset0, room ) ) {
-
-  send_to_char( #to_char, ch );
-
-  act_notchar( #to_room, ch );
-
-  send_to_room( #to_all, room );
-
-  remove_rflag( reset0, room );
-
-  remove_rflag( reset0, find_room( 26254 ) );
-
-  remove_rflag( reset0, find_room( 26271 ) );
-
-  }
-
-else {
-
-  send_to_char( #done_char, ch );
-
-  act_notchar( #done_room, ch );
-
-  }
-
-"
+  send_to_char( #to_char, ch );
+  act_notchar( #to_room, ch );
+  send_to_room( #to_all, room );
+  remove_rflag( reset0, room );
+  remove_rflag( reset0, find_room( 26254 ) );
+  remove_rflag( reset0, find_room( 26271 ) );
+  }
+else {
+  send_to_char( #done_char, ch );
+  act_notchar( #done_room, ch );
+  }
+"
 E
 "done_room"
 "$n tries to push on the rock wall, but to no avail.
-
-"
+"
 E
 "done_char"
 "The rock doesn't seem to move.
-
-"
+"
 E
 "to_all"
 "You hear a low rumbling sound from behind the rock wall.
-
-The current subsides.
-
-"
+The current subsides.
+"
 E
 "to_room"
 "$n pushes the rock.
-
-"
+"
 E
 "to_char"
 "The rock depresses slightly.
-
-"
+"
 !
 0 0 0
 -1
@@ -284,10 +225,8 @@ S
 #26256
 "Underwater Cavern"
 "This cavern is so murky and seaweed filled that you have to feel your way
-
-along.  The surf outside jars you as the tides move in and out.  
-
-"
+along.  The surf outside jars you as the tides move in and out.  
+"
 ""
 301465604 0
 7 6 0
@@ -305,29 +244,18 @@ S
 #26257
 "Underwater Cavern"
 "The rocky floor and walls of this cavern are rough and crooked.  Sand, gravel,
-
-and sharp fragments of stone litter the floor, making footing treacherous.
-
-The gentle current pushes rhythmically against you, swaying you back and
-
-forth.  A tangled mass of dead and dying seaweed prohibits passage to the
-
-west.  To the south, a crack in the wall gapes wide to reveal open water.
-
-"
+and sharp fragments of stone litter the floor, making footing treacherous.
+The gentle current pushes rhythmically against you, swaying you back and
+forth.  A tangled mass of dead and dying seaweed prohibits passage to the
+west.  To the south, a crack in the wall gapes wide to reveal open water.
+"
 "[Heliodora] looking at the seaweed disrupts cure prep?
-
-[Ssleestaq] prohibits passage to the west? its an open exit on autoexit.
-
-[Ssleestaq] add extra for the mass?
-
-[Hoel] west, should be east
-
-[Cobam] tree who are you?
-
-[Teek] Check the exit to the south, it displays the 'leave' essage even if you are too exhausted.
-
-"
+[Ssleestaq] prohibits passage to the west? its an open exit on autoexit.
+[Ssleestaq] add extra for the mass?
+[Hoel] west, should be east
+[Cobam] tree who are you?
+[Teek] Check the exit to the south, it displays the 'leave' essage even if you are too exhausted.
+"
 301465612 0
 7 6 0
 D0
@@ -345,64 +273,49 @@ D3
 E
 "e east"
 "To the east you see a large seaweed filled cavern.
-
-"
+"
 A
 "1 look"
 "1 east | 1 seaweed"
 "if( !is_open( room, east ) )
-
-  send_to_char( #to_char, ch );
-
-else
-
-  send_to_char( #to_char2, ch );
-
-"
+  send_to_char( #to_char, ch );
+else
+  send_to_char( #to_char2, ch );
+"
 E
 "to_char2"
 "The seaweed looks extreamly thick and tangled.
-
-"
+"
 E
 "to_char"
 "The tangled seaweed looks impossible to get through.
-
-"
+"
 !
 0 0 0
 A
 "1 east"
 ""
 "if( !is_open( room, east ) )
-
-  send_to_char( #to_char, ch );
-
-else
-
-  continue;
-
-"
+  send_to_char( #to_char, ch );
+else
+  continue;
+"
 E
 "to_char"
 "The seaweed is so thick it is impossible to pass through it.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "act_tochar( #south, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "south"
 "You enter the crack, leaving the cavern behind.
-
-"
+"
 !
 3 0 4
 -1
@@ -411,8 +324,7 @@ S
 #26258
 "Sea Cavern"
 "Under Construction.
-
-"
+"
 ""
 301465608 0
 1 6 0
@@ -426,8 +338,7 @@ S
 #26259
 "Sea Cavern"
 "Under Construction.
-
-"
+"
 ""
 301465608 0
 1 6 0
@@ -449,8 +360,7 @@ S
 #26260
 "Secret Cavern"
 "Under Construction.
-
-"
+"
 ""
 301465608 0
 1 6 0
@@ -464,8 +374,7 @@ S
 #26261
 "Sandy Cave"
 "The sandy floor here rises up out of the water to a dank and musty smelling cave.
-
-"
+"
 ""
 301465608 0
 1 6 0
@@ -483,8 +392,7 @@ S
 #26262
 "Sea Cavern"
 "Under Construction.
-
-"
+"
 ""
 301465608 0
 1 6 0
@@ -502,8 +410,7 @@ S
 #26263
 "Sea Cavern"
 "Under Construction.
-
-"
+"
 ""
 301465608 0
 1 6 0
@@ -517,8 +424,7 @@ S
 #26264
 "Sea Cavern"
 "Under Construction.
-
-"
+"
 ""
 301465608 0
 1 6 0
@@ -532,8 +438,7 @@ S
 #26265
 "Into the Grotto"
 "Under Construction.
-
-"
+"
 ""
 301465608 0
 7 5 0
@@ -551,10 +456,8 @@ S
 #26266
 "Underwater Cavern"
 "The cavern extends from here to the north and east.  To the north, the bottom
-
-of the cavern rises slightly.  This area has been worn smooth by the water.
-
-"
+of the cavern rises slightly.  This area has been worn smooth by the water.
+"
 ""
 301465604 0
 7 6 0
@@ -572,16 +475,11 @@ S
 #26267
 "Cromm's Forge"
 "Deep within the core of the earth sits this mighty forge.  The heat alone
-
-would melt your armor from your body and leave you a cinder upon the floor.
-
-But, through the grace of Cromm, He who lives in the earth, you are spared the
-
-fires of creation.  Here Cromm toils day and night tempering the foundations
-
-of the universe.
-
-"
+would melt your armor from your body and leave you a cinder upon the floor.
+But, through the grace of Cromm, He who lives in the earth, you are spared the
+fires of creation.  Here Cromm toils day and night tempering the foundations
+of the universe.
+"
 ""
 301465608 0
 1 6 0
@@ -591,19 +489,13 @@ S
 #26268
 "Sandy Cavern"
 "The sandy floor here rises up out of the water.  To the north the cave is no
-
-longer underwater, but covered in soft white sand.  Small pieces of bone and
-
-cloth litter this area, as tiny crabs scurry from beneath your feet.  The
-
-sandstone walls here seem loose and dangerous, pushing against them could
-
-prove hazardous.
-
-"
+longer underwater, but covered in soft white sand.  Small pieces of bone and
+cloth litter this area, as tiny crabs scurry from beneath your feet.  The
+sandstone walls here seem loose and dangerous, pushing against them could
+prove hazardous.
+"
 "[Ssleestaq] extras?
-
-"
+"
 301465612 0
 0 6 0
 D0
@@ -622,73 +514,53 @@ A
 "look"
 "1 west"
 "if( is_open( room, west ) )
-
-  send_to_char( #see_open, ch );
-
-else
-
-  send_to_char( #see_closed, ch );
-
-"
+  send_to_char( #see_open, ch );
+else
+  send_to_char( #see_closed, ch );
+"
 E
 "see_closed"
 "The sandstone wall is crumbling away here.
-
-"
+"
 E
 "see_open"
 "The sandstone wall has collapsed here.
-
-"
+"
 !
 0 0 0
 A
 "push kick"
 "sandstone wall 1 west"
 "if( is_open( room, west ) )
-
-  send_to_char( #collapsed, ch );
-
-else {
-
-  send_to_char( #opening, ch );
-
-  act_notchar( #is_opening, ch );
-
-  send_to_room( #collapses, room );
-
-  act_area( #rumble, ch );
-
-  open( room, west );
-
-  }
-
-"
+  send_to_char( #collapsed, ch );
+else {
+  send_to_char( #opening, ch );
+  act_notchar( #is_opening, ch );
+  send_to_room( #collapses, room );
+  act_area( #rumble, ch );
+  open( room, west );
+  }
+"
 E
 "rumble"
 "A low rumbling is heard all around you.
-
-"
+"
 E
 "collapses"
 "A low rumbling is heard from above.
-
-"
+"
 E
 "is_opening"
 "$n collapses the sandstone wall into a choking cloud of dust.
-
-"
+"
 E
 "opening"
 "The sandstone wall before you collapses in a choking cloud of dust.
-
-"
+"
 E
 "collapsed"
 "The sandstone wall before you has already collapsed.
-
-"
+"
 !
 0 0 0
 -1
@@ -697,14 +569,10 @@ S
 #26269
 "Smuggler's Cave"
 "Broken and rusted cutlasses, sea faring articles of clothing and countless
-
-bones and skeletons are strewn around this natural cave.  A long forgotten
-
-clash of smugglers and pirates must have taken place here.  Seemingly, the
-
-only victors being the crabs that cleaned their bones.
-
-"
+bones and skeletons are strewn around this natural cave.  A long forgotten
+clash of smugglers and pirates must have taken place here.  Seemingly, the
+only victors being the crabs that cleaned their bones.
+"
 ""
 301465604 0
 0 6 0
@@ -722,19 +590,13 @@ S
 #26270
 "Deep in the Smuggler's Cave"
 "Wine casks, crates, kegs and bolts of cloth are all stacked along the far
-
-eastern wall of this cavern, most broken and rotten from exposure to the salty
-
-sea air.  The fabric on the bolts is torn and moldy, leaving little in this
-
-room to be desired.
-
-"
+eastern wall of this cavern, most broken and rotten from exposure to the salty
+sea air.  The fabric on the bolts is torn and moldy, leaving little in this
+room to be desired.
+"
 "[Ssleestaq] gotta put in a search something here
-
-[Ssleestaq] and extra
-
-"
+[Ssleestaq] and extra
+"
 301465604 0
 0 6 0
 D3
@@ -748,23 +610,15 @@ S
 #26271
 "Pirate's Treasure Cave"
 "Crashing waves are heard all around as the sounds of the sea echo within this
-
-cavern.  Dark and musty, it seems as if you are the first to have ventured
-
-into this cave for nearly 100 years.  The only item of note here is the large
-
-sea chest in the middle of the floor.  Half buried in sand and rotten from
-
-salt air and age, the rusty lock still looks secure.  A skeleton of some long
-
-dead pirate lies here next to the chest.  The skeleton's trusty, and rusty,
-
-cutlass is stuck deep into the sand next to him.
-
-"
+cavern.  Dark and musty, it seems as if you are the first to have ventured
+into this cave for nearly 100 years.  The only item of note here is the large
+sea chest in the middle of the floor.  Half buried in sand and rotten from
+salt air and age, the rusty lock still looks secure.  A skeleton of some long
+dead pirate lies here next to the chest.  The skeleton's trusty, and rusty,
+cutlass is stuck deep into the sand next to him.
+"
 "[Ssleestaq] make look east a bit longer?
-
-"
+"
 301465612 0
 0 6 0
 D1
@@ -778,257 +632,183 @@ D3
 E
 "1 east"
 "A sandstone wall.
-
-"
+"
 A
 "push kick"
 "sandstone east wall e"
 "if( is_open( room, east ) )
-
-  send_to_char( #collapsed, ch );
-
-else {
-
-  send_to_char( #opening, ch );
-
-  act_notchar( #is_opening, ch );
-
-  send_to_room( #collapses, room );
-
-  act_area( #rumble, ch );
-
-  open( room, east );
-
-  }
-
-"
+  send_to_char( #collapsed, ch );
+else {
+  send_to_char( #opening, ch );
+  act_notchar( #is_opening, ch );
+  send_to_room( #collapses, room );
+  act_area( #rumble, ch );
+  open( room, east );
+  }
+"
 E
 "rumble"
 "A low rumbling is heard all around you.
-
-"
+"
 E
 "collapses"
 "A low rumbling is heard from above.
-
-"
+"
 E
 "is_opening"
 "$n pushes through the sandstone wall, collapsing it into a choking cloud of dust.
-
-"
+"
 E
 "opening"
 "The sandstone wall before you collapses in a choking cloud of dust.
-
-"
+"
 E
 "collapsed"
 "The sandstone wall before you has already collapsed.
-
-"
+"
 !
 0 0 0
 A
 "1 look"
 "skeleton"
 "if( rflag( reset0, room ) ) {
-
-  send_to_char( #to_char, ch );
-
-  act_notchar( #to_room, ch );
-
-  }
-
-else {
-
-  send_to_char( #dug_up, ch );
-
-  act_notchar( #dug_rm, ch );
-
-  }
-
-"
+  send_to_char( #to_char, ch );
+  act_notchar( #to_room, ch );
+  }
+else {
+  send_to_char( #dug_up, ch );
+  act_notchar( #dug_rm, ch );
+  }
+"
 E
 "dug_rm"
 "$n looks at the skeleton
-
-"
+"
 E
 "dug_up"
 "A sand covered skeleton lies here.
-
-"
+"
 E
 "to_room"
 "$n looks at the skeleton.
-
-"
+"
 E
 "to_char"
 "You see a half-buried skeleton of what used to be a pirate.
-
-"
+"
 !
 0 0 0
 A
 "dig"
 ""
 "if( rflag( reset0, room ) ) {
-
-  send_to_char( #to_char, ch );
-
-  obj_to_room( oload( 6004 ), room );
-
-  act_notchar( #to_room, ch );
-
-  remove_rflag( reset0, room );
-
-  }
-
-else
-
-  send_to_char( #dug_up, ch );
-
-"
+  send_to_char( #to_char, ch );
+  obj_to_room( oload( 6004 ), room );
+  act_notchar( #to_room, ch );
+  remove_rflag( reset0, room );
+  }
+else
+  send_to_char( #dug_up, ch );
+"
 E
 "dug_up"
 "The skeleton is already dug up.
-
-"
+"
 E
 "to_room"
 "$n digs up the skeleton.
-
-"
+"
 E
 "to_char"
 "You dig up the rest of the skeleton revealing a key buried with him.
-
-"
+"
 !
 0 0 0
 A
 "1 look"
 "cutlass"
 "send_to_char( #to_char, ch );
-
-act_notchar( #to_room, ch );
-
-"
+act_notchar( #to_room, ch );
+"
 E
 "to_room"
 "$n looks at the cutlass.
-
-"
+"
 E
 "to_char"
 "A rusty cutlass is stuck hilt deep into the sand here.
-
-"
+"
 !
 0 0 0
 A
 "pull move push 1 get 1 take"
 "cutlass"
 "if( rflag( reset1, room ) ) {
-
-  send_to_char( #to_char, ch );
-
-  act_notchar( #to_room, ch );
-
-  remove_rflag( reset1, room );
-
-  }
-
-else {
-
-  send_to_char( #done_char, ch );
-
-  act_notchar( #done_room, ch );
-
-  }
-
-"
+  send_to_char( #to_char, ch );
+  act_notchar( #to_room, ch );
+  remove_rflag( reset1, room );
+  }
+else {
+  send_to_char( #done_char, ch );
+  act_notchar( #done_room, ch );
+  }
+"
 E
 "done_room"
 "$n tries to pull up the cutlass.
-
-"
+"
 E
 "done_char"
 "The cutlass won't budge.
-
-"
+"
 E
 "to_room"
 "$n pulls the cutlass halfway out of the sand.
-
-"
+"
 E
 "to_char"
 "You pull the cutlass halfway out of the sand when it sticks tight.
-
-You hear a slight *click*.
-
-"
+You hear a slight *click*.
+"
 !
 0 0 0
 A
 "push"
 "1 west"
 "if( rflag( reset1, room ) ) {
-
-  send_to_char( #no_char, ch );
-
-  act_notchar( #no_room, ch );
-
-  }
-
-else {
-
-  if( is_open( room, west ) )
-
-    send_to_char( #open, ch );
-
-  else {
-
-    open( room, west );
-
-    send_to_char( #yes_char, ch );
-
-    act_notchar( #yes_room, ch );
-
-    }
-
-  }
-
-"
+  send_to_char( #no_char, ch );
+  act_notchar( #no_room, ch );
+  }
+else {
+  if( is_open( room, west ) )
+    send_to_char( #open, ch );
+  else {
+    open( room, west );
+    send_to_char( #yes_char, ch );
+    act_notchar( #yes_room, ch );
+    }
+  }
+"
 E
 "open"
 "The secret door is already open so no reason to push on the wall.
-
-"
+"
 E
 "no_room"
 "$n pushes against the wall, but to no avail.
-
-"
+"
 E
 "no_char"
 "You push against the wall, but to no avail.
-
-"
+"
 E
 "yes_room"
 "$n pushes on the wall, opening a secret door.
-
-"
+"
 E
 "yes_char"
 "The wall opens before you.
-
-"
+"
 !
 0 0 0
 118 49 1509949540 -2 0
@@ -1044,12 +824,9 @@ S
 #26272
 "Underwater Cavern"
 "The cavern continues east and west from here.  You begin to wonder what might
-
-live in these dark, foreboding caverns.  The outcroppings of rock seem to
-
-smooth out to the west.
-
-"
+live in these dark, foreboding caverns.  The outcroppings of rock seem to
+smooth out to the west.
+"
 ""
 301465604 0
 7 6 0
@@ -1067,13 +844,10 @@ S
 #26273
 "Underwater Cavern"
 "Only a thin patch of seaweed is seen here as the cavern continues east and
-
-west.  The rocks here are rough and the tide ebbs to and fro.
-
-"
+west.  The rocks here are rough and the tide ebbs to and fro.
+"
 "[Ssleestaq] add *alot* of room text here?
-
-"
+"
 301465604 0
 7 6 0
 D1
@@ -1090,15 +864,11 @@ S
 #26274
 "Slippery Tunnel"
 "The tunnel here is quite slippery from the algae and moss that grow on the wet
-
-walls and floors.  A constant *drip*....*drip*....*drip* can be heard all
-
-around you.  The tunnel continues to the west.
-
-"
+walls and floors.  A constant *drip*....*drip*....*drip* can be heard all
+around you.  The tunnel continues to the west.
+"
 "[Ssleestaq] um, can the room be a bit more obvious about a brass ring in the east wall?
-
-"
+"
 301465612 0
 0 6 0
 D1
@@ -1113,69 +883,51 @@ A
 ""
 ""
 "if( is_open( room, east ) ) {
-
-send_to_room( #to_all, room );
-
-close( room, east );
-
-room = find_room( 26271 );
-
-set_rflag( reset1, room );
-
-set_rflag( reset2, room );
-
-  }
-
-continue;
-
-"
+send_to_room( #to_all, room );
+close( room, east );
+room = find_room( 26271 );
+set_rflag( reset1, room );
+set_rflag( reset2, room );
+  }
+continue;
+"
 E
 "to_all"
 "The rock wall swings shut behind you.
-
-"
+"
 !
 3 3 8
 A
 "1 look"
 "door 1 east wall"
 "send_to_char( #to_char, ch );
-
-act_notchar( #to_room, ch );
-
-"
+act_notchar( #to_room, ch );
+"
 E
 "to_room"
 "$n looks at a large tarnished brass ring on the wall.
-
-"
+"
 E
 "to_char"
 "You see a large tarnished brass ring on the wall.
-
-"
+"
 !
 0 0 0
 A
 "pull"
 "ring"
 "send_to_char( #to_char, ch );
-
-act_notchar( #to_room, ch );
-
-open( room, east );
-
-"
+act_notchar( #to_room, ch );
+open( room, east );
+"
 E
 "to_room"
 "$n pulls the ring, opening the wall behind it.
-
-"
+"
 E
 "to_char"
 "The wall opens as you pull on the ring with all your might.
-
-"
+"
 !
 0 0 0
 -1
@@ -1184,10 +936,8 @@ S
 #26275
 "Slippery Tunnel"
 "The tunnel here is quite slippery from the algae and moss that grow on the wet
-
-walls and floors.  The tunnel opens to the north and east.
-
-"
+walls and floors.  The tunnel opens to the north and east.
+"
 ""
 301465612 0
 0 6 0
@@ -1205,13 +955,10 @@ S
 #26276
 "Slippery Tunnel"
 "The tunnel you've been following turns south and west here.  Still slippery,
-
-you make your way carefully.
-
-"
+you make your way carefully.
+"
 "[Ssleestaq] need alot longer rdesc
-
-"
+"
 301465612 0
 0 6 0
 D2
@@ -1229,13 +976,10 @@ S
 #26277
 "Slippery Tunnel"
 "This tunnel extends to the east and west.  To the west you hear a low murmur
-
-of what sounds like singing.
-
-"
+of what sounds like singing.
+"
 "[Ssleestaq] need ALOT more rdesc
-
-"
+"
 301465612 0
 0 6 0
 D1
@@ -1252,14 +996,10 @@ S
 #26278
 "Slippery Tunnel"
 "To the west the tunnel opens onto a ledge which seems to be within a larger
-
-cavern.  You can distinctly hear muffled singing coming from that direction
-
-and it sounds like some old, forgotten sea chant.  East the tunnel continues
-
-into darkness.
-
-"
+cavern.  You can distinctly hear muffled singing coming from that direction
+and it sounds like some old, forgotten sea chant.  East the tunnel continues
+into darkness.
+"
 ""
 301465612 0
 0 6 0
@@ -1277,18 +1017,12 @@ S
 #26279
 "On a Ledge"
 "This ledge sits halfway up the eastern side of this enormous cavern.  Beneath
-
-this ledge spans a wooden dock, set within an enormous cavern.  A ladder here
-
-leads down to the dock.  To the east is a tunnel leading away.  Moored at the
-
-dock is what looks to be an ancient sailing ship, its sails tattered and
-
-planks falling away from its sides.  It is definitely not in seaworthy
-
-condition.  Something can be seen to be moving about on the ship.
-
-"
+this ledge spans a wooden dock, set within an enormous cavern.  A ladder here
+leads down to the dock.  To the east is a tunnel leading away.  Moored at the
+dock is what looks to be an ancient sailing ship, its sails tattered and
+planks falling away from its sides.  It is definitely not in seaworthy
+condition.  Something can be seen to be moving about on the ship.
+"
 ""
 301465612 0
 0 6 0
@@ -1300,15 +1034,12 @@ A
 ""
 ""
 "send_to_room( #to_all, room );
-
-"
+"
 E
 "to_all"
 "Singing can be heard coming from the ship...
-
-\"Yo-Ho...Yo-Ho...a pirate's life for me!\"
-
-"
+\"Yo-Ho...Yo-Ho...a pirate's life for me!\"
+"
 !
 2 600 0
 -1
@@ -1317,21 +1048,14 @@ S
 #26280
 "On a Dock"
 "The dock here is wooden, slippery from algae and water and rotten with age.  A
-
-ship is moored to the north, while the dock leads back towards land to the
-
-south.
-
-"
+ship is moored to the north, while the dock leads back towards land to the
+south.
+"
 "[Ssleestaq] god first sentence is huge run on...
-
-[Ssleestaq] and make it just A ladder leads up to a ledge..
-
-[Altimeas] old exit led up to 26279
-
-[Torac] this room is a dock out side and yet is talking about a cavern and ledge? and what laddera?
-
-"
+[Ssleestaq] and make it just A ladder leads up to a ledge..
+[Altimeas] old exit led up to 26279
+[Torac] this room is a dock out side and yet is talking about a cavern and ledge? and what laddera?
+"
 301465608 0
 0 6 0
 D0
@@ -1346,15 +1070,12 @@ A
 ""
 ""
 "send_to_room( #to_all, room );
-
-"
+"
 E
 "to_all"
 "Singing can be heard coming from the ship...
-
-\"Yo-Ho...Yo-Ho...a pirate's life for me!\"
-
-"
+\"Yo-Ho...Yo-Ho...a pirate's life for me!\"
+"
 !
 2 600 0
 -1
@@ -1363,15 +1084,11 @@ S
 #26281
 "On a Dock"
 "The dock here is unusually clear of algae and seaweed, even though still wet
-
-and slippery.  To the west is a gang-plank leading on board the ship, and to
-
-the south the dock continues.
-
-"
+and slippery.  To the west is a gang-plank leading on board the ship, and to
+the south the dock continues.
+"
 "[Terek] West use to be 26283
-
-"
+"
 301465608 0
 0 6 0
 D2
@@ -1386,15 +1103,12 @@ A
 ""
 ""
 "send_to_room( #to_all, room );
-
-"
+"
 E
 "to_all"
 "From the ship comes an unearthly singing...
-
-\"Yo-Ho...Yo-Ho...a pirate's life for me!\"
-
-"
+\"Yo-Ho...Yo-Ho...a pirate's life for me!\"
+"
 !
 2 800 0
 -1
@@ -1403,13 +1117,10 @@ S
 #26282
 "On a Dock"
 "The wooden dock here is wet and slippery.  To the north a ship is moored
-
-alongside the dock.
-
-"
+alongside the dock.
+"
 "[Ssleestaq] more rdesc maybe?
-
-"
+"
 301465608 0
 0 6 0
 D0
@@ -1424,15 +1135,12 @@ A
 ""
 ""
 "send_to_room( #to_all, room );
-
-"
+"
 E
 "to_all"
 "From the ship comes singing...
-
-\"Yo-Ho...Yo-Ho...a pirate's life for me!\"
-
-"
+\"Yo-Ho...Yo-Ho...a pirate's life for me!\"
+"
 !
 2 700 0
 -1
@@ -1441,15 +1149,11 @@ S
 #26283
 "On the Gang-Plank"
 "The wooden plank seems quite rickety and unsafe, yet it is the only way onto
-
-the ship.  Figures can be seen moving about on the deck of the ship.  To the
-
-east is the dock.
-
-"
+the ship.  Figures can be seen moving about on the deck of the ship.  To the
+east is the dock.
+"
 "if num in room > 2 creak
-
-"
+"
 301465608 0
 0 5 0
 D1
@@ -1464,36 +1168,27 @@ A
 ""
 ""
 "send_to_room( #to_all, room );
-
-"
+"
 E
 "to_all"
 "From the deck is heard a ghostly singing...
-
-\"Yo-Ho...Yo-Ho...a pirate's life for me!\"
-
-"
+\"Yo-Ho...Yo-Ho...a pirate's life for me!\"
+"
 !
 2 200 0
 A
 ""
 ""
 "if( rflag( reset0, room ) ) {
-
-  send_to_room( #to_all, room );
-
-  remove_rflag( reset0, room );
-
-  }
-
-"
+  send_to_room( #to_all, room );
+  remove_rflag( reset0, room );
+  }
+"
 E
 "to_all"
 "A voice from the deck calls out in a rather gravelly voice...
-
-\"A-hoy, ye May'tee's!\"
-
-"
+\"A-hoy, ye May'tee's!\"
+"
 !
 1 3 8
 -1
@@ -1502,12 +1197,9 @@ S
 #26284
 "Ghostly Pirate Ship"
 "This ship is in horrible repair, which is great considering how long the crew
-
-has been dead.  To the south is the bow, and to the north is the bridge of the
-
-ship.  A crow's nest is up the mast from here.
-
-"
+has been dead.  To the south is the bow, and to the north is the bridge of the
+ship.  A crow's nest is up the mast from here.
+"
 ""
 301465604 0
 0 6 0
@@ -1536,14 +1228,10 @@ S
 #26285
 "On the Bow"
 "The bow of the ship sits high above the water and listing slightly to one
-
-side.  Planks have fallen away here and there, making it difficult to move
-
-about.  The whole of this ship is in pretty bad shape.  To the west a wooden
-
-plank stretches out above the water.
-
-"
+side.  Planks have fallen away here and there, making it difficult to move
+about.  The whole of this ship is in pretty bad shape.  To the west a wooden
+plank stretches out above the water.
+"
 ""
 301465604 0
 0 6 0
@@ -1563,15 +1251,11 @@ S
 #26286
 "Ghostly Pirate Ship"
 "The hatches here lead down into the belly of the ship, into its hold.  To the
-
-north is a cabin and up a short staircase is the bridge of the ship.
-
-"
+north is a cabin and up a short staircase is the bridge of the ship.
+"
 "[Ssleestaq] more rdesc?
-
-[Genth] shouldn't these guys corpses be piles of bones
-
-"
+[Genth] shouldn't these guys corpses be piles of bones
+"
 301465612 0
 0 6 0
 D0
@@ -1596,16 +1280,11 @@ S
 #26287
 "Ship's Bridge"
 "With only half remaining, the ship's wheel seems far from useful, yet still it
-
-turns slightly this way and that.  The wooden railings that once kept the
-
-Captain and Pilot from falling into the sea are long gone.  A short staircase
-
-leads down to the deck of the ship.  The glittering Sea of Stars crashes
-
-against the docks eastwards.
-
-"
+turns slightly this way and that.  The wooden railings that once kept the
+Captain and Pilot from falling into the sea are long gone.  A short staircase
+leads down to the deck of the ship.  The glittering Sea of Stars crashes
+against the docks eastwards.
+"
 ""
 301465612 0
 0 6 0
@@ -1621,14 +1300,10 @@ S
 #26288
 "On a Mast"
 "Here on the mast you can see farther around this ruined ship.  The rickety
-
-docks along the coast eastwards extend south towards the Medienne road, the
-
-coast rising over piles of boulders into cliffs.  Clouds race across the Sea
-
-of Stars westwards.  A crow's nest is directly above you.
-
-"
+docks along the coast eastwards extend south towards the Medienne road, the
+coast rising over piles of boulders into cliffs.  Clouds race across the Sea
+of Stars westwards.  A crow's nest is directly above you.
+"
 ""
 301465608 0
 0 6 0
@@ -1646,14 +1321,10 @@ S
 #26289
 "Crow's Nest"
 "The crow's nest is quite unstable and feels like it could collapse at any
-
-time.  The water is far beneath you.  From this vantage point, smoke rises far
-
-to the east over the grey walls of a city.  Cliffs arc around northwards into
-
-the fog to the limit of your vision, waves crashing endlessly at their base.
-
-"
+time.  The water is far beneath you.  From this vantage point, smoke rises far
+to the east over the grey walls of a city.  Cliffs arc around northwards into
+the fog to the limit of your vision, waves crashing endlessly at their base.
+"
 ""
 301465608 0
 0 6 0
@@ -1665,23 +1336,16 @@ A
 ""
 ""
 "if( mob_in_room( 294, room ) ) {
-
-  if( rflag( reset0, room ) ) {
-
-    send_to_room( #to_all, room );
-
-    remove_rflag( reset0, room );
-
-    }
-
-  }
-
-"
+  if( rflag( reset0, room ) ) {
+    send_to_room( #to_all, room );
+    remove_rflag( reset0, room );
+    }
+  }
+"
 E
 "to_all"
 "The skeletal pirate says \"Look Cap'n, land ho!!!\"
-
-"
+"
 !
 1 -1 63
 294 9 1509949540 3 0
@@ -1691,12 +1355,9 @@ S
 #26290
 "Ship's Hold"
 "This hold once held, probably, some of the most valuable cargoes of the high
-
-seas.  But today it is all but empty.  The hold extends toward the bow of the
-
-ship and a hatch is open above.
-
-"
+seas.  But today it is all but empty.  The hold extends toward the bow of the
+ship and a hatch is open above.
+"
 ""
 301465612 0
 0 6 0
@@ -1720,16 +1381,11 @@ S
 #26291
 "Captain's Quarters"
 "This once lavishly done cabin is now in shambles.  A 4-poster bed is mearly
-
-flinders and the plush curtains are but rags flapping against broken panes of
-
-glass.  A wardrobe stands against one wall, and a desk with a broken leg leans
-
-against another.  The woodwork to the north is slightly darker in color than
-
-that in the rest of the chamber.
-
-"
+flinders and the plush curtains are but rags flapping against broken panes of
+glass.  A wardrobe stands against one wall, and a desk with a broken leg leans
+against another.  The woodwork to the north is slightly darker in color than
+that in the rest of the chamber.
+"
 ""
 301465612 0
 0 5 0
@@ -1744,75 +1400,50 @@ D2
 E
 "maps"
 "These maps are old and chart the entire coastline of the Northern Sea. 
-
-Many a long forgotten port or pirate cove is marked here and there.  But,
-
-alas, the maps crumble at your mere touch, leaving nothing but dust.  
-
-"
+Many a long forgotten port or pirate cove is marked here and there.  But,
+alas, the maps crumble at your mere touch, leaving nothing but dust.  
+"
 E
 "desk"
 "The broken desk tilts to one side.  A few ancient maps are spread across
-
-the desk.  
-
-"
+the desk.  
+"
 E
 "woodwork dark 1 north"
 "The wooden planking that forms the walls of the room is gray and weathered,
-
-and worm-eaten in spots.  To the north, however, there is an oddly shaped
-
-stain, darker in color than the other wooden remnants in the chamber.
-
-"
+and worm-eaten in spots.  To the north, however, there is an oddly shaped
+stain, darker in color than the other wooden remnants in the chamber.
+"
 A
 "search"
 ""
 "mob = mob_in_room( 295, room );
-
-if( mob ) {
-
-  act_tochar( #no, ch );
-
-  end;
-
-}
-
-if( is_open( room, north ) ) {
-
-  act_tochar( #open, ch );
-
-}
-
-else {
-
-  act_tochar( #find, ch );
-
-  open( room, north );
-
-}
-
-"
+if( mob ) {
+  act_tochar( #no, ch );
+  end;
+}
+if( is_open( room, north ) ) {
+  act_tochar( #open, ch );
+}
+else {
+  act_tochar( #find, ch );
+  open( room, north );
+}
+"
 E
 "no"
 "It would be difficult to search a room with the skeletal pirate captain
-
-watching you.
-
-"
+watching you.
+"
 E
 "find"
 "You rummage around and manage to pry away a dark panel on the northern
-
-wall!
-
-"
+wall!
+"
 E
 "open"
 "There's nothing else of interest here.
-
-"
+"
 !
 0 0 0
 295 9 1509949540 3 0
@@ -1831,13 +1462,10 @@ S
 #26292
 "Ship's Hold"
 "Deep within the hold you find only slime and muck and stench.  To the north
-
-you see an open hatch.
-
-"
+you see an open hatch.
+"
 "search muck find key
-
-"
+"
 301465604 0
 0 6 0
 D0
@@ -1848,53 +1476,34 @@ A
 ""
 "muck"
 "if( !is_player( ch ) )
-
-  end;
-
-if( rflag( reset0, room ) ) {
-
-  remove_rflag( reset0, room );
-
-  j = find_skill( ch, searching );
-
-  i = dice( 1, 10, j );
-
-  if( i > 7 ) {
-
-    act_tochar( #find, ch );
-
-    act_notchar( #rfind, ch );
-
-    obj_to_char( oload( 6004 ), ch );
-
-    }
-
-  else
-
-    act_tochar( #nothing, ch );
-
-  }
-
-else
-
-  act_tochar( #nothing, ch );
-
-"
+  end;
+if( rflag( reset0, room ) ) {
+  remove_rflag( reset0, room );
+  j = find_skill( ch, searching );
+  i = dice( 1, 10, j );
+  if( i > 7 ) {
+    act_tochar( #find, ch );
+    act_notchar( #rfind, ch );
+    obj_to_char( oload( 6004 ), ch );
+    }
+  else
+    act_tochar( #nothing, ch );
+  }
+else
+  act_tochar( #nothing, ch );
+"
 E
 "find"
 "You search through the thick muck and find a key.
-
-"
+"
 E
 "rfind"
 "$n searches through the thick muck and finds something.
-
-"
+"
 E
 "nothing"
 "You search through the thick muck but find nothing but muck.
-
-"
+"
 !
 9 0 0
 237 9 1509949540 3 0
@@ -1909,13 +1518,10 @@ S
 #26293
 "Walking the Plank"
 "You stand upon a plank stretched out some 20 feet above the icy water below.
-
-Jumping into the water would bring certain death.
-
-"
+Jumping into the water would bring certain death.
+"
 "[Ssleestaq] more rdesc?
-
-"
+"
 301465612 0
 0 6 0
 D1
@@ -1928,16 +1534,11 @@ S
 #26294
 "Behind a Darkened Panel"
 "The chamber, protected by the panel to the south and the decking overhead,
-
-shows little sign of time or weathering.  Apparently water and even air tight,
-
-it has a pristine air, as if undisturbed in the eons since the ship's
-
-destruction.  A door breaches the southern wall and a small chest has been
-
-placed central to the room.
-
-"
+shows little sign of time or weathering.  Apparently water and even air tight,
+it has a pristine air, as if undisturbed in the eons since the ship's
+destruction.  A door breaches the southern wall and a small chest has been
+placed central to the room.
+"
 ""
 301465612 0
 0 4 0

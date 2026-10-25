@@ -10,20 +10,13 @@
 #3
 "Milliway's"
 "This is a large, open office located high atop a fortified tower.  The
-
-floors are a dark, rich wood, covered in tightly-woven rugs from across
-
-the seas.  Huge picture windows adorn the walls, protecting the room with
-
-an ancient spell that creates a solid, transparent barrier.  At the far
-
-end of the room, a large, highly-polished desk and deerskin covered
-
-chairs mark the workplace of Object.  An iron @blever@n on the wall
-
-catches your attention.
-
-"
+floors are a dark, rich wood, covered in tightly-woven rugs from across
+the seas.  Huge picture windows adorn the walls, protecting the room with
+an ancient spell that creates a solid, transparent barrier.  At the far
+end of the room, a large, highly-polished desk and deerskin covered
+chairs mark the workplace of Object.  An iron @blever@n on the wall
+catches your attention.
+"
 ""
 301517828 0
 0 6 0
@@ -33,10 +26,8 @@ E
 E
 "lever"
 "This is a wrought iron bar protruding from the wall, with a small,
-
-rectangular slot directly beneath it.  
-
-"
+rectangular slot directly beneath it.  
+"
 E
 "a void"
 "none"
@@ -44,22 +35,17 @@ A
 "pull"
 "lever"
 "send_to_char( #to_char, ch );
-
-act_notchar( #to_room, ch );
-
-"
+act_notchar( #to_room, ch );
+"
 E
 "to_char"
 "You pull the lever and are struck by a small fish which shoots out of the
-
-slot.  
-
-"
+slot.  
+"
 E
 "to_room"
 "$n pulls a lever and is struck by a fish shot from a slot in the wall.
-
-"
+"
 !
 0 0 0
 -1
@@ -68,34 +54,20 @@ S
 #4
 "Arghelan's Asylum"
 "Dark depictions sketched along the stone walls give this otherwise stark room
-
-an ominous feel.  A large fireplace is built into the southern wall, with dark
-
-charcoal colored marble used as an edging around the opening as well as the
-
-hearthstone.  A grand curved window extends outside the eastern wall of the
-
-room, and a mat has been placed on the floor beside it for meditation and
-
-prayer.  Carved into the center of the floor is some sort of symbol made up of
-
-intertwining circles.  There is little in the way of furnishings to draw
-
-attention from the cold gray stone in the room.  Thick furs and soft pelts
-
-have been carefully placed upon the floor, providing the only comfortable
-
-place to rest.  A few texts on fighting styles, philosophy and meditation have
-
-been casually left around the room, open to passages recently read.  A large
-
-stuffed bag made of a thick coarse fabric hangs by a chain from the ceiling in
-
-the northwest corner of the room.  The only door to the room leads back out
-
-into the hallway to the west.
-
-"
+an ominous feel.  A large fireplace is built into the southern wall, with dark
+charcoal colored marble used as an edging around the opening as well as the
+hearthstone.  A grand curved window extends outside the eastern wall of the
+room, and a mat has been placed on the floor beside it for meditation and
+prayer.  Carved into the center of the floor is some sort of symbol made up of
+intertwining circles.  There is little in the way of furnishings to draw
+attention from the cold gray stone in the room.  Thick furs and soft pelts
+have been carefully placed upon the floor, providing the only comfortable
+place to rest.  A few texts on fighting styles, philosophy and meditation have
+been casually left around the room, open to passages recently read.  A large
+stuffed bag made of a thick coarse fabric hangs by a chain from the ceiling in
+the northwest corner of the room.  The only door to the room leads back out
+into the hallway to the west.
+"
 ""
 301498381 0
 0 6 0
@@ -106,126 +78,75 @@ D5
 E
 "sketches"
 "The walls of this room are covered in bleak scenes.  A sea of black and red,
-
-one sketch flows into the next, creating a mural of hatred and pain.  One area
-
-depicts a gruesome battle, the dead and dying covering the ground; another
-
-shows some horrific types of torture being performed on what looks like an
-
-elf.  Perhaps the most disturbing are some of the dark, sexual scenes, best
-
-not studied too closely.  Cooled embers from the fireplace litter the floor
-
-near the most recent sketch, some stained with dried blood.
-
-"
+one sketch flows into the next, creating a mural of hatred and pain.  One area
+depicts a gruesome battle, the dead and dying covering the ground; another
+shows some horrific types of torture being performed on what looks like an
+elf.  Perhaps the most disturbing are some of the dark, sexual scenes, best
+not studied too closely.  Cooled embers from the fireplace litter the floor
+near the most recent sketch, some stained with dried blood.
+"
 E
 "fireplace"
 "This fireplace is built into the southern wall.  Dark, charcoal colored marble
-
-edges the sides of the fireplace, giving it a more decorative look.  The
-
-hearthstone comes out a few feet from the fireplace in a semi-circle, also
-
-done in the charcoal colored marble.  An intense heat radiates from the fire
-
-burning within the fireplace.  A few large logs have recently been placed over
-
-the glowing embers.  Large flames are slowly beginning to lick the length of
-
-the woods surface, causing light to flicker throughout the room.
-
-"
+edges the sides of the fireplace, giving it a more decorative look.  The
+hearthstone comes out a few feet from the fireplace in a semi-circle, also
+done in the charcoal colored marble.  An intense heat radiates from the fire
+burning within the fireplace.  A few large logs have recently been placed over
+the glowing embers.  Large flames are slowly beginning to lick the length of
+the woods surface, causing light to flicker throughout the room.
+"
 E
 "window"
 "Centered in the eastern wall is a large semi-circular window.  The windowpanes
-
-are curved slightly and extend beyond the wall, giving the window a large open
-
-feel.  The window looks out over a large forested area, and possibly what
-
-could be an old mine in the distance.  Given the direction the window faces,
-
-it probably gives a spectacular view of the sunrise in the east.  A meditation
-
-mat has been placed in the center of the semi-circle so that the window curves
-
-around it on three sides.  Some dried white sandalwood rests in a small stone
-
-bowl next to the mat, probably used to aid meditation.
-
-"
+are curved slightly and extend beyond the wall, giving the window a large open
+feel.  The window looks out over a large forested area, and possibly what
+could be an old mine in the distance.  Given the direction the window faces,
+it probably gives a spectacular view of the sunrise in the east.  A meditation
+mat has been placed in the center of the semi-circle so that the window curves
+around it on three sides.  Some dried white sandalwood rests in a small stone
+bowl next to the mat, probably used to aid meditation.
+"
 E
 "furs"
 "Very little in this room could be called relaxing, but the thick bear skins,
-
-piled on the floor look very inviting.  Adding to the look of comfort, brushed
-
-lambskin has been rolled into pillows and mink and rabbit furs made into
-
-oversized blankets.  This is the type of bed one could cuddle up in all day
-
-and never think twice.  Although this looks very out of place in a room like
-
-this, even the most dedicated have their vices, and guessing from the crimson
-
-silk peeking out from under one of the blankets, this serves to support more
-
-than one of them.
-
-"
+piled on the floor look very inviting.  Adding to the look of comfort, brushed
+lambskin has been rolled into pillows and mink and rabbit furs made into
+oversized blankets.  This is the type of bed one could cuddle up in all day
+and never think twice.  Although this looks very out of place in a room like
+this, even the most dedicated have their vices, and guessing from the crimson
+silk peeking out from under one of the blankets, this serves to support more
+than one of them.
+"
 E
 "training circle"
 "Large intertwining circles are carved into the center of the stone floor.  An
-
-oily reddish residue fills the deep grooves, which are also covered in dark
-
-scorch marks.  The circles vary in size and position, but all join in the
-
-center forming a small central circle.  This, one could assume, is meant to
-
-signify the point where mind and body are one, and from there all else may be
-
-realized.  The rings look to be used for training and conditioning of the body.
-
-"
+oily reddish residue fills the deep grooves, which are also covered in dark
+scorch marks.  The circles vary in size and position, but all join in the
+center forming a small central circle.  This, one could assume, is meant to
+signify the point where mind and body are one, and from there all else may be
+realized.  The rings look to be used for training and conditioning of the body.
+"
 E
 "texts"
 "Various texts on fighting styles, philosophy and meditation litter the room. 
-
-Old and new works alike seem to have been tossed aside once the reader had
-
-finished with them.  One in particular though, sitting next to the fireplace,
-
-catches your eye.  It is leather bound and looks to be open to a hand written
-
-passage.
-
-"
+Old and new works alike seem to have been tossed aside once the reader had
+finished with them.  One in particular though, sitting next to the fireplace,
+catches your eye.  It is leather bound and looks to be open to a hand written
+passage.
+"
 E
 "passage"
 "\"... But, in conclusion, I find I have insensibly reverted to the point I
-
-desired; for, since it is now manifest to me that bodies themselves are not
-
-properly perceived by the senses nor by the faculty of imagination, but by the
-
-intellect alone; and since they are not perceived because they are seen and
-
-touched, but only because they are understood [or rightly comprehended by
-
-thought], I readily discover that there is nothing more easily or clearly
-
-apprehended than my own mind.  But because it is difficult to rid one's self
-
-so promptly of an opinion to which one has been long accustomed, it will be
-
-desirable to tarry for some time at this stage, that, by long continued
-
-meditation, I may more deeply impress upon my memory this new knowledge.\"
-
-"
+desired; for, since it is now manifest to me that bodies themselves are not
+properly perceived by the senses nor by the faculty of imagination, but by the
+intellect alone; and since they are not perceived because they are seen and
+touched, but only because they are understood [or rightly comprehended by
+thought], I readily discover that there is nothing more easily or clearly
+apprehended than my own mind.  But because it is difficult to rid one's self
+so promptly of an opinion to which one has been long accustomed, it will be
+desirable to tarry for some time at this stage, that, by long continued
+meditation, I may more deeply impress upon my memory this new knowledge.\"
+"
 E
 "down"
 "No description.
@@ -238,31 +159,19 @@ S
 #5
 "Talis's Library"
 "You stand within a large building formed of massive slabs of marble.  Braziers
-
-emit both light and a subtle scent reminiscent of sandalwood.  Shelves line
-
-the walls and stand freely from wall to wall filled from top to bottom with
-
-books and tomes of all shapes and sizes.  What little wall space that is not
-
-filled by shelving is covered by tapestries woven of soft cloth.
-
-"
+emit both light and a subtle scent reminiscent of sandalwood.  Shelves line
+the walls and stand freely from wall to wall filled from top to bottom with
+books and tomes of all shapes and sizes.  What little wall space that is not
+filled by shelving is covered by tapestries woven of soft cloth.
+"
 "chatty codes for Eregan.
-
-Thalor needs to reset at 19365
-
-last check, 752 orbs, 68 longswords, 32 tabbards
-
-last check, 3 revoked shuvanaguard
-
-Morr has been visited 129 times by mortals
-
-look exp for room item explanation
-
-room 962 is Chiiron park
-
-"
+Thalor needs to reset at 19365
+last check, 752 orbs, 68 longswords, 32 tabbards
+last check, 3 revoked shuvanaguard
+Morr has been visited 129 times by mortals
+look exp for room item explanation
+room 962 is Chiiron park
+"
 301516845 0
 0 9 0
 D0
@@ -292,624 +201,404 @@ D5
 E
 "tapestry 3 tapestries cloth"
 "You see tapestries depicting scenes of life from various places around
-
-the realm.  Most are so lifelike that the slight rippling caused by the
-
-air of your movement makes them seem almost alive.  The scenes range from
-
-sunny fields tended by humans to dark, dank caverns mined by kobolds.  In
-
-particular two seem to hold a place of honor, being well placed.  One
-
-depicting the beautiful spread of the Vaasa, the other a scene of some
-
-goblinoid race living in a forest canopy.
-
-"
+the realm.  Most are so lifelike that the slight rippling caused by the
+air of your movement makes them seem almost alive.  The scenes range from
+sunny fields tended by humans to dark, dank caverns mined by kobolds.  In
+particular two seem to hold a place of honor, being well placed.  One
+depicting the beautiful spread of the Vaasa, the other a scene of some
+goblinoid race living in a forest canopy.
+"
 E
 "shelf shelves"
 "The shelves are all formed from hardened Shuvanawood grown naturally for
-
-this purpose in the Vaasa.  They stand sturdy without any hint of seam or
-
-joint.  Taking stock of their charge, you are hard pressed to find any
-
-nook not filled by book, tome, libram, scroll, or paper.  If you knew the
-
-name of the reading material you desired you could probably '@Gpull@n' it
-
-from the shelves.  If you are just browsing, perhaps you could just look
-
-at the titles.
-
-"
+this purpose in the Vaasa.  They stand sturdy without any hint of seam or
+joint.  Taking stock of their charge, you are hard pressed to find any
+nook not filled by book, tome, libram, scroll, or paper.  If you knew the
+name of the reading material you desired you could probably '@Gpull@n' it
+from the shelves.  If you are just browsing, perhaps you could just look
+at the titles.
+"
 E
 "5 titles"
 "The titles range from old favorites to things you might never have
-
-imagined.  There appears to be little order to the way they are placed,
-
-however no one seems to have any trouble finding what they seek.  By some
-
-esoteric means they are able to '@Gpull@n' out any book they know the
-
-name of.  Among those available you see titles such as: 
-
-     
-
-@GImm@nortality 101 - a builder's guide
-
-@GNec@nromancy 101  - a builder's guide
-
-@GD'ni@n Secrets of Interspacial Traveling
-
-@GTan'Chiel@n - an autobiography
-
-a map of the @GTasloi@n village
-
-a set of @GCrypt@n maps
-
-a series of books entitled @GOgrish@n History
-
-an onrate book by @GLle@nwyrralchimrus.
-
-a dusty book titled The Book of @GPhule@n.
-
-@GZar@nander's spellbook.
-
-"
+imagined.  There appears to be little order to the way they are placed,
+however no one seems to have any trouble finding what they seek.  By some
+esoteric means they are able to '@Gpull@n' out any book they know the
+name of.  Among those available you see titles such as: 
+     
+@GImm@nortality 101 - a builder's guide
+@GNec@nromancy 101  - a builder's guide
+@GD'ni@n Secrets of Interspacial Traveling
+@GTan'Chiel@n - an autobiography
+a map of the @GTasloi@n village
+a set of @GCrypt@n maps
+a series of books entitled @GOgrish@n History
+an onrate book by @GLle@nwyrralchimrus.
+a dusty book titled The Book of @GPhule@n.
+@GZar@nander's spellbook.
+"
 E
 "braziers"
 "An elegant tripod stand holds up an electrum bowl inscribed with symbols
-
-of knowledge and learning.  The bowl is filled with a strange mixed
-
-powder of black, brown and striking blue which emits a warm light and
-
-gray-violet haze smelling of sandalwood.
-
-"
+of knowledge and learning.  The bowl is filled with a strange mixed
+powder of black, brown and striking blue which emits a warm light and
+gray-violet haze smelling of sandalwood.
+"
 E
 "exp"
 "Longswords are loaded here whenever they are awarded for Shuvanaguard quest.
-
-Ingots (silver, gold, steel) represent them longswords turned in to quit Guard.
-
-Tabards loaded represent completion of Knight Quest.
-
-Stolen Tabards represent quitting the Knights.
-
-Crystal Orbs mean someone has entered Trog port room (49326)
-
-Crystal of Channeling means someone used the Trog port room
-
-Red Crystals mean someone has completed Lembas Farm quest.
-
-Silver coins indicate someone has walked past Death.
-
-Gold coins indicate someone has visited Morr (room 33756)
-
-Copper coins - somone not permitted to see Morr (room 33756)
-
-"
+Ingots (silver, gold, steel) represent them longswords turned in to quit Guard.
+Tabards loaded represent completion of Knight Quest.
+Stolen Tabards represent quitting the Knights.
+Crystal Orbs mean someone has entered Trog port room (49326)
+Crystal of Channeling means someone used the Trog port room
+Red Crystals mean someone has completed Lembas Farm quest.
+Silver coins indicate someone has walked past Death.
+Gold coins indicate someone has visited Morr (room 33756)
+Copper coins - somone not permitted to see Morr (room 33756)
+"
 A
 "pull"
 "3 Immortality "
 "act_tochar( #get, ch, obj );
-
-act_notchar( #got, ch, obj );
-
-obj_to_char( oload( 751 ), ch );
-
-"
+act_notchar( #got, ch, obj );
+obj_to_char( oload( 751 ), ch );
+"
 E
 "get"
 "You reach out for a tome near at hand only to find it was the one you
-
-sought.  You pull forth a copy of Immortality 101.
-
-"
+sought.  You pull forth a copy of Immortality 101.
+"
 E
 "got"
 "$n reaches out and withdraws a copy of Immortality 101.
-
-"
+"
 !
 0 0 0
 A
 "pull"
 "D'ni dni"
 "act_tochar( #get, ch, obj );
-
-act_notchar( #got, ch, obj );
-
-obj_to_char( oload( 779 ), ch );
-
-"
+act_notchar( #got, ch, obj );
+obj_to_char( oload( 779 ), ch );
+"
 E
 "get"
 "You reach out for a tome near at hand only to find it was the one you
-
-sought.  You pull forth a copy of D'ni Secrets....
-
-"
+sought.  You pull forth a copy of D'ni Secrets....
+"
 E
 "got"
 "$n reaches out and withdraws a copy of D'ni Secrets....
-
-"
+"
 !
 0 0 0
 A
 "pull"
 "9 tan'chiel 8 tanchiel"
 "act_tochar( #get, ch, obj );
-
-act_notchar( #got, ch, obj );
-
-obj_to_char( oload( 735 ), ch );
-
-"
+act_notchar( #got, ch, obj );
+obj_to_char( oload( 735 ), ch );
+"
 E
 "get"
 "You reach out for a tome near at hand only to find it was the one you
-
-sought.  You pull forth a copy of Tan'chiel's Autobiography.
-
-"
+sought.  You pull forth a copy of Tan'chiel's Autobiography.
+"
 E
 "got"
 "$n reaches out and withdraws a copy of Tan'chiel's Autobiography.
-
-"
+"
 !
 0 0 0
 A
 "pull"
 "tasloi"
 "act_tochar( #get, ch, obj );
-
-act_notchar( #got, ch, obj );
-
-obj_to_char( oload( 756 ), ch );
-
-"
+act_notchar( #got, ch, obj );
+obj_to_char( oload( 756 ), ch );
+"
 E
 "get"
 "You reach out for a tome near at hand only to find it was the one you
-
-sought.  You pull forth a copy of a map of the Tasloi area.
-
-"
+sought.  You pull forth a copy of a map of the Tasloi area.
+"
 E
 "got"
 "$n reaches out and withdraws a copy of a map of the Tasloi area.
-
-"
+"
 !
 0 0 0
 A
 "pull"
 "crypt"
 "act_tochar( #get, ch, obj );
-
-act_notchar( #got, ch, obj );
-
-obj_to_char( oload( 268 ), ch );
-
-obj_to_char( oload( 269 ), ch );
-
-"
+act_notchar( #got, ch, obj );
+obj_to_char( oload( 268 ), ch );
+obj_to_char( oload( 269 ), ch );
+"
 E
 "get"
 "You reach out for a tome near at hand only to find it was the one you
-
-sought.  You pull forth a copy of the crypt maps.
-
-"
+sought.  You pull forth a copy of the crypt maps.
+"
 E
 "got"
 "$n reaches out and withdraws a copy of the crypt maps.
-
-"
+"
 !
 0 0 0
 A
 "pull"
 "ogre ogrish"
 "act_tochar( #get, ch, obj );
-
-act_notchar( #got, ch, obj );
-
-obj_to_char( oload( 797 ), ch );
-
-"
+act_notchar( #got, ch, obj );
+obj_to_char( oload( 797 ), ch );
+"
 E
 "get"
 "You reach out for a tome near at hand only to find it was the one you
-
-sought.  You pull forth a copy of Ogrish History.
-
-"
+sought.  You pull forth a copy of Ogrish History.
+"
 E
 "got"
 "$n reaches out and withdraws a copy of Ogrish History.
-
-"
+"
 !
 0 0 0
 A
 "pull"
 "phule"
 "act_tochar( #get, ch, obj );
-
-act_notchar( #got, ch, obj );
-
-obj_to_char( oload( 1193 ), ch );
-
-"
+act_notchar( #got, ch, obj );
+obj_to_char( oload( 1193 ), ch );
+"
 E
 "get"
 "You reach out for a tome near at hand only to find it was the one you
-
-sought.  You pull forth a copy of the Book of Phule.
-
-"
+sought.  You pull forth a copy of the Book of Phule.
+"
 E
 "got"
 "$n reaches out and withdraws a copy of the Book of Phule.
-
-"
+"
 !
 0 0 0
 A
 "pull"
 "3 Llewyrralchimrus's"
 "act_tochar( #get, ch, obj );
-
-act_notchar( #got, ch, obj );
-
-obj_to_char( oload( 879 ), ch );
-
-"
+act_notchar( #got, ch, obj );
+obj_to_char( oload( 879 ), ch );
+"
 E
 "get"
 "You reach out for a tome near at hand only to find it was the one you
-
-sought.  You pull forth a copy of Llewyrralchimrus's book.
-
-"
+sought.  You pull forth a copy of Llewyrralchimrus's book.
+"
 E
 "got"
 "$n reaches out and withdraws a copy of Llewyrralchimrus's book.
-
-"
+"
 !
 0 0 0
 A
 "pull"
 "3 zarander"
 "act_tochar( #get, ch, obj );
-
-act_notchar( #got, ch, obj );
-
-obj_to_char( oload( 1346 ), ch );
-
-"
+act_notchar( #got, ch, obj );
+obj_to_char( oload( 1346 ), ch );
+"
 E
 "get"
 "You reach out for a tome near at hand only to find it was the one you sought.  You pull forth a copy of Zarander's spellbook.
-
-"
+"
 E
 "got"
 "$n reaches out and withdraws a copy of Zarander's spellbook.
-
-"
+"
 !
 0 0 0
 A
 "pull"
 "3 necromancy"
 "act_tochar( #get, ch, obj );
-
-act_notchar( #got, ch, obj );
-
-obj_to_char( oload( 1517 ), ch );
-
-"
+act_notchar( #got, ch, obj );
+obj_to_char( oload( 1517 ), ch );
+"
 E
 "got"
 "$n reaches out and withdraws a tome entitled Necromancy 101.
-
-"
+"
 E
 "get"
 "You reach out for a tome near at hand only to find it was the one you sought.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "if( is_player( ch ) ) {
-
-  if( find_stat( ch, level ) < 90 ) {
-
-    act_tochar( \"A strange force prevents you from leaving.\", ch );
-
-    act_notchar( \"$n is prevented from leaving the room.\", ch );
-
-    end;
-
-    }
-
-  }
-
-if( has_obj( 2770, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2770, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2771, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2771, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2772, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2772, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2773, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2773, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2774, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2774, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2775, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2775, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2776, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2776, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2777, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2777, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2778, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2778, ch ) );
-
-  continue;
-
-  }
-
-else
-
-  continue;
-
-"
+  if( find_stat( ch, level ) < 90 ) {
+    act_tochar( \"A strange force prevents you from leaving.\", ch );
+    act_notchar( \"$n is prevented from leaving the room.\", ch );
+    end;
+    }
+  }
+if( has_obj( 2770, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2770, ch ) );
+  continue;
+  }
+if( has_obj( 2771, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2771, ch ) );
+  continue;
+  }
+if( has_obj( 2772, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2772, ch ) );
+  continue;
+  }
+if( has_obj( 2773, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2773, ch ) );
+  continue;
+  }
+if( has_obj( 2774, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2774, ch ) );
+  continue;
+  }
+if( has_obj( 2775, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2775, ch ) );
+  continue;
+  }
+if( has_obj( 2776, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2776, ch ) );
+  continue;
+  }
+if( has_obj( 2777, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2777, ch ) );
+  continue;
+  }
+if( has_obj( 2778, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2778, ch ) );
+  continue;
+  }
+else
+  continue;
+"
 !
 3 0 63
 A
 "3 quit"
 ""
 "if( find_stat( ch, level ) < 90 ) {
-
-  act_tochar( \"no, you can't do that right now.\", ch );
-
-  end;
-
-  }
-
-else
-
-  continue;
-
-"
+  act_tochar( \"no, you can't do that right now.\", ch );
+  end;
+  }
+else
+  continue;
+"
 !
 0 0 0
 A
 "pull"
 "lever"
 "mob = mob_in_room( 570, room );
-
-if( mob ) {
-
-  set_singular( mob, \"mutated woodworm wormling\" );
-
-  set_long_s( mob, \"is here, writhing about angrily.\" );
-
-  set_desc( mob, #newdesc );
-
-  set_color( mob, red1 );
-
-}
-
-"
+if( mob ) {
+  set_singular( mob, \"mutated woodworm wormling\" );
+  set_long_s( mob, \"is here, writhing about angrily.\" );
+  set_desc( mob, #newdesc );
+  set_color( mob, red1 );
+}
+"
 E
 "newdesc"
 "This vermiform has a brown and green body working up to an small head and
-
-cruelly barbed mandibles.  By looking closely at the form you would guess that
-
-this worm is about halfway through its metamorphosis from hatchling to full-
-
-grown worm.  Unlike its similar hatchlings, this one has sharply ridged, thick
-
-armor that appears to jab into it painfully at odd places.
-
-"
+cruelly barbed mandibles.  By looking closely at the form you would guess that
+this worm is about halfway through its metamorphosis from hatchling to full-
+grown worm.  Unlike its similar hatchlings, this one has sharply ridged, thick
+armor that appears to jab into it painfully at odd places.
+"
 !
 0 0 0
 A
 "push"
 "button"
 "mload( 102, room );
-
-mob = mob_in_room( 102, room );
-
-if( mob ) {
-
-  set_singular( mob, \"bright blue chicken\" );
-
-  set_long_s( mob, \"struts about proudly.\" );
-
-  set_desc( mob, #newdesc );
-
-  set_color( mob, cyan1 );
-
-}
-
-"
+mob = mob_in_room( 102, room );
+if( mob ) {
+  set_singular( mob, \"bright blue chicken\" );
+  set_long_s( mob, \"struts about proudly.\" );
+  set_desc( mob, #newdesc );
+  set_color( mob, cyan1 );
+}
+"
 E
 "newdesc"
 "his small chicken is covered in shockingly bright blue feathers.  It walks
-
-around on thin little legs, ignoring everyone around equally.
-
-"
+around on thin little legs, ignoring everyone around equally.
+"
 !
 0 0 0
 A
 "throw"
 "switch"
 "mload( 2252, room );
-
-mob = mob_in_room( 2252, room );
-
-if( mob ) {
-
-  set_singular( mob, \"Chester the cheetah\" );
-
-  set_long_s( mob, \"struts about the area in search of Cheetohs.\" );
-
-  set_desc( mob, #newdesc );
-
-  set_color( mob, yellow1 );
-
-  obj_to_char( oload( 3180 ), mob );
-
-  obj_to_char( oload( 3180 ), mob );
-
-}
-
-"
+mob = mob_in_room( 2252, room );
+if( mob ) {
+  set_singular( mob, \"Chester the cheetah\" );
+  set_long_s( mob, \"struts about the area in search of Cheetohs.\" );
+  set_desc( mob, #newdesc );
+  set_color( mob, yellow1 );
+  obj_to_char( oload( 3180 ), mob );
+  obj_to_char( oload( 3180 ), mob );
+}
+"
 E
 "newdesc"
 "This sleek, muscular feline is a deadly hunter of the wilds, or so he'd like
-
-you to believe.  His cartoonish coloring and stylin' black shades, not to
-
-mention that fact that he's walking upright on his hind legs, indicate
-
-otherwise.  Even as you watch he gives you a cheesy grin while pointing coolly
-
-in your direction with both cartoonish hands.
-
-"
+you to believe.  His cartoonish coloring and stylin' black shades, not to
+mention that fact that he's walking upright on his hind legs, indicate
+otherwise.  Even as you watch he gives you a cheesy grin while pointing coolly
+in your direction with both cartoonish hands.
+"
 !
 0 0 0
 A
 "push"
 "lever"
 "mob = mob_in_room( 161, room );
-
-if( mob ) {
-
-  set_singular( mob, \"ravenously rabid sheep\" );
-
-  set_long_s( mob, \"is here, foaming at the mouth!\" );
-
-  set_desc( mob, #newdesc );
-
-  set_color( mob, red1 );
-
-}
-
-"
+if( mob ) {
+  set_singular( mob, \"ravenously rabid sheep\" );
+  set_long_s( mob, \"is here, foaming at the mouth!\" );
+  set_desc( mob, #newdesc );
+  set_color( mob, red1 );
+}
+"
 E
 "newdesc"
 "A large, shaggy sheep in need of shearing.  No one seems to have claimed this
-
-sheep perhaps because of the odd frothy of foam at the mouth and the wildly
-
-shifting eyes.  It appears that this sheep might actually be rabid!  Run, run
-
-for your life!
-
-"
+sheep perhaps because of the odd frothy of foam at the mouth and the wildly
+shifting eyes.  It appears that this sheep might actually be rabid!  Run, run
+for your life!
+"
 !
 0 0 0
 1247 17 1509949540 -2 0
@@ -920,67 +609,38 @@ S
 #6
 "Nereus' Grotto of Inescapable Mortal Terror"
 "Soft, white sand covers the floor of this cavernous grotto.  The walls have
-
-been roughly chiseled out of solid marble; scratches from some sort of metal
-
-tool are evident throughout the chamber.  A diffuse and pure white light fills
-
-the room, illuminating the walls with a rippling, dancing light that moves in
-
-time with the soft rhythm of the water.  It is almost as if a portion of the
-
-ocean shallows has been pulled in its entirety and placed in this underground
-
-cavern.  A sturdy metal chain gleams softly as the light of the room dances
-
-with the water, attached to a large metal stake that has been driven into the
-
-northern wall of the grotto.
-
+been roughly chiseled out of solid marble; scratches from some sort of metal
+tool are evident throughout the chamber.  A diffuse and pure white light fills
+the room, illuminating the walls with a rippling, dancing light that moves in
+time with the soft rhythm of the water.  It is almost as if a portion of the
+ocean shallows has been pulled in its entirety and placed in this underground
+cavern.  A sturdy metal chain gleams softly as the light of the room dances
+with the water, attached to a large metal stake that has been driven into the
+northern wall of the grotto.
 
 In stark contrast to the peace of the scene, a number of gnawed bones have
-
-been picked clean and are strewn across the northern side of the chamber.
-
-"
+been picked clean and are strewn across the northern side of the chamber.
+"
 "[Nereus] grue notes, where can a grue go?
-
-[Nereus] 31302 - iron golems
-
-[Nereus] lag castle (3500-3808)
-
-[Nereus] 4780 - durfs
-
-[Nereus] 3538 - lag castle II, the tunnels beneath lag
-
-[Nereus] 6285 - slime caves
-
-[Nereus] 13500 - med sewers
-
-[Nereus] 27520 - orc raiders
-
-[Nereus] 27750 - bugbear lair
-
-[Nereus] 31250 - warlock coven mines
-
-[Nereus] caverns of voaleth (under voaleth) 37500
-
-[Nereus] med crypt - 35500
-
-[Nereus] cycs - 73653
-
-[Nereus] Sea cave - 26250
-
-[Nereus] hill giants 32000
-
-[Nereus] glory hole mine 56620
-
-[Nereus] natural caves - 2561
-
+[Nereus] 31302 - iron golems
+[Nereus] lag castle (3500-3808)
+[Nereus] 4780 - durfs
+[Nereus] 3538 - lag castle II, the tunnels beneath lag
+[Nereus] 6285 - slime caves
+[Nereus] 13500 - med sewers
+[Nereus] 27520 - orc raiders
+[Nereus] 27750 - bugbear lair
+[Nereus] 31250 - warlock coven mines
+[Nereus] caverns of voaleth (under voaleth) 37500
+[Nereus] med crypt - 35500
+[Nereus] cycs - 73653
+[Nereus] Sea cave - 26250
+[Nereus] hill giants 32000
+[Nereus] glory hole mine 56620
+[Nereus] natural caves - 2561
 
 [Nereus] DO NOT REMOvE THE PIRAHNA
-
-"
+"
 368757773 0
 12 7 0
 D0
@@ -994,104 +654,72 @@ D4
 E
 "bones"
 "Bleach-white bones offer a frightening contrast to the peace of this calm
-
-ocean grotto.  Gnaw marks are evident on all of the bones, where the flesh and
-
-ligaments have been torn forcefully away from the bone.  It is unclear what
-
-sort of creature the bones come from, but the size indicates that the creature
-
-was much, much larger than an average human.
-
-"
+ocean grotto.  Gnaw marks are evident on all of the bones, where the flesh and
+ligaments have been torn forcefully away from the bone.  It is unclear what
+sort of creature the bones come from, but the size indicates that the creature
+was much, much larger than an average human.
+"
 E
 "chain"
 "A thick, sturdy metal chain has been attached to a metal stake that has been
-
-driven deep into the grotto wall to the north.  This chain is made of a
-
-gleaming, silvery metal that shows no corrosion from the seawater around it. 
-
-Whether this is because the chain is brand new or because the metal resists
-
-corrosion is not clear.
-
-"
+driven deep into the grotto wall to the north.  This chain is made of a
+gleaming, silvery metal that shows no corrosion from the seawater around it. 
+Whether this is because the chain is brand new or because the metal resists
+corrosion is not clear.
+"
 A
 ""
 ""
 "if( find_stat( ch, level ) < 92 ) {
-
-  act_tochar( #no, ch );
-
-  act_notchar( #nos, ch );
-
-  }
-
-else
-
-  continue;
-
-"
+  act_tochar( #no, ch );
+  act_notchar( #nos, ch );
+  }
+else
+  continue;
+"
 E
 "no"
 "You attempt to swim up towards the lit entrance at the top of the grotto, but
-
-crash into a solid wall of water!
-
-"
+crash into a solid wall of water!
+"
 E
 "nos"
 "$n attempts to swim up towards the lit entrance at the top of the grotto, but
-
-crashes into a solid wall of water!
-
-"
+crashes into a solid wall of water!
+"
 !
 3 0 16
 A
 "cast"
 "blink astral"
 "act_tochar( #msg, ch );
-
-"
+"
 E
 "msg"
 "As you form the words to the spell in your mind, you suddenly feel a sharp
-
-pain in your head and lose your concentration.
-
-"
+pain in your head and lose your concentration.
+"
 !
 0 0 0
 A
 "blah"
 ""
 "i = reputation( ch, secomber );
-
-j = reputation( ch, eleint );
-
-k = reputation( ch, thorstag );
-
-l = reputation( ch, azak );
-
-m = reputation( ch, stahl );
-
-n = reputation( ch, nethril );
-
-set_delay( ch, -32 );
-
-"
+j = reputation( ch, eleint );
+k = reputation( ch, thorstag );
+l = reputation( ch, azak );
+m = reputation( ch, stahl );
+n = reputation( ch, nethril );
+set_delay( ch, -32 );
+"
 !
 0 0 0
 A
 "test"
 ""
 "dispel_affect( ch, fire shield );
-
-dispel_affect( ch, ion shield );
-
-"
+dispel_affect( ch, ion shield );
+"
 !
 0 0 0
 2347 137 1509949540 3 0
@@ -1101,16 +729,11 @@ S
 #7
 "Outside the Hall of the Gods."
 "You are standing in front of the most breath taking place you have ever
-
-been, the clouds have joined together to build the foundation of this
-
-Hall.  The sun and the moon have gotten together to provide the material
-
-for the walls, which explains the radiance they give off.  An unnatural
-
-force beckons you to enter and await the gods entry.
-
-"
+been, the clouds have joined together to build the foundation of this
+Hall.  The sun and the moon have gotten together to provide the material
+for the walls, which explains the radiance they give off.  An unnatural
+force beckons you to enter and await the gods entry.
+"
 ""
 301500429 0
 0 6 0
@@ -1127,19 +750,13 @@ S
 #8
 "Hall of Judgement"
 "You are standing in a room that seems to go on forever, you footsteps
-
-clang in the hollow hall. There is but one light source, a firey pit in 
-
-the center of the room. The only other item in this room is a stone altar
-
-carved with what looks like the Creation Story.
-
+clang in the hollow hall. There is but one light source, a firey pit in 
+the center of the room. The only other item in this room is a stone altar
+carved with what looks like the Creation Story.
 
 You feel like you are being watched as you walk down the hall, and
-
-thinking to yourself you had better watch you step.
-
-"
+thinking to yourself you had better watch you step.
+"
 ""
 301500428 0
 0 9 0
@@ -1154,17 +771,12 @@ S
 #9
 "Immortals' Chat Room"
 "You are standing a small rather cozy room with a large sofa and love seat. 
-
-There is every magazine imaginable on a lacquered table in the corner of the
-
-room.
-
-"
+There is every magazine imaginable on a lacquered table in the corner of the
+room.
+"
 "Imms get sent here after \"redit room delete\".
-
-This room can't be deleted.
-
-"
+This room can't be deleted.
+"
 301500429 0
 0 9 0
 D0
@@ -1174,35 +786,27 @@ D0
 E
 "magazines magazine"
 "Several magazines, all years old, detailing antiquated code, old software
-
-and hardware, and the relative merits (or lack thereof) of Windows.
-
-"
+and hardware, and the relative merits (or lack thereof) of Windows.
+"
 A
 ""
 ""
 "act_tochar( #down, ch );
-
-act_notchar( #odown, ch );
-
-continue;
-
-"
+act_notchar( #odown, ch );
+continue;
+"
 E
 "down"
 "You descend the clattering metal steps into the room below.
-
-"
+"
 E
 "odown"
 "$n descends the clattering metal steps into the room below.
-
-"
+"
 E
 "drop"
 "$n descends the clattering metal steps from the room above.
-
-"
+"
 !
 3 0 32
 960 17 1509949540 -2 0
@@ -1212,25 +816,16 @@ S
 #10
 "Cradled in Light"
 "A high, vaulted ceiling of alabaster soars over the white marble floor of this
-
-room.  Light seems to permeate the entire area, causing everything to seem to
-
-glow faintly with a soft white aura.  Drops of jewel colored light seem to
-
-rain down onto the floor from a stained glass window set into the east wall. 
-
-Drapes of purest silk hang freely, billowing in a slight breeze.  When a shaft
-
-of light hits the fabric, a relief image of twined flowers is illuminated in
-
-the silk.
-
-"
+room.  Light seems to permeate the entire area, causing everything to seem to
+glow faintly with a soft white aura.  Drops of jewel colored light seem to
+rain down onto the floor from a stained glass window set into the east wall. 
+Drapes of purest silk hang freely, billowing in a slight breeze.  When a shaft
+of light hits the fabric, a relief image of twined flowers is illuminated in
+the silk.
+"
 "[Ilyena] Fix Sst'rasa
-
-[Ilyena] Fix Temple of Temohpab
-
-"
+[Ilyena] Fix Temple of Temohpab
+"
 301500805 0
 0 6 0
 D3
@@ -1244,19 +839,13 @@ S
 #11
 "Nereus's Zombie Testing Chamber"
 "A big fat hole in the ground, where zombies play.
-
-"
+"
 "[Nereus] Done:
-
-[Nereus] mountain goat (205)  - zombie (1047) - skeleton (1048)
-
-[Nereus] rabbits(lots) -> zombie(997) - bone rabbit (235)
-
-[Nereus] deer(mult) -> zombie(998) -> skel(236)
-
-[Nereus] stag(28) -> zombie( 1045 ) -> skeleton( 1046 )
-
-"
+[Nereus] mountain goat (205)  - zombie (1047) - skeleton (1048)
+[Nereus] rabbits(lots) -> zombie(997) - bone rabbit (235)
+[Nereus] deer(mult) -> zombie(998) -> skel(236)
+[Nereus] stag(28) -> zombie( 1045 ) -> skeleton( 1046 )
+"
 301629453 0
 0 6 0
 D2
@@ -1269,17 +858,12 @@ S
 #12
 "Necropolis"
 "Crumbling gravestones litter this dark landscape.  In all directions, the
-
-stench of death wafts from open graves and rotting corpses.  Everpresent black
-
-clouds fill the sky, allowing no light into this unholy area.  Lonil's light
-
-has no place here, this is the battleground of Xiroce and Morkith.
-
-"
+stench of death wafts from open graves and rotting corpses.  Everpresent black
+clouds fill the sky, allowing no light into this unholy area.  Lonil's light
+has no place here, this is the battleground of Xiroce and Morkith.
+"
 "[Zithuan] Cornugon transfers skeletons from here, do not add any mob resets.
-
-"
+"
 301498389 0
 16 9 0
 -1
@@ -1288,18 +872,12 @@ S
 #13
 "Gaol"
 "A small pile of straw lies in one corner, obviously meant as a bed despite the
-
-many insects you see freely roaming the flattened mound.  The cold, dark walls
-
-are uneven and covered with a light sheen of water.  Hungry moss lines the
-
-cracks of hewn stone, growing mostly where the condensation runs and thriving
-
-on the cool moisture as it drips with a forlorn-sounding plop upon the rough,
-
-puddled floor.
-
-"
+many insects you see freely roaming the flattened mound.  The cold, dark walls
+are uneven and covered with a light sheen of water.  Hungry moss lines the
+cracks of hewn stone, growing mostly where the condensation runs and thriving
+on the cool moisture as it drips with a forlorn-sounding plop upon the rough,
+puddled floor.
+"
 ""
 301500479 0
 0 6 0
@@ -1307,119 +885,85 @@ A
 ""
 ""
 "i = 1d20;
-
-if( i == 1 )
-
-  send_to_room( #scream, room );
-
-if( i == 2 )
-
-  send_to_room( #cackle, room );
-
-if( i > 2 ) {
-
-  loop( all_in_room ) {
-
-    if( find_stat( rch, hunger ) < 0 ) {
-
-      send_to_char( #gruel, rch );
-
-      drain_stat( rch, hunger, 0, 50 );
-
-      drain_stat( rch, thirst, 0, 50 );
-
-    }
-
-  }
-
-}
-
-"
+if( i == 1 )
+  send_to_room( #scream, room );
+if( i == 2 )
+  send_to_room( #cackle, room );
+if( i > 2 ) {
+  loop( all_in_room ) {
+    if( find_stat( rch, hunger ) < 0 ) {
+      send_to_char( #gruel, rch );
+      drain_stat( rch, hunger, 0, 50 );
+      drain_stat( rch, thirst, 0, 50 );
+    }
+  }
+}
+"
 E
 "scream"
 "@RFrom somewhere deep within the darkness above you, the horrible
-
-shriekings and screams of tortured souls echo down to your frightened
-
-ears.  Beware, my friend.  The Gods are unhappy with their captives.  @n
-
-"
+shriekings and screams of tortured souls echo down to your frightened
+ears.  Beware, my friend.  The Gods are unhappy with their captives.  @n
+"
 E
 "cackle"
 "@b@YThe cackling of deranged dieties intent on making you miserable resounds in
-
-this small cell.@n
-
-"
+this small cell.@n
+"
 E
 "gruel"
 "@GA small panel opens in the eastern wall, and a bowl of gruel is pushed through
-
-the opening.  As hungry as you are, you do not hesitate in greedily devouring
-
-the foul tasting sludge.@n
-
-"
+the opening.  As hungry as you are, you do not hesitate in greedily devouring
+the foul tasting sludge.@n
+"
 !
 2 500 0
 A
 "quit"
 ""
 "act_tochar( \"You try to quit, but the immortals won't let you.\", ch );
-
-act_notchar( \"$n tries to quit, but fails miserably.\", ch );
-
-"
+act_notchar( \"$n tries to quit, but fails miserably.\", ch );
+"
 !
 0 0 0
 A
 "emote"
 ""
 "act_tochar( \"You can't emote here, mortal.\", ch );
-
-end;
-
-"
+end;
+"
 !
 0 0 0
 A
 "cast"
 ""
 "act_tochar( \"You don't seem to remember how to do that.\", ch );
-
-act_notchar( \"$n looks at $s hands, seemingly dazed.\", ch  );
-
-"
+act_notchar( \"$n looks at $s hands, seemingly dazed.\", ch  );
+"
 !
 0 0 0
 A
 "appraise"
 ""
 "act_tochar( \"Everything appears to be worthless to you here.\", ch );
-
-act_notchar( \"$n tries to appraise something.\", ch );
-
-"
+act_notchar( \"$n tries to appraise something.\", ch );
+"
 !
 0 0 0
 A
 "scan"
 ""
 "act_tochar( \"Hmm, the walls are interesting, aren't they?\", ch );
-
-act_notchar( \"$n looks around and sees ... walls.\", ch );
-
-"
+act_notchar( \"$n looks around and sees ... walls.\", ch );
+"
 !
 0 0 0
 A
 "hide camouflage"
 ""
 "act_tochar( \"There is nowhere for you to hide here.\" ch );
-
-act_notchar( \"$n attempts to hide.\", ch );
-
-"
+act_notchar( \"$n attempts to hide.\", ch );
+"
 !
 0 0 0
 77 9 1509949490 3 0
@@ -1429,12 +973,9 @@ S
 #14
 "Hall of Builders"
 "You are standing in a great marble hall that stretches on for miles.  To the
-
-east and west are a multitude of solid oak embossed in gold.  Outside of the
-
-door are a life size bust of the office's owner.
-
-"
+east and west are a multitude of solid oak embossed in gold.  Outside of the
+door are a life size bust of the office's owner.
+"
 ""
 301501453 0
 0 6 0
@@ -1453,37 +994,26 @@ D2
 E
 "1 north"
 "You see the Hall continue.
-
-"
+"
 E
 "1 east"
 "You see an office.
-
-"
+"
 -1
 S
 
 #15
 "Forlorn, Flower-bedecked Ruins"
 "In a verdant plateau lie pinkish granite and marble ruins, the only
-
-remains of a once-great city.  Passionflower vines twine themselves
-
-around the few upright pillars and about the girth of fallen ones, large,
-
-glossy green leaves almost completely covering much of the stone.  Gaudy
-
-purple and white flowers greet the world from between cracked masonry,
-
-their edges softened by lichen, grass and the occasional fern.  Moss has
-
-settled on ancient grey bricks, some of the bright green patches dotted
-
-with tiny grey-white flowers.
-
-Hanging from the jagged corner of a fallen column is a faded @esign@n.
-
-"
+remains of a once-great city.  Passionflower vines twine themselves
+around the few upright pillars and about the girth of fallen ones, large,
+glossy green leaves almost completely covering much of the stone.  Gaudy
+purple and white flowers greet the world from between cracked masonry,
+their edges softened by lichen, grass and the occasional fern.  Moss has
+settled on ancient grey bricks, some of the bright green patches dotted
+with tiny grey-white flowers.
+Hanging from the jagged corner of a fallen column is a faded @esign@n.
+"
 ""
 301467776 0
 0 9 0
@@ -1494,39 +1024,26 @@ D3
 E
 "sign"
 "= STARSHINE'S OFFICE =
-
-....Off Composing.....
-
-..Please Take a Seat..
-
-Be Back Next Millenium
-
-"
+....Off Composing.....
+..Please Take a Seat..
+Be Back Next Millenium
+"
 -1
 S
 
 #16
 "A Cozy Den of Fire"
 "A large pedestal of pure silver with glowing rubies on the outter edges
-
-floats in the center of a room of warm, crackling reddish flames.  Being
-
-in a room such as this could beat the fiercest coldest day.  Below the
-
-pedestal lies a great treasure of shiny golden coins, jewels, silver and gold
-
-plated armor and arms collected into several large metallic hills.  One
-
-glimpse of the treasure would drive a thief beyond maddness to obtain it.
-
-"
+floats in the center of a room of warm, crackling reddish flames.  Being
+in a room such as this could beat the fiercest coldest day.  Below the
+pedestal lies a great treasure of shiny golden coins, jewels, silver and gold
+plated armor and arms collected into several large metallic hills.  One
+glimpse of the treasure would drive a thief beyond maddness to obtain it.
+"
 "griffons - 2241, 2353, 2354, 2355, 2356
-
-rooms - 800 to 815
-
-items - 3679, 3649, 3635, 3634, 3633
-
-"
+rooms - 800 to 815
+items - 3679, 3649, 3635, 3634, 3633
+"
 301498373 0
 0 9 0
 D2
@@ -1539,12 +1056,9 @@ S
 #17
 "Hall of Builders"
 "You are standing in a great marble hall that stretches on for miles.  To the
-
-east and west are a multitude of solid oak embossed in gold.  Outside of the
-
-door are a life size bust of the office's owner.
-
-"
+east and west are a multitude of solid oak embossed in gold.  Outside of the
+door are a life size bust of the office's owner.
+"
 ""
 301501453 0
 0 6 0
@@ -1559,23 +1073,19 @@ D2
 E
 "1 east"
 "You see an office.
-
-"
+"
 E
 "1 south"
 "You see the Hallway continue.
-
-"
+"
 E
 "1 west"
 "A thick iron-banded door of dark oak has a small brass plaque on it.
-
-"
+"
 E
 "brass plaque"
 "The plaque reads: Rue's Office
-
-"
+"
 368 9 1509949540 3 0
 -1
 S
@@ -1583,8 +1093,7 @@ S
 #18
 "Archery Range of the Damned"
 "Under Construction.
-
-"
+"
 ""
 301498388 0
 16 9 0
@@ -1596,32 +1105,25 @@ A
 "get take"
 "crossbow bolt arrow"
 "obj = obj_to_char( oload( 3651 ), ch );
-
-act_tochar( #to_char, ch, obj, mob );
-
-act_notchar( #not_char, ch, obj, mob );
-
-"
+act_tochar( #to_char, ch, obj, mob );
+act_notchar( #not_char, ch, obj, mob );
+"
 E
 "to_char"
 "You get $p.
-
-"
+"
 E
 "not_char"
 "$n gets $p.
-
-"
+"
 !
 0 0 0
 A
 "push"
 "3 triangle"
 "interpret( ch, \"at 12 purge\" );
-
-interpret( ch, \"at 12 reset room\" );
-
-"
+interpret( ch, \"at 12 reset room\" );
+"
 !
 0 0 0
 3612 17 1509949540 -2 0
@@ -1637,13 +1139,10 @@ S
 #19
 "Elfir's New Office"
 "Under Construction.
-
-"
+"
 "33008 - area to finish up describing
-
-Idea: Pets that are only tamable to certain races
-
-"
+Idea: Pets that are only tamable to certain races
+"
 301500421 0
 11 6 0
 D1
@@ -1657,12 +1156,9 @@ S
 #20
 "Hall of Builders"
 "You are standing a great marble hall that stretches on for miles.  Off to the
-
-east there is a simple door painted completely black.  There is no name on the
-
-door nor is there any identifying plaques or busts in this area.
-
-"
+east there is a simple door painted completely black.  There is no name on the
+door nor is there any identifying plaques or busts in this area.
+"
 ""
 301501453 0
 0 6 0
@@ -1684,8 +1180,7 @@ S
 #21
 "Severus' Quiet Place"
 "This padded cell is where Severus retreats to escape the mad, mad world.
-
-"
+"
 ""
 33062913 0
 2 9 0
@@ -1697,12 +1192,9 @@ A
 "xyzzy"
 ""
 "i = trigger_mprog( 1000, give, 7 );
-
-act_tochar( i, ch );
-
-i = find_skill( ch, parry );
-
-"
+act_tochar( i, ch );
+i = find_skill( ch, parry );
+"
 !
 0 0 0
 -1
@@ -1711,39 +1203,23 @@ S
 #22
 "Xami's Office"
 "Light fills the room from an unseen source.  Everthing in the room is
-
-illuminated, yet shadows are nowhere to be seen.  To one corner of the room
-
-sits a large desk made of a metal framing with a wooden top and sides.  Upon
-
-the desk sits a small stack of papers a few pens, pencils, rulers and other
-
-bits and pieces.  Behind the desk is a comfortable, velvet-covered,
-
-deskchair.  Next to the door stands an empty coat holder looking bare and
-
-ordinary.  A row of filing cabinets lines the east wall from one end of the
-
-room to the other, showing a great need for storage.
-
-"
+illuminated, yet shadows are nowhere to be seen.  To one corner of the room
+sits a large desk made of a metal framing with a wooden top and sides.  Upon
+the desk sits a small stack of papers a few pens, pencils, rulers and other
+bits and pieces.  Behind the desk is a comfortable, velvet-covered,
+deskchair.  Next to the door stands an empty coat holder looking bare and
+ordinary.  A row of filing cabinets lines the east wall from one end of the
+room to the other, showing a great need for storage.
+"
 "runed electrum dagger 3106, need to have it checked - done - approved - placed.
-
-room in castle lag 2 to offhand parry was 3524
-
-#3856 helm of brute strength - to get checked
-
-#3857 lv65 scarf - to be check
-
-mob 1712 monster mad cow for invasion
-
-#3859 sunblade - to be checked - needs desc
-
-#87000 is dragon area..
-
-room 91000 mansion basement area level 5-10
-
-"
+room in castle lag 2 to offhand parry was 3524
+#3856 helm of brute strength - to get checked
+#3857 lv65 scarf - to be check
+mob 1712 monster mad cow for invasion
+#3859 sunblade - to be checked - needs desc
+#87000 is dragon area..
+room 91000 mansion basement area level 5-10
+"
 301500431 0
 0 9 0
 D3
@@ -1758,92 +1234,67 @@ A
 "exclaim"
 "berax"
 "act_tochar( #exclaim, ch );
-
-act_notchar( #exclaim1, ch );
-
-if( is_open( room, down ) ) {
-
-  act_tochar ( #open, ch );
-
-  }
-
-else {
-
-  wait( 3 );
-
-  act_tochar( #move, ch );
-
-  act_notchar( #move1, ch );
-
-  open( room, down );
-
-  }
-
-"
+act_notchar( #exclaim1, ch );
+if( is_open( room, down ) ) {
+  act_tochar ( #open, ch );
+  }
+else {
+  wait( 3 );
+  act_tochar( #move, ch );
+  act_notchar( #move1, ch );
+  open( room, down );
+  }
+"
 E
 "open"
 "Entrance is open! Don't give away our password!!
-
-"
+"
 E
 "move"
 "After a slight rumble the secret exit down appears.
-
-"
+"
 E
 "move1"
 "You hear a rumbling sound, and suddenly there is an exit down.
-
-"
+"
 E
 "exclaim"
 "You exclaim 'Berax!' to the room.
-
-"
+"
 E
 "exclaim1"
 "$n exclaims something.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "wait( 1 );
-
-act_tochar( #close, ch );
-
-act_notchar( #close1, ch );
-
-close( room, down );
-
-send_to_room( #close2, find_room( 26 ) );
-
-"
+act_tochar( #close, ch );
+act_notchar( #close1, ch );
+close( room, down );
+send_to_room( #close2, find_room( 26 ) );
+"
 E
 "close"
 "The exit below you vanishes.
-
-"
+"
 E
 "close1"
 "The exit below you vanishes.
-
-"
+"
 E
 "close2"
 "The exit above you suddenly vanishes.
-
-"
+"
 !
 1 0 32
 A
 "qqqqq"
 ""
 "act_room( \"his is arg\", ch );
-
-"
+"
 !
 0 0 0
 3490 17 100 -2 0
@@ -1872,18 +1323,12 @@ S
 #24
 "The Glade"
 "A lovely looking pond is located in the middle of the glade.  It has mossy
-
-banks and clear water with ducks gliding on its surface.  At the northern bank
-
-there seems to be a boxlike container built on top of a pole 5 feet high.  All
-
-around the pond, lush green grass carpets the ground up to the trees at the
-
-edge of the glade.  Taking a deep breath of fresh clear air, you feel that
-
-this place is in some way magical.
-
-"
+banks and clear water with ducks gliding on its surface.  At the northern bank
+there seems to be a boxlike container built on top of a pole 5 feet high.  All
+around the pond, lush green grass carpets the ground up to the trees at the
+edge of the glade.  Taking a deep breath of fresh clear air, you feel that
+this place is in some way magical.
+"
 ""
 301498389 0
 0 6 0
@@ -1894,139 +1339,103 @@ D3
 E
 "boxlike container"
 "The box has a dimension of 1'x1'x1' and has a door on one side.
-
-It is made of high quality wood with a lacquered finish.
-
-"
+It is made of high quality wood with a lacquered finish.
+"
 A
 "open"
 "boxlike container"
 "send_to_char( #to_char, ch );
-
-act_notchar( #to_room, ch );
-
-"
+act_notchar( #to_room, ch );
+"
 E
 "to_char"
 "You open the door to the container and see some bread lying inside.
-
-The bread can be used to feed the ducks.
-
-"
+The bread can be used to feed the ducks.
+"
 E
 "to_room"
 "$n opens the container.
-
-"
+"
 !
 0 0 0
 A
 "feed"
 "ducks"
 "send_to_char( #to_char, ch );
-
-act_notchar( #totheroom, ch );
-
-act_room( #to_all, ch );
-
-"
+act_notchar( #totheroom, ch );
+act_room( #to_all, ch );
+"
 E
 "to_char"
 "You break off small pieces of the bread and start throwing them into the
-
-water.  The ducks sensing food to be found glide gracefully towards you.  
-
-"
+water.  The ducks sensing food to be found glide gracefully towards you.  
+"
 E
 "totheroom"
 "$n breaks off small pieces of the bread and starts throwing them into the
-
-water.  The ducks sensing food to be found glide gracefully towards $m. 
-
-"
+water.  The ducks sensing food to be found glide gracefully towards $m. 
+"
 E
 "to_all"
 "The ducks with joyous quacking begin to peck away at the pieces of bread.
-
-"
+"
 !
 0 0 0
 A
 "eat"
 "bread"
 "send_to_char( #to_char, ch );
-
-act_notchar( #to_room, ch );
-
-"
+act_notchar( #to_room, ch );
+"
 E
 "to_char"
 "Glancing around to make sure no one is watching, you take a quick bite of
-
-the bread; you know, to make sure it's okay for the ducks...  
-
-"
+the bread; you know, to make sure it's okay for the ducks...  
+"
 E
 "to_room"
 "$n goes to the box for a moment to get some bread.  Turning around, you
-
-see $m swallow something quickly looking a little guilty.  
-
-"
+see $m swallow something quickly looking a little guilty.  
+"
 !
 0 0 0
 A
 "talk"
 ""
 "send_to_char( #to_char, ch );
-
-act_notchar( #to_room, ch );
-
-"
+act_notchar( #to_room, ch );
+"
 E
 "to_char"
 "You begin to say something but nothing comes out.
-
-A voice tells you, 'Silence is golden.'
-
-"
+A voice tells you, 'Silence is golden.'
+"
 E
 "to_room"
 "$n seems to be trying to speak but no sound seems to come out.
-
-"
+"
 !
 0 0 0
 A
 "kill"
 "chaser ducks"
 "send_to_char( #to_char, ch );
-
-act_notchar( #to_room, ch );
-
-transfer( ch, find_room( 12027 ) );
-
-"
+act_notchar( #to_room, ch );
+transfer( ch, find_room( 12027 ) );
+"
 E
 "to_char"
 "Even before you make any move to commit your hostile act , A voice from
-
-above booms 'HOW DARE YOU DISRUPT THE HARMONY OF THIS PLACE' 
-
-  
-
-BEGONE !!!!
-
-  
-
-You find yourself in an enclosed room.
-
-"
+above booms 'HOW DARE YOU DISRUPT THE HARMONY OF THIS PLACE' 
+  
+BEGONE !!!!
+  
+You find yourself in an enclosed room.
+"
 E
 "to_room"
 "$n has suddenly dissapeared !
-
-"
+"
 !
 0 0 0
 122 9 1509949540 3 0
@@ -2036,55 +1445,35 @@ S
 #25
 "Flight Deck"
 "Deep inside the U.S.S Saratoga is the flight deck.  Large conduits travel
-
-along the walls supplying other parts of the ship with various types of
-
-materials.  All about the flight deck are the empty cockpits of SA-43
-
-Hammerheads.  Placed on the northern wall of the deck is a large emblem
-
-signifying that this area is the flight deck for the 92nd 'Diamondbacks'
-
-Attack Squadron.
-
-"
+along the walls supplying other parts of the ship with various types of
+materials.  All about the flight deck are the empty cockpits of SA-43
+Hammerheads.  Placed on the northern wall of the deck is a large emblem
+signifying that this area is the flight deck for the 92nd 'Diamondbacks'
+Attack Squadron.
+"
 "DON'T CONNECT MY OFFICE WITH HALL OF BUILDERS
-
-Area Ideas:
-
-Primal Forest
-
-Goblin Caves
-
-    
-
-Objects:
-
-Bear skin cloak - skin from Kodiak
-
-"
+Area Ideas:
+Primal Forest
+Goblin Caves
+    
+Objects:
+Bear skin cloak - skin from Kodiak
+"
 301498389 0
 0 6 0
 E
 "cabinet"
 "Behind the protective glass barrier are a multitude of models.  One of
-
-the most promonent models is that of a SA-43 Hammerhead, like the ones
-
-flown by the 58th Attack Squadron also known as the 'Wildcards'.
-
-"
+the most promonent models is that of a SA-43 Hammerhead, like the ones
+flown by the 58th Attack Squadron also known as the 'Wildcards'.
+"
 E
 "cockpit"
 "The flat gray cockpit has all the typical warnings the military places on
-
-their equipment as well as the emlazoned insignia of the 92 Attack
-
-Squadron.  Stenciled below the cockpit ont the left hand side are the
-
-words: 'Cpt. Joshua 'PaleRider' Nutt
-
-"
+their equipment as well as the emlazoned insignia of the 92 Attack
+Squadron.  Stenciled below the cockpit ont the left hand side are the
+words: 'Cpt. Joshua 'PaleRider' Nutt
+"
 1221 9 1509949540 3 0
 -1
 S
@@ -2092,19 +1481,13 @@ S
 #26
 "Test Area"
 "secret room!
-
-"
+"
 "#3824 blade of runes - for HF - need to be checked
-
-#3747 stone morningstar - checked and okayed
-
-#3726 silver mithril morningstar - incomplete
-
-#3784 invoke rod - desc wrong - arrk's idea
-
-obj 4047 starting for recharge scroll
-
-"
+#3747 stone morningstar - checked and okayed
+#3726 silver mithril morningstar - incomplete
+#3784 invoke rod - desc wrong - arrk's idea
+obj 4047 starting for recharge scroll
+"
 368607245 0
 0 9 0
 D0
@@ -2123,8 +1506,7 @@ A
 "order"
 "open"
 "open( room, up );
-
-"
+"
 !
 0 0 0
 161 9 1509949540 3 0
@@ -2134,16 +1516,11 @@ S
 #27
 "Forlorn Ruins in a Forest"
 "This place is more forest than broken monuments.  Here, trees have found
-
-soil from which to root and grow, their leaves forming a rustling,
-
-dark-green canopy above, and a soft, damp carpet underfoot.  The air is
-
-filled with the scent of thriving greenery and hums with the music of the
-
-wind playing through heavily-laden branches.
-
-"
+soil from which to root and grow, their leaves forming a rustling,
+dark-green canopy above, and a soft, damp carpet underfoot.  The air is
+filled with the scent of thriving greenery and hums with the music of the
+wind playing through heavily-laden branches.
+"
 ""
 301465600 0
 0 9 0
@@ -2157,26 +1534,16 @@ S
 #28
 "Forlorn Ruins"
 "Oval rings of stone alternate with rings of grass, each a drop in height
-
-down to the next oval, leading down, finally, to a flat, granite-tiled
-
-center.  The concentric rings are broken into four equal arcs by steps
-
-leading down to the central stage.  The steps, made of brown and grey
-
-rock embedded in grass and dirt, bow in the middle of their length, as if
-
-from heavy, consistent use.  This theater might have once held mighty
-
-performances, but now serves only as background to sprouting weeds and
-
-flowers thriving in the cracks in the stone.
-
-Curiously, the skies overhead seem to be in perpetual night, @eshining
-
-with starlight@n.
-
-"
+down to the next oval, leading down, finally, to a flat, granite-tiled
+center.  The concentric rings are broken into four equal arcs by steps
+leading down to the central stage.  The steps, made of brown and grey
+rock embedded in grass and dirt, bow in the middle of their length, as if
+from heavy, consistent use.  This theater might have once held mighty
+performances, but now serves only as background to sprouting weeds and
+flowers thriving in the cracks in the stone.
+Curiously, the skies overhead seem to be in perpetual night, @eshining
+with starlight@n.
+"
 ""
 301465600 0
 0 9 0
@@ -2194,28 +1561,17 @@ S
 #29
 "Quiet Pond"
 "Pale light filters down from above to dance upon the small ripples on the
-
-surface of this pond.  Silver-gleaming rushes rises abruptly from the banks;
-
-the long grasses that grow upon the slopes bow gently to the force of the
-
-kissing wind.  A sense of quietude lingers here, a peace and calmness found
-
-nowhere else in the realm.  Even with the tranquillity, you sense a slight
-
-energy that seems to begin under your very feet, a magic thrill that emanates
-
-from the ground and whispers of creation and daydreams and stories from long
-
-ago.  Out of place, but perhaps not entirely unexpected, you see a desk of
-
-carved crystal atop the nearest bank, and upon it a single piece of paper. 
-
-Behind the desk, almost as unlikely but still unsurprising, a sort of
-
-chalkboard of glass and ivory stands, notes written upon its gleaming face.
-
-"
+surface of this pond.  Silver-gleaming rushes rises abruptly from the banks;
+the long grasses that grow upon the slopes bow gently to the force of the
+kissing wind.  A sense of quietude lingers here, a peace and calmness found
+nowhere else in the realm.  Even with the tranquillity, you sense a slight
+energy that seems to begin under your very feet, a magic thrill that emanates
+from the ground and whispers of creation and daydreams and stories from long
+ago.  Out of place, but perhaps not entirely unexpected, you see a desk of
+carved crystal atop the nearest bank, and upon it a single piece of paper. 
+Behind the desk, almost as unlikely but still unsurprising, a sort of
+chalkboard of glass and ivory stands, notes written upon its gleaming face.
+"
 ""
 301516885 0
 16 9 0
@@ -2227,57 +1583,37 @@ E
 "chalkboard"
 "@RNOTES and MEMORANDA@n
 
-
 @CArena 34006@n
-
-@CIsland Sanctuary room 19125 - Elvish meeting/wedding spot@n
-
+@CIsland Sanctuary room 19125 - Elvish meeting/wedding spot@n
 
 @R*@n Permission gained from Avion to use \"Avion\" as reference character by
-
-Cove Ranak's priest of Kerog.  Cannot make Avion NPC unless Avion remorts and
-
-further permission given by him.  7.16.02 Adelyth
-
+Cove Ranak's priest of Kerog.  Cannot make Avion NPC unless Avion remorts and
+further permission given by him.  7.16.02 Adelyth
 
 @R*@n Use @rhelp religions-rev@n as religion reference guide.  That help file
-
-shows the projected revisions to the godfiles.
-
+shows the projected revisions to the godfiles.
 
 @R*@n Beginning of camo quest in room 123 (climb wall action).  Letter item
-
-that begins story will pop in room 169 (letter sends player to Rusty Nail in
-
-Medienne to seek out Obsidian, the guildmaster).  Letter item is vnum 3632
-
-(crumpled bill of lading).
-
+that begins story will pop in room 169 (letter sends player to Rusty Nail in
+Medienne to seek out Obsidian, the guildmaster).  Letter item is vnum 3632
+(crumpled bill of lading).
 
 @R*@n Gala chess table item # 3729
-
-"
+"
 E
 "piece paper to-do"
 "@R TO-DO LIST@N
 
-
 @R*@n   Change Le'Anmhar's information to eliminate halfling references.
-
-"
+"
 E
 "Avatar Flags"
 "1) Set trust level.  trust <name> 91
-
-2) Have player log off then back on.
-
-3) Medit player, then set mflags.   mflag approve   mflag avatar_chan     mflag avatar.chnnl
-
-4) Greet <name> on Avatar channel.
-
-5) Have new AV read the AV board and \"help approve\"
-
-"
+2) Have player log off then back on.
+3) Medit player, then set mflags.   mflag approve   mflag avatar_chan     mflag avatar.chnnl
+4) Greet <name> on Avatar channel.
+5) Have new AV read the AV board and \"help approve\"
+"
 1067 9 1509949540 3 0
 -1
 S
@@ -2285,19 +1621,13 @@ S
 #30
 "Hedrack's Office"
 "This pleasantly warm chamber is cluttered to the distant ceiling.  Stacks of
-
-His deep silvery eyes stare from a big face.  His hair is of a reddish
-
-holy writs.  Anachronistic surveying devices share precarious stacks with
-
-rules, measures, and weights of all kinds.  Among all this, a wooden desk
-
-keeps a surprisingly clear surface.
-
-"
+His deep silvery eyes stare from a big face.  His hair is of a reddish
+holy writs.  Anachronistic surveying devices share precarious stacks with
+rules, measures, and weights of all kinds.  Among all this, a wooden desk
+keeps a surprisingly clear surface.
+"
 "room 68077 and surrounds are bad.
-
-"
+"
 301498368 0
 3 9 0
 D0
@@ -2311,92 +1641,66 @@ D1
 E
 "1"
 "test rdesc
-
-"
+"
 E
 "a"
 "test rdesc 2
-
-"
+"
 A
 ""
 ""
 "cmd = \"abc\";
-
-act_tochar( string( \" from the $t\", null,null,null,cmd), ch );
-
-"
+act_tochar( string( \" from the $t\", null,null,null,cmd), ch );
+"
 E
 "special"
 "This pleasantly warm chamber is cluttered to the distant ceiling.  Stacks of
-
-tattered maps and freshly-inked charts intermingle with weighty tomes and lost
-
-holy writs.  Anachronistic surveying devices share precarious stacks with
-
-rules, measures, and weights of all kinds.  The lights are on overhead, though
-
-precisely where is hard to tell.  Among all this, a wooden desk keeps a
-
-surprisingly clear surface.
-
-"
+tattered maps and freshly-inked charts intermingle with weighty tomes and lost
+holy writs.  Anachronistic surveying devices share precarious stacks with
+rules, measures, and weights of all kinds.  The lights are on overhead, though
+precisely where is hard to tell.  Among all this, a wooden desk keeps a
+surprisingly clear surface.
+"
 !
 17 0 0
 A
 "typo"
 ""
 "if( acode( room, 4 ) ) {
-
-continue;
-
-}
-
-end;
-
-"
+continue;
+}
+end;
+"
 !
 0 0 0
 A
 ""
 ""
 "continue;
-
-"
+"
 !
 0 0 2
 A
 "flip"
 ""
 "if( is_entangled( ch, \"flip\" ))  {
-
-act_tochar( \"yep\", ch );
-
-} else {
-
-act_tochar( \"nope\", ch );
-
-}
-
-"
+act_tochar( \"yep\", ch );
+} else {
+act_tochar( \"nope\", ch );
+}
+"
 !
 0 0 16
 A
 "log"
 ""
 "// 'arg' should be set to a string.
-
-if( is_pet( ch ) ) ch = is_pet( ch );
-
-obj = obj_to_room( oload( 4656 ), find_room( 30 ) );
-
-set_singular( obj, string( \"tablet reading: $t\", null, null, null, arg ) );
-
-set_plural( obj, string( \"tablets reading: $t\", null, null, null, arg ) );
-
-send_to_room( string( \"$p appears suddenly.\", null, obj ), find_room( 30 ) );
-
-"
+if( is_pet( ch ) ) ch = is_pet( ch );
+obj = obj_to_room( oload( 4656 ), find_room( 30 ) );
+set_singular( obj, string( \"tablet reading: $t\", null, null, null, arg ) );
+set_plural( obj, string( \"tablets reading: $t\", null, null, null, arg ) );
+send_to_room( string( \"$p appears suddenly.\", null, obj ), find_room( 30 ) );
+"
 !
 0 0 0
 A
@@ -2409,10 +1713,8 @@ A
 "scrutinize"
 ""
 "obj = wield( ch );
-
-act_tochar( obj_cost( obj ), ch );
-
-"
+act_tochar( obj_cost( obj ), ch );
+"
 !
 0 0 0
 5041 17 1509949540 -2 0
@@ -2422,34 +1724,21 @@ S
 #31
 "The Wait"
 "This room is completely dark, save the few rays of light that escape
-
-through the square-shaped barred hole in the ceiling.  Using this light,
-
-you can make out faint images of hooks suspended from dark chains that
-
-are hung on the ceiling.  The floor must be black, as it is almost
-
-impossible to make it out.  The only thing that is visible outside of
-
-this light is the glowing red circle that has been magically etched upon
-
-the floor in the center of the room.  There is a barred, square-cut hole
-
-in the corner of the room leading down, and a wooden ladder leading up.
-
-"
+through the square-shaped barred hole in the ceiling.  Using this light,
+you can make out faint images of hooks suspended from dark chains that
+are hung on the ceiling.  The floor must be black, as it is almost
+impossible to make it out.  The only thing that is visible outside of
+this light is the glowing red circle that has been magically etched upon
+the floor in the center of the room.  There is a barred, square-cut hole
+in the corner of the room leading down, and a wooden ladder leading up.
+"
 "Current Job - Darken Wood 35250
 
-
 Things to do:
-
-Look at rdescs for things that would make better actions.  Code those
-
-actions.  Check for spelling errors.  Look for objects that reset in the
-
-area and check for appropriate level agreeability.
-
-"
+Look at rdescs for things that would make better actions.  Code those
+actions.  Check for spelling errors.  Look for objects that reset in the
+area and check for appropriate level agreeability.
+"
 301498381 0
 0 7 0
 D3
@@ -2470,14 +1759,10 @@ S
 #32
 "Hall of Immortals"
 "You are standing in an enormous granite hall that stretches on for miles.  To
-
-the north and south are shimmering silver doors etched in runes.  Outside each
-
-door is a life size bust of the office's owner.  A large sign sits in the
-
-middle of the hall.
-
-"
+the north and south are shimmering silver doors etched in runes.  Outside each
+door is a life size bust of the office's owner.  A large sign sits in the
+middle of the hall.
+"
 ""
 301501445 0
 0 9 0
@@ -2496,28 +1781,20 @@ D3
 E
 "sign"
 "An arrow labeled 'Darkwind' points south.
-
-"
+"
 -1
 S
 
 #33
 "Hall of Builders"
 "This fine marble hallway has gotten a little strange.  Stretching away to the
-
-south the vast pattern of marble and doors continues without visible
-
-interruption.  However to the north things are not quite the same.  The marble
-
-hall and door pattern has all the realism of a painting of a hallway.  The
-
-door to the east is solid but not entirely stable.  The last bastion of
-
-normalcy lies to the west, where you see a simple door of weatherbeaten oak,
-
-much out of place in this fantastical Hall.
-
-"
+south the vast pattern of marble and doors continues without visible
+interruption.  However to the north things are not quite the same.  The marble
+hall and door pattern has all the realism of a painting of a hallway.  The
+door to the east is solid but not entirely stable.  The last bastion of
+normalcy lies to the west, where you see a simple door of weatherbeaten oak,
+much out of place in this fantastical Hall.
+"
 ""
 301501453 0
 0 9 0
@@ -2532,32 +1809,21 @@ D3
 E
 "door"
 "The door to the east is made of tightly compressed particles of time. 
-
-The image of a large staring eyeball is set in the center of the door. 
-
-Beneath the staring eye is written the name: Oculus.
-
+The image of a large staring eyeball is set in the center of the door. 
+Beneath the staring eye is written the name: Oculus.
 
 The door to the west is made of sturdy brown oak, but appears
-
-weatherbeaten and worn.  It must not have always been in this Hall, for
-
-it has seen both the light of day and the dark of storm.  Carved into the
-
-door is the outline of a small duck.  A small @b@Ysign@n on the door has
-
-something scrawled on it in chalk.
-
-"
+weatherbeaten and worn.  It must not have always been in this Hall, for
+it has seen both the light of day and the dark of storm.  Carved into the
+door is the outline of a small duck.  A small @b@Ysign@n on the door has
+something scrawled on it in chalk.
+"
 E
 "sign chalk"
 "The sign, written in a hurried scrawl, reads:
-
- 
-
-Mental Ward.  Excercise Caution.
-
-"
+ 
+Mental Ward.  Excercise Caution.
+"
 A
 "test"
 ""
@@ -2571,14 +1837,10 @@ S
 #34
 "Hall of Builders"
 "You are standing in a great marble hall that stretches on for miles.  To the
-
-east is a portal formed by softly shimmering translucent wall of water. 
-
-Outside the door is a bust of the office's owner.  In the middle of the hall
-
-is a large sign of solid onxy with silver lettering.
-
-"
+east is a portal formed by softly shimmering translucent wall of water. 
+Outside the door is a bust of the office's owner.  In the middle of the hall
+is a large sign of solid onxy with silver lettering.
+"
 ""
 301498380 0
 0 9 0
@@ -2597,25 +1859,18 @@ D3
 E
 "sign"
 "East - Eridan
-
-"
+"
 -1
 S
 
 #35
 "A Large Circus Tent"
 "You are in the interior of a large circus tent.  The fabric is shimmering
-
-surgical gauze striped vertically in purple and green.  As you look around,
-
-you see that the tent has three rings so multiple performances can go on at
-
-once.  Overhead, a trapeze swings back and forth between two platforms.  To
-
-your left a large animal cage holds five fierce looking white mice.  All in
-
-all, the tent gives off a feeling of fun and well-being.
-
+surgical gauze striped vertically in purple and green.  As you look around,
+you see that the tent has three rings so multiple performances can go on at
+once.  Overhead, a trapeze swings back and forth between two platforms.  To
+your left a large animal cage holds five fierce looking white mice.  All in
+all, the tent gives off a feeling of fun and well-being.
 
 "
 ""
@@ -2628,95 +1883,67 @@ D5
 E
 "three rings"
 "The three circus rings look like red blue and yellow overlapping hula hoops. 
-
-Each is set up for a different purpose.
-
-"
+Each is set up for a different purpose.
+"
 E
 "red ring"
 "The red ring is ten feet in diameter.  It contains a red tricycle just the
-
-right size for an alligator or a small platypus.
-
-"
+right size for an alligator or a small platypus.
+"
 E
 "blue ring"
 "This ring is in the center of the tent.  A cylindrical platform is set up in
-
-the center for the ringmaster.  On the center of the platform is a large oak
-
-desk.
-
-"
+the center for the ringmaster.  On the center of the platform is a large oak
+desk.
+"
 E
 "oak desk"
 "This desk quite obviously clashes with the beautifully garish colors of the
-
-rest of the tent.  Its smooth oak surface is inlaid with an intricate pewter
-
-pattern of swirling mists.  Looking closer, you can see that the pewter mists
-
-are moving as if pushed by a light breeze.  The desk itself is cluttered with
-
-papers that seem to have no relevance to anything at all.
-
-"
+rest of the tent.  Its smooth oak surface is inlaid with an intricate pewter
+pattern of swirling mists.  Looking closer, you can see that the pewter mists
+are moving as if pushed by a light breeze.  The desk itself is cluttered with
+papers that seem to have no relevance to anything at all.
+"
 E
 "yellow ring"
 "The yellow ring has a large trampoline that takes up the entire space.
-
-"
+"
 E
 "trampoline"
 "It looks like it would be fun to bounce on.
-
-"
+"
 E
 "trapeze"
 "This trapeze is swinging back and forth between two platforms.  By squinting,
-
-you think you can see a wallaby practicing his acrobatics.
-
-"
+you think you can see a wallaby practicing his acrobatics.
+"
 E
 "platform"
 "These platforms stand about 100 feet in the air.  There are no ladders or
-
-visible means to get up to the platforms.  In fact, the only way you can see
-
-of reaching this unobtainable height is by jumping.
-
-"
+visible means to get up to the platforms.  In fact, the only way you can see
+of reaching this unobtainable height is by jumping.
+"
 E
 "cage"
 "This cage is a conical frame standing about 10 feet tall.  At first glance the
-
-bars appear to be made of solid gold, but upon closer examination, you can see
-
-that they are sturdy steel covered with a mix of cheese and play-dough. 
-
-Inside the cage, five fiersome looking white mice gnash their teeth at you. 
-
-Although the bars are wide enough to let the mice roam free, these rabid
-
-animosities seem quite content to stay where they are.
-
-"
+bars appear to be made of solid gold, but upon closer examination, you can see
+that they are sturdy steel covered with a mix of cheese and play-dough. 
+Inside the cage, five fiersome looking white mice gnash their teeth at you. 
+Although the bars are wide enough to let the mice roam free, these rabid
+animosities seem quite content to stay where they are.
+"
 E
 "tricycle"
 "This small three wheeled bike has an illongated seat snd high pedals.  It
-
-looks as though the local alligator and platypus get a lot of use out of it.
-
-"
+looks as though the local alligator and platypus get a lot of use out of it.
+"
 -1
 S
 
 #36
 "A Plague-Infested Cesspool"
 "Under Construction.
-
-"
+"
 ""
 301465603 0
 16 9 0
@@ -2728,247 +1955,152 @@ A
 "(poison)"
 "tree frog"
 "wait( 1 );
-
-if( !victim || !char_affected( victim, poison ) )
-
-  end;
-
-act_tochar( #poison, victim );
-
-act_notchar( #rpoison, victim );
-
-mob = mob_in_room( 2451, find_room( 36 ) );
-
-i = 1d10 + random( 1, find_stat( victim, level ) );
-
-dam_message( victim, i, \"The deadly poison\" );
-
-inflict( victim, mob, i, name( mob, mob ) );
-
-if( victim )
-
-  acode( find_room( 36 ), 1 );
-
-"
+if( !victim || !char_affected( victim, poison ) )
+  end;
+act_tochar( #poison, victim );
+act_notchar( #rpoison, victim );
+mob = mob_in_room( 2451, find_room( 36 ) );
+i = 1d10 + random( 1, find_stat( victim, level ) );
+dam_message( victim, i, \"The deadly poison\" );
+inflict( victim, mob, i, name( mob, mob ) );
+if( victim )
+  acode( find_room( 36 ), 1 );
+"
 E
 "poison"
 "@eYou shiver and suffer as the virulent poison wracks your body!@n
-
-"
+"
 E
 "rpoison"
 "@e$n shivers and suffers as virulent poison wracks $s body!@n
-
-"
+"
 !
 0 0 0
 A
 "(plague)"
 "sleeping sickness"
 "wait( 1 );
-
-if( !victim || !char_affected( victim, plague ) )
-
-  end;
-
-if( !is_sleeping( victim ) || 1d4 == 1 ) {
-
-  mob = mob_in_room( 2679, find_room( 36 ) );
-
-  transfer( mob, get_room( victim ) );
-
-  do_spell( sleep, mob, victim, 1 );
-
-  transfer( mob, find_room( 36 ) );
-
-  }
-
-if( victim )
-
-  acode( find_room( 36 ), 2 );
-
-"
+if( !victim || !char_affected( victim, plague ) )
+  end;
+if( !is_sleeping( victim ) || 1d4 == 1 ) {
+  mob = mob_in_room( 2679, find_room( 36 ) );
+  transfer( mob, get_room( victim ) );
+  do_spell( sleep, mob, victim, 1 );
+  transfer( mob, find_room( 36 ) );
+  }
+if( victim )
+  acode( find_room( 36 ), 2 );
+"
 !
 0 0 0
 A
 "(poison)"
 "blue-ringed octopus"
 "wait( 1 );
-
-if( !victim )
-
-  end;
-
-if( !char_affected( victim, poison ) ) {
-
-  dispel_affect( victim, blind );
-
-  dispel_affect( victim, silence );
-
-  end;
-
-  }
-
-mob = mob_in_room( 2680, find_room( 36 ) );
-
-transfer( mob, get_room( victim ) );
-
-k = k + 1;
-
-if( k == 2 )
-
-  act_tochar( #blurry, victim );
-
-if( k > 3 && k < 10 && !char_affected( victim, blind ) )
-
-  do_spell( blind, mob, victim, k );
-
-if( k == 5 )
-
-  act_tochar( #swollen, victim );
-
-if( k > 6 && k < 13 && !char_affected( victim, silence ) )
-
-  do_spell( silence, mob, victim, k - 3 );
-
-if( k == 8 )
-
-  act_tochar( #stiff, victim );
-
-if( k > 9 )
-
-  set_delay( victim, 32 );
-
-transfer( mob, find_room( 36 ) );
-
-if( victim )
-
-  acode( find_room( 36 ), 3 );
-
-"
+if( !victim )
+  end;
+if( !char_affected( victim, poison ) ) {
+  dispel_affect( victim, blind );
+  dispel_affect( victim, silence );
+  end;
+  }
+mob = mob_in_room( 2680, find_room( 36 ) );
+transfer( mob, get_room( victim ) );
+k = k + 1;
+if( k == 2 )
+  act_tochar( #blurry, victim );
+if( k > 3 && k < 10 && !char_affected( victim, blind ) )
+  do_spell( blind, mob, victim, k );
+if( k == 5 )
+  act_tochar( #swollen, victim );
+if( k > 6 && k < 13 && !char_affected( victim, silence ) )
+  do_spell( silence, mob, victim, k - 3 );
+if( k == 8 )
+  act_tochar( #stiff, victim );
+if( k > 9 )
+  set_delay( victim, 32 );
+transfer( mob, find_room( 36 ) );
+if( victim )
+  acode( find_room( 36 ), 3 );
+"
 E
 "blurry"
 "Your vision starts to become a bit blurry and you have trouble seeing distant
-
-objects.
-
-"
+objects.
+"
 E
 "swollen"
 "The area around your mouth begins to swell up and you start to have trouble
-
-speaking clearly.
-
-"
+speaking clearly.
+"
 E
 "stiff"
 "As the poison spreads through your body, your muscles feel increasingly stiff
-
-and even slight movments require a great deal of effort.
-
-"
+and even slight movments require a great deal of effort.
+"
 !
 0 0 0
 A
 "(poison)"
 "red slaad"
 "wait( 1 );
-
-if( !victim || !char_affected( victim, poison ) )
-
-  end;
-
-mob = mob_in_room( 2253, find_room( 36 ) );
-
-k = k + 1;
-
-if( k > 9 && k < 20 ) {
-
-  i = dice( 1, k, k );
-
-  acode( find_room( 45 ), 2 );
-
-  acode( find_room( 45 ), 1 );
-
-  act_tochar( #poison, victim, obj_in_room( 3705, get_room( victim ) ), obj_in_room( 3707, get_room( victim ) ) );
-
-  act_notchar( #rpoison, victim, obj_in_room( 3705, get_room( victim ) ), obj_in_room( 3707, get_room( victim ) ) );
-
-  junk_obj( obj_in_room( 3707, get_room( victim ) ) );
-
-  junk_obj( obj_in_room( 3705, get_room( victim ) ) );
-
-  }
-
-if( k > 19 && k < 25) {
-
-  act_tochar( #writhe, victim );
-
-  act_notchar( #rwrithe, victim );
-
-  drain_stat( victim, con, 1, -1 );
-
-  }
-
-if( k == 25) {
-
-  act_tochar( #explode, victim );
-
-  act_notchar( #rexplode, victim );
-
-  dam_message( victim, 85, \"The bloody explosion\" );
-
-  inflict( victim, mob, 85, \"\" );
-
-  do_spell( cure poison, victim, null, 30 );
-
-  mload( 2253, get_room( victim ) );
-
-  set_victim( mob, victim );
-
-  }
-
-if( victim )
-
-  acode( find_room( 36 ), 4 );
-
-"
+if( !victim || !char_affected( victim, poison ) )
+  end;
+mob = mob_in_room( 2253, find_room( 36 ) );
+k = k + 1;
+if( k > 9 && k < 20 ) {
+  i = dice( 1, k, k );
+  acode( find_room( 45 ), 2 );
+  acode( find_room( 45 ), 1 );
+  act_tochar( #poison, victim, obj_in_room( 3705, get_room( victim ) ), obj_in_room( 3707, get_room( victim ) ) );
+  act_notchar( #rpoison, victim, obj_in_room( 3705, get_room( victim ) ), obj_in_room( 3707, get_room( victim ) ) );
+  junk_obj( obj_in_room( 3707, get_room( victim ) ) );
+  junk_obj( obj_in_room( 3705, get_room( victim ) ) );
+  }
+if( k > 19 && k < 25) {
+  act_tochar( #writhe, victim );
+  act_notchar( #rwrithe, victim );
+  drain_stat( victim, con, 1, -1 );
+  }
+if( k == 25) {
+  act_tochar( #explode, victim );
+  act_notchar( #rexplode, victim );
+  dam_message( victim, 85, \"The bloody explosion\" );
+  inflict( victim, mob, 85, \"\" );
+  do_spell( cure poison, victim, null, 30 );
+  mload( 2253, get_room( victim ) );
+  set_victim( mob, victim );
+  }
+if( victim )
+  acode( find_room( 36 ), 4 );
+"
 E
 "poison"
 "You writhe and twist in agony as the poison in your body @R$y@n you!
-
-"
+"
 E
 "rpoison"
 "$n twists in agony as the poison in his body @r$y@n $m! $Y
-
-"
+"
 E
 "writhe"
 "@RYou feel increasingly sick as something sinister inside you feels like it is
-
-struggling to escape!@n
-
-"
+struggling to escape!@n
+"
 E
 "rwrithe"
 "@R$n appears increasingly ill as $e spasms in pain!@n
-
-"
+"
 E
 "explode"
 "@RThe poison that had wracked your body finally runs its course as a foul,
-
-demonic creature suddenly bursts from your gut!@n
-
-"
+demonic creature suddenly bursts from your gut!@n
+"
 E
 "rexplode"
 "@RThe poison that had wracked $n's body finally runs its course as a foul,
-
-demonic creature suddenly bursts from $s gut!@n
-
-"
+demonic creature suddenly bursts from $s gut!@n
+"
 !
 0 0 0
 2451 9 1509949540 3 0
@@ -2981,49 +2113,28 @@ S
 #37
 "Within the White Tower"
 "Light streaming through the windows illumine sections of the fine Tairen
-
-carpet that covers the floor of the palatial room.  The south wall of the room
-
-has a small fireplace framed with a mantle made out of a rare creamy-colored
-
-marble.  Above the ivory mantle, a four-panelled carving of a city, a tower, a
-
-forest, and a ship is spaced around a centerpiece of an intricate shield.  An
-
-elegant tapestry picks out the design of an exquieitely detailed map along the
-
-east wall, between the two large windows.
-
-"
+carpet that covers the floor of the palatial room.  The south wall of the room
+has a small fireplace framed with a mantle made out of a rare creamy-colored
+marble.  Above the ivory mantle, a four-panelled carving of a city, a tower, a
+forest, and a ship is spaced around a centerpiece of an intricate shield.  An
+elegant tapestry picks out the design of an exquieitely detailed map along the
+east wall, between the two large windows.
+"
 "[Ilyena] TTG library 17380
-
-[Ilyena] serene is 2900
-
-[Ilyena] Books -- 70124
-
-[Ilyena] attack prog for Brother Thomas
-
-[Ilyena] 19311 -- anicent Cynnis stuff
-
-[Ilyena] Old Shrine to Cynnis -- 960
-
-[Ilyena] High Priest of Morkith
-
-[Ilyena] Brithbarad has no altar.
-
-[Ilyena] Morkith 30031
-
-[Elfir] Meriada temple at 36117 - Narak
-
-[Ilyena] New temple in Narak at 36181
-
-[Talis] Temple to Tarafas the Dawnstar at 18002
-
-[Talis] Temple to Cynnis at 19311
-
-[Talis] Good Altar, presumably to Cynnis, at 389 in Medienne Wood
-
-"
+[Ilyena] serene is 2900
+[Ilyena] Books -- 70124
+[Ilyena] attack prog for Brother Thomas
+[Ilyena] 19311 -- anicent Cynnis stuff
+[Ilyena] Old Shrine to Cynnis -- 960
+[Ilyena] High Priest of Morkith
+[Ilyena] Brithbarad has no altar.
+[Ilyena] Morkith 30031
+[Elfir] Meriada temple at 36117 - Narak
+[Ilyena] New temple in Narak at 36181
+[Talis] Temple to Tarafas the Dawnstar at 18002
+[Talis] Temple to Cynnis at 19311
+[Talis] Good Altar, presumably to Cynnis, at 389 in Medienne Wood
+"
 301467653 0
 0 9 0
 D1
@@ -3037,48 +2148,39 @@ D3
 E
 "window"
 "No description.
-
-"
+"
 E
 "mantle fireplace"
 "No description.
-
-"
+"
 E
 "tapestry"
 "No description.
-
-"
+"
 E
 "shield"
 "No description.
-
-"
+"
 E
 "four-panelled carving"
 "No description.
-
-"
+"
 E
 "city"
 "No description.
-
-"
+"
 E
 "ship"
 "No description.
-
-"
+"
 E
 "tower"
 "No description.
-
-"
+"
 E
 "forest"
 "No description.
-
-"
+"
 3385 17 1509949540 -2 0
 1858 17 1509949540 -2 0
 2344 9 1509949540 3 0
@@ -3088,8 +2190,7 @@ S
 #38
 "Nivel's Room"
 "This is Nivel's room. It is used for test purposes.
-
-"
+"
 ""
 838339596 0
 0 6 0
@@ -3101,36 +2202,30 @@ A
 "press"
 "button"
 "set_obj_value( obj_to_room( oload( 900 ), room ), 0, 3 );
-
-"
+"
 !
 0 0 0
 A
 "do"
 "it"
 "obj = has_obj( 900, ch );
-
-do_spell( major enchantment, ch, obj, 10 );
-
-"
+do_spell( major enchantment, ch, obj, 10 );
+"
 !
 0 0 0
 A
 "dip"
 ""
 "obj = has_obj( 900, ch );
-
-do_spell( minor enchantment, ch, obj, 10 );
-
-"
+do_spell( minor enchantment, ch, obj, 10 );
+"
 !
 0 0 0
 A
 "push"
 "button"
 "drain_stat( ch, remort, 3, 1 );
-
-"
+"
 !
 0 0 0
 -1
@@ -3139,18 +2234,12 @@ S
 #39
 "Intersection of Hallways"
 "The marble hall from the north and the granite hall to the east intersect
-
-here, meeting each other at a fiery gold border that runs diagonally across
-
-the floor.  In the center of the floor covering a portion of the golden stripe
-
-is an ornate circular seal.  Twelve ancient runes border the seal, each
-
-symbolizing a different race.  In the center of the seal are the clear primal
-
-letters '@GTFE@n'.
-
-"
+here, meeting each other at a fiery gold border that runs diagonally across
+the floor.  In the center of the floor covering a portion of the golden stripe
+is an ornate circular seal.  Twelve ancient runes border the seal, each
+symbolizing a different race.  In the center of the seal are the clear primal
+letters '@GTFE@n'.
+"
 ""
 301501445 0
 0 9 0
@@ -3181,20 +2270,13 @@ S
 #40
 "Lounge of the Gods"
 "This large room is covered with a thick @ccyan@n carpet from wall to wall. 
-
-The dim lighting of hanging lamps bestows a shadowy presence on each wall's
-
-dark wood paneling.  Against the west wall rests a large ornate couch which
-
-faces opposite a vending machine labeled '@RCoca-Cola@n'.  A small stereo has
-
-been tucked away in one corner along with several books.  A wooden balcony can
-
-be seen through a windowed sliding door towards the south while a simple
-
-trimmed doorway leads into the hall to the north.
-
-"
+The dim lighting of hanging lamps bestows a shadowy presence on each wall's
+dark wood paneling.  Against the west wall rests a large ornate couch which
+faces opposite a vending machine labeled '@RCoca-Cola@n'.  A small stereo has
+been tucked away in one corner along with several books.  A wooden balcony can
+be seen through a windowed sliding door towards the south while a simple
+trimmed doorway leads into the hall to the north.
+"
 ""
 301468677 0
 0 9 0
@@ -3216,14 +2298,10 @@ S
 #41
 "Hall of Builders"
 "You are standing in a great marble hall that stretches on for miles.  To the
-
-west is a solid oak door embossed in gold.  Outside of the door west is a life
-
-size bust of the office's owner.  To the east is an open doorway leading into
-
-a stairwell.  A large sign sits in the middle of the hall.
-
-"
+west is a solid oak door embossed in gold.  Outside of the door west is a life
+size bust of the office's owner.  To the east is an open doorway leading into
+a stairwell.  A large sign sits in the middle of the hall.
+"
 ""
 301501445 0
 0 9 0
@@ -3249,12 +2327,9 @@ S
 #42
 "Hall of Builders"
 "You are standing in a great marble hall that stretches on for miles.  To the
-
-east is a solid oak door embossed in gold.  Outside the door is a life size
-
-bust of the office's owner.  A large sign sits in the middle of the hall.
-
-"
+east is a solid oak door embossed in gold.  Outside the door is a life size
+bust of the office's owner.  A large sign sits in the middle of the hall.
+"
 ""
 301501445 0
 0 9 0
@@ -3284,13 +2359,10 @@ S
 #43
 "Phule's Office"
 "Amidst a mist of grey-green, a calm, circular pool sits undisturbed.
-
-"
+"
 "carpet needs attack code
-
-enchanted miner's helmet with permanent light crystal
-
-"
+enchanted miner's helmet with permanent light crystal
+"
 301498382 0
 0 6 0
 D1
@@ -3300,29 +2372,18 @@ D1
 E
 "__AREADLE__"
 "ORDER 1
-
--------
-
-Status: Complete
-
-Commissioned by: Zark
-
-Object: a pair of purple under-shorts [3606]
-
-Fee: 10K
-
-Ingredients: 3 silk fibers, clay pot of blue dye, clay pot of red dye
-
+-------
+Status: Complete
+Commissioned by: Zark
+Object: a pair of purple under-shorts [3606]
+Fee: 10K
+Ingredients: 3 silk fibers, clay pot of blue dye, clay pot of red dye
 
 ORDER 2
-
--------
-
-Status: Pending
-
-Comissioned by:
-
-"
+-------
+Status: Pending
+Comissioned by:
+"
 1513 17 1509949540 -2 29
 4269 17 1509949540 -2 0
 4270 17 1509949540 -2 0
@@ -3339,12 +2400,9 @@ S
 #44
 "Hall of Immortals"
 "You are standing in an enormous granite hall that stretches on for miles.  To
-
-the north is an open doorway leading into a stairwell.  A large sign sits in
-
-the middle of the hall.
-
-"
+the north is an open doorway leading into a stairwell.  A large sign sits in
+the middle of the hall.
+"
 ""
 301501445 0
 0 9 0
@@ -3367,20 +2425,16 @@ D3
 E
 "sign"
 "An arrow pointing south, carved with large crude letters, gets as far as \"ALT\"
-
-before running out of room.  The second arrow, pointing at the ballista, says
-
-in slightly smaller letters, \"ZiTH\".
-
-"
+before running out of room.  The second arrow, pointing at the ballista, says
+in slightly smaller letters, \"ZiTH\".
+"
 -1
 S
 
 #45
 "The Damage Sponge"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 2 9 0
@@ -3392,148 +2446,83 @@ A
 "(status)"
 ""
 "if( !victim ) {
-
-  obj = obj_to_room( oload( 3707 ), room );
-
-  set_singular( obj, \"[ DEAD! ]\" );
-
-  end;
-
-  }
-
-i = find_stat( victim, max_hit );
-
-j = find_stat( victim, hit );
-
-obj = obj_to_room( oload( 3707 ), room );
-
-if( i == j ) { set_singular( obj, \"[ perfect health ]\" ); end; }
-
-if( 10*j > 9*i ) { set_singular( obj, \"[ slightly scratched ]\" ); end; }
-
-if( 10*j > 8*i ) { set_singular( obj, \"[ few bruises ]\" ); end; }
-
-if( 10*j > 7*i ) { set_singular( obj, \"[ some cuts ]\" ); end; }
-
-if( 10*j > 5*i ) { set_singular( obj, \"[ badly wounded ]\" ); end; }
-
-if( 10*j > 6*i ) { set_singular( obj, \"[ badly wounded ]\" ); end; }
-
-if( 10*j > 4*i ) { set_singular( obj, \"[ many nasty wounds ]\" ); end; }
-
-if( 10*j > 3*i ) { set_singular( obj, \"[ bleeding freely ]\" ); end; }
-
-if( 10*j > 2*i ) { set_singular( obj, \"[ covered in blood ]\" ); end; }
-
-if( 10*j > 1*i ) { set_singular( obj, \"[ leaking guts ]\" ); end; }
-
-if( 10*j > 0 ) { set_singular( obj, \"[ mostly dead ]\" ); end; }
-
-"
+  obj = obj_to_room( oload( 3707 ), room );
+  set_singular( obj, \"[ DEAD! ]\" );
+  end;
+  }
+i = find_stat( victim, max_hit );
+j = find_stat( victim, hit );
+obj = obj_to_room( oload( 3707 ), room );
+if( i == j ) { set_singular( obj, \"[ perfect health ]\" ); end; }
+if( 10*j > 9*i ) { set_singular( obj, \"[ slightly scratched ]\" ); end; }
+if( 10*j > 8*i ) { set_singular( obj, \"[ few bruises ]\" ); end; }
+if( 10*j > 7*i ) { set_singular( obj, \"[ some cuts ]\" ); end; }
+if( 10*j > 5*i ) { set_singular( obj, \"[ badly wounded ]\" ); end; }
+if( 10*j > 6*i ) { set_singular( obj, \"[ badly wounded ]\" ); end; }
+if( 10*j > 4*i ) { set_singular( obj, \"[ many nasty wounds ]\" ); end; }
+if( 10*j > 3*i ) { set_singular( obj, \"[ bleeding freely ]\" ); end; }
+if( 10*j > 2*i ) { set_singular( obj, \"[ covered in blood ]\" ); end; }
+if( 10*j > 1*i ) { set_singular( obj, \"[ leaking guts ]\" ); end; }
+if( 10*j > 0 ) { set_singular( obj, \"[ mostly dead ]\" ); end; }
+"
 !
 0 0 0
 A
 "(damage)"
 "physical"
 "j = find_stat( victim, hit );
-
-inflict( victim, mob, i, \"\" );
-
-if( !victim ) { j = i; }
-
-else { j = j - find_stat( victim, hit ); }
-
-obj = obj_to_room( oload( 3705 ), room );
-
-if( j < 2 ) { set_singular( obj, \"scratches\" ); end; }
-
-if( j < 3 ) { set_singular( obj, \"grazes\" ); end; }
-
-if( j < 5 ) { set_singular( obj, \"hits\" ); end; }
-
-if( j < 7 ) { set_singular( obj, \"injures\" ); end; }
-
-if( j < 11 ) { set_singular( obj, \"wounds\" ); end; }
-
-if( j < 16 ) { set_singular( obj, \"mauls\" ); end; }
-
-if( j < 22 ) { set_singular( obj, \"decimates\" ); end; }
-
-if( j < 29 ) { set_singular( obj, \"devastates\" ); end; }
-
-if( j < 36 ) { set_singular( obj, \"maims\" ); end; }
-
-if( j < 46 ) { set_singular( obj, \"SAVAGES\" ); end; }
-
-if( j < 56 ) { set_singular( obj, \"CRIPPLES\" ); end; }
-
-if( j < 71 ) { set_singular( obj, \"MUTILATES\" ); end; }
-
-if( j < 86 ) { set_singular( obj, \"DISEMBOWELS\" ); end; }
-
-if( j < 101 ) { set_singular( obj, \"* DISMEMBERS *\" ); end; }
-
-if( j < 121 ) { set_singular( obj, \"* EVISCERATES *\" ); end; }
-
-if( j < 146 ) { set_singular( obj, \"* MASSACRES *\" ); end; }
-
-if( j < 171 ) { set_singular( obj, \"* PULVERIZES *\" ); end; }
-
-if( j < 201 ) { set_singular( obj, \"** DEMOLISHES **\" ); end; }
-
-if( j < 241 ) { set_singular( obj, \"** EXTIRPATES **\" ); end; }
-
-if( j < 281 ) { set_singular( obj, \"*** OBLITERATES ***\" ); end; }
-
-if( j < 331 ) { set_singular( obj, \"*** ERADICATES ***\" ); end; }
-
-if( j > 330 ) { set_singular( obj, \"*** ANNIHILATES ***\" ); end; }
-
-"
+inflict( victim, mob, i, \"\" );
+if( !victim ) { j = i; }
+else { j = j - find_stat( victim, hit ); }
+obj = obj_to_room( oload( 3705 ), room );
+if( j < 2 ) { set_singular( obj, \"scratches\" ); end; }
+if( j < 3 ) { set_singular( obj, \"grazes\" ); end; }
+if( j < 5 ) { set_singular( obj, \"hits\" ); end; }
+if( j < 7 ) { set_singular( obj, \"injures\" ); end; }
+if( j < 11 ) { set_singular( obj, \"wounds\" ); end; }
+if( j < 16 ) { set_singular( obj, \"mauls\" ); end; }
+if( j < 22 ) { set_singular( obj, \"decimates\" ); end; }
+if( j < 29 ) { set_singular( obj, \"devastates\" ); end; }
+if( j < 36 ) { set_singular( obj, \"maims\" ); end; }
+if( j < 46 ) { set_singular( obj, \"SAVAGES\" ); end; }
+if( j < 56 ) { set_singular( obj, \"CRIPPLES\" ); end; }
+if( j < 71 ) { set_singular( obj, \"MUTILATES\" ); end; }
+if( j < 86 ) { set_singular( obj, \"DISEMBOWELS\" ); end; }
+if( j < 101 ) { set_singular( obj, \"* DISMEMBERS *\" ); end; }
+if( j < 121 ) { set_singular( obj, \"* EVISCERATES *\" ); end; }
+if( j < 146 ) { set_singular( obj, \"* MASSACRES *\" ); end; }
+if( j < 171 ) { set_singular( obj, \"* PULVERIZES *\" ); end; }
+if( j < 201 ) { set_singular( obj, \"** DEMOLISHES **\" ); end; }
+if( j < 241 ) { set_singular( obj, \"** EXTIRPATES **\" ); end; }
+if( j < 281 ) { set_singular( obj, \"*** OBLITERATES ***\" ); end; }
+if( j < 331 ) { set_singular( obj, \"*** ERADICATES ***\" ); end; }
+if( j > 330 ) { set_singular( obj, \"*** ANNIHILATES ***\" ); end; }
+"
 !
 0 0 0
 A
 "(damage)"
 "fire"
 "if( !victim ) { j = i; }
-
-else {
-
-  j = find_stat( victim, hit );
-
-  inflict_fire( victim, mob, i, \"\" );
-
-  j = j - find_stat( victim, hit );
-
-  }
-
-obj = obj_to_room( oload( 3706 ), room );
-
-if( j < 4 ) { set_singular( obj, \"singes\" ); end; }
-
-if( j < 8 ) { set_singular( obj, \"scorches\" ); end; }
-
-if( j < 16 ) { set_singular( obj, \"toasts\" ); end; }
-
-if( j < 31 ) { set_singular( obj, \"cooks\" ); end; }
-
-if( j < 51 ) { set_singular( obj, \"fries\" ); end; }
-
-if( j < 76 ) { set_singular( obj, \"SEARS\" ); end; }
-
-if( j < 101 ) { set_singular( obj, \"CHARS\" ); end; }
-
-if( j < 141 ) { set_singular( obj, \"* IMMOLATES *\" ); end; }
-
-if( j < 201 ) { set_singular( obj, \"* VAPORIZES *\" ); end; }
-
-if( j < 301 ) { set_singular( obj, \"** INCINERATES **\" ); end; }
-
-if( j < 401 ) { set_singular( obj, \"** CREMATES **\" ); end; }
-
-if( j > 400 ) { set_singular( obj, \"*** DISINTEGRATES ***\" ); end; }
-
-"
+else {
+  j = find_stat( victim, hit );
+  inflict_fire( victim, mob, i, \"\" );
+  j = j - find_stat( victim, hit );
+  }
+obj = obj_to_room( oload( 3706 ), room );
+if( j < 4 ) { set_singular( obj, \"singes\" ); end; }
+if( j < 8 ) { set_singular( obj, \"scorches\" ); end; }
+if( j < 16 ) { set_singular( obj, \"toasts\" ); end; }
+if( j < 31 ) { set_singular( obj, \"cooks\" ); end; }
+if( j < 51 ) { set_singular( obj, \"fries\" ); end; }
+if( j < 76 ) { set_singular( obj, \"SEARS\" ); end; }
+if( j < 101 ) { set_singular( obj, \"CHARS\" ); end; }
+if( j < 141 ) { set_singular( obj, \"* IMMOLATES *\" ); end; }
+if( j < 201 ) { set_singular( obj, \"* VAPORIZES *\" ); end; }
+if( j < 301 ) { set_singular( obj, \"** INCINERATES **\" ); end; }
+if( j < 401 ) { set_singular( obj, \"** CREMATES **\" ); end; }
+if( j > 400 ) { set_singular( obj, \"*** DISINTEGRATES ***\" ); end; }
+"
 !
 0 0 0
 31 9 1509949540 3 0
@@ -3557,18 +2546,12 @@ S
 #47
 "Aeradon's Chambers"
 "With walls covered in glass beads, posters, and monitors, this room looks more
-
-like a lab than anything else.  Multiple couches, rolling chairs, and bean
-
-bags litter the floor.  This room seems a bit cluttered, and stays that way to
-
-the obvious comfort of the owner.  Each and every monitor displays a different
-
-image, some scrolling through multiple screens at lightning speed.  Two large
-
-frogs sit in a large glass cage against the east wall.
-
-"
+like a lab than anything else.  Multiple couches, rolling chairs, and bean
+bags litter the floor.  This room seems a bit cluttered, and stays that way to
+the obvious comfort of the owner.  Each and every monitor displays a different
+image, some scrolling through multiple screens at lightning speed.  Two large
+frogs sit in a large glass cage against the east wall.
+"
 ""
 301516804 0
 0 7 0
@@ -3583,33 +2566,24 @@ D4
 E
 "cage"
 "The large glass cage covers about a third of the east wall.  Two large frogs
-
-sit, comfortably perched upon lilly pads in the small pond held within. 
-
-Rocks, small plants, and even an assortment of pests are enclosed within the
-
-cage as well.  This cage contains all the things that could possibly support
-
-the lives of the frogs.
-
-"
+sit, comfortably perched upon lilly pads in the small pond held within. 
+Rocks, small plants, and even an assortment of pests are enclosed within the
+cage as well.  This cage contains all the things that could possibly support
+the lives of the frogs.
+"
 E
 "frog frogs"
 "These two large frogs aren't really that special.  One is purple, the other
-
-yellow.  Each frog has a name tag on it of the same color as the frog.
-
-"
+yellow.  Each frog has a name tag on it of the same color as the frog.
+"
 E
 "purple"
 "This frog's name tag says, in big red letters \"Lop\"
-
-"
+"
 E
 "yellow"
 "This frog's name tag says, in big red letters \"Scruffy\"
-
-"
+"
 3672 17 1509949540 -2 0
 1515 4105 1509949540 2 0
 2470 9 1509949540 3 0
@@ -3623,14 +2597,10 @@ S
 #48
 "Atrium of Time"
 "This huge, rectangular courtyard is open to the heavens above.  From this
-
-vantage, you can discern the movements of all celestial bodies, and even
-
-ascertain the exact date and time anywhere in the land.  Dark, empty
-
-galleries, many stories high, overlook your position from all four walls.
-
-"
+vantage, you can discern the movements of all celestial bodies, and even
+ascertain the exact date and time anywhere in the land.  Dark, empty
+galleries, many stories high, overlook your position from all four walls.
+"
 ""
 301498369 0
 0 9 0
@@ -3642,24 +2612,18 @@ A
 ""
 ""
 "send_to_char( get_desc( room ), ch );
-
-send_to_char( \"\", ch );
-
-act_tochar( #date, ch );
-
-act_tochar( #time, ch );
-
-"
+send_to_char( \"\", ch );
+act_tochar( #date, ch );
+act_tochar( #time, ch );
+"
 E
 "date"
 "The date is $cA $cB $ce, $cY.
-
-"
+"
 E
 "time"
 "The time is $cl:$cM $cP.
-
-"
+"
 !
 17 0 0
 -1
@@ -3668,14 +2632,10 @@ S
 #49
 "Hall of Immortals"
 "You are standing in an enormous granite hall that stretches on for miles.  To
-
-the north and south are shimmering silver doors etched in runes.  Outside each
-
-door is a life size bust of the office's owner.  A large sign sits in the
-
-middle of the hall.
-
-"
+the north and south are shimmering silver doors etched in runes.  Outside each
+door is a life size bust of the office's owner.  A large sign sits in the
+middle of the hall.
+"
 ""
 301501445 0
 0 9 0
@@ -3698,18 +2658,15 @@ D3
 E
 "sign"
 "The sign points north and south.  The north arrow reads \"IV Sale\", while the
-
-south simply says \"berax\".
-
-"
+south simply says \"berax\".
+"
 -1
 S
 
 #50
 "Hall of Immortals"
 "Under Construction.
-
-"
+"
 ""
 301498373 0
 0 9 0
@@ -3724,16 +2681,11 @@ S
 #51
 "Hall of Builders (51)"
 "You are standing in a great marble hall that stretches on for miles.  To the
-
-east and west are a multitude of solid oak embossed in gold.  Outside of the
-
-door are a life size bust of the office's owner.  Directly to the west you see
-
-an open archway with an open book embossed on the keystone of the arch.  To
-
-the east, a weathered oakenwood door leads into another office.
-
-"
+east and west are a multitude of solid oak embossed in gold.  Outside of the
+door are a life size bust of the office's owner.  Directly to the west you see
+an open archway with an open book embossed on the keystone of the arch.  To
+the east, a weathered oakenwood door leads into another office.
+"
 ""
 301501453 0
 0 9 0
@@ -3755,12 +2707,9 @@ S
 #52
 "Hall of Builders"
 "You are standing in a great marble hall that stretches on for miles.  To the
-
-east and west are a multitude of solid oak embossed in gold.  Outside of the
-
-door are a life size bust of the office's owner.
-
-"
+east and west are a multitude of solid oak embossed in gold.  Outside of the
+door are a life size bust of the office's owner.
+"
 ""
 301501452 0
 0 9 0
@@ -3774,15 +2723,11 @@ S
 #53
 "Hall of Builders"
 "You are standing in a great marble hall that stretches on for miles.  To the
-
-east and west are a multitude of solid oak embossed in gold.  Outside of the
-
-door are a life size bust of the office's owner.
-
-"
+east and west are a multitude of solid oak embossed in gold.  Outside of the
+door are a life size bust of the office's owner.
+"
 "no bust
-
-"
+"
 301501453 0
 0 9 0
 D0
@@ -3803,12 +2748,9 @@ S
 #54
 "Hall of Builders"
 "You are standing in a great marble hall that stretches on for miles.  To the
-
-east and west are a multitude of solid oak embosssed in gold.  Outside of the
-
-door are a life size bust of the office's owner.
-
-"
+east and west are a multitude of solid oak embosssed in gold.  Outside of the
+door are a life size bust of the office's owner.
+"
 ""
 301501453 0
 0 9 0
@@ -3830,10 +2772,8 @@ S
 #55
 "Empty Office"
 "This empty, cubical office is devoid of any useful equipment.  Here you feel
-
-insignificant, like a small cog in a huge wheel.
-
-"
+insignificant, like a small cog in a huge wheel.
+"
 ""
 301498373 0
 0 6 0
@@ -3847,12 +2787,9 @@ S
 #56
 "Darkwind's Office"
 "You have entered Darkwind's Office.  The room is quite empty, except for a
-
-handful of crates stacked in the corner.  It appears Darkwind hasn't unpacked
-
-yet.
-
-"
+handful of crates stacked in the corner.  It appears Darkwind hasn't unpacked
+yet.
+"
 ""
 301498373 0
 0 6 0
@@ -3870,12 +2807,9 @@ S
 #57
 "Hall of Builders"
 "You are standing in a great marble hall that stretches on for miles.  To the
-
-east and west are a multitude of solid oak embossed in gold.  Outside of the
-
-door are a life size bust of the office's owner.
-
-"
+east and west are a multitude of solid oak embossed in gold.  Outside of the
+door are a life size bust of the office's owner.
+"
 ""
 301501453 0
 0 9 0
@@ -3897,18 +2831,12 @@ S
 #58
 "Arboretum"
 "The room is full of plants of every shape and size.  You notice plants that
-
-originate from the Vaasa as well as some very strange ones that must grow deep
-
-in dark caves.  For all their variety, they have been organized to create a
-
-balanced display of plant life.  The focal point for the balance of the room
-
-is a small pool of water, shallow enough to be a puddle really, in the middle
-
-of the room.
-
-"
+originate from the Vaasa as well as some very strange ones that must grow deep
+in dark caves.  For all their variety, they have been organized to create a
+balanced display of plant life.  The focal point for the balance of the room
+is a small pool of water, shallow enough to be a puddle really, in the middle
+of the room.
+"
 ""
 301498369 0
 0 9 0
@@ -3919,42 +2847,29 @@ D1
 E
 "plants"
 "Plants of every shape and size fill this seemingly endless room, all
-
-arranged around a small pool of water.  Looking the plants over
-
-carefully, you notice a very strange leaf.  There is a carving upon that
-
-leaf, or rather, the veins of the leaf have an appearance of a carving. 
-
-The carving?  A very detailed rendering of the ruins of a once-elegant
-
-city.  The picture is so detailed that you think you can be in those
-
-ruins if you could enter the picture or touch the carving...
-
-"
+arranged around a small pool of water.  Looking the plants over
+carefully, you notice a very strange leaf.  There is a carving upon that
+leaf, or rather, the veins of the leaf have an appearance of a carving. 
+The carving?  A very detailed rendering of the ruins of a once-elegant
+city.  The picture is so detailed that you think you can be in those
+ruins if you could enter the picture or touch the carving...
+"
 A
 "touch enter"
 "carving ruins picture leaf"
 "act_tochar( #nimb, ch );
-
-act_notchar( #onimb, ch );
-
-transfer( ch, find_room( 15 ) );
-
-"
+act_notchar( #onimb, ch );
+transfer( ch, find_room( 15 ) );
+"
 E
 "nimb"
 "@gThe greenery about you wavers, as if you were underwater, and you
-
-suddenly find yourself elsewhere...@n
-
-"
+suddenly find yourself elsewhere...@n
+"
 E
 "onimb"
 "@g$n shimmers and slowly dissipates, seemingly blending into the greenery...@n
-
-"
+"
 !
 0 0 0
 819 17 1509949540 -2 0
@@ -3966,14 +2881,10 @@ S
 #59
 "Hall of Builders"
 "You are in a great marble hall that seems to stretch on for miles ahead of
-
-you.  A grand spiral staircase of gold-veined white marble sets to one side
-
-leading somewhere high overhead.  To the south, an open archway leads to a
-
-place of repose.
-
-"
+you.  A grand spiral staircase of gold-veined white marble sets to one side
+leading somewhere high overhead.  To the south, an open archway leads to a
+place of repose.
+"
 ""
 301501453 0
 0 9 0
@@ -3995,16 +2906,11 @@ S
 #60
 "Hall of Builders"
 "A simple short hall joins the Great Library to the Hall of builders.  Large
-
-pillars break the planes of the marble walls to the north and west giving the
-
-room a less sterile feeling.  Between the pillars hang tapestries depicting
-
-various places in the realm.  To the west, marble steps lead up to the Great
-
-Library.  A plaque hangs just to the left of the door.
-
-"
+pillars break the planes of the marble walls to the north and west giving the
+room a less sterile feeling.  Between the pillars hang tapestries depicting
+various places in the realm.  To the west, marble steps lead up to the Great
+Library.  A plaque hangs just to the left of the door.
+"
 ""
 301498381 0
 0 9 0
@@ -4019,73 +2925,49 @@ D3
 E
 "6 pillars"
 "The pillars reach from floor to ceiling, measuring at least 20 feet high. 
-
-They are all fluted and capped with spiral volutes in classic ionic style. 
-
-Each appears to have been carved out of a single, huge piece of marble.
-
-"
+They are all fluted and capped with spiral volutes in classic ionic style. 
+Each appears to have been carved out of a single, huge piece of marble.
+"
 E
 "plaque"
 "A plaque of mithril is inlaid into the marble left of the archway.
-
-In simple, easy to read script it states:
-
-   
-
-          ---   Welcome to the Great Library   ---
-
-   
-
-                 should you need assistance,
-
-                    please contact Talis
-
-"
+In simple, easy to read script it states:
+   
+          ---   Welcome to the Great Library   ---
+   
+                 should you need assistance,
+                    please contact Talis
+"
 E
 "tapestry tapestries"
 "The scenes rendered on the tapestries are from all walks of life.  The
-
-depictions run from great battles and rulers to simple scenes of farm
-
-life such as planting, or the mold harvests in the goblin caverns.  The
-
-tapestries themselves are woven of rich, heavy material and appear
-
-unfaded and new.
-
-"
+depictions run from great battles and rulers to simple scenes of farm
+life such as planting, or the mold harvests in the goblin caverns.  The
+tapestries themselves are woven of rich, heavy material and appear
+unfaded and new.
+"
 A
 ""
 ""
 "if( find_stat( ch, level ) < 90 ){
-
-  act_tochar( #no, ch );
-
-  end;
-
-  }
-
-else continue;
-
-"
+  act_tochar( #no, ch );
+  end;
+  }
+else continue;
+"
 E
 "no"
 "A booming voice proclaims \"@MYou are not worthy, Begone.@n\" and a gust of
-
-strong wind forces you away from the door.
-
-"
+strong wind forces you away from the door.
+"
 !
 3 0 2
 A
 "push"
 "button"
 "if( has_obj( 3203, ch ) )
-
-  junk_obj( has_obj( 3203, ch ) );
-
-"
+  junk_obj( has_obj( 3203, ch ) );
+"
 !
 0 0 0
 -1
@@ -4094,8 +2976,7 @@ S
 #61
 "Olah's Loft"
 "Cirrus Titus 36750-36850
-
-"
+"
 ""
 301514765 0
 0 9 0
@@ -4109,16 +2990,11 @@ S
 #62
 "Eridan's Lighthouse"
 "Through the panoramic window of this lighthouse stretches the shimmering
-
-blueness of an endless ocean.  It is quiet here, the gentle lapping of waves
-
-interrupted only by the call of a distant gull.  The walls of this sparse,
-
-lonely room are lined with bookshelves and old, faded paintings of ancient
-
-ships.
-
-"
+blueness of an endless ocean.  It is quiet here, the gentle lapping of waves
+interrupted only by the call of a distant gull.  The walls of this sparse,
+lonely room are lined with bookshelves and old, faded paintings of ancient
+ships.
+"
 ""
 301500429 0
 0 9 0
@@ -4129,27 +3005,19 @@ D3
 E
 "noteboard"
 "Ideas for Xami's hydras - extractable fire glands custom to fire bombs /
-
-removable ice heart to custom spear.
-
+removable ice heart to custom spear.
 
 Gray Goblins - snickering, animated
 
-
 magic item (high lvl) - bag of components
-
 
 obj for grays - +1 to all regens
 
-
 a mob that keeps splitting into half-power clones of itself as you kill it.  1
-
-20 hd mob, when killed, becomes 2 10, then 4 5, then 8 2, 16 1.
-
+20 hd mob, when killed, becomes 2 10, then 4 5, then 8 2, 16 1.
 
 softcode traps to arm/disarm
-
-"
+"
 1699 49 100 -2 0
 3407 81 1509949540 -2 0
 -1
@@ -4158,22 +3026,14 @@ S
 #63
 "Wooden Balcony"
 "This balcony seems aged and the wood looks warped and unpainted.  A small
-
-garden has been planted in a flower bed against the west railing while
-
-the east is mirrored by the surreal image of a gigantic tree growing from
-
-a flowerpot, it's roots broken through the ceramic in several spots
-
-gnarled and warped into the wood of the deck.  The scenery is impressive,
-
-the great sea looming below with Medienne barely visible to the east and
-
-the walls of Chiiron evident far to the west.  A windowed sliding door
-
-leads indoors to the north.
-
-"
+garden has been planted in a flower bed against the west railing while
+the east is mirrored by the surreal image of a gigantic tree growing from
+a flowerpot, it's roots broken through the ceramic in several spots
+gnarled and warped into the wood of the deck.  The scenery is impressive,
+the great sea looming below with Medienne barely visible to the east and
+the walls of Chiiron evident far to the west.  A windowed sliding door
+leads indoors to the north.
+"
 ""
 301501445 0
 0 9 0
@@ -4187,28 +3047,18 @@ S
 #64
 "Observatory"
 "Under Construction.
-
-"
+"
 "#3633 cerulean scale
-
-#3634 scarlet scale
-
-#3635 cerulean scale breastplate
-
-#4081 scarlet scale breastplate
-
-scales pop on pyro/cryo-hydras (currently 2 in-game, rest of area in waiting),
-
-armors will be a custom requiring 20 scales and one mithril ingot, cost of
-
-10-15pp
-
+#3634 scarlet scale
+#3635 cerulean scale breastplate
+#4081 scarlet scale breastplate
+scales pop on pyro/cryo-hydras (currently 2 in-game, rest of area in waiting),
+armors will be a custom requiring 20 scales and one mithril ingot, cost of
+10-15pp
 
 scales added into the game popping on the pyro/cryo hydras, customs not yet
-
-implimented
-
-"
+implimented
+"
 301498381 0
 0 9 0
 D0
@@ -4225,18 +3075,12 @@ S
 #65
 "Severus' Attic"
 "This dusty attic looks like it hasn't seen any use in quite some time.  The
-
-thick layers of dust are disturbed only by countless tracks of dozens of tiny
-
-mousy footprints and even those are lined with a layer of dust as if the mice
-
-too had abandoned this place.  Heavy cobwebs form dull strands from almost
-
-every rafter and not a one shows any sign of living spider tending to it.  It
-
-certainly looks like this place could do with a thorough spring cleaning.
-
-"
+thick layers of dust are disturbed only by countless tracks of dozens of tiny
+mousy footprints and even those are lined with a layer of dust as if the mice
+too had abandoned this place.  Heavy cobwebs form dull strands from almost
+every rafter and not a one shows any sign of living spider tending to it.  It
+certainly looks like this place could do with a thorough spring cleaning.
+"
 ""
 33062916 0
 9 6 0
@@ -4250,10 +3094,8 @@ S
 #66
 "Golden Room"
 "The room looks elegantly decorated with gold and silver patterns upon all the
-
-walls.  No windows or doors appear present in the splender of the room.
-
-"
+walls.  No windows or doors appear present in the splender of the room.
+"
 ""
 301498383 0
 0 6 0
@@ -4263,12 +3105,9 @@ S
 #67
 "Mantis Cage"
 "This room is nothing but a large cage.  The only light that enters is from the
-
-barred hole in the ceiling.  There is food and drink for many a praying mantis
-
-scattered around the room here.  The only way out is up.
-
-"
+barred hole in the ceiling.  There is food and drink for many a praying mantis
+scattered around the room here.  The only way out is up.
+"
 ""
 301500429 0
 0 9 0
@@ -4282,12 +3121,9 @@ S
 #68
 "Hall of Builders"
 "You are on a spiralling staircase constructed of gold-veiled white marble that
-
-seems to shine with its own polished light.  The stairs above and below appear
-
-to go on forever and there is no end in sight.
-
-"
+seems to shine with its own polished light.  The stairs above and below appear
+to go on forever and there is no end in sight.
+"
 ""
 301498381 0
 0 6 0
@@ -4303,18 +3139,12 @@ A
 ""
 ""
 "if( find_stat( ch, level ) < 90 ) {
-
-  act_tochar( \"You continue on the stairs.\", ch );
-
-  end;
-
-  }
-
-else
-
-  continue;
-
-"
+  act_tochar( \"You continue on the stairs.\", ch );
+  end;
+  }
+else
+  continue;
+"
 !
 3 0 48
 -1
@@ -4323,50 +3153,34 @@ S
 #69
 "Submerged temple core"
 "This whole room is completely submerged under water.  The floor is covered by
-
-soft white sand that contours to your feet.  In the center of the room lies a
-
-fountain like object.  The walls of this room are also decorated with
-
-undescipherable runes, small fractures can be seen throughout itys crude
-
-surface.  The room continues to the south through a large opening where a door
-
-appear to once have sealed the two rooms seperate.
-
-"
+soft white sand that contours to your feet.  In the center of the room lies a
+fountain like object.  The walls of this room are also decorated with
+undescipherable runes, small fractures can be seen throughout itys crude
+surface.  The room continues to the south through a large opening where a door
+appear to once have sealed the two rooms seperate.
+"
 ""
 301465617 0
 0 6 0
 E
 "Blood-stained fountain"
 "This fountain appears to not have been used in a long time.  The fountain
-
-itself looks to be made of bronze, and has many a stain covering its surface. 
-
-The stains appear to have originated from the liquid that once flowed from
-
-this fountain.  The stains are a dark red, and taste of blood.
-
-"
+itself looks to be made of bronze, and has many a stain covering its surface. 
+The stains appear to have originated from the liquid that once flowed from
+this fountain.  The stains are a dark red, and taste of blood.
+"
 -1
 S
 
 #70
 "The Deck"
 "You have stepped up onto a wide wooden deck.  The layout of the realm is
-
-spread out in front of you.  You are looking out over treetops and
-
-flatlands, over mountains and valleys.  A cool breeze blows around you as
-
-you stand here, completing the feeling of complete serenity.  You may
-
-leave down the ladder that is located in the hole cut in the center of
-
-the deck.
-
-"
+spread out in front of you.  You are looking out over treetops and
+flatlands, over mountains and valleys.  A cool breeze blows around you as
+you stand here, completing the feeling of complete serenity.  You may
+leave down the ladder that is located in the hole cut in the center of
+the deck.
+"
 ""
 301500429 0
 0 9 0
@@ -4378,15 +3192,12 @@ A
 ""
 ""
 "act_room( #wind, ch );
-
-end;
-
-"
+end;
+"
 E
 "wind"
 "You feel a light wind tickle the back of your neck.
-
-"
+"
 !
 2 50 0
 -1
@@ -4395,16 +3206,11 @@ S
 #71
 "Sacrificial chamber"
 "This chamber has a dreadful look to it.  The room has many crevices carved
-
-into the walls.  Many skeletal remnants litter the the floor and rifts of this
-
-room.  In the center of the room lies a large stone table.  A giant cleaver
-
-rests embeded into the table, adding to the rooms gruesome look.  A large
-
-spiral set of stairs leads upward toward a bright light of some kind.
-
-"
+into the walls.  Many skeletal remnants litter the the floor and rifts of this
+room.  In the center of the room lies a large stone table.  A giant cleaver
+rests embeded into the table, adding to the rooms gruesome look.  A large
+spiral set of stairs leads upward toward a bright light of some kind.
+"
 ""
 301465617 0
 0 6 0
@@ -4414,10 +3220,8 @@ S
 #72
 "Empty Office"
 "This empty, cubical office is devoid of any useful equipment.  Here you feel
-
-insignificant, like a small cog in a huge wheel.
-
-"
+insignificant, like a small cog in a huge wheel.
+"
 ""
 301498373 0
 0 6 0
@@ -4431,47 +3235,33 @@ S
 #73
 "Room of intertwined vines"
 "Despite the rest of the temples elderly look, this room is lively and peaceful
-
-feeling.  The walls of this room are composed of blooming vines that have been
-
-braided and intertwined to form this grotto.  The vines have knotted in the
-
-center of the room, forming a small pedestal.  Small jewels of light rain down
-
-from a hole at the top of this compartment.  The room leads downward into a
-
-flooded compartment of the temple.
-
-"
+feeling.  The walls of this room are composed of blooming vines that have been
+braided and intertwined to form this grotto.  The vines have knotted in the
+center of the room, forming a small pedestal.  Small jewels of light rain down
+from a hole at the top of this compartment.  The room leads downward into a
+flooded compartment of the temple.
+"
 ""
 301465617 0
 0 6 0
 E
 "Vine pedestal"
 "This pedestal was formed by vines, that have been tangled and braided into a
-
-large knot.
-
-"
+large knot.
+"
 -1
 S
 
 #74
 "The Loft"
 "This high loft looks over the expanse of TFE.  Each realm is clearly visible
-
-and shows off it's true radience and beauty.  A soft white light surrounds the
-
-loft, protecting it from the elements.  Only a gentle, soothing breeze flows
-
-through the area. The mouth of a large cave is visible to the north.
-
-"
+and shows off it's true radience and beauty.  A soft white light surrounds the
+loft, protecting it from the elements.  Only a gentle, soothing breeze flows
+through the area. The mouth of a large cave is visible to the north.
+"
 "[Aeradon] Look TFE.
-
-[Aeradon] Thanks for the advice Xami :)
-
-"
+[Aeradon] Thanks for the advice Xami :)
+"
 301498369 0
 0 5 0
 D0
@@ -4486,70 +3276,56 @@ A
 ""
 ""
 "act_room( #breeze, ch );
-
-"
+"
 E
 "breeze"
 "@BA cool breeze flows through the air.@N
-
-"
+"
 !
 2 0 0
 A
 ""
 ""
 "act_room( #lightning, ch );
-
-"
+"
 E
 "lightning"
 "@rA bolt of lightning strikes in the distance.@N
-
-"
+"
 !
 2 0 0
 A
 "look"
 "TFE"
 "act_tochar(#look, ch);
-
-wait(2);
-
-act_tochar(#calm, ch);
-
-"
+wait(2);
+act_tochar(#calm, ch);
+"
 E
 "look"
 "@mAs you gaze over the world of The Forest Edge, you smile.  This is our
-
-world.  The world we have created throuth the hearts, minds, and pure
-
-imaginations.  You sigh softly as a deep resounding calm comes over you.@N
-
-"
+world.  The world we have created throuth the hearts, minds, and pure
+imaginations.  You sigh softly as a deep resounding calm comes over you.@N
+"
 E
 "calm"
 "@cA deep resounding calm comes over you.@N
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You enter the mouth of the cave to the north.
-
-"
+"
 E
 "to_room"
 "$n leaves north through the mouth of the cave.
-
-"
+"
 !
 3 0 1
 4657 49 1509949540 -2 0
@@ -4561,53 +3337,30 @@ S
 #75
 "The Sprite Pool"
 "Under Destruction.
-
-"
+"
 "[Orb] To-do.  imps, yzgriz quest.
-
-[Orb] make it more clear that positions overlap
-
-[Orb] Check out the state of newbie zones near cities.
-
-[Orb] Rtable 21 is on greater cycs, frost giants, desert ogres, and the razorbeast
-
-[Orb] Make a help autoloot
-
-[Orb] find trainer of unarmed
-
-[Orb] wtf, why are balls of light not auctionable
-
-[Orb] +skill item for chaos fiend
-
-[Orb] -resist items?
-
-[Orb] Remove one prep step from Restoration.
-
-[Orb] Review resets for newbie reagents.
-
-[Orb] Make reagents a rewrd for some quests.
-
-[Orb] Scroll of Analysis.
-
-[Orb] Make Garrote stop when a player is tripped or bashed.
-
-[Orb] Look at frenzy for Creighton.
-
-[Orb] Make it clear that you have to kill pixie high sorceress.
-
-[Orb] Make Xalia give more information about the vials.
-
-[Orb] Make sighere junk scrolls.
-
-[Orb] Make Sighere reiterate what you are after.
-
-[Orb] Warrior - midlevel - love.
-
-[Orb] Lay hands change - no self lay
-
-[Orb] Fix forage
-
-"
+[Orb] make it more clear that positions overlap
+[Orb] Check out the state of newbie zones near cities.
+[Orb] Rtable 21 is on greater cycs, frost giants, desert ogres, and the razorbeast
+[Orb] Make a help autoloot
+[Orb] find trainer of unarmed
+[Orb] wtf, why are balls of light not auctionable
+[Orb] +skill item for chaos fiend
+[Orb] -resist items?
+[Orb] Remove one prep step from Restoration.
+[Orb] Review resets for newbie reagents.
+[Orb] Make reagents a rewrd for some quests.
+[Orb] Scroll of Analysis.
+[Orb] Make Garrote stop when a player is tripped or bashed.
+[Orb] Look at frenzy for Creighton.
+[Orb] Make it clear that you have to kill pixie high sorceress.
+[Orb] Make Xalia give more information about the vials.
+[Orb] Make sighere junk scrolls.
+[Orb] Make Sighere reiterate what you are after.
+[Orb] Warrior - midlevel - love.
+[Orb] Lay hands change - no self lay
+[Orb] Fix forage
+"
 368609281 0
 0 6 0
 D5
@@ -4618,104 +3371,70 @@ A
 "climb"
 "down"
 "if( find_skill( ch, climb ) > 6 ) {
-
-  use_skill( ch, climb );
-
-  act_tochar( #up, ch );
-
-  act_notchar( #nup, ch );
-
-  wait(1);
-
-  act_tochar( #tired, ch );
-
-  transfer( ch, find_room( 11236 ) );
-
-  modify_move( ch, -5 );
-
-  act_notchar( #arri, ch );
-
-  loop( followers ) {
-
-    ch = rch;
-
-    acode( room, 1 );
-
-  }
-
-}
-
-else {
-
-  act_tochar( #hurt, ch );
-
-  act_notchar( #nhurt, ch );
-
-  wait(1);
-
-  transfer( ch, find_room( 11236 ) );
-
-  act_notchar( #fall, ch );
-
-  dam_message( ch, 4d5+35, \"The fall\" );
-
-  inflict( ch, null, 4d5+35, \"falling down a cliff\" );
-
-  modify_move( ch, -10 );
-
-  set_resting( ch );
-
-}
-
-"
+  use_skill( ch, climb );
+  act_tochar( #up, ch );
+  act_notchar( #nup, ch );
+  wait(1);
+  act_tochar( #tired, ch );
+  transfer( ch, find_room( 11236 ) );
+  modify_move( ch, -5 );
+  act_notchar( #arri, ch );
+  loop( followers ) {
+    ch = rch;
+    acode( room, 1 );
+  }
+}
+else {
+  act_tochar( #hurt, ch );
+  act_notchar( #nhurt, ch );
+  wait(1);
+  transfer( ch, find_room( 11236 ) );
+  act_notchar( #fall, ch );
+  dam_message( ch, 4d5+35, \"The fall\" );
+  inflict( ch, null, 4d5+35, \"falling down a cliff\" );
+  modify_move( ch, -10 );
+  set_resting( ch );
+}
+"
 E
 "up"
 "You climb down.
-
-"
+"
 E
 "nup"
 "$n climbs down.
-
-"
+"
 E
 "arri"
 "$n climbs down from above.
-
-"
+"
 E
 "nope"
 "You lack the skills to climb such a treacherous slope.
-
-"
+"
 E
 "tired"
 "Boy, are you tired.,
-
-"
+"
 E
 "hurt"
 "Owie.
-
-"
+"
 E
 "nhurt"
 "$n falls down the cliff.
-
-"
+"
 E
 "fall"
 "$n falls in from above.
-
-"
+"
 !
 0 0 1
 A
 "push"
 "button"
 "do_spell( hallucinate, null, ch, 10 );
-
-"
+"
 !
 0 0 0
 1 17 1509949540 -2 9
@@ -4725,21 +3444,14 @@ S
 #76
 "Test Area"
 "Under Construction.
-
-"
+"
 "#717 new knuckles, energy to damage for special
-
-needs checking..
-
-mob for calling is #2647
-
-blade of calling coded on #3754
-
-three mobs for calling are 2647, 2648, and 2649
-
-#3144 chinese sword
-
-"
+needs checking..
+mob for calling is #2647
+blade of calling coded on #3754
+three mobs for calling are 2647, 2648, and 2649
+#3144 chinese sword
+"
 368607245 0
 0 6 0
 D2
@@ -4759,21 +3471,14 @@ S
 #77
 "Trove of Secrets"
 "The large cave is covered in ornate tapestries, gems, jewels, and suits of
-
-armor stand against the walls.  A small ornate tent lay in the back of the
-
-room.  Large, ornate symbols light the walls.  You innately know that these
-
-are symbols of peace and tranquility.  You also see a few symbols you do not
-
-recognize.  They circle the room from one edge of the door to the other.  A
-
-single, beautiful @Ggreen symbol@n adorns the ceiling.
-
-"
+armor stand against the walls.  A small ornate tent lay in the back of the
+room.  Large, ornate symbols light the walls.  You innately know that these
+are symbols of peace and tranquility.  You also see a few symbols you do not
+recognize.  They circle the room from one edge of the door to the other.  A
+single, beautiful @Ggreen symbol@n adorns the ceiling.
+"
 "[Aeradon] This room will be in my first zone. At LEAST some of it.
-
-"
+"
 301469717 0
 0 6 0
 D2
@@ -4783,160 +3488,112 @@ D2
 E
 "green symbol"
 "The symbol is amazingly large, covering a vast porion of the ceiling.  It
-
-spreads around the top of the cave loke a net, waiting to drop on unwanted
-
-visitors.  It is ornately drawn with many curves and intricate patterns.
-
-"
+spreads around the top of the cave loke a net, waiting to drop on unwanted
+visitors.  It is ornately drawn with many curves and intricate patterns.
+"
 E
 "suit"
 "No description.
-
-"
+"
 E
 "armor"
 "No description.
-
-"
+"
 A
 "push"
 "button"
 "i = find_stat( ch, align );
-
-if(i%3 == 2) { 
-
-  summon( mob, ch );
-
-  }
-
-act_room( \"A button has been pushed\", ch );
-
-"
+if(i%3 == 2) { 
+  summon( mob, ch );
+  }
+act_room( \"A button has been pushed\", ch );
+"
 !
 0 0 4
 A
 ""
 ""
 "i = find_stat( ch, align );
-
-if( i%3 == 2 ) {
-
-  act_room( #windsymbol, ch );
-
-  wait (1);
-
-  if( !char_in_room( ch, room ) ) { end; }
-
-    act_tochar( #windfocus, ch );
-
-    act_notchar( #rwindfocus, ch );
-
-    wait (1);
-
-    if( !char_in_room( ch, room ) ) { end; }
-
-      act_notchar( #rwindstart, ch );
-
-      wait (2);
-
-      if( !char_in_room( ch, room ) ) { end; }
-
-        if( char_in_room( ch, room ) ) {
-
-          act_tochar( #windforce, ch );
-
-          act_notchar( #rwindforce, ch );
-
-          transfer( ch, find_room( 74 ) );
-
-          i = 10d4+100;
-
-          dam_message( ch, i, \"the sheer force of an unbelivably powerful  wind\");
-
-          inflict( ch, mob, i, \"an unbelievably powerful wind\" );
-
-        }
-
-      }
-
-"
+if( i%3 == 2 ) {
+  act_room( #windsymbol, ch );
+  wait (1);
+  if( !char_in_room( ch, room ) ) { end; }
+    act_tochar( #windfocus, ch );
+    act_notchar( #rwindfocus, ch );
+    wait (1);
+    if( !char_in_room( ch, room ) ) { end; }
+      act_notchar( #rwindstart, ch );
+      wait (2);
+      if( !char_in_room( ch, room ) ) { end; }
+        if( char_in_room( ch, room ) ) {
+          act_tochar( #windforce, ch );
+          act_notchar( #rwindforce, ch );
+          transfer( ch, find_room( 74 ) );
+          i = 10d4+100;
+          dam_message( ch, i, \"the sheer force of an unbelivably powerful  wind\");
+          inflict( ch, mob, i, \"an unbelievably powerful wind\" );
+        }
+      }
+"
 E
 "windstart"
 "A powerful wind circles the room, pushing you toward the mouth of the cave!
-
-"
+"
 E
 "rwindstart"
 "A powerful wind circles the room, pushing $n toward the mouth of the cave!
-
-"
+"
 E
 "windforce"
 "An enormously powerful gust of wind hurls you south!
-
-"
+"
 E
 "rwindforce"
 "An enormously powerful gust of wind hurls $n south!
-
-"
+"
 E
 "windsymbol"
 "The unrecognizable symbols circling the room being to glow a @rdeep red@n,
-
-glowing brighter and brigher every second.
-
-"
+glowing brighter and brigher every second.
+"
 E
 "windfocus"
 "You sense a powerful force building from within the room.  And it's aimed at
-
-you.
-
-"
+you.
+"
 E
 "rwindfocus"
 "You sense a powerful force building from within the room.  And it's aimed at
-
-$n.
-
-"
+$n.
+"
 E
 "open"
 "No description.
-
-"
+"
 !
 1 0 4
 A
 ""
 ""
 "if( ch ) {
-
-  remove_cflag( 68, ch );
-
-  }
-
-"
+  remove_cflag( 68, ch );
+  }
+"
 !
 1 0 132
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You step through the mouth of the cave to the south.
-
-"
+"
 E
 "to_room"
 "$n steps through the mouth of the cave to the south.
-
-"
+"
 !
 3 0 4
 2495 9 1509949540 3 0
@@ -4952,17 +3609,12 @@ S
 #78
 "Circular Cavern"
 "The circular chamber appears to be a perfectly shaped dome.  The walls are
-
-smooth and only the entrance from which you entered disturbs the perfect
-
-strucure.  Situated in the center of the chamber lies a large globe that
-
-eminates an errie glow.
-
-"
+smooth and only the entrance from which you entered disturbs the perfect
+strucure.  Situated in the center of the chamber lies a large globe that
+eminates an errie glow.
+"
 "press globe
-
-"
+"
 301498383 0
 0 6 0
 D0
@@ -4977,54 +3629,33 @@ A
 "press"
 "globe"
 "remove_rflag( reset0, room );
-
-act_tochar( \"@YAs you touch the globe, a powerful force explodes from it.@n\", ch );
-
-act_notchar( \"@YAs $n touches the globe, a powerful force explodes from it.@n\", ch );
-
-loop( all_in_room ) {
-
-  if( !is_pet( rch ) ) {
-
-    if( find_stat( rch, level ) < 70 ) {
-
-      act_tochar( \"The force throws you from the chamber!\", rch );
-
-      act_notchar( \"The force throws $n from the chamber!\", rch );
-
-      transfer( rch, find_room( 64 ) );
-
-      set_resting( rch );
-
-      act_notchar( \"$n tumbles in from the chamber ahead.\", rch );
-
-      }
-
-    }
-
-  }
-
-wait( 1 );
-
-set_rflag( reset0, room );
-
-act_room( \"@YThe light from the room fades and you are pulled into the globe!@n\", ch );
-
-transfer_all( room, find_room( 79 ) );
-
-act_notchar( \"$n appears in a flash if light.\", ch );
-
-"
+act_tochar( \"@YAs you touch the globe, a powerful force explodes from it.@n\", ch );
+act_notchar( \"@YAs $n touches the globe, a powerful force explodes from it.@n\", ch );
+loop( all_in_room ) {
+  if( !is_pet( rch ) ) {
+    if( find_stat( rch, level ) < 70 ) {
+      act_tochar( \"The force throws you from the chamber!\", rch );
+      act_notchar( \"The force throws $n from the chamber!\", rch );
+      transfer( rch, find_room( 64 ) );
+      set_resting( rch );
+      act_notchar( \"$n tumbles in from the chamber ahead.\", rch );
+      }
+    }
+  }
+wait( 1 );
+set_rflag( reset0, room );
+act_room( \"@YThe light from the room fades and you are pulled into the globe!@n\", ch );
+transfer_all( room, find_room( 79 ) );
+act_notchar( \"$n appears in a flash if light.\", ch );
+"
 !
 0 0 0
 A
 ""
 ""
 "if( rflag( reset0, room ) )
-
-continue;
-
-"
+continue;
+"
 !
 3 0 128
 -1
@@ -5033,14 +3664,10 @@ S
 #79
 "Remanence of a Gateway"
 "The remanence of an old gateway lies before you.  Twisted metal, charred wood
-
-and crumbling stone litters the surrounding area.  Passed the gateway to the
-
-north appears to be a city, with a few buildings half visible in the
-
-darkness.  A torn piece of material is visible under the rubble.
-
-"
+and crumbling stone litters the surrounding area.  Passed the gateway to the
+north appears to be a city, with a few buildings half visible in the
+darkness.  A torn piece of material is visible under the rubble.
+"
 ""
 301498383 0
 12 8 0
@@ -5055,39 +3682,27 @@ D4
 E
 "city buildings"
 "In the distance you can see outlines of buildings, but you can't focus your
-
-eyes to make out any detail.  Maybe you should take a closer look.
-
-"
+eyes to make out any detail.  Maybe you should take a closer look.
+"
 E
 "torn material rubble"
 "Amoungst the rubble you spot a torn piece of material.  With a closer
-
-inspection you can see an emblem upon it consisting of a jewel enclosed
-
-withing three rings.
-
-"
+inspection you can see an emblem upon it consisting of a jewel enclosed
+withing three rings.
+"
 -1
 S
 
 #80
 "Joe's Garage"
 "You are standing in a vast, open room decorated in wood trim and lit by large
-
-skylights that open up into the heavens.  Appearing to be both a study and a
-
-library, the walls are lined in all directions with books resting on thick oak
-
-shelves.  To the south large glass windows look out over the land.  To the
-
-north a single chalkboard rests, with a myriad of arcane formulas scribbled on
-
-it.  The hardwood floors are engraved with gold and silver etchings, which
-
-upon closer examination prove to comprise a detailed map of the entire world.
-
-"
+skylights that open up into the heavens.  Appearing to be both a study and a
+library, the walls are lined in all directions with books resting on thick oak
+shelves.  To the south large glass windows look out over the land.  To the
+north a single chalkboard rests, with a myriad of arcane formulas scribbled on
+it.  The hardwood floors are engraved with gold and silver etchings, which
+upon closer examination prove to comprise a detailed map of the entire world.
+"
 ""
 301516801 0
 18 9 0
@@ -5139,8 +3754,7 @@ S
 #81
 "Malrothe's Office"
 "Storm clouds gather overhead.
-
-"
+"
 ""
 301498373 0
 0 6 0
@@ -5154,11 +3768,9 @@ S
 #82
 "Group Assistance Training"
 "Under Construction.
-
-"
+"
 "#2702 test-leader
-
-"
+"
 368607245 0
 12 6 0
 D0
@@ -5178,8 +3790,7 @@ S
 #83
 "Talis's Library"
 "Under Construction.
-
-"
+"
 ""
 301498381 0
 0 6 0
@@ -5195,120 +3806,72 @@ A
 "climb"
 "rope"
 "if( is_exhausted( ch ) ) {
-
-  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
-
-  end;
-
-}
-
-drain_stat( ch, move, 0, 1 );
-
-if( check_skill( ch, climb, random( 7, 10 ) ) ) {
-
-  send_to_char( \"You climb up the rope then back down.\", ch );
-
-}
-
-else {
-
-  act_tochar( \"You climb part way up the rope but slip and fall off.\", ch );
-
-}
-
-use_skill( ch, climb );
-
-"
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+  end;
+}
+drain_stat( ch, move, 0, 1 );
+if( check_skill( ch, climb, random( 7, 10 ) ) ) {
+  send_to_char( \"You climb up the rope then back down.\", ch );
+}
+else {
+  act_tochar( \"You climb part way up the rope but slip and fall off.\", ch );
+}
+use_skill( ch, climb );
+"
 !
 0 0 0
 A
 "hit punch"
 "punching bag"
 "if( is_exhausted( ch ) ) {
-
-  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
-
-  end;
-
-}
-
-modify_move( ch, -5 );
-
-if( check_skill( ch, punch, random( 7, 10 ) ) ) {
-
-  send_to_char( \"You hit the punching bag solidly!\", ch );
-
-}
-
-else {
-
-  act_tochar( \"You miss the punching bag!\", ch );
-
-}
-
-use_skill( ch, punch );
-
-"
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+  end;
+}
+modify_move( ch, -5 );
+if( check_skill( ch, punch, random( 7, 10 ) ) ) {
+  send_to_char( \"You hit the punching bag solidly!\", ch );
+}
+else {
+  act_tochar( \"You miss the punching bag!\", ch );
+}
+use_skill( ch, punch );
+"
 !
 0 0 0
 A
 "swim"
 "pool"
 "if( is_exhausted( ch ) ) {
-
-  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
-
-  end;
-
-}
-
-modify_move( ch, -10 );
-
-if( check_skill( ch, swimming, random( 7, 10 ) ) ) {
-
-  send_to_char( \"You perform a flawless lap in the pool.\", ch );
-
-}
-
-else {
-
-  act_tochar( \"You perform a lap in the pool but swallow some water in the process.\", ch );
-
-}
-
-use_skill( ch, swimming );
-
-"
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+  end;
+}
+modify_move( ch, -10 );
+if( check_skill( ch, swimming, random( 7, 10 ) ) ) {
+  send_to_char( \"You perform a flawless lap in the pool.\", ch );
+}
+else {
+  act_tochar( \"You perform a lap in the pool but swallow some water in the process.\", ch );
+}
+use_skill( ch, swimming );
+"
 !
 0 0 0
 A
 "kick"
 "kicking stand"
 "if( is_exhausted( ch ) ) {
-
-  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
-
-  end;
-
-}
-
-modify_move( ch, -5 );
-
-if( check_skill( ch, kick, random( 7, 10 ) ) ) {
-
-  send_to_char( \"You land a solid blow on the kicking stand.\", ch );
-
-}
-
-else {
-
-  act_tochar( \"You nearly fall over when you miss the kicking stand!\", ch );
-
-}
-
-use_skill( ch, kick );
-
-"
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+  end;
+}
+modify_move( ch, -5 );
+if( check_skill( ch, kick, random( 7, 10 ) ) ) {
+  send_to_char( \"You land a solid blow on the kicking stand.\", ch );
+}
+else {
+  act_tochar( \"You nearly fall over when you miss the kicking stand!\", ch );
+}
+use_skill( ch, kick );
+"
 !
 0 0 0
 2492 9 1509949540 3 0
@@ -5322,15 +3885,11 @@ S
 #84
 "Staging Area"
 "Under Construction.
-
-"
+"
 "[Orb] 20 600
-
-[Orb] 15 602
-
-[Orb] 15 851
-
-"
+[Orb] 15 602
+[Orb] 15 851
+"
 368607233 0
 0 6 0
 D4
@@ -5343,8 +3902,7 @@ S
 #85
 "An Empty Bookstore"
 "Under Construction.
-
-"
+"
 ""
 301469707 0
 15 6 0
@@ -5355,77 +3913,45 @@ D0
 E
 "acode"
 "wait( 1 );
-
-obj = obj_in_room( 389, find_room( 2 ) );
-
-loop( obj ) {
-
-  obj_to_char( obj, ch );
-
-  obj = obj_in_room( 389, find_room( 2 ) );
-
-  }
-
-"
+obj = obj_in_room( 389, find_room( 2 ) );
+loop( obj ) {
+  obj_to_char( obj, ch );
+  obj = obj_in_room( 389, find_room( 2 ) );
+  }
+"
 A
 "custom"
 "phial of detect evil"
 "obj = has_obj( 389, ch );
-
-loop( obj ) {
-
-  if( obj_value( obj, 2 ) == 13 ) {
-
-    if( obj_value( obj, 1 ) > 80 )
-
-      obj_to_room( obj, find_room( 1 ) );
-
-    }
-
-  else
-
-    obj_to_room( obj, find_room( 2 ) );
-
-  obj = has_obj( 389, ch );
-
-  }
-
-obj = obj_in_room( 389, find_room( 2 ) );
-
-loop( obj ) {
-
-  obj_to_char( obj, ch );
-
-  obj = obj_in_room( 389, find_room( 2 ) );
-
-  }
-
-obj = obj_in_room( 389, find_room( 1 ) );
-
-if( obj ) {
-
-  loop( obj ) {
-
-    obj_to_char( obj, ch );
-
-    obj = obj_in_room( 389, find_room( 1 ) );
-
-    }
-
-  continue;
-
-  }
-
-else
-
-  tell( mob_in_room( 2283, room ), ch, #noblood );
-
-"
+loop( obj ) {
+  if( obj_value( obj, 2 ) == 13 ) {
+    if( obj_value( obj, 1 ) > 80 )
+      obj_to_room( obj, find_room( 1 ) );
+    }
+  else
+    obj_to_room( obj, find_room( 2 ) );
+  obj = has_obj( 389, ch );
+  }
+obj = obj_in_room( 389, find_room( 2 ) );
+loop( obj ) {
+  obj_to_char( obj, ch );
+  obj = obj_in_room( 389, find_room( 2 ) );
+  }
+obj = obj_in_room( 389, find_room( 1 ) );
+if( obj ) {
+  loop( obj ) {
+    obj_to_char( obj, ch );
+    obj = obj_in_room( 389, find_room( 1 ) );
+    }
+  continue;
+  }
+else
+  tell( mob_in_room( 2283, room ), ch, #noblood );
+"
 E
 "noblood"
 "Customing a phial of detect evil requires a glass vial filled with blood, which you do not have.
-
-"
+"
 !
 0 0 0
 2283 9 1509949540 3 0
@@ -5436,18 +3962,12 @@ S
 #87
 "Hall of Builders"
 "You are standing in a great marble hall that stretches on for miles.  To the
-
-east and west are solid oak doors embossed in gold.  Outside each door is a
-
-life size bust of the office's owner.  A large sign sits in the middle of the
-
-hall.  A large hole has been crudely and recently chiseled into the marble
-
-floor in the center of the hallway; a pool stretches beneath the hole into
-
-darkness as far as you can make out.
-
-"
+east and west are solid oak doors embossed in gold.  Outside each door is a
+life size bust of the office's owner.  A large sign sits in the middle of the
+hall.  A large hole has been crudely and recently chiseled into the marble
+floor in the center of the hallway; a pool stretches beneath the hole into
+darkness as far as you can make out.
+"
 ""
 301501452 0
 0 9 0
@@ -5474,36 +3994,26 @@ D5
 E
 "sign"
 "Both the names on the sign have been scratched out with a dull instrument and
-
-replaced with a crudely scrawled arrow pointing down at the hole in the middle
-
-of the floor.
-
-"
+replaced with a crudely scrawled arrow pointing down at the hole in the middle
+of the floor.
+"
 E
 "hole"
 "A hole has been chiseled into the floor here.  It has not been smoothly
-
-carved; its edges are jagged and broken haphazardly.  Below is a pool of black
-
-water, swirling slowly and uneasily.  The bottom cannot be made out from here.
-
-"
+carved; its edges are jagged and broken haphazardly.  Below is a pool of black
+water, swirling slowly and uneasily.  The bottom cannot be made out from here.
+"
 A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-act_tochar( #swim, ch );
-
-continue;
-
-"
+act_tochar( #swim, ch );
+continue;
+"
 E
 "swim"
 "You take a deep breath and dive into the black waters below.
-
-"
+"
 !
 3 0 32
 -1
@@ -5512,18 +4022,12 @@ S
 #88
 "Mount August"
 "Here you are truly at the zenith of the world.  Long, deep banks of snow
-
-cascade down on all sides, but they cannot touch your mountainous perch.  You
-
-can see for many miles in all directions--mountains, forests, plains,
-
-jungles--all lie beneath you.  A lower range of mountains seems near across
-
-broad snowy saddles north and south, but alas the fall on either side is too
-
-precipitous to attempt.
-
-"
+cascade down on all sides, but they cannot touch your mountainous perch.  You
+can see for many miles in all directions--mountains, forests, plains,
+jungles--all lie beneath you.  A lower range of mountains seems near across
+broad snowy saddles north and south, but alas the fall on either side is too
+precipitous to attempt.
+"
 ""
 33062960 0
 17 9 0
@@ -5546,29 +4050,18 @@ S
 #89
 "Office of Berax"
 "This empty, cubical office is devoid of any useful equipment.  Here you feel
-
-insignificant, like a small cog in a huge wheel.
-
-"
+insignificant, like a small cog in a huge wheel.
+"
 "[Berax] mad cow 2300
-
-[Xami] monster mad cow 1712
-
-gene wolfe
-
-resize - oiflag item to current race
-
-hedracks office is 30
-
-Fynn, Jaeko, Yaslar, Levuen, Blaise, Lwin Elensar, Ozen
-
-blaise claims no kills
-
-ozen claims no kills
-
-sleth brom
-
-"
+[Xami] monster mad cow 1712
+gene wolfe
+resize - oiflag item to current race
+hedracks office is 30
+Fynn, Jaeko, Yaslar, Levuen, Blaise, Lwin Elensar, Ozen
+blaise claims no kills
+ozen claims no kills
+sleth brom
+"
 301498373 0
 0 9 0
 D0
@@ -5578,8 +4071,7 @@ D0
 E
 "mound"
 "No description.
-
-"
+"
 14 17 1509949540 -2 0
 91 9 1509949540 3 0
 2300 9 1509949540 3 0
@@ -5589,16 +4081,11 @@ S
 #90
 "Talis's Library"
 "You stand within a large building formed of massive slabs of marble.  Braziers
-
-emit both light and a subtle scent reminiscent of sandalwood.  Shelves line
-
-the walls and stand freely from wall to wall filled from top to bottom with
-
-books and tomes of all shapes and sizes.  What little wall space that is not
-
-filled by shelving is covered by tapestries woven of soft cloth.
-
-"
+emit both light and a subtle scent reminiscent of sandalwood.  Shelves line
+the walls and stand freely from wall to wall filled from top to bottom with
+books and tomes of all shapes and sizes.  What little wall space that is not
+filled by shelving is covered by tapestries woven of soft cloth.
+"
 ""
 301498381 0
 0 6 0
@@ -5614,50 +4101,37 @@ A
 "1 get"
 "2 token"
 "act_room( \"You reach for a token\", ch );
-
-if( has_obj( 4620, ch ) ) {
-
-  act_room( \"only to find you already have one and can't get another\", ch );
-
-  end;
-
-  }
-
-else {
-
-  act_room( \"and find one magically available.\", ch );
-
-  obj_to_char( oload( 4620 ), ch );
-
-  }
-
-"
+if( has_obj( 4620, ch ) ) {
+  act_room( \"only to find you already have one and can't get another\", ch );
+  end;
+  }
+else {
+  act_room( \"and find one magically available.\", ch );
+  obj_to_char( oload( 4620 ), ch );
+  }
+"
 !
 0 0 0
 A
 "2 release"
 "2 token"
 "junk_obj( has_obj( 4620, ch ) );
-
-act_room( \"You release the token and it is gone.\", ch );
-
-"
+act_room( \"You release the token and it is gone.\", ch );
+"
 !
 0 0 0
 A
 "push"
 "button"
 "drain_exp( ch, -10000 );
-
-"
+"
 !
 0 0 0
 A
 "drain"
 "mana"
 "drain_stat( ch, mana, 0, 999 );
-
-"
+"
 !
 0 0 0
 -1
@@ -5666,8 +4140,7 @@ S
 #91
 "Inside the Apparatus of Kwalish"
 "Under Construction.
-
-"
+"
 ""
 301482053 0
 0 5 0
@@ -5675,113 +4148,66 @@ A
 "look"
 ""
 "if( find_stat( ch, level ) > 91 ) {
-
-  act_tochar( \"@MYou need to advance down to mortal levels.\", ch );
-
-  continue;
-
-}
-
-obj = obj_in_room( 4651, find_room( 91 ) );
-
-room = find_room( obj_value( obj, 0 ) );
-
-if( is_name( first_word( arg ), \"porthole\" ) ) {
-
-  if( skip_word( arg ) == \"\" )
-
-    send_to_char( #look, ch );
-
-  act_tochar( get_desc( room ), ch );
-
-  list = contents( room );
-
-  i = 0;
-
-  loop( item( list, i ) ) {
-
-    victim = character( item( list, i ) );
-
-    if( victim ) {
-
-      if( is_player( victim ) ) {
-
-        mob = mload( 2462, get_room( ch ) );
-
-        set_singular( mob, string( \"$X\", ch, obj, victim ) );
-
-      }
-
-      else
-
-        set_singular( mload( vnum( victim ), get_room( ch ) ), string( \"$X\", ch, obj, victim ) );
-
-    }
-
-    i += 1;
-
-  }
-
-  send_to_char( #blankline, ch );
-
-  interpret( ch, \"scan\" );
-
-  room = get_room( ch );
-
-  loop( all_in_room ) {
-
-    if( !is_player( rch ) )
-
-      junk_mob( rch );
-
-  }
-
-}
-
-else
-
-  continue;
-
-"
+  act_tochar( \"@MYou need to advance down to mortal levels.\", ch );
+  continue;
+}
+obj = obj_in_room( 4651, find_room( 91 ) );
+room = find_room( obj_value( obj, 0 ) );
+if( is_name( first_word( arg ), \"porthole\" ) ) {
+  if( skip_word( arg ) == \"\" )
+    send_to_char( #look, ch );
+  act_tochar( get_desc( room ), ch );
+  list = contents( room );
+  i = 0;
+  loop( item( list, i ) ) {
+    victim = character( item( list, i ) );
+    if( victim ) {
+      if( is_player( victim ) ) {
+        mob = mload( 2462, get_room( ch ) );
+        set_singular( mob, string( \"$X\", ch, obj, victim ) );
+      }
+      else
+        set_singular( mload( vnum( victim ), get_room( ch ) ), string( \"$X\", ch, obj, victim ) );
+    }
+    i += 1;
+  }
+  send_to_char( #blankline, ch );
+  interpret( ch, \"scan\" );
+  room = get_room( ch );
+  loop( all_in_room ) {
+    if( !is_player( rch ) )
+      junk_mob( rch );
+  }
+}
+else
+  continue;
+"
 E
 "look"
 "You look through the front porthole to view your surroundings:
-
 
 "
 E
 "blankline"
 "
-
-"
+"
 !
 0 0 0
 A
 "exit"
 ""
 "room = find_room( obj_value( obj_in_room( 4651, get_room( ch ) ), 0 ) );
-
-obj = obj_in_room( 4650, room );
-
-if( is_name( arg, name( ch, obj ) ) ) {
-
-  set_obj_value( obj_in_room( 4651, get_room( ch ) ), 0, 0 );
-
-  act_tochar( \"You climb out of the exit hatch and leave $p.\", ch, obj );
-
-  transfer( ch, room );
-
-  act_notchar( \"$n climbs out of the exit hatch of $p.\", ch, obj );
-
-}
-
-else {
-
-  act_tochar( \"The only obvious exit is the hatch used to enter $p\", ch, obj );
-
-}
-
-"
+obj = obj_in_room( 4650, room );
+if( is_name( arg, name( ch, obj ) ) ) {
+  set_obj_value( obj_in_room( 4651, get_room( ch ) ), 0, 0 );
+  act_tochar( \"You climb out of the exit hatch and leave $p.\", ch, obj );
+  transfer( ch, room );
+  act_notchar( \"$n climbs out of the exit hatch of $p.\", ch, obj );
+}
+else {
+  act_tochar( \"The only obvious exit is the hatch used to enter $p\", ch, obj );
+}
+"
 !
 0 0 0
 4651 17 1509949540 -2 0
@@ -5791,8 +4217,7 @@ S
 #92
 "Chez Semix"
 "Under Construction.
-
-"
+"
 ""
 301514765 0
 0 6 0
@@ -5808,13 +4233,10 @@ S
 #93
 "temporary testing room"
 "Under Construction.
-
-"
+"
 "Voaleth newbie station - east of 20011
-
-Chiiron newbie station - 997
-
-"
+Chiiron newbie station - 997
+"
 301498413 0
 0 6 0
 D2
@@ -5830,14 +4252,10 @@ S
 #94
 "Hall of Builders"
 "You are standing in a great marble hall that stretches on for miles.  To the
-
-west is a solid oak door embossed in gold, while to the east, there is a
-
-mysterious door fashioned from black crystal.  Outside each door is a life
-
-size bust of the office's owner.  A large sign sits in the middle of the hall.
-
-"
+west is a solid oak door embossed in gold, while to the east, there is a
+mysterious door fashioned from black crystal.  Outside each door is a life
+size bust of the office's owner.  A large sign sits in the middle of the hall.
+"
 ""
 301501444 0
 0 9 0
@@ -5856,18 +4274,14 @@ D2
 E
 "sign"
 "Up: Zithuan
-
-East: Aeradon
-
-"
+East: Aeradon
+"
 A
 ""
 ""
 "if( is_player( ch ) )
-
-  continue;
-
-"
+  continue;
+"
 !
 3 0 2
 -1
@@ -5876,12 +4290,9 @@ S
 #95
 "Lookout Point"
 "From here you can see to the far ends of the realm.  A small gilded rail
-
-is all that between you and a long, painful fall.  In the corner a gilded
-
-stairwell decends down in the marble floor.
-
-"
+is all that between you and a long, painful fall.  In the corner a gilded
+stairwell decends down in the marble floor.
+"
 ""
 301501453 0
 0 9 0
@@ -5895,24 +4306,16 @@ S
 #96
 "Stronghold Template Code Room"
 "This room holds the templates for the skills allowed in strongholds.  Aedit to
-
-see what's available.
-
+see what's available.
 
 Shop keepers - basic newbie items (bronze weapons, soft leather armor, bottles
-
-of beer, reagents for spells level 1-5 already available in shops, etc.
-
-+50k per 10% reset on an item. (works out to about 10%=1 item, 100%=10 avail)
-
+of beer, reagents for spells level 1-5 already available in shops, etc.
++50k per 10% reset on an item. (works out to about 10%=1 item, 100%=10 avail)
 
 Default Objects:
-
-   Obj 3875 - standard chest
-
-   Obj 3750 - standard weapon rack
-
-"
+   Obj 3875 - standard chest
+   Obj 3750 - standard weapon rack
+"
 ""
 301498381 0
 0 6 0
@@ -5920,130 +4323,77 @@ A
 "climb"
 "rope"
 "if( is_exhausted( ch ) ) {
-
-  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
-
-  end;
-
-}
-
-drain_stat( ch, move, 0, 1 );
-
-if( check_skill( ch, climb, random( 7, 10 ) ) ) {
-
-  send_to_char( \"You climb up the rope then back down.\", ch );
-
-}
-
-else {
-
-  act_tochar( \"You climb part way up the rope but slip and fall off.\", ch );
-
-}
-
-use_skill( ch, climb );
-
-"
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+  end;
+}
+drain_stat( ch, move, 0, 1 );
+if( check_skill( ch, climb, random( 7, 10 ) ) ) {
+  send_to_char( \"You climb up the rope then back down.\", ch );
+}
+else {
+  act_tochar( \"You climb part way up the rope but slip and fall off.\", ch );
+}
+use_skill( ch, climb );
+"
 !
 0 0 0
 A
 "hit punch"
 "punching bag"
 "if( is_exhausted( ch ) ) {
-
-  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
-
-  end;
-
-}
-
-modify_move( ch, -5 );
-
-if( check_skill( ch, punch, random( 7, 10 ) ) ) {
-
-  send_to_char( \"You hit the punching bag solidly!\", ch );
-
-}
-
-else {
-
-  act_tochar( \"You miss the punching bag!\", ch );
-
-}
-
-use_skill( ch, punch );
-
-"
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+  end;
+}
+modify_move( ch, -5 );
+if( check_skill( ch, punch, random( 7, 10 ) ) ) {
+  send_to_char( \"You hit the punching bag solidly!\", ch );
+}
+else {
+  act_tochar( \"You miss the punching bag!\", ch );
+}
+use_skill( ch, punch );
+"
 !
 0 0 0
 A
 "kick"
 "kicking stand"
 "if( is_exhausted( ch ) ) {
-
-  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
-
-  end;
-
-}
-
-if( modify_move( ch, -5 ) ) {
-
-  if( check_skill( ch, kick, random( 7, 10 ) ) ) {
-
-    send_to_char( \"You land a solid blow on the kicking stand.\", ch );
-
-  }
-
-  else {
-
-    act_tochar( \"You nearly fall over when you miss the kicking stand!\", ch );
-
-  }
-
-  use_skill( ch, kick );
-
-}
-
-else {
-
-  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
-
-  end;
-
-}
-
-"
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+  end;
+}
+if( modify_move( ch, -5 ) ) {
+  if( check_skill( ch, kick, random( 7, 10 ) ) ) {
+    send_to_char( \"You land a solid blow on the kicking stand.\", ch );
+  }
+  else {
+    act_tochar( \"You nearly fall over when you miss the kicking stand!\", ch );
+  }
+  use_skill( ch, kick );
+}
+else {
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+  end;
+}
+"
 !
 0 0 0
 A
 "swim"
 "pool"
 "if( is_exhausted( ch ) ) {
-
-  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
-
-  end;
-
-}
-
-modify_move( ch, -10 );
-
-if( check_skill( ch, swimming, random( 7, 10 ) ) ) {
-
-  send_to_char( \"You perform a flawless lap in the pool.\", ch );
-
-}
-
-else {
-
-  act_tochar( \"You perform a lap in the pool but swallow some water in the process.\", ch );
-
-}
-
-use_skill( ch, swimming );
-
-"
+  act_tochar( \"You're too tired to do that, you should rest first.\", ch );
+  end;
+}
+modify_move( ch, -10 );
+if( check_skill( ch, swimming, random( 7, 10 ) ) ) {
+  send_to_char( \"You perform a flawless lap in the pool.\", ch );
+}
+else {
+  act_tochar( \"You perform a lap in the pool but swallow some water in the process.\", ch );
+}
+use_skill( ch, swimming );
+"
 !
 0 0 0
 -1
@@ -6052,31 +4402,19 @@ S
 #97
 "An Underground Grotto of Black Crystal"
 "This twilit grotto is bathed in a dark light from an unknown source; it seems
-
-to emanate from everywhere and nowhere all at once.  The black crystal walls
-
-of this chamber jut at odd angles with each other in such a way that you can't
-
-tell whether you are truly inside this grotto, or looking in from elsewhere.
-
-"
+to emanate from everywhere and nowhere all at once.  The black crystal walls
+of this chamber jut at odd angles with each other in such a way that you can't
+tell whether you are truly inside this grotto, or looking in from elsewhere.
+"
 "[Zithuan] set_delay( 32 ) = wait( 1 ) = 20 MUD seconds = 2 real seconds
-
-[Zithuan] fix obj 3724
-
-New Rune ideas:
-
-- 'Wind' rune that does set_delay() instead of damage
-
-- 'Speed' rune that makes it off-hand and backstabbable
-
-- 'Air' rune that decreases the weight (1 pound, 2?)
-
-- 'Epic' rune that increases the level by 20 and buffs it in several ways
-
-[Zithuan] 63000
-
-"
+[Zithuan] fix obj 3724
+New Rune ideas:
+- 'Wind' rune that does set_delay() instead of damage
+- 'Speed' rune that makes it off-hand and backstabbable
+- 'Air' rune that decreases the weight (1 pound, 2?)
+- 'Epic' rune that increases the level by 20 and buffs it in several ways
+[Zithuan] 63000
+"
 301467785 0
 15 9 0
 D0
@@ -6102,282 +4440,161 @@ D5
 E
 "jungle"
 "The faint path from the north opens up here into a moderately sized clearing. 
-
-Huge trees reach to the sky, and in the countless branches above, you can see
-
-and hear abundant life in the forms of monkeys and birds of all sizes.  The
-
-jungle floor is covered with leaves, half-eaten fruits, and small colorful
-
-feathers.
-
-"
+Huge trees reach to the sky, and in the countless branches above, you can see
+and hear abundant life in the forms of monkeys and birds of all sizes.  The
+jungle floor is covered with leaves, half-eaten fruits, and small colorful
+feathers.
+"
 E
 "titles"
 "1 1 10 11 101 1000 1101 10101 100010 110111
-
-"
+"
 A
 "push"
 "3 triangle"
 "loop( all_in_room ) {
-
-  transfer( rch, find_room( 13 ) );
-
-}
-
-"
+  transfer( rch, find_room( 13 ) );
+}
+"
 !
 0 0 0
 A
 "push"
 "3 octagon"
 "obj = obj_to_room( oload( 23 ), room );
-
-set_obj_value( obj, 2, 11 );
-
-set_obj_value( obj, 1, 100 );
-
-"
+set_obj_value( obj, 2, 11 );
+set_obj_value( obj, 1, 100 );
+"
 !
 0 0 0
 A
 "push"
 "3 hexagon"
 "if( find_stat( ch, level ) > 90 ) {
-
-  act_tochar( \"## Beetle ## || Interpret: Security violation.\", ch );
-
-  end;
-
-  }
-
-i = 37852;
-
-loop( i < 37873 ) {
-
-  transfer( ch, find_room( i ) );
-
-  interpret( ch, \"dedit delete north\" );
-
-  interpret( ch, \"dedit delete south\" );
-
-  interpret( ch, \"dedit delete east\" );
-
-  interpret( ch, \"dedit delete west\" );
-
-  interpret( ch, \"dedit delete down\" );
-
-  interpret( ch, \"dedit delete up\" );
-
-  interpret( ch, \"redit delete room\" );
-
-  i = i + 1;
-
-  }
-
-"
+  act_tochar( \"## Beetle ## || Interpret: Security violation.\", ch );
+  end;
+  }
+i = 37852;
+loop( i < 37873 ) {
+  transfer( ch, find_room( i ) );
+  interpret( ch, \"dedit delete north\" );
+  interpret( ch, \"dedit delete south\" );
+  interpret( ch, \"dedit delete east\" );
+  interpret( ch, \"dedit delete west\" );
+  interpret( ch, \"dedit delete down\" );
+  interpret( ch, \"dedit delete up\" );
+  interpret( ch, \"redit delete room\" );
+  i = i + 1;
+  }
+"
 !
 0 0 0
 A
 "push"
 "3 square"
 "i = 3685;
-
-loop( i < 3689 ) {
-
-  j = 0;
-
-  loop( j == 0 ) {
-
-    j = 1;
-
-    arg = word( get_desc( null, \"race\" ), 1d6-1 );
-
-    k = 3685;
-
-    loop( k < i ) {
-
-      obj = has_obj( k, room );
-
-      if( obj && is_name( arg, name( ch, obj ) ) )
-
-        j = 0;
-
-      k++;
-
-    }
-
-  }
-
-  j = 0;
-
-  loop( j == 0 ) {
-
-    j = 1;
-
-    cmd = word( get_desc( null, \"class\" ), 1d7-1 );
-
-    k = 3685;
-
-    loop( k < i ) {
-
-      obj = has_obj( k, room );
-
-      if( obj && is_name( cmd, name( ch, obj ) ) )
-
-        j = 0;
-
-      k++;
-
-    }
-
-  }
-
-  obj = obj_to_room( oload( i ), room );
-
-  if( vnum( obj ) == 3688 ) 
-
-    set_singular( obj, string( \"$t $T survived.\", ch, null, null, arg, cmd ) );
-
-  else {
-
-    set_singular( obj, string( \"$t $T died $y\", ch, obj, null, arg, cmd ) );
-
-    j = 0;
-
-    loop( j == 0 ) {
-
-      j = 1;
-
-      arg = word( get_desc( null, \"killer\" ), 1d6-1 );
-
-      k = 3685;
-
-      loop( k < i ) {
-
-        obj = has_obj( k, room );
-
-        if( obj && is_name( arg, name( ch, obj ) ) )
-
-          j = 0;
-
-        k++;
-
-      }
-
-    }
-
-    obj = has_obj( i, room );
-
-    set_singular( obj, string( \"$y, to a spectre of a dwarven $t\", ch, obj, null, arg ) );
-
-  }
-
-  i++;
-
-}
-
-i = 1d2;
-
-j = 1d2;
-
-obj_to_char( oload( 4726 ), ch );
-
-obj = obj_to_container( oload( 3689 ), has_obj( 4726, ch ) );
-
-obj = obj_to_container( oload( 3690 ), has_obj( 4726, ch ) );
-
-obj = obj_to_container( oload( 3691 ), has_obj( 4726, ch ) );
-
-obj = obj_to_container( oload( 3692 ), has_obj( 4726, ch ) );
-
-k = 3688 + 1d4;
-
-obj = has_obj( k, has_obj( 4726, ch ) );
-
-set_singular( obj, word( name( ch, has_obj( 3688 - i, room ) ), 11 ) );
-
-arg = word( name( ch, has_obj( 3685, room ) ), 3 - j );
-
-cmd = word( name( ch, has_obj( 3685 + i, room ) ), j );
-
-set_singular( obj, string( \"$t died before the $T, but neither died to the spectre of a dwarven $y\", ch, obj, null, arg, cmd ) );
-
-loop( is_altered( obj ) ) {
-
-  k = 3688 + 1d4;
-
-  obj = has_obj( k, has_obj( 4726, ch ) );
-
-}
-
-set_singular( obj, word( name( ch, has_obj( 3685 + i, room ) ), 3 - j ) );
-
-arg = word( name( ch, has_obj( 3688, room ) ), j );
-
-cmd = word( name( ch, has_obj( 3685, room ) ), j );
-
-set_singular( obj, string( \"$t witnessed the deaths of the $T and the $y\", ch, obj, null, arg, cmd ) );
-
-loop( is_altered( obj ) ) {
-
-  k = 3688 + 1d4;
-
-  obj = has_obj( k, has_obj( 4726, ch ) );
-
-}
-
-set_singular( obj, word( name( ch, has_obj( 3685, room ) ), 11 ) );
-
-arg = word( name( ch, has_obj( 3688 - i, room ) ), j );
-
-cmd = word( name( ch, has_obj( 3688, room ) ), 3 - j );
-
-set_singular( obj, string( \"$t and the $T each witnessed the first of their party fall to a spectre of a dwarven $y\", ch, obj, null, arg, cmd ) );
-
-loop( is_altered( obj ) ) {
-
-  k = 3688 + 1d4;
-
-  obj = has_obj( k, has_obj( 4726, ch ) );
-
-}
-
-set_singular( obj, word( name( ch, has_obj( 3685 + i, room ) ), 11 ) );
-
-arg = word( name( ch, has_obj( 3688 - i, room ) ), 3 - j );
-
-cmd = word( name( ch, has_obj( 3688 - i, room ) ), 4 );
-
-set_singular( obj, string( \"$t died $T but not to the spectre of a dwarven $y\", ch, obj, null, arg, cmd ) );
-
-i = 3685;
-
-loop( i < 3689 ) {
-
-  obj_to_container( has_obj( i, room ), has_obj( 4726, ch ) );
-
-  i++;
-
-}
-
-"
+loop( i < 3689 ) {
+  j = 0;
+  loop( j == 0 ) {
+    j = 1;
+    arg = word( get_desc( null, \"race\" ), 1d6-1 );
+    k = 3685;
+    loop( k < i ) {
+      obj = has_obj( k, room );
+      if( obj && is_name( arg, name( ch, obj ) ) )
+        j = 0;
+      k++;
+    }
+  }
+  j = 0;
+  loop( j == 0 ) {
+    j = 1;
+    cmd = word( get_desc( null, \"class\" ), 1d7-1 );
+    k = 3685;
+    loop( k < i ) {
+      obj = has_obj( k, room );
+      if( obj && is_name( cmd, name( ch, obj ) ) )
+        j = 0;
+      k++;
+    }
+  }
+  obj = obj_to_room( oload( i ), room );
+  if( vnum( obj ) == 3688 ) 
+    set_singular( obj, string( \"$t $T survived.\", ch, null, null, arg, cmd ) );
+  else {
+    set_singular( obj, string( \"$t $T died $y\", ch, obj, null, arg, cmd ) );
+    j = 0;
+    loop( j == 0 ) {
+      j = 1;
+      arg = word( get_desc( null, \"killer\" ), 1d6-1 );
+      k = 3685;
+      loop( k < i ) {
+        obj = has_obj( k, room );
+        if( obj && is_name( arg, name( ch, obj ) ) )
+          j = 0;
+        k++;
+      }
+    }
+    obj = has_obj( i, room );
+    set_singular( obj, string( \"$y, to a spectre of a dwarven $t\", ch, obj, null, arg ) );
+  }
+  i++;
+}
+i = 1d2;
+j = 1d2;
+obj_to_char( oload( 4726 ), ch );
+obj = obj_to_container( oload( 3689 ), has_obj( 4726, ch ) );
+obj = obj_to_container( oload( 3690 ), has_obj( 4726, ch ) );
+obj = obj_to_container( oload( 3691 ), has_obj( 4726, ch ) );
+obj = obj_to_container( oload( 3692 ), has_obj( 4726, ch ) );
+k = 3688 + 1d4;
+obj = has_obj( k, has_obj( 4726, ch ) );
+set_singular( obj, word( name( ch, has_obj( 3688 - i, room ) ), 11 ) );
+arg = word( name( ch, has_obj( 3685, room ) ), 3 - j );
+cmd = word( name( ch, has_obj( 3685 + i, room ) ), j );
+set_singular( obj, string( \"$t died before the $T, but neither died to the spectre of a dwarven $y\", ch, obj, null, arg, cmd ) );
+loop( is_altered( obj ) ) {
+  k = 3688 + 1d4;
+  obj = has_obj( k, has_obj( 4726, ch ) );
+}
+set_singular( obj, word( name( ch, has_obj( 3685 + i, room ) ), 3 - j ) );
+arg = word( name( ch, has_obj( 3688, room ) ), j );
+cmd = word( name( ch, has_obj( 3685, room ) ), j );
+set_singular( obj, string( \"$t witnessed the deaths of the $T and the $y\", ch, obj, null, arg, cmd ) );
+loop( is_altered( obj ) ) {
+  k = 3688 + 1d4;
+  obj = has_obj( k, has_obj( 4726, ch ) );
+}
+set_singular( obj, word( name( ch, has_obj( 3685, room ) ), 11 ) );
+arg = word( name( ch, has_obj( 3688 - i, room ) ), j );
+cmd = word( name( ch, has_obj( 3688, room ) ), 3 - j );
+set_singular( obj, string( \"$t and the $T each witnessed the first of their party fall to a spectre of a dwarven $y\", ch, obj, null, arg, cmd ) );
+loop( is_altered( obj ) ) {
+  k = 3688 + 1d4;
+  obj = has_obj( k, has_obj( 4726, ch ) );
+}
+set_singular( obj, word( name( ch, has_obj( 3685 + i, room ) ), 11 ) );
+arg = word( name( ch, has_obj( 3688 - i, room ) ), 3 - j );
+cmd = word( name( ch, has_obj( 3688 - i, room ) ), 4 );
+set_singular( obj, string( \"$t died $T but not to the spectre of a dwarven $y\", ch, obj, null, arg, cmd ) );
+i = 3685;
+loop( i < 3689 ) {
+  obj_to_container( has_obj( i, room ), has_obj( 4726, ch ) );
+  i++;
+}
+"
 E
 "race"
 "dwarf elf ent gnome halfling human
-
-"
+"
 E
 "class"
 "bard mage monk paladin ranger thief warrior
-
-"
+"
 E
 "killer"
 "lieutenant captain knight lord cleric guardian
-
-"
+"
 !
 0 0 0
 3725 17 1509949540 -2 0
@@ -6393,8 +4610,7 @@ S
 #98
 "heal damage testing room"
 "Under Construction.
-
-"
+"
 ""
 368607245 0
 12 6 0
@@ -6406,44 +4622,25 @@ A
 "test"
 ""
 "loop ( all_in_room ) {
-
-  if( is_player( rch ) ) {
-
-    if( ( class( rch ) == cleric ) || ( class( rch ) == paladin ) ) {
-
-      if( cflag( 195, rch ) ) {
-
-        mob = is_fighting( rch );
-
-        if( !mob ) end;
-
-          if( race( mob ) == undead ) {
-
-          act_tochar(\"You focus you healing powers towards $N\", rch, obj, mob);
-
-          act_notchar(\"$n focuses $s healing powers towards $N\", rch, obj, mob);
-
-wait( 1 );
-
-          i = 10d20 + ( find_stat( rch, level ) );
-
-          magic_message( mob, i, \"+*the healing powers\", rch );
-
-          inflict_magic( mob, rch, i, \"Healing powers\" );
-
-        }
-
-      }
-
-    }
-
-  }
-
-}
-
-end;
-
-"
+  if( is_player( rch ) ) {
+    if( ( class( rch ) == cleric ) || ( class( rch ) == paladin ) ) {
+      if( cflag( 195, rch ) ) {
+        mob = is_fighting( rch );
+        if( !mob ) end;
+          if( race( mob ) == undead ) {
+          act_tochar(\"You focus you healing powers towards $N\", rch, obj, mob);
+          act_notchar(\"$n focuses $s healing powers towards $N\", rch, obj, mob);
+wait( 1 );
+          i = 10d20 + ( find_stat( rch, level ) );
+          magic_message( mob, i, \"+*the healing powers\", rch );
+          inflict_magic( mob, rch, i, \"Healing powers\" );
+        }
+      }
+    }
+  }
+}
+end;
+"
 !
 4 0 0
 2682 137 1509949540 3 0
@@ -6453,14 +4650,10 @@ S
 #99
 "A Spiral Staircase"
 "The ceiling is high and vaulted.  A few huge marble pillars line the
-
-walls.  A gilded staircase spirals up to a small hole in the ceiling.  To
-
-the west is a woodened framed doorway leads to a huge hallway.  A wooden
-
-door-frame is also to the south.
-
-"
+walls.  A gilded staircase spirals up to a small hole in the ceiling.  To
+the west is a woodened framed doorway leads to a huge hallway.  A wooden
+door-frame is also to the south.
+"
 ""
 301501445 0
 0 9 0
@@ -6482,8 +4675,7 @@ S
 #100
 "Severus' Basement"
 "This is where Severus keeps his junk.
-
-"
+"
 ""
 33062916 0
 0 9 0
@@ -6498,59 +4690,42 @@ D4
 E
 "abc"
 "This is abc.
-
-"
+"
 E
 "xyz"
 "This is xyz.
-
-"
+"
 A
 "make_beetle"
 ""
 "beetle( \"$n fixed above poison() bug.\", ch );
-
-"
+"
 !
 0 0 0
 A
 "tart"
 ""
 "i = 3257;
-
-loop( i < 3271 ) {
-
-  obj_to_char( oload( i, 5 ), ch );
-
-  ++i;
-
-}
-
-"
+loop( i < 3271 ) {
+  obj_to_char( oload( i, 5 ), ch );
+  ++i;
+}
+"
 !
 0 0 0
 A
 "xyz"
 ""
 "act_tochar( \"before\", ch );
-
-wait(1);
-
-act_tochar( \"after\", ch );
-
-transfer( ch, find_room( 80 ) );
-
-loop( followers ) {
-
-act_tochar( \"also $N\", ch, null, rch );
-
-ch = rch;
-
-acode( room, 3 );
-
-}
-
-"
+wait(1);
+act_tochar( \"after\", ch );
+transfer( ch, find_room( 80 ) );
+loop( followers ) {
+act_tochar( \"also $N\", ch, null, rch );
+ch = rch;
+acode( room, 3 );
+}
+"
 !
 0 0 0
 -1

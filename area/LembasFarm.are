@@ -10,16 +10,11 @@
 #7500
 "Inside a Tangle of Roots"
 "You are inside a tangled mass of roots high above the ground in a very large
-
-cave.  The tangled roots provide a convenient, natural stairwell leading
-
-through a hole above you all the way down to the cavern floor.  The entire
-
-stairway of roots is woven around with a criss-cross of smaller roots forming
-
-a cage of sorts that prevents you from falling off the stairs.
-
-"
+cave.  The tangled roots provide a convenient, natural stairwell leading
+through a hole above you all the way down to the cavern floor.  The entire
+stairway of roots is woven around with a criss-cross of smaller roots forming
+a cage of sorts that prevents you from falling off the stairs.
+"
 ""
 301596684 0
 11 5 0
@@ -34,47 +29,31 @@ D5
 E
 "roots"
 "The roots appear to be those of one or more rather large shuvana trees firmly
-
-entrenched in the earth and stone around the cave whose roots have poked
-
-through in places.  The dark wood is rich with smaller filaments of living
-
-root just looking for good earth to slip in to.
-
-"
+entrenched in the earth and stone around the cave whose roots have poked
+through in places.  The dark wood is rich with smaller filaments of living
+root just looking for good earth to slip in to.
+"
 E
 "cage"
 "A living cave of roots that have tangled themselves together to form a natural
-
-barrier around the stairway roots to prevent travellers from falling to their
-
-deaths.
-
-"
+barrier around the stairway roots to prevent travellers from falling to their
+deaths.
+"
 -1
 S
 
 #7501
 "A Glowing Cave"
 "You are in a large, rounded cave acting as a junction of multiple tunnels. 
-
-The walls of the cave are coated in a glowing lichen that provides a gentle
-
-greenish-yellow glow throughout the area.  The dull light is just enough to
-
-let you see by.  Several twining tendrils of shuvana roots form a natural set
-
-of stairs leading from the ground clear up to a hole in the ceiling.  A gentle
-
-breeze comes from the hole above you indicating that it is a way out of the
-
-caves and into the forest overhead.  To the north, west and south wide tunnels
-
-lead away but to the east rests an ornate archway set into the stone of the
-
-cave wall.
-
-"
+The walls of the cave are coated in a glowing lichen that provides a gentle
+greenish-yellow glow throughout the area.  The dull light is just enough to
+let you see by.  Several twining tendrils of shuvana roots form a natural set
+of stairs leading from the ground clear up to a hole in the ceiling.  A gentle
+breeze comes from the hole above you indicating that it is a way out of the
+caves and into the forest overhead.  To the north, west and south wide tunnels
+lead away but to the east rests an ornate archway set into the stone of the
+cave wall.
+"
 ""
 301596677 0
 11 6 0
@@ -101,60 +80,44 @@ D4
 E
 "lichen"
 "The lichen grows in small patches, too small to even get a firm handhold on
-
-but in enough profusion to provide ample light for the area.
-
-"
+but in enough profusion to provide ample light for the area.
+"
 E
 "1 east 4 archway"
 "The archway looks less carved from stone as it does naturally formed from the
-
-stone that was already there.  No sign of toolwork mars its surface as if it
-
-had somehow been melted into its shape, perhaps by magic.  The arch itself is
-
-as well-refined as any arch carved by chisel and hammer.
-
-"
+stone that was already there.  No sign of toolwork mars its surface as if it
+had somehow been melted into its shape, perhaps by magic.  The arch itself is
+as well-refined as any arch carved by chisel and hammer.
+"
 E
 "roots 1 up 5 stairway"
 "The roots twist and weave to form a natural stairway of living shuvanawood. 
-
-Smaller tendrils of root weave themselves into a cage around the stairway
-
-providing safety for anyone heading up and preventing them from falling.
-
-"
+Smaller tendrils of root weave themselves into a cage around the stairway
+providing safety for anyone heading up and preventing them from falling.
+"
 A
 "get take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You carefully use the shuvana roots as stairs and wend your way up and out of
-
-the cave.
-
-"
+the cave.
+"
 !
 3 0 16
 -1
@@ -163,14 +126,10 @@ S
 #7502
 "A Glowing Tunnel"
 "You are in a junction in the tunnels and caves where one tunnel terminates
-
-where it meets another.  Glowing patches of a thin lichen grow in profusion on
-
-the walls, floor and ceiling casting dull light everywhere.  Softly glowing
-
-tunnels stretch away to the west, south and east from this point.
-
-"
+where it meets another.  Glowing patches of a thin lichen grow in profusion on
+the walls, floor and ceiling casting dull light everywhere.  Softly glowing
+tunnels stretch away to the west, south and east from this point.
+"
 ""
 301596677 0
 11 5 0
@@ -189,25 +148,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -217,14 +170,10 @@ S
 #7503
 "A Glowing Tunnel"
 "The cave walls are covered in broad patches of glowing, green-yellow lichen
-
-that lights the area just enough to let you see.  The main tunnel passage
-
-seems to run west and east here but a jagged crack in the northern wall
-
-provides passage that way as well.
-
-"
+that lights the area just enough to let you see.  The main tunnel passage
+seems to run west and east here but a jagged crack in the northern wall
+provides passage that way as well.
+"
 ""
 301596677 0
 11 5 0
@@ -243,25 +192,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -270,24 +213,15 @@ S
 #7504
 "A Small, Glowing Cavern"
 "The walls of this cavern are far enough apart that a horse could easily canter
-
-about a short ways, provided you could even fit a horse through the caves to
-
-get here.  Unlike the majority of the other caves and tunnels on this level,
-
-there is very little of the glowing lichen here with only a sparse smattering
-
-on the vaulted cavern ceiling high over head.  There is barely enough lichen
-
-to provide any light and it looks like there is no lichen at all on the floor
-
-around a dark opening leading further down.  Jagged cracks in the wall lead
-
-away to the south and east where considerably brighter glows indicate more
-
-profusion of the lichen.
-
-"
+about a short ways, provided you could even fit a horse through the caves to
+get here.  Unlike the majority of the other caves and tunnels on this level,
+there is very little of the glowing lichen here with only a sparse smattering
+on the vaulted cavern ceiling high over head.  There is barely enough lichen
+to provide any light and it looks like there is no lichen at all on the floor
+around a dark opening leading further down.  Jagged cracks in the wall lead
+away to the south and east where considerably brighter glows indicate more
+profusion of the lichen.
+"
 ""
 301596685 0
 11 6 0
@@ -306,42 +240,29 @@ D5
 E
 "lichen"
 "The lichen grows only in small patches on the ceiling high overhead providing
-
-barely the slightest hint of light for this room.
-
-"
+barely the slightest hint of light for this room.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "if( can_fly( ch ) ) {
-
-  act_tochar( #no, ch );
-
-  }
-
-else {
-
-  act_tochar( #nofly, ch );
-
-  }
-
-"
+  act_tochar( #no, ch );
+  }
+else {
+  act_tochar( #nofly, ch );
+  }
+"
 E
 "no"
 "You fly up to the ceiling and carefully scrape away some of the lichen only to
-
-find that it is small and delicate.  As soon as the lichen scrapes away from
-
-the rock, the light fades and the lichen crumbles to little more than useless
-
-new nofly
-
-"
+find that it is small and delicate.  As soon as the lichen scrapes away from
+the rock, the light fades and the lichen crumbles to little more than useless
+new nofly
+"
 E
 "nofly"
 "You can't reach the lichen that high above you.
-
-"
+"
 !
 0 0 0
 -1
@@ -350,14 +271,10 @@ S
 #7505
 "A Glowing Tunnel"
 "The cave walls are covered in broad patches of glowing greenish-yellow lichen
-
-that lights the area just enough to let you see.  The main tunnel passage
-
-seems to run north and south here but a jagged crack in the western wall
-
-provides passage that way as well.
-
-"
+that lights the area just enough to let you see.  The main tunnel passage
+seems to run north and south here but a jagged crack in the western wall
+provides passage that way as well.
+"
 ""
 301596677 0
 11 5 0
@@ -376,25 +293,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -404,14 +315,10 @@ S
 #7506
 "A Glowing Tunnel"
 "You are in a three-way intersection of tunnels where a tunnel leading in from
-
-the south dead-ends at a tunnel leading away east and west.  Swathes of
-
-glowing green lichen grow along the walls of each tunnel, providing just enough
-
-light to see by.
-
-"
+the south dead-ends at a tunnel leading away east and west.  Swathes of
+glowing green lichen grow along the walls of each tunnel, providing just enough
+light to see by.
+"
 ""
 301596677 0
 11 5 0
@@ -430,25 +337,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -457,14 +358,10 @@ S
 #7507
 "A Glowing Tunnel"
 "You are in a three-way intersection of tunnels where one tunnel leads in from
-
-the north then dead ends at another tunnel that leads away east and west. 
-
-Swaths of glowing green lichen grow along the walls of each tunnel, providing
-
-just enough light to see by.
-
-"
+the north then dead ends at another tunnel that leads away east and west. 
+Swaths of glowing green lichen grow along the walls of each tunnel, providing
+just enough light to see by.
+"
 ""
 301596677 0
 11 5 0
@@ -483,25 +380,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -510,14 +401,10 @@ S
 #7508
 "A Glowing Tunnel"
 "You are in a junction point where one tunnel dead-ends into another.  The
-
-glowing lichen on the walls provides just enough light to see the tunnels. 
-
-One tunnels heads away to the south while the one it intersects into heads off
-
-both to the west and east.
-
-"
+glowing lichen on the walls provides just enough light to see the tunnels. 
+One tunnels heads away to the south while the one it intersects into heads off
+both to the west and east.
+"
 ""
 301596677 0
 11 5 0
@@ -536,25 +423,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -564,16 +445,11 @@ S
 #7509
 "A Glowing Tunnel"
 "Lichen coats the broad expanse of the eastern tunnel wall since it is unable
-
-to find purchase where the tunnel leads away.  Broad openings heading north,
-
-west and south.  The soft, greenish-yellow glow of the light from the lichen
-
-is strongest where the lichen grows in profusion to the east throwing thin
-
-shadows of your passage to the west.
-
-"
+to find purchase where the tunnel leads away.  Broad openings heading north,
+west and south.  The soft, greenish-yellow glow of the light from the lichen
+is strongest where the lichen grows in profusion to the east throwing thin
+shadows of your passage to the west.
+"
 ""
 301596677 0
 11 5 0
@@ -592,25 +468,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -619,14 +489,10 @@ S
 #7510
 "A Glowing Tunnel"
 "The tunnel curves, changing the direction it runs, with paths leading away to
-
-the north and west.  Patches of lichen coat the walls, ceiling, and floor but
-
-appear to grow at its thickest at the rounded southeast corner where the
-
-tunnel changes direction.
-
-"
+the north and west.  Patches of lichen coat the walls, ceiling, and floor but
+appear to grow at its thickest at the rounded southeast corner where the
+tunnel changes direction.
+"
 ""
 301596677 0
 11 5 0
@@ -641,25 +507,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -668,12 +528,9 @@ S
 #7511
 "A Glowing Tunnel"
 "You are in an intersection of tunnels that lead away to the north, east, and
-
-south.  Patches of lichen grow on the walls, floor, and ceiling, emitting a
-
-greenish-yellow glow providing just enough light to see by.
-
-"
+south.  Patches of lichen grow on the walls, floor, and ceiling, emitting a
+greenish-yellow glow providing just enough light to see by.
+"
 ""
 301596677 0
 11 5 0
@@ -692,25 +549,19 @@ D2
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -719,12 +570,9 @@ S
 #7512
 "A Glowing Tunnel"
 "A bend in the cave tunnel system causes the tunnel to arc west and south from
-
-this point.  Patches of lichen grow well on the walls, ceiling, and floor, with
-
-each glowing gently and providing light for the caves.
-
-"
+this point.  Patches of lichen grow well on the walls, ceiling, and floor, with
+each glowing gently and providing light for the caves.
+"
 ""
 301596677 0
 11 5 0
@@ -739,25 +587,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -766,12 +608,9 @@ S
 #7513
 "A Glowing, Curving Tunnel"
 "The cave passage curves noticeably and leads away west and south.  The glowing
-
-lichen seems to like it here in this corner passage.  A rather large patch
-
-grows in the curved northeastern wall providing ample light for the room.
-
-"
+lichen seems to like it here in this corner passage.  A rather large patch
+grows in the curved northeastern wall providing ample light for the room.
+"
 ""
 301596677 0
 11 5 0
@@ -786,25 +625,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -814,16 +647,11 @@ S
 #7514
 "A Glowing Tunnel"
 "The roof lowers a little in the cave here and you will have to duck to crawl
-
-under some of the lower obstructions as you pass through.  The greenish-
-
-yellow light from the moss growing on the walls provides ample light but the
-
-odd shape of the ceiling places parts of the cave where no lichen is growing in
-
-shadow.  The cave stretches away to the east and west from here.
-
-"
+under some of the lower obstructions as you pass through.  The greenish-
+yellow light from the moss growing on the walls provides ample light but the
+odd shape of the ceiling places parts of the cave where no lichen is growing in
+shadow.  The cave stretches away to the east and west from here.
+"
 ""
 301596677 0
 11 5 0
@@ -838,76 +666,52 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  if( size( ch ) > 4 ) {
-
-  act_tochar( #big_duck, ch );
-
-  continue;
-
-  end;
-
-  }
-
-if( size( ch ) < 2 ) {
-
-  act_tochar( #small, ch );
-
-  continue;
-
-  end;
-
-  }
-
-act_tochar( #duck, ch );
-
-continue;
-
-"
+  if( size( ch ) > 4 ) {
+  act_tochar( #big_duck, ch );
+  continue;
+  end;
+  }
+if( size( ch ) < 2 ) {
+  act_tochar( #small, ch );
+  continue;
+  end;
+  }
+act_tochar( #duck, ch );
+continue;
+"
 E
 "big_duck"
 "With your large size you very nearly have to crawl as you duck under the
-
-obstructions as you leave.
-
-"
+obstructions as you leave.
+"
 E
 "small"
 "As it turns out, you're just small enough to slip under the obstructions and
-
-you don't have to duck after all.
-
-"
+you don't have to duck after all.
+"
 E
 "duck"
 "You duck under some of the obstructions as you leave.
-
-"
+"
 !
 3 0 10
 -1
@@ -916,14 +720,10 @@ S
 #7515
 "A Glowing Tunnel"
 "The tunnel meanders a bit, making it hard to see more than a few feet but still
-
-generally runs an east-west passage through here.  Lichen grows in broad
-
-patches from the ceiling and walls and even grows sparsely across the floor
-
-filling the room with a soft, greenish-yellow light.
-
-"
+generally runs an east-west passage through here.  Lichen grows in broad
+patches from the ceiling and walls and even grows sparsely across the floor
+filling the room with a soft, greenish-yellow light.
+"
 ""
 301596677 0
 11 5 0
@@ -938,25 +738,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -966,17 +760,12 @@ S
 #7516
 "A Glowing Tunnel"
 "The cave tunnel runs relatively straight, offering an unimpeded north to south
-
-passageway that almost seems like a normal castle hallway.  Normal, that is,
-
-if castle halls had rough, uncut walls covered in lichen that gave off a soft,
-
-greenish-yellow glow.
-
-"
+passageway that almost seems like a normal castle hallway.  Normal, that is,
+if castle halls had rough, uncut walls covered in lichen that gave off a soft,
+greenish-yellow glow.
+"
 "[Nereus] this rdesc rules
-
-"
+"
 301596677 0
 11 5 0
 D0
@@ -990,25 +779,19 @@ D2
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -1018,16 +801,11 @@ S
 #7517
 "A Glowing Tunnel"
 "You are in a long, cave tunnel running north and south from here.  A cave
-
-opens off of the eastern wall forming a small, natural room in that
-
-direction.  A glowing lichen grows in many small patches along the walls,
-
-ceiling, and floor, emitting just enough greenish-yellow light to let you
-
-clearly see the tunnel.
-
-"
+opens off of the eastern wall forming a small, natural room in that
+direction.  A glowing lichen grows in many small patches along the walls,
+ceiling, and floor, emitting just enough greenish-yellow light to let you
+clearly see the tunnel.
+"
 ""
 301596677 0
 11 5 0
@@ -1046,46 +824,34 @@ D2
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 ""
 ""
 "wait( random( 2, 4 ) );
-
-if( char_in_room( ch, find_room( 7517 ) ) ) {
-
-  act_tochar( #drip, ch );
-
-  }
-
-"
+if( char_in_room( ch, find_room( 7517 ) ) ) {
+  act_tochar( #drip, ch );
+  }
+"
 E
 "drip"
 "@BThe echoing sound of water dripping into water can be heard coming from the
-
-east.@n
-
-"
+east.@n
+"
 !
 1 0 7
 -1
@@ -1094,22 +860,14 @@ S
 #7518
 "A Glowing Cul-de-sac"
 "You are inside a small dead-end tunnel that flares out then back in
-
-forming a natural cul-de-sac.  A column of stone rests in the middle of the
-
-room where a stalactite and stalagmite finally met after millenia of forming. 
-
-Smaller stalactites and stalagmites dot the area around the column and a pool
-
-of water has formed at their base from the dripping water that has created the
-
-rock formations.  Glowing lichen grows on the walls and roof in profusion,
-
-lighting the room and throwing reflections of the light that dance about every
-
-time water drips into the pool.
-
-"
+forming a natural cul-de-sac.  A column of stone rests in the middle of the
+room where a stalactite and stalagmite finally met after millenia of forming. 
+Smaller stalactites and stalagmites dot the area around the column and a pool
+of water has formed at their base from the dripping water that has created the
+rock formations.  Glowing lichen grows on the walls and roof in profusion,
+lighting the room and throwing reflections of the light that dance about every
+time water drips into the pool.
+"
 ""
 301596677 0
 11 5 0
@@ -1120,51 +878,38 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 E
 "column"
 "The column is a thick pillar of stone that formed naturally when a stalactite
-
-and a stalagmite finally grew so big that they merged together as one. 
-
-Continued sedimentary deposits over the millenia have only added to the column
-
-making it wider until it is now about as wide as a well-grown oak tree.
-
-"
+and a stalagmite finally grew so big that they merged together as one. 
+Continued sedimentary deposits over the millenia have only added to the column
+making it wider until it is now about as wide as a well-grown oak tree.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 ""
 ""
 "act_room( #drip, ch );
-
-"
+"
 E
 "drip"
 "A drip falls from one of the stalactites into the pool of water, sending
-
-ripples crashing back and forth across its otherwise serene surface.
-
-"
+ripples crashing back and forth across its otherwise serene surface.
+"
 !
 2 100 0
 1519 17 1509949540 -2 0
@@ -1176,14 +921,10 @@ S
 #7519
 "A Glowing Tunnel"
 "The tunnel forms a junction where a westbound passage terminates in the middle
-
-of a longer, north and south running tunnel that stretches away out of sight. 
-
-Lichen growing on the tunnel walls gives off a soft light and you can make out
-
-the tunnel walls clearly in each direction.
-
-"
+of a longer, north and south running tunnel that stretches away out of sight. 
+Lichen growing on the tunnel walls gives off a soft light and you can make out
+the tunnel walls clearly in each direction.
+"
 ""
 301596677 0
 11 5 0
@@ -1202,25 +943,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -1229,12 +964,9 @@ S
 #7520
 "A Glowing Tunnel"
 "A thin layer of lichen grows on the hard stone walls in patches giving off a
-
-soft, greenish-yellow glow.  The tunnel stretches away to the east and west
-
-lit by the lichen that pervades almost every nook and cranny of these caves.
-
-"
+soft, greenish-yellow glow.  The tunnel stretches away to the east and west
+lit by the lichen that pervades almost every nook and cranny of these caves.
+"
 ""
 301596677 0
 11 5 0
@@ -1249,25 +981,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -1277,15 +1003,11 @@ S
 #7521
 "A Glowing Tunnel"
 "The tunnel forks in three directions, leading off to the west, north, and
-
-east.  The southern wall, an unbroken stretch of stone, is the haven for a
-
-rather large patch of the glowing lichen that lights the caves.
-
-"
+east.  The southern wall, an unbroken stretch of stone, is the haven for a
+rather large patch of the glowing lichen that lights the caves.
+"
 "[Merolen] bag of noxious powder from the goblin -> 'good amount foul-smelling' -> good amount of foul-smelling
-
-"
+"
 301596677 0
 11 5 0
 D0
@@ -1303,25 +1025,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -1330,12 +1046,9 @@ S
 #7522
 "A Glowing Tunnel"
 "The tunnel you are in runs a fairly straight path off to the west and east
-
-from here.  Patches of lichen line the walls, floor and ceiling casting a
-
-soft, greenish-yellow glow that suffuses the area.
-
-"
+from here.  Patches of lichen line the walls, floor and ceiling casting a
+soft, greenish-yellow glow that suffuses the area.
+"
 ""
 301596677 0
 11 5 0
@@ -1350,25 +1063,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -1378,14 +1085,10 @@ S
 #7523
 "A Glowing Tunnel"
 "You are at an intersection of the cave tunnels that leads away in three
-
-directions from here.  Glowing patches of lichen growing on the nooks and
-
-crannies of every wall light the room sufficiently to see that the tunnels
-
-lead off to the west, south and east from here.
-
-"
+directions from here.  Glowing patches of lichen growing on the nooks and
+crannies of every wall light the room sufficiently to see that the tunnels
+lead off to the west, south and east from here.
+"
 ""
 301596677 0
 11 5 0
@@ -1404,25 +1107,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -1432,14 +1129,10 @@ S
 #7524
 "A Glowing Tunnel"
 "The tunnel curves here changing the direction it runs.  Paths lead away to the
-
-north and east.  Patches of lichen coat the walls, ceiling and floor but
-
-appear to grow in best profusion at the rounded southwest corner where the
-
-tunnel changes direction.
-
-"
+north and east.  Patches of lichen coat the walls, ceiling and floor but
+appear to grow in best profusion at the rounded southwest corner where the
+tunnel changes direction.
+"
 ""
 301596677 0
 11 5 0
@@ -1454,25 +1147,19 @@ D1
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -1481,18 +1168,12 @@ S
 #7525
 "A Glowing Tunnel"
 "The tunnel curves several times through here but primarily seems to be leading
-
-east and south from this point.  Patches of softly glowing lichen grow on
-
-several protrusions of rock along the cave walls as well as from the ceiling
-
-and floor and pretty much anywhere it can seem to find purchase.  The light
-
-from the lichen casts the room alternately in patches of greenish-yellow light
-
-and shadows but generally provides enough light for you to see.
-
-"
+east and south from this point.  Patches of softly glowing lichen grow on
+several protrusions of rock along the cave walls as well as from the ceiling
+and floor and pretty much anywhere it can seem to find purchase.  The light
+from the lichen casts the room alternately in patches of greenish-yellow light
+and shadows but generally provides enough light for you to see.
+"
 ""
 301596677 0
 11 5 0
@@ -1507,25 +1188,19 @@ D2
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -1534,12 +1209,9 @@ S
 #7526
 "A Glowing Tunnel"
 "You are in a curved tunnel that leads away to both the west and north from
-
-here.  Patches of lichen grow on most of the exposed earthen surfaces
-
-providing enough light for you to see the cave.
-
-"
+here.  Patches of lichen grow on most of the exposed earthen surfaces
+providing enough light for you to see the cave.
+"
 ""
 301596677 0
 11 5 0
@@ -1554,25 +1226,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -1582,18 +1248,12 @@ S
 #7527
 "A Glowing Tunnel"
 "Glowing lichen fills this tunnel with a soft greenish-yellow light allowing
-
-you to see it well enough to easily determine its course.  The tunnel arcs
-
-smoothly, heading away in two directions at a nearly perfect right angle to the
-
-east and south.  Although a nearly perfect angle, the rounded edges of the
-
-natural stone formation leaves nothing to suggest that the tunnel was in any
-
-way modified and that, perhaps, this just happens to be its original shape.
-
-"
+you to see it well enough to easily determine its course.  The tunnel arcs
+smoothly, heading away in two directions at a nearly perfect right angle to the
+east and south.  Although a nearly perfect angle, the rounded edges of the
+natural stone formation leaves nothing to suggest that the tunnel was in any
+way modified and that, perhaps, this just happens to be its original shape.
+"
 ""
 301465601 0
 11 5 0
@@ -1608,25 +1268,19 @@ D2
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -1635,14 +1289,10 @@ S
 #7528
 "A Glowing Tunnel"
 "You are in a three-way intersection of tunnels where a tunnel leading in from
-
-the north dead ends at a tunnel leading away east and west.  Swathes of
-
-glowing green lichen grow along the walls of each tunnel providing just enough
-
-light to see by.
-
-"
+the north dead ends at a tunnel leading away east and west.  Swathes of
+glowing green lichen grow along the walls of each tunnel providing just enough
+light to see by.
+"
 ""
 301596677 0
 11 5 0
@@ -1661,25 +1311,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -1688,14 +1332,10 @@ S
 #7529
 "A Glowing Tunnel"
 "You are in a junction point where one tunnel dead-ends into another.  The
-
-glowing lichen on the walls provides just enough light to see the tunnels as
-
-they stretch away.  One tunnel heads away to the south while the one it
-
-intersects into heads off both to the west and east.
-
-"
+glowing lichen on the walls provides just enough light to see the tunnels as
+they stretch away.  One tunnel heads away to the south while the one it
+intersects into heads off both to the west and east.
+"
 ""
 301596677 0
 11 5 0
@@ -1714,25 +1354,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -1742,14 +1376,10 @@ S
 #7530
 "A Glowing Tunnel"
 "You are in a long cave tunnel running north and south.  A cave opens off of
-
-the western wall, forming a small, natural room in that direction.  A glowing
-
-lichen grows in many small patches along the walls, ceiling, and floor, emitting
-
-just enough greenish-yellow light to let you see the tunnel clearly.
-
-"
+the western wall, forming a small, natural room in that direction.  A glowing
+lichen grows in many small patches along the walls, ceiling, and floor, emitting
+just enough greenish-yellow light to let you see the tunnel clearly.
+"
 ""
 301596677 0
 11 5 0
@@ -1768,25 +1398,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -1795,14 +1419,10 @@ S
 #7531
 "A Glowing Tunnel"
 "The tunnel meanders a bit making it hard to see more than a few feet but still
-
-generally runs an east-west passage through here.  Lichen grows in broad
-
-patches from the ceiling and walls and even grows sparsely across the floor
-
-filling the room with a soft, greenish-yellow light.
-
-"
+generally runs an east-west passage through here.  Lichen grows in broad
+patches from the ceiling and walls and even grows sparsely across the floor
+filling the room with a soft, greenish-yellow light.
+"
 ""
 301596677 0
 11 5 0
@@ -1817,25 +1437,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -1844,18 +1458,12 @@ S
 #7532
 "A Glowing Tunnel"
 "You are in a T-junction of the cave tunnels where a tunnel coming in from the
-
-north dead-ends at another tunnel running generally east and west from here. 
-
-The patches of lichen that grow throughout the caves grow particularly well on
-
-the south wall where a large patch of them nearly covers the wall.  The strong
-
-growth of glowing lichen on the southern wall infuses the room with ample
-
-greenish-yellow light to see by.
-
-"
+north dead-ends at another tunnel running generally east and west from here. 
+The patches of lichen that grow throughout the caves grow particularly well on
+the south wall where a large patch of them nearly covers the wall.  The strong
+growth of glowing lichen on the southern wall infuses the room with ample
+greenish-yellow light to see by.
+"
 ""
 301596677 0
 11 5 0
@@ -1874,29 +1482,21 @@ D3
 E
 "lichen 1 south wall"
 "The lichen growing here is no larger than the rest in thickness or general
-
-size, however, the patch along the southern wall certainly covers it more
-
-throroughly than usual creating an almost solid sheet of glowing green-yellow
-
-color there.
-
-"
+size, however, the patch along the southern wall certainly covers it more
+throroughly than usual creating an almost solid sheet of glowing green-yellow
+color there.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -1905,12 +1505,9 @@ S
 #7533
 "A Glowing Tunnel"
 "A bend in the cave tunnel system causes the tunnel to arc west and south from
-
-this point.  Patches of lichen grow well on the walls, ceiling and floor with
-
-each glowing gently and providing light for the caves.
-
-"
+this point.  Patches of lichen grow well on the walls, ceiling and floor with
+each glowing gently and providing light for the caves.
+"
 ""
 301596677 0
 11 5 0
@@ -1925,25 +1522,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -1952,14 +1543,10 @@ S
 #7534
 "A Glowing Tunnel"
 "Two passages intersect here with a passage leading in from the east
-
-terminating where it meets a passage running generally north and south.
-
-Patches of lichen grow along the cave walls, ceiling and floor emitting a
-
-soft, greenish-yellow glow that provides just enough light to see the cave.
-
-"
+terminating where it meets a passage running generally north and south.
+Patches of lichen grow along the cave walls, ceiling and floor emitting a
+soft, greenish-yellow glow that provides just enough light to see the cave.
+"
 ""
 301596677 0
 11 5 0
@@ -1978,25 +1565,19 @@ D2
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -2005,12 +1586,9 @@ S
 #7535
 "A Glowing Tunnel"
 "You are in a curving passage within the cave tunnel system.  The tunnel arcs
-
-to stretch away to the north and west naturally lit by patches of glowing
-
-lichen that adhere to the cave walls.
-
-"
+to stretch away to the north and west naturally lit by patches of glowing
+lichen that adhere to the cave walls.
+"
 ""
 301596677 0
 11 5 0
@@ -2025,25 +1603,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -2052,21 +1624,14 @@ S
 #7536
 "A Glowing Tunnel"
 "You are in a tunnel that runs a fairly straight east-west line with only
-
-minimal stone protrusions obstructing your view.  Patches of greenish lichen
-
-dot the ceiling, floor and walls, casting the room in a soft greenish-yellow
-
-glow.  The soft glow creates shadows and in one of the shadows you can barely
-
-make out a crack in the northern wall that leads to some other, dark cave.
-
-"
+minimal stone protrusions obstructing your view.  Patches of greenish lichen
+dot the ceiling, floor and walls, casting the room in a soft greenish-yellow
+glow.  The soft glow creates shadows and in one of the shadows you can barely
+make out a crack in the northern wall that leads to some other, dark cave.
+"
 "North works to slip observant characters through a crack in the wall to
-
-another room
-
-"
+another room
+"
 301596677 0
 11 5 0
 D1
@@ -2080,94 +1645,67 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 E
 "crack"
 "The crack in the wall is dark with barely a hint of lichen on it.  It does
-
-look wide enough to slip through, though.
-
-"
+look wide enough to slip through, though.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 "1 north"
 ""
 "if( is_fighting( ch ) ) {
-
-  act_tochar( \"You can't do that while fighting\", ch );
-
-  end;
-
-  }
-
-act_tochar( #crack, ch );
-
-act_notchar( #rcrack, ch );
-
-transfer( ch, find_room( 7562 ) );
-
-act_notchar( #arrive, ch );
-
-loop( followers ) {
-
-  act_tochar( #follow, rch );
-
-  act_notchar( #rcrack, rch );
-
-  transfer( rch, find_room( 7562 ) );
-
-  act_notchar( #arrive, rch );
-
-  }
-
-"
+  act_tochar( \"You can't do that while fighting\", ch );
+  end;
+  }
+act_tochar( #crack, ch );
+act_notchar( #rcrack, ch );
+transfer( ch, find_room( 7562 ) );
+act_notchar( #arrive, ch );
+loop( followers ) {
+  act_tochar( #follow, rch );
+  act_notchar( #rcrack, rch );
+  transfer( rch, find_room( 7562 ) );
+  act_notchar( #arrive, rch );
+  }
+"
 E
 "crack"
 "You slip through the crack on the northern wall.
-
-"
+"
 E
 "rcrack"
 "$n slips into the shadows of the cave.
-
-"
+"
 E
 "arrive"
 "$n arrives from the south.
-
-"
+"
 E
 "follow"
 "You follow your group leader into the crack in the north wall.
-
-"
+"
 !
 0 0 0
 A
 "enter go"
 "crack 1 north"
 "acode( room, 2 );
-
-"
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -2177,21 +1715,14 @@ S
 #7537
 "A Glowing Tunnel"
 "The tunnel you are in heads away to the east and west, lined with sporadic
-
-patches of glowing lichen.  The glow from the lichen casts shadows wherever
-
-protrusions in the cave block its light.  In spite of the shadows you can
-
-barely make out a crack in the northern wall that leads to some other, dark
-
-cave.
-
-"
+patches of glowing lichen.  The glow from the lichen casts shadows wherever
+protrusions in the cave block its light.  In spite of the shadows you can
+barely make out a crack in the northern wall that leads to some other, dark
+cave.
+"
 "North works to slip observant characters through a crack in the wall to
-
-another room
-
-"
+another room
+"
 301596677 0
 11 5 0
 D1
@@ -2205,94 +1736,67 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 E
 "crack"
 "The crack is dark with hardly any lichen in it at all.  It does look wide
-
-enough to slip through, though.
-
-"
+enough to slip through, though.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 "1 north"
 ""
 "if( is_fighting( ch ) ) {
-
-  act_tochar( \"You can't do that while fighting\", ch );
-
-  end;
-
-  }
-
-act_tochar( #crack, ch );
-
-act_notchar( #rcrack, ch );
-
-transfer( ch, find_room( 7563 ) );
-
-act_notchar( #arrive, ch );
-
-loop( followers ) {
-
-  act_tochar( #follow, rch );
-
-  act_notchar( #rcrack, rch );
-
-  transfer( rch, find_room( 7563 ) );
-
-  act_notchar( #arrive, rch );
-
-  }
-
-"
+  act_tochar( \"You can't do that while fighting\", ch );
+  end;
+  }
+act_tochar( #crack, ch );
+act_notchar( #rcrack, ch );
+transfer( ch, find_room( 7563 ) );
+act_notchar( #arrive, ch );
+loop( followers ) {
+  act_tochar( #follow, rch );
+  act_notchar( #rcrack, rch );
+  transfer( rch, find_room( 7563 ) );
+  act_notchar( #arrive, rch );
+  }
+"
 E
 "crack"
 "You slips into the crack in the north wall.
-
-"
+"
 E
 "rcrack"
 "$n slips into the shadows.
-
-"
+"
 E
 "arrive"
 "$n arrives from the south.
-
-"
+"
 E
 "follow"
 "You follow your group leader into a crack in the north wall.
-
-"
+"
 !
 0 0 0
 A
 "enter go"
 "1 north crack"
 "acode( room, 2 );
-
-"
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -2302,14 +1806,10 @@ S
 #7538
 "A Glowing Tunnel"
 "Swaths of glowing greenish lichen grows in profusion along the flat surfaces
-
-of the cave walls casting a soft, greenish-yellow glow everywhere in the
-
-cave.  The tunnel itself curves here stretching away to the east and north
-
-from this point.
-
-"
+of the cave walls casting a soft, greenish-yellow glow everywhere in the
+cave.  The tunnel itself curves here stretching away to the east and north
+from this point.
+"
 ""
 301596677 0
 11 5 0
@@ -2324,25 +1824,19 @@ D1
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -2351,12 +1845,9 @@ S
 #7539
 "A Glowing Tunnel"
 "The tunnel you are in runs a fairly straight path off to the west and east. 
-
-Patches of lichen line the walls, floor and ceiling, casting a soft,
-
-greenish-yellow glow that suffuses the area.
-
-"
+Patches of lichen line the walls, floor and ceiling, casting a soft,
+greenish-yellow glow that suffuses the area.
+"
 ""
 301596677 0
 11 5 0
@@ -2371,25 +1862,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -2399,14 +1884,10 @@ S
 #7540
 "A Glowing Tunnel"
 "Two passages intersect here with a passage leading in from the west
-
-terminating where it meets a passage running generally north and south. 
-
-Patches of lichen grow along the cave walls, ceiling, and floor, emitting a
-
-soft, greenish-yellow glow that provides just enough light to see the cave.
-
-"
+terminating where it meets a passage running generally north and south. 
+Patches of lichen grow along the cave walls, ceiling, and floor, emitting a
+soft, greenish-yellow glow that provides just enough light to see the cave.
+"
 ""
 301596677 0
 11 5 0
@@ -2425,25 +1906,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -2452,12 +1927,9 @@ S
 #7541
 "A Glowing Tunnel"
 "Swathes of glowing greenish lichen grow in profusion along the flat surfaces
-
-of the cave walls, casting a soft, greenish-yellow glow everywhere in the
-
-cave.  The tunnel itself curves here stretching away to the east and south.
-
-"
+of the cave walls, casting a soft, greenish-yellow glow everywhere in the
+cave.  The tunnel itself curves here stretching away to the east and south.
+"
 ""
 301596677 0
 11 5 0
@@ -2472,25 +1944,19 @@ D2
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -2499,12 +1965,9 @@ S
 #7542
 "A Glowing Tunnel"
 "You are in a curving passage within the cave tunnel system.  The tunnel arcs
-
-to stretch away to the north and west naturally lit by patches of glowing
-
-lichen that adhere to the cave walls.
-
-"
+to stretch away to the north and west naturally lit by patches of glowing
+lichen that adhere to the cave walls.
+"
 ""
 301596677 0
 11 5 0
@@ -2519,25 +1982,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -2547,16 +2004,11 @@ S
 #7543
 "A Glowing Tunnel"
 "The cave tunnel forks, leading in from the east before splitting into two
-
-separate tunnels that lead off to the west and north.  Broad patches of
-
-glowing lichen provide just enough light to see that the northern and eastern
-
-tunnels extend off a short way but the western tunnel appears to dead-end just
-
-ahead.
-
-"
+separate tunnels that lead off to the west and north.  Broad patches of
+glowing lichen provide just enough light to see that the northern and eastern
+tunnels extend off a short way but the western tunnel appears to dead-end just
+ahead.
+"
 ""
 301596677 0
 11 5 0
@@ -2575,25 +2027,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -2602,22 +2048,14 @@ S
 #7544
 "A Glowing Tunnel"
 "Several relatively recently dislodged boulders, recent being relative in
-
-geological terms, have crumbled out of the ceiling and you have to step around
-
-or over the stones to pass through this part of the caves.  Glowing lichen
-
-grows on the fallen rocks, as well as the walls, floor, and ceiling, providing
-
-a soft light for the room.  The light readily shows that, while the cave
-
-ceiling is somewhat higher due to part of it falling in, it doesn't go
-
-anywhere and the minor cave-in has only served to provide obstructions along
-
-the cave path.
-
-"
+geological terms, have crumbled out of the ceiling and you have to step around
+or over the stones to pass through this part of the caves.  Glowing lichen
+grows on the fallen rocks, as well as the walls, floor, and ceiling, providing
+a soft light for the room.  The light readily shows that, while the cave
+ceiling is somewhat higher due to part of it falling in, it doesn't go
+anywhere and the minor cave-in has only served to provide obstructions along
+the cave path.
+"
 ""
 301596677 0
 11 5 0
@@ -2632,55 +2070,40 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 E
 "3 boulders"
 "The boulders seem to have fallen from the ceiling leaving behind slight rises
-
-up there in the space they vacated.  The boulders are the same dark stone that
-
-comprises the rest of the cave and, much as the rest of the cave, have patches
-
-of glowing lichen growing on them.
-
-"
+up there in the space they vacated.  The boulders are the same dark stone that
+comprises the rest of the cave and, much as the rest of the cave, have patches
+of glowing lichen growing on them.
+"
 A
 "get take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 ""
 ""
 "if( !is_exhausted( ch ))
-
-  act_tochar( #dodge, ch );
-
-continue;
-
-"
+  act_tochar( #dodge, ch );
+continue;
+"
 E
 "dodge"
 "You carefully weave your way around and over fallen boulders as you pass
-
-through the cave.
-
-"
+through the cave.
+"
 !
 3 0 12
 78 17 1509949540 -2 0
@@ -2692,22 +2115,14 @@ S
 #7545
 "A Glowing Tunnel"
 "Glowing greenish lichen on the walls of the cave depict a scene of natural
-
-disaster long since narrowly averted.  A cave-in at some point in the past has
-
-caused a rather large section of the roof and western wall to collapse across
-
-the path leaving a narrow opening at an angle leading away to the north.
-
-Additional cave debris appears to have fallen to the east as well but
-
-shouldn't be a problem here.  Fortunately, the cave-in appears to have
-
-happened long enough ago to ensure that the cave, having remained intact this
-
-long, is likely in no current peril of collapsing any further.
-
-"
+disaster long since narrowly averted.  A cave-in at some point in the past has
+caused a rather large section of the roof and western wall to collapse across
+the path leaving a narrow opening at an angle leading away to the north.
+Additional cave debris appears to have fallen to the east as well but
+shouldn't be a problem here.  Fortunately, the cave-in appears to have
+happened long enough ago to ensure that the cave, having remained intact this
+long, is likely in no current peril of collapsing any further.
+"
 ""
 301596677 0
 11 5 0
@@ -2722,49 +2137,37 @@ D1
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 E
 "debris 1 east"
 "The debris consist largely of stones measuring several feet across off to the
-
-east.
-
-"
+east.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 ""
 ""
 "if( !is_exhausted( ch ))
-
-  act_tochar( #duck, ch );
-
-continue;
-
-"
+  act_tochar( #duck, ch );
+continue;
+"
 E
 "duck"
 "You duck under the low, slanted roof over the northern passage.
-
-"
+"
 !
 3 0 1
 -1
@@ -2773,16 +2176,11 @@ S
 #7546
 "A Glowing Tunnel"
 "Patches of lichen growing on the ceiling, floor and walls of the cave provide
-
-just enough light to depict the cave's layout for you to see.  You are in a
-
-short east-west running tunnel with a break in the wall to the south where a
-
-junction tunnel once gaped but is now partially clogged by a minor cave-in
-
-some time in the distant past.
-
-"
+just enough light to depict the cave's layout for you to see.  You are in a
+short east-west running tunnel with a break in the wall to the south where a
+junction tunnel once gaped but is now partially clogged by a minor cave-in
+some time in the distant past.
+"
 ""
 301596677 0
 11 5 0
@@ -2801,42 +2199,32 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 ""
 ""
 "if( !is_exhausted( ch ))
-
-  act_tochar( #duck, ch );
-
-continue;
-
-"
+  act_tochar( #duck, ch );
+continue;
+"
 E
 "duck"
 "You duck under the half-fallen debris as you head south.
-
-"
+"
 !
 3 0 4
 78 17 1509949520 -2 0
@@ -2846,18 +2234,12 @@ S
 #7547
 "A Glowing Tunnel"
 "Small, glowing patches of lichen grow on the walls and floor of the cave
-
-casting a soft, greenish-yellow light about the room.  The light reveals that
-
-this cave was probably a dead-end up until relatively recently when some
-
-geological event crumbled a bit of northern wall revealing a jagged opening
-
-leading into another cave.  Bits of earthen debris are scattered around the
-
-narrow breach in the wall.
-
-"
+casting a soft, greenish-yellow light about the room.  The light reveals that
+this cave was probably a dead-end up until relatively recently when some
+geological event crumbled a bit of northern wall revealing a jagged opening
+leading into another cave.  Bits of earthen debris are scattered around the
+narrow breach in the wall.
+"
 ""
 301596677 0
 11 5 0
@@ -2872,51 +2254,38 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 E
 "1 north breech rubble"
 "The gap in the wall is wide enough for you to squeeze through if you do it
-
-side-ways but you'll have to be careful of the sharper edges on the rock at
-
-the crack.  The remains of the cave wall that used to fill the crack lays in a
-
-small mound at the base of the cleft.
-
-"
+side-ways but you'll have to be careful of the sharper edges on the rock at
+the crack.  The remains of the cave wall that used to fill the crack lays in a
+small mound at the base of the cleft.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 ""
 ""
 "act_tochar( #squeeze, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "squeeze"
 "You turn sideways to squeeze through the cleft in the wall.
-
-"
+"
 !
 3 0 1
 78 17 1509949520 -2 0
@@ -2927,22 +2296,14 @@ S
 #7548
 "A Glowing Tunnel"
 "A greenish lichen grows on the rough, stone walls of the tunnel and gives off a
-
-greenish-yellow light bathing the cave in a soft light.  The gentle light of
-
-the lichen displays a tunnel that rapidly narrows as it heads south.  Whatever
-
-force started to form the tunnel apparently ceased its work, leaving the tunnel
-
-to dwindle away to nearly nothing until, rather suddenly, a recent and jagged
-
-gap in the wall shows where it has crumbled away opening the tunnel into
-
-another tunnel.  To the north, the tunnel continues to widen until it merges
-
-with a crossing tunnel.
-
-"
+greenish-yellow light bathing the cave in a soft light.  The gentle light of
+the lichen displays a tunnel that rapidly narrows as it heads south.  Whatever
+force started to form the tunnel apparently ceased its work, leaving the tunnel
+to dwindle away to nearly nothing until, rather suddenly, a recent and jagged
+gap in the wall shows where it has crumbled away opening the tunnel into
+another tunnel.  To the north, the tunnel continues to widen until it merges
+with a crossing tunnel.
+"
 ""
 301596677 0
 11 5 0
@@ -2957,51 +2318,38 @@ D2
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 E
 "1 south breech rubble"
 "The gap in the wall is wide enough for you to squeeze through if you do it
-
-side-ways but you'll have to be careful of the sharper edges on the rock at
-
-the crack.  The remains of the cave wall that used to fill the crack lays in a
-
-small mound at the base of the cleft.
-
-"
+side-ways but you'll have to be careful of the sharper edges on the rock at
+the crack.  The remains of the cave wall that used to fill the crack lays in a
+small mound at the base of the cleft.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 ""
 ""
 "act_tochar( #squeeze, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "squeeze"
 "You turn sideways to squeeze through the cleft in the wall.
-
-"
+"
 !
 3 0 4
 78 17 1509949520 -2 0
@@ -3011,16 +2359,11 @@ S
 #7549
 "A Glowing Tunnel"
 "You are in a tunnel that runs generally east and west but which is broken by a
-
-wide hole showing a quickly narrowing tunnel running off to the south. 
-
-Glowing lichen nearly covers the northern wall of the tunnel and grows in
-
-patches on the ceiling and floor as well, all of it providing a soft light
-
-that gives you just enough light comfortably to see by.
-
-"
+wide hole showing a quickly narrowing tunnel running off to the south. 
+Glowing lichen nearly covers the northern wall of the tunnel and grows in
+patches on the ceiling and floor as well, all of it providing a soft light
+that gives you just enough light comfortably to see by.
+"
 ""
 301596677 0
 11 5 0
@@ -3039,25 +2382,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -3067,14 +2404,10 @@ S
 #7550
 "A Glowing Tunnel"
 "You are in a junction in the tunnels and caves where one tunnel terminates
-
-where it meets another.  Glowing patches of a thin lichen grow in profusion on
-
-the walls, floor and ceiling casting soft light everywhere.  Softly glowing
-
-tunnels stretch away to the north, west and south from this point.
-
-"
+where it meets another.  Glowing patches of a thin lichen grow in profusion on
+the walls, floor and ceiling casting soft light everywhere.  Softly glowing
+tunnels stretch away to the north, west and south from this point.
+"
 ""
 301596677 0
 11 5 0
@@ -3093,25 +2426,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -3120,14 +2447,10 @@ S
 #7551
 "A Glowing Tunnel"
 "Swathes of glowing greenish lichen grow in profusion along the flat surfaces
-
-of the cave walls casting a soft, greenish-yellow glow everywhere in the
-
-cave.  The tunnel itself curves here stretching away to the east and south
-
-from this point.
-
-"
+of the cave walls casting a soft, greenish-yellow glow everywhere in the
+cave.  The tunnel itself curves here stretching away to the east and south
+from this point.
+"
 ""
 301596677 0
 11 5 0
@@ -3142,25 +2465,19 @@ D2
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -3170,16 +2487,11 @@ S
 #7552
 "A Glowing Tunnel"
 "You are in a relatively straight tunnel running east-west with only minimal
-
-natural cave obstructions.  You are only forced to step around or over
-
-obstructions once in while to avoid them.  Patches of greenish lichen give off
-
-a soft glow that casts a gentle light throughout the area and provides only
-
-occasional shadows where the infrequent obstructions block their light.
-
-"
+natural cave obstructions.  You are only forced to step around or over
+obstructions once in while to avoid them.  Patches of greenish lichen give off
+a soft glow that casts a gentle light throughout the area and provides only
+occasional shadows where the infrequent obstructions block their light.
+"
 ""
 301596677 0
 11 5 0
@@ -3194,25 +2506,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -3221,16 +2527,11 @@ S
 #7553
 "A Glowing Tunnel"
 "A cleft in the southern wall is the only break in the relatively straight
-
-passage of the east-west running tunnel you are currently in.  Broad
-
-swatches of greenish lichen grow along the walls, ceiling and floor of the
-
-tunnel and in even greater profusion around the gap in the southern wall
-
-bathing the tunnel in a soft light.
-
-"
+passage of the east-west running tunnel you are currently in.  Broad
+swatches of greenish lichen grow along the walls, ceiling and floor of the
+tunnel and in even greater profusion around the gap in the southern wall
+bathing the tunnel in a soft light.
+"
 ""
 301596677 0
 11 5 0
@@ -3249,25 +2550,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -3276,12 +2571,9 @@ S
 #7554
 "A Glowing Tunnel"
 "The tunnel you are in runs a fairly straight path off to the west and east
-
-from here.  Patches of lichen line the walls, floor and ceiling casting a
-
-soft, greenish-yellow glow that suffuses the area.
-
-"
+from here.  Patches of lichen line the walls, floor and ceiling casting a
+soft, greenish-yellow glow that suffuses the area.
+"
 ""
 301596677 0
 11 5 0
@@ -3296,25 +2588,19 @@ D3
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -3323,12 +2609,9 @@ S
 #7555
 "A Glowing Tunnel"
 "The cave passage curves noticeably here and leads away east and south.  The
-
-glowing lichen seems to like it here in this corner passage.  A rather large
-
-patch grows in the curved northwestern wall providing ample light for the room.
-
-"
+glowing lichen seems to like it here in this corner passage.  A rather large
+patch grows in the curved northwestern wall providing ample light for the room.
+"
 ""
 301596677 0
 11 5 0
@@ -3343,25 +2626,19 @@ D2
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -3370,12 +2647,9 @@ S
 #7556
 "A Glowing Tunnel"
 "You are in an intersection of tunnels that lead away to the north, east, and
-
-south.  Patches of lichen grow on the walls, floor, and ceiling, emitting a
-
-greenish-yellow glow providing just enough light to see by.
-
-"
+south.  Patches of lichen grow on the walls, floor, and ceiling, emitting a
+greenish-yellow glow providing just enough light to see by.
+"
 ""
 301596677 0
 11 5 0
@@ -3394,25 +2668,19 @@ D2
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 2490 9 1509949540 3 0
@@ -3422,14 +2690,10 @@ S
 #7557
 "A Glowing Tunnel"
 "Swaths of glowing greenish lichen grow in profusion along the flat surfaces
-
-of the cave walls casting a soft, greenish-yellow glow everywhere in the
-
-cave.  The tunnel itself curves here stretching away to the east and north
-
-from this point.
-
-"
+of the cave walls casting a soft, greenish-yellow glow everywhere in the
+cave.  The tunnel itself curves here stretching away to the east and north
+from this point.
+"
 ""
 301596677 0
 11 5 0
@@ -3444,25 +2708,19 @@ D1
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -3471,16 +2729,11 @@ S
 #7558
 "A Glowing Cul-de-sac"
 "You are in a small cul-de-sac within the cave system.  The remains of a small
-
-stalactite hangs from the ceiling, its tip broken off by some passerby. 
-
-Directly beneath the stalactite's remains sits a shallow pool of clear water. 
-
-The glowing moss covering the walls and ceiling grows in even greater
-
-profusion around the edges of the small pool of water.
-
-"
+stalactite hangs from the ceiling, its tip broken off by some passerby. 
+Directly beneath the stalactite's remains sits a shallow pool of clear water. 
+The glowing moss covering the walls and ceiling grows in even greater
+profusion around the edges of the small pool of water.
+"
 ""
 301596677 0
 11 5 0
@@ -3491,55 +2744,40 @@ D1
 E
 "lichen"
 "The glowing lichen seems to grow best around the shallow pool of water on the
-
-ground where it can best find the nutrients and minerals that will help it
-
-thrive.  The added volume of moss around the water provides additional light
-
-from there as well throwing eerie shadows on the ceiling that shift with your
-
-every move.
-
-"
+ground where it can best find the nutrients and minerals that will help it
+thrive.  The added volume of moss around the water provides additional light
+from there as well throwing eerie shadows on the ceiling that shift with your
+every move.
+"
 E
 "3 stalactite"
 "The remains of the stalactite are little more than a small, jagged-edged nub
-
-since its tip has been broken off.  the small size indicates that the
-
-stalactite, itself, probably wasn't that old compared the the rest of the
-
-well-rounded features of the tunnels.
-
-"
+since its tip has been broken off.  the small size indicates that the
+stalactite, itself, probably wasn't that old compared the the rest of the
+well-rounded features of the tunnels.
+"
 A
 "1 get 2 take"
 "lichen"
 "continue;
-
-"
+"
 E
 "no"
 "You arefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 "act_tochar( #no, ch );"
 ""
 "continue;
-
-"
+"
 E
 "no"
 "No description.
-
-"
+"
 !
 0 0 0
 1519 17 1509949540 -2 0
@@ -3549,20 +2787,13 @@ S
 #7559
 "A Glowing Cul-de-sac"
 "This cave flares outward forming a narrow ledge around a central pool set in
-
-the floor.  The cave, itself, is relatively round in nature with a somewhat
-
-flatter ceiling floor.  Its only break in relative uniformity is a gap in the
-
-northern wall where you can just make out a cave tunnel leading away.  Swathes
-
-of lichen grow along the walls and ceiling of the cave but form a virtual
-
-carpet around the rim of the pool.  The lichen is giving off a soft,
-
-greenish-yellow glow providing ample light for you to see by here.
-
-"
+the floor.  The cave, itself, is relatively round in nature with a somewhat
+flatter ceiling floor.  Its only break in relative uniformity is a gap in the
+northern wall where you can just make out a cave tunnel leading away.  Swathes
+of lichen grow along the walls and ceiling of the cave but form a virtual
+carpet around the rim of the pool.  The lichen is giving off a soft,
+greenish-yellow glow providing ample light for you to see by here.
+"
 ""
 301596677 0
 11 5 0
@@ -3573,25 +2804,19 @@ D0
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 1519 17 1509949540 -2 0
@@ -3603,20 +2828,13 @@ S
 #7560
 "A Glowing Cul-de-sac"
 "A few finger-thick tendrils of roots dangle several inches from the ceiling of
-
-the cave, tiny reminders of the giant shuvana trees high overhead whose roots
-
-delve even this deep into the earth.  A circular pool of water rests in a
-
-shallow depression in the cave floor, fed by water dripping down off the roots
-
-overhead.  Lining the pool in a nearly solid ring of light and growing in
-
-sporadic patches along the walls is the lichen seen everywhere else in these
-
-caves.
-
-"
+the cave, tiny reminders of the giant shuvana trees high overhead whose roots
+delve even this deep into the earth.  A circular pool of water rests in a
+shallow depression in the cave floor, fed by water dripping down off the roots
+overhead.  Lining the pool in a nearly solid ring of light and growing in
+sporadic patches along the walls is the lichen seen everywhere else in these
+caves.
+"
 ""
 301596677 0
 11 5 0
@@ -3627,36 +2845,26 @@ D1
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 E
 "1 up 4 roots"
 "The roots press through the solid stone of the cave ceiling and dangle a few
-
-inches down from it.  Most of the roots are an inch or two thick but quickly
-
-taper off to thin tendrils.  Water, seeping down through the earth, follows
-
-along the root and eventually drops into the pool below.
-
-"
+inches down from it.  Most of the roots are an inch or two thick but quickly
+taper off to thin tendrils.  Water, seeping down through the earth, follows
+along the root and eventually drops into the pool below.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 1519 17 1509949540 -2 0
@@ -3668,22 +2876,14 @@ S
 #7561
 "A Glowing Cul-de-sac"
 "The tunnel coming in from the north terminates rather suddenly at an
-
-unexpected sight here in this cul-de-sac.  Porous rock along the top of the
-
-southern wall has allowed water to slowly seep through over a long period of
-
-time and the southern wall has slowly changed to accommodate the water running
-
-over it as well as the sediment carried with it.  The southern wall is now
-
-covered in irregular clusters and rough knobs of crystalline formations that
-
-sparkle in the greenish-yellow glow of the glowing lichen on the walls as
-
-water continues to slowly seep over the wall.
-
-"
+unexpected sight here in this cul-de-sac.  Porous rock along the top of the
+southern wall has allowed water to slowly seep through over a long period of
+time and the southern wall has slowly changed to accommodate the water running
+over it as well as the sediment carried with it.  The southern wall is now
+covered in irregular clusters and rough knobs of crystalline formations that
+sparkle in the greenish-yellow glow of the glowing lichen on the walls as
+water continues to slowly seep over the wall.
+"
 ""
 301596677 0
 11 5 0
@@ -3694,53 +2894,39 @@ D0
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 E
 "3 crystals crystalline 1 south wall 4 knobs 4 formations"
 "The crystalline formations are often called cave coral for their similarity in
-
-appearance to coral found in the sea.  The coral here is still young in
-
-geological terms and its unlikely you'd be able to acquire any significant
-
-amount by scraping it away from the wall.  Attempts to do so would likely just
-
-cause the minerals to break up into a damp slurry of minerals.
-
-"
+appearance to coral found in the sea.  The coral here is still young in
+geological terms and its unlikely you'd be able to acquire any significant
+amount by scraping it away from the wall.  Attempts to do so would likely just
+cause the minerals to break up into a damp slurry of minerals.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 "get take"
 "3 clusters 3 knobs 3 coral 3 crystalline 4 cormations"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You try to scrape away some of the crystalline formations only to have them
-
-crumble away to a slurry that quickly slips between your fingers.
-
-"
+crumble away to a slurry that quickly slips between your fingers.
+"
 !
 0 0 0
 1519 17 1509949540 -2 0
@@ -3752,25 +2938,16 @@ S
 #7562
 "A Barely Glowing Cave"
 "The room is little more than a widened crack in the cave system.  The crack
-
-leads off to the south but narrows as it does so.  A small smattering of
-
-glowing, greenish lichen lines the crack leading away to the south and the
-
-glow seems to intensify a bit in that general direction.  An opening in the
-
-floor seems to lead off into further darkness.  Fortunately jagged stone
-
-protrusions from the cave walls provide ample hand and foot holds to allow you
-
-to descend into the darkness if you choose to.
-
-"
+leads off to the south but narrows as it does so.  A small smattering of
+glowing, greenish lichen lines the crack leading away to the south and the
+glow seems to intensify a bit in that general direction.  An opening in the
+floor seems to lead off into further darkness.  Fortunately jagged stone
+protrusions from the cave walls provide ample hand and foot holds to allow you
+to descend into the darkness if you choose to.
+"
 "South works to slip through the crack in the wall to another room
-
-East Cave
-
-"
+East Cave
+"
 301596685 0
 11 5 0
 D5
@@ -3780,122 +2957,84 @@ D5
 E
 "lichen"
 "There is hardly any lichen here at all and what little there is grows in small
-
-patches on the lip of the southern facing side of the crack.  There is just
-
-enough lichen that the glow it provides lights just enough of the cave here to
-
-make out general shapes.
-
-"
+patches on the lip of the southern facing side of the crack.  There is just
+enough lichen that the glow it provides lights just enough of the cave here to
+make out general shapes.
+"
 E
 "crack 1 south"
 "The crack widens a bit as it leaves the cave.  Where there are only a few bits
-
-of lichen on this side, it glows much more strongly on the far side of the
-
-crack, indicating significantly more lichen on the other side.
-
-"
+of lichen on this side, it glows much more strongly on the far side of the
+crack, indicating significantly more lichen on the other side.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 "1 south"
 ""
 "if( is_fighting( ch ) ) {
-
-  act_tochar( \"You can't do that while fighting\", ch );
-
-  end;
-
-  }
-
-act_tochar( #crack, ch );
-
-act_notchar( #rcrack, ch );
-
-transfer( ch, find_room( 7536 ) );
-
-act_notchar( #arrive, ch );
-
-loop( followers ) {
-
-  act_tochar( #follow, rch );
-
-  act_notchar( #rcrack, rch );
-
-  transfer( rch, find_room( 7536 ) );
-
-  act_notchar( #arrive, rch );
-
-  }
-
-"
+  act_tochar( \"You can't do that while fighting\", ch );
+  end;
+  }
+act_tochar( #crack, ch );
+act_notchar( #rcrack, ch );
+transfer( ch, find_room( 7536 ) );
+act_notchar( #arrive, ch );
+loop( followers ) {
+  act_tochar( #follow, rch );
+  act_notchar( #rcrack, rch );
+  transfer( rch, find_room( 7536 ) );
+  act_notchar( #arrive, rch );
+  }
+"
 E
 "crack"
 "You head south through the crack in the wall.
-
-"
+"
 E
 "rcrack"
 "$n heads south through the crack in the wall.
-
-"
+"
 E
 "arrive"
 "You follow your group leader through the crack in the south wall.
-
-"
+"
 E
 "follow"
 "You follow your group leader south.
-
-"
+"
 !
 0 0 0
 A
 "enter go"
 "crack 1 south"
 "acode( room, 2 );
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( \"You use the stone protrustions to climb down.\", ch );
-
-  continue;
-
-  }
-
-else {
-
-  act_tochar( \"You aren't skilled enough to safely climb down.\", ch );
-
-  act_tochar( \"Perhaps you'd better go learn to climb better first\", ch );
-
-  }
-
-"
+  act_tochar( \"You use the stone protrustions to climb down.\", ch );
+  continue;
+  }
+else {
+  act_tochar( \"You aren't skilled enough to safely climb down.\", ch );
+  act_tochar( \"Perhaps you'd better go learn to climb better first\", ch );
+  }
+"
 !
 3 0 32
 -1
@@ -3904,27 +3043,17 @@ S
 #7563
 "A Barely Glowing Cave"
 "You are in what almost appears to be a large bubble in the earth.  A naturally
-
-domed ceiling and smooth cave walls, albeit odd to find, appear as if they are
-
-a completely natural formation.  Two relatively recent changes to the cave,
-
-speaking in geological terms where centuries ago would be recent, are readily
-
-apparent from here.  The first is a section of the flooring that has crumbled
-
-away to reveal a short drop into another, much darker, cave below this one. 
-
-The second is a jagged crack in the southern wall that emits a stronger
-
-greenish glow than the glow provided by the lichen on the walls of this cave.
-
-"
+domed ceiling and smooth cave walls, albeit odd to find, appear as if they are
+a completely natural formation.  Two relatively recent changes to the cave,
+speaking in geological terms where centuries ago would be recent, are readily
+apparent from here.  The first is a section of the flooring that has crumbled
+away to reveal a short drop into another, much darker, cave below this one. 
+The second is a jagged crack in the southern wall that emits a stronger
+greenish glow than the glow provided by the lichen on the walls of this cave.
+"
 "South works to slip through the crack in the wall to another room
-
-West Cave
-
-"
+West Cave
+"
 301596685 0
 11 5 0
 D5
@@ -3934,127 +3063,91 @@ D5
 E
 "lichen"
 "The glowing lichen grows in a few small patches around the cave but seems
-
-primarily focused around the opening of the jagged crack in the southern
-
-wall.  The soft, greenish-yellow glow privded by the lichen offers just enough
-
-light to see the room by.
-
-"
+primarily focused around the opening of the jagged crack in the southern
+wall.  The soft, greenish-yellow glow privded by the lichen offers just enough
+light to see the room by.
+"
 E
 "crack 1 south"
 "The crack widens a bit as it leaves the cave.  Where there are only a few bits
-
-of lichen on this side, it glows much more strongly on the far side of the
-
-crack, indicating significantly more lichen on the other side.
-
-"
+of lichen on this side, it glows much more strongly on the far side of the
+crack, indicating significantly more lichen on the other side.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 "1 south"
 ""
 "if( is_fighting( ch ) ) {
-
-  act_tochar( \"You can't do that while fighting\", ch );
-
-  end;
-
-  }
-
-act_tochar( #crack, ch );
-
-act_notchar( #rcrack, ch );
-
-transfer( ch, find_room( 7537 ) );
-
-act_notchar( #arrive, ch );
-
-loop( followers ) {
-
-  act_tochar( #follow, rch );
-
-  act_notchar( #rcrack, rch );
-
-  transfer( rch, find_room( 7537 ) );
-
-  act_notchar( #arrive, rch );
-
-  }
-
-"
+  act_tochar( \"You can't do that while fighting\", ch );
+  end;
+  }
+act_tochar( #crack, ch );
+act_notchar( #rcrack, ch );
+transfer( ch, find_room( 7537 ) );
+act_notchar( #arrive, ch );
+loop( followers ) {
+  act_tochar( #follow, rch );
+  act_notchar( #rcrack, rch );
+  transfer( rch, find_room( 7537 ) );
+  act_notchar( #arrive, rch );
+  }
+"
 E
 "crack"
 "You leave south.
-
-"
+"
 E
 "rcrack"
 "$n leaves south.
-
-"
+"
 E
 "arrive"
 "$n steps out of the shadows.
-
-"
+"
 E
 "follow"
 "You follow your group leader south.
-
-"
+"
 !
 0 0 0
 A
 "enter go"
 "1 south crack"
 "acode( room, 2 );
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "act_tochar( #splash, ch );
-
-act_notchar( #rsplash, ch );
-
-continue;
-
-"
+act_notchar( #rsplash, ch );
+continue;
+"
 E
 "splash"
 "@BYou drop down only to land with a loud @Csplash@B in a shallow pool!@n
-
-"
+"
 E
 "rsplash"
 "$n lands with a @Csplash@n in the pool in one corner of the cave.
-
-"
+"
 E
 "leaves"
 "$n disappears down through the hole in the floor.
-
-"
+"
 !
 3 0 32
 -1
@@ -4063,20 +3156,13 @@ S
 #7564
 "A Glowing Cul-de-sac"
 "The tunnel you are in dead-ends very quickly to the west and only seems to run
-
-a short way to the east before intersecting another tunnel.  A very narrow
-
-crack in the ceiling right up against the western edge of the cul-de-sac drips
-
-a slow but steady flow of water down the wall.  The western wall has already
-
-started to collect sediment and has small patches that are starting to appear
-
-smooth and flowing.  The water collects at the bottom in a shallow pool rimmed
-
-by patches of glowing green lichen.
-
-"
+a short way to the east before intersecting another tunnel.  A very narrow
+crack in the ceiling right up against the western edge of the cul-de-sac drips
+a slow but steady flow of water down the wall.  The western wall has already
+started to collect sediment and has small patches that are starting to appear
+smooth and flowing.  The water collects at the bottom in a shallow pool rimmed
+by patches of glowing green lichen.
+"
 ""
 301596677 0
 11 5 0
@@ -4087,27 +3173,20 @@ D1
 E
 "lichen"
 "The lichen grows in small patches about the cul-de-sac but primarily seems to
-
-grow around the pool of water.  The lichen gives of a soft, greenish-yellow
-
-glow that provides just enough light to see by in the cul-de-sac.
-
-"
+grow around the pool of water.  The lichen gives of a soft, greenish-yellow
+glow that provides just enough light to see by in the cul-de-sac.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 1519 17 1509949540 -2 0
@@ -4119,20 +3198,13 @@ S
 #7565
 "A Glowing Cul-de-sac"
 "You are in the dead end of a cave system whose only exit appears to be a
-
-tunnel leading away to the east.  Hundreds of tiny nubs, the beginning
-
-formations of many stalactites, dot the ceiling and periodically a small
-
-droplet of water builds up enough to fall from one of them into a pool that
-
-nearly fills the floor of this small cul-de-sac.  The walls, particularly
-
-along the rim of the shallow pool of water that serves as a floor, are covered
-
-in a greenish lichen that is emitting a soft, greenish-yellow light.
-
-"
+tunnel leading away to the east.  Hundreds of tiny nubs, the beginning
+formations of many stalactites, dot the ceiling and periodically a small
+droplet of water builds up enough to fall from one of them into a pool that
+nearly fills the floor of this small cul-de-sac.  The walls, particularly
+along the rim of the shallow pool of water that serves as a floor, are covered
+in a greenish lichen that is emitting a soft, greenish-yellow light.
+"
 ""
 301596677 0
 11 5 0
@@ -4143,40 +3215,28 @@ D1
 E
 "lichen"
 "The lichen grows in patches all along the walls but forms a nearly unbroken
-
-ring just above the waterline of the pool on the floor where it feeds off the
-
-nutrients carried in by the water.
-
-"
+ring just above the waterline of the pool on the floor where it feeds off the
+nutrients carried in by the water.
+"
 E
 "1 up ceiling roof 3 stalactites"
 "The tiny nubs of sediment look almost like a pebbled road with the dots spread
-
-out across the ceiling.  Water must be in abundance somewhere overhead and is
-
-slowly trickling down through the earth before seeping into this cave.  In a
-
-few millenia, provided nothing happens to the cul-de-sac, there will likely be
-
-quite a few spectacular stalactites hanging from the ceiling here.
-
-"
+out across the ceiling.  Water must be in abundance somewhere overhead and is
+slowly trickling down through the earth before seeping into this cave.  In a
+few millenia, provided nothing happens to the cul-de-sac, there will likely be
+quite a few spectacular stalactites hanging from the ceiling here.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 1519 17 1509949540 -2 0
@@ -4188,20 +3248,13 @@ S
 #7566
 "A Glowing Cul-de-sac"
 "A small area of water, fed perhaps by the trickle of some small, underground
-
-stream, collects in a small pool in one corner of the cave.  Green, softly
-
-glowing lichen grows in broad patches throughout the cave but grows most
-
-prevalently about the rim of the pool where it can collect nutrients from the
-
-water.  The soft, greenish-yellow light cast by the lichen is reflected in the
-
-slowly eddying water where the reflections cause the slightest sources of
-
-shadow to flicker and dance about the room playfully.
-
-"
+stream, collects in a small pool in one corner of the cave.  Green, softly
+glowing lichen grows in broad patches throughout the cave but grows most
+prevalently about the rim of the pool where it can collect nutrients from the
+water.  The soft, greenish-yellow light cast by the lichen is reflected in the
+slowly eddying water where the reflections cause the slightest sources of
+shadow to flicker and dance about the room playfully.
+"
 ""
 301596677 0
 11 5 0
@@ -4213,34 +3266,26 @@ A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 1519 17 1509949540 -2 0
@@ -4252,23 +3297,15 @@ S
 #7567
 "A Barely Glowing Tunnel"
 "Sparse patches of lichen lining the northern rim of the tunnel leading into
-
-this cave yield a faint greenish-yellow glow that barely provides enough light
-
-to see by.  At first glance it would be very easy to mistake this tunnel as a
-
-dead-end for the tunnel leading in from the north but a more careful
-
-examination shows that the shadows along the base of the southern wall aren't
-
-shadows at all but a hole in the cave floor.  The tunnel continues on its way
-
-through the hole heading more down then south from that point on.
-
-"
+this cave yield a faint greenish-yellow glow that barely provides enough light
+to see by.  At first glance it would be very easy to mistake this tunnel as a
+dead-end for the tunnel leading in from the north but a more careful
+examination shows that the shadows along the base of the southern wall aren't
+shadows at all but a hole in the cave floor.  The tunnel continues on its way
+through the hole heading more down then south from that point on.
+"
 "You can go Down here.
-
-"
+"
 301596685 0
 11 5 0
 D0
@@ -4282,25 +3319,19 @@ D5
 E
 "lichen"
 "The lichen grows in profusion casting a gentle greenish-yellow glow into every
-
-nook and cranny of the caves.
-
-"
+nook and cranny of the caves.
+"
 A
 "1 get 2 take"
 "2 lichen"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "You carefully scrape away some of the lichen only to find that it is small and
-
-delicate.  As soon as the lichen scrapes away from the rock, the light fades
-
-and the lichen crumbles to little more than useless dust.
-
-"
+delicate.  As soon as the lichen scrapes away from the rock, the light fades
+and the lichen crumbles to little more than useless dust.
+"
 !
 0 0 0
 -1
@@ -4309,25 +3340,16 @@ S
 #7568
 "A Cozy Cave"
 "The cave walls have been carefully sculpted to form a comfortable room
-
-measuring just over ten feet long in each dimension.  A simple pallet of straw
-
-rests in one corner acting as both a place for repose and for calm
-
-meditations.  Depressions set in both the northern and southern walls hold
-
-magical balls of light that infuse the room with a warm, white glow.  Breaking
-
-up the natural colors of the cavern walls, someone has taken the time to
-
-carefully apply natural dyes to the wall to create a simple depiction of the
-
-shuvana trees and the Vaasa somewhere overhead.
-
-"
+measuring just over ten feet long in each dimension.  A simple pallet of straw
+rests in one corner acting as both a place for repose and for calm
+meditations.  Depressions set in both the northern and southern walls hold
+magical balls of light that infuse the room with a warm, white glow.  Breaking
+up the natural colors of the cavern walls, someone has taken the time to
+carefully apply natural dyes to the wall to create a simple depiction of the
+shuvana trees and the Vaasa somewhere overhead.
+"
 "Add level \"guessing\" from U'lu and where to hunt.
-
-"
+"
 301600782 0
 11 6 0
 D3
@@ -4337,61 +3359,43 @@ D3
 E
 "shuvana 4 trees 3 dyes 3 walls depiction"
 "The images are a simple but elegant rendition of the great shuvana trees and
-
-woodland scenes from the great forest high overhead.  The dyes are made from
-
-berries and other natural plant-derived elements and are vibrant, giving the
-
-images an almost realistic look in spite of their simple nature.
-
-"
+woodland scenes from the great forest high overhead.  The dyes are made from
+berries and other natural plant-derived elements and are vibrant, giving the
+images an almost realistic look in spite of their simple nature.
+"
 E
 "4 balls light"
 "The white balls of light, like so many others seen throughout the realms, fill
-
-the room with a soft, white light.  They appear to be floating just off the
-
-stone basin of the depressions in either wall.
-
-"
+the room with a soft, white light.  They appear to be floating just off the
+stone basin of the depressions in either wall.
+"
 A
 "get take"
 "ball light"
 "act_tochar( #no, ch );
-
-"
+"
 E
 "no"
 "A magical force prevents you from actually being able to reach the balls of
-
-light.
-
-"
+light.
+"
 !
 0 0 0
 A
 "2 custom"
 "3 ball"
 "if( mob_in_room( 2428, room ) ) {
-
-  if( has_obj( 37, ch ) ) {
-
-    act_room( #summon, ch );
-
-    }
-
-  }
-
-continue;
-
-"
+  if( has_obj( 37, ch ) ) {
+    act_room( #summon, ch );
+    }
+  }
+continue;
+"
 E
 "summon"
 "$N casts create light.
-
-A green ball of light appears in $N's hand.
-
-"
+A green ball of light appears in $N's hand.
+"
 !
 0 0 0
 2479 9 1509949540 3 0
@@ -4403,14 +3407,10 @@ S
 #7569
 "A Narrow Cave Passage"
 "You are in a narrow cave passage littered with large, jagged rocks and
-
-protrusions.  The cave bends and contorts its way east and south out of
-
-sight.  Overhead is a hole in the ceiling that may be reachable if you use
-
-some of the jagged protrusions from the wall for hand and foot-holds.
-
-"
+protrusions.  The cave bends and contorts its way east and south out of
+sight.  Overhead is a hole in the ceiling that may be reachable if you use
+some of the jagged protrusions from the wall for hand and foot-holds.
+"
 ""
 301596676 0
 11 5 0
@@ -4434,18 +3434,12 @@ S
 #7570
 "A Dead-end Tunnel"
 "You are in a dead-end tunnel of the cave system that leads away to the south. 
-
-Jagged stone rubble, dislodged from further up, indicates that there may be
-
-another passage above you somewhere in the dark confines of the ceiling but
-
-you'd need to climb up there to see.  Fortunately, there are ample hand and
-
-foot-holds among the sharp, protruding rocks of the cave that would allow you
-
-easy passage to discover if there is another passage up there.
-
-"
+Jagged stone rubble, dislodged from further up, indicates that there may be
+another passage above you somewhere in the dark confines of the ceiling but
+you'd need to climb up there to see.  Fortunately, there are ample hand and
+foot-holds among the sharp, protruding rocks of the cave that would allow you
+easy passage to discover if there is another passage up there.
+"
 ""
 301596684 0
 11 5 0
@@ -4461,24 +3455,15 @@ A
 ""
 ""
 "if( find_skill( ch, climb) > 1 ) {
-
-  act_tochar( \"You use the protruding stones to climb up.\", ch );
-
-  continue;
-
-  }
-
-else {
-
-  act_tochar( \"You aren't skilled enough to climb these rocks.\", ch );
-
-  act_tochar( \"Perhaps you'd better go learn to climb better first\", ch );
-
-  end;
-
-  }
-
-"
+  act_tochar( \"You use the protruding stones to climb up.\", ch );
+  continue;
+  }
+else {
+  act_tochar( \"You aren't skilled enough to climb these rocks.\", ch );
+  act_tochar( \"Perhaps you'd better go learn to climb better first\", ch );
+  end;
+  }
+"
 !
 3 0 16
 -1
@@ -4487,18 +3472,12 @@ S
 #7571
 "A Water-rounded Cave"
 "You are in a well-rounded cave that appears to have once held a fair amount of
-
-water.  The only remaining signs of the water are the smoothness with which
-
-the walls are rounded and a shallow pool on the cave floor near one wall. 
-
-Above the pool, a hole in the cave ceiling allows access to a cave above this
-
-one.  To the west, the once smooth wall has a jagged hole where someone or
-
-something broke through, allowing access to an adjacent tunnel.
-
-"
+water.  The only remaining signs of the water are the smoothness with which
+the walls are rounded and a shallow pool on the cave floor near one wall. 
+Above the pool, a hole in the cave ceiling allows access to a cave above this
+one.  To the west, the once smooth wall has a jagged hole where someone or
+something broke through, allowing access to an adjacent tunnel.
+"
 ""
 301596684 0
 11 5 0
@@ -4517,18 +3496,12 @@ S
 #7572
 "An Angled Passage"
 "The canted cave tunnel angles upwards as it heads north and downwards as it
-
-heads south, creating a connection between two separate cavern systems.  The
-
-connecting point where the upper, northern edge meets another cave narrows
-
-considerably offering only a spare entrance to that other system.  Bits of
-
-debris, stone dust and cave pebbles primarily, have sifted down from the upper
-
-cavern to find a resting place at various points on the angled floor.
-
-"
+heads south, creating a connection between two separate cavern systems.  The
+connecting point where the upper, northern edge meets another cave narrows
+considerably offering only a spare entrance to that other system.  Bits of
+debris, stone dust and cave pebbles primarily, have sifted down from the upper
+cavern to find a resting place at various points on the angled floor.
+"
 ""
 301596676 0
 11 5 0
@@ -4543,10 +3516,8 @@ D4
 E
 "debris"
 "A few cave pebbles and a lot of dust from stones long since crumbled by time
-
-litter the floor.
-
-"
+litter the floor.
+"
 78 17 1509949490 -2 0
 -1
 S
@@ -4554,16 +3525,11 @@ S
 #7573
 "An Arcing Passage"
 "The dry, stone walls of the cave passage arc here causing a shift in the
-
-general direction of the tunnel.  The tunnel heads away both north and east
-
-from this point.  The air seems seems rather older and, perhaps, mustier to
-
-the east with slightly fresher air perhaps indicating that the northern route
-
-is a more direct route to the surface.
-
-"
+general direction of the tunnel.  The tunnel heads away both north and east
+from this point.  The air seems seems rather older and, perhaps, mustier to
+the east with slightly fresher air perhaps indicating that the northern route
+is a more direct route to the surface.
+"
 ""
 301596676 0
 11 5 0
@@ -4581,20 +3547,13 @@ S
 #7574
 "A Cave Passage"
 "Stalactites and stalagmites dot the floor and ceiling of the passage, growing
-
-in size as the passage comes closer to a merger with another, southern
-
-passage.  While the main passage, running east-west, is readily traversable by
-
-stepping around the smaller stone formations, the adjoining southern passage
-
-is almost completely blocked by large, thick natural columns of stone.  If not
-
-for the fact that someone, or something, had broken several of the columns to
-
-provide a passageway, the southern passage would be completely blocked.
-
-"
+in size as the passage comes closer to a merger with another, southern
+passage.  While the main passage, running east-west, is readily traversable by
+stepping around the smaller stone formations, the adjoining southern passage
+is almost completely blocked by large, thick natural columns of stone.  If not
+for the fact that someone, or something, had broken several of the columns to
+provide a passageway, the southern passage would be completely blocked.
+"
 ""
 301596676 0
 11 5 0
@@ -4613,32 +3572,22 @@ D3
 E
 "6 stalactites"
 "Stalactites are formations of stone sediment created when dripping water
-
-deposits the sediment over a long period of time.  The sediment collects until
-
-it forms a cone-shaped bit of stone.  The bigger the stalactite the older it
-
-is.
-
-"
+deposits the sediment over a long period of time.  The sediment collects until
+it forms a cone-shaped bit of stone.  The bigger the stalactite the older it
+is.
+"
 E
 "6 stalagmites"
 "Stalagmites are formations of stone sediment created when dripping water
-
-deposits the sediment over a long period of time.  The sediment collects where
-
-the water hits the ground until it forms an inverted cone-shaped bit of
-
-stone.  The bigger the stalagmite the older it is.
-
-"
+deposits the sediment over a long period of time.  The sediment collects where
+the water hits the ground until it forms an inverted cone-shaped bit of
+stone.  The bigger the stalagmite the older it is.
+"
 E
 "1 south 3 blocked blockage"
 "The southern passage would be completely blocked by the large stone columns if
-
-someone hadn't broken several columns to create a passage through the area.
-
-"
+someone hadn't broken several columns to create a passage through the area.
+"
 78 17 1509949470 -2 0
 -1
 S
@@ -4646,22 +3595,14 @@ S
 #7575
 "A Crowded Passage"
 "The room is a veritable garden of rock structures with stalagmites and
-
-stalactites growing in profusion, many growing together to form columns. 
-
-There are so many, in fact, that at one point the passage would be unpassable
-
-were it not for the fact that someone, or something, has crumbled the
-
-midsection of a handful of the columns to provide enough passageway for even
-
-an ent to squeeze through.  At some point, the room must have been awash with
-
-the constant drip of water carrying the sediment that made all these cave
-
-structures, but that time is long past and the cave is bone dry these days.
-
-"
+stalactites growing in profusion, many growing together to form columns. 
+There are so many, in fact, that at one point the passage would be unpassable
+were it not for the fact that someone, or something, has crumbled the
+midsection of a handful of the columns to provide enough passageway for even
+an ent to squeeze through.  At some point, the room must have been awash with
+the constant drip of water carrying the sediment that made all these cave
+structures, but that time is long past and the cave is bone dry these days.
+"
 ""
 301596676 0
 11 5 0
@@ -4676,20 +3617,13 @@ D3
 E
 "3 stalactites stalagmites columns rock crumbled"
 "The cave structures are millenia old and large enough to show that there was a
-
-lot of water activity here at one point.  The broken ones are not the largest
-
-but still of a size to indicate that someone, or something, put a great deal
-
-of effort into the task of destroying sections of them to create a less
-
-cramped passageway.  Before they were crumbled, at best a frail gnome might
-
-have passed through but not much more.  Now that the way is opened, even an
-
-ent could pass through although it would still be a little cramped for them.
-
-"
+lot of water activity here at one point.  The broken ones are not the largest
+but still of a size to indicate that someone, or something, put a great deal
+of effort into the task of destroying sections of them to create a less
+cramped passageway.  Before they were crumbled, at best a frail gnome might
+have passed through but not much more.  Now that the way is opened, even an
+ent could pass through although it would still be a little cramped for them.
+"
 78 17 1509949490 -2 0
 78 17 1509949490 -2 0
 -1
@@ -4698,12 +3632,9 @@ S
 #7576
 "A Winding Cave Passage"
 "The cave passage begins to arc upward slightly before tilting back down as it
-
-leaves both west and north.  The arc in the floor appears to be nothing more
-
-than a natural rise in the hard stone of the cave floor.
-
-"
+leaves both west and north.  The arc in the floor appears to be nothing more
+than a natural rise in the hard stone of the cave floor.
+"
 ""
 301596676 0
 11 5 0
@@ -4721,14 +3652,10 @@ S
 #7577
 "A Split in the Passage"
 "The passage from the north comes to this point then forks with trails leading
-
-away to the west and south.  Neither path shows any signs of being the main
-
-passage as both veer off from the main course and are roughly similar in size
-
-and shape.
-
-"
+away to the west and south.  Neither path shows any signs of being the main
+passage as both veer off from the main course and are roughly similar in size
+and shape.
+"
 ""
 301596676 0
 11 5 0
@@ -4750,12 +3677,9 @@ S
 #7578
 "A Cave Passage"
 "You are in a cave passage deep inside the earth surrounded by timeworn stones
-
-that form the ceiling, walls and floor.  The passage narrows a bit before
-
-widening as it heads off to both the north and east.
-
-"
+that form the ceiling, walls and floor.  The passage narrows a bit before
+widening as it heads off to both the north and east.
+"
 ""
 301596676 0
 11 5 0
@@ -4773,14 +3697,10 @@ S
 #7579
 "A Split in the Passage"
 "The passage from the north comes to this point then forks with trails leading
-
-away to the south and east.  Neither path shows any signs of being the main
-
-passage as both veer off from the main course and are roughly similar in size
-
-and shape.
-
-"
+away to the south and east.  Neither path shows any signs of being the main
+passage as both veer off from the main course and are roughly similar in size
+and shape.
+"
 ""
 301596676 0
 11 5 0
@@ -4802,12 +3722,9 @@ S
 #7580
 "A Turn in the Cave Passage"
 "The timeworn cave passage shifts direction subtly at first then not so subtly
-
-as it forms a sudden and nearly ninety degree turn.  The passage runs away
-
-east and south off into the deeper darkness of empty caves.
-
-"
+as it forms a sudden and nearly ninety degree turn.  The passage runs away
+east and south off into the deeper darkness of empty caves.
+"
 ""
 301596676 0
 11 5 0
@@ -4825,14 +3742,10 @@ S
 #7581
 "A Cave Passage"
 "The cave passage has been smoothed by the inevitable force of time and erosion,
-
-wearing its rough edges away.  While the passage isn't perfectly straight and
-
-shifts a bit in places, it remains fairly consistent in its generally east-west
-
-path.
-
-"
+wearing its rough edges away.  While the passage isn't perfectly straight and
+shifts a bit in places, it remains fairly consistent in its generally east-west
+path.
+"
 ""
 301596676 0
 11 5 0
@@ -4850,14 +3763,10 @@ S
 #7582
 "A Cave Passage"
 "The passage walls are relatively smooth for a dark cave deep in the earth. 
-
-Not so smooth as, say, carefully cut stone but as smooth as you
-
-could expect naturally time-worn stone to be.  The cave passage runs
-
-generally east-west.
-
-"
+Not so smooth as, say, carefully cut stone but as smooth as you
+could expect naturally time-worn stone to be.  The cave passage runs
+generally east-west.
+"
 ""
 301596676 0
 11 5 0
@@ -4875,14 +3784,10 @@ S
 #7583
 "A Turn in the Cave Passage"
 "The passage arcs as it comes through this point heading away south and west. 
-
-As the passage continues south it appears to become rougher and more cluttered,
-
-perhaps indicating worse tunnel conditions in that direction.  The western
-
-passage appears comparably smoother and less cluttered.
-
-"
+As the passage continues south it appears to become rougher and more cluttered,
+perhaps indicating worse tunnel conditions in that direction.  The western
+passage appears comparably smoother and less cluttered.
+"
 ""
 301596676 0
 11 5 0
@@ -4900,12 +3805,9 @@ S
 #7584
 "A Rubble-strewn Fork in the Tunnel"
 "Cave rubble is strewn across the floor of this jagged cave, making travel less
-
-than expedient but certainly not wholly hazardous.  The cave passage forks
-
-here wending its way west, north, and east.
-
-"
+than expedient but certainly not wholly hazardous.  The cave passage forks
+here wending its way west, north, and east.
+"
 ""
 301596676 0
 11 5 0
@@ -4929,14 +3831,10 @@ S
 #7585
 "A Narrow Cave Passage"
 "The narrow cave passage you are in is littered with a debris of lichen-covered
-
-rubble.  The lichen sits in small, spotty patches atop several of the rocks
-
-about the cave and appears to be the source of the foul smell in this area. 
-
-The tunnel stretches away to the north and south.
-
-"
+rubble.  The lichen sits in small, spotty patches atop several of the rocks
+about the cave and appears to be the source of the foul smell in this area. 
+The tunnel stretches away to the north and south.
+"
 ""
 301596676 0
 11 5 0
@@ -4951,20 +3849,15 @@ D2
 E
 "debris lichen rubble patches 4 rocks"
 "The rocks on the ground are a mix of newer, sharp-edged rocks and more rounded
-
-ones that fell and have eroded.  The rounded ones have patches of
-
-brownish-black lichen that no longer appears to be alive atop them.  It looks
-
-as if something killed off this lichen.
-
-"
+ones that fell and have eroded.  The rounded ones have patches of
+brownish-black lichen that no longer appears to be alive atop them.  It looks
+as if something killed off this lichen.
+"
 A
 ""
 ""
 "act_tochar( \"The smell of decaying plant-matter is in the air here.\", ch );
-
-"
+"
 !
 1 0 5
 -1
@@ -4973,18 +3866,12 @@ S
 #7586
 "A Cave Passage"
 "A few chunks of jagged stone line the floor as if they tumbled in from
-
-elsewhere.  Given the location of the very heavy stones and their sharp edges,
-
-it would appear they came tumbling in from the north sometime within the last
-
-few hundred years and haven't had significant time to weather or erode at
-
-all.  The cave passage stretches away north and south but another passage,
-
-almost easily missed behind one jagged boulder, is set in the eastern wall.
-
-"
+elsewhere.  Given the location of the very heavy stones and their sharp edges,
+it would appear they came tumbling in from the north sometime within the last
+few hundred years and haven't had significant time to weather or erode at
+all.  The cave passage stretches away north and south but another passage,
+almost easily missed behind one jagged boulder, is set in the eastern wall.
+"
 ""
 301596676 0
 11 5 0
@@ -5003,23 +3890,18 @@ D2
 E
 "5 stones"
 "The stones are a variety of sizes measuring from some as small as a robin's
-
-egg to others measuring easily four or more feet across.
-
-"
+egg to others measuring easily four or more feet across.
+"
 A
 ""
 ""
 "act_tochar( #duck, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "duck"
 "You are forced to duck as you enter a part of the passage with a low ceiling.
-
-"
+"
 !
 3 0 2
 78 17 1509949480 -2 0
@@ -5031,12 +3913,9 @@ S
 #7587
 "A Fork in the Passage"
 "You are in a very definite fork in the cave passages.  A tunnel leading in
-
-from the north splits in two then its two new paths arc sharply until they are
-
-heading away in almost perfectly opposite directions of east and west.
-
-"
+from the north splits in two then its two new paths arc sharply until they are
+heading away in almost perfectly opposite directions of east and west.
+"
 ""
 301596676 0
 11 5 0
@@ -5058,16 +3937,11 @@ S
 #7588
 "A Curve in the Passage"
 "The cave passage curves about in a very decided merging of two different
-
-passages or, perhaps, a change in the nature of the passage.  To the east, the
-
-passage appears smooth and dry like a dusty tomb sealed many years.  The
-
-southward passage quickly becomes uneven with a rocky floor with many grooves,
-
-dips and buckles marred by small signs of dampness.
-
-"
+passages or, perhaps, a change in the nature of the passage.  To the east, the
+passage appears smooth and dry like a dusty tomb sealed many years.  The
+southward passage quickly becomes uneven with a rocky floor with many grooves,
+dips and buckles marred by small signs of dampness.
+"
 ""
 301596676 0
 11 5 0
@@ -5085,18 +3959,12 @@ S
 #7589
 "A Curve in the Passage"
 "The uneven flooring of the passage hold spots of dampness that exude an old,
-
-musty scent like that of a decaying plant.  The damp spots seem to increase in
-
-frequency the further west you look along the passage while the the decrease
-
-in size and frequency the further north you go.  In spite of the smell, there
-
-is no sign of what may be causing it other than, perhaps, something in the
-
-moisture itself.
-
-"
+musty scent like that of a decaying plant.  The damp spots seem to increase in
+frequency the further west you look along the passage while the the decrease
+in size and frequency the further north you go.  In spite of the smell, there
+is no sign of what may be causing it other than, perhaps, something in the
+moisture itself.
+"
 ""
 301596676 0
 11 5 0
@@ -5116,18 +3984,12 @@ S
 #7590
 "A Damp Passage"
 "There is a damp quality to the air as if some source was constantly filling the
-
-air with moisture.  The walls even glisten a little with the moisture
-
-accumulated on them.  There is no sign in this spot, however, of the
-
-moisture's source but it must certainly be nearby.  The passage continues on
-
-both west and east as well as to the south where an adjoining passage
-
-terminates at this one.
-
-"
+air with moisture.  The walls even glisten a little with the moisture
+accumulated on them.  There is no sign in this spot, however, of the
+moisture's source but it must certainly be nearby.  The passage continues on
+both west and east as well as to the south where an adjoining passage
+terminates at this one.
+"
 ""
 301596676 0
 11 5 0
@@ -5149,22 +4011,14 @@ S
 #7591
 "A Damp Passage"
 "A steady stream of trickling water cascades down portions of the western wall,
-
-forming a small, subterranean waterfall.  The water streams out of a narrow
-
-tunnel, too small for anybody to fit into, near the cave's ceiling before
-
-pouring down the wall and disappearing again into several narrow crevices in
-
-the floor.  Watery spray caused by the water bouncing off the rounded
-
-protrusions of the wall have placed a damp sheen like a million diamonds over
-
-everything in the cave.  The passageway continues on north and east away from
-
-the tinkling sounds of the waterfall.
-
-"
+forming a small, subterranean waterfall.  The water streams out of a narrow
+tunnel, too small for anybody to fit into, near the cave's ceiling before
+pouring down the wall and disappearing again into several narrow crevices in
+the floor.  Watery spray caused by the water bouncing off the rounded
+protrusions of the wall have placed a damp sheen like a million diamonds over
+everything in the cave.  The passageway continues on north and east away from
+the tinkling sounds of the waterfall.
+"
 ""
 301596676 0
 11 5 0
@@ -5179,38 +4033,25 @@ D1
 E
 "3 subterranean 3 waterfall"
 "The streams of water cascade over the rounded, rocky protrusions of the cave
-
-wall, forming multiple streams that part and rejoin several times before
-
-disappearing into the floor.  The water looks a little murky and may or may not
-
-be safe to drink.
-
-"
+wall, forming multiple streams that part and rejoin several times before
+disappearing into the floor.  The water looks a little murky and may or may not
+be safe to drink.
+"
 E
 "narrow tunnel"
 "No more than an inch at the widest and generally smaller in most places the
-
-narrow tunnel from which the waterfall springs is no more than a thin crack
-
-in the earth's crust allowing the water to seep down from somewhere up above
-
-into lower chasms.
-
-"
+narrow tunnel from which the waterfall springs is no more than a thin crack
+in the earth's crust allowing the water to seep down from somewhere up above
+into lower chasms.
+"
 E
 "4 crevices"
 "The crevices are a spiderwork of cracks in the floor, some as wide as an inch
-
-across, where the water from the waterfall trickles away into some deeper
-
-place in the earth.  In spite of the incredible volume of water that must have
-
-passed through the cracks over time they still haven't filled, hinting at even
-
-more caves somewhere deep below you.
-
-"
+across, where the water from the waterfall trickles away into some deeper
+place in the earth.  In spite of the incredible volume of water that must have
+passed through the cracks over time they still haven't filled, hinting at even
+more caves somewhere deep below you.
+"
 483 17 1509949540 -2 0
 -1
 S
@@ -5218,16 +4059,11 @@ S
 #7592
 "A Winding Passage"
 "The winding passage twists about, leading away to the north, where it appears
-
-to dead-end at the crossing of another tunnel, and to the west where it
-
-quickly bends and twists out of sight.  The rough cave walls are more or less
-
-unremarkable except for a jagged wound in the earth to the east where it
-
-appears someone has broken through into another cave.
-
-"
+to dead-end at the crossing of another tunnel, and to the west where it
+quickly bends and twists out of sight.  The rough cave walls are more or less
+unremarkable except for a jagged wound in the earth to the east where it
+appears someone has broken through into another cave.
+"
 ""
 301596676 0
 11 5 0
@@ -5246,24 +4082,18 @@ D3
 E
 "jagged wound earth 1 east"
 "The jagged crack looks like a tear in the fabric of the earth.  Its ragged
-
-entrance shows that it isn't an old tear but a new one.
-
-"
+entrance shows that it isn't an old tear but a new one.
+"
 -1
 S
 
 #7593
 "A Winding Passage"
 "You are in a meandering passage with stony obstructions protruding from the
-
-walls.  Between the jutting stones and the curves in the passage, you can
-
-only see a short ways off.  Though this passage meanders and winds about it
-
-appears to more or less run a general east-west course.
-
-"
+walls.  Between the jutting stones and the curves in the passage, you can
+only see a short ways off.  Though this passage meanders and winds about it
+appears to more or less run a general east-west course.
+"
 ""
 301596676 0
 11 5 0
@@ -5281,14 +4111,10 @@ S
 #7594
 "A Winding Passage"
 "The cave passage arcs noticeably through here causing it to bend to nearly a
-
-ninety degree angle before heading away to the south and to the east.  The
-
-path to the east, at least, seems a little straighter and less confining then
-
-the one to the south.
-
-"
+ninety degree angle before heading away to the south and to the east.  The
+path to the east, at least, seems a little straighter and less confining then
+the one to the south.
+"
 ""
 301596676 0
 11 5 0
@@ -5308,14 +4134,10 @@ S
 #7595
 "A Winding Passage"
 "The passageway twists about nearly doubling back on itself before curving away
-
-again in a strange sort of cavern oxbow.  Ultimately, in spite of all its
-
-twisting and winding through here, the passage could best be said to lead away
-
-north and west.
-
-"
+again in a strange sort of cavern oxbow.  Ultimately, in spite of all its
+twisting and winding through here, the passage could best be said to lead away
+north and west.
+"
 ""
 301596676 0
 11 5 0
@@ -5333,20 +4155,13 @@ S
 #7596
 "A Winding Passage"
 "You are in a twisting, winding passage that stops abruptly to the south where
-
-a cave-in has caused a large amount of rubble to obscure the path. 
-
-Fortunately, the caved-in rocks look relatively stable as does the ceiling,
-
-meaning you probably aren't in any immediate danger of being buried just
-
-now.  It looks as if you could climb over the rocks in the space above them
-
-and continue south or you could follow the passage you are currently in to the
-
-east.
-
-"
+a cave-in has caused a large amount of rubble to obscure the path. 
+Fortunately, the caved-in rocks look relatively stable as does the ceiling,
+meaning you probably aren't in any immediate danger of being buried just
+now.  It looks as if you could climb over the rocks in the space above them
+and continue south or you could follow the passage you are currently in to the
+east.
+"
 ""
 301596676 0
 11 5 0
@@ -5362,18 +4177,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You make your way up the mound of rocks to the south.
-
-"
+"
 E
 "to_room"
 "$n makes $s way up the mound of rocks to the south.
-
-"
+"
 !
 3 0 4
 78 17 1509949460 -2 0
@@ -5383,19 +4195,13 @@ S
 #7597
 "Atop a Mound of Rocks in a Cave"
 "A cave-in some time in the relatively recent past has collapsed a section of
-
-the roof in this section of the cave and you are forced to stand on unsteady
-
-and sometimes shifting rocks.  Passages can be seen leading away to the north
-
-and east but if there was ever a passage in some other direction it is now
-
-concealed by the heap of rubble.
-
-"
+the roof in this section of the cave and you are forced to stand on unsteady
+and sometimes shifting rocks.  Passages can be seen leading away to the north
+and east but if there was ever a passage in some other direction it is now
+concealed by the heap of rubble.
+"
 "[Bindlestort] falling off, slipping sleeping message south when it sent the person north
-
-"
+"
 301596676 0
 11 5 0
 D0
@@ -5409,82 +4215,52 @@ D1
 E
 "rubble 1 down mount rocks"
 "The mound of rubble looks to be a heap of rocks left behind when a portion of
-
-the ceiling caved in.  There is nothing particularly special about it.
-
-"
+the ceiling caved in.  There is nothing particularly special about it.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You carefully climb $T down off the mound of rocks.
-
-"
+"
 E
 "to_room"
 "$n carefully climbs $T down off the mound of rocks.
-
-"
+"
 !
 3 0 3
 A
 ""
 ""
 "if( !is_fighting( ch ) ) {
-
-  i = random( 8, 12 );
-
-  if( find_stat( ch, dex ) > i ) {
-
-    act_tochar( \"The rubble shifts under you but you manage to keep your footing.\", ch );
-
-    end;
-
-    }
-
-  else {
-
-    act_tochar( \"The rubble shifts under you and you slip and fall!\", ch );
-
-    act_notchar( \"The rubbles shifts under $n and $e slips and falls away!\", ch );
-
-    if( random( 1, 2 ) == 1 ) {
-
-      transfer( ch, find_room( 7598 ) );
-
-      act_notchar( \"$n tumbles in off of a pile of rocks to the west.\", ch );
-
-      }
-
-    else {
-
-      act_notchar( \"$n tumbles in off of a pile of rocks to the south.\", ch );
-
-      transfer( ch, find_room( 7596 ) );
-
-      }
-
-    if( is_player( ch ) ) {
-
-      j = random( 2, 4 );
-
-      dam_message( ch, j, \"the fall across sharp rubble\" );
-
-      inflict( ch, mob, j, \"falling across sharp rubble\" );
-
-      set_resting( ch );
-
-      }
-
-    }
-
-  }
-
-"
+  i = random( 8, 12 );
+  if( find_stat( ch, dex ) > i ) {
+    act_tochar( \"The rubble shifts under you but you manage to keep your footing.\", ch );
+    end;
+    }
+  else {
+    act_tochar( \"The rubble shifts under you and you slip and fall!\", ch );
+    act_notchar( \"The rubbles shifts under $n and $e slips and falls away!\", ch );
+    if( random( 1, 2 ) == 1 ) {
+      transfer( ch, find_room( 7598 ) );
+      act_notchar( \"$n tumbles in off of a pile of rocks to the west.\", ch );
+      }
+    else {
+      act_notchar( \"$n tumbles in off of a pile of rocks to the south.\", ch );
+      transfer( ch, find_room( 7596 ) );
+      }
+    if( is_player( ch ) ) {
+      j = random( 2, 4 );
+      dam_message( ch, j, \"the fall across sharp rubble\" );
+      inflict( ch, mob, j, \"falling across sharp rubble\" );
+      set_resting( ch );
+      }
+    }
+  }
+"
 !
 2 300 0
 78 17 1509949520 -2 0
@@ -5495,20 +4271,13 @@ S
 #7598
 "A Cave Passage"
 "The passage is relatively free of sharp rocks along the wall but a bit of cave
-
-debris, largely consisting of heavy stones fallen from nearby walls and
-
-ceiling, dot the floor.  The rocks on the floor are more consistently found
-
-along the western entrance where a bit of a cave in from the ceiling will
-
-force you to climb over a mound of rocks if you wish to head that way.  The
-
-passage to the east is fairly clear of any debris and would be a much easier
-
-passage to traverse.
-
-"
+debris, largely consisting of heavy stones fallen from nearby walls and
+ceiling, dot the floor.  The rocks on the floor are more consistently found
+along the western entrance where a bit of a cave in from the ceiling will
+force you to climb over a mound of rocks if you wish to head that way.  The
+passage to the east is fairly clear of any debris and would be a much easier
+passage to traverse.
+"
 ""
 301596676 0
 11 5 0
@@ -5524,18 +4293,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You make your way up the mound of rocks to the west.
-
-"
+"
 E
 "to_room"
 "$n makes $s way up the mound of rocks to the west.
-
-"
+"
 !
 3 0 8
 78 17 1509949460 -2 0
@@ -5547,12 +4313,9 @@ S
 #7599
 "A Cave Passage"
 "You are in a relatively clean cave, swept clear of rubble or other debris. 
-
-Its walls are relatively smoothed of jagged edges and almost have the feel of
-
-a simple tunnel.  The cave passage continues on rather simply east and west.
-
-"
+Its walls are relatively smoothed of jagged edges and almost have the feel of
+a simple tunnel.  The cave passage continues on rather simply east and west.
+"
 ""
 301596676 0
 11 5 0
@@ -5570,16 +4333,11 @@ S
 #7600
 "A Clean Cave Passage"
 "You are in a cave passage clear of any debris or even dust.  The walls have a
-
-uniform smooth, almost manicured, look as if you were deep in some castle
-
-rather than deep in the bowels of the earth itself.  The uniform cleanliness
-
-and look of the walls is eerily out of place in what should be a dank cave
-
-passage.
-
-"
+uniform smooth, almost manicured, look as if you were deep in some castle
+rather than deep in the bowels of the earth itself.  The uniform cleanliness
+and look of the walls is eerily out of place in what should be a dank cave
+passage.
+"
 ""
 301596676 0
 11 5 0
@@ -5599,56 +4357,40 @@ A
 "1 look"
 "1 south"
 "if( is_searching( ch ) )
-
-  act_tochar( #door, ch );
-
-else
-
-  act_tochar( #no, ch );
-
-"
+  act_tochar( #door, ch );
+else
+  act_tochar( #no, ch );
+"
 E
 "door"
 "After carefully searching the area, you notice the very faint outlines of a
-
-concealed door set in the south wall.  There doesn't appear to be any catch
-
-keeping it closed and it looks like you could @bopen@n the @bconcealed@n door.
-
-"
+concealed door set in the south wall.  There doesn't appear to be any catch
+keeping it closed and it looks like you could @bopen@n the @bconcealed@n door.
+"
 E
 "no"
 "Nothing found matching \"south\".
-
-"
+"
 !
 0 0 0
 A
 "open"
 "concealed"
 "if( is_searching( ch ) ) {
-
-  act_tochar( #found, ch );
-
-  open( room, south );
-
-  }
-
-else
-
-  act_tochar( #no, ch );
-
-"
+  act_tochar( #found, ch );
+  open( room, south );
+  }
+else
+  act_tochar( #no, ch );
+"
 E
 "found"
 "Searching a little more you find the catch and the door swings open.
-
-"
+"
 E
 "no"
 "Nothing found matching \"south\".
-
-"
+"
 !
 0 0 0
 -1
@@ -5657,12 +4399,9 @@ S
 #7601
 "A Turn in a Cave Passage"
 "The cave passage curves, following the natural arc of the tunnel, although the
-
-passage is eerily clear of debris.  The arcing tunnel heads away to the west
-
-and south
-
-"
+passage is eerily clear of debris.  The arcing tunnel heads away to the west
+and south
+"
 ""
 301596676 0
 11 5 0
@@ -5680,16 +4419,11 @@ S
 #7602
 "A Turn in a Cave Passage"
 "The unusually neat walls aren't nearly as rough as you'd expect for a cave. 
-
-Something, or someone, has brushed what little rubble that is strewn about up
-
-against the walls creating a relatively neat walkway down the center of the
-
-passage with no obstructions to trip you.  The passage arcs a bit heading away
-
-to the north and east.
-
-"
+Something, or someone, has brushed what little rubble that is strewn about up
+against the walls creating a relatively neat walkway down the center of the
+passage with no obstructions to trip you.  The passage arcs a bit heading away
+to the north and east.
+"
 ""
 301596676 0
 11 5 0
@@ -5709,14 +4443,10 @@ S
 #7603
 "A Turn in a Cave Passage"
 "The cave walls are unusually smooth with barely any sign of the roughness
-
-normally found in a cave.  What little debris there is littering the floor has
-
-been swept up against the walls forming a neatened path through the tunnel's
-
-center.  The passage curves about heading away to the north and west.
-
-"
+normally found in a cave.  What little debris there is littering the floor has
+been swept up against the walls forming a neatened path through the tunnel's
+center.  The passage curves about heading away to the north and west.
+"
 ""
 301596676 0
 11 5 0
@@ -5736,14 +4466,10 @@ S
 #7604
 "A Cave Passage"
 "You are in a relatively clean cave, swept clear of rubble or other debris. 
-
-Its walls are relatively smoothed of jagged edges and almost have the feel of
-
-a simple tunnel in a castle or some other similarly refined structure.  The
-
-cave passage continues on north and south.
-
-"
+Its walls are relatively smoothed of jagged edges and almost have the feel of
+a simple tunnel in a castle or some other similarly refined structure.  The
+cave passage continues on north and south.
+"
 ""
 301596676 0
 11 5 0
@@ -5761,16 +4487,11 @@ S
 #7605
 "A Cave Passage"
 "You are in a cave passage that is relatively cleared of debris and
-
-obstruction.  The walls are free of any jagged protrusions, as are the
-
-ceiling and floor, providing fairly easy passage through the area.  The only
-
-oddity within the cave, other than its unusual cleanliness and lack of cave
-
-debris, is a narrow crack in the eastern wall.
-
-"
+obstruction.  The walls are free of any jagged protrusions, as are the
+ceiling and floor, providing fairly easy passage through the area.  The only
+oddity within the cave, other than its unusual cleanliness and lack of cave
+debris, is a narrow crack in the eastern wall.
+"
 ""
 301596676 0
 11 5 0
@@ -5789,18 +4510,14 @@ D2
 E
 "crack 1 east"
 "The crack, although narrow, looks wide enough for you to squeeze into it if
-
-you really wanted to.
-
-"
+you really wanted to.
+"
 A
 ""
 ""
 "act_tochar( \"You squeeze into the crack.\", ch );
-
-continue;
-
-"
+continue;
+"
 !
 3 0 2
 -1
@@ -5809,23 +4526,15 @@ S
 #7606
 "A Crack in the Ground"
 "You are in a very narrow crack in the earth that makes it hard to move through
-
-this area due to lack of space.  Sharp protrusions of rock make this space
-
-uncomfortable at best, and dangerous at worst.  It certainly wouldn't be a
-
-good place for a fight.  The crack moves onward to the north and, fortunately
-
-for anyone not liking the confined space, seems to open up onto a tunnel to
-
-the west.
-
-"
+this area due to lack of space.  Sharp protrusions of rock make this space
+uncomfortable at best, and dangerous at worst.  It certainly wouldn't be a
+good place for a fight.  The crack moves onward to the north and, fortunately
+for anyone not liking the confined space, seems to open up onto a tunnel to
+the west.
+"
 "[Nereus] if this room is so small, why is it ogre-sized
-
-[Talis] So ents can hunt here too
-
-"
+[Talis] So ents can hunt here too
+"
 301596684 0
 11 5 0
 D0
@@ -5840,20 +4549,16 @@ A
 "1 rest 2 sleep 2 sit 1 meditate"
 ""
 "act_tochar( \"You don't have room to do that here\", ch );
-
-end;
-
-"
+end;
+"
 !
 0 0 0
 A
 ""
 ""
 "act_tochar( \"You squirm your way onward through the tight press of stone.\", ch );
-
-continue;
-
-"
+continue;
+"
 !
 3 0 1
 -1
@@ -5862,16 +4567,11 @@ S
 #7607
 "A Crack in the Ground"
 "The crack in the earth actually widens a bit here before narrowing again as it
-
-moves away east and south.  The small crack becomes an almost comfortable cave
-
-and looks like it might not be a bad place to stop for a rest, if you're the
-
-sort who enjoys resting in small crevices deep in the earth with no sign of
-
-natural light or flowing air.
-
-"
+moves away east and south.  The small crack becomes an almost comfortable cave
+and looks like it might not be a bad place to stop for a rest, if you're the
+sort who enjoys resting in small crevices deep in the earth with no sign of
+natural light or flowing air.
+"
 ""
 301596686 0
 11 5 0
@@ -5887,10 +4587,8 @@ A
 ""
 ""
 "act_tochar( \"You turn sideways and squeeze into the tight crack in the earth.\", ch );
-
-continue;
-
-"
+continue;
+"
 !
 3 0 6
 -1
@@ -5899,18 +4597,12 @@ S
 #7608
 "A Crack in the Ground"
 "You are standing in a narrow crack in the earth with a very obvious widening
-
-opening north of here.  Sharp protrusions in the wall make travel through here
-
-uncomfortable but don't impede you completely and you could quite likely make
-
-your way west with a little work, further into the crack.  To the north, the
-
-crack appears to open up onto a cave tunnel that looks to offer much more
-
-space for movement than this crack does.
-
-"
+opening north of here.  Sharp protrusions in the wall make travel through here
+uncomfortable but don't impede you completely and you could quite likely make
+your way west with a little work, further into the crack.  To the north, the
+crack appears to open up onto a cave tunnel that looks to offer much more
+space for movement than this crack does.
+"
 ""
 335151116 0
 11 5 0
@@ -5926,20 +4618,16 @@ A
 "1 rest 2 sleep 2 sit 1 meditate"
 ""
 "act_tochar( \"You don't have room to do that here\", ch );
-
-end;
-
-"
+end;
+"
 !
 0 0 0
 A
 ""
 ""
 "act_tochar( \"You squirm your way onward through the tight press of stone.\", ch );
-
-continue;
-
-"
+continue;
+"
 !
 3 0 8
 -1
@@ -5948,18 +4636,12 @@ S
 #7609
 "A Rounded Tunnel"
 "You are in a tunnel with nicely rounded walls that have weathered to a fairly
-
-smooth finish.  The floor and ceiling flatten out marginally from the rounding
-
-of the walls, giving the tunnel an almost natural castle hall feel with its
-
-level floor and ceiling.  A crack in the southern wall, opened long ago by the
-
-force of the shifting earth, provides a southern exit to this otherwise
-
-east-west running tunnel.
-
-"
+smooth finish.  The floor and ceiling flatten out marginally from the rounding
+of the walls, giving the tunnel an almost natural castle hall feel with its
+level floor and ceiling.  A crack in the southern wall, opened long ago by the
+force of the shifting earth, provides a southern exit to this otherwise
+east-west running tunnel.
+"
 ""
 301596676 0
 11 5 0
@@ -5978,16 +4660,13 @@ D3
 E
 "1 south crack"
 "The crack is narrow but not so narrow you can't fit through it.
-
-"
+"
 A
 ""
 ""
 "act_tochar( \"You squeeze into the crack.\", ch );
-
-continue;
-
-"
+continue;
+"
 !
 3 0 4
 2530 9 1509949540 3 0
@@ -5998,14 +4677,10 @@ S
 #7610
 "A Curve in the Passage"
 "The arcing passage twists and curves about but ultimately seems to be heading
-
-away primarily in northern and eastern directions.  The mostly smooth cave
-
-floor has only one irregularity marring it where a rut, caused by
-
-weathering of the stone over many years, has been worn into the ground.
-
-"
+away primarily in northern and eastern directions.  The mostly smooth cave
+floor has only one irregularity marring it where a rut, caused by
+weathering of the stone over many years, has been worn into the ground.
+"
 ""
 301596676 0
 11 5 0
@@ -6020,26 +4695,19 @@ D1
 E
 "1 ground rut 3 irregularity"
 "You see nothing special about it.  It is simply a natural, weathered section
-
-of the cave floor.
-
-"
+of the cave floor.
+"
 -1
 S
 
 #7611
 "A Curve in the Passage"
 "The passage curves about, no longer leading a straight path but now heading
-
-away to the west and south.  The floor is relatively even in spite of the
-
-occasional, typical depression or rise found in a cave.  Near one part of the
-
-curve, where the floor is particularly smooth, a dark brownish-red stain lines
-
-the floor.
-
-"
+away to the west and south.  The floor is relatively even in spite of the
+occasional, typical depression or rise found in a cave.  Near one part of the
+curve, where the floor is particularly smooth, a dark brownish-red stain lines
+the floor.
+"
 ""
 301596676 0
 11 5 0
@@ -6054,28 +4722,20 @@ D3
 E
 "stain 4 brownish=red"
 "The stain looks old and partially rubbed away by whatever has moved through
-
-the cavern but there cerainly is a lot of it.  It almost looks like it could
-
-have been a very large quantity of blood as if something was brutally
-
-massacred down here and this is all that remains to attest to the occurance.
-
-"
+the cavern but there cerainly is a lot of it.  It almost looks like it could
+have been a very large quantity of blood as if something was brutally
+massacred down here and this is all that remains to attest to the occurance.
+"
 -1
 S
 
 #7612
 "A Low Tunnel"
 "The tunnel ceiling is canted and quickly lowers as the tunnel continues on to
-
-the east.  Conversely it raises abruptly a short distance to the west
-
-providing more room there, presumably, but in this particular section you need
-
-to duck a bit to ensure you don't hit your head on anything.
-
-"
+the east.  Conversely it raises abruptly a short distance to the west
+providing more room there, presumably, but in this particular section you need
+to duck a bit to ensure you don't hit your head on anything.
+"
 ""
 301596676 0
 11 5 0
@@ -6091,24 +4751,18 @@ A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You duck-walk your way through the passage.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You duck-walk your way through the passage.\", ch );
+continue;
+"
 !
 3 0 2
 A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You straighten up a good bit as the ceiling raises.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You straighten up a good bit as the ceiling raises.\", ch );
+continue;
+"
 !
 3 0 8
 -1
@@ -6117,14 +4771,10 @@ S
 #7613
 "A Low Tunnel"
 "The tunnel has several lower than usual protrusions in this area and, already
-
-forced to duck and nearly crawl in places, there is the very real threat you
-
-might bump your head in passing if you aren't careful.  The tunnel passage
-
-curves sharply here, veering away both north and west from this location.
-
-"
+forced to duck and nearly crawl in places, there is the very real threat you
+might bump your head in passing if you aren't careful.  The tunnel passage
+curves sharply here, veering away both north and west from this location.
+"
 ""
 301596676 0
 11 5 0
@@ -6140,26 +4790,19 @@ A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You duck-walk your way through the passage.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You duck-walk your way through the passage.\", ch );
+continue;
+"
 !
 3 0 9
 A
 ""
 ""
 "act_tochar( \"You bump your head on a rock.  Ouch!\", ch );
-
-i = random( 1, 4 );
-
-dam_message( ch, i, \"the protruding cave rocks\" );
-
-inflict( ch, null, i, \"smacking their head on a cave wall\" );
-
-"
+i = random( 1, 4 );
+dam_message( ch, i, \"the protruding cave rocks\" );
+inflict( ch, null, i, \"smacking their head on a cave wall\" );
+"
 !
 2 100 0
 -1
@@ -6168,14 +4811,10 @@ S
 #7614
 "A Low Tunnel"
 "The low tunnel curves quite a bit heading in almost a complete ninety degree
-
-arc from this spot.  To the east, the tunnel very clearly opens into a wider
-
-section whereas to the south, you must continue to duck and crawl to get
-
-through the cave.
-
-"
+arc from this spot.  To the east, the tunnel very clearly opens into a wider
+section whereas to the south, you must continue to duck and crawl to get
+through the cave.
+"
 ""
 301596676 0
 11 5 0
@@ -6191,24 +4830,18 @@ A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You crawl out of the cave only to find the next cave a very tight fit!\", ch );
-
-continue;
-
-"
+  act_tochar( \"You crawl out of the cave only to find the next cave a very tight fit!\", ch );
+continue;
+"
 !
 3 0 2
 A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You duck-walk your way through the southern passage.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You duck-walk your way through the southern passage.\", ch );
+continue;
+"
 !
 3 0 4
 2530 9 1509949530 3 0
@@ -6219,18 +4852,12 @@ S
 #7615
 "A Narrow Chasm"
 "The cave is tall but narrow forming the very picture of a chasm as seen from
-
-its bottom.  The chasm continues onward both north and south just as narrow
-
-and likely you'll need to stand sideways in most places of this thin cave to
-
-move about.  Fortunately, there is a small opening low to the ground in the
-
-western wall of the chasm that would allow egress for anyone not overly fond
-
-of the tight squeeze you are currently in.
-
-"
+its bottom.  The chasm continues onward both north and south just as narrow
+and likely you'll need to stand sideways in most places of this thin cave to
+move about.  Fortunately, there is a small opening low to the ground in the
+western wall of the chasm that would allow egress for anyone not overly fond
+of the tight squeeze you are currently in.
+"
 ""
 301596676 0
 11 5 0
@@ -6250,24 +4877,18 @@ A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You move, sideways, through the narrow chasm nearly getting stuck several times.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You move, sideways, through the narrow chasm nearly getting stuck several times.\", ch );
+continue;
+"
 !
 3 0 5
 A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You duck and squeeze your way into the tunnel, breathing much easier there.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You duck and squeeze your way into the tunnel, breathing much easier there.\", ch );
+continue;
+"
 !
 3 0 8
 -1
@@ -6276,14 +4897,10 @@ S
 #7616
 "A Narrow Chasm"
 "The narrow chasm flares out marginally before tapering to a thin passage
-
-again both north and south.  What light reaches the top of the chasm shows
-
-that the roof slants downwards towards the south where it reaches a height
-
-comparable to one found in most buildings.
-
-"
+again both north and south.  What light reaches the top of the chasm shows
+that the roof slants downwards towards the south where it reaches a height
+comparable to one found in most buildings.
+"
 ""
 301596676 0
 11 5 0
@@ -6299,10 +4916,8 @@ A
 ""
 ""
 "act_tochar( \"You move, sideways, through the narrow chasm nearly getting stuck several times\", ch );
-
-continue;
-
-"
+continue;
+"
 !
 3 0 5
 -1
@@ -6311,21 +4926,14 @@ S
 #7617
 "A Narrow Chasm"
 "You are in a very narrow cave, uncomfortably thin and with no sign of it
-
-getting significantly wider anywhere to the north.  Further south you can see
-
-where the cave widens noticeably and the ceiling drops low enough to almost
-
-form a room in the same perspective of size you might find in any city
-
-building.
-
-"
+getting significantly wider anywhere to the north.  Further south you can see
+where the cave widens noticeably and the ceiling drops low enough to almost
+form a room in the same perspective of size you might find in any city
+building.
+"
 "[Nereus] narrow cave, ogre-sized?
-
-[Talis] Narrow for effect, ogre for ents to hunt.
-
-"
+[Talis] Narrow for effect, ogre for ents to hunt.
+"
 301596676 0
 11 5 0
 D0
@@ -6340,10 +4948,8 @@ A
 "leaving"
 ""
 "act_tochar( \"You move, sideways, through the narrow chasm nearly getting stuck several times\", ch );
-
-continue;
-
-"
+continue;
+"
 !
 3 0 5
 -1
@@ -6352,20 +4958,13 @@ S
 #7618
 "A Cave"
 "This cave could almost be called homely in comparison to many deep caves of
-
-the earth.  Its ceiling and walls form a nice, almost room-like shape with the
-
-walls naturally squared off from each other.  The ceiling, only slightly
-
-sloped and becoming more so somewhere off to the north, remains relatively
-
-parallel to the floor over this space.  A narrow cleft in the north face looks
-
-like it may lead off for some ways in that direction while a rounded tunnel
-
-leads off to the west.
-
-"
+the earth.  Its ceiling and walls form a nice, almost room-like shape with the
+walls naturally squared off from each other.  The ceiling, only slightly
+sloped and becoming more so somewhere off to the north, remains relatively
+parallel to the floor over this space.  A narrow cleft in the north face looks
+like it may lead off for some ways in that direction while a rounded tunnel
+leads off to the west.
+"
 ""
 301596676 0
 11 5 0
@@ -6381,10 +4980,8 @@ A
 ""
 ""
 "act_tochar( \"You squeeze yoruself into the narrow cleft\", ch );
-
-continue;
-
-"
+continue;
+"
 !
 3 0 1
 -1
@@ -6393,18 +4990,12 @@ S
 #7619
 "A Narrow Chasm"
 "The cave passage is considerably narrower than would normally be deemed
-
-comfortable by most and you very nearly need to stand sideways if you wish to
-
-continue on south of here.  The cave floor dips lower the further you head
-
-south and higher the further you go north.  This cave is quite simply a tall,
-
-narrow room and very nearly a small chasm.  It looks like the room continues
-
-to remain narrow as it moves south but widens considerably as you move north.
-
-"
+comfortable by most and you very nearly need to stand sideways if you wish to
+continue on south of here.  The cave floor dips lower the further you head
+south and higher the further you go north.  This cave is quite simply a tall,
+narrow room and very nearly a small chasm.  It looks like the room continues
+to remain narrow as it moves south but widens considerably as you move north.
+"
 ""
 301596676 0
 11 5 0
@@ -6420,10 +5011,8 @@ A
 ""
 ""
 "act_tochar( \"You turn sideways and squeeze into the tight fit of the narrow chasm.\", ch );
-
-continue;
-
-"
+continue;
+"
 !
 3 0 4
 -1
@@ -6432,16 +5021,11 @@ S
 #7620
 "A Partially Collapsed Fork in the Tunnel"
 "A cave-in long ago collapsed a portion of this tunnel and what used to be a
-
-fork became a bend in the tunnel when one of the passages became wholly
-
-blocked off.  No longer able to traverse what obviously used to be a cave
-
-tunnel heading east, you are now forced to head either west or south if you
-
-wish to continue on.
-
-"
+fork became a bend in the tunnel when one of the passages became wholly
+blocked off.  No longer able to traverse what obviously used to be a cave
+tunnel heading east, you are now forced to head either west or south if you
+wish to continue on.
+"
 ""
 301596676 0
 11 5 0
@@ -6456,24 +5040,18 @@ D3
 E
 "3 collapsed 3 cave-in"
 "The cave-in fully collapsed a tunnel that used to lead away to the east.  Now,
-
-the eastern tunnel is nothing more than a solid mass of impassable rocks.
-
-"
+the eastern tunnel is nothing more than a solid mass of impassable rocks.
+"
 -1
 S
 
 #7621
 "A Twist in the Tunnel"
 "The cave twists and turns and you will even be forced to climb over some of
-
-the boulders and debris on the floor if you wish to pass through this part of
-
-the cave system.  As the cave passage winds about it more or less makes its
-
-way east and south.
-
-"
+the boulders and debris on the floor if you wish to pass through this part of
+the cave system.  As the cave passage winds about it more or less makes its
+way east and south.
+"
 ""
 301596676 0
 11 5 0
@@ -6488,22 +5066,16 @@ D2
 E
 "3 boulders 3 debris"
 "The boulders and debris are typical cave clutter consisting primarily of large
-
-stones.  The stones area mix of rounded edges and sharper edges where they
-
-were shorn away from walls and ceiling.
-
-"
+stones.  The stones area mix of rounded edges and sharper edges where they
+were shorn away from walls and ceiling.
+"
 A
 "leaving"
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You climb over a boulder as you leave.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You climb over a boulder as you leave.\", ch );
+continue;
+"
 !
 3 0 6
 2530 9 1509949530 3 0
@@ -6514,16 +5086,11 @@ S
 #7622
 "A Low-ceilinged Tunnel"
 "The cave ceiling dips low causing you to duck in several places and nearly
-
-crawl in others.  The cave ceiling dips low enough that there is no eastern or
-
-southern wall, just a places where the ceiling finally meets the cave floor. 
-
-Fortunately there are two ways out as the ceiling raises higher from the floor
-
-to the north and west allowing escape from this confining place.
-
-"
+crawl in others.  The cave ceiling dips low enough that there is no eastern or
+southern wall, just a places where the ceiling finally meets the cave floor. 
+Fortunately there are two ways out as the ceiling raises higher from the floor
+to the north and west allowing escape from this confining place.
+"
 ""
 301596676 0
 11 5 0
@@ -6539,22 +5106,17 @@ A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You slowly straighten up and can stand again as you leave.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You slowly straighten up and can stand again as you leave.\", ch );
+continue;
+"
 !
 3 0 9
 A
 ""
 ""
 "act_tochar( \"You are forced to duck as the ceiling lowers here.\", ch );
-
-continue;
-
-"
+continue;
+"
 !
 1 0 9
 -1
@@ -6563,16 +5125,11 @@ S
 #7623
 "A Mildly Damp Passage"
 "Several stalagmites and stalactites jut from floor and ceiling of the cave
-
-tunnel respectively, each measuring anywhere from a few inches to a few feet. 
-
-The smallest ones, the ones closest to the southern end of the passage, have
-
-small droplets of condensed moisture glistening on them.  As the passage
-
-curves around to the east, the rocky formations seem to grow in size.
-
-"
+tunnel respectively, each measuring anywhere from a few inches to a few feet. 
+The smallest ones, the ones closest to the southern end of the passage, have
+small droplets of condensed moisture glistening on them.  As the passage
+curves around to the east, the rocky formations seem to grow in size.
+"
 ""
 301596676 0
 11 5 0
@@ -6591,24 +5148,15 @@ S
 #7624
 "A Hidden Laboratory"
 "Thick, beams of wood reinforce the natural stone of this cave and it is
-
-apparent someone went to an effort to smooth the walls to a uniform finish.
-
-Several simple, low tables and benches are pressed up against the walls and
-
-are covered in a debris of cracked, useless containers and burned out candle
-
-stubs.  In the center of the room a firepit filled with glowing coals covered
-
-by a thick iron grill.  Overhead a neatly drilled hole allows the smoke to
-
-waft away up some shaft and out of the cave.  The glow from the wide firepit
-
-alone is enough to bathe the room in a dull, red light that would cast
-
-everything a vision of blood and shadows if it were the only light used.
-
-"
+apparent someone went to an effort to smooth the walls to a uniform finish.
+Several simple, low tables and benches are pressed up against the walls and
+are covered in a debris of cracked, useless containers and burned out candle
+stubs.  In the center of the room a firepit filled with glowing coals covered
+by a thick iron grill.  Overhead a neatly drilled hole allows the smoke to
+waft away up some shaft and out of the cave.  The glow from the wide firepit
+alone is enough to bathe the room in a dull, red light that would cast
+everything a vision of blood and shadows if it were the only light used.
+"
 ""
 301596677 0
 11 6 0
@@ -6623,46 +5171,31 @@ D3
 E
 "5 tables 5 benches"
 "The tables and benches are of simple but sturdy construction.  Whoever built
-
-them obviously built them here in the room since they are too big to readily
-
-fit through the door in their constructed state.  The tables and benches are
-
-all covered in a debris of broken crockery, used candle stubs, and charred,
-
-unidentifiable lumps.
-
-"
+them obviously built them here in the room since they are too big to readily
+fit through the door in their constructed state.  The tables and benches are
+all covered in a debris of broken crockery, used candle stubs, and charred,
+unidentifiable lumps.
+"
 E
 "4 firepit"
 "The firepit is a simple but effective construct of stone and mortar banded in
-
-iron.  Its top is covered with an iron grill that would allow items to be
-
-placed atop the burning coals to heat or cook things.
-
-"
+iron.  Its top is covered with an iron grill that would allow items to be
+placed atop the burning coals to heat or cook things.
+"
 E
 "glowing 4 coals"
 "Hot, red coals glowing an angry red and bathing the room in a dull,
-
-blood-colored light.
-
-"
+blood-colored light.
+"
 A
 ""
 ""
 "if( is_open( room, north ) ) {
-
-  send_to_room( \"The hinges on the reinforced door close it automatically.\", find_room( 7624 ) );
-
-  send_to_room( \"The door swings shut disappearing completely.\", find_room( 7600 ) );
-
-  close( room, north );
-
-  }
-
-"
+  send_to_room( \"The hinges on the reinforced door close it automatically.\", find_room( 7624 ) );
+  send_to_room( \"The door swings shut disappearing completely.\", find_room( 7600 ) );
+  close( room, north );
+  }
+"
 !
 4 1000 1
 3198 17 1509949540 -2 0
@@ -6673,16 +5206,11 @@ S
 #7625
 "A Small Alcove"
 "You are in a small alcove in the back of a laboratory.  Rungs are solidly set
-
-in the stone of the back wall providing a ladder of sorts leading up and away
-
-into the darkness of the shaft above the alcove.  Scuff marks on the rungs
-
-show that they have received quite a bit of use.  To the east, you can clearly
-
-see the laboratory and its jumble of junk.
-
-"
+in the stone of the back wall providing a ladder of sorts leading up and away
+into the darkness of the shaft above the alcove.  Scuff marks on the rungs
+show that they have received quite a bit of use.  To the east, you can clearly
+see the laboratory and its jumble of junk.
+"
 ""
 301596685 0
 11 6 0
@@ -6698,12 +5226,9 @@ A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You grab the rungs and climb up the shaft.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You grab the rungs and climb up the shaft.\", ch );
+continue;
+"
 !
 3 0 16
 -1
@@ -6712,14 +5237,10 @@ S
 #7626
 "A Vertical Shaft"
 "The shaft is a sheer drop and stretches both up and down into darkness from
-
-this point.  Fortunately, the rungs are still solidly mounted in the southern
-
-rock face and show no signs of coming loose.  It should be an easy matter to
-
-continue a trek either up or down from here.
-
-"
+this point.  Fortunately, the rungs are still solidly mounted in the southern
+rock face and show no signs of coming loose.  It should be an easy matter to
+continue a trek either up or down from here.
+"
 ""
 301596685 0
 11 6 0
@@ -6735,44 +5256,31 @@ A
 "1 rest 2 sleep 2 sit 1 meditate"
 ""
 "act_tochar( \"relaxing, you let go of the rungs... and fall!\", ch );
-
-act_notchar( \"$n lets of the rungs and falls away into the darkness\", ch );
-
-transfer( ch, find_room( 7625 ) );
-
-act_notchar( \"$n falls from the darkness above and lands on the ground, hard!\", ch );
-
-i = 2d5+3;
-
-dam_message( ch, i, \"the fall\" );
-
-inflict( ch, mob, i, \"a fall down a vertical shaft\" );
-
-"
+act_notchar( \"$n lets of the rungs and falls away into the darkness\", ch );
+transfer( ch, find_room( 7625 ) );
+act_notchar( \"$n falls from the darkness above and lands on the ground, hard!\", ch );
+i = 2d5+3;
+dam_message( ch, i, \"the fall\" );
+inflict( ch, mob, i, \"a fall down a vertical shaft\" );
+"
 !
 0 0 0
 A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You finally finish the climb and crest the lip of the alcove into a new cave.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You finally finish the climb and crest the lip of the alcove into a new cave.\", ch );
+continue;
+"
 !
 3 0 16
 A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You climb the rest of the way down, out of the shaft.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You climb the rest of the way down, out of the shaft.\", ch );
+continue;
+"
 !
 3 0 32
 -1
@@ -6781,23 +5289,15 @@ S
 #7627
 "On the Edge of a Pool"
 "You stand in a low-ceilinged cave on the lip of a rock ledge overlooking a
-
-pool.  A gentle turbulence in the pool shows that it is merely an eddying swirl
-
-of some underground stream that has bubbled over into this basin here. 
-
-Although there is motion of fresh water coming in and water from the pool
-
-leaving, it doesn't appear to be deep enough to allow any means of exit that
-
-way.  The only other exit appears to be a hole in the floor near the southern
-
-wall with metal rungs secured in the wall to allow easy access down the shaft.
-
-"
+pool.  A gentle turbulence in the pool shows that it is merely an eddying swirl
+of some underground stream that has bubbled over into this basin here. 
+Although there is motion of fresh water coming in and water from the pool
+leaving, it doesn't appear to be deep enough to allow any means of exit that
+way.  The only other exit appears to be a hole in the floor near the southern
+wall with metal rungs secured in the wall to allow easy access down the shaft.
+"
 "[Bindlestort] need to clarify the command so it works easier
-
-"
+"
 301596685 0
 11 6 0
 D5
@@ -6808,134 +5308,88 @@ A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You grab the metal rungs in the south wall and start down the shaft.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You grab the metal rungs in the south wall and start down the shaft.\", ch );
+continue;
+"
 !
 3 0 32
 A
 "1 look"
 "3 crystal"
 "if( obj_in_room( 3993, room ) ) {
-
-act_tochar( #crystal, ch );
-
-end;
-
-}
-
-if( has_obj( 3993, ch ) ) {
-
-act_tochar( #crystal2, ch );
-
-end;
-
-}
-
-continue;
-
-"
+act_tochar( #crystal, ch );
+end;
+}
+if( has_obj( 3993, ch ) ) {
+act_tochar( #crystal2, ch );
+end;
+}
+continue;
+"
 E
 "crystal"
 "The tiny red speck of a crystal sits on the edge of the pool and you can see a
-
-few more just lining the rim of the pool as if someone had dumped a load of
-
-the crystals into the pool at some point.
-
-"
+few more just lining the rim of the pool as if someone had dumped a load of
+the crystals into the pool at some point.
+"
 E
 "crystal2"
 "A tiny little crystal, barely more than a speck, it looks like sand except for
-
-its translucence.  Looking at the crystal, you catch sight of a few more along
-
-the rim of the pools edge catches your eye, as if someone had dumpde a load of
-
-the crystals into the pool at some point.
-
-"
+its translucence.  Looking at the crystal, you catch sight of a few more along
+the rim of the pools edge catches your eye, as if someone had dumpde a load of
+the crystals into the pool at some point.
+"
 !
 0 0 0
 A
 "dump drop empty put use"
 "antidote"
 "if( has_obj( 3995, ch ) ) {
-
-  junk_obj( has_obj( 3995, ch ) );
-
-  act_tochar( #dump, ch );
-
-  act_notchar( #rdump, ch );
-
-  wait( 1 );
-
-  act_room( #clear, ch );
-
-  if( obj_in_room( 3994, room ) ) {
-
-    junk_obj( obj_in_room( 3994, room ) );
-
-    obj_to_room( oload( 1519 ), room );
-
-    obj_to_room( oload( 3982 ), find_room( 5 ) );
-
-    }
-
-  if( doing_quest( ch, 66 ) ) {
-
-    update_quest( ch, 66 );
-
-    }
-
-  }
-
-"
+  junk_obj( has_obj( 3995, ch ) );
+  act_tochar( #dump, ch );
+  act_notchar( #rdump, ch );
+  wait( 1 );
+  act_room( #clear, ch );
+  if( obj_in_room( 3994, room ) ) {
+    junk_obj( obj_in_room( 3994, room ) );
+    obj_to_room( oload( 1519 ), room );
+    obj_to_room( oload( 3982 ), find_room( 5 ) );
+    }
+  if( doing_quest( ch, 66 ) ) {
+    update_quest( ch, 66 );
+    }
+  }
+"
 E
 "dump"
 "You pour the vial of divine antidote into the stream and instantly the stream
-
-steams and sparkles where the antidote contacts it.
-
-"
+steams and sparkles where the antidote contacts it.
+"
 E
 "rdump"
 "$n pours a vial of glowing, bluish-white liquid into the stream.
-
-"
+"
 E
 "clear"
 "The pool sparkles and steams for a bit until any and all impurities are burned
-
-out of it.  What remains is a crystal-clear pool of water.
-
-"
+out of it.  What remains is a crystal-clear pool of water.
+"
 !
 0 0 0
 A
 ""
 ""
 "end;
-
-if( doing_quest( ch, 66 ) ) {
-
-  wait( 1 );
-
-  act_tochar( #howto, ch );
-
-  }
-
-"
+if( doing_quest( ch, 66 ) ) {
+  wait( 1 );
+  act_tochar( #howto, ch );
+  }
+"
 E
 "howto"
 "The roiling waters look in need of purifying.  Perhaps if you @buse@n the
-
-@bantidote@n you were given, it would cleanse these waters.
-
-"
+@bantidote@n you were given, it would cleanse these waters.
+"
 !
 1 0 32
 3993 17 1509949540 -2 0
@@ -6946,12 +5400,9 @@ S
 #7629
 "A Cave Passage"
 "You are in a cave passage deep inside the earth surrounded by timeworn stones
-
-that form the ceiling, walls and floor.  The passage narrows a bit before
-
-widening as it heads off to both the west and south.
-
-"
+that form the ceiling, walls and floor.  The passage narrows a bit before
+widening as it heads off to both the west and south.
+"
 ""
 301596676 0
 11 6 0

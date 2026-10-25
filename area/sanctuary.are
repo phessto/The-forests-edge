@@ -10,27 +10,17 @@
 #81000
 "Path Through the Park"
 "A pair of stately silver birches flank a rose-colored marble staircase carved
-
-into the otherwise unbroken wall to the south, twin sentinels ever watchful
-
-over this entrance to the inner city.  Slender posts topped with intricately
-
-carved statuary march upwards along the stairway, each holding a tiny globe of
-
-magical light.  Crushed gravel paths lead through the small park, stretching
-
-to the north, west and east, each bordered by clumps of wildflowers and edged
-
-with stone cairns.  The laughter of children at play rings through the area,
-
-mingled with bird song and the distant sounds of the bustling city a ways to
-
-the north.
-
-"
+into the otherwise unbroken wall to the south, twin sentinels ever watchful
+over this entrance to the inner city.  Slender posts topped with intricately
+carved statuary march upwards along the stairway, each holding a tiny globe of
+magical light.  Crushed gravel paths lead through the small park, stretching
+to the north, west and east, each bordered by clumps of wildflowers and edged
+with stone cairns.  The laughter of children at play rings through the area,
+mingled with bird song and the distant sounds of the bustling city a ways to
+the north.
+"
 "[Minqa] Climb stair acode to the south.
-
-"
+"
 301465601 0
 0 9 0
 D0
@@ -51,25 +41,16 @@ S
 #81001
 "Path Through the Park"
 "A small, crystal-clear pond nestled in the southeastern corner of the area
-
-draws the eye in this part of the park.  Tall reeds grow along its banks,
-
-perfect for water birds to nest in.  The water is warm and inviting, shallow
-
-enough that one can see easily to its sandy bottom.  Tiny fish dart rapidly
-
-among the plants, silver streaks racing through their watery world.  A carved
-
-wooden bench reclines under a nearby oak tree, offering a shady spot to sit
-
-and relax near the quiet pond.
-
-"
+draws the eye in this part of the park.  Tall reeds grow along its banks,
+perfect for water birds to nest in.  The water is warm and inviting, shallow
+enough that one can see easily to its sandy bottom.  Tiny fish dart rapidly
+among the plants, silver streaks racing through their watery world.  A carved
+wooden bench reclines under a nearby oak tree, offering a shady spot to sit
+and relax near the quiet pond.
+"
 "[Minqa] Benches, duck mob, kid splashing in the water.
-
-[Minqa] Search reeds to find duck's nest, possibly get egg?
-
-"
+[Minqa] Search reeds to find duck's nest, possibly get egg?
+"
 301465601 0
 0 6 0
 D0
@@ -84,8 +65,7 @@ A
 "search"
 "reed reeds bank"
 "continue;
-
-"
+"
 !
 0 0 0
 -1
@@ -94,29 +74,18 @@ S
 #81002
 "Path Through the Park"
 "Tall, vibrantly healthy sunflowers stretch heavenwards along the western
-
-fence, their huge blossoms oddly magenta colored instead of the more mundane
-
-golden hue.  A row of lilies of the valley and cobalt blue hydrangeas grows
-
-just in front of the sunflower stalks, providing a riot of brilliant color.  A
-
-waterfall of silvery willow branches very nearly hides the entrance to a small
-
-gazebo tucked cozily away in the southwestern corner of the area.  The perfume
-
-of flowers and the trilling songs of the birds flitting through the treetops
-
-overhead fill the air, lending an almost tangible sense of contentment and
-
-tranquility to this place.
-
-"
+fence, their huge blossoms oddly magenta colored instead of the more mundane
+golden hue.  A row of lilies of the valley and cobalt blue hydrangeas grows
+just in front of the sunflower stalks, providing a riot of brilliant color.  A
+waterfall of silvery willow branches very nearly hides the entrance to a small
+gazebo tucked cozily away in the southwestern corner of the area.  The perfume
+of flowers and the trilling songs of the birds flitting through the treetops
+overhead fill the air, lending an almost tangible sense of contentment and
+tranquility to this place.
+"
 "[Minqa] enter gazebo acode
-
-[Ahni] Acode done.
-
-"
+[Ahni] Acode done.
+"
 301465601 0
 0 6 0
 D0
@@ -135,33 +104,24 @@ A
 "enter"
 "gazebo"
 "act_tochar( #enter, ch );
-
-act_notchar( #renter, ch);
-
-transfer( ch, find_room( 81031 ) );
-
-act_notchar( #oenter, ch );
-
-"
+act_notchar( #renter, ch);
+transfer( ch, find_room( 81031 ) );
+act_notchar( #oenter, ch );
+"
 E
 "enter"
 "You gently push the willow branches aside and step into the gazebo, allowing
-
-them to sway back into place behind you.
-
-"
+them to sway back into place behind you.
+"
 E
 "renter"
 "$n gently pushes aside the branches and steps into the opening, allowing the
-
-branches to sway closed behind $m.
-
-"
+branches to sway closed behind $m.
+"
 E
 "oenter"
 "You see a hand push the willow branches gently aside as $n steps into the gazebo.
-
-"
+"
 !
 0 0 0
 -1
@@ -170,27 +130,17 @@ S
 #81003
 "Path Through the Park"
 "An ancient oak tree spreads its branches skywards, its gnarled trunk knobbly
-
-and rough.  Clumps of shy violets lift their faces from beneath its roots,
-
-revelling in the shade provided by the massive tree.  Through the latticework
-
-of roses and ivies growing along the fence to the north, the busy streets of
-
-Fair Havens are visible.  This place seems somehow secluded from the hustle
-
-and bustle of the city, a sanctuary from the town's restlessness and noise. 
-
-Oddly enough, the few creatures flying around the flowers aren't bees, but
-
-seem to be tiny faeries, enjoying the quiet beauty of this place.
-
-"
+and rough.  Clumps of shy violets lift their faces from beneath its roots,
+revelling in the shade provided by the massive tree.  Through the latticework
+of roses and ivies growing along the fence to the north, the busy streets of
+Fair Havens are visible.  This place seems somehow secluded from the hustle
+and bustle of the city, a sanctuary from the town's restlessness and noise. 
+Oddly enough, the few creatures flying around the flowers aren't bees, but
+seem to be tiny faeries, enjoying the quiet beauty of this place.
+"
 "[Minqa] Tree to climb
-
-[Ahni] Acode done
-
-"
+[Ahni] Acode done
+"
 301465601 0
 0 6 0
 D1
@@ -213,29 +163,22 @@ A
 "climb"
 "tree oak up"
 "act_tochar( #climb, ch );
-
-act_notchar( #rclimb, ch );
-
-transfer( ch, find_room( 81071 ) );
-
-act_notchar( #oclimb, ch );
-
-"
+act_notchar( #rclimb, ch );
+transfer( ch, find_room( 81071 ) );
+act_notchar( #oclimb, ch );
+"
 E
 "climb"
 "Using the many knobs in the rough trunk of the tree, you climb upwards.
-
-"
+"
 E
 "rclimb"
 "You see $n grab one of the many knobs on the tree, and begin to climb up.
-
-"
+"
 E
 "oclimb"
 "$n comes climbing up the trunk from below.
-
-"
+"
 !
 0 0 0
 -1
@@ -244,20 +187,13 @@ S
 #81004
 "Path Through the Park"
 "The light perfume of jasmine and roses drifts by on the breeze.  The iron
-
-fence to the north acts as a trellis for beautifully kept roses of many
-
-colors, twining ivies growing throughout the blossoms.  Lush grass carpets the
-
-area, an expanse of verdant beauty.  Pathways of crushed marble meander
-
-towards the west and south, leading to other areas of the park.  From just to
-
-the south, the sounds of splashing water echo, along with the laughter of
-
-children at play.
-
-"
+fence to the north acts as a trellis for beautifully kept roses of many
+colors, twining ivies growing throughout the blossoms.  Lush grass carpets the
+area, an expanse of verdant beauty.  Pathways of crushed marble meander
+towards the west and south, leading to other areas of the park.  From just to
+the south, the sounds of splashing water echo, along with the laughter of
+children at play.
+"
 ""
 301465601 0
 0 6 0
@@ -279,18 +215,12 @@ S
 #81005
 "Path Through the Park"
 "The fragrance of roses hangs heavily in the air, cloying sweet.  The intricate
-
-latticework fence to the north acts as a trellis for roses of all colors and
-
-types, a palette of strikingly beautiful hues, twined through with waxy green
-
-ivy leaves.  A lush crop of verdent grass grows underfoot, plush and velvety
-
-soft.  Faintly shimmering gates of polished mithril lead out to the west, away
-
-from the peace of this secluded park nestled in the bustling city.
-
-"
+latticework fence to the north acts as a trellis for roses of all colors and
+types, a palette of strikingly beautiful hues, twined through with waxy green
+ivy leaves.  A lush crop of verdent grass grows underfoot, plush and velvety
+soft.  Faintly shimmering gates of polished mithril lead out to the west, away
+from the peace of this secluded park nestled in the bustling city.
+"
 ""
 301465601 0
 0 6 0
@@ -309,12 +239,9 @@ D3
 E
 "lattice fence roses ivy"
 "The flower-covered lattice acts as a fence, blocking exit to the north. 
-
-Varicolored roses twine through it, combining beauty with function.  A sweet
-
-frangrance rises from it, scenting the air softly.
-
-"
+Varicolored roses twine through it, combining beauty with function.  A sweet
+frangrance rises from it, scenting the air softly.
+"
 3725 17 1509949540 -2 0
 -1
 S
@@ -322,20 +249,13 @@ S
 #81006
 "Along a Crushed Marble Pathway"
 "This quieter side trail leading in from ROAD to the north terminates abruptly
-
-before an intricately carved gate of gleaming mithril.  Through the widely
-
-spaced bars, a lush garden of roses comes into view, splashes of crimson, gold
-
-and yellow blooming against the verdant foilage.  The small park seems nestled
-
-into the lee of a terraced cliff, catching the early morning sun, yet cool and
-
-well shaded in the afternoon.  The sweet perfume of flowers hangs in the air,
-
-a pleasant change from the various odors of the rest of the city.
-
-"
+before an intricately carved gate of gleaming mithril.  Through the widely
+spaced bars, a lush garden of roses comes into view, splashes of crimson, gold
+and yellow blooming against the verdant foilage.  The small park seems nestled
+into the lee of a terraced cliff, catching the early morning sun, yet cool and
+well shaded in the afternoon.  The sweet perfume of flowers hangs in the air,
+a pleasant change from the various odors of the rest of the city.
+"
 ""
 301465601 0
 0 6 0
@@ -353,8 +273,7 @@ S
 #81007
 "Before the Gates"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -377,10 +296,8 @@ S
 "Inside the West Gate"
 ""
 "[Minqa] Must..think..name..
-
-[Minqa] pull lever acode, blah.
-
-"
+[Minqa] pull lever acode, blah.
+"
 301465601 0
 0 6 0
 D0
@@ -405,23 +322,15 @@ S
 #81009
 "Guardroom"
 "Gleaming racks of weaponry line the the northern wall of this small chamber. 
-
-Pikes and halberds, rapiers and long swords, bladed maces and morningstars,
-
-all find a resting place within this room.  Two long benches line the eastern
-
-and western walls of the room, their construction simple, but sturdy.  The
-
-walls are panelled in richly hued amber wood, giving this place a look of
-
-elegance.
-
-"
+Pikes and halberds, rapiers and long swords, bladed maces and morningstars,
+all find a resting place within this room.  Two long benches line the eastern
+and western walls of the room, their construction simple, but sturdy.  The
+walls are panelled in richly hued amber wood, giving this place a look of
+elegance.
+"
 "[Minqa] reset Kechan novice for quest
-
-[Minqa] Reset benches.  Search/take weapon acode?
-
-"
+[Minqa] Reset benches.  Search/take weapon acode?
+"
 301465605 0
 0 6 0
 D2
@@ -434,25 +343,16 @@ S
 #81010
 "West Gate of Fair Winds"
 "An impressively large gate of shimmering silver looms just to the east. 
-
-Though obviously kept in good working order, the brightly polished silver is
-
-carved with dainty patterns, adding a touch of elegance to the otherwise
-
-utilarian gate.  Set above the portal, just barely visible from the ground, a
-
-black iron portcullis lies in wait, its ebony fangs razor-sharp and ready.  A
-
-crushed granite trail winds westward down a small hill, its path carefully
-
-outlined by a border of mid-sized stones interspersed with clumps of
-
-brilliantly colored flowers.
-
-"
+Though obviously kept in good working order, the brightly polished silver is
+carved with dainty patterns, adding a touch of elegance to the otherwise
+utilarian gate.  Set above the portal, just barely visible from the ground, a
+black iron portcullis lies in wait, its ebony fangs razor-sharp and ready.  A
+crushed granite trail winds westward down a small hill, its path carefully
+outlined by a border of mid-sized stones interspersed with clumps of
+brilliantly colored flowers.
+"
 "[Minqa] Path southwestish to beach and sanctuary stone
-
-"
+"
 301465601 0
 0 6 0
 D1
@@ -465,8 +365,7 @@ S
 #81011
 "Aigeann Trail"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -484,8 +383,7 @@ S
 #81012
 "Aigeann Trail"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -507,8 +405,7 @@ S
 #81013
 "Sheadyn Geaye Way"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -534,25 +431,16 @@ S
 #81014
 "Within a Messy Hovel"
 "The stench hovering in this place assaults the senses of any brave -- or
-
-foolish -- enough to come within this horribly messy room.  Piles of torn
-
-clothing and greasy rags lie moldering all over the floor, nearly hiding the
-
-packed earth from view.  A single table stands forlornly in the center of the
-
-room, wobbling brokenly on its three remaining legs.  Only the shattered
-
-remains of a chair lie huddled in one corner of the small, dank room, looking
-
-as though it has been used for tinder on occaision.
-
-"
+foolish -- enough to come within this horribly messy room.  Piles of torn
+clothing and greasy rags lie moldering all over the floor, nearly hiding the
+packed earth from view.  A single table stands forlornly in the center of the
+room, wobbling brokenly on its three remaining legs.  Only the shattered
+remains of a chair lie huddled in one corner of the small, dank room, looking
+as though it has been used for tinder on occaision.
+"
 "[Minqa] Reset child, search to find him
-
-[Minqa] Acode for rustling cloth
-
-"
+[Minqa] Acode for rustling cloth
+"
 301465605 0
 0 6 0
 D1
@@ -565,8 +453,7 @@ S
 #81015
 "Sheadyn Geaye Way"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -593,10 +480,8 @@ S
 "Small Courtyard"
 ""
 "[Minqa] something to search
-
-[Minqa] Bank west, Bitter Moon tavern north
-
-"
+[Minqa] Bank west, Bitter Moon tavern north
+"
 301465601 0
 0 6 0
 D0
@@ -617,23 +502,15 @@ S
 #81017
 "Second Bank of Fair Havens"
 "Panels of polished oak line the walls of this chamber.  The rugs carpeting the
-
-wooden floor were once of high quality as well, though the passage of many
-
-feet has worn down the nap of the carpet, and long exposure to sunlight
-
-through the open window to the north has faded the once bright colors.  A
-
-simple, yet elegant iron grill separates the west portion from the rest of the
-
-room, and on the far western wall, a deep vault is set.  Before the grill is a
-
-polished wooden counter, upon which sits a small brass bell.
-
-"
+wooden floor were once of high quality as well, though the passage of many
+feet has worn down the nap of the carpet, and long exposure to sunlight
+through the open window to the north has faded the once bright colors.  A
+simple, yet elegant iron grill separates the west portion from the rest of the
+room, and on the far western wall, a deep vault is set.  Before the grill is a
+polished wooden counter, upon which sits a small brass bell.
+"
 "[Minqa] Reset guard
-
-"
+"
 301467685 0
 0 6 0
 D1
@@ -646,23 +523,15 @@ S
 #81018
 "The Bitter Moon"
 "Brilliant crimson tapestries line the walls of this brightly lit room.  Though
-
-the colors are deep and vibrant scarlet, the edges of many of the tapestries
-
-are badly frayed.  Tiny brass medallions dangle from the chandelier above,
-
-reflecting dozens of candle flames in dancing patterns of light and shadow. 
-
-Several tables and chairs lie scattered around the area, the wood they're made
-
-of stained dark by many spillages of ale.  Towards the west, the floor lies
-
-clear of tables, laid out as a small dance floor.
-
-"
+the colors are deep and vibrant scarlet, the edges of many of the tapestries
+are badly frayed.  Tiny brass medallions dangle from the chandelier above,
+reflecting dozens of candle flames in dancing patterns of light and shadow. 
+Several tables and chairs lie scattered around the area, the wood they're made
+of stained dark by many spillages of ale.  Towards the west, the floor lies
+clear of tables, laid out as a small dance floor.
+"
 "[Minqa] Gilded, gaudy
-
-"
+"
 301465605 0
 0 6 0
 D1
@@ -683,8 +552,7 @@ S
 #81019
 "Sheadyn Geaye Way"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -710,31 +578,19 @@ S
 #81020
 "The Bitter Moon"
 "Polished bronze panels the walls of this expansive chamber, reflecting the
-
-flickering light of dozens of candles dangling from the metal and glass
-
-chandelier overhead.  A large fireplace stands against the western wall,
-
-tongues of flame dancing merrily upon red-hot coals.  Most of the golden wood
-
-floor is clear in this area of the tavern, ringed with a few tables forming an
-
-impromtu dance floor.  Here and there, dark patches stain the polished floor,
-
-likely the remnants of spilt ale.  Alongside the fire, a small stool of dark
-
-mahogany sits in the shadows.  A gilded staircase spirals up towards a balcony
-
-above, providing spectators with an excellent place to look out over the dance
-
-floor.
-
-"
+flickering light of dozens of candles dangling from the metal and glass
+chandelier overhead.  A large fireplace stands against the western wall,
+tongues of flame dancing merrily upon red-hot coals.  Most of the golden wood
+floor is clear in this area of the tavern, ringed with a few tables forming an
+impromtu dance floor.  Here and there, dark patches stain the polished floor,
+likely the remnants of spilt ale.  Alongside the fire, a small stool of dark
+mahogany sits in the shadows.  A gilded staircase spirals up towards a balcony
+above, providing spectators with an excellent place to look out over the dance
+floor.
+"
 "[Minqa] Bard for quests, possible trainer, lore
-
-[Minqa] acode for leaving up, spiral staircase
-
-"
+[Minqa] acode for leaving up, spiral staircase
+"
 301465605 0
 0 6 0
 D0
@@ -755,11 +611,9 @@ S
 #81021
 "Bitter Moon"
 "Under Construction.
-
-"
+"
 "[Minqa] Bartender, cook?
-
-"
+"
 301465605 0
 0 6 0
 D2
@@ -789,8 +643,7 @@ S
 #81023
 "Elegantly Furnished Bedroom"
 "Under Construction.
-
-"
+"
 ""
 301465605 0
 0 6 0
@@ -804,8 +657,7 @@ S
 #81024
 "Sheadyn Geaye Way"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -823,23 +675,15 @@ S
 #81025
 "Cliff's Edge"
 "The cobblestone road ends here in a small courtyard, too small to be called a
-
-park, overlooking the impressive drop down to the ocean.  The bittersweet tang
-
-of sea salt hovers in the air, while the echoing calls of gulls scream from
-
-overhead.  Along the cliff's edge to the north stands a waist-high wooden
-
-fence, providing a sturdy boundary.  A steep trail winds its way westward up a
-
-towering pinnacle of stone.  Hanging neatly beside the path is a small sign,
-
-its careful lettering unfaded by time or exposure to the elements.
-
-"
+park, overlooking the impressive drop down to the ocean.  The bittersweet tang
+of sea salt hovers in the air, while the echoing calls of gulls scream from
+overhead.  Along the cliff's edge to the north stands a waist-high wooden
+fence, providing a sturdy boundary.  A steep trail winds its way westward up a
+towering pinnacle of stone.  Hanging neatly beside the path is a small sign,
+its careful lettering unfaded by time or exposure to the elements.
+"
 "[Minqa] Exit/acode up to the Gryphon's Aerie cafe
-
-"
+"
 301465601 0
 0 6 0
 D2
@@ -854,29 +698,22 @@ A
 "climb follow"
 "trail west up pinnacle stone"
 "act_tochar( #up, ch );
-
-act_notchar( #rup, ch );
-
-transfer( ch, find_room( 81026 ) );
-
-act_notchar( #oup, ch );
-
-"
+act_notchar( #rup, ch );
+transfer( ch, find_room( 81026 ) );
+act_notchar( #oup, ch );
+"
 E
 "up"
 "You carefully pick your way up the steep trail, circling the towering spire.
-
-"
+"
 E
 "rup"
 "$n carefully picks $s way up the steep trail, circling the towering spire.
-
-"
+"
 E
 "oup"
 "$n arrives from below, carefully clambering up the steep trail.
-
-"
+"
 !
 0 0 0
 -1
@@ -900,29 +737,22 @@ A
 "climb follow"
 "trail down east"
 "act_tochar( #down, ch );
-
-act_notchar( #rdown, ch );
-
-transfer( ch, find_room( 81025 ) );
-
-act_notchar( #odown, ch );
-
-"
+act_notchar( #rdown, ch );
+transfer( ch, find_room( 81025 ) );
+act_notchar( #odown, ch );
+"
 E
 "down"
 "Slipping slightly on a few pebbles, you cautiously make your way to the foot of the trail.
-
-"
+"
 E
 "rdown"
 "$n slips and slides $s way down to the foot of the trail.
-
-"
+"
 E
 "odown"
 "$n arrives from above amidst a small shower of pebbles.
-
-"
+"
 !
 0 0 0
 -1
@@ -931,8 +761,7 @@ S
 #81027
 "Atop the Stone Pinnacle"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -971,8 +800,7 @@ S
 #81029
 "Balcony Overlooking the Sea of Stars"
 "The soft sursurrations of waves crashing against the rose-hued granite cliffs below fill the air, mingling with the muted drones of barely-overheard conversations coming from within the cafe just west of here.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -987,8 +815,7 @@ S
 #81030
 "Gryphon's Aerie"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1002,23 +829,15 @@ S
 #81031
 "Within a Shaded Gazebo"
 "Tangled curtains of ivy and jasmine make this small gazebo into a private
-
-sanctuary, gently enfolded by the sweet fragrance of blossoms.  Only a little
-
-illumination trickles in through the woven draperies of waxy green leaves and
-
-golden blooms, leaving this place well shaded and cool even in the height of
-
-summer.  The wood shaping the small gazebo has been painted a soft white
-
-shade, worn smooth by the caresses of many hands.  High backed benches line
-
-the walls of the gazebo, looking almost as if they had grown there.
-
-"
+sanctuary, gently enfolded by the sweet fragrance of blossoms.  Only a little
+illumination trickles in through the woven draperies of waxy green leaves and
+golden blooms, leaving this place well shaded and cool even in the height of
+summer.  The wood shaping the small gazebo has been painted a soft white
+shade, worn smooth by the caresses of many hands.  High backed benches line
+the walls of the gazebo, looking almost as if they had grown there.
+"
 "[Ahni] Acode done.
-
-"
+"
 301465605 0
 0 6 0
 D1
@@ -1028,54 +847,38 @@ D1
 E
 "curtain curtains ivy jasmine draperies leaves blooms"
 "Tendrils of jasmine vines thickly enshroud the gazebo, making it far easier to
-
-see out than for someone outside to see what is going on inside.  The bright
-
-yellow flowers scent the air sweetly, making this an ideal escape for a
-
-lover's tryst.  Light filters in through the tangled vines, softly
-
-illuminating the small room.
-
-"
+see out than for someone outside to see what is going on inside.  The bright
+yellow flowers scent the air sweetly, making this an ideal escape for a
+lover's tryst.  Light filters in through the tangled vines, softly
+illuminating the small room.
+"
 E
 "wood"
 "No description.
-
-"
+"
 A
 "enter"
 "curtain curtains draperies open opening"
 "act_tochar( #enter, ch );
-
-act_notchar( #renter, ch );
-
-transfer( ch, find_room( 81002 ) );
-
-act_notchar( #oenter, ch );
-
-"
+act_notchar( #renter, ch );
+transfer( ch, find_room( 81002 ) );
+act_notchar( #oenter, ch );
+"
 E
 "enter"
 "You gently push aside the curtain of ivy and step out of the gazebo, letting
-
-the vines sway back into place.
-
-"
+the vines sway back into place.
+"
 E
 "renter"
 "$n gently pushes aside the curtain of ivy and steps out of the gazebo, letting
-
-the vines sway back into place.
-
-"
+the vines sway back into place.
+"
 E
 "oenter"
 "You see the curtain of ivy pushed aside as $n steps out of them, allowing them
-
-to sway gently back into place.
-
-"
+to sway gently back into place.
+"
 !
 0 0 0
 -1
@@ -1084,8 +887,7 @@ S
 #81032
 "Aigeann Trail"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1107,8 +909,7 @@ S
 #81033
 "Aigeann Trail"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1134,8 +935,7 @@ S
 #81034
 "Town Square"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1161,8 +961,7 @@ S
 #81035
 "Town Square"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1188,8 +987,7 @@ S
 #81036
 "Town Square"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1212,8 +1010,7 @@ S
 "Town Square"
 ""
 "[Minqa] Fountain hereish
-
-"
+"
 301465601 0
 0 6 0
 D1
@@ -1234,23 +1031,15 @@ S
 #81038
 "An Elegant Jewel Shop"
 "Golden hued wood lines the walls of this elegant room.  A few artfully draped
-
-panels of jewel-toned cloth add to the ambiance, their shimmering hues
-
-complimenting the many colors of the gems on display here.  A multitude of
-
-jewels sparkle prettily in cases carefully constructed to flatter them while
-
-keeping them safely away from thieves.  An implacable aura of elegance and
-
-prosperity seems to hover tangibly in this beautiful place.
-
-"
+panels of jewel-toned cloth add to the ambiance, their shimmering hues
+complimenting the many colors of the gems on display here.  A multitude of
+jewels sparkle prettily in cases carefully constructed to flatter them while
+keeping them safely away from thieves.  An implacable aura of elegance and
+prosperity seems to hover tangibly in this beautiful place.
+"
 "[Minqa] Shop of one kind or another.  Can't find my maps, darnit
-
-[Minqa] Aha, this would be the jeweler
-
-"
+[Minqa] Aha, this would be the jeweler
+"
 301465605 0
 0 6 0
 D3
@@ -1263,8 +1052,7 @@ S
 #81039
 "Sgathe Street"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1290,8 +1078,7 @@ S
 #81040
 "Sgathe Street"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1318,12 +1105,9 @@ S
 "Shop?"
 ""
 "[Minqa] Think this was the jewel shop?
-
-[Minqa] Errms, or something else.
-
-[Minqa] Aha, this can be a bakery.
-
-"
+[Minqa] Errms, or something else.
+[Minqa] Aha, this can be a bakery.
+"
 301465601 0
 0 6 0
 D1
@@ -1336,8 +1120,7 @@ S
 #81042
 "Sgathe Street"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1355,8 +1138,7 @@ S
 #81043
 "Promontory Overlooking the Sea of Stars"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1370,11 +1152,9 @@ S
 #81044
 "General Store"
 "Under Construction.
-
-"
+"
 "[Minqa] Bartim, goblin
-
-"
+"
 301465601 0
 0 6 0
 D2
@@ -1391,8 +1171,7 @@ S
 #81045
 "Street D"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1418,11 +1197,9 @@ S
 #81046
 "Weapons Emporium"
 "Under Construction.
-
-"
+"
 "[Minqa] Tawny, human proprietress
-
-"
+"
 301465601 0
 0 6 0
 D0
@@ -1435,8 +1212,7 @@ S
 #81047
 "Street D"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1458,11 +1234,9 @@ S
 #81048
 "Abandoned Home"
 "Under Construction.
-
-"
+"
 "[Minqa] Conceal exit down, miniquest
-
-"
+"
 301465601 0
 0 6 0
 D2
@@ -1479,13 +1253,10 @@ S
 #81049
 "Hidden Alchemist"
 "Under Construction.
-
-"
+"
 "[Minqa] Sealed away until player does miniquest to find her.
-
-[Minqa] Melvara, human herbwoman.
-
-"
+[Minqa] Melvara, human herbwoman.
+"
 301465601 0
 0 6 0
 D4
@@ -1498,8 +1269,7 @@ S
 #81050
 "Street D"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1525,8 +1295,7 @@ S
 #81051
 "Warehouse"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1540,8 +1309,7 @@ S
 #81052
 "Street D"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1567,11 +1335,9 @@ S
 #81053
 "Guard Room"
 "Under Construction.
-
-"
+"
 "[Minqa] Reset cook/keeper type lady
-
-"
+"
 301465601 0
 0 6 0
 D2
@@ -1584,8 +1350,7 @@ S
 #81054
 "East Gate of Fairhavens"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1599,8 +1364,7 @@ S
 #81055
 "Street D"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1622,8 +1386,7 @@ S
 #81056
 "Street D"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1645,11 +1408,9 @@ S
 #81057
 "Street D"
 "Under Construction.
-
-"
+"
 "[Minqa] Flower girl for miniquest
-
-"
+"
 301465601 0
 0 6 0
 D0
@@ -1666,8 +1427,7 @@ S
 #81058
 "Street D"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1689,11 +1449,9 @@ S
 #81059
 "Clothier's"
 "Under Construction.
-
-"
+"
 "[Minqa] Shala, elven woman
-
-"
+"
 301465601 0
 0 6 0
 D2
@@ -1706,8 +1464,7 @@ S
 #81060
 "Silver Blade Tavern"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1725,11 +1482,9 @@ S
 #81061
 "Silver Blade Tavern"
 "Under Construction.
-
-"
+"
 "[Ahni] Hidden passageway to the east.
-
-"
+"
 301465601 0
 0 6 0
 D0
@@ -1750,8 +1505,7 @@ S
 #81062
 "Hidden Passageway"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1765,8 +1519,7 @@ S
 #81063
 "Silver Blade Tavern"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1784,8 +1537,7 @@ S
 #81064
 "Street D"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1807,8 +1559,7 @@ S
 #81065
 "Street D"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1830,8 +1581,7 @@ S
 #81066
 "Sgathe Street"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1853,8 +1603,7 @@ S
 #81067
 "Sgathe Street"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1880,11 +1629,9 @@ S
 #81068
 "Armory"
 "Under Construction.
-
-"
+"
 "[Minqa] Tamson, dwarf
-
-"
+"
 301465601 0
 0 6 0
 D3
@@ -1897,8 +1644,7 @@ S
 #81069
 "Road"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1920,8 +1666,7 @@ S
 #81070
 "Traveller's Rest"
 "Under Construction.
-
-"
+"
 ""
 301465601 0
 0 6 0
@@ -1935,27 +1680,17 @@ S
 #81071
 "High Within the Branches"
 "Enfolded by leafy branches, this small nook is virtually undetectable from
-
-below, though gaps in the tree's foilage allow someone perched on this sturdy
-
-branch a bird's eye view of the park below.  Towards the end of the largest
-
-branch jutting out from the rough trunk of the massive oak is a good-sized
-
-nest, compiled of a hodge-podge mixture of twigs, straw and string.  The small
-
-park spreads out below this lofty vantage point, fresh and verdant.  A bit to
-
-the south, a gently sloping staircase leads upwards, its finely polished
-
-marble glimmering softly in the ambiant light.
-
-"
+below, though gaps in the tree's foilage allow someone perched on this sturdy
+branch a bird's eye view of the park below.  Towards the end of the largest
+branch jutting out from the rough trunk of the massive oak is a good-sized
+nest, compiled of a hodge-podge mixture of twigs, straw and string.  The small
+park spreads out below this lofty vantage point, fresh and verdant.  A bit to
+the south, a gently sloping staircase leads upwards, its finely polished
+marble glimmering softly in the ambiant light.
+"
 "[Minqa] Hide down exit, acode only
-
-[Minqa] Acode bird's nest or some such, possible chance to fall out of tree on trying to search it.
-
-"
+[Minqa] Acode bird's nest or some such, possible chance to fall out of tree on trying to search it.
+"
 301465601 0
 0 6 0
 D5

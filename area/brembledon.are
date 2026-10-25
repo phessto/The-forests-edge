@@ -10,19 +10,13 @@
 #89000
 "Before The Wooden Gates"
 "Rising up before you to the south are a pair of large wooden gates.  Etched
-
-into each of the gates is the image of a delicate white rose on a blood-red
-
-shield.  Spanning out around you to the northeast and northwest are vast
-
-rolling hills that extend for miles.  To the north the worn, wagon-rutted
-
-Southern Trade Road journeys off over the rolling hills of the wilds.
-
-"
+into each of the gates is the image of a delicate white rose on a blood-red
+shield.  Spanning out around you to the northeast and northwest are vast
+rolling hills that extend for miles.  To the north the worn, wagon-rutted
+Southern Trade Road journeys off over the rolling hills of the wilds.
+"
 "[Olah] need to figure out reputation values
-
-"
+"
 301465600 0
 12 9 0
 D0
@@ -36,85 +30,58 @@ D2
 E
 "gates rose shield 1 south"
 "A pair of gates made of thick oak wood dominates the southern passage.  It
-
-rises over twelve feet high, and several inch thick creases bend and curl
-
-vertically on their surface.  A large round hole can be spotted near the top
-
-of one of the gates.
-
-"
+rises over twelve feet high, and several inch thick creases bend and curl
+vertically on their surface.  A large round hole can be spotted near the top
+of one of the gates.
+"
 A
 "knock"
 "1 south gates"
 "if( !is_player( ch ) )
-
-  end;
-
-if( is_open( room, south ) )
-
-  act_tochar( #why, ch );
-
-else {
-
-  act_tochar( #knock, ch );
-
-  act_notchar( #nknock, ch );
-
-  wait( 1 );
-
-  act_room( #open, ch );
-
-  open( room, south );
-
-  }
-
-"
+  end;
+if( is_open( room, south ) )
+  act_tochar( #why, ch );
+else {
+  act_tochar( #knock, ch );
+  act_notchar( #nknock, ch );
+  wait( 1 );
+  act_room( #open, ch );
+  open( room, south );
+  }
+"
 E
 "why"
 "The large wooden gates are already open.
-
-"
+"
 E
 "knock"
 "You knock on the wooden gates to the south.
-
-"
+"
 E
 "nknock"
 "$n knocks on the wooden gates to the south.
-
-"
+"
 E
 "open"
 "@eAfter a short period, a large round eye gazes out at you through a peep hole
-
-high above, then swings the gates open.@n
-
-"
+high above, then swings the gates open.@n
+"
 !
 0 0 0
 A
 ""
 ""
 "if( is_open( room, south ) ) {
-
-  wait( 1 );
-
-  send_to_room( #close, room );
-
-  send_to_room( #close, find_room( 89013 ) );
-
-  close( room, south );
-
-  }
-
-"
+  wait( 1 );
+  send_to_room( #close, room );
+  send_to_room( #close, find_room( 89013 ) );
+  close( room, south );
+  }
+"
 E
 "close"
 "The large wooden gates slam shut.
-
-"
+"
 !
 1 0 4
 -1
@@ -123,16 +90,11 @@ S
 #89001
 "Shorly Avenue"
 "Round grey stones with white and shiny silver specks peak up from beneath the
-
-inch-high grass that grow along the avenue.  On both sides of the avenue,
-
-large two-story dwellings rise up above you and run the length of the avenue
-
-heading south.  The street continues further north towards the gates of the
-
-village.
-
-"
+inch-high grass that grow along the avenue.  On both sides of the avenue,
+large two-story dwellings rise up above you and run the length of the avenue
+heading south.  The street continues further north towards the gates of the
+village.
+"
 ""
 301465600 0
 1 8 0
@@ -147,45 +109,30 @@ D2
 E
 "stone avenue grass"
 "These large, grey stones are each about the size of a storm giant's fist. 
-
-Small white specks scar their smooth surface and glint in the light.  They are
-
-nestled within light green blades of grass that span length of the avenue.
-
-"
+Small white specks scar their smooth surface and glint in the light.  They are
+nestled within light green blades of grass that span length of the avenue.
+"
 E
 "1 east 1 west dwellings buildings"
 "Rising up on both sides of the road are large two-story buildings composed of
-
-white stone blocks and rich, brown wooden support beams.  The second floor of
-
-each building is covered in windows but the ground floor is void of any window
-
-on this side.
-
-"
+white stone blocks and rich, brown wooden support beams.  The second floor of
+each building is covered in windows but the ground floor is void of any window
+on this side.
+"
 -1
 S
 
 #89002
 "Intersection of Brembledon and Shorly Avenue"
 "Spanning out before you to the south, southwest, and southeast is the lush,
-
-hilly village of Brembledon.  Large and small houses covered in grass dot the
-
-verdant landscape of the town.  The roads are covered in deep wagon ruts which
-
-cut through the low grass.  The land rises and falls due to the builders
-
-taking no time to flatten the landscape, leaving it as is.  The signs point to
-
-Brembledon Avenue lying to the east and west, circling the borders of the
-
-town.  The signs also point to Shorly Avenue continuing north and further
-
-southward.
-
-"
+hilly village of Brembledon.  Large and small houses covered in grass dot the
+verdant landscape of the town.  The roads are covered in deep wagon ruts which
+cut through the low grass.  The land rises and falls due to the builders
+taking no time to flatten the landscape, leaving it as is.  The signs point to
+Brembledon Avenue lying to the east and west, circling the borders of the
+town.  The signs also point to Shorly Avenue continuing north and further
+southward.
+"
 ""
 301465600 0
 1 6 0
@@ -208,39 +155,27 @@ D3
 E
 "wagon ruts"
 "Each of the wagon ruts that scar the surface of the road are about three
-
-inches deep.  The bottom of the ruts are filled with a small layer of mud as
-
-well as some bits of gravel.  The grass around the edge of them has been
-
-trampled by the many feet that have walked across this point.
-
-"
+inches deep.  The bottom of the ruts are filled with a small layer of mud as
+well as some bits of gravel.  The grass around the edge of them has been
+trampled by the many feet that have walked across this point.
+"
 E
 "signs"
 "Painted in bright red on wooden boards are the words \"@RShorly Avenue@n\"
-
-north-south and \"@RBrembledon Avenue@n\" east-west.
-
-"
+north-south and \"@RBrembledon Avenue@n\" east-west.
+"
 -1
 S
 
 #89003
 "Brembledon Avenue"
 "Small shrubs skirt along the edges of the road.  Planted between each of the
-
-shrubs are young trees with several leafless branches.  The grass here has
-
-been slowly torn away from the dirt from the many feet which constantly tread
-
-across it on a daily basis, leaving large patches of dirt which have turned
-
-into mud puddles scattered about the lane.  To the east and west, Brembledon
-
-Avenue continues its course through the village.
-
-"
+shrubs are young trees with several leafless branches.  The grass here has
+been slowly torn away from the dirt from the many feet which constantly tread
+across it on a daily basis, leaving large patches of dirt which have turned
+into mud puddles scattered about the lane.  To the east and west, Brembledon
+Avenue continues its course through the village.
+"
 ""
 301465600 0
 1 6 0
@@ -255,54 +190,36 @@ D3
 E
 "1 north 1 south shrubs trees branches"
 "Lining the northern and southern edges of the roads are several small, green
-
-shrubs.  Each of the shrubs is covered with small orange berries with red dots
-
-upon them.  Between each of the shrubs young trees ranging from elms to oaks
-
-have been planted.  The bark of the trees is still gray, and their trunks are
-
-only a few inches round.  Their branches are nothing more than twigs and are
-
-void of any leaves.
-
-"
+shrubs.  Each of the shrubs is covered with small orange berries with red dots
+upon them.  Between each of the shrubs young trees ranging from elms to oaks
+have been planted.  The bark of the trees is still gray, and their trunks are
+only a few inches round.  Their branches are nothing more than twigs and are
+void of any leaves.
+"
 E
 "grass dirt lane"
 "The grass of the lane is barely visible, having been torn away by the many
-
-feet which tread across it everyday.  In place of the grass are large patches
-
-of dirt which have turned to mud puddles.
-
-"
+feet which tread across it everyday.  In place of the grass are large patches
+of dirt which have turned to mud puddles.
+"
 E
 "mud puddles"
 "These small puddles dot the dark, soily landscape of the lane, each filled
-
-with brown-black mud.  A few of the puddles have grown in size due to the
-
-wagons which rut across them everyday.
-
-"
+with brown-black mud.  A few of the puddles have grown in size due to the
+wagons which rut across them everyday.
+"
 -1
 S
 
 #89004
 "Brembledon Avenue"
 "A thick blanket of multi-colored leaves and tiny brown twigs cover the grassy
-
-lane.  Overhead the thick branches of several oaks trees which lie off to the
-
-northwest block out the view of the sky.  Directly to the north lying just off
-
-the edge of the lane is a white cobblestone walkway leading up to a small
-
-cottage.  Smoke lingers from its chimney, and the smell of burning fumes
-
-pervades from its entrance.
-
-"
+lane.  Overhead the thick branches of several oaks trees which lie off to the
+northwest block out the view of the sky.  Directly to the north lying just off
+the edge of the lane is a white cobblestone walkway leading up to a small
+cottage.  Smoke lingers from its chimney, and the smell of burning fumes
+pervades from its entrance.
+"
 ""
 301465600 0
 1 6 0
@@ -321,54 +238,36 @@ D3
 E
 "blanket leaves twigs lane"
 "Covering almost every inch of the lane are piles of multi-colored leaves; each
-
-taking on a different color of the rainbow.  Intermixed with the leaves are
-
-several small brown twigs no longer than two inches.
-
-"
+taking on a different color of the rainbow.  Intermixed with the leaves are
+several small brown twigs no longer than two inches.
+"
 E
 "1 up branches oak trees overhead"
 "Stretching out above the lane are several large, thick branches from a grove
-
-of oak trees which lie just off to the northwest.  Each of the branches is
-
-covered in thick, healthy brown bark and are filled with multi-colored leaves.
-
-"
+of oak trees which lie just off to the northwest.  Each of the branches is
+covered in thick, healthy brown bark and are filled with multi-colored leaves.
+"
 E
 "1 north cobblestone walkway cottage chimney smoke entrance"
 "Directly off the edge of the road to the north is a small cobblestone walkway
-
-composed of blue and white bricks which leads up to an brightly-colored stone
-
-cottage.  The cottage's walls have been painted a bright violet color and its
-
-thatched roof has been dyed navy blue.  Thick gray puffs of smoke rise from
-
-the stone chimney, covering the roof like an umbrella
-
-"
+composed of blue and white bricks which leads up to an brightly-colored stone
+cottage.  The cottage's walls have been painted a bright violet color and its
+thatched roof has been dyed navy blue.  Thick gray puffs of smoke rise from
+the stone chimney, covering the roof like an umbrella
+"
 -1
 S
 
 #89005
 "Corner of Brembledon Avenue and Millco's Way"
 "Millco's way comes to an end at this corner of the town, while to the east
-
-Brembledon Avenue begins its eastern run along the northern part of the
-
-village.  The grass is bright green and tall here, covering almost all of the
-
-hilly surface of the avenue.  Also growing among the grass are patches of
-
-clovers and several wildflowers, including dandelions and buttercups, which
-
-dot the lush green landscape in yellow.  A pair of cottages have been erected
-
-to the north and west.
-
-"
+Brembledon Avenue begins its eastern run along the northern part of the
+village.  The grass is bright green and tall here, covering almost all of the
+hilly surface of the avenue.  Also growing among the grass are patches of
+clovers and several wildflowers, including dandelions and buttercups, which
+dot the lush green landscape in yellow.  A pair of cottages have been erected
+to the north and west.
+"
 ""
 301465600 0
 1 6 0
@@ -391,52 +290,35 @@ D3
 E
 "grass"
 "The grass is thick and a healthy green color.  Most of it has been cut down to
-
-about an inch high but in some places it reaches as much as two feet.
-
-"
+about an inch high but in some places it reaches as much as two feet.
+"
 E
 "patches wildflowers clovers dandelions buttercups"
 "Mixed with the lush green grass of the avenue are several large patches of
-
-wildflowers and clovers.  Each of the wildflowers varies in color and size but
-
-all remain quite beautiful.  Like the wildflowers, the clovers also vary in
-
-color from dull green to a rich yellow color.
-
-"
+wildflowers and clovers.  Each of the wildflowers varies in color and size but
+all remain quite beautiful.  Like the wildflowers, the clovers also vary in
+color from dull green to a rich yellow color.
+"
 E
 "cottages 1 west 1 north"
 "The cottage to your north is painted in dark brown.  The distinct smell of
-
-leather can be detected from that direction.  To your west is a wooden cottage
-
-with a few windows that have been glazed to prevent seeing anything clearly
-
-through them.
-
-"
+leather can be detected from that direction.  To your west is a wooden cottage
+with a few windows that have been glazed to prevent seeing anything clearly
+through them.
+"
 -1
 S
 
 #89006
 "Millco's Way"
 "A pair of strange-looking buildings have been built to the east and west. 
-
-Standing beside the archway to the east is a bronze statue of an orc.  Its
-
-mouth is agape with a shocked expression, and its hands are raised as though
-
-attempting to shield itself from something.  Emanating from the western
-
-building are odorless gases of sundry colors.  The street extends to the north
-
-and south, where the grass continues to grow abundantly and almost totally
-
-blankets the tilted ground.
-
-"
+Standing beside the archway to the east is a bronze statue of an orc.  Its
+mouth is agape with a shocked expression, and its hands are raised as though
+attempting to shield itself from something.  Emanating from the western
+building are odorless gases of sundry colors.  The street extends to the north
+and south, where the grass continues to grow abundantly and almost totally
+blankets the tilted ground.
+"
 ""
 301465600 0
 1 6 0
@@ -459,52 +341,35 @@ D3
 E
 "1 east building"
 "This building differs than all the others of the city due to its cylinder
-
-shape.  Its roof is composed of sheets of white stone plated with silver.  Its
-
-window shutters are open, and it seems well lit on the inside.
-
-"
+shape.  Its roof is composed of sheets of white stone plated with silver.  Its
+window shutters are open, and it seems well lit on the inside.
+"
 E
 "orc statue"
 "Composed entirely of solid bronze, this statue depicts a life-sized orc in a
-
-vulnerable state.  Its eyes curve downward as though in fear, and its mouth is
-
-open wide to reveal sharp tusks that gasp for breath.  A spear with a jagged
-
-tip is held in its right hand, but looks as though it's about to fall on the
-
-ground.
-
-"
+vulnerable state.  Its eyes curve downward as though in fear, and its mouth is
+open wide to reveal sharp tusks that gasp for breath.  A spear with a jagged
+tip is held in its right hand, but looks as though it's about to fall on the
+ground.
+"
 E
 "1 western building gases"
 "Thin vapors of gas permeate from the small building to the west.  Green,
-
-violet, blue, and white gases blend with one another, forming newer colors.  A
-
-faint glow can be seen somewhere past the entrance into the building.
-
-"
+violet, blue, and white gases blend with one another, forming newer colors.  A
+faint glow can be seen somewhere past the entrance into the building.
+"
 -1
 S
 
 #89007
 "Shorly Avenue"
 "The street here is covered with deep wagon ruts that have filled with water
-
-from past rains, leaving puddles of mud everywhere.  Sitting just off the
-
-street to the west is a stone building with a wide gravel walkway leading
-
-inside it.  Around the foundation of the edifice are small white lilies and
-
-red rose bushes.  To the south Shorly Avenue continues its course into the
-
-heart of the town.
-
-"
+from past rains, leaving puddles of mud everywhere.  Sitting just off the
+street to the west is a stone building with a wide gravel walkway leading
+inside it.  Around the foundation of the edifice are small white lilies and
+red rose bushes.  To the south Shorly Avenue continues its course into the
+heart of the town.
+"
 ""
 301465600 0
 1 6 0
@@ -523,61 +388,41 @@ D3
 E
 "ruts"
 "Several wagon ruts scar the grassy surface of the street here, criss-crossing
-
-each other at several points.  Each rut is about two inches deep and has
-
-filled with small puddles of water.
-
-"
+each other at several points.  Each rut is about two inches deep and has
+filled with small puddles of water.
+"
 E
 "1 west building edifice"
 "Standing off the edge of the street to the east and west are small, thatched
-
-roof stone cottages.  Both hoses are nearly identical; each have white marble
-
-walls, two windows and a single, small door.  Small, grey rock gravel walkways
-
-lead up to the doors of each house.  Around the base of the walls are several
-
-rows of white lilies as well as some roses bushes.
-
-"
+roof stone cottages.  Both hoses are nearly identical; each have white marble
+walls, two windows and a single, small door.  Small, grey rock gravel walkways
+lead up to the doors of each house.  Around the base of the walls are several
+rows of white lilies as well as some roses bushes.
+"
 E
 "gravel walkway"
 "These small walkways are about three feet wide and composed of small,
-
-greyish-colored stones.  Larger stones of the same color line the sides of the
-
-walkway as it heads up to the tiny doorways.
-
-"
+greyish-colored stones.  Larger stones of the same color line the sides of the
+walkway as it heads up to the tiny doorways.
+"
 E
 "lilies rose bushes"
 "Small, ivory-white lilies and bright-red rose bushes have been planted at
-
-around the base of the small cottages to the east and west.  Each of the
-
-flowers is in full bloom and their pleasant aroma fills the air.
-
-"
+around the base of the small cottages to the east and west.  Each of the
+flowers is in full bloom and their pleasant aroma fills the air.
+"
 -1
 S
 
 #89008
 "Shorly Avenue"
 "Filling the air around you is the delectable scent of baked dough mixed with
-
-cooked fruits such as strawberries and bananas.  Most of the grass along this
-
-strip of the street has been ripped away by the many feet that tread down this
-
-road everyday.  In place of the grass are large mud puddles which span almost
-
-the entire width of the road.  A pair of small buildings stand to the east and
-
-west of the avenue.
-
-"
+cooked fruits such as strawberries and bananas.  Most of the grass along this
+strip of the street has been ripped away by the many feet that tread down this
+road everyday.  In place of the grass are large mud puddles which span almost
+the entire width of the road.  A pair of small buildings stand to the east and
+west of the avenue.
+"
 ""
 301465600 0
 1 6 0
@@ -592,59 +437,40 @@ D2
 E
 "grass street"
 "This strip of road is void of any grass, having been ripped away by years of
-
-travellers treading across it.  In place of the grass are large mud puddles
-
-which span across the width of the road.
-
-"
+travellers treading across it.  In place of the grass are large mud puddles
+which span across the width of the road.
+"
 E
 "mud puddles"
 "These large mud puddles are a dark brown color, and some have taken on the
-
-color of the soil which is a rich black color.  Each of the puddles are mere
-
-inches from one another.  The large puddles span the entire width of the road,
-
-leading right up to the sides of the two buildings to the east and west.
-
-"
+color of the soil which is a rich black color.  Each of the puddles are mere
+inches from one another.  The large puddles span the entire width of the road,
+leading right up to the sides of the two buildings to the east and west.
+"
 E
 "1 east building"
 "Lying directly off the edge of the road to the west is a small building
-
-composed of white marble.  Their window shutters have been opened, letting in
-
-the tantalizing smell of freshly baked tarts.
-
-"
+composed of white marble.  Their window shutters have been opened, letting in
+the tantalizing smell of freshly baked tarts.
+"
 E
 "1 west building"
 "Directly to the west of you, just off the edge of the street, is a small stone
-
-building with a yellow-brown thatched roof.  Its window shutters are open, and
-
-its interior appears brightly lit.
-
-"
+building with a yellow-brown thatched roof.  Its window shutters are open, and
+its interior appears brightly lit.
+"
 -1
 S
 
 #89009
 "Intersection of Shorly Avenue and Cobblecrumb Street"
 "To the south is a marble building with a thick, thatched roof.  Small
-
-alleyways run past the building in which you can see several large crates and
-
-sacks stacked up next to them.  The sound of roaring flames can be clearly
-
-heard from within the strcuture, and the distinct aroma of chocolate, sugar,
-
-and vanilla wafts out from within them.  The grassy road continues to the east
-
-and west from here, continuing past the many bakeries of the town.
-
-"
+alleyways run past the building in which you can see several large crates and
+sacks stacked up next to them.  The sound of roaring flames can be clearly
+heard from within the strcuture, and the distinct aroma of chocolate, sugar,
+and vanilla wafts out from within them.  The grassy road continues to the east
+and west from here, continuing past the many bakeries of the town.
+"
 ""
 301465600 0
 1 6 0
@@ -667,45 +493,30 @@ D3
 E
 "1 south building roof"
 "Rising up to the south is a moderately sized building made from small marble
-
-blocks.  The building has two windows that are covered in grime and tucked
-
-between them is a small, open doorway.  Its roof has been constructed from a
-
-thick thatch which takes on a rich yellow color.  A brick chimney made from
-
-grey stone protrudes from the roof and occasionally spews out a large cloud of
-
-smoke.
-
-"
+blocks.  The building has two windows that are covered in grime and tucked
+between them is a small, open doorway.  Its roof has been constructed from a
+thick thatch which takes on a rich yellow color.  A brick chimney made from
+grey stone protrudes from the roof and occasionally spews out a large cloud of
+smoke.
+"
 E
 "alleyways crates sacks"
 "Running beside the building to the south are narrow alleyways.  Within each of
-
-them you can clearly see several large crates and sacks stacked up against the
-
-walls of the building.
-
-"
+them you can clearly see several large crates and sacks stacked up against the
+walls of the building.
+"
 -1
 S
 
 #89010
 "Cobblecrumb Street"
 "The various smells from the surrounding bakeries and shops fill the air along
-
-the road.  To the north and south, large white wooden buildings sit off the
-
-edge of the road and occasionally a strong wave of heat emanates from within
-
-them.  To the west Cobblecrumb's Street continues its course through the food
-
-district of Brembledon.  Off in the distance to the east you spot a small,
-
-grassy hill teeming with the sound of laughter.
-
-"
+the road.  To the north and south, large white wooden buildings sit off the
+edge of the road and occasionally a strong wave of heat emanates from within
+them.  To the west Cobblecrumb's Street continues its course through the food
+district of Brembledon.  Off in the distance to the east you spot a small,
+grassy hill teeming with the sound of laughter.
+"
 ""
 301465600 0
 1 6 0
@@ -728,34 +539,23 @@ D3
 E
 "1 north 1 south wooden buildings"
 "Each of the wooden buildings which rest off the edge of the road to the north
-
-and south are identical.  Both have been composed of white wooden boards and a
-
-light grey mortar.  Their roofs are made from a yellow-brown thatch. 
-
-Protruding from the roof are several chimneys which spew clouds of white and
-
-black smoke.
-
-"
+and south are identical.  Both have been composed of white wooden boards and a
+light grey mortar.  Their roofs are made from a yellow-brown thatch. 
+Protruding from the roof are several chimneys which spew clouds of white and
+black smoke.
+"
 -1
 S
 
 #89011
 "Brembledon Avenue"
 "The street dips deeply into the ground here, like a trail descending into a
-
-valley.  All along the northern edge of the street, white rose bushes have
-
-been planted; their flowers just now beginning to bloom.  A pair of small
-
-buildings have been built to the north and south.  An engraved wooden sign is
-
-posted beside each building.  Brembledon Avenue continues to the east and west
-
-from here, gently rising up the slopes of the hills.
-
-"
+valley.  All along the northern edge of the street, white rose bushes have
+been planted; their flowers just now beginning to bloom.  A pair of small
+buildings have been built to the north and south.  An engraved wooden sign is
+posted beside each building.  Brembledon Avenue continues to the east and west
+from here, gently rising up the slopes of the hills.
+"
 ""
 301465600 0
 1 6 0
@@ -778,50 +578,34 @@ D3
 E
 "edge rose bushes flower"
 "Growing in a long row along the northern side of the avenue are five rose
-
-bushes.  Their buds and petals are white as milk and give off a fragrant
-
-scent.  Each rose looks to be in full blossom, beautifying the sights along
-
-this part of the street.
-
-"
+bushes.  Their buds and petals are white as milk and give off a fragrant
+scent.  Each rose looks to be in full blossom, beautifying the sights along
+this part of the street.
+"
 E
 "1 south building sign"
 "The building is painted in navy blue.  Its walls are made of a smooth,
-
-polished stone.  The thatched roof covers the top and seems to provide good
-
-protection for the building.  Posted beside the entrance is a wooden sign with
-
-an engraved picture of a wolf.
-
-"
+polished stone.  The thatched roof covers the top and seems to provide good
+protection for the building.  Posted beside the entrance is a wooden sign with
+an engraved picture of a wolf.
+"
 E
 "1 north building sign"
 "The building to the north is a moss green.  Posted beside the entrance is a
-
-wooden sign with an engraved picture of a lantern.
-
-"
+wooden sign with an engraved picture of a lantern.
+"
 -1
 S
 
 #89012
 "Brembledon Avenue"
 "A stone wall looms to the east, casting a dark shadow upon the street.  At the
-
-base of the wall several sourberry bushes have been planted, with their tiny
-
-flowers still waiting to turn into fruit.  Off the edge of the avenue to the
-
-west, tall maple, oak, birch and elm trees tower up towards the sky; their
-
-thick branches tangling with each other.  Brembledon Avenue continues its path
-
-around the borders of the town to the south and west.
-
-"
+base of the wall several sourberry bushes have been planted, with their tiny
+flowers still waiting to turn into fruit.  Off the edge of the avenue to the
+west, tall maple, oak, birch and elm trees tower up towards the sky; their
+thick branches tangling with each other.  Brembledon Avenue continues its path
+around the borders of the town to the south and west.
+"
 ""
 301465600 0
 1 6 0
@@ -840,54 +624,36 @@ D3
 E
 "1 east stone walls"
 "These mighty stone walls have been made from large white marble bricks tightly
-
-spaced together.  A white mortar has been used to hold each of them together,
-
-and in some places a thin sheet of it has been used to help reinforce them
-
-further.
-
-"
+spaced together.  A white mortar has been used to hold each of them together,
+and in some places a thin sheet of it has been used to help reinforce them
+further.
+"
 E
 "sourberry bushes flowers"
 "These bushes grow very low to the ground, their tops barely reaching a foot
-
-high.  Small yellow berries hang from each of their delicate branches as well
-
-as some small white flowers.
-
-"
+high.  Small yellow berries hang from each of their delicate branches as well
+as some small white flowers.
+"
 E
 "1 west maple oak birch elm trees"
 "Standing off the edge of the road to the west, like mighty obelisks, are
-
-several oak, birch, maple and elm trees.  Each of the trees have thick, round
-
-trunks measuring at least four feet in diameter.  Their leafy branches spread
-
-out over the small cottages and buildings surrounding them.  Groaning and
-
-cracking can be heard from their branches everytime a stiff breeze blows
-
-through the area, causing them to sway gracefully.
-
-"
+several oak, birch, maple and elm trees.  Each of the trees have thick, round
+trunks measuring at least four feet in diameter.  Their leafy branches spread
+out over the small cottages and buildings surrounding them.  Groaning and
+cracking can be heard from their branches everytime a stiff breeze blows
+through the area, causing them to sway gracefully.
+"
 -1
 S
 
 #89013
 "Inside The Village Gates"
 "Directly to the north of you are the massive wooden gates leading out of the
-
-village of Brembledon.  Deep ruts have been carved into the ground around the
-
-gates, a testament to the many years they have been opened and closed to allow
-
-travellers through.  Set into the right side of the wall next to gates is a
-
-large steel @elever@n covered in grass and mud.
-
-"
+village of Brembledon.  Deep ruts have been carved into the ground around the
+gates, a testament to the many years they have been opened and closed to allow
+travellers through.  Set into the right side of the wall next to gates is a
+large steel @elever@n covered in grass and mud.
+"
 ""
 301465664 0
 1 8 0
@@ -902,138 +668,95 @@ D2
 E
 "deep ruts"
 "Worn deep into the ground are several ruts made from the massive stone
-
-gates swinging open and close over the years.  Each rut is about one foot
-
-deep and the bottom is filled with a shallow pool of muddy water.
-
-"
+gates swinging open and close over the years.  Each rut is about one foot
+deep and the bottom is filled with a shallow pool of muddy water.
+"
 E
 "large steel lever"
 "Positioned next to the gates is a rather large steel lever covered in a
-
-bit of dirt.  The lever has been bolted into the stone wall of the
-
-eastern guard house and apparently is used to open the large gates with
-
-the help of a mechanical system.
-
-"
+bit of dirt.  The lever has been bolted into the stone wall of the
+eastern guard house and apparently is used to open the large gates with
+the help of a mechanical system.
+"
 A
 ""
 ""
 "if( is_open( room, north ) ) {
-
-  wait( 1 );
-
-  send_to_room( #close, room );
-
-  send_to_room( #close, find_room( 89000 ) );
-
-  close( room, north );
-
-  }
-
-"
+  wait( 1 );
+  send_to_room( #close, room );
+  send_to_room( #close, find_room( 89000 ) );
+  close( room, north );
+  }
+"
 E
 "close"
 "The large wooden gates slam shut.
-
-"
+"
 !
 1 0 1
 A
 "pull"
 "lever"
 "if( is_open( room, north ) ) {
-
-  act_tochar( #why, ch );
-
-  }
-
-else {
-
-  act_tochar( #pull, ch );
-
-  act_notchar( #npull, ch );
-
-  wait( 1 );
-
-  send_to_room( #open, room );
-
-  send_to_room( #open, find_room( 89000 ) );
-
-  open( room, north );
-
-  }
-
-"
+  act_tochar( #why, ch );
+  }
+else {
+  act_tochar( #pull, ch );
+  act_notchar( #npull, ch );
+  wait( 1 );
+  send_to_room( #open, room );
+  send_to_room( #open, find_room( 89000 ) );
+  open( room, north );
+  }
+"
 E
 "why"
 "The gates are already open.
-
-"
+"
 E
 "pull"
 "You pull the steel lever down.
-
-"
+"
 E
 "npull"
 "$n pulls the steel lever down.
-
-"
+"
 E
 "open"
 "The sound of stone grinding fills the air, and the gates slowly swing open.
-
-"
+"
 !
 0 0 0
 A
 "push"
 "lever"
 "if( is_open( room, north ) ) {
-
-  act_tochar( #push, ch );
-
-  act_notchar( #npush, ch );
-
-  wait( 1 );
-
-  send_to_room( #close, room );
-
-  send_to_room( #close, find_room( 89000 ) );
-
-  close( room, north );
-
-  }
-
-else
-
-  act_tochar( #why, ch );
-
-"
+  act_tochar( #push, ch );
+  act_notchar( #npush, ch );
+  wait( 1 );
+  send_to_room( #close, room );
+  send_to_room( #close, find_room( 89000 ) );
+  close( room, north );
+  }
+else
+  act_tochar( #why, ch );
+"
 E
 "why"
 "The gates are already closed.
-
-"
+"
 E
 "push"
 "You push the steel lever up.
-
-"
+"
 E
 "npush"
 "$n pushes the steel lever up.
-
-"
+"
 E
 "close"
 "The sound of stone grinding fills the air, and the gates slowly swing shut.
-
-"
+"
 !
 0 0 0
 -1
@@ -1042,23 +765,15 @@ S
 #89014
 "Cobblecrumb Street"
 "Small walls composed of blocks of white marble line the edges of Cobblecrumb
-
-Street here.  Wagon ruts can be clearly seen imprinted into the soft, grassy
-
-ground.  Dotting the road are several small white lilies which have avoided
-
-being crushed by the traffic this road has seen.  To the east a small hill
-
-rises up many feeet above, and you can see several white benches surrounding a
-
-large crystal fountain.  To the west Cobblecrumb Street continues as it runs
-
-in between several buildings lining its edges.
-
-"
+Street here.  Wagon ruts can be clearly seen imprinted into the soft, grassy
+ground.  Dotting the road are several small white lilies which have avoided
+being crushed by the traffic this road has seen.  To the east a small hill
+rises up many feeet above, and you can see several white benches surrounding a
+large crystal fountain.  To the west Cobblecrumb Street continues as it runs
+in between several buildings lining its edges.
+"
 "leaving east acode
-
-"
+"
 301465600 0
 1 6 0
 D1
@@ -1072,52 +787,35 @@ D3
 E
 "1 north 1 south walls blocks marble"
 "Lining the edges of the road to the north and south are small walls composed
-
-of glossy white marble blocks.  Each block is held together by a pearly-white
-
-mortar that twinkles slightly.  A few dry, brown leaves litter the tops of the
-
-walls as well as some broken twigs.
-
-"
+of glossy white marble blocks.  Each block is held together by a pearly-white
+mortar that twinkles slightly.  A few dry, brown leaves litter the tops of the
+walls as well as some broken twigs.
+"
 E
 "wagon ruts imprints grassy ground"
 "Wagons ruts have been imprinted in the soft soil along this stretch of road,
-
-digging down a few inches.  The ruts run side-by-side along most of the road
-
-but intersect at some points.
-
-"
+digging down a few inches.  The ruts run side-by-side along most of the road
+but intersect at some points.
+"
 E
 "lilies flowers"
 "Scattered about the road are several ivory-white lilies which have avoided
-
-being crushed by the traffic of the town.  Their delicate petals are covered
-
-in a light yellow dust, and their centers are a deep blue color.
-
-"
+being crushed by the traffic of the town.  Their delicate petals are covered
+in a light yellow dust, and their centers are a deep blue color.
+"
 -1
 S
 
 #89015
 "Sunnydale Park"
 "The view of the surrounding town is marvelous from this vantage point; every
-
-small building as well as tree and road can be clearly seen.  Towering to the
-
-northwest on the edge of the hill is a large walnut tree with large,
-
-leaf-filled branches which span overhead, providing a cooling shade.  Placed
-
-in a small dip a few feet from the tree is a small marble bench polished to a
-
-high gloss.  To the southeast a fountain rises up in the center of the park. 
-
-To the east and south the park continues across the grassy hill.
-
-"
+small building as well as tree and road can be clearly seen.  Towering to the
+northwest on the edge of the hill is a large walnut tree with large,
+leaf-filled branches which span overhead, providing a cooling shade.  Placed
+in a small dip a few feet from the tree is a small marble bench polished to a
+high gloss.  To the southeast a fountain rises up in the center of the park. 
+To the east and south the park continues across the grassy hill.
+"
 ""
 301465664 0
 4 9 0
@@ -1132,14 +830,10 @@ D2
 E
 "1 northwest walnut tree"
 "Towering up in the northwest corner, leaning off the edge of the hill, is a
-
-massive walnut tree.  Its thick, long branches are filled with lush green
-
-leaves as well as several hundred tiny walnuts.  Scattered about the base of
-
-the tree are several walnut shells robbed of their meat.
-
-"
+massive walnut tree.  Its thick, long branches are filled with lush green
+leaves as well as several hundred tiny walnuts.  Scattered about the base of
+the tree are several walnut shells robbed of their meat.
+"
 3386 17 1509949540 -2 0
 755 9 1509949540 3 0
 1142 17 1509949540 -2 0
@@ -1149,25 +843,16 @@ S
 #89016
 "Sunnydale Park"
 "A multitude of walnuts lie scattered about the park, most of which have been
-
-robbed of their insides, leaving only their tops, while a few have remain
-
-unscathed.  The lush, green grass has been cut down to the height of about
-
-three inches, making this a lovely picnic area.  The branches of a large
-
-walnut tree which lies off the north hang just a few feet overhead, blocking
-
-out the view of the sky and providing a cool shade.  The rhythmic bubbling of
-
-a fountain can be heard clearly to the east.  To the west, the hill slopes
-
-downwards and heads onto a small street.
-
-"
+robbed of their insides, leaving only their tops, while a few have remain
+unscathed.  The lush, green grass has been cut down to the height of about
+three inches, making this a lovely picnic area.  The branches of a large
+walnut tree which lies off the north hang just a few feet overhead, blocking
+out the view of the sky and providing a cool shade.  The rhythmic bubbling of
+a fountain can be heard clearly to the east.  To the west, the hill slopes
+downwards and heads onto a small street.
+"
 "leaving west acod
-
-"
+"
 301465664 0
 4 9 0
 D0
@@ -1189,21 +874,15 @@ D3
 E
 "walnuts park"
 "Scattered about the lush green grass of the park are hundreds of broken
-
-walnuts; each stripped of their meat.  Mixed in with the acorns are several
-
-twigs and a few dry leaves.
-
-"
+walnuts; each stripped of their meat.  Mixed in with the acorns are several
+twigs and a few dry leaves.
+"
 E
 "branches walnut tree"
 "The branches of a large walnut tree which lies off to the north span overhead
-
-blocking out the view of the sky.  Large, flat leaves fill the branches of the
-
-trees as well as several hundred walnuts.
-
-"
+blocking out the view of the sky.  Large, flat leaves fill the branches of the
+trees as well as several hundred walnuts.
+"
 3386 17 1509949540 -2 0
 1136 17 1509949540 -2 0
 -1
@@ -1212,25 +891,16 @@ S
 #89017
 "Sunnydale Park"
 "Small oak trees dot the grassy hilltop of the park.  Tucked in between the
-
-trees are small stone benches, each covered in newly fallen leaves.  Observing
-
-the area around you, you note how much of the town's landscape is dominated by
-
-small buildings interspersed among the light green grassy hills.  you.  To the
-
-north the hill slopes down on a thirty degree angle as it heads towards more
-
-level terrain.  To the east and west, the park continues along the gently
-
-sloping hill.  Directly to the south, a large crystal fountain rises up from
-
-the center of the park.
-
-"
+trees are small stone benches, each covered in newly fallen leaves.  Observing
+the area around you, you note how much of the town's landscape is dominated by
+small buildings interspersed among the light green grassy hills.  you.  To the
+north the hill slopes down on a thirty degree angle as it heads towards more
+level terrain.  To the east and west, the park continues along the gently
+sloping hill.  Directly to the south, a large crystal fountain rises up from
+the center of the park.
+"
 "leaving north acode
-
-"
+"
 301465664 0
 4 9 0
 D0
@@ -1252,14 +922,10 @@ D3
 E
 "small oak trees"
 "These young oak trees are only a few years old judging by the size of their
-
-trunks.  The rich brown bark of their branches are free of any moss or bug
-
-infestation.  Multi-colored leaves fill their branches, each taking on the hue
-
-of a rainbow.
-
-"
+trunks.  The rich brown bark of their branches are free of any moss or bug
+infestation.  Multi-colored leaves fill their branches, each taking on the hue
+of a rainbow.
+"
 3386 17 1509949540 -2 0
 -1
 S
@@ -1267,20 +933,13 @@ S
 #89018
 "Sunnydale Park"
 "A lone oak tree stands on this portion of the park.  Aged and gnarled, it
-
-looks as though at any moment it could collapse beneath its own weight.
-
-Erected on the northeast edge of the hill here is the statue of a beautiful
-
-halfling woman with a crown of wheat around her head.  At the base of the
-
-statue is a small bronze plaque nearly obscured by the thick grass which grows
-
-around it.  A few feet to the southwest of the statue, a small bench has been
-
-placed.  The park spreads out the south and west from this point.
-
-"
+looks as though at any moment it could collapse beneath its own weight.
+Erected on the northeast edge of the hill here is the statue of a beautiful
+halfling woman with a crown of wheat around her head.  At the base of the
+statue is a small bronze plaque nearly obscured by the thick grass which grows
+around it.  A few feet to the southwest of the statue, a small bench has been
+placed.  The park spreads out the south and west from this point.
+"
 ""
 301465664 0
 4 9 0
@@ -1295,37 +954,26 @@ D3
 E
 "tree"
 "This oak tree stretches many feet high.  Its bark looks rough and has started
-
-to peel.  Carved a few feet from its base is a heart and arrow with the
-
-initials \"T and C\".
-
-"
+to peel.  Carved a few feet from its base is a heart and arrow with the
+initials \"T and C\".
+"
 E
 "base plaque"
 "The surface of the bronze plaque has been smudged by dirt.  Inscribed within
-
-it is the outline of a sun.
-
-"
+it is the outline of a sun.
+"
 E
 "grass"
 "The grass grows has grown over several inches despite the constant trampling
-
-by numerous feet that have tread across this part of the park.
-
-"
+by numerous feet that have tread across this part of the park.
+"
 E
 "statue"
 "The statue is that of a woman with a pleasant smile across its face.  It
-
-stands the same height as typical halfling and is made of bronze.  Its gown
-
-flows gracefully down toward its bare feet.  All sorts of flowers cover its
-
-curly hair.
-
-"
+stands the same height as typical halfling and is made of bronze.  Its gown
+flows gracefully down toward its bare feet.  All sorts of flowers cover its
+curly hair.
+"
 3386 17 1509949540 -2 0
 -1
 S
@@ -1333,25 +981,16 @@ S
 #89019
 "Sunnydale Park"
 "Like a soft velvet blanket stretched over a bed, the thick, green grass of the
-
-park covers every inch of the hill, only interrupted by the occasional patch
-
-of wildflowers or tree.  To the northeast, southeast and east you are given a
-
-clear view of the city from its small stone cottages and buildings to its
-
-massive walls which surround it.  Directly to the west a large crystal
-
-fountain has positioned in the center of the park and the sound of its
-
-bubbling water drifts through the air.  To the east the hill slopes down and
-
-onto a small street.
-
-"
+park covers every inch of the hill, only interrupted by the occasional patch
+of wildflowers or tree.  To the northeast, southeast and east you are given a
+clear view of the city from its small stone cottages and buildings to its
+massive walls which surround it.  Directly to the west a large crystal
+fountain has positioned in the center of the park and the sound of its
+bubbling water drifts through the air.  To the east the hill slopes down and
+onto a small street.
+"
 "add leaving east acode
-
-"
+"
 301465664 0
 4 9 0
 D0
@@ -1373,12 +1012,9 @@ D3
 E
 "grass wildflowers tree"
 "Rising many inches high, the blades of grass brush against your ankles.
-
-Growing amongst the abundant grass are daisies and daffodils, as well as trees
-
-that haven't reached maturity yet.
-
-"
+Growing amongst the abundant grass are daisies and daffodils, as well as trees
+that haven't reached maturity yet.
+"
 3386 17 1509949540 -2 0
 -1
 S
@@ -1386,22 +1022,14 @@ S
 #89020
 "Sunnydale Park"
 "Positioned in the center of the park here is a massive fountain made entirely
-
-from a bluish-hued crystal.  The fountain has been carved into the shape of
-
-matronly halfling woman cradling a halfling child in one arm and carrying a
-
-bunch of flowers in the other.  Around the base of the fountain are several
-
-small white rose bushes.  Nearly obscured by the thick vines of the roses is a
-
-small silver @eplaque@n upon which something has been engraved.  Surrounding the
-
-fountain in all directions are pearly-white marble benches.  The park spans
-
-out in all directions along the slopes of the hill.
-
-"
+from a bluish-hued crystal.  The fountain has been carved into the shape of
+matronly halfling woman cradling a halfling child in one arm and carrying a
+bunch of flowers in the other.  Around the base of the fountain are several
+small white rose bushes.  Nearly obscured by the thick vines of the roses is a
+small silver @eplaque@n upon which something has been engraved.  Surrounding the
+fountain in all directions are pearly-white marble benches.  The park spans
+out in all directions along the slopes of the hill.
+"
 ""
 301465664 0
 4 9 0
@@ -1425,57 +1053,35 @@ E
 "plaque"
 "Pushing aside the thick vines to reveal the text upon the plaque:
 
-
 @YOur savior.
-
-@YOur goddess.
-
-@YIn times of doubt.
-
-@YIn times of sadness.
-
-@YIn times of need.
-
-@YShe will be there.
-
-@YTo guide us to our destiny.
-
-@YTo lift our sadness.
-
-@YTo aid us.
-
+@YOur goddess.
+@YIn times of doubt.
+@YIn times of sadness.
+@YIn times of need.
+@YShe will be there.
+@YTo guide us to our destiny.
+@YTo lift our sadness.
+@YTo aid us.
 
 @nThe author's name lies beneath the text: @YLady Lochsire Mzelia@n
-
-"
+"
 E
 "crystal fountain"
 "This massive fountain has been carved from a bluish-hued crystal which
-
-twinkles in the light.  The fountain has been shaped in the likeness of a
-
-smiling halfling woman carrying a child in one arm and a bunch of flowers in
-
-the arm.  The woman is dressed in a flowing gown with a wreath around her
-
-head.  A warm smile dominates her attractive face, as though inviting others
-
-to revel in her happiness.
-
-"
+twinkles in the light.  The fountain has been shaped in the likeness of a
+smiling halfling woman carrying a child in one arm and a bunch of flowers in
+the arm.  The woman is dressed in a flowing gown with a wreath around her
+head.  A warm smile dominates her attractive face, as though inviting others
+to revel in her happiness.
+"
 E
 "white rose bushes"
 "Planted around the base of the fountain are several healthy rose bushes which
-
-bear ivory-white roses.  Each of the roses is in full bloom and their delicate
-
-petals have droplets of dew scattered across them.  Thick vines from the
-
-bushes tangle with each other and continue around the fountain where they
-
-nearly obscure a small plaque.
-
-"
+bear ivory-white roses.  Each of the roses is in full bloom and their delicate
+petals have droplets of dew scattered across them.  Thick vines from the
+bushes tangle with each other and continue around the fountain where they
+nearly obscure a small plaque.
+"
 1 17 1509949540 -2 0
 -1
 S
@@ -1483,18 +1089,12 @@ S
 #89021
 "Sunnydale Park"
 "Large patches of wildflowers cover almost every inch of the park in this spot,
-
-their sweet aroma filling the air.  Spanning out to the southeast and
-
-southwest is the vast green landscape of the city, occasionally interrupted by
-
-white stone buildings.  Directly to the east, a large maple tree stands at an
-
-angle on the side of the hill.  To the north a fountain made of crystal has
-
-been erected in the center of the park.
-
-"
+their sweet aroma filling the air.  Spanning out to the southeast and
+southwest is the vast green landscape of the city, occasionally interrupted by
+white stone buildings.  Directly to the east, a large maple tree stands at an
+angle on the side of the hill.  To the north a fountain made of crystal has
+been erected in the center of the park.
+"
 ""
 301465664 0
 4 9 0
@@ -1513,34 +1113,23 @@ D3
 E
 "wildflowers"
 "Blanketing the ground like a patchwork quilt are sundry wildflowers.  The
-
-varieties of flowers range from orchids to daisies and garlands.  The
-
-colorfulness of the flowers adds to the vibrant pallete of the landscape.
-
-"
+varieties of flowers range from orchids to daisies and garlands.  The
+colorfulness of the flowers adds to the vibrant pallete of the landscape.
+"
 -1
 S
 
 #89022
 "Sunnydale Park"
 "Dominating this corner of the park is a gigantic maple tree, several decades
-
-old, which hangs on an angle on the edge of the hill.  Its thick, dark brown
-
-trunk is the size of four halflings after a good meal.  Its delicate branches
-
-are covered in bright green leaves which occasionally fall to the ground when
-
-the wind blows.  Resting beneath the shade of the tree next to its trunk is a
-
-small bench.  Young wildflowers have begun to sprout up from beneath the lush
-
-green grass, adding a touch of color to the landscape.  The park continues
-
-onward to the north and west.
-
-"
+old, which hangs on an angle on the edge of the hill.  Its thick, dark brown
+trunk is the size of four halflings after a good meal.  Its delicate branches
+are covered in bright green leaves which occasionally fall to the ground when
+the wind blows.  Resting beneath the shade of the tree next to its trunk is a
+small bench.  Young wildflowers have begun to sprout up from beneath the lush
+green grass, adding a touch of color to the landscape.  The park continues
+onward to the north and west.
+"
 ""
 301465664 0
 4 9 0
@@ -1555,23 +1144,16 @@ D3
 E
 "tree trunk"
 "Gargantuan in both height and girth, this tree has no doubt seen many
-
-generations of halflings playing below its branches.  Thick brown sap can be
-
-seen oozing out from its massive trunk.  Its leaves are bright green and are
-
-splayed so thickly along the branches to provide a nice shade below them.
-
-"
+generations of halflings playing below its branches.  Thick brown sap can be
+seen oozing out from its massive trunk.  Its leaves are bright green and are
+splayed so thickly along the branches to provide a nice shade below them.
+"
 E
 "wildflowers grass"
 "Small wildflowers have started to establish their place among the fertile
-
-ground here.  Varied in species, each wildflower brings with it a pleasant
-
-scent.
-
-"
+ground here.  Varied in species, each wildflower brings with it a pleasant
+scent.
+"
 3372 17 1509949540 -2 0
 -1
 S
@@ -1579,22 +1161,14 @@ S
 #89023
 "Sunnydale Park"
 "Scattered about this section of the park are two foot high sunflowers -- their
-
-bright yellow petals standing out against the green background.  The remains
-
-of a small cobblestone wall sits hanging on the edge of the hill to the south
-
-and west.  Glittering across the length of the wall are the tiny silken
-
-threads from a spider; each glistening in the light.  Placed diagonally to the
-
-southwest is a small marble bench which carvings of halflings at play etched
-
-across its surface.  The park continues to the east and north from here,
-
-across the rolling hill.
-
-"
+bright yellow petals standing out against the green background.  The remains
+of a small cobblestone wall sits hanging on the edge of the hill to the south
+and west.  Glittering across the length of the wall are the tiny silken
+threads from a spider; each glistening in the light.  Placed diagonally to the
+southwest is a small marble bench which carvings of halflings at play etched
+across its surface.  The park continues to the east and north from here,
+across the rolling hill.
+"
 ""
 301465664 0
 4 9 0
@@ -1609,47 +1183,31 @@ D1
 E
 "sunflowers"
 "These large sunflowers stand about two feet high with thick, round stems.
-
-Their bright yellow petals stand out against the green landscape, adding a
-
-flare of color to the park.  Scattered about the base of the flowers are
-
-several large white and black seeds.
-
-"
+Their bright yellow petals stand out against the green landscape, adding a
+flare of color to the park.  Scattered about the base of the flowers are
+several large white and black seeds.
+"
 E
 "1 south west cobblestone wall"
 "The remains of a cobblestone wall lie just to the south and west of here,
-
-leaning off the edge of the hill.  The white marble stones which were used to
-
-compose it are now cracked and brittle having bore the burden of the elements
-
-for so many years.
-
-"
+leaning off the edge of the hill.  The white marble stones which were used to
+compose it are now cracked and brittle having bore the burden of the elements
+for so many years.
+"
 E
 "silken threads web"
 "Like a piece of artwork, an intricate design made from silken threads has
-
-been stretched across the remains of the cobblestone wall to the south
-
-and west.  Trapped within the threads are several small bugs ranging from
-
-flies to ants.
-
-"
+been stretched across the remains of the cobblestone wall to the south
+and west.  Trapped within the threads are several small bugs ranging from
+flies to ants.
+"
 E
 "small marble bench stone"
 "This small bench is about three feet long and two feet wide.  A single
-
-slab of white marble was used to compose it as well as its legs.  Etched
-
-into its surface are several carvings of halflings at play and frolicking
-
-amidst a woodland landscape.
-
-"
+slab of white marble was used to compose it as well as its legs.  Etched
+into its surface are several carvings of halflings at play and frolicking
+amidst a woodland landscape.
+"
 3386 17 1509949540 -2 0
 755 9 1509949540 3 0
 215 9 1509949540 3 0
@@ -1660,25 +1218,16 @@ S
 #89024
 "Brembledon Avenue"
 "The lush, green grass of the avenue has been trampled over and over on this
-
-section of the avenue, leaving large patches of dirt in its place.  All about
-
-you to the northeast and nothwest, buildings both large and small dot the
-
-landscape, surrounded by the protective walls of the city.  Standing directly
-
-off the road to the north is a small cottage topped with a thatched roof and a
-
-narrow chimney.  Brembledon Avenue continues its long, unending course around
-
-the city to the east and west from this point.  To the south rises a steep
-
-hill.
-
-"
+section of the avenue, leaving large patches of dirt in its place.  All about
+you to the northeast and nothwest, buildings both large and small dot the
+landscape, surrounded by the protective walls of the city.  Standing directly
+off the road to the north is a small cottage topped with a thatched roof and a
+narrow chimney.  Brembledon Avenue continues its long, unending course around
+the city to the east and west from this point.  To the south rises a steep
+hill.
+"
 "leaving south acode
-
-"
+"
 301465664 0
 1 6 0
 D1
@@ -1699,20 +1248,13 @@ S
 #89025
 "Brembledon Avenue"
 "Tiny yellow, blue, red and violet flowers cover the surface of the avenue
-
-here, each in full bloom.  Bees buzz around the flowers, gathering their sweet
-
-nectar and than flying off back to their hive.  Along the southern edge of the
-
-road several young oak trees grow, their tiny branches just now starting to
-
-form.  Next to the trees sits a short marble bench nearly obscured by the
-
-waist-high grass which grows around it.  The street continues its journey
-
-around the outskirts of the city to the east and west from here.
-
-"
+here, each in full bloom.  Bees buzz around the flowers, gathering their sweet
+nectar and than flying off back to their hive.  Along the southern edge of the
+road several young oak trees grow, their tiny branches just now starting to
+form.  Next to the trees sits a short marble bench nearly obscured by the
+waist-high grass which grows around it.  The street continues its journey
+around the outskirts of the city to the east and west from here.
+"
 ""
 301465600 0
 1 6 0
@@ -1727,66 +1269,45 @@ D1
 E
 "flowers surface"
 "Dotting the grassy avenue are a variety of flowers with brightly-colored
-
-petals.  A pleasant scent emanates from them and fills the air around you.
-
-"
+petals.  A pleasant scent emanates from them and fills the air around you.
+"
 E
 "bees"
 "The bumblebees are fuzzy as they go about their business collecting nectar,
-
-oblivious to anything around them.  Their stingers stick out noticeably and
-
-are no longer than half an inch long.
-
-"
+oblivious to anything around them.  Their stingers stick out noticeably and
+are no longer than half an inch long.
+"
 E
 "oak trees branches"
 "The oak trees stand only five or six feet tall.  Their barks are solid and
-
-light brown, and their branches extend a half a foot from the trunks.  You can
-
-barely make out tiny leaves have just beginning to grow from them.
-
-"
+light brown, and their branches extend a half a foot from the trunks.  You can
+barely make out tiny leaves have just beginning to grow from them.
+"
 E
 "marble bench"
 "Extending four feet long and a foot wide, this bench looks pleasant enough to
-
-rest upon.  Its white marble seat is exceedingly smooth.  Its legs are round,
-
-stand about a foot high, and are intricately carved.
-
-"
+rest upon.  Its white marble seat is exceedingly smooth.  Its legs are round,
+stand about a foot high, and are intricately carved.
+"
 E
 "grass"
 "Three foot high blades of light green grass grow around a marble bench and
-
-underneath some oak trees.  The grass rustle in a wave-like fashion with each
-
-passing breeze.
-
-"
+underneath some oak trees.  The grass rustle in a wave-like fashion with each
+passing breeze.
+"
 -1
 S
 
 #89026
 "Brembledon Avenue"
 "This portion of the street is relatively flat compared than the hilly terrain
-
-around you.  The soil has been partially chewed up, and most of the grass has
-
-turned brown and has been stepped upon.  Standing to the north is an immense
-
-white building that occupies much of the area in that direction.  At the base
-
-of the building lies a bed of flowers.  On top of the flowers are a few empty
-
-broken glass bottles that emit the smell of stale alcohol.  The street
-
-continues to extend a great distance to the east and west from here.
-
-"
+around you.  The soil has been partially chewed up, and most of the grass has
+turned brown and has been stepped upon.  Standing to the north is an immense
+white building that occupies much of the area in that direction.  At the base
+of the building lies a bed of flowers.  On top of the flowers are a few empty
+broken glass bottles that emit the smell of stale alcohol.  The street
+continues to extend a great distance to the east and west from here.
+"
 ""
 301465600 0
 1 6 0
@@ -1804,14 +1325,10 @@ S
 #89027
 "Millco's Way"
 "The grass along this section of the avenue is quite different from the rest. 
-
-Each of the blades has been changed a different color, cycling through all the
-
-colors of a rainbow.  The sound of laughter and the hustle and bustle of
-
-village life can be heard in the distance.
-
-"
+Each of the blades has been changed a different color, cycling through all the
+colors of a rainbow.  The sound of laughter and the hustle and bustle of
+village life can be heard in the distance.
+"
 ""
 301465600 0
 1 6 0
@@ -1826,34 +1343,23 @@ D1
 E
 "grass"
 "All of the grass along this stretch of the avenue has been turned various
-
-colors.  Each blade differs from the rest colorwise, cycling through
-
-every color of the rainbow and than even more colors.  Glancing down at
-
-the grass you notice that the soil between it has changed to a deep blue
-
-color.
-
-"
+colors.  Each blade differs from the rest colorwise, cycling through
+every color of the rainbow and than even more colors.  Glancing down at
+the grass you notice that the soil between it has changed to a deep blue
+color.
+"
 -1
 S
 
 #89028
 "Millco's Way"
 "Dozens of rose bushes line the eastern and northern sides of the street.  Each
-
-of the roses are of different colors and a few are even a mixture of several
-
-colors.  Patches of the grass here have been replaced by wildflowers which
-
-just now have begun to bloom.  To the southeast several stone buildings can be
-
-seen and from that direction the sweet aroma of chocolate, freshly baked
-
-bread, and pastries emanates.
-
-"
+of the roses are of different colors and a few are even a mixture of several
+colors.  Patches of the grass here have been replaced by wildflowers which
+just now have begun to bloom.  To the southeast several stone buildings can be
+seen and from that direction the sweet aroma of chocolate, freshly baked
+bread, and pastries emanates.
+"
 ""
 301465600 0
 1 6 0
@@ -1868,43 +1374,29 @@ D3
 E
 "1 east 1 west rose bushes"
 "Thriving in the rich, dark soil of the grassy plains of the region are several
-
-rose bushes which have been planted along the eastern and western edges of the
-
-avenue.  Each of the roses is a different color, ranging from violet to
-
-yellow.  Sharp thorns protrude from the branches and glisten in the light like
-
-a sword's blade.  Most of the roses are still closed but a few have opened in
-
-full bloom swaying in the breeze.
-
-"
+rose bushes which have been planted along the eastern and western edges of the
+avenue.  Each of the roses is a different color, ranging from violet to
+yellow.  Sharp thorns protrude from the branches and glisten in the light like
+a sword's blade.  Most of the roses are still closed but a few have opened in
+full bloom swaying in the breeze.
+"
 E
 "patches wildflowers"
 "The rich, green grass that once thrived along this section of the avenue has
-
-been replaced by several patches of brightly-colored wildflowers.  Dandelions,
-
-tulips, violets and daisies all have taken up residence and each is in full
-
-bloom.
-
-"
+been replaced by several patches of brightly-colored wildflowers.  Dandelions,
+tulips, violets and daisies all have taken up residence and each is in full
+bloom.
+"
 -1
 S
 
 #89029
 "Intersection of Millco's Way and Cobblecrumb Street"
 "Two roads intersect at this point, in town, Cobblecrumble Street and Millco's
-
-Way.  Most of the grass which covers the intersection has been crushed beneath
-
-the weight of wagons and the many feet of travellers passing over this point,
-
-but on each corner of the roads it grows thick and tall.
-
-"
+Way.  Most of the grass which covers the intersection has been crushed beneath
+the weight of wagons and the many feet of travellers passing over this point,
+but on each corner of the roads it grows thick and tall.
+"
 ""
 301465600 0
 1 6 0
@@ -1923,40 +1415,26 @@ D3
 E
 "grass"
 "The grass has been crushed and driven deep into the dirt from the weight of
-
-travellers and wagons over this section of the road.  The dark, rich soil has
-
-begun to replace the grass causing a few mud puddles to form about the road. 
-
-On each corner of the avenue, where the grass has remained out of harms way,
-
-it has grown several feet high.
-
-"
+travellers and wagons over this section of the road.  The dark, rich soil has
+begun to replace the grass causing a few mud puddles to form about the road. 
+On each corner of the avenue, where the grass has remained out of harms way,
+it has grown several feet high.
+"
 -1
 S
 
 #89030
 "Cobblecrumb Street"
 "Large wagons filled to their tops with large crates, sacks, and barrels sit
-
-just off the edge of the road.  Patches of grass have been torn free from the
-
-road from several years of feet constantly walking upon it and the many wagons
-
-which come through the town.  To the north stands a large building with a low
-
-archway from which the scent of sweet smelling cookies emanates.  A small
-
-building topped with four small chimneys, each spewing forth billowing clouds
-
-of black smoke, stands directly to your south.  Cobblecrumb Street continues
-
-to the east and west from this point as it continues its course through the
-
-town.
-
-"
+just off the edge of the road.  Patches of grass have been torn free from the
+road from several years of feet constantly walking upon it and the many wagons
+which come through the town.  To the north stands a large building with a low
+archway from which the scent of sweet smelling cookies emanates.  A small
+building topped with four small chimneys, each spewing forth billowing clouds
+of black smoke, stands directly to your south.  Cobblecrumb Street continues
+to the east and west from this point as it continues its course through the
+town.
+"
 ""
 301465600 0
 1 6 0
@@ -1979,73 +1457,47 @@ D3
 E
 "wagons crates sacks barrels"
 "Large wooden wagons have been placed just off the edge of the road to the
-
-south, between the gaps in the buildings.  Stored neatly in the back of each
-
-wagon are several large wooden crates stamped with the seal of Brembledon. 
-
-Burlap sacks labeled \"Sugar\" and \"Flour\" have been stacked next to the
-
-crates.  A few capped, iron-banded barrels have also been placed in the wagons
-
-but their contants remain unknown.
-
-"
+south, between the gaps in the buildings.  Stored neatly in the back of each
+wagon are several large wooden crates stamped with the seal of Brembledon. 
+Burlap sacks labeled \"Sugar\" and \"Flour\" have been stacked next to the
+crates.  A few capped, iron-banded barrels have also been placed in the wagons
+but their contants remain unknown.
+"
 E
 "patches grass road street"
 "Most of the grass along this strip of road has been ripped away leaving only
-
-the dark soil in its place.  The soil is soft and mushy, much like a swamps
-
-and small pockets of water can be seen in a few spots.
-
-"
+the dark soil in its place.  The soil is soft and mushy, much like a swamps
+and small pockets of water can be seen in a few spots.
+"
 E
 "1 north building archway"
 "Directly to the north stands a large cobblestone building which has been
-
-painted a bright orange color.  Its roof is covered in green thatch from which
-
-a heavy odor of moldy straw emanates.  A low archway marks the only visible
-
-means of entrance into the building and occasionally the scent of cheese wafts
-
-through it, mingling with the scent of moldly hay.
-
-"
+painted a bright orange color.  Its roof is covered in green thatch from which
+a heavy odor of moldy straw emanates.  A low archway marks the only visible
+means of entrance into the building and occasionally the scent of cheese wafts
+through it, mingling with the scent of moldly hay.
+"
 E
 "1 south building small chimneys"
 "To the south of you, just a few feet off the road, is a small building which
-
-has been painted a deep violet color.  Two small windows with emerald colored
-
-shutters adorn its northern face and between them is a small, open doorway. 
-
-Protruding from its orange thatched roof are four red brick chimneys which
-
-constantly spew large clouds of smoke.
-
-"
+has been painted a deep violet color.  Two small windows with emerald colored
+shutters adorn its northern face and between them is a small, open doorway. 
+Protruding from its orange thatched roof are four red brick chimneys which
+constantly spew large clouds of smoke.
+"
 -1
 S
 
 #89031
 "Brembledon Avenue"
 "Thick, green ivy vines drape down the length of the walls to the east of you,
-
-snaking their way towards the center of the street.  Trampled daisies lie
-
-scattered about the surface of the avenue, having been crushed by the heavy
-
-traffic of the city.  A loud bubbling sound emanates from a small marble
-
-building to the west and the distinct smell of burned leather fills the air. 
-
-Brembledon Avenue continues to run in a straight line to the north and south
-
-from here.
-
-"
+snaking their way towards the center of the street.  Trampled daisies lie
+scattered about the surface of the avenue, having been crushed by the heavy
+traffic of the city.  A loud bubbling sound emanates from a small marble
+building to the west and the distinct smell of burned leather fills the air. 
+Brembledon Avenue continues to run in a straight line to the north and south
+from here.
+"
 ""
 301465664 0
 1 6 0
@@ -2064,55 +1516,37 @@ D3
 E
 "1 east ivy vines walls"
 "Long strands of dark green ivy flow down the city walls to the east of you
-
-like the flowing braids of a wild forest nymph.  The vines cover much of the
-
-wall around this portion of the avenue, almost overtaking the ground here as
-
-well.
-
-"
+like the flowing braids of a wild forest nymph.  The vines cover much of the
+wall around this portion of the avenue, almost overtaking the ground here as
+well.
+"
 E
 "daisies surface"
 "What remains of the wild profusion of yellow daisies are crushed leaves,
-
-squashed stems, and broken petals.  Each of the pieces have been dispersed
-
-randomly along the avenue's surface.
-
-"
+squashed stems, and broken petals.  Each of the pieces have been dispersed
+randomly along the avenue's surface.
+"
 E
 "1 north marble building"
 "To the west is a marble building painted in scarlet red.  A large bucket of
-
-clear water has been placed at the side of the building.  Several cobblestones
-
-lie at the front to form a curved path into the building.
-
-"
+clear water has been placed at the side of the building.  Several cobblestones
+lie at the front to form a curved path into the building.
+"
 -1
 S
 
 #89032
 "Egerdon Street"
 "Large holes scar the surface of the street.  Each hole is filled halfway with
-
-thick, brown mud.  Wagon ruts run down the length of the road, intersecting
-
-each other at points, making the road very bumpy.  A long trench has been dug
-
-along the northern edge of the road in which small shrubs in clay pots rest;
-
-still waiting to be planted.  Off to the east a ways, you can see large,
-
-thick-trunked trees skirting along the edge of the of the street.  The street
-
-continues to the south; while to the west, it leads up a steep hill.
-
-"
+thick, brown mud.  Wagon ruts run down the length of the road, intersecting
+each other at points, making the road very bumpy.  A long trench has been dug
+along the northern edge of the road in which small shrubs in clay pots rest;
+still waiting to be planted.  Off to the east a ways, you can see large,
+thick-trunked trees skirting along the edge of the of the street.  The street
+continues to the south; while to the west, it leads up a steep hill.
+"
 "add leaving west acode
-
-"
+"
 301465664 0
 1 6 0
 D1
@@ -2130,43 +1564,29 @@ D3
 E
 "holes street road"
 "These large pot holes have been left over time from the many feet as well as
-
-wagon wheels passing down this avenue.  Each has filled with thick, brown mud
-
-from the past rainfalls the area has seen.
-
-"
+wagon wheels passing down this avenue.  Each has filled with thick, brown mud
+from the past rainfalls the area has seen.
+"
 E
 "wagon ruts"
 "Each of the wagon ruts are about five inches deep and lying at their bottom
-
-are small pools of muddy water.  Most of the ruts are fairly new judging by
-
-the fresh soil which has been thrown up alongside them.
-
-"
+are small pools of muddy water.  Most of the ruts are fairly new judging by
+the fresh soil which has been thrown up alongside them.
+"
 E
 "1 north trench"
 "The trench runs along the base of the city walls to the south for about eight
-
-feet.  Each is filled with thick, brown mulch and dark soil.  Large holes have
-
-been dug within the trench every two feet and resting beside them are clay
-
-pots which contain young shrubs.
-
-"
+feet.  Each is filled with thick, brown mulch and dark soil.  Large holes have
+been dug within the trench every two feet and resting beside them are clay
+pots which contain young shrubs.
+"
 E
 "clay pots shrubs"
 "The clay pots are of simple design and have no distinguishing features. 
-
-Within each of them is a young shrub with lush green leaves.  A few of the
-
-shrubs have tiny white flowers hanging from their branches which emanate a
-
-pleasant aroma.
-
-"
+Within each of them is a young shrub with lush green leaves.  A few of the
+shrubs have tiny white flowers hanging from their branches which emanate a
+pleasant aroma.
+"
 84 9 1509949540 3 0
 -1
 S
@@ -2174,20 +1594,13 @@ S
 #89033
 "Lilath's House of Tarts"
 "The overwhelming aroma of freshly baked tarts fills the air of this large
-
-shop.  Lining the eastern and western walls are glass cases within which are
-
-several sheets of freshly baked tarts which still steam.  Upon the northern
-
-wall is a long marble counter on which sheets of uncooked tarts rest.  Behind
-
-the counter are a few large brick ovens which occasionally throw an intense
-
-wave of heat off.  To the south a simple wooden archway offers the only exit
-
-out of the shop.
-
-"
+shop.  Lining the eastern and western walls are glass cases within which are
+several sheets of freshly baked tarts which still steam.  Upon the northern
+wall is a long marble counter on which sheets of uncooked tarts rest.  Behind
+the counter are a few large brick ovens which occasionally throw an intense
+wave of heat off.  To the south a simple wooden archway offers the only exit
+out of the shop.
+"
 ""
 301469701 0
 0 6 0
@@ -2198,34 +1611,23 @@ D2
 E
 "1 eastern 1 western walls glass cases sheets tarts"
 "Some steam has clouded up the top glass of the counters along the eastern and
-
-western walls.  However, you can still make out various tarts lined equally
-
-apart in several rows.  Judging by the buildup of steam, the tarts must be
-
-fresh from the oven.
-
-"
+western walls.  However, you can still make out various tarts lined equally
+apart in several rows.  Judging by the buildup of steam, the tarts must be
+fresh from the oven.
+"
 E
 "1 northern wall counter sheets tarts"
 "A long row of tarts, each round and the size of a troll's palm, have been
-
-placed in two rows along the counter to the north.  Their crusts are raw and
-
-waiting to be placed in the oven.
-
-"
+placed in two rows along the counter to the north.  Their crusts are raw and
+waiting to be placed in the oven.
+"
 E
 "ovens"
 "Set within the wall to the north are two brick ovens that could fit a few
-
-halflings within each of them.  Red bricks surround the borders of the ovens,
-
-and even though the glass of each door is fogged up, you can still detect many
-
-tarts that are being baked.
-
-"
+halflings within each of them.  Red bricks surround the borders of the ovens,
+and even though the glass of each door is fogged up, you can still detect many
+tarts that are being baked.
+"
 2665 9 1509949540 3 0
 3257 17 1509949515 -1 0
 3258 17 1509949515 -1 0
@@ -2247,22 +1649,14 @@ S
 #89034
 "Olia's Bakery"
 "Dominating this small shop are several massive brick ovens which have been
-
-place against the northern, eastern, and western walls.  Tucked in between the
-
-ovens is a long wooden table on which several loaves of freshly baked bread
-
-rest; each covered by a glass top.  Hanging from the edge of the table is a
-
-small wooden @Wsign@n with pictures of various types of bread upon its face. 
-
-Every so often the sound of the flames within the ovens flaring can be heard,
-
-followed by a wave of intense heat filling the room.  To the north a wide
-
-leads back out onto Cobblecrumb Street.
-
-"
+place against the northern, eastern, and western walls.  Tucked in between the
+ovens is a long wooden table on which several loaves of freshly baked bread
+rest; each covered by a glass top.  Hanging from the edge of the table is a
+small wooden @Wsign@n with pictures of various types of bread upon its face. 
+Every so often the sound of the flames within the ovens flaring can be heard,
+followed by a wave of intense heat filling the room.  To the north a wide
+leads back out onto Cobblecrumb Street.
+"
 ""
 301469701 0
 0 6 0
@@ -2274,39 +1668,26 @@ E
 "wooden sign"
 "@Y-=-=-=-=-=-= Welcome to Olia's Bakery! =-=-=-=-=-=-@n
 
-
 @WOur bread is made fresh every three hours and is never hard!  For
-
-information on our catering services please contact Olia.@n
-
+information on our catering services please contact Olia.@n
 
 @MOlia - Mistress of the Bakery@n
-
-"
+"
 E
 "ovens 1 north 1 east 1 west walls"
 "Situated midway within the southern, eastern, and western walls of this shop
-
-are brick ovens.  Each oven is perfectly square and could fit a few halflings
-
-within them.  Peering through the glass door of the ovens, you can detect the
-
-roaring orange flames that are heating rows of bread loaves.
-
-"
+are brick ovens.  Each oven is perfectly square and could fit a few halflings
+within them.  Peering through the glass door of the ovens, you can detect the
+roaring orange flames that are heating rows of bread loaves.
+"
 E
 "table loaves bread glass top"
 "A wooden table stretches a good six feet across the center of the shop. 
-
-Covering the table is a blue silken table cloth.  Stacked on top of the cloth
-
-are different types of bread loaves, each encased in a rectangular glass
-
-cover.  Each glass has been partially fogged up, probably given off by the
-
-still warm bread.
-
-"
+Covering the table is a blue silken table cloth.  Stacked on top of the cloth
+are different types of bread loaves, each encased in a rectangular glass
+cover.  Each glass has been partially fogged up, probably given off by the
+still warm bread.
+"
 2666 9 1509949540 3 0
 28 17 1509949540 -1 0
 743 17 1509949540 -1 0
@@ -2320,20 +1701,13 @@ S
 #89035
 "Noemo's Pie Shop"
 "Long wooden shelves line the walls of this small shop, each covered in various
-
-types of pies that give off a splendid, mouth-watering scent.  Just above the
-
-shelves are several windows that allow just enough air from the outside in to
-
-speed up the cooling process.  Set against the southern wall are two massive
-
-ovens.  Ripples of heat can be seen in front of each of the ovens.  In the
-
-center of the room, a long wooden table has been set up on which several pies,
-
-each a different flavor, rest under a glass box.
-
-"
+types of pies that give off a splendid, mouth-watering scent.  Just above the
+shelves are several windows that allow just enough air from the outside in to
+speed up the cooling process.  Set against the southern wall are two massive
+ovens.  Ripples of heat can be seen in front of each of the ovens.  In the
+center of the room, a long wooden table has been set up on which several pies,
+each a different flavor, rest under a glass box.
+"
 ""
 301469701 0
 0 6 0
@@ -2344,32 +1718,22 @@ D0
 E
 "1 southern wall ovens"
 "Two huge ovens occupy most of the southern wall.  A translucent glass door
-
-allows you to barely see inside the oven where the crusts of numerous pies
-
-appear to be browning.
-
-"
+allows you to barely see inside the oven where the crusts of numerous pies
+appear to be browning.
+"
 E
 "windows"
 "The windows to the east and west are a few feet wide and high.  Some pies have
-
-been placed on their wooden sill.  The shutters of the windows have been
-
-opened to help cool the pies.  An occasional breeze from the outside passes
-
-by, giving you a whiff of the flavor of each pie.
-
-"
+been placed on their wooden sill.  The shutters of the windows have been
+opened to help cool the pies.  An occasional breeze from the outside passes
+by, giving you a whiff of the flavor of each pie.
+"
 E
 "table pies box"
 "A one and a half foot high table stretches across much of this shop.  Various
-
-types of pies have been arranged on top the blue table cloth.  Each pie is
-
-still warm and emits a pleasant scent.
-
-"
+types of pies have been arranged on top the blue table cloth.  Each pie is
+still warm and emits a pleasant scent.
+"
 2658 9 1509949540 3 0
 3338 17 1509949540 -1 0
 3339 17 1509949540 -1 0
@@ -2387,20 +1751,13 @@ S
 #89036
 "Dealiz's Fresh Baked Cookies"
 "Several long wooden display cases line the walls of the small shop, each
-
-covered in sheets of cookies ranging from sugar to white chocolate chip.  Set
-
-against the northern wall of the building is a large brick oven with several
-
-open-faces.  Piled up against the western wall are some crates marked with
-
-white flour and numerous sacks of sugar.  Resting against the eastern wall are
-
-several barrels filled with clear water.  To the south an open archway leads
-
-back out onto Cobblecrumb Street.
-
-"
+covered in sheets of cookies ranging from sugar to white chocolate chip.  Set
+against the northern wall of the building is a large brick oven with several
+open-faces.  Piled up against the western wall are some crates marked with
+white flour and numerous sacks of sugar.  Resting against the eastern wall are
+several barrels filled with clear water.  To the south an open archway leads
+back out onto Cobblecrumb Street.
+"
 ""
 301469701 0
 0 6 0
@@ -2411,49 +1768,32 @@ D2
 E
 "display cases sheets cookies"
 "The enticing smell of frashly baked cookies emanates from the rich display of
-
-cookies that have been placed within the display cases.  Each set of cookies
-
-are spaced equally apart in a five by five pattern according to what type they
-
-are.  Chocolate chip cookies the size of the palm of a gnome's hand have been
-
-placed on one sheet, while other cookies such as cinnamon sprinkled ones have
-
-been placed in the sheet next to it.
-
-"
+cookies that have been placed within the display cases.  Each set of cookies
+are spaced equally apart in a five by five pattern according to what type they
+are.  Chocolate chip cookies the size of the palm of a gnome's hand have been
+placed on one sheet, while other cookies such as cinnamon sprinkled ones have
+been placed in the sheet next to it.
+"
 E
 "1 northern wall oven"
 "Blackened patches mar the area around the red brick oven that has been set
-
-against the northern wall of the shop.  The oven is big enough to easily fit
-
-two halflings within it.  However, the tremendous fiery red flames and heat
-
-emitted from it would make that idea dangerous.
-
-"
+against the northern wall of the shop.  The oven is big enough to easily fit
+two halflings within it.  However, the tremendous fiery red flames and heat
+emitted from it would make that idea dangerous.
+"
 E
 "1 western wall crates sacks"
 "Stacked up on top of one another like cubical steps are wooden crates.  Some
-
-of the crates have their lids partially opened to reveal various ingredients
-
-such as flour, cinnamon grains, and cocoa beans.  Other crates have remained
-
-sealed but splattered with white flour powder.  Resting against the crates are
-
-large opened sacks of sugar.
-
-"
+of the crates have their lids partially opened to reveal various ingredients
+such as flour, cinnamon grains, and cocoa beans.  Other crates have remained
+sealed but splattered with white flour powder.  Resting against the crates are
+large opened sacks of sugar.
+"
 E
 "1 eastern wall barrels"
 "Barrels the height of a gnomish child stand against the eastern wall.  Each
-
-barrel has been filled two thirds of the way with a clear liquid.
-
-"
+barrel has been filled two thirds of the way with a clear liquid.
+"
 2657 9 1509949540 3 0
 3348 17 1509949540 -1 0
 3349 17 1509949540 -1 0
@@ -2470,20 +1810,13 @@ S
 #89037
 "Izak's Chocolate Emporium"
 "Large steel vats line the walls of this large shop; each bubbling violently
-
-and sending tiny splatters of chocolate everywhere.  Tucked in between each of
-
-the vats are large bags of sugar, flour, and cocoa beans.  Off in the back of
-
-the shop, set against the southern wall, is a long glass display case filled
-
-with chocolate treats which cool slowly in the air.  Next to the display case
-
-is a small wooden table on which finished pieces of chocolate rest with a
-
-@Wsign@n placed next to them.
-
-"
+and sending tiny splatters of chocolate everywhere.  Tucked in between each of
+the vats are large bags of sugar, flour, and cocoa beans.  Off in the back of
+the shop, set against the southern wall, is a long glass display case filled
+with chocolate treats which cool slowly in the air.  Next to the display case
+is a small wooden table on which finished pieces of chocolate rest with a
+@Wsign@n placed next to them.
+"
 ""
 301469701 0
 0 6 0
@@ -2494,37 +1827,26 @@ D0
 E
 "vats walls chocolate"
 "Cisterns made of thick steel have been placed beside each of the walls in this
-
-small shop.  Each one is filled at least halfway with either white, brown, and
-
-dark brown chocolate.  The chocolate appears viscous and bubbles constantly.
-
-"
+small shop.  Each one is filled at least halfway with either white, brown, and
+dark brown chocolate.  The chocolate appears viscous and bubbles constantly.
+"
 E
 "bags sugar flour beans"
 "Resting against the vats of chocolate are full and half-empty bags of sugar,
-
-flour, and cocoa beans.  Some of the ingredients have spilled out from the
-
-bags, leaving small piles scattered on the floor.
-
-"
+flour, and cocoa beans.  Some of the ingredients have spilled out from the
+bags, leaving small piles scattered on the floor.
+"
 E
 "table chocolate sign"
 "No description.
-
-"
+"
 E
 "1 southern wall display case treats"
 "The circular table stands a foot and a half tall and is made from dark oak
-
-wood.  A cotton table cloth covers the top of the table.  Set on top of the
-
-table cloth plates containing different chocolates.  A sign indicating what
-
-type of chocolate that each plate contains has been placed nearby.
-
-"
+wood.  A cotton table cloth covers the top of the table.  Set on top of the
+table cloth plates containing different chocolates.  A sign indicating what
+type of chocolate that each plate contains has been placed nearby.
+"
 2659 9 1509949540 3 0
 3363 17 1509949515 -1 0
 3364 17 1509949515 -1 0
@@ -2540,22 +1862,14 @@ S
 #89038
 "Egerdon Street"
 "Egerdon Street comes to a fork here as its southern passage is impeded by a
-
-wall that stretches high enough to prevent even taller creatures from
-
-trespassing.  Spaced a few yards apart atop the wall are a few banners that
-
-flap vigorously in the air.  Growing at the base of the wall are several
-
-bushes shaped in the figure of a pony, rabbit, and dog.  Looking north, the
-
-avenue passes by a row of small houses.  To the west, Egerdon Street continues
-
-its journey around the town, becoming slightly more level with the grass
-
-seeming to grow slightly taller in that direction.
-
-"
+wall that stretches high enough to prevent even taller creatures from
+trespassing.  Spaced a few yards apart atop the wall are a few banners that
+flap vigorously in the air.  Growing at the base of the wall are several
+bushes shaped in the figure of a pony, rabbit, and dog.  Looking north, the
+avenue passes by a row of small houses.  To the west, Egerdon Street continues
+its journey around the town, becoming slightly more level with the grass
+seeming to grow slightly taller in that direction.
+"
 ""
 301465664 0
 1 6 0
@@ -2574,37 +1888,26 @@ D3
 E
 "bushes"
 "Trimmed meticulously to a height of four feet, the bushes stand in various
-
-poses.  The bush resembling a pony has its head and knees bent in a relaxed
-
-position, while the rabbit and dog-shaped bushes stand fully alert, with their
-
-heads pointed towards the sky.
-
-"
+poses.  The bush resembling a pony has its head and knees bent in a relaxed
+position, while the rabbit and dog-shaped bushes stand fully alert, with their
+heads pointed towards the sky.
+"
 E
 "houses"
 "Stone houses painted in bright colors lie to the northwest, running parallel
-
-to Egerdon Street.  Each house has a thatch roof and appears well kept.
-
-"
+to Egerdon Street.  Each house has a thatch roof and appears well kept.
+"
 E
 "grass"
 "Tall, light-green blades of grass completely cover the ground.  They make
-
-travel through the town easy on the feet and pleasant on the eyes.
-
-"
+travel through the town easy on the feet and pleasant on the eyes.
+"
 E
 "1 south wall banners"
 "The wall looms over twelve feet high and spans along the southern end of the
-
-avenue.  Waving atop the wall are a pair of banners.  One of them depicts a
-
-horse and carriage, while the other depicts a maple tree.
-
-"
+avenue.  Waving atop the wall are a pair of banners.  One of them depicts a
+horse and carriage, while the other depicts a maple tree.
+"
 109 9 1509949540 3 0
 -1
 S
@@ -2612,20 +1915,13 @@ S
 #89039
 "Egerdon Street"
 "Directly to the west is a small stone cottage painted in bright lavender with
-
-olive green stripes.  A small garden filled with daisies, tulips, and orchids
-
-lies at the front of the house.  It's apparent that the garden has been
-
-well-cared for -- its soil is moist and brown and its flowers vibrant and
-
-colorful.  More houses of similar size can be seen urther south down the
-
-grassy lane; while to the north stands a tall oak tree at the center of a
-
-three-way intersection.
-
-"
+olive green stripes.  A small garden filled with daisies, tulips, and orchids
+lies at the front of the house.  It's apparent that the garden has been
+well-cared for -- its soil is moist and brown and its flowers vibrant and
+colorful.  More houses of similar size can be seen urther south down the
+grassy lane; while to the north stands a tall oak tree at the center of a
+three-way intersection.
+"
 ""
 301465664 0
 1 6 0
@@ -2644,49 +1940,32 @@ D3
 E
 "1 west stone cottage"
 "This small cottage has been made from small white bricks that have been
-
-painted in light lavender and olive green stripes.  Its thatched roof has been
-
-dyed a bright yellow color and a small chimney protrudes from it.  A small
-
-dirt footpath snakes its way up to a small wooden door set into the cottages
-
-wall.
-
-"
+painted in light lavender and olive green stripes.  Its thatched roof has been
+dyed a bright yellow color and a small chimney protrudes from it.  A small
+dirt footpath snakes its way up to a small wooden door set into the cottages
+wall.
+"
 E
 "garden daisies tulips orchids"
 "Planted in front of the small house is a small flower garden surrounded by a
-
-small picket fence.  Orchids, tulips and daises of various colors and sizes
-
-thrive in the rich soil and add a flare of color to the landscape.
-
-"
+small picket fence.  Orchids, tulips and daises of various colors and sizes
+thrive in the rich soil and add a flare of color to the landscape.
+"
 -1
 S
 
 #89040
 "Corner of Brembledon Avenue and Egerdon Street"
 "Sunndydale Lane and Egerdon Street intersect with each other at this point. 
-
-In the center of the road is a towering oak tree which stands at least thirty
-
-feet high.  It rich, dark brown bark is mottled with bits of green moss.  At
-
-the base of the tree, someone has taken the time to plant small yellow lilacs
-
-and pink daisies.  Wagon ruts run around each side of the tree, heading off in
-
-every direction.  Directly to the east the massive eastern gates of the city
-
-rise up.  Brembledon Avenue heads west as it makes its way back into the
-
-center of the city.  Egerdon Street continues its north-south course from this
-
-point.
-
-"
+In the center of the road is a towering oak tree which stands at least thirty
+feet high.  It rich, dark brown bark is mottled with bits of green moss.  At
+the base of the tree, someone has taken the time to plant small yellow lilacs
+and pink daisies.  Wagon ruts run around each side of the tree, heading off in
+every direction.  Directly to the east the massive eastern gates of the city
+rise up.  Brembledon Avenue heads west as it makes its way back into the
+center of the city.  Egerdon Street continues its north-south course from this
+point.
+"
 ""
 301465664 0
 1 6 0
@@ -2705,58 +1984,38 @@ D3
 E
 "oak tree center bark moss"
 "Spreading its lengthy branches all around, the tree forms a protective canopy
-
-and provides a nice shade here.  The tree's trunk looks extremely thick,
-
-possibly eight or so feet in diameter.  Its bark is thick and some sap seems
-
-to drip to drip from it.  Patches of thick moss have started to grow along the
-
-bark.  Each patch is rectangular in shape and only occupy a foot or less of
-
-space.
-
-"
+and provides a nice shade here.  The tree's trunk looks extremely thick,
+possibly eight or so feet in diameter.  Its bark is thick and some sap seems
+to drip to drip from it.  Patches of thick moss have started to grow along the
+bark.  Each patch is rectangular in shape and only occupy a foot or less of
+space.
+"
 E
 "lilacs daisies"
 "Although most lilacs are white, and most daisies are white with yellow
-
-centers, these flowers seem to be the exception.  The yellow lilacs are almost
-
-golden and form a dense ring around the base of the tree.  The daisies are a
-
-splendid pink and grow right beside the lilacs.  The flowers provide a
-
-pleasant scent and brighten the ground.
-
-"
+centers, these flowers seem to be the exception.  The yellow lilacs are almost
+golden and form a dense ring around the base of the tree.  The daisies are a
+splendid pink and grow right beside the lilacs.  The flowers provide a
+pleasant scent and brighten the ground.
+"
 E
 "ruts side"
 "The ruts are a few inches deep and very narrow.  Most head in an east-west or
-
-north-south direction, but some curve around in circles or diagonally.
-
-"
+north-south direction, but some curve around in circles or diagonally.
+"
 -1
 S
 
 #89041
 "Brembledon Avenue"
 "Several grey rocks peak out beneath the thick layer of grass along the avenue;
-
-some the size of a halfling's skull and others the size of a storm giant's
-
-head.  Wagon ruts snake their way between the rocks and a few lead straight up
-
-to them and than continue on their other side.  Small weeds mingle with
-
-various colored flowers along the edge of the road, each trying to overtake
-
-the other.  Wildflower Lane continues to the north and south, never straying
-
-from its course parallel to the thick city walls.
-
-"
+some the size of a halfling's skull and others the size of a storm giant's
+head.  Wagon ruts snake their way between the rocks and a few lead straight up
+to them and than continue on their other side.  Small weeds mingle with
+various colored flowers along the edge of the road, each trying to overtake
+the other.  Wildflower Lane continues to the north and south, never straying
+from its course parallel to the thick city walls.
+"
 ""
 301465664 0
 1 6 0
@@ -2775,50 +2034,34 @@ D3
 E
 "1 rocks grass avenue"
 "These large, grey rocks vary in size while others rival a storm giant's head. 
-
-Their surface is very smooth and is speckled with white dots.
-
-"
+Their surface is very smooth and is speckled with white dots.
+"
 E
 "wagon ruts"
 "Several wagon ruts scar the surface of the avenue others look to be recently
-
-made.  The ruts lead right up to a group of grey rocks, head over them, and
-
-than continue on the other side.
-
-"
+made.  The ruts lead right up to a group of grey rocks, head over them, and
+than continue on the other side.
+"
 E
 "weeds flowers"
 "Thick ragweeds grow along each side of this stretch of the avenue, mingling
-
-with small patches of wildflowers.  The weeds have begun to snake their way
-
-around the stems of the flowers in a vain attempt to destroy them.
-
-"
+with small patches of wildflowers.  The weeds have begun to snake their way
+around the stems of the flowers in a vain attempt to destroy them.
+"
 -1
 S
 
 #89042
 "Egerdon Street"
 "A multitude of rich colors dominates the sights east of you.  Orange, pink,
-
-and yellow have been splashed together to create a dizziness- inducing design
-
-along the stone walls of the small house to the east.  The roof is made of
-
-straw which has been dyed a light shade of blue.  At the foot of the doorless
-
-entrance to the house are several shiny green cobblestones, each as round as a
-
-halfling's stomach.  The grass growing around the house is taller and greener
-
-than the grass along the avenue.  Egerdon Street continues to the north and
-
-south beside the row of houses.
-
-"
+and yellow have been splashed together to create a dizziness- inducing design
+along the stone walls of the small house to the east.  The roof is made of
+straw which has been dyed a light shade of blue.  At the foot of the doorless
+entrance to the house are several shiny green cobblestones, each as round as a
+halfling's stomach.  The grass growing around the house is taller and greener
+than the grass along the avenue.  Egerdon Street continues to the north and
+south beside the row of houses.
+"
 ""
 301465664 0
 1 6 0
@@ -2837,56 +2080,37 @@ D2
 E
 "1 east house roof"
 "The rectangular house is small, extending about fifteen feet across.  Its
-
-stone walls are smooth, and the bright paint along the walls look new, showing
-
-no dried paint chips or other signs of age.  The straw roof is thick and looks
-
-like it'd provide fair protection from the weather.
-
-"
+stone walls are smooth, and the bright paint along the walls look new, showing
+no dried paint chips or other signs of age.  The straw roof is thick and looks
+like it'd provide fair protection from the weather.
+"
 E
 "entrance cobblestones"
 "The entrance to the house is arched and would allow someone the size of an ent
-
-to enter if he or she were to try hard enough to squeeze through.  Leading up
-
-to the entrance are a bunch of cobblestones spaced a few inches apart from one
-
-another.  Unfamiliar designs have been etched into each stone.
-
-"
+to enter if he or she were to try hard enough to squeeze through.  Leading up
+to the entrance are a bunch of cobblestones spaced a few inches apart from one
+another.  Unfamiliar designs have been etched into each stone.
+"
 E
 "grass"
 "Numerous blades of verdant green grass surround the area.  The blades grow to
-
-about two feet around the house, but have been trimmed to less than a foot
-
-along the avenue, where many have often trampled upon the grass.
-
-"
+about two feet around the house, but have been trimmed to less than a foot
+along the avenue, where many have often trampled upon the grass.
+"
 -1
 S
 
 #89043
 "Egerdon Street"
 "Numerous leafy bushes and broad ferns line the sides of the avenue here.  Just
-
-off the avenue to the west is a small purple cottage.  Two heart- shaped
-
-shutters beside the window have been opened, and a rectangular pot of flowers
-
-has been placed near its sill.  Looming over the cottage is a maple tree that
-
-shades the house from most sunlight.  Hanging from the tree's largest branch
-
-is a wide wooden plank that is tied to the branch by two sturdy-looking
-
-ropes.  The lane continues further north beside more houses and reaches a bend
-
-to the south.
-
-"
+off the avenue to the west is a small purple cottage.  Two heart- shaped
+shutters beside the window have been opened, and a rectangular pot of flowers
+has been placed near its sill.  Looming over the cottage is a maple tree that
+shades the house from most sunlight.  Hanging from the tree's largest branch
+is a wide wooden plank that is tied to the branch by two sturdy-looking
+ropes.  The lane continues further north beside more houses and reaches a bend
+to the south.
+"
 ""
 301465664 0
 1 6 0
@@ -2909,76 +2133,52 @@ D3
 E
 "bushes ferns sides"
 "The bushes and ferns grow abundantly in a linear, alternating pattern beside
-
-the avenue.  The bushes have been trimmed to a round shape but flat at the
-
-top.  The broad leaves of the ferns almost touch the bushes beside them.
-
-"
+the avenue.  The bushes have been trimmed to a round shape but flat at the
+top.  The broad leaves of the ferns almost touch the bushes beside them.
+"
 E
 "1 west cottage house"
 "The modest house has been painted in a very light purple, but not light enough
-
-to be mistaken for lavender.  Its walls are made of smooth, solid marble, and
-
-its roof is thatched.
-
-"
+to be mistaken for lavender.  Its walls are made of smooth, solid marble, and
+its roof is thatched.
+"
 E
 "shutters window"
 "The shutters are made of a light balsa wood.  The window is also the same
-
-heart shape as the shutters.  Looking through the window, you can't determine
-
-much of what's inside of the house from this vantage point, except that the
-
-interior of the house is painted in bright, flamboyant colors.
-
-"
+heart shape as the shutters.  Looking through the window, you can't determine
+much of what's inside of the house from this vantage point, except that the
+interior of the house is painted in bright, flamboyant colors.
+"
 E
 "pot flowers sill"
 "The pot resting against the window sill is about three feet long, a foot wide,
-
-and a foot deep.  It has been filled almost completely with a black-brown
-
-soil.  Daffodils, tulips, and sunflowers have been planted in the pot and
-
-resonate vibrant, bright colors.
-
-"
+and a foot deep.  It has been filled almost completely with a black-brown
+soil.  Daffodils, tulips, and sunflowers have been planted in the pot and
+resonate vibrant, bright colors.
+"
 E
 "maple tree"
 "The maple tree towers over the house protectively.  Its bark is light brown
-
-and thick as an elephant's hide.
-
-"
+and thick as an elephant's hide.
+"
 E
 "branch plank ropes"
 "The plank is several inches thick and two feet long.  The rope connected to
-
-the plank and the thick branch above it looks strong and capable of carrying
-
-someone the size and weight of a human child easily.
-
-"
+the plank and the thick branch above it looks strong and capable of carrying
+someone the size and weight of a human child easily.
+"
 -1
 S
 
 #89044
 "Egerdon Street"
 "The road comes to a dead end to the east as a massive stone wall has been
-
-erected to fend off unwanted visitors.
-
-To the west the grassy roads and avenues of Brembledon begin their hilly
-
-advance throughout the vast expanse of the town.
-
-"
+erected to fend off unwanted visitors.
+To the west the grassy roads and avenues of Brembledon begin their hilly
+advance throughout the vast expanse of the town.
+"
 "[Olah] close off east now but eventually can lead east to new road and area
-
-"
+"
 301465664 0
 1 6 0
 D3
@@ -2988,38 +2188,28 @@ D3
 E
 "1 east gates"
 "No description.
-
-"
+"
 E
 "watchtower"
 "No description.
-
-"
+"
 E
 "lever"
 "No description.
-
-"
+"
 -1
 S
 
 #89045
 "First Bank of Brembledon"
 "This building is composed entirely of white marble bricks with tinges of grey
-
-streaked throughout them.  The black and white tiled floor has been polished
-
-to a high shine and your reflection can be easily seen on its surface.  Set
-
-into the northern wall are a couple of teller booths covered in heavy steel
-
-bars.  Hanging from the ceiling and walls are a couple of enormous silk
-
-tapestries depicting halflings at play, frolicking in the woods and grass.  To
-
-the east an open archway leads out of the bank and out onto the main road.
-
-"
+streaked throughout them.  The black and white tiled floor has been polished
+to a high shine and your reflection can be easily seen on its surface.  Set
+into the northern wall are a couple of teller booths covered in heavy steel
+bars.  Hanging from the ceiling and walls are a couple of enormous silk
+tapestries depicting halflings at play, frolicking in the woods and grass.  To
+the east an open archway leads out of the bank and out onto the main road.
+"
 ""
 301467685 0
 0 6 0
@@ -3030,32 +2220,22 @@ D1
 E
 "tapestries ceiling walls"
 "The tapestries depicts citizens of Brembledon at play.  The southern tapestry
-
-depict a band of halfling children running around a grassy knoll, chasing each
-
-other.  The western tapestry portrays several halflings scampering through a
-
-forest chasing woodland animals.
-
-"
+depict a band of halfling children running around a grassy knoll, chasing each
+other.  The western tapestry portrays several halflings scampering through a
+forest chasing woodland animals.
+"
 -1
 S
 
 #89046
 "Bockatak's Hides and Furs"
 "Two torches hang on each side of the doorway to the north, providing just
-
-enough light to make out the shop's interior.  The shop is almost barren save
-
-for a simple oak table in the center of the room covered in large and small
-
-furs from various animals and monsters.  Insulating the walls are the tanned
-
-and furry hides of different bears and some other creatures that are not
-
-immediately recognizable.
-
-"
+enough light to make out the shop's interior.  The shop is almost barren save
+for a simple oak table in the center of the room covered in large and small
+furs from various animals and monsters.  Insulating the walls are the tanned
+and furry hides of different bears and some other creatures that are not
+immediately recognizable.
+"
 ""
 301469701 0
 0 6 0
@@ -3066,30 +2246,21 @@ D0
 E
 "torches"
 "Small wooden torches stand a few feet from the ground on both sides of the
-
-doorway.  They flicker wildly from the occasional gusts of wind from the
-
-outside or whenever someone passes by them.
-
-"
+doorway.  They flicker wildly from the occasional gusts of wind from the
+outside or whenever someone passes by them.
+"
 E
 "table center furs"
 "The table stretches across most of the shop.  Blanketing the table in a
-
-patchwork fashion are tanned bear skins, cattle hides, beaver pelts, and
-
-various other furs.
-
-"
+patchwork fashion are tanned bear skins, cattle hides, beaver pelts, and
+various other furs.
+"
 E
 "walls hides"
 "Draped along each wall of the shop are the hides different creatures.  Thick
-
-brown and black bear fur, light brown deer fur, white rabbit fur, and sleek
-
-black mink fur are among the tanned hides that you can detect.
-
-"
+brown and black bear fur, light brown deer fur, white rabbit fur, and sleek
+black mink fur are among the tanned hides that you can detect.
+"
 2240 9 1509949540 3 0
 40 17 1509949465 -1 0
 41 17 1509949465 -1 0
@@ -3101,22 +2272,14 @@ S
 #89047
 "Karinna's Travel Supplies"
 "This brightly-lit shop is crowded with large crates, barrels, and display
-
-cases, filled to the brim with numerous supplies a traveller would need. 
-
-Within each of the display cases, large waterskins, travelling packs, and
-
-pouches sit neatly displayed on a layer of red velvet.  Resting on shelves
-
-along the walls are torches, candleholders, lanterns, and flasks of oil.  On
-
-the northern side of the shop is a large wooden desk, cluttered with stacks of
-
-papers and mounds of gold coins.  A small doorway to the south leads back out
-
-of the store.
-
-"
+cases, filled to the brim with numerous supplies a traveller would need. 
+Within each of the display cases, large waterskins, travelling packs, and
+pouches sit neatly displayed on a layer of red velvet.  Resting on shelves
+along the walls are torches, candleholders, lanterns, and flasks of oil.  On
+the northern side of the shop is a large wooden desk, cluttered with stacks of
+papers and mounds of gold coins.  A small doorway to the south leads back out
+of the store.
+"
 ""
 301469701 0
 0 6 0
@@ -3127,45 +2290,30 @@ D2
 E
 "crates barrels"
 "Crates made of maple wood lie stacked at odd angles around the corners of this
-
-shop.  Beside the crates are several barrels that could fit halfling children
-
-inside of them.  The lids are partially or completely open on most of the
-
-barrels and crates, and you can see numerous traveller's supplies stacked
-
-inside of them.
-
-"
+shop.  Beside the crates are several barrels that could fit halfling children
+inside of them.  The lids are partially or completely open on most of the
+barrels and crates, and you can see numerous traveller's supplies stacked
+inside of them.
+"
 E
 "cases waterskins packs pouches velvet"
 "The glass cases have been polished for customers to view the waterskins,
-
-packs, and puches within them.  The items are vividly contrasted against the
-
-red velvet that they rest upon.
-
-"
+packs, and puches within them.  The items are vividly contrasted against the
+red velvet that they rest upon.
+"
 E
 "shelves walls torches candleholders lanterns flasks oil"
 "Oak wood shelves form two levels that hang against each wall of the shop. 
-
-Placed neatly on each shelf are unlit torches, metal candleholders, small
-
-lanterns, and full flasks of oil.
-
-"
+Placed neatly on each shelf are unlit torches, metal candleholders, small
+lanterns, and full flasks of oil.
+"
 E
 "northern side desk stacks papers coins"
 "An oak desk that spans several feet wide and a few feet high has been placed
-
-to the north.  Piles of paper and coins have formed on the opposite sides of
-
-the desk.  A female halfling stands behind the desk between the paper and coin
-
-mounds.
-
-"
+to the north.  Piles of paper and coins have formed on the opposite sides of
+the desk.  A female halfling stands behind the desk between the paper and coin
+mounds.
+"
 2359 9 1509949540 3 0
 25 17 1509949490 -1 0
 229 17 1509949490 -1 0
@@ -3178,20 +2326,13 @@ S
 #89048
 "Zaklar's Wizard's Emporium"
 "This shop appears more like a library than anything else due to the many
-
-bookcases which line the walls; each filled with stone tablets and scrolls
-
-tied up with red ribbons.  Erected in the center of the room is an obsidian
-
-marker upon which glowing red text has been written.  Etched into the ceiling
-
-is a rune which glows with a pale crimson light.  A thick, bluish-colored fog
-
-rolls across the soft dirt floor and tendrils of it slowly snake their way up
-
-your leg.  To the west a curtained doorway leads back out of the shop.
-
-"
+bookcases which line the walls; each filled with stone tablets and scrolls
+tied up with red ribbons.  Erected in the center of the room is an obsidian
+marker upon which glowing red text has been written.  Etched into the ceiling
+is a rune which glows with a pale crimson light.  A thick, bluish-colored fog
+rolls across the soft dirt floor and tendrils of it slowly snake their way up
+your leg.  To the west a curtained doorway leads back out of the shop.
+"
 ""
 301469701 0
 0 6 0
@@ -3202,51 +2343,33 @@ D3
 E
 "fog"
 "The fog is of a bluish-color and rather thick.  It slowly rolls across
-
-the floor, obscuring the floor and anything that rests on it. 
-
-Occasionally a tendril of the fog snakes up your leg, almost as if it
-
-were aware of your presence.
-
-"
+the floor, obscuring the floor and anything that rests on it. 
+Occasionally a tendril of the fog snakes up your leg, almost as if it
+were aware of your presence.
+"
 E
 "bookcases tablets scrolls"
 "Lining the northern, eastern, and southern walls of this shop are large
-
-bookcases filled to capacity with every manner of grimoire, tablet and
-
-scroll.  All the books within the cases are coated with a fine layer of dust
-
-and although most appear rather new some look as though they would turn to
-
-dust with the slightest touch.
-
-"
+bookcases filled to capacity with every manner of grimoire, tablet and
+scroll.  All the books within the cases are coated with a fine layer of dust
+and although most appear rather new some look as though they would turn to
+dust with the slightest touch.
+"
 E
 "ceiling rune"
 "The ceiling of this shop has been composed of several layers of thatch,
-
-although glancing at it carefully you notice it appears more like one solid
-
-sheet of material rather then layers.  Directly in the center a
-
-crimson-colored glowing rune has been mysteriously etched into the surface and
-
-emits a low humming noise.
-
-"
+although glancing at it carefully you notice it appears more like one solid
+sheet of material rather then layers.  Directly in the center a
+crimson-colored glowing rune has been mysteriously etched into the surface and
+emits a low humming noise.
+"
 E
 "marker text"
 "This large obsidian marker has been created from a single slab of the
-
-stone and is of the deepest black color you have seen.  Written across
-
-its facings in flowing red text, are several words.  The words visible
-
-upon the facings read: \"Jsian Marsipor Tzish Kalime Opiea\".
-
-"
+stone and is of the deepest black color you have seen.  Written across
+its facings in flowing red text, are several words.  The words visible
+upon the facings read: \"Jsian Marsipor Tzish Kalime Opiea\".
+"
 2637 9 1509949540 3 0
 285 17 1509949448 -1 0
 305 17 1509949455 -1 0
@@ -3265,20 +2388,13 @@ S
 #89049
 "Beredin's Alchemy Supplies"
 "Long wooden tables covered in glass vials, beakers, and jars filled with
-
-unknown substances line the walls of this shop.  A large steel cauldron has
-
-been set against the southern wall, bubbling violently and wafting tendrils of
-
-white smoke.  Gases of different colors seep from the cauldron and escape to
-
-the outside through the obsidian archway to the east.  Up above, the candles
-
-within a crystal chandelier burn with an unnatural violet flame that
-
-illuminate the shop just enough to see a few feet in front of you.
-
-"
+unknown substances line the walls of this shop.  A large steel cauldron has
+been set against the southern wall, bubbling violently and wafting tendrils of
+white smoke.  Gases of different colors seep from the cauldron and escape to
+the outside through the obsidian archway to the east.  Up above, the candles
+within a crystal chandelier burn with an unnatural violet flame that
+illuminate the shop just enough to see a few feet in front of you.
+"
 ""
 301469701 0
 0 6 0
@@ -3289,62 +2405,40 @@ D1
 E
 "wooden tables glass vials beakers jars"
 "These long wooden tables have been placed along every wall in this small
-
-shop.  Upon each table are several glass vials filled with a bubbling
-
-substance which emits a foul-smelling odor.  Beakers have been set up in
-
-wooden racks and each is filled with a black substance which steams
-
-constantly.  Several jars, small and large, contain live specimens of
-
-several lizards, snakes as well as a few blobs of slime which slowly move
-
-about the jars.
-
-"
+shop.  Upon each table are several glass vials filled with a bubbling
+substance which emits a foul-smelling odor.  Beakers have been set up in
+wooden racks and each is filled with a black substance which steams
+constantly.  Several jars, small and large, contain live specimens of
+several lizards, snakes as well as a few blobs of slime which slowly move
+about the jars.
+"
 E
 "1 southern wall cauldron tendrils smoke gases"
 "Set up against the southern wall is a large steel cauldron resting over a
-
-large fire pit.  The cauldron bubbles violently, sending a brown liquid
-
-splattering against the walls and ground.  Tendrils of smoke rise from within
-
-it and fills the shop, causing yours eyes to burn and water-up.  Orange, blue,
-
-red, and other colors swirl around the top and bottom of the cauldron.
-
-"
+large fire pit.  The cauldron bubbles violently, sending a brown liquid
+splattering against the walls and ground.  Tendrils of smoke rise from within
+it and fills the shop, causing yours eyes to burn and water-up.  Orange, blue,
+red, and other colors swirl around the top and bottom of the cauldron.
+"
 E
 "1 up chandelier flame"
 "Suspended from the ceiling by a thick iron chain is a chandelier which has
-
-been made from a fine piece of crystal.  The numerous faces of the chandelier
-
-are transparent, exposing an intense flame within it.  Several tallow candles
-
-are set within the chandeleir and burn with an unnatural violet flame.
-
-"
+been made from a fine piece of crystal.  The numerous faces of the chandelier
+are transparent, exposing an intense flame within it.  Several tallow candles
+are set within the chandeleir and burn with an unnatural violet flame.
+"
 E
 "tallow candles violet flame"
 "The candles held within the chandelier are normal tallow candles save for the
-
-fact that they burn with an unnatural violet flame.  The light emanating from
-
-the candles is not very bright and only illuminates the shop enough to just
-
-barely make out its furnishings.
-
-"
+fact that they burn with an unnatural violet flame.  The light emanating from
+the candles is not very bright and only illuminates the shop enough to just
+barely make out its furnishings.
+"
 E
 "1 east obsidian archway"
 "Carved from pure obsidian, this archway has been covered in pulsating runes of
-
-various shapes and sizes.
-
-"
+various shapes and sizes.
+"
 2626 9 1509949540 3 0
 1182 17 1509949540 -1 0
 1269 17 1509949490 -1 0
@@ -3375,20 +2469,13 @@ S
 #89050
 "Rallum's Stables"
 "The overwhelming scent of dried hay fills this building.  Lining the east and
-
-west sides are small stalls each containing a different size and type of mount
-
-ranging from small packmules to muscular warhorses.  Set in front of each
-
-stall are water troughs and barrels of grain.  Hanging from the wall next to
-
-the door to the north are several saddles, bridles, combs and grooming
-
-supplies for the animals.  An open doorway to the north leads to the back of
-
-the building where the steady clanging of metal can be heard.
-
-"
+west sides are small stalls each containing a different size and type of mount
+ranging from small packmules to muscular warhorses.  Set in front of each
+stall are water troughs and barrels of grain.  Hanging from the wall next to
+the door to the north are several saddles, bridles, combs and grooming
+supplies for the animals.  An open doorway to the north leads to the back of
+the building where the steady clanging of metal can be heard.
+"
 ""
 301477893 0
 0 7 0
@@ -3407,32 +2494,22 @@ D5
 E
 "water troughs"
 "Filled with cool, refreshing water, the troughs have been positioned just
-
-in front of the stalls to allow the animals easy access to them.
-
-"
+in front of the stalls to allow the animals easy access to them.
+"
 E
 "barrels grain"
 "Each of the several barrels which have been set next to the stall's gates
-
-have been filled with grains and oats.  Mixed in with the grain are bits
-
-of corn as well as some wheat to help keep the animals healthy.
-
-"
+have been filled with grains and oats.  Mixed in with the grain are bits
+of corn as well as some wheat to help keep the animals healthy.
+"
 E
 "saddles bridles combs grooming supplies"
 "Hanging over the door to the north are several finely crafted saddles
-
-made from red leather.  Next to the saddles are leather and steel bridges
-
-which have been polished to a high shine.  Resting within an arm's reach
-
-below the saddles and bridles are several combs and heavy brushes used
-
-for grooming the mounts in the livery.
-
-"
+made from red leather.  Next to the saddles are leather and steel bridges
+which have been polished to a high shine.  Resting within an arm's reach
+below the saddles and bridles are several combs and heavy brushes used
+for grooming the mounts in the livery.
+"
 2360 9 1509949540 3 0
 -1
 S
@@ -3459,22 +2536,14 @@ S
 #89052
 "Alixi's Riding Supplies"
 "Large iron forges, crucibles and anvils have been placed along the southern
-
-wall of this building.  Forging hammers and metal tongs hang from the western
-
-wall and beneath them resting on a wooden shelf are several stacks of horse
-
-shoes.  The eastern side of the room is cluttered with stacks of saddles,
-
-bridles, and various types of barding.  In the center of the room is a
-
-life-sized dummy of a heavy warhorse on which rests a suit of highly-polished
-
-scale mail barding.  To the south an opening in the wall leads into another
-
-section of the building.
-
-"
+wall of this building.  Forging hammers and metal tongs hang from the western
+wall and beneath them resting on a wooden shelf are several stacks of horse
+shoes.  The eastern side of the room is cluttered with stacks of saddles,
+bridles, and various types of barding.  In the center of the room is a
+life-sized dummy of a heavy warhorse on which rests a suit of highly-polished
+scale mail barding.  To the south an opening in the wall leads into another
+section of the building.
+"
 ""
 301469701 0
 0 6 0
@@ -3485,57 +2554,36 @@ D2
 E
 "1 south wall iron forges crucibles anvils"
 "Placed against the southern wall are several blacksmithing items ranging from
-
-forges to crucibles.  Set in the southwestern corner of the room are two large
-
-iron forges which waft strong waves of heat every few moments.  Placed next to
-
-them are four steel crucibles in which you can see solidified iron deposits. 
-
-Next to the crucibles are eight small anvils suited for someone the size of a
-
-halfling.  The anvils are covered in large dents as well as a few dozen
-
-scratch marks which dig deep into their metal.
-
-"
+forges to crucibles.  Set in the southwestern corner of the room are two large
+iron forges which waft strong waves of heat every few moments.  Placed next to
+them are four steel crucibles in which you can see solidified iron deposits. 
+Next to the crucibles are eight small anvils suited for someone the size of a
+halfling.  The anvils are covered in large dents as well as a few dozen
+scratch marks which dig deep into their metal.
+"
 E
 "1 west wall forging hammers metal tongs wooden shelf horse shoes"
 "Suspended from the western wall from iron hooks are several large forging
-
-hammers made from black iron and a few pairs of metal tongs used for removing
-
-hot iron from the forges.  Beneath the hammers and tongs is a small wooden
-
-shelf are several stacks of steel horse shoes; each polished to a high shine.
-
-"
+hammers made from black iron and a few pairs of metal tongs used for removing
+hot iron from the forges.  Beneath the hammers and tongs is a small wooden
+shelf are several stacks of steel horse shoes; each polished to a high shine.
+"
 E
 "1 east wall stacks saddles bridles barding"
 "Set against the eastern side of the building are several stacks of red
-
-leather, saddles trimmed with gold thread.  Bridles of various sizes, designs,
-
-and metals lie in a pile next to the saddles.  Stacked neatly next to the
-
-bridles are several pieces of plate, leather, and chain barding which have
-
-been polished to a high gloss.
-
-"
+leather, saddles trimmed with gold thread.  Bridles of various sizes, designs,
+and metals lie in a pile next to the saddles.  Stacked neatly next to the
+bridles are several pieces of plate, leather, and chain barding which have
+been polished to a high gloss.
+"
 E
 "center life-sized dummy heavy warhorse high-polished scale mail barding"
 "Placed in the center of the room is a life-sized dummy of a heavy warhorse. 
-
-Its mane is made from thick, coarse thread and hangs down its neck.  Its tail
-
-too has been added with brown thread and drapes casually behind it.  Mounted
-
-on the dummy is a suit of highly-polished scale mail barding which gleams in
-
-the light.
-
-"
+Its mane is made from thick, coarse thread and hangs down its neck.  Its tail
+too has been added with brown thread and drapes casually behind it.  Mounted
+on the dummy is a suit of highly-polished scale mail barding which gleams in
+the light.
+"
 2621 9 1509949540 3 0
 546 17 1509949470 -1 0
 568 17 1509949470 -1 0
@@ -3548,23 +2596,15 @@ S
 #89053
 "Diri's Weapons Shop"
 "This shop, although small, contains numerous weapons that hang from its
-
-walls.  Pikes, swords, spears whips and clubs all have been neatly set up for
-
-display across the stone walls, each polished to a high shine and rust-free. 
-
-Resting in the southeast corner of the room are two iron anvils, a barrel of
-
-water, a small crucible and a large iron forge.  In the center of the room is
-
-a long wooden counter on which rest several pieces of cheese and a large mug
-
-of ale.  An open doorway to the north is the only exit out of the shop.
-
-"
+walls.  Pikes, swords, spears whips and clubs all have been neatly set up for
+display across the stone walls, each polished to a high shine and rust-free. 
+Resting in the southeast corner of the room are two iron anvils, a barrel of
+water, a small crucible and a large iron forge.  In the center of the room is
+a long wooden counter on which rest several pieces of cheese and a large mug
+of ale.  An open doorway to the north is the only exit out of the shop.
+"
 "[Olah] redo weapons to more newbieish
-
-"
+"
 301469701 0
 0 6 0
 D2
@@ -3574,65 +2614,43 @@ D2
 E
 "walls pikes swords spears whips clubs"
 "Each of the weapons is in pristine condition and free of any rust or
-
-tarnish.  The weapons range from simple steel pikes to spiked clubs the
-
-size of an ogre's body.  The swords are of superior design and each has
-
-its hilt carved in the likeness of different monsters.  A large whip
-
-hanging from the southern wall catches you attention; it measures about
-
-three feet long and is tipped with tiny krynite claws.
-
-"
+tarnish.  The weapons range from simple steel pikes to spiked clubs the
+size of an ogre's body.  The swords are of superior design and each has
+its hilt carved in the likeness of different monsters.  A large whip
+hanging from the southern wall catches you attention; it measures about
+three feet long and is tipped with tiny krynite claws.
+"
 E
 "iron anvils"
 "These anvils are made from black wrought iron and are sized just right
-
-for a halfling blacksmith.  The surface of the anvils are covered in
-
-solidified metal and several large scratches and nics.
-
-"
+for a halfling blacksmith.  The surface of the anvils are covered in
+solidified metal and several large scratches and nics.
+"
 E
 "barrel water"
 "This iron-banded barrel is filled with cool, clear water which is used
-
-for cooling weapons just after they have come out of the forges.
-
-"
+for cooling weapons just after they have come out of the forges.
+"
 E
 "crucible"
 "This small crucidble still contains some liquified steel which sizzles
-
-and bubbles violently.  A strong wave of heat emanates from the crucible
-
-making it quite dangerous to touch at this time.
-
-"
+and bubbles violently.  A strong wave of heat emanates from the crucible
+making it quite dangerous to touch at this time.
+"
 E
 "iron forge"
 "This large forge is made from wrought iron and is covered in a thick
-
-layer of soot.  A large chimney has been built above it which leads
-
-through a small opening in the roof.  Flames occasionally spew forth from
-
-the grill covering its opening and inside you can just barely make out
-
-several large steel strips resting in its red-hot coals.
-
-"
+layer of soot.  A large chimney has been built above it which leads
+through a small opening in the roof.  Flames occasionally spew forth from
+the grill covering its opening and inside you can just barely make out
+several large steel strips resting in its red-hot coals.
+"
 E
 "wooden counter"
 "Made from a long slab of birchwood, this counter is of simple design. 
-
-Upon it rests several pieces of cheese covered in green spots and a large
-
-mug of ale which emanates a strong scent of alcohol.
-
-"
+Upon it rests several pieces of cheese covered in green spots and a large
+mug of ale which emanates a strong scent of alcohol.
+"
 2608 9 1509949540 3 0
 744 17 40 -1 0
 930 17 40 -1 0
@@ -3649,20 +2667,13 @@ S
 #89054
 "Hirith's Fine Clothing"
 "This small building is cluttered with crates, tables, and several glass
-
-display cases.  Hammered into the walls are several hooks upon which fine silk
-
-surcoats, breeches, and cloaks hang from.  In the center of the room is a
-
-large maple counter on which are several boxes tied closed with blue silk
-
-ribbons.  Set against the western wall is a large display case in which are
-
-clothing accessories ranging from belt buckles to cloak clasps.  To the east a
-
-low archway marks the exit out of the shop.
-
-"
+display cases.  Hammered into the walls are several hooks upon which fine silk
+surcoats, breeches, and cloaks hang from.  In the center of the room is a
+large maple counter on which are several boxes tied closed with blue silk
+ribbons.  Set against the western wall is a large display case in which are
+clothing accessories ranging from belt buckles to cloak clasps.  To the east a
+low archway marks the exit out of the shop.
+"
 ""
 301469701 0
 0 6 0
@@ -3673,41 +2684,28 @@ D1
 E
 "crates tables cases"
 "Placed haphazardly throughout this store are large wooden crates.  They've
-
-been stacked at odd angles atop one another.  Some crates and parchments
-
-clutter the tables nearby.  Leaning against the walls are partially clear
-
-glass display cases.  White frosting prevents you from seeing exactly what is
-
-inside them besides some clothes.
-
-"
+been stacked at odd angles atop one another.  Some crates and parchments
+clutter the tables nearby.  Leaning against the walls are partially clear
+glass display cases.  White frosting prevents you from seeing exactly what is
+inside them besides some clothes.
+"
 E
 "walls hooks surcoats breeches cloaks"
 "Silvery hooks that curve a few inches upward are lined against the northern
-
-wall.  Hung against the hooks are surcoats, breeches, and cloaks of various
-
-sizes, but most seem made for someone of small stature.
-
-"
+wall.  Hung against the hooks are surcoats, breeches, and cloaks of various
+sizes, but most seem made for someone of small stature.
+"
 E
 "center counter boxes ribbons"
 "A varnished wooden counter stands in the center of this cramped room.  It's
-
-less than a few feet tall and wide.  Small boxes wrapped in red and blue paper
-
-and blue silk ribbons rest on top of the counter.
-
-"
+less than a few feet tall and wide.  Small boxes wrapped in red and blue paper
+and blue silk ribbons rest on top of the counter.
+"
 E
 "western wall case accessories buckles clasps"
 "A glass display case rests beside the western wall.  Prominently arranged
-
-within it are belts, cloak clasps, cuff links, and other accessories.
-
-"
+within it are belts, cloak clasps, cuff links, and other accessories.
+"
 2618 9 1509949540 3 0
 3277 17 1509949480 -1 0
 1567 17 1509949480 -1 0
@@ -3722,27 +2720,17 @@ S
 #89055
 "Bludderdeck's Leather Works"
 "The overwhelming smell of burning leather fills the air within this small,
-
-cramped shop.  Lining the northern wall are several large iron cauldrons which
-
-bubble violently, sending splashes of scalding hot water across the floor. 
-
-Hanging from the eastern wall are impressive suits of leather armor; each with
-
-depictions of fearsome monsters painted across their chest area.  A large
-
-wooden tanning and curing rack has been erected to the west, on which rests a
-
-steaming piece of leather.  In front of the rack is a small stone desk on
-
-which rest knives, tongs and a large bag of salt.  To the south a small
-
-doorway leads out of the cottage.
-
-"
+cramped shop.  Lining the northern wall are several large iron cauldrons which
+bubble violently, sending splashes of scalding hot water across the floor. 
+Hanging from the eastern wall are impressive suits of leather armor; each with
+depictions of fearsome monsters painted across their chest area.  A large
+wooden tanning and curing rack has been erected to the west, on which rests a
+steaming piece of leather.  In front of the rack is a small stone desk on
+which rest knives, tongs and a large bag of salt.  To the south a small
+doorway leads out of the cottage.
+"
 "[Olah] change item shops here later to brown leather
-
-"
+"
 301469701 0
 0 6 0
 D2
@@ -3752,36 +2740,24 @@ D2
 E
 "northern wall cauldrons water floor"
 "A haze of vapors emanate from the top of some large cauldrons that rest near
-
-the northern wall.  The liquid within the cauldrons bubbles rapidly, making it
-
-difficult to detect what is inside them.
-
-"
+the northern wall.  The liquid within the cauldrons bubbles rapidly, making it
+difficult to detect what is inside them.
+"
 E
 "eastern wall suits armor depictions"
 "Brown leather suits made to fit an adult halfling are displayed against the
-
-eastern wall.  Symbols of various dragons, serpents, and unicorns have been
-
-painted on each suit.
-
-"
+eastern wall.  Symbols of various dragons, serpents, and unicorns have been
+painted on each suit.
+"
 E
 "rack 1 west leather desk knives tongs bag"
 "The desk stands a mere two feet high and is made of a light gray stone. 
-
-Various tools such as sharp blades, knives, and foot long silver tongs lie
-
-scattered atop the desk.  Scratches and crack containing a four foot long
-
-piece of freshly cured leathers have been made across the desk's surface. 
-
-Behind the desk is a long wooden rack containing a four foot long piece of
-
-freshly cured leather.
-
-"
+Various tools such as sharp blades, knives, and foot long silver tongs lie
+scattered atop the desk.  Scratches and crack containing a four foot long
+piece of freshly cured leathers have been made across the desk's surface. 
+Behind the desk is a long wooden rack containing a four foot long piece of
+freshly cured leather.
+"
 2609 9 1509949540 3 0
 186 17 40 -1 0
 980 17 40 -1 0
@@ -3795,25 +2771,16 @@ S
 #89056
 "The Dancing Pony Tavern Foyer"
 "This large entranceway has been lavishly decorated with paintings and fine oak
-
-furniture.  The floor is covered in a large red carpet with the image of a
-
-falcon soaring over snow-capped mountain peaks.  Set against the northern wall
-
-are several small, cushioned chairs and a small oak table with small carvings
-
-of halflings at play etched across its surface.  Hanging just above the chairs
-
-is a large tapestry depicting a band of halflings at a large festival set atop
-
-a grassy knoll.  To the west and south gold-plated archways lead into the
-
-tavern where loud music and laughing can be heard.
-
-"
+furniture.  The floor is covered in a large red carpet with the image of a
+falcon soaring over snow-capped mountain peaks.  Set against the northern wall
+are several small, cushioned chairs and a small oak table with small carvings
+of halflings at play etched across its surface.  Hanging just above the chairs
+is a large tapestry depicting a band of halflings at a large festival set atop
+a grassy knoll.  To the west and south gold-plated archways lead into the
+tavern where loud music and laughing can be heard.
+"
 "leaving west and south acode to check for size
-
-"
+"
 301465605 0
 0 6 0
 D1
@@ -3831,37 +2798,26 @@ D3
 E
 "paintings"
 "Several oil paintings hang along the northern wall just a few feet above the
-
-floor.  Depicted on some of them are male halflings mounted on ponies and
-
-female halflings sitting on a picnic quilt on daisy-filled hills.
-
-"
+floor.  Depicted on some of them are male halflings mounted on ponies and
+female halflings sitting on a picnic quilt on daisy-filled hills.
+"
 E
 "floor carpet falcon mountain peaks"
 "Spanning the entire floor of the tavern is a furry red carpet.  Splotched
-
-throughout the carpet are dried beer stains that form dark cloud-shaped
-
-patterns.
-
-"
+throughout the carpet are dried beer stains that form dark cloud-shaped
+patterns.
+"
 E
 "1 northern wall tapestry"
 "A tapestry made of cattle hide and painted in acrylic rests along the northern
-
-wall of the tavern.  Halflings of all ages are shown laughing, eating, and
-
-drinking merrily.
-
-"
+wall of the tavern.  Halflings of all ages are shown laughing, eating, and
+drinking merrily.
+"
 E
 "archways"
 "The archways reach up to five feet high, easily cleared by a gnome or
-
-halfling.  Taller races would need to duck underneath them.
-
-"
+halfling.  Taller races would need to duck underneath them.
+"
 3755 17 1509949540 -2 0
 3755 17 1509949540 -2 0
 3781 17 1509949540 -2 0
@@ -3872,25 +2828,16 @@ S
 #89057
 "The Dancing Pony Tavern"
 "Wooden tables cluttered with mugs filled with alcohol have been scattered
-
-about this large room.  The air is filled with thick, rolling clouds of smoke
-
-and the distinct odor of beer and cigar smoke.  The floor is littered with
-
-pieces of food, mud, and small piles of ashes.  Upon the western wall is a
-
-large, framed portrait of a merry-looking halfling dancing with a
-
-blonde-haired maiden.  Off to the south, through the thick clouds of smoke,
-
-you can just barely make out a long wooden bar.  To the east a gold-plated
-
-archway leads out to the foyer.
-
-"
+about this large room.  The air is filled with thick, rolling clouds of smoke
+and the distinct odor of beer and cigar smoke.  The floor is littered with
+pieces of food, mud, and small piles of ashes.  Upon the western wall is a
+large, framed portrait of a merry-looking halfling dancing with a
+blonde-haired maiden.  Off to the south, through the thick clouds of smoke,
+you can just barely make out a long wooden bar.  To the east a gold-plated
+archway leads out to the foyer.
+"
 "leaving east acode to check for size
-
-"
+"
 301465605 0
 0 6 0
 D1
@@ -3904,43 +2851,29 @@ D2
 E
 "floor food mud piles ashes"
 "Spanning the entire floor of the tavern is a furry red carpet.  Food crumbs,
-
-crusty dried mud, and small piles of smoke ashes are scattered throughout the
-
-carpet.  The excessive litter and wear and tear of many footsteps has caused
-
-the carpet to appear faded and coarse.
-
-"
+crusty dried mud, and small piles of smoke ashes are scattered throughout the
+carpet.  The excessive litter and wear and tear of many footsteps has caused
+the carpet to appear faded and coarse.
+"
 E
 "1 western wall portrait"
 "The portrait is one and a half foot wide by two feet long.  The frame is
-
-golden, and depicted inside it is rotund halfling carrying two pints of beer. 
-
-The suds of the beer cover much of beer mug and the hand holding it.  His
-
-other hand is wrapped around a buxom young halfling woman in a fluffy dress
-
-that reaches down to her knees.  Both halflings are smiling and seem to be
-
-enjoying the moment.
-
-"
+golden, and depicted inside it is rotund halfling carrying two pints of beer. 
+The suds of the beer cover much of beer mug and the hand holding it.  His
+other hand is wrapped around a buxom young halfling woman in a fluffy dress
+that reaches down to her knees.  Both halflings are smiling and seem to be
+enjoying the moment.
+"
 E
 "1 south bar smoke"
 "A trail of smoke originates from to the south, making it tough to see clearly
-
-around the tavern.
-
-"
+around the tavern.
+"
 E
 "1 east archway"
 "The archway reaches up to five feet high, easily cleared by a gnome or
-
-halfling.  Taller races would need to duck underneath it.
-
-"
+halfling.  Taller races would need to duck underneath it.
+"
 3781 49 1509949540 -2 0
 761 81 1509949540 -2 17
 3781 49 1509949540 -2 0
@@ -3954,23 +2887,15 @@ S
 #89058
 "The Dancing Pony Tavern - Bartender's Station"
 "Protruding from the southern wall, curving, and than stopping at the eastern
-
-wall is a long wooden bar covered in empty glasses and mugs.  Positioned along
-
-the length of the bar are several barstools.  Behind the bar are several large
-
-cases filled with bottles of almost every type alcoholic beverage.  A large
-
-steel chandelier filled with tallow candles that illuminate the tavern
-
-brightly hangs from the ceiling.  To the north and east are large,
-
-smoke-filled rooms in which you can see several tables scattered about.
-
-"
+wall is a long wooden bar covered in empty glasses and mugs.  Positioned along
+the length of the bar are several barstools.  Behind the bar are several large
+cases filled with bottles of almost every type alcoholic beverage.  A large
+steel chandelier filled with tallow candles that illuminate the tavern
+brightly hangs from the ceiling.  To the north and east are large,
+smoke-filled rooms in which you can see several tables scattered about.
+"
 "reset bar
-
-"
+"
 301469701 0
 0 6 0
 D0
@@ -3984,21 +2909,15 @@ D1
 E
 "cases"
 "Opened wooden and glass cases have been stacked behind the bar.  Within the
-
-cases are numerous bottles of pale ale, mead, beer, and other brewed alcoholic
-
-beverages, enough to last a colony of halflings for almost a week.
-
-"
+cases are numerous bottles of pale ale, mead, beer, and other brewed alcoholic
+beverages, enough to last a colony of halflings for almost a week.
+"
 E
 "ceiling chandelier candles"
 "An octagonal chandelier made of shiny steel hangs from atop the ceiling. 
-
-Eight tallow candles have been set on each vertex of the chandelier.  The wax
-
-of each candle appears to have been melted halfway.
-
-"
+Eight tallow candles have been set on each vertex of the chandelier.  The wax
+of each candle appears to have been melted halfway.
+"
 2650 9 1509949540 3 0
 3362 17 75 -1 3
 3362 17 75 -1 4
@@ -4016,25 +2935,16 @@ S
 #89059
 "The Dancing Pony Tavern"
 "The distinct smell of cigar smoke and alcohol fills the air of this large
-
-room.  Tables have been scattered about the room in a disorganized fashion;
-
-each cluttered with dirty plates and mugs.  Several of the chairs that rest
-
-beneath the tables have been knocked over and some broken into small pieces
-
-which now litter the ground.  Hanging from the eastern wall are two small
-
-pictures of rolling, grassy hills covered in patches of wildflowers.  Set into
-
-the southern wall is a small stone fireplace ablaze with red-orange flames. 
-
-To the north a gold-plated archways leads into the foyer.
-
-"
+room.  Tables have been scattered about the room in a disorganized fashion;
+each cluttered with dirty plates and mugs.  Several of the chairs that rest
+beneath the tables have been knocked over and some broken into small pieces
+which now litter the ground.  Hanging from the eastern wall are two small
+pictures of rolling, grassy hills covered in patches of wildflowers.  Set into
+the southern wall is a small stone fireplace ablaze with red-orange flames. 
+To the north a gold-plated archways leads into the foyer.
+"
 "leaving north acode to check for size
-
-"
+"
 301465605 0
 0 6 0
 D0
@@ -4048,28 +2958,20 @@ D3
 E
 "1 eastern wall pictures"
 "An acrylic painting of lush green hills filled with yellow daisies hangs on
-
-the eastern wall.  Also depicted is a clear blue sky, and some of the clouds
-
-are shaped like halflings.
-
-"
+the eastern wall.  Also depicted is a clear blue sky, and some of the clouds
+are shaped like halflings.
+"
 E
 "1 southern wall fireplace flames"
 "Set against the southern wall, the fireplace glows with red-orange flames and
-
-provides tremendous warmth.  A layer of coarse gray stone surrounds the
-
-perimeter of the fireplace and is set within the red bricks.
-
-"
+provides tremendous warmth.  A layer of coarse gray stone surrounds the
+perimeter of the fireplace and is set within the red bricks.
+"
 E
 "1 north archways"
 "The archways reach up to five feet high, easily cleared by a gnome or
-
-halfling.  Taller races would need to duck underneath them.
-
-"
+halfling.  Taller races would need to duck underneath them.
+"
 3781 17 1509949540 -2 0
 3781 49 1509949540 -2 0
 3362 81 1509949540 -2 1
@@ -4083,27 +2985,17 @@ S
 #89060
 "Halfling Citizen's Home"
 "This house smells of dank soil and fresh flowers.  Dirt clumps can be found
-
-all along the wooden floor and even the walls.  Hung along the deep blue walls
-
-is an array of oil paintings of various flowers and plants, most of which are
-
-familiar looking but their names elude your memory.  A couple of shelves span
-
-the northern wall.  Spades, clay pots, and other gardening equipment have been
-
-stored on the shelves.  Resting in a neat pile at the northeast corner of the
-
-room are several large bags of soil and fertilizer.  Beside the pile is a
-
-watering pot that is half empty.  To the east is a small door that leads back
-
-outside.
-
-"
+all along the wooden floor and even the walls.  Hung along the deep blue walls
+is an array of oil paintings of various flowers and plants, most of which are
+familiar looking but their names elude your memory.  A couple of shelves span
+the northern wall.  Spades, clay pots, and other gardening equipment have been
+stored on the shelves.  Resting in a neat pile at the northeast corner of the
+room are several large bags of soil and fertilizer.  Beside the pile is a
+watering pot that is half empty.  To the east is a small door that leads back
+outside.
+"
 "[Olah] gardener home
-
-"
+"
 301465605 0
 0 6 0
 D1
@@ -4116,27 +3008,17 @@ S
 #89061
 "Halfling Citizen's Home"
 "The walls of this house are just as bright and colorful as its exterior.  Each
-
-wall has been painted in a combination of various yellow, green, orange, and
-
-gold shapes.  The floor looks pretty peculiar as well, with its alternating
-
-yellow and red checker board-like pattern.  Placed on top of the floor is a
-
-thick, circular rug.  The rug contains a few jelly and chocolate set-in
-
-stains.  Standing against the western wall is a long table with a stack of
-
-fabrics of varying colors and textures.  Beside the stack are several sets of
-
-sewn clothes that remain unfinished.  An archway to the east leads back out to
-
-the city.
-
-"
+wall has been painted in a combination of various yellow, green, orange, and
+gold shapes.  The floor looks pretty peculiar as well, with its alternating
+yellow and red checker board-like pattern.  Placed on top of the floor is a
+thick, circular rug.  The rug contains a few jelly and chocolate set-in
+stains.  Standing against the western wall is a long table with a stack of
+fabrics of varying colors and textures.  Beside the stack are several sets of
+sewn clothes that remain unfinished.  An archway to the east leads back out to
+the city.
+"
 "[Olah] eccentric seamstress
-
-"
+"
 301465605 0
 0 6 0
 D1
@@ -4149,27 +3031,17 @@ S
 #89062
 "Halfling Citizen's Home"
 "The interior of this house applies a few unusual designs to fit the unique
-
-tastes of its inhabitants.  The walls have been painted in bright green and
-
-orange, with large splotches of yellow added for flair.  Attached around the
-
-walls in a continuous V-shaped pattern are well-preserved tulips, daisies, and
-
-sunflowers.  Their scent is still powerful and pleasant.  Resting against the
-
-northern wall is a bookshelf containing a large number of books and writing
-
-paper.  Facing the bookshelf is a messy desk filled with flowers, pens, and
-
-cookie crumbs.  A small wooden door with a single red rose painted on it lies
-
-to the west.
-
-"
+tastes of its inhabitants.  The walls have been painted in bright green and
+orange, with large splotches of yellow added for flair.  Attached around the
+walls in a continuous V-shaped pattern are well-preserved tulips, daisies, and
+sunflowers.  Their scent is still powerful and pleasant.  Resting against the
+northern wall is a bookshelf containing a large number of books and writing
+paper.  Facing the bookshelf is a messy desk filled with flowers, pens, and
+cookie crumbs.  A small wooden door with a single red rose painted on it lies
+to the west.
+"
 "[Olah] flower fanatic
-
-"
+"
 301465605 0
 0 6 0
 D3
@@ -4182,26 +3054,16 @@ S
 #89063
 "Halfling Citizen's Home"
 "This home is small yet cozy.  The stone walls are painted in a peach color,
-
-and highly detailed flowery designs along the walls accentuate the pleasant
-
-aesthetic qualities of the house.  In the middle of the house is a
-
-halfling-sized rocking chair made of dark mahogany wood.  Its lacquered finish
-
-gives the chair a shiny new look.  Beside the chair is a wide bed with
-
-numerous fluffy pillows stacked upon it.  A red brick fireplace with a few
-
-pine logs still remaining in it lies to the north.  Hung just above the
-
-fireplace is an acrylic painting of a young smiling halfling couple frolicking
-
-along a lush green hillside.  A small wooden door to the south leads back
-
-outside to the city.
-
-"
+and highly detailed flowery designs along the walls accentuate the pleasant
+aesthetic qualities of the house.  In the middle of the house is a
+halfling-sized rocking chair made of dark mahogany wood.  Its lacquered finish
+gives the chair a shiny new look.  Beside the chair is a wide bed with
+numerous fluffy pillows stacked upon it.  A red brick fireplace with a few
+pine logs still remaining in it lies to the north.  Hung just above the
+fireplace is an acrylic painting of a young smiling halfling couple frolicking
+along a lush green hillside.  A small wooden door to the south leads back
+outside to the city.
+"
 ""
 301465605 0
 0 6 0
@@ -4215,20 +3077,13 @@ S
 #89064
 "Halfling Citizen's Home"
 "A thick yellow carpet has been spread all across the floor of this cozy
-
-cottage.  Only a few splotches of red jelly mar the surface of the carpet. 
-
-Hung along each wall and encircling the room are numerous paintings depicting
-
-a festively plump halfling holding or munching on a tasty-looking dessert.  At
-
-the northwestern corner of the room is a five foot long bed made of mahogany
-
-wood.  About a dozen pillows in various shapes and sizes have been stacked on
-
-the bed, and several cake crumbs have been scattered randomly along the bed.
-
-"
+cottage.  Only a few splotches of red jelly mar the surface of the carpet. 
+Hung along each wall and encircling the room are numerous paintings depicting
+a festively plump halfling holding or munching on a tasty-looking dessert.  At
+the northwestern corner of the room is a five foot long bed made of mahogany
+wood.  About a dozen pillows in various shapes and sizes have been stacked on
+the bed, and several cake crumbs have been scattered randomly along the bed.
+"
 ""
 301465605 0
 0 6 0
@@ -4242,24 +3097,15 @@ S
 #89065
 "Halfling Citizen's Home"
 "This cozy little home is furnished with all sorts of peculiar furniture and
-
-decorations.  Hanging along the orange walls and from the light blue ceiling
-
-are unusual-looking trinkets.  Some are silvery metal chimes, glass pendants,
-
-and folded paper animals.  Other trinkets lie in the corner in an unorganized
-
-pile, as though the owner didn't even know what to do with them.  At another
-
-end of the room is a small bed covered in a thick, plush blanket with bright,
-
-flowery designs.  Attached to the wooden beams at the four corners of the bed
-
-are silk drapes.  Woven into the drapes are scenes of halflings skipping up a
-
-green hill.
-
-"
+decorations.  Hanging along the orange walls and from the light blue ceiling
+are unusual-looking trinkets.  Some are silvery metal chimes, glass pendants,
+and folded paper animals.  Other trinkets lie in the corner in an unorganized
+pile, as though the owner didn't even know what to do with them.  At another
+end of the room is a small bed covered in a thick, plush blanket with bright,
+flowery designs.  Attached to the wooden beams at the four corners of the bed
+are silk drapes.  Woven into the drapes are scenes of halflings skipping up a
+green hill.
+"
 ""
 301465605 0
 0 6 0
@@ -4273,22 +3119,14 @@ S
 #89066
 "Entrance to the Temple of Freylia"
 "The large, grey stone walls of this chamber have been covered with large
-
-murals depicting halflings at play and battle.  Lining the walls of the
-
-chamber are several ruby-encrusted gold braziers which burn with brilliant
-
-blue flames, illuminating the room brightly.  In the center of the room a
-
-life-like statue carved in the likeness of the goddess Freylia bedecked in
-
-battle armor has been erected.  Set just before the statue is a set of stone
-
-stairs which descends down into the floor.  To the north a pair of massive
-
-double doors lead out of the temple.
-
-"
+murals depicting halflings at play and battle.  Lining the walls of the
+chamber are several ruby-encrusted gold braziers which burn with brilliant
+blue flames, illuminating the room brightly.  In the center of the room a
+life-like statue carved in the likeness of the goddess Freylia bedecked in
+battle armor has been erected.  Set just before the statue is a set of stone
+stairs which descends down into the floor.  To the north a pair of massive
+double doors lead out of the temple.
+"
 ""
 301465935 0
 0 6 0
@@ -4306,18 +3144,12 @@ S
 #89067
 "Halfling Citizen's Home"
 "A wooden bed in the northeastern corner is one of the few items that occupy
-
-this sparsely furnished house.  The bed's mattress looks thin and sagging, and
-
-the bed's wooden frame appears worn and fragile.  Scattered randomly along the
-
-wooden floor boards are several stalks of straw covered in clumps of mud.  The
-
-straw most likely fell from the weathered thatch roof above you.  To the west
-
-is a small wooden door with loose hinges that leads out to the city.
-
-"
+this sparsely furnished house.  The bed's mattress looks thin and sagging, and
+the bed's wooden frame appears worn and fragile.  Scattered randomly along the
+wooden floor boards are several stalks of straw covered in clumps of mud.  The
+straw most likely fell from the weathered thatch roof above you.  To the west
+is a small wooden door with loose hinges that leads out to the city.
+"
 ""
 301465605 0
 0 6 0

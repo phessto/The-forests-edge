@@ -10,29 +10,18 @@
 #86000
 "War-torn Battlefield"
 "The earth here is muddy and bloodstained; the former caused by the macabre
-
-dance of battle and the latter by its horrific aftermath.  Corpses of various
-
-sizes and shapes litter the ground, their discarded weapons bent and broken in
-
-testament to the futility of their wielder's efforts.  To the north, the
-
-treacherous ground slopes sharply downward toward the river.  East and west
-
-continue alongside the river, signs of battle stretching as far as the trees
-
-and hills allow you to see.  The ground rises gently southward, leading back
-
-toward the Unity front line.
-
-"
+dance of battle and the latter by its horrific aftermath.  Corpses of various
+sizes and shapes litter the ground, their discarded weapons bent and broken in
+testament to the futility of their wielder's efforts.  To the north, the
+treacherous ground slopes sharply downward toward the river.  East and west
+continue alongside the river, signs of battle stretching as far as the trees
+and hills allow you to see.  The ground rises gently southward, leading back
+toward the Unity front line.
+"
 "search saddles
-
-move ogre
-
-get axe (from dwarf)
-
-"
+move ogre
+get axe (from dwarf)
+"
 33030144 0
 2 8 0
 D0
@@ -54,162 +43,104 @@ D3
 E
 "corpses aftermath"
 "By the look of the corpses, the Unity army came away with a victory here. 
-
-Nine of the twelve corpses are creatures from the Mephistophelian army.  Two
-
-goblins, two wolves, four orcish axemen, and one currently armless ogre make
-
-up the deceased of the evil race.  A dwarf and two humans are the good race
-
-casualties.
-
-"
+Nine of the twelve corpses are creatures from the Mephistophelian army.  Two
+goblins, two wolves, four orcish axemen, and one currently armless ogre make
+up the deceased of the evil race.  A dwarf and two humans are the good race
+casualties.
+"
 E
 "2 ogre"
 "This ogre appears to have been de-armed in combat, although a human finger
-
-poking out of its mouth would have you believe it wasn't without cost. 
-
-Something shiny glints from under the massive corpse's torso.
-
-"
+poking out of its mouth would have you believe it wasn't without cost. 
+Something shiny glints from under the massive corpse's torso.
+"
 E
 "orcish"
 "The orcish axemen were probably surrounded when they gave in, as sword and axe
-
-marks on their chest and back attest.  One of the orcs, bigger than the
-
-others, seems to have accounted for two of the three Unity deaths, as their
-
-bodies are stacked almost on top of each other.
-
-"
+marks on their chest and back attest.  One of the orcs, bigger than the
+others, seems to have accounted for two of the three Unity deaths, as their
+bodies are stacked almost on top of each other.
+"
 E
 "goblins"
 "These goblin wolfriders died with snarls on their face, but their unbloodied
-
-spears show the impotence of their death.
-
-"
+spears show the impotence of their death.
+"
 E
 "wolf wolves"
 "Two wolves lie here, killed by some kind of piercing weapon, their goblish
-
-saddles still buckled tightly on.
-
-"
+saddles still buckled tightly on.
+"
 E
 "humans"
 "Two human warriors lie under the corpse of a unusually large orc, the larger
-
-one still grasping the sword that pierced the foul creature's heart.  The
-
-humans were armed with swords and shields, and bear seal of Chiiron on their
-
-helmets.
-
-"
+one still grasping the sword that pierced the foul creature's heart.  The
+humans were armed with swords and shields, and bear seal of Chiiron on their
+helmets.
+"
 E
 "dwarf dwarven"
 "The head of this dead dwarven warrior was crushed by some tremendous blunt
-
-weapon, most likely the club wielded by the Ogre.  He has the symbol of Kha-Da
-
-blazoned on his breastplate, and still holds a bloody axe tightly in both
-
-hands.
-
-"
+weapon, most likely the club wielded by the Ogre.  He has the symbol of Kha-Da
+blazoned on his breastplate, and still holds a bloody axe tightly in both
+hands.
+"
 E
 "weapons"
 "A club, a sword, five axes, and two spears are littered on the ground, bent
-
-and broken.  None of them look to be in usable condition.
-
-"
+and broken.  None of them look to be in usable condition.
+"
 A
 ""
 ""
 "if( !is_resting( ch ) ) {
-
-  if( !char_affected( ch, float ) ) {
-
-    if( find_stat( ch, dex ) < random( 10, 22 ) && find_skill( ch,climb ) < random( 1,9 ) ) {
-
-      act_tochar( #mud, ch );
-
-      act_notchar( #rmud, ch );
-
-      transfer( ch, find_room( 86001 ) );
-
-      act_notchar( #imud );
-
-      interpret( ch,\"sit\" );
-
-      continue;
-
-    }
-
-    else{
-
-      use_skill( ch,climb );
-
-      act_tochar( #makes, ch );
-
-      continue;
-
-    }
-
-  }
-
-  else {
-
-    act_tochar( #float, ch );
-
-    continue;
-
-  }
-
-  loop ( followers ) {
-
-    ch = rch;
-
-    acode( room,1 );
-
-  }
-
-}
-
-"
+  if( !char_affected( ch, float ) ) {
+    if( find_stat( ch, dex ) < random( 10, 22 ) && find_skill( ch,climb ) < random( 1,9 ) ) {
+      act_tochar( #mud, ch );
+      act_notchar( #rmud, ch );
+      transfer( ch, find_room( 86001 ) );
+      act_notchar( #imud );
+      interpret( ch,\"sit\" );
+      continue;
+    }
+    else{
+      use_skill( ch,climb );
+      act_tochar( #makes, ch );
+      continue;
+    }
+  }
+  else {
+    act_tochar( #float, ch );
+    continue;
+  }
+  loop ( followers ) {
+    ch = rch;
+    acode( room,1 );
+  }
+}
+"
 E
 "mud"
 "You start to climb down the muddy bank, but then lose your footing and slide
-
-down on your back!
-
-"
+down on your back!
+"
 E
 "rmud"
 "Attempting to climb down the bank, $n falls flat on $m back and slides down
-
-into the river!
-
-"
+into the river!
+"
 E
 "imud"
 "$n comes sliding down the bank, flat on $m back!
-
-"
+"
 E
 "makes"
 "You climb down the muddy bank, barely managing to keep your feet.
-
-"
+"
 E
 "float"
 "You float down the bank with ease.
-
-"
+"
 E
 "to_char"
 ""
@@ -224,29 +155,18 @@ S
 #86001
 "Shallows of a River, South Bank"
 "The water from the river swirls slowly here, moving far slower than the water
-
-in the middle of the stream.  The crumbled rock from the once-standing bridge
-
-supports block most of the river's movement, causing stagnant pools of dead
-
-weeds and fallen leaves to form here.  To the south is a ten-foot bank of mud
-
-that has slid partially into the water, making the climb out of the river
-
-relatively easy.  Moving north would bring you toward the middle of the river,
-
-the visible riverbed suggesting the water isn't too deep there.  To the west
-
-is more shallows, although the overhang of the bank in that direction hangs
-
-ominously over the water like a giant, muddy wave about to break.  Travel east
-
-is blocked by chunks of rock and beams of wood.
-
-"
+in the middle of the stream.  The crumbled rock from the once-standing bridge
+supports block most of the river's movement, causing stagnant pools of dead
+weeds and fallen leaves to form here.  To the south is a ten-foot bank of mud
+that has slid partially into the water, making the climb out of the river
+relatively easy.  Moving north would bring you toward the middle of the river,
+the visible riverbed suggesting the water isn't too deep there.  To the west
+is more shallows, although the overhang of the bank in that direction hangs
+ominously over the water like a giant, muddy wave about to break.  Travel east
+is blocked by chunks of rock and beams of wood.
+"
 "slowly make your way up the bank (south).
-
-"
+"
 33030144 0
 13 6 0
 D0
@@ -260,117 +180,74 @@ D2
 E
 "chunks rock beams wood"
 "Chunks of rock, both large and small, are piled high to the east.  The white
-
-granite remains are littered with broken and torn planks of wood, and a single
-
-unbroken beam of wood leans up against the pile, its other end planted firmly
-
-into the riverbed.
-
-"
+granite remains are littered with broken and torn planks of wood, and a single
+unbroken beam of wood leans up against the pile, its other end planted firmly
+into the riverbed.
+"
 E
 "water pool weeds leaves"
 "The brackish water is composed of leave, weeds, mud, and various dead
-
-insects.  A faint, but foul odor arises from the unpleasant mixture.  Even
-
-though the water is only a foot deep, the filth conceals the river's bottom.
-
-"
+insects.  A faint, but foul odor arises from the unpleasant mixture.  Even
+though the water is only a foot deep, the filth conceals the river's bottom.
+"
 E
 "bank"
 "The bank here has slid into the water, changing the climb from a vertical
-
-effort to a fourty-five degree scramble.  The mud is quite sticky, but
-
-tentative testing reveals that it is relatively firm after a half-foot of
-
-sinking into it.
-
-"
+effort to a fourty-five degree scramble.  The mud is quite sticky, but
+tentative testing reveals that it is relatively firm after a half-foot of
+sinking into it.
+"
 E
 "mud"
 "The muck here is primarily dark brown with traces of crimson, the occasionl
-
-bits of foliage or rock attempting to distguish itself from the mud's uniform
-
-color and texture.
-
-"
+bits of foliage or rock attempting to distguish itself from the mud's uniform
+color and texture.
+"
 A
 ""
 ""
 "if( !is_resting( ch ) ) {
-
-  if( !char_affected( ch, float ) ) {
-
-    if( find_stat( ch, dex ) < random( 10, 22 ) && find_skill( ch,climb ) < random( 1,9 ) ) {
-
-      act_tochar( #mud, ch );
-
-      act_notchar( #rmud, ch );
-
-      interpret( ch,\"sit\" );
-
-      end;
-
-    }
-
-    else{
-
-      use_skill( ch,climb );
-
-      act_tochar( #makes, ch );
-
-      continue;
-
-    }
-
-  }
-
-  else {
-
-    act_tochar( #float, ch );
-
-    continue;
-
-  }
-
-  loop ( followers ) {
-
-    ch = rch;
-
-    acode( room,1 );
-
-  }
-
-}
-
-"
+  if( !char_affected( ch, float ) ) {
+    if( find_stat( ch, dex ) < random( 10, 22 ) && find_skill( ch,climb ) < random( 1,9 ) ) {
+      act_tochar( #mud, ch );
+      act_notchar( #rmud, ch );
+      interpret( ch,\"sit\" );
+      end;
+    }
+    else{
+      use_skill( ch,climb );
+      act_tochar( #makes, ch );
+      continue;
+    }
+  }
+  else {
+    act_tochar( #float, ch );
+    continue;
+  }
+  loop ( followers ) {
+    ch = rch;
+    acode( room,1 );
+  }
+}
+"
 E
 "mud"
 "You attempt to climb the bank, but fall onto your stomach and come sliding
-
-back down.
-
-"
+back down.
+"
 E
 "rmud"
 "$n tries to climb the bank, but falls on $m stomach and comes sliding back
-
-down.
-
-"
+down.
+"
 E
 "makes"
 "You slowly make your way up the muddy bank.
-
-"
+"
 E
 "float"
 "You float up the bank.
-
-"
+"
 !
 3 0 4
 -1
@@ -380,8 +257,7 @@ S
 "War-torn Battlefield"
 ""
 "toward entrance
-
-"
+"
 33030144 0
 2 6 0
 D1
@@ -394,22 +270,14 @@ S
 #86003
 "War-torn Battlefield"
 "This area of the battlefield still has grass sprouting from the ground, rather
-
-than torn up and mixed with mud.  Several long swaths of grass, roughly a foot
-
-wide, are trampled down as if by some tremendous weight.  To the north you see
-
-the remains of a bridge jutting about a foot out from the bank, with its stone
-
-supports smashed and crumbled onto the bank of the river.  To the west is the
-
-aftermath of a sizable skirmish, and to the east is a small copse of trees. 
-
-The way south is blocked by a massive wall of logs that protects a tall wooden
-
-watchtower.
-
-"
+than torn up and mixed with mud.  Several long swaths of grass, roughly a foot
+wide, are trampled down as if by some tremendous weight.  To the north you see
+the remains of a bridge jutting about a foot out from the bank, with its stone
+supports smashed and crumbled onto the bank of the river.  To the west is the
+aftermath of a sizable skirmish, and to the east is a small copse of trees. 
+The way south is blocked by a massive wall of logs that protects a tall wooden
+watchtower.
+"
 ""
 33030144 0
 2 6 0
@@ -424,55 +292,38 @@ D3
 E
 "swaths grass"
 "Looking closely at these swaths of grass reveal bits and pieces of wood, all
-
-of the same type, pressed in among the grass.  You also notice that the swaths
-
-begin here, pointing toward the bridge, then seem to curve and disappear into
-
-the mud to the west.
-
-"
+of the same type, pressed in among the grass.  You also notice that the swaths
+begin here, pointing toward the bridge, then seem to curve and disappear into
+the mud to the west.
+"
 E
 "bridge supports"
 "The bridge seems to have been shattered by a massive boulder, which can barely
-
-be seen poking out of the middle of the river below.  Crumbled bits of rock
-
-lie scattered among more of the sizable remains of the stone supports that
-
-once held this bridge up, totally covering the bank and making it unclimbable.
-
-"
+be seen poking out of the middle of the river below.  Crumbled bits of rock
+lie scattered among more of the sizable remains of the stone supports that
+once held this bridge up, totally covering the bank and making it unclimbable.
+"
 E
 "wooden logs"
 "This wall of linked logs is made in the spirit of a log cabin, except twice as
-
-tall.  A full twenty feet it rises, protecting a watchtower filled ominously
-
-with arrow slits.  The logs themselves are coated with an extremely slippery
-
-substance that smells faintly of oil and fish, making them impossible to climb.
-
-"
+tall.  A full twenty feet it rises, protecting a watchtower filled ominously
+with arrow slits.  The logs themselves are coated with an extremely slippery
+substance that smells faintly of oil and fish, making them impossible to climb.
+"
 E
 "watchtower"
 "This wooden watchtower looks recently built, as the wood is hardly marred by
-
-battle or weather.  There are a total of twelve arrow slits that you can see,
-
-all pointing in this general direction.  You are too far away to see any more
-
-detail.
-
-"
+battle or weather.  There are a total of twelve arrow slits that you can see,
+all pointing in this general direction.  You are too far away to see any more
+detail.
+"
 -1
 S
 
 #86004
 "Path near a Battlefield"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -490,25 +341,16 @@ S
 #86005
 "Copse of Trees near a Battlefield"
 "This copse of trees extends like an arm from the forest to the southeast,
-
-dense and difficult to traverse.  Battle seems to not have travelled into this
-
-pine-needle laced grove, as the ground and trees are mostly undisturbed.  The
-
-river to the north is higher here than it is to the northwest, as a partial
-
-dam of rock and wood is slowing the flow of water significantly.  To the west
-
-lies an open field, while to the east is a small clearing before the forest
-
-begins in earnest.  To the south is a massive wall of linked logs.
-
-"
+dense and difficult to traverse.  Battle seems to not have travelled into this
+pine-needle laced grove, as the ground and trees are mostly undisturbed.  The
+river to the north is higher here than it is to the northwest, as a partial
+dam of rock and wood is slowing the flow of water significantly.  To the west
+lies an open field, while to the east is a small clearing before the forest
+begins in earnest.  To the south is a massive wall of linked logs.
+"
 "remove north and make a jump acode
-
-search quiver for nice arrows
-
-"
+search quiver for nice arrows
+"
 33030144 0
 3 6 0
 D0
@@ -526,60 +368,42 @@ D3
 E
 "ground"
 "Looking closely at the ground, you can see faint footprints that lead toward a
-
-medium sized pine tree.
-
-"
+medium sized pine tree.
+"
 E
 "trees"
 "Behind the tree is a discarded quiver, probably left behind by an archer in a
-
-hurry.  The quiver has the mark of Vaasa stitched into its leather.
-
-"
+hurry.  The quiver has the mark of Vaasa stitched into its leather.
+"
 E
 "river water"
 "The river here is only about four feet below the bank, looking cold an
-
-uninviting.  You shudder at the thought of jumping in.
-
-"
+uninviting.  You shudder at the thought of jumping in.
+"
 E
 "wall logs"
 "This wall of linked logs is made in the spirit of a log cabin, except twice as
-
-tall.  A full twenty feet it rises, protecting a watchtower filled ominously
-
-with arrow slits.  The logs themselves are coated with an extremely slippery
-
-substance that smells faintly of oil and fish, making them impossible to climb.
-
-"
+tall.  A full twenty feet it rises, protecting a watchtower filled ominously
+with arrow slits.  The logs themselves are coated with an extremely slippery
+substance that smells faintly of oil and fish, making them impossible to climb.
+"
 E
 "dam rock wood"
 "In the distance, you see that a collapsed bridge is the cause of the dam.  The
-
-rock and wood are its remains.
-
-"
+rock and wood are its remains.
+"
 -1
 S
 
 #86006
 "Shallows of a River"
 "The river here is shallow, partially due to a high point in the riverbed and
-
-partially to the debri from the destruction of the bridge to the east.  The
-
-water is about three feet deep, flowing slowly west with a contented burble. 
-
-To the north are shallows overlooked by an undamaged bank of mud and grass,
-
-while to the south are shallows partially filled with mud by its collapsed
-
-bank.
-
-"
+partially to the debri from the destruction of the bridge to the east.  The
+water is about three feet deep, flowing slowly west with a contented burble. 
+To the north are shallows overlooked by an undamaged bank of mud and grass,
+while to the south are shallows partially filled with mud by its collapsed
+bank.
+"
 ""
 33030144 0
 13 6 0
@@ -598,29 +422,21 @@ D3
 E
 "debri bridge"
 "From here you have a good view of the giant boulder that smashed the bridge to
-
-the east.  The boulder was probably near twenty feet high, although it's
-
-difficult to tell as much of it is buried in the riverbed.  The remains of the
-
-bridge seemed to be made of wood, but this view shows that it had iron
-
-supports underneath it.
-
-"
+the east.  The boulder was probably near twenty feet high, although it's
+difficult to tell as much of it is buried in the riverbed.  The remains of the
+bridge seemed to be made of wood, but this view shows that it had iron
+supports underneath it.
+"
 -1
 S
 
 #86007
 "Shallows of a River, North Bank"
 "Under Construction.
-
-"
+"
 "To Mephistophelian side
-
-Set up climbable pole to room ne of here, where bridge support is angled to.
-
-"
+Set up climbable pole to room ne of here, where bridge support is angled to.
+"
 33030144 0
 13 6 0
 D2
@@ -633,8 +449,7 @@ S
 #86008
 "In a River"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 8 6 0
@@ -648,8 +463,7 @@ S
 #86009
 "In a River"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 6 6 0
@@ -659,13 +473,10 @@ S
 #86010
 "In a River"
 "Under Construction.
-
-"
+"
 "This is where the kraken will go, summoned by the warlock if he lives.
-
-Remove north exit, have 86039 be where the kraken brings you.  Will probably need 2 more room for that.
-
-"
+Remove north exit, have 86039 be where the kraken brings you.  Will probably need 2 more room for that.
+"
 301465600 0
 8 8 0
 D1
@@ -687,8 +498,7 @@ S
 #86011
 "Path West of a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -706,8 +516,7 @@ S
 #86012
 "Path near a Battlefield"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -717,8 +526,7 @@ S
 #86013
 "Path West of a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -736,8 +544,7 @@ S
 #86014
 "A Bend in the Path"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -755,8 +562,7 @@ S
 #86015
 "Path South of a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -774,8 +580,7 @@ S
 #86016
 "Path to a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -797,8 +602,7 @@ S
 #86017
 "Entrance to a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -816,11 +620,9 @@ S
 #86018
 "Clearing in a Forest"
 "Under Construction.
-
-"
+"
 "north will be jump water
-
-"
+"
 33030144 0
 2 6 0
 D0
@@ -837,11 +639,9 @@ S
 #86019
 "In a River"
 "Under Construction.
-
-"
+"
 "remove south and add climb root
-
-"
+"
 301465600 0
 8 6 0
 D2
@@ -858,8 +658,7 @@ S
 #86020
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -889,8 +688,7 @@ S
 #86021
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -904,8 +702,7 @@ S
 #86022
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -923,8 +720,7 @@ S
 #86023
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -942,8 +738,7 @@ S
 #86024
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -973,8 +768,7 @@ S
 #86025
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -992,8 +786,7 @@ S
 #86026
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1011,8 +804,7 @@ S
 #86027
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1026,8 +818,7 @@ S
 #86028
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1053,8 +844,7 @@ S
 #86029
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1068,8 +858,7 @@ S
 #86030
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1087,8 +876,7 @@ S
 #86031
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1106,8 +894,7 @@ S
 #86032
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1121,8 +908,7 @@ S
 #86033
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1136,8 +922,7 @@ S
 #86034
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1151,8 +936,7 @@ S
 #86035
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1166,8 +950,7 @@ S
 #86036
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1181,8 +964,7 @@ S
 #86037
 "Inside a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1196,8 +978,7 @@ S
 #86038
 "Path South of a Watchtower"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 2 6 0
@@ -1211,8 +992,7 @@ S
 #86039
 "High Above a Kraken"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 6 6 0

@@ -10,29 +10,18 @@
 #91500
 "Tavern on the Green"
 "A tall, narrow wooden counter runs the entire length of this room, interrupted
-
-only by swinging doors of the same height near the left end.  The wood is damp
-
-to the touch and has started to rot slightly, filling the air with an earthy
-
-smell.  Pictures yellow with age hang randomly about the walls, depicting
-
-local citizens long lost to the ages.  Behind the counter are several shelves
-
-packed tight with bottles of various shapes and heights, each filled with
-
-liquids identified on their labels.  A narrow door leads into the back
-
-storeroom, presumably stocked with more alcohol and food.  The counter
-
-continues to the north, extending all the way to the building's outer wall.
-
-"
+only by swinging doors of the same height near the left end.  The wood is damp
+to the touch and has started to rot slightly, filling the air with an earthy
+smell.  Pictures yellow with age hang randomly about the walls, depicting
+local citizens long lost to the ages.  Behind the counter are several shelves
+packed tight with bottles of various shapes and heights, each filled with
+liquids identified on their labels.  A narrow door leads into the back
+storeroom, presumably stocked with more alcohol and food.  The counter
+continues to the north, extending all the way to the building's outer wall.
+"
 "[Siris] Line 9 in the barkeeps desc is messed up
-
-[Siris] Dennis' desc is horribly full of typos.  Please look at lines 7-9.
-
-"
+[Siris] Dennis' desc is horribly full of typos.  Please look at lines 7-9.
+"
 335020047 0
 0 6 0
 D0
@@ -50,169 +39,115 @@ D3
 E
 "3 yellowed 3 pictures"
 "These pictures look to be decades old, their edges curling and cracking
-
-beneath the wooden frames.  They all depict the barkeeps that have run the
-
-tavern throughout the years.  Some pictures have the barkeep's name scrolled
-
-across the bottom in black ink, while others remain nameless, save to those
-
-elderly patrons that were alive when the tavern opened.
-
-"
+beneath the wooden frames.  They all depict the barkeeps that have run the
+tavern throughout the years.  Some pictures have the barkeep's name scrolled
+across the bottom in black ink, while others remain nameless, save to those
+elderly patrons that were alive when the tavern opened.
+"
 E
 "3 bottles"
 "These bottles are packed closely together on the tavern shelves, causing them
-
-to bend slightly under the heavy weight.  Made of various colors of glass,
-
-they are filled with several types of alcohol, identifiable only by the
-
-labels.  One bottle appears to be cracked, as a clear liquid is slowly
-
-dripping down its side.
-
-"
+to bend slightly under the heavy weight.  Made of various colors of glass,
+they are filled with several types of alcohol, identifiable only by the
+labels.  One bottle appears to be cracked, as a clear liquid is slowly
+dripping down its side.
+"
 A
 "value sell"
 ""
 "act_tochar( \"Dennis explains he has a simple business and doesn't buy things back.\", ch );
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "if( find_stat( ch, level ) > 90 ) {
-
-  continue;
-
-}
-
-if( mob_in_room( 2843, find_room( 91500 ) ) ){
-
-  act_tochar( #no, ch );
-
-  act_notchar( #rno, ch );
-
-  act_room( #dennis, ch );
-
-}
-
-"
+  continue;
+}
+if( mob_in_room( 2843, find_room( 91500 ) ) ){
+  act_tochar( #no, ch );
+  act_notchar( #rno, ch );
+  act_room( #dennis, ch );
+}
+"
 E
 "no"
 "The barkeep steps in front of you, blocking your way.
-
-"
+"
 E
 "rno"
 "$n attempts to go through the western door but the barkeep steps in $s way.
-
-"
+"
 E
 "dennis"
 "Dennis says firmly, \"@GOff Limits.@n\"
-
-"
+"
 !
 3 0 8
 A
 "open unlock"
 "1 west"
 "if( acode( room, 2 ) )
-
-  continue;
-
-"
+  continue;
+"
 !
 0 0 0
 A
 "2 show"
 "cord ring"
 "if( mob_in_room( 2843, room ) ) {
-
-  if( wearing_obj( 4734, ch ) ) {
-
-    act_tochar( #ring, ch );
-
-    act_notchar( #rring, ch );
-
-    wait( 1 );
-
-    if( char_in_room( ch, room ) ) {
-
-      act_tochar( #moved, ch );
-
-      act_notchar( #rmoved, ch );
-
-      exit = door( room, west );
-
-      transfer( ch, find_room( 91502 ) );
-
-      act_notchar( #arr, ch );
-
-      close( exit );
-
-      end;
-
-    }
-
-  }
-
-  else {
-
-    act_tochar( #noring, ch );
-
-  }
-
-}
-
-else
-
-  act_tochar( #nobarkeep, ch );
-
-"
+  if( wearing_obj( 4734, ch ) ) {
+    act_tochar( #ring, ch );
+    act_notchar( #rring, ch );
+    wait( 1 );
+    if( char_in_room( ch, room ) ) {
+      act_tochar( #moved, ch );
+      act_notchar( #rmoved, ch );
+      exit = door( room, west );
+      transfer( ch, find_room( 91502 ) );
+      act_notchar( #arr, ch );
+      close( exit );
+      end;
+    }
+  }
+  else {
+    act_tochar( #noring, ch );
+  }
+}
+else
+  act_tochar( #nobarkeep, ch );
+"
 E
 "ring"
 "You hold out your fist for Dennis to inspect your ring.
-
-"
+"
 E
 "rring"
 "$n shows something to the barkeep.
-
-"
+"
 E
 "moved"
 "After a moment of inspection, Dennis opens the narrow door to the west and
-
-ushers you through, then closes the door behind you.
-
-"
+ushers you through, then closes the door behind you.
+"
 E
 "rmoved"
 "Dennis gazes at $n a moment, then suddenly opens the narrow door.  After
-
-ushering $n through, Dennis closes the door.
-
-"
+ushering $n through, Dennis closes the door.
+"
 E
 "arr"
 "$n comes in through the eastern door and the door is promptly shut behind $m.
-
-"
+"
 E
 "noring"
 "<Type 'help' for help>
-
-"
+"
 E
 "nobarkeep"
 "<Type 'help' for help>
-
-"
+"
 !
 0 0 0
 1127 17 1509949540 -2 0
@@ -231,18 +166,12 @@ S
 #91501
 "Room of Battle"
 "The wooden counter continues on into this room, extending all the way to the
-
-outer wall.  The room is quite plain, lacking any decorations or other objects
-
-of interest.  A few chairs are stacked together in the corner, next to a bench
-
-made from knotty pine wood.  It looks well worn and old, as the surface has
-
-been made quite smooth and dull.  The floor in this room is nothing but dirt,
-
-which is spattered with some kind of thick, dark substance.
-
-"
+outer wall.  The room is quite plain, lacking any decorations or other objects
+of interest.  A few chairs are stacked together in the corner, next to a bench
+made from knotty pine wood.  It looks well worn and old, as the surface has
+been made quite smooth and dull.  The floor in this room is nothing but dirt,
+which is spattered with some kind of thick, dark substance.
+"
 ""
 402128901 0
 0 6 0
@@ -257,22 +186,14 @@ S
 #91502
 "Tavern on the Green Store Room"
 "Floor to ceiling shelves have been built into all four walls, making the room
-
-feel small and cramped.  The shelves are stuffed full with bottles and small
-
-packages of snack food.  The bottles are quite dusty, implying they have been
-
-sitting here for quite some time.  A small pool of amber-colored liquid is
-
-dripping from a small fissure on the side of a barrel in the southwest corner
-
-of the room.  A sour stench wafts up from the barrel, its contents spoiled
-
-from exposure to the air.  The floor here is made of worn wooden planks,
-
-tightly nailed together except for a few loose planks near the barrel.
-
-"
+feel small and cramped.  The shelves are stuffed full with bottles and small
+packages of snack food.  The bottles are quite dusty, implying they have been
+sitting here for quite some time.  A small pool of amber-colored liquid is
+dripping from a small fissure on the side of a barrel in the southwest corner
+of the room.  A sour stench wafts up from the barrel, its contents spoiled
+from exposure to the air.  The floor here is made of worn wooden planks,
+tightly nailed together except for a few loose planks near the barrel.
+"
 ""
 335020037 0
 0 6 0
@@ -287,103 +208,67 @@ D5
 E
 "barrel"
 "This barrel is made from extremely dark colored wood with a red tinge to it.
-
-Its texture is coarse and several splinters are protruding from the surface.
-
-A tiny crack in the side is allowing the contents to leak out, forming a small
-
-puddle at the barrel's base.  As the crack is allowing air to get into the
-
-container, its contents has clearly spoiled, and emits a strong odor into the
-
-air.
-
-"
+Its texture is coarse and several splinters are protruding from the surface.
+A tiny crack in the side is allowing the contents to leak out, forming a small
+puddle at the barrel's base.  As the crack is allowing air to get into the
+container, its contents has clearly spoiled, and emits a strong odor into the
+air.
+"
 E
 "planks"
 "Wood cut from nearby trees was used to make this planking when the tavern was
-
-built several decades ago.  From age and heavy use, the wood has been worn
-
-down and smoothed.  Its is difficult to gain sure footing in here, from the
-
-layers of dirt, dust, and other various substances.  In the southwest corner
-
-of the room, a few planks are warped and raised slightly from the rest of the
-
-floor, as the nails that should hold them down are missing.
-
-"
+built several decades ago.  From age and heavy use, the wood has been worn
+down and smoothed.  Its is difficult to gain sure footing in here, from the
+layers of dirt, dust, and other various substances.  In the southwest corner
+of the room, a few planks are warped and raised slightly from the rest of the
+floor, as the nails that should hold them down are missing.
+"
 A
 "move"
 "3 planks"
 "if( !is_open( room, down ) ) {
-
-  act_tochar( #open, ch );
-
-  act_notchar( #ropen, ch );
-
-  send_to_room( #opened, find_room( 91503 ) );
-
-  open( room, down );
-
-  end;
-
-} {
-
-  act_tochar( #close, ch );
-
-  act_notchar( #rclose, ch );
-
-  send_to_room( #closed, find_room( 91503 ) );
-
-  set_rflag( reset0, room );
-
-  if( is_open( room, down ) )
-
-    close( room, down );
-
-}
-
-"
+  act_tochar( #open, ch );
+  act_notchar( #ropen, ch );
+  send_to_room( #opened, find_room( 91503 ) );
+  open( room, down );
+  end;
+} {
+  act_tochar( #close, ch );
+  act_notchar( #rclose, ch );
+  send_to_room( #closed, find_room( 91503 ) );
+  set_rflag( reset0, room );
+  if( is_open( room, down ) )
+    close( room, down );
+}
+"
 E
 "open"
 "You lift and pull aside several unnailed planks from the floor, revealing a
-
-passage downward.
-
-"
+passage downward.
+"
 E
 "ropen"
 "$n pulls several planks up from the floor, revealing a passage downward.
-
-"
+"
 E
 "close"
 "You move the planks to their original position, concealing the passage.
-
-"
+"
 E
 "rclose"
 "$n moves several planks back into their original position, concealing the
-
-passage.
-
-"
+passage.
+"
 E
 "opened"
 "The planks overhead are removed by someone on the other side revealing a way
-
-out above you.
-
-"
+out above you.
+"
 E
 "closed"
 "Someoneone in the room overhead places planks across the opening above
-
-concealing it sight.
-
-"
+concealing it sight.
+"
 !
 0 0 0
 -1
@@ -392,20 +277,13 @@ S
 #91503
 "Cylindrical Passageway - Upper Section"
 "This cylindrical passageway is dimly lit from the light that seeps through the
-
-floor board cracks in the store room.  A rusty, iron rung ladder runs the
-
-entire length of the tunnel, with small handles on the side for gripping.  The
-
-walls are made of soft dirt and pieces occasionally crumble off and fall into
-
-the dark below.  A small trickle of water escapes from the trap door above,
-
-dampening parts of the walls.  The air is earthy and slightly musty from lack
-
-of fresh air.
-
-"
+floor board cracks in the store room.  A rusty, iron rung ladder runs the
+entire length of the tunnel, with small handles on the side for gripping.  The
+walls are made of soft dirt and pieces occasionally crumble off and fall into
+the dark below.  A small trickle of water escapes from the trap door above,
+dampening parts of the walls.  The air is earthy and slightly musty from lack
+of fresh air.
+"
 ""
 335151109 0
 0 6 0
@@ -421,76 +299,50 @@ A
 "move"
 "3 planks"
 "if( !is_open( room, up ) ) {
-
-  act_tochar( #open, ch );
-
-  act_notchar( #ropen, ch );
-
-  send_to_room( #opened, find_room( 91502 ) );
-
-  open( room, up );
-
-  end;
-
-} {
-
-  act_tochar( #close, ch );
-
-  act_notchar( #rclose, ch );
-
-  send_to_room( #closed, find_room( 91502 ) );
-
-  set_rflag( reset0, room );
-
-  if( is_open( room, up ) )
-
-    close( room, up );
-
-}
-
-"
+  act_tochar( #open, ch );
+  act_notchar( #ropen, ch );
+  send_to_room( #opened, find_room( 91502 ) );
+  open( room, up );
+  end;
+} {
+  act_tochar( #close, ch );
+  act_notchar( #rclose, ch );
+  send_to_room( #closed, find_room( 91502 ) );
+  set_rflag( reset0, room );
+  if( is_open( room, up ) )
+    close( room, up );
+}
+"
 E
 "open"
 "You reach up and push aside several unnailed planks from the floor, revealing a
-
-passage upward.
-
-"
+passage upward.
+"
 E
 "ropen"
 "$n pushess several planks overhead up and out of the way, revealing a passage
-
-upward.
-
-"
+upward.
+"
 E
 "opened"
 "Several planks on the floor are push up out of the way by someone below them
-
-revealing a passage downward.
-
-"
+revealing a passage downward.
+"
 E
 "close"
 "You reach up through the opening overhead and pull some planks in place to
-
-conceal it.
-
-"
+conceal it.
+"
 E
 "rclose"
 "$n reaches up through the opening overhead and pulls some planks in place to
-
-conceal it.
-
-"
+conceal it.
+"
 E
 "closed"
 "Someone reaches up through the opening in the floor and pulls several planks
-
-across it concealing the exit.
-
-"
+across it concealing the exit.
+"
 !
 0 0 0
 -1
@@ -499,16 +351,11 @@ S
 #91504
 "Cylindrical Passageway - Lower Section"
 "A rusty, iron rung ladder runs the entire length of the tunnel, with small
-
-handles on the side for gripping.  The walls are made of soft dirt and pieces
-
-occasionally crumble off and fall into the area below.  Below, the room grows
-
-much wider and has a path that encircles a great pit.  The air here is earthy
-
-and musty from lack of fresh air.
-
-"
+handles on the side for gripping.  The walls are made of soft dirt and pieces
+occasionally crumble off and fall into the area below.  Below, the room grows
+much wider and has a path that encircles a great pit.  The air here is earthy
+and musty from lack of fresh air.
+"
 ""
 335151109 0
 0 6 0
@@ -526,26 +373,16 @@ S
 #91505
 "Dome Shaped Passage"
 "The ladder ends here, in a great dome-shaped passage.  The floor is outlined
-
-in ash-colored stone, but the walkway itself is the same soft dirt as the
-
-walls.  The walkways continue in all directions, each leading to a different
-
-area of the underground lair.  The room is quiet and still, as not many care
-
-to venture this deep into the earth.  A stone wall has been constructed around
-
-the enormous pit in the center of the room.  A peek over its edge reveals
-
-dark, murky water - too dark to observe any life that may thrive in it.  On
-
-the wall opposite the ladder, a great tapestry hangs.  Obviously a work of a
-
-master weaver, crimson thread spells out \"CoRD\" across the coal background,
-
-with three ashen serpents entwined around the letters.
-
-"
+in ash-colored stone, but the walkway itself is the same soft dirt as the
+walls.  The walkways continue in all directions, each leading to a different
+area of the underground lair.  The room is quiet and still, as not many care
+to venture this deep into the earth.  A stone wall has been constructed around
+the enormous pit in the center of the room.  A peek over its edge reveals
+dark, murky water - too dark to observe any life that may thrive in it.  On
+the wall opposite the ladder, a great tapestry hangs.  Obviously a work of a
+master weaver, crimson thread spells out \"CoRD\" across the coal background,
+with three ashen serpents entwined around the letters.
+"
 ""
 335151109 0
 0 6 0
@@ -576,63 +413,41 @@ D5
 E
 "3 tapestry"
 "This tapestry is the shape of a giant shield, woven from the wool of black
-
-sheep.  Thread colored with berries to produce a dark crimson have been sewn
-
-into the wool to form the letters \"CoRD\".  A lighter ash color has been used
-
-for the serpents whose bodies have been made to wrap around the letters.  The
-
-serpents eyes are made of glittering emerald stones, which seem to jump out
-
-from the otherwise drab colors.
-
-"
+sheep.  Thread colored with berries to produce a dark crimson have been sewn
+into the wool to form the letters \"CoRD\".  A lighter ash color has been used
+for the serpents whose bodies have been made to wrap around the letters.  The
+serpents eyes are made of glittering emerald stones, which seem to jump out
+from the otherwise drab colors.
+"
 A
 ""
 ""
 "if( find_stat( ch, level ) < 91 ) {
-
-  act_tochar( #down, ch );
-
-  act_notchar( #rdown, ch );
-
-  transfer( ch, find_room( 91506 ) );
-
-  i = random( 2d5+5 );
-
-  act_notchar( #arr, ch );
-
-  dam_message( ch, i, \"the fall\" );
-
-  inflict( ch, null, i, \"sudden deceleration trauma\" );
-
-}
-
-else
-
-  continue;
-
-"
+  act_tochar( #down, ch );
+  act_notchar( #rdown, ch );
+  transfer( ch, find_room( 91506 ) );
+  i = random( 2d5+5 );
+  act_notchar( #arr, ch );
+  dam_message( ch, i, \"the fall\" );
+  inflict( ch, null, i, \"sudden deceleration trauma\" );
+}
+else
+  continue;
+"
 E
 "down"
 "You begin to descend the small iron ladder, but suddenly you lose your grip
-
-and fall into the murk below!
-
-"
+and fall into the murk below!
+"
 E
 "rdown"
 "$n begins to descend the small iron ladder but loses $s grip and falls into
-
-the murk below!
-
-"
+the murk below!
+"
 E
 "arr"
 "$n falls from overhead into the murky water with a loud SPLASH!
-
-"
+"
 !
 3 0 32
 -1
@@ -641,16 +456,11 @@ S
 #91506
 "Pit"
 "Murky water fills the pit near to the top of the stone wall that encloses it.
-
-The water is greenish-grey in color, making it impossible to see if anything
-
-lurks near the bottom.  A ripe smell wafts up from the water, filling the room
-
-with the stench of rotting organic matter.  A small iron ladder climbs up out
-
-of the murk ending at the edge of the floor.
-
-"
+The water is greenish-grey in color, making it impossible to see if anything
+lurks near the bottom.  A ripe smell wafts up from the water, filling the room
+with the stench of rotting organic matter.  A small iron ladder climbs up out
+of the murk ending at the edge of the floor.
+"
 ""
 335151108 0
 13 5 0
@@ -662,50 +472,37 @@ A
 "1 up"
 ""
 "if( find_stat( ch, level ) < 91 )
-
-  act_tochar( #no, ch );
-
-else
-
-  continue;
-
-"
+  act_tochar( #no, ch );
+else
+  continue;
+"
 E
 "no"
 "You attempt to scale the stone wall, but only succeed in slipping back into
-
-the murky water.
-
-"
+the murky water.
+"
 !
 0 0 0
 A
 "1 climb"
 "1 up"
 "act_tochar( #up, ch );
-
-act_notchar( #rup, ch );
-
-transfer( ch, find_room( 91505 ) );
-
-act_notchar( #arr, ch );
-
-"
+act_notchar( #rup, ch );
+transfer( ch, find_room( 91505 ) );
+act_notchar( #arr, ch );
+"
 E
 "up"
 "You quickly scale the iron ladder, pulling yourself over the ledge.
-
-"
+"
 E
 "rup"
 "$n quickly scales the iron ladder and disappears over the ledge.
-
-"
+"
 E
 "arr"
 "$n arrives from below, climbing over the wall that lines the central pit.
-
-"
+"
 !
 0 0 0
 -1
@@ -714,24 +511,15 @@ S
 #91507
 "Commons"
 "The walls in this room are made of the same ash-colored stone that lines the
-
-walkways in the room to the south.  A smaller replica of the \"CoRD\" banner
-
-hangs askew above a simple square fireplace.  Various pictures hang about the
-
-room, depicting several well-known areas throughout the world.  Dangerously
-
-resting to the left of the fireplace is a bookcase packed tight with books of
-
-all heights and widths.  A painting of a dainty blue-striped purple lizardess
-
-framed in a dull metal rests a top the bookshelf.  The furniture in this room
-
-is rather sparse, save for a stone table with four chairs and a ratty, worn
-
-leather couch.
-
-"
+walkways in the room to the south.  A smaller replica of the \"CoRD\" banner
+hangs askew above a simple square fireplace.  Various pictures hang about the
+room, depicting several well-known areas throughout the world.  Dangerously
+resting to the left of the fireplace is a bookcase packed tight with books of
+all heights and widths.  A painting of a dainty blue-striped purple lizardess
+framed in a dull metal rests a top the bookshelf.  The furniture in this room
+is rather sparse, save for a stone table with four chairs and a ratty, worn
+leather couch.
+"
 ""
 335151109 0
 0 6 0
@@ -742,24 +530,15 @@ D2
 E
 "Commons"
 "The walls in this room are made of the same ash-colored stone that lines the
-
-walkways in the room to the south.  A smaller replica of the \"CoRD\" banner
-
-hangs askew above a simple square fireplace.  Various pictures hang about the
-
-room, depicting several well-known areas throughout the world.  Dangerously
-
-resting to the left of the fireplace is a bookcase packed tight with books of
-
-all heights and widths.  A painting of a dainty blue-striped purple lizardess
-
-framed in a dull metal rests a top the bookshelf.  The furniture in this room
-
-is rather sparse, save for a stone table with four chairs and a ratty, worn
-
-leather couch.
-
-"
+walkways in the room to the south.  A smaller replica of the \"CoRD\" banner
+hangs askew above a simple square fireplace.  Various pictures hang about the
+room, depicting several well-known areas throughout the world.  Dangerously
+resting to the left of the fireplace is a bookcase packed tight with books of
+all heights and widths.  A painting of a dainty blue-striped purple lizardess
+framed in a dull metal rests a top the bookshelf.  The furniture in this room
+is rather sparse, save for a stone table with four chairs and a ratty, worn
+leather couch.
+"
 2442 17 1509949540 -2 0
 4737 17 1509949540 -2 0
 4737 17 1509949540 -2 0
@@ -772,18 +551,12 @@ S
 #91508
 "Hall of Founders - West Passage"
 "The walls here are made of cold ash-colored stone, carefully mortared together
-
-with sandy black grout.  The same stone carries down to the floor, except in
-
-much larger slabs.  A narrow floor runner woven tightly of forest green wool
-
-runs the entire length of this hallway.  Loops and scrolls of dull gold in the
-
-rug provide a nice contrast against the green.  Elaborate sconces spill over
-
-with thick green ivy, which has attached itself to the wall in some places.
-
-"
+with sandy black grout.  The same stone carries down to the floor, except in
+much larger slabs.  A narrow floor runner woven tightly of forest green wool
+runs the entire length of this hallway.  Loops and scrolls of dull gold in the
+rug provide a nice contrast against the green.  Elaborate sconces spill over
+with thick green ivy, which has attached itself to the wall in some places.
+"
 ""
 335151109 0
 0 6 0
@@ -809,24 +582,15 @@ S
 #91509
 "Hall of Founders - East Passage"
 "The walls here are made of cold ash-colored stone, carefully mortared together
-
-with sandy black grout.  The same stone carries down to the floor, except in
-
-much larger slabs.  A narrow floor runner woven tightly of forest green wool
-
-runs the entire length of this hallway.  Loops and scrolls of dull gold in the
-
-rug provide a nice contrast against the green.  Elaborate sconces spill over
-
-with thick green ivy, which has attached itself to the wall in some places.
-
-The hallway comes to an abrupt stop to the east, leading only back west or
-
-through the doors north and south.  A huge silver pot containing a mossy rock
-
-garden rests at the end of the hallway, blocking any further passage east.
-
-"
+with sandy black grout.  The same stone carries down to the floor, except in
+much larger slabs.  A narrow floor runner woven tightly of forest green wool
+runs the entire length of this hallway.  Loops and scrolls of dull gold in the
+rug provide a nice contrast against the green.  Elaborate sconces spill over
+with thick green ivy, which has attached itself to the wall in some places.
+The hallway comes to an abrupt stop to the east, leading only back west or
+through the doors north and south.  A huge silver pot containing a mossy rock
+garden rests at the end of the hallway, blocking any further passage east.
+"
 ""
 335151109 0
 0 6 0
@@ -848,18 +612,12 @@ S
 #91510
 "Hall of Deviants"
 "This passage is void of any decoration save for the strange pattern of black
-
-rock straight to the south.  Two thick, heavy doors lead to rooms to the east
-
-and west.  The floor here is soft, padded dirt, which is slightly damp in some
-
-areas.  A trickle of water escapes near the ceiling, dripping down the wall
-
-into a rather large puddle of dirty water.  An odd breeze fills the room with
-
-a damp, chilly atmosphere.
-
-"
+rock straight to the south.  Two thick, heavy doors lead to rooms to the east
+and west.  The floor here is soft, padded dirt, which is slightly damp in some
+areas.  A trickle of water escapes near the ceiling, dripping down the wall
+into a rather large puddle of dirty water.  An odd breeze fills the room with
+a damp, chilly atmosphere.
+"
 ""
 335151109 0
 0 6 0
@@ -881,39 +639,23 @@ S
 #91511
 "Store Room and Bank"
 "Cabinets crafted of several types of wood line all the walls in this room
-
-except for one.  This wall is blocked off with a simple counter, wherein lies
-
-the stronghold's bank.  A weapons rack reaches near the ceiling of the we
-
-wall, with various size hooks and hangers to store various items with.  Near
-
-the bank teller's counter is a massive wardrobe, simply crafted from cherry
-
-wood.  The letters \"CoRD\" are embossed on the doors.  A look inside reveals
-
-huge shelves and posts from which to hang and store armor.
-
-"
+except for one.  This wall is blocked off with a simple counter, wherein lies
+the stronghold's bank.  A weapons rack reaches near the ceiling of the we
+wall, with various size hooks and hangers to store various items with.  Near
+the bank teller's counter is a massive wardrobe, simply crafted from cherry
+wood.  The letters \"CoRD\" are embossed on the doors.  A look inside reveals
+huge shelves and posts from which to hang and store armor.
+"
 "Save.Items (Store) room - DO NOT PURGE or RESET ROOM
-
-objects are: 3xglass cabinet (4729), wardrobe (4730), and weapon rack (3750)
-
-[Siris] Can the \"Pre-Start up notes\" be removed?
-
--> moved to rbug
-
-@G
-
-Pre-start up notes:
-
-Cabinets can be labeled, per request, however have to be labeled by an imm.
-
-Weapons rack, I used the default rather than create a new one to save on cost.
-
-(syntax is like a table, put shield on rack, rather than a chest)
-
-"
+objects are: 3xglass cabinet (4729), wardrobe (4730), and weapon rack (3750)
+[Siris] Can the \"Pre-Start up notes\" be removed?
+-> moved to rbug
+@G
+Pre-start up notes:
+Cabinets can be labeled, per request, however have to be labeled by an imm.
+Weapons rack, I used the default rather than create a new one to save on cost.
+(syntax is like a table, put shield on rack, rather than a chest)
+"
 335153189 0
 0 6 0
 D1
@@ -926,24 +668,15 @@ S
 #91512
 "Rojik's Laboratory"
 "The cold, grey stone walls continue into this room from the hall.  Great
-
-tapestries hang from the vaulted ceilings and land in a soft pile near the
-
-floor on both the east and west walls.  The floor is covered in a velvety,
-
-dark green moss, obviously the work of some magic.  The north wall is nearly
-
-covered by a richly illustrated map of the lands.  A great oak table fills the
-
-center of the room, with the tattered remains of scrolls, spell books and
-
-other sorcerer's paraphernalia piled atop it.  Aside from the poorly managed
-
-desk, the room is void of any other extraneous objects, except for a large
-
-dragonhide chair resting quietly behind the desk.
-
-"
+tapestries hang from the vaulted ceilings and land in a soft pile near the
+floor on both the east and west walls.  The floor is covered in a velvety,
+dark green moss, obviously the work of some magic.  The north wall is nearly
+covered by a richly illustrated map of the lands.  A great oak table fills the
+center of the room, with the tattered remains of scrolls, spell books and
+other sorcerer's paraphernalia piled atop it.  Aside from the poorly managed
+desk, the room is void of any other extraneous objects, except for a large
+dragonhide chair resting quietly behind the desk.
+"
 ""
 335151109 0
 0 6 0
@@ -954,126 +687,89 @@ D0
 E
 "3 tapestries tapestry"
 "The Tapestries are woven from an ancient, thick fabric smelling of must.  The
-
-east tapestry is an erratic forest green set of lines crossing each other in
-
-all directions on a background the color of the sea.  The west tapestry is the
-
-inverse-- blue lines on a green backdrop.
-
-"
+east tapestry is an erratic forest green set of lines crossing each other in
+all directions on a background the color of the sea.  The west tapestry is the
+inverse-- blue lines on a green backdrop.
+"
 E
 "map"
 "The map spans nearly the entire wall, the snowy peaks of the mountainous
-
-section stretching almost to the ceiling.  Upon further inspection, a fragment
-
-of parchment is pinned to the map with some faint text that reads \"You are
-
-here\".  A conglomeration of small red pins are stuck to the
-
-"
+section stretching almost to the ceiling.  Upon further inspection, a fragment
+of parchment is pinned to the map with some faint text that reads \"You are
+here\".  A conglomeration of small red pins are stuck to the
+"
 A
 "get"
 "3 paper 3 scroll 3 spell 3 paraphernalia 3 parchment"
 "if( rflag( reset0, room ) ) {
-
-  if( random( 1, 2 ) == 1 ) {
-
-    act_tochar( #parchment, ch );
-
-    act_notchar( #rparchment, ch );
-
-    obj_to_char( oload( 4732 ), ch );
-
-    remove_rflag( reset0, room );
-
-  }
-
-  else {
-
-    act_tochar( #disintigrate, ch );
-
-    act_notchar( #rdisintigrate, ch );
-
-  }
-
-}
-
-else
-
-  act_tochar( #no, ch );
-
-"
+  if( random( 1, 2 ) == 1 ) {
+    act_tochar( #parchment, ch );
+    act_notchar( #rparchment, ch );
+    obj_to_char( oload( 4732 ), ch );
+    remove_rflag( reset0, room );
+  }
+  else {
+    act_tochar( #disintigrate, ch );
+    act_notchar( #rdisintigrate, ch );
+  }
+}
+else
+  act_tochar( #no, ch );
+"
 E
 "parchment"
 "You pick up a bit of parchment covered in unintelligible symbols.
-
-"
+"
 E
 "rparchment"
 "$n picks up a bit of parchment covered in unintelligible symbols.
-
-"
+"
 E
 "disintigrate"
 "You begin to pull one of the ancient scrolls from the pile, but it
-
-disintegrates in your hands.
-
-"
+disintegrates in your hands.
+"
 E
 "rdisintigrate"
 "$n begins to pull one of the ancient scrolls from the pile, but it
-
-disintegrates in $s hands.
-
-"
+disintegrates in $s hands.
+"
 E
 "no"
 "You think it best to leave the messy contents of the desk alone.
-
-"
+"
 !
 0 0 0
 A
 "1 get"
 "pin"
 "act_tochar( #pin, ch );
-
-act_notchar( #rpin, ch );
-
-"
+act_notchar( #rpin, ch );
+"
 E
 "pin"
 "You pop a small red pin out of the map.
-
-"
+"
 E
 "rpin"
 "$n pops a small red pin out of the map.
-
-"
+"
 !
 0 0 0
 A
 "1 pin"
 "3 parchment"
 "act_tochar( #pin, ch );
-
-act_notchar( #rpin, ch );
-
-"
+act_notchar( #rpin, ch );
+"
 E
 "pin"
 "You pin the bit parchment to the map in a random location.  Great!
-
-"
+"
 E
 "rpin"
 "$n pins a bit of parchment to the map in a random location.
-
-"
+"
 !
 0 0 0
 4731 17 1509949540 -2 0
@@ -1083,13 +779,10 @@ S
 #91513
 "Siris's Room"
 "This room is completely plain and unadorned waiting for its owner to take up
-
-residence and make it their own.
-
-"
+residence and make it their own.
+"
 "Free Room desc and room rename when CoRD supplies it.
-
-"
+"
 335151109 0
 0 6 0
 D2
@@ -1102,49 +795,29 @@ S
 #91514
 "Nerogk's Flat"
 "Shaggy, bright orange carpet fills the room all the way up to the wooden door
-
-on the north wall.  While the walls are the same grey stone as the hallway,
-
-they are not in the same condition.  Many parts of the walls have strange
-
-symbols scratched into them, some with 5 parallel lines running horizontally
-
-over the symbols.  A small painting hangs to the east of the wooden door on
-
-the north wall.  The contents of the painting are not immediately
-
-distinguishable.  A small wooden chair rests in the southeast corner of the
-
-@G
-
-Northern door is supposed to be lockable.  Requested 2 different keys, one
-
-that doesn't save and one that does.  Only 1 key can be set to a door.  need
-
-to know what type before that's added.
-
+on the north wall.  While the walls are the same grey stone as the hallway,
+they are not in the same condition.  Many parts of the walls have strange
+symbols scratched into them, some with 5 parallel lines running horizontally
+over the symbols.  A small painting hangs to the east of the wooden door on
+the north wall.  The contents of the painting are not immediately
+distinguishable.  A small wooden chair rests in the southeast corner of the
+@G
+Northern door is supposed to be lockable.  Requested 2 different keys, one
+that doesn't save and one that does.  Only 1 key can be set to a door.  need
+to know what type before that's added.
 
 Left out the spider \"bite\" special/trick right now since there would be a
-
-problem with making it poison.  If you still want it added, let me know and
-
-I'll add a non-poison version.
-
+problem with making it poison.  If you still want it added, let me know and
+I'll add a non-poison version.
 
 No way to set color on objects.  Can't change the color on the instrument
-
-names.  Since they can't be taken and use actions to play, I made them one
-
-object in the room to save on costs and object spam.
-
-"
+names.  Since they can't be taken and use actions to play, I made them one
+object in the room to save on costs and object spam.
+"
 "[Nerogk] The last sentance of the rdesc isn't finished.
-
-[Nerogk] My 'band setup' is 'bugged' - if you look at it, it returns: Item is bugged - Missing identified description.
-
-[Nerogk] Would it be possible to get the word \"painting\" in another colour such as @C (Bold cyan).
-
-"
+[Nerogk] My 'band setup' is 'bugged' - if you look at it, it returns: Item is bugged - Missing identified description.
+[Nerogk] Would it be possible to get the word \"painting\" in another colour such as @C (Bold cyan).
+"
 335151109 0
 0 6 0
 D0
@@ -1154,112 +827,88 @@ D0
 E
 "3 painting"
 "Upon closer inspection, this painting contains the portrait of a young goblin
-
-female.  Her bright green eyes are rather big for a goblin, and have an
-
-unusual sparkle-- more commonly found in a halfling.  Her nose is quaint,
-
-resting directly above a delicate, but somehow menacing, mouth.
-
-"
+female.  Her bright green eyes are rather big for a goblin, and have an
+unusual sparkle-- more commonly found in a halfling.  Her nose is quaint,
+resting directly above a delicate, but somehow menacing, mouth.
+"
 A
 "1 user 2 play"
 "3 trumpet"
 "act_tochar( #trumpet, ch );
-
-act_notchar( #rtrumpet, ch );
-
-"
+act_notchar( #rtrumpet, ch );
+"
 E
 "trumpet"
 "You pick up the trumpet and play a lively tune on it.
-
-"
+"
 E
 "rtrumpet"
 "$n picks up the trumpet and plays a lively tune on it.
-
-"
+"
 !
 0 0 0
 A
 "1 user 2 play"
 "3 trombone"
 "act_tochar( #trombone, ch );
-
-act_notchar( #rtrombone, ch );
-
-"
+act_notchar( #rtrombone, ch );
+"
 E
 "trombone"
 "You pick up the trombone and play a brassy tune on it.
-
-"
+"
 E
 "rtrombone"
 "$n picks up the trombone and plays a brassy tune on it.
-
-"
+"
 !
 0 0 0
 A
 "1 use 2 play"
 "3 guitar"
 "act_tochar( #guitar, ch );
-
-act_notchar( #rguitar, ch );
-
-"
+act_notchar( #rguitar, ch );
+"
 E
 "guitar"
 "You pick up the guitar and play a slammin' riff on it.
-
-"
+"
 E
 "rguitar"
 "$n picks up the guitar and plays a slammin' riff on it.
-
-"
+"
 !
 0 0 0
 A
 "1 use 2 play"
 "3 bass"
 "act_tochar( #bass, ch );
-
-act_notchar( #rbass, ch );
-
-"
+act_notchar( #rbass, ch );
+"
 E
 "bass"
 "You pick up the bass and play a mellow solo.
-
-"
+"
 E
 "rbass"
 "$n picks up the bass and plays a mellow solo.
-
-"
+"
 !
 0 0 0
 A
 "1 use 2 play"
 "3 drumset"
 "act_tochar( #drums, ch );
-
-act_notchar( #rdrums, ch );
-
-"
+act_notchar( #rdrums, ch );
+"
 E
 "drums"
 "You pick up the drum sticks and hammer out a killer beat.
-
-"
+"
 E
 "rdrums"
 "$n picks up the drum sticks and hammers out a killer beat.
-
-"
+"
 !
 0 0 0
 4733 17 1509949540 -2 0
@@ -1270,13 +919,10 @@ S
 #91515
 "Deiuxt's Room"
 "This room is completely plain and unadorned waiting for its owner to take up
-
-residence and make it their own.
-
-"
+residence and make it their own.
+"
 "Free Room desc and room rename when CoRD supplies it.
-
-"
+"
 335151109 0
 0 6 0
 D2
@@ -1289,22 +935,14 @@ S
 #91516
 "Gnoggh's Room"
 "This ample chamber, lit by a series of stone braziers in the northern and
-
-southern walls, contains a series of wooden display cases, shelves, a sturdy
-
-looking mohogany bed, and a wide well cushioned couch.  Beside the bed, which
-
-is in the northeast corner, sits a large grey-flecked marble desk with dark
-
-wooden inlay.  Hanging on the northern most wall behind the bed and desk is a
-
-faded tapestry, the subject of which seems to be some unholy ritual involving
-
-elves, knives, butter, and some very excited ogres.  The only visible exit is
-
-a heavy wooden door in the western wall.
-
-"
+southern walls, contains a series of wooden display cases, shelves, a sturdy
+looking mohogany bed, and a wide well cushioned couch.  Beside the bed, which
+is in the northeast corner, sits a large grey-flecked marble desk with dark
+wooden inlay.  Hanging on the northern most wall behind the bed and desk is a
+faded tapestry, the subject of which seems to be some unholy ritual involving
+elves, knives, butter, and some very excited ogres.  The only visible exit is
+a heavy wooden door in the western wall.
+"
 ""
 335151109 0
 0 6 0
@@ -1315,67 +953,46 @@ D3
 E
 "3 braziers"
 "These short braziers, carved of an unknown stone, depict various figures
-
-engaged in explicit sexual acts.  Some of the figures appear to be
-
-animalistic.  Flickering light cast from their fires give the room an thick
-
-orange glow.
-
-"
+engaged in explicit sexual acts.  Some of the figures appear to be
+animalistic.  Flickering light cast from their fires give the room an thick
+orange glow.
+"
 E
 "bed"
 "An oversized and sturdy bed, made of mohagany.
-
-"
+"
 E
 "3 desk"
 "This curious desk, carved from a marble slab and inlaid with polished
-
-mohogany, appears to be a sturdy, if heavy flat work surface.
-
-"
+mohogany, appears to be a sturdy, if heavy flat work surface.
+"
 E
 "3 tapestry"
 "It's once bright colors somewhat washed out, this tapestry portrays a circle
-
-of ogres consuming some terrified looking elves.  Of special note is that
-
-besides butter the ogres also seem to have a range of herbs and spices
-
-available for their culinary pleasures.
-
-"
+of ogres consuming some terrified looking elves.  Of special note is that
+besides butter the ogres also seem to have a range of herbs and spices
+available for their culinary pleasures.
+"
 E
 "case shelf 3 shelves"
 "The three wooden display cases contain a collection of curios and trinkets
-
-gathered by someone who seems to have little regard for actual value.  What
-
-could not be placed in the display cabinets has been stuffed into the shelves
-
-which line the southern wall of the room.  You see a shrunken head, a broken
-
-claw of unknown avian origin, some cracked gems, sand figurines in erotic
-
-poses, a zoo of stuffed rodents, a pile of dried fingers, broken wind-up toys,
-
-usless lottery tickets, and other junk.
-
-"
+gathered by someone who seems to have little regard for actual value.  What
+could not be placed in the display cabinets has been stuffed into the shelves
+which line the southern wall of the room.  You see a shrunken head, a broken
+claw of unknown avian origin, some cracked gems, sand figurines in erotic
+poses, a zoo of stuffed rodents, a pile of dried fingers, broken wind-up toys,
+usless lottery tickets, and other junk.
+"
 -1
 S
 
 #91517
 "Jin's Room"
 "This room is completely plain and unadorned waiting for its owner to take up
-
-residence and make it their own.
-
-"
+residence and make it their own.
+"
 "Free Room desc and room rename when CoRD supplies it.
-
-"
+"
 301596676 0
 0 6 0
 D1
@@ -1388,23 +1005,15 @@ S
 #91518
 "Clearing on a Wooded Hillside"
 "You are on relatively flat section in the middle of rolling wooded hills.
-
-Either the trees have been cut back or they simply have never found adequate
-
-purchase on the thin soil that covers the rocky hill here.  Occasional flat
-
-grey mounds of bedrock protrude from the soil in places like versions of the
-
-rolling hills in miniature.  To the west, an opening in a simple but sturdily
-
-built stone building has provides entry.  A sign hangs over the entryway to
-
-the building.
-
-"
+Either the trees have been cut back or they simply have never found adequate
+purchase on the thin soil that covers the rocky hill here.  Occasional flat
+grey mounds of bedrock protrude from the soil in places like versions of the
+rolling hills in miniature.  To the west, an opening in a simple but sturdily
+built stone building has provides entry.  A sign hangs over the entryway to
+the building.
+"
 "[Laryn] when watching someone else w
-
-"
+"
 301465602 0
 4 9 0
 D1
@@ -1423,26 +1032,19 @@ E
 "sign"
 "The sign proudly proclaims:
 
-
      @GTavern on the Green@n.
-
- @Gdrinks, fighting, and comfort@n
-
-"
+ @Gdrinks, fighting, and comfort@n
+"
 -1
 S
 
 #91519
 "Lightly Wooded Hillside"
 "Small clusters of trees, predominantly elms dotted with a few oaks grow on on
-
-this hillside.  Broad, heavy slabs of grey rock are exposed in places where
-
-the thin topsoil has washed away.  North of here a cliff drops steeply away
-
-hundreds of feet into a stone gorge with a small stream flowing at its bottom.
-
-"
+this hillside.  Broad, heavy slabs of grey rock are exposed in places where
+the thin topsoil has washed away.  North of here a cliff drops steeply away
+hundreds of feet into a stone gorge with a small stream flowing at its bottom.
+"
 ""
 301465602 0
 4 9 0
@@ -1464,16 +1066,11 @@ S
 #91520
 "Lightly Wooded Hillside"
 "You are in a lightly wooded area providing some shelter from the wind that
-
-ravages the hilltop further up to the east.  Elm and oak grow in small stands
-
-providing a semi-effective wind block that quickly thins out the further
-
-eastward you go.  The ground here is rough, eroded away to bare rock in many
-
-places by periodic rains exposing the hard bedrock beneath the topsoil.
-
-"
+ravages the hilltop further up to the east.  Elm and oak grow in small stands
+providing a semi-effective wind block that quickly thins out the further
+eastward you go.  The ground here is rough, eroded away to bare rock in many
+places by periodic rains exposing the hard bedrock beneath the topsoil.
+"
 ""
 301465602 0
 4 9 0
@@ -1499,16 +1096,11 @@ S
 #91521
 "Rocky Outcropping"
 "You are on an exposed potion of the hills with no foliage around to shield you
-
-from the elements.  The ground is little more than exposed rock with only the
-
-occasional tuft of vegetation clinging tenaciously to what little topsoil
-
-remains.  To the east small stands of trees have taken hold providing some
-
-cover.  To the north stands the imposing wall of a stone building.
-
-"
+from the elements.  The ground is little more than exposed rock with only the
+occasional tuft of vegetation clinging tenaciously to what little topsoil
+remains.  To the east small stands of trees have taken hold providing some
+cover.  To the north stands the imposing wall of a stone building.
+"
 ""
 301465602 0
 4 9 0
@@ -1522,18 +1114,12 @@ S
 #91522
 "Hall of Deviants"
 "This passage is void of any decoration save for the strange pattern of black
-
-rock straight to the south.  Two thick, heavy doors lead to rooms to the east
-
-and west.  The floor here is soft, padded dirt, which is slightly damp in some
-
-areas.  A trickle of water escapes near the ceiling, dripping down the wall
-
-into a rather large puddle of dirty water.  An odd breeze fills the room with
-
-a damp, chilly atmosphere.
-
-"
+rock straight to the south.  Two thick, heavy doors lead to rooms to the east
+and west.  The floor here is soft, padded dirt, which is slightly damp in some
+areas.  A trickle of water escapes near the ceiling, dripping down the wall
+into a rather large puddle of dirty water.  An odd breeze fills the room with
+a damp, chilly atmosphere.
+"
 ""
 335151109 0
 0 6 0

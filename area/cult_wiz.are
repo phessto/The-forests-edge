@@ -28,8 +28,7 @@ S
 #93001
 "Spacious Cavern - Guardpost Inside the Gates"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 7 0
@@ -49,27 +48,17 @@ S
 #93002
 "Black Marble Hall - Base of an Incline"
 "The hallway slopes steadily upwards to the east, its polished floor finally
-
-leveling out after covering more than twenty feet vertically.  A fresh breeze
-
-blows steadily from above, indicating that an opening in the thick stone of
-
-the mountain lies somewhere in that direction.  The walls and floor are of
-
-solid black marble, polished as smooth as glass, perfectly reflecting both
-
-sound and light.  No seams are evident where walls and floor meet, suggesting
-
-that perhaps this hall was cut directly into marble, rather than lined with
-
-it.  Hanging on a chain overhead is a large white orb, which sheds a sombre
-
-light throughout the hall.
-
-"
+leveling out after covering more than twenty feet vertically.  A fresh breeze
+blows steadily from above, indicating that an opening in the thick stone of
+the mountain lies somewhere in that direction.  The walls and floor are of
+solid black marble, polished as smooth as glass, perfectly reflecting both
+sound and light.  No seams are evident where walls and floor meet, suggesting
+that perhaps this hall was cut directly into marble, rather than lined with
+it.  Hanging on a chain overhead is a large white orb, which sheds a sombre
+light throughout the hall.
+"
 "[Kotoktok] write more, you idiot. and better too
-
-"
+"
 301465600 0
 0 7 0
 D3
@@ -87,20 +76,13 @@ S
 #93003
 "Black Marble Hall"
 "The otherwise perfectly polished floor here has many scuffs and bootmarks,
-
-evidence of frequent use.  Walls to the north and south are reflective marble,
-
-completely black except for dark gray swirls.  From the arched stone ceiling
-
-hangs a white orb, casting a pale light throughout the hall.  To the west,
-
-this hall intersects with another one, which runs north to south.  The floor
-
-there is checkered black and white.  The hall slopes upwards to the east,
-
-beginning to climb out of the mountain lair.
-
-"
+evidence of frequent use.  Walls to the north and south are reflective marble,
+completely black except for dark gray swirls.  From the arched stone ceiling
+hangs a white orb, casting a pale light throughout the hall.  To the west,
+this hall intersects with another one, which runs north to south.  The floor
+there is checkered black and white.  The hall slopes upwards to the east,
+beginning to climb out of the mountain lair.
+"
 ""
 301465600 0
 0 7 0
@@ -119,29 +101,18 @@ S
 #93004
 "Intersection of Halls - Portal"
 "Here at the intersection of two halls, one of white marble leading north and
-
-south, one of black marble leading east and west, stands a scintillating
-
-elliptical portal on a dais of checkered marble.  The floor matches the dais,
-
-tiled in a checkered pattern of black and white stone.  Overhead, a white orb
-
-hangs on a golden chain, casting a pale white light over the room.  An arched
-
-entranceway leads west, beside which a plaque is placed on a rectangular
-
-column of jet black stone.
-
-"
+south, one of black marble leading east and west, stands a scintillating
+elliptical portal on a dais of checkered marble.  The floor matches the dais,
+tiled in a checkered pattern of black and white stone.  Overhead, a white orb
+hangs on a golden chain, casting a pale white light over the room.  An arched
+entranceway leads west, beside which a plaque is placed on a rectangular
+column of jet black stone.
+"
 "[Kotoktok] animated diamond guardian
-
-[Kotoktok] extras: plaque, portal, crystal armor, orb/chain
-
-[Kotoktok] 57309
-
-[Kotoktok] note: sometimes the guards will try to go west and the guardian will hurt them. this is okay. the guard got curious and was put in his place
-
-"
+[Kotoktok] extras: plaque, portal, crystal armor, orb/chain
+[Kotoktok] 57309
+[Kotoktok] note: sometimes the guards will try to go west and the guardian will hurt them. this is okay. the guard got curious and was put in his place
+"
 301465604 0
 0 7 0
 D0
@@ -163,65 +134,42 @@ D3
 E
 "plaque"
 "The plaque's message is written many times over, each time in a different
-
-tongue:
-
-@rNone living save the caretakers and their direct descendents shall be suffered
-
-to pass.  Beyond this arch lies nothing but pain, death, and fading memories.
-
-Turn back.@n
-
-"
+tongue:
+@rNone living save the caretakers and their direct descendents shall be suffered
+to pass.  Beyond this arch lies nothing but pain, death, and fading memories.
+Turn back.@n
+"
 E
 "orb"
 "The orb is spherical in shape, and glows from within with a pale white light.
-
-It hangs on a chain of gold suspended from the vaulted ceiling.
-
-"
+It hangs on a chain of gold suspended from the vaulted ceiling.
+"
 A
 ""
 ""
 "mob = mob_in_room( 2783, room );
-
-if( mob ) {
-
-  if( can_see_char( mob, ch ) ) {
-
-    act_tochar( #force, ch, null, mob );
-
-    act_notchar( #forced, ch, null, mob );
-
-    i = 60d4;
-
-    dam_message( ch, i, \"A hulking suit of crystalline armor's rough shove\" );
-
-    inflict( ch, mob, i, \"a hulking suit of crystalline armor\" );
-
-    end;
-
-  }
-
-  continue;
-
-}
-
-else
-
-  continue;
-
-"
+if( mob ) {
+  if( can_see_char( mob, ch ) ) {
+    act_tochar( #force, ch, null, mob );
+    act_notchar( #forced, ch, null, mob );
+    i = 60d4;
+    dam_message( ch, i, \"A hulking suit of crystalline armor's rough shove\" );
+    inflict( ch, mob, i, \"a hulking suit of crystalline armor\" );
+    end;
+  }
+  continue;
+}
+else
+  continue;
+"
 E
 "force"
 "@R$N moves into your path, roughly forcing you back.@n
-
-"
+"
 E
 "forced"
 "@R$N moves into $n's path, forcing $m back.@n
-
-"
+"
 !
 3 0 8
 A
@@ -240,25 +188,16 @@ S
 #93005
 "White Marble Hall"
 "This is a hall of pure white marble, leading north, south and west.  The walls
-
-and floor are polished smooth and clean, reflecting every movement.  On a
-
-silver chain, a white orb hangs about twelve feet from the ground, casting a
-
-pale light through the room.  The ceiling above is vaulted, and many arches
-
-span the hall.  To the west is what looks like a long barracks, one more
-
-luxurious and beautifully crafted than is typical.  A set of white stone
-
-stairs is visible to the north, leading upwards.  To the south, this hall
-
-intersects with another.
-
-"
+and floor are polished smooth and clean, reflecting every movement.  On a
+silver chain, a white orb hangs about twelve feet from the ground, casting a
+pale light through the room.  The ceiling above is vaulted, and many arches
+span the hall.  To the west is what looks like a long barracks, one more
+luxurious and beautifully crafted than is typical.  A set of white stone
+stairs is visible to the north, leading upwards.  To the south, this hall
+intersects with another.
+"
 "[Kotoktok] extras: barracks, orb/ceiling, walls/floor
-
-"
+"
 301465604 0
 0 7 0
 D0
@@ -276,28 +215,20 @@ D3
 E
 "white orb ceiling 1 up"
 "The vaulted white ceiling is home to a pale white orb suspended on a silver
-
-chain.  The orb doesn't appear to be very bright, yet it casts a uniform light
-
-over the area.
-
-"
+chain.  The orb doesn't appear to be very bright, yet it casts a uniform light
+over the area.
+"
 E
 "barracks 1 west"
 "Through an arched entrance to the west can be seen a long, well-kept barracks.
-
-The floor is polished white marble, a single long pathway leading between
-
-walls on the south and living space on the north.
-
-"
+The floor is polished white marble, a single long pathway leading between
+walls on the south and living space on the north.
+"
 E
 "white stone stairs 1 north"
 "Polished white marble steps ascend into a room at the end of the hall to the
-
-north.
-
-"
+north.
+"
 4778 17 1509949540 -2 0
 2869 9 1509949540 3 0
 -1
@@ -306,25 +237,16 @@ S
 #93006
 "White Marble Hall"
 "This is a hall of pure white marble, leading north, south and west.  The walls
-
-and floor are polished smooth and clean, reflecting every movement.  On a
-
-silver chain, a white orb hangs about twelve feet from the ground, casting a
-
-pale light through the room.  The ceiling above is vaulted, and many arches
-
-span the hall.  To the west is what looks like a long barracks, one more
-
-luxurious and beautifully crafted than is typical.  A set of white stone
-
-stairs is visible to the south, leading upwards.  To the north, this hall
-
-intersects with another.
-
-"
+and floor are polished smooth and clean, reflecting every movement.  On a
+silver chain, a white orb hangs about twelve feet from the ground, casting a
+pale light through the room.  The ceiling above is vaulted, and many arches
+span the hall.  To the west is what looks like a long barracks, one more
+luxurious and beautifully crafted than is typical.  A set of white stone
+stairs is visible to the south, leading upwards.  To the north, this hall
+intersects with another.
+"
 "[Kotoktok] barracks west
-
-"
+"
 301465604 0
 0 7 0
 D0
@@ -342,30 +264,21 @@ D3
 E
 "barracks 1 west"
 "The long hall through the entrance to the west is paved in pure white marble.
-
-A central walkway leads between cots on the south and walls lined with windows
-
-and weapons on the north.
-
-"
+A central walkway leads between cots on the south and walls lined with windows
+and weapons on the north.
+"
 E
 "white stone stairs 1 south"
 "Smooth, polished white marble stairs, swirled with various shades of stone,
-
-lead upwards at the end of the passage to the south.
-
-"
+lead upwards at the end of the passage to the south.
+"
 E
 "silver chain white orb 1 up"
 "What appears to be a chain of pure silver hangs from the arched ceiling above,
-
-and suspended upon it is a pale white orb.  The orb seems to cast a uniform
-
-light throughout the passage, despite the fact that it is itself not very
-
-bright as lightsources go.
-
-"
+and suspended upon it is a pale white orb.  The orb seems to cast a uniform
+light throughout the passage, despite the fact that it is itself not very
+bright as lightsources go.
+"
 4778 17 1509949540 -2 0
 2869 9 1509949540 3 0
 -1
@@ -374,29 +287,18 @@ S
 #93007
 "Black Marble Hall - Red Runes"
 "This is a black marble corridor leading east and west under an arched ceiling.
-
-The stone of the floor and walls is smooth and spotless, save for windows in
-
-the walls to the north and south, and reflects images in the room as clearly
-
-as any mirror.  Dark red runes are arrayed in a line running north and south
-
-across the hallway, throbbing menacingly.  Above, a white orb hangs on a
-
-silver chain, lighting the hall with a pale light.  To the east is an arched
-
-entrance, leading into a checkered marble room, with a portal standing on a
-
-dais in the center of it.  The hallway continues to the west, where blue-white
-
-runes can be seen on the floor.
-
-"
+The stone of the floor and walls is smooth and spotless, save for windows in
+the walls to the north and south, and reflects images in the room as clearly
+as any mirror.  Dark red runes are arrayed in a line running north and south
+across the hallway, throbbing menacingly.  Above, a white orb hangs on a
+silver chain, lighting the hall with a pale light.  To the east is an arched
+entrance, leading into a checkered marble room, with a portal standing on a
+dais in the center of it.  The hallway continues to the west, where blue-white
+runes can be seen on the floor.
+"
 "[Kotoktok] fire here
-
-[Kotoktok] red runes
-
-"
+[Kotoktok] red runes
+"
 301465604 0
 0 7 0
 D1
@@ -410,51 +312,35 @@ D3
 E
 "dark red runes floor 1 down"
 "The runes arrayed in a line across the passage are very angular, rather than
-
-flowing and smooth.  Red as blood, they give off palpable heat and seem to
-
-dominate the passage with their presence.
-
-"
+flowing and smooth.  Red as blood, they give off palpable heat and seem to
+dominate the passage with their presence.
+"
 E
 "windows walls 1 north 1 south"
 "The walls to the north and south are set with windows at regular intervals.
-
-About the height of a man and only two feet wide, they are barred to prevent
-
-those in the hallway from getting in.
-
-"
+About the height of a man and only two feet wide, they are barred to prevent
+those in the hallway from getting in.
+"
 E
 "white orb 1 up"
 "One of many similar orbs placed at intervals throughout the hall, it casts a
-
-sombre white light throughout the area.
-
-"
+sombre white light throughout the area.
+"
 -1
 S
 
 #93008
 "Black Marble Hall - White Runes"
 "Blue-white runes dominate the floor of the passage here, which runs east and
-
-west between walls of dark stone.  Set into the walls are vertical slit
-
-windows, barred like those in a prison cell.  White orbs suspended
-
-periodically on chains light the hallway, hung from the simplistic but
-
-tasteful arches of black marble.  Glaring red runes can be seen on the floor
-
-to the east, while further down the passage to the west can be seen black
-
-runes, which seem to absorb light rather than reflect it.
-
-"
+west between walls of dark stone.  Set into the walls are vertical slit
+windows, barred like those in a prison cell.  White orbs suspended
+periodically on chains light the hallway, hung from the simplistic but
+tasteful arches of black marble.  Glaring red runes can be seen on the floor
+to the east, while further down the passage to the west can be seen black
+runes, which seem to absorb light rather than reflect it.
+"
 "[Kotoktok] white runes
-
-"
+"
 301465604 0
 0 7 0
 D1
@@ -468,55 +354,37 @@ D3
 E
 "blue-white runes floor 1 down"
 "The blue-white runes stand out starkly in the obsidian-like stone of the
-
-floor.  Frost rimes the ground just around them, outlining their hauntingly
-
-beautiful swirls.
-
-"
+floor.  Frost rimes the ground just around them, outlining their hauntingly
+beautiful swirls.
+"
 E
 "vertical slit windows walls 1 north 1 south"
 "Like the windows in a keep, the windows set into the north and south walls of
-
-the hall are tall and narrow, approximately the height of a man.  Only small
-
-slits, barred heavily actually face out on the passage.
-
-"
+the hall are tall and narrow, approximately the height of a man.  Only small
+slits, barred heavily actually face out on the passage.
+"
 E
 "white orbs arches 1 up"
 "The arches above are hung with finely-made chains, suspending pale white orbs.
-
-The orbs cast a sombre light throughout the area, and are spaced so that the
-
-lighting in the passage is completely uniform .
-
-"
+The orbs cast a sombre light throughout the area, and are spaced so that the
+lighting in the passage is completely uniform .
+"
 -1
 S
 
 #93009
 "Black Marble Hall - Dark Runes"
 "Throbbing black runes line the floor here, blending in with the polished black
-
-marble.  The runes are only discernable because they seem to absorb the light
-
-that falls upon them, while the marble surrounding them reflects it.  Barred
-
-slit windows loom ominously in the walls of the passage to the north and
-
-south, designed so that it is difficulty for someone on this side to see into
-
-them.  This section of hallway is lit by a softly glowing orb suspended from
-
-the vaulted ceiling.  Silver runes lie on the floor further down the passage
-
-to the west, while blue-white runes can be seen east of here.
-
-"
+marble.  The runes are only discernable because they seem to absorb the light
+that falls upon them, while the marble surrounding them reflects it.  Barred
+slit windows loom ominously in the walls of the passage to the north and
+south, designed so that it is difficulty for someone on this side to see into
+them.  This section of hallway is lit by a softly glowing orb suspended from
+the vaulted ceiling.  Silver runes lie on the floor further down the passage
+to the west, while blue-white runes can be seen east of here.
+"
 "[Kotoktok] black runes
-
-"
+"
 301465604 0
 0 7 0
 D1
@@ -530,55 +398,37 @@ D3
 E
 "throbbing black runes floor 1 down"
 "Blending in with the dark stone floor, the runes re barely perceptible.  Vague
-
-outlines can be seen where the reflective floor ceases to send back light, but
-
-rather seems to absorb it.  These swirling patterns of elemental darkness seem
-
-to throb menacingly, sucking at the light given off by the orbs above.
-
-"
+outlines can be seen where the reflective floor ceases to send back light, but
+rather seems to absorb it.  These swirling patterns of elemental darkness seem
+to throb menacingly, sucking at the light given off by the orbs above.
+"
 E
 "barred slit windows walls 1 north 1 south"
 "The windows are set about a foot above where the floor meets the walls, and
-
-are about as high as a man.  Only about two feet wide and set with heavy iron
-
-bars , it looks as if those behind the windows could easily use projectile
-
-weapons on anyone in the hall without fear of retaliation.
-
-"
+are about as high as a man.  Only about two feet wide and set with heavy iron
+bars , it looks as if those behind the windows could easily use projectile
+weapons on anyone in the hall without fear of retaliation.
+"
 E
 "softly glowing orb"
 "Hung from a chain on the arched ceiling, the pale orb casts a diffuse light
-
-throughout the passage.
-
-"
+throughout the passage.
+"
 -1
 S
 
 #93010
 "Black Marble Hall - Silver Runes"
 "Crackling silver runes line the dark floor here, sparks flying between them.
-
-The polished black marble of the walls and floor reflects light perfectly, and
-
-dances under the glare of the runes.  Black runes lie on the floor to the
-
-east, seeming to absorb all light that falls on them, while the passage to the
-
-west appears to be clear.  Narrow vertical windows set with bars look out on
-
-this passage from the walls to the north and south; similar windows continue
-
-to the east, but stop abruptly to the west.
-
-"
+The polished black marble of the walls and floor reflects light perfectly, and
+dances under the glare of the runes.  Black runes lie on the floor to the
+east, seeming to absorb all light that falls on them, while the passage to the
+west appears to be clear.  Narrow vertical windows set with bars look out on
+this passage from the walls to the north and south; similar windows continue
+to the east, but stop abruptly to the west.
+"
 "[Kotoktok] silver runes
-
-"
+"
 301465604 0
 0 7 0
 D1
@@ -592,45 +442,30 @@ D3
 E
 "crackling silver runes floor 1 down"
 "The silver runes crackle like a bonfire, but give off no heat.  Almost too
-
-brilliant to look at, sparks fly between them and obscure any patterns that
-
-might be recognizable.
-
-"
+brilliant to look at, sparks fly between them and obscure any patterns that
+might be recognizable.
+"
 E
 "narrow vertical windows 1 north 1 south"
 "The windows lining the passage to the north and south are like those in a
-
-keep; narrow slits designed so that those behind them may see and fire upon
-
-intruders.  Thick iron bars are set vertically in them, ruling out any chances
-
-of climbing in.
-
-"
+keep; narrow slits designed so that those behind them may see and fire upon
+intruders.  Thick iron bars are set vertically in them, ruling out any chances
+of climbing in.
+"
 -1
 S
 
 #93011
 "Black Marble Hall"
 "The passage here is lined with smooth, polished black marble that reflects
-
-perfectly, casting images throughout the room.  Walls and floor meet with with
-
-only a tiny black line to indicate the seam.  White orbs hang on chains from
-
-the arched ceiling, casting a pale light throughout the hallway.  To the east,
-
-silver runes shine brightly on the floor, seeming to crackle with energy, and
-
-slit windows can be seen on the walls.  West of here the dark hall continues
-
-between two massive gargoyles hanging from the walls on each side of the
-
-walkway.
-
-"
+perfectly, casting images throughout the room.  Walls and floor meet with with
+only a tiny black line to indicate the seam.  White orbs hang on chains from
+the arched ceiling, casting a pale light throughout the hallway.  To the east,
+silver runes shine brightly on the floor, seeming to crackle with energy, and
+slit windows can be seen on the walls.  West of here the dark hall continues
+between two massive gargoyles hanging from the walls on each side of the
+walkway.
+"
 ""
 301465604 0
 0 7 0
@@ -645,53 +480,36 @@ D3
 E
 "white orbs chains ceiling 1 up"
 "The orbs are not amazingly bright, but seem to cast a diffuse glow throughout
-
-the passage.  They hang from metal chains from arches in the dark stone
-
-ceiling.
-
-"
+the passage.  They hang from metal chains from arches in the dark stone
+ceiling.
+"
 E
 "silver runes 1 east"
 "Nearly too brilliant to look at, the silver runes crackle menacingly.
-
-"
+"
 E
 "gargoyles 1 west"
 "Seemingly made of black steel and fashioned to resemble hideous demons, the
-
-gargoyles are anchored to the north and south walls of the passage.
-
-"
+gargoyles are anchored to the north and south walls of the passage.
+"
 -1
 S
 
 #93012
 "Black Marble Hall - Gargoyles"
 "Two enormous black steel gargoyles are anchored to the walls on each side of
-
-the passage here, looking over the hall from their lofty perches.  The
-
-otherwise perfectly polished floor is heavily marked, grey-white scratches
-
-over an inch deep and several feet in length covering it.  The floor directly
-
-to the east and west is free of marks, but a silver glow is just visible
-
-coming from the ground a ways down the passage to the east.  Silent orbs
-
-hanging on chains above cast a sombre light on the hall.  The hallway comes to
-
-an end to the west, descending a dark stair.
-
-"
+the passage here, looking over the hall from their lofty perches.  The
+otherwise perfectly polished floor is heavily marked, grey-white scratches
+over an inch deep and several feet in length covering it.  The floor directly
+to the east and west is free of marks, but a silver glow is just visible
+coming from the ground a ways down the passage to the east.  Silent orbs
+hanging on chains above cast a sombre light on the hall.  The hallway comes to
+an end to the west, descending a dark stair.
+"
 "[Kotoktok] gargoyles will be a trap, set off further in. mload 2 of them
-
-[Kotoktok] need describe trig, then path them towards trap trigger
-
-[Kotoktok] thieves can disarm, need untrap 7
-
-"
+[Kotoktok] need describe trig, then path them towards trap trigger
+[Kotoktok] thieves can disarm, need untrap 7
+"
 301465604 0
 0 7 0
 D1
@@ -705,56 +523,37 @@ D3
 E
 "black steel gargoyles 1 north 1 south"
 "Black steel scales cover nearly the entire surface of the gargoyles attached
-
-to the north and south walls of the passage.  Carefully crafted to resemble
-
-clawed demons, their grotesque heads are topped by pointed ears, covered in
-
-tiny steel spines.  Set deeply in the hideous face of each are dark stone orbs
-
-which give off a dull red light.  Their humanoid bodies are lithely
-
-proportioned, and covered in a meticulously-fashioned layer of steel scales.
-
-Lanky arms and legs end in four-foot-long, razor-sharp blades which come to a
-
-needle point.
-
-"
+to the north and south walls of the passage.  Carefully crafted to resemble
+clawed demons, their grotesque heads are topped by pointed ears, covered in
+tiny steel spines.  Set deeply in the hideous face of each are dark stone orbs
+which give off a dull red light.  Their humanoid bodies are lithely
+proportioned, and covered in a meticulously-fashioned layer of steel scales.
+Lanky arms and legs end in four-foot-long, razor-sharp blades which come to a
+needle point.
+"
 E
 "floor scratches 1 down"
 "Although the floor to the east and west is perfectly polished glass-like
-
-stone, long scratches here mar its surface.  Several feet in length and over
-
-an inch deep, the grey-white gouges in the black stone appear directly below
-
-where gigantic black steel gargoyles hang on the walls of the passage.
-
-"
+stone, long scratches here mar its surface.  Several feet in length and over
+an inch deep, the grey-white gouges in the black stone appear directly below
+where gigantic black steel gargoyles hang on the walls of the passage.
+"
 E
 "orbs 1 up"
 "The pale white orbs are spaced evenly, and light the hallway flawlessly.
-
-"
+"
 -1
 S
 
 #93013
 "Black Marble Hall"
 "A dimly lit granite stair to the west descends into gloom; what lies at the
-
-bottom cannot be ascertained from here.  The stone of the stair is grey-white
-
-flecked with shiny black chips, polished smooth.  The floor underfoot is
-
-flawless, glass-like black marble which reflects images like a dark mirror.
-
-The passage of black marble continues to the east between two metal gargoyles,
-
-below an arched ceiling hung with pale white orbs.
-
-"
+bottom cannot be ascertained from here.  The stone of the stair is grey-white
+flecked with shiny black chips, polished smooth.  The floor underfoot is
+flawless, glass-like black marble which reflects images like a dark mirror.
+The passage of black marble continues to the east between two metal gargoyles,
+below an arched ceiling hung with pale white orbs.
+"
 ""
 301465604 0
 0 7 0
@@ -772,20 +571,13 @@ S
 #93014
 "Black Marble Hall"
 "This is a smooth granite stair, running upwards to the east, and downwards to
-
-the west.  The air is very still, and no odors can be smelt therein.  The
-
-stone of steps and walls is smooth but textured, white interspersed with solid
-
-black flecks.  A pale white glow flows down from above, dimly lighting the
-
-stair.  Above and to the east the stair ends on a sombre hall of black marble,
-
-while downwards all that can be seen in the dimness is the vague outline of a
-
-corridor.
-
-"
+the west.  The air is very still, and no odors can be smelt therein.  The
+stone of steps and walls is smooth but textured, white interspersed with solid
+black flecks.  A pale white glow flows down from above, dimly lighting the
+stair.  Above and to the east the stair ends on a sombre hall of black marble,
+while downwards all that can be seen in the dimness is the vague outline of a
+corridor.
+"
 ""
 301465604 0
 0 7 0
@@ -803,23 +595,15 @@ S
 #93015
 "White Marble Hall"
 "Black and white murals of scenes involving mages of all races adorn the walls
-
-to the east and west.  The long, white marble hall runs north and south
-
-between the murals, lit by pale white orbs hanging from the arched ceiling.
-
-The smooth, polished floor is very reflective, and the mirror image of each
-
-orb above moves eerily along the ground.  At the end of the hall to the north
-
-is a stair leading upwards.  To the south, another hall branches west from
-
-this one.
-
-"
+to the east and west.  The long, white marble hall runs north and south
+between the murals, lit by pale white orbs hanging from the arched ceiling.
+The smooth, polished floor is very reflective, and the mirror image of each
+orb above moves eerily along the ground.  At the end of the hall to the north
+is a stair leading upwards.  To the south, another hall branches west from
+this one.
+"
 "[Kotoktok] extras: murals, orb/ceiling, stair
-
-"
+"
 301465604 0
 0 7 0
 D2
@@ -833,28 +617,20 @@ D4
 E
 "murals 1 west 1 east"
 "Covering a massive area of wall on each side of the passage, the detailed
-
-murals are black stone and metal laid into the white marble of he walls.
-
-Mages of all races, both light and dark, seem to be working side by side in
-
-the murals, performing various magical tasks from summoning to destructive
-
-acts displaying massive power.
-
-"
+murals are black stone and metal laid into the white marble of he walls.
+Mages of all races, both light and dark, seem to be working side by side in
+the murals, performing various magical tasks from summoning to destructive
+acts displaying massive power.
+"
 E
 "orbs"
 "The orbs are spaced evenly so that they cast a uniform glow over the hallway.
-
-"
+"
 E
 "stair 1 north"
 "The hall to the north ends in a wide, well-polished stair of white marble,
-
-leading upwards.
-
-"
+leading upwards.
+"
 4778 17 1509949540 -2 0
 2891 9 1509949540 3 0
 -1
@@ -863,27 +639,17 @@ S
 #93016
 "Captain's Chamber"
 "Walls, ceiling, and floor of black-flecked granite enclose this sparsely-
-
-furnished chamber in all directions except for south.  Along the north wall is
-
-a black marble desk littered with papers.  A weapon rack is on the east wall,
-
-and against the western wall is an armor rack.  The room is lit from above by
-
-a white orb hanging from an iron chain which is anchored on an arch of the
-
-vaulted ceiling.  The orb burns with a cool inner flame, which casts a sombre,
-
-pale glow throughout the room.  A staircase to the south leads back down into
-
-the hall.
-
-"
+furnished chamber in all directions except for south.  Along the north wall is
+a black marble desk littered with papers.  A weapon rack is on the east wall,
+and against the western wall is an armor rack.  The room is lit from above by
+a white orb hanging from an iron chain which is anchored on an arch of the
+vaulted ceiling.  The orb burns with a cool inner flame, which casts a sombre,
+pale glow throughout the room.  A staircase to the south leads back down into
+the hall.
+"
 "[Kotoktok] fix prismata
-
-[Kotoktok] (someday)
-
-"
+[Kotoktok] (someday)
+"
 301465604 0
 0 7 0
 D1
@@ -897,15 +663,12 @@ D5
 E
 "white orb chain arch ceiling 1 up"
 "Hanging from an iron chain on the vaulted ceiling is a pale white orb, which
-
-casts a diffuse light throughout the room.
-
-"
+casts a diffuse light throughout the room.
+"
 E
 "staircase 1 south 1 down"
 "A stair of polished white marble leads down and out of the room to the south.
-
-"
+"
 4759 17 1509949540 -2 0
 4760 17 1509949540 -2 0
 4761 17 1509949540 -2 0
@@ -917,20 +680,13 @@ S
 #93017
 "White Marble Hall"
 "The long, white marble hall runs north and south here, lit by pale white orbs
-
-hanging from chains on the the arched ceiling.  Black and white murals of
-
-scenes involving mages of all races adorn the walls to the east and west.  The
-
-smooth, polished floor is very reflective, and the mirror image of each orb
-
-above moves eerily along the ground.  At the end of the hall to the south is a
-
-white stone stair leading upwards.  To the north, the arched entrance to
-
-another hall can be seen on the west side of this one.
-
-"
+hanging from chains on the the arched ceiling.  Black and white murals of
+scenes involving mages of all races adorn the walls to the east and west.  The
+smooth, polished floor is very reflective, and the mirror image of each orb
+above moves eerily along the ground.  At the end of the hall to the south is a
+white stone stair leading upwards.  To the north, the arched entrance to
+another hall can be seen on the west side of this one.
+"
 ""
 301465604 0
 0 7 0
@@ -945,29 +701,19 @@ D4
 E
 "murals walls 1 east 1 west"
 "The white marble walls to the east and west are inlaid with black metal and
-
-stone to form intricate and very lifelike images.  Sorcerers and mages of all
-
-races, from elf to goblin to vyan are depicted in various acts, from summoning
-
-grotesque abominations to melting stone with fire.  A tall, proud-looking
-
-human male is shown on the east wall, kneeling bloodied and battered on the
-
-edge of a subterranean abyss.
-
-"
+stone to form intricate and very lifelike images.  Sorcerers and mages of all
+races, from elf to goblin to vyan are depicted in various acts, from summoning
+grotesque abominations to melting stone with fire.  A tall, proud-looking
+human male is shown on the east wall, kneeling bloodied and battered on the
+edge of a subterranean abyss.
+"
 E
 "pale white orbs arched ceiling 1 up"
 "Pale white orbs hang at intervals from the ceiling above, spaced perfectly so
-
-that the passage is lit uniformly.  They cast a cool white light, although
-
-looking at them, they appear to be no brighter than the stone of the passage
-
-itself.
-
-"
+that the passage is lit uniformly.  They cast a cool white light, although
+looking at them, they appear to be no brighter than the stone of the passage
+itself.
+"
 4778 17 1509949540 -2 0
 2891 9 1509949540 3 0
 -1
@@ -976,22 +722,14 @@ S
 #93018
 "Priest's Chamber"
 "Richly adorned with many ornaments, this appears to be the chamber of a
-
-religious leader of some kind.  The room's walls, floor, and ceiling are
-
-covered with cool green jade, polished smooth.  On the southern wall is a large
-
-altar, made of swirled white marble.  A single flame of purest white burns in
-
-a brazier there, lighting the room.  On the north and south walls are hung
-
-tapestries with designs of power embroidered upon them.  They lend the room an
-
-aura of immense mystique.  A staircase to the north leads down into a well-lit
-
-hall.
-
-"
+religious leader of some kind.  The room's walls, floor, and ceiling are
+covered with cool green jade, polished smooth.  On the southern wall is a large
+altar, made of swirled white marble.  A single flame of purest white burns in
+a brazier there, lighting the room.  On the north and south walls are hung
+tapestries with designs of power embroidered upon them.  They lend the room an
+aura of immense mystique.  A staircase to the north leads down into a well-lit
+hall.
+"
 ""
 301466116 0
 0 7 0
@@ -1006,180 +744,119 @@ D5
 E
 "ornaments"
 "Ranging from simple stone incense-holders to intricate precious-metal
-
-medallions, the ornaments are hung tastefully but extravagantly throughout the
-
-room.
-
-"
+medallions, the ornaments are hung tastefully but extravagantly throughout the
+room.
+"
 E
 "altar flame brazier 1 south"
 "Simple yet elegant, the altar on the south wall is in the shape of a rugged
-
-mountain, with a pillared entrance into its depths facing the room proper.
-
-Around the opening are scattered many bleached-white bones, their flesh long
-
-gone.  A silver brazier is placed amidst the bones, and in it burns an
-
-intensely bright flame of white fire.
-
-"
+mountain, with a pillared entrance into its depths facing the room proper.
+Around the opening are scattered many bleached-white bones, their flesh long
+gone.  A silver brazier is placed amidst the bones, and in it burns an
+intensely bright flame of white fire.
+"
 E
 "tapestry tapestries 1 north 1 south"
 "The bright colors of the tapestries on the walls to the north and south do
-
-nothing to dim the aura of power which they radiate.  At once intricate and
-
-bold, the patterns upon them challenge the mind and defy description, leaving
-
-you slightly dazed after carefully viewing them.
-
-"
+nothing to dim the aura of power which they radiate.  At once intricate and
+bold, the patterns upon them challenge the mind and defy description, leaving
+you slightly dazed after carefully viewing them.
+"
 E
 "staircase"
 "Swirled white marble steps polished smooth as glass lead down the the north.
-
-"
+"
 E
 "medallions"
 "The medallions are beautiful, each one a work of art.  Some of them might be
-
-low enough to grab.
-
-"
+low enough to grab.
+"
 A
 ""
 ""
 "mob = mob_in_room( 2857, room );
-
-if ( rflag( reset1, room ) && mob_in_room( 2857, room ) && can_see_char( mob, ch ) ) {
-
-  if ( is_player( ch ) ) {
-
-    if (mob_in_room( 2862, room ) )
-
-      end;
-
-    remove_rflag( reset1, room );
-
-    send_to_room( #raise, room );
-
-    send_to_room( #skel, room );
-
-    wait( 1 );
-
-    send_to_room( #skel2, room );
-
-    mload( 2862, room );
-
-    mload( 2862, room );
-
-    mload( 2862, room );
-
-  }
-
-}
-
-"
+if ( rflag( reset1, room ) && mob_in_room( 2857, room ) && can_see_char( mob, ch ) ) {
+  if ( is_player( ch ) ) {
+    if (mob_in_room( 2862, room ) )
+      end;
+    remove_rflag( reset1, room );
+    send_to_room( #raise, room );
+    send_to_room( #skel, room );
+    wait( 1 );
+    send_to_room( #skel2, room );
+    mload( 2862, room );
+    mload( 2862, room );
+    mload( 2862, room );
+  }
+}
+"
 E
 "raise"
 "@RThe priest whirls around to face the stairway, then raises his arms and snarls
-
-a harsh phrase!@n
-
-"
+a harsh phrase!@n
+"
 E
 "skel"
 "@cThe bones at the altar shudder sickeningly.@n
-
-"
+"
 E
 "skel2"
 "@CThe bones heave up, forming three hideous skeletons!@n
-
-"
+"
 !
 1 0 128
 A
 ""
 ""
 "i = vnum( ch );
-
-if ((i == 2863) || (i == 2862))
-
-  end;
-
-else
-
-  continue;
-
-"
+if ((i == 2863) || (i == 2862))
+  end;
+else
+  continue;
+"
 !
 3 0 32
 A
 "get grab"
 "medallion"
 "if( rflag( reset0, room ) ) {
-
-  if (1d17 <= 2) {
-
-    act_tochar( #medal, ch );
-
-    obj_to_char( oload(4837), ch );
-
-    remove_rflag( reset0, room );
-
-  }
-
-  else {
-
-    if (1d9 == 3) {
-
-      act_tochar( #medal, ch );
-
-      obj_to_char( oload(4838) , ch );
-
-    }
-
-    else
-
-      act_tochar( #no, ch );
-
-    remove_rflag( reset0, room );
-
-  }
-
-}
-
-else
-
-  act_tochar( #no, ch );
-
-"
+  if (1d17 <= 2) {
+    act_tochar( #medal, ch );
+    obj_to_char( oload(4837), ch );
+    remove_rflag( reset0, room );
+  }
+  else {
+    if (1d9 == 3) {
+      act_tochar( #medal, ch );
+      obj_to_char( oload(4838) , ch );
+    }
+    else
+      act_tochar( #no, ch );
+    remove_rflag( reset0, room );
+  }
+}
+else
+  act_tochar( #no, ch );
+"
 E
 "medal"
 "You manage to grab a medallion from the wall.
-
-"
+"
 E
 "no"
 "There are no medallions hung low enough to reach.
-
-"
+"
 !
 0 0 0
 A
 "search"
 "bones altar"
 "act_tochar( #yousuckidiot, ch );
-
-"
+"
 E
 "yousuckidiot"
 "You sort through the bones on the altar, but find nothing of interest.
-
-"
+"
 !
 0 0 0
 2857 9 1509949540 3 0
@@ -1190,26 +867,16 @@ S
 #93019
 "Barracks of White Marble"
 "Barred slit windows around six feet in height are placed in the wall to the
-
-south, looking out on a black marble hallway.  Between the windows are small
-
-weapon racks with spears, swords, crossbows, and crossbow bolts secured to
-
-them.  A central walkway of clean, polished stone runs between the windows and
-
-the living space to the north, lit from above by mysterious white orbs
-
-suspended from chains on the ceiling.  A trough of running water is set into
-
-the northern wall of the barracks, with comfortable-looking cots neatly lined
-
-up and anchored to the floor in the space between the walkway and the wall.
-
-An arched entranceway leads into a hall to the west, while the barracks
-
-continue to the west.
-
-"
+south, looking out on a black marble hallway.  Between the windows are small
+weapon racks with spears, swords, crossbows, and crossbow bolts secured to
+them.  A central walkway of clean, polished stone runs between the windows and
+the living space to the north, lit from above by mysterious white orbs
+suspended from chains on the ceiling.  A trough of running water is set into
+the northern wall of the barracks, with comfortable-looking cots neatly lined
+up and anchored to the floor in the space between the walkway and the wall.
+An arched entranceway leads into a hall to the west, while the barracks
+continue to the west.
+"
 ""
 301465604 0
 0 7 0
@@ -1224,32 +891,22 @@ D3
 E
 "barred slit windows wall weapon racks spears swords crossbows bolts 1 south"
 "The wall to the south is set with evenly-spaced, barred slit windows similar
-
-to those in the keep.  It is easy to see out of them into the passage beyond,
-
-but it would be difficult for those in the passage to see in.  Just against
-
-the wall are steel racks loaded with the spears, swords, and crossbows that
-
-might normally be the tools of a castle guard unit.  The gear seems to be
-
-tightly fastened to the racks by metal straps; there appears to be no obvious
-
-way of opening them.
-
-"
+to those in the keep.  It is easy to see out of them into the passage beyond,
+but it would be difficult for those in the passage to see in.  Just against
+the wall are steel racks loaded with the spears, swords, and crossbows that
+might normally be the tools of a castle guard unit.  The gear seems to be
+tightly fastened to the racks by metal straps; there appears to be no obvious
+way of opening them.
+"
 E
 "mysterious white orbs"
 "The orbs are evenly spaced, and cast a steady glow through the barracks.
-
-"
+"
 E
 "trough running water 1 north"
 "Into the white marble of the wall to the north has been carved a trough, in
-
-which clear water flows from east to west
-
-"
+which clear water flows from east to west
+"
 4753 17 1509949540 -2 0
 4767 17 1509949540 -2 0
 4767 17 1509949540 -2 0
@@ -1265,20 +922,13 @@ S
 #93020
 "Barracks of White Marble"
 "Swirled white marble makes up the walls, floor, and ceiling of this large,
-
-clean-looking barracks.  Thin, angular windows set with steel bars look out on
-
-a passage to the south, on the floor of which can be seen glowing white runes.
-
-Attached to the stone of the ground itself to the north are neat rows of soft-
-
-looking cots.  Just beyond, cut into the stone of northern wall, is a trough
-
-of clean running water.  White orbs hang from chains on the ceiling, casting a
-
-pale glow which lights the room.  The barracks continue to the east and west.
-
-"
+clean-looking barracks.  Thin, angular windows set with steel bars look out on
+a passage to the south, on the floor of which can be seen glowing white runes.
+Attached to the stone of the ground itself to the north are neat rows of soft-
+looking cots.  Just beyond, cut into the stone of northern wall, is a trough
+of clean running water.  White orbs hang from chains on the ceiling, casting a
+pale glow which lights the room.  The barracks continue to the east and west.
+"
 ""
 301465604 0
 0 7 0
@@ -1293,32 +943,22 @@ D3
 E
 "windows passage runes 1 south"
 "Tall slit windows set with steel bars are placed at intervals in the wall to
-
-the south, looking out on a passage of polished black marble.  From here it
-
-appears that the windows are used primarly as openings through which to fire
-
-projectiles at any intruders in the hallway.  On the floor of the passage to
-
-the south are beautifully-crafted white runes, which rime the floor around
-
-them with frost.
-
-"
+the south, looking out on a passage of polished black marble.  From here it
+appears that the windows are used primarly as openings through which to fire
+projectiles at any intruders in the hallway.  On the floor of the passage to
+the south are beautifully-crafted white runes, which rime the floor around
+them with frost.
+"
 E
 "orbs ceiling 1 up"
 "The evenly-spaced orbs hanging from the ceiling do not themselves seem to be
-
-very bright, yet they somehow illuminate the whole area quite evenly.
-
-"
+very bright, yet they somehow illuminate the whole area quite evenly.
+"
 E
 "trough running water 1 north"
 "The trough is cut into the swirled white marble of the northern wall, about
-
-two feet wide and a foot deep.  Clean water runs along it from east to west.
-
-"
+two feet wide and a foot deep.  Clean water runs along it from east to west.
+"
 4753 17 1509949540 -2 0
 4767 17 1509949540 -2 0
 4767 17 1509949540 -2 0
@@ -1334,22 +974,14 @@ S
 #93021
 "Barracks of White Marble"
 "A cleared, central walkway runs east and west through the barracks here, lined
-
-by rows of clean, comfortable-looking cots to the north, and the wall to the
-
-south.  Set about knee high in the wall are man-high barred windows, looking
-
-out on a hallway to the south.  Carved into the northern wall is a two-foot
-
-wide trough of clear, moving water which runs the whole length of the
-
-barracks.  It follows the wall to the west, then curves around the corner.
-
-The whole scene is lit from above by pale white orbs suspended from the
-
-ceiling.
-
-"
+by rows of clean, comfortable-looking cots to the north, and the wall to the
+south.  Set about knee high in the wall are man-high barred windows, looking
+out on a hallway to the south.  Carved into the northern wall is a two-foot
+wide trough of clear, moving water which runs the whole length of the
+barracks.  It follows the wall to the west, then curves around the corner.
+The whole scene is lit from above by pale white orbs suspended from the
+ceiling.
+"
 ""
 301465604 0
 0 7 0
@@ -1364,21 +996,15 @@ D3
 E
 "wall man-high barred windows hallway 1 south"
 "About six feet in height, narrow, barred windows are spaced evenly along the
-
-wall to the south, looking out on a black marble hallway.  They are designed
-
-so that those on this side can easily see and hurl projectiles out of them,
-
-although it would be difficult for anyone on the other side to do the same.
-
-"
+wall to the south, looking out on a black marble hallway.  They are designed
+so that those on this side can easily see and hurl projectiles out of them,
+although it would be difficult for anyone on the other side to do the same.
+"
 E
 "pale white orbs ceiling 1 up"
 "Hanging on chains from the arched white-marble ceiling, the luminous globes
-
-provide light for the barracks.
-
-"
+provide light for the barracks.
+"
 4753 17 1509949540 -2 0
 4767 17 1509949540 -2 0
 4767 17 1509949540 -2 0
@@ -1394,22 +1020,14 @@ S
 #93022
 "Barracks of White Marble"
 "The long barracks ends against a wall to the west, the entire surface of which
-
-is covered in black and white murals.  Vertical slit windows in the wall to
-
-the south allow survey of a black marble hallway behind them.  Steel bars are
-
-set in the window; without them, a man could easy step through the window into
-
-the passage to the south.  Rows of cots line the northern wall of the barracks
-
-to the east, stretching in a line all the way to the end of the barracks which
-
-is barely visible in that direction.  To the north is what appears to be a
-
-combination kitchen and lavatory big enough for a small army.
-
-"
+is covered in black and white murals.  Vertical slit windows in the wall to
+the south allow survey of a black marble hallway behind them.  Steel bars are
+set in the window; without them, a man could easy step through the window into
+the passage to the south.  Rows of cots line the northern wall of the barracks
+to the east, stretching in a line all the way to the end of the barracks which
+is barely visible in that direction.  To the north is what appears to be a
+combination kitchen and lavatory big enough for a small army.
+"
 ""
 301465604 0
 0 7 0
@@ -1424,23 +1042,16 @@ D1
 E
 "murals 1 west"
 "The white marble of the wall to the west is inlaid with flecks of black stone
-
-and metal, forming a highly detailed mural.  Depictions of mages and their
-
-friends and servants dominate most of the lower wall, with dark underground
-
-and mountain scenes involving terrible monsters and magic arching over the top
-
-of the wall.
-
-"
+and metal, forming a highly detailed mural.  Depictions of mages and their
+friends and servants dominate most of the lower wall, with dark underground
+and mountain scenes involving terrible monsters and magic arching over the top
+of the wall.
+"
 E
 "vertical slit windows wall hallway 1 south"
 "Barred windows about six feet in height and a couple feet wide are set into
-
-the wall to the south, looking out on a reflective black marble hallway.
-
-"
+the wall to the south, looking out on a reflective black marble hallway.
+"
 4753 17 1509949540 -2 0
 4778 17 1509949540 -2 0
 2869 9 1509949540 3 0
@@ -1450,24 +1061,15 @@ S
 #93023
 "Barracks of White Marble"
 "Barred slit windows around six feet in height in the wall to the north look
-
-out on a black marble hallway.  Between the windows are small weapon racks
-
-with spears, swords, crossbows, and crossbow bolts secured to them.  A central
-
-walkway of clean, polished stone runs between the windows and the living space
-
-to the south, lit from above by mysterious white orbs suspended from chains on
-
-the ceiling.  A trough of running water is set into the southern wall of the
-
-barracks, with comfortable-looking cots neatly lined up and anchored to the
-
-floor in the space between the walkway and the wall.  An arched entranceway
-
-leads into a hall to the east, while the barracks continues to the west.
-
-"
+out on a black marble hallway.  Between the windows are small weapon racks
+with spears, swords, crossbows, and crossbow bolts secured to them.  A central
+walkway of clean, polished stone runs between the windows and the living space
+to the south, lit from above by mysterious white orbs suspended from chains on
+the ceiling.  A trough of running water is set into the southern wall of the
+barracks, with comfortable-looking cots neatly lined up and anchored to the
+floor in the space between the walkway and the wall.  An arched entranceway
+leads into a hall to the east, while the barracks continues to the west.
+"
 ""
 301465604 0
 0 7 0
@@ -1482,16 +1084,11 @@ D3
 E
 "barred slit windows wall hallway weapon racks spears swords crossbows 1 north"
 "Fashioned like those in a keep, the windows in the stone wall to the north are
-
-wide on this side, but narrow into a mere slit on the other side of the wall.
-
-They look out on a sombre hallway of black marble, on the floor of which are
-
-pulsing red runes.  Between the windows are small metal weapon racks, their
-
-spears, sword, and crossbows latched on with small metal clips.
-
-"
+wide on this side, but narrow into a mere slit on the other side of the wall.
+They look out on a sombre hallway of black marble, on the floor of which are
+pulsing red runes.  Between the windows are small metal weapon racks, their
+spears, sword, and crossbows latched on with small metal clips.
+"
 4753 17 1509949540 -2 0
 4767 17 1509949540 -2 0
 4767 17 1509949540 -2 0
@@ -1507,22 +1104,14 @@ S
 #93024
 "Barracks of White Marble"
 "Thin, angular windows set with steel bars look out on a passage to the north,
-
-on the floor of which can be seen glowing white runes.  The walls, floor and
-
-ceiling of this large, clean-looking barracks are composed almost entirely of
-
-swirled white marble.  Attached to the stone of the ground itself to the south
-
-are neat rows of soft-looking cots.  Just beyond, set into the southern wall,
-
-is a trough of clean running water.  Glowing white orbs hang from chains on
-
-the ceiling, casting a pale glow which lights the room.  The barracks continue
-
-to the east and west.
-
-"
+on the floor of which can be seen glowing white runes.  The walls, floor and
+ceiling of this large, clean-looking barracks are composed almost entirely of
+swirled white marble.  Attached to the stone of the ground itself to the south
+are neat rows of soft-looking cots.  Just beyond, set into the southern wall,
+is a trough of clean running water.  Glowing white orbs hang from chains on
+the ceiling, casting a pale glow which lights the room.  The barracks continue
+to the east and west.
+"
 ""
 301465604 0
 0 7 0
@@ -1537,14 +1126,10 @@ D3
 E
 "angular windows steel bars passage runes 1 north"
 "About man-high, the windows to the north would be wide enough for a human to
-
-squeeze through, were they not set with bars.  The windows look out on a
-
-polished black marble corridor, with glowing white runes riming its floor with
-
-frost.
-
-"
+squeeze through, were they not set with bars.  The windows look out on a
+polished black marble corridor, with glowing white runes riming its floor with
+frost.
+"
 4753 17 1509949540 -2 0
 4767 17 1509949540 -2 0
 4767 17 1509949540 -2 0
@@ -1560,22 +1145,14 @@ S
 #93025
 "Barracks of White Marble"
 "A cleared, central walkway runs east and west through the barracks here, lined
-
-by rows of clean, comfortable-looking cots to the south, and the wall to the
-
-north.  Set about knee high in the wall are man-high barred windows, looking
-
-out on a hallway to the north.  Carved into the southern wall is a two-foot
-
-wide trough of clear, moving water which runs the whole length of the
-
-barracks.  It follows the wall to the west, then curves around the corner.
-
-The whole scene is lit from above by pale white orbs suspended from the
-
-ceiling.
-
-"
+by rows of clean, comfortable-looking cots to the south, and the wall to the
+north.  Set about knee high in the wall are man-high barred windows, looking
+out on a hallway to the north.  Carved into the southern wall is a two-foot
+wide trough of clear, moving water which runs the whole length of the
+barracks.  It follows the wall to the west, then curves around the corner.
+The whole scene is lit from above by pale white orbs suspended from the
+ceiling.
+"
 ""
 301465604 0
 0 7 0
@@ -1590,14 +1167,10 @@ D3
 E
 "wall man-high barred windows hallway 1 north"
 "The windows in the wall to the north are much like those of a keep; wide on
-
-this side, and narrow on the side facing out.  Between the steel bars set
-
-vertically in the gap you can see a black marble hall, on the floor of which
-
-are dark, menacing runes.
-
-"
+this side, and narrow on the side facing out.  Between the steel bars set
+vertically in the gap you can see a black marble hall, on the floor of which
+are dark, menacing runes.
+"
 4753 17 1509949540 -2 0
 4767 17 1509949540 -2 0
 4767 17 1509949540 -2 0
@@ -1613,24 +1186,15 @@ S
 #93026
 "Barracks of White Marble"
 "The long barracks ends against a wall to the west, the entire surface of which
-
-is covered in black and white murals.  Vertical slit windows in the wall to
-
-the north look out on a black marble hallway.  Steel bars are set in the
-
-window; without them, a man could easy step through the window into the
-
-passage to the north.  Rows of cots line the southern wall of the barracks to
-
-the east, stretching in a line all the way to the end of the barracks which is
-
-barely visible in that direction.  To the south is what appears to be a
-
-training area, where the floor is covered in triangular stone tiles set in
-
-regular patterns.
-
-"
+is covered in black and white murals.  Vertical slit windows in the wall to
+the north look out on a black marble hallway.  Steel bars are set in the
+window; without them, a man could easy step through the window into the
+passage to the north.  Rows of cots line the southern wall of the barracks to
+the east, stretching in a line all the way to the end of the barracks which is
+barely visible in that direction.  To the south is what appears to be a
+training area, where the floor is covered in triangular stone tiles set in
+regular patterns.
+"
 ""
 33030148 0
 0 7 0
@@ -1651,13 +1215,10 @@ S
 #93027
 "Dark Granite Corridor"
 "Under Construction.
-
-"
+"
 "[Kotoktok] dust on floor, fine craftmanship but hasn't been cleaned in forever
-
-[Kotoktok] silent
-
-"
+[Kotoktok] silent
+"
 301465604 0
 0 7 0
 D3
@@ -1674,13 +1235,10 @@ S
 #93028
 "Dark Granite Corridor"
 "Under Construction.
-
-"
+"
 "[Kotoktok] bones of travellers, pop therein
-
-[Kotoktok] ghosts of travellers
-
-"
+[Kotoktok] ghosts of travellers
+"
 301465604 0
 0 7 0
 D1
@@ -1697,15 +1255,11 @@ S
 #93029
 "Dark Granite Corridor"
 "Under Construction.
-
-"
+"
 "[Kotoktok] dust, but cobwebs strangely absent
-
-[Kotoktok] patterns on walls
-
-[Kotoktok] heavy silence
-
-"
+[Kotoktok] patterns on walls
+[Kotoktok] heavy silence
+"
 301465604 0
 0 7 0
 D1
@@ -1722,8 +1276,7 @@ S
 #93030
 "Dimly Lit Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -1737,8 +1290,7 @@ S
 #93031
 "Dimly Lit Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -1756,8 +1308,7 @@ S
 #93032
 "Dimly Lit Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -1771,13 +1322,10 @@ S
 #93033
 "Dark Granite Corridor"
 "Under Construction.
-
-"
+"
 "[Kotoktok] wall carvings
-
-[Kotoktok] dust, some old armor/weaps to search through, too old to use
-
-"
+[Kotoktok] dust, some old armor/weaps to search through, too old to use
+"
 301465604 0
 0 7 0
 D1
@@ -1794,13 +1342,10 @@ S
 #93034
 "Dark Granite Corridor"
 "Under Construction.
-
-"
+"
 "[Kotoktok] elemental guardian, water
-
-[Kotoktok] this spot is clear of dust, some heavily rusted old gear and bones here
-
-"
+[Kotoktok] this spot is clear of dust, some heavily rusted old gear and bones here
+"
 301465604 0
 0 7 0
 D1
@@ -1817,8 +1362,7 @@ S
 #93035
 "Dark Granite Corridor"
 "Under Construction.
-
-"
+"
 ""
 301465604 0
 0 7 0
@@ -1836,8 +1380,7 @@ S
 #93036
 "Dimly Lit Hall"
 "Under Construction.
-
-"
+"
 ""
 301465604 0
 0 7 0
@@ -1855,8 +1398,7 @@ S
 #93037
 "Dimly Lit Hall"
 "Under Construction.
-
-"
+"
 ""
 301465604 0
 0 7 0
@@ -1874,13 +1416,10 @@ S
 #93038
 "Stone Bridge Over Abyss"
 "Under Construction.
-
-"
+"
 "[Kotoktok] bridge
-
-[Kotoktok] thanks for telling me it's a bridge, the rname says it you fool
-
-"
+[Kotoktok] thanks for telling me it's a bridge, the rname says it you fool
+"
 301465604 0
 0 7 0
 D1
@@ -1897,8 +1436,7 @@ S
 #93039
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 301465604 0
 0 7 0
@@ -1920,8 +1458,7 @@ S
 #93040
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 7 0
@@ -1939,8 +1476,7 @@ S
 #93041
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 7 0
@@ -1958,8 +1494,7 @@ S
 #93042
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 7 0
@@ -1977,8 +1512,7 @@ S
 #93043
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -1996,8 +1530,7 @@ S
 #93044
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2015,8 +1548,7 @@ S
 #93045
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2034,8 +1566,7 @@ S
 #93046
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 7 0
@@ -2053,8 +1584,7 @@ S
 #93047
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 7 0
@@ -2072,8 +1602,7 @@ S
 #93048
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2091,8 +1620,7 @@ S
 #93049
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2110,8 +1638,7 @@ S
 #93050
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2129,8 +1656,7 @@ S
 #93051
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2148,8 +1674,7 @@ S
 #93052
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2167,8 +1692,7 @@ S
 #93053
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2186,8 +1710,7 @@ S
 #93054
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2205,8 +1728,7 @@ S
 #93055
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2224,8 +1746,7 @@ S
 #93056
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2243,8 +1764,7 @@ S
 #93057
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2262,8 +1782,7 @@ S
 #93058
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2281,8 +1800,7 @@ S
 #93059
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2300,8 +1818,7 @@ S
 #93060
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2319,8 +1836,7 @@ S
 #93061
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2338,8 +1854,7 @@ S
 #93062
 "Black Marble Hall"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -2357,10 +1872,8 @@ S
 #93063
 "Barracks of White Marble - Training Room"
 "Triangular tiles of swirled white marble are set in complex patterns, making up the floor of this large alcove.
-
-The wall to the west is dominated by black and white murals, while the other walls are flawless white marble.
-
-"
+The wall to the west is dominated by black and white murals, while the other walls are flawless white marble.
+"
 ""
 301465604 0
 0 7 0
@@ -2379,24 +1892,15 @@ S
 #93064
 "Barracks of White Marble - Kitchen"
 "This area is dominated by rows of stoves and cupboards lined up in the center
-
-of the room, ladles and all manner of other utensils hanging from hooks
-
-suspended above the stoves.  A channel has been carved into the wall to the
-
-east and north, and in it flows clean water.  The trough ends in a black hole
-
-in the wall to the west, where water pours silently into the darkness.  Pit
-
-toilets have been set in a row adjacent to the water trough.  Large dining
-
-tables are placed in a rectangle about the central cooking area, long benches
-
-attached on each side of them.  A large black and white mural covers the whole
-
-western wall, and continues along it to the south, even past the kitchen area.
-
-"
+of the room, ladles and all manner of other utensils hanging from hooks
+suspended above the stoves.  A channel has been carved into the wall to the
+east and north, and in it flows clean water.  The trough ends in a black hole
+in the wall to the west, where water pours silently into the darkness.  Pit
+toilets have been set in a row adjacent to the water trough.  Large dining
+tables are placed in a rectangle about the central cooking area, long benches
+attached on each side of them.  A large black and white mural covers the whole
+western wall, and continues along it to the south, even past the kitchen area.
+"
 ""
 301465604 0
 0 7 0
@@ -2411,86 +1915,60 @@ D5
 E
 "mural 1 west"
 "The white marble of the wall to the west is inlaid with flecks of black stone
-
-and metal, forming a highly detailed mural.  Depictions of mages and their
-
-friends and servants dominate most of the lower wall, with dark underground
-
-and mountain scenes involving terrible monsters and magic arching over the top
-
-of the wall.
-
-"
+and metal, forming a highly detailed mural.  Depictions of mages and their
+friends and servants dominate most of the lower wall, with dark underground
+and mountain scenes involving terrible monsters and magic arching over the top
+of the wall.
+"
 E
 "channel trough 2 east 1 north"
 "Carved into the stone of the wall itself is a trough of clean, running water.
-
-It ends at the wall to the west, where it pours into a dark opening.
-
-"
+It ends at the wall to the west, where it pours into a dark opening.
+"
 E
 "pit toilets"
 "A row of small fixtures for sitting while one goes about one's business.  One
-
-of the fixtures is broken however, leaving a gaping hole in the stone of the
-
-floor.
-
-"
+of the fixtures is broken however, leaving a gaping hole in the stone of the
+floor.
+"
 A
 "enter jump"
 "hole"
 "acode( room, 2 );
-
-loop( followers ) {
-
-  ch = rch;
-
-  acode( room, 2 );
-
-}
-
-"
+loop( followers ) {
+  ch = rch;
+  acode( room, 2 );
+}
+"
 !
 0 0 0
 A
 ""
 ""
 "if( !is_sleeping( ch ) && !is_exhausted( ch ) && !is_resting( ch ) ) {
-
-  act_tochar( #enter, ch );
-
-  act_notchar( #nenter, ch );
-
-  transfer( ch, find_room( 93065 ) );
-
-  act_notchar( #nappear, ch );
-
-  act_tochar( #here, ch );
-
-}
-
-"
+  act_tochar( #enter, ch );
+  act_notchar( #nenter, ch );
+  transfer( ch, find_room( 93065 ) );
+  act_notchar( #nappear, ch );
+  act_tochar( #here, ch );
+}
+"
 E
 "enter"
 "You hop into the dark hole in the floor.
-
-"
+"
 E
 "nenter"
 "$n hops into the hole left by the broken toilet fixture.
-
-"
+"
 E
 "nappear"
 "$n comes falling in from the hole above, landing in the sewage with a splash.
-
-"
+"
 E
 "here"
 "You land with a splash in a pool of sewage!
-
-"
+"
 !
 0 0 0
 4753 17 1509949540 -2 0
@@ -2507,23 +1985,15 @@ S
 #93065
 "Beneath a Toilet - Crevasse of Sewage"
 "Globs of slime-mold and ancient human filth drip down the slick walls of this
-
-dark crevasse, pooling in the bottom.  The sludge is about two feet deep,
-
-thick as porridge and probably far less tasty.  East to west, the crevasse is
-
-about thirty-five feet long, while its north-south width is only about ten
-
-feet.  Set into the stone of the cavern wall to the north are the rusty iron
-
-rungs of a service ladder, which leads up to a bright hole in the ceiling.
-
-"
+dark crevasse, pooling in the bottom.  The sludge is about two feet deep,
+thick as porridge and probably far less tasty.  East to west, the crevasse is
+about thirty-five feet long, while its north-south width is only about ten
+feet.  Set into the stone of the cavern wall to the north are the rusty iron
+rungs of a service ladder, which leads up to a bright hole in the ceiling.
+"
 "[Kotoktok] have him pop out in entering acode, wait(), glughgoruk! disease/blind room, then leap
-
-[Kotoktok] search yields key to mali's room
-
-"
+[Kotoktok] search yields key to mali's room
+"
 301465604 0
 0 7 0
 D4
@@ -2555,27 +2025,17 @@ S
 #93066
 "Bedchamber"
 "Cushions lie all over the cool stone floor in this room, a variety of rich
-
-colors and textures adorning their fabric.  Warm-hued wall-hangings are
-
-suspended along every side of the room, bare wall only visible through
-
-openings in the tapestries where torch-filled sconces are set.  A complex,
-
-beautiful chandelier of iron and crystal hangs directly above a lavish, soft-
-
-looking bed in the center of the room.  The only exit is a small stone door
-
-set in the center of the western wall.
-
-"
+colors and textures adorning their fabric.  Warm-hued wall-hangings are
+suspended along every side of the room, bare wall only visible through
+openings in the tapestries where torch-filled sconces are set.  A complex,
+beautiful chandelier of iron and crystal hangs directly above a lavish, soft-
+looking bed in the center of the room.  The only exit is a small stone door
+set in the center of the western wall.
+"
 "[Kotoktok] comfort woman for captain
-
-[Kotoktok] she is magically talented, trapped here.
-
-[Kotoktok] quest to get her out, old knows wassup
-
-"
+[Kotoktok] she is magically talented, trapped here.
+[Kotoktok] quest to get her out, old knows wassup
+"
 301465604 0
 0 7 0
 D3
@@ -2585,27 +2045,21 @@ D3
 E
 "pillows cushions floor"
 "Ranging from deep burgundy to teal, most of the pillows are soft pastels.
-
-While some are silk, others are plush, corded cloth which looks like it would
-
-absorb anything that touches it.
-
-"
+While some are silk, others are plush, corded cloth which looks like it would
+absorb anything that touches it.
+"
 E
 "wall-hangings hangings tapestry tapestries"
 "No description.
-
-"
+"
 E
 "torch-filled sconces"
 "No description.
-
-"
+"
 E
 "chandelier"
 "No description.
-
-"
+"
 2895 9 1509949540 3 0
 4874 17 1509949540 -2 0
 -1
@@ -2614,13 +2068,10 @@ S
 #93067
 "Side chamber - A Child's Room"
 "Walls paneled with wood and hung with white canvas ensconce this small, hidden room.
-
-"
+"
 "[Kotoktok] altar boy knows about key dropped in toilet
-
-[Kotoktok] need to get into mali's room
-
-"
+[Kotoktok] need to get into mali's room
+"
 301465604 0
 0 7 0
 D1

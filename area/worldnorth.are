@@ -10,8 +10,7 @@
 #57250
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -29,8 +28,7 @@ S
 #57251
 "Ravine"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 12 9 0
@@ -48,21 +46,14 @@ S
 #57252
 "Cairn Mountain Road"
 "The road begins to slope downwards to the north, zigzagging gently down the
-
-face of the mountain.  Boulders and trees line both sides of the road as far
-
-north as you can see; a thin haze blocks out any panorama in that direction.
-
-There is an intersection to the south, where the road forks west, while part
-
-of it continues south.  A small sign is just visible there.
-
-"
+face of the mountain.  Boulders and trees line both sides of the road as far
+north as you can see; a thin haze blocks out any panorama in that direction.
+There is an intersection to the south, where the road forks west, while part
+of it continues south.  A small sign is just visible there.
+"
 "[Kotoktok] caer's rdescs are shit, deleting them
-
-[Kotoktok] -
-
-"
+[Kotoktok] -
+"
 301465600 0
 12 9 0
 D2
@@ -76,39 +67,26 @@ D5
 E
 "boulders trees 1 north"
 "Boulders of grey stone ranging from the size of a dog to that of a mighty
-
-elephant are nestled against the small shoulder of the road, blocking passage.
-
-Slightly stunted fir trees dusted in snow and ice manage to poke out between
-
-the boulders, and more are visible just beyond them.
-
-"
+elephant are nestled against the small shoulder of the road, blocking passage.
+Slightly stunted fir trees dusted in snow and ice manage to poke out between
+the boulders, and more are visible just beyond them.
+"
 -1
 S
 
 #57253
 "Cairn Mountain Road - Steep Slope"
 "Perched precipitously on the steep grade of a mountainous slope, the road
-
-weaves back and forth along the face, keeping its downward angle to a
-
-reasonable value.  Mostly rock-hard gravel and cobbles, the road appears
-
-capable of standing the test of time.  Large rocks and snow-flocked fir trees
-
-serve as borders along each side of the road.  The mountain way continues
-
-north and downwards for a fair distance, before leveling out to some degree.
-
-Up the mountain to the south, the road reaches a high point and then flattens.
-
-"
+weaves back and forth along the face, keeping its downward angle to a
+reasonable value.  Mostly rock-hard gravel and cobbles, the road appears
+capable of standing the test of time.  Large rocks and snow-flocked fir trees
+serve as borders along each side of the road.  The mountain way continues
+north and downwards for a fair distance, before leveling out to some degree.
+Up the mountain to the south, the road reaches a high point and then flattens.
+"
 "[Kotoktok] -
-
-[Kotoktok] altitude 1
-
-"
+[Kotoktok] altitude 1
+"
 301465600 0
 3 9 0
 D4
@@ -122,25 +100,17 @@ D5
 E
 "road"
 "This well-built road is composed of cobbles spaced no more than half a foot
-
-apart, and filled between with dirt and gravel.  Time and use have packed the
-
-gravel between the cobbles so that it is rock-hard, able to withstand wind,
-
-rain, and snow without eroding.
-
-"
+apart, and filled between with dirt and gravel.  Time and use have packed the
+gravel between the cobbles so that it is rock-hard, able to withstand wind,
+rain, and snow without eroding.
+"
 E
 "rocks fur trees borders"
 "Boulders both large and small are piled along each side of the road, probably
-
-remnants from its construction.  Between and just beyond the boulders, fir
-
-trees grow in profusion, their dark green silhouettes softened by a dusting of
-
-snow.
-
-"
+remnants from its construction.  Between and just beyond the boulders, fir
+trees grow in profusion, their dark green silhouettes softened by a dusting of
+snow.
+"
 1974 17 1509949490 -2 0
 -1
 S
@@ -148,23 +118,15 @@ S
 #57254
 "Cairn Mountain Road - Steep Slope"
 "The road runs north to south here, beginning to wind its way up a steep
-
-mountain face to the south.  Northwards, the mountain way runs more or less
-
-flat along the side of a slope to the west.  Heavy forest of fir and pine
-
-swaths the slope above to the west, and below to the east where a sort of
-
-valley is nestled between this ridge and the mountain which runs parallel to
-
-the east.
-
-"
+mountain face to the south.  Northwards, the mountain way runs more or less
+flat along the side of a slope to the west.  Heavy forest of fir and pine
+swaths the slope above to the west, and below to the east where a sort of
+valley is nestled between this ridge and the mountain which runs parallel to
+the east.
+"
 "[Kotoktok] -
-
-[Kotoktok] altitude 0
-
-"
+[Kotoktok] altitude 0
+"
 301465600 0
 12 9 0
 D0
@@ -178,46 +140,31 @@ D4
 E
 "slope 1 west"
 "The western ridge is very steep and rocky next to the road, looking nearly
-
-impossible to climb.  Above the road grows a thick forest of healthy fir and
-
-pine, thriving in the somewhat sheltered groove between this slope and the one
-
-to the east.
-
-"
+impossible to climb.  Above the road grows a thick forest of healthy fir and
+pine, thriving in the somewhat sheltered groove between this slope and the one
+to the east.
+"
 E
 "valley 1 east"
 "Rocks and trees crowd closely together on the eastern side of road here,
-
-blocking passage.  This slope and another forest-blanketed mountain to the
-
-east shelter a small valley to the east, where fir and pine grow tall and
-
-strong.
-
-"
+blocking passage.  This slope and another forest-blanketed mountain to the
+east shelter a small valley to the east, where fir and pine grow tall and
+strong.
+"
 -1
 S
 
 #57255
 "Cairn Mountain Road"
 "The road is cut into the steep mountainside here, the slopes above and below
-
-it too angled to venture on to.  The ridge above curves eastward here, forcing
-
-the mountain way to bend with it.  Stone cobbles packed with dirt and gravel
-
-make up the road, which looks exceedingly durable.  The road continues south,
-
-where it reaches a steep slope and begins to climb, zigzagging gradually
-
-upwards.
-
-"
+it too angled to venture on to.  The ridge above curves eastward here, forcing
+the mountain way to bend with it.  Stone cobbles packed with dirt and gravel
+make up the road, which looks exceedingly durable.  The road continues south,
+where it reaches a steep slope and begins to climb, zigzagging gradually
+upwards.
+"
 "[Kotoktok] -
-
-"
+"
 301465600 0
 12 9 0
 D1
@@ -231,46 +178,31 @@ D2
 E
 "mountainside ridge"
 "The mountainside below is heavily forested, and meets another mountain to the
-
-east to form a small valley.  Smaller fir and pine trees cover the slope above
-
-the road, which comes to a rocky ridge, swaddled in mist.
-
-"
+east to form a small valley.  Smaller fir and pine trees cover the slope above
+the road, which comes to a rocky ridge, swaddled in mist.
+"
 E
 "road stone cobbles dirt gravel"
 "Smooth, rounded stones ranging from solid grey to speckled red-brown are
-
-embedded in hard-packed gravel and dirt to form the road here.  The road is so
-
-solidly packed that wind and water have failed to leave any evidence of
-
-erosion upon it.
-
-"
+embedded in hard-packed gravel and dirt to form the road here.  The road is so
+solidly packed that wind and water have failed to leave any evidence of
+erosion upon it.
+"
 -1
 S
 
 #57256
 "Cairn Mountain Road"
 "A steep-walled valley opens up to the south and east, sheltered by this slope
-
-on the west, and another mountain to the east.  Pine and fir trees grow
-
-thickly below the road and in the ravine, taking advantage of the shelter
-
-there.  The cobbled road here is cut right into the side of a mountainous
-
-ridge, and follows that ridge north and west, staying more or less flat.
-
-Piles of rocks hem in the path on both sides, likely remnants from when the
-
-road was hewed from the rock.
-
-"
+on the west, and another mountain to the east.  Pine and fir trees grow
+thickly below the road and in the ravine, taking advantage of the shelter
+there.  The cobbled road here is cut right into the side of a mountainous
+ridge, and follows that ridge north and west, staying more or less flat.
+Piles of rocks hem in the path on both sides, likely remnants from when the
+road was hewed from the rock.
+"
 "[Kotoktok] -
-
-"
+"
 301465600 0
 12 9 0
 D0
@@ -284,46 +216,31 @@ D3
 E
 "valley 1 south 1 east"
 "Sheer walls of evergreen trees angle downwards below this ridge, and meet the
-
-foot of a similar ridge to the east to form a small valley.
-
-"
+foot of a similar ridge to the east to form a small valley.
+"
 E
 "piles rocks"
 "Anywhere from rocks the size of a man's head, to cottage-sized boulders, the
-
-stone debris on each side of the trail has been smoothed by wind, rain, and
-
-snow.  The jumbled stones are placed closely together, preventing one from
-
-straying from the road.
-
-"
+stone debris on each side of the trail has been smoothed by wind, rain, and
+snow.  The jumbled stones are placed closely together, preventing one from
+straying from the road.
+"
 -1
 S
 
 #57257
 "Cairn Mountain Road"
 "The white-grey rock of the ridge above and to the west is wreathed in small
-
-tendrils of mist, inaccessible and austere.  Below the bare stone, a thick
-
-forest of fir and pine covers the slope until it is broken by this road.
-
-Carved into the stone of the mountain itself, the road is cobbled with smooth
-
-stones, gravel packed between them.  Another ridge to the east runs parallel
-
-to this one, nestled against it to form a small, wooded valley.  To the south,
-
-the road bends westward with the mountain, while to the north it dips down
-
-into the valley.
-
-"
+tendrils of mist, inaccessible and austere.  Below the bare stone, a thick
+forest of fir and pine covers the slope until it is broken by this road.
+Carved into the stone of the mountain itself, the road is cobbled with smooth
+stones, gravel packed between them.  Another ridge to the east runs parallel
+to this one, nestled against it to form a small, wooded valley.  To the south,
+the road bends westward with the mountain, while to the north it dips down
+into the valley.
+"
 "[Kotoktok] -
-
-"
+"
 301465600 0
 12 9 0
 D0
@@ -337,42 +254,29 @@ D2
 E
 "ridge"
 "The grey stone of the ridge might be granite, but it is difficult to tell from
-
-here.  Small wisps of cloud periodically obscure it.
-
-"
+here.  Small wisps of cloud periodically obscure it.
+"
 E
 "wooded forested valley"
 "The opposing ridge to the east runs parallel to this one, and the slopes of
-
-the mountains meet to form a valley at their feet.  A thick, dark green forest
-
-of fir and pine covers the ravine-like valley's floor, obscuring it from
-
-vision.
-
-"
+the mountains meet to form a valley at their feet.  A thick, dark green forest
+of fir and pine covers the ravine-like valley's floor, obscuring it from
+vision.
+"
 -1
 S
 
 #57258
 "Cairn Mountain Road"
 "A wide, cobbled path runs along the western mountain, climbing to the south,
-
-and dipping down to the north and east.  The slope into which the road is
-
-carved is heavily forested both above and below the road itself.  Rocky rubble
-
-is piled along each side of the road, with small, stunted trees growing
-
-between the stones.  A small valley is visible to the east, and the road
-
-appears to descend into it as it curves down and north.
-
-"
+and dipping down to the north and east.  The slope into which the road is
+carved is heavily forested both above and below the road itself.  Rocky rubble
+is piled along each side of the road, with small, stunted trees growing
+between the stones.  A small valley is visible to the east, and the road
+appears to descend into it as it curves down and north.
+"
 "[Kotoktok] -
-
-"
+"
 301465600 0
 12 9 0
 D2
@@ -386,44 +290,30 @@ D5
 E
 "wide cobbled path road rocky rubble"
 "The road is composed of smooth, rounded stones set into a rock-hard cement of
-
-dirt and gravel.  Piles of boulders block passage on each side of the road,
-
-remnants from when the road was cut into the stone of the mountain itself.
-
-"
+dirt and gravel.  Piles of boulders block passage on each side of the road,
+remnants from when the road was cut into the stone of the mountain itself.
+"
 E
 "valley 1 east"
 "The valley is nestled in the groove between this mountainous ridge and the one
-
-to the east.  Pine and fir trees grow thickly there, completely obscuring the
-
-forest floor.
-
-"
+to the east.  Pine and fir trees grow thickly there, completely obscuring the
+forest floor.
+"
 -1
 S
 
 #57259
 "Cairn Mountain Road - Valley"
 "This is the edge of a small valley, nestled between forested ridges to the
-
-east and west.  Pine and fir trees grow in profusion to the north and
-
-southeast, completely covering the floor of the valley.  Stones, gravel and
-
-dirt have been packed together here, forming a path which runs east and west
-
-through the forest.  The road curves up the side of a ridge to the west,
-
-climbing south into the mountains.
-
-"
+east and west.  Pine and fir trees grow in profusion to the north and
+southeast, completely covering the floor of the valley.  Stones, gravel and
+dirt have been packed together here, forming a path which runs east and west
+through the forest.  The road curves up the side of a ridge to the west,
+climbing south into the mountains.
+"
 "[Kotoktok] altitude -1
-
-[Kotoktok] -
-
-"
+[Kotoktok] -
+"
 301465600 0
 12 9 0
 D1
@@ -437,44 +327,30 @@ D4
 E
 "pine fir trees 1 north 1 south"
 "The trees to the north and south of the road grow straight and tall; their
-
-growth has not been stunted by harsh winds like that of trees near the peak of
-
-each ridge.
-
-"
+growth has not been stunted by harsh winds like that of trees near the peak of
+each ridge.
+"
 E
 "ridge 1 west"
 "The mountainous ridge is forested on the lower slopes, but bare grey-white
-
-stone near its peak.  The road climbs about halfway up the ridge, then levels
-
-out and continues south along the ridge.
-
-"
+stone near its peak.  The road climbs about halfway up the ridge, then levels
+out and continues south along the ridge.
+"
 -1
 S
 
 #57260
 "Cairn Mountain Road - Valley"
 "Tall, strong conifers grow closely together to the south; their thick trunks
-
-combined with tangled underbrush block passage.  A small clearing in the
-
-forest to the east is covered in coarse mountain grass, and is hemmed in on
-
-all sides by tall evergreens.  The solid, rock-paved road bends through the
-
-forested valley, running north and west from here.
-
-"
+combined with tangled underbrush block passage.  A small clearing in the
+forest to the east is covered in coarse mountain grass, and is hemmed in on
+all sides by tall evergreens.  The solid, rock-paved road bends through the
+forested valley, running north and west from here.
+"
 "[Kotoktok] acode to get into the valley south of here, have an interesting
-
-encounter or pop.  maybe have bandits randomly leap out of their valley
-
-hideout and ambush characters over a certain level?
-
-"
+encounter or pop.  maybe have bandits randomly leap out of their valley
+hideout and ambush characters over a certain level?
+"
 301465608 0
 12 9 0
 D0
@@ -496,35 +372,24 @@ D3
 E
 "conifers underbrush 1 south"
 "The boles of large trees stand side by side, the spaces between them filled
-
-completely with dense underbrush.  However, there is some evidence of
-
-disturbance between two of the larger trees.  Perhaps the forest isn't as
-
-impenetrable as it first seems.
-
-"
+completely with dense underbrush.  However, there is some evidence of
+disturbance between two of the larger trees.  Perhaps the forest isn't as
+impenetrable as it first seems.
+"
 -1
 S
 
 #57261
 "Valley in Cairn Mountains - Clearing"
 "Coarse, grey-green grass grows in a thin layer on the rocky soil here, showing
-
-the silver undersides of the blades with each puff of wind.  A thick forest of
-
-pine and fir trees hems the clearing in on the north and south, while a steep,
-
-heavily wooded slope blocks passage to the east.  To the west, a wide,
-
-distinct road bends through the forest, coming straight towards this clearing
-
-and then curving abruptly north at its edge.
-
-"
+the silver undersides of the blades with each puff of wind.  A thick forest of
+pine and fir trees hems the clearing in on the north and south, while a steep,
+heavily wooded slope blocks passage to the east.  To the west, a wide,
+distinct road bends through the forest, coming straight towards this clearing
+and then curving abruptly north at its edge.
+"
 "[Kotoktok] -
-
-"
+"
 301465600 0
 3 9 0
 D3
@@ -534,32 +399,22 @@ D3
 E
 "coarse grey-green grass"
 "The grass is a pale, pastel shade of green on top, but a layer of fuzzy hairs
-
-shines silver underneath.  It more or less covers the ground, although it
-
-grows thinly and many rocks protrude above it.
-
-"
+shines silver underneath.  It more or less covers the ground, although it
+grows thinly and many rocks protrude above it.
+"
 E
 "thick forest pine fir 1 north 1 south"
 "Various species of conifer grow side by side in the forest to the north and
-
-south of the clearing.  Small, young trees grow closely together near the edge
-
-of the wood, making passage impossible.  Older trees reach towards the sky
-
-just behind them.
-
-"
+south of the clearing.  Small, young trees grow closely together near the edge
+of the wood, making passage impossible.  Older trees reach towards the sky
+just behind them.
+"
 E
 "steep slope 1 east"
 "Hardy, gnarled trees cling to the rocky slope that towers to the east,
-
-covering it until about halfway up, where they finally fail and nothing adorns
-
-the grey-white stone.
-
-"
+covering it until about halfway up, where they finally fail and nothing adorns
+the grey-white stone.
+"
 2509 9 1509949540 3 0
 -1
 S
@@ -567,23 +422,15 @@ S
 #57262
 "Edge of Valley - Vista"
 "A breath-taking view is spread out to the north: miles of mountains and
-
-foothills stretching down to the rugged, rocky coast of an expansive ocean.
-
-The road zigzags down a steep slope to the north, each side of it lined with
-
-stony rubble.  At the base of the slope is the rugged spine of a ridge, onto
-
-which the road continues.  To the south, the path leads between rows of tall,
-
-healthy conifer trees into a small valley, protected on each side by a
-
-forested ridge.
-
-"
+foothills stretching down to the rugged, rocky coast of an expansive ocean.
+The road zigzags down a steep slope to the north, each side of it lined with
+stony rubble.  At the base of the slope is the rugged spine of a ridge, onto
+which the road continues.  To the south, the path leads between rows of tall,
+healthy conifer trees into a small valley, protected on each side by a
+forested ridge.
+"
 "[Kotoktok] -
-
-"
+"
 301465600 0
 12 9 0
 D2
@@ -597,35 +444,24 @@ D5
 E
 "view foothills ocean coast 1 north"
 "The mountains just north and below are clad in dark green, nearly black forest
-
-near the base, but their crests are stark grey stone.  Beyond them, foothills
-
-covered in lighter green forest eventually give way to the light pastels of
-
-coastal scrub, and then the ever-changing waters of a vast ocean inlet.
-
-"
+near the base, but their crests are stark grey stone.  Beyond them, foothills
+covered in lighter green forest eventually give way to the light pastels of
+coastal scrub, and then the ever-changing waters of a vast ocean inlet.
+"
 -1
 S
 
 #57263
 "Spine of a Rugged Ridge"
 "On each side of the road to the east and west is a steep, sparsely forested
-
-slope; likely a fatal fall.  The path here runs north along a rough, rocky
-
-ridge, its cobbled surface the highest point of the rock formation.  To the
-
-south, the road winds back and forth up a steep, rocky face and then into a
-
-small valley.  Several stunted conifer trees grow on the western edge of the
-
-road, the largest one being less than ten feet in height.
-
-"
+slope; likely a fatal fall.  The path here runs north along a rough, rocky
+ridge, its cobbled surface the highest point of the rock formation.  To the
+south, the road winds back and forth up a steep, rocky face and then into a
+small valley.  Several stunted conifer trees grow on the western edge of the
+road, the largest one being less than ten feet in height.
+"
 "[Kotoktok] altitude -2
-
-"
+"
 301465600 0
 12 9 0
 D0
@@ -639,39 +475,27 @@ D4
 E
 "road"
 "Made of rounded stones about the size of a human head cemented together with
-
-sand and gravel, the sturdy road runs north and south along the ridge.
-
-"
+sand and gravel, the sturdy road runs north and south along the ridge.
+"
 E
 "stunted conifer trees 1 west"
 "Several small, gnarled conifer trees can be seen off the west side of the
-
-road, clinging desperately to the steep slope.  Their bark has been smoothed
-
-by the elements, and their branches are bare but for a few tufts of green.
-
-"
+road, clinging desperately to the steep slope.  Their bark has been smoothed
+by the elements, and their branches are bare but for a few tufts of green.
+"
 -1
 S
 
 #57264
 "Spine of a Rugged Ridge"
 "The cobbled road continues north and south along the narrow spine of a
-
-treacherously steep ridge.  Few trees are capable of surviving along this
-
-harsh path; the ones that have survived thus far are twisted and small.  The
-
-gravel between the smooth, rounded stones of the road is somewhat loose here
-
-and doesn't hold the road together completely.  There are several rounded gaps
-
-on each side of the road where a rock has come away and fallen down the steep
-
-slope.
-
-"
+treacherously steep ridge.  Few trees are capable of surviving along this
+harsh path; the ones that have survived thus far are twisted and small.  The
+gravel between the smooth, rounded stones of the road is somewhat loose here
+and doesn't hold the road together completely.  There are several rounded gaps
+on each side of the road where a rock has come away and fallen down the steep
+slope.
+"
 ""
 301465600 0
 12 9 0
@@ -686,34 +510,23 @@ D2
 E
 "rounded gaps 1 road"
 "Several rocks have left gaps about the size of a man's head where they fell
-
-away, tumbling down the treacherous side of the ridge.  The cobbles around the
-
-edges of the road seem to be loose and precarious, while middle of the road
-
-looks very stable.
-
-"
+away, tumbling down the treacherous side of the ridge.  The cobbles around the
+edges of the road seem to be loose and precarious, while middle of the road
+looks very stable.
+"
 -1
 S
 
 #57265
 "Spine of a Rugged Ridge"
 "More mountains and then foothills can be seen to the north, eventually meeting
-
-a rocky coast.  The ridge upon which this paved road is perched snakes south
-
-and east from here.  To the south, it rises steadily until it meets a steep
-
-slope and zigzags upwards.  The road slopes gently down to the east, following
-
-the spine of the ridge.  The steep sides of the ridge are home to but a few
-
-trees, all of which are gnarled and short from years of exposure to harsh
-
-winds.
-
-"
+a rocky coast.  The ridge upon which this paved road is perched snakes south
+and east from here.  To the south, it rises steadily until it meets a steep
+slope and zigzags upwards.  The road slopes gently down to the east, following
+the spine of the ridge.  The steep sides of the ridge are home to but a few
+trees, all of which are gnarled and short from years of exposure to harsh
+winds.
+"
 ""
 301465600 0
 12 9 0
@@ -728,29 +541,22 @@ D2
 E
 "mountains foothills rocky coast 1 north"
 "Dark green, almost black slopes topped with grey-white stone and some snow are
-
-visible just below and to the north.  These mountains then soften to grey-
-
-green to bright green foothills followed by the pastels of coastal chaparral
-
-and finally a crisp, mostly rocky coast.
-
-"
+visible just below and to the north.  These mountains then soften to grey-
+green to bright green foothills followed by the pastels of coastal chaparral
+and finally a crisp, mostly rocky coast.
+"
 E
 "trees"
 "Several trees are visible just below the road to the south and north, about
-
-five feet in height and exceedingly weathered.
-
-"
+five feet in height and exceedingly weathered.
+"
 -1
 S
 
 #57266
 "Pathway"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 3 9 0
@@ -760,20 +566,13 @@ S
 #57267
 "Spine of a Rugged Ridge"
 "The well-built, cobbled road continues east and west from here, following the
-
-apex of a mountainous ridge.  An irregular gap a handspan wide runs the
-
-breadth of the road, where water has seeped between the stones and frozen,
-
-forcing them apart.  A glimpse of foothills and the rocky coastline of an
-
-ocean is barely visible over the mountains to the north; the view would be
-
-obscured if you were to travel any further downhill eastwards.  The road goes
-
-gently upwards to the west, and then bends south, climbing steadily higher.
-
-"
+apex of a mountainous ridge.  An irregular gap a handspan wide runs the
+breadth of the road, where water has seeped between the stones and frozen,
+forcing them apart.  A glimpse of foothills and the rocky coastline of an
+ocean is barely visible over the mountains to the north; the view would be
+obscured if you were to travel any further downhill eastwards.  The road goes
+gently upwards to the west, and then bends south, climbing steadily higher.
+"
 ""
 301465600 0
 12 9 0
@@ -788,37 +587,26 @@ D3
 E
 "gap"
 "Twisting across the width of the road, the crack looks to be over a foot deep.
-
-The edges of it are jagged and crumbling.
-
-"
+The edges of it are jagged and crumbling.
+"
 E
 "foothills coastline 1 north"
 "To the north, the mountains give way to dark foothills and then the pastels of
-
-coastal vegetation.  The rocky coastline of a large bay is just visible.
-
-"
+coastal vegetation.  The rocky coastline of a large bay is just visible.
+"
 -1
 S
 
 #57268
 "Spine of a Rugged Ridge"
 "A steep, dangerous fall awaits where the wall of the ridge plummets rapidly on
-
-each side of the road to the north and south.  The flattened spine of the
-
-mountain is only just as wide as the stone-paved road; carelessness here could
-
-easily result in death.  Stunted, wizened conifers grow sparsely on the upper
-
-slope of the ridge next to the road.  Further down the slope, taller healthy-
-
-looking fir and pine trees grow in profusion.  East from here, the road angles
-
-gradually downwards, eventually bending north.  It climbs steadily to the west.
-
-"
+each side of the road to the north and south.  The flattened spine of the
+mountain is only just as wide as the stone-paved road; carelessness here could
+easily result in death.  Stunted, wizened conifers grow sparsely on the upper
+slope of the ridge next to the road.  Further down the slope, taller healthy-
+looking fir and pine trees grow in profusion.  East from here, the road angles
+gradually downwards, eventually bending north.  It climbs steadily to the west.
+"
 ""
 301465600 0
 12 9 0
@@ -833,34 +621,23 @@ D3
 E
 "stunted wizened conifers"
 "Growing on the slope just off the road to the north and south, these small
-
-evergreens are gnarled and have only small tufts of needles.  Although the
-
-size of young trees, they have most likely seen hundreds of years of harsh
-
-weather.
-
-"
+evergreens are gnarled and have only small tufts of needles.  Although the
+size of young trees, they have most likely seen hundreds of years of harsh
+weather.
+"
 -1
 S
 
 #57269
 "Spine of a Rugged Ridge"
 "Dark green, almost black treetops are visible at the bottom of the steep slope
-
-to the east, covering the floor of a narrow valley.  The forest climbs the
-
-side of the ridge, but the growth becomes thinner and eventually disappears as
-
-it approaches the rocky spine.  To the south is a very narrow rocky gorge, and
-
-then forested mountains with snow-capped peaks.  The road is composed of
-
-smooth, rounded stones set in a cement of dirt and gravel.  It slopes downward
-
-to the north, and climbs steadily higher to the west.
-
-"
+to the east, covering the floor of a narrow valley.  The forest climbs the
+side of the ridge, but the growth becomes thinner and eventually disappears as
+it approaches the rocky spine.  To the south is a very narrow rocky gorge, and
+then forested mountains with snow-capped peaks.  The road is composed of
+smooth, rounded stones set in a cement of dirt and gravel.  It slopes downward
+to the north, and climbs steadily higher to the west.
+"
 ""
 301465600 0
 12 9 0
@@ -875,43 +652,29 @@ D3
 E
 "valley 1 east"
 "Staggered layers of trees on the slope to the east eventually level out on the
-
-floor of a small, heavily wooded valley.  Nearly all the trees appear to be
-
-evergreen, but a very few appear to be deciduous and are mostly clustered
-
-towards the center of the valley.
-
-"
+floor of a small, heavily wooded valley.  Nearly all the trees appear to be
+evergreen, but a very few appear to be deciduous and are mostly clustered
+towards the center of the valley.
+"
 E
 "rocky gorge 1 south"
 "The gorge follows along the south of the ridge to the west, its other side the
-
-rocky face of a mountain to the south.  Large boulders both rounded and jagged
-
-are jumbled at the bottom of the gorge.
-
-"
+rocky face of a mountain to the south.  Large boulders both rounded and jagged
+are jumbled at the bottom of the gorge.
+"
 -1
 S
 
 #57270
 "Spine of a Rugged Ridge"
 "The solid, rocky mountain way bends with the snaking ridge here, perched at
-
-its very apex.  A small, forested valley opens up to the east, nestled between
-
-this ridge and a mountain on the other side.  To the north can be seen more
-
-mountains, their peaks only slightly higher than the road.  South from here,
-
-the road winds its way gradually up into the mountains, following the spine of
-
-this ridge.  It angles gently down to the west, and then drops away and can be
-
-seen no more.
-
-"
+its very apex.  A small, forested valley opens up to the east, nestled between
+this ridge and a mountain on the other side.  To the north can be seen more
+mountains, their peaks only slightly higher than the road.  South from here,
+the road winds its way gradually up into the mountains, following the spine of
+this ridge.  It angles gently down to the west, and then drops away and can be
+seen no more.
+"
 ""
 301465600 0
 12 9 0
@@ -926,34 +689,23 @@ D3
 E
 "valley 1 east"
 "Although mostly populated by tall, stately conifers, the valley to the east is
-
-also home to various species of deciduous trees, their more rounded tops
-
-standing out against the pointed ones of pine and fir.  The mountain forming
-
-the valley wall to the east is green-black with trees on its lower slope, and
-
-stark grey-white stone at its peak.
-
-"
+also home to various species of deciduous trees, their more rounded tops
+standing out against the pointed ones of pine and fir.  The mountain forming
+the valley wall to the east is green-black with trees on its lower slope, and
+stark grey-white stone at its peak.
+"
 -1
 S
 
 #57271
 "Spine of a Rugged Ridge"
 "A steep, lightly forested slope drops away to the west, the road turning
-
-sharply back and forth down its face until it finally levels out.  The slope
-
-is covered in loose-looking white-grey stone and gnarled conifer trees.  North
-
-from here is a narrow, heavily forested valley, into which the road
-
-disappears.  The stone-paved mountain way climbs steadily higher to the east,
-
-perched precariously on the spine of a rugged ridge.
-
-"
+sharply back and forth down its face until it finally levels out.  The slope
+is covered in loose-looking white-grey stone and gnarled conifer trees.  North
+from here is a narrow, heavily forested valley, into which the road
+disappears.  The stone-paved mountain way climbs steadily higher to the east,
+perched precariously on the spine of a rugged ridge.
+"
 ""
 301465600 0
 12 9 0
@@ -971,23 +723,15 @@ S
 #57272
 "Foot of a Steep Incline"
 "The edge of a thick, heavy forest rises in the valley to the north, the path
-
-leading straight into the heart of it.  The road here is cobbled, its smooth,
-
-rounded stones set in gravel and dirt.  It continues in a similar fashion as
-
-it zigzags up the steep slope to the south, but is not cobbled to the north;
-
-it is rather composed of rock-hard, stony soil.  The forest to the north is a
-
-rich medley of evergreen and deciduous trees.  Walnut, oak, pine, fir, and
-
-beech trees all crowd together, heavily shading the path that leads under them.
-
-"
+leading straight into the heart of it.  The road here is cobbled, its smooth,
+rounded stones set in gravel and dirt.  It continues in a similar fashion as
+it zigzags up the steep slope to the south, but is not cobbled to the north;
+it is rather composed of rock-hard, stony soil.  The forest to the north is a
+rich medley of evergreen and deciduous trees.  Walnut, oak, pine, fir, and
+beech trees all crowd together, heavily shading the path that leads under them.
+"
 "[Kotoktok] altitude -3
-
-"
+"
 301465600 0
 12 9 0
 D0
@@ -1001,46 +745,31 @@ D4
 E
 "edge forest 1 north"
 "The trees are tall and healthy, with few branches beneath the canopy, but a
-
-giant spread of foliage at their crowns.  The road to the north leads under
-
-the canopy, between their heavy trunks.
-
-"
+giant spread of foliage at their crowns.  The road to the north leads under
+the canopy, between their heavy trunks.
+"
 E
 "steep slope 1 south"
 "Many loose boulders and jagged rocks line the road as it climbs back and forth
-
-up the slope to the south.  Few trees grow on the steep incline; it is mostly
-
-bare stone.
-
-"
+up the slope to the south.  Few trees grow on the steep incline; it is mostly
+bare stone.
+"
 -1
 S
 
 #57273
 "Forested Valley"
 "The thick, bark-covered boles of tall trees crowd each side of the road here,
-
-a thin layer of underbrush covering the forest floor.  Overhead, leaves of
-
-deciduous trees and needles of evergreen mingle, creating a thin canopy which
-
-partially obscures the sky.  The rocky, hard-packed dirt road cuts north and
-
-south from here, its surface littered with springy dead needles and crunchy
-
-dried leaves.  To the south, a huge vertical gap opens up in the canopy where
-
-the forest ends, revealing the sky in all its majesty.  North leads further
-
-into the forest.
-
-"
+a thin layer of underbrush covering the forest floor.  Overhead, leaves of
+deciduous trees and needles of evergreen mingle, creating a thin canopy which
+partially obscures the sky.  The rocky, hard-packed dirt road cuts north and
+south from here, its surface littered with springy dead needles and crunchy
+dried leaves.  To the south, a huge vertical gap opens up in the canopy where
+the forest ends, revealing the sky in all its majesty.  North leads further
+into the forest.
+"
 "[Kotoktok] forest begins
-
-"
+"
 301465600 0
 24 9 0
 D0
@@ -1054,25 +783,20 @@ D2
 E
 "boles"
 "The tree trunks are thick and mostly bare of branches below the crowns.  Their
-
-bark ranges from light grey and smooth to rough and nearly black.
-
-"
+bark ranges from light grey and smooth to rough and nearly black.
+"
 E
 "forest floor underbrush"
 "The ground in the forest on both sides of the trail is largely free of shrubs,
-
-but is rather covered by a thick layer of dead leaves and pine needles.
-
-"
+but is rather covered by a thick layer of dead leaves and pine needles.
+"
 -1
 S
 
 #57274
 "Cairn Mountain Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 5 6 0
@@ -1082,18 +806,12 @@ S
 #57275
 "Forested Valley"
 "The rough dirt way bends east and south here against a rocky peak to the
-
-northwest.  The canopy in that direction is somewhat thin, and the grey-white
-
-stone top of the forested peak is clearly visible.  An unusually large oak
-
-grows just north of the road, arching over it protectively.  A gap in the
-
-forest can barely be made out to the south where the path exits the narrow
-
-valley.  To the east leads deeper into the dim forest.
-
-"
+northwest.  The canopy in that direction is somewhat thin, and the grey-white
+stone top of the forested peak is clearly visible.  An unusually large oak
+grows just north of the road, arching over it protectively.  A gap in the
+forest can barely be made out to the south where the path exits the narrow
+valley.  To the east leads deeper into the dim forest.
+"
 ""
 301465600 0
 24 9 0
@@ -1108,23 +826,16 @@ D2
 E
 "large oak tree 1 north"
 "The trunk at the base must be at least twelve feet in diameter, though it
-
-splits into three smaller boles about six feet from the ground.  Its branches
-
-are laden with acorns and dark green leaves, and evidence of squirrels is
-
-present in the form of shelled acorns on its branches.
-
-"
+splits into three smaller boles about six feet from the ground.  Its branches
+are laden with acorns and dark green leaves, and evidence of squirrels is
+present in the form of shelled acorns on its branches.
+"
 E
 "rocky peak 1 north west"
 "The rocky peak to the northwest of the path is heavily forested on its lower
-
-slopes, but by about halfway up it is mostly bare stone.  It looks to be too
-
-steep to climb safely.
-
-"
+slopes, but by about halfway up it is mostly bare stone.  It looks to be too
+steep to climb safely.
+"
 672 17 1509949540 -2 0
 -1
 S
@@ -1132,22 +843,14 @@ S
 #57276
 "Forested Valley"
 "The rocky lower slopes of the mountainous walls surrounding the valley are
-
-just visible between the widely-spaced trees to the north and south.  The
-
-towering trees next to the path grow completely straight, only a few of their
-
-longest branches at the top arching across the sky.  The road here is hard-
-
-packed dirt studded with rocks.  A thick blanket of needles and leaves covers
-
-the road, as well as the ground in the forest on each side, in which the
-
-undergrowth is very sparse.  The road bends north as it meets trees to the
-
-east, and south as it meets them to the west.
-
-"
+just visible between the widely-spaced trees to the north and south.  The
+towering trees next to the path grow completely straight, only a few of their
+longest branches at the top arching across the sky.  The road here is hard-
+packed dirt studded with rocks.  A thick blanket of needles and leaves covers
+the road, as well as the ground in the forest on each side, in which the
+undergrowth is very sparse.  The road bends north as it meets trees to the
+east, and south as it meets them to the west.
+"
 ""
 301465600 0
 24 9 0
@@ -1162,39 +865,27 @@ D3
 E
 "rocky lower slopes mountainous walls 1 north 1 south"
 "Some trees can be seen growing on the lower slopes of the mountains which
-
-close in this narrow, forested valley, but they are mostly bare stone.  Cracks
-
-and jagged edges run all the way up to the stony tops.
-
-"
+close in this narrow, forested valley, but they are mostly bare stone.  Cracks
+and jagged edges run all the way up to the stony tops.
+"
 E
 "road thick blanket needles leaves ground"
 "A springy layer of pine needles and dead leaves covers both the road and
-
-forest floor.  Earthy odors waft up from the ground, the pleasant decay
-
-scenting the air.
-
-"
+forest floor.  Earthy odors waft up from the ground, the pleasant decay
+scenting the air.
+"
 -1
 S
 
 #57277
 "Forested Valley"
 "An enormous pine tree grows in the forest to the east of the road here, its
-
-fragrant branches arching out over the trail.  Fallen pine needles blanket the
-
-ground in a springy, aromatic carpet, covering most of the road as well as the
-
-floor of the surrounding forest.  Trees of all kinds, ranging from austere
-
-firs to gnarled scrub oak, grow along the well-travelled dirt way.  The road
-
-continues north and west from here, cutting between the woods on both sides.
-
-"
+fragrant branches arching out over the trail.  Fallen pine needles blanket the
+ground in a springy, aromatic carpet, covering most of the road as well as the
+floor of the surrounding forest.  Trees of all kinds, ranging from austere
+firs to gnarled scrub oak, grow along the well-travelled dirt way.  The road
+continues north and west from here, cutting between the woods on both sides.
+"
 ""
 301465600 0
 24 9 0
@@ -1209,12 +900,9 @@ D3
 E
 "pine tree forest 1 east"
 "The pine tree is incredibly large, its bark-covered trunk over eight feet in
-
-diameter.  It climbs skywards, mostly free of branches until the very top,
-
-where a thick spread of dark green needles splays out over the trail.
-
-"
+diameter.  It climbs skywards, mostly free of branches until the very top,
+where a thick spread of dark green needles splays out over the trail.
+"
 685 17 1509949540 -2 0
 4727 17 1509949540 -2 0
 -1
@@ -1223,20 +911,13 @@ S
 #57278
 "Forested Valley"
 "Small chunks of rock and the roots of trees break the smooth surface of the
-
-road, which is swaddled in decaying leaves and pine needles.  Above, a
-
-corridor of clear sky is framed between the trees, giving it a beauty it may
-
-not have had were it seen alone.  To the east and west, semi-open forest with
-
-little underbrush lines the road, myriad different trees growing side by side.
-
-The road here runs north between the trees as far as the eye can see, while to
-
-the south it meets the forest and bends west.
-
-"
+road, which is swaddled in decaying leaves and pine needles.  Above, a
+corridor of clear sky is framed between the trees, giving it a beauty it may
+not have had were it seen alone.  To the east and west, semi-open forest with
+little underbrush lines the road, myriad different trees growing side by side.
+The road here runs north between the trees as far as the eye can see, while to
+the south it meets the forest and bends west.
+"
 ""
 301465600 0
 24 9 0
@@ -1251,44 +932,30 @@ D2
 E
 "chunks rock roots road"
 "On closer inspection, the road actually appears to be cobbled, but has been
-
-covered in soil by years of fallen leaves decaying upon it.  Roots branch out
-
-across the road's surface, spanning its entire width.
-
-"
+covered in soil by years of fallen leaves decaying upon it.  Roots branch out
+across the road's surface, spanning its entire width.
+"
 E
 "forest 1 east 1 west"
 "Deciduous and evergreen trees grow side by side in the forest around the road.
-
-Although the trees are far apart and much light can filter through the canopy,
-
-little underbrush is visible.
-
-"
+Although the trees are far apart and much light can filter through the canopy,
+little underbrush is visible.
+"
 -1
 S
 
 #57279
 "Forested Valley"
 "The road runs north and south between rich forest on both sides, its surface
-
-littered with dead leaves and brown pine needles.  The grey-white stone of the
-
-canyon wall to the east is just visible through the woods, climbing swiftly
-
-above the tallest trees, which obscure its upper slopes.  Tree roots
-
-crisscross the way, having pushed through the rock-hard soil to anchor
-
-themselves.  A large walnut tree hangs over the west side of the trail, its
-
-branches laden with tasty morsels.
-
-"
+littered with dead leaves and brown pine needles.  The grey-white stone of the
+canyon wall to the east is just visible through the woods, climbing swiftly
+above the tallest trees, which obscure its upper slopes.  Tree roots
+crisscross the way, having pushed through the rock-hard soil to anchor
+themselves.  A large walnut tree hangs over the west side of the trail, its
+branches laden with tasty morsels.
+"
 "[Kotoktok] walnut tree
-
-"
+"
 301465600 0
 24 9 0
 D0
@@ -1302,24 +969,18 @@ D2
 E
 "grey-white stone canyon wall 1 east"
 "The valley is bordered on the east by the rocky lower slopes of a mountain,
-
-barely visible through the trees.  They look too rugged to climb.
-
-"
+barely visible through the trees.  They look too rugged to climb.
+"
 E
 "roots"
 "Some of the roots protrude over a foot from the surface of the road, their
-
-bark-covered surfaces gnarled and worn.
-
-"
+bark-covered surfaces gnarled and worn.
+"
 E
 "large walnut 1 west"
 "The walnut tree towering over the west side of the trail is quite large for
-
-its species, and appears to be laden with fruit.
-
-"
+its species, and appears to be laden with fruit.
+"
 1136 17 1509949540 -2 0
 -1
 S
@@ -1327,18 +988,12 @@ S
 #57280
 "Forested Valley"
 "A large pine to the east towers far over the other trees in the area, its
-
-grey-barked bole nearly twice as thick as the trunks of the surrounding trees.
-
-A large root extends from the base of pine and crosses the path, protruding
-
-nearly two feet from the surface of the hard-pack dirt road.  The road cuts
-
-north and south through the dim forest under a long shard of open sky,
-
-revealed where the canopy is broken by the presence of the path.
-
-"
+grey-barked bole nearly twice as thick as the trunks of the surrounding trees.
+A large root extends from the base of pine and crosses the path, protruding
+nearly two feet from the surface of the hard-pack dirt road.  The road cuts
+north and south through the dim forest under a long shard of open sky,
+revealed where the canopy is broken by the presence of the path.
+"
 ""
 301465600 0
 24 9 0
@@ -1353,16 +1008,11 @@ D2
 E
 "large pine root 1 east"
 "The large pine to the east has no branches on its lower trunk, making it a
-
-difficult or impossible climb.  A generous spread of evergreen foliage is
-
-visible at the tree's very top, where it towers above the other residents of
-
-the forest.  A thick root protrudes from the base of its trunk, crossing the
-
-road.
-
-"
+difficult or impossible climb.  A generous spread of evergreen foliage is
+visible at the tree's very top, where it towers above the other residents of
+the forest.  A thick root protrudes from the base of its trunk, crossing the
+road.
+"
 A
 "climb"
 "tree"
@@ -1375,20 +1025,13 @@ S
 #57281
 "Forested Valley"
 "The forest all around is expansive and open, populated by tall, widely-spaced
-
-trees with just a thin layer of underbrush at their feet.  The canopy in the
-
-forest proper lets only a dim light filter through, but above the trail is a
-
-long blade of open sky.  Several rounded stones are showing through the dirt
-
-here, suggesting that at one time this road was paved, but has since been
-
-gradually covered in soil and cut through by tree roots.  The way continues
-
-north and south from here, between forest on both sides.
-
-"
+trees with just a thin layer of underbrush at their feet.  The canopy in the
+forest proper lets only a dim light filter through, but above the trail is a
+long blade of open sky.  Several rounded stones are showing through the dirt
+here, suggesting that at one time this road was paved, but has since been
+gradually covered in soil and cut through by tree roots.  The way continues
+north and south from here, between forest on both sides.
+"
 ""
 301465600 0
 24 9 0
@@ -1403,72 +1046,47 @@ D2
 E
 "underbrush"
 "The underbrush consists of a few small, grey-leafed bushes and various leafy
-
-herbs growing in nooks between the roots of trees, or huddled against their
-
-trunks.
-
-"
+herbs growing in nooks between the roots of trees, or huddled against their
+trunks.
+"
 E
 "rounded stones road"
 "Although for the most part the road appears to be made of dirt, stones showing
-
-through in some areas hint that it was a cobbled road once, and has simply
-
-fallen into disrepair.
-
-"
+through in some areas hint that it was a cobbled road once, and has simply
+fallen into disrepair.
+"
 A
 "get gather pick"
 "leafy herbs"
 "  if( rflag( reset2, room ) ) {
-
-    if( random( 1, 5 ) < 2 ) {
-
-      obj_to_char( oload( 415 ), ch );
-
-      send_to_char( #ch, ch );
-
-      act_notchar( #rpick, ch );
-
-      remove_rflag( reset2, room );
-
-    }
-
-    else {
-
-      obj_to_char( oload( 415 ), ch );
-
-      send_to_char( #ch, ch );
-
-      act_notchar( #rpick, ch );
-
-    }
-
-  }
-
-  else
-
-    send_to_char( #none, ch );
-
-"
+    if( random( 1, 5 ) < 2 ) {
+      obj_to_char( oload( 415 ), ch );
+      send_to_char( #ch, ch );
+      act_notchar( #rpick, ch );
+      remove_rflag( reset2, room );
+    }
+    else {
+      obj_to_char( oload( 415 ), ch );
+      send_to_char( #ch, ch );
+      act_notchar( #rpick, ch );
+    }
+  }
+  else
+    send_to_char( #none, ch );
+"
 E
 "ch"
 "You wander from plant to plant in the underbrush until you've collected a
-
-decent clump of herbs.
-
-"
+decent clump of herbs.
+"
 E
 "rpick"
 "$n wanders briefly about the area, returning with a clump of herbs.
-
-"
+"
 E
 "none"
 "There are no herbs worth gathering right now.
-
-"
+"
 !
 0 0 0
 4727 17 1509949540 -2 0
@@ -1478,16 +1096,11 @@ S
 #57282
 "Forested Valley"
 "Towering trees on both sides of the road spread their branches to form a
-
-canopy to the east and west.  The understory of the forest is fairly open, as
-
-the trees are largely free of branches below their crests, and undergrowth is
-
-sparse.  The road runs north and south between the tall trunks, its rocky dirt
-
-surface covered in a layer of decaying leaves and pine needles.
-
-"
+canopy to the east and west.  The understory of the forest is fairly open, as
+the trees are largely free of branches below their crests, and undergrowth is
+sparse.  The road runs north and south between the tall trunks, its rocky dirt
+surface covered in a layer of decaying leaves and pine needles.
+"
 ""
 301465600 0
 24 9 0
@@ -1502,20 +1115,16 @@ D2
 E
 "towering trees 1 east 1 west"
 "The trees are of all different kinds, varying in height from twenty to over
-
-one hundred feet.  The ravine walls on both sides are visible between the
-
-trees, preventing exploration to the east or west.
-
-"
+one hundred feet.  The ravine walls on both sides are visible between the
+trees, preventing exploration to the east or west.
+"
 -1
 S
 
 #57283
 "Forested Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 12 6 0
@@ -1525,20 +1134,13 @@ S
 #57284
 "Forested Valley"
 "The rocky slopes of an enormous mountain are visible through the forest to the
-
-west, and occasional gaps in the canopy give a glimpse of its jagged, grey-
-
-white pinnacle.  Conifer trees grow sparsely on the lower slopes, but give way
-
-to bare stone above.  The forest just off the road to the east and west is a
-
-wild cornucopia of different trees, ranging from stately pine to smaller
-
-deciduous species.  The road continues north and south from here, a jagged
-
-shard of sky visible where the canopy breaks overhead.
-
-"
+west, and occasional gaps in the canopy give a glimpse of its jagged, grey-
+white pinnacle.  Conifer trees grow sparsely on the lower slopes, but give way
+to bare stone above.  The forest just off the road to the east and west is a
+wild cornucopia of different trees, ranging from stately pine to smaller
+deciduous species.  The road continues north and south from here, a jagged
+shard of sky visible where the canopy breaks overhead.
+"
 ""
 301465600 0
 24 9 0
@@ -1553,30 +1155,21 @@ D2
 E
 "rocky slopes mountain pinnacle 1 west"
 "Shale and limestone make up most of the mountain to the west, which is just
-
-visible through the open forest.  Its rocky pinnacle looks stark and proud
-
-when glimpsed through breaks in the trees.
-
-"
+visible through the open forest.  Its rocky pinnacle looks stark and proud
+when glimpsed through breaks in the trees.
+"
 -1
 S
 
 #57285
 "Forested Valley"
 "The hard, rock-studded dirt road cuts north and south between the towering
-
-walls of trees to the east and west.  A thick layer of fragrant pine needles
-
-and rotting dead leaves covers the path, softening the outline of the road
-
-even to the point of making it indistinguishable from the forest floor in some
-
-places.  The surrounding forest is dim but open, its understory empty except
-
-for the odd shrub or small flowering plant.
-
-"
+walls of trees to the east and west.  A thick layer of fragrant pine needles
+and rotting dead leaves covers the path, softening the outline of the road
+even to the point of making it indistinguishable from the forest floor in some
+places.  The surrounding forest is dim but open, its understory empty except
+for the odd shrub or small flowering plant.
+"
 ""
 301465600 0
 24 9 0
@@ -1594,20 +1187,13 @@ S
 #57286
 "Forested Valley"
 "A small stream ran across the road here in the recent past, having flowed east
-
-to west through the forest.  The true nature of the road is apparent where the
-
-stream crossed it and swept away the dirt, leaves, and pine needles: the road
-
-was originally not dirt, but was composed of smooth stone cobbles cemented
-
-together with gravel and sand.  The dry streambed disappears into the tall,
-
-open forest lining the trail on the east and west.  The rocky dirt road
-
-continues north and south, narrowing in the distance.
-
-"
+to west through the forest.  The true nature of the road is apparent where the
+stream crossed it and swept away the dirt, leaves, and pine needles: the road
+was originally not dirt, but was composed of smooth stone cobbles cemented
+together with gravel and sand.  The dry streambed disappears into the tall,
+open forest lining the trail on the east and west.  The rocky dirt road
+continues north and south, narrowing in the distance.
+"
 ""
 301465600 0
 24 9 0
@@ -1625,20 +1211,13 @@ S
 #57287
 "Forested Valley"
 "Large, gnarled roots wind their way across the road here, some of them
-
-protruding more than a foot above the leaf-littered surface of the path.
-
-Trees of all kinds grow in profusion in the forest to the east and west,
-
-evergeen and deciduous standing side by side.  Modest, dark-green shrubs and
-
-isolated flowers and small plants are the only form of underbrush, the rest of
-
-the forest floor being bare aside from dead leaves and pine needles.  The road
-
-continues north and south through the trees.
-
-"
+protruding more than a foot above the leaf-littered surface of the path.
+Trees of all kinds grow in profusion in the forest to the east and west,
+evergeen and deciduous standing side by side.  Modest, dark-green shrubs and
+isolated flowers and small plants are the only form of underbrush, the rest of
+the forest floor being bare aside from dead leaves and pine needles.  The road
+continues north and south through the trees.
+"
 ""
 301465600 0
 24 9 0
@@ -1656,29 +1235,18 @@ S
 #57288
 "Forested Valley"
 "The rocky dirt road runs north and south here through an open forest of
-
-towering trees.  A thick carpet of springy, fragrant pine needles and decaying
-
-leaves lies on the ground in the woods, and a thinner layer covers the road.
-
-Overhead, a vast tract of sky is visible where the canopy breaks over the
-
-path, and it stretches as far as the eye can see to the north and south.  A
-
-huge finger of stone juts out from the rocky slope bordering the valley on the
-
-west, coming through the forest and nearly up to the road.  A gaping hole in
-
-the tip of it leads into a dark cave.  The trees to the north seem to get
-
-progressively shorter and the understory more crowded, while the opposite
-
-trend occurs further south.
-
-"
+towering trees.  A thick carpet of springy, fragrant pine needles and decaying
+leaves lies on the ground in the woods, and a thinner layer covers the road.
+Overhead, a vast tract of sky is visible where the canopy breaks over the
+path, and it stretches as far as the eye can see to the north and south.  A
+huge finger of stone juts out from the rocky slope bordering the valley on the
+west, coming through the forest and nearly up to the road.  A gaping hole in
+the tip of it leads into a dark cave.  The trees to the north seem to get
+progressively shorter and the understory more crowded, while the opposite
+trend occurs further south.
+"
 "[Kotoktok] duergar west
-
-"
+"
 301465600 0
 24 9 0
 D0
@@ -1699,20 +1267,13 @@ S
 #57289
 "Forested Valley"
 "Oak, pine, and juniper grow thickly to the east and west, heavily shading the
-
-path.  Much undergrowth clutters the ground beneath the trees, mostly small
-
-scrub oak, sage brush, and man-tall shrubs with small green leaves and rough,
-
-greyish bark.  Oak leaves and acorns litter the forest floor as well as the
-
-surface of the rocky dirt road, which runs north and south through forest.  To
-
-the south, the forest gets gradually taller and more open, while to the north
-
-the trees are more stunted, and more underbrush is apparent.
-
-"
+path.  Much undergrowth clutters the ground beneath the trees, mostly small
+scrub oak, sage brush, and man-tall shrubs with small green leaves and rough,
+greyish bark.  Oak leaves and acorns litter the forest floor as well as the
+surface of the rocky dirt road, which runs north and south through forest.  To
+the south, the forest gets gradually taller and more open, while to the north
+the trees are more stunted, and more underbrush is apparent.
+"
 ""
 301465600 0
 24 9 0
@@ -1730,20 +1291,13 @@ S
 #57290
 "Forested Valley"
 "A fork in the trail can be seen to the north, where it branches west and north
-
-against a large stone outcropping.  The land to the east and west is populated
-
-by low juniper and scrub oak, as well as sage brush and other small shrubs,
-
-with coarse grey-green grass covering any remaining open ground.  The trees
-
-along the road to the south get steadily taller and more spread apart, rising
-
-impressively in the distance.  A hint of the ocean can be smelled on the wind
-
-as it tousles the trees and brush on its way through the wilds.
-
-"
+against a large stone outcropping.  The land to the east and west is populated
+by low juniper and scrub oak, as well as sage brush and other small shrubs,
+with coarse grey-green grass covering any remaining open ground.  The trees
+along the road to the south get steadily taller and more spread apart, rising
+impressively in the distance.  A hint of the ocean can be smelled on the wind
+as it tousles the trees and brush on its way through the wilds.
+"
 ""
 301465600 0
 24 9 0
@@ -1761,23 +1315,15 @@ S
 #57291
 "Forested Valley"
 "The road here branches north, south, and west where it meets a white-grey
-
-stone outcropping to the northwest.  A stiff sea breeze blows in from a canyon
-
-to the west, moving the sage, scrub oak and other shrubs sporadically.
-
-Another ravine to the north cuts between walls of layered limestone, then
-
-turns east.  The trees along the road get steadily taller and further apart as
-
-the coastal scrub fades away and is gradually replaced with forest to the
-
-south.
-
-"
+stone outcropping to the northwest.  A stiff sea breeze blows in from a canyon
+to the west, moving the sage, scrub oak and other shrubs sporadically.
+Another ravine to the north cuts between walls of layered limestone, then
+turns east.  The trees along the road get steadily taller and further apart as
+the coastal scrub fades away and is gradually replaced with forest to the
+south.
+"
 "[Kotoktok] intersection, rocks to nw, ravine north, ravine west leading to sea caves
-
-"
+"
 301465600 0
 24 9 0
 D0
@@ -1795,38 +1341,27 @@ D3
 E
 "stone outcropping"
 "About fifty feet in height, the bleached white-grey limestone edge of a cliff
-
-blocks passage to the northwest.  Ravines head off to the north and west,
-
-cutting between walls of stone.
-
-"
+blocks passage to the northwest.  Ravines head off to the north and west,
+cutting between walls of stone.
+"
 E
 "sage scrub oak shrubs"
 "Colored in muted grays and greens, the low vegetation in this area is designed
-
-to endure harsh winds and thin soil.
-
-"
+to endure harsh winds and thin soil.
+"
 -1
 S
 
 #57292
 "Coastal Ravine"
 "The road runs east and west through a narrow ravine here, sand obscuring most
-
-of its cobbled surface.  A few stunted scrub oak manage to cling to the
-
-striped limestone walls of the ravine to the north and south, but the sides of
-
-the canyon are bare otherwise.  The path forks north and south to the east,
-
-while west of here it follows the canyon and bends north.
-
-"
+of its cobbled surface.  A few stunted scrub oak manage to cling to the
+striped limestone walls of the ravine to the north and south, but the sides of
+the canyon are bare otherwise.  The path forks north and south to the east,
+while west of here it follows the canyon and bends north.
+"
 "[Kotoktok] how bout writing this room, idiot
-
-"
+"
 301465600 0
 12 9 0
 D1
@@ -1840,31 +1375,22 @@ D3
 E
 "road"
 "A few rounded cobbles are visible, about a foot in diameter and composed of
-
-hard, grey stone.  The rest of the road is patterned sand, which gets thicker
-
-further west.
-
-"
+hard, grey stone.  The rest of the road is patterned sand, which gets thicker
+further west.
+"
 E
 "stunted scrub oak limestone walls 1 north 1 south"
 "Most of them less than four feet in height and very gnarled, some small scrub
-
-oak cling desperately to the banded limestone of the ravine walls.
-
-"
+oak cling desperately to the banded limestone of the ravine walls.
+"
 A
 ""
 ""
 "if ( vnum( ch ) == 2892 )
-
-  end;
-
-else
-
-  continue;
-
-"
+  end;
+else
+  continue;
+"
 !
 3 0 2
 -1
@@ -1873,23 +1399,15 @@ S
 #57293
 "Coastal Ravine - Bend"
 "The ravine opens up on what looks like a large finger of an ocean to the
-
-north.  A sandy beach turns to rocks where it meets the water, and several
-
-decrepit, obviously abandoned wooden docks are visible. The cobbled road here
-
-is almost completely covered in a thin layer of fine sand, probably blown in
-
-over the years from the beach to the north.  Walls of layered limestone to the
-
-northeast, south, and west close the road into a fairly narrow ravine, which
-
-continues in a similar fashion to the east.
-
-"
+north.  A sandy beach turns to rocks where it meets the water, and several
+decrepit, obviously abandoned wooden docks are visible. The cobbled road here
+is almost completely covered in a thin layer of fine sand, probably blown in
+over the years from the beach to the north.  Walls of layered limestone to the
+northeast, south, and west close the road into a fairly narrow ravine, which
+continues in a similar fashion to the east.
+"
 "[Kotoktok] note to self: you blow
-
-"
+"
 301465600 0
 12 9 0
 D0
@@ -1903,45 +1421,30 @@ D1
 E
 "sandy beach large finger ocean docks 1 north"
 "What appears to be a vast bay opens up to the north, lined by mountains on its
-
-eastern and western shores.  There is a small, sandy beach at the end of the
-
-road, with ancient docks slowly falling apart at its edge.
-
-"
+eastern and western shores.  There is a small, sandy beach at the end of the
+road, with ancient docks slowly falling apart at its edge.
+"
 E
 "walls layered limestone 1 west 1 south"
 "Bands of color ranging from nearly black to nearly white, with many shades of
-
-yellow and grey in between, mark the walls of the ravine.  The stone looks
-
-weathered, but is largely free of cracks.
-
-"
+yellow and grey in between, mark the walls of the ravine.  The stone looks
+weathered, but is largely free of cracks.
+"
 -1
 S
 
 #57294
 "Shore - Abandoned Port"
 "Sand covers most of the shoreline here, but it gets steadily coarser as it
-
-approaches the water, and finally turns to rocks where it meets the ocean.
-
-Four ancient-looking docks which have mostly fallen apart are lined up in this
-
-vast inlet, intact posts anchored in the rocks along the shore.  It appears
-
-that this was once a busy port; the remains of several warehouses can be made
-
-out just beyond the docks.  Cliffs to the west block passage, their striped
-
-limestone surfaces full of small gaps and ridges.  Against the cliff to the
-
-west are the remains of what must have been a mighty tower.  A sandy, cobbled
-
-road leads into a ravine to the south.
-
-"
+approaches the water, and finally turns to rocks where it meets the ocean.
+Four ancient-looking docks which have mostly fallen apart are lined up in this
+vast inlet, intact posts anchored in the rocks along the shore.  It appears
+that this was once a busy port; the remains of several warehouses can be made
+out just beyond the docks.  Cliffs to the west block passage, their striped
+limestone surfaces full of small gaps and ridges.  Against the cliff to the
+west are the remains of what must have been a mighty tower.  A sandy, cobbled
+road leads into a ravine to the south.
+"
 ""
 301465600 0
 14 9 0
@@ -1960,75 +1463,50 @@ D4
 E
 "cliff remains tower 1 west"
 "Most of the foundation has been buried in sand, and the only intact masonry
-
-are some butresses against the cliff, and the remains of a stair hanging in
-
-midair from just below a limestone ledge.  The cliff itself and the remaining
-
-stonework is pitted and contains many small cracks, some running all the way
-
-up to the ledge.
-
-"
+are some butresses against the cliff, and the remains of a stair hanging in
+midair from just below a limestone ledge.  The cliff itself and the remaining
+stonework is pitted and contains many small cracks, some running all the way
+up to the ledge.
+"
 E
 "docks posts"
 "All that remains of the docks are the posts anchored in the rocks and a few
-
-planks of rotting wood between them.  The spacing of the posts suggests that
-
-the docks used to be wide enough for a two-horse team to pull a wagon out onto
-
-them.
-
-"
+planks of rotting wood between them.  The spacing of the posts suggests that
+the docks used to be wide enough for a two-horse team to pull a wagon out onto
+them.
+"
 A
 "climb scale"
 "cliff 1 west 1 up"
 "if ( find_skill( ch, climb ) > 1d5 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #nclimb, ch );
-
-  transfer( ch, find_room( 57298 ) );
-
-  use_skill( ch, climb );
-
-  act_notchar( #nappear, ch );
-
-}
-
-else {
-
-  act_tochar( #no, ch );
-
-}
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #nclimb, ch );
+  transfer( ch, find_room( 57298 ) );
+  use_skill( ch, climb );
+  act_notchar( #nappear, ch );
+}
+else {
+  act_tochar( #no, ch );
+}
+"
 E
 "climb"
 "Using cracks and old bits of masonry as handholds, you scale the cliff,
-
-pulling yourself onto a ledge.
-
-"
+pulling yourself onto a ledge.
+"
 E
 "nclimb"
 "Using cracks and old bits of masonry as handholds, $n scales the cliff,
-
-pulling $mself onto a ledge.
-
-"
+pulling $mself onto a ledge.
+"
 E
 "nappear"
 "$n pulls $mself up onto the ledge beside you.
-
-"
+"
 E
 "no"
 "The rock wall to the west simply looks too difficult for you to climb.
-
-"
+"
 !
 0 0 0
 -1
@@ -2037,13 +1515,10 @@ S
 #57295
 "Ravine"
 "Under Construction.
-
-"
+"
 "[Kotoktok] rocky ravine east of here
-
-[Kotoktok] landslide east
-
-"
+[Kotoktok] landslide east
+"
 301465600 0
 12 9 0
 D1
@@ -2060,8 +1535,7 @@ S
 #57296
 "Ravine"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 12 9 0
@@ -2079,8 +1553,7 @@ S
 #57297
 "Ravine"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 12 9 0
@@ -2098,28 +1571,17 @@ S
 #57298
 "Ledge - Hole in the Sea Cliffs"
 "This is a limestone ledge, overlooking a vast inlet of the ocean to the east.
-
-A salty haze of sea mist swaths the eastern horizon, and blows pleasantly on
-
-the face of the cliffs.  To the west is a gaping hole in the layered cliff of
-
-limestone, leading into a small passage where only a few feet of tunnel is
-
-visible, and then all that can be seen is a very faint, flickering glow.
-
-Intricate designs are carved into the stone above the entrance, and some
-
-crumbling masonry along the sides of the ledge suggest that this area was once
-
-enclosed in a building.  Small shrubs line the cave's edge, weathered from
-
-life on the edge of the restless sea.  Below to the east a small road leads up
-
-to a sandy beach where decrepit docks can be made out, anchored in the rocks
-
-along the shore.
-
-"
+A salty haze of sea mist swaths the eastern horizon, and blows pleasantly on
+the face of the cliffs.  To the west is a gaping hole in the layered cliff of
+limestone, leading into a small passage where only a few feet of tunnel is
+visible, and then all that can be seen is a very faint, flickering glow.
+Intricate designs are carved into the stone above the entrance, and some
+crumbling masonry along the sides of the ledge suggest that this area was once
+enclosed in a building.  Small shrubs line the cave's edge, weathered from
+life on the edge of the restless sea.  Below to the east a small road leads up
+to a sandy beach where decrepit docks can be made out, anchored in the rocks
+along the shore.
+"
 ""
 301465600 0
 12 6 0
@@ -2134,101 +1596,66 @@ D5
 E
 "intricate designs masonry hole flickering glow 1 west"
 "The source of the flickering glow in the darkness to the west cannot be
-
-determined from here; only the first few feet of the tunnel are visible.
-
-Highly detailed, swirling designs decorate the stone above and around the
-
-opening in the cliff.  Almost imperceptible highlights of silver can be made
-
-out around some of the patterns.  Masonry along the sides of the ledge to the
-
-north and south includes stone blocks and some rusted metal support beams.
-
-The remains of the tower below, the hanging staircase, and the stonework
-
-around the ledge all suggest that the tower here used to connect directly to
-
-this opening in the cliff.
-
-"
+determined from here; only the first few feet of the tunnel are visible.
+Highly detailed, swirling designs decorate the stone above and around the
+opening in the cliff.  Almost imperceptible highlights of silver can be made
+out around some of the patterns.  Masonry along the sides of the ledge to the
+north and south includes stone blocks and some rusted metal support beams.
+The remains of the tower below, the hanging staircase, and the stonework
+around the ledge all suggest that the tower here used to connect directly to
+this opening in the cliff.
+"
 E
 "shrubs"
 "Dark green, waxy-looking leaves on the small shrubs cling closely to the grey-
-
-brown limbs, seeking some protection against the coastal climate.  The plants
-
-grow from small cracks in the stone which have collected dirt over the years.
-
-"
+brown limbs, seeking some protection against the coastal climate.  The plants
+grow from small cracks in the stone which have collected dirt over the years.
+"
 A
 "climb"
 "down cliff"
 "if ( find_skill( ch, climb ) > 1d5 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #nclimb, ch );
-
-  transfer( ch, find_room( 57294 ) );
-
-  use_skill( ch, climb );
-
-  act_notchar( #nappear, ch );
-
-}
-
-else {
-
-  act_tochar( #no, ch );
-
-act_notchar( #rno, ch );
-
-transfer( ch, find_room( 57294 ) );
-
-i = 1d150;
-
-act_notchar( #falls, ch );
-
-dam_message( ch, i, \"the horrible fall\", null );
-
-inflict( ch, null, i, \"a horrible fall\" );
-
-}
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #nclimb, ch );
+  transfer( ch, find_room( 57294 ) );
+  use_skill( ch, climb );
+  act_notchar( #nappear, ch );
+}
+else {
+  act_tochar( #no, ch );
+act_notchar( #rno, ch );
+transfer( ch, find_room( 57294 ) );
+i = 1d150;
+act_notchar( #falls, ch );
+dam_message( ch, i, \"the horrible fall\", null );
+inflict( ch, null, i, \"a horrible fall\" );
+}
+"
 E
 "climb"
 "You lower yourself over the ledge and climb down the cliff.
-
-"
+"
 E
 "nclimb"
 "$n lowers $mself over the ledge and disappears.
-
-"
+"
 E
 "nappear"
 "$n comes climbing down the cliff to the west.
-
-"
+"
 E
 "no"
 "You attempt to climb carefully down the cliff, but lose your balance and
-
-plummet!
-
-"
+plummet!
+"
 E
 "falls"
 "$n comes falling out of the sky, and lands with a sickening thud.
-
-"
+"
 E
 "rno"
 "$n starts to climb down the cliff, but loses $s balance and plummets!
-
-"
+"
 !
 0 0 0
 -1
@@ -2237,8 +1664,7 @@ S
 #57299
 "Shore"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 14 9 0
@@ -2248,8 +1674,7 @@ S
 #57300
 "Forested Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 24 9 0
@@ -2263,8 +1688,7 @@ S
 #57301
 "Forested Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 24 9 0
@@ -2278,8 +1702,7 @@ S
 #57302
 "Forested Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 24 9 0
@@ -2289,8 +1712,7 @@ S
 #57303
 "Forested Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 24 9 0
@@ -2300,8 +1722,7 @@ S
 #57304
 "Forested Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 24 9 0
@@ -2311,8 +1732,7 @@ S
 #57305
 "Forested Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 24 9 0
@@ -2322,8 +1742,7 @@ S
 #57306
 "Forested Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 24 9 0
@@ -2333,8 +1752,7 @@ S
 #57307
 "Forested Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 24 9 0
@@ -2344,8 +1762,7 @@ S
 #57308
 "Forested Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 24 9 0
@@ -2355,33 +1772,20 @@ S
 #57309
 "Before a Scintillating Portal"
 "The grey slate and limestone walls of this small chamber flicker with many
-
-different colors and shades of light, cast by a shimmering elliptical portal
-
-set on a dais against the western wall.  At the base of the portal is a
-
-shattered glass case with a small stone inside.  Ornate patterns are carved
-
-into the stone around the portal, and silver runes placed in the carving above
-
-and to each side of the portal gleam faintly.  The floor is smooth, worn
-
-limestone, but several fragments of black and white marble tile lying
-
-haphazardly in the corners of the room suggest that it was not always that
-
-way.  Water and then mountains beyond are visible to the east through a gaping
-
-hole in the stone that leads out onto a small stone ledge.
-
-"
+different colors and shades of light, cast by a shimmering elliptical portal
+set on a dais against the western wall.  At the base of the portal is a
+shattered glass case with a small stone inside.  Ornate patterns are carved
+into the stone around the portal, and silver runes placed in the carving above
+and to each side of the portal gleam faintly.  The floor is smooth, worn
+limestone, but several fragments of black and white marble tile lying
+haphazardly in the corners of the room suggest that it was not always that
+way.  Water and then mountains beyond are visible to the east through a gaping
+hole in the stone that leads out onto a small stone ledge.
+"
 "[Kotoktok] portal here, to cult/tomb zone
-
-[Kotoktok] remember to do acodes
-
-[Kotoktok] 93004
-
-"
+[Kotoktok] remember to do acodes
+[Kotoktok] 93004
+"
 301465600 0
 12 6 0
 D1
@@ -2391,41 +1795,28 @@ D1
 E
 "shattered glass case small stone"
 "A corroded metal frame about two feet high and a foot wide supports a last few
-
-shards of the glass that must have once sealed the small stone within the
-
-case.  A small wire frame door dangles from one hinge, leaving the contents of
-
-the cage open to inspection.  Within is a piece of grey stone about five
-
-inches wide with a ten-sided, silver-lined slot in the top of it.
-
-"
+shards of the glass that must have once sealed the small stone within the
+case.  A small wire frame door dangles from one hinge, leaving the contents of
+the cage open to inspection.  Within is a piece of grey stone about five
+inches wide with a ten-sided, silver-lined slot in the top of it.
+"
 E
 "shimmering scintillating elliptical portal 1 west"
 "The portal on the west wall is perfectly elliptical in form, taller than it is
-
-wide.  Staring into its depths, a wild maelstrom of different places flash
-
-before one's eyes, none of them staying in focus for more than half a second.
-
-"
+wide.  Staring into its depths, a wild maelstrom of different places flash
+before one's eyes, none of them staying in focus for more than half a second.
+"
 E
 "ornate patterns silver runes"
 "The patterns swirl hypnotically through the stone around the portal, their
-
-mind-bending effect seemingly enhanced by the silver runes set amongst them.
-
-"
+mind-bending effect seemingly enhanced by the silver runes set amongst them.
+"
 E
 "floor fragments black white marble tile"
 "The marble tiles are broken and dusted by age, but appear to be of fine
-
-workmanship.  They lie in the corners and along the sides of the room,
-
-arranged in no particular pattern.
-
-"
+workmanship.  They lie in the corners and along the sides of the room,
+arranged in no particular pattern.
+"
 A
 "enter"
 "portal"
@@ -2445,27 +1836,17 @@ S
 #57310
 "Shore - Abandoned Port"
 "Rocky ramparts block passage to the south and east, their weathered walls
-
-reaching more than fifty feet into the sky.  The shore is sandy below the
-
-cliffs, but becomes steadily more rocky closer to the water.  Four decrepit
-
-docks jut out into the sea, their intact posts anchored amidst the boulders at
-
-the water's edge.  The remains of several large wooden warehouses are nestled
-
-against the cliffs to the south, oriented so that their gates would have faced
-
-the docks.  The beach of coarse sand and stones continues for some distance to
-
-the west, ending where it meets more cliffs.
-
-"
+reaching more than fifty feet into the sky.  The shore is sandy below the
+cliffs, but becomes steadily more rocky closer to the water.  Four decrepit
+docks jut out into the sea, their intact posts anchored amidst the boulders at
+the water's edge.  The remains of several large wooden warehouses are nestled
+against the cliffs to the south, oriented so that their gates would have faced
+the docks.  The beach of coarse sand and stones continues for some distance to
+the west, ending where it meets more cliffs.
+"
 "[Kotoktok] old man here by docks, knows about the portal and how to make it useful
-
-[Kotoktok] story about wizards who delve into spirit world, etc.
-
-"
+[Kotoktok] story about wizards who delve into spirit world, etc.
+"
 301465600 0
 14 9 0
 D3
@@ -2475,27 +1856,18 @@ D3
 E
 "decrepit docks posts"
 "All that remains of the docks are the posts anchored in the rocks and a few
-
-planks of rotting wood between them.  The spacing of the posts suggests that
-
-the docks used to be wide enough for a two-horse team to pull a wagon out onto
-
-them.
-
-"
+planks of rotting wood between them.  The spacing of the posts suggests that
+the docks used to be wide enough for a two-horse team to pull a wagon out onto
+them.
+"
 E
 "remains wooden warehouses"
 "The outlines of stone foundations can be seen above the sand, with ancient
-
-wooden columns still anchored at some of the corners.  Waterlogged support
-
-beams and other large wooden elements of the warehouses are piled within the
-
-walls of the foundations.  The rusting hinges of large doors, corroded metal
-
-hooks and several other metal items can be made out amidst the rubbish.
-
-"
+wooden columns still anchored at some of the corners.  Waterlogged support
+beams and other large wooden elements of the warehouses are piled within the
+walls of the foundations.  The rusting hinges of large doors, corroded metal
+hooks and several other metal items can be made out amidst the rubbish.
+"
 2892 9 1509949540 3 0
 -1
 S
@@ -2503,8 +1875,7 @@ S
 #57311
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2522,8 +1893,7 @@ S
 #57312
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2541,8 +1911,7 @@ S
 #57313
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2560,8 +1929,7 @@ S
 #57314
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2579,8 +1947,7 @@ S
 #57315
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2598,8 +1965,7 @@ S
 #57316
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2617,8 +1983,7 @@ S
 #57317
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2636,8 +2001,7 @@ S
 #57318
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2655,8 +2019,7 @@ S
 #57319
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2674,8 +2037,7 @@ S
 #57320
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2693,8 +2055,7 @@ S
 #57321
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2712,8 +2073,7 @@ S
 #57322
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2731,8 +2091,7 @@ S
 #57323
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2750,8 +2109,7 @@ S
 #57324
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2769,8 +2127,7 @@ S
 #57325
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2788,8 +2145,7 @@ S
 #57326
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2799,8 +2155,7 @@ S
 #57327
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2818,8 +2173,7 @@ S
 #57328
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2837,8 +2191,7 @@ S
 #57329
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2856,8 +2209,7 @@ S
 #57330
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2875,8 +2227,7 @@ S
 #57331
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2894,8 +2245,7 @@ S
 #57332
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2913,8 +2263,7 @@ S
 #57333
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2932,8 +2281,7 @@ S
 #57334
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2951,8 +2299,7 @@ S
 #57335
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2970,8 +2317,7 @@ S
 #57336
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -2989,8 +2335,7 @@ S
 #57337
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 9 0
@@ -3008,8 +2353,7 @@ S
 #57338
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3027,8 +2371,7 @@ S
 #57339
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3046,8 +2389,7 @@ S
 #57340
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3069,8 +2411,7 @@ S
 #57341
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3084,8 +2425,7 @@ S
 #57342
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -3095,8 +2435,7 @@ S
 #57343
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -3106,8 +2445,7 @@ S
 #57344
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -3117,8 +2455,7 @@ S
 #57345
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -3128,8 +2465,7 @@ S
 #57346
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -3139,8 +2475,7 @@ S
 #57347
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -3150,8 +2485,7 @@ S
 #57348
 "Under Construction"
 "Under Construction.
-
-"
+"
 ""
 33030144 0
 0 7 0
@@ -3161,8 +2495,7 @@ S
 #57349
 "Forested Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 24 9 0
@@ -3172,8 +2505,7 @@ S
 #57350
 "Forested Valley"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 24 9 0
@@ -3183,8 +2515,7 @@ S
 #57351
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3194,8 +2525,7 @@ S
 #57352
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3205,8 +2535,7 @@ S
 #57353
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3216,8 +2545,7 @@ S
 #57354
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3227,8 +2555,7 @@ S
 #57355
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3238,8 +2565,7 @@ S
 #57356
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3249,8 +2575,7 @@ S
 #57357
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3260,8 +2585,7 @@ S
 #57358
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3271,8 +2595,7 @@ S
 #57359
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3282,8 +2605,7 @@ S
 #57360
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3293,8 +2615,7 @@ S
 #57361
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3304,8 +2625,7 @@ S
 #57362
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3315,8 +2635,7 @@ S
 #57363
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3326,8 +2645,7 @@ S
 #57364
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3337,8 +2655,7 @@ S
 #57365
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3348,8 +2665,7 @@ S
 #57366
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3359,8 +2675,7 @@ S
 #57367
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3370,8 +2685,7 @@ S
 #57368
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3381,8 +2695,7 @@ S
 #57369
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3392,8 +2705,7 @@ S
 #57370
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3403,8 +2715,7 @@ S
 #57371
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3414,8 +2725,7 @@ S
 #57372
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3425,8 +2735,7 @@ S
 #57373
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3436,8 +2745,7 @@ S
 #57374
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3447,8 +2755,7 @@ S
 #57375
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3458,8 +2765,7 @@ S
 #57376
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3469,8 +2775,7 @@ S
 #57377
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3480,8 +2785,7 @@ S
 #57378
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3491,8 +2795,7 @@ S
 #57379
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3502,8 +2805,7 @@ S
 #57380
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3513,8 +2815,7 @@ S
 #57381
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3524,8 +2825,7 @@ S
 #57382
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3535,8 +2835,7 @@ S
 #57383
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3546,8 +2845,7 @@ S
 #57384
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3557,8 +2855,7 @@ S
 #57385
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3568,8 +2865,7 @@ S
 #57386
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3579,8 +2875,7 @@ S
 #57387
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3590,8 +2885,7 @@ S
 #57388
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3601,8 +2895,7 @@ S
 #57389
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3612,8 +2905,7 @@ S
 #57390
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3623,8 +2915,7 @@ S
 #57391
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3634,8 +2925,7 @@ S
 #57392
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3645,8 +2935,7 @@ S
 #57393
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3656,8 +2945,7 @@ S
 #57394
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3667,8 +2955,7 @@ S
 #57395
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3678,8 +2965,7 @@ S
 #57396
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3689,8 +2975,7 @@ S
 #57397
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3700,8 +2985,7 @@ S
 #57398
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3711,8 +2995,7 @@ S
 #57399
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3722,8 +3005,7 @@ S
 #57400
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3733,8 +3015,7 @@ S
 #57401
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3744,8 +3025,7 @@ S
 #57402
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3755,8 +3035,7 @@ S
 #57403
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3766,8 +3045,7 @@ S
 #57404
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3777,8 +3055,7 @@ S
 #57405
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3788,8 +3065,7 @@ S
 #57406
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3799,8 +3075,7 @@ S
 #57407
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3810,8 +3085,7 @@ S
 #57408
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3821,8 +3095,7 @@ S
 #57409
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3832,8 +3105,7 @@ S
 #57410
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3843,8 +3115,7 @@ S
 #57411
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3854,8 +3125,7 @@ S
 #57412
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3865,8 +3135,7 @@ S
 #57413
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3876,8 +3145,7 @@ S
 #57414
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3887,8 +3155,7 @@ S
 #57415
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3898,8 +3165,7 @@ S
 #57416
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3909,8 +3175,7 @@ S
 #57417
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3920,8 +3185,7 @@ S
 #57418
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3931,8 +3195,7 @@ S
 #57419
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3942,8 +3205,7 @@ S
 #57420
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3953,8 +3215,7 @@ S
 #57421
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3964,8 +3225,7 @@ S
 #57422
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3975,8 +3235,7 @@ S
 #57423
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3986,8 +3245,7 @@ S
 #57424
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -3997,8 +3255,7 @@ S
 #57425
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4008,8 +3265,7 @@ S
 #57426
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4019,8 +3275,7 @@ S
 #57427
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4030,8 +3285,7 @@ S
 #57428
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4041,8 +3295,7 @@ S
 #57429
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4052,8 +3305,7 @@ S
 #57430
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4063,8 +3315,7 @@ S
 #57431
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4074,8 +3325,7 @@ S
 #57432
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4085,8 +3335,7 @@ S
 #57433
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4096,8 +3345,7 @@ S
 #57434
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4107,8 +3355,7 @@ S
 #57435
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4118,8 +3365,7 @@ S
 #57436
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4129,8 +3375,7 @@ S
 #57437
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4140,8 +3385,7 @@ S
 #57438
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0
@@ -4151,8 +3395,7 @@ S
 #57439
 "Northern Road"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 9 0

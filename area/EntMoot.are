@@ -10,20 +10,13 @@
 #10000
 "The Place of Repose"
 "Four immense slabs of stone form the three walls and roof of this eastward
-
-facing, open-faced structure.  The sheer weight of the stones appears to be
-
-the only thing holding them together, and gaps appear in corners where they
-
-don't fit flushly together.  Fortunately, with such massive weight behind them
-
-it's unlikely anything short of a massive earthquake could move them or cause
-
-them to topple.  The wide opening to the east displays a view of the verdant
-
-greenery spread out before the structure.
-
-"
+facing, open-faced structure.  The sheer weight of the stones appears to be
+the only thing holding them together, and gaps appear in corners where they
+don't fit flushly together.  Fortunately, with such massive weight behind them
+it's unlikely anything short of a massive earthquake could move them or cause
+them to topple.  The wide opening to the east displays a view of the verdant
+greenery spread out before the structure.
+"
 ""
 301465605 0
 3 6 0
@@ -34,44 +27,30 @@ D1
 E
 "slabs rocks stones"
 "The giant slabs of stone are each cut from a single piece of bedrock.  It must
-
-have been a monumental task, even for a race as large as the ents, to move
-
-such massive stones.  Each stone slab much way thousands of pounds.  The rocks
-
-are a grayish color and appeared quite weathered with their edges rounded and
-
-smooth from time.
-
-"
+have been a monumental task, even for a race as large as the ents, to move
+such massive stones.  Each stone slab much way thousands of pounds.  The rocks
+are a grayish color and appeared quite weathered with their edges rounded and
+smooth from time.
+"
 A
 ""
 ""
 "i = time_hour();
-
-if( i == 5 )
-
-  send_to_area( #day, room );
-
-if( i == 19 )
-
-  send_to_area( #night, room );
-
-"
+if( i == 5 )
+  send_to_area( #day, room );
+if( i == 19 )
+  send_to_area( #night, room );
+"
 E
 "day"
 "As the sun rises, the fireflies seek their places of rest and their twinkling
-
-lights soon disappear completely.
-
-"
+lights soon disappear completely.
+"
 E
 "night"
 "As the sun sets, fireflies begin to appear until the area is lit with the
-
-nearly continuous, soft light of their glow.
-
-"
+nearly continuous, soft light of their glow.
+"
 !
 6 -60 0
 26 17 1509949540 -2 0
@@ -85,18 +64,12 @@ S
 #10001
 "Ent'Moot"
 "Lush foliage grows all about you and not a sign of any decay or illness marks
-
-any of it.  In spite of its apparent wild growth, the foliage doesn't appear
-
-as if it would block your passage in the least.  Perhaps its layout was
-
-planned, after all.  To the west stands a large open-faced stone structure
-
-of some sort.  To the east you can clearly see some sort of large circle of
-
-standing stones.
-
-"
+any of it.  In spite of its apparent wild growth, the foliage doesn't appear
+as if it would block your passage in the least.  Perhaps its layout was
+planned, after all.  To the west stands a large open-faced stone structure
+of some sort.  To the east you can clearly see some sort of large circle of
+standing stones.
+"
 ""
 301465601 0
 3 6 0
@@ -119,84 +92,56 @@ D3
 E
 "foliage"
 "The foliage consists of a wide variety of shrubbery and flowers.  Some you can
-
-readily identify, such as hawthorne and honeysuckle, and others are exotic and
-
-hard to identify.  They fill the area with a fresh, woodland scent.
-
-"
+readily identify, such as hawthorne and honeysuckle, and others are exotic and
+hard to identify.  They fill the area with a fresh, woodland scent.
+"
 E
 "1 east circle standing 5 stones"
 "While you can only see the western edge of the circle of standing stones to
-
-the east, the arc they form certainly give the impression that they would form
-
-a circle.  Most of the stones are broad slabs standing upright and slightly
-
-higher than a tall ent.  A few of the stones are even capped with a stone
-
-crossing over resting on two different standing stones to form a simple
-
-portal.  One such portal provides entrance to the circle of standing stones
-
-due east of here.
-
-"
+the east, the arc they form certainly give the impression that they would form
+a circle.  Most of the stones are broad slabs standing upright and slightly
+higher than a tall ent.  A few of the stones are even capped with a stone
+crossing over resting on two different standing stones to form a simple
+portal.  One such portal provides entrance to the circle of standing stones
+due east of here.
+"
 E
 "1 west structure"
 "The structure to the west is a large, open-faced building created from four
-
-immense slabs of stone.  One slab forms each of the south, west and north
-
-walls and another caps them to create the roof.  There are no windows or doors
-
-but the entire eastern face of the structure is open, allowing easy entrance.
-
-"
+immense slabs of stone.  One slab forms each of the south, west and north
+walls and another caps them to create the roof.  There are no windows or doors
+but the entire eastern face of the structure is open, allowing easy entrance.
+"
 A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You pass between two of the standing stones.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You pass between two of the standing stones.\", ch );
+continue;
+"
 !
 3 0 2
 A
 ""
 ""
 "if( !is_exhausted( ch ) ) {
-
-  if( size( ch ) < 5 )
-
-    act_tochar( #shortie, ch );
-
-  else
-
-    act_tochar( #tall, ch );
-
-  }
-
-continue;
-
-"
+  if( size( ch ) < 5 )
+    act_tochar( #shortie, ch );
+  else
+    act_tochar( #tall, ch );
+  }
+continue;
+"
 E
 "tall"
 "You enter the stone structure.  Its roof is just the right height to
-
-comfortably accommodate your size.
-
-"
+comfortably accommodate your size.
+"
 E
 "shortie"
 "You enter the stone structure.  Its roof is so high overhead it has obviously
-
-been made for inhabitants much larger than you.
-
-"
+been made for inhabitants much larger than you.
+"
 !
 3 0 8
 587 17 1509949540 -2 0
@@ -207,21 +152,14 @@ S
 #10002
 "Ent'Moot"
 "A garden of lush greenery of all sorts fills every corner of the land.  The
-
-plants grow right up to the sheer edge of the island that overlooks the
-
-Windlass below.  With the uneven edge of the island preventing travel west and
-
-north of here, your only options are to head east or south if you wish to
-
-leave.
-
-"
+plants grow right up to the sheer edge of the island that overlooks the
+Windlass below.  With the uneven edge of the island preventing travel west and
+north of here, your only options are to head east or south if you wish to
+leave.
+"
 "will eventually have a quest for ents to get the robe.
-
-need to double check that the ac on the robe is fair for its level for a quest.
-
-"
+need to double check that the ac on the robe is fair for its level for a quest.
+"
 301465603 0
 3 6 0
 D1
@@ -235,43 +173,28 @@ D2
 E
 "1 north 1 west edge Windlass"
 "The island of Ent'Moot is roughly circular in shape.  Sheer walls and loose
-
-stone ensure that the cliff face of the island remains unassailable from any
-
-who would attack unless they could somehow fly up the very sides.  Far below,
-
-you can see the rushing waters of the Windlass, the great river that passes
-
-through the Vaasa before eventually making its way down the valley towards
-
-Sos'kul, land of the lizardfolk.
-
-"
+stone ensure that the cliff face of the island remains unassailable from any
+who would attack unless they could somehow fly up the very sides.  Far below,
+you can see the rushing waters of the Windlass, the great river that passes
+through the Vaasa before eventually making its way down the valley towards
+Sos'kul, land of the lizardfolk.
+"
 E
 "greenery garden lush plants"
 "There is quite a variety of greenery including plants like germander and
-
-mandrake.  In fact, the plants appear to largely consist of those that a mage
-
-might use in some of their spells.  Although the plants are undoubtedly
-
-healthy, most don't look to be in the stage of readiness that would be
-
-required to make them useful to any spell-caster.
-
-"
+mandrake.  In fact, the plants appear to largely consist of those that a mage
+might use in some of their spells.  Although the plants are undoubtedly
+healthy, most don't look to be in the stage of readiness that would be
+required to make them useful to any spell-caster.
+"
 A
 "pick get take"
 "5 plants greenery germander mandrake garden"
 "if( mob_in_room( 2536, room ) )
-
-  act_tochar( \"The robed ent prevents you from picking any plants.\", ch );
-
-else
-
-  act_tochar( \"You go to pick some but find none of any usable quality.\", ch );
-
-"
+  act_tochar( \"The robed ent prevents you from picking any plants.\", ch );
+else
+  act_tochar( \"You go to pick some but find none of any usable quality.\", ch );
+"
 !
 0 0 0
 2536 9 1509949540 3 0
@@ -294,16 +217,11 @@ S
 #10003
 "Heart of Ent'Moot"
 "Several standing stones, some capped and some not, encircle the heart of the
-
-island.  In the center of the stones, at the very heart of the island, is a
-
-stone fountain carved over with ancient runes.  The space between the central
-
-fountain and the standing stones is filled with some of the lushest grass you
-
-have ever seen.  The grass is even, thick, and healthy beyond any doubt.
-
-"
+island.  In the center of the stones, at the very heart of the island, is a
+stone fountain carved over with ancient runes.  The space between the central
+fountain and the standing stones is filled with some of the lushest grass you
+have ever seen.  The grass is even, thick, and healthy beyond any doubt.
+"
 ""
 301465603 0
 3 6 0
@@ -326,302 +244,189 @@ D3
 E
 "Fountain"
 "A broad but simple stone fountain consisting of a rounded stone base with a
-
-sort of pyramid of stone blocks set inside.  The lowest stone is the broadest
-
-of the three in the pyramid and forms a rough-cut cylinder atop which is set
-
-the next, smaller stone and then the smallest stone atop that one.  On each of
-
-the three tiers are carved ancient runes.  Water pours out of an opening in
-
-the top, cascading over the runes on each level before collecting in the
-
-rounded stone base.
-
-"
+sort of pyramid of stone blocks set inside.  The lowest stone is the broadest
+of the three in the pyramid and forms a rough-cut cylinder atop which is set
+the next, smaller stone and then the smallest stone atop that one.  On each of
+the three tiers are carved ancient runes.  Water pours out of an opening in
+the top, cascading over the runes on each level before collecting in the
+rounded stone base.
+"
 E
 "3 pyramid lowest 5 stones"
 "The three stones of the pyramid in the fountain appear to be formed from the
-
-same bedrock stone that forms the base.  They were cut separately, carved with
-
-their runes then placed here atop the base of the fountain.
-
-"
+same bedrock stone that forms the base.  They were cut separately, carved with
+their runes then placed here atop the base of the fountain.
+"
 A
 "1 look read"
 "4 runes"
 "if( find_skill( ch, entish ) < 10 ) {
-
-  if( find_skill( ch, entish ) > 7 )
-
-    act_tochar( #ent, ch );
-
-  else
-
-    act_tochar( #cant_read, ch );
-
-  end;
-
-  }
-
-if( find_skill( ch, entish ) == 10 ) {
-
-  act_tochar( #rune_intro ch );
-
-  wait( 2 );
-
-  if( !char_in_room( ch, find_room( 10003 ) ) )
-
-    end;
-
-  act_tochar( #runes1, ch );
-
-  act_notchar( #rrunes1, ch );
-
-  wait( 2 );
-
-  if( !char_in_room( ch, find_room( 10003 ) ) )
-
-    end;
-
-  act_tochar( #runes2, ch );
-
-  }
-
-"
+  if( find_skill( ch, entish ) > 7 )
+    act_tochar( #ent, ch );
+  else
+    act_tochar( #cant_read, ch );
+  end;
+  }
+if( find_skill( ch, entish ) == 10 ) {
+  act_tochar( #rune_intro ch );
+  wait( 2 );
+  if( !char_in_room( ch, find_room( 10003 ) ) )
+    end;
+  act_tochar( #runes1, ch );
+  act_notchar( #rrunes1, ch );
+  wait( 2 );
+  if( !char_in_room( ch, find_room( 10003 ) ) )
+    end;
+  act_tochar( #runes2, ch );
+  }
+"
 E
 "rune_intro"
 "The runes are an ancient dialect of entish from about as far back as ent
-
-memory runs.  Only one as skilled in the ent language as yourself would have
-
-any chance of decyphering them and even as skilled as you are it takes some
-
-work.
-
-"
+memory runs.  Only one as skilled in the ent language as yourself would have
+any chance of decyphering them and even as skilled as you are it takes some
+work.
+"
 E
 "ent"
 "The runes appear to be largely entish in nature and may even be some older
-
-dialect of entish but you aren't able to understand them.
-
-"
+dialect of entish but you aren't able to understand them.
+"
 E
 "cant_read"
 "Whatever the runes are, they're nothing more than symbols carved in stone to
-
-you.  Perhaps they aren't actually anything more than decoration after all.
-
-"
+you.  Perhaps they aren't actually anything more than decoration after all.
+"
 E
 "runes1"
 "The runes appear to run in a spiral down the fountain and you need to slowly
-
-circle the fountain several times to read them all.
-
-"
+circle the fountain several times to read them all.
+"
 E
 "rrunes1"
 "$n begins to slowly walk about the fountain as $e studies the runes intently.
-
-"
+"
 E
 "runes2"
 "The runes appear to record some of the entish history and values.  So far
-
-you've been able to decipher sections on the following topics: @bhistory@n,
-
-and @bfaith@n.  You can @bread@n the section name to further translate what it
-
-says.
-
-"
+you've been able to decipher sections on the following topics: @bhistory@n,
+and @bfaith@n.  You can @bread@n the section name to further translate what it
+says.
+"
 !
 0 0 0
 A
 "read"
 "history"
 "if( find_skill( ch, entish ) == 10 ) {
-
-  act_tochar( #history, ch );
-
-  wait( 3 );
-
-  if( !char_in_room( ch, find_room( 10003 ) ) )
-
-    end;
-
-  act_tochar( #history2, ch );
-
-  wait( 4 );
-
-  if( !char_in_room( ch, find_room( 10003 ) ) )
-
-    end;
-
-  act_tochar( #history3, ch );
-
-  wait( 4 );
-
-  if( !char_in_room( ch, find_room( 10003 ) ) )
-
-    end;
-
-  act_tochar( #history4, ch );
-
-  }
-
-else
-
-  act_tochar( #no, ch );
-
-act_notchar( #reading, ch );
-
-"
+  act_tochar( #history, ch );
+  wait( 3 );
+  if( !char_in_room( ch, find_room( 10003 ) ) )
+    end;
+  act_tochar( #history2, ch );
+  wait( 4 );
+  if( !char_in_room( ch, find_room( 10003 ) ) )
+    end;
+  act_tochar( #history3, ch );
+  wait( 4 );
+  if( !char_in_room( ch, find_room( 10003 ) ) )
+    end;
+  act_tochar( #history4, ch );
+  }
+else
+  act_tochar( #no, ch );
+act_notchar( #reading, ch );
+"
 E
 "history"
 "@YThe history of the ents is a long one.  A tale largely lost to time and the
-
-ages.  Contained here is what the elders knew when first this fountain was
-
-laid.@n
-
-"
+ages.  Contained here is what the elders knew when first this fountain was
+laid.@n
+"
 E
 "history2"
 "@YWe are an old race and some say we come from the same stock as the trolls. 
-
-That in a time of fire and death, ruled by dragons, the trolls chose the dark
-
-caves and dank swamps, hiding in their cowardice and ultimately serving those
-
-that brought the death.
-
-"
+That in a time of fire and death, ruled by dragons, the trolls chose the dark
+caves and dank swamps, hiding in their cowardice and ultimately serving those
+that brought the death.
+"
 E
 "history3"
 "@YIt is said that we ents chose the path of light, defending the Great Forest
-
-with our very bodies and souls rather than letting it fall before the flame of
-
-death.  In reward for our sacrifice, Cynnis blessed us with the hearty
-
-resilience of the trees themselves.@n
-
-"
+with our very bodies and souls rather than letting it fall before the flame of
+death.  In reward for our sacrifice, Cynnis blessed us with the hearty
+resilience of the trees themselves.@n
+"
 E
 "history4"
 "@YThat is the reason why the trolls are unseemly as a result of their evil
-
-nature and we, as goodly folk, are not althouth we are both of the same
-
-stock.  Why some confuse us for trolls or trolls for us, simply on the
-
-resemblance of our appearance and why we are so very different.  Why trolls
-
-live in dark caves and beneath the ground and why we still live in the woods,
-
-protecting its life.@n
-
-"
+nature and we, as goodly folk, are not althouth we are both of the same
+stock.  Why some confuse us for trolls or trolls for us, simply on the
+resemblance of our appearance and why we are so very different.  Why trolls
+live in dark caves and beneath the ground and why we still live in the woods,
+protecting its life.@n
+"
 E
 "no"
 "Try as you might, you just can't make out the runes.
-
-"
+"
 E
 "reading"
 "$n walks in a slow spiral around the fountain, intently studying a section of
-
-the spiraling runes.
-
-"
+the spiraling runes.
+"
 !
 0 0 0
 A
 "read"
 "faith"
 "act_notchar( #reading, ch );
-
-if( find_skill( ch, entish ) == 10 ) {
-
-  act_tochar( #faith, ch );
-
-  wait( 3 );
-
-  if( !char_in_room( ch, find_room( 10003 ) ) )
-
-    end;
-
-  act_tochar( #faith2, ch );
-
-  wait( 4 );
-
-  if( !char_in_room( ch, find_room( 10003 ) ) )
-
-    end;
-
-  act_tochar( #faith3, ch );
-
-  }
-
-else
-
-  act_tochar( #no, ch );
-
-"
+if( find_skill( ch, entish ) == 10 ) {
+  act_tochar( #faith, ch );
+  wait( 3 );
+  if( !char_in_room( ch, find_room( 10003 ) ) )
+    end;
+  act_tochar( #faith2, ch );
+  wait( 4 );
+  if( !char_in_room( ch, find_room( 10003 ) ) )
+    end;
+  act_tochar( #faith3, ch );
+  }
+else
+  act_tochar( #no, ch );
+"
 E
 "no"
 "Try as you might, you just can't make out the runes.
-
-"
+"
 E
 "reading"
 "$n walks in a slow spiral around the fountain, intently studying a section of
-
-the spiraling runes.
-
-"
+the spiraling runes.
+"
 E
 "faith"
 "@YMost ents choose to follow in faithful worship of Cynnis.  Although there
-
-are many gods and goddesses in the realms of the heavens, it was Cynnis who
-
-protected us in the time of Fire and Death.@n
-
-"
+are many gods and goddesses in the realms of the heavens, it was Cynnis who
+protected us in the time of Fire and Death.@n
+"
 E
 "faith2"
 "@YMany rangers and elves also follow the faith and Cynnis is also known as the
-
-Mother of Life and Mother Nature.  What the rest of the races fail to realize,
-
-even the elves most of the time, is that Cynnis is the Vaasa and the Vaasa is
-
-Cynnis.  Cynnis permits the elves to live there and the elves live in harmony
-
-with the land but it is we ents who are the caretakers of the land as Cynnis
-
-has ordained.@n
-
-"
+Mother of Life and Mother Nature.  What the rest of the races fail to realize,
+even the elves most of the time, is that Cynnis is the Vaasa and the Vaasa is
+Cynnis.  Cynnis permits the elves to live there and the elves live in harmony
+with the land but it is we ents who are the caretakers of the land as Cynnis
+has ordained.@n
+"
 E
 "faith3"
 "@YShould the Vaasa fall, so should Cynnis fall with it.  That is why we
-
-protect the land even as it protects us.  It is our mother, it is our child,
-
-it is as much our family as we are family to each other.  Wherever an ent
-
-travels, it takes with it the heart of Cynnis, the seed of the land's life and
-
-the hope of renewal.@n
-
-"
+protect the land even as it protects us.  It is our mother, it is our child,
+it is as much our family as we are family to each other.  Wherever an ent
+travels, it takes with it the heart of Cynnis, the seed of the land's life and
+the hope of renewal.@n
+"
 !
 0 0 0
 1 17 1509949540 -2 0
@@ -632,16 +437,11 @@ S
 #10004
 "Ent'Moot"
 "Verdant greenery consisting largely of young trees form orderly rows.  The
-
-rows provide ready paths that allow passage in any direction.  To the south
-
-you can clearly see some sort of large circle of standing stones.  In the
-
-other three directions, you only see more greenery consisting of shrubs and
-
-flowers that extends all the way to the edge of Ent'Moot.
-
-"
+rows provide ready paths that allow passage in any direction.  To the south
+you can clearly see some sort of large circle of standing stones.  In the
+other three directions, you only see more greenery consisting of shrubs and
+flowers that extends all the way to the edge of Ent'Moot.
+"
 ""
 301465601 0
 3 6 0
@@ -664,30 +464,20 @@ D3
 E
 "1 south circle standing 5 stones"
 "While you can only see the northern edge of the circle of standing stones to
-
-the south, the arc they form certainly give the impression that they would form
-
-a circle.  Most of the stones are broad slabs standing upright and slightly
-
-higher than a tall ent.  A few of the stones are even capped with a stone
-
-crossing over resting on two different standing stones to form a simple
-
-portal.  One such portal provides entrance to the circle of standing stones
-
-due south of here.
-
-"
+the south, the arc they form certainly give the impression that they would form
+a circle.  Most of the stones are broad slabs standing upright and slightly
+higher than a tall ent.  A few of the stones are even capped with a stone
+crossing over resting on two different standing stones to form a simple
+portal.  One such portal provides entrance to the circle of standing stones
+due south of here.
+"
 A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You pass between two of the standing stones.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You pass between two of the standing stones.\", ch );
+continue;
+"
 !
 3 0 4
 587 17 1509949540 -2 0
@@ -698,16 +488,11 @@ S
 #10005
 "Ent'Moot"
 "A variety of plants dot the landscape around a single, large oak tree set well
-
-away from the islands edge.  The plants and vegetation grow right up to the
-
-island's sheer edges overlooking the Windlass far below.  The sheer edges
-
-prevent passage west or south so you are limited to heading only north or east
-
-if you want to leave.
-
-"
+away from the islands edge.  The plants and vegetation grow right up to the
+island's sheer edges overlooking the Windlass far below.  The sheer edges
+prevent passage west or south so you are limited to heading only north or east
+if you want to leave.
+"
 ""
 301467651 0
 3 6 0
@@ -722,76 +507,49 @@ D1
 E
 "1 west 1 south edge Windlass"
 "The island of Ent'Moot is roughly circular in shape.  Sheer walls and loose
-
-stone ensure that the cliff face of the island remains unassailable from any
-
-who would attack unless they could somehow fly up the very sides.  Far below,
-
-you can see the waters of the Windlass rushing off continuing on its journey
-
-away from Ent'Moot.  The waters continue on their path through the Vaasa
-
-before eventually making their way down the valley towards Sos'kul, land of
-
-the lizardfolk.
-
-"
+stone ensure that the cliff face of the island remains unassailable from any
+who would attack unless they could somehow fly up the very sides.  Far below,
+you can see the waters of the Windlass rushing off continuing on its journey
+away from Ent'Moot.  The waters continue on their path through the Vaasa
+before eventually making their way down the valley towards Sos'kul, land of
+the lizardfolk.
+"
 E
 "tree oak"
 "The oak tree is ancient and immensely large.  It isn't so large as a shuvana
-
-tree but, for an oak, it puts up a very proud figure of a tree standing much
-
-taller than most oaks ever grow.  The oak flourishes with health but, oddly,
-
-its bole has several hollows very similar to the sort animals would use.
-
-"
+tree but, for an oak, it puts up a very proud figure of a tree standing much
+taller than most oaks ever grow.  The oak flourishes with health but, oddly,
+its bole has several hollows very similar to the sort animals would use.
+"
 E
 "4 holes 5 hollows bole"
 "The hollows in the bole are much like those an animal might live in but they glimmer with reflected light where items, instead of animals, have been stored in them.
-
-Attempts to reach the items within, however, are foiled by a magic that seems to make the hollows shift and move about the tree whenever anyone other than the person who puts an item in the tree reaches for it.
-
-"
+Attempts to reach the items within, however, are foiled by a magic that seems to make the hollows shift and move about the tree whenever anyone other than the person who puts an item in the tree reaches for it.
+"
 A
 "deposit"
 ""
 "if( mob_in_room( 2539, room ) ) {
-
-  act_tochar( \"The ent banker takes your items and places them in one of the hollows in the oak.\", ch );
-
-  act_notchar( \"The ent banker takes $n's items and places them in one of the hollows in the oak.\", ch );
-
-  continue;
-
-  }
-
-else
-
-  act_tochar( \"You try to place your gear in the oak but the hollows evade you.\", ch );
-
-"
+  act_tochar( \"The ent banker takes your items and places them in one of the hollows in the oak.\", ch );
+  act_notchar( \"The ent banker takes $n's items and places them in one of the hollows in the oak.\", ch );
+  continue;
+  }
+else
+  act_tochar( \"You try to place your gear in the oak but the hollows evade you.\", ch );
+"
 !
 0 0 0
 A
 "withdraw"
 ""
 "if( mob_in_room( 2539, room ) ) {
-
-  act_tochar( \"The ent banker retrieves your items from the oak and hands them to you.\", ch );
-
-  act_notchar( \"The ent banker retrieves $n's items from the oak and hands them to $m.\", ch );
-
-  continue;
-
-  }
-
-else
-
-  act_tochar( \"You try to retrieve your items from the oak but the hollows evade you.\", ch );
-
-"
+  act_tochar( \"The ent banker retrieves your items from the oak and hands them to you.\", ch );
+  act_notchar( \"The ent banker retrieves $n's items from the oak and hands them to $m.\", ch );
+  continue;
+  }
+else
+  act_tochar( \"You try to retrieve your items from the oak but the hollows evade you.\", ch );
+"
 !
 0 0 0
 2539 9 1509949540 3 0
@@ -801,16 +559,11 @@ S
 #10006
 "Ent'Moot"
 "A plethora of flowers grow all about in patches with each patch divided from
-
-the others by swaths of grass.  The grass paths between the flowers make it
-
-easy to avoid stepping on the patches as you move about.  The paths lead away in
-
-all four cardinal directions.  To the north you can clearly see some sort of
-
-large circle of standing stones.
-
-"
+the others by swaths of grass.  The grass paths between the flowers make it
+easy to avoid stepping on the patches as you move about.  The paths lead away in
+all four cardinal directions.  To the north you can clearly see some sort of
+large circle of standing stones.
+"
 ""
 301465601 0
 3 6 0
@@ -833,54 +586,35 @@ D3
 E
 "1 north circle standing 5 stones"
 "While you can only see the southern edge of the circle of standing stones to
-
-the north, the arc they form certainly give the impression that they would form
-
-a circle.  Most of the stones are broad slabs standing upright and slightly
-
-higher than a tall ent.  A few of the stones are even capped with a stone
-
-crossing over resting on two different standing stones to form a simple
-
-portal.  One such portal provides entrance to the circle of standing stones
-
-due north of here.
-
-"
+the north, the arc they form certainly give the impression that they would form
+a circle.  Most of the stones are broad slabs standing upright and slightly
+higher than a tall ent.  A few of the stones are even capped with a stone
+crossing over resting on two different standing stones to form a simple
+portal.  One such portal provides entrance to the circle of standing stones
+due north of here.
+"
 A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You pass between two of the standing stones.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You pass between two of the standing stones.\", ch );
+continue;
+"
 !
 3 0 1
 A
 "pick 1 get take"
 "6 flowers bouquet"
 "if( mob_in_room( 2541, room ) ) {
-
-  act_room( \"An ent citizen shouts at you for picking the flowers and leaps to kill you!\", ch );
-
-  interpret( mob_in_room( 2541, room ), \"kill $n\" );
-
-  }
-
-else {
-
-  act_tochar( \"You pick some of the flowers.\", ch );
-
-  act_notchar( \"$n risks $s life picking some flowers from the garden.\", ch );
-
-  }
-
-obj_to_char( oload( 4045 ), ch );
-
-"
+  act_room( \"An ent citizen shouts at you for picking the flowers and leaps to kill you!\", ch );
+  interpret( mob_in_room( 2541, room ), \"kill $n\" );
+  }
+else {
+  act_tochar( \"You pick some of the flowers.\", ch );
+  act_notchar( \"$n risks $s life picking some flowers from the garden.\", ch );
+  }
+obj_to_char( oload( 4045 ), ch );
+"
 !
 0 0 0
 4024 17 1509949540 -2 0
@@ -892,18 +626,12 @@ S
 #10007
 "Ent'Moot"
 "Several groupings of immature fruit trees grow in orderly rows, each grouping
-
-consisting of only one type of tree.  Two paths cut through the area, both
-
-meeting in the center at a crossroads then heading off in all four cardinal
-
-directions. The paths are little more than well-worn walkways where the rest of
-
-the ground is covered in lush grasses.  To the west you can clearly see some
-
-sort of large circle of standing stones.
-
-"
+consisting of only one type of tree.  Two paths cut through the area, both
+meeting in the center at a crossroads then heading off in all four cardinal
+directions. The paths are little more than well-worn walkways where the rest of
+the ground is covered in lush grasses.  To the west you can clearly see some
+sort of large circle of standing stones.
+"
 ""
 301465601 0
 3 6 0
@@ -926,39 +654,26 @@ D3
 E
 "immature fruit trees"
 "The trees look to be of several sorts including apple, pear, plum and cherry. 
-
-All are young and none appear to be bearing fruit yet.  Perhaps in a few more
-
-years they will be ready to bear fruit.
-
-"
+All are young and none appear to be bearing fruit yet.  Perhaps in a few more
+years they will be ready to bear fruit.
+"
 E
 "1 west circle standing 5 stones"
 "While you can only see the eastern edge of the circle of standing stones to
-
-the west, the arc they form certainly give the impression that they would form
-
-a circle.  Most of the stones are broad slabs standing upright and slightly
-
-higher than a tall ent.  A few of the stones are even capped with a stone
-
-crossing over resting on two different standing stones to form a simple
-
-portal.  One such portal provides entrance to the circle of standing stones
-
-due west of here.
-
-"
+the west, the arc they form certainly give the impression that they would form
+a circle.  Most of the stones are broad slabs standing upright and slightly
+higher than a tall ent.  A few of the stones are even capped with a stone
+crossing over resting on two different standing stones to form a simple
+portal.  One such portal provides entrance to the circle of standing stones
+due west of here.
+"
 A
 ""
 ""
 "if( !is_exhausted( ch ) )
-
-  act_tochar( \"You pass between two of the standing stones.\", ch );
-
-continue;
-
-"
+  act_tochar( \"You pass between two of the standing stones.\", ch );
+continue;
+"
 !
 3 0 8
 587 17 1509949540 -2 0
@@ -969,16 +684,11 @@ S
 #10008
 "Ent'Moot"
 "A variety of plants and shrubs line the perimeter of a small clearing of
-
-neatly trimmed grass.  The plants on the edge are dense and almost appear to
-
-act as a barrier to prevent people from falling over into the waters far
-
-below.  Fortunately the dense shrubs have wide breaks to both the west and
-
-south intended to allow passersby a way in and out.
-
-"
+neatly trimmed grass.  The plants on the edge are dense and almost appear to
+act as a barrier to prevent people from falling over into the waters far
+below.  Fortunately the dense shrubs have wide breaks to both the west and
+south intended to allow passersby a way in and out.
+"
 ""
 301465603 0
 3 6 0
@@ -993,38 +703,25 @@ D3
 E
 "1 north 1 east 1 down 5 waters Windlass"
 "The island of Ent'Moot is roughly circular in shape.  Sheer walls and loose
-
-stone ensure that the cliff face of the island remains unassailable from any
-
-who would attack unless they could somehow fly up the very sides.  Far below,
-
-you can see the rushing waters of the Windlass, the great river that passes
-
-through the Vaasa before eventually making its way down the valley towards
-
-Sos'kul, land of the lizardfolk.
-
-"
+stone ensure that the cliff face of the island remains unassailable from any
+who would attack unless they could somehow fly up the very sides.  Far below,
+you can see the rushing waters of the Windlass, the great river that passes
+through the Vaasa before eventually making its way down the valley towards
+Sos'kul, land of the lizardfolk.
+"
 E
 "perimeter 5 plants 5 shrubs barrier"
 "The shrubs are a mix of several types such as juniper and arrowwood.  The plants
-
-are growing so densely together that you wouldn't be able to accidently fall
-
-through them to your death in the rapidly running waters of the Windlass far
-
-below.
-
-"
+are growing so densely together that you wouldn't be able to accidently fall
+through them to your death in the rapidly running waters of the Windlass far
+below.
+"
 E
 "grass"
 "The grass is a thick, lush green and is neatly trimmed to an even, short
-
-length.  It covers even, level ground and wouldn't offer any obstructions to
-
-trip over.
-
-"
+length.  It covers even, level ground and wouldn't offer any obstructions to
+trip over.
+"
 2537 9 1509949540 3 0
 4033 17 1509949540 -1 0
 4034 17 1509949490 -1 0
@@ -1046,14 +743,10 @@ S
 #10009
 "Ent'Moot"
 "You are in a more or less circular clering covered in lush, manicured grass. 
-
-Neatly trimmed shrubs form a functional barrier along the rim of a small
-
-clearing.  There is a wide break in the hedge of shrubs to the north and west
-
-allowing passage in those directions.
-
-"
+Neatly trimmed shrubs form a functional barrier along the rim of a small
+clearing.  There is a wide break in the hedge of shrubs to the north and west
+allowing passage in those directions.
+"
 ""
 301465603 0
 3 6 0
@@ -1068,38 +761,25 @@ D3
 E
 "1 east 1 south 1 down 5 waters Windlass"
 "The island of Ent'Moot is roughly circular in shape.  Sheer walls and loose
-
-stone ensure that the cliff face of the island remains unassailable from any
-
-who would attack unless they could somehow fly up the very sides.  Far below,
-
-you can see the rushing waters of the Windlass, the great river that passes
-
-through the Vaasa before eventually making its way down the valley towards
-
-Sos'kul, land of the lizardfolk.
-
-"
+stone ensure that the cliff face of the island remains unassailable from any
+who would attack unless they could somehow fly up the very sides.  Far below,
+you can see the rushing waters of the Windlass, the great river that passes
+through the Vaasa before eventually making its way down the valley towards
+Sos'kul, land of the lizardfolk.
+"
 E
 "5 shrubs hedge barrier rim"
 "The shrubs are a mix of several types such as Spurwing Wattle and gorse.  The
-
-plants are growing so densely together that you wouldn't be able to accidently
-
-fall through them to your death in the rapidly running waters of the Windlass
-
-far below.
-
-"
+plants are growing so densely together that you wouldn't be able to accidently
+fall through them to your death in the rapidly running waters of the Windlass
+far below.
+"
 E
 "grass"
 "The grass is a thick, lush green and is neatly trimmed to an even, short
-
-length.  It covers even, level ground and wouldn't offer any obstructions to
-
-trip over.
-
-"
+length.  It covers even, level ground and wouldn't offer any obstructions to
+trip over.
+"
 2538 9 1509949540 3 0
 2001 17 1509949540 -1 0
 2002 17 1509949515 -1 0
@@ -1122,16 +802,11 @@ S
 #10010
 "Ent'Moot"
 "You are on the northern edge of Ent'Moot overlooking a spectacular view of the
-
-Windlass.  Plants with dark green serrated leaves grow in abundance, some with
-
-berries in various stages of growth from green to red.  The plants grow right
-
-up to the edges of the land where a sheer drop prevents passage further on. 
-
-The only direction you can safely go is south.
-
-"
+Windlass.  Plants with dark green serrated leaves grow in abundance, some with
+berries in various stages of growth from green to red.  The plants grow right
+up to the edges of the land where a sheer drop prevents passage further on. 
+The only direction you can safely go is south.
+"
 ""
 301465601 0
 3 6 0
@@ -1142,18 +817,12 @@ D2
 E
 "1 north 1 west 1 east 1 down edge Windlass"
 "The island of Ent'Moot is roughly circular in shape.  Sheer walls and loose
-
-stone ensure that the cliff face of the island remains unassailable from any
-
-who would attack unless they could somehow fly up the very sides.  Far below,
-
-you can see the rushing waters of the Windlass as it breaks over the rocky,
-
-leading edge of Ent'Moot creating white, watery froth that is quickly carried
-
-away on the current as the waters head south around the island.
-
-"
+stone ensure that the cliff face of the island remains unassailable from any
+who would attack unless they could somehow fly up the very sides.  Far below,
+you can see the rushing waters of the Windlass as it breaks over the rocky,
+leading edge of Ent'Moot creating white, watery froth that is quickly carried
+away on the current as the waters head south around the island.
+"
 2441 17 1509949540 -2 0
 2826 9 1509949540 3 0
 -1
@@ -1162,14 +831,10 @@ S
 #10011
 "Ent'Moot"
 "It looks as if a bush with smooth green leaves has virtually taken over this
-
-corner of the island.  The bush appears to grow almost unchecked and it would
-
-be difficult to roam even as far as the edge of the island, visible just past
-
-the bushes.  A single path leads away from here heading north.
-
-"
+corner of the island.  The bush appears to grow almost unchecked and it would
+be difficult to roam even as far as the edge of the island, visible just past
+the bushes.  A single path leads away from here heading north.
+"
 ""
 301465601 0
 3 6 0
@@ -1180,18 +845,12 @@ D0
 E
 "1 south 1 west 1 east 1 doen edge Windlass"
 "The island of Ent'Moot is roughly circular in shape.  Sheer walls and loose
-
-stone ensure that the cliff face of the island remains unassailable from any
-
-who would attack unless they could somehow fly up the very sides.  Far below,
-
-you can see the rushing waters of the Windlass as it flows southward away from
-
-the island.  Its swift passage carries it southward as it travels on its way
-
-through the Vaasa and off towards Sos'Kul, land of the lizardfolk.
-
-"
+stone ensure that the cliff face of the island remains unassailable from any
+who would attack unless they could somehow fly up the very sides.  Far below,
+you can see the rushing waters of the Windlass as it flows southward away from
+the island.  Its swift passage carries it southward as it travels on its way
+through the Vaasa and off towards Sos'Kul, land of the lizardfolk.
+"
 2576 17 1509949540 -2 0
 2826 9 1509949540 3 0
 -1
@@ -1200,16 +859,11 @@ S
 #10012
 "Ent'Moot"
 "Dense foliage and creeping vines form a arched tunnel through which you can
-
-only catch periodic glimpses of the sky.  The tunnel is too perfectly formed
-
-to be natural and in places where the foliage is slightly less dense you can
-
-make out bits of trellis underneath.  A large root arcs out from here crossing
-
-the river separating the island of Ent'Moot from the mainland of the Vaasa.
-
-"
+only catch periodic glimpses of the sky.  The tunnel is too perfectly formed
+to be natural and in places where the foliage is slightly less dense you can
+make out bits of trellis underneath.  A large root arcs out from here crossing
+the river separating the island of Ent'Moot from the mainland of the Vaasa.
+"
 ""
 301465601 0
 3 6 0
@@ -1225,10 +879,8 @@ A
 ""
 ""
 "act_tochar( \"You step onto the root and step out over the river.\", ch );
-
-continue;
-
-"
+continue;
+"
 !
 3 0 2
 587 17 1509949540 -2 0

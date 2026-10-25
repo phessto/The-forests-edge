@@ -10,25 +10,16 @@
 #39000
 "Black Hills Road"
 "The road narrows here and begins to slope downwards at a sharp angle to the
-
-south.  The small pebbles that cover the road begin to make your footing
-
-precarious and you constantly have to catch yourself to avoid falling.  The
-
-dark hills stretch up to the sky as if to embrace it in their stoney grasp.
-
-To the north the roads winds its way onward.  A sign has been planted in the
-
-road here.
-
-"
+south.  The small pebbles that cover the road begin to make your footing
+precarious and you constantly have to catch yourself to avoid falling.  The
+dark hills stretch up to the sky as if to embrace it in their stoney grasp.
+To the north the roads winds its way onward.  A sign has been planted in the
+road here.
+"
 "SOUTHERN BOUNDARY OF AREA
-
-links to south to 38303
-
-no_mob
-
-"
+links to south to 38303
+no_mob
+"
 301465608 0
 12 9 0
 D0
@@ -43,28 +34,20 @@ E
 "sign"
 "The sign reads:
 
-
 North - Black Hills Road and Valley
-
-South - Pennan
-
-"
+South - Pennan
+"
 -1
 S
 
 #39001
 "Black Hills Road"
 "You continue on the Black Hills Road.  To the west, a high stone cliff rises
-
-overhead, at the top of which you see several boulders.  You can imagine that
-
-they look like animals: in fact one of them looks just like your old mother.
-
-Returning to reality, you see that the road continues north and south, and
-
-that navigable hills head off to the east.
-
-"
+overhead, at the top of which you see several boulders.  You can imagine that
+they look like animals: in fact one of them looks just like your old mother.
+Returning to reality, you see that the road continues north and south, and
+that navigable hills head off to the east.
+"
 ""
 301465600 0
 12 9 0
@@ -87,17 +70,12 @@ S
 #39002
 "Black Hills Road"
 "A fine layer of black dust from the road covers you, making it difficult to
-
-see and breathe.  To the east and west the dark hills surround you, adding to
-
-the gloomy and oppressive air.  The road continues to the north and south
-
-while a path heads eastward into the confines of the hills.
-
-"
+see and breathe.  To the east and west the dark hills surround you, adding to
+the gloomy and oppressive air.  The road continues to the north and south
+while a path heads eastward into the confines of the hills.
+"
 "road goes n and s
-
-"
+"
 301465600 0
 12 9 0
 D0
@@ -118,18 +96,12 @@ S
 #39003
 "Black Hills Road"
 "You continue your journey down the Black Hills road.  The tall, looming hills
-
-tower over you, as if trying to force you to keep to the road.  A strong
-
-breeze blowing from the north swirls the dust about and causes your eyes to
-
-water.  The road continues to the north and south.  To the west appears to be
-
-a small track that one could follow into the hills, the ground to the east is
-
-littered with loose rocks.
-
-"
+tower over you, as if trying to force you to keep to the road.  A strong
+breeze blowing from the north swirls the dust about and causes your eyes to
+water.  The road continues to the north and south.  To the west appears to be
+a small track that one could follow into the hills, the ground to the east is
+littered with loose rocks.
+"
 ""
 301465600 0
 12 9 0
@@ -155,14 +127,10 @@ S
 #39004
 "Black Hills Road"
 "Once again you stand on the large dirt road, surrounded by the tall, dark
-
-hills.  A strong northerly wind buffets you, blowing the black dust into
-
-your eyes, nose, and mouth.  The hills stretch out to the east and west
-
-of you, while the road continues to the north and south.
-
-"
+hills.  A strong northerly wind buffets you, blowing the black dust into
+your eyes, nose, and mouth.  The hills stretch out to the east and west
+of you, while the road continues to the north and south.
+"
 ""
 301465600 0
 12 9 0
@@ -189,18 +157,12 @@ S
 #39005
 "Black Hills Road"
 "Kicking up dust as you travel further down the road, you feel the solemn
-
-presence of the hills to either side of you.  Their craggy, dark spires
-
-stretch up into the heavens as if wanting to become part of it.  Large
-
-rocks and the occasional boulder line the road.  To the north and south
-
-the road continues on and to the east and west the hills stand tall and
-
-dark.
-
-"
+presence of the hills to either side of you.  Their craggy, dark spires
+stretch up into the heavens as if wanting to become part of it.  Large
+rocks and the occasional boulder line the road.  To the north and south
+the road continues on and to the east and west the hills stand tall and
+dark.
+"
 ""
 301465600 0
 12 9 0
@@ -226,19 +188,13 @@ S
 #39006
 "Black Hills Road"
 "You stand on a wide road covered with fine, black dust.  The wind whips
-
-around you from the north, throwing dust into the air.  Small dust devils
-
-travel down the road in front of you, joining you on your journey.  To
-
-your east and west you see a sharp, rocky slope and to your north and
-
-south the road continues on.
-
-"
+around you from the north, throwing dust into the air.  Small dust devils
+travel down the road in front of you, joining you on your journey.  To
+your east and west you see a sharp, rocky slope and to your north and
+south the road continues on.
+"
 "r/w
-
-"
+"
 301465600 0
 12 9 0
 D0
@@ -263,14 +219,10 @@ S
 #39007
 "Black Hills - Dirt Mound"
 "You stand on a tall mound of dirt, which is covered with small, loose bits of
-
-stone.  As you look about, you realize that this mound could easily have been
-
-created by a recent landslide from the hills surrounding you.  The hill to the
-
-east looks especially unstable.
-
-"
+stone.  As you look about, you realize that this mound could easily have been
+created by a recent landslide from the hills surrounding you.  The hill to the
+east looks especially unstable.
+"
 ""
 301465600 0
 4 9 0
@@ -294,40 +246,26 @@ A
 ""
 ""
 "if( !is_player( ch ) )
-
-  end;
-
-if( rflag( reset0, room ) ) {
-
-  if( random( 0, 10 ) > 8 ) {
-
-    act_tochar( #char, ch );
-
-    i = dice( 2, 4 );
-
-    dam_message( ch, i, \"The rocks\" );
-
-    inflict( ch, mob, i, \"jagged slivers\" );
-
-    act_notchar( #room, ch );
-
-    remove_rflag( reset0, room );
-
-    }
-
-  }
-
-"
+  end;
+if( rflag( reset0, room ) ) {
+  if( random( 0, 10 ) > 8 ) {
+    act_tochar( #char, ch );
+    i = dice( 2, 4 );
+    dam_message( ch, i, \"The rocks\" );
+    inflict( ch, mob, i, \"jagged slivers\" );
+    act_notchar( #room, ch );
+    remove_rflag( reset0, room );
+    }
+  }
+"
 E
 "room"
 "You see the rocks come crashing down on $n.
-
-"
+"
 E
 "char"
 "The rocks suddenly come crashing down on you, causing much pain.
-
-"
+"
 !
 1 -1 2
 -1
@@ -336,23 +274,15 @@ S
 #39008
 "Black Hills Road"
 "As you go down the path, the wind swirls the black dust about you.  The hills
-
-tower about you to the east while the forest quietly keeps you company to the
-
-west.  As you continue on, you see a doe and a fawn at the edge of the forest.
-
-They quickly see you and dart back into the protection of the dense foliage of
-
-the forest.  The road continues both to your north and east.
-
-"
+tower about you to the east while the forest quietly keeps you company to the
+west.  As you continue on, you see a doe and a fawn at the edge of the forest.
+They quickly see you and dart back into the protection of the dense foliage of
+the forest.  The road continues both to your north and east.
+"
 "west is 68069, path to Sjerdil's Tower
-
-Sign for the lazy river goes here when its complete
-
-[Maegheera] renamed the Lazy River.
-
-"
+Sign for the lazy river goes here when its complete
+[Maegheera] renamed the Lazy River.
+"
 301465600 0
 12 9 0
 D0
@@ -374,31 +304,22 @@ D3
 E
 "fir tree"
 "A tall fir tree stands apart from its fellows.  Several holes have been
-
-drilled into the sides, perhaps by woodpeckers.  A large nest, made of
-
-branches and pine needles, rests in the arms of a large branch.
-
-"
+drilled into the sides, perhaps by woodpeckers.  A large nest, made of
+branches and pine needles, rests in the arms of a large branch.
+"
 -1
 S
 
 #39009
 "Black Hills Road"
 "You continue your journey down the road.  The black dust of the road flies up
-
-about your ankles with each step.  To your east and north you see a meadow,
-
-while to the west and south the road continues.  A light breeze blows,
-
-stirring the dust and making it difficult to see.
-
-"
+about your ankles with each step.  To your east and north you see a meadow,
+while to the west and south the road continues.  A light breeze blows,
+stirring the dust and making it difficult to see.
+"
 "field to n, hills to s
-
-road s and w
-
-"
+road s and w
+"
 301465600 0
 12 9 0
 D0
@@ -423,15 +344,11 @@ S
 #39010
 "Black Hills Road"
 "The road continues to wind through the hills, and you can travel either north
-
-or east along the dry path.  In fact, you can only travel along the road, for
-
-west and south are blocked by steep cliffs rising high above the valley.
-
-"
+or east along the dry path.  In fact, you can only travel along the road, for
+west and south are blocked by steep cliffs rising high above the valley.
+"
 "e and n is road
-
-"
+"
 301465600 0
 12 9 0
 D0
@@ -449,21 +366,14 @@ S
 #39011
 "Black Hills Road"
 "You walk down the Black Hills Road, trying hard not to breathe the black dust.
-
-Off to the east, you see a meadow full of tall grass which gently sways in the
-
-breeze.  The tall, craggy hills to the west loom up above you, making you feel
-
-small in comparison.  The well-travelled path continues north and south.  A
-
-small side path, little more than an animal trail, branches off the main road
-
-to the west.
-
-"
+Off to the east, you see a meadow full of tall grass which gently sways in the
+breeze.  The tall, craggy hills to the west loom up above you, making you feel
+small in comparison.  The well-travelled path continues north and south.  A
+small side path, little more than an animal trail, branches off the main road
+to the west.
+"
 "road s and n
-
-"
+"
 301465600 0
 12 9 0
 D0
@@ -488,14 +398,10 @@ S
 #39012
 "Black Hills Road"
 "A thin road struggles north and south, bound by the dark hills to the
-
-west and a fertile meadow to the east.  From this vantage point, you can
-
-see the Elhanni far to the east.  A broad flood plain lies between the
-
-high road and the river, providing a site for a flourishing meadow.
-
-"
+west and a fertile meadow to the east.  From this vantage point, you can
+see the Elhanni far to the east.  A broad flood plain lies between the
+high road and the river, providing a site for a flourishing meadow.
+"
 ""
 301465600 0
 12 9 0
@@ -518,16 +424,11 @@ S
 #39013
 "Black Hills Road"
 "The road is blocked by cliffs to the north and west.  You can either
-
-follow the broad path east or south; there really is no other choice. 
-
-The ground at your feet is very dry and dusty, and the blackness of the
-
-rocks merges with the dark earth, making it almost impossible to tell
-
-which is which.
-
-"
+follow the broad path east or south; there really is no other choice. 
+The ground at your feet is very dry and dusty, and the blackness of the
+rocks merges with the dark earth, making it almost impossible to tell
+which is which.
+"
 ""
 301465600 0
 12 9 0
@@ -547,21 +448,14 @@ S
 #39014
 "Black Hills Road"
 "The road winds north and west here, following the curves of the western
-
-hills.  A bright green meadow lies to your east and south, full of dark
-
-green grasses and light green flowering weeds.  A small maple tree
-
-struggles for life just off the path, alone in its choice of residence.
-
-"
+hills.  A bright green meadow lies to your east and south, full of dark
+green grasses and light green flowering weeds.  A small maple tree
+struggles for life just off the path, alone in its choice of residence.
+"
 "write about how the rockiness falls away or gives way to a more fertile area, perhaps a flood plain of the elhanni which is below the 
-
-level of the black hills road which cuts its way along edge of hills
-
-(think raise railroad tracks here)
-
-"
+level of the black hills road which cuts its way along edge of hills
+(think raise railroad tracks here)
+"
 301465600 0
 12 9 0
 D0
@@ -587,16 +481,11 @@ S
 #39015
 "Black Hills Road"
 "The dry road continues heading due north and south through the hills.  To
-
-your west stand the Black Hills themselves, dark and brooding.  One of
-
-the rocky hills looms directly over you, and you can see it oozing an
-
-oily substance.  Parts of the hill are so close that you could touch it
-
-if you really wanted to.
-
-"
+your west stand the Black Hills themselves, dark and brooding.  One of
+the rocky hills looms directly over you, and you can see it oozing an
+oily substance.  Parts of the hill are so close that you could touch it
+if you really wanted to.
+"
 ""
 301465600 0
 12 9 0
@@ -615,28 +504,22 @@ D2
 E
 "hills"
 "The stone of the hills is black, and almost oily-looking.  You wonder if
-
-you can safely touch it.
-
-"
+you can safely touch it.
+"
 A
 "touch feel"
 "rock stone hill"
 "send_to_char( #yes_char, ch );
-
-    act_notchar( #yes_room, ch );
-
-"
+    act_notchar( #yes_room, ch );
+"
 E
 "yes_char"
 "You reach for the side of the hills, then reconsider your actions.
-
-"
+"
 E
 "yes_room"
 "You see $n reach for the side of the cliff, then step back quickly.
-
-"
+"
 !
 0 0 0
 -1
@@ -645,21 +528,14 @@ S
 #39016
 "Black Hills Road"
 "It is difficult to see the road, for it is mostly obscured by the remains
-
-of a landslide.  Several large, jagged black rocks litter the dusty road,
-
-making passage difficult, and a bit dangerous.  The rocks have hurt some
-
-creatures before: most of the stones have flecks of red-brown blood where
-
-others have tried to pass, with limited success.
-
-"
+of a landslide.  Several large, jagged black rocks litter the dusty road,
+making passage difficult, and a bit dangerous.  The rocks have hurt some
+creatures before: most of the stones have flecks of red-brown blood where
+others have tried to pass, with limited success.
+"
 "[Kohran] not typo but this rock hurts me when i step on it (im riding horse)
-
-[Dalthas] This room is funny if someone's camoed and steps on rocks
-
-"
+[Dalthas] This room is funny if someone's camoed and steps on rocks
+"
 301465600 0
 12 9 0
 D0
@@ -682,40 +558,26 @@ A
 ""
 ""
 "if( !is_player( ch ) )
-
-  end;
-
-if( rflag( reset0, room ) && !is_mounted( ch ) ) {
-
-  if( random( 0, 10 ) > 6 ) {
-
-    act_tochar( #char, ch );
-
-    i = dice( 4, 5 );
-
-    dam_message( ch, i, \"The sharp rock\" );
-
-    inflict( ch, mob, i, \"the sharp rock\" );
-
-    act_notchar( #room, ch );
-
-    remove_rflag( reset0, room );
-
-    }
-
-  }
-
-"
+  end;
+if( rflag( reset0, room ) && !is_mounted( ch ) ) {
+  if( random( 0, 10 ) > 6 ) {
+    act_tochar( #char, ch );
+    i = dice( 4, 5 );
+    dam_message( ch, i, \"The sharp rock\" );
+    inflict( ch, mob, i, \"the sharp rock\" );
+    act_notchar( #room, ch );
+    remove_rflag( reset0, room );
+    }
+  }
+"
 E
 "room"
 "You see $n step forward, then howl in pain.
-
-"
+"
 E
 "char"
 "You step on a sharp piece of rock, and it really hurts!
-
-"
+"
 !
 1 0 15
 2509 9 1509949540 3 0
@@ -725,14 +587,10 @@ S
 #39017
 "Black Hills Road"
 "The dry, dusty road leads north and south between the hills and the river. 
-
-One large rock (or small boulder) stands in the middle of the road.  A
-
-battered, fresh gouge in the soil marks the path the rock has taken from the
-
-hills - something small and brown protrudes from underneath it, too.
-
-"
+One large rock (or small boulder) stands in the middle of the road.  A
+battered, fresh gouge in the soil marks the path the rock has taken from the
+hills - something small and brown protrudes from underneath it, too.
+"
 ""
 301465600 0
 12 9 0
@@ -755,26 +613,19 @@ D3
 E
 "corpse mouse rock boulder small brown under"
 "A small, flattened body of a brown mouse lies partially under a boulder. 
-
-Since you can see the tracks of the boulder, you know that his demise
-
-must be due to natural causes.
-
-"
+Since you can see the tracks of the boulder, you know that his demise
+must be due to natural causes.
+"
 -1
 S
 
 #39018
 "Black Hills Road"
 "The road continues north and south as far as the eye can see.  The scenery
-
-here is quite breathtaking, as the sharp crags of the Black Hills in the west
-
-contrast with the soft green tones of the eastern meadow.  Here, by your feet,
-
-is an empty honeycomb, though there is no tree in sight.
-
-"
+here is quite breathtaking, as the sharp crags of the Black Hills in the west
+contrast with the soft green tones of the eastern meadow.  Here, by your feet,
+is an empty honeycomb, though there is no tree in sight.
+"
 ""
 301465600 0
 12 9 0
@@ -800,12 +651,9 @@ S
 #39019
 "Black Hills Road"
 "The dusty Black Hills Road runs straight north-south here, as it avoids
-
-getting to close to the ominous hills to the west.  A narrow bit of meadow to
-
-your east blocks the sight of the river, but you can easily hear it rush past.
-
-"
+getting to close to the ominous hills to the west.  A narrow bit of meadow to
+your east blocks the sight of the river, but you can easily hear it rush past.
+"
 ""
 301465600 0
 12 9 0
@@ -833,21 +681,14 @@ S
 #39020
 "Black Hills Road"
 "The road forks here, with the main branches heading west and south.  A smaller
-
-path leads north, through the river valley and towards the Cairn Mountains.
-
-The Elhanni is just a bit to the east: you can hear the sounds of it as it
-
-rushes over rocks.  A small sign stands by the side of the road, almost hidden
-
-in the high grasses of the meadow.
-
-"
+path leads north, through the river valley and towards the Cairn Mountains.
+The Elhanni is just a bit to the east: you can hear the sounds of it as it
+rushes over rocks.  A small sign stands by the side of the road, almost hidden
+in the high grasses of the meadow.
+"
 "will lead w toward orlumber, sign to be here
-
-north toward parts unkown (grassy river valley, loop around cairn mts)
-
-"
+north toward parts unkown (grassy river valley, loop around cairn mts)
+"
 301465600 0
 12 9 0
 D0
@@ -869,12 +710,9 @@ D3
 E
 "sign"
 "North - Old Highway
-
-West - Orlumber
-
-South - Pennan
-
-"
+West - Orlumber
+South - Pennan
+"
 755 9 1509949540 3 0
 -1
 S
@@ -882,21 +720,14 @@ S
 #39021
 "Black Hills Road"
 "The Black Hills Road runs north and south here, struggling north towards the
-
-Grand Highway.  To the south lies the broad river valley, wedged in between
-
-the Black Hills and the Elhanni.  To the northwest, you can just spy a bit of
-
-smoke, though its source is impossible to determine.
-
-"
+Grand Highway.  To the south lies the broad river valley, wedged in between
+the Black Hills and the Elhanni.  To the northwest, you can just spy a bit of
+smoke, though its source is impossible to determine.
+"
 "another no mob room for now
-
-[Phule] to north is stone paved road to Brithbarad
-
-[Phule] not sure about grand highway reference
-
-"
+[Phule] to north is stone paved road to Brithbarad
+[Phule] not sure about grand highway reference
+"
 301465608 0
 12 9 0
 D0
@@ -917,19 +748,13 @@ S
 #39022
 "An Old, Well-Worn Path"
 "A well-worn path leads west, heading through a rolling, grassy landscape, and
-
-east through the Black Hills.  The path is quite rutted, the ruts since grown
-
-over with short, lush grasses.  A small sign has been planted in the road.
-
-"
+east through the Black Hills.  The path is quite rutted, the ruts since grown
+over with short, lush grasses.  A small sign has been planted in the road.
+"
 "enters black hills here and leads toward orlumber to nw?
-
-nomobs here in case
-
-[Soren] west was 76500
-
-"
+nomobs here in case
+[Soren] west was 76500
+"
 301465608 0
 2 9 0
 D1
@@ -947,49 +772,35 @@ D3
 E
 "sign"
 "Road to Orlumber - Under construction.
-
-"
+"
 E
 "ruts grasses ground path down"
 "Old ruts, which appear to be from wagon wheels, mark a trail heading west. 
-
-The ruts are overgrown with grass, though the grass on the trail is
-
-shorter than that to the sides of the trail.  Along with the ruts are
-
-footprints and other marks, indicating this trail was once heavily
-
-traveled, and still is occasionally used.
-
-"
+The ruts are overgrown with grass, though the grass on the trail is
+shorter than that to the sides of the trail.  Along with the ruts are
+footprints and other marks, indicating this trail was once heavily
+traveled, and still is occasionally used.
+"
 E
 "landscape 1 west"
 "The land to the west is a vista of rolling hills, lush with green
-
-grasses, spotted with small trees, shrubs, and flowers.
-
-"
+grasses, spotted with small trees, shrubs, and flowers.
+"
 E
 "1 east"
 "East are the Black Hills, so called for its black soil, which is visible
-
-in a few bald spots and collapsed hillsides.
-
-"
+in a few bald spots and collapsed hillsides.
+"
 E
 "1 north"
 "Tall grasses grow densely to the north, some of the stalks reaching past your
-
-head.
-
-"
+head.
+"
 E
 "1 south"
 "South, the collapsed side of a hill blocks the way.  It does not appear
-
-climbable.
-
-"
+climbable.
+"
 1974 17 1509949540 -2 0
 885 9 1509949540 3 0
 -1
@@ -998,14 +809,10 @@ S
 #39023
 "Black Hills"
 "The ground slopes suddenly from west to east, forcing you to stop and
-
-catch yourself many times to avoid falling.  To your north, the hills
-
-stretch out to greet you.  To the west lie the safer surroundings of the
-
-road.  To the east and south large, vertical cliffs block your passage.
-
-"
+catch yourself many times to avoid falling.  To your north, the hills
+stretch out to greet you.  To the west lie the safer surroundings of the
+road.  To the east and south large, vertical cliffs block your passage.
+"
 ""
 301465600 0
 4 9 0
@@ -1024,18 +831,12 @@ S
 #39024
 "Black Hills - By a Great Boulder"
 "You enter the craggy, hallowed confines of the hills.  Sharp, jagged
-
-stone formations jut out from the sides of the hills casting odd shadows
-
-about the area.  To the northwest atop the peak of a large hill sits a
-
-great boulder, seemingly surveying the river valley below it to the east. 
-
-The hills stretch out in all other directions, with the well-travelled
-
-road to the west.
-
-"
+stone formations jut out from the sides of the hills casting odd shadows
+about the area.  To the northwest atop the peak of a large hill sits a
+great boulder, seemingly surveying the river valley below it to the east. 
+The hills stretch out in all other directions, with the well-travelled
+road to the west.
+"
 ""
 301465600 0
 4 9 0
@@ -1058,12 +859,9 @@ D3
 E
 "boulder"
 "A large boulder rests here, its craggy face stained and grooved by
-
-weather and time.  Sparse grasses grow around the base yet they do not
-
-seem to thrive in the shade of this large piece of granite.
-
-"
+weather and time.  Sparse grasses grow around the base yet they do not
+seem to thrive in the shade of this large piece of granite.
+"
 755 9 1509949540 3 0
 -1
 S
@@ -1071,12 +869,9 @@ S
 #39025
 "Black Hills"
 "The Black Hills loom dark far to your west.  Here, the rocks are small,
-
-but of the same dark origin.  To make matters even less pleasant, bits of
-
-broken rock litter the ground.
-
-"
+but of the same dark origin.  To make matters even less pleasant, bits of
+broken rock litter the ground.
+"
 ""
 301465600 0
 4 9 0
@@ -1091,24 +886,18 @@ D3
 E
 "glass"
 "Bits of clear white glass lie on the rocky ground.  The fragments are so
-
-small, it is impossible to determine their origin.
-
-"
+small, it is impossible to determine their origin.
+"
 -1
 S
 
 #39026
 "Black Hills"
 "You travel further into the confines of the Black Hills.  To the west you
-
-see a high cliff covered with short, squat pines.  Those small trees look
-
-quite green and flourishing when compared to the dry, hard rocks at your
-
-feet.
-
-"
+see a high cliff covered with short, squat pines.  Those small trees look
+quite green and flourishing when compared to the dry, hard rocks at your
+feet.
+"
 ""
 301465600 0
 4 9 0
@@ -1132,14 +921,10 @@ S
 #39027
 "Black Hills"
 "You wind your way around rocks and rubble to stand on a rocky slope in
-
-the hills.  The precarious footing offered by the slope forces you to
-
-watch every step you take.  To the west lies the road and to the north,
-
-south, and east lie more hills to explore.
-
-"
+the hills.  The precarious footing offered by the slope forces you to
+watch every step you take.  To the west lies the road and to the north,
+south, and east lie more hills to explore.
+"
 ""
 301465600 0
 4 9 0
@@ -1166,14 +951,10 @@ S
 #39028
 "Black Hills - Between Two Boulders"
 "As you leave the thin path and weave your way between two huge boulders and
-
-climb up a steep hillside, you realize that the way to the west has been
-
-totally blocked by a landslide.  The only directions left to go are to the
-
-north and back to the road to the east.
-
-"
+climb up a steep hillside, you realize that the way to the west has been
+totally blocked by a landslide.  The only directions left to go are to the
+north and back to the road to the east.
+"
 ""
 301465600 0
 4 9 0
@@ -1193,12 +974,9 @@ S
 #39029
 "Black Hills - Near the Remains of a Landslide"
 "Bits of debris left by a landslide clutter the ground.  The hills slope
-
-eastward here, and are littered with boulders and small pebbles.  To the east
-
-is the road and to the north and south are more of the hills to explore.
-
-"
+eastward here, and are littered with boulders and small pebbles.  To the east
+is the road and to the north and south are more of the hills to explore.
+"
 ""
 301465600 0
 4 9 0
@@ -1221,19 +999,13 @@ S
 #39030
 "Black Hills - Forgotten Hillside Trace"
 "You stand on a small winding track between several large boulders.  To
-
-the east, rocks and dirt pile up to make a wall of rubble which appears
-
-to block the way to the river, and you cannot tell if the trace continues
-
-eastwards.  Looking at the rubble closely, you think you might be able to
-
-scale the pile and get to the other side to the east.
-
-"
+the east, rocks and dirt pile up to make a wall of rubble which appears
+to block the way to the river, and you cannot tell if the trace continues
+eastwards.  Looking at the rubble closely, you think you might be able to
+scale the pile and get to the other side to the east.
+"
 "leads across to meet with road
-
-"
+"
 301465600 0
 4 9 0
 D0
@@ -1256,13 +1028,11 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You manage to scramble over the mess and head east.
-
-"
+"
 !
 3 0 2
 755 9 1509949540 3 0
@@ -1273,27 +1043,17 @@ S
 #39031
 "Black Hills - Near a Small Forest"
 "To your west you see a sharp drop-off that you just might be able to
-
-slide down safely, or you can follow a small trace further east towards
-
-the Cairn Mountains.  To your north stands a dense, impenetrable forest. 
-
-Hills spread out about you reaching for the horizon in all other
-
-directions.
-
-"
+slide down safely, or you can follow a small trace further east towards
+the Cairn Mountains.  To your north stands a dense, impenetrable forest. 
+Hills spread out about you reaching for the horizon in all other
+directions.
+"
 "east is 43250
-
-the trace will lead
-
-up into the edge of the cairn mountains and
-
-cross the elhanni river
-
-forest to north should be dense but small
-
-"
+the trace will lead
+up into the edge of the cairn mountains and
+cross the elhanni river
+forest to north should be dense but small
+"
 301465600 0
 4 9 0
 D1
@@ -1315,16 +1075,11 @@ S
 #39032
 "Black Hills - Wooded Area"
 "Making your way through the dense foliage, you enter a heavily wooded
-
-part of the hills.  The underbrush grows thick and dense here, almost
-
-obscuring the ground.  Birds can be heard chirping in the trees and
-
-animals rustle about everywhere.  In the background stand the tall peaks
-
-of the hills, looming black as night.
-
-"
+part of the hills.  The underbrush grows thick and dense here, almost
+obscuring the ground.  Birds can be heard chirping in the trees and
+animals rustle about everywhere.  In the background stand the tall peaks
+of the hills, looming black as night.
+"
 ""
 301465600 0
 4 9 0
@@ -1349,19 +1104,13 @@ S
 #39033
 "Black Hills - Pile of Rocks"
 "You stand over a large pile of black rocks, looking over a road to the east.
-
-Loose rocks surround you in all other directions, though the way north might
-
-be blocked by a mound of debris and rubble formed by a landslide.  Looking at
-
-it closely, you think you might be able to scale the mess and get to the other
-
-side.
-
-"
+Loose rocks surround you in all other directions, though the way north might
+be blocked by a mound of debris and rubble formed by a landslide.  Looking at
+it closely, you think you might be able to scale the mess and get to the other
+side.
+"
 "have to climb rocks to go north
-
-"
+"
 301465600 0
 4 9 0
 D0
@@ -1388,14 +1137,10 @@ S
 #39034
 "Black Hills"
 "You stand in the hills, with steep slopes and giant slabs of rock all
-
-around you.  Steep cliffs to the south and west prevent movement in those
-
-directions, while to the east you can see the black dust rising from the
-
-well-travelled road.  Northwards lies a lightly wooded area.
-
-"
+around you.  Steep cliffs to the south and west prevent movement in those
+directions, while to the east you can see the black dust rising from the
+well-travelled road.  Northwards lies a lightly wooded area.
+"
 ""
 301465600 0
 4 9 0
@@ -1414,16 +1159,11 @@ S
 #39035
 "Black Hills - Small Stand of Pines"
 "You find yourself in a small stand of pine trees, a haven of green in the
-
-hills.  The smell of the pine is crisp and almost sweet after the endless
-
-dust and grime of the hills.  To the west and north, cliffs loom tall and
-
-solid, refusing you entry.  To the south are loose, dark rocks and
-
-gravel, and a dry, dusty road lies to your east.
-
-"
+hills.  The smell of the pine is crisp and almost sweet after the endless
+dust and grime of the hills.  To the west and north, cliffs loom tall and
+solid, refusing you entry.  To the south are loose, dark rocks and
+gravel, and a dry, dusty road lies to your east.
+"
 ""
 301465600 0
 4 9 0
@@ -1442,18 +1182,12 @@ S
 #39036
 "Black Hills - Rocky Slope"
 "The ground slopes sharply downwards to the east toward a rocky wall.  The
-
-slick surfaces of the rocks makes for unsure footing.  Looking down the
-
-slope, you notice that the forest you see to the east grows up above a
-
-sharp drop off in the slope, almost obscuring the fall.  You do not think
-
-it would be safe to venture to the edge and take a look at the valley
-
-below.
-
-"
+slick surfaces of the rocks makes for unsure footing.  Looking down the
+slope, you notice that the forest you see to the east grows up above a
+sharp drop off in the slope, almost obscuring the fall.  You do not think
+it would be safe to venture to the edge and take a look at the valley
+below.
+"
 ""
 301465600 0
 4 9 0
@@ -1475,16 +1209,11 @@ S
 #39037
 "Black Hills - Rocky Slope"
 "Dark rocks lie loose in the shifting earth, making it difficult to keep
-
-your footing.  Directly west lies the main road through the valley; just
-
-north of here a broad meadow begins, filling the valley with greens and
-
-browns.  To the east is a dry, rocky gully, which may sometimes carry
-
-water to the river.
-
-"
+your footing.  Directly west lies the main road through the valley; just
+north of here a broad meadow begins, filling the valley with greens and
+browns.  To the east is a dry, rocky gully, which may sometimes carry
+water to the river.
+"
 ""
 301465600 0
 4 9 0
@@ -1510,16 +1239,11 @@ S
 #39038
 "Black Hills - Rocky Slope"
 "A large gully runs east-west through this area, as if torrents of rain
-
-often run down from the western hills, through the forest, across the
-
-road, then east towards the river.  Small plants struggle for life along
-
-the sides of the gully, leaning west as if searching for the source of
-
-the water.
-
-"
+often run down from the western hills, through the forest, across the
+road, then east towards the river.  Small plants struggle for life along
+the sides of the gully, leaning west as if searching for the source of
+the water.
+"
 ""
 301465600 0
 4 9 0
@@ -1546,21 +1270,14 @@ S
 #39039
 "Near the Black Hills - Edge of a Small Wood"
 "The surge of a coursing river sounds in the distant east, yet from this
-
-vantage point, no sign of the flowing water can be seen.  Ancient trees
-
-block vision to the south, just as they block passage in that direction. 
-
-The ground is rocky here, only a scattering of grass and weeds working
-
-their way from the woods toward the northern meadow, and a low, wide
-
-building of rock and weathered wood to the east.
-
-"
+vantage point, no sign of the flowing water can be seen.  Ancient trees
+block vision to the south, just as they block passage in that direction. 
+The ground is rocky here, only a scattering of grass and weeds working
+their way from the woods toward the northern meadow, and a low, wide
+building of rock and weathered wood to the east.
+"
 "[Maegheera] Wayfarer's Inn east.
-
-"
+"
 301465600 0
 3 8 0
 D0
@@ -1578,12 +1295,9 @@ D3
 E
 "building rock wood 1 east"
 "A ways to the east, a sprawling structure, constructed of river rock and
-
-aging timbers, sits in the middle of a clearing, hacked from the nearby
-
-trees.  The door of the building is ajar, inviting all to enter.
-
-"
+aging timbers, sits in the middle of a clearing, hacked from the nearby
+trees.  The door of the building is ajar, inviting all to enter.
+"
 344 17 1509949540 -2 0
 755 9 1509949540 3 0
 2509 9 1509949540 3 0
@@ -1593,12 +1307,9 @@ S
 #39040
 "Black Hills Meadow"
 "As you walk through the vast meadow, you can feel the tickle of tall
-
-grasses swaying in the breeze.  Just to your west you can see black dust
-
-swirling high in the air as it flies from the surface of the dry path.
-
-"
+grasses swaying in the breeze.  Just to your west you can see black dust
+swirling high in the air as it flies from the surface of the dry path.
+"
 ""
 301465600 0
 2 9 0
@@ -1624,14 +1335,10 @@ S
 #39041
 "Black Hills Meadow"
 "A small patch of dirt appears in the center of the meadow.  The marks of
-
-long claws spread out from the clear area, as if some creature were
-
-trying to dig its way down to find something of great value.  Based on
-
-the size of the claw marks, the creature must be large indeed.
-
-"
+long claws spread out from the clear area, as if some creature were
+trying to dig its way down to find something of great value.  Based on
+the size of the claw marks, the creature must be large indeed.
+"
 ""
 301465600 0
 2 9 0
@@ -1654,74 +1361,48 @@ D3
 E
 "hole"
 "A slight depression appears in the middle of an area free of grass and
-
-weeds.  It appears almost as if something were buried in it.
-
-"
+weeds.  It appears almost as if something were buried in it.
+"
 A
 "search"
 "hole"
 "if( !is_player( ch ) )
-
-  end;
-
-if( rflag( reset0, room ) ) {
-
-  i = random( 1, 20 );
-
-  if( i == 1 ) {
-
-    send_to_char( #yes_char, ch );
-
-    act_notchar( #yes_room, ch );
-
-    obj_to_char( oload( 1086 ), ch );
-
-    }
-
-  else {
-
-    send_to_char( #no_char, ch );
-
-    act_notchar( #no_room, ch );
-
-    }
-
-  remove_rflag( reset0, room );
-
-  }
-
-else {
-
-  send_to_char( #no_char, ch );
-
-  act_notchar( #no_room, ch );
-
-  remove_rflag( reset0, room );
-
-  }
-
-"
+  end;
+if( rflag( reset0, room ) ) {
+  i = random( 1, 20 );
+  if( i == 1 ) {
+    send_to_char( #yes_char, ch );
+    act_notchar( #yes_room, ch );
+    obj_to_char( oload( 1086 ), ch );
+    }
+  else {
+    send_to_char( #no_char, ch );
+    act_notchar( #no_room, ch );
+    }
+  remove_rflag( reset0, room );
+  }
+else {
+  send_to_char( #no_char, ch );
+  act_notchar( #no_room, ch );
+  remove_rflag( reset0, room );
+  }
+"
 E
 "no_room"
 "You see $n rooting around in the dirt, but all they come up with are dirty hands.
-
-"
+"
 E
 "no_char"
 "You feel around in the dirt, but can find nothing special.
-
-"
+"
 E
 "yes_room"
 "$n digs around in the dirt, and comes out with a treat.
-
-"
+"
 E
 "yes_char"
 "You seem to have found something buried in the hole.
-
-"
+"
 !
 0 0 0
 755 9 1509949540 3 0
@@ -1731,14 +1412,10 @@ S
 #39042
 "Black Hills Meadow"
 "A small wooded area lies to the south, casting a dark shadow on the
-
-meadow.  Low grasses and brightly colored weeds stretch in all other
-
-directions.  Small bees dart about, looking for the perfect flower on
-
-which to feast.
-
-"
+meadow.  Low grasses and brightly colored weeds stretch in all other
+directions.  Small bees dart about, looking for the perfect flower on
+which to feast.
+"
 ""
 301465600 0
 2 9 0
@@ -1766,14 +1443,10 @@ S
 #39043
 "Black Hills Meadow - North of Pine Woods"
 "Due south is a large wooded area, full of tall, thin pines.  Heavy vines
-
-grow over and around the trees, forming green shawls over the choking
-
-trees.  The vines are slowly creeping north and are threatening to
-
-encroach the lovely meadow.
-
-"
+grow over and around the trees, forming green shawls over the choking
+trees.  The vines are slowly creeping north and are threatening to
+encroach the lovely meadow.
+"
 ""
 301465600 0
 2 9 0
@@ -1795,19 +1468,13 @@ S
 #39044
 "Black Hills Meadow - West Bank of the Elhanni"
 "A vast meadow stretches as far as the eye can see to your north and west. 
-
-To the east runs the great Elhanni, flowing swift and cold.  The route
-
-south is blocked by a thickly wooded area.  Try as you might, you cannot
-
-see between the trees.
-
-"
+To the east runs the great Elhanni, flowing swift and cold.  The route
+south is blocked by a thickly wooded area.  Try as you might, you cannot
+see between the trees.
+"
 "wood to s, elhanni river to e
-
-should be 'black hills meadow' this area
-
-"
+should be 'black hills meadow' this area
+"
 301465600 0
 2 9 0
 D0
@@ -1826,14 +1493,10 @@ S
 #39045
 "Black Hills Meadow - Resting Spot"
 "It appears that someone must have recently spent some time here, and rested in
-
-the soft green grass.  Bent grasses mark the spot where the intruder rested.
-
-Signs of recent feasts remain, including nutshells, apple cores, and gnawed
-
-bones.
-
-"
+the soft green grass.  Bent grasses mark the spot where the intruder rested.
+Signs of recent feasts remain, including nutshells, apple cores, and gnawed
+bones.
+"
 ""
 301465600 0
 2 9 0
@@ -1856,10 +1519,8 @@ D3
 E
 "wood"
 "Several bits of charred wood are strewn in the grass, marking the site of
-
-a small campfire in the recent past.
-
-"
+a small campfire in the recent past.
+"
 215 9 1509949540 3 0
 873 17 1509949490 -2 0
 -1
@@ -1868,14 +1529,10 @@ S
 #39046
 "Black Hills Meadow - By a Brook"
 "You cross a small, babbling brook and wind your way through the tall swaying
-
-grass of the meadow.  Rabbits jump all about and birds soar through the air on
-
-gently gusts of wind.  The calmness of the meadow stretches out in all
-
-directions around you.
-
-"
+grass of the meadow.  Rabbits jump all about and birds soar through the air on
+gently gusts of wind.  The calmness of the meadow stretches out in all
+directions around you.
+"
 ""
 301465600 0
 2 9 0
@@ -1902,16 +1559,11 @@ S
 #39047
 "Black Hills, Meadow, by a Brook"
 "The broad meadow stretches out in all directions.  Far to the east and
-
-west you can see tall hills reaching for the sky.  There are no trees
-
-nearby to break the monotony of the grasses, and the gentle sway all
-
-around you starts to lull you to sleep.  The only break in the scene is
-
-the tiny path of a brook wending its way towards the river.
-
-"
+west you can see tall hills reaching for the sky.  There are no trees
+nearby to break the monotony of the grasses, and the gentle sway all
+around you starts to lull you to sleep.  The only break in the scene is
+the tiny path of a brook wending its way towards the river.
+"
 ""
 301465600 0
 2 9 0
@@ -1939,14 +1591,10 @@ S
 #39048
 "Black Hills Meadow - By a Brook"
 "This may well be the very center of the huge meadow.  The valley
-
-surrounds you, and the soft grasses seem to go on forever.  Several
-
-clumps of grass grow close together, surrounded by larger brown weeds.  A
-
-small brook runs through the weeds and heads east towards the river.
-
-"
+surrounds you, and the soft grasses seem to go on forever.  Several
+clumps of grass grow close together, surrounded by larger brown weeds.  A
+small brook runs through the weeds and heads east towards the river.
+"
 ""
 301465600 0
 2 9 0
@@ -1969,74 +1617,48 @@ D3
 E
 "grass"
 "Tall clumps of green grass stand close together amidst the preponderance
-
-of weeds.
-
-"
+of weeds.
+"
 A
 "search"
 "grass"
 "if( !is_player( ch ) )
-
-  end;
-
-if( rflag( reset0, room ) ) {
-
-  i = random( 1, 20 );
-
-  if( i == 1 ) {
-
-    send_to_char( #yes_char, ch );
-
-    act_notchar( #yes_room, ch );
-
-    obj_to_char( oload( 14 ), ch );
-
-    }
-
-  else {
-
-    send_to_char( #no_char, ch );
-
-    act_notchar( #no_room, ch );
-
-    }
-
-  remove_rflag( reset0, room );
-
-  }
-
-else {
-
-  send_to_char( #no_char, ch );
-
-  act_notchar( #no_room, ch );
-
-  remove_rflag( reset0, room );
-
-  }
-
-"
+  end;
+if( rflag( reset0, room ) ) {
+  i = random( 1, 20 );
+  if( i == 1 ) {
+    send_to_char( #yes_char, ch );
+    act_notchar( #yes_room, ch );
+    obj_to_char( oload( 14 ), ch );
+    }
+  else {
+    send_to_char( #no_char, ch );
+    act_notchar( #no_room, ch );
+    }
+  remove_rflag( reset0, room );
+  }
+else {
+  send_to_char( #no_char, ch );
+  act_notchar( #no_room, ch );
+  remove_rflag( reset0, room );
+  }
+"
 E
 "no_room"
 "You see $n search through the grass, and stand up frowning.
-
-"
+"
 E
 "no_char"
 "You search through the grass, but find nothing special.
-
-"
+"
 E
 "yes_room"
 "You see $n rooting through the grass, then come up smiling.
-
-"
+"
 E
 "yes_char"
 "You search through the high grass and find a coin!
-
-"
+"
 !
 0 0 0
 880 17 1509949540 -2 0
@@ -2048,14 +1670,10 @@ S
 #39049
 "Black Hills Meadow - By a Brook"
 "This portion of the meadow is marked by the unusual orange blossoms of a
-
-small plant.  A small brook babbles by, as it rushes to meet the great
-
-Elhanni.  The beautiful scene is marred by the dark hills to the west,
-
-which cast a dark shadow on the colorful scene.
-
-"
+small plant.  A small brook babbles by, as it rushes to meet the great
+Elhanni.  The beautiful scene is marred by the dark hills to the west,
+which cast a dark shadow on the colorful scene.
+"
 ""
 301465600 0
 2 9 0
@@ -2078,10 +1696,8 @@ D3
 E
 "plant"
 "A small plant with orange blossoms grows among the green grasses.  Its
-
-bright flowers seem to attract all the local bees.
-
-"
+bright flowers seem to attract all the local bees.
+"
 880 17 1509949540 -2 0
 -1
 S
@@ -2089,17 +1705,12 @@ S
 #39050
 "Black Hills Meadow - West Bank of the Elhanni"
 "To the east flows the Elhanni, and you can hear the splashes of water
-
-upon the rocks, as the mighty river thunders by.  A small brook flows by
-
-your feet, rushing to join the great river.  In all other directions, low
-
-grasses spring up near your feet as they grow towards the open meadows. 
-
-"
+upon the rocks, as the mighty river thunders by.  A small brook flows by
+your feet, rushing to join the great river.  In all other directions, low
+grasses spring up near your feet as they grow towards the open meadows. 
+"
 "elhanni river to e
-
-"
+"
 301465600 0
 2 9 0
 D0
@@ -2122,14 +1733,10 @@ S
 #39051
 "Black Hills Meadow"
 "The meadow stretches on as far as you can see to the north, south, and
-
-east.  Tall hills dominate the western sky casting a dark shadow over the
-
-dusty road.  The grasses softly rustle as the wind gently blows; and it
-
-sounds as if they are having a private conversation.
-
-"
+east.  Tall hills dominate the western sky casting a dark shadow over the
+dusty road.  The grasses softly rustle as the wind gently blows; and it
+sounds as if they are having a private conversation.
+"
 ""
 301465600 0
 2 9 0
@@ -2156,12 +1763,9 @@ S
 #39052
 "Black Hills Meadow - Lone Tree"
 "The tall grass of the meadow gives way to a gentle clearing with an apple tree
-
-in it.  The tall, broad tree appears to have weathered many, many years.  Lush
-
-apples ready for picking grow in thick branches of the ancient tree.
-
-"
+in it.  The tall, broad tree appears to have weathered many, many years.  Lush
+apples ready for picking grow in thick branches of the ancient tree.
+"
 ""
 301465600 0
 2 9 0
@@ -2190,14 +1794,10 @@ S
 #39053
 "Black Hills Meadow - Near an Apple Tree"
 "To the west you can see a large apple tree, growing tall in its solitude.  The
-
-meadow stretches out in all directions, and appears much like a soft green
-
-bed.  Every now and then a small creature runs by your feet, making a small
-
-ripple in the stillness.
-
-"
+meadow stretches out in all directions, and appears much like a soft green
+bed.  Every now and then a small creature runs by your feet, making a small
+ripple in the stillness.
+"
 ""
 301465600 0
 2 9 0
@@ -2223,18 +1823,12 @@ S
 #39054
 "Black Hills Meadow - By a Bird's Nest"
 "Some bird has built her nest here in the middle of the meadow rather than
-
-searching for the safety of a high tree.  The grass around it is thinner
-
-than the rest of the meadow, as if the silly bird was too lazy to gather
-
-her materials from afar.  The meadow in this area is full of brightly
-
-colored flowers, which almost make the western hills seem light and
-
-cheerful.
-
-"
+searching for the safety of a high tree.  The grass around it is thinner
+than the rest of the meadow, as if the silly bird was too lazy to gather
+her materials from afar.  The meadow in this area is full of brightly
+colored flowers, which almost make the western hills seem light and
+cheerful.
+"
 ""
 301465600 0
 2 9 0
@@ -2257,76 +1851,49 @@ D3
 E
 "nest"
 "The nest is made of dried grass and twigs, with bits of other
-
-indistinguishable materials.  Something bright catches your eye for a
-
-moment, then disappears.
-
-"
+indistinguishable materials.  Something bright catches your eye for a
+moment, then disappears.
+"
 A
 "search"
 "nest"
 "if( !is_player( ch ) )
-
-  end;
-
-if( rflag( reset0, room ) ) {
-
-  i = random( 1, 20 );
-
-  if( i == 1 ) {
-
-    send_to_char( #yes_char, ch );
-
-    act_notchar( #yes_room, ch );
-
-    obj_to_char( oload( 14 ), ch );
-
-    }
-
-  else {
-
-    send_to_char( #no_char, ch );
-
-    act_notchar( #no_room, ch );
-
-    }
-
-  remove_rflag( reset0, room );
-
-  }
-
-else {
-
-  send_to_char( #no_char, ch );
-
-  act_notchar( #no_room, ch );
-
-  remove_rflag( reset0, room );
-
-  }
-
-"
+  end;
+if( rflag( reset0, room ) ) {
+  i = random( 1, 20 );
+  if( i == 1 ) {
+    send_to_char( #yes_char, ch );
+    act_notchar( #yes_room, ch );
+    obj_to_char( oload( 14 ), ch );
+    }
+  else {
+    send_to_char( #no_char, ch );
+    act_notchar( #no_room, ch );
+    }
+  remove_rflag( reset0, room );
+  }
+else {
+  send_to_char( #no_char, ch );
+  act_notchar( #no_room, ch );
+  remove_rflag( reset0, room );
+  }
+"
 E
 "no_room"
 "$n searches the nest, and comes up empty-handed.
-
-"
+"
 E
 "no_char"
 "The nest seems to be empty.
-
-"
+"
 E
 "yes_room"
 "$n finds something hidden in the nest.
-
-"
+"
 E
 "yes_char"
 "You have found a silver coin hidden in the nest.
-
-"
+"
 !
 0 0 0
 755 9 1509949490 3 0
@@ -2337,16 +1904,11 @@ S
 #39055
 "Black Hills Meadow"
 "The meadow is quiet here, almost eerily so.  You can just barely hear the
-
-sound of rushing water to the east.  The air is also a bit damp here, as
-
-if the nearby river had managed to saturate the air with its moisture. 
-
-Although there have been signs of life in other parts of the meadow,
-
-there are none here.
-
-"
+sound of rushing water to the east.  The air is also a bit damp here, as
+if the nearby river had managed to saturate the air with its moisture. 
+Although there have been signs of life in other parts of the meadow,
+there are none here.
+"
 ""
 301465600 0
 2 9 0
@@ -2372,19 +1934,13 @@ S
 #39056
 "Black Hills -  West Bank of the Elhanni"
 "The grass here in the meadow is high and lush, fed by the bordering river. 
-
-You can see the water flowing by to your east and north, as it rushes
-
-down from the mountains.  Bits of driftwood float down the river,
-
-occasionally catching on rocks.  You can see the crags of the Cairn
-
-mountains far in the distance.
-
-"
+You can see the water flowing by to your east and north, as it rushes
+down from the mountains.  Bits of driftwood float down the river,
+occasionally catching on rocks.  You can see the crags of the Cairn
+mountains far in the distance.
+"
 "elhanni river to e and n
-
-"
+"
 301465600 0
 2 9 0
 D2
@@ -2398,10 +1954,8 @@ D3
 E
 "driftwood"
 "Small branches and other flotsam bounce and ride on the water of the
-
-river.
-
-"
+river.
+"
 344 17 1509949540 -2 0
 -1
 S
@@ -2409,16 +1963,11 @@ S
 #39057
 "Black Hills Meadow - Near an Apple Tree"
 "The grasses of the meadow undulate around you, making it impossible for
-
-you to see your legs or feet.  As you put your hand down into the
-
-grasses, you discover that it is no longer visible.  The only near-by
-
-variations are the sight of a lone apple tree directly south, and, of
-
-course, the Black Hills to the west.
-
-"
+you to see your legs or feet.  As you put your hand down into the
+grasses, you discover that it is no longer visible.  The only near-by
+variations are the sight of a lone apple tree directly south, and, of
+course, the Black Hills to the west.
+"
 ""
 301465600 0
 2 9 0
@@ -2444,19 +1993,13 @@ S
 #39058
 "Black Hills Meadow - Near a Skeleton"
 "This portion of the meadow is distinguished by a strange white shape.  As you
-
-get closer, the white shape turns out to be a skeleton of a large animal,
-
-rather like old Bessie, your first pony.  The dark shapes of the Black Hills
-
-appear small to the west, and the higher Cairn Mountains are small shapes in
-
-the eastern horizon.
-
-"
+get closer, the white shape turns out to be a skeleton of a large animal,
+rather like old Bessie, your first pony.  The dark shapes of the Black Hills
+appear small to the west, and the higher Cairn Mountains are small shapes in
+the eastern horizon.
+"
 "[Ingerimm] your first pony???
-
-"
+"
 301465600 0
 2 9 0
 D0
@@ -2478,10 +2021,8 @@ D3
 E
 "skeleton"
 "Bleached white bones of a large animal lie intact in the grassy meadow. 
-
-The shape is that of an equine animal: a small horse or large pony.
-
-"
+The shape is that of an equine animal: a small horse or large pony.
+"
 205 9 1509949540 3 0
 518 9 1509949465 3 0
 -1
@@ -2490,14 +2031,10 @@ S
 #39059
 "Black Hills Meadow - Bushes"
 "A small stand of bushes grow in the meadow, surrounded by a large field of
-
-grass.  You can see a number of different types of bushes, many with
-
-interesting berries.  The bright colors of the berries make quite a colorful
-
-change from the green grasses.
-
-"
+grass.  You can see a number of different types of bushes, many with
+interesting berries.  The bright colors of the berries make quite a colorful
+change from the green grasses.
+"
 ""
 301465600 0
 2 9 0
@@ -2520,12 +2057,9 @@ D3
 E
 "stone rock monument"
 "A large stone, of soft gray pumice, stands high in the grass.  Slight
-
-indentations mark where there once may have been writing; but nothing is
-
-now decipherable.
-
-"
+indentations mark where there once may have been writing; but nothing is
+now decipherable.
+"
 368 9 1509949540 3 0
 358 17 1509949540 -2 0
 -1
@@ -2534,21 +2068,14 @@ S
 #39060
 "Black Hills - West Bank of the Elhanni"
 "You stand in a meadow close to the banks of a wide river.  Around you are
-
-several maple saplings, growing in the rich dark soil.  The trees are
-
-only about three feet tall, but will someday make a fine shady spot for
-
-resting by the swiftly moving water.
-
-"
+several maple saplings, growing in the rich dark soil.  The trees are
+only about three feet tall, but will someday make a fine shady spot for
+resting by the swiftly moving water.
+"
 "elhanni river to e
-
-and n
-
-You can be transferred here from 39077 if you slip in the river.
-
-"
+and n
+You can be transferred here from 39077 if you slip in the river.
+"
 301465600 0
 2 9 0
 D2
@@ -2567,16 +2094,11 @@ S
 #39061
 "Black Hills Meadow - Animal Path"
 "The road lies on your west; a vast meadow extends in all other directions. 
-
-A small worn path runs east-west here, and you can see tiny footprints of
-
-mouse-sized creatures.  Recalling that the river lies a way to the east,
-
-it is likely that these animals use the path to get water, then return to
-
-the hills to hide.
-
-"
+A small worn path runs east-west here, and you can see tiny footprints of
+mouse-sized creatures.  Recalling that the river lies a way to the east,
+it is likely that these animals use the path to get water, then return to
+the hills to hide.
+"
 ""
 301465600 0
 2 9 0
@@ -2604,12 +2126,9 @@ S
 #39062
 "Black Hills Meadow - Among the Burrs"
 "The grasses in this portion of the meadow have given way to high weeds
-
-with sticky burrs.  Although you can move in any direction, it is
-
-difficult to determine which direction will be the least painful.
-
-"
+with sticky burrs.  Although you can move in any direction, it is
+difficult to determine which direction will be the least painful.
+"
 ""
 301465600 0
 2 9 0
@@ -2632,21 +2151,17 @@ D3
 E
 "burr"
 "Small, brown burrs grow on many of the tall green weeds.  They look as if
-
-they might drop off with just the lightest touch.
-
-"
+they might drop off with just the lightest touch.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "A burr sticks to you, and you struggle to remove it.
-
-"
+"
 !
 3 -1 15
 755 9 1509949540 3 0
@@ -2657,17 +2172,12 @@ S
 #39063
 "Black Hills - West Bank of the Elhanni"
 "To your east flows the wide Elhanni, looking almost as dark as the Black Hills
-
-far to the west.  Looking carefully into the water, you can actually see the
-
-reflection of the hills, and can see the source of all the darkness: the hills
-
-themselves.  The meadow, in comparison, is light and bright and cheerful.
-
-"
+far to the west.  Looking carefully into the water, you can actually see the
+reflection of the hills, and can see the source of all the darkness: the hills
+themselves.  The meadow, in comparison, is light and bright and cheerful.
+"
 "elhanni river to e
-
-"
+"
 301465600 0
 2 9 0
 D0
@@ -2689,17 +2199,12 @@ S
 #39064
 "Black Hills - Rocky Rise"
 "A large mound of dark rocks lies here, seemingly out of place compared to the
-
-soft green meadows to the north and south.  The mound appears round from a
-
-distance, but up close you can see the jagged edges of the minerals.  The
-
-rocks continue a little way to the east, as the hills march to reach the river.
-
-"
+soft green meadows to the north and south.  The mound appears round from a
+distance, but up close you can see the jagged edges of the minerals.  The
+rocks continue a little way to the east, as the hills march to reach the river.
+"
 "black hills - rocky rise
-
-"
+"
 301465600 0
 2 9 0
 D0
@@ -2724,19 +2229,13 @@ S
 #39065
 "Black Hills - Terrain Change"
 "You stand straddling two vastly different types of terrain.  To your east is a
-
-broad, green meadow, filled with many different types of grasses and flowering
-
-weeds.  To your west is a pile of rocks and rubble, that once were part of the
-
-Black Hills far to the west.  The meadow continues uninterrupted to your north
-
-and south.
-
-"
+broad, green meadow, filled with many different types of grasses and flowering
+weeds.  To your west is a pile of rocks and rubble, that once were part of the
+Black Hills far to the west.  The meadow continues uninterrupted to your north
+and south.
+"
 "need new name here
-
-"
+"
 301465600 0
 2 9 0
 D0
@@ -2762,17 +2261,12 @@ S
 #39066
 "Black Hills - Meadow, Boggy Ground"
 "The meadow seems to be slowly shrinking as the banks of the Elhanni try take
-
-over more territory.  The ground is quite boggy where the water has permeated
-
-the soil.  The land looks a bit drier to the south and west; the river
-
-prevents movement to the north and east.
-
-"
+over more territory.  The ground is quite boggy where the water has permeated
+the soil.  The land looks a bit drier to the south and west; the river
+prevents movement to the north and east.
+"
 "elhanni to n and e
-
-"
+"
 301465600 0
 2 9 0
 D2
@@ -2793,16 +2287,11 @@ S
 #39067
 "Black Hills - Under the Cliffs"
 "You stand in a small nook under the tall black hills.  Standing here
-
-seems quite safe, but further to the east is not: you can see many large
-
-rocks that have fallen down on unsuspecting travellers.  You can move
-
-into the open onto a rocky ground to the north or a rock-strewn road to
-
-the east.
-
-"
+seems quite safe, but further to the east is not: you can see many large
+rocks that have fallen down on unsuspecting travellers.  You can move
+into the open onto a rocky ground to the north or a rock-strewn road to
+the east.
+"
 ""
 301465600 0
 2 9 0
@@ -2822,14 +2311,10 @@ S
 #39068
 "Black Hills - Rocky Area"
 "Many loose rocks lie on the ground, as if a recent rockslide sent them
-
-all tumbling down.  Many of the rocks have a gash running through them as
-
-if something large and sharp was dragged over them where they lay.  Just
-
-to the east lies a road; perhaps a safer place to journey.
-
-"
+all tumbling down.  Many of the rocks have a gash running through them as
+if something large and sharp was dragged over them where they lay.  Just
+to the east lies a road; perhaps a safer place to journey.
+"
 ""
 301465600 0
 2 9 0
@@ -2853,16 +2338,11 @@ S
 #39069
 "Black Hills - Rocky Area"
 "The rocks are very slippery here, and covered with a pale green moss.  It
-
-would be very easy to fall, and cut yourself on the jagged edges of the
-
-rocks.  A large boulder lies directly to the south, but you might be able
-
-to squeeze by it if you wished to journey in that direction.  Taking the
-
-road to the east, though, might make your trip easier.
-
-"
+would be very easy to fall, and cut yourself on the jagged edges of the
+rocks.  A large boulder lies directly to the south, but you might be able
+to squeeze by it if you wished to journey in that direction.  Taking the
+road to the east, though, might make your trip easier.
+"
 ""
 301465600 0
 2 9 0
@@ -2885,14 +2365,10 @@ S
 #39070
 "Black Hills"
 "Large, loose rocks lie on the ground, slowly moving westward down from
-
-the Black Hills.  The stones are actually quite jagged, and could easily
-
-cut you if you tried to pick one up.  To your east and north run a dusty
-
-road; to the south lie more of the loose rocks.
-
-"
+the Black Hills.  The stones are actually quite jagged, and could easily
+cut you if you tried to pick one up.  To your east and north run a dusty
+road; to the south lie more of the loose rocks.
+"
 ""
 301465600 0
 2 9 0
@@ -2914,12 +2390,9 @@ S
 #39071
 "Black Hills - Meadow, by the Wildflowers"
 "A fertile meadow filled with lovely wildflowers spreads north, east, and
-
-south.  The colors are quite lovely: deep reds, yellows, and blues stand out
-
-from the green of the grasses, and make this a most pleasant spot to rest.
-
-"
+south.  The colors are quite lovely: deep reds, yellows, and blues stand out
+from the green of the grasses, and make this a most pleasant spot to rest.
+"
 ""
 301465600 0
 2 9 0
@@ -2942,27 +2415,20 @@ D3
 E
 "wildflowers"
 "A large number of different wildflowers grow here.  They range in color
-
-from blue to green to yellow.
-
-"
+from blue to green to yellow.
+"
 -1
 S
 
 #39072
 "Black Hills - West Bank of the Elhanni"
 "The Elhanni intrudes upon the meadow here, preventing movement to the
-
-north and east.  The plants, however, profit from the water, and have
-
-grown extremely tall and strong.  Reeds grow along the bank, thicker and
-
-harder to cut than you can recall ever seeing.
-
-"
+north and east.  The plants, however, profit from the water, and have
+grown extremely tall and strong.  Reeds grow along the bank, thicker and
+harder to cut than you can recall ever seeing.
+"
 "elhanni river to n and e
-
-"
+"
 301465600 0
 2 9 0
 D2
@@ -2976,10 +2442,8 @@ D3
 E
 "reed"
 "Many tall reeds grow by the side of the river.  They are green and quite
-
-attached to the ground.  Try as you might, you cannot cut them down.
-
-"
+attached to the ground.  Try as you might, you cannot cut them down.
+"
 344 17 1509949540 -2 0
 755 9 1509949540 3 0
 -1
@@ -2988,17 +2452,12 @@ S
 #39073
 "Black Hills Meadow - By the Willow"
 "A narrow ribbon of meadow runs north and south here, bordered by the Elhanni
-
-and road.  A small willow grows by the side of the river, sadly weeping in its
-
-loneliness.  Its tiny leaves are more brown than green, and it looks like it
-
-may not have long to live.
-
-"
+and road.  A small willow grows by the side of the river, sadly weeping in its
+loneliness.  Its tiny leaves are more brown than green, and it looks like it
+may not have long to live.
+"
 "elhanni river to e
-
-"
+"
 301465600 0
 2 9 0
 D0
@@ -3016,10 +2475,8 @@ D3
 E
 "willow"
 "A small weeping willow grows by the side of the river.  Its leaves are
-
-very brown, and it may not have much longer to live.
-
-"
+very brown, and it may not have much longer to live.
+"
 344 17 1509949540 -2 0
 -1
 S
@@ -3027,17 +2484,12 @@ S
 #39074
 "Black Hills - West Bank of the Elhanni"
 "A narrow strip of meadow runs north-south here, bordered by the Elhanni
-
-on the east and a dusty road on the west.  A small path has been worn in
-
-the grasses by creatures leaving the road and heading towards the
-
-refreshing water.
-
-"
+on the east and a dusty road on the west.  A small path has been worn in
+the grasses by creatures leaving the road and heading towards the
+refreshing water.
+"
 "elhanni river to e
-
-"
+"
 301465600 0
 2 9 0
 D0
@@ -3060,21 +2512,14 @@ S
 #39075
 "Black Hills - West Bank of the Elhanni"
 "To the east flows the vast Elhanni; a small waterfall prevents your
-
-safely entering the water.  A rutted road runs directly to your west.  A
-
-broad meadow extends north and south as far as your eyes can see.  The
-
-meadow must be home to many tiny creatures, for you can feel them darting
-
-by your feet.
-
-"
+safely entering the water.  A rutted road runs directly to your west.  A
+broad meadow extends north and south as far as your eyes can see.  The
+meadow must be home to many tiny creatures, for you can feel them darting
+by your feet.
+"
 "elhanni river to e
-
-[Urtal] maybe add a waterfall to drink out of also.
-
-"
+[Urtal] maybe add a waterfall to drink out of also.
+"
 301465600 0
 2 9 0
 D0
@@ -3092,12 +2537,9 @@ D3
 E
 "waterfall"
 "The Elhanni descends quickly along a steeply tiered waterway.  Slime
-
-covered boulders and crashing waters make the waterfall too dangerous to
-
-cross.
-
-"
+covered boulders and crashing waters make the waterfall too dangerous to
+cross.
+"
 344 17 1509949540 -2 0
 -1
 S
@@ -3105,25 +2547,16 @@ S
 #39076
 "Black Hills - Near the Dam"
 "The Elhanni flows swiftly to your east, sending bits of foaming water into the
-
-air.  A small dam slows the water just to the north, but is unable to stop the
-
-river's motion southwards.  Tall trees grow near the water, and show tiny
-
-teeth marks of many animals.
-
-"
+air.  A small dam slows the water just to the north, but is unable to stop the
+river's motion southwards.  Tall trees grow near the water, and show tiny
+teeth marks of many animals.
+"
 "elhanni river to e
-
-dont go e of here
-
-e is 39077
-
-made no mob
-
-saddle of cairn mts to e
-
-"
+dont go e of here
+e is 39077
+made no mob
+saddle of cairn mts to e
+"
 301465608 0
 2 9 0
 D1
@@ -3146,33 +2579,20 @@ S
 #39077
 "Wading in the Elhanni"
 "The Elhanni is wide and shallow here, rippling rapidly over a bed of smooth
-
-stones.  Clear water flows from the base of a dam, constructed by some animal
-
-from the look of it.  Drooped trees line the banks, trailing the tips of their
-
-branches in the water like fingers.  The riverbanks are rutted and low, easy
-
-to clamber up.
-
-"
+stones.  Clear water flows from the base of a dam, constructed by some animal
+from the look of it.  Drooped trees line the banks, trailing the tips of their
+branches in the water like fingers.  The riverbanks are rutted and low, easy
+to clamber up.
+"
 "east is 33046/path leading to north of kha da
-
-chance of being swept away
-
-[Orb] Nice.
-
-[Kotoktok] added extras
-
-[Nereus] can you fix this for float too
-
-[Nereus] and it might be nice to not kill mobs
-
-[Kotoktok] -
-
-[Nereus] Fixed the links here
-
-"
+chance of being swept away
+[Orb] Nice.
+[Kotoktok] added extras
+[Nereus] can you fix this for float too
+[Nereus] and it might be nice to not kill mobs
+[Kotoktok] -
+[Nereus] Fixed the links here
+"
 301465600 0
 13 9 0
 D1
@@ -3186,89 +2606,60 @@ D3
 E
 "dam"
 "Probably a construct of some beaver, the dam is made of twisted branches and
-
-mottled mud.  Water flows through.
-
-"
+mottled mud.  Water flows through.
+"
 E
 "Elhanni river bed smooth stones"
 "The clean, clear water flows swiftly over the rounded cobbles that make up the
-
-river bed.  The water is only a couple of feet deep, and shimmers enchantingly
-
-in the light.
-
-"
+river bed.  The water is only a couple of feet deep, and shimmers enchantingly
+in the light.
+"
 E
 "drooping trees banks riverbanks"
 "The low riverbanks are made of soft-looking mud, and would be easily climbed.
-
-Holding together the soft riverbanks are the roots of elegant willows, whose
-
-long, sweeping branches touch the water.
-
-"
+Holding together the soft riverbanks are the roots of elegant willows, whose
+long, sweeping branches touch the water.
+"
 A
 ""
 ""
 "if( !(can_fly( ch ) || is_pet( ch ) || char_affected( ch, float ) || is_mounted( ch )) ) {
-
-  if( find_stat( ch, dex ) < random( 3, 10 ) ) {
-
-    act_tochar( #slip, ch );
-
-    act_notchar( #oslip, ch );
-
-    transfer( ch, find_room( 39060 ) );
-
-    if( find_skill( ch, swimming ) < random( 1, 10 ) ) {
-
-      act_tochar( #drown, ch );
-
-      i = 3d6;
-
-      dam_message( ch, i, \"+The rocks\" );
-
-      inflict( ch, mob, i, \"being smashed against the rocks like an egg\" );
-
-      }
-
-    act_tochar( #washed, ch );
-
-    act_notchar( #owashed, ch );
-
-    }
-
-  }
-
-"
+  if( find_stat( ch, dex ) < random( 3, 10 ) ) {
+    act_tochar( #slip, ch );
+    act_notchar( #oslip, ch );
+    transfer( ch, find_room( 39060 ) );
+    if( find_skill( ch, swimming ) < random( 1, 10 ) ) {
+      act_tochar( #drown, ch );
+      i = 3d6;
+      dam_message( ch, i, \"+The rocks\" );
+      inflict( ch, mob, i, \"being smashed against the rocks like an egg\" );
+      }
+    act_tochar( #washed, ch );
+    act_notchar( #owashed, ch );
+    }
+  }
+"
 E
 "slip"
 "@bA smooth rock turns under your step, and you slip.  The current instantly
-
-grabs you.@n
-
-"
+grabs you.@n
+"
 E
 "oslip"
 "@b$n slips on the smooth stones, and is washed away downstream!@n
-
-"
+"
 E
 "drown"
 "@BYou are dashed against rocks as you rush downstream!@n
-
-"
+"
 E
 "washed"
 "@bYou are washed ashore as the Elhanni curves eastward.@n
-
-"
+"
 E
 "owashed"
 "@b$n crawls from the Elhanni, soaked and battered.@n
-
-"
+"
 !
 1 0 10
 324 17 1509949540 -2 0
@@ -3278,14 +2669,10 @@ S
 #39078
 "Forgotten Hillside Trace"
 "The mighty Elhanni runs by to your north, carrying fresh, cool water to
-
-the southern realms.  The water pounds hidden rocks, and creates
-
-whitecaps as it rushes by.  The ground here is hard and rocky, and small
-
-puddles slowly fill with water as the river splashes by.
-
-"
+the southern realms.  The water pounds hidden rocks, and creates
+whitecaps as it rushes by.  The ground here is hard and rocky, and small
+puddles slowly fill with water as the river splashes by.
+"
 ""
 301465600 0
 4 9 0
@@ -3296,15 +2683,11 @@ S
 #39079
 "Black Hills Road - Smaller Path"
 "This, the smaller branch of the Black Hills Road, winds its way north through
-
-the river valley.  To the south, lush greenery grows in the small area nestled
-
-between the Black Hills and the Elhanni River.
-
-"
+the river valley.  To the south, lush greenery grows in the small area nestled
+between the Black Hills and the Elhanni River.
+"
 "s is 39021, black hills road to pennan
-
-"
+"
 301465608 0
 12 9 0
 D0
@@ -3321,16 +2704,11 @@ S
 #39080
 "Smaller Path - Remains of Black Hills Road"
 "The road at this point shows signs of disrepair.  The stones have sunk into
-
-the mud, and as the road continues to the north it nearly fades away
-
-completely.  To the south, the Black Hills Road continues through the river
-
-valley and toward Pennan.  To the east, the Elhanni River flows, curving away
-
-to the southeast.
-
-"
+the mud, and as the road continues to the north it nearly fades away
+completely.  To the south, the Black Hills Road continues through the river
+valley and toward Pennan.  To the east, the Elhanni River flows, curving away
+to the southeast.
+"
 ""
 301465608 0
 2 9 0
@@ -3348,18 +2726,12 @@ S
 #39081
 "Smaller Path - End of the Black Hills Road"
 "Only fragments of the old Black Hills Road remain to mark the path, the stones
-
-broken, cracked, and swallowed by the muddy earth of the river valley.  The
-
-mighty Elhanni flows by to the east, bending in from the northeast out of the
-
-Cairn Mountains.  The climate here is quite strange, as cold air from the
-
-nearby mountains intermingles with the humidity of the river valley.  What is
-
-left of the road leads east and south, tracing the river's course.
-
-"
+broken, cracked, and swallowed by the muddy earth of the river valley.  The
+mighty Elhanni flows by to the east, bending in from the northeast out of the
+Cairn Mountains.  The climate here is quite strange, as cold air from the
+nearby mountains intermingles with the humidity of the river valley.  What is
+left of the road leads east and south, tracing the river's course.
+"
 ""
 301465608 0
 2 9 0
@@ -3377,22 +2749,14 @@ S
 #39082
 "Faint Path Along the Elhanni"
 "The road is in its last stages of decay.  While there is at least the remnants
-
-of the Black Hills Road to the west, a few odd stones are all that remain to
-
-mark this northern branch.  The rest of the road has, apparently, been
-
-swallowed by time, and the occasional flooding of the Elhanni River, which
-
-flanks the road to the east.  Off to the southwest, the fertile river valley
-
-can be seen, while to the northeast, the impressive crags of the Cairn
-
-Mountains present an imposing horizon.  The road, or what is left of it, leads
-
-north and west.
-
-"
+of the Black Hills Road to the west, a few odd stones are all that remain to
+mark this northern branch.  The rest of the road has, apparently, been
+swallowed by time, and the occasional flooding of the Elhanni River, which
+flanks the road to the east.  Off to the southwest, the fertile river valley
+can be seen, while to the northeast, the impressive crags of the Cairn
+Mountains present an imposing horizon.  The road, or what is left of it, leads
+north and west.
+"
 ""
 301465608 0
 2 9 0
@@ -3410,18 +2774,12 @@ S
 #39083
 "Faint Path Along the Elhanni"
 "This path is presumably a simple hunting or game trail, as only a faint trail
-
-shows signs that anyone has passed through.  The Elhanni river flows along to
-
-the east, large ripples in the water creating the fairly audible sound of
-
-rushing water.  Off to the northeast the craggy peaks of the Cairn Mountains
-
-overlook the distant north.  The path follows the river to the north and south.
-
-A light bridge crosses a somewhat narrow portion of the Elhanni to the east.
-
-"
+shows signs that anyone has passed through.  The Elhanni river flows along to
+the east, large ripples in the water creating the fairly audible sound of
+rushing water.  Off to the northeast the craggy peaks of the Cairn Mountains
+overlook the distant north.  The path follows the river to the north and south.
+A light bridge crosses a somewhat narrow portion of the Elhanni to the east.
+"
 ""
 301465608 0
 2 9 0
@@ -3440,24 +2798,18 @@ D2
 E
 "bridge"
 "The bridge is not of heavy construction, but looks sturdy enough.
-
-"
+"
 -1
 S
 
 #39084
 "Faint Path Along the Elhanni - South of a Bridge"
 "The faint trail heads north and south, following a bend in the Elhanni River.
-
-To the north you can see a second river branching off of the Elhanni, and
-
-heading out into the stretching open plains that spread out for miles and
-
-miles to the northwest.  Following the path to the south would bring you down
-
-the Elhanni and into the Black Hills.
-
-"
+To the north you can see a second river branching off of the Elhanni, and
+heading out into the stretching open plains that spread out for miles and
+miles to the northwest.  Following the path to the south would bring you down
+the Elhanni and into the Black Hills.
+"
 ""
 301465608 0
 2 9 0
@@ -3475,18 +2827,12 @@ S
 #39085
 "Faint Path Along the Elhanni - Bridge over the Elhanni"
 "Just beneath the sturdy planks of this old, yet still solid bridge, the mighty
-
-Elhanni rushes by, roaring as it squeezes through the tight stone.  The
-
-Elhanni splits here, rushing down from the north and feeding water into the
-
-Durgorin, which flows off across the immense open plains to the west.  An old
-
-road leads north, towards the feet of the mighty Cairn mountains, and south,
-
-towards the Black Hills.
-
-"
+Elhanni rushes by, roaring as it squeezes through the tight stone.  The
+Elhanni splits here, rushing down from the north and feeding water into the
+Durgorin, which flows off across the immense open plains to the west.  An old
+road leads north, towards the feet of the mighty Cairn mountains, and south,
+towards the Black Hills.
+"
 ""
 301465608 0
 12 9 0
@@ -3504,16 +2850,11 @@ S
 #39086
 "Beside the Elhanni - North of a Stone Bridge"
 "The gushing Elhanni flows past you to the west, heading down the Black Hills
-
-and toward Pennan to the distant south.  This stone-paved road seems to follow
-
-it for some distance in that direction, wedged between the river and a stone
-
-face to the east.  To the northwest you see a bridge spanning the river.
-
-Another bridge crosses the Elhanni to the south.
-
-"
+and toward Pennan to the distant south.  This stone-paved road seems to follow
+it for some distance in that direction, wedged between the river and a stone
+face to the east.  To the northwest you see a bridge spanning the river.
+Another bridge crosses the Elhanni to the south.
+"
 ""
 301465608 0
 12 9 0
@@ -3528,29 +2869,21 @@ D2
 E
 "bridge"
 "The bridge looks heavy and stable, made of solid stone.
-
-"
+"
 -1
 S
 
 #39087
 "East of a Bridge"
 "A long stone-paved road leads south along the east bank of the Elhanni.  To
-
-the east, you can see the edge of the Cairn mountains, as the road ends in
-
-very rocky terrain in that direction.  A heavy stone bridge crosses the river
-
-to the west, leading into what appears to be a vast grass-covered plain.
-
-"
+the east, you can see the edge of the Cairn mountains, as the road ends in
+very rocky terrain in that direction.  A heavy stone bridge crosses the river
+to the west, leading into what appears to be a vast grass-covered plain.
+"
 "[Phule] more road between here and s, just temp
-
-d was 52327  -  guess is eaten?
-
-area d is munchkins/pixies
-
-"
+d was 52327  -  guess is eaten?
+area d is munchkins/pixies
+"
 301465608 0
 12 9 0
 D0
@@ -3575,14 +2908,10 @@ S
 #39088
 "Before a Dark Cave"
 "The paved stone road ends in a stone enclosure at the feet of the Cairn
-
-mountains, which rise to the east.  A cavern entrance, or perhaps a mine
-
-tunnel, leads into the stone to the north.  The road leads west, towards the
-
-sound of a rushing river.
-
-"
+mountains, which rise to the east.  A cavern entrance, or perhaps a mine
+tunnel, leads into the stone to the north.  The road leads west, towards the
+sound of a rushing river.
+"
 ""
 301465608 0
 2 9 0
@@ -3600,25 +2929,16 @@ S
 #39089
 "West of a Bridge"
 "A stone-paved road comes to an end here, or its beginning, depending on
-
-whether you are heading east or north.  To the east, a rugged wooden
-
-bridge crosses the Elhanni, while to the north, the road creeps along the
-
-river, entering a vast plain of tall grass.  From somewhere off to the
-
-northwest a dark plume of black smoke rises across the grasslands.  To
-
-the south, you can see the Elhanni branch off, forming the west-flowing
-
-Durgorin.
-
-"
+whether you are heading east or north.  To the east, a rugged wooden
+bridge crosses the Elhanni, while to the north, the road creeps along the
+river, entering a vast plain of tall grass.  From somewhere off to the
+northwest a dark plume of black smoke rises across the grasslands.  To
+the south, you can see the Elhanni branch off, forming the west-flowing
+Durgorin.
+"
 "road n,e
-
-[Phule] nomob
-
-"
+[Phule] nomob
+"
 301465608 0
 12 9 0
 D0
@@ -3639,23 +2959,15 @@ S
 #39090
 "A Stone-Paved Road"
 "This road cleaves its way through the tall grass of the Western Plains,
-
-heading west through the heart of the plains and south along the Elhanni.
-
-Just to the south, a bridge crosses the Elhanni and the path bends east,
-
-heading toward the rising crags of the Cairn Mountains.
-
-"
+heading west through the heart of the plains and south along the Elhanni.
+Just to the south, a bridge crosses the Elhanni and the path bends east,
+heading toward the rising crags of the Cairn Mountains.
+"
 "road w,s
-
-[Phule] nomob
-
-[Oculus] might want to add \"tall grass\" as an extra here, it will be the players first chance to veer off the path.  Describe all the things which might lurk there, or something like that. :)
-
-[Phule] added something
-
-"
+[Phule] nomob
+[Oculus] might want to add \"tall grass\" as an extra here, it will be the players first chance to veer off the path.  Describe all the things which might lurk there, or something like that. :)
+[Phule] added something
+"
 301465608 0
 12 9 0
 D0
@@ -3677,35 +2989,24 @@ D3
 E
 "tall grass plains"
 "The tall grass could hide any number of predators, man-eaters for the
-
-most part.  A few heavy prints may be from big game, such as elephants or
-
-rhino.
-
-"
+most part.  A few heavy prints may be from big game, such as elephants or
+rhino.
+"
 -1
 S
 
 #39091
 "A Stone-Paved Road"
 "The worn stones of the road provide the only break in the tall fields of
-
-grass.  The path snakes its way through the wind-swept grasslands, leading
-
-east and west.  On the horizon to the west the sky darkens, black clouds
-
-rising above the plains.  To the southwest, the vast Durgorin bends its way
-
-west across the plains.
-
-"
+grass.  The path snakes its way through the wind-swept grasslands, leading
+east and west.  On the horizon to the west the sky darkens, black clouds
+rising above the plains.  To the southwest, the vast Durgorin bends its way
+west across the plains.
+"
 "road w,e
-
-fixed..add any details you know of, Phule
-
-[Phule] nomob
-
-"
+fixed..add any details you know of, Phule
+[Phule] nomob
+"
 301465608 0
 12 9 0
 D0
@@ -3727,41 +3028,27 @@ D3
 E
 "Durgorin river"
 "The Durgorin, while only about 8 miles long, is one of the mightiest
-
-rivers in the realm.  It approaches a mile or more in width, and its
-
-depths have not been reached, as if some great trench opens up below its
-
-swift waters.  Those foolish enough to fall into the river are without
-
-fail carried under by its current and carried downstream, never heard
-
-from again.  Perhaps they are crushed in its depths.
-
-"
+rivers in the realm.  It approaches a mile or more in width, and its
+depths have not been reached, as if some great trench opens up below its
+swift waters.  Those foolish enough to fall into the river are without
+fail carried under by its current and carried downstream, never heard
+from again.  Perhaps they are crushed in its depths.
+"
 -1
 S
 
 #39092
 "A Stone-Paved Road"
 "Tall grass waves gently in the wind, coming up to the very edges of the
-
-weathered stone road.  The road itself meanders lazily through the tall
-
-fields, feeling its way to the east and west over the barren land.  Far
-
-to east, the dark outline of the Cairn Mountains dominates the sky, while
-
-a dark cloud hangs like a shroud over the plains to the west.  The
-
-Durgorin rushes by to the south, bending westward.
-
-"
+weathered stone road.  The road itself meanders lazily through the tall
+fields, feeling its way to the east and west over the barren land.  Far
+to east, the dark outline of the Cairn Mountains dominates the sky, while
+a dark cloud hangs like a shroud over the plains to the west.  The
+Durgorin rushes by to the south, bending westward.
+"
 "road w,e
-
-[Phule] nomob
-
-"
+[Phule] nomob
+"
 301465608 0
 12 9 0
 D0
@@ -3779,49 +3066,31 @@ D3
 E
 "Durgorin river s south"
 "The Durgorin, while only about 8 miles long, is one of the mightiest
-
-rivers in the realm.  It approaches a mile or more in width, and its
-
-depths have not been reached, as if some great trench opens up below its
-
-swift waters.  Those foolish enough to fall into the river are without
-
-fail carried under by its current and carried downstream, never heard
-
-from again.  Perhaps they are crushed in its depths.
-
-"
+rivers in the realm.  It approaches a mile or more in width, and its
+depths have not been reached, as if some great trench opens up below its
+swift waters.  Those foolish enough to fall into the river are without
+fail carried under by its current and carried downstream, never heard
+from again.  Perhaps they are crushed in its depths.
+"
 -1
 S
 
 #39093
 "A Stone-Paved Road"
 "Miles of grasslands stretch for miles in all directions from this
-
-well-worn road of stone.  Down the road to the east, the road comes to a
-
-bridge before disappearing into the jagged horizon of the Cairn Mountains. 
-
-In the distant west, a dark cloud of soot and pitch hovers above the
-
-plains.  To the south, the mighty Durgorin flows by.  A large boulder
-
-lies to the northwest.  A faint trail leads off the stone-paved path,
-
-disappearing in the tall grass to the north.
-
-"
+well-worn road of stone.  Down the road to the east, the road comes to a
+bridge before disappearing into the jagged horizon of the Cairn Mountains. 
+In the distant west, a dark cloud of soot and pitch hovers above the
+plains.  To the south, the mighty Durgorin flows by.  A large boulder
+lies to the northwest.  A faint trail leads off the stone-paved path,
+disappearing in the tall grass to the north.
+"
 "road w,e
-
-[Phule] road n toward narak ?
-
-[Phule] nomob
-
-[Oculus] can we seen the faint trail to the north from the road?
-
-[Phule] we can, just didn't want people to before it was open.
-
-"
+[Phule] road n toward narak ?
+[Phule] nomob
+[Oculus] can we seen the faint trail to the north from the road?
+[Phule] we can, just didn't want people to before it was open.
+"
 301465608 0
 12 9 0
 D0
@@ -3839,51 +3108,35 @@ D3
 E
 "Durgorin s south river"
 "The Durgorin, while only about 8 miles long, is one of the mightiest
-
-rivers in the realm.  It approaches a mile or more in width, and its
-
-depths have not been reached, as if some great trench opens up below its
-
-swift waters.  Those foolish enough to fall into the river are without
-
-fail carried under by its current and carried downstream, never heard
-
-from again.  Perhaps they are crushed in its depths.
-
-"
+rivers in the realm.  It approaches a mile or more in width, and its
+depths have not been reached, as if some great trench opens up below its
+swift waters.  Those foolish enough to fall into the river are without
+fail carried under by its current and carried downstream, never heard
+from again.  Perhaps they are crushed in its depths.
+"
 E
 "trail n north"
 "The trail is faint, and seems rarely used.
-
-"
+"
 E
 "boulder northwest"
 "The large boulder is about thirty feet high, quite an impressive rock.
-
-"
+"
 -1
 S
 
 #39094
 "A Stone-Paved Road"
 "A large boulder juts into the air to the southwest, serving as a sort of
-
-corner for this bend in the road.  The stone-paved path heads north and
-
-east away from the rock.  Another boulder lies not too far to the
-
-northeast and so another curve is probable.  The tall grasslands spread
-
-off in all directions.  To the southeast, the mighty Durgorin bends to
-
-the south.
-
-"
+corner for this bend in the road.  The stone-paved path heads north and
+east away from the rock.  Another boulder lies not too far to the
+northeast and so another curve is probable.  The tall grasslands spread
+off in all directions.  To the southeast, the mighty Durgorin bends to
+the south.
+"
 "road n,e
-
-[Phule] nomob
-
-"
+[Phule] nomob
+"
 301465608 0
 12 9 0
 D0
@@ -3901,34 +3154,25 @@ D2
 E
 "boulder"
 "The large boulder is about thirty feet high, quite an impressive rock.
-
-"
+"
 E
 "Durgorin river"
 "The Durgorin, while only about 8 miles long, is one of the mightiest
-
-rivers in the realm.  It approaches a mile or more in width, and its
-
-depths have not been reached, as if some great trench opens up below its
-
-swift waters.  Those foolish enough to fall into the river are without
-
-fail carried under by its current and carried downstream, never heard
-
-from again.  Perhaps they are crushed in its depths.
-
-"
+rivers in the realm.  It approaches a mile or more in width, and its
+depths have not been reached, as if some great trench opens up below its
+swift waters.  Those foolish enough to fall into the river are without
+fail carried under by its current and carried downstream, never heard
+from again.  Perhaps they are crushed in its depths.
+"
 A
 "climb"
 "granite boulder up"
 "act_tochar( #search, ch );
-
-"
+"
 E
 "search"
 "@GThe boulder is too smooth to climb.@n
-
-"
+"
 !
 0 0 0
 -1
@@ -3937,27 +3181,17 @@ S
 #39095
 "A Stone-Paved Road"
 "The road narrows quite some, squeezing between two large boulders, one to
-
-the east and another to the southwest.  The open expanse of the
-
-Western Plains spreads in all directions.  The stone-paved path leads
-
-south, between the boulders, and west, toward a dark fortress.
-
-"
+the east and another to the southwest.  The open expanse of the
+Western Plains spreads in all directions.  The stone-paved path leads
+south, between the boulders, and west, toward a dark fortress.
+"
 "road w,s
-
-[Phule] nomob
-
-[Oculus] is there really a boulder to the northeast?
-
-[Phule] yes
-
-[Starshine] clim boulder action - southwest
-
-[Rue] added
-
-"
+[Phule] nomob
+[Oculus] is there really a boulder to the northeast?
+[Phule] yes
+[Starshine] clim boulder action - southwest
+[Rue] added
+"
 301465608 0
 12 9 0
 D0
@@ -3975,23 +3209,18 @@ D3
 E
 "boulders southwest e east"
 "The large boulder are about thirty feet high, quite an impressive pair of
-
-rocks.  The one to the southwest is as wide as it is tall, while the
-
-boulder to the east seems more flat, with its wide end facing you.
-
-"
+rocks.  The one to the southwest is as wide as it is tall, while the
+boulder to the east seems more flat, with its wide end facing you.
+"
 A
 "climb"
 "boulder stone rock"
 "act_tochar( #climb, ch );
-
-"
+"
 E
 "climb"
 "@GThe boulder is too steep and smooth to climb.@n
-
-"
+"
 !
 0 0 0
 -1
@@ -4000,21 +3229,14 @@ S
 #39096
 "A Stone-Paved Road"
 "This road of heavy stone snakes like a river between walls of tall grass
-
-to the north and south.  To the west, the tall, dark shale walls of a
-
-fortress city loom amongst a cloud of dark soot.  Waves of heat emanate
-
-from the stones of the road, spreading into the humidity of the plains. 
-
-To the east, the road continues across the grasslands.  A large boulder
-
-rises to the south, above the waves of grass.
-
-"
+to the north and south.  To the west, the tall, dark shale walls of a
+fortress city loom amongst a cloud of dark soot.  Waves of heat emanate
+from the stones of the road, spreading into the humidity of the plains. 
+To the east, the road continues across the grasslands.  A large boulder
+rises to the south, above the waves of grass.
+"
 "[Phule] nomob
-
-"
+"
 301465608 0
 12 9 0
 D0
@@ -4032,19 +3254,16 @@ D3
 E
 "boulder s south"
 "The large boulder is about thirty feet high, quite an impressive rock.
-
-"
+"
 A
 "climb"
 "up boulder granite"
 "act_tochar( #search, ch );
-
-"
+"
 E
 "search"
 "@GThe boulder is too steep to climb.@n
-
-"
+"
 !
 0 0 0
 -1
@@ -4053,19 +3272,13 @@ S
 #39097
 "Bridge over the River Elhanni"
 "This heavy stone and oak bridge stands solidly above the mighty rushing water
-
-of the Elhanni River.  The river forms a natural division between the two
-
-lands it separates: the beginnings of the rocky Cairn Mountains to the east,
-
-and the vast reaches of the Great Western Plains to the west.  A stone-paved
-
-road leads off in both directions, away from the bridge.
-
-"
+of the Elhanni River.  The river forms a natural division between the two
+lands it separates: the beginnings of the rocky Cairn Mountains to the east,
+and the vast reaches of the Great Western Plains to the west.  A stone-paved
+road leads off in both directions, away from the bridge.
+"
 "down is 39100
-
-"
+"
 301465608 0
 12 9 0
 D1
@@ -4080,57 +3293,39 @@ A
 "climb"
 "down"
 "if( is_player( ch ) ) {
-
-  act_tochar( #dangerous, ch );
-
-  end;
-
-  }
-
-else
-
-  transfer( ch, find_room( 39100 ) );
-
-"
+  act_tochar( #dangerous, ch );
+  end;
+  }
+else
+  transfer( ch, find_room( 39100 ) );
+"
 E
 "dangerous"
 "Despite your confidence in your climbing skills, you realize that you
-
-would most likely fall to your death trying that.
-
-"
+would most likely fall to your death trying that.
+"
 !
 0 0 0
 A
 ""
 ""
 "mob = mob_in_room( 1813, find_room( 39100 ) );
-
-if( mob && can_see_char( mob, ch ) ) {
-
-  send_to_room( #crawl, find_room( 39097 ) );
-
-  send_to_room( #crawl2, find_room( 39097 ) );
-
-  mob = mob_in_room( 1813, find_room( 39100 ) );
-
-  interpret( mob, \"climb up\" );
-
-}
-
-"
+if( mob && can_see_char( mob, ch ) ) {
+  send_to_room( #crawl, find_room( 39097 ) );
+  send_to_room( #crawl2, find_room( 39097 ) );
+  mob = mob_in_room( 1813, find_room( 39100 ) );
+  interpret( mob, \"climb up\" );
+}
+"
 E
 "crawl"
 "@RSuddenly a huge troll crawls out from under the bridge!@n
-
-"
+"
 E
 "crawl2"
 "@RThe troll blocks your movement across the bridge, its mouth slavering
-
-and one claw outstretched as if to receive something.@n 
-
-"
+and one claw outstretched as if to receive something.@n 
+"
 !
 1 0 2
 -1
@@ -4139,25 +3334,16 @@ S
 #39098
 "A Stone-Paved Road"
 "This stone-paved road is flanked on both sides by rows of @Rtall poles.@n
-
-To the east, the road disappears into the tall grass of the Western
-
-Plains, while to the west, the orc fortress of Brithbarad looms, its
-
-shale walls a dark reminder of the primal nature of the area.  The air is
-
-humid and hot, as flies buzz all around.  You can enter the tall grass of
-
-the plains to the north or south.
-
-"
+To the east, the road disappears into the tall grass of the Western
+Plains, while to the west, the orc fortress of Brithbarad looms, its
+shale walls a dark reminder of the primal nature of the area.  The air is
+humid and hot, as flies buzz all around.  You can enter the tall grass of
+the plains to the north or south.
+"
 "[Phule] nomob
-
-[Starshine] clim boulder action - southeast
-
-[Rue] added
-
-"
+[Starshine] clim boulder action - southeast
+[Rue] added
+"
 301465608 0
 12 9 0
 D0
@@ -4179,43 +3365,34 @@ D3
 E
 "tall poles"
 "The tall wooden shafts each end in a gruesome array of humanoid heads,
-
-mostly dwarves and gnomes.  There is no shortage of elf heads, of course. 
-
-All the light races are represented.  Perhaps the orcs don't take kindly
-
-to intruders of that ilk.
-
-"
+mostly dwarves and gnomes.  There is no shortage of elf heads, of course. 
+All the light races are represented.  Perhaps the orcs don't take kindly
+to intruders of that ilk.
+"
 E
 "boulder southeast"
 "The large boulder is about thirty feet high, quite an impressive rock.
-
-"
+"
 A
 ""
 ""
 "send_to_room( #crackle, room );
-
-"
+"
 E
 "crackle"
 "@YThe glow of the tower's watchfires flicker.@n 
-
-"
+"
 !
 2 100 0
 A
 "climb"
 "boulder rock stone"
 "act_tochar( #climb, ch );
-
-"
+"
 E
 "climb"
 "@GThe boulder is too smooth to climb.@n
-
-"
+"
 !
 0 0 0
 -1
@@ -4224,8 +3401,7 @@ S
 #39099
 "A Stone-Paved Road"
 "Under Construction.
-
-"
+"
 ""
 301465608 0
 2 9 0
@@ -4235,23 +3411,18 @@ S
 #39100
 "Troll's Den"
 "The river below roars loudly, its sounds echoing loudly off the bottom of
-
-the bridge.  The den is built into the side of the river wall, and is
-
-littered with bones and other debris.
-
-"
+the bridge.  The den is built into the side of the river wall, and is
+littered with bones and other debris.
+"
 "up is 39097
-
-"
+"
 301465609 0
 2 9 0
 A
 "climb"
 "up bridge"
 "transfer( ch, find_room( 39097 ) );
-
-"
+"
 !
 0 0 0
 1813 9 1509949540 3 0
@@ -4261,14 +3432,10 @@ S
 #39101
 "Side Path Off the Black Hills Road"
 "To the far east lies a plush, green meadow full of grasses taller than a
-
-gnome.  All around you loom craggy hills.  A small game trail runs west,
-
-branching off from the Black Hills Road.  After a while, the trail turns
-
-north, where you can see a small cottage.
-
-"
+gnome.  All around you loom craggy hills.  A small game trail runs west,
+branching off from the Black Hills Road.  After a while, the trail turns
+north, where you can see a small cottage.
+"
 ""
 301465600 0
 2 9 0
@@ -4286,18 +3453,12 @@ S
 #39102
 "In Front of an Old Cottage"
 "A small path, nothing more than an animal trail, leads north up to the
-
-doorstep of a small cottage.  The simple abode is made of straw and
-
-thatch and appears to rest on a solid foundation of stone.  A white
-
-picket fence surrounds the little cottage.  Its gate has long since been
-
-battered down by the elements.  A small door is the cottage's only
-
-entrance.
-
-"
+doorstep of a small cottage.  The simple abode is made of straw and
+thatch and appears to rest on a solid foundation of stone.  A white
+picket fence surrounds the little cottage.  Its gate has long since been
+battered down by the elements.  A small door is the cottage's only
+entrance.
+"
 ""
 301469696 0
 2 9 0
@@ -4315,18 +3476,12 @@ S
 #39103
 "Inside a Simple Cottage"
 "While this cottage is simple in design, it is much more than it appears on the
-
-outside.  The walls of the cottage are truly made of stone, as is the floor
-
-and ceiling.  In the center of the room is a large forge which looks to have
-
-been neglected for many years.  Etched both on the walls and around the forge
-
-are sigils.  A small door to the south is the only exit out of the strange
-
-cottage.
-
-"
+outside.  The walls of the cottage are truly made of stone, as is the floor
+and ceiling.  In the center of the room is a large forge which looks to have
+been neglected for many years.  Etched both on the walls and around the forge
+are sigils.  A small door to the south is the only exit out of the strange
+cottage.
+"
 ""
 301465600 0
 2 9 0
@@ -4337,40 +3492,28 @@ D2
 E
 "sigils walls"
 "Sigils, which you cannot quite make out, have been etched upon the stone walls
-
-and the forge itself.  The runic patterns look quite archaic, but their
-
-underlying purpose seems to be protection of some kind.
-
-"
+and the forge itself.  The runic patterns look quite archaic, but their
+underlying purpose seems to be protection of some kind.
+"
 E
 "center forge"
 "A forge, large enough to forge ten swords at once, lies in the center of
-
-the chamber.  Its coals are cool and do not look to have been lit for a
-
-great number of years.
-
-"
+the chamber.  Its coals are cool and do not look to have been lit for a
+great number of years.
+"
 A
 ""
 ""
 "mob = mob_in_room( 2195, room );
-
-if( done_quest( ch, 60 ) )
-
-tell( mob, ch, #alegra );
-
-"
+if( done_quest( ch, 60 ) )
+tell( mob, ch, #alegra );
+"
 E
 "alegra"
 "Shortly after you succeeded in your task, of returning the blade to
-
-Jergault, the spirit of Alegra visited me.  Among other things, she asked
-
-me to help her find final peace.
-
-"
+Jergault, the spirit of Alegra visited me.  Among other things, she asked
+me to help her find final peace.
+"
 !
 1 0 4
 2195 9 1509949540 3 0
@@ -4380,18 +3523,12 @@ S
 #39104
 "Near a Roadside Inn"
 "The lazy swoosh of the distant river seems more subdued here, as if the
-
-surging water had deepened further along its course.  Ancient trees block the
-
-way to the north, and the well worn path runs westward to eastward between
-
-them.  To the east, a sprawling structure, constructed of river rocks and aged
-
-timber, rises in the center of an unnatural clearing, hewn from the nearby
-
-trees.
-
-"
+surging water had deepened further along its course.  Ancient trees block the
+way to the north, and the well worn path runs westward to eastward between
+them.  To the east, a sprawling structure, constructed of river rocks and aged
+timber, rises in the center of an unnatural clearing, hewn from the nearby
+trees.
+"
 ""
 301465601 0
 3 8 0
@@ -4411,18 +3548,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@gYou ascend the shallow steps to the porch.@n
-
-"
+"
 E
 "to_room"
 "@g ascends the shallow steps to the porch.@n
-
-"
+"
 !
 3 0 2
 3473 17 1509949540 -2 0
@@ -4432,20 +3566,13 @@ S
 #39105
 "Weathered Wooden Porch"
 "Protected by a thatch-covered roof, the old porch has survived the ravages of
-
-weather and countless years well, although not without evidence of their
-
-passage.  Underfoot, the planks of the floor are gray with age and dust, a few
-
-of the boards cracked or even broken.  Even the ceiling shows signs of wear,
-
-where a patch of mildewed thatch hides in a corner.  The porch leads into the
-
-structure to the south, through a open doorway or westward, down a shallow
-
-series of steps to the path.
-
-"
+weather and countless years well, although not without evidence of their
+passage.  Underfoot, the planks of the floor are gray with age and dust, a few
+of the boards cracked or even broken.  Even the ceiling shows signs of wear,
+where a patch of mildewed thatch hides in a corner.  The porch leads into the
+structure to the south, through a open doorway or westward, down a shallow
+series of steps to the path.
+"
 ""
 335020042 0
 0 5 0
@@ -4461,89 +3588,61 @@ A
 ""
 ""
 "if( size( ch ) > 3 ) {
-
-  send_to_char( #south_char, ch );
-
-  act_notchar( #south_notchar, ch );
-
-  }
-
-else {
-
-  act_tochar( #south_small, ch );
-
-  act_notchar( #rsouth_small, ch );
-
-  }
-
-loop( followers ) {
-
-  if( size( rch ) > 3 ) {
-
-    send_to_char( #char_follow, rch );
-
-    act_notchar( #south_notchar, rch );
-
-    }
-
-  else {
-
-    act_tochar( #south_small, rch );
-
-    act_notchar( #rsouth_small, rch );
-
-    }
-
-  transfer( rch, find_room(39106) );
-
-  }
-
-continue;
-
-"
+  send_to_char( #south_char, ch );
+  act_notchar( #south_notchar, ch );
+  }
+else {
+  act_tochar( #south_small, ch );
+  act_notchar( #rsouth_small, ch );
+  }
+loop( followers ) {
+  if( size( rch ) > 3 ) {
+    send_to_char( #char_follow, rch );
+    act_notchar( #south_notchar, rch );
+    }
+  else {
+    act_tochar( #south_small, rch );
+    act_notchar( #rsouth_small, rch );
+    }
+  transfer( rch, find_room(39106) );
+  }
+continue;
+"
 E
 "south_char"
 "@cYou duck through the open doorway into the inn.@n
-
-"
+"
 E
 "south_notchar"
 "@c$n ducks through the open doorway leading into the inn.@n
-
-"
+"
 E
 "char_follow"
 "@cYou follow $n through the open doorway into the bar.@n
-
-"
+"
 E
 "south_small"
 "@cYou head through the open doorway into the inn.@n
-
-"
+"
 E
 "rsouth_small"
 "@c$n heads through the open doorway leading into the inn.@n
-
-"
+"
 !
 3 0 4
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "@gDescending the shallow steps, you leave the porch heading west.@n 
-
-"
+"
 E
 "not_char"
 "@gDescending the shallow steps, $n leaves the porch heading west.@n 
-
-"
+"
 !
 3 0 8
 1145 17 1509949540 -2 0
@@ -4553,18 +3652,12 @@ S
 #39106
 "Wayfarer's Inn - Dining Hall"
 "The door opens into a low-ceilinged room, slung with wide-beamed rafters,
-
-blackened by years of smoke.  Two tables lie on opposite sides of the room,
-
-both lit by fat tallow candles centered atop them.  Underfoot, the floor is
-
-strewn with sawdust and straw to soak up spills and grease.  The common rooms
-
-lie to the east and south, where potent potables can be purchased and a good
-
-time had by all.
-
-"
+blackened by years of smoke.  Two tables lie on opposite sides of the room,
+both lit by fat tallow candles centered atop them.  Underfoot, the floor is
+strewn with sawdust and straw to soak up spills and grease.  The common rooms
+lie to the east and south, where potent potables can be purchased and a good
+time had by all.
+"
 ""
 335024143 0
 0 5 0
@@ -4584,35 +3677,25 @@ A
 ""
 ""
 "send_to_char( #north_char, ch );
-
-act_notchar( #north_notchar, ch );
-
-loop( followers ) {
-
-  send_to_char( #char_follow, rch );
-
-  transfer( rch, find_room(39105) );
-
-  }
-
-continue;
-
-"
+act_notchar( #north_notchar, ch );
+loop( followers ) {
+  send_to_char( #char_follow, rch );
+  transfer( rch, find_room(39105) );
+  }
+continue;
+"
 E
 "north_char"
 "@cYou leave the inn through the open doorway to the north.@n
-
-"
+"
 E
 "north_notchar"
 "@c$n exits the inn by way of the open doorway.@n
-
-"
+"
 E
 "char_follow"
 "@cYou follow your leader through the open doors, leading from the inn.@n
-
-"
+"
 !
 3 0 1
 A
@@ -4620,22 +3703,17 @@ A
 "sign"
 "send_to_char( #sign, ch );
 
-
 act_notchar( #osign, ch );
-
-"
+"
 E
 "sign"
 "We have one special suite avalable for a modest price, please ask about
-
-our @Crent@n.
-
-"
+our @Crent@n.
+"
 E
 "osign"
 "$n reads the sign.
-
-"
+"
 !
 0 0 0
 2322 9 1509949540 3 0
@@ -4653,20 +3731,13 @@ S
 #39107
 "Wayfarer's Inn - Common Room"
 "The smaller of the two common rooms is more brightly lit than its larger
-
-companion with two lanterns suspended overhead.  Here, the construction seems
-
-older, as if a part of the Inn's beginning.  The stone walls are dark with
-
-age, as are the rafters overhead, both smoke-darkened and spotted by less
-
-savory stains.  A nondescript bar of simple design runs the length of the
-
-room, and a lone round table is tucked into a corner near the eastward-lying
-
-door.
-
-"
+companion with two lanterns suspended overhead.  Here, the construction seems
+older, as if a part of the Inn's beginning.  The stone walls are dark with
+age, as are the rafters overhead, both smoke-darkened and spotted by less
+savory stains.  A nondescript bar of simple design runs the length of the
+room, and a lone round table is tucked into a corner near the eastward-lying
+door.
+"
 ""
 335020036 0
 0 5 0
@@ -4685,128 +3756,69 @@ D3
 E
 "1 east door"
 "A sturdy-looking wooden door lies to the east.  Two planks crisscross the
-
-door and are nailed to the wall.  Effectively blocking off exit in that
-
-direction.
-
-"
+door and are nailed to the wall.  Effectively blocking off exit in that
+direction.
+"
 A
 ""
 ""
 "if( has_obj( 2770, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2770, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2771, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2771, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2772, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2772, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2773, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2773, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2774, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2774, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2775, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2775, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2776, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2776, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2777, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2777, ch ) );
-
-  continue;
-
-  }
-
-if( has_obj( 2778, ch ) ) {
-
-  act_tochar( \"You return your hand to the deck before leaving.\", ch );
-
-  act_notchar( \"$n returns $s hand to the deck.\", ch );
-
-  junk_obj( has_obj( 2778, ch ) );
-
-  continue;
-
-  }
-
-else
-
-continue;
-
-"
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2770, ch ) );
+  continue;
+  }
+if( has_obj( 2771, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2771, ch ) );
+  continue;
+  }
+if( has_obj( 2772, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2772, ch ) );
+  continue;
+  }
+if( has_obj( 2773, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2773, ch ) );
+  continue;
+  }
+if( has_obj( 2774, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2774, ch ) );
+  continue;
+  }
+if( has_obj( 2775, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2775, ch ) );
+  continue;
+  }
+if( has_obj( 2776, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2776, ch ) );
+  continue;
+  }
+if( has_obj( 2777, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2777, ch ) );
+  continue;
+  }
+if( has_obj( 2778, ch ) ) {
+  act_tochar( \"You return your hand to the deck before leaving.\", ch );
+  act_notchar( \"$n returns $s hand to the deck.\", ch );
+  junk_obj( has_obj( 2778, ch ) );
+  continue;
+  }
+else
+continue;
+"
 !
 3 0 14
 3528 49 1509949540 -2 0
@@ -4817,24 +3829,15 @@ S
 #39108
 "Before a Roaring Fire"
 "Quiet and comfortable, the room is heated by the blaze of a pine wood fire,
-
-burning in a great gaping fireplace, centered on the back wall.  A pair of
-
-over-stuffed chairs flank the stone-crafted hearth, taking advantage of the
-
-warmth.  The walls of the room are draped with aging tapestries, holding at
-
-bay the chill emanating from the stone.  The wall hangings are frayed and
-
-faded, the colors dimmed by wood smoke and time.  Tables sit to one side of
-
-each chair, each holding a candleholder and a half-burned taper.  The two
-
-common rooms lie to the south and east, but the noise of the patrons chatter
-
-is muffled in the peaceful room.
-
-"
+burning in a great gaping fireplace, centered on the back wall.  A pair of
+over-stuffed chairs flank the stone-crafted hearth, taking advantage of the
+warmth.  The walls of the room are draped with aging tapestries, holding at
+bay the chill emanating from the stone.  The wall hangings are frayed and
+faded, the colors dimmed by wood smoke and time.  Tables sit to one side of
+each chair, each holding a candleholder and a half-burned taper.  The two
+common rooms lie to the south and east, but the noise of the patrons chatter
+is muffled in the peaceful room.
+"
 ""
 335020037 0
 0 5 0
@@ -4849,71 +3852,42 @@ D3
 E
 "tapestry tapestries walls"
 "Although faded and frayed, the tapestry was once a work of art sewn of
-
-the finest of silks.  No one knows how the Wayfarer's came by this
-
-treasure, for when asked, the proprietor just shrugs and says, \"It was
-
-always here.\" 
-
+the finest of silks.  No one knows how the Wayfarer's came by this
+treasure, for when asked, the proprietor just shrugs and says, \"It was
+always here.\" 
 
 The tapestry, its background a deep midnight blue, depicts a panoramic
-
-view of a sprawling city divided in twain by a lazy blue-green river. 
-
-The scene, stitched in finest silks, portrays a slight woman standing in
-
-front of a wide portcullis, a massive grey-stone keep looming behind her. 
-
-The foreground of the picture, sewn in increasingly more detail, reveals
-
-an island teeming with life.  Centrally, shabby stalls and multi-colored
-
-tents surround a vast green field; temporary structures erected for what
-
-is obviously a fair or festival.  Dancing bears, a handful of dogs
-
-dressed up as clowns, a roped-off area where two men wrestle while a
-
-crowd of bystanders cheers them on, people strolling arm in arm or
-
-singly...these all make up the middle ground of the scene.  At the very
-
-front of the needlework, against a backdrop of majestic oaks, lies a
-
-jousting field, two combatants posturing off to either end adjacent to
-
-the spectator-filled stands.  The work is masterfully crafted, although
-
-old, signs of wear and frayed threads suggesting its age.  Worked in gold
-
-thread, at the bottom right corner of the piece, is a signature and date:
-
-Lady Margalis Stormblade, 21...the rest of the numbers are worn away.
-
-"
+view of a sprawling city divided in twain by a lazy blue-green river. 
+The scene, stitched in finest silks, portrays a slight woman standing in
+front of a wide portcullis, a massive grey-stone keep looming behind her. 
+The foreground of the picture, sewn in increasingly more detail, reveals
+an island teeming with life.  Centrally, shabby stalls and multi-colored
+tents surround a vast green field; temporary structures erected for what
+is obviously a fair or festival.  Dancing bears, a handful of dogs
+dressed up as clowns, a roped-off area where two men wrestle while a
+crowd of bystanders cheers them on, people strolling arm in arm or
+singly...these all make up the middle ground of the scene.  At the very
+front of the needlework, against a backdrop of majestic oaks, lies a
+jousting field, two combatants posturing off to either end adjacent to
+the spectator-filled stands.  The work is masterfully crafted, although
+old, signs of wear and frayed threads suggesting its age.  Worked in gold
+thread, at the bottom right corner of the piece, is a signature and date:
+Lady Margalis Stormblade, 21...the rest of the numbers are worn away.
+"
 E
 "fireplace fire hearth"
 "Crafted of smooth, round river rock, a huge fireplace fills one wall of the
-
-tavern.  Within it's cavernous maw, a flickering fire of still-damp wood
-
-burns, cracking and spitting.  Occasionally, when the wind is strong or
-
-changes directions suddenly, a puff of smoke belches from the chimney and
-
-rises to the ceiling, hanging beneath the rafters like a pale gray shroud.
-
-"
+tavern.  Within it's cavernous maw, a flickering fire of still-damp wood
+burns, cracking and spitting.  Occasionally, when the wind is strong or
+changes directions suddenly, a puff of smoke belches from the chimney and
+rises to the ceiling, hanging beneath the rafters like a pale gray shroud.
+"
 E
 "table taper candleholder"
 "Pine wood tables of rough, homemade construction sit beside each of the
-
-chairs.  Centered atop each, a pewter candleholder holds a fat,
-
-half-burned candle made of yellow-tinted tallow.
-
-"
+chairs.  Centered atop each, a pewter candleholder holds a fat,
+half-burned candle made of yellow-tinted tallow.
+"
 2751 17 1509949540 -2 0
 2751 17 1509949540 -2 0
 -1
@@ -4922,15 +3896,11 @@ S
 #39109
 "Overlooking the Elhanni"
 "Under Construction.
-
-Deck Overlooking the Elhanni
-
-"
+Deck Overlooking the Elhanni
+"
 "[Maegheera] To be done later, when someone builds a zone.
-
-[Maegheera] Door is blocked off.
-
-"
+[Maegheera] Door is blocked off.
+"
 335020032 0
 0 5 0
 D0
@@ -4947,8 +3917,7 @@ S
 #39110
 "Deck Overlooking the Elhanni"
 "Under Construction.
-
-"
+"
 ""
 335020032 0
 0 5 0
@@ -4966,23 +3935,15 @@ S
 #39111
 "Floating Pontoon - Elhanni River"
 "Under Construction.
-
-"
+"
 "[Jomo] unhitch pontoon will be the start of area 'river run' to be built
-
-later, the idea is you are washed down the river, things attack you, you
-
-have limited time to kill them and prep before you are swept along to the
-
-next thing.  The area should end with the pontoon being smashed and the
-
-group washing up around about otters/marsh area across a few rooms.
-
-[Maegheera] Fun idea.
-
-[Maegheera] Question the use of pontoon boats, those are modern. Thinking a raft or paddlewheel boat more appropriate.
-
-"
+later, the idea is you are washed down the river, things attack you, you
+have limited time to kill them and prep before you are swept along to the
+next thing.  The area should end with the pontoon being smashed and the
+group washing up around about otters/marsh area across a few rooms.
+[Maegheera] Fun idea.
+[Maegheera] Question the use of pontoon boats, those are modern. Thinking a raft or paddlewheel boat more appropriate.
+"
 335020032 0
 0 5 0
 D4
@@ -4995,22 +3956,14 @@ S
 #39112
 "Common Room - Wayfarer's Inn"
 "A single lantern suspended from a chain anchored to the ceiling, lights the
-
-common room, doing little to dispel shadows that stretch out into dark corners
-
-and offer an anonymity of sorts to those seated there.  The room, itself, is a
-
-strange mixture of new construction and scavenged materials; the timbers
-
-forming the rafters are new, the bar scarred by fallen debris.  The furniture
-
-is hand-made, roughly crafted from green wood.  Behind the bar, nailed to the
-
-wall and hanging at a drunken angle is an unframed painting, its fine detail
-
-clearly marking it as a masterpiece.
-
-"
+common room, doing little to dispel shadows that stretch out into dark corners
+and offer an anonymity of sorts to those seated there.  The room, itself, is a
+strange mixture of new construction and scavenged materials; the timbers
+forming the rafters are new, the bar scarred by fallen debris.  The furniture
+is hand-made, roughly crafted from green wood.  Behind the bar, nailed to the
+wall and hanging at a drunken angle is an unframed painting, its fine detail
+clearly marking it as a masterpiece.
+"
 ""
 335024133 0
 0 5 0
@@ -5025,43 +3978,26 @@ D1
 E
 "painting masterpiece"
 "Although the painting is old, painted in some distant and forgotten past,
-
-the fine detail and the still-bright colors mark it clearly as a
-
-masterpiece.  Depicted there is a dragon, massive in size, golden scales
-
-glinting brightly, his graceful, translucent wings idle and folded along
-
-his sides.  The great wyrm is coiled around a treasure hoard, his
-
-enormous head at rest atop the pile.  His razor-sharp teeth are bared in
-
-a parody of a smile as he contemplates the objects held in each taloned
-
-hand - in one a suit of ancient mithril scale of dwarven design, in
-
-the other a mouse.  By some trick of light or artistry, his glowing, red
-
-eyes seem to follow each of your movements, as though watching his next
-
-meal.
-
-"
+the fine detail and the still-bright colors mark it clearly as a
+masterpiece.  Depicted there is a dragon, massive in size, golden scales
+glinting brightly, his graceful, translucent wings idle and folded along
+his sides.  The great wyrm is coiled around a treasure hoard, his
+enormous head at rest atop the pile.  His razor-sharp teeth are bared in
+a parody of a smile as he contemplates the objects held in each taloned
+hand - in one a suit of ancient mithril scale of dwarven design, in
+the other a mouse.  By some trick of light or artistry, his glowing, red
+eyes seem to follow each of your movements, as though watching his next
+meal.
+"
 E
 "bar"
 "The bar is a scavenged work of art crafted of some dark burnished wood with
-
-intricate carvings etched across the front.  Running the length of the bar is
-
-a brass foot rail, its shiny exterior in dire need of polishing.  A long scar,
-
-souvenir of some unknown cataclysm, traverses the width of the bar.  Several
-
-stools stand there, their leather seats cracked and worn, uneven legs creating
-
-a precarious perch.
-
-"
+intricate carvings etched across the front.  Running the length of the bar is
+a brass foot rail, its shiny exterior in dire need of polishing.  A long scar,
+souvenir of some unknown cataclysm, traverses the width of the bar.  Several
+stools stand there, their leather seats cracked and worn, uneven legs creating
+a precarious perch.
+"
 2325 9 1509949540 3 0
 3529 17 1509949540 -1 26
 -1
@@ -5070,19 +4006,13 @@ S
 #39113
 "Secluded Grotto"
 "The ancient trees of the forest have given way to a small secluded cul-de-sac.
-
-The cul-de-sac's perimeter is surrounded by gentle-looking trees forming a
-
-shady border around the lush central grasses found here.  Towards the far
-
-south side, opposite the entrance to this small clearing, someone has placed a
-
-simple stone altar engraved with cheerful signs of life.
-
-"
+The cul-de-sac's perimeter is surrounded by gentle-looking trees forming a
+shady border around the lush central grasses found here.  Towards the far
+south side, opposite the entrance to this small clearing, someone has placed a
+simple stone altar engraved with cheerful signs of life.
+"
 "[Nereus] Is grotto really a good name?  It's a forest cul-de-sac, doesn't a grotto require stone?
-
-"
+"
 1912079235 0
 3 6 0
 D0
@@ -5092,145 +4022,88 @@ D0
 E
 "altar"
 "The simple stone altar is set low to the ground, suitable for one of the
-
-smaller races of the realm.  Along its border are engraved cheerful scenes of
-
-life, gardening, harvesting, and fine meals.  Atop the altar is an engraved
-
-border of wheat sheaves holy to the goddess Freylia.
-
-"
+smaller races of the realm.  Along its border are engraved cheerful scenes of
+life, gardening, harvesting, and fine meals.  Atop the altar is an engraved
+border of wheat sheaves holy to the goddess Freylia.
+"
 A
 ""
 ""
 "if( get_religion( ch ) == Freylia ) {
-
-  if( class( ch ) == Cleric || class( ch ) == Paladin ) {
-
-    if( find_stat( ch, prayer ) > 500 ) {
-
-      drain_stat( ch, prayer, 0, -500 );
-
-      act_tochar( #holy, ch );
-
-      act_notchar( #rholy, ch );
-
-      obj_to_char( oload( 4524 ), ch );
-
-      junk_obj( has_obj ( 3397, find_room( 39113 ) ) );
-
-      end;
-
-      }
-
-    act_tochar( #unworthy, ch );
-
-    }
-
-  }
-
-continue;
-
-"
+  if( class( ch ) == Cleric || class( ch ) == Paladin ) {
+    if( find_stat( ch, prayer ) > 500 ) {
+      drain_stat( ch, prayer, 0, -500 );
+      act_tochar( #holy, ch );
+      act_notchar( #rholy, ch );
+      obj_to_char( oload( 4524 ), ch );
+      junk_obj( has_obj ( 3397, find_room( 39113 ) ) );
+      end;
+      }
+    act_tochar( #unworthy, ch );
+    }
+  }
+continue;
+"
 E
 "holy"
 "You place the wheat upon the altar as if to sacrifice it and, as you pray, the
-
-wheat magically curls itself around into the form of Freylia's holy symbol.
-
-You quickly take up the reward lest another take that which has rewarded your
-
-faith.
-
-"
+wheat magically curls itself around into the form of Freylia's holy symbol.
+You quickly take up the reward lest another take that which has rewarded your
+faith.
+"
 E
 "rholy"
 "$n places a sheaf of wheat upon the altar and prays.  Before your eyes the
-
-wheat curls and twines itself into a wheat which $n removes from the altar
-
-with all the reverence due a sacred object.
-
-"
+wheat curls and twines itself into a wheat which $n removes from the altar
+with all the reverence due a sacred object.
+"
 E
 "unworthy"
 "You pray to Freylia but feel that you have called on her too often of late to
-
-find your true reward from this sacrifice.  Pray again later when you have
-
-called on Freylia less often.
-
-"
+find your true reward from this sacrifice.  Pray again later when you have
+called on Freylia less often.
+"
 !
 5 3397 0
 A
 "pray"
 ""
 "if( get_religion( ch ) == Freylia ) {
-
-  if( class( ch ) == cleric || class( ch ) == paladin ) {
-
-    if( find_stat( ch, prayer ) > 150 ) {
-
-      drain_stat( ch, prayer, 0, -150 );
-
-      act_tochar( #pray, ch );
-
-      obj_to_char( oload( 4525 ), ch );
-
-      }
-
-    else {
-
-      act_tochar( #failure, ch );
-
-      drain_stat( ch, prayer, 0, -15 );
-
-      }
-
-    }
-
-  else {
-
-    if( find_stat( ch, prayer ) > 200 ) {
-
-      drain_stat( ch, prayer, 0, -200 );
-
-      act_tochar( #pray, ch );
-
-      obj_to_char( oload( 4526 ), ch );
-
-      }
-
-    else {
-
-      act_tochar( #failure, ch );
-
-      drain_stat( ch, prayer, 0, -20 );
-
-      }
-
-    }
-
-  }
-
-else {
-
-  continue;
-
-  }
-
-"
+  if( class( ch ) == cleric || class( ch ) == paladin ) {
+    if( find_stat( ch, prayer ) > 150 ) {
+      drain_stat( ch, prayer, 0, -150 );
+      act_tochar( #pray, ch );
+      obj_to_char( oload( 4525 ), ch );
+      }
+    else {
+      act_tochar( #failure, ch );
+      drain_stat( ch, prayer, 0, -15 );
+      }
+    }
+  else {
+    if( find_stat( ch, prayer ) > 200 ) {
+      drain_stat( ch, prayer, 0, -200 );
+      act_tochar( #pray, ch );
+      obj_to_char( oload( 4526 ), ch );
+      }
+    else {
+      act_tochar( #failure, ch );
+      drain_stat( ch, prayer, 0, -20 );
+      }
+    }
+  }
+else {
+  continue;
+  }
+"
 E
 "pray"
 "Your prayers to Freylia are answered and you have been rewarded with a gift.
-
-"
+"
 E
 "failure"
 "You pray to Freylia.
-
-"
+"
 !
 0 0 0
 -1

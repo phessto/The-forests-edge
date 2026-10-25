@@ -10,12 +10,9 @@
 #11900
 "Cavern"
 "The immense height of the ceiling in this cave drops sharply, closing in to
-
-form a large cavern to your north.  This cavern is somewhat darker than the
-
-rest of the cave - a darkness that seems quite unusual.
-
-"
+form a large cavern to your north.  This cavern is somewhat darker than the
+rest of the cave - a darkness that seems quite unusual.
+"
 ""
 301596673 0
 0 8 0
@@ -31,34 +28,26 @@ A
 ""
 ""
 "act_tochar( #south, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "south"
 "You push aside a section of wall that moves back with surprising ease and step
-
-through.  The section of stone closes silently behind you.
-
-"
+through.  The section of stone closes silently behind you.
+"
 !
 3 0 4
 A
 ""
 ""
 "act_tochar( #tingle, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "tingle"
 "@MAs you walk north you feel a tingle as though you have passed through some
-
-kind of barrier.
-
-"
+kind of barrier.
+"
 !
 3 0 1
 -1
@@ -67,18 +56,12 @@ S
 #11901
 "White Limestone Room"
 "Eight tall, thin and slightly tapering pillars stand upright in the center of
-
-this room, centered around a marble fountain and bench.  The white limestone
-
-surface of the walls cover the poorer quality block and have been polished to
-
-a gentle radiance.  One striking characteristic of this room is the sharply
-
-pointed apex above the western exit, which has been covered with a gold
-
-alloy.  Further to the east and west is complete darkness.
-
-"
+this room, centered around a marble fountain and bench.  The white limestone
+surface of the walls cover the poorer quality block and have been polished to
+a gentle radiance.  One striking characteristic of this room is the sharply
+pointed apex above the western exit, which has been covered with a gold
+alloy.  Further to the east and west is complete darkness.
+"
 ""
 301596677 0
 0 6 0
@@ -98,17 +81,13 @@ A
 ""
 ""
 "act_tochar( #tingle, ch );
-
-continue;
-
-"
+continue;
+"
 E
 "tingle"
 "@MAs you walk south you feel a tingle as though you have passed through some
-
-kind of barrier.
-
-"
+kind of barrier.
+"
 !
 3 0 4
 1 17 1509949540 -2 0
@@ -119,14 +98,10 @@ S
 #11902
 "White Limestone Room"
 "Its grandeur, simplicity and complete silence are more impressive than any
-
-scheme of decoration.  There is no ornament whatsoever, only a polished
-
-dressing of enormous blocks of dark granite, jointed with marvellous
-
-precision.  The ceiling itself is formed by eight monolithic granite beams.
-
-"
+scheme of decoration.  There is no ornament whatsoever, only a polished
+dressing of enormous blocks of dark granite, jointed with marvellous
+precision.  The ceiling itself is formed by eight monolithic granite beams.
+"
 ""
 368705541 0
 0 6 0
@@ -138,24 +113,21 @@ A
 "climb"
 "rope"
 "acode( find_room( 96 ), 1 );
-
-"
+"
 !
 0 0 0
 A
 "hit punch"
 "punching bag"
 "acode( find_room( 96 ), 2 );
-
-"
+"
 !
 0 0 0
 A
 "kick"
 "kicking stand"
 "acode( find_room( 96 ), 3 );
-
-"
+"
 !
 0 0 0
 -1
@@ -164,16 +136,11 @@ S
 #11903
 "White Limestone Room"
 "The roof of this well-adorned chamber is supported by eight square red granite
-
-pillars.  Gazing around you notice the sobriety and richness of the design and
-
-decoration of these chambers.  Along the north wall, extending from east to
-
-west, stands a large quantity of black, sinister shrine-like chests, all
-
-closed and sealed.
-
-"
+pillars.  Gazing around you notice the sobriety and richness of the design and
+decoration of these chambers.  Along the north wall, extending from east to
+west, stands a large quantity of black, sinister shrine-like chests, all
+closed and sealed.
+"
 ""
 301598757 0
 0 6 0

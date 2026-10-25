@@ -10,16 +10,11 @@
 #46250
 "Narrow Path Through the Forest"
 "A narrow path winds between the tall and wide trees of the forest, carefully
-
-cleared of brush and vines.  Leafy boughs far above shade the path, and a
-
-single shallow rut runs along the center.  The path leads out of the forest
-
-into open farmland to the west, turning into a wider road, and continues south
-
-into the forest.
-
-"
+cleared of brush and vines.  Leafy boughs far above shade the path, and a
+single shallow rut runs along the center.  The path leads out of the forest
+into open farmland to the west, turning into a wider road, and continues south
+into the forest.
+"
 ""
 301465600 0
 3 6 0
@@ -37,18 +32,12 @@ S
 #46251
 "Small Farm Road"
 "The road is just wide enough for a one-horse cart to pass, and a well-worn rut
-
-in the center indicates it is used for just that purpose.  It is a simple dirt
-
-road, clear from grass and growth, but turns to pure mud in the rain.  The
-
-road leads west towards a large house in the distance and east into an old
-
-forest, quickly becoming a narrower path.  On either side of the fences you can
-
-see a wheat field to the north and an orchard south.
-
-"
+in the center indicates it is used for just that purpose.  It is a simple dirt
+road, clear from grass and growth, but turns to pure mud in the rain.  The
+road leads west towards a large house in the distance and east into an old
+forest, quickly becoming a narrower path.  On either side of the fences you can
+see a wheat field to the north and an orchard south.
+"
 ""
 301465600 0
 12 6 0
@@ -63,105 +52,77 @@ D3
 E
 "west"
 "To the west this small farm road continues.
-
-"
+"
 E
 "north south fence"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 "climb"
 "1 north"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46328 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46328 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the north fence into the wheat field.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the north into the wheat field.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the south.
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "1 south"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46255 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46255 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the south fence into the orchard.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the south into the orchard.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the north.
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "fence"
 "act_tochar( \"Which fence do you wish to climb?\", ch );
-
-"
+"
 !
 0 0 0
 2228 9 1509949540 3 0
@@ -171,18 +132,12 @@ S
 #46252
 "Small Farm Road"
 "The dirt road runs between fences on either side, from a forest far east from
-
-here to a large house visible far in the opposite direction.  A metal gate
-
-hangs heavily from the southern fence, leading into an orchard on the other
-
-side.  There is a simple latch that easily opens from either side.  Past the
-
-wooden gated fence to the north is a thick field of golden wheat that sways
-
-with the wind.
-
-"
+here to a large house visible far in the opposite direction.  A metal gate
+hangs heavily from the southern fence, leading into an orchard on the other
+side.  There is a simple latch that easily opens from either side.  Past the
+wooden gated fence to the north is a thick field of golden wheat that sways
+with the wind.
+"
 ""
 301465600 0
 12 6 0
@@ -205,31 +160,25 @@ D3
 E
 "west east"
 "To the east and west this small farm road continues.
-
-"
+"
 E
 "fences"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You lift the latch and pull the metal gate open.
-
-"
+"
 E
 "to_room"
 "$n lifts the latch and pulls the metal gate to the south open.
-
-"
+"
 !
 8 0 4
 -1
@@ -238,18 +187,12 @@ S
 #46253
 "Small Farm Road"
 "The branch of an apple tree reaches over the white picket fence to the south,
-
-shading the road a slight amount.  Through the northern fence poke golden
-
-stalks and leaves of wheat plants that fill the field beyond it.  This simple
-
-road continues west up to the steps of a large farmhouse and forks into a path
-
-running both north and south, while to the east it continues between the two
-
-fences for quite some distance.
-
-"
+shading the road a slight amount.  Through the northern fence poke golden
+stalks and leaves of wheat plants that fill the field beyond it.  This simple
+road continues west up to the steps of a large farmhouse and forks into a path
+running both north and south, while to the east it continues between the two
+fences for quite some distance.
+"
 ""
 301465600 0
 12 6 0
@@ -264,105 +207,77 @@ D3
 E
 "east"
 "To the east this small farm road continues.
-
-"
+"
 E
 "fence north south"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 "climb"
 "1 north"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46324 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46324 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the north fence into the wheat field.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the north into the wheat field.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the south.
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "1 south"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46262 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46262 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the south fence into the orchard.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the south into the orchard.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the north.
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "fence"
 "act_tochar( \"Which fence do you wish to climb?\", ch );
-
-"
+"
 !
 0 0 0
 -1
@@ -371,23 +286,15 @@ S
 #46254
 "The Orchard"
 "Tall and skinny apple trees grow evenly spaced in perfectly straight rows,
-
-probably all planted at the same time considering their similar sizes.  Apples
-
-of varying sizes and maturity hang from the leafy green branches in plenty. 
-
-An old metal gate confines the orchard, between wooden lengths that make up
-
-the rest of the fence.
-
-"
+probably all planted at the same time considering their similar sizes.  Apples
+of varying sizes and maturity hang from the leafy green branches in plenty. 
+An old metal gate confines the orchard, between wooden lengths that make up
+the rest of the fence.
+"
 "small green apple - 3744
-
-juicy green apple - 3745
-
-reset0 = apple tree
-
-"
+juicy green apple - 3745
+reset0 = apple tree
+"
 301465600 0
 2 6 0
 D0
@@ -410,124 +317,86 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You lift the latch and pull the metal gate open.
-
-"
+"
 E
 "to_room"
 "$n lifts the latch and pushes the metal gate to the north open.
-
-"
+"
 !
 8 0 1
 A
 "climb"
 "apple tree"
 "act_tochar( #nope, ch );
-
-"
+"
 E
 "nope"
 "This apple tree is too skinny still to support the weight of would-be climbers.
-
-"
+"
 !
 0 0 0
 A
 "pick"
 "apple"
 "if( size( ch ) <= 3 && !char_affected( ch, fly ) && !is_pet( ch ) ) {
-
-  act_tochar( #chibi, ch );
-
-  act_notchar( #cchibi, ch );
-
-  end;
-
-  }
-
-i = random( 1, 3 );
-
-if( i == 3 || !rflag( reset0, room ) ) {
-
-  act_tochar( #dud, ch );
-
-  act_notchar( #cdud, ch );
-
-  end;
-
-  }
-
-remove_rflag( reset0, room );
-
-if( i == 1 )
-
-  obj = obj_to_char( oload( 3744 ), ch );
-
-if( i == 2 )
-
-  obj = obj_to_char( oload( 3745 ), ch );
-
-if( !is_pet( ch ) ) {
-
-  act_tochar( #apple, ch, obj );
-
-  act_notchar( #capple, ch, obj );
-
-  }
-
-else {
-
-  act_notchar( #pet, ch, obj );
-
-  interpret( ch, \"eat apple\" );
-
-  obj_to_room( has_obj( 543, ch ), room );
-
-  }
-
-"
+  act_tochar( #chibi, ch );
+  act_notchar( #cchibi, ch );
+  end;
+  }
+i = random( 1, 3 );
+if( i == 3 || !rflag( reset0, room ) ) {
+  act_tochar( #dud, ch );
+  act_notchar( #cdud, ch );
+  end;
+  }
+remove_rflag( reset0, room );
+if( i == 1 )
+  obj = obj_to_char( oload( 3744 ), ch );
+if( i == 2 )
+  obj = obj_to_char( oload( 3745 ), ch );
+if( !is_pet( ch ) ) {
+  act_tochar( #apple, ch, obj );
+  act_notchar( #capple, ch, obj );
+  }
+else {
+  act_notchar( #pet, ch, obj );
+  interpret( ch, \"eat apple\" );
+  obj_to_room( has_obj( 543, ch ), room );
+  }
+"
 E
 "apple"
 "You reach up and pluck $p from one of the apple tree's low branches.
-
-"
+"
 E
 "capple"
 "$n reaches up into the apple tree's low branches and plucks $p.
-
-"
+"
 E
 "dud"
 "You reach into the branches of the apple tree but can't reach any apples big
-
-enough to take.
-
-"
+enough to take.
+"
 E
 "pet"
 "$n climbs up into the tree branches and picks $p.
-
-"
+"
 E
 "cdud"
 "$n reaches up to pick an apple but finds none to pick.
-
-"
+"
 E
 "chibi"
 "You jump up to pick an apple but cannot reach any.
-
-"
+"
 E
 "cchibi"
 "$n jumps up to pick an apple but cannot reach any.
-
-"
+"
 !
 0 0 0
 2478 9 1509949540 3 0
@@ -537,17 +406,12 @@ S
 #46255
 "The Orchard"
 "A wooden fence runs between the orchard and a long dirt road to the north.  A
-
-small apple tree grows here with a leafy vine twisting about its trunk, nearly
-
-reaching the lowest branches.  Beyond the eastern fence is a dense, shadowy
-
-forest with leaf-heavy boughs reaching over into the edge of the orchard.
-
-"
+small apple tree grows here with a leafy vine twisting about its trunk, nearly
+reaching the lowest branches.  Beyond the eastern fence is a dense, shadowy
+forest with leaf-heavy boughs reaching over into the edge of the orchard.
+"
 "reset1 = grapes
-
-"
+"
 301465600 0
 2 6 0
 D2
@@ -561,81 +425,62 @@ D3
 E
 "vine leafy trunk"
 "A healthy green vine twists around the trunk of this young apple tree, a grape
-
-vine it seems.  There may be a clump of grapes ready to be picked.
-
-"
+vine it seems.  There may be a clump of grapes ready to be picked.
+"
 E
 "fence north east"
 "A roughly cut wooden fence stands between the orchard and the dense forest to
-
-the east and the farm road to the north.
-
-"
+the east and the farm road to the north.
+"
 A
 "climb"
 "apple tree"
 "acode( find_room( 46254 ), 2 );
-
-"
+"
 !
 0 0 0
 A
 "pick"
 "apple"
 "acode( find_room( 46254 ), 3 );
-
-"
+"
 !
 0 0 0
 A
 "pick"
 "vine grape"
 "acode( find_room( 46262 ), 3 );
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "1 north fence"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46251 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46251 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence to the northern road.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the northern road.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the south.
-
-"
+"
 !
 0 0 0
 -1
@@ -644,14 +489,10 @@ S
 #46256
 "The Orchard"
 "The thick forest to the east and south are separated from the orchard by just
-
-a simple fence.  The branches of the forest's trees reaching across to the
-
-space where the apple tree is to grow.  For this reason, this apple tree is
-
-especially thin and its branches reach away from the forest to the northwest.
-
-"
+a simple fence.  The branches of the forest's trees reaching across to the
+space where the apple tree is to grow.  For this reason, this apple tree is
+especially thin and its branches reach away from the forest to the northwest.
+"
 ""
 301465600 0
 2 6 0
@@ -666,24 +507,20 @@ D3
 E
 "fence south east"
 "A roughly cut wooden fence stands between the orchard and the dense forest to
-
-the south and east.
-
-"
+the south and east.
+"
 A
 "climb"
 "apple tree"
 "acode( find_room( 46254 ), 2 );
-
-"
+"
 !
 0 0 0
 A
 "pick"
 "apple"
 "acode( find_room( 46254 ), 3 );
-
-"
+"
 !
 0 0 0
 -1
@@ -692,19 +529,13 @@ S
 #46257
 "The Orchard"
 "The apple tree growing here is fairly tall but also very skinny, its thin
-
-branches laden with apples reaching out towards the sky.  At the base of the
-
-apple tree grow many short leafy plants with tiny red fruit growing from many
-
-of them.  A fence runs between the south edge of the orchard and the dense
-
-forest beyond.
-
-"
+branches laden with apples reaching out towards the sky.  At the base of the
+apple tree grow many short leafy plants with tiny red fruit growing from many
+of them.  A fence runs between the south edge of the orchard and the dense
+forest beyond.
+"
 "reset2 = strawberry
-
-"
+"
 301465600 0
 2 6 0
 D0
@@ -722,107 +553,75 @@ D3
 E
 "leafy plant red fruit"
 "Many small strawberry plants grow low to the ground around the apple tree. 
-
-Most of the plants only have very tiny red strawberries, a wild and tasteless
-
-variety, but some are larger, domestic strawberries.
-
-"
+Most of the plants only have very tiny red strawberries, a wild and tasteless
+variety, but some are larger, domestic strawberries.
+"
 E
 "fence south"
 "A roughly cut wooden fence stands between the orchard and the dense forest to
-
-the south.
-
-"
+the south.
+"
 A
 "climb"
 "apple tree"
 "acode( find_room( 46254 ), 2 );
-
-"
+"
 !
 0 0 0
 A
 "pick"
 "apple"
 "acode( find_room( 46254 ), 3 );
-
-"
+"
 !
 0 0 0
 A
 "pick"
 "plant red fruit strawberry"
 "if( rflag( reset1, room ) ) {
-
-  if( random( 0, 1 ) ) {
-
-    remove_rflag( reset1, room );
-
-    act_tochar( #last, ch );
-
-    act_notchar( #clast, ch );
-
-    }
-
-  else {
-
-    act_tochar( #straw, ch, obj );
-
-    act_notchar( #cstraw, ch, obj );
-
-    }
-
-  obj = obj_to_char( oload( 3056 ), ch );
-
-  if( is_pet( ch ) )
-
-    interpret( ch, \"eat strawberry\" );
-
-  }
-
-else {
-
-  act_tochar( #dud, ch );
-
-  act_notchar( #cdud, ch );
-
-  }
-
-"
+  if( random( 0, 1 ) ) {
+    remove_rflag( reset1, room );
+    act_tochar( #last, ch );
+    act_notchar( #clast, ch );
+    }
+  else {
+    act_tochar( #straw, ch, obj );
+    act_notchar( #cstraw, ch, obj );
+    }
+  obj = obj_to_char( oload( 3056 ), ch );
+  if( is_pet( ch ) )
+    interpret( ch, \"eat strawberry\" );
+  }
+else {
+  act_tochar( #dud, ch );
+  act_notchar( #cdud, ch );
+  }
+"
 E
 "straw"
 "You pick a strawberry from a small low plant.
-
-"
+"
 E
 "cstraw"
 "$n picks a strawberry from a small low plant.
-
-"
+"
 E
 "dud"
 "Looking among the small plants along the ground, you cannot find any fruit
-
-worth picking.
-
-"
+worth picking.
+"
 E
 "cdud"
 "$n looks at the low leafy plants for something worth picking but finds nothing.
-
-"
+"
 E
 "last"
 "You pick the last strawberry from a small low plant.
-
-"
+"
 E
 "clast"
 "$n picks the last strawberry from a small low plant.
-
-"
+"
 !
 0 0 0
 -1
@@ -831,19 +630,13 @@ S
 #46258
 "Before a Farmhouse"
 "There is one wide step up to the door of the farmhouse, a large, well-
-
-maintained home with brick walls and a black-shingled roof.  To either
-
-side of the step is a small garden planted with yellow flowers, not a
-
-weed or misplaced leaf in sight.  A long road leads east through the
-
-farmland and a smaller path circles around the sides of the house.
-
-"
+maintained home with brick walls and a black-shingled roof.  To either
+side of the step is a small garden planted with yellow flowers, not a
+weed or misplaced leaf in sight.  A long road leads east through the
+farmland and a smaller path circles around the sides of the house.
+"
 "Dog is farmer's pet
-
-"
+"
 301465600 0
 12 6 0
 D0
@@ -865,104 +658,72 @@ D3
 E
 "flower yellow garden"
 "Small yellow chrysanthemums grow in this well-tended flowerbed, lined with
-
-small rounded stones.
-
-"
+small rounded stones.
+"
 A
 ""
 ""
 "if( mob_in_room( 2472, room ) ) {
-
-  act_tochar( #stepover, ch );
-
-  act_notchar( #cstepover, ch );
-
-  }
-
-continue;
-
-"
+  act_tochar( #stepover, ch );
+  act_notchar( #cstepover, ch );
+  }
+continue;
+"
 E
 "stepover"
 "As you enter the house, you step over an old farm dog, who does not even lift
-
-its head to acknowledge you.
-
-"
+its head to acknowledge you.
+"
 E
 "cstepover"
 "$n steps over an old farm dog on $s way into the house.
-
-"
+"
 !
 3 0 8
 A
 ""
 ""
 "if( time_hour() == 8 || time_hour() == 12 || time_hour() == 18 )
-
-  send_to_area( #bell, find_room( 46258 ) );
-
-"
+  send_to_area( #bell, find_room( 46258 ) );
+"
 E
 "bell"
 "The chiming of a bell rings out across the farm.
-
-"
+"
 !
 6 -120 0
 A
 "pick"
 "flower yellow chrysanthemum"
 "if( is_player( ch ) ) {
-
-  if( rflag( reset0, room ) ) {
-
-if( random( 1, 5 ) < 2 ) {
-
-      send_to_char( #none, ch );
-
-      remove_rflag( reset0, room );
-
-      }
-
-    else {
-
-      obj_to_char( oload(  3743 ), ch );
-
-      send_to_char( #ch, ch );
-
-      }
-
-    }
-
-  else
-
-    send_to_char( #none, ch );
-
-  }
-
-else
-
-  act_tochar( #no_hands, ch );
-
-"
+  if( rflag( reset0, room ) ) {
+if( random( 1, 5 ) < 2 ) {
+      send_to_char( #none, ch );
+      remove_rflag( reset0, room );
+      }
+    else {
+      obj_to_char( oload(  3743 ), ch );
+      send_to_char( #ch, ch );
+      }
+    }
+  else
+    send_to_char( #none, ch );
+  }
+else
+  act_tochar( #no_hands, ch );
+"
 E
 "none"
 "The remaining flowers are too small to bother with.
-
-"
+"
 E
 "ch"
 "You pick one of the small yellow flowers.
-
-"
+"
 E
 "no_hands"
 "You haven't any hands to pick or carry flowers.
-
-"
+"
 !
 0 0 0
 2472 9 1509949540 3 0
@@ -972,20 +733,13 @@ S
 #46259
 "Entrance to a Large Farmhouse"
 "This small entryway is decorated with a warm and welcoming decor, with knick-
-
-knacks and small pictures displayed tastefully on a shelf on the south wall. 
-
-The walls are whitewashed and painted white with pale green trim, making the
-
-room seem open and larger than it's actual size.  Through a doorway to the
-
-west is the dining room, which looks very cramped with the large table filling
-
-most of the room.  To the north is the base of a set of stairs leading up to
-
-the second floor.
-
-"
+knacks and small pictures displayed tastefully on a shelf on the south wall. 
+The walls are whitewashed and painted white with pale green trim, making the
+room seem open and larger than it's actual size.  Through a doorway to the
+west is the dining room, which looks very cramped with the large table filling
+most of the room.  To the north is the base of a set of stairs leading up to
+the second floor.
+"
 ""
 301465613 0
 0 5 0
@@ -1004,63 +758,41 @@ D3
 E
 "shelf nicknack pictures south"
 "Small useless but pretty trinkets sit on the shelf; antique farming
-
-implements, a small basket of mismatched buttons and string, and an old and
-
-worn poppet, to cite a few.  Landscape and portrait paintings in small wooden
-
-frames also rest on the crowded shelf, painted with a delicate, careful
-
-brushstroke.
-
-"
+implements, a small basket of mismatched buttons and string, and an old and
+worn poppet, to cite a few.  Landscape and portrait paintings in small wooden
+frames also rest on the crowded shelf, painted with a delicate, careful
+brushstroke.
+"
 A
 "search"
 "shelf"
 "if( !is_player( ch ) )
-
-  end;
-
-act_notchar( #rfind, ch );
-
-if( rflag( reset0, room ) ) {
-
-  remove_rflag( reset0, room );
-
-  if( random( 1, 10 ) == 1 ) {
-
-    act_tochar( #find, ch );
-
-    obj_to_char( oload( 3229 ), ch );
-
-    }
-
-  else {
-
-    act_tochar( #nofind, ch );
-
-    }
-
-  }
-
-"
+  end;
+act_notchar( #rfind, ch );
+if( rflag( reset0, room ) ) {
+  remove_rflag( reset0, room );
+  if( random( 1, 10 ) == 1 ) {
+    act_tochar( #find, ch );
+    obj_to_char( oload( 3229 ), ch );
+    }
+  else {
+    act_tochar( #nofind, ch );
+    }
+  }
+"
 E
 "find"
 "You search through a small basket on the shelf and find a nondescript copper
-
-key.
-
-"
+key.
+"
 E
 "nofind"
 "You search through a small basket on the shelf but find nothing worth taking.
-
-"
+"
 E
 "rfind"
 "$n searches through a small basket on the shelf.
-
-"
+"
 !
 0 0 0
 -1
@@ -1069,19 +801,13 @@ S
 #46260
 "Path Around the Farmhouse"
 "Apple laden branches reach out over the wooden fence to the east, where you
-
-can see a small healthy orchard.  A large farmhouse stands to the west with
-
-red brick walls and no windows you can see, but the door is nearby to the
-
-north.  A simple path runs between the house and fence, mostly packed dirt but
-
-there are also tiny pebbles and bits of yellowed, trampled grass.
-
-"
+can see a small healthy orchard.  A large farmhouse stands to the west with
+red brick walls and no windows you can see, but the door is nearby to the
+north.  A simple path runs between the house and fence, mostly packed dirt but
+there are also tiny pebbles and bits of yellowed, trampled grass.
+"
 "24% pebble
-
-"
+"
 301465600 0
 12 6 0
 D0
@@ -1095,50 +821,36 @@ D2
 E
 "fence east"
 "A roughly cut wooden fence serves as a border between the path and the orchard
-
-on the other side.
-
-"
+on the other side.
+"
 A
 "climb"
 "fence 1 east"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46262 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46262 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence into the orchard.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence into the orchard.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the west.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 !
 0 0 0
 78 17 1509949464 -2 0
@@ -1148,16 +860,11 @@ S
 #46261
 "Path Around the Farmhouse"
 "Beyond the southern fence spreads a cornfield, each plant growing so close
-
-together that it is hard to tell how large a single harvest must be.  The
-
-branches of an apple tree lean over the wooden fence to the east, just one of
-
-the many trees in the orchard.  A path leads west to further sections of the
-
-farm and north towards the main road.
-
-"
+together that it is hard to tell how large a single harvest must be.  The
+branches of an apple tree lean over the wooden fence to the east, just one of
+the many trees in the orchard.  A path leads west to further sections of the
+farm and north towards the main road.
+"
 ""
 301465600 0
 12 6 0
@@ -1176,50 +883,36 @@ D3
 E
 "fence east"
 "A roughly cut wooden fence serves as a border between the path and the orchard
-
-on the other side.
-
-"
+on the other side.
+"
 A
 "climb"
 "fence 1 east"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46263 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46263 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence into the orchard to the east.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence into the orchard to the east.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the west.
-
-"
+"
 !
 0 0 0
 -1
@@ -1228,17 +921,12 @@ S
 #46262
 "The Orchard"
 "Leafy green vines creep up the trunk of the tall skinny apple tree here, not
-
-posing much of a threat to the welfare of the tree just yet.  Apples, both
-
-ripe and young, hang from the branches high above the ground.  A wooden fence
-
-encloses the orchard to the north and west.
-
-"
+posing much of a threat to the welfare of the tree just yet.  Apples, both
+ripe and young, hang from the branches high above the ground.  A wooden fence
+encloses the orchard to the north and west.
+"
 "reset1 = grapes
-
-"
+"
 301465600 0
 2 6 0
 D1
@@ -1252,167 +940,120 @@ D2
 E
 "vine green leafy"
 "A healthy green vine twists around the trunk of this young apple tree, a grape
-
-vine it seems.  There may be a clump of grapes ready to be picked.
-
-"
+vine it seems.  There may be a clump of grapes ready to be picked.
+"
 E
 "fence west north"
 "A roughly cut wooden fence serves as a border between the orchard and the
-
-paths on the other side.
-
-"
+paths on the other side.
+"
 A
 "climb"
 "apple tree"
 "acode( find_room( 46254 ), 2 );
-
-"
+"
 !
 0 0 0
 A
 "pick"
 "apple"
 "acode( find_room( 46254 ), 3 );
-
-"
+"
 !
 0 0 0
 A
 "pick"
 "vine grape"
 "if( random( 0, 1 ) && rflag( reset1, room ) ) {
-
-  remove_rflag( reset1, room );
-
-  obj = obj_to_char( oload( 1721 ), ch );
-
-  act_tochar( #grape, ch, obj );
-
-  act_notchar( #cgrape, ch, obj );
-
-  if( is_pet( ch ) ) {
-
-    interpret( ch, \"eat grape\" );
-
-    }
-
-  }
-
-else {
-
-  act_tochar( #dud, ch );
-
-  act_notchar( #cdud, ch );
-
-  }
-
-"
+  remove_rflag( reset1, room );
+  obj = obj_to_char( oload( 1721 ), ch );
+  act_tochar( #grape, ch, obj );
+  act_notchar( #cgrape, ch, obj );
+  if( is_pet( ch ) ) {
+    interpret( ch, \"eat grape\" );
+    }
+  }
+else {
+  act_tochar( #dud, ch );
+  act_notchar( #cdud, ch );
+  }
+"
 E
 "dud"
 "You look for something to pick from the vine but there is nothing worth taking.
-
-"
+"
 E
 "grape"
 "You pick $p from the vine.
-
-"
+"
 E
 "cgrape"
 "$n picks $p from the vine.
-
-"
+"
 E
 "cdud"
 "$n looks in vain for something tasty on the vine.
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "1 north"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46253 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46253 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "arrive"
 "$n arrives over the fence to the south.
-
-"
+"
 E
 "climb"
 "You easily climb over the fence to the northern road.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the northern road.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "1 west"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46260 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46260 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "arrive"
 "$n arrives over the fence to the east.
-
-"
+"
 E
 "climb"
 "You easily climb over the fence to the western path.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the western path.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 !
 0 0 0
 -1
@@ -1421,14 +1062,10 @@ S
 #46263
 "The Orchard"
 "A young apple tree grows here, healthy and still growing taller every season. 
-
-Among its leafy branches are many green apples, small and large, some of which
-
-are ripe for the picking now.  On the other side of the fence to the south you
-
-can see a thriving cornfield, crows flying around it.
-
-"
+Among its leafy branches are many green apples, small and large, some of which
+are ripe for the picking now.  On the other side of the fence to the south you
+can see a thriving cornfield, crows flying around it.
+"
 ""
 301465600 0
 2 6 0
@@ -1443,125 +1080,93 @@ D1
 E
 "fence south west"
 "The wooden fence surrounding the orchard serves mostly as a border than a way
-
-of keeping anything in or out, made of a few roughly cut lengths of wood that
-
-look like they would be easy for nearly anyone to climb.  On the other side of
-
-the south fence is a thick corn field.
-
-"
+of keeping anything in or out, made of a few roughly cut lengths of wood that
+look like they would be easy for nearly anyone to climb.  On the other side of
+the south fence is a thick corn field.
+"
 A
 "climb"
 "apple tree"
 "acode( find_room( 46254 ), 2 );
-
-"
+"
 !
 0 0 0
 A
 "pick"
 "apple"
 "acode( find_room( 46254 ), 3 );
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "1 south"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46281 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46281 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence into the corn field to the south.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the south into the corn field.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the north.
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "1 west"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46261 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46261 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence to the path west.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the west to the path beyond.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the east.
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "fence"
 "act_tochar( #which, ch );
-
-"
+"
 E
 "which"
 "Which fence do you wish to climb over?
-
-"
+"
 !
 0 0 0
 -1
@@ -1570,18 +1175,12 @@ S
 #46264
 "Path Around the Farmhouse"
 "On the other side of the wooden fence that stands to the east is a vast golden
-
-field of wheat, swaying slightly with the lightest breeze.  To the west is the
-
-farmhouse, painted white with a small glass window about five feet above the
-
-ground and small black shutters held open by sturdy but small metal poles.  A
-
-path runs north to where it looks to circle around the outside of the house
-
-and south up to the front steps.
-
-"
+field of wheat, swaying slightly with the lightest breeze.  To the west is the
+farmhouse, painted white with a small glass window about five feet above the
+ground and small black shutters held open by sturdy but small metal poles.  A
+path runs north to where it looks to circle around the outside of the house
+and south up to the front steps.
+"
 ""
 301465600 0
 12 6 0
@@ -1596,50 +1195,36 @@ D2
 E
 "east fence"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 "climb"
 "1 east fence"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46324 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46324 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the east fence into the wheat field.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the east into the wheat field.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the west.
-
-"
+"
 !
 0 0 0
 -1
@@ -1648,19 +1233,13 @@ S
 #46265
 "Farmhouse Pantry"
 "Shelves line the walls, every one filled with well-organized jars and pots of
-
-provisions, crockery, and everything else a cook might need in a well-run
-
-household.  A plain wooden cabinet against the south wall contains cutlery and
-
-table linen.  Sacks of fruits, vegetables, and grain rest on the floor,
-
-stockpiled for the winter season.
-
-"
+provisions, crockery, and everything else a cook might need in a well-run
+household.  A plain wooden cabinet against the south wall contains cutlery and
+table linen.  Sacks of fruits, vegetables, and grain rest on the floor,
+stockpiled for the winter season.
+"
 "reset0 = search sack
-
-"
+"
 301465605 0
 0 5 0
 D3
@@ -1671,57 +1250,36 @@ A
 "search"
 "sack fruits vegetables grain"
 "if( !is_player( ch ) )
-
-  end;
-
-if( rflag( reset0, room ) ) {
-
-  remove_rflag( reset0, room );
-
-  i = random( 1, 4 );
-
-  if( i == 1 )
-
-    obj = obj_to_char( oload( 3739 ), ch );
-
-  if( i == 2 )
-
-    obj = obj_to_char( oload( 3737 ), ch );
-
-  if( i == 3 )
-
-    obj = obj_to_char( oload( 1299 ), ch );
-
-  if( i == 4 )
-
-    obj = obj_to_char( oload( 3744 ), ch );
-
-  act_tochar( #find, ch, obj );
-
-  act_notchar( #rfind, ch );
-
-  }
-
-else
-
-  act_tochar( #nothing, ch );
-
-"
+  end;
+if( rflag( reset0, room ) ) {
+  remove_rflag( reset0, room );
+  i = random( 1, 4 );
+  if( i == 1 )
+    obj = obj_to_char( oload( 3739 ), ch );
+  if( i == 2 )
+    obj = obj_to_char( oload( 3737 ), ch );
+  if( i == 3 )
+    obj = obj_to_char( oload( 1299 ), ch );
+  if( i == 4 )
+    obj = obj_to_char( oload( 3744 ), ch );
+  act_tochar( #find, ch, obj );
+  act_notchar( #rfind, ch );
+  }
+else
+  act_tochar( #nothing, ch );
+"
 E
 "find"
 "You search through one of the sacks and find $p.
-
-"
+"
 E
 "rfind"
 "$n searches through one of the sacks and finds something.
-
-"
+"
 E
 "nothing"
 "You search through one of the sacks but find nothing.
-
-"
+"
 !
 0 0 0
 -1
@@ -1730,20 +1288,13 @@ S
 #46266
 "Farmhouse Kitchen"
 "This neatly organized kitchen is kept very clean, every counter cleared and
-
-ready to prepare the next meal.  A large fireplace is in the wall to the west,
-
-kept lit for cooking at all times, which makes the kitchen uncomfortably
-
-warm.  Next to the fireplace is a stove for baking and cooking smaller things
-
-when the fireplace is in use.  A window in the southern wall, opened just a
-
-crack, provides the only relief to the heat.  The door to the pantry is east
-
-and the dining room is through the north doorway.
-
-"
+ready to prepare the next meal.  A large fireplace is in the wall to the west,
+kept lit for cooking at all times, which makes the kitchen uncomfortably
+warm.  Next to the fireplace is a stove for baking and cooking smaller things
+when the fireplace is in use.  A window in the southern wall, opened just a
+crack, provides the only relief to the heat.  The door to the pantry is east
+and the dining room is through the north doorway.
+"
 ""
 301469703 0
 0 5 0
@@ -1758,20 +1309,16 @@ D1
 E
 "open hearth fireplace west"
 "The fireplace includes an open area in front of it in which to cook food.
-
-"
+"
 E
 "counter kitchen"
 "All sorts of dishes are prepared on this wooden counter, but it is kept
-
-scrupulously clean.
-
-"
+scrupulously clean.
+"
 E
 "north dining room"
 "The dining room to the north looks like it would be very crowded at mealtime.
-
-"
+"
 3080 17 1509949540 -2 0
 3608 49 1509949540 -2 0
 3341 81 1509949455 -2 0
@@ -1787,20 +1334,13 @@ S
 #46267
 "Farmhouse Dining Room"
 "A long wooden table takes up most of the space in this dining room, leaving
-
-just barely enough room for the chairs lining it to be pulled out.  A
-
-landscape painting decorates the north wall, bringing a bit of color to the
-
-whitewashed walls of the kitchen.  Hot air wafts out of the kitchen to the
-
-south and past the entryway to the east is the door of the farmhouse.  The
-
-foggy glass window of the west wall lets in light but has no way of being
-
-opened, showing just vague splotches of color of the outside fields.
-
-"
+just barely enough room for the chairs lining it to be pulled out.  A
+landscape painting decorates the north wall, bringing a bit of color to the
+whitewashed walls of the kitchen.  Hot air wafts out of the kitchen to the
+south and past the entryway to the east is the door of the farmhouse.  The
+foggy glass window of the west wall lets in light but has no way of being
+opened, showing just vague splotches of color of the outside fields.
+"
 ""
 301465605 0
 0 5 0
@@ -1815,29 +1355,22 @@ D2
 E
 "table"
 "This long wooden table is long enough to seat a dozen people in a pinch and
-
-has a shiny finish that makes it look very new.
-
-"
+has a shiny finish that makes it look very new.
+"
 E
 "landscape painting west wall"
 "The painting shows a small farm town at sunset, with the farmers bringing in
-
-their livestock for the night.  The landscape is many shades of yellow through
-
-bright red, blended with careful brushstrokes.
-
-"
+their livestock for the night.  The landscape is many shades of yellow through
+bright red, blended with careful brushstrokes.
+"
 E
 "south kitchen"
 "Heat emanates from the open and well-lit kitchen to the south.
-
-"
+"
 E
 "east entryway door"
 "The front hall is to the east.
-
-"
+"
 1353 17 1509949540 -2 0
 -1
 S
@@ -1845,19 +1378,13 @@ S
 #46268
 "Bottom of the Farmhouse Stairs"
 "A flight of stairs leads up to the second floor of the farmhouse, taking up
-
-nearly all of the room in this bit of hallway.  To the south is the entry hall
-
-to the house and to the west is the bower.  White walls with pale green trim
-
-is a design repeated through all of the house you can see, including the
-
-second floor.
-
-"
+nearly all of the room in this bit of hallway.  To the south is the entry hall
+to the house and to the west is the bower.  White walls with pale green trim
+is a design repeated through all of the house you can see, including the
+second floor.
+"
 "upstairs here
-
-"
+"
 301465605 0
 0 5 0
 D2
@@ -1878,27 +1405,17 @@ S
 #46269
 "The Farmhouse Bower"
 "A large, well-made loom dominates the northwest corner of this very obviously
-
-feminine room.  Windows in both the outer walls of the house, north and west,
-
-provide plenty of strong light to work by.  A finely-woven, half-finished
-
-length of cloth is strung across the loom presently and several other projects
-
-in varying degrees of completeness adorn every table and shelf.  A large
-
-dying tub sits by the western window.
-
-"
+feminine room.  Windows in both the outer walls of the house, north and west,
+provide plenty of strong light to work by.  A finely-woven, half-finished
+length of cloth is strung across the loom presently and several other projects
+in varying degrees of completeness adorn every table and shelf.  A large
+dying tub sits by the western window.
+"
 "[Zithuan] Needs to be done here:
-
-- add more of the custom components to the world
-
-- add more dyeable armors
-
-[Bwithh] could nell dye cloth tunics? thanks
-
-"
+- add more of the custom components to the world
+- add more dyeable armors
+[Bwithh] could nell dye cloth tunics? thanks
+"
 301469703 0
 0 5 0
 D1
@@ -1908,17 +1425,13 @@ D1
 E
 "dying dye tub west"
 "This metal tub is faded from much use, though the dyes are not strong enough
-
-to change its color noticeably.
-
-"
+to change its color noticeably.
+"
 E
 "loom northwest corner cloth"
 "The purpose of this piece of cloth is impossible to tell from what is done so
-
-far, undyed and formless as it is, but the weaving is good, tight work.
-
-"
+far, undyed and formless as it is, but the weaving is good, tight work.
+"
 2481 9 1509949540 3 0
 -1
 S
@@ -1926,16 +1439,11 @@ S
 #46270
 "Path Around the Farmhouse"
 "The windowless southern wall of the farmhouse borders the north edge of this
-
-dirt path.  Past the wooden fence to the south is a vast cornfield, through
-
-which you cannot see far at all due to how densely the plants grow together. 
-
-The path continues east and west, turning north as it reaches the corner of
-
-the house to the east.
-
-"
+dirt path.  Past the wooden fence to the south is a vast cornfield, through
+which you cannot see far at all due to how densely the plants grow together. 
+The path continues east and west, turning north as it reaches the corner of
+the house to the east.
+"
 ""
 301465600 0
 12 6 0
@@ -1950,50 +1458,36 @@ D3
 E
 "fence south"
 "A sturdy wooden fence holds back the thick field of corn plants to the south,
-
-probably very easy to climb.
-
-"
+probably very easy to climb.
+"
 A
 "climb"
 "1 south fence"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46278 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46278 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence into the southern corn field.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the southern corn field.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the north.
-
-"
+"
 !
 0 0 0
 -1
@@ -2002,14 +1496,10 @@ S
 #46271
 "Path Around the Farmhouse"
 "Heat emanates from the slightly cracked window looking into the farmhouse to
-
-the north.  A tall, wire fence borders the south side of this dirt path,
-
-keeping the birds inside the chicken coop.  The path itself curves around the
-
-side of the farmhouse to the west and goes towards the corn field to the east.
-
-"
+the north.  A tall, wire fence borders the south side of this dirt path,
+keeping the birds inside the chicken coop.  The path itself curves around the
+side of the farmhouse to the west and goes towards the corn field to the east.
+"
 ""
 301465600 0
 12 6 0
@@ -2024,26 +1514,19 @@ D3
 E
 "window north"
 "Peeking in through the window, you can see the neatly kept farmhouse kitchen. 
-
-There is a large fireplace, smaller stove, and many well-organized shelves.
-
-"
+There is a large fireplace, smaller stove, and many well-organized shelves.
+"
 -1
 S
 
 #46272
 "Path Around the Farmhouse"
 "A tall fence stands between the dirt path and the dense forest beyond, an
-
-attempt to block any beast from getting in or out.  A metal and wire enclosure
-
-to the south with a spring-loaded latch on the gate to prevent the chickens
-
-within from having the chance to escape.  The path continues to the east
-
-alongside the chicken pen and north towards another fenced-in area.
-
-"
+attempt to block any beast from getting in or out.  A metal and wire enclosure
+to the south with a spring-loaded latch on the gate to prevent the chickens
+within from having the chance to escape.  The path continues to the east
+alongside the chicken pen and north towards another fenced-in area.
+"
 ""
 301465600 0
 12 6 0
@@ -2062,49 +1545,34 @@ D2
 E
 "fence west"
 "The tall fence is made of wire and wood, much like the continuation of it to
-
-the north and the chicken coop to the south.  On the other side of the fence
-
-is a very dark, dense forest.
-
-"
+the north and the chicken coop to the south.  On the other side of the fence
+is a very dark, dense forest.
+"
 A
 ""
 ""
 "open( room, south );
-
-act_tochar( #to_char, ch );
-
-act_notchar( #to_room, ch );
-
-wait( 2 );
-
-if( is_open( room, south ) ) {
-
-  send_to_room( #slam, room );
-
-  send_to_room( #slam, find_room( 46273 ) );
-
-  close( room, south );
-
-  }
-
-"
+act_tochar( #to_char, ch );
+act_notchar( #to_room, ch );
+wait( 2 );
+if( is_open( room, south ) ) {
+  send_to_room( #slam, room );
+  send_to_room( #slam, find_room( 46273 ) );
+  close( room, south );
+  }
+"
 E
 "slam"
 "The metal gate slams closed.
-
-"
+"
 E
 "to_char"
 "You open the metal gate to the south.
-
-"
+"
 E
 "to_room"
 "$n opens the metal gate to the south.
-
-"
+"
 !
 8 0 4
 -1
@@ -2113,21 +1581,14 @@ S
 #46273
 "The Chicken Pen"
 "The dirt ground is covered by a thin scattering of straw, wheat, and leaves
-
-and tiny kernels of corn and seeds.  The metal gate to the north has a
-
-spring-loaded latch to make it close promptly to minimize the chance of the
-
-chickens escaping.  The fence enclosing the pen is tall enough to keep these
-
-flightless chickens inside.
-
-"
+and tiny kernels of corn and seeds.  The metal gate to the north has a
+spring-loaded latch to make it close promptly to minimize the chance of the
+chickens escaping.  The fence enclosing the pen is tall enough to keep these
+flightless chickens inside.
+"
 "Chickens here, chicken coop
-
-Rooster crows at dawn to entire area
-
-"
+Rooster crows at dawn to entire area
+"
 301465600 0
 2 6 0
 D0
@@ -2146,54 +1607,39 @@ A
 ""
 ""
 "open( room, north );
-
-act_notchar( #to_room, ch );
-
-act_tochar( #to_char, ch );
-
-wait( 2 );
-
-if( is_open( room, north ) ) {
-
-  send_to_room( #slam, room );
-
-  send_to_room( #slam, find_room( 46272 ) );
-
-  close( room, north );
-
-  }
-
-"
+act_notchar( #to_room, ch );
+act_tochar( #to_char, ch );
+wait( 2 );
+if( is_open( room, north ) ) {
+  send_to_room( #slam, room );
+  send_to_room( #slam, find_room( 46272 ) );
+  close( room, north );
+  }
+"
 E
 "slam"
 "The metal gate slams closed.
-
-"
+"
 E
 "to_char"
 "You open the metal gate to the north.
-
-"
+"
 E
 "to_room"
 "$n opens the metal gate to the north.
-
-"
+"
 !
 8 0 1
 A
 ""
 ""
 "if( mob_in_room( 2208, room ) )
-
-  send_to_area( #crow, room );
-
-"
+  send_to_area( #crow, room );
+"
 E
 "crow"
 "@YThe crowing of a rooster resounds across the farm.@n
-
-"
+"
 !
 14 1 0
 2473 9 1509949540 3 0
@@ -2204,18 +1650,12 @@ S
 #46274
 "The Chicken Pen"
 "The ground is littered with scattered bits of straw, grass, and seeds
-
-partially covering the dirt underneath.  The dirt that is visible is loose and
-
-uneven, covered with claw and peck marks.  A tall fence with a tight wire
-
-netting stands to the north and east.  Beyond the fence to the north is a
-
-small path, while to the east there is a cornfield, the closest plants torn by
-
-persistent pecking beaks.  A ramp leads up to a chicken coop to the south.
-
-"
+partially covering the dirt underneath.  The dirt that is visible is loose and
+uneven, covered with claw and peck marks.  A tall fence with a tight wire
+netting stands to the north and east.  Beyond the fence to the north is a
+small path, while to the east there is a cornfield, the closest plants torn by
+persistent pecking beaks.  A ramp leads up to a chicken coop to the south.
+"
 ""
 301465600 0
 2 6 0
@@ -2231,26 +1671,22 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You walk up the plank into the chicken coop.
-
-"
+"
 E
 "to_room"
 "$n walks up the plank into the chicken coop.
-
-"
+"
 !
 3 0 4
 A
 ""
 ""
 "acode( find_room( 46273 ), 2 );
-
-"
+"
 !
 14 1 0
 2473 9 1509949540 3 0
@@ -2260,19 +1696,13 @@ S
 #46275
 "Chicken Coop"
 "The walls of this small chicken coop are lined with shelves holding nests made
-
-from sticks and straw and any other bits of material their owners got their
-
-beaks on.  Slightly inclined planks lead down out of the coop through small
-
-openings in the north and west walls.
-
-"
+from sticks and straw and any other bits of material their owners got their
+beaks on.  Slightly inclined planks lead down out of the coop through small
+openings in the north and west walls.
+"
 "search nest for egg, chance of breaking egg
-
-reset0 - nest
-
-"
+reset0 - nest
+"
 301465604 0
 0 3 0
 D0
@@ -2287,108 +1717,75 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You walk down the plank out of the coop.
-
-"
+"
 E
 "to_room"
 "$n walks down the plank out of the coop.
-
-"
+"
 !
 3 0 9
 A
 "search"
 "nest"
 "act_notchar( #csearch, ch );
-
-if( is_pet( ch ) ) {
-
-  act_tochar( #badpet, ch );
-
-  act_notchar( #cbadpet, ch );
-
-  i = 1d3+2;
-
-  inflict( ch, ch, i, \"sharp peck\" );
-
-  dam_message( ch, i, \"a brown hen's peck\" );
-
-  end;
-
-  }
-
-if( rflag( reset0, room ) ) {
-
-  remove_rflag( reset0, room );
-
-  act_tochar( #egg, ch );
-
-  if( random( 0, 1 ) ) {
-
-    obj_to_char( oload( 3630 ), ch );
-
-    }
-
-  else {
-
-    obj_to_char( oload( 3748 ), ch );
-
-    act_tochar( #shell, ch );
-
-    }
-
-  }
-
-else
-
-  act_tochar( #dud, ch );
-
-"
+if( is_pet( ch ) ) {
+  act_tochar( #badpet, ch );
+  act_notchar( #cbadpet, ch );
+  i = 1d3+2;
+  inflict( ch, ch, i, \"sharp peck\" );
+  dam_message( ch, i, \"a brown hen's peck\" );
+  end;
+  }
+if( rflag( reset0, room ) ) {
+  remove_rflag( reset0, room );
+  act_tochar( #egg, ch );
+  if( random( 0, 1 ) ) {
+    obj_to_char( oload( 3630 ), ch );
+    }
+  else {
+    obj_to_char( oload( 3748 ), ch );
+    act_tochar( #shell, ch );
+    }
+  }
+else
+  act_tochar( #dud, ch );
+"
 E
 "csearch"
 "$n searches a straw nest.
-
-"
+"
 E
 "egg"
 "You find a small brown egg in the nest.
-
-"
+"
 E
 "shell"
 "The small brown egg breaks in your grasp, leaving you with a handful of
-
-eggshell and goo.
-
-"
+eggshell and goo.
+"
 E
 "badpet"
 "A fat brown hen emerges from the nest and pecks you sharply.
-
-"
+"
 E
 "cbadpet"
 "A fat brown hen emerges from the nest ane pecks $n sharply.
-
-"
+"
 E
 "dud"
 "You search the nest but find nothing.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "acode( find_room( 46273 ), 2 );
-
-"
+"
 !
 14 1 0
 -1
@@ -2397,16 +1794,11 @@ S
 #46276
 "The Chicken Pen"
 "A tall metal and wire fence stands between this pen and the dense forest on
-
-the other side, keeping beasts from getting in and chickens from getting out. 
-
-The ground is littered with straw and grass and other bits of plant, partially
-
-covering it.  A small chicken coop stands to the east, a slightly inclined
-
-ramp leading up to its small entrance.
-
-"
+the other side, keeping beasts from getting in and chickens from getting out. 
+The ground is littered with straw and grass and other bits of plant, partially
+covering it.  A small chicken coop stands to the east, a slightly inclined
+ramp leading up to its small entrance.
+"
 ""
 301465600 0
 2 6 0
@@ -2422,26 +1814,22 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You walk up the plank into the chicken coop.
-
-"
+"
 E
 "to_room"
 "$n walks up the plank into the chicken coop.
-
-"
+"
 !
 3 0 2
 A
 ""
 ""
 "acode( find_room( 46273 ), 2 );
-
-"
+"
 !
 14 1 0
 -1
@@ -2450,21 +1838,14 @@ S
 #46277
 "A Vast Cornfield"
 "Many rows of corn plants reach over your head, filling this field as far as
-
-you can see.  Unfortunately, the corn grows so densely that you cannot see
-
-more than a few feet in any direction other than north, where a wooden gate
-
-leads back to a dirt path.  Despite so many plants growing so close together,
-
-it appears that it would still be easy enough to push your way through the
-
-corn if one were so inclined.
-
-"
+you can see.  Unfortunately, the corn grows so densely that you cannot see
+more than a few feet in any direction other than north, where a wooden gate
+leads back to a dirt path.  Despite so many plants growing so close together,
+it appears that it would still be easy enough to push your way through the
+corn if one were so inclined.
+"
 "Pick acode for corn
-
-"
+"
 301465664 0
 2 6 0
 D0
@@ -2486,78 +1867,56 @@ D3
 E
 "corn plant"
 "While each corn plant is well spaced, their leaves take up a great deal of
-
-room, making it hard to see far in any direction.
-
-"
+room, making it hard to see far in any direction.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You push the corn aside as you $t $T.
-
-"
+"
 E
 "to_room"
 "$n pushes the corn aside as $e $t $T.
-
-"
+"
 !
 3 0 14
 A
 "pick"
 "ear corn"
 "if( is_player( ch ) ) {
-
-  if( rflag( reset1, room ) ) {
-
-    obj = oload( 1597 );
-
-    obj_to_char( obj, ch );
-
-    act_tochar( #pick, ch );
-
-    act_notchar( #picks, ch );
-
-    remove_rflag( reset1, room );
-
-    }
-
-  else
-
-    act_tochar( #none, ch );
-
-  }
-
-else
-
-  act_tochar( #badpet, ch );
-
-"
+  if( rflag( reset1, room ) ) {
+    obj = oload( 1597 );
+    obj_to_char( obj, ch );
+    act_tochar( #pick, ch );
+    act_notchar( #picks, ch );
+    remove_rflag( reset1, room );
+    }
+  else
+    act_tochar( #none, ch );
+  }
+else
+  act_tochar( #badpet, ch );
+"
 E
 "pick"
 "You pick an ear of corn and shuck away the husk and silk.
-
-"
+"
 E
 "picks"
 "$n picks an ear of corn and shucks away the husk and silk.
-
-"
+"
 E
 "none"
 "There is no corn mature enough to be picked yet, maybe some will be ready later.
-
-"
+"
 E
 "badpet"
 "You reach for the corn but cannot reach it.
-
-"
+"
 !
 0 0 0
 -1
@@ -2566,21 +1925,14 @@ S
 #46278
 "A Vast Cornfield"
 "Many rows of corn plants reach over your head, filling this field as far as
-
-you can see.  Unfortunately, the corn grows so densely that you cannot see
-
-more than a few feet to the south or east.  Beyond a simple wooden fence to
-
-the west is a wire-caged area that appears to have several chickens running
-
-about.  Over the wooden fence to the north, a dirt path leads around the
-
-farmhouse.
-
-"
+you can see.  Unfortunately, the corn grows so densely that you cannot see
+more than a few feet to the south or east.  Beyond a simple wooden fence to
+the west is a wire-caged area that appears to have several chickens running
+about.  Over the wooden fence to the north, a dirt path leads around the
+farmhouse.
+"
 "chicken pen west
-
-"
+"
 301465664 0
 2 6 0
 D1
@@ -2594,83 +1946,63 @@ D2
 E
 "corn plants"
 "While each corn plant is well spaced, their leaves take up a great deal of
-
-room, making it hard to see far in any direction.
-
-"
+room, making it hard to see far in any direction.
+"
 E
 "fence north west"
 "A tall, unclimbable wire fence keeps the chickens from escaping their pen to
-
-the west but the wooden fence to the north shouldn't be too bad.
-
-"
+the west but the wooden fence to the north shouldn't be too bad.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You push the corn aside as you $t $T.
-
-"
+"
 E
 "to_room"
 "$n pushes the corn aside as $e $t $T.
-
-"
+"
 !
 3 0 6
 A
 "pick"
 "ear corn"
 "acode( find_room( 46277 ), 2 );
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "1 north fence"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46270 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46270 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence to the northern path.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the northern path.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the south.
-
-"
+"
 !
 0 0 0
 -1
@@ -2679,19 +2011,13 @@ S
 #46279
 "A Vast Cornfield"
 "Many rows of corn plants reach over your head, filling this field as far as
-
-you can see.  Unfortunately, the corn grows so densely that you cannot see
-
-more than a few feet to the north or east.  Beyond a wood-and-wire fence to
-
-the west is a small wooden shack with a wire-cage fence leading north.  Beyond
-
-the southern fence, thick forest sprawls away from you.
-
-"
+you can see.  Unfortunately, the corn grows so densely that you cannot see
+more than a few feet to the north or east.  Beyond a wood-and-wire fence to
+the west is a small wooden shack with a wire-cage fence leading north.  Beyond
+the southern fence, thick forest sprawls away from you.
+"
 "Chicken coop west
-
-"
+"
 301465664 0
 2 6 0
 D0
@@ -2705,45 +2031,35 @@ D1
 E
 "corn plants"
 "While each corn plant is well spaced, their leaves take up a great deal of
-
-room, making it hard to see far in any direction.
-
-"
+room, making it hard to see far in any direction.
+"
 E
 "fence south west"
 "The horizontal wooden beams of the southern fence might be easy to climb, but
-
-with the dense forest right on the other side, there would be nowhere to go
-
-from there.  The wire fence to the west, meanwhile, would only get you to the
-
-top of the chicken coop if you could climb it at all.
-
-"
+with the dense forest right on the other side, there would be nowhere to go
+from there.  The wire fence to the west, meanwhile, would only get you to the
+top of the chicken coop if you could climb it at all.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You push the corn aside as you $t $T.
-
-"
+"
 E
 "to_room"
 "$n pushes the corn aside as $e $t $T.
-
-"
+"
 !
 3 0 3
 A
 "pick"
 "ear corn"
 "acode( find_room( 46277 ), 2 );
-
-"
+"
 !
 0 0 0
 210 9 1509949490 3 0
@@ -2753,18 +2069,12 @@ S
 #46280
 "A Vast Cornfield"
 "Many rows of corn plants reach over your head, filling this field as far as
-
-you can see.  Unfortunately, the corn grows so densely that you cannot see
-
-more than a few feet in any direction other than south, where a wooden fence
-
-separates the corn field from thick forest.  Despite so many plants growing so
-
-close together, it appears that it would still be easy enough to push your way
-
-through the corn if one were so inclined.
-
-"
+you can see.  Unfortunately, the corn grows so densely that you cannot see
+more than a few feet in any direction other than south, where a wooden fence
+separates the corn field from thick forest.  Despite so many plants growing so
+close together, it appears that it would still be easy enough to push your way
+through the corn if one were so inclined.
+"
 ""
 301465664 0
 2 6 0
@@ -2783,41 +2093,33 @@ D3
 E
 "corn plants"
 "While each corn plant is well spaced, their leaves take up a great deal of
-
-room, making it hard to see far in any direction.
-
-"
+room, making it hard to see far in any direction.
+"
 E
 "fence south"
 "The horizontal wooden beams of the fence might be easy to climb, but with the
-
-dense forest right on the other side, there would be nowhere to go from there.
-
-"
+dense forest right on the other side, there would be nowhere to go from there.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_room"
 "$n pushes the corn aside as $e $t $T.
-
-"
+"
 E
 "to_char"
 "You push the corn aside as you $t $T.
-
-"
+"
 !
 3 0 11
 A
 "pick"
 "ear corn"
 "acode( find_room( 46277 ), 2 );
-
-"
+"
 !
 0 0 0
 -1
@@ -2826,21 +2128,14 @@ S
 #46281
 "A Vast Cornfield"
 "Many rows of corn plants reach over your head, filling this field as far as
-
-you can see.  Unfortunately, the corn grows so densely that you cannot see
-
-more than a few feet to the south.  To the east, a simple wooden fence
-
-separates the corn field from thick forest, and to the west you can faintly
-
-see the wooden gate that leads out of this field.  Over a simple wooden fence
-
-to the north, a few apple trees form part of a small orchard.
-
-"
+you can see.  Unfortunately, the corn grows so densely that you cannot see
+more than a few feet to the south.  To the east, a simple wooden fence
+separates the corn field from thick forest, and to the west you can faintly
+see the wooden gate that leads out of this field.  Over a simple wooden fence
+to the north, a few apple trees form part of a small orchard.
+"
 "north is 46263 (orchard)
-
-"
+"
 301465664 0
 2 6 0
 D2
@@ -2854,85 +2149,64 @@ D3
 E
 "corn plants"
 "While each corn plant is well spaced, their leaves take up a great deal of
-
-room, making it hard to see far in any direction.
-
-"
+room, making it hard to see far in any direction.
+"
 E
 "fence north east"
 "The fence is made of horizontal wooden beams which would probably be no
-
-problem to climb.  There is nowhere to go over the eastern fence, the dense
-
-forest blocking the way, but over the north fence is the orchard.
-
-"
+problem to climb.  There is nowhere to go over the eastern fence, the dense
+forest blocking the way, but over the north fence is the orchard.
+"
 A
 "climb"
 "1 north fence"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46263 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46263 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence into the orchard to the north.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the north into the orchard.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the south.
-
-"
+"
 !
 0 0 0
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You push the corn aside as you $t $T.
-
-"
+"
 E
 "to_room"
 "$n pushes the corn aside as $e $t $T.
-
-"
+"
 !
 3 0 12
 A
 "pick"
 "ear corn"
 "acode( find_room( 46277 ), 2 );
-
-"
+"
 !
 0 0 0
 -1
@@ -2941,18 +2215,12 @@ S
 #46282
 "A Vast Cornfield"
 "Many rows of corn plants reach over your head, filling this field as far as
-
-you can see.  Unfortunately, the corn grows so densely that you cannot see
-
-more than a few feet to the west or north.  To the east and south, a simple
-
-wooden fence separates the corn field from thick forest.  Despite so many
-
-plants growing so close together, it appears that it would still be easy
-
-enough to push your way through the corn if one were so inclined.
-
-"
+you can see.  Unfortunately, the corn grows so densely that you cannot see
+more than a few feet to the west or north.  To the east and south, a simple
+wooden fence separates the corn field from thick forest.  Despite so many
+plants growing so close together, it appears that it would still be easy
+enough to push your way through the corn if one were so inclined.
+"
 ""
 301465664 0
 2 6 0
@@ -2967,41 +2235,33 @@ D3
 E
 "corn plants"
 "While each corn plant is well spaced, their leaves take up a great deal of
-
-room, making it hard to see far in any direction.
-
-"
+room, making it hard to see far in any direction.
+"
 E
 "fence south east"
 "The horizontal wooden beams of the fence might be easy to climb, but with the
-
-dense forest right on the other side, there would be nowhere to go from there.
-
-"
+dense forest right on the other side, there would be nowhere to go from there.
+"
 A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You push the corn aside as you $t $T.
-
-"
+"
 E
 "to_room"
 "$n pushes the corn aside as $e $t $T.
-
-"
+"
 !
 3 0 9
 A
 "pick"
 "ear corn"
 "acode( find_room( 46277 ), 2 );
-
-"
+"
 !
 0 0 0
 -1
@@ -3010,16 +2270,11 @@ S
 #46283
 "Path Around the Farmhouse"
 "Beyond the wooden fence to the east is a large wheat field, swaying with the
-
-slightest breeze through the farm.  Another fence to the north stands between
-
-you and the wide grassy pasture beyond, full of grazing animals.  The path
-
-continues south and west along these two fences and to the southwest is one
-
-corner of a large farmhouse.
-
-"
+slightest breeze through the farm.  Another fence to the north stands between
+you and the wide grassy pasture beyond, full of grazing animals.  The path
+continues south and west along these two fences and to the southwest is one
+corner of a large farmhouse.
+"
 ""
 301465600 0
 12 6 0
@@ -3034,114 +2289,80 @@ D3
 E
 "fence north east"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 "climb"
 "1 north"
 "room = find_room( 46320 );
-
-if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, room );
-
-  act_notchar( #arrive, ch );
-
-  loop( all_in_room ) {
-
-    if( race( rch ) == bovine || race( rch ) == mammal ) {
-
-      act_tochar( \"$N stares at you in blank confusion.\", ch, obj, rch );
-
-      act_notchar( \"$N stares at $n in blank confusion.\", ch, obj, rch );
-
-      }
-
-    }
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+if( find_skill( ch, climb ) > 0 ) {
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, room );
+  act_notchar( #arrive, ch );
+  loop( all_in_room ) {
+    if( race( rch ) == bovine || race( rch ) == mammal ) {
+      act_tochar( \"$N stares at you in blank confusion.\", ch, obj, rch );
+      act_notchar( \"$N stares at $n in blank confusion.\", ch, obj, rch );
+      }
+    }
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence into the north pasture.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence into the north pasture.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the south.
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "1 east"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46325 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46325 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the east fence into the wheat field.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the west into the wheat field.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the west.
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "fence"
 "act_tochar( \"Which fence do you wish to climb?\", ch );
-
-"
+"
 !
 0 0 0
 -1
@@ -3150,14 +2371,10 @@ S
 #46284
 "Path Around the Farmhouse"
 "The large farmhouse stands south of the path here and high up you can see a
-
-second floor window.  It looks out across the vast pasture that lies just over
-
-the wooden fence to the north.  The path itself goes west between the
-
-farmhouse and fence, and curves around southward to the east.
-
-"
+second floor window.  It looks out across the vast pasture that lies just over
+the wooden fence to the north.  The path itself goes west between the
+farmhouse and fence, and curves around southward to the east.
+"
 ""
 301465600 0
 12 6 0
@@ -3172,64 +2389,43 @@ D3
 E
 "fence"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 "climb"
 "fence 1 north"
 "room = find_room( 46321 );
-
-if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, room );
-
-  act_notchar( #arrive, ch );
-
-  loop( all_in_room ) {
-
-    if( race( rch ) == bovine || race( rch ) == mammal ) {
-
-      act_tochar( \"$N stares at you in blank confusion.\", ch, obj, rch );
-
-      act_notchar( \"$N stares at $n in blank confusion.\", ch, obj, rch );
-
-      }
-
-    }
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+if( find_skill( ch, climb ) > 0 ) {
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, room );
+  act_notchar( #arrive, ch );
+  loop( all_in_room ) {
+    if( race( rch ) == bovine || race( rch ) == mammal ) {
+      act_tochar( \"$N stares at you in blank confusion.\", ch, obj, rch );
+      act_notchar( \"$N stares at $n in blank confusion.\", ch, obj, rch );
+      }
+    }
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence into the north pasture.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence into the north pasture.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the south.
-
-"
+"
 !
 0 0 0
 -1
@@ -3238,14 +2434,10 @@ S
 #46285
 "Path Around the Farmhouse"
 "Beyond the garden gate to the west is a modest sized garden, well cared for
-
-and healthy green.  On this section of the house there is a slight bulge in
-
-the bricks, leading straight up to the chimney on the roof.  The dusty dirt
-
-path leads north and south between the fences and farmhouse.
-
-"
+and healthy green.  On this section of the house there is a slight bulge in
+the bricks, leading straight up to the chimney on the roof.  The dusty dirt
+path leads north and south between the fences and farmhouse.
+"
 ""
 301465600 0
 12 6 0
@@ -3264,27 +2456,20 @@ D3
 E
 "bulge bricks chimney"
 "The most likely explanation for this odd bulge of bricks is that there is a
-
-fireplace on the inside of the farmhouse.
-
-"
+fireplace on the inside of the farmhouse.
+"
 -1
 S
 
 #46286
 "A Garden"
 "Evenly spaced in carefully tended lines grow short plants with healthy green
-
-leaves.  The ground is a rich brown color, ideal for growing healthy crops.  A
-
-gate leads east out of the garden to a small path and beyond the southern
-
-fence begins a dense forest this garden was carved out from.
-
-"
+leaves.  The ground is a rich brown color, ideal for growing healthy crops.  A
+gate leads east out of the garden to a small path and beyond the southern
+fence begins a dense forest this garden was carved out from.
+"
 "Potato (Sp), Onion (Su), Carrot (Au) here
-
-"
+"
 301465600 0
 2 6 0
 D0
@@ -3302,100 +2487,64 @@ D3
 E
 "fence gate east south"
 "Wire and wood make up the fence to the south, keeping out rodents and other
-
-pests that might ravage the garden.  On the other side of the fence is a dense
-
-forest which you cannot see far into.  It doesn't look strong enough to climb,
-
-though.  A gate made of the same materials is directly east.
-
-"
+pests that might ravage the garden.  On the other side of the fence is a dense
+forest which you cannot see far into.  It doesn't look strong enough to climb,
+though.  A gate made of the same materials is directly east.
+"
 A
 "pick pull"
 "plant leaf leaves"
 "if( !rflag( reset0, room ) ) {
-
-  act_tochar( #nopick, ch );
-
-  end;
-
-  }
-
-remove_rflag( reset0, room );
-
-if( date_month() <= 2 || date_month() >= 11 ) {
-
-  obj_to_char( oload( 3738 ), ch );
-
-  act_tochar( #leaf, ch );
-
-  act_notchar( #cleaf, ch );
-
-  end;
-
-  }
-
-if( date_month() >= 2 && date_month() <= 4 ) {
-
-  obj = obj_to_char( oload( 3737 ), ch );
-
-  }
-
-if( date_month() >= 5 && date_month() <= 7 ) {
-
-  obj = obj_to_char( oload( 3739 ), ch );
-
-  }
-
-if( date_month() >= 8 && date_month() <= 10 ) {
-
-  obj = obj_to_char( oload( 3740 ), ch );
-
-  }
-
-act_tochar( #harvest, ch, obj );
-
-act_notchar( #charvest, ch, obj );
-
-if( random( 1, 5 ) == 1 ) {
-
-  mload( 2477, room );
-
-  act_room( #mole, ch );
-
-  }
-
-"
+  act_tochar( #nopick, ch );
+  end;
+  }
+remove_rflag( reset0, room );
+if( date_month() <= 2 || date_month() >= 11 ) {
+  obj_to_char( oload( 3738 ), ch );
+  act_tochar( #leaf, ch );
+  act_notchar( #cleaf, ch );
+  end;
+  }
+if( date_month() >= 2 && date_month() <= 4 ) {
+  obj = obj_to_char( oload( 3737 ), ch );
+  }
+if( date_month() >= 5 && date_month() <= 7 ) {
+  obj = obj_to_char( oload( 3739 ), ch );
+  }
+if( date_month() >= 8 && date_month() <= 10 ) {
+  obj = obj_to_char( oload( 3740 ), ch );
+  }
+act_tochar( #harvest, ch, obj );
+act_notchar( #charvest, ch, obj );
+if( random( 1, 5 ) == 1 ) {
+  mload( 2477, room );
+  act_room( #mole, ch );
+  }
+"
 E
 "nopick"
 "You look the garden over but can find nothing worth picking.
-
-"
+"
 E
 "harvest"
 "You pull up one of the leafy plants and harvest $p.
-
-"
+"
 E
 "leaf"
 "You pull up one of the leafy plants but just get a handful of leaves.
-
-"
+"
 E
 "charvest"
 "$n pulls up one of the leafy plants, harvesting $p.
-
-"
+"
 E
 "cleaf"
 "$n pulls up one of the leafy plants but just ends up with a handful of leaves.
-
-"
+"
 E
 "mole"
 "From the hole left behind climbs a small, very confused mole.
-
-"
+"
 !
 0 0 0
 -1
@@ -3404,16 +2553,11 @@ S
 #46287
 "A Garden"
 "Short leafy plants, evenly spaced, grow in straight lines through the garden
-
-with nary a weed in sight.  A white painted picketed fence encloses the
-
-garden on the south and west sides, just before the start of a dense and dark
-
-forest beyond.  The garden spreads out further to the north and east with the
-
-same even lines.
-
-"
+with nary a weed in sight.  A white painted picketed fence encloses the
+garden on the south and west sides, just before the start of a dense and dark
+forest beyond.  The garden spreads out further to the north and east with the
+same even lines.
+"
 ""
 301465600 0
 2 6 0
@@ -3428,20 +2572,15 @@ D1
 E
 "fence south west"
 "Wire and wood make up the fence to the south and west, keeping out rodents and
-
-other pests that might ravage the garden.  On the other side of the fences is
-
-a dense forest which you cannot see far into.  Neither looks strong enough to
-
-climb, though.
-
-"
+other pests that might ravage the garden.  On the other side of the fences is
+a dense forest which you cannot see far into.  Neither looks strong enough to
+climb, though.
+"
 A
 "pick pull"
 "plant leaf leaves"
 "acode( find_room( 46286 ), 1 );
-
-"
+"
 !
 0 0 0
 2483 9 1509949540 3 0
@@ -3451,18 +2590,12 @@ S
 #46288
 "A Garden"
 "Many small, short plants grow in neat little lines across the garden, their
-
-healthy green leaves reaching up towards the sky.  A white picket fence
-
-separates the garden from the forest to the west and a larger wooden fence
-
-runs between the garden and a vast pasture to the north.  A dark vine creeps
-
-up one of the pickets, trying to make its way out of the forest and into the
-
-open.
-
-"
+healthy green leaves reaching up towards the sky.  A white picket fence
+separates the garden from the forest to the west and a larger wooden fence
+runs between the garden and a vast pasture to the north.  A dark vine creeps
+up one of the pickets, trying to make its way out of the forest and into the
+open.
+"
 ""
 301465600 0
 2 6 0
@@ -3477,31 +2610,22 @@ D2
 E
 "fence north west"
 "The vine's leaves are a dark shade of green and it has crept out from
-
-somewhere hidden in the dense forest beyond the fence.  It encircles one of
-
-the pickets of the fence but the very end of it looks like it has already been
-
-chopped by the gardener once.
-
-"
+somewhere hidden in the dense forest beyond the fence.  It encircles one of
+the pickets of the fence but the very end of it looks like it has already been
+chopped by the gardener once.
+"
 E
 "fence"
 "Wire and wood make up the fence to the north and west, keeping out rodents and
-
-other pests that might ravage the garden.  The north fence is reinforced on
-
-the other side to keep animals from the pasture out.  Neither looks strong
-
-enough to climb, though.
-
-"
+other pests that might ravage the garden.  The north fence is reinforced on
+the other side to keep animals from the pasture out.  Neither looks strong
+enough to climb, though.
+"
 A
 "pick pull"
 "plant leaf leaves"
 "acode( find_room( 46286 ), 1 );
-
-"
+"
 !
 0 0 0
 755 9 1509949452 3 0
@@ -3511,21 +2635,14 @@ S
 #46289
 "A Garden"
 "A white picket fence runs between the garden and a dirt path which runs
-
-alongside the farmhouse to the east.  A sturdy wood fence stands between here
-
-and the wide grassy pasture to the north to keep the animals from coming in
-
-and eating all the crops.  Growing here, in neat little lanes, are small leafy
-
-plants with not a weed in sight.
-
-"
+alongside the farmhouse to the east.  A sturdy wood fence stands between here
+and the wide grassy pasture to the north to keep the animals from coming in
+and eating all the crops.  Growing here, in neat little lanes, are small leafy
+plants with not a weed in sight.
+"
 "north is 46301
-
-east is 46290
-
-"
+east is 46290
+"
 301465600 0
 2 6 0
 D2
@@ -3539,20 +2656,15 @@ D3
 E
 "fence east north"
 "Wire and wood make up the fence to the north and east, keeping out rodents and
-
-other pests that might ravage the garden.  The north fence is reinforced on
-
-the other side to keep animals from the pasture out.  Neither looks strong
-
-enough to climb, though.
-
-"
+other pests that might ravage the garden.  The north fence is reinforced on
+the other side to keep animals from the pasture out.  Neither looks strong
+enough to climb, though.
+"
 A
 "pick pull"
 "plant leaf leaves"
 "acode( find_room( 46286 ), 1 );
-
-"
+"
 !
 0 0 0
 -1
@@ -3561,14 +2673,10 @@ S
 #46290
 "Path Around the Farmhouse"
 "A long dirt path leads north and west, bordered by a large brick and wood
-
-farmhouse to the east and a fence to the west.  The fence, made of wire and
-
-wood, stands between here and a small garden full of leafy green plants.  Not
-
-far to the north the fence turns into one of just wood, larger and more sturdy.
-
-"
+farmhouse to the east and a fence to the west.  The fence, made of wire and
+wood, stands between here and a small garden full of leafy green plants.  Not
+far to the north the fence turns into one of just wood, larger and more sturdy.
+"
 ""
 301465600 0
 12 6 0
@@ -3583,24 +2691,18 @@ D2
 E
 "fence"
 "Wire and wood make up the fence to the west, keeping out rodents and other
-
-pests that might ravage the garden.
-
-"
+pests that might ravage the garden.
+"
 -1
 S
 
 #46291
 "Path Around the Farmhouse"
 "The farmhouse stands along the eastern side of this dirt path, with a large
-
-window, lined with black shutters on the outside and white curtains on the
-
-inside.  On the other side of the north-south path is a sturdy wooden fence
-
-and the vast pasture beyond.
-
-"
+window, lined with black shutters on the outside and white curtains on the
+inside.  On the other side of the north-south path is a sturdy wooden fence
+and the vast pasture beyond.
+"
 ""
 301465600 0
 12 6 0
@@ -3615,71 +2717,48 @@ D2
 E
 "fence"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 E
 "window curtains farmhouse east"
 "Peeking in through the window, you can see that the room is a woman's dower. 
-
-A loom and dying tub are the most prominent pieces of furniture in the room.
-
-"
+A loom and dying tub are the most prominent pieces of furniture in the room.
+"
 A
 "climb"
 "fence 1 west"
 "room = find_room( 46301 );
-
-if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, room );
-
-  act_notchar( #arrive, ch );
-
-  loop( all_in_room ) {
-
-    if( race( rch ) == bovine || race( rch ) == mammal ) {
-
-      act_tochar( \"$N stares at you in blank confusion.\", ch, obj, rch );
-
-      act_notchar( \"$N stares at $n in blank confusion.\", ch, obj, rch );
-
-      }
-
-    }
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+if( find_skill( ch, climb ) > 0 ) {
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, room );
+  act_notchar( #arrive, ch );
+  loop( all_in_room ) {
+    if( race( rch ) == bovine || race( rch ) == mammal ) {
+      act_tochar( \"$N stares at you in blank confusion.\", ch, obj, rch );
+      act_notchar( \"$N stares at $n in blank confusion.\", ch, obj, rch );
+      }
+    }
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence into the pasture.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the west into the pasture.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the east.
-
-"
+"
 !
 0 0 0
 -1
@@ -3688,16 +2767,11 @@ S
 #46292
 "Path Around the Farmhouse"
 "A bald dirt path circles around this northwest corner of the farmhouse, with
-
-dusty blades of grass crushed next to the fence along the west side of the
-
-path.  To the north is a wide and sturdy gate with an iron latch to hold it
-
-closed.  Beyond the gate is far-reaching pasture and in the distance you spy a
-
-large barn.
-
-"
+dusty blades of grass crushed next to the fence along the west side of the
+path.  To the north is a wide and sturdy gate with an iron latch to hold it
+closed.  Beyond the gate is far-reaching pasture and in the distance you spy a
+large barn.
+"
 ""
 301465600 0
 12 6 0
@@ -3716,64 +2790,43 @@ D2
 E
 "fence"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 "climb"
 "fence 1 west"
 "room = find_room( 46298 );
-
-if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, room );
-
-  act_notchar( #arrive, ch );
-
-  loop( all_in_room ) {
-
-    if( race( rch ) == bovine || race( rch ) == mammal ) {
-
-      act_tochar( \"$N stares at you in blank confusion.\", ch, obj, rch );
-
-      act_notchar( \"$N stares at $n in blank confusion.\", ch, obj, rch );
-
-      }
-
-    }
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+if( find_skill( ch, climb ) > 0 ) {
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, room );
+  act_notchar( #arrive, ch );
+  loop( all_in_room ) {
+    if( race( rch ) == bovine || race( rch ) == mammal ) {
+      act_tochar( \"$N stares at you in blank confusion.\", ch, obj, rch );
+      act_notchar( \"$N stares at $n in blank confusion.\", ch, obj, rch );
+      }
+    }
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence into the pasture.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the west into the pasture.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the east.
-
-"
+"
 !
 0 0 0
 -1
@@ -3782,14 +2835,10 @@ S
 #46293
 "Path Around the Farmhouse"
 "White lace curtains can be seen through the window of the farmhouse to the
-
-south, a very feminine looking room from what you can see.  The dirt path
-
-continues alongside the farmhouse, lined with a fence on the outside, east and
-
-west.  Beyond the fence you can see a vast pasture full of grass and livestock.
-
-"
+south, a very feminine looking room from what you can see.  The dirt path
+continues alongside the farmhouse, lined with a fence on the outside, east and
+west.  Beyond the fence you can see a vast pasture full of grass and livestock.
+"
 ""
 301465600 0
 12 6 0
@@ -3804,71 +2853,48 @@ D3
 E
 "fence"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 E
 "south window curtains"
 "White lace curtains hang on either side of the south window and between them
-
-you can see clothing-making tools, such as a loom and a large tub.
-
-"
+you can see clothing-making tools, such as a loom and a large tub.
+"
 A
 "climb"
 "fence 1 north"
 "room = find_room( 46297 );
-
-if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, room );
-
-  act_notchar( #arrive, ch );
-
-  loop( all_in_room ) {
-
-    if( race( rch ) == bovine || race( rch ) == mammal ) {
-
-      act_tochar( \"$N stares at you in blank confusion.\", ch, obj, rch );
-
-      act_notchar( \"$N stares at $n in blank confusion.\", ch, obj, rch );
-
-      }
-
-    }
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+if( find_skill( ch, climb ) > 0 ) {
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, room );
+  act_notchar( #arrive, ch );
+  loop( all_in_room ) {
+    if( race( rch ) == bovine || race( rch ) == mammal ) {
+      act_tochar( \"$N stares at you in blank confusion.\", ch, obj, rch );
+      act_notchar( \"$N stares at $n in blank confusion.\", ch, obj, rch );
+      }
+    }
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence into the north pasture.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the south into the pasture.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the south.
-
-"
+"
 !
 0 0 0
 -1
@@ -3877,14 +2903,10 @@ S
 #46294
 "The Pasture"
 "A wide and sturdy gate is the main way out of the pasture to the path on the
-
-south side of the fence.  It is simple but sturdy enough to keep the animals
-
-from getting out.  The pasture spreads out in all directions and to the
-
-northwest is the only structure in the pasture, the barn.
-
-"
+south side of the fence.  It is simple but sturdy enough to keep the animals
+from getting out.  The pasture spreads out in all directions and to the
+northwest is the only structure in the pasture, the barn.
+"
 ""
 301465600 0
 2 8 0
@@ -3910,18 +2932,12 @@ S
 #46295
 "The Pasture"
 "Many medium-sized rocks have been picked out of the soil in this part of the
-
-pasture.  With little else to do with them, the rocks have been stacked to
-
-form a small, precarious wall running west for about a yard.  Past the small
-
-wall is a more formally constructed fence and to the northwest is the large
-
-wooden structure of the barn.  The pasture spreads out quite far in all other
-
-directions.
-
-"
+pasture.  With little else to do with them, the rocks have been stacked to
+form a small, precarious wall running west for about a yard.  Past the small
+wall is a more formally constructed fence and to the northwest is the large
+wooden structure of the barn.  The pasture spreads out quite far in all other
+directions.
+"
 ""
 301465600 0
 2 8 0
@@ -3945,18 +2961,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You step over the precarious stone wall, leaving west.
-
-"
+"
 E
 "to_room"
 "$n steps over the precarious stone wall, leaving west.
-
-"
+"
 !
 3 0 8
 -1
@@ -3965,16 +2978,11 @@ S
 #46296
 "The Pasture"
 "Through the grass to the south is the gate leading out of this vast, rocky
-
-pasture.  The air is full of the smells of animals and grass all around.  Not
-
-far west is the barn and the grassland spreads out as far as you can see. 
-
-Some patches of grass are shorter than others, but it grows very thick
-
-everywhere.
-
-"
+pasture.  The air is full of the smells of animals and grass all around.  Not
+far west is the barn and the grassland spreads out as far as you can see. 
+Some patches of grass are shorter than others, but it grows very thick
+everywhere.
+"
 ""
 301465600 0
 2 8 0
@@ -4001,14 +3009,10 @@ S
 #46297
 "The Pasture"
 "A wooden fence lines the south edge of the pasture, with the gate out standing
-
-just to the west.  On the other side of the fence is a large farmhouse, with
-
-one window looking out in this direction.  The pasture spreads out in all
-
-other directions, the thick grass growing quite high despite regular grazing.
-
-"
+just to the west.  On the other side of the fence is a large farmhouse, with
+one window looking out in this direction.  The pasture spreads out in all
+other directions, the thick grass growing quite high despite regular grazing.
+"
 ""
 301465600 0
 2 8 0
@@ -4027,50 +3031,36 @@ D3
 E
 "fence"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 "climb"
 "fence 1 south"
 "if( find_skill( ch, climb ) > 0 ) {
-
- act_tochar( #climb, ch );
-
- act_notchar( #cclimb, ch );
-
- transfer( ch, find_room( 46293 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
- act_tochar( #noclimb, ch );
-
-"
+ act_tochar( #climb, ch );
+ act_notchar( #cclimb, ch );
+ transfer( ch, find_room( 46293 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+ act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence to the path to the south.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the south.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the south.
-
-"
+"
 !
 0 0 0
 -1
@@ -4079,14 +3069,10 @@ S
 #46298
 "The Pasture"
 "A sturdy wooden fence stands between the pasture and the path just outside,
-
-keeping the livestock inside.  On the other side of the path to the east is a
-
-large, two-story farmhouse.  The grassy pasture spreads out towards the forest
-
-to the west and seemingly endlessly to the north.
-
-"
+keeping the livestock inside.  On the other side of the path to the east is a
+large, two-story farmhouse.  The grassy pasture spreads out towards the forest
+to the west and seemingly endlessly to the north.
+"
 ""
 301465600 0
 2 8 0
@@ -4105,50 +3091,36 @@ D3
 E
 "fence east"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 "climb"
 "fence 1 east"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46292 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46292 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence to the path to the east.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the east.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the west.
-
-"
+"
 !
 0 0 0
 1710 9 1509949540 3 0
@@ -4158,16 +3130,11 @@ S
 #46299
 "The Pasture"
 "A small door leads into the large barn to the west, obviously not large enough
-
-for livestock but for use by the workers primarily.  A short ways to the
-
-southeast is the main gate into this vast pasture and at the north end of the
-
-barn is another fence.  The pasture spreads out quite far around these
-
-obstacles.
-
-"
+for livestock but for use by the workers primarily.  A short ways to the
+southeast is the main gate into this vast pasture and at the north end of the
+barn is another fence.  The pasture spreads out quite far around these
+obstacles.
+"
 ""
 301465600 0
 2 8 0
@@ -4194,14 +3161,10 @@ S
 #46300
 "The Pasture"
 "The grass is thick around here despite regular grazing, which shows how ideal
-
-this area is for raising livestock.  It is hard and rocky underfoot, however,
-
-so it's good for very little else.  The grassy pasture spreads out in all
-
-directions quite far, and distant to the west you can see a large barn.
-
-"
+this area is for raising livestock.  It is hard and rocky underfoot, however,
+so it's good for very little else.  The grassy pasture spreads out in all
+directions quite far, and distant to the west you can see a large barn.
+"
 ""
 301465600 0
 2 8 0
@@ -4227,14 +3190,10 @@ S
 #46301
 "The Pasture"
 "A strong wooden fence encloses the pasture, keeping the animals from getting
-
-into the garden to the south or to the dirt path through the farm to the
-
-east.  The grass-filled pasture spreads out far to the north and just a short
-
-ways west.
-
-"
+into the garden to the south or to the dirt path through the farm to the
+east.  The grass-filled pasture spreads out far to the north and just a short
+ways west.
+"
 ""
 301465600 0
 2 8 0
@@ -4249,65 +3208,48 @@ D3
 E
 "fence"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.  The southern
-
-fence into the garden isn't nearly as climbable.
-
-"
+simple but sturdy enough that they should be easy to climb.  The southern
+fence into the garden isn't nearly as climbable.
+"
 A
 "climb"
 "fence 1 east"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46291 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46291 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence to the path to the east.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the east.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the west.
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "south"
 "act_tochar( #nono, ch );
-
-"
+"
 E
 "nono"
 "The fence into the garden is not strong enough to support your weight.
-
-"
+"
 !
 0 0 0
 2340 9 1509949540 3 0
@@ -4317,14 +3259,10 @@ S
 #46302
 "The Pasture"
 "A tall wooden fence to the west keeps animals from the forest from getting in
-
-to the livestock and keeps the livestock from wandering away.  The vast grassy
-
-pasture spreads out far to the north and a short distance east.  To the south,
-
-a small garden can be seen through intervening fences.
-
-"
+to the livestock and keeps the livestock from wandering away.  The vast grassy
+pasture spreads out far to the north and a short distance east.  To the south,
+a small garden can be seen through intervening fences.
+"
 ""
 301465600 0
 2 8 0
@@ -4340,13 +3278,11 @@ A
 "climb"
 "south"
 "act_tochar( #nono, ch );
-
-"
+"
 E
 "nono"
 "The fence into the garden is not strong enough to support your weight.
-
-"
+"
 !
 0 0 0
 -1
@@ -4355,14 +3291,10 @@ S
 #46303
 "The Pasture"
 "The green grass grows thickly alongside the fence to the west, but is shorter
-
-in the more accessible parts of the pasture.  Branches from the forest on the
-
-other side of the western fence lean out over the pasture, as if pushing
-
-outwards by the thick crowd of trees.
-
-"
+in the more accessible parts of the pasture.  Branches from the forest on the
+other side of the western fence lean out over the pasture, as if pushing
+outwards by the thick crowd of trees.
+"
 ""
 301465600 0
 2 8 0
@@ -4384,16 +3316,11 @@ S
 #46304
 "The Pasture"
 "A small north-south wall of stones, seemingly serving no purpose, lies just to
-
-the east.  The northern end of the wall and the corner of the large barn to
-
-the north are nailed together for extra stability.  A wooden fence stands
-
-between the pasture and the dense forest beyond, some branches reaching across
-
-the barrier, shading small parts of the grass.
-
-"
+the east.  The northern end of the wall and the corner of the large barn to
+the north are nailed together for extra stability.  A wooden fence stands
+between the pasture and the dense forest beyond, some branches reaching across
+the barrier, shading small parts of the grass.
+"
 ""
 301465600 0
 2 8 0
@@ -4409,18 +3336,15 @@ A
 ""
 ""
 "continue;
-
-"
+"
 E
 "to_char"
 "You step over the precarious stone wall, leaving east.
-
-"
+"
 E
 "to_room"
 "$n steps over the precarious stone wall, leaving east.
-
-"
+"
 !
 3 0 2
 2340 9 1509949540 3 0
@@ -4431,16 +3355,11 @@ S
 #46305
 "The Barn"
 "This end of the barn is a bit more crowded with shelves and tools, probably
-
-not where livestock are kept often.  The size of the door to the east supports
-
-that theory, being only large enough for workers to exit through and a cow
-
-would probably just get stuck.  Hay is scattered across the floor, fallen down
-
-from the hayloft above the northern end of the barn.
-
-"
+not where livestock are kept often.  The size of the door to the east supports
+that theory, being only large enough for workers to exit through and a cow
+would probably just get stuck.  Hay is scattered across the floor, fallen down
+from the hayloft above the northern end of the barn.
+"
 ""
 301465604 0
 0 7 0
@@ -4455,63 +3374,41 @@ D1
 E
 "tools shelves"
 "A few rusty looking tools line are lined up on the shelf, not seeing much use
-
-anymore due to having been replaced by newer tools.  They may be worth saving,
-
-but none of them really look like they're worth taking.
-
-"
+anymore due to having been replaced by newer tools.  They may be worth saving,
+but none of them really look like they're worth taking.
+"
 A
 "search"
 "tools shelf"
 "if( rflag( reset0, room ) ) {
-
-  remove_rflag( reset0, room );
-
-  i = random( 1, 20 );
-
-  if( i == 1 ) {
-
-    act_tochar( #shear, ch );
-
-    obj_to_char( oload( 3509 ), ch );
-
-    }
-
-  if( i == 2 ) {
-
-    act_tochar( #hoe, ch );
-
-    obj_to_char( oload( 475 ), ch );
-
-    }
-
-  if( i > 2 )
-
-    act_tochar( #noluck, ch );
-
-  }
-
-else
-
-  act_tochar( #noluck, ch );
-
-"
+  remove_rflag( reset0, room );
+  i = random( 1, 20 );
+  if( i == 1 ) {
+    act_tochar( #shear, ch );
+    obj_to_char( oload( 3509 ), ch );
+    }
+  if( i == 2 ) {
+    act_tochar( #hoe, ch );
+    obj_to_char( oload( 475 ), ch );
+    }
+  if( i > 2 )
+    act_tochar( #noluck, ch );
+  }
+else
+  act_tochar( #noluck, ch );
+"
 E
 "shear"
 "You search through the tools and find a pair of sheep shears.
-
-"
+"
 E
 "hoe"
 "You search through the tools and find a hoe.
-
-"
+"
 E
 "noluck"
 "You search through the tools but find nothing of interest.
-
-"
+"
 !
 0 0 0
 3358 49 1509949540 -2 0
@@ -4522,17 +3419,12 @@ S
 #46306
 "The Barn"
 "A large barn door opens out into the pasture, the doors themselves taking up a
-
-large portion of the wall.  This is probably the entrance used to herd
-
-livestock inside during bad weather.  A wooden ladder leads up into the hay
-
-loft far above, long strands of hay hanging down from the ledge.
-
-"
+large portion of the wall.  This is probably the entrance used to herd
+livestock inside during bad weather.  A wooden ladder leads up into the hay
+loft far above, long strands of hay hanging down from the ledge.
+"
 "east exit is for animals
-
-"
+"
 301465604 0
 0 7 0
 D1
@@ -4551,42 +3443,30 @@ A
 ""
 ""
 "if( !is_open( room, east ) ) {
-
-  open( room, east );
-
-  send_to_room( #open, room );
-
-  send_to_room( #open, find_room( 46307 ) );
-
-  }
-
-"
+  open( room, east );
+  send_to_room( #open, room );
+  send_to_room( #open, find_room( 46307 ) );
+  }
+"
 E
 "open"
 "The barn doors slowly open, letting in the bright sunlight.
-
-"
+"
 !
 14 1 0
 A
 ""
 ""
 "if( is_open( room, east ) ) {
-
-  close( room, east );
-
-  send_to_room( #close, room );
-
-  send_to_room( #close, find_room( 46307 ) );
-
-  }
-
-"
+  close( room, east );
+  send_to_room( #close, room );
+  send_to_room( #close, find_room( 46307 ) );
+  }
+"
 E
 "close"
 "The large barn doors slowly close.
-
-"
+"
 !
 14 -1 0
 -1
@@ -4595,16 +3475,11 @@ S
 #46307
 "The Pasture"
 "The livestock entrance to the barn is to the west, with large grey doors big
-
-enough to fit even the most pregnant cow.  A wooden fence stands between here
-
-and the mountain to the north, though it's hard to imagine anyone trying to
-
-scale such a rocky, unstable-looking piece of ground.  The pasture spreads out
-
-to the south and east from here.
-
-"
+enough to fit even the most pregnant cow.  A wooden fence stands between here
+and the mountain to the north, though it's hard to imagine anyone trying to
+scale such a rocky, unstable-looking piece of ground.  The pasture spreads out
+to the south and east from here.
+"
 ""
 301465600 0
 2 8 0
@@ -4627,16 +3502,11 @@ S
 #46308
 "Narrow Path Through the Forest"
 "The path splits here, leading north to south but also turning to the east. 
-
-The rut of a single wheeled vehicle traveling the same path many times over
-
-goes from the north to the east.  The forest opens up towards the end of that
-
-rut and is set up like some sort of small market.  West is the only direction
-
-you cannot go, for the trees and growth are too dense to pass through.
-
-"
+The rut of a single wheeled vehicle traveling the same path many times over
+goes from the north to the east.  The forest opens up towards the end of that
+rut and is set up like some sort of small market.  West is the only direction
+you cannot go, for the trees and growth are too dense to pass through.
+"
 ""
 301465600 0
 3 6 0
@@ -4658,18 +3528,12 @@ S
 #46309
 "Farmer's Market"
 "A small wagon sits at the eastern end of this small market place, and the
-
-amount of dirt around the wheels suggest it hasn't been moved in quite some
-
-time.  A wheelbarrow sits near the path leading west, waiting for the next
-
-load of produce to bring in from the farm.  This market is a good place to buy
-
-really fresh produce, including things that aren't delivered to stores in
-
-nearby Chiiron.
-
-"
+amount of dirt around the wheels suggest it hasn't been moved in quite some
+time.  A wheelbarrow sits near the path leading west, waiting for the next
+load of produce to bring in from the farm.  This market is a good place to buy
+really fresh produce, including things that aren't delivered to stores in
+nearby Chiiron.
+"
 ""
 301469698 0
 3 6 0
@@ -4688,14 +3552,10 @@ S
 #46310
 "The Pasture"
 "A large barn stands a short ways to the west, the only prominent landmark
-
-within the fenced off area of this pasture.  Beyond that fence to the north
-
-rises up the steep, rocky foothills of the mountain range to the north.  The
-
-pasture spreads out in all other directions quite far.
-
-"
+within the fenced off area of this pasture.  Beyond that fence to the north
+rises up the steep, rocky foothills of the mountain range to the north.  The
+pasture spreads out in all other directions quite far.
+"
 ""
 301465600 0
 2 8 0
@@ -4717,23 +3577,15 @@ S
 #46311
 "Narrow Path Through the Forest"
 "A relatively new path strikes through a wall of vegetation here - tall
-
-undergrowth knots tight around clustered trees, stretching high overhead.
-
-Wagon tracks run north and south, moss-worn stumps tight on either side.  Bare
-
-dirt forms some of the track where rough ground has been levelled, and a
-
-rivulet filled.  The forest opens out southwards as the ground flattens.
-
-Westwards, the edge of a bluff is visible through the trunks some half a mile
-
-off.
-
-"
+undergrowth knots tight around clustered trees, stretching high overhead.
+Wagon tracks run north and south, moss-worn stumps tight on either side.  Bare
+dirt forms some of the track where rough ground has been levelled, and a
+rivulet filled.  The forest opens out southwards as the ground flattens.
+Westwards, the edge of a bluff is visible through the trunks some half a mile
+off.
+"
 "Added to space out Northwood Farm and wood imps. -Hed
-
-"
+"
 301465608 0
 3 6 0
 D0
@@ -4750,16 +3602,11 @@ S
 #46312
 "The Pasture"
 "The foothills of the Cairn Mountains rise up just past the northern fence, but
-
-the hard, rocky ground begins within the pasture.  Grass grows more sparsely
-
-close to the fence, with sharp little rocks poking up out of the ground.  The
-
-grass rapidly becomes thicker to the south and it is apparent why this area
-
-was made into a pasture.
-
-"
+the hard, rocky ground begins within the pasture.  Grass grows more sparsely
+close to the fence, with sharp little rocks poking up out of the ground.  The
+grass rapidly becomes thicker to the south and it is apparent why this area
+was made into a pasture.
+"
 ""
 301465600 0
 2 8 0
@@ -4782,19 +3629,13 @@ S
 #46315
 "The Pasture"
 "Much of this part of the pasture barely qualifies as such.  Large boulders to
-
-the north and east begin to form the foothills of the Cairn mountains, and
-
-many smaller rocks lie scattered about.  The tough grasses here seem to
-
-tenaciously fight for survival despite the ever-present threat posed by the
-
-cows that frequently graze here.
-
-"
+the north and east begin to form the foothills of the Cairn mountains, and
+many smaller rocks lie scattered about.  The tough grasses here seem to
+tenaciously fight for survival despite the ever-present threat posed by the
+cows that frequently graze here.
+"
 "[Tryn] Oh dear lord!  Reduce the frequency of the pop!
-
-"
+"
 301465600 0
 2 8 0
 D2
@@ -4813,16 +3654,11 @@ S
 #46318
 "The Pasture"
 "Many rocks of varying sizes lie strewn about this field.  In some places, the
-
-rocks have been gathered together to form walls for no purpose other than to
-
-get them off of the grass, but even so this area seems unfit for crop use. 
-
-The pasture stretches off in all directions, rough stones randomly punctuating
-
-the undulating terrain.
-
-"
+rocks have been gathered together to form walls for no purpose other than to
+get them off of the grass, but even so this area seems unfit for crop use. 
+The pasture stretches off in all directions, rough stones randomly punctuating
+the undulating terrain.
+"
 ""
 301465600 0
 2 8 0
@@ -4849,16 +3685,11 @@ S
 #46319
 "The Pasture"
 "A large, craggy boulder looms over the pasture to the north with lesser rocks
-
-littered about its base.  Between the partial lack of sunlight, and the
-
-grazing of livestock, much of the grass here has been reduced to pathetic
-
-patches in the bare soil.  To the east, a thick forest lies beyond a simple
-
-wooden fence and to the south and west, the grassy field continues.
-
-"
+littered about its base.  Between the partial lack of sunlight, and the
+grazing of livestock, much of the grass here has been reduced to pathetic
+patches in the bare soil.  To the east, a thick forest lies beyond a simple
+wooden fence and to the south and west, the grassy field continues.
+"
 ""
 301465600 0
 2 8 0
@@ -4873,26 +3704,19 @@ D3
 E
 "craggy boulder north rocks"
 "The peak of the boulder is about five feet above the ground, dark grey like
-
-the mountains behind it.  It is a simple obstacle no one thought worth moving.
-
-"
+the mountains behind it.  It is a simple obstacle no one thought worth moving.
+"
 -1
 S
 
 #46320
 "The Pasture"
 "The grass is longest around the fence to the south and east, where the cows
-
-have had trouble getting their snouts close enough to nibble it short.  Beyond
-
-the southern fence, a long path leads south alongside the farmhouse.  To the
-
-east, a dense forest reaches right up to the edge of the fence, too dense to
-
-pass through.
-
-"
+have had trouble getting their snouts close enough to nibble it short.  Beyond
+the southern fence, a long path leads south alongside the farmhouse.  To the
+east, a dense forest reaches right up to the edge of the fence, too dense to
+pass through.
+"
 ""
 301465600 0
 2 8 0
@@ -4907,50 +3731,36 @@ D3
 E
 "fence"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 "climb"
 "1 south fence"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46283 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46283 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence to the path to the south.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the south.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the north.
-
-"
+"
 !
 0 0 0
 2336 41 1509949540 3 0
@@ -4961,14 +3771,10 @@ S
 #46321
 "The Pasture"
 "A vast pasture spreads out to the north, east, and west from the sturdy but
-
-simple wooden fence lining the southern edge here.  On the other side of the
-
-fence is a large farmhouse with one window looking out across the field from
-
-the second floor.
-
-"
+simple wooden fence lining the southern edge here.  On the other side of the
+fence is a large farmhouse with one window looking out across the field from
+the second floor.
+"
 ""
 301465600 0
 2 8 0
@@ -4987,50 +3793,36 @@ D3
 E
 "fence"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 "climb"
 "1 south fence"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46284 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46284 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the south.
-
-"
+"
 E
 "climb"
 "You easily climb over the fence to the path to the south.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the north.
-
-"
+"
 !
 0 0 0
 -1
@@ -5039,14 +3831,10 @@ S
 #46322
 "A Wheat Field"
 "A vast field of golden wheat spreads out before you to the north, east, and
-
-west.  The wheat grows nearly as tall as a man and there is nearly no space
-
-between plants.  A wooden gate stands between the wheat field and the farm
-
-road beyond, a simple latch employed to hold it closed.
-
-"
+west.  The wheat grows nearly as tall as a man and there is nearly no space
+between plants.  A wooden gate stands between the wheat field and the farm
+road beyond, a simple latch employed to hold it closed.
+"
 ""
 301465600 0
 2 6 0
@@ -5070,8 +3858,7 @@ A
 "cut thresh"
 "wheat"
 "acode( find_room( 46324 ), 4 );
-
-"
+"
 !
 0 0 0
 2242 9 1509949540 3 0
@@ -5081,16 +3868,11 @@ S
 #46323
 "Narrow Path Through the Forest"
 "All of the trees of this forest are tall and old, their branches intertwining
-
-in a thick blanket of leaves far overhead.  A regularly used path runs north
-
-into the forest, becoming a bit wider further in, and out towards more open
-
-parts of the forest.  Dark green bushes line the path, their branches reaching
-
-in but have been cut short every time.
-
-"
+in a thick blanket of leaves far overhead.  A regularly used path runs north
+into the forest, becoming a bit wider further in, and out towards more open
+parts of the forest.  Dark green bushes line the path, their branches reaching
+in but have been cut short every time.
+"
 ""
 301465608 0
 3 6 0
@@ -5108,17 +3890,12 @@ S
 #46324
 "A Wheat Field"
 "A vast field of golden wheat spreads out before you to the north and east. 
-
-The wheat grows nearly as tall as a man and so closely together than there is
-
-nearly no space between plants.  Beyond a simple wooden fence to the south is
-
-a long dusty road and past the western fence runs a narrower path.
-
-"
+The wheat grows nearly as tall as a man and so closely together than there is
+nearly no space between plants.  Beyond a simple wooden fence to the south is
+a long dusty road and past the western fence runs a narrower path.
+"
 "Update code for scythes made in the future
-
-"
+"
 301465600 0
 2 6 0
 D0
@@ -5132,152 +3909,108 @@ D1
 E
 "fence west south"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 "climb"
 "1 south"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46253 ) );
-
-act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46253 ) );
+act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence to the path to the south.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the south.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the north.
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "1 west"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46264 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46264 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence to the path to the west.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the west.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the east.
-
-"
+"
 !
 0 0 0
 A
 "climb"
 "fence"
 "act_tochar( \"Which fence do you wish to climb?\", ch );
-
-"
+"
 !
 0 0 0
 A
 "cut thresh"
 "wheat"
 "if( has_obj( 658, ch ) || wearing_obj( 658, ch ) ) {
-
-  if( rflag( reset0, room ) ) {
-
-    remove_rflag( reset0, room );
-
-    act_tochar( #cut, ch );
-
-    act_notchar( #ccut, ch );
-
-    obj_to_char( oload( 3397 ), ch );
-
-    }
-
-  else
-
-    act_tochar( #nope, ch );
-
-  }
-
-else
-
-  act_tochar( #tools, ch );
-
-"
+  if( rflag( reset0, room ) ) {
+    remove_rflag( reset0, room );
+    act_tochar( #cut, ch );
+    act_notchar( #ccut, ch );
+    obj_to_char( oload( 3397 ), ch );
+    }
+  else
+    act_tochar( #nope, ch );
+  }
+else
+  act_tochar( #tools, ch );
+"
 E
 "cut"
 "You thresh the wheat, collecting each piece you free and binding it into a
-
-bundle.
-
-"
+bundle.
+"
 E
 "ccut"
 "$n threshes the wheat.
-
-"
+"
 E
 "tools"
 "You haven't the proper tools to do that.
-
-"
+"
 E
 "nope"
 "The wheat isn't ready to be harvested yet.
-
-"
+"
 !
 0 0 0
 -1
@@ -5286,16 +4019,11 @@ S
 #46325
 "A Wheat Field"
 "A vast field of golden wheat spreads out before you to the east and south. 
-
-The wheat stands nearly as tall as a man and so closely together than there is
-
-nearly no break between one plant and the next.  Beyond a simple wooden fence
-
-to the west there is a narrow path and the wheat field's northwest corner
-
-borders the edge of the grassy north pasture.
-
-"
+The wheat stands nearly as tall as a man and so closely together than there is
+nearly no break between one plant and the next.  Beyond a simple wooden fence
+to the west there is a narrow path and the wheat field's northwest corner
+borders the edge of the grassy north pasture.
+"
 ""
 301465600 0
 2 6 0
@@ -5310,58 +4038,43 @@ D2
 E
 "west fence"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 "climb"
 "1 west fence"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46283 ) );
-
-act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46283 ) );
+act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence to the path to the west.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the west.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the east.
-
-"
+"
 !
 0 0 0
 A
 "cut thresh"
 "wheat"
 "acode( find_room( 46324 ), 4 );
-
-"
+"
 !
 0 0 0
 -1
@@ -5370,16 +4083,11 @@ S
 #46326
 "A Wheat Field"
 "A vast golden field of wheat spreads out before you to the south, east, and
-
-west.  The wheat stands nearly as tall as a man and so closely together that
-
-there is nearly no break between one plant and the next.  A tall wooden fence
-
-stands between the wheat field and the foothills of the Cairn mountains.  A
-
-very old scarecrow is staked up in the middle of the field.
-
-"
+west.  The wheat stands nearly as tall as a man and so closely together that
+there is nearly no break between one plant and the next.  A tall wooden fence
+stands between the wheat field and the foothills of the Cairn mountains.  A
+very old scarecrow is staked up in the middle of the field.
+"
 ""
 301465600 0
 2 6 0
@@ -5398,18 +4106,14 @@ D3
 E
 "scarecrow old"
 "This old scarecrow is made from hay and grass stuffed into clothing to hold
-
-the form of a man.  It doesn't appear to be doing its job very well, as quite
-
-a bit of hay has been picked out of it by birds.
-
-"
+the form of a man.  It doesn't appear to be doing its job very well, as quite
+a bit of hay has been picked out of it by birds.
+"
 A
 "cut thresh"
 "wheat"
 "acode( find_room( 46324 ), 4 );
-
-"
+"
 !
 0 0 0
 -1
@@ -5418,19 +4122,13 @@ S
 #46327
 "A Wheat Field"
 "A vast golden field of wheat spreads out before you to the south and west. 
-
-The wheat stands nearly as tall as a man and so closely together than there is
-
-nearly no break between one plant and the next.  A tall wooden fence stands
-
-between the wheat field and the foothills of the Cairn mountains.  Beyond
-
-the east fence is a dense forest.
-
-"
+The wheat stands nearly as tall as a man and so closely together than there is
+nearly no break between one plant and the next.  A tall wooden fence stands
+between the wheat field and the foothills of the Cairn mountains.  Beyond
+the east fence is a dense forest.
+"
 "[Merolen] look mountains?
-
-"
+"
 301465600 0
 2 6 0
 D2
@@ -5445,8 +4143,7 @@ A
 "cut thresh"
 "wheat"
 "acode( find_room( 46324 ), 4 );
-
-"
+"
 !
 0 0 0
 -1
@@ -5455,16 +4152,11 @@ S
 #46328
 "A Wheat Field"
 "A vast golden field of wheat spreads out before you to the north and west. 
-
-The wheat stands nearly as tall as a man and so closely together than there is
-
-nearly no break between one plant and the next.  A wooden fence stands between
-
-the wheat field and the farm road to the south and to the east, the tall trees
-
-of a dense, shadowy forest.
-
-"
+The wheat stands nearly as tall as a man and so closely together than there is
+nearly no break between one plant and the next.  A wooden fence stands between
+the wheat field and the farm road to the south and to the east, the tall trees
+of a dense, shadowy forest.
+"
 ""
 301465600 0
 2 6 0
@@ -5479,58 +4171,43 @@ D3
 E
 "south fence"
 "Two roughly cut lengths of wood are help up by wooden posts at either end,
-
-simple but sturdy enough that they should be easy to climb.
-
-"
+simple but sturdy enough that they should be easy to climb.
+"
 A
 "climb"
 "1 south fence"
 "if( find_skill( ch, climb ) > 0 ) {
-
-  act_tochar( #climb, ch );
-
-  act_notchar( #cclimb, ch );
-
-  transfer( ch, find_room( 46251 ) );
-
-  act_notchar( #arrive, ch );
-
-  }
-
-else
-
-  act_tochar( #noclimb, ch );
-
-"
+  act_tochar( #climb, ch );
+  act_notchar( #cclimb, ch );
+  transfer( ch, find_room( 46251 ) );
+  act_notchar( #arrive, ch );
+  }
+else
+  act_tochar( #noclimb, ch );
+"
 E
 "climb"
 "You easily climb over the fence to the path to the south.
-
-"
+"
 E
 "cclimb"
 "$n climbs over the fence to the south.
-
-"
+"
 E
 "noclimb"
 "You try to climb over the fence but can't manage it.
-
-"
+"
 E
 "arrive"
 "$n arrives over the fence to the north.
-
-"
+"
 !
 0 0 0
 A
 "cut thresh"
 "wheat"
 "acode( find_room( 46324 ), 4 );
-
-"
+"
 !
 0 0 0
 4673 17 1509949540 -2 0
@@ -5540,16 +4217,11 @@ S
 #46329
 "Hayloft"
 "Huge bushels of hay are stacked upon one another, several layers thick from
-
-the barn walls.  Much of the scratchy hay has come loose from their bundles
-
-and is spread out across the loft floor, a large yellowish mess.  Bits of hay
-
-hang down over the ledge, draped down the length of a ladder that leads down
-
-to the floor of the barn.
-
-"
+the barn walls.  Much of the scratchy hay has come loose from their bundles
+and is spread out across the loft floor, a large yellowish mess.  Bits of hay
+hang down over the ledge, draped down the length of a ladder that leads down
+to the floor of the barn.
+"
 ""
 301465604 0
 0 7 0
@@ -5561,62 +4233,40 @@ A
 "search"
 "hay bushel mess stack"
 "if( !is_player( ch ) )
-
-  end;
-
-act_notchar( #csearch, ch );
-
-if( rflag( reset0, room ) ) {
-
-  remove_rflag( reset0, room );
-
-  if( random( 1, 45 ) == 1 ) {
-
-    act_tochar( #needle, ch );
-
-    obj_to_char( oload( 699 ), ch );
-
-    }
-
-  else {
-
-    act_tochar( #hay, ch );
-
-    obj_to_char( oload( 3448 ), ch );
-
-    }
-
-  }
-
-else {
-
-  act_tochar( #nope, ch );
-
-  }
-
-"
+  end;
+act_notchar( #csearch, ch );
+if( rflag( reset0, room ) ) {
+  remove_rflag( reset0, room );
+  if( random( 1, 45 ) == 1 ) {
+    act_tochar( #needle, ch );
+    obj_to_char( oload( 699 ), ch );
+    }
+  else {
+    act_tochar( #hay, ch );
+    obj_to_char( oload( 3448 ), ch );
+    }
+  }
+else {
+  act_tochar( #nope, ch );
+  }
+"
 E
 "hay"
 "You search through the hay and find a rather nice piece that you decide to
-
-take.
-
-"
+take.
+"
 E
 "nope"
 "You search the hay but fail to find anything interesting.
-
-"
+"
 E
 "csearch"
 "$n searches through the hay.
-
-"
+"
 E
 "needle"
 "You search through the hay and find a needle!
-
-"
+"
 !
 0 0 0
 -1
@@ -5625,14 +4275,10 @@ S
 #46330
 "Top of the Farmhouse Stairs"
 "A small window at the top of the stairs looks out across the pasture to the
-
-north, and at the Cairn mountains beyond.  The second floor of the farmhouse
-
-isn't as large as the first, having only two bedrooms, one to the west and a
-
-larger one south.
-
-"
+north, and at the Cairn mountains beyond.  The second floor of the farmhouse
+isn't as large as the first, having only two bedrooms, one to the west and a
+larger one south.
+"
 ""
 301465605 0
 0 6 0
@@ -5651,33 +4297,23 @@ D5
 E
 "window north pasture cairn mountains"
 "You don't have the best view of the mountains from here, with mostly a rocky
-
-slope leading up towards more rocks, with few trees growing on this side of
-
-the mountain.  In the pasture you can't see much, only cows and workers.
-
-"
+slope leading up towards more rocks, with few trees growing on this side of
+the mountain.  In the pasture you can't see much, only cows and workers.
+"
 -1
 S
 
 #46331
 "Small Homely Bedroom"
 "This small bedroom is decorated in a rather haphazard way, the owner
-
-apparently having changed her mind repeatedly when designing it and never
-
-quite settling on one idea long enough to finish.  The walls are white with
-
-red trim and the quilt on the bed is made of alternating green and blue
-
-triangles.  Projects sit on shelves half finished, many of them sewn or
-
-knitted.
-
-"
+apparently having changed her mind repeatedly when designing it and never
+quite settling on one idea long enough to finish.  The walls are white with
+red trim and the quilt on the bed is made of alternating green and blue
+triangles.  Projects sit on shelves half finished, many of them sewn or
+knitted.
+"
 "[Zithuan] projects, shelves extras
-
-"
+"
 301465605 0
 0 5 0
 D1
@@ -5687,10 +4323,8 @@ D1
 E
 "bed quilt"
 "A large bed, big enough for one person to comfortably sleep, with a blue and
-
-green quilt on top of it.
-
-"
+green quilt on top of it.
+"
 1848 9 1509949540 3 0
 1392 17 1509949540 -2 0
 -1
@@ -5699,17 +4333,12 @@ S
 #46332
 "Large Homely Bedroom"
 "This bedroom is made up with a simple but attractive style, with simple white
-
-curtains in the east wall and a large bed in the middle of the room with a
-
-hand-made quilt covering it.  Through the east window there is a long view of
-
-the farm road leading east towards the forest and Chiiron beyond.
-
-"
+curtains in the east wall and a large bed in the middle of the room with a
+hand-made quilt covering it.  Through the east window there is a long view of
+the farm road leading east towards the forest and Chiiron beyond.
+"
 "[Zithuan] quilt extra
-
-"
+"
 301465605 0
 0 6 0
 D0
@@ -5719,17 +4348,13 @@ D0
 E
 "bed neatly-made"
 "A large bed, big enough for two people to comfortably sleep, with a blue and
-
-yellow quilt on top of it.
-
-"
+yellow quilt on top of it.
+"
 E
 "window"
 "From up here, you can see far down the farm road below, past the wheat field
-
-and orchard, to the forest beyond.
-
-"
+and orchard, to the forest beyond.
+"
 1392 17 1509949540 -2 0
 -1
 S

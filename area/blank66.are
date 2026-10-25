@@ -10,19 +10,13 @@
 #45000
 "Fork in the Trail"
 "You have reached a fork in the trail.  To the north, the path begins to
-
-climb and off in the distance you can see a small watch tower.  To the
-
-east the path drops sharply winding its way down a small cliff to what
-
-looks like a beach below.  To the west the path is fairly level and leads
-
-off into the hillside.
-
-"
+climb and off in the distance you can see a small watch tower.  To the
+east the path drops sharply winding its way down a small cliff to what
+looks like a beach below.  To the west the path is fairly level and leads
+off into the hillside.
+"
 "[Zithuan] 21000
-
-"
+"
 301465624 0
 2 6 0
 D0
@@ -45,24 +39,21 @@ A
 ""
 ""
 "transfer( ch, find_room( 70036 ) );
-
-"
+"
 !
 3 0 4
 A
 ""
 ""
 "transfer( ch, find_room( 21017 ) );
-
-"
+"
 !
 3 0 2
 A
 ""
 ""
 "transfer( ch, find_room( 21001 ) );
-
-"
+"
 !
 3 0 1
 2346 9 1509949540 3 0
@@ -72,19 +63,13 @@ S
 #45001
 "Hillside Trail"
 "This section of the trail is moderately inclined to the west, where the
-
-path can be seen to stretch for several hundred meters.  The smell of
-
-salt air and the chill of the mist rising off the sea to the east are
-
-strong, as is the breeze blowing from the north.  To the east the path
-
-appears to come to an intersection.  
-
-"
+path can be seen to stretch for several hundred meters.  The smell of
+salt air and the chill of the mist rising off the sea to the east are
+strong, as is the breeze blowing from the north.  To the east the path
+appears to come to an intersection.  
+"
 "[Zithuan] 24020
-
-"
+"
 301465616 0
 4 6 0
 D1
@@ -101,17 +86,12 @@ S
 #45002
 "Hillside Trail"
 "Heavy brush and large, jagged rocks cover the hillside here.  A trail of
-
-three meters in width cuts across this landscape continuing at an incline
-
-from east to west, leading to apparent signs of life up the hill to the
-
-west.  
-
-"
+three meters in width cuts across this landscape continuing at an incline
+from east to west, leading to apparent signs of life up the hill to the
+west.  
+"
 "[Zithuan] 24019
-
-"
+"
 301465616 0
 4 6 0
 D1
@@ -128,19 +108,13 @@ S
 #45003
 "Hillside Trail"
 "Filling each horizon are the mountains which define this region.  While
-
-considerably lower to the south, they are by no means small.  To the
-
-east, down the hill, it is possible to glimpse the the black waters of
-
-the Northern Sea, although it is not close enough to witness any detail. 
-
-Continuing to the west leads further up the mountainside.  
-
-"
+considerably lower to the south, they are by no means small.  To the
+east, down the hill, it is possible to glimpse the the black waters of
+the Northern Sea, although it is not close enough to witness any detail. 
+Continuing to the west leads further up the mountainside.  
+"
 "[Zithuan] 24017
-
-"
+"
 301465616 0
 4 6 0
 D1
@@ -157,19 +131,13 @@ S
 #45004
 "Break in the Path"
 "The path here takes a noticeable step upward as you continue to the
-
-west.  An animal trail leading into the thick brush is evident to the
-
-south, showing tracks from many of the local fauna.  The main path
-
-continues to the east, where the faint sound of waves on a shore can be
-
-heard.  
-
-"
+west.  An animal trail leading into the thick brush is evident to the
+south, showing tracks from many of the local fauna.  The main path
+continues to the east, where the faint sound of waves on a shore can be
+heard.  
+"
 "[Zithuan] 24016
-
-"
+"
 301465616 0
 5 6 0
 D1
@@ -187,17 +155,12 @@ S
 #45005
 "Split in the Path"
 "The path here takes a very steep decline to the east, requiring a climb
-
-down of about five meters to continue in that direction.  To the north is
-
-a small animal track into the brush, and to the west the path continues
-
-up the hill.
-
-"
+down of about five meters to continue in that direction.  To the north is
+a small animal track into the brush, and to the west the path continues
+up the hill.
+"
 "[Zithuan] 24014
-
-"
+"
 301465616 0
 5 6 0
 D0
@@ -218,19 +181,13 @@ S
 #45006
 "Mountain Path"
 "A soft breeze can be heard overhead as the wind crosses the high boulders
-
-lining the path.  Dirt from the trail swirls in tiny eddies with every
-
-gust, each time further obscuring the tracks of various sorts along this
-
-path.  Travel is possible up the hill to the west and downward to the
-
-east.  
-
-"
+lining the path.  Dirt from the trail swirls in tiny eddies with every
+gust, each time further obscuring the tracks of various sorts along this
+path.  Travel is possible up the hill to the west and downward to the
+east.  
+"
 "[Zithuan] 24013
-
-"
+"
 301465624 0
 4 6 0
 D1
@@ -244,15 +201,12 @@ D3
 E
 "boulders"
 "The rocks here show the signs of erosion and time as countless storms and
-
-skirmishes have marred their surfaces.
-
-"
+skirmishes have marred their surfaces.
+"
 E
 "dirt"
 "This is rather ordinary topsoil, dry and mineral depleted.
-
-"
+"
 2216 9 1509949540 3 0
 -1
 S
@@ -260,17 +214,12 @@ S
 #45007
 "Mountain Path"
 "Footprints of the clad and unclad alike describe a trail from east to
-
-south.  Large rocks jutting from the mountainside serve to outline this
-
-trail, and appear as if they might provide some protection against the
-
-elements.  
-
-"
+south.  Large rocks jutting from the mountainside serve to outline this
+trail, and appear as if they might provide some protection against the
+elements.  
+"
 "[Zithuan] 24012
-
-"
+"
 301465624 0
 4 6 0
 D1
@@ -289,19 +238,13 @@ S
 #45008
 "Mountain Path"
 "As the wind crosses the path, it carries a strong scent of wild sage with
-
-it.  Heavy pollen fills the air, and swirls about you like a thin blanket
-
-on an autumn evening.  Signs of life are everywhere, with a variety of
-
-animal tracks littering the path.  More of this can be seen to the north
-
-and west.  
-
-"
+it.  Heavy pollen fills the air, and swirls about you like a thin blanket
+on an autumn evening.  Signs of life are everywhere, with a variety of
+animal tracks littering the path.  More of this can be seen to the north
+and west.  
+"
 "[Zithuan] 24009
-
-"
+"
 301465624 0
 4 6 0
 D0
@@ -318,21 +261,14 @@ S
 #45009
 "Path Around a Large Boulder"
 "You are on a well travelled path between Chiiron and Medienne.  Right now
-
-the path is curving around a large boulder which was carelessly placed
-
-here eons ago.  The boulder is large but with a bit of skill you might
-
-be able to clamber on top of it.  To the east you can see the sea far off
-
-in the distance and the path slowly winding its way towards it.  The
-
-other end of the path heads north.  
-
-"
+the path is curving around a large boulder which was carelessly placed
+here eons ago.  The boulder is large but with a bit of skill you might
+be able to clamber on top of it.  To the east you can see the sea far off
+in the distance and the path slowly winding its way towards it.  The
+other end of the path heads north.  
+"
 "[Zithuan] 24008
-
-"
+"
 301465624 0
 4 6 0
 D0
@@ -351,19 +287,13 @@ S
 #45010
 "Path through Ravine"
 "You are in an area of large rocks and a few bushes.  To the west there is
-
-a path which winds its way between two hills which rise up before you. 
-
-The break which the path follows is worn through time but looks like it
-
-was caused by some giant upheaval of the earth.  The path continues its
-
-way south avoiding a large boulder.
-
-"
+a path which winds its way between two hills which rise up before you. 
+The break which the path follows is worn through time but looks like it
+was caused by some giant upheaval of the earth.  The path continues its
+way south avoiding a large boulder.
+"
 "[Zithuan] 24007
-
-"
+"
 301465616 0
 4 6 0
 D2
@@ -381,19 +311,13 @@ S
 #45011
 "Path through Ravine"
 "The ravine is getting lower here and further east you can see it breaks
-
-into an area of dense bushes and rocks.  To the south, a steep, rocky
-
-slope rises above you, while the north wall is also very steep, and you
-
-doubt you could make your way up it.  A very tall tree towers over you to
-
-the southeast.
-
-"
+into an area of dense bushes and rocks.  To the south, a steep, rocky
+slope rises above you, while the north wall is also very steep, and you
+doubt you could make your way up it.  A very tall tree towers over you to
+the southeast.
+"
 "[Zithuan] 24002
-
-"
+"
 301465616 0
 4 6 0
 D1
@@ -415,19 +339,13 @@ S
 #45012
 "Path through Ravine"
 "Stumbling over a small dip in the path, you notice the sounds of falling
-
-pebbles.  Looking up along the ravine you notice a faint path climbing up
-
-the ravine wall to the south.  The wall to the north also seems
-
-accessible.  As the air swirls about you in fits, a faint moaning can be
-
-heard.  
-
-"
+pebbles.  Looking up along the ravine you notice a faint path climbing up
+the ravine wall to the south.  The wall to the north also seems
+accessible.  As the air swirls about you in fits, a faint moaning can be
+heard.  
+"
 "[Zithuan] 24001
-
-"
+"
 301465624 0
 4 6 0
 D0
@@ -448,19 +366,13 @@ S
 #45013
 "Rocky Slope"
 "The ground here is steep and uneven, as it slopes steeply downward to the
-
-south and back toward the brush.  At the foot of a steep drop to the
-
-north, you spy a narrow trail leading east and west.  A huge tree towers
-
-over you to the east, and above a rock wall to the west dense bushes and
-
-undergrowth prevents passage.
-
-"
+south and back toward the brush.  At the foot of a steep drop to the
+north, you spy a narrow trail leading east and west.  A huge tree towers
+over you to the east, and above a rock wall to the west dense bushes and
+undergrowth prevents passage.
+"
 "[Zithuan] 24053
-
-"
+"
 301465616 0
 4 9 0
 D0
@@ -479,15 +391,11 @@ S
 #45014
 "Ravine Wall"
 "Your foot slips a little as you reach this part of the wall, making
-
-you stumble.  Bits of rock tumble down the wall to the ravine, the
-
-sounds of its travel echoing hollowly.
-
-"
+you stumble.  Bits of rock tumble down the wall to the ravine, the
+sounds of its travel echoing hollowly.
+"
 "[Zithuan] 24005
-
-"
+"
 301465616 0
 5 6 0
 D2
@@ -505,17 +413,12 @@ S
 #45015
 "Narrow Ravine"
 "As you walk along this part of the ravine, you notice the walls have
-
-become less steep, and covered with sparse brush.  This part of the
-
-ravine acts as a funnel for the winds, making an eerie moaning noise. 
-
-the ravine continues east and west, and a small path cuts north.  
-
-"
+become less steep, and covered with sparse brush.  This part of the
+ravine acts as a funnel for the winds, making an eerie moaning noise. 
+the ravine continues east and west, and a small path cuts north.  
+"
 "[Zithuan] 24000
-
-"
+"
 301465616 0
 4 6 0
 D0
@@ -537,19 +440,13 @@ S
 #45016
 "Ravine Wall"
 "You climb to this spot on the ravine wall, looking down on the ravine
-
-itself.  The wind whips your clothing, stinging your eyes and drying
-
-out your throat.  Pebbles, dislodged by your feet, bounce down into the
-
-ravine.  The only way to go is east along the ravine wall, or south
-
-back to the ravine.
-
-"
+itself.  The wind whips your clothing, stinging your eyes and drying
+out your throat.  Pebbles, dislodged by your feet, bounce down into the
+ravine.  The only way to go is east along the ravine wall, or south
+back to the ravine.
+"
 "[Zithuan] 24004
-
-"
+"
 301465616 0
 5 6 0
 D1
@@ -566,25 +463,16 @@ S
 #45017
 "Narrow Ravine outside Chiiron"
 "From this location you are presented with an excellent view of the
-
-mountainous terrain of this region.  The village of Chiiron, directly to
-
-the west, is set on the inside face of a mountain range surrounding a
-
-large sea.  A heavy mist rolls in waves over the surface of the black
-
-water, occasionally making visible a barge or merchantman crossing from
-
-shore to shore.  Far to the southeast, majestic mountains pierce the dark
-
-clouds encircling them, a path here cuts between two sheer rock faces,
-
-sloping sharply down the hill to the east.  
-
-"
+mountainous terrain of this region.  The village of Chiiron, directly to
+the west, is set on the inside face of a mountain range surrounding a
+large sea.  A heavy mist rolls in waves over the surface of the black
+water, occasionally making visible a barge or merchantman crossing from
+shore to shore.  Far to the southeast, majestic mountains pierce the dark
+clouds encircling them, a path here cuts between two sheer rock faces,
+sloping sharply down the hill to the east.  
+"
 "[Zithuan] 24006
-
-"
+"
 301465624 0
 12 6 0
 D1
@@ -601,23 +489,15 @@ S
 #45018
 "Before the East Gate of Chiiron"
 "To the west stands a stone gate house, flanked by two towers.  Compared
-
-to some of the great fortresses of the realm, Chiiron is not impressive,
-
-but it looks like a safe haven, with its single curtain wall stout and
-
-well-maintained.  A path leads away east, winding through the hills.  It
-
-looks well worn and should not be too dangerous.  South of here, a small
-
-path winds its way between the town wall and a range of hills east of
-
-town.
-
-"
+to some of the great fortresses of the realm, Chiiron is not impressive,
+but it looks like a safe haven, with its single curtain wall stout and
+well-maintained.  A path leads away east, winding through the hills.  It
+looks well worn and should not be too dangerous.  South of here, a small
+path winds its way between the town wall and a range of hills east of
+town.
+"
 "[Zithuan] 933
-
-"
+"
 301465689 0
 1 6 0
 D0
@@ -642,17 +522,12 @@ S
 #45019
 "Field"
 "Carefully tended fields vie with one another for space in the shadow of
-
-Chiiron's fortified wall.  To the east, the soil becomes more barren,
-
-with rocky hills rising above the flat, rich soil of the fields.  To the
-
-south, you spy the East Gate of Chiiron.
-
-"
+Chiiron's fortified wall.  To the east, the soil becomes more barren,
+with rocky hills rising above the flat, rich soil of the fields.  To the
+south, you spy the East Gate of Chiiron.
+"
 "[Zithuan] 982
-
-"
+"
 301465624 0
 2 9 0
 D0
@@ -669,19 +544,13 @@ S
 #45020
 "Fields Near Chiiron"
 "A series of carefully-tended fields cluster about the base of the town
-
-wall here, their rows neatly tended by the residents of the small,
-
-fortified village.  The town wall looms over you to the west, and a
-
-series of rocky hills and gullies begins off to the east, a few scant
-
-feet from the edge of the last field.
-
-"
+wall here, their rows neatly tended by the residents of the small,
+fortified village.  The town wall looms over you to the west, and a
+series of rocky hills and gullies begins off to the east, a few scant
+feet from the edge of the last field.
+"
 "[Zithuan] 983
-
-"
+"
 301465624 0
 2 9 0
 D0
@@ -700,17 +569,12 @@ S
 #45021
 "Shallow Brook, Field"
 "You stand in a cultivated field in the shadow of the walls of Chiiron.  A
-
-small stream bisects the area, running north to southeast, leading into a
-
-rocky gully at the base of a steep hill, and then disappearing from view,
-
-perhaps flowing into some unseen underground repository.
-
-"
+small stream bisects the area, running north to southeast, leading into a
+rocky gully at the base of a steep hill, and then disappearing from view,
+perhaps flowing into some unseen underground repository.
+"
 "[Zithuan] 984
-
-"
+"
 301465624 0
 2 9 0
 D0
@@ -733,15 +597,11 @@ S
 #45022
 "Shallow Brook"
 "A very shallow stream trickles by here, running northeast to south.  To
-
-the east, a steep hill rises up above your head, a small dirt path
-
-zigzagging up the slope and out of sight to the east.
-
-"
+the east, a steep hill rises up above your head, a small dirt path
+zigzagging up the slope and out of sight to the east.
+"
 "[Zithuan] 40511
-
-"
+"
 301465624 0
 13 9 0
 D1
@@ -764,25 +624,16 @@ S
 #45023
 "Hillside Path"
 "You stand midway up a grassy hillside.  A path, little more than a
-
-cleared stretch of bare earth, winds its way eastward toward the crown of
-
-the hill and a rock wall, vaguely discernible in the distance. 
-
-Underfoot, the narrow trail is uneven, eroded away in spots by the
-
-passing years.  As though mindful of their precarious perch, deadened
-
-weeds and unkempt bushes clutch the soil, reaching outward to possess the
-
-path as well.  At the base of the slope to the west, a small stream
-
-trickles by and disappears into the distance.
-
-"
+cleared stretch of bare earth, winds its way eastward toward the crown of
+the hill and a rock wall, vaguely discernible in the distance. 
+Underfoot, the narrow trail is uneven, eroded away in spots by the
+passing years.  As though mindful of their precarious perch, deadened
+weeds and unkempt bushes clutch the soil, reaching outward to possess the
+path as well.  At the base of the slope to the west, a small stream
+trickles by and disappears into the distance.
+"
 "[Zithuan] 26007
-
-"
+"
 301465616 0
 4 6 0
 D1
@@ -803,31 +654,19 @@ S
 #45024
 "Path Across a Hillside"
 "This small rise is little more than a grassy knoll, an extension of the
-
-hills to the north that gently trickle out into the lush plains to the
-
-south.  A soft breeze with the scent of life rolls over the hillock,
-
-touching off a cascade of waves in the expanse of green and yellow grass. 
-
-Atop the rise, a junction is formed by three converging paths,
-
-well-traveled and worn with the tracks of men and horses.  To the east,
-
-the trail dips down into a wide gully to rise again along the side of a
-
-gradual hill, while to the west it is swallowed by the flow of a stream
-
-that has seemingly grown in depth and covered the crossing rocks, not far
-
-from the sturdy walls of the town.  The path winds its way northward as
-
-the hill rises into pale white mists.
-
-"
+hills to the north that gently trickle out into the lush plains to the
+south.  A soft breeze with the scent of life rolls over the hillock,
+touching off a cascade of waves in the expanse of green and yellow grass. 
+Atop the rise, a junction is formed by three converging paths,
+well-traveled and worn with the tracks of men and horses.  To the east,
+the trail dips down into a wide gully to rise again along the side of a
+gradual hill, while to the west it is swallowed by the flow of a stream
+that has seemingly grown in depth and covered the crossing rocks, not far
+from the sturdy walls of the town.  The path winds its way northward as
+the hill rises into pale white mists.
+"
 "[Zithuan] 26006
-
-"
+"
 301465616 0
 4 6 0
 D0
@@ -849,25 +688,16 @@ S
 #45025
 "Outside the Old Graveyard"
 "The dusty path ends abruptly before a high, vine-covered wall, crumbling
-
-in spots, bits of rubble lying at its base.  Built of stone, the wall
-
-embraces a cemetery, grimly foreboding, viewed as it is through a rusted
-
-wrought-iron gate.  Surrounded by hills to the north and east, the
-
-gently-sloping plot of land is blanketed by a low and creeping mist,
-
-which seems to settle within the walls of the graveyard.  Scattered among
-
-age-old trees, ancient tombs and marble gravestones consort with dark
-
-rectangles of fresh-turned earth, standing ready for the next arrival.
-
-"
+in spots, bits of rubble lying at its base.  Built of stone, the wall
+embraces a cemetery, grimly foreboding, viewed as it is through a rusted
+wrought-iron gate.  Surrounded by hills to the north and east, the
+gently-sloping plot of land is blanketed by a low and creeping mist,
+which seems to settle within the walls of the graveyard.  Scattered among
+age-old trees, ancient tombs and marble gravestones consort with dark
+rectangles of fresh-turned earth, standing ready for the next arrival.
+"
 "[Zithuan] 26008
-
-"
+"
 301465624 0
 2 6 0
 D3
@@ -881,21 +711,14 @@ S
 #45026
 "Near the Town Wall"
 "A lone stone tower rises up above you to the south, high above the rest
-
-of the town wall, ever vigilant in the defense of Chiiron.  The grass
-
-here is tall and thick, but here and there you see a few marks which
-
-indicate that the town's inhabitants bring their animals here to graze. 
-
-You spy a wooden bridge to the north, which crosses a small stream which
-
-flows by from north to the east of here.
-
-"
+of the town wall, ever vigilant in the defense of Chiiron.  The grass
+here is tall and thick, but here and there you see a few marks which
+indicate that the town's inhabitants bring their animals here to graze. 
+You spy a wooden bridge to the north, which crosses a small stream which
+flows by from north to the east of here.
+"
 "[Zithuan] 40510
-
-"
+"
 301465624 0
 2 9 0
 D0
@@ -919,19 +742,13 @@ S
 #45027
 "Foot of a Small Hill"
 "A small hill rises gently to the north, a well-worn dirt path winding
-
-through the grasses.  Just to your south the high wall of Chiiron looms,
-
-its heavy stones bespeaking a strong defense.  Small bushes dot the area,
-
-growing amidst the short grass.  To your northeast you see a small wooden
-
-bridge.
-
-"
+through the grasses.  Just to your south the high wall of Chiiron looms,
+its heavy stones bespeaking a strong defense.  Small bushes dot the area,
+growing amidst the short grass.  To your northeast you see a small wooden
+bridge.
+"
 "[Zithuan] 40509
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -953,21 +770,14 @@ S
 #45028
 "Outside the North Gate of Chiiron"
 "A small path leads north, up a hillside and towards an open area with a
-
-pond at the base of a large cliff.  To the west, a small dirt path heads
-
-off into a meadow.  Dominating the area, however, is the square gatehouse
-
-which guards the @enorth gate of Chiiron@n.  Its weathered towers are covered
-
-with the marks of many a siege, but you know that should the gates close,
-
-all peaceful folk need to do is @eknock@n and find sanctuary within.
-
-"
+pond at the base of a large cliff.  To the west, a small dirt path heads
+off into a meadow.  Dominating the area, however, is the square gatehouse
+which guards the @enorth gate of Chiiron@n.  Its weathered towers are covered
+with the marks of many a siege, but you know that should the gates close,
+all peaceful folk need to do is @eknock@n and find sanctuary within.
+"
 "[Zithuan] 25000
-
-"
+"
 301465624 0
 2 6 0
 D0
@@ -992,17 +802,12 @@ S
 #45029
 "Meadow Near Chiiron"
 "You stand in a small, meadow beneath the walls of Chiiron.  A narrow,
-
-dusty path runs east and west here, making an uneven course through the
-
-grassy area.  To the north, a thick forest looms quite close at hand. 
-
-You see a gate in the wall to the east.
-
-"
+dusty path runs east and west here, making an uneven course through the
+grassy area.  To the north, a thick forest looms quite close at hand. 
+You see a gate in the wall to the east.
+"
 "[Zithuan] 40507
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -1024,15 +829,11 @@ S
 #45030
 "Path Through Meadow"
 "A small path darts back and forth through a rolling green meadow here,
-
-between the town wall to the south and a dark screen of branches to the
-
-north.
-
-"
+between the town wall to the south and a dark screen of branches to the
+north.
+"
 "[Zithuan] 40506
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -1055,17 +856,12 @@ S
 #45031
 "Small Clearing"
 "You stand in a small clearing near the walls of Chiiron.  Several large
-
-rocks have been gathered in a semicircle, and you notice the remains of a
-
-fire near the center of the area.  A small path winds its way back to the
-
-east, while a thick forest grows north of here.
-
-"
+rocks have been gathered in a semicircle, and you notice the remains of a
+fire near the center of the area.  A small path winds its way back to the
+east, while a thick forest grows north of here.
+"
 "[Zithuan] 40505
-
-"
+"
 301465616 0
 2 9 0
 D1
@@ -1084,19 +880,13 @@ S
 #45032
 "Near the Forest's Edge"
 "To the north, oaks line the edge of the small field in which you stand,
-
-while off to the south, you eye follows the course of the town wall of
-
-Chiiron.  A guard tower, posted at the corner of the town wall, stands
-
-high overhead, providing those within with a fine vantage point from
-
-which to view the surrounding area.
-
-"
+while off to the south, you eye follows the course of the town wall of
+Chiiron.  A guard tower, posted at the corner of the town wall, stands
+high overhead, providing those within with a fine vantage point from
+which to view the surrounding area.
+"
 "[Zithuan] 40504
-
-"
+"
 301465616 0
 3 9 0
 D1
@@ -1116,19 +906,13 @@ S
 #45033
 "By the Forest's Edge"
 "You are almost in the woods here, with branches overhanging the grass. 
-
-Tall oaks and elms crowd the area to the north, with thick bushes growing
-
-in the shadows beneath their thick boughs.  To the southeast, you spy a
-
-stout watch tower atop the town wall, from which Chiiron's defenders may
-
-observe happenings in the area.
-
-"
+Tall oaks and elms crowd the area to the north, with thick bushes growing
+in the shadows beneath their thick boughs.  To the southeast, you spy a
+stout watch tower atop the town wall, from which Chiiron's defenders may
+observe happenings in the area.
+"
 "[Zithuan] 40503
-
-"
+"
 301465616 0
 3 9 0
 D1
@@ -1151,19 +935,13 @@ S
 #45034
 "Forest"
 "Trees loom about you on all sides, their boughs stretching up to obscure
-
-the sky overhead.  To the west, the forest thickens, while to the north
-
-the ground rises and seems to become more rough.  Looking in that
-
-direction you spy a slight path wind its way between several ancient
-
-trees, overgrown and forgotten over time.
-
-"
+the sky overhead.  To the west, the forest thickens, while to the north
+the ground rises and seems to become more rough.  Looking in that
+direction you spy a slight path wind its way between several ancient
+trees, overgrown and forgotten over time.
+"
 "[Zithuan] 40578
-
-"
+"
 301465616 0
 3 9 0
 D1
@@ -1176,17 +954,12 @@ S
 #45035
 "Near the Forest's Edge"
 "The trees creep in more closely here, approaching from the west toward
-
-the battlements of Chiiron, which stand off to the east.  A few large
-
-stones are scattered about the area here, among the grass, too large to
-
-move.
-
-"
+the battlements of Chiiron, which stand off to the east.  A few large
+stones are scattered about the area here, among the grass, too large to
+move.
+"
 "[Zithuan] 40502
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -1205,15 +978,11 @@ S
 #45036
 "Meadow"
 "You stand in a small grassy meadow located between the town wall to the
-
-east and a thickly wooded stream to the west.  You presume that Chiiron's
-
-defenders keep this area clear to guard the approaches to the town.
-
-"
+east and a thickly wooded stream to the west.  You presume that Chiiron's
+defenders keep this area clear to guard the approaches to the town.
+"
 "[Zithuan] 40501
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -1236,19 +1005,13 @@ S
 #45037
 "Small Meadow"
 "You stand in a small meadow outside of Chiiron.  To the east, the town
-
-walls rise above your head, protecting the inhabitants from the perils
-
-which lurk outside the gates.  A shallow trickle of a stream flows out of
-
-the woods to the northeast, heading off to the southeast.  Off to the
-
-south, you see a town gate.
-
-"
+walls rise above your head, protecting the inhabitants from the perils
+which lurk outside the gates.  A shallow trickle of a stream flows out of
+the woods to the northeast, heading off to the southeast.  Off to the
+south, you see a town gate.
+"
 "[Zithuan] 40500
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -1271,17 +1034,12 @@ S
 #45038
 "Before the Gates of Chiiron"
 "The west gate of Chiiron stands off to the east of here, its thick stone
-
-gatehouse protecting the city from whatever dangers lurk in the
-
-surrounding forest.  A small dirt path leads off to the south, alongside
-
-a gentle stream.
-
-"
+gatehouse protecting the city from whatever dangers lurk in the
+surrounding forest.  A small dirt path leads off to the south, alongside
+a gentle stream.
+"
 "[Zithuan] 938
-
-"
+"
 301465624 0
 12 9 0
 D0
@@ -1306,17 +1064,12 @@ S
 #45039
 "By a Shady Brook"
 "A brook runs northeast to southwest through this cozy section of the
-
-forest.  Several leafy trees spread out overhead, giving the entire area
-
-shade.  A cool breeze blows, and all is at peace.  A small grass-covered
-
-hill rises gently to the west.
-
-"
+forest.  Several leafy trees spread out overhead, giving the entire area
+shade.  A cool breeze blows, and all is at peace.  A small grass-covered
+hill rises gently to the west.
+"
 "[Zithuan] 939
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -1338,21 +1091,14 @@ S
 #45040
 "Meadow Near Chiiron"
 "Tall grass billows slowly in the breeze here, in this open meadow a short
-
-distance outside of Chiiron.  To the east, a tower rises above you, while
-
-in the distance to the northeast you think you can make out the thick
-
-stone form of a gatehouse.  A small stream bisects the meadow, running
-
-from north to southwest, where it disappears around the curve of a wooded
-
-hill.  A curtain of dark trees looms off to the west.
-
-"
+distance outside of Chiiron.  To the east, a tower rises above you, while
+in the distance to the northeast you think you can make out the thick
+stone form of a gatehouse.  A small stream bisects the meadow, running
+from north to southwest, where it disappears around the curve of a wooded
+hill.  A curtain of dark trees looms off to the west.
+"
 "[Zithuan] 40515
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -1375,21 +1121,14 @@ S
 #45041
 "Meadow Near Chiiron"
 "The walls of Chiiron stand off to the east, running north and south.  An
-
-open meadow stands adjacent to the fortifications, the sightlines kept
-
-clear by the villagers for matters of security.  To the west, the ground
-
-gradually rises and groups of trees thicken until the hillsides are
-
-covered in a dense green canopy.  You hear the gurgle of a small stream
-
-as it flows by you, off somewhere to the west or north of here.
-
-"
+open meadow stands adjacent to the fortifications, the sightlines kept
+clear by the villagers for matters of security.  To the west, the ground
+gradually rises and groups of trees thicken until the hillsides are
+covered in a dense green canopy.  You hear the gurgle of a small stream
+as it flows by you, off somewhere to the west or north of here.
+"
 "[Zithuan] 40516
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -1412,17 +1151,12 @@ S
 #45042
 "Meadow Near Chiiron"
 "You stand in a small meadow near the Chiiron town wall.  A high tower
-
-looms overhead to the east, the southwest tower of the town's
-
-fortifications.  To the west, a few bushes and spits of particularly
-
-rough ground rise into an ever-thickening wood.
-
-"
+looms overhead to the east, the southwest tower of the town's
+fortifications.  To the west, a few bushes and spits of particularly
+rough ground rise into an ever-thickening wood.
+"
 "[Zithuan] 40517
-
-"
+"
 301465616 0
 2 6 0
 D0
@@ -1443,17 +1177,12 @@ S
 #45043
 "Trampled Meadow"
 "Trampled grass and a few scattered rocks characterize this area.  To the
-
-northeast, an old worn stone tower looms over the area, and every so
-
-often you sense the heavy eyes of a Chiiron guard fall upon you from
-
-within the structure.
-
-"
+northeast, an old worn stone tower looms over the area, and every so
+often you sense the heavy eyes of a Chiiron guard fall upon you from
+within the structure.
+"
 "[Zithuan] 40520
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -1480,17 +1209,12 @@ S
 #45044
 "Meadow Near Chiiron"
 "The battlements of Chiiron's grand curtain wall stand here, their
-
-weathered stones damaged from age and past sieges.  Clusters of grass
-
-grow near the wall's base, the green carpet thickening steadily as the
-
-ground emerges from under the shadow of the wall.
-
-"
+weathered stones damaged from age and past sieges.  Clusters of grass
+grow near the wall's base, the green carpet thickening steadily as the
+ground emerges from under the shadow of the wall.
+"
 "[Zithuan] 40521
-
-"
+"
 301465616 0
 2 9 0
 D1
@@ -1514,17 +1238,12 @@ S
 #45045
 "Meadow Near Chiiron"
 "A few large stones have fallen from the battlements here, coming to a
-
-rest near the base of the wall amidst stands of tall meadow grass and a
-
-few tiny bushes.  The area is open, with only a few stands of meadow
-
-grass and weeds managing to catch your eye.
-
-"
+rest near the base of the wall amidst stands of tall meadow grass and a
+few tiny bushes.  The area is open, with only a few stands of meadow
+grass and weeds managing to catch your eye.
+"
 "[Zithuan] 40524
-
-"
+"
 301465616 0
 2 9 0
 D1
@@ -1548,17 +1267,12 @@ S
 #45046
 "Meadow South of Chiiron"
 "The stone wall of Chiiron borders this wide grassy meadow to the north,
-
-with the meadow spreading out over the areas to the east, south and west. 
-
-A few clovers and violets grow among the short grass blades, showing
-
-signs of recent grazing.
-
-"
+with the meadow spreading out over the areas to the east, south and west. 
+A few clovers and violets grow among the short grass blades, showing
+signs of recent grazing.
+"
 "[Zithuan] 40525
-
-"
+"
 301465616 0
 2 9 0
 D1
@@ -1579,17 +1293,12 @@ S
 #45047
 "Meadow - Grass, Clovers, and Violets"
 "This flat grassy meadow spreads out in all directions except north, where
-
-the stone wall of Chiiron rises about forty feet above the ground. 
-
-Clover and violets grow in patches in the grass, clipped short by the
-
-nibblings of rabbits and the grazings of deer.
-
-"
+the stone wall of Chiiron rises about forty feet above the ground. 
+Clover and violets grow in patches in the grass, clipped short by the
+nibblings of rabbits and the grazings of deer.
+"
 "[Zithuan] 40563
-
-"
+"
 301465616 0
 2 9 0
 D1
@@ -1611,17 +1320,12 @@ S
 #45048
 "Meadow - Grass and Weeds"
 "The soft earth at your feet supports patches of grass and weeds, all
-
-showing signs of recent nibblings by hungry rabbits and deer.  The south
-
-wall of Chiiron rises to the north, while the meadow spreads out in all
-
-other directions.
-
-"
+showing signs of recent nibblings by hungry rabbits and deer.  The south
+wall of Chiiron rises to the north, while the meadow spreads out in all
+other directions.
+"
 "[Zithuan] 40564
-
-"
+"
 301465616 0
 2 9 0
 D1
@@ -1644,17 +1348,12 @@ S
 #45049
 "Meadow - Grass and Clover"
 "Short, stubby grass grows in moist, rich soil near the shadow of the
-
-south wall of Chiiron.  The tall stone wall lines the meadow to the north. 
-
-The meadow expands to the west and south, while to the east a fairly worn
-
-path leads into a hilly area around Chiiron.
-
-"
+south wall of Chiiron.  The tall stone wall lines the meadow to the north. 
+The meadow expands to the west and south, while to the east a fairly worn
+path leads into a hilly area around Chiiron.
+"
 "[Zithuan] 40567
-
-"
+"
 301465616 0
 2 9 0
 D1
@@ -1675,17 +1374,12 @@ S
 #45050
 "Edge of the Hills"
 "Sparse grass dots the surface of this worn hill southeast of Chiiron, the
-
-city whose wall rises to the north.  A fairly worn path leads into a
-
-rich, grassy meadow to the west, and around the wall to the east, rising
-
-up the hill.
-
-"
+city whose wall rises to the north.  A fairly worn path leads into a
+rich, grassy meadow to the west, and around the wall to the east, rising
+up the hill.
+"
 "[Zithuan] 40568
-
-"
+"
 301465616 0
 2 9 0
 D1
@@ -1707,19 +1401,13 @@ S
 #45051
 "Foor of Dry Hill"
 "A faintly beaten path reaches the foot of a hill of dry soil, where rare
-
-is the grass which can find enough sustenance in the hard soil to sprout
-
-into the air.  To the northwest the southeast corner of Chiiron can be
-
-seen, its stone walls a reminder of the wilderness around the city which
-
-must always be safeguarded against.
-
-"
+is the grass which can find enough sustenance in the hard soil to sprout
+into the air.  To the northwest the southeast corner of Chiiron can be
+seen, its stone walls a reminder of the wilderness around the city which
+must always be safeguarded against.
+"
 "[Zithuan] 40569
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -1740,17 +1428,12 @@ S
 #45052
 "Dry Hill Path"
 "A worn dirt trail leads along this hill beside the east wall of Chiiron
-
-to the west.  A few odd blades of grass poke their way above the dry
-
-soil, but nothing like the rich meadows surrounding the other parts of
-
-Chiiron.
-
-"
+to the west.  A few odd blades of grass poke their way above the dry
+soil, but nothing like the rich meadows surrounding the other parts of
+Chiiron.
+"
 "[Zithuan] 40570
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -1768,19 +1451,13 @@ S
 #45053
 "Dry Hill Path"
 "This worn dirt trail leads north and south along the stone walls of
-
-Chiiron to the west.  A few sparse patches of grass grow here and there,
-
-but the hilly soil is much too dry to support any extensive vegetation. 
-
-From far to the north you can hear the clank-clank of the east gate of
-
-Chiiron.
-
-"
+Chiiron to the west.  A few sparse patches of grass grow here and there,
+but the hilly soil is much too dry to support any extensive vegetation. 
+From far to the north you can hear the clank-clank of the east gate of
+Chiiron.
+"
 "[Zithuan] 40571
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -1801,17 +1478,12 @@ S
 #45054
 "Dry Hill Path"
 "The dry, clumpy dirt of these hills only sports a small population of
-
-sparse grass and a few weeds.  A faint trail leads along the hilly
-
-terrain along the east wall of Chiiron which plants its stone frame to
-
-the west.
-
-"
+sparse grass and a few weeds.  A faint trail leads along the hilly
+terrain along the east wall of Chiiron which plants its stone frame to
+the west.
+"
 "[Zithuan] 40572
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -1830,17 +1502,12 @@ S
 #45055
 "Dry Hill Path"
 "This worn, hilly trail is dotted with sparse grass, but the dirt here is
-
-much too dry for most other vegetation.  To the north this faint trail
-
-intersects with a path just east of Chiiron's city gates, and the trail
-
-continues to the south along the east wall of Chiiron to the west.
-
-"
+much too dry for most other vegetation.  To the north this faint trail
+intersects with a path just east of Chiiron's city gates, and the trail
+continues to the south along the east wall of Chiiron to the west.
+"
 "[Zithuan] 40573
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -1858,21 +1525,14 @@ S
 #45056
 "East Gate of Chiiron"
 "Before you stands the east gate of Chiiron.  It is a simple gate house between
-
-two towers.  To the north is a staircase leading into one of the towers, and
-
-to the side of the gate itself, is a @elever@n which looks like pushing it or
-
-pulling it controls the portcullis.  Main Street runs west, and you can see
-
-shops down that way on either side.  East, the road leads out of Chiiron and
-
-into dangers unknown.
-
-"
+two towers.  To the north is a staircase leading into one of the towers, and
+to the side of the gate itself, is a @elever@n which looks like pushing it or
+pulling it controls the portcullis.  Main Street runs west, and you can see
+shops down that way on either side.  East, the road leads out of Chiiron and
+into dangers unknown.
+"
 "[Zithuan] 908
-
-"
+"
 301465617 0
 1 8 0
 D0
@@ -1893,15 +1553,11 @@ S
 #45057
 "Trader Road"
 "You are standing in the busiest part of Chiiron which means there are two
-
-people on the road.  There are doors to the north and south of you.  The
-
-cobbled road continues east to the eastern gate and west to the town square.
-
-"
+people on the road.  There are doors to the north and south of you.  The
+cobbled road continues east to the eastern gate and west to the town square.
+"
 "[Zithuan] 907
-
-"
+"
 301465617 0
 1 8 0
 D0
@@ -1926,27 +1582,17 @@ S
 #45058
 "Village Square"
 "This is the center of the village of Chiiron.  The marks of commerce are
-
-evident in the hoof scars and wheel ruts upon the road-stones.  Firmly seated
-
-in the intersection is a cylindrical stone @efountain@n, covered in a dark,
-
-mossy overgrowth.  Contained in the fountain is a foul-smelling, effervescent
-
-fluid, apparently a byproduct of the moss, sunlight and time.  On the side of
-
-the fountain is a small @esign@n.  A small, wooden chapel is directly south of
-
-here, where the occasional tolling of the town bell can be heard.  Garnie Lane
-
-starts to the north, with Trader Road crossing here east to west.
-
-"
+evident in the hoof scars and wheel ruts upon the road-stones.  Firmly seated
+in the intersection is a cylindrical stone @efountain@n, covered in a dark,
+mossy overgrowth.  Contained in the fountain is a foul-smelling, effervescent
+fluid, apparently a byproduct of the moss, sunlight and time.  On the side of
+the fountain is a small @esign@n.  A small, wooden chapel is directly south of
+here, where the occasional tolling of the town bell can be heard.  Garnie Lane
+starts to the north, with Trader Road crossing here east to west.
+"
 "[Zithuan] 903
-
-[Elfir] bench should be cracked, unsittable
-
-"
+[Elfir] bench should be cracked, unsittable
+"
 301465617 0
 1 9 0
 D0
@@ -1971,15 +1617,11 @@ S
 #45059
 "Trader Road"
 "You are standing on the main street of Chiiron.  To the north and the south
-
-lie what looks like shops.  The road continues west, to the east is what looks
-
-like the Town Square.
-
-"
+lie what looks like shops.  The road continues west, to the east is what looks
+like the Town Square.
+"
 "[Zithuan] 906
-
-"
+"
 301465625 0
 1 8 0
 D0
@@ -2004,17 +1646,12 @@ S
 #45060
 "Trader Road"
 "You are standing on a small road in the middle of the town of Chiiron. 
-
-To the north lies a @eleather shop@n and to the south a @eweapons shop@n.  The
-
-road continues to the east and west.  Off to the west you can see the
-
-town wall after another row of shops.  
-
-"
+To the north lies a @eleather shop@n and to the south a @eweapons shop@n.  The
+road continues to the east and west.  Off to the west you can see the
+town wall after another row of shops.  
+"
 "[Zithuan] 916
-
-"
+"
 301465617 0
 1 8 0
 D0
@@ -2039,17 +1676,12 @@ S
 #45061
 "Trader Road"
 "You are standing on the main street of Chiiron.  To the north is an
-
-@ealchemist's shop@n, while to the south you spy a boarded-up shop which
-
-seems to have been deserted for awhile.  The cobbled road continues east
-
-to the town square.
-
-"
+@ealchemist's shop@n, while to the south you spy a boarded-up shop which
+seems to have been deserted for awhile.  The cobbled road continues east
+to the town square.
+"
 "[Zithuan] 905
-
-"
+"
 301465625 0
 1 8 0
 D0
@@ -2074,19 +1706,13 @@ S
 #45062
 "West Gate of Chiiron"
 "Before you stands the west gate of Chiiron, a simple gate house between
-
-two towers.  To the side of the gate is a @elever@n which looks like it
-
-controls the gate.  You might want to push it or pull it.  Main street
-
-runs east, and shops line the Main street runs east, and shops line the
-
-street on either side.
-
-"
+two towers.  To the side of the gate is a @elever@n which looks like it
+controls the gate.  You might want to push it or pull it.  Main street
+runs east, and shops line the Main street runs east, and shops line the
+street on either side.
+"
 "[Zithuan] 937
-
-"
+"
 301465617 0
 1 9 0
 D1
@@ -2103,15 +1729,11 @@ S
 #45063
 "Tower Room"
 "You are inside a small tower.  To the south is a heavy door which is closed in
-
-times of attack.  The tower is rather cramped but has several cots used by the
-
-watchmen.  An overwhelming sense of peace and tranquility fills the room.
-
-"
+times of attack.  The tower is rather cramped but has several cots used by the
+watchmen.  An overwhelming sense of peace and tranquility fills the room.
+"
 "[Zithuan] 934
-
-"
+"
 301465631 0
 0 6 0
 D2
@@ -2124,15 +1746,11 @@ S
 #45064
 "The Trading Post"
 "You are standing in a shop with a little bit of everything.  There is almost
-
-anything you could ever want here.  It is designed to be a one stop shopping
-
-place.
-
-"
+anything you could ever want here.  It is designed to be a one stop shopping
+place.
+"
 "[Zithuan] 909
-
-"
+"
 301465623 0
 0 5 0
 D2
@@ -2145,15 +1763,11 @@ S
 #45065
 "Fur Trader's Shop"
 "Never before have you seen so many dead animals.  Pelts and furs line the
-
-shelves, counters and even the floor.  Even though the owner has more pelts
-
-than he could ever want, the owner still looks eager to buy more.
-
-"
+shelves, counters and even the floor.  Even though the owner has more pelts
+than he could ever want, the owner still looks eager to buy more.
+"
 "[Zithuan] 910
-
-"
+"
 301465623 0
 0 5 0
 D0
@@ -2166,21 +1780,14 @@ S
 #45066
 "Outside of Temple to Taranth"
 "This is a small area of grass outside the chapel which is to the south.  The
-
-chapel is rather old and could do with being painted.  There is a stone slab
-
-here which is obviously used for sacrifices.  The trampled grass leads you to
-
-believe that this is a popular place of worship.  To the north lies the town
-
-square.  Several large guards stand along the walls watching for people who
-
-are wanted.
-
-"
+chapel is rather old and could do with being painted.  There is a stone slab
+here which is obviously used for sacrifices.  The trampled grass leads you to
+believe that this is a popular place of worship.  To the north lies the town
+square.  Several large guards stand along the walls watching for people who
+are wanted.
+"
 "[Zithuan] 904
-
-"
+"
 301465625 0
 1 8 0
 D0
@@ -2197,21 +1804,14 @@ S
 #45067
 "Temple of Taranth"
 "As you look around the temple, you notice how bare and empty it is.  Taranth
-
-obviously does not demand sacrifices of wealth.  To the south you see a statue
-
-of Taranth with a small number of flowers strewn at the base.  In the south
-
-west corner is a small spiral staircase which winds upwards to the bell
-
-tower.  In the opposite corner is a large @ecauldron@n sitting on some hot
-
-coals with some type of soup which smells delicious.
-
-"
+obviously does not demand sacrifices of wealth.  To the south you see a statue
+of Taranth with a small number of flowers strewn at the base.  In the south
+west corner is a small spiral staircase which winds upwards to the bell
+tower.  In the opposite corner is a large @ecauldron@n sitting on some hot
+coals with some type of soup which smells delicious.
+"
 "[Zithuan] 927
-
-"
+"
 301465631 0
 0 6 0
 D0
@@ -2228,19 +1828,13 @@ S
 #45068
 "Bell Tower"
 "This is a small tower above the temple.  More a loft than a tower.  Inside is
-
-a large bronze @bbell@n which is rung to announce special occasions.  Out a
-
-small window to the north you can see into the town square and down Garnie
-
-Lane.  A small trough and hitching post lie by the west wall, providing a spot
-
-for you to safely leave your pets.
-
-"
+a large bronze @bbell@n which is rung to announce special occasions.  Out a
+small window to the north you can see into the town square and down Garnie
+Lane.  A small trough and hitching post lie by the west wall, providing a spot
+for you to safely leave your pets.
+"
 "[Zithuan] 931
-
-"
+"
 301465619 0
 0 6 0
 D5
@@ -2253,19 +1847,13 @@ S
 #45069
 "Garnie Lane"
 "This small lane was named after a once great warrior that was born in
-
-this town.  He struggled against all odds and to his tribute this street
-
-was named after him.  To the south lies the Town Square.  The lane
-
-continues off towards the north where you can see the massive northern
-
-gates rising up over the city walls.
-
-"
+this town.  He struggled against all odds and to his tribute this street
+was named after him.  To the south lies the Town Square.  The lane
+continues off towards the north where you can see the massive northern
+gates rising up over the city walls.
+"
 "[Zithuan] 902
-
-"
+"
 301465617 0
 1 8 0
 D0
@@ -2282,23 +1870,15 @@ S
 #45070
 "Garnie Lane"
 "Off to the north you see the town wall with a small gate inset in it. 
-
-This allows access to the hills and mountains beyond.  You have heard
-
-rumors of dragons and goblins in those mountains, but the gate does not
-
-seem particularly well guarded, so whatever lives there must leave the
-
-town alone.  To the west lies the @ebank of Chiiron@n and to the east lies a
-
-@esmall magic shop@n.  To the south you see Garnie lane and further south you
-
-see the town square.
-
-"
+This allows access to the hills and mountains beyond.  You have heard
+rumors of dragons and goblins in those mountains, but the gate does not
+seem particularly well guarded, so whatever lives there must leave the
+town alone.  To the west lies the @ebank of Chiiron@n and to the east lies a
+@esmall magic shop@n.  To the south you see Garnie lane and further south you
+see the town square.
+"
 "[Zithuan] 901
-
-"
+"
 301465617 0
 1 8 0
 D0
@@ -2323,21 +1903,14 @@ S
 #45071
 "North Gate of Chiiron"
 "You stand at the northern entrance to Chiiron; a simple gate inset in the town
-
-wall.  The town wall is made of stone blocks of granite, painfully fitted
-
-together, scared in one area from the acid breath of a long dead dragon.  The
-
-scar and the smoke rising from the town bring feelings of security and comfort
-
-to returning adventurers.  By the side of the gate is a large @Ylever@n. 
-
-Perhaps, pushing or pulling it will open and close the gate.
-
-"
+wall.  The town wall is made of stone blocks of granite, painfully fitted
+together, scared in one area from the acid breath of a long dead dragon.  The
+scar and the smoke rising from the town bring feelings of security and comfort
+to returning adventurers.  By the side of the gate is a large @Ylever@n. 
+Perhaps, pushing or pulling it will open and close the gate.
+"
 "[Zithuan] 935
-
-"
+"
 301465625 0
 1 6 0
 D0
@@ -2354,8 +1927,7 @@ S
 #45072
 "The Chiiron Leather Shop"
 "Under Construction.
-
-"
+"
 ""
 301465623 0
 0 6 0
@@ -2370,25 +1942,16 @@ S
 #45073
 "Chiiron Savings and Loan"
 "This is the fiduciary center of the bustling town of Chiiron.  Merchants
-
-and townsfolk alike entrust their livelihoods to the impenetrable vaults
-
-herein.  The walls here are a dark, rich wood from the Alternifolia
-
-Melealuca trees of the High Mountains.  Woven rugs adorn a cold, solid
-
-marble floor.  Great pillars support the high ceiling above, on which an
-
-intricate mosaic of nonsectarian icons can be found.  Several tellers,
-
-each skilled in the many languages of the area, await your transaction
-
-from behind brass grating.
-
-"
+and townsfolk alike entrust their livelihoods to the impenetrable vaults
+herein.  The walls here are a dark, rich wood from the Alternifolia
+Melealuca trees of the High Mountains.  Woven rugs adorn a cold, solid
+marble floor.  Great pillars support the high ceiling above, on which an
+intricate mosaic of nonsectarian icons can be found.  Several tellers,
+each skilled in the many languages of the area, await your transaction
+from behind brass grating.
+"
 "[Zithuan] 924
-
-"
+"
 301465623 0
 0 5 0
 D1
@@ -2401,25 +1964,16 @@ S
 #45074
 "The Chiiron Magic Shoppe"
 "You are standing in a small room.  There is a small counter in front of
-
-you.  Behind it are shelves lined with small bottles and bowls.  There
-
-are small tables lining the other walls and they contain various small
-
-trinkets, herbs and potions.  There is a small chest in one corner, the
-
-top is open and it is filled with brown parchment rolled up and tied with
-
-string.  In the opposite corner is a small end table, on it is a small,
-
-clear @bbox@n filled with dust.  Above the table is a @bsign@n suspended in mid
-
-air.  
-
-"
+you.  Behind it are shelves lined with small bottles and bowls.  There
+are small tables lining the other walls and they contain various small
+trinkets, herbs and potions.  There is a small chest in one corner, the
+top is open and it is filled with brown parchment rolled up and tied with
+string.  In the opposite corner is a small end table, on it is a small,
+clear @bbox@n filled with dust.  Above the table is a @bsign@n suspended in mid
+air.  
+"
 "[Zithuan] 914
-
-"
+"
 301465623 0
 0 5 0
 D3
@@ -2436,15 +1990,11 @@ S
 #45075
 "A Laboratory"
 "You are standing in a long room filled with bookcases.  The bookcases
-
-are filled with many books dedicated to the field of magic.  Small desks
-
-and chairs await the visiting scholar.
-
-"
+are filled with many books dedicated to the field of magic.  Small desks
+and chairs await the visiting scholar.
+"
 "[Zithuan] 921
-
-"
+"
 301465629 0
 0 5 0
 D5
@@ -2457,17 +2007,12 @@ S
 #45076
 "The Grocery Shop"
 "You are in the center of a neatly managed shop that caters to the more
-
-practical side of the adventure.  Bags and rations line the shelves along
-
-the wall.  A heavy cabinet has been pushed against one wall in an attempt
-
-to cover a large crevice in the floor.
-
-"
+practical side of the adventure.  Bags and rations line the shelves along
+the wall.  A heavy cabinet has been pushed against one wall in an attempt
+to cover a large crevice in the floor.
+"
 "[Zithuan] 911
-
-"
+"
 301465623 0
 0 6 0
 D2
@@ -2480,19 +2025,13 @@ S
 #45077
 "The Fighting Ferret"
 "Every town needs a place to unwind after a long day at work.  This bar
-
-caters to those adventurers that go out and hunt for a living with
-
-stuffed animal heads lined above the wall.  There is a joyous mood in the
-
-air, since the forest has treated them well.  On the right side is a
-
-stair which lead upstairs to a sparring center.
-
-"
+caters to those adventurers that go out and hunt for a living with
+stuffed animal heads lined above the wall.  There is a joyous mood in the
+air, since the forest has treated them well.  On the right side is a
+stair which lead upstairs to a sparring center.
+"
 "[Zithuan] 912
-
-"
+"
 301465631 0
 0 6 0
 D0
@@ -2513,15 +2052,11 @@ S
 #45078
 "The Chiiron Weapon Shop"
 "This place is not stocked with every weapon known, but it has a good 
-
-selection at reasonable prices. This shop has very few decorations
-
-or pleasantries. 
-
-"
+selection at reasonable prices. This shop has very few decorations
+or pleasantries. 
+"
 "[Zithuan] 918
-
-"
+"
 301465623 0
 0 5 0
 D0
@@ -2534,17 +2069,12 @@ S
 #45079
 "The Chiiron Leather Shop"
 "This place is filled with a variety of different leather goods at
-
-different stages of completion.  The craftmanship is evident by looking
-
-at the quality of the merchandise.  On the back wall of the shop is a
-
-small ladder which obviously leads to a loft above the shop.  
-
-"
+different stages of completion.  The craftmanship is evident by looking
+at the quality of the merchandise.  On the back wall of the shop is a
+small ladder which obviously leads to a loft above the shop.  
+"
 "[Zithuan] 917
-
-"
+"
 301469719 0
 0 5 0
 D2
@@ -2561,19 +2091,13 @@ S
 #45080
 "The Chiiron Alchemist Shop"
 "You see various containers filled with strange liquids, powders and other
-
-things you'd rather not think about.  Nothing is labeled, and things seem
-
-to be placed randomly about the room.  You'd better ask for help if you
-
-plan to actually find what you are looking for.  On the north wall is a
-
-bookshelf holding various tomes of strange recipes.  
-
-"
+things you'd rather not think about.  Nothing is labeled, and things seem
+to be placed randomly about the room.  You'd better ask for help if you
+plan to actually find what you are looking for.  On the north wall is a
+bookshelf holding various tomes of strange recipes.  
+"
 "[Zithuan] 923
-
-"
+"
 301465623 0
 0 5 0
 D2
@@ -2586,15 +2110,11 @@ S
 #45081
 "Deserted Shop"
 "The shop looks deserted except there isn't much dust on the floor as if a
-
-reasonable amount of traffic goes through here.  There is no furniture
-
-and only a small amount of debris lying around.
-
-"
+reasonable amount of traffic goes through here.  There is no furniture
+and only a small amount of debris lying around.
+"
 "[Zithuan] 930
-
-"
+"
 301465629 0
 0 5 0
 D0
@@ -2611,15 +2131,11 @@ S
 #45082
 "The Locksmith's"
 "This is a rather small basement which has been converted into a shop of
-
-sorts.  On the north wall is a large table with a blanket covering it, on
-
-top of which are an assortment of strange items.  
-
-"
+sorts.  On the north wall is a large table with a blanket covering it, on
+top of which are an assortment of strange items.  
+"
 "[Zithuan] 932
-
-"
+"
 301465631 0
 0 5 0
 D4
@@ -2632,23 +2148,15 @@ S
 #45083
 "The Backroom"
 "Several wooden stalls line the worn wooden walls of this room, and a few
-
-round tables are arranged in an uneven pattern about the middle of the
-
-area.  A thin veil of smoke hovers in the air here, for this is where
-
-locals come to discuss recent events, and strangers to exchange coin and
-
-news of the dark and sinister in low, hushed whispers.
-
-  
-
-A small @bsign@n adorns the wall beside a dartboard.
-
-"
+round tables are arranged in an uneven pattern about the middle of the
+area.  A thin veil of smoke hovers in the air here, for this is where
+locals come to discuss recent events, and strangers to exchange coin and
+news of the dark and sinister in low, hushed whispers.
+  
+A small @bsign@n adorns the wall beside a dartboard.
+"
 "[Zithuan] 981
-
-"
+"
 301465617 0
 0 5 0
 D0
@@ -2661,15 +2169,11 @@ S
 #45084
 "The Swordsman's"
 "You enter the room and see several warrior-like people practicing their
-
-skills.  There are several practice dummies, and mock weapons, to protect
-
-those choosing to spar.
-
-"
+skills.  There are several practice dummies, and mock weapons, to protect
+those choosing to spar.
+"
 "[Zithuan] 928
-
-"
+"
 301465625 0
 0 7 0
 D5
@@ -2682,17 +2186,12 @@ S
 #45085
 "Edge of a Wood"
 "You stand in a lightly wooded area.  To the north and west, the trees
-
-thicken substantially, barring progress in those directions.  A meadow of
-
-high grass lies off to the south, while an open field with a number of
-
-bushes scattered throughout it lies to the east.
-
-"
+thicken substantially, barring progress in those directions.  A meadow of
+high grass lies off to the south, while an open field with a number of
+bushes scattered throughout it lies to the east.
+"
 "[Zithuan] 40513
-
-"
+"
 301465624 0
 2 9 0
 D1
@@ -2709,21 +2208,14 @@ S
 #45086
 "Near a Forest"
 "You stand in a meadow, near a forest.  The grass here is almost
-
-waist-high, and the ground is slightly damp; you can see many animal
-
-tracks criss-crossing the ground beneath your feet.  To the north, a
-
-steep cliff rises above your head, preventing passage.  Far to the south,
-
-you see the town wall of Chiiron, while to the east you spy a more rocky
-
-area.
-
-"
+waist-high, and the ground is slightly damp; you can see many animal
+tracks criss-crossing the ground beneath your feet.  To the north, a
+steep cliff rises above your head, preventing passage.  Far to the south,
+you see the town wall of Chiiron, while to the east you spy a more rocky
+area.
+"
 "[Zithuan] 40508
-
-"
+"
 301465624 0
 2 9 0
 D1
@@ -2744,21 +2236,14 @@ S
 #45087
 "Southwest of a Pool"
 "The dirt path you are on leads north and south.  To the south you see the
-
-walls of Chiiron.  Off to the west side of the path is a large grassy
-
-meadow, that eventually gives way to forest.  A little ways to the north
-
-a thundering waterfall roars down the face of a cliff.  Just to your
-
-northeast is a large pond whose edges come right up to the pathway here,
-
-making the ground a little damp.
-
-"
+walls of Chiiron.  Off to the west side of the path is a large grassy
+meadow, that eventually gives way to forest.  A little ways to the north
+a thundering waterfall roars down the face of a cliff.  Just to your
+northeast is a large pond whose edges come right up to the pathway here,
+making the ground a little damp.
+"
 "[Zithuan] 25001
-
-"
+"
 301465616 0
 4 8 0
 D0
@@ -2783,23 +2268,15 @@ S
 #45088
 "South of a Pool"
 "You stand atop a small hill just north of Chiiron.  A large waterfall
-
-thunders into a small pond at the base of the hill to your north.  The
-
-ground here is grassy, and provides a good view of the gently curving
-
-cliff side and waterfall.  A path leads down the hill to the south.  To
-
-your east a deep gully cut by a small stream prevents movement, but you
-
-can see a bridge in the distance that spans the gap.  Far to the west,
-
-after a small meadow, you can see the forest's edge.
-
-"
+thunders into a small pond at the base of the hill to your north.  The
+ground here is grassy, and provides a good view of the gently curving
+cliff side and waterfall.  A path leads down the hill to the south.  To
+your east a deep gully cut by a small stream prevents movement, but you
+can see a bridge in the distance that spans the gap.  Far to the west,
+after a small meadow, you can see the forest's edge.
+"
 "[Zithuan] 25009
-
-"
+"
 301465616 0
 4 6 0
 D0
@@ -2820,21 +2297,14 @@ S
 #45089
 "Small Wooden Bridge"
 "You are on a small wooden bridge that leads roughly north and south. 
-
-Below you, a small stream flows eastward, fed from the pond to your
-
-northwest.  After the stream cuts under the bridge it turns sharply and
-
-heads southeast.  To the north is a huge curved cliff-face, supporting a
-
-large waterfall and a variety of vegetation.  Off a good distance to the
-
-south you see the high stone walls of Chiiron.
-
-"
+Below you, a small stream flows eastward, fed from the pond to your
+northwest.  After the stream cuts under the bridge it turns sharply and
+heads southeast.  To the north is a huge curved cliff-face, supporting a
+large waterfall and a variety of vegetation.  Off a good distance to the
+south you see the high stone walls of Chiiron.
+"
 "[Zithuan] 25017
-
-"
+"
 301465624 0
 4 5 0
 D0
@@ -2855,23 +2325,15 @@ S
 #45090
 "West of a Pool"
 "A high granite cliff rears up to your west, curving around in a
-
-semicircle far to the northeast.  Sparse vegetation clings to the wall,
-
-growing in small clefts in the weather-beaten stone.  A number of granite
-
-boulders have fallen down the cliff over the ages, becoming buried in the
-
-soggy dirt.  To the south a small path cuts through a grassy area, while
-
-to the north you can follow along the cliff face towards a waterfall.  To
-
-your immediate east sits a small pond in a depression in the ground.
-
-"
+semicircle far to the northeast.  Sparse vegetation clings to the wall,
+growing in small clefts in the weather-beaten stone.  A number of granite
+boulders have fallen down the cliff over the ages, becoming buried in the
+soggy dirt.  To the south a small path cuts through a grassy area, while
+to the north you can follow along the cliff face towards a waterfall.  To
+your immediate east sits a small pond in a depression in the ground.
+"
 "[Zithuan] 25002
-
-"
+"
 301465616 0
 4 8 0
 D0
@@ -2892,19 +2354,13 @@ S
 #45091
 "In a Pool"
 "The small pond is only about two feet deep, and is intensely cold.  To
-
-the north, a large waterfall cascades down the grey-stone cliffside,
-
-filling the pond with its waters.  A small stream empties out of the pond
-
-to the southeast, cutting under a small bridge you can see that way. 
-
-Tall reeds grow around the edges of the pond, and some bamboo.
-
-"
+the north, a large waterfall cascades down the grey-stone cliffside,
+filling the pond with its waters.  A small stream empties out of the pond
+to the southeast, cutting under a small bridge you can see that way. 
+Tall reeds grow around the edges of the pond, and some bamboo.
+"
 "[Zithuan] 25010
-
-"
+"
 301465624 0
 13 6 0
 D0
@@ -2929,23 +2385,15 @@ S
 #45092
 "East of a Pool"
 "A large pinnacle of stone juts out of the cliff face to the east.  Small
-
-grasses and plants try to eke out a living on the craggy stone.  Small
-
-scrubby plants dot the area, but otherwise there is little greenery in
-
-this dusty and rock-strewn area.  To your west, a reed-filled pond sits
-
-in a small depression, fed by a large waterfall that cascades down the
-
-cliff to your northwest.  To the south a small wooden bridge passes over
-
-a stream that leaves the pond.
-
-"
+grasses and plants try to eke out a living on the craggy stone.  Small
+scrubby plants dot the area, but otherwise there is little greenery in
+this dusty and rock-strewn area.  To your west, a reed-filled pond sits
+in a small depression, fed by a large waterfall that cascades down the
+cliff to your northwest.  To the south a small wooden bridge passes over
+a stream that leaves the pond.
+"
 "[Zithuan] 25007
-
-"
+"
 301465616 0
 4 6 0
 D0
@@ -2967,21 +2415,14 @@ S
 #45093
 "Under a Small Bridge"
 "You stand in the shallow waters of a gurgling stream, its waters gently
-
-lapping about your feet.  A wooden bridge vaults overhead, and large
-
-boulders and stones are littered about in the shallow gully.  The shallow
-
-water of the stream meanders around the boulders, creating small eddies
-
-and whirls of water.  You can climb up to the bridge easily, but the
-
-other directions look impassable.
-
-"
+lapping about your feet.  A wooden bridge vaults overhead, and large
+boulders and stones are littered about in the shallow gully.  The shallow
+water of the stream meanders around the boulders, creating small eddies
+and whirls of water.  You can climb up to the bridge easily, but the
+other directions look impassable.
+"
 "[Zithuan] 25025
-
-"
+"
 301465616 0
 13 5 0
 D4
@@ -2994,19 +2435,13 @@ S
 #45094
 "West of the Waterfall"
 "The cliff sweeps around from the west, joining a waterfall just east of
-
-here.  Near the waterfall, and all along the clefts of the cliff, lush
-
-plants grow and thrive.  To the southeast you see a large pond filled
-
-with reeds.  To the east you must cross a small stream that heads
-
-southwest into a pool.
-
-"
+here.  Near the waterfall, and all along the clefts of the cliff, lush
+plants grow and thrive.  To the southeast you see a large pond filled
+with reeds.  To the east you must cross a small stream that heads
+southwest into a pool.
+"
 "[Zithuan] 25003
-
-"
+"
 301465616 0
 4 8 0
 D1
@@ -3026,21 +2461,14 @@ S
 #45095
 "East of the Waterfall"
 "A steep cliff face dotted with thriving greenery blocks movement to the
-
-north.  Thundering down the cliff is a great waterfall, its waters
-
-emptying into a large pond that is just to the south.  To the east and
-
-west the face of the cliff continues, curving gently in a semicircle. 
-
-The water from the waterfall heads south into the pond.  To move west you
-
-must cross the small stream.
-
-"
+north.  Thundering down the cliff is a great waterfall, its waters
+emptying into a large pond that is just to the south.  To the east and
+west the face of the cliff continues, curving gently in a semicircle. 
+The water from the waterfall heads south into the pond.  To move west you
+must cross the small stream.
+"
 "[Zithuan] 25004
-
-"
+"
 301465624 0
 4 6 0
 D1
@@ -3061,21 +2489,14 @@ S
 #45096
 "Northeast of a Pool"
 "The cliff sweeps around from the east to meet the thundering waterfall. 
-
-The ground and cliff are damp with mist, the bare rocks slick with the
-
-moisture.  Very little vegetation manages to grow here despite the damp
-
-conditions; only sparse grasses cling to the cliff face.  There are
-
-several large, craggy boulders here.  To the south you see a small bridge
-
-in the distance.
-
-"
+The ground and cliff are damp with mist, the bare rocks slick with the
+moisture.  Very little vegetation manages to grow here despite the damp
+conditions; only sparse grasses cling to the cliff face.  There are
+several large, craggy boulders here.  To the south you see a small bridge
+in the distance.
+"
 "[Zithuan] 25006
-
-"
+"
 301465616 0
 4 6 0
 D2
@@ -3095,19 +2516,13 @@ S
 #45097
 "Edge of the Woods"
 "A few large boulders mix with several stands of thick trees in this
-
-transitional area between wood and meadow.  To the west, the forest
-
-becomes increasingly thick, while far off to the east you spy the wall
-
-which protects Chiiron from the dangers of the woods.  A small stream
-
-flows quietly by, down a slope from the north, leading southeast.
-
-"
+transitional area between wood and meadow.  To the west, the forest
+becomes increasingly thick, while far off to the east you spy the wall
+which protects Chiiron from the dangers of the woods.  A small stream
+flows quietly by, down a slope from the north, leading southeast.
+"
 "[Zithuan] 40514
-
-"
+"
 301465616 0
 2 9 0
 D1
@@ -3126,17 +2541,12 @@ S
 #45098
 "Edge of the Woods"
 "A few large boulders mix with several stands of thick trees in this
-
-transitional area between wood and meadow.  To the west, the forest
-
-becomes increasingly thick, while far off to the east you spy the wall
-
-which protects Chiiron from the dangers of the woods.
-
-"
+transitional area between wood and meadow.  To the west, the forest
+becomes increasingly thick, while far off to the east you spy the wall
+which protects Chiiron from the dangers of the woods.
+"
 "[Zithuan] 40512
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -3157,17 +2567,12 @@ S
 #45099
 "Edge of the Woods"
 "A few young trees mix with thick stands of brush here, the cleared space to
-
-the east giving way to the thick woods which dominate the area to the north
-
-and west.  Thick grass grows along the edge of the wood, nibbled short by the
-
-small animals of the meadow.
-
-"
+the east giving way to the thick woods which dominate the area to the north
+and west.  Thick grass grows along the edge of the wood, nibbled short by the
+small animals of the meadow.
+"
 "[Zithuan] 979
-
-"
+"
 301465624 0
 3 9 0
 D0
@@ -3190,19 +2595,13 @@ S
 #45100
 "Atop A Knobby Hill"
 "You are on a small hill that rises barely above the trees, allowing you
-
-to catch a glimpse of the Chiiron sky.  A small hole leads down into the
-
-hill itself while a path meanders down to a shaded brook to the east.  A
-
-seldom-traveled trail, barely visible, disappears into the thick forest
-
-to the west.
-
-"
+to catch a glimpse of the Chiiron sky.  A small hole leads down into the
+hill itself while a path meanders down to a shaded brook to the east.  A
+seldom-traveled trail, barely visible, disappears into the thick forest
+to the west.
+"
 "[Zithuan] 940
-
-"
+"
 301465624 0
 4 9 0
 D0
@@ -3231,21 +2630,14 @@ S
 #45101
 "A Dense Forest"
 "The trees are old and their trunks thick and weathered here.  Little
-
-light makes its way through the thick forest canopy, and while the
-
-surrounding area is quiet and still, you sense a great deal of life all
-
-around you.  You spy a faint trail winding its way through the trees off
-
-to the north and west.  A small but well-wooded hill rises above you to
-
-the south.
-
-"
+light makes its way through the thick forest canopy, and while the
+surrounding area is quiet and still, you sense a great deal of life all
+around you.  You spy a faint trail winding its way through the trees off
+to the north and west.  A small but well-wooded hill rises above you to
+the south.
+"
 "[Zithuan] 980
-
-"
+"
 301465616 0
 3 7 0
 D0
@@ -3272,17 +2664,12 @@ S
 #45102
 "Faint Path Through a Dense Forest"
 "Mighty trees rise high overhead and a dense canopy of leaves blocks sight
-
-of the sky above.  The trees to the west are even tighter, but there is a
-
-faint path leading in that direction.  Thick underbrush nearly blocks
-
-passage north toward the edge of the forest.
-
-"
+of the sky above.  The trees to the west are even tighter, but there is a
+faint path leading in that direction.  Thick underbrush nearly blocks
+passage north toward the edge of the forest.
+"
 "[Zithuan] 943
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -3309,19 +2696,13 @@ S
 #45103
 "Edge of a Dense Forest"
 "You are standing at the edge of a thick forest.  A faint trail leads up a
-
-hill to the east while dense underbrush makes passage south into the
-
-forest barely passable.  The forest floor does seem to clear out in the
-
-distance, but you cannot see too far into the trees as they are so
-
-densely packed.
-
-"
+hill to the east while dense underbrush makes passage south into the
+forest barely passable.  The forest floor does seem to clear out in the
+distance, but you cannot see too far into the trees as they are so
+densely packed.
+"
 "[Zithuan] 942
-
-"
+"
 301465616 0
 3 9 0
 D1
@@ -3340,17 +2721,12 @@ S
 #45104
 "Inside a Gopher Hole"
 "You are in a very small hole, large enough barely to stand in.  It looks
-
-like this hole was dug here by man, but then abandoned, as bits of fur
-
-announce that some forest denizen has taken up home here.
-
-"
+like this hole was dug here by man, but then abandoned, as bits of fur
+announce that some forest denizen has taken up home here.
+"
 "[Zithuan] 941
-
-[Delkan] needs a better gopher, this ones not fast enough
-
-"
+[Delkan] needs a better gopher, this ones not fast enough
+"
 301465616 0
 0 4 0
 D4
@@ -3364,19 +2740,13 @@ S
 #45105
 "Faint Path Through a Dense Forest"
 "The trees are very tightly packed here, and the canopy of leaves above
-
-remains unbroken.  However, you see that the trees seem to disappear,
-
-forming a clearing to the west, a stark contrast to the life and health
-
-of the forest around you.  A narrow path leads toward the clearing, and
-
-back into the forest to the east.
-
-"
+remains unbroken.  However, you see that the trees seem to disappear,
+forming a clearing to the west, a stark contrast to the life and health
+of the forest around you.  A narrow path leads toward the clearing, and
+back into the forest to the east.
+"
 "[Zithuan] 944
-
-"
+"
 301465616 0
 3 9 0
 D1
@@ -3393,17 +2763,12 @@ S
 #45106
 "A Small Clearing"
 "The forest clears out, as if the trees purposely avoid this area for some
-
-strange reason.  A pair of mighty oaks mark somewhat of a doorway into a
-
-valley to the north and a faint trail leads west toward the sound of a
-
-rushing river, and to the east a small trail leads into a dense forest.
-
-"
+strange reason.  A pair of mighty oaks mark somewhat of a doorway into a
+valley to the north and a faint trail leads west toward the sound of a
+rushing river, and to the east a small trail leads into a dense forest.
+"
 "[Zithuan] 945
-
-"
+"
 301465616 0
 3 6 0
 D1
@@ -3420,15 +2785,11 @@ S
 #45107
 "Before a Raging River"
 "A river rages savagely to the west, much too violent to cross.  The water
-
-rushes and surges about, flowing fast enough to create whitecaps across
-
-its surface.  A faint trail leads east into the forest.
-
-"
+rushes and surges about, flowing fast enough to create whitecaps across
+its surface.  A faint trail leads east into the forest.
+"
 "[Zithuan] 946
-
-"
+"
 301465616 0
 2 9 0
 D1
@@ -3441,21 +2802,14 @@ S
 #45108
 "Dense Woods"
 "The uneven ground here is covered in short grass and moss, while overhead
-
-a unformly green canopy shields the forest floor from the sky.  Spindly
-
-branches reach out like fingers to the sky, blocking out the light and
-
-wind, keeping the air here cool and damp.  A small trickling stream flows
-
-from northeast to southwest, between aged roots and rocks, drifting ever
-
-deeper into the woods.
-
-"
+a unformly green canopy shields the forest floor from the sky.  Spindly
+branches reach out like fingers to the sky, blocking out the light and
+wind, keeping the air here cool and damp.  A small trickling stream flows
+from northeast to southwest, between aged roots and rocks, drifting ever
+deeper into the woods.
+"
 "[Zithuan] 40523
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -3477,17 +2831,12 @@ S
 #45109
 "Dense Woods"
 "You stand on a small, wooded hillside.  The ground here is rough but
-
-grassy, with a number of steep rises and dips making the footing
-
-treacherous.  To the north, you spy another hill in the distance while a
-
-small stream flows silently through the trees.
-
-"
+grassy, with a number of steep rises and dips making the footing
+treacherous.  To the north, you spy another hill in the distance while a
+small stream flows silently through the trees.
+"
 "[Zithuan] 40518
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -3513,19 +2862,13 @@ S
 #45110
 "Dense Woods"
 "The trees seem to thicken here, their aged trunks nearly brushing up
-
-against one another, their limbs and leaves intertwined with one another
-
-overhead in a dense green mass.  To the west and south, the trees thicken
-
-and together with brush from an impenetrable tangle.  You hear the soft
-
-gurgle of a brook somewhere in the distance, screened by the trees.
-
-"
+against one another, their limbs and leaves intertwined with one another
+overhead in a dense green mass.  To the west and south, the trees thicken
+and together with brush from an impenetrable tangle.  You hear the soft
+gurgle of a brook somewhere in the distance, screened by the trees.
+"
 "[Zithuan] 40530
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -3547,21 +2890,14 @@ S
 #45111
 "Wooded Hill"
 "A few large rocks mark this otherwise nondescript wooded hilltop, their
-
-slate gray forms embedded in the earth by some ancient terrestrial
-
-upheaval.  To the north, the ground continues to be hilly, while to the
-
-west the woods grow progressively more dense.  Down a slight slope to the
-
-east is an open meadow, and to the east of that meadow you spy the walls
-
-of Chiiron, looming in the distance.
-
-"
+slate gray forms embedded in the earth by some ancient terrestrial
+upheaval.  To the north, the ground continues to be hilly, while to the
+west the woods grow progressively more dense.  Down a slight slope to the
+east is an open meadow, and to the east of that meadow you spy the walls
+of Chiiron, looming in the distance.
+"
 "[Zithuan] 40519
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -3586,17 +2922,12 @@ S
 #45112
 "Dark Woods"
 "The forest here is dark, with thick branches covering the sky and casting
-
-the ground deep in shadow.  In all directions, the forest continues,
-
-thinning out to the east, where you see the beginnings of a meadow and,
-
-off in the distance, the walls of Chiiron.
-
-"
+the ground deep in shadow.  In all directions, the forest continues,
+thinning out to the east, where you see the beginnings of a meadow and,
+off in the distance, the walls of Chiiron.
+"
 "[Zithuan] 40594
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -3617,17 +2948,12 @@ S
 #45113
 "Light Woods"
 "A few small bushes and young trees grow here, in this transitional area
-
-between meadow and forest proper.  You sense that if left unchecked, the
-
-forest will soon take over this area and continue its growth toward the
-
-worn walls of Chiiron.
-
-"
+between meadow and forest proper.  You sense that if left unchecked, the
+forest will soon take over this area and continue its growth toward the
+worn walls of Chiiron.
+"
 "[Zithuan] 40522
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -3654,21 +2980,14 @@ S
 #45114
 "Patchy Meadow"
 "This patchy meadow lies between the stone walls of Chiiron and their
-
-outlying hills and the more fertile land to the city's south and west. 
-
-To the south a thick treeline rises into the sky which could probably be
-
-crossed into, but the fight through the underlying brush would be unwise
-
-because there is most certainly another, easier way to gain access into
-
-the woods beyond.
-
-"
+outlying hills and the more fertile land to the city's south and west. 
+To the south a thick treeline rises into the sky which could probably be
+crossed into, but the fight through the underlying brush would be unwise
+because there is most certainly another, easier way to gain access into
+the woods beyond.
+"
 "[Zithuan] 40577
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -3687,23 +3006,15 @@ S
 #45115
 "Patchy Meadow"
 "This patchy meadow lies between the stone walls of Chiiron and their
-
-outlying hills and the more fertile land to the city's south and west. 
-
-To the south a thick treeline rises into the sky which could probably be
-
-crossed into, but the fight through the underlying brush would be unwise
-
-because there is most certainly another, easier way to gain access into
-
-the woods beyond.  The ground to the west supports a thick grass
-
-covering, spreading into a long meadow away from the dry hills.
-
-"
+outlying hills and the more fertile land to the city's south and west. 
+To the south a thick treeline rises into the sky which could probably be
+crossed into, but the fight through the underlying brush would be unwise
+because there is most certainly another, easier way to gain access into
+the woods beyond.  The ground to the west supports a thick grass
+covering, spreading into a long meadow away from the dry hills.
+"
 "[Zithuan] 40576
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -3724,17 +3035,12 @@ S
 #45116
 "Meadow - Near Treeline"
 "To the south a slight break in the treeline offers passage to what
-
-appears to be a small pond, teeming with waterfowl and other wildlife. 
-
-To the east the terrain gets dry and the grass nearly disappears into the
-
-packed dirt hills southeast of Chiiron.
-
-"
+appears to be a small pond, teeming with waterfowl and other wildlife. 
+To the east the terrain gets dry and the grass nearly disappears into the
+packed dirt hills southeast of Chiiron.
+"
 "[Zithuan] 40574
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -3759,19 +3065,13 @@ S
 #45117
 "Light Woods"
 "This stretch of growing oak trees grows in size and thickness to the
-
-west, where walnut trees can also be seen.  The trees to the south are
-
-very large and close together as well, joining with the underlying brush
-
-to form barrier which would be extremely difficult to pass through.  A
-
-meadow of grass and clover spreads to the east and north.
-
-"
+west, where walnut trees can also be seen.  The trees to the south are
+very large and close together as well, joining with the underlying brush
+to form barrier which would be extremely difficult to pass through.  A
+meadow of grass and clover spreads to the east and north.
+"
 "[Zithuan] 40565
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -3793,19 +3093,13 @@ S
 #45118
 "Light Woods - Oaks and Elms"
 "The young oak trees are surrounded by larger walnut trees and the stray
-
-elm in this area of light woods south of a meadow.  To the south, massive
-
-trees join with underlying brush to form a fairly impenetrable barrier. 
-
-Fighting your way south would not be very wise, at it appears that to the
-
-west there is a better way to enter the area beyond.
-
-"
+elm in this area of light woods south of a meadow.  To the south, massive
+trees join with underlying brush to form a fairly impenetrable barrier. 
+Fighting your way south would not be very wise, at it appears that to the
+west there is a better way to enter the area beyond.
+"
 "[Zithuan] 40566
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -3827,19 +3121,13 @@ S
 #45119
 "Light Woods - Oaks, Elms and Walnuts"
 "This area sports the growing trunks of young elm and oak trees, with a
-
-few older walnuts mixed in as well.  The underlying shrubs make the
-
-forest floor fairly thick, but a slight break in the brushline to the
-
-south leads into the tall grass beyond.  To the north you can see a wide,
-
-grassy meadow, beyond which stands the stone walls of Chiiron.
-
-"
+few older walnuts mixed in as well.  The underlying shrubs make the
+forest floor fairly thick, but a slight break in the brushline to the
+south leads into the tall grass beyond.  To the north you can see a wide,
+grassy meadow, beyond which stands the stone walls of Chiiron.
+"
 "[Zithuan] 40575
-
-"
+"
 301465616 0
 2 9 0
 D0
@@ -3864,17 +3152,12 @@ S
 #45120
 "Light Woods, Boulder"
 "A few small trees grow around a large boulder embedded in the earth.  To
-
-the north, you spy an open area beneath the Chiiron town wall.  To the
-
-south and east, the woods quickly become thick, dark and nearly
-
-impenetrable.
-
-"
+the north, you spy an open area beneath the Chiiron town wall.  To the
+south and east, the woods quickly become thick, dark and nearly
+impenetrable.
+"
 "[Zithuan] 40529
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -3895,17 +3178,12 @@ S
 #45121
 "Open Woods"
 "A few small trees grow here, interspersed with several large boulders and
-
-ever-thickening brush.  To the south, the ground rises slightly, and the
-
-trees seem to close about you, forming a dark curtain of living matter
-
-which bars passage in that direction.
-
-"
+ever-thickening brush.  To the south, the ground rises slightly, and the
+trees seem to close about you, forming a dark curtain of living matter
+which bars passage in that direction.
+"
 "[Zithuan] 40528
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -3926,21 +3204,14 @@ S
 #45122
 "Light, Open Woods"
 "Some young trees grow in several large stands along the eastern section
-
-of this area, while older, darker trees and dense brush grow in the
-
-southern and western portions of your surroundings.  It is clear that the
-
-forest here is creeping slowly toward the cleared band of grass which
-
-surrounds the village of Chiiron, relentless in its desire to claim what
-
-once was its own.
-
-"
+of this area, while older, darker trees and dense brush grow in the
+southern and western portions of your surroundings.  It is clear that the
+forest here is creeping slowly toward the cleared band of grass which
+surrounds the village of Chiiron, relentless in its desire to claim what
+once was its own.
+"
 "[Zithuan] 40527
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -3962,19 +3233,13 @@ S
 #45123
 "Overgrown Woods"
 "Tangled brush and clinging vines choke this area of the woods, the odd,
-
-dense growth branching off from the great trees' trunks and branches in
-
-every imagineable manner and angle.  To the west and south, the forest
-
-only continues to thicken, while to the northeast you can see the walls
-
-of Chiiron in the distance.
-
-"
+dense growth branching off from the great trees' trunks and branches in
+every imagineable manner and angle.  To the west and south, the forest
+only continues to thicken, while to the northeast you can see the walls
+of Chiiron in the distance.
+"
 "[Zithuan] 40526
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -3995,19 +3260,13 @@ S
 #45124
 "Dark Woods"
 "The woods are quite dark here, and the tall elms are covered in thick,
-
-choking vines.  Sounds of large beasts, chasing after light-footed
-
-creatures, echo around you.  You notice that the way south is just a
-
-little bit lighter, and that the trees in that direction are not as
-
-covered in vines.
-
-"
+choking vines.  Sounds of large beasts, chasing after light-footed
+creatures, echo around you.  You notice that the way south is just a
+little bit lighter, and that the trees in that direction are not as
+covered in vines.
+"
 "[Zithuan] 40590
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -4034,19 +3293,13 @@ S
 #45125
 "Woods - By the Pine Tree"
 "The air is crisp and clean, and the pine scent is strong and refreshing. 
-
-The ground is covered by a layer of pine needles, causing a squishing
-
-sound as you walk.  The needles are so deep, it appears that no one has
-
-disturbed them for years.
-
-"
+The ground is covered by a layer of pine needles, causing a squishing
+sound as you walk.  The needles are so deep, it appears that no one has
+disturbed them for years.
+"
 "[Zithuan] 40591
-
-[Delkan] is missing the acode for search needles
-
-"
+[Delkan] is missing the acode for search needles
+"
 301465616 0
 3 9 0
 D1
@@ -4064,17 +3317,12 @@ S
 #45126
 "By the Weeds"
 "To your south and east is a large field of weeds, blocking your way
-
-closer to great house.  Large woods lie in all other directions, looming
-
-dark and forbidding.  Sounds of life can be heard from within the forest,
-
-but also sounds of death.
-
-"
+closer to great house.  Large woods lie in all other directions, looming
+dark and forbidding.  Sounds of life can be heard from within the forest,
+but also sounds of death.
+"
 "[Zithuan] 40589
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -4091,17 +3339,12 @@ S
 #45127
 "Woods - End of Overgrown Path, Well"
 "The path ends here at a large stone well.  The forest now encroaches in
-
-all directions, and it is difficult to see what lurks in the woods. 
-
-Directly to your east is a large oak tree, which bends with the breeze. 
-
-At its roots are dozens of dried acorns.
-
-"
+all directions, and it is difficult to see what lurks in the woods. 
+Directly to your east is a large oak tree, which bends with the breeze. 
+At its roots are dozens of dried acorns.
+"
 "[Zithuan] 40588
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -4122,17 +3365,12 @@ S
 #45128
 "Woods - Overgrown Path"
 "A large house lies directly to the east, broken windows open to the
-
-elements.  The remnants of a path run north and south, separating the
-
-western woods from what was once a broad lawn.  The path is now overgrown
-
-with weeds, and only bits of clear ground remain.
-
-"
+elements.  The remnants of a path run north and south, separating the
+western woods from what was once a broad lawn.  The path is now overgrown
+with weeds, and only bits of clear ground remain.
+"
 "[Zithuan] 40587
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -4150,17 +3388,12 @@ S
 #45129
 "Woods - Overgrown Path"
 "A thin path overgrown with large weeds runs north-south here.  A large
-
-mansion lies across a field of weeds to your east; woods extend westward
-
-as far as the eye can see.  The trees are covered with moss, and almost
-
-glow with a strange green light.
-
-"
+mansion lies across a field of weeds to your east; woods extend westward
+as far as the eye can see.  The trees are covered with moss, and almost
+glow with a strange green light.
+"
 "[Zithuan] 40586
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -4178,15 +3411,11 @@ S
 #45130
 "Woods - Overgrown Path"
 "A overgrown path runs north and east here.  Towards the north and east
-
-you can just make out the outline of a large house; woods head off in
-
-every other direction.
-
-"
+you can just make out the outline of a large house; woods head off in
+every other direction.
+"
 "[Zithuan] 40585
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -4206,23 +3435,15 @@ S
 #45131
 "Northwest of a Duck Pond"
 "The telltale signs of a deer's passage have been left crudely along a
-
-faint trail through the tall, wide-leafed grass which leads east and south
-
-along the pond's shore.  To the north and west a thick line of trees rise
-
-up, stretching towards the sky, a few scattered birds' nests nestled high
-
-in a few odd branches.  The chattering of squirrels from above mixes with
-
-the sounds of waterfowl on the pond, putting you at ease.  A faint path
-
-leads north into the woods.
-
-"
+faint trail through the tall, wide-leafed grass which leads east and south
+along the pond's shore.  To the north and west a thick line of trees rise
+up, stretching towards the sky, a few scattered birds' nests nestled high
+in a few odd branches.  The chattering of squirrels from above mixes with
+the sounds of waterfowl on the pond, putting you at ease.  A faint path
+leads north into the woods.
+"
 "[Zithuan] 40542
-
-"
+"
 301465624 0
 3 9 0
 D0
@@ -4245,21 +3466,14 @@ S
 #45132
 "North of a Duck Pond"
 "A natural ramp of flat stones leads south and down into the cool waters
-
-of the pond, its shore lined with reeds and cattails.  The tall,
-
-wide-leafed grass is interspersed here and there with a few patches of
-
-clover which bear the signs of rabbit nibbling.  A faint path leads
-
-through the grass along the pond's curving shore to the east and west,
-
-also following roughly a line of dense trees to the north.
-
-"
+of the pond, its shore lined with reeds and cattails.  The tall,
+wide-leafed grass is interspersed here and there with a few patches of
+clover which bear the signs of rabbit nibbling.  A faint path leads
+through the grass along the pond's curving shore to the east and west,
+also following roughly a line of dense trees to the north.
+"
 "[Zithuan] 40541
-
-"
+"
 301465624 0
 3 9 0
 D1
@@ -4282,17 +3496,12 @@ S
 #45133
 "North Shore of a Duck Pond"
 "A soft mud bank leads down into the water of the pond to the south, while
-
-to the north a dense line of trees stretches east and west along a small
-
-patch of tall grass.  Several sets of deer tracks suggest that this is a
-
-favorite watering spot for local wildlife.
-
-"
+to the north a dense line of trees stretches east and west along a small
+patch of tall grass.  Several sets of deer tracks suggest that this is a
+favorite watering spot for local wildlife.
+"
 "[Zithuan] 40540
-
-"
+"
 301465624 0
 3 9 0
 D1
@@ -4314,21 +3523,14 @@ S
 #45134
 "North of a Duck Pond"
 "A steep mud bank to the south makes jumping into the muddy water unwise,
-
-and to the north a dense line of trees mark the edge of a forest.  Tall,
-
-wide leaves of grass grow all around over a few scattered patches of
-
-clover, and a slightly beaten path leads through the grass and around the
-
-pond to the east and west.  The treeline to the north is broken somewhat
-
-here, and a small trail leads north onto the edge of a meadow.
-
-"
+and to the north a dense line of trees mark the edge of a forest.  Tall,
+wide leaves of grass grow all around over a few scattered patches of
+clover, and a slightly beaten path leads through the grass and around the
+pond to the east and west.  The treeline to the north is broken somewhat
+here, and a small trail leads north onto the edge of a meadow.
+"
 "[Zithuan] 40539
-
-"
+"
 301465624 0
 3 9 0
 D0
@@ -4350,19 +3552,13 @@ S
 #45135
 "Northeast of a Duck Pond"
 "This small section of tall, wide-leafed grass is framed by the sloping
-
-treeline to the north and east and a small pond to the south and west. 
-
-The echos of waterfowl calls and the splashes of frogs leaping into the
-
-water reach your ears, along with the sound of the wind whistling across
-
-the cattails and howling over the large, round reeds.
-
-"
+treeline to the north and east and a small pond to the south and west. 
+The echos of waterfowl calls and the splashes of frogs leaping into the
+water reach your ears, along with the sound of the wind whistling across
+the cattails and howling over the large, round reeds.
+"
 "[Zithuan] 40538
-
-"
+"
 301465616 0
 3 9 0
 D2
@@ -4380,19 +3576,13 @@ S
 #45136
 "West of a Duck Pond"
 "A slope of flat rocks leads down and into the pond to the east through a
-
-few cattails on the edge of the shore.  Tall wide-leafed grass grows at
-
-your feet here, between the pond and a line of trees to the west.  A
-
-faint path leads north and south along the fairly smooth shoreline of the
-
-pond.
-
-"
+few cattails on the edge of the shore.  Tall wide-leafed grass grows at
+your feet here, between the pond and a line of trees to the west.  A
+faint path leads north and south along the fairly smooth shoreline of the
+pond.
+"
 "[Zithuan] 40543
-
-"
+"
 301465624 0
 3 9 0
 D0
@@ -4414,17 +3604,12 @@ S
 #45137
 "In the Duck Pond"
 "This northwest corner of the pond contains only sparse vegetation, as the
-
-flat rocks beneath your feet contain no nourishment for the cattails. 
-
-The nearby quacks of a few ducks reach your ears along with the sound of
-
-myriad frogs plunging into the cool, clear water.
-
-"
+flat rocks beneath your feet contain no nourishment for the cattails. 
+The nearby quacks of a few ducks reach your ears along with the sound of
+myriad frogs plunging into the cool, clear water.
+"
 "[Zithuan] 40556
-
-"
+"
 301465616 0
 6 9 0
 D0
@@ -4449,23 +3634,15 @@ S
 #45138
 "In the Duck Pond"
 "The sounds of the living pond surround you.  The croaks of frogs, the
-
-quacks of ducks, the honks of geese, even the gentle buzz of the deer
-
-flies.  Lily pads float by among the cattails while waterbugs jump back
-
-and forth across the water creating tiny ripples which spread like
-
-circles in all directions.  Through the mud to the north the shore is
-
-accessable, and in all other directions the peaceful, yet noisy, duck
-
-pond rests, waiting.
-
-"
+quacks of ducks, the honks of geese, even the gentle buzz of the deer
+flies.  Lily pads float by among the cattails while waterbugs jump back
+and forth across the water creating tiny ripples which spread like
+circles in all directions.  Through the mud to the north the shore is
+accessable, and in all other directions the peaceful, yet noisy, duck
+pond rests, waiting.
+"
 "[Zithuan] 40555
-
-"
+"
 301465616 0
 6 9 0
 D0
@@ -4490,21 +3667,14 @@ S
 #45139
 "East of a Duck Pond"
 "The muddy, reed-lined bank of the pond meets the tall, wide-leafed grass
-
-shelf between the pond and the treeline to the east.  A faint path
-
-through the grass and around the pond leads north and south.  Another
-
-trail leads east into the even taller grass near the treeline.  From the
-
-east you hear the sounds of chattering squirrels, while west the sounds
-
-of waterfowl and deep-voiced frogs echo across the water.
-
-"
+shelf between the pond and the treeline to the east.  A faint path
+through the grass and around the pond leads north and south.  Another
+trail leads east into the even taller grass near the treeline.  From the
+east you hear the sounds of chattering squirrels, while west the sounds
+of waterfowl and deep-voiced frogs echo across the water.
+"
 "[Zithuan] 40537
-
-"
+"
 301465624 0
 3 9 0
 D0
@@ -4529,23 +3699,15 @@ S
 #45140
 "In the Duck Pond"
 "A high mud bank lines the pond to the north, while to the east a few
-
-reeds create the necessary handholds to climb out of the pond.  This
-
-water of this section of the duck pond is relatively clear, with only a
-
-few stray cattails blocking sight or motion.  The pond stays too deep to
-
-exit to the north, while to the east a few reeds create the necessary
-
-handhold to climb out.  The nearby splash of jumping frogs get your
-
-attention, shattering the peaceful aura of the small pond.
-
-"
+reeds create the necessary handholds to climb out of the pond.  This
+water of this section of the duck pond is relatively clear, with only a
+few stray cattails blocking sight or motion.  The pond stays too deep to
+exit to the north, while to the east a few reeds create the necessary
+handhold to climb out.  The nearby splash of jumping frogs get your
+attention, shattering the peaceful aura of the small pond.
+"
 "[Zithuan] 40554
-
-"
+"
 301465616 0
 6 9 0
 D1
@@ -4566,19 +3728,13 @@ S
 #45141
 "In the Tall Grass"
 "This section of tall, wide-leafed grass expands to the south,
-
-interspersed with gopher holes and the flattened areas of grass where
-
-deer have bedded down for the night.  To the west the grass reaches the
-
-east shore of a small duck pond alive with fowl and frogs, and to the
-
-east a small trail leads through the trees.
-
-"
+interspersed with gopher holes and the flattened areas of grass where
+deer have bedded down for the night.  To the west the grass reaches the
+east shore of a small duck pond alive with fowl and frogs, and to the
+east a small trail leads through the trees.
+"
 "[Zithuan] 40560
-
-"
+"
 301465616 0
 3 9 0
 D1
@@ -4603,21 +3759,14 @@ S
 #45142
 "Light Woods near a Pond"
 "This fairly beaten dirt trail winds its way into the elms and oaks to the
-
-east and tall, wide-leafed grass to the west.  Further to the west, the
-
-sounds of resting waterfowl and deep-voiced frogs can be heard, while
-
-high above you in a tree the cheerful chattering of a squirrel makes its
-
-way down to your ears.  A few trees have fallen along the path to the
-
-east, blocking passage.
-
-"
+east and tall, wide-leafed grass to the west.  Further to the west, the
+sounds of resting waterfowl and deep-voiced frogs can be heard, while
+high above you in a tree the cheerful chattering of a squirrel makes its
+way down to your ears.  A few trees have fallen along the path to the
+east, blocking passage.
+"
 "[Zithuan] 40562
-
-"
+"
 301465616 0
 3 9 0
 D3
@@ -4632,19 +3781,13 @@ S
 #45143
 "A Gopher Hole"
 "This small hole is the home of a furry little gopher.  Dry earth walls
-
-surround you except for a small hole above your head which leads up and
-
-out towards the sounds of a duck pond and a forest.  A few half-chewed
-
-leaves litter the floor, perhaps some sort of bedding for this hole's
-
-denizen.
-
-"
+surround you except for a small hole above your head which leads up and
+out towards the sounds of a duck pond and a forest.  A few half-chewed
+leaves litter the floor, perhaps some sort of bedding for this hole's
+denizen.
+"
 "[Zithuan] 40561
-
-"
+"
 301465628 0
 0 4 0
 D4
@@ -4657,17 +3800,12 @@ S
 #45144
 "In the Tall Grass"
 "This section of tall, wide-leafed grass expands to the south,
-
-interspersed with gopher holes and the flattened areas of grass where
-
-deer have bedded down for the night.  To the west the grass reaches the
-
-east shore of a small duck pond alive with fowl and frogs.
-
-"
+interspersed with gopher holes and the flattened areas of grass where
+deer have bedded down for the night.  To the west the grass reaches the
+east shore of a small duck pond alive with fowl and frogs.
+"
 "[Zithuan] 40559
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -4688,19 +3826,13 @@ S
 #45145
 "East Shore of a Duck Pond"
 "The cool water of a small pond to the west laps against a muddy rise near
-
-its shore.  Cattails and tall, wide reeds line the pond, hiding the
-
-source of the sounds of waterfowl and frogs.  A faint path leads north
-
-and south through tall grass along the pond's shore, and another trail
-
-leads into even higher grass to the east.
-
-"
+its shore.  Cattails and tall, wide reeds line the pond, hiding the
+source of the sounds of waterfowl and frogs.  A faint path leads north
+and south through tall grass along the pond's shore, and another trail
+leads into even higher grass to the east.
+"
 "[Zithuan] 40544
-
-"
+"
 301465624 0
 3 9 0
 D0
@@ -4727,19 +3859,13 @@ S
 #45146
 "In the Duck Pond"
 "The muddy floor of the pond squishes comfortably beneath your feet.  The
-
-ends of cattails blow back and forth in a gentle breeze which blows a few
-
-ripples across the pond.  A small patch of reeds frame a grass beach to
-
-the east, and a few lily pads float by unconcerned with the lives of the
-
-nearby pond creatures.
-
-"
+ends of cattails blow back and forth in a gentle breeze which blows a few
+ripples across the pond.  A small patch of reeds frame a grass beach to
+the east, and a few lily pads float by unconcerned with the lives of the
+nearby pond creatures.
+"
 "[Zithuan] 40552
-
-"
+"
 301465616 0
 6 9 0
 D0
@@ -4764,21 +3890,14 @@ S
 #45147
 "Center of the Duck Pond"
 "From the center of the small pond the area's wildlife can be clearly
-
-detected by their echoing noises.  A thick wall of cattails rises to the
-
-south, blocking vision yet not motion, and to the west the pond floor
-
-becomes lined with smooth rocks.  The clear water of the pond reveals
-
-mossy branches and hundreds of fallen leaves which have sunk to the floor
-
-of the pond.
-
-"
+detected by their echoing noises.  A thick wall of cattails rises to the
+south, blocking vision yet not motion, and to the west the pond floor
+becomes lined with smooth rocks.  The clear water of the pond reveals
+mossy branches and hundreds of fallen leaves which have sunk to the floor
+of the pond.
+"
 "[Zithuan] 40553
-
-"
+"
 301465616 0
 6 9 0
 D0
@@ -4803,21 +3922,14 @@ S
 #45148
 "In the Duck Pond"
 "The stones of the west shore of the pond slope gently up to the shore,
-
-and the water deepens considerably to the east.  Not many cattails are
-
-supported by the rocky pond floor, but a few lily pads float by, sailing
-
-along on the ripples created by jumping frogs or landing ducks and geese. 
-
-The pond water here is fairly clear, with mossy branches and underwater
-
-reeds growing on the pond floor.
-
-"
+and the water deepens considerably to the east.  Not many cattails are
+supported by the rocky pond floor, but a few lily pads float by, sailing
+along on the ripples created by jumping frogs or landing ducks and geese. 
+The pond water here is fairly clear, with mossy branches and underwater
+reeds growing on the pond floor.
+"
 "[Zithuan] 40548
-
-"
+"
 301465616 0
 6 9 0
 D0
@@ -4842,17 +3954,12 @@ S
 #45149
 "West Shore of a Duck Pond"
 "To the east, smooth rocks line the muddy shore of a small pond, full of
-
-sound and life.  Around you now tall, wide-leaf grass grows along the
-
-edge of the pond and west to a thick treeline.  A faint trail leads
-
-around the pond and through the grass to the north and south.
-
-"
+sound and life.  Around you now tall, wide-leaf grass grows along the
+edge of the pond and west to a thick treeline.  A faint trail leads
+around the pond and through the grass to the north and south.
+"
 "[Zithuan] 40545
-
-"
+"
 301465624 0
 3 9 0
 D0
@@ -4877,17 +3984,12 @@ S
 #45150
 "Woods - By the Mansion"
 "To the west, tall pines allow just a glimpse of a large structure.  The
-
-sounds of life come from a large pond to the south, as splashing and
-
-quacking fill the air.  The forest continues to the north and east,
-
-hiding the many forest creatures.
-
-"
+sounds of life come from a large pond to the south, as splashing and
+quacking fill the air.  The forest continues to the north and east,
+hiding the many forest creatures.
+"
 "[Zithuan] 40583
-
-"
+"
 301465616 0
 3 9 0
 D1
@@ -4904,17 +4006,12 @@ S
 #45151
 "Woods - Tree-Lined Path Near Mansion"
 "The path, broad and whole to the east, shows signs of disrepair as it
-
-heads westward into the woods.  The woods are fairly thin here, and small
-
-peach and plum trees abound.  To the northeast the outline of a large
-
-house can just barely be seen.
-
-"
+heads westward into the woods.  The woods are fairly thin here, and small
+peach and plum trees abound.  To the northeast the outline of a large
+house can just barely be seen.
+"
 "[Zithuan] 40584
-
-"
+"
 301465616 0
 3 9 0
 D1
@@ -4934,27 +4031,17 @@ S
 #45152
 "Woods - Tree-Lined Path, Near Mansion"
 "A large, grand mansion lies directly to the north.  Large glass windows line
-
-all three floors of this obvuiously opulent building.  Heavy, rich draperies
-
-can be seen hanging in the windows of the lower floors in multiple colors. 
-
-The house itself is most massive, and built of light grey stone.  It is
-
-surrounded by a rather thick low grey shrub, which looks as though it has the
-
-potential to spring up into an incredibly unkempt mass of vegitation if not
-
-constantly maintained.  A large oak door seals the house from the outside
-
-world.  A large path leads east-west from the house, bordered by lovely fruit
-
-trees.
-
-"
+all three floors of this obvuiously opulent building.  Heavy, rich draperies
+can be seen hanging in the windows of the lower floors in multiple colors. 
+The house itself is most massive, and built of light grey stone.  It is
+surrounded by a rather thick low grey shrub, which looks as though it has the
+potential to spring up into an incredibly unkempt mass of vegitation if not
+constantly maintained.  A large oak door seals the house from the outside
+world.  A large path leads east-west from the house, bordered by lovely fruit
+trees.
+"
 "[Zithuan] 40582
-
-"
+"
 301465624 0
 3 9 0
 D0
@@ -4975,15 +4062,11 @@ S
 #45153
 "Woods - Tree-Lined Path Near Mansion"
 "A lovely path continues to your east and west, bordered by large fruit trees. 
-
-The grounds are regularly maintained so that no excess fruit lies on the
-
-ground.
-
-"
+The grounds are regularly maintained so that no excess fruit lies on the
+ground.
+"
 "[Zithuan] 40581
-
-"
+"
 301465616 0
 3 9 0
 D1
@@ -5001,19 +4084,13 @@ S
 #45154
 "Woods - Overgrown Path"
 "The remains of a path head east and west from here; and you can see the
-
-forest slowly reclaiming the man-made thoroughfare as the trees send
-
-their saplings towards the clearing.  Apple seeds on the ground indicate
-
-that fruit trees are nearby -- and that something has been feasting on
-
-them.
-
-"
+forest slowly reclaiming the man-made thoroughfare as the trees send
+their saplings towards the clearing.  Apple seeds on the ground indicate
+that fruit trees are nearby -- and that something has been feasting on
+them.
+"
 "[Zithuan] 40580
-
-"
+"
 301465616 0
 3 9 0
 D1
@@ -5034,17 +4111,12 @@ S
 #45155
 "Near a Pond - Overgrown Path"
 "A large forest stands immediately to the west, full of the sounds of
-
-animal life.  Off to the east you can just hear the splashes of life in a
-
-large pond.  The thin path fades into nothingness as it reaches east
-
-toward the pond.
-
-"
+animal life.  Off to the east you can just hear the splashes of life in a
+large pond.  The thin path fades into nothingness as it reaches east
+toward the pond.
+"
 "[Zithuan] 40579
-
-"
+"
 301465616 0
 2 6 0
 D0
@@ -5070,17 +4142,12 @@ S
 #45156
 "West of a Duck Pond"
 "Several tall, flat rocks standing on end to the east could be climbed
-
-down and into the pond's water.  The tall, wide-leafed grass around you
-
-follows the curves of the pond north and south along a thick treeline to
-
-the west.
-
-"
+down and into the pond's water.  The tall, wide-leafed grass around you
+follows the curves of the pond north and south along a thick treeline to
+the west.
+"
 "[Zithuan] 40546
-
-"
+"
 301465624 0
 3 9 0
 D0
@@ -5107,21 +4174,14 @@ S
 #45157
 "In the Duck Pond"
 "This corner of the pond is formed by a high mud bank to the south and
-
-several tall, flat rocks standing on end to the west.  You think you can
-
-climb up on them and out of the pond.  Not much vegetation is in this
-
-area, but a large patch of cattails is visible to the northeast.  The
-
-clear water of the pond reveals mossy branches and a floor of fallen
-
-leaves and reeds beneath you.
-
-"
+several tall, flat rocks standing on end to the west.  You think you can
+climb up on them and out of the pond.  Not much vegetation is in this
+area, but a large patch of cattails is visible to the northeast.  The
+clear water of the pond reveals mossy branches and a floor of fallen
+leaves and reeds beneath you.
+"
 "[Zithuan] 40549
-
-"
+"
 301465616 0
 6 9 0
 D0
@@ -5142,19 +4202,13 @@ S
 #45158
 "In the Duck Pond"
 "To the south, a ramp of slimy rocks rise onto the grassy shore, while to
-
-the a thick patch of cattails blocks your vision.  The peaceful sounds of
-
-waterfowl come from beyond the reeds, and the nearby splash of a jumping
-
-frog sends ripples streaming across the pond's surface.  Several lily
-
-pads float in and amongst the cattails and reeds in the area.
-
-"
+the a thick patch of cattails blocks your vision.  The peaceful sounds of
+waterfowl come from beyond the reeds, and the nearby splash of a jumping
+frog sends ripples streaming across the pond's surface.  Several lily
+pads float in and amongst the cattails and reeds in the area.
+"
 "[Zithuan] 40550
-
-"
+"
 301465616 0
 6 9 0
 D0
@@ -5179,19 +4233,13 @@ S
 #45159
 "In the Duck Pond"
 "Soft mud lines the pond to the south and east, with tall reeds all around
-
-you and more soft mud at your feet.  The nearby quacking of ducks mixes
-
-with the incessant buzz of hundreds of tiny insects all about the area. 
-
-The clear water of the pond reveals mossy branches and underwater reeds
-
-below you.
-
-"
+you and more soft mud at your feet.  The nearby quacking of ducks mixes
+with the incessant buzz of hundreds of tiny insects all about the area. 
+The clear water of the pond reveals mossy branches and underwater reeds
+below you.
+"
 "[Zithuan] 40551
-
-"
+"
 301465616 0
 6 9 0
 D0
@@ -5216,17 +4264,12 @@ S
 #45160
 "East of a Duck Pond"
 "The muddy, reed-lined bank of the pond meets the tall, wide-leafed grass
-
-shelf between the pond and the treeline to the east.  A faint path leads
-
-through the grass and around the pond to the north and south.  Another
-
-trail leads east into the even taller grass near the treeline.
-
-"
+shelf between the pond and the treeline to the east.  A faint path leads
+through the grass and around the pond to the north and south.  Another
+trail leads east into the even taller grass near the treeline.
+"
 "[Zithuan] 40536
-
-"
+"
 301465624 0
 3 9 0
 D0
@@ -5252,17 +4295,12 @@ S
 #45161
 "In the Tall Grass"
 "This section of tall, wide-leafed grass expands to the south,
-
-interspersed with gopher holes and the flattened areas of grass where
-
-deer have laid down for the night.  To the west the grass reaches the
-
-east shore of a small duck pond alive with fowl and frogs.
-
-"
+interspersed with gopher holes and the flattened areas of grass where
+deer have laid down for the night.  To the west the grass reaches the
+east shore of a small duck pond alive with fowl and frogs.
+"
 "[Zithuan] 40558
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -5280,19 +4318,13 @@ S
 #45162
 "Southeast of a Duck Pond"
 "Faint trails lead through tall, wide-leafed grass to the north and west
-
-around the arching shore of a small duckpond.  A small hole, just large
-
-enough for a human to squeeze into, lies dug into the ground about
-
-halfway between the pond and the treeline which roughly follows it to the
-
-east and south.
-
-"
+around the arching shore of a small duckpond.  A small hole, just large
+enough for a human to squeeze into, lies dug into the ground about
+halfway between the pond and the treeline which roughly follows it to the
+east and south.
+"
 "[Zithuan] 40535
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -5314,19 +4346,13 @@ S
 #45163
 "South of a Duck Pond"
 "Tall cattails and long, wide-leafed reeds form a growing, yet crossable
-
-barrier around the pond to the north.  Behind the reeds the sounds of
-
-frogs, ducks, and geese echo across the water.  Tall oaks and elms rise
-
-high into the sky to the south, with myriad bushes growing underfoot.  A
-
-slight trail through the tall grass around the pond leads east and west.
-
-"
+barrier around the pond to the north.  Behind the reeds the sounds of
+frogs, ducks, and geese echo across the water.  Tall oaks and elms rise
+high into the sky to the south, with myriad bushes growing underfoot.  A
+slight trail through the tall grass around the pond leads east and west.
+"
 "[Zithuan] 40533
-
-"
+"
 301465624 0
 3 9 0
 D0
@@ -5347,23 +4373,15 @@ S
 #45164
 "South Shore of a Duck Pond"
 "Tall, wide-leafed blades of grass grow high around you, unmolested by the
-
-fauna of the area.  Clovers grow in clumps nearby beside a few sunflowers. 
-
-To the south a line of trees marks the edge of a forest, the nearly
-
-impenetrable wall of oaks and elms stretching to the east and west around
-
-a small pond to the north.  The greenish water's south shore here is
-
-lined with wet, slimy rocks which looks extremely slippery and yet should
-
-not be too hard to cross.
-
-"
+fauna of the area.  Clovers grow in clumps nearby beside a few sunflowers. 
+To the south a line of trees marks the edge of a forest, the nearly
+impenetrable wall of oaks and elms stretching to the east and west around
+a small pond to the north.  The greenish water's south shore here is
+lined with wet, slimy rocks which looks extremely slippery and yet should
+not be too hard to cross.
+"
 "[Zithuan] 40532
-
-"
+"
 301465624 0
 3 9 0
 D0
@@ -5385,19 +4403,13 @@ S
 #45165
 "South of a Duck Pond"
 "Tall cat-tails and long, wide-leafed reeds form a growing barrier around
-
-the pond to the north.  Beyond the reeds the sounds of frogs, ducks, and
-
-geese echo across the water.  Tall oaks and elms rise high into the sky
-
-to the south, with a thick hedgerow between you and the trees.  A slight
-
-trail through the tall grass around the pond leads east and west.
-
-"
+the pond to the north.  Beyond the reeds the sounds of frogs, ducks, and
+geese echo across the water.  Tall oaks and elms rise high into the sky
+to the south, with a thick hedgerow between you and the trees.  A slight
+trail through the tall grass around the pond leads east and west.
+"
 "[Zithuan] 40534
-
-"
+"
 301465616 0
 3 9 0
 D1
@@ -5414,17 +4426,12 @@ S
 #45166
 "Southwest of a Duck Pond"
 "This corner of the pond is steep and deep, making the only way to get
-
-into the pond a daring dive into its murky depths.  Tall, wide-leafed
-
-grass forms a curving bowl around the pond to the north and east, while
-
-to the south and west a dense treeline stretches.
-
-"
+into the pond a daring dive into its murky depths.  Tall, wide-leafed
+grass forms a curving bowl around the pond to the north and east, while
+to the south and west a dense treeline stretches.
+"
 "[Zithuan] 40547
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -5447,15 +4454,11 @@ S
 #45167
 "Woods - Near a Pond"
 "You stand in a wooded, grassy area.  To your west is the edge of a dark
-
-forest, filled with large, towering trees.  To the east is the shore of a
-
-large pond teeming with ducks and other types of waterfowl.
-
-"
+forest, filled with large, towering trees.  To the east is the shore of a
+large pond teeming with ducks and other types of waterfowl.
+"
 "[Zithuan] 40592
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -5478,17 +4481,12 @@ S
 #45168
 "Woods"
 "Small elms and oaks delineate the border between open land and forest. 
-
-You can see the way their tops rise to the west as the forest thickens. 
-
-Towards the east you can see a grassy area, and can just make out
-
-what appears to be a pond in that direction.
-
-"
+You can see the way their tops rise to the west as the forest thickens. 
+Towards the east you can see a grassy area, and can just make out
+what appears to be a pond in that direction.
+"
 "[Zithuan] 40593
-
-"
+"
 301465616 0
 3 9 0
 D0
@@ -5507,19 +4505,13 @@ S
 #45169
 "Hedgehog's Hole"
 "This hole is the home of a small forest creature.  Soft mud walls have
-
-been packed by bits of grass which the industrious little critter has
-
-brought down here, and a mass of clover appears to be its bed.  Out a
-
-small hole above your head you can hear the sounds of waterfowl and
-
-lapping water.
-
-"
+been packed by bits of grass which the industrious little critter has
+brought down here, and a mass of clover appears to be its bed.  Out a
+small hole above your head you can hear the sounds of waterfowl and
+lapping water.
+"
 "[Zithuan] 40557
-
-"
+"
 301465616 0
 11 5 0
 D4
@@ -5532,17 +4524,12 @@ S
 #45170
 "Dry Rocky Hills"
 "You stand on a steep, dry hilly slope.  To the north and south, the
-
-ground rises steeply, the unforgiving inclines covered with scores of
-
-rocks, large and small.  You can see the walls of Chiiron off in the
-
-distance to the west.
-
-"
+ground rises steeply, the unforgiving inclines covered with scores of
+rocks, large and small.  You can see the walls of Chiiron off in the
+distance to the west.
+"
 "[Zithuan] 24057
-
-"
+"
 301465616 0
 4 9 0
 D1
@@ -5560,15 +4547,11 @@ S
 #45171
 "Dry Rocky Hills"
 "A few clumps of thick brown bushes grow here, but you are able to move
-
-freely through the grassy areas between them.  The surrounding terrain is
-
-hilly, with rocky rises to the north and south of you.
-
-"
+freely through the grassy areas between them.  The surrounding terrain is
+hilly, with rocky rises to the north and south of you.
+"
 "[Zithuan] 24056
-
-"
+"
 301465616 0
 4 9 0
 D1
@@ -5587,19 +4570,13 @@ S
 #45172
 "Brambles"
 "Thick brambles and brush cover this hillside.  Wherever the brush does not
-
-grow, it seems that a large boulder or steep slope is - making movement
-
-here slow and difficult.  To the east, you think you see an open area
-
-through some brambles, and to the west a small opening offers passage
-
-near the bottom of a hill.
-
-"
+grow, it seems that a large boulder or steep slope is - making movement
+here slow and difficult.  To the east, you think you see an open area
+through some brambles, and to the west a small opening offers passage
+near the bottom of a hill.
+"
 "[Zithuan] 24055
-
-"
+"
 301465616 0
 4 9 0
 D1
@@ -5617,20 +4594,14 @@ S
 #45173
 "Beneath the Swami's Platform"
 "The animal trail you have been following peters out here with no where
-
-else to go.  To the south is a cliff, while north of here the ground
-
-rises up a rocky slope.  A thick wall of brambles to the west renders
-
-progress in that direction difficult.
-
+else to go.  To the south is a cliff, while north of here the ground
+rises up a rocky slope.  A thick wall of brambles to the west renders
+progress in that direction difficult.
 
 A small platform is balanced upon a tall wooden pole here.
-
-"
+"
 "[Zithuan] 24030
-
-"
+"
 301465616 0
 2 6 0
 D0
@@ -5658,15 +4629,11 @@ S
 #45174
 "Brush"
 "The trail bends around to the west and starts to run along a cliff facing
-
-the south.  The brush has thicken up quite a bit here.  Something catches
-
-your eye as it scurries under a nearby rock.
-
-"
+the south.  The brush has thicken up quite a bit here.  Something catches
+your eye as it scurries under a nearby rock.
+"
 "[Zithuan] 24029
-
-"
+"
 301465616 0
 2 6 0
 D0
@@ -5688,13 +4655,10 @@ S
 #45175
 "Brush"
 "The track twists to the east and gets quite rocky.  There appears to be
-
-a cliff to the southeast.
-
-"
+a cliff to the southeast.
+"
 "[Zithuan] 24024
-
-"
+"
 301465616 0
 4 6 0
 D0
@@ -5718,17 +4682,12 @@ S
 #45176
 "Brush"
 "The track now trundles along the base of a cliff to the south.  There are
-
-a number of sage bushes along the base of the cliff.  For some reason
-
-they look a bit out of place as though someone has come along and planted
-
-them all in a row with some purpose in mind.
-
-"
+a number of sage bushes along the base of the cliff.  For some reason
+they look a bit out of place as though someone has come along and planted
+them all in a row with some purpose in mind.
+"
 "[Zithuan] 24026
-
-"
+"
 301465616 0
 4 6 0
 D0
@@ -5754,15 +4713,11 @@ S
 #45177
 "Brush"
 "The track opens out onto a dry rocky plateau with only one noticeable
-
-feature; a huge anthill lies directly in front of you.  The hill is large
-
-enough for most creatures to enter.
-
-"
+feature; a huge anthill lies directly in front of you.  The hill is large
+enough for most creatures to enter.
+"
 "[Zithuan] 24027
-
-"
+"
 301465624 0
 4 6 0
 D0
@@ -5779,17 +4734,12 @@ S
 #45178
 "Narrow Ravine"
 "Steep rocky walls rise above you to the east and west, while dense
-
-underbrush crowds the area underfoot.  To the north, the ground rises up
-
-a rocky slope.  To the east, you spy an open area with bushes, with a
-
-great tree towering over the entire area.
-
-"
+underbrush crowds the area underfoot.  To the north, the ground rises up
+a rocky slope.  To the east, you spy an open area with bushes, with a
+great tree towering over the entire area.
+"
 "[Zithuan] 24052
-
-"
+"
 301465616 0
 4 9 0
 D0
@@ -5810,15 +4760,11 @@ S
 #45179
 "Brush"
 "Dozens of bees buzz around a small bush covered in little white flowers.
-
-You have never seen a bush like this one before; it has tiny white flowers
-
-and big purple leaves and is the only one like it in the surrounding area.
-
-"
+You have never seen a bush like this one before; it has tiny white flowers
+and big purple leaves and is the only one like it in the surrounding area.
+"
 "[Zithuan] 24025
-
-"
+"
 301465616 0
 2 6 0
 D1
@@ -5839,15 +4785,11 @@ S
 #45180
 "Large Tree"
 "Oversized and considerably out of place for this landscape is a mighty
-
-balsa tree.  Towering over the shrubbery at over thirty meters, the tree
-
-seems to reach into the sky.  Who knows what may be up there?
-
-"
+balsa tree.  Towering over the shrubbery at over thirty meters, the tree
+seems to reach into the sky.  Who knows what may be up there?
+"
 "[Zithuan] 24023
-
-"
+"
 301465616 0
 4 6 0
 D1
@@ -5870,17 +4812,12 @@ S
 #45181
 "Brush"
 "The tracks runs west to east here and narrows as the brush is quite thick
-
-through here.  There are the bones and other remains of quite a number of
-
-rabbit spread all around.  There must be something that lives in the area
-
-by hunting rabbits.  
-
-"
+through here.  There are the bones and other remains of quite a number of
+rabbit spread all around.  There must be something that lives in the area
+by hunting rabbits.  
+"
 "[Zithuan] 24022
-
-"
+"
 301465616 0
 4 6 0
 D1
@@ -5902,15 +4839,11 @@ S
 #45182
 "Brush"
 "The animal track turns to the west here and continues to show
-
-hoofprints.  Throughout this area you quite often here the sounds of
-
-wildlife in the nearby bushes.  The hunting here must be quite good.  
-
-"
+hoofprints.  Throughout this area you quite often here the sounds of
+wildlife in the nearby bushes.  The hunting here must be quite good.  
+"
 "[Zithuan] 24021
-
-"
+"
 301465616 0
 4 6 0
 D0
@@ -5938,15 +4871,11 @@ S
 #45183
 "Brush - Hillside"
 "You stand on a sloped hillside, with a number of clusters of bushes and
-
-brambles.  To the south, the ground continues to rise, while you spy an
-
-animal track off to the west.
-
-"
+brambles.  To the south, the ground continues to rise, while you spy an
+animal track off to the west.
+"
 "[Zithuan] 24059
-
-"
+"
 301465616 0
 4 9 0
 D0
@@ -5964,19 +4893,13 @@ S
 #45184
 "Rocky Alcove"
 "This looks like it is the home of some trapper.  There are the skins of
-
-many rabbits stretched out on boards drying.  It doesn't look like it has
-
-been occupied in some time though and while most of the skins have rotted
-
-there might be some that are still worth taking.  There are some sage
-
-bushes to the north at the mouth of the alcove.
-
-"
+many rabbits stretched out on boards drying.  It doesn't look like it has
+been occupied in some time though and while most of the skins have rotted
+there might be some that are still worth taking.  There are some sage
+bushes to the north at the mouth of the alcove.
+"
 "[Zithuan] 24028
-
-"
+"
 301465616 0
 0 4 0
 D0
@@ -5990,17 +4913,12 @@ S
 #45185
 "Brush"
 "The brush here is thick, with many bushes growing along the rocky slopes. 
-
-To the north, a rough outcropping towers above you, in the direction of
-
-the road, while west of here you spy an animal track.  To the south, the
-
-ground rises towards a small hilltop.
-
-"
+To the north, a rough outcropping towers above you, in the direction of
+the road, while west of here you spy an animal track.  To the south, the
+ground rises towards a small hilltop.
+"
 "[Zithuan] 24058
-
-"
+"
 301465616 0
 4 9 0
 D2
@@ -6018,19 +4936,13 @@ S
 #45186
 "An Animal Track"
 "A tight path cuts through the brush here in what is unmistakably an
-
-animal track.  The irregularity of the trail surface shows the heavy
-
-scars of hoofprints, at points cutting into the thick network of roots
-
-beneath the topsoil.  A broader path is visible to the north, while the
-
-track continues into the brush to the south.  
-
-"
+animal track.  The irregularity of the trail surface shows the heavy
+scars of hoofprints, at points cutting into the thick network of roots
+beneath the topsoil.  A broader path is visible to the north, while the
+track continues into the brush to the south.  
+"
 "[Zithuan] 24018
-
-"
+"
 301465616 0
 4 6 0
 D1
@@ -6049,23 +4961,15 @@ S
 #45187
 "Gully Between Hills"
 "The trail passes into a small gully between the hill to the east and the
-
-slight rise to the west.  The grasses extend into the distance, a sea of
-
-greens and light browns that sway and roll in broad waves as the gentle
-
-breezes of the plains passes over them, and a single tree billows at the
-
-base of the rise.  To the north, the gully seems to grow more pronounced
-
-as a river cuts between two steep slopes that curve to the east around
-
-the hill.
-
-"
+slight rise to the west.  The grasses extend into the distance, a sea of
+greens and light browns that sway and roll in broad waves as the gentle
+breezes of the plains passes over them, and a single tree billows at the
+base of the rise.  To the north, the gully seems to grow more pronounced
+as a river cuts between two steep slopes that curve to the east around
+the hill.
+"
 "[Zithuan] 26005
-
-"
+"
 301465616 0
 4 6 0
 D1
@@ -6083,23 +4987,15 @@ S
 #45188
 "A Small Hill"
 "As though the very sight of the rolling plains of the valley could bring
-
-life, the western slope of this small hill is gently blanketed with rich
-
-grass, showering the winding trail with lush greens and gentle breezes. 
-
-The other directions, however, seem to fall away from the crest in steep
-
-descents, and the path delicately weaves downward to the southeast.  The
-
-hilltop affords a pleasant view of the city in the distance, the eastern
-
-walls of Chiiron.
-
-"
+life, the western slope of this small hill is gently blanketed with rich
+grass, showering the winding trail with lush greens and gentle breezes. 
+The other directions, however, seem to fall away from the crest in steep
+descents, and the path delicately weaves downward to the southeast.  The
+hilltop affords a pleasant view of the city in the distance, the eastern
+walls of Chiiron.
+"
 "[Zithuan] 26004
-
-"
+"
 301465616 0
 4 6 0
 D3
@@ -6117,19 +5013,13 @@ S
 #45189
 "Path Up a Hill"
 "Along the steep slope the path snakes between boulders and offers few
-
-footholds.  The trail is dusted by gusts of wind and the occasional spray
-
-of mist from above, while down below and to the east, the hillside seems
-
-to grow more gradual.  A protrusion of flat rock provides a sheltered
-
-seat from which to view the Sea of Stars.
-
-"
+footholds.  The trail is dusted by gusts of wind and the occasional spray
+of mist from above, while down below and to the east, the hillside seems
+to grow more gradual.  A protrusion of flat rock provides a sheltered
+seat from which to view the Sea of Stars.
+"
 "[Zithuan] 26003
-
-"
+"
 301465616 0
 4 6 0
 D4
@@ -6143,25 +5033,16 @@ S
 #45190
 "In the Mansion"
 "The brightly lit and beautifully decorated entryway to this grand old mansion
-
-is very large, with a majestic staircase spiraling up to the next floor. 
-
-Large paintings hang on the walls, painted with great skill and detail by a
-
-master artist.  Gold-colored sconces hold torches to light this large hall,
-
-further sconces line the staircase, together penitrating even the shadowy
-
-corners of the ceiling far above.  Open doorways lead to a large dining room
-
-to the west and a fancy-looking sitting room to the east.  A wooden door leads
-
-to a smaller, more modestly adorned room to the north.
-
-"
+is very large, with a majestic staircase spiraling up to the next floor. 
+Large paintings hang on the walls, painted with great skill and detail by a
+master artist.  Gold-colored sconces hold torches to light this large hall,
+further sconces line the staircase, together penitrating even the shadowy
+corners of the ceiling far above.  Open doorways lead to a large dining room
+to the west and a fancy-looking sitting room to the east.  A wooden door leads
+to a smaller, more modestly adorned room to the north.
+"
 "[Zithuan] 41750
-
-"
+"
 301465620 0
 0 5 0
 D0
@@ -6187,44 +5068,30 @@ D4
 E
 "large paintings"
 "Each of the paintings in this room appears to be a masterpiece.  No work seems
-
-to be done in the same style.  The paintings range from portraits, to
-
-landscapes, to abstract.  Despite the odd arrangement, they seem to complement
-
-each other rather nicely.
-
-"
+to be done in the same style.  The paintings range from portraits, to
+landscapes, to abstract.  Despite the odd arrangement, they seem to complement
+each other rather nicely.
+"
 E
 "gold-colored gold colored torches scones"
 "Gold seems to have been plated on to these conical holders.  Mounted on the
-
-wall, each holds a lit torch which illuminates the area.
-
-"
+wall, each holds a lit torch which illuminates the area.
+"
 -1
 S
 
 #45191
 "In the Mansion"
 "A large mahogany table is the focal point of this room.  Twelve decoratively
-
-carved wooden chairs surround it in an evenly spaced fashion.  A very large
-
-tapestry that must have cost a king's ransom covers the walls.  It depicts the
-
-tale of a tragic hunting scene in which the hunter meets his end by falling
-
-off of the horse.  The owner of the houst must have signifigant finances to
-
-own such finances.
-
-"
+carved wooden chairs surround it in an evenly spaced fashion.  A very large
+tapestry that must have cost a king's ransom covers the walls.  It depicts the
+tale of a tragic hunting scene in which the hunter meets his end by falling
+off of the horse.  The owner of the houst must have signifigant finances to
+own such finances.
+"
 "[Zithuan] 41751
-
-large, mahagony table, dozen chairs, high quality tapestry
-
-"
+large, mahagony table, dozen chairs, high quality tapestry
+"
 301465620 0
 0 5 0
 D0
@@ -6238,37 +5105,25 @@ D1
 E
 "large mahogany table twelve decoratively carved wooden chairs"
 "The dining set is decoratively carved with roses and vines.  Each chair has a
-
-different type of rose carved into the chair back.  The table edging is carved
-
-in vines.
-
-"
+different type of rose carved into the chair back.  The table edging is carved
+in vines.
+"
 -1
 S
 
 #45192
 "In the Mansion"
 "The most noticable element of this room is a large window covered in
-
-ornamental curtains.  Opulent furnature decorates the area and it is obvious
-
-that this is some sort of formal sitting room.  The well upholstered sofas and
-
-chezes give the room a stuffy feeling in their gaudiness.  A roaring fire
-
-increases the uncomfortable feeling, as it has been stacked too high and has
-
-started to smoke.
-
-"
+ornamental curtains.  Opulent furnature decorates the area and it is obvious
+that this is some sort of formal sitting room.  The well upholstered sofas and
+chezes give the room a stuffy feeling in their gaudiness.  A roaring fire
+increases the uncomfortable feeling, as it has been stacked too high and has
+started to smoke.
+"
 "[Zithuan] 41752
-
-large windows and ornamental curtains, fine furniture.  sitting room for
-
-company
-
-"
+large windows and ornamental curtains, fine furniture.  sitting room for
+company
+"
 301465620 0
 0 5 0
 D0
@@ -6282,49 +5137,34 @@ D3
 E
 "large window ornamental curtains"
 "Ornamental curtains frame the large windows to the south and east of the room.
-
-"
+"
 E
 "roaring fire"
 "The wood for this fire is green and has been stacked too high, making the air
-
-stuffy and smokey.
-
-"
+stuffy and smokey.
+"
 E
 "furnature sofas chezes"
 "All of the furnature in the room is stiffly upholstered.  Each sofa and chez
-
-seems to have it's own design and fabric.  They are all equally stuffy
-
-however, matching the air quality of the room.
-
-"
+seems to have it's own design and fabric.  They are all equally stuffy
+however, matching the air quality of the room.
+"
 -1
 S
 
 #45193
 "In the Mansion"
 "This room is a bright, well-lit kitchen.  Smells of cooking foods are
-
-prevalent.  There is a roasting spit in the fire place with what appears to be
-
-a shank of pork turning on it.  Bright copper pots and pans hang on the walls,
-
-reflecting the warm kitchen light.  Dishes and glasses line the shelves in
-
-assorted patterns and quantities.  Some lie stacked on a shelf as if they were
-
-about to be used.  A large wooden door is on the floor, leading to what
-
-appears to be the pantry.
-
-"
+prevalent.  There is a roasting spit in the fire place with what appears to be
+a shank of pork turning on it.  Bright copper pots and pans hang on the walls,
+reflecting the warm kitchen light.  Dishes and glasses line the shelves in
+assorted patterns and quantities.  Some lie stacked on a shelf as if they were
+about to be used.  A large wooden door is on the floor, leading to what
+appears to be the pantry.
+"
 "[Zithuan] 41756
-
-kitchen with pots, pans, fireplace with spit.  someone with a pewter mug.  plates and glasses
-
-"
+kitchen with pots, pans, fireplace with spit.  someone with a pewter mug.  plates and glasses
+"
 301465620 0
 0 5 0
 D1
@@ -6342,39 +5182,26 @@ D5
 E
 "roasting pit fire place"
 "This fireplace is covered in blue and white tile.  A pork shank is turning on
-
-the spit.
-
-"
+the spit.
+"
 -1
 S
 
 #45194
 "In the Mansion"
 "This room is quite large, and is obviously an office of some type.  There is
-
-quite an abundence of furnature in here, but very little decoration.  The
-
-large ash desk in the center of the room is covered with papers, all arranged
-
-in neat piles across the tabletop.  Upholstered chairs are arranged in front
-
-of the desk in a way suitable for conducting business.  On the north wall, a
-
-large, rather vibrant painting gives contrast to the rest of the room. 
-
-Looking closely, you can see that the wood in one corner of the room looks a
-
-little different from the rest of the hard wood floor.
-
-"
+quite an abundence of furnature in here, but very little decoration.  The
+large ash desk in the center of the room is covered with papers, all arranged
+in neat piles across the tabletop.  Upholstered chairs are arranged in front
+of the desk in a way suitable for conducting business.  On the north wall, a
+large, rather vibrant painting gives contrast to the rest of the room. 
+Looking closely, you can see that the wood in one corner of the room looks a
+little different from the rest of the hard wood floor.
+"
 "[Zithuan] 41758
-
-banker's office, lots of furniture, little decoration.  painting on north wall.
-
-banker pops here
-
-"
+banker's office, lots of furniture, little decoration.  painting on north wall.
+banker pops here
+"
 301465620 0
 0 5 0
 D1
@@ -6396,49 +5223,34 @@ D5
 E
 "large ash desk"
 "This desk is made of very large slabs of ash.  Well sanded and oiled, the top
-
-of the desk is rectangular and covered in papers.  There seems to be little
-
-ornamentation on the desk.
-
-"
+of the desk is rectangular and covered in papers.  There seems to be little
+ornamentation on the desk.
+"
 E
 "upholstered chairs"
 "These chairs are simply upholstered in a manner that would ease the conduting
-
-of business.
-
-"
+of business.
+"
 E
 "vibrant painting"
 "This vibrant painting gives stark contrast to everything else in the room. 
-
-Large splashes of color on canvas give the painting an abstract look that is
-
-decidedly out of place.
-
-"
+Large splashes of color on canvas give the painting an abstract look that is
+decidedly out of place.
+"
 -1
 S
 
 #45195
 "In the Mansion"
 "This room appears to be the gathering room for the family.  The small, lit
-
-fireplace provides warmth and light to the cozy room.  Large windows, although
-
-now covered with heavy red curtains, look as though they could provide ample
-
-light even on the darkest days.  A small rocking horse sits in the corner,
-
-rocking quietly.
-
-"
+fireplace provides warmth and light to the cozy room.  Large windows, although
+now covered with heavy red curtains, look as though they could provide ample
+light even on the darkest days.  A small rocking horse sits in the corner,
+rocking quietly.
+"
 "[Zithuan] 41753
-
-sitting room, small fireplace, large windows, small rocking horse
-
-"
+sitting room, small fireplace, large windows, small rocking horse
+"
 301465620 0
 0 5 0
 D2
@@ -6452,41 +5264,30 @@ D3
 E
 "small lit fireplace"
 "This small cheery fire lights the room.
-
-"
+"
 E
 "large windows"
 "These large windows allow light in from the outside.
-
-"
+"
 E
 "rocking horse"
 "A small, wooden rocking horse rocks back and forth.  It has a dark brown mane,
-
-and is painted a chestnut brown.
-
-"
+and is painted a chestnut brown.
+"
 -1
 S
 
 #45196
 "Larder"
 "This appears to be a well stocked cellar pantry.  Crates of vegetables line
-
-the shelves, while casks of wine and other spirits are stacked on the floor. 
-
-Looking up, you can see lines of salted meats hung up to dry.  This larder
-
-looks well able to feed a palace, as well as the mansion family and staff, for
-
-several months.
-
-"
+the shelves, while casks of wine and other spirits are stacked on the floor. 
+Looking up, you can see lines of salted meats hung up to dry.  This larder
+looks well able to feed a palace, as well as the mansion family and staff, for
+several months.
+"
 "[Zithuan] 41757
-
-fruits and veggies and meat stored here.  crates in the corner
-
-"
+fruits and veggies and meat stored here.  crates in the corner
+"
 301465620 0
 0 5 0
 D4
@@ -6496,45 +5297,32 @@ D4
 E
 "crates"
 "These crates line the east and west walls.  They appear to be full of fruits
-
-and vegetables.
-
-"
+and vegetables.
+"
 E
 "casks wine"
 "These casks are stacked against the north wall.  They are filled with assorted
-
-wines and spirits.
-
-"
+wines and spirits.
+"
 E
 "lines salted meats"
 "The celing is strung with salted and smoked meats.  They appear to range from
-
-pork to poultry to assorted fishes.
-
-"
+pork to poultry to assorted fishes.
+"
 -1
 S
 
 #45197
 "Cellar"
 "This room looks as though it is seldom entered.  Dust clearly marks the
-
-footprints of the past visitors.  Great boxes of papers and bank records are
-
-stacked in an organized fashion.  This is obviously not the place in which the
-
-owner stores his gold and jewels.  Small rustling sounds come from behind the
-
-boxes making you wonder if the papers are safe from their rodent nesters.
-
-"
+footprints of the past visitors.  Great boxes of papers and bank records are
+stacked in an organized fashion.  This is obviously not the place in which the
+owner stores his gold and jewels.  Small rustling sounds come from behind the
+boxes making you wonder if the papers are safe from their rodent nesters.
+"
 "[Zithuan] 41767
-
-boxes of paper, bank records, no pretty treasure.  confidential storage place.
-
-"
+boxes of paper, bank records, no pretty treasure.  confidential storage place.
+"
 301465620 0
 0 5 0
 D4
@@ -6544,29 +5332,21 @@ D4
 E
 "boxes papers"
 "Boxes of papers are stacked throughout the room in an orderly fashion. 
-
-Looking closely you can see that they are ordered by date.
-
-"
+Looking closely you can see that they are ordered by date.
+"
 -1
 S
 
 #45198
 "Upstairs Hall"
 "A large hallway runs along the entire length of the mansion in an east-west
-
-direction.  A decorative carpet lines the hall completely.  Torches, in
-
-similar scones to the ones below, give off enough light to see clearly.  You
-
-can see doors off of the hallway to the east and west.  Small stairs lead
-
-upward into the attic.
-
-"
+direction.  A decorative carpet lines the hall completely.  Torches, in
+similar scones to the ones below, give off enough light to see clearly.  You
+can see doors off of the hallway to the east and west.  Small stairs lead
+upward into the attic.
+"
 "[Zithuan] 41755
-
-"
+"
 301465628 0
 0 5 0
 D1
@@ -6588,32 +5368,24 @@ D5
 E
 "decorative carpet"
 "This carpet has been dyed in a blue and gold knot pattern.  It lines the hall
-
-to the east and west.
-
-"
+to the east and west.
+"
 E
 "torches scones"
 "Gold seems to have been plated on to these conical holders.  Mounted on the
-
-wall, each holds a lit torch which illuminates the area.
-
-"
+wall, each holds a lit torch which illuminates the area.
+"
 -1
 S
 
 #45199
 "West Wing"
 "This end of the hall is well lit by torches.  Large mahogany doors open to the
-
-north and south.  A long ornamental carpet decorates the floor both here and
-
-to the east.  A small painting of a young boy hangs on the wall to the west.
-
-"
+north and south.  A long ornamental carpet decorates the floor both here and
+to the east.  A small painting of a young boy hangs on the wall to the west.
+"
 "[Zithuan] 41754
-
-"
+"
 301465620 0
 0 5 0
 D0
@@ -6631,36 +5403,26 @@ D2
 E
 "decorative carpet"
 "This carpet has been dyed in a blue and gold knot pattern.  It lines the hall
-
-to the east.
-
-"
+to the east.
+"
 E
 "small painting young boy"
 "This boy looks to have been about four or five years old at the time of the
-
-painting.  However, by the wear on the edges, it seems that the painting is
-
-quite old.
-
-"
+painting.  However, by the wear on the edges, it seems that the painting is
+quite old.
+"
 -1
 S
 
 #45200
 "Upstairs Room"
 "This is obviously a young girl's room.  Dolls and toys are scattered
-
-throughout the room in complete disarray.  A porcelin tea set is arranged
-
-nicely on a table in the middle of the room.  A canopy bed with pink and lace
-
-coverings is on the north side of the room.
-
-"
+throughout the room in complete disarray.  A porcelin tea set is arranged
+nicely on a table in the middle of the room.  A canopy bed with pink and lace
+coverings is on the north side of the room.
+"
 "[Zithuan] 41759
-
-"
+"
 301465620 0
 0 5 0
 D2
@@ -6670,15 +5432,12 @@ D2
 E
 "porcelin tea set"
 "The dishes of the tea set are white porcelin with pink floral edges.  They are
-
-arranged for high tea on a small wooden table in the center of the room.
-
-"
+arranged for high tea on a small wooden table in the center of the room.
+"
 E
 "canopy bed pink lace coverings"
 "The bed has a solid oak frame and is overed in pink and lace sheets.
-
-"
+"
 3773 49 1509949540 -2 0
 3774 81 1509949540 -2 0
 -1
@@ -6687,17 +5446,12 @@ S
 #45201
 "Upstairs Room"
 "This may be called the blue room, for almost everything in here has been
-
-painted a soft light blue.  The room is dominated by a large magogany bed with
-
-pale blue coverings.  Blue curtains cover the windows, giving the light in the
-
-room a strange blue tint.
-
-"
+painted a soft light blue.  The room is dominated by a large magogany bed with
+pale blue coverings.  Blue curtains cover the windows, giving the light in the
+room a strange blue tint.
+"
 "[Zithuan] 41760
-
-"
+"
 301465620 0
 0 5 0
 D0
@@ -6707,30 +5461,23 @@ D0
 E
 "large mahogany bed pale coverings"
 "This bed is covered in sky blue cloth with pale white areas.  It gives the
-
-imprssion of the open sky.
-
-"
+imprssion of the open sky.
+"
 E
 "curtains windows"
 "Looking out you can see the front grounds of the mansion.
-
-"
+"
 -1
 S
 
 #45202
 "Upstairs Hall"
 "Torches line this portion of the hallway giving sufficient light to see the
-
-decoration.  Two large tapestries cover openings to the north and south.  A
-
-small portrait of a young girl hangs on the eastern wall.
-
-"
+decoration.  Two large tapestries cover openings to the north and south.  A
+small portrait of a young girl hangs on the eastern wall.
+"
 "[Zithuan] 41764
-
-"
+"
 301465620 0
 0 5 0
 D0
@@ -6748,43 +5495,31 @@ D3
 E
 "decorative carpet"
 "This carpet has been dyed in a blue and gold knot pattern.  It lines the hall
-
-to the west.
-
-"
+to the west.
+"
 E
 "tapestries"
 "Both tapestries depict the same scene.  Each is a hilly wooded scene with a
-
-knight mounted on a war horse.
-
-"
+knight mounted on a war horse.
+"
 E
 "small portrait young girl"
 "This girl looks to have been about eight or nine years old at the time of the
-
-painting.  It looks quite new.
-
-"
+painting.  It looks quite new.
+"
 -1
 S
 
 #45203
 "Upstairs Room"
 "A large bed, with an ornate canopy and matching curtains, stands against the
-
-north wall.  A fireplace, surrounded by colored tile, shows the owner's desire
-
-to follow current fashions.  A large, elaboratly carved chest of drawers
-
-stands in the corner.  Several small porcelin vials are sitting on top of the
-
-chest.
-
-"
+north wall.  A fireplace, surrounded by colored tile, shows the owner's desire
+to follow current fashions.  A large, elaboratly carved chest of drawers
+stands in the corner.  Several small porcelin vials are sitting on top of the
+chest.
+"
 "[Zithuan] 41765
-
-"
+"
 301465620 0
 0 5 0
 D2
@@ -6794,46 +5529,34 @@ D2
 E
 "large bed ornate canopy curtains"
 "This bed is covered in ornate flowered brocade fabric.  It looks very
-
-expensive and uncomfortable.
-
-"
+expensive and uncomfortable.
+"
 E
 "elaborately carved chest of drawers"
 "This maple chest is elaoratly carved in a variety of floral patterns.
-
-"
+"
 E
 "fireplace"
 "A large fireplace, surrounded by burgundy and gold tiles, stands in contrast
-
-to the floral pattern of the rest of the room.
-
-"
+to the floral pattern of the rest of the room.
+"
 E
 "small porcelin vials"
 "These small vials each have a different flower painted on them.  They are made
-
-of multi-colored glass.
-
-"
+of multi-colored glass.
+"
 -1
 S
 
 #45204
 "Upstairs Room"
 "An empty crib stands in one corner of the room.  Standing next to it is a tall
-
-bookcase with hand-painted picture books sitting on the shelves.  Small dolls
-
-and hand-carved soldiers are scattered about the room.  It is quite obvious
-
-that a small child occupies this area.
-
-"
+bookcase with hand-painted picture books sitting on the shelves.  Small dolls
+and hand-carved soldiers are scattered about the room.  It is quite obvious
+that a small child occupies this area.
+"
 "[Zithuan] 41766
-
-"
+"
 301465620 0
 0 5 0
 D0
@@ -6843,32 +5566,24 @@ D0
 E
 "empty crib"
 "The empty crib is quite grand.  Elaborate hand-carvings all around the rails
-
-show fine workmanship, and must have cost the buyer a pretty copper.
-
-"
+show fine workmanship, and must have cost the buyer a pretty copper.
+"
 E
 "tall bookcase"
 "A bookcase stands along the wall.  In it are several lovelybooks covered with
-
-beautiful pictures.
-
-"
+beautiful pictures.
+"
 -1
 S
 
 #45205
 "Attic"
 "A tiny window built in the attic wall provides a view of a miniscule bit
-
-of the sky.  It must not have been built for viewing, but rather to
-
-simply admit just a tiny bit of light for those accessing this room.
-
-"
+of the sky.  It must not have been built for viewing, but rather to
+simply admit just a tiny bit of light for those accessing this room.
+"
 "[Zithuan] 41761
-
-"
+"
 301465620 0
 0 4 0
 D1
@@ -6889,15 +5604,11 @@ S
 #45206
 "Attic"
 "A small window in the west wall of the attic provides a view of the ground of
-
-the mansion.  This portion of the attic contains old records from the master
-
-of the house.  They are stacked and boxed in an orderly fashion.
-
-"
+the mansion.  This portion of the attic contains old records from the master
+of the house.  They are stacked and boxed in an orderly fashion.
+"
 "[Zithuan] 41763
-
-"
+"
 301465620 0
 0 4 0
 D1
@@ -6910,15 +5621,11 @@ S
 #45207
 "Attic"
 "The attic continues here from the west.  This portion contains many crates
-
-containing old clothing and discarded toys.  Whoever lives here must have done
-
-so for many years in order to accumulate so many crates.
-
-"
+containing old clothing and discarded toys.  Whoever lives here must have done
+so for many years in order to accumulate so many crates.
+"
 "[Zithuan] 41762
-
-"
+"
 301465620 0
 0 4 0
 D3
@@ -6928,31 +5635,22 @@ D3
 E
 "crates"
 "These crates are full of everything from old baby clothes to bank records.
-
-"
+"
 -1
 S
 
 #45208
 "Atop a Small Wooden Platform"
 "You stand atop a very small platform, attached precariously on top of a
-
-long slender pole.  The view up here seems more beautiful, looking out
-
-over the brush and scrub and the rolling hills around.  Smoke rises above
-
-the hills to the northwest where Chiiron must be.  Turning your face into
-
-the wind and looking far to the north, you have a great view of the land
-
-rising up into the Great Northern Mountains.  The sunrises and sunsets
-
-must be spectacular from here.  
-
-"
+long slender pole.  The view up here seems more beautiful, looking out
+over the brush and scrub and the rolling hills around.  Smoke rises above
+the hills to the northwest where Chiiron must be.  Turning your face into
+the wind and looking far to the north, you have a great view of the land
+rising up into the Great Northern Mountains.  The sunrises and sunsets
+must be spectacular from here.  
+"
 "[Zithuan] 24048
-
-"
+"
 301465624 0
 2 5 0
 D5
@@ -6965,17 +5663,12 @@ S
 #45209
 "Western Sea Trail"
 "The marked trail continues on to the north and south.  To the south you
-
-see what appears to be a fork in the trail.  Wind blows in from the sea
-
-to the east covering your face with drops of salty water.
-
-"
+see what appears to be a fork in the trail.  Wind blows in from the sea
+to the east covering your face with drops of salty water.
+"
 "[Zithuan] 21001
-
-[Zithuan] No player will ever see this room.  It is only here for the Fork to look right
-
-"
+[Zithuan] No player will ever see this room.  It is only here for the Fork to look right
+"
 301465616 0
 4 6 0
 D2
@@ -6988,19 +5681,13 @@ S
 #45210
 "Small Winding Path"
 "This narrow trail is really just a bit of sand covering sparse grass.  It
-
-must be used only by pedestrians, it is too narrow for large animals or
-
-wagons.  It is very worn with use; the actual trail is a foot below the
-
-normal ground level.
-
-"
+must be used only by pedestrians, it is too narrow for large animals or
+wagons.  It is very worn with use; the actual trail is a foot below the
+normal ground level.
+"
 "[Zithuan] 21017
-
-[Zithuan] No player will ever see this room.  It is only here for the Fork to look right
-
-"
+[Zithuan] No player will ever see this room.  It is only here for the Fork to look right
+"
 301465616 0
 12 5 0
 D3
@@ -7013,19 +5700,13 @@ S
 #45211
 "Hillside Beyond the Brush"
 "The trail is almost three feet wide here, just wide enough that your
-
-clothing does not catch on the cruel brambles that line the path.  The
-
-brush grows even closer around the trail to the south, but to the north
-
-it seems to intersect with a proper trail.
-
-"
+clothing does not catch on the cruel brambles that line the path.  The
+brush grows even closer around the trail to the south, but to the north
+it seems to intersect with a proper trail.
+"
 "[Zithuan] 70036
-
-[Zithuan] No player will ever see this room.  It is only here for the Fork to look right
-
-"
+[Zithuan] No player will ever see this room.  It is only here for the Fork to look right
+"
 301465616 0
 4 9 0
 D0
@@ -7038,19 +5719,13 @@ S
 #45212
 "Brush, North Ridge"
 "From this vantage point you can see north to the mountains and below you
-
-a valley of brush and scrub.  The track continues to the north down into
-
-the valley and south back to the main trail.  The track is quite steep
-
-and narrow.  The ridge-side is covered in brush, and thorns, you would
-
-not want to fall in this area.  
-
-"
+a valley of brush and scrub.  The track continues to the north down into
+the valley and south back to the main trail.  The track is quite steep
+and narrow.  The ridge-side is covered in brush, and thorns, you would
+not want to fall in this area.  
+"
 "[Zithuan] 24015
-
-"
+"
 301465616 0
 5 6 0
 D2

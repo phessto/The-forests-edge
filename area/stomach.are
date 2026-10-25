@@ -10,16 +10,11 @@
 #70050
 "The Stomach of a Purple Worm"
 "The stomach of a purple worm is an extremely unpleasant place.  The walls of
-
-slime covered flesh throb regularly due to the beast's powerful muscle
-
-contractions, and caustic digestive acids rapidly digest any organic matter
-
-that does not belong.  The stench of flesh in various stages of decomposition
-
-fills what passes for air here.
-
-"
+slime covered flesh throb regularly due to the beast's powerful muscle
+contractions, and caustic digestive acids rapidly digest any organic matter
+that does not belong.  The stench of flesh in various stages of decomposition
+fills what passes for air here.
+"
 ""
 335020036 0
 13 8 0
@@ -27,106 +22,65 @@ A
 ""
 ""
 "if( !mob_in_room( 2370, find_room( 70050 ) ) ) {
-
-  transfer_all( find_room( 70050 ), room );
-
-  act_tochar( #escape, ch );
-
-  act_notchar( #rescape, ch );
-
-  }
-
-if( !mob ) {
-
-  junk_mob( mob_in_room( 2370, find_room( 70050 ) ) );
-
-  transfer_all( find_room( 70050 ), room );
-
-  act_tochar( #dead, ch );
-
-  act_notchar( #rdead, ch );
-
-  loop( obj_in_room( 11, find_room( 70050 ) ) ) {
-
-    obj_to_room( obj_in_room( 11, find_room( 70050 ) ), room );
-
-    }
-
-  loop( obj_in_room( 10, find_room( 70050 ) ) ) {
-
-    obj_to_room( obj_in_room( 10, find_room( 70050 ) ), room );
-
-    }
-
-  }
-
-wait( random( 0, 1 ) );
-
-if( char_in_room( ch, find_room( 70050 ) ) ) {
-
-  if( random( 1, 3 ) > 1 ) {
-
-    i = 3d10+20;
-
-    dam_message( ch, i, \"+powerful muscle contractions\" );
-
-    inflict( ch, mob, i, \"stomach muscles\" );
-
-    }
-
-  if( random( 1, 3 ) > 1 ) {
-
-    i = 6d7+15;
-
-    acid_message( ch, i, \"the toxic digestive acid\" );
-
-    inflict_acid( ch, mob, i, \"stomach acid\" );
-
-    poison( ch );
-
-    }
-
-  }
-
-acode( find_room( 70050 ), 2 );
-
-"
+  transfer_all( find_room( 70050 ), room );
+  act_tochar( #escape, ch );
+  act_notchar( #rescape, ch );
+  }
+if( !mob ) {
+  junk_mob( mob_in_room( 2370, find_room( 70050 ) ) );
+  transfer_all( find_room( 70050 ), room );
+  act_tochar( #dead, ch );
+  act_notchar( #rdead, ch );
+  loop( obj_in_room( 11, find_room( 70050 ) ) ) {
+    obj_to_room( obj_in_room( 11, find_room( 70050 ) ), room );
+    }
+  loop( obj_in_room( 10, find_room( 70050 ) ) ) {
+    obj_to_room( obj_in_room( 10, find_room( 70050 ) ), room );
+    }
+  }
+wait( random( 0, 1 ) );
+if( char_in_room( ch, find_room( 70050 ) ) ) {
+  if( random( 1, 3 ) > 1 ) {
+    i = 3d10+20;
+    dam_message( ch, i, \"+powerful muscle contractions\" );
+    inflict( ch, mob, i, \"stomach muscles\" );
+    }
+  if( random( 1, 3 ) > 1 ) {
+    i = 6d7+15;
+    acid_message( ch, i, \"the toxic digestive acid\" );
+    inflict_acid( ch, mob, i, \"stomach acid\" );
+    poison( ch );
+    }
+  }
+acode( find_room( 70050 ), 2 );
+"
 E
 "escape"
 "@gHaving destroyed a section of the stomach lining, you quickly jump through
-
-before the opening reseals itself.@n
-
-"
+before the opening reseals itself.@n
+"
 E
 "rescape"
 "@gYou spot a gaping wound in the side of the purple worm.  You think you see
-
-someone jumping out before the wound reseals itself.@n
-
-"
+someone jumping out before the wound reseals itself.@n
+"
 E
 "dead"
 "@gThe purple worm thrashes violently and regurgitates you from its stomach!@n
-
-"
+"
 E
 "rdead"
 "@gWith its death, the purple worm violently regurgitates the contents of its
-
-stomach.@n
-
-"
+stomach.@n
+"
 !
 0 0 0
 A
 ""
 ""
 "if( char_in_room( ch, find_room( 70050 ) ) )
-
-  acode( find_room( 70050 ), 1 );
-
-"
+  acode( find_room( 70050 ), 1 );
+"
 !
 0 0 0
 2370 9 1509949440 3 0
@@ -136,8 +90,7 @@ S
 #70051
 "Lair of a Purple Worm"
 "Under Construction.
-
-"
+"
 ""
 335020036 0
 13 9 0

@@ -10,16 +10,11 @@
 #83200
 "A Narrow Spiral Stair"
 "To the east and west of you, crude wooden doors bound with iron strips mark
-
-the entrances to this level of the dungeon.  A crude stone spiral stairway
-
-makes its way upwards in a haphazard fashion.  Widely spaced torches give dim
-
-light to the area, making the stairway a dangerous place for the unwary
-
-traveler.
-
-"
+the entrances to this level of the dungeon.  A crude stone spiral stairway
+makes its way upwards in a haphazard fashion.  Widely spaced torches give dim
+light to the area, making the stairway a dangerous place for the unwary
+traveler.
+"
 ""
 301465605 0
 0 6 0
@@ -38,21 +33,15 @@ D4
 E
 "torch torches"
 "Wooden torches are spaced fairly evenly, if far apart, on the way up the
-
-stairwell.  Occasionally one sputters on the verge of going out, but then
-
-rekindles with a new flame.  They are set in iron grates which are somehow
-
-bolted into the stone wall.
-
-"
+stairwell.  Occasionally one sputters on the verge of going out, but then
+rekindles with a new flame.  They are set in iron grates which are somehow
+bolted into the stone wall.
+"
 E
 "1 east 1 west crude wooden doors iron"
 "The doors to the east and west are made of crudely shaped wood, bound by heavy
-
-iron straps.
-
-"
+iron straps.
+"
 2427 9 1509949540 3 0
 223 9 1509949540 3 0
 2415 9 1509949540 3 0
@@ -63,8 +52,7 @@ S
 #83201
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -82,8 +70,7 @@ S
 #83202
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -101,8 +88,7 @@ S
 #83203
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -120,14 +106,10 @@ S
 #83204
 "Intersetion in the Halls"
 "The hallway comes to an intersection here.  One hall leads to the west, the
-
-other to the north and south.  The walls, celing, and floor are made up of
-
-large worn granite slabs.  The hallway is faintly lit by small glowing orbs
-
-placed intermittantly on the walls.
-
-"
+other to the north and south.  The walls, celing, and floor are made up of
+large worn granite slabs.  The hallway is faintly lit by small glowing orbs
+placed intermittantly on the walls.
+"
 ""
 301465600 0
 0 6 0
@@ -147,8 +129,7 @@ A
 ""
 ""
 "continue;
-
-"
+"
 !
 3 0 8
 2213 137 1509949540 3 0
@@ -159,8 +140,7 @@ S
 #83205
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -178,14 +158,10 @@ S
 #83206
 "A Dimly Lit Passage"
 "Stretching to the north and south, this dimly lit hallway is made of
-
-predomidantly large granite blocks.  As it slopes slightly down to the north,
-
-smaller brownish sandstone blocks are used for support.  Many of the small
-
-cracks and holes in the walls seem to have become homes to small vermin.
-
-"
+predomidantly large granite blocks.  As it slopes slightly down to the north,
+smaller brownish sandstone blocks are used for support.  Many of the small
+cracks and holes in the walls seem to have become homes to small vermin.
+"
 ""
 301465600 0
 0 6 0
@@ -204,14 +180,10 @@ S
 #83207
 "A Dimly Lit Passage"
 "This hallway is made up of predominantly large granite blocks.  However, many
-
-of the bottom stones are made of a smaller brownish sandstone.  The hall
-
-slopes up slightly to both the east and the south, though this does not appear
-
-to be so much as an archetectual design as a mistake in construction.
-
-"
+of the bottom stones are made of a smaller brownish sandstone.  The hall
+slopes up slightly to both the east and the south, though this does not appear
+to be so much as an archetectual design as a mistake in construction.
+"
 ""
 301465600 0
 0 6 0
@@ -229,14 +201,10 @@ S
 #83208
 "A Dimly Lit Passage"
 "This hallway is made of predominantly large granite slabs, though as the hall
-
-slopes down to the west, smaller stones are used to brace the larger.  To the
-
-north, the hall is dominated by a small wooden door with iron supports.  The
-
-hallway continuest to the east and west.
-
-"
+slopes down to the west, smaller stones are used to brace the larger.  To the
+north, the hall is dominated by a small wooden door with iron supports.  The
+hallway continuest to the east and west.
+"
 ""
 301465605 0
 0 6 0
@@ -258,14 +226,10 @@ S
 #83209
 "A Dimly Lit Passage"
 "The hall runs off to the east and west with a small wooden door directly to
-
-the south.  The floor, walls, and ceiling are made up of large granite blocks
-
-which seem to be held together simply by the maginitude of their own weight. 
-
-A small glowing orb gives a faint light to this portion of the passage.
-
-"
+the south.  The floor, walls, and ceiling are made up of large granite blocks
+which seem to be held together simply by the maginitude of their own weight. 
+A small glowing orb gives a faint light to this portion of the passage.
+"
 ""
 301465605 0
 0 6 0
@@ -287,18 +251,12 @@ S
 #83210
 "A Dimly Lit Passage"
 "You have come to an intersection of hallways.  One leads off to the north
-
-while the other heads west.  It seems that the hallway may continue to the
-
-east, but a collapse obstructs an immediate view of the passage.  The hallways
-
-themselves look very similar, as both are made up of the same granite slabs
-
-that compose the rest of the dungeon.  Small glowing orbs give off a faint
-
-light in each direction.
-
-"
+while the other heads west.  It seems that the hallway may continue to the
+east, but a collapse obstructs an immediate view of the passage.  The hallways
+themselves look very similar, as both are made up of the same granite slabs
+that compose the rest of the dungeon.  Small glowing orbs give off a faint
+light in each direction.
+"
 ""
 301465605 0
 0 6 0
@@ -317,65 +275,45 @@ D3
 E
 "collapse e east"
 "Granite slabs have crumbled from the ceiling to block off the passageway to
-
-the east.  Although the damage to the hall is extensive, there appears to be a
-
-small opening in the wreckage which one might squeeze through with effort.
-
-"
+the east.  Although the damage to the hall is extensive, there appears to be a
+small opening in the wreckage which one might squeeze through with effort.
+"
 E
 "orb light"
 "Small grey-white glowing orbs give of light from various places along the
-
-hall.  They rest in small indents in the walls.
-
-"
+hall.  They rest in small indents in the walls.
+"
 A
 "move clear"
 "e east rubble"
 "if( !is_open( room, north) ) {
-
-  act_tochar( #move, ch );
-
-  act_notchar( #rmove, ch );
-
-  open( room, east );
-
-  }
-
-else {
-
-  act_notchar( #rmove2, ch );
-
-  act_tochar( #move2, ch );
-
-  }
-
-"
+  act_tochar( #move, ch );
+  act_notchar( #rmove, ch );
+  open( room, east );
+  }
+else {
+  act_notchar( #rmove2, ch );
+  act_tochar( #move2, ch );
+  }
+"
 E
 "move"
 "You clear away some of the rubble to the east.
-
-"
+"
 E
 "rmove"
 "$n clears away some of the rubble to the east.
-
-"
+"
 E
 "rmove2"
 "$n attempts to clear away the rubble, but instead finds an open passage $e had
-
-not noticed before.
-
-"
+not noticed before.
+"
 E
 "move2"
 "You attempt to clear away the rubble, but instead find an open passage you had
-
-not noticed before.
-
-"
+not noticed before.
+"
 !
 0 0 0
 -1
@@ -384,21 +322,14 @@ S
 #83211
 "Inside the Collapse"
 "You are standing inside of the rubble collapse.  Dust rises and debris falls
-
-with every sound and movement in the area.  Walls are visible to the north and
-
-east, showing that under normal conditions the passage would continue to the
-
-west and south.
-
-"
+with every sound and movement in the area.  Walls are visible to the north and
+east, showing that under normal conditions the passage would continue to the
+west and south.
+"
 "[Olah] need to reword the 1 west and 1 south extras in case they've already been cleared
-
-[Olah] need an is_open check in your clear rubble acodes in case they're moved
-
-[Olah] need dust, debris, and walls room extra
-
-"
+[Olah] need an is_open check in your clear rubble acodes in case they're moved
+[Olah] need dust, debris, and walls room extra
+"
 301465604 0
 0 6 0
 D2
@@ -412,101 +343,72 @@ D3
 E
 "w west"
 "Granite slabs have fallen across the path to the west, forming a formidable
-
-barrier across the passage way.  However, the slab has crumbled in the lower
-
-left corner making it possible, with effort, to get to the other side.
-
-"
+barrier across the passage way.  However, the slab has crumbled in the lower
+left corner making it possible, with effort, to get to the other side.
+"
 E
 "s south"
 "The walls have collapsed to the south, blocking the passageway.  A narrow beam
-
-of light filters through a small space between the wall and the ceiling.  If
-
-the space were cleared, it would be possible to continue to the south.
-
-"
+of light filters through a small space between the wall and the ceiling.  If
+the space were cleared, it would be possible to continue to the south.
+"
 A
 "move clear"
 "south s"
 "act_tochar( #move, ch );
-
-act_notchar( #rmove, ch );
-
-open( room, south );
-
-"
+act_notchar( #rmove, ch );
+open( room, south );
+"
 E
 "move"
 "You clear away some of the rubble to the south.
-
-"
+"
 E
 "rmove"
 "$n clears away some of the rubble to the south.
-
-"
+"
 !
 0 0 0
 A
 "move clear"
 "west w"
 "act_tochar( #move, ch );
-
-act_notchar( #rmove, ch );
-
-open( room, west );
-
-"
+act_notchar( #rmove, ch );
+open( room, west );
+"
 E
 "move"
 "You clear away some of the rubble to the west.
-
-"
+"
 E
 "rmove"
 "$n clears away some of the rubble to the west.
-
-"
+"
 !
 0 0 0
 A
 "look"
 "south s"
 "if( !is_open( room, south ) ) {
-
-  act_tochar( #closed, ch );
-
-  }
-
-else {
-
-  act_tochar( #open, ch );
-
-  }
-
-"
+  act_tochar( #closed, ch );
+  }
+else {
+  act_tochar( #open, ch );
+  }
+"
 E
 "closed"
 "The walls have collapsed to the south, blocking the passageway.  A narrow beam
-
-of light filters through a small space between the wall and the ceiling.  If
-
-the space were cleared, it would be possible to continue to the south.
-
-"
+of light filters through a small space between the wall and the ceiling.  If
+the space were cleared, it would be possible to continue to the south.
+"
 E
 "open"
 "The rubble and debris seem fairly entrenched across the passageway to the
-
-south.  However, it appears as though someone has recently shifted some of the
-
-collapse as an opening is now visible, just large enough to squeeze through to
-
-the other side.
-
-"
+south.  However, it appears as though someone has recently shifted some of the
+collapse as an opening is now visible, just large enough to squeeze through to
+the other side.
+"
 !
 0 0 0
 A
@@ -521,23 +423,15 @@ S
 #83212
 "A Collapsed Passageway"
 "This portion of the granite passageway has been blocked off by a rather
-
-extensive collapse to the north.  Portions of the ceiling and walls have
-
-crumbled in, forming an effective barrier.  A small orb of sickly yellow light
-
-can be seen half buried in the collapse, though it still lights the chamber to
-
-a small degree.  The passage continues to the south.
-
-"
+extensive collapse to the north.  Portions of the ceiling and walls have
+crumbled in, forming an effective barrier.  A small orb of sickly yellow light
+can be seen half buried in the collapse, though it still lights the chamber to
+a small degree.  The passage continues to the south.
+"
 "[Olah] the collapse, 1 north extra should be reworded in case the north is
-
-already cleared and not blocking off passage
-
-[Kotoktok] use describe trigs
-
-"
+already cleared and not blocking off passage
+[Kotoktok] use describe trigs
+"
 301465605 0
 0 6 0
 D0
@@ -551,78 +445,56 @@ D2
 E
 "collapse north n"
 "Granite slabs have crumbled from the ceiling to block off the passageway to
-
-the north.  Although the damage to the hall is extensive, it looks as though
-
-it could easily be cleared.
-
-"
+the north.  Although the damage to the hall is extensive, it looks as though
+it could easily be cleared.
+"
 E
 "orb light"
 "Small grey-white glowing orbs give of light from various places along the
-
-hall.  They rest in small indents in the walls.
-
-"
+hall.  They rest in small indents in the walls.
+"
 A
 ""
 ""
 "act_tochar( #drip, ch );
-
-"
+"
 E
 "drip"
 "You hear the faint sound of dripping water to the south.
-
-"
+"
 !
 2 200 0
 A
 "move clear"
 "rubble rock collapse north n"
 "if( !is_open( room, north) ) {
-
-  act_tochar( #move, ch );
-
-  act_notchar( #rmove, ch );
-
-  open( room, north );
-
-  }
-
-else {
-
-  act_notchar( #rmove2, ch );
-
-  act_tochar( #move2, ch );
-
-  }
-
-"
+  act_tochar( #move, ch );
+  act_notchar( #rmove, ch );
+  open( room, north );
+  }
+else {
+  act_notchar( #rmove2, ch );
+  act_tochar( #move2, ch );
+  }
+"
 E
 "move"
 "You clear away some of the rubble to the north.
-
-"
+"
 E
 "rmove"
 "$n clears away some of the rubble to the north.
-
-"
+"
 E
 "rmove2"
 "$n attempts to clear away the rubble, but instead finds an open passage $e had
-
-not noticed before.
-
-"
+not noticed before.
+"
 E
 "move2"
 "You attempt to clear away the rubble, but instead find an open passage you had
-
-not noticed before.
-
-"
+not noticed before.
+"
 !
 0 0 0
 -1
@@ -631,16 +503,11 @@ S
 #83213
 "A Dimly Lit Passage"
 "Water drips from the ceiling forming a large puddle on the floor.  The sound
-
-echoes strangely off the granite slabs which make up the passage.  The lone
-
-glowing orb in the area casts strange reflections off of the water, giving the
-
-vicinity more of an eerie feeling than it had before.  The hall continues to
-
-the north and west.
-
-"
+echoes strangely off the granite slabs which make up the passage.  The lone
+glowing orb in the area casts strange reflections off of the water, giving the
+vicinity more of an eerie feeling than it had before.  The hall continues to
+the north and west.
+"
 ""
 301465605 0
 0 6 0
@@ -655,46 +522,34 @@ D3
 E
 "large puddle"
 "Water dripping from the ceiling has formed a large black puddle on the stone
-
-floor.  Ripples scuttle across it as new drops fall.
-
-"
+floor.  Ripples scuttle across it as new drops fall.
+"
 E
 "slabs walls floor"
 "Grey stone blocks make up the structure of the entire hall.  Each is about
-
-four feet in width and length, making it a wonder that they could be used in
-
-construction.  These slabs look to have no way of shifting from their
-
-appointed positions.
-
-"
+four feet in width and length, making it a wonder that they could be used in
+construction.  These slabs look to have no way of shifting from their
+appointed positions.
+"
 E
 "orb light"
 "Small grey-white glowing orbs give of light from various places along the
-
-hall.  They rest in small indents in the walls.
-
-"
+hall.  They rest in small indents in the walls.
+"
 E
 "ceiling"
 "Water coalesces between the seams of the stone slabs that make up the
-
-ceiling.  In one spot, water drips down, forming a large puddle on the floor.
-
-"
+ceiling.  In one spot, water drips down, forming a large puddle on the floor.
+"
 A
 ""
 ""
 "act_tochar( #drip, ch );
-
-"
+"
 E
 "drip"
 "A drop of water splashes onto the floor, creating an eerie echo.
-
-"
+"
 !
 2 200 0
 -1
@@ -703,14 +558,10 @@ S
 #83214
 "A Dimly Lit Passage"
 "This dimly lit hallway looks much like those above.  Large granite slabs make
-
-up the walls and floor, while a small glowing orb gives off poor illumination
-
-to the area.  To the west, a wooden door conceals what lies beyond while to
-
-the east, the granite hall continues.
-
-"
+up the walls and floor, while a small glowing orb gives off poor illumination
+to the area.  To the west, a wooden door conceals what lies beyond while to
+the east, the granite hall continues.
+"
 ""
 301465605 0
 0 6 0
@@ -725,32 +576,24 @@ D3
 E
 "slabs walls floor"
 "Grey stone blocks make up the structure of the entire hall.  Each is about
-
-four feet in width and length, making it a wonder that they could be used in
-
-construction.  These slabs look to have no way of shifting from their
-
-appointed positions.
-
-"
+four feet in width and length, making it a wonder that they could be used in
+construction.  These slabs look to have no way of shifting from their
+appointed positions.
+"
 E
 "orb light"
 "Small grey-white glowing orbs give of light from various places along the
-
-hall.  They rest in small indents in the walls.
-
-"
+hall.  They rest in small indents in the walls.
+"
 A
 ""
 ""
 "act_tochar( #drip, ch );
-
-"
+"
 E
 "drip"
 "You hear the faint sound of dripping water to the east.
-
-"
+"
 !
 2 200 0
 -1
@@ -759,14 +602,10 @@ S
 #83215
 "A Small Cell"
 "The room looks as though it has not seen light in quite some time.  The floor
-
-is covered in white guano and as you look around, you can hear the small
-
-squeaks of small mammals above you.  The only exit is back through the door to
-
-the north.
-
-"
+is covered in white guano and as you look around, you can hear the small
+squeaks of small mammals above you.  The only exit is back through the door to
+the north.
+"
 ""
 301596676 0
 0 6 0
@@ -777,21 +616,17 @@ D0
 E
 "white drop"
 "Upon closer examination, you see that the white splotch is in fact some sort
-
-of guano.
-
-"
+of guano.
+"
 A
 ""
 ""
 "act_tochar( #guano, ch );
-
-"
+"
 E
 "guano"
 "You see something white drop from the ceiling.
-
-"
+"
 !
 2 200 0
 59 9 1509949540 3 0
@@ -810,14 +645,10 @@ S
 #83216
 "A Dimly Lit Passage- Small Door"
 "The passage is stopped to the north by a small wooden door; however, it seems
-
-to continue to the south for a bit.  The passage itself is made up of large
-
-granite slabs and lit by small glowing orbs.  The light reflects faintly off
-
-of the stones.
-
-"
+to continue to the south for a bit.  The passage itself is made up of large
+granite slabs and lit by small glowing orbs.  The light reflects faintly off
+of the stones.
+"
 ""
 301465600 0
 0 6 0
@@ -838,16 +669,11 @@ S
 #83217
 "Dining Area"
 "A long wooden table runs the length of this room.  Seemingly once a part of
-
-the passage, it has been sparcely furnished to give a more lived in appearence.
-
-The granite slabs are still visible under tattered hangings which tenatively
-
-cover the walls.  The room is still lit by the same small glowing orbs seen
-
-throughout the area.  Doors lead off to the north, south, and west.
-
-"
+the passage, it has been sparcely furnished to give a more lived in appearence.
+The granite slabs are still visible under tattered hangings which tenatively
+cover the walls.  The room is still lit by the same small glowing orbs seen
+throughout the area.  Doors lead off to the north, south, and west.
+"
 ""
 301465600 0
 0 6 0
@@ -869,12 +695,9 @@ S
 #83218
 "A Small Kitchen"
 "This room is so filthy, it is barely recognizable as a kitchen.  Dust, dirt,
-
-mold, and mildew coat all of the surfaces, leaving a slimey film across the
-
-room.
-
-"
+mold, and mildew coat all of the surfaces, leaving a slimey film across the
+room.
+"
 ""
 301465600 0
 0 6 0
@@ -888,8 +711,7 @@ S
 #83219
 "A Dingy Room"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -907,11 +729,9 @@ S
 #83220
 "A Dingy Room"
 "Under Construction.
-
-"
+"
 "[Zithuan] West door slams shut upon entering room
-
-"
+"
 301465600 0
 0 6 0
 D0
@@ -932,8 +752,7 @@ S
 #83221
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -951,8 +770,7 @@ S
 #83222
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -970,8 +788,7 @@ S
 #83223
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -989,8 +806,7 @@ S
 #83224
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1012,8 +828,7 @@ S
 #83225
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1031,8 +846,7 @@ S
 #83226
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1050,11 +864,9 @@ S
 #83227
 "Stairs"
 "Under Construction.
-
-"
+"
 "[Zithuan] secret door south
-
-"
+"
 301465600 0
 0 6 0
 D1
@@ -1071,11 +883,9 @@ S
 #83228
 "Stairs"
 "Under Construction.
-
-"
+"
 "[Zithuan] secret door north
-
-"
+"
 301465600 0
 0 6 0
 D0
@@ -1096,8 +906,7 @@ S
 #83229
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1115,11 +924,9 @@ S
 #83230
 "Stairs"
 "Under Construction.
-
-"
+"
 "[Zithuan] secret door west
-
-"
+"
 301465600 0
 0 6 0
 D0
@@ -1140,11 +947,9 @@ S
 #83231
 "Stairs"
 "Under Construction.
-
-"
+"
 "[Zithuan] secret door east
-
-"
+"
 301465600 0
 0 6 0
 D0
@@ -1161,8 +966,7 @@ S
 #83232
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1180,8 +984,7 @@ S
 #83233
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1199,8 +1002,7 @@ S
 #83234
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1222,8 +1024,7 @@ S
 #83235
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1245,8 +1046,7 @@ S
 #83236
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1264,8 +1064,7 @@ S
 #83237
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1283,8 +1082,7 @@ S
 #83238
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1306,8 +1104,7 @@ S
 #83239
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1325,8 +1122,7 @@ S
 #83240
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1344,8 +1140,7 @@ S
 #83241
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1359,11 +1154,9 @@ S
 #83242
 "Stairs"
 "Under Construction.
-
-"
+"
 "[Zithuan] secret door south
-
-"
+"
 301465600 0
 0 6 0
 D0
@@ -1384,11 +1177,9 @@ S
 #83243
 "Stairs"
 "Under Construction.
-
-"
+"
 "[Zithuan] secret door north
-
-"
+"
 301465600 0
 0 6 0
 D0
@@ -1405,8 +1196,7 @@ S
 #83244
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1424,8 +1214,7 @@ S
 #83245
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1443,8 +1232,7 @@ S
 #83246
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1458,11 +1246,9 @@ S
 #83247
 "A Small Barracks"
 "Under Construction.
-
-"
+"
 "[Zithuan] Door slams shut on entering.  Aggro mob with detect hidden here.
-
-"
+"
 301465600 0
 0 6 0
 D1
@@ -1473,21 +1259,15 @@ A
 ""
 ""
 "wait( 0 );
-
-if( is_open( room, east ) ) {
-
-  close( room, east );
-
-  act_room( #slam, ch );
-
-  }
-
-"
+if( is_open( room, east ) ) {
+  close( room, east );
+  act_room( #slam, ch );
+  }
+"
 E
 "slam"
 "No description.
-
-"
+"
 !
 1 0 2
 -1
@@ -1496,8 +1276,7 @@ S
 #83248
 "Stairs"
 "Under Construction.
-
-"
+"
 ""
 301465600 0
 0 6 0
@@ -1511,16 +1290,11 @@ S
 #83249
 "A Small Cell"
 "This room is obviously a cell of some sort.  The granite floor, covered in
-
-putrid smelling straw, intermixes with other waste to create a rather unique
-
-olfactory sensation.  The stone walls are spattered with what appear to be
-
-rust colored stains, reflected strangely by the only light coming into the
-
-cell, through the small barred hole in the wooden door to the south.
-
-"
+putrid smelling straw, intermixes with other waste to create a rather unique
+olfactory sensation.  The stone walls are spattered with what appear to be
+rust colored stains, reflected strangely by the only light coming into the
+cell, through the small barred hole in the wooden door to the south.
+"
 ""
 301465604 0
 0 6 0
@@ -1531,35 +1305,24 @@ D2
 E
 "floor straw waste"
 "The floor appears to have been used as a battlefield, latrine, and dinner
-
-table, and all at the same time.  In some places, the straw floats in
-
-unidentifiable liquids, unidentifiable for the reason that you don't want to
-
-go near enough to find out.  In the drier areas, fecal matter and
-
-unrecognizable meat combine to form an unpleasent medly.
-
-"
+table, and all at the same time.  In some places, the straw floats in
+unidentifiable liquids, unidentifiable for the reason that you don't want to
+go near enough to find out.  In the drier areas, fecal matter and
+unrecognizable meat combine to form an unpleasent medly.
+"
 E
 "rust wall"
 "The walls are splotched with rust colored stains which you can only assume to
-
-be blood.  Although, from the hewn meat scattered across the floor, it is
-
-impossible to tell what kind of creature or creatures the blood originated
-
-from.
-
-"
+be blood.  Although, from the hewn meat scattered across the floor, it is
+impossible to tell what kind of creature or creatures the blood originated
+from.
+"
 A
 "search"
 "straw"
 "send_to_char( #none, ch );
-
-act_notchar( #none2, ch );
-
-"
+act_notchar( #none2, ch );
+"
 E
 ""
 ""
@@ -1567,13 +1330,11 @@ E
 "none"
 "You search through the straw, but you find nothing.
 
-
 "
 E
 "none2"
 "$n looks around in the hay.
-
-"
+"
 !
 0 0 0
 2543 9 1509949540 3 0
