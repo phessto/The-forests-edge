@@ -11,10 +11,11 @@ FROM ${BASE_IMAGE}
 # UBI 8: no rpmdevtools/systemd-rpm-macros (macros ship in systemd).
 # UBI 9: no rpmdevtools.
 ARG BASE_PKGS="ca-certificates git rpm-build rpmdevtools systemd-rpm-macros"
-# Toolchain for the -m32 build, plus python3 for the -u smoke test client.
+# Toolchain for the -m32 build (libssh-devel.i686 for the SSH listener),
+# plus python3 and the OpenSSH client for the -u smoke test.
 # libstdc++-devel is listed for both arches: x86_64 g++ -m32 reads its
 # headers from the x86_64 package's 32/ directory and links the i686 libs.
-ARG TOOLCHAIN_PKGS="gcc-c++ make glibc-devel.i686 libstdc++-devel.i686 libstdc++-devel.x86_64 libgcc.i686 python3"
+ARG TOOLCHAIN_PKGS="gcc-c++ make glibc-devel.i686 libstdc++-devel.i686 libstdc++-devel.x86_64 libgcc.i686 libssh-devel.i686 python3 openssh-clients"
 
 # Single RUN so --squash-all / prune leave fewer intermediate layers.
 RUN set -eux; \

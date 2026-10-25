@@ -109,6 +109,7 @@ int main( int argc, char **argv )
   init_variables( );
 
   bug( -1, "** STARTING MUD **" );
+  check_ssh_config( );
 
   //  recover_links( );
   init_daemon( );

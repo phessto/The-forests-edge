@@ -12,6 +12,7 @@
 #include <sys/resource.h>
 #include <sys/param.h>
 #include <netinet/in.h>
+#include <arpa/inet.h>
 #include <arpa/telnet.h>
 #include "define.h"
 #include "struct.h"
@@ -208,6 +209,19 @@ static void open_link( int port )
   /* get the peername of the guy trying to connect. */
   if( getpeername( fd_conn, (struct sockaddr*) &net_addr_in, &addrlen ) == -1 ) {
     bug( "Open_Link: Error returned by getpeername." );
+    close( fd_conn );
+    return;
+  }
+
+  /* connect_link() checks the ban list against the name the host daemon
+     finds, so a banned IP with working reverse DNS got in.  Check the
+     address itself too (the SSH listener does the same). */
+  char ip [ INET_ADDRSTRLEN ];
+  if( inet_ntop( AF_INET, &net_addr_in.sin_addr, ip, sizeof( ip ) )
+      && is_banned( ip ) ) {
+    char tmp [ TWO_LINES ];
+    snprintf( tmp, TWO_LINES, "Connection from banned site %s refused.", ip );
+    info( LEVEL_DEMIGOD, empty_string, 0, tmp, IFLAG_LOGINS, 3 );
     close( fd_conn );
     return;
   }

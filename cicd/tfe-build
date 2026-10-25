@@ -9,9 +9,10 @@
 # Modes (env TFE_MODE, set by build.sh):
 #   build (default) — compile tfe + daemon and the RPMs into /out
 #   test            — smoke test: compile in a scratch copy, boot the world
-#                     from the repo on a scratch run directory, log in as the
-#                     README's test immortal, check the world loaded, shut the
-#                     MUD down from inside the game; writes nothing to /out
+#                     from the repo on a scratch run directory with the SSH
+#                     listener on, log in as the README's test immortal over
+#                     ssh -tt, ssh -T and telnet, check the world loaded, shut
+#                     the MUD down from inside the game; writes nothing to /out
 #
 # The compile always runs in a scratch copy under /tmp, so no root-owned
 # src/OBJ or binaries are left in the mounted repo.
@@ -51,7 +52,7 @@ compile_scratch() {
 }
 
 smoke_test() {
-    local work=/tmp/tfe-smoke root port=4000 pid rc
+    local work=/tmp/tfe-smoke root port=4000 ssh_port=4022 pid rc
     compile_scratch "$work"
     root="$work/run"
     mkdir -p "$root/bin"
@@ -60,8 +61,11 @@ smoke_test() {
     cp -a "$work/src/tfe" "$work/src/daemon" "$root/bin/"
     : > "$root/files/bugs.txt"
 
-    log "Booting TFE on port $port in $root"
-    ( cd "$root/bin" && exec ./tfe "$port" ) > "$root/var/log/stdout.log" 2>&1 &
+    # SSH on: the environment says 4122, the command line 4022; the command
+    # line must win (checked below).
+    log "Booting TFE on port $port (SSH $ssh_port) in $root"
+    ( cd "$root/bin" && TFE_SSH_PORT=4122 exec ./tfe "$port" --ssh-port "$ssh_port" ) \
+        > "$root/var/log/stdout.log" 2>&1 &
     pid=$!
     for _ in $(seq 1 180); do
         grep -q 'MUD BOOTED' "$root/files/bugs.txt" 2>/dev/null && break
@@ -78,7 +82,114 @@ smoke_test() {
         kill "$pid"
         fail "boot logged bugs (above)"
     fi
-    log "Boot clean; logging in as TempImm"
+    log "Boot clean"
+
+    # SSH listener: settings precedence, host keys, then real OpenSSH logins.
+    grep -q "SSH: Listening on port $ssh_port " "$root/var/log/stdout.log" \
+        || { kill "$pid"; cat "$root/var/log/stdout.log" >&2; fail "SSH not listening on $ssh_port (--ssh-port must override TFE_SSH_PORT)"; }
+    for k in ssh_host_ed25519_key ssh_host_rsa_key; do
+        [[ "$(stat -c %a "$root/ssh/$k" 2>/dev/null)" == 600 ]] \
+            || { kill "$pid"; fail "host key $root/ssh/$k missing or not mode 0600"; }
+    done
+    [[ "$(stat -c %a "$root/ssh")" == 700 ]] || { kill "$pid"; fail "$root/ssh is not mode 0700"; }
+    grep 'SSH: Host key' "$root/var/log/stdout.log" | tr -d '\r' | sed 's/^/     /'
+    log "SSH: logging in as TempImm with ssh -tt (pty) and ssh -T (no pty)"
+    if ! python3 - "$ssh_port" <<'PY'
+import os, pty, re, select, socket, subprocess, sys, time
+port = sys.argv[1]
+host = socket.gethostbyname(socket.gethostname())
+opts = ["-p", port, "-o", "StrictHostKeyChecking=no", "-o", "UserKnownHostsFile=/dev/null",
+        "-o", "LogLevel=ERROR", "-o", "BatchMode=yes"]
+
+def need(cond, what):
+    print(("ok   " if cond else "FAIL ") + what)
+    if not cond:
+        sys.exit(1)
+
+def clean(b):
+    return re.sub(r"\x1b\[[0-9;]*[A-Za-z]", "", b.decode("latin-1")).replace("\r", "")
+
+class Session:
+    def __init__(self, tty):
+        if tty:
+            self.pid, self.fd = pty.fork()
+            if self.pid == 0:
+                os.execvp("ssh", ["ssh", "-tt"] + opts + ["play@" + host])
+            self.wfd = self.fd
+        else:
+            self.p = subprocess.Popen(["ssh", "-T"] + opts + ["play@" + host],
+                                      stdin=subprocess.PIPE, stdout=subprocess.PIPE, bufsize=0)
+            self.fd, self.wfd = self.p.stdout.fileno(), self.p.stdin.fileno()
+        self.tty = tty
+    def read(self, wait=1.5):
+        out, end = b"", time.time() + wait
+        while time.time() < end:
+            r, _, _ = select.select([self.fd], [], [], 0.2)
+            if not r:
+                continue
+            try:
+                d = os.read(self.fd, 65536)
+            except OSError:
+                break
+            if not d:
+                break
+            out += d
+            end = max(end, time.time() + 0.4)
+        self.raw = out
+        return clean(out)
+    def type(self, line, wait=1.5):
+        # A person on a pty types characters and Enter (CR); a script without
+        # a pty sends whole lines.
+        if self.tty:
+            for ch in line:
+                os.write(self.wfd, ch.encode()); time.sleep(0.02)
+            os.write(self.wfd, b"\r")
+        else:
+            os.write(self.wfd, line.encode() + b"\n")
+        return self.read(wait)
+    def exit_status(self):
+        if self.tty:
+            for _ in range(50):
+                pid, st = os.waitpid(self.pid, os.WNOHANG)
+                if pid:
+                    return os.waitstatus_to_exitcode(st)
+                time.sleep(0.2)
+            return None
+        try:
+            return self.p.wait(timeout=10)
+        except subprocess.TimeoutExpired:
+            return None
+
+for tty in (True, False):
+    kind = "ssh -tt" if tty else "ssh -T"
+    s = Session(tty)
+    need("Choice:" in s.read(5), kind + ": greeting and login menu")
+    need("Password" in s.type("TempImm"), kind + ": name accepted")
+    out = s.type("llama", 3)
+    need("llama" not in out, kind + ": password not echoed")
+    s.type("", 2); out = s.type("", 3)
+    need("Path of Death" in out or "Vnum:" in out, kind + ": logged in and placed in a room")
+    if tty:
+        # The game's LF CR becomes CR LF: no bare LF, no CR left after a LF.
+        need(re.search(rb"(^|[^\r])\n|\n\r(?!\n)", s.raw) is None,
+             kind + ": lines end CR LF for the terminal")
+    else:
+        need(b"\r" not in s.raw, kind + ": no CRs without a pty")
+    need(b"\xff" not in s.raw, kind + ": no telnet bytes")
+    need("Vnum: 33751" in s.type("look"), kind + ": look")
+    need("Thank you for visiting" in s.type("quit", 3), kind + ": quit")
+    need(s.exit_status() == 0, kind + ": client exits 0 when the game closes the link")
+
+r = subprocess.run(["ssh", "-T"] + opts + ["nobody@" + host], stdin=subprocess.DEVNULL,
+                   capture_output=True, timeout=30)
+need(r.returncode != 0 and b"Permission denied" in r.stderr, "other SSH user names refused")
+PY
+    then
+        kill "$pid" 2>/dev/null || true
+        tail -20 "$root/var/log/stdout.log" >&2
+        fail "SSH smoke test failed"
+    fi
+    log "Logging in as TempImm over telnet"
 
     if ! python3 - "$port" <<'PY'
 import re, socket, sys, time

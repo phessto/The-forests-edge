@@ -12,6 +12,8 @@
 # 3. Pre-flight: TFE stops at boot if any player file names an account that
 #    files/accounts lacks. Check that first and say exactly how to fix it.
 # 4. Run tfe in /var/lib/tfe/bin, where it finds ../area, ../player, ...
+#    The TFE_SSH_* settings from tfe.env reach tfe through the environment;
+#    tfe reads and checks them itself (a bad one is a failed boot, below).
 #    Its output goes to the journal with the carriage returns stripped (TFE
 #    ends lines with LF CR, which journald would show as "[blob data]").
 # 5. Map how tfe exited to an exit status systemd can act on. tfe exits 1 for
@@ -167,8 +169,9 @@ if [[ -e "$CONTROL/shutdown" ]]; then
             if grep -q 'Error binding port' "$ROOT/files/bugs.txt" 2>/dev/null; then
                 say "TFE binds the address its hostname ($(uname -n)) resolves to:"
                 say "  $(getent ahostsv4 "$(uname -n)" | awk 'NR==1{print $1}')"
-                say "That address must be on this host and ports ${TFE_PORT:-4000} and $(( ${TFE_PORT:-4000} + 1 )) free"
-                say "(check: ss -ltnp | grep ':${TFE_PORT:-4000}\b')."
+                ssh="${TFE_SSH_PORT:-}"; [[ "$ssh" =~ ^[0-9]+$ && "$ssh" != 0 ]] || ssh=""
+                say "That address must be on this host and ports ${TFE_PORT:-4000} and $(( ${TFE_PORT:-4000} + 1 ))${ssh:+ and $ssh (SSH)} free"
+                say "(check: ss -ltnp | grep -E ':(${TFE_PORT:-4000}|$(( ${TFE_PORT:-4000} + 1 ))${ssh:+|$ssh})\b')."
             fi
             say "After fixing it: systemctl reset-failed tfe; systemctl start tfe"
             exit 2 ;;

@@ -181,8 +181,8 @@ static bool load_or_make_key( const char* dir, const char* name,
  *   CONFIGURATION
  *
  *   Each setting comes from, in order of precedence: the command line,
- *   the environment, the default.  Bad values stop the boot with a message
- *   naming the setting; nothing falls back silently.
+ *   the environment, the default.  A bad value stops the boot (see
+ *   check_ssh_config) with a message naming it; nothing falls back silently.
  */
 
 
@@ -206,16 +206,18 @@ static const ssh_setting settings [] = {
 };
 
 
+static std::string  config_error;   // first bad setting, reported at boot
+
+
 static void bad_setting( const char* source, const char* name,
 			 const char* value, const char* what )
 {
-  // stderr and stdout both reach the journal; stderr also shows when run
-  // by hand with stdout redirected.
-  fprintf( stderr, "TFE: Bad %s %s='%s' (expected %s).\n",
-	   source, name, value, what );
-  printf( "TFE: Bad %s %s='%s' (expected %s).\n", source, name, value, what );
-  fflush( stdout );
-  exit( 1 );
+  if( !config_error.empty( ) )
+    return;
+  char tmp [ 512 ];
+  snprintf( tmp, sizeof( tmp ), "Bad %s %s='%s' (expected %s).",
+	    source, name, value, what );
+  config_error = tmp;
 }
 
 
@@ -259,27 +261,35 @@ static void apply_setting( int i, const char* source, const char* name,
 	if( !isalnum( (unsigned char) *c ) && !strchr( "._-", *c ) )
 	  ok = false;
     }
-    if( !ok )
+    if( !ok ) {
       bad_setting( source, name, value, what );
+      return;
+    }
     ssh_user = value;
     break;
   }
 
   case 2:
-    if( !parse_int( value, 1, 1024, n ) )
+    if( !parse_int( value, 1, 1024, n ) ) {
       bad_setting( source, name, value, what );
+      return;
+    }
     ssh_max = n;
     break;
 
   case 3:
-    if( !*value )
+    if( !*value ) {
       bad_setting( source, name, value, what );
+      return;
+    }
     ssh_keydir = value;
     break;
 
   case 4:
-    if( !parse_int( value, 5, 600, n ) )
+    if( !parse_int( value, 5, 600, n ) ) {
       bad_setting( source, name, value, what );
+      return;
+    }
     ssh_grace = n;
     break;
   }
@@ -317,16 +327,19 @@ void configure_ssh( int& argc, char** argv )
 	  apply_setting( i, "option", settings[i].option, arg+len+1 );
 	  used = 1;
 	} else if( arg[len] == '\0' ) {
-	  if( a+1 >= argc )
+	  if( a+1 >= argc ) {
 	    bad_setting( "option", settings[i].option, "", settings[i].what );
-	  apply_setting( i, "option", settings[i].option, argv[a+1] );
-	  used = 2;
+	    used = 1;
+	  } else {
+	    apply_setting( i, "option", settings[i].option, argv[a+1] );
+	    used = 2;
+	  }
 	}
       }
       if( !used ) {
-	fprintf( stderr, "TFE: Unknown option %s.\n", arg );
-	printf( "TFE: Unknown option %s.\n", arg );
-	exit( 1 );
+	if( config_error.empty( ) )
+	  config_error = std::string( "Unknown option " ) + arg + ".";
+	used = 1;
       }
     }
 
@@ -342,6 +355,21 @@ void configure_ssh( int& argc, char** argv )
 
   if( no_ssh )
     ssh_port = 0;
+}
+
+
+/* Called once the bug log is open, so a bad setting shows in bugs.txt (and
+   tfe-run's failed-boot excerpt) as well as on stdout/stderr. */
+void check_ssh_config( )
+{
+  if( config_error.empty( ) )
+    return;
+  fprintf( stderr, "TFE: %s\n", config_error.c_str( ) );
+  printf( "TFE: %s\n", config_error.c_str( ) );
+  fflush( stdout );
+  bug( -1, config_error.c_str( ) );
+  bug( -1, "** MUD KILLED **" );
+  exit( 1 );
 }
 
 
@@ -367,8 +395,15 @@ void open_ssh( int game_port )
 
   const char *dir = ssh_keydir.c_str( );
 
-  if( mkdir( dir, 0700 ) == 0 )
+  struct stat st;
+  if( mkdir( dir, 0700 ) == 0 ) {
     sshlog( "SSH: Created host key directory %s.\n", dir );
+  } else if( stat( dir, &st ) == 0 && S_ISDIR( st.st_mode )
+	     && ( st.st_mode & 077 ) && st.st_uid == geteuid( ) ) {
+    sshlog( "SSH: Host key directory %s was mode %03o, setting 0700.\n",
+	    dir, (unsigned) ( st.st_mode & 0777 ) );
+    chmod( dir, 0700 );
+  }
 
   if( ssh_init( ) != SSH_OK )
     panic( "Open_Ssh: ssh_init failed." );

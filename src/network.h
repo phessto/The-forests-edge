@@ -155,6 +155,7 @@ int    open_port            ( int );
 /* ssh.cc */
 extern int ssh_port;
 void   configure_ssh        ( int&, char** );
+void   check_ssh_config     ( );
 void   open_ssh             ( int );
 void   update_ssh           ( );
 void   new_player           ( player_data* );

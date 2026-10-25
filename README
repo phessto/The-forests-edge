@@ -30,11 +30,13 @@ using c++ (GCC) 4.1.2 20080704 (Red Hat 4.1.2-52)
 ## Building (modern-build branch) ##
 TFE needs a 32-bit build (`-m32`): its scripting engine keeps pointers in `int`.
 `make -C src` works with GCC 8 to 14 when the 32-bit glibc and libstdc++
-headers are installed (Fedora: `gcc-c++ make glibc-devel.i686 libstdc++-devel.i686`).
+headers are installed, plus the 32-bit libssh for the SSH listener (Fedora:
+`gcc-c++ make glibc-devel.i686 libstdc++-devel.i686 libssh-devel.i686`).
 
 `./build.sh` builds `tfe`, `daemon` and an RPM in Podman images (`tfe-base`,
 `tfe-build`) into `dist/`. `./build.sh -u` runs a smoke test first (boot the
-world, log in as TempImm, shut down from in game); `-b ubi8|ubi9` picks the
+world, log in as TempImm over ssh -tt, ssh -T and telnet, shut down from in
+game); `-b ubi8|ubi9` picks the
 builder base; `-r` rebuilds the images. See `./build.sh --help`.
 
 To run by hand, the binaries must be started from a directory beside the data
@@ -48,7 +50,43 @@ start it, and upgrading does not restart it. To use the RPM:
     # optional: test login. Set TFE_SEED_TEST_LOGIN=yes in /etc/tfe/tfe.env
     systemctl enable --now tfe
     telnet <host> 4000        # Choice: TempImm   Password: llama
+    ssh -p 4022 play@<host>   # same login, encrypted
+    # remote players: open the ports
+    firewall-cmd --permanent --add-port=4000-4001/tcp --add-port=4022/tcp
+    firewall-cmd --reload
 
 If it will not start, `journalctl -u tfe` says why (status 2 means TFE failed
 to boot, and the unit is not restarted). After fixing it:
 `systemctl reset-failed tfe; systemctl start tfe`.
+
+## SSH ##
+TFE can also accept players over SSH (libssh, inside the game process). Each
+SSH session gets the same login screen as telnet; SSH itself lets in one user
+name with no password, and the in-game account password stays the real
+login, now encrypted. Bans, `users`/`who` sites, idle and lost-link handling
+use the player's real address exactly as for telnet. Only an interactive
+shell channel is allowed (no exec, sftp, port or agent forwarding).
+
+    ssh -p 4022 play@<host>        # with a terminal: normal play
+    ssh -T -p 4022 play@<host>     # no terminal: line mode, for scripts
+
+The first time, ssh shows the server's host key fingerprint; compare it with
+the one tfe prints at every start (`journalctl -u tfe | grep 'SSH: Host key'`).
+
+Settings, read by tfe itself (environment, or `/etc/tfe/tfe.env` for the
+service). A command-line option overrides the variable; empty means default;
+a bad value stops the boot with a message.
+
+    Variable               Option                 Default
+    TFE_SSH_PORT           --ssh-port N           off (tfe.env: 4022); off or 0 disables
+    TFE_SSH_USER           --ssh-user NAME        play (* = any name)
+    TFE_SSH_MAX_SESSIONS   --ssh-max-sessions N   32 (1-1024)
+    TFE_SSH_LOGIN_TIMEOUT  --ssh-login-timeout S  30 seconds (5-600) to reach the game
+    TFE_SSH_HOSTKEY_DIR    --ssh-hostkey-dir DIR  ../ssh (RPM: /var/lib/tfe/ssh)
+                           --no-ssh               turn SSH off regardless
+
+By hand: `cd bin && ./tfe 4000 --ssh-port 4022` (or `TFE_SSH_PORT=4022 ./tfe
+4000`). The host keys (ed25519 and RSA) are created in the key directory, mode
+0600, on the first start with SSH on, and never replaced while they exist;
+delete them only if you want new ones (players will then see a host key
+change warning).

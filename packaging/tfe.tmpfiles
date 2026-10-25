@@ -47,3 +47,6 @@ d /var/lib/tfe/var/swap            0750 tfe tfe -
 d /var/lib/tfe/var/swap/action     0750 tfe tfe -
 d /var/lib/tfe/var/swap/room       0750 tfe tfe -
 d /var/lib/tfe/var/tmp             0750 tfe tfe -
+# SSH host keys (TFE_SSH_HOSTKEY_DIR default ../ssh): made by tfe on first
+# start with the listener on, kept forever after; private, hence 0700.
+d /var/lib/tfe/ssh                 0700 tfe tfe -

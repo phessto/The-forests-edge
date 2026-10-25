@@ -25,7 +25,7 @@
 
 Name:           tfe
 Version:        1.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 # build.sh increments the number above on each run so rpm -U / dnf can upgrade.
 Summary:        The Forest's Edge (TFE) Classic MUD server
 
@@ -41,6 +41,8 @@ BuildRequires:  gcc-c++
 BuildRequires:  make
 BuildRequires:  glibc-devel(x86-32)
 BuildRequires:  libstdc++-devel(x86-32)
+# The SSH listener (src/ssh.cc) links the 32-bit libssh.
+BuildRequires:  libssh-devel(x86-32)
 %if 0%{?rhel} && 0%{?rhel} < 9
 # EL8: systemd macros ship in systemd itself
 BuildRequires:  systemd
@@ -55,6 +57,7 @@ Requires(preun): systemd
 Requires(postun): systemd
 Requires:       glibc(x86-32)
 Requires:       libstdc++(x86-32)
+Requires:       libssh(x86-32)
 Requires:       bash
 
 # Prebuilt -g binaries are shipped as built; skip the debuginfo split.
@@ -151,7 +154,13 @@ if [ "$1" -eq 1 ]; then
   echo "tfe:   1. edit /etc/tfe/tfe.env (port; TFE_SEED_TEST_LOGIN=yes adds the"
   echo "tfe:      upstream test immortal TempImm, password llama)"
   echo "tfe:   2. systemctl enable --now tfe"
-  echo "tfe:   3. telnet <host> 4000; at 'Choice:' type TempImm, then llama"
+  echo "tfe:   3. telnet <host> 4000, or ssh -p 4022 play@<host>; at 'Choice:'"
+  echo "tfe:      type TempImm, then llama (open 4000/tcp and 4022/tcp in the"
+  echo "tfe:      firewall for remote players)"
+elif ! grep -q '^TFE_SSH_PORT=' %{_sysconfdir}/tfe/tfe.env 2>/dev/null; then
+  echo "tfe: this version can listen for SSH. Your /etc/tfe/tfe.env was kept, so"
+  echo "tfe: SSH stays off; to turn it on add TFE_SSH_PORT=4022 (see the comments"
+  echo "tfe: in /etc/tfe/tfe.env.rpmnew) and restart tfe."
 fi
 
 %preun
@@ -181,6 +190,12 @@ fi
 %{_localstatedir}/lib/tfe/bin/daemon
 
 %changelog
+* Sun Oct 25 2026 Joshua D <58604081+phessto@users.noreply.github.com> - 1.0-3
+- SSH listener in tfe (libssh): TFE_SSH_PORT (default 4022 in tfe.env),
+  TFE_SSH_USER, TFE_SSH_MAX_SESSIONS, TFE_SSH_LOGIN_TIMEOUT,
+  TFE_SSH_HOSTKEY_DIR; host keys in /var/lib/tfe/ssh
+- needs 32-bit libssh
+
 * Sun Oct 25 2026 Joshua D <58604081+phessto@users.noreply.github.com> - 1.0-2
 - tfe-run: seed the test login as a pair (temp account + TempImm), on any
   start; pre-flight check that every player's account exists; replace a

@@ -12,7 +12,8 @@
 #   Working dir: /var/lib/tfe/bin    (root-owned; symlinks to /usr/libexec/tfe)
 #   Data:        /var/lib/tfe/{area,files,tables,player,notes,...} (tfe:tfe)
 #   Seed world:  /usr/share/tfe/world (copied in on first start by tfe-run)
-#   Settings:    /etc/tfe/tfe.env    (port, lock flags, test login)
+#   Settings:    /etc/tfe/tfe.env    (ports incl. SSH, lock flags, test login)
+#   SSH keys:    /var/lib/tfe/ssh    (tfe:tfe 0700; host keys made on first start)
 #   Logs:        /var/lib/tfe/files/bugs.txt and logs/; game output and
 #                tfe-run's checks go to the journal (journalctl -u tfe)
 #
