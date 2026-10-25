@@ -151,8 +151,8 @@ class Session:
         if self.tty:
             for _ in range(50):
                 pid, st = os.waitpid(self.pid, os.WNOHANG)
-                if pid:
-                    return os.waitstatus_to_exitcode(st)
+                if pid:   # (no os.waitstatus_to_exitcode on UBI8's Python 3.6)
+                    return os.WEXITSTATUS(st) if os.WIFEXITED(st) else -1
                 time.sleep(0.2)
             return None
         try:
