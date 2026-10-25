@@ -151,6 +151,12 @@ extern unsigned who_calls;
 
 
 int    open_port            ( int );
+
+/* ssh.cc */
+extern int ssh_port;
+void   configure_ssh        ( int&, char** );
+void   open_ssh             ( int );
+void   update_ssh           ( );
 void   new_player           ( player_data* );
 bool   check_parse_name     ( link_data*, const char * );
 void   prompt_ansi          ( link_data* );

@@ -11,6 +11,8 @@ OPT     = -O2
 STD     = -std=gnu++17 -fno-strict-aliasing -fno-delete-null-pointer-checks
 CFLAGS  = $(DEBUG) ${OPT} $(WARN) $(PROF) $(STD) -m32
 C_FLAGS = $(CFLAGS) 
+# The SSH listener (ssh.cc) uses libssh; it needs the 32-bit libssh-devel.
+SSH_LIBS = -lssh
 VPATH   = ./OBJ
 
 DIR = ./OBJ
@@ -45,7 +47,7 @@ C_FILES = abil.cc account.cc acid.cc act.cc action.cc affect.cc alias.cc \
 	  reset.cc room.cc rtable.cc save.cc score.cc \
           search.cc set.cc shock.cc \
           shop.cc skill.cc social.cc sound.cc \
-          spell.cc startup.cc string.cc table.cc teleport.cc \
+          spell.cc ssh.cc startup.cc string.cc table.cc teleport.cc \
           tfe.cc thief.cc thing.cc \
           throw.cc time.cc tprog.cc track.cc trainer.cc undead.cc \
           update.cc variable.cc vehicle.cc verb.cc vote.cc \
@@ -57,7 +59,7 @@ O_FILES = $(C_FILES:.cc=.o)
 
 all: $(O_FILES)
 	rm -f tfe
-	$(CC) $(C_FLAGS) -o tfe $(DIR)/*.o $(L_FLAGS)
+	$(CC) $(C_FLAGS) -o tfe $(DIR)/*.o $(L_FLAGS) $(SSH_LIBS)
 	rm -f daemon         
 	$(CC) $(C_FLAGS) -o daemon daemon.cc $(L_FLAGS)
 

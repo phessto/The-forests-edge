@@ -54,6 +54,10 @@ int main( int argc, char **argv )
   delete_control_file( PANIC_FILE );
   create_control_file( SHUTDOWN_FILE, "failed boot sequence" );
 
+  // SSH settings: --ssh-* options (anywhere on the line) override the
+  // TFE_SSH_* environment; they are removed from argv here.
+  configure_ssh( argc, argv );
+
   int x = 1;
 
   if( argc > x
@@ -123,6 +127,7 @@ int main( int argc, char **argv )
 
   mud_socket = open_port( port );
   who_socket = open_port( port+1 );
+  open_ssh( port );
 
   echo( "TFE done booting\n\r" );
   bug( -1, "** MUD BOOTED **" );
@@ -144,6 +149,7 @@ int main( int argc, char **argv )
     update_handler( );
     read_host( );
     update_links( );
+    update_ssh( );
     wait_pulse( );
   }
 
