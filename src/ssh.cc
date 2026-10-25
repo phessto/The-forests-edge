@@ -416,6 +416,13 @@ void open_ssh( int game_port )
       || !load_or_make_key( dir, "ssh_host_rsa_key", SSH_KEYTYPE_RSA, 3072 ) )
     panic( "Open_Ssh: Host keys unavailable in %s.", dir );
 
+  // libssh applies the system-wide server config (/etc/libssh/
+  // libssh_server.config, the crypto policy on Fedora/RHEL) at the first
+  // accept, on top of anything set before.  Load it now so the lists below
+  // are what actually gets offered.
+  if( ssh_bind_options_parse_config( ssh_binder, 0 ) != 0 )
+    sshlog( "SSH: Could not read the system libssh server config; ignoring it.\n" );
+
   struct { enum ssh_bind_options_e opt; const char *val; } opts [] = {
     { SSH_BIND_OPTIONS_KEY_EXCHANGE,       KEX_ALGOS },
     { SSH_BIND_OPTIONS_CIPHERS_C_S,        CIPHER_ALGOS },
