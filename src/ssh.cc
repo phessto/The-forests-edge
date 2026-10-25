@@ -359,14 +359,13 @@ void configure_ssh( int& argc, char** argv )
 
 
 /* Called once the bug log is open, so a bad setting shows in bugs.txt (and
-   tfe-run's failed-boot excerpt) as well as on stdout/stderr. */
+   tfe-run's failed-boot excerpt) as well as on stderr (the journal). */
 void check_ssh_config( )
 {
   if( config_error.empty( ) )
     return;
-  fprintf( stderr, "TFE: %s\n", config_error.c_str( ) );
-  printf( "TFE: %s\n", config_error.c_str( ) );
   fflush( stdout );
+  fprintf( stderr, "TFE: %s\n", config_error.c_str( ) );
   bug( -1, config_error.c_str( ) );
   bug( -1, "** MUD KILLED **" );
   exit( 1 );
