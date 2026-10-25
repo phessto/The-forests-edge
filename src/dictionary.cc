@@ -420,7 +420,9 @@ char *spell( char_data *ch, const char *input, const char *header )
 	bad = false;
       }
       
-      if( bad && *(word+len-1) == '.' && !period ) {
+      // len >= 1 here: the word starts with a letter, so its first '-' is
+      // never at index 0. The test only lets GCC see word[len-1] is in bounds.
+      if( bad && len > 0 && *(word+len-1) == '.' && !period ) {
 	// Period after word?
 	// Try re-spelling without period.
 	--len;
