@@ -279,6 +279,7 @@ unsigned fread_unsigned   ( FILE *fp );
 void    fread_to_eol      ( FILE *fp );
 //char*   fread_block       ( FILE* );
 char*   fread_string      ( FILE*, int );
+extern int damaged_strings;   // strings read with the 2009 CR LF damage
 char*   fread_word        ( FILE* );
 
 void    fwrite_string     ( FILE*, const char* );

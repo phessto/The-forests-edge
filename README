@@ -62,6 +62,14 @@ If it will not start, `journalctl -u tfe` says why (status 2 means TFE failed
 to boot, and the unit is not restarted). After fixing it:
 `systemctl reset-failed tfe; systemctl start tfe`.
 
+The world in `/var/lib/tfe` is copied from the RPM on the first start only
+and never overwritten. A world copied before the 2009 line endings in `area/`
+were fixed showed a blank line after every line of room descriptions and help;
+tfe now repairs that text as it reads it (the boot log says "Repaired the 2009
+CR LF line endings in N strings"). To fix the files themselves, with tfe
+stopped, from a checkout of this repository:
+`WRITE=1 tools/fix-2009-line-endings.py /var/lib/tfe/area/*`.
+
 ## SSH ##
 TFE can also accept players over SSH (libssh, inside the game process). It
 is off until you set a port: TFE_SSH_PORT (or --ssh-port); with the RPM,

@@ -4,6 +4,7 @@
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <syslog.h>
 #include <unistd.h>
 #include "define.h"
@@ -184,6 +185,60 @@ unsigned fread_unsigned( FILE *fp )
 }
 
 
+/*
+ *   The world files in the 2009 TFE install went through a conversion that
+ *   turned every LF into CR LF and every lone CR into CR LF, so the end of a
+ *   line inside a string, LF CR, became CR LF CR LF and every line of every
+ *   description and help page was followed by a blank line.  The files in
+ *   area/ were repaired (tools/fix-2009-line-endings.py), but a world copied
+ *   before that (an RPM's /var/lib/tfe is seeded once and never overwritten)
+ *   still has them.  Undo it as strings are read: a newline run that starts
+ *   with CR and is exactly (CR LF) x k decodes to k characters alternating
+ *   LF, CR, LF ...  TFE itself never writes a run that starts with CR, so
+ *   strings in a healthy world are left alone.
+ */
+
+int damaged_strings = 0;
+
+
+static size_t repair_damaged_newlines( char* buf, size_t len )
+{
+  size_t in = 0, out = 0;
+  bool repaired = false;
+
+  while( in < len ) {
+    if( buf[in] != '\r' && buf[in] != '\n' ) {
+      buf[out++] = buf[in++];
+      continue;
+    }
+    // A whole run of CR and LF; only one that starts CR LF can be damaged.
+    size_t end = in;
+    while( end < len && ( buf[end] == '\r' || buf[end] == '\n' ) )
+      ++end;
+    const size_t run = end-in;
+    size_t k = 0;
+    while( in+2*k+1 < end && buf[in+2*k] == '\r' && buf[in+2*k+1] == '\n' )
+      ++k;
+    if( k > 0
+	&& ( 2*k == run || ( 2*k+1 == run && k >= 2 && buf[end-1] == '\r' ) ) ) {
+      // (CR LF) x k, or (CR LF) x k and one stray CR: decode it.
+      for( size_t i = 0; i < k; ++i )
+        buf[out++] = ( i%2 == 0 ? '\n' : '\r' );
+      repaired = true;
+    } else {
+      memmove( buf+out, buf+in, run );
+      out += run;
+    }
+    in = end;
+  }
+
+  if( repaired )
+    ++damaged_strings;
+
+  return out;
+}
+
+
 char *fread_string( FILE* fp, int type )
 {
   char c;
@@ -216,6 +271,7 @@ char *fread_string( FILE* fp, int type )
     panic( "Fread_String: EOF inside string." ); 
   }
 
+  len = repair_damaged_newlines( buf, len );
   buf[ len ] = '\0';
 
   return alloc_string( buf, type );

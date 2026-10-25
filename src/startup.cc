@@ -188,6 +188,11 @@ void boot_db( )
   init_rooms( );
   weather.init( );
 
+  if( damaged_strings > 0 ) {
+    echo( "Repaired the 2009 CR LF line endings in %d strings as they were read\n\r", damaged_strings );
+    echo( "  (a world copied before they were fixed in the files; see tools/fix-2009-line-endings.py).\n\r" );
+  }
+
   boot_stage = 2;
 }
 

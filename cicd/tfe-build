@@ -12,7 +12,9 @@
 #                     from the repo on a scratch run directory with the SSH
 #                     listener on, log in as the README's test immortal over
 #                     ssh -tt, ssh -T and telnet, check the world loaded, shut
-#                     the MUD down from inside the game; writes nothing to /out
+#                     the MUD down from inside the game; writes nothing to /out.
+#                     area/death.are is damaged as in the 2009 files first, to
+#                     check that tfe repairs those line endings as it reads.
 #
 # The compile always runs in a scratch copy under /tmp, so no root-owned
 # src/OBJ or binaries are left in the mounted repo.
@@ -61,6 +63,23 @@ smoke_test() {
     cp -a "$work/src/tfe" "$work/src/daemon" "$root/bin/"
     : > "$root/files/bugs.txt"
 
+    # A world copied before the 2009 line endings were fixed in area/ (an
+    # RPM's /var/lib/tfe is seeded once and never overwritten) still has them.
+    # Damage area/death.are the way the 2009 conversion did (every LF and every
+    # lone CR became CR LF); tfe must repair exactly its strings as it reads
+    # them (count checked after boot), and the look checks below see the
+    # repaired text. Every other file stays as in the repo.
+    local damaged
+    damaged="$(python3 - "$root/area/death.are" <<'PY'
+import re, sys
+f = sys.argv[1]
+d = open(f, "rb").read()
+n = sum(1 for m in re.finditer(rb'"((?:[^"\\]|\\.)*)"', d, re.S) if re.search(rb"[\r\n]", m.group(1)))
+open(f, "wb").write(d.replace(b"\n", b"\0").replace(b"\r", b"\r\n").replace(b"\0", b"\r\n"))
+print(n)
+PY
+)"
+
     # SSH ships off: the packaged tfe.env must not set a port.
     if grep -q '^[[:space:]]*TFE_SSH_PORT=' packaging/tfe.env; then
         fail "packaging/tfe.env sets TFE_SSH_PORT; SSH must ship off (leave it commented out)"
@@ -87,6 +106,11 @@ smoke_test() {
         fail "boot logged bugs (above)"
     fi
     log "Boot clean"
+    local repaired
+    repaired="$(tr -d '\r' < "$root/var/log/stdout.log" | sed -n 's/^Repaired the 2009 CR LF line endings in \([0-9]*\) strings.*/\1/p')"
+    [[ "$repaired" == "$damaged" ]] \
+        || { kill "$pid"; fail "2009 CR LF repair: expected $damaged strings (the damaged death.are), tfe reported ${repaired:-none}"; }
+    log "2009 CR LF line endings repaired in the $repaired strings of the damaged death.are, nothing else touched"
 
     # SSH listener: settings precedence, host keys, then real OpenSSH logins.
     grep -q "SSH: Listening on port $ssh_port " "$root/var/log/stdout.log" \
@@ -240,10 +264,22 @@ counts = {k: int(v) for k, v in re.findall(r"^\s*(Areas|Rooms|Mobs|Objects|Exits
 print("     world:", " ".join(f"{k}={v}" for k, v in counts.items()))
 need(counts.get("Areas", 0) > 0 and counts.get("Rooms", 0) > 0, "world loaded (areas and rooms > 0)")
 need("You leave north" in cmd("north"), "walked north")
-need("Vnum: 33750" in cmd("look"), "look shows the next room")
+out = cmd("look")
+need("Vnum: 33750" in out, "look shows the next room")
 # TFE ends lines with LF CR. World text with CR LF CR LF in it (the damaged
 # 2009 area files) shows as a blank line after every line.
 need(b"\r\n\r\n" not in raw, "room description is not double-spaced")
+# death.are was damaged before boot: its text must come out as the repo has
+# it, one line per line, and the blank line the game puts before the room's
+# contents still there.
+need("stop dead in your\ntracks in amazement" in out
+     and "-----\nno magic to prevent abuse\n\n" in out, "room description and comments as in the repo")
+out = cmd("look book")
+need("opens on its own.  The pages slowly\nflip over" in out and b"\r\n\r\n" not in raw,
+     "extra description single-spaced")
+out = cmd("help score", more=True)
+need("Category: Misc\n" in out and "In order,\nmagic, fire, cold, electricity, and mind.\n\n" in out
+     and "\n\n\n" not in out, "help score: one line per line, single blank lines")
 need("TempImm" in cmd("who"), "who lists the player")
 need("saved" in cmd("save"), "save")
 cmd("shutdown", 5)
