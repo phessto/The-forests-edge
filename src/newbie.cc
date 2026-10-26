@@ -365,10 +365,12 @@ void nanny_help_class( link_data* link, const char * )
 
   strcpy( tmp, "\n\rSelect a class [" );
   
+  bool first = true;
   for( i = 0; i < MAX_CLSS; i++ ) {
     if( clss_table[i].open ) {
-      if( i > 0 )
+      if( !first )
         strcat( tmp, " " );
+      first = false;
       strcat( tmp, clss_table[i].abbrev );
     }
   }

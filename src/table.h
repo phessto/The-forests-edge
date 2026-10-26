@@ -22,7 +22,7 @@
 #define MAX_AFF_ROOM               50
 #define MAX_COMMAND               500
 #define MAX_CMD_CAT                30
-#define MAX_CLSS                    9 
+#define MAX_CLSS                   32   // class bit masks are one int: 32 at most
 #define MAX_BUILD                 100
 #define MAX_HELP_CAT               30
 #define MAX_NATION                 25
@@ -40,6 +40,18 @@
 #define ABS_SPELL_SKILL           300
 #define ABS_TRADE_SKILL            20
 #define ABS_WEAP_SKILL             25
+
+static_assert( MAX_CLSS <= 32, "class bit masks are one int" );
+
+// Classes before the class table grew to MAX_CLSS (tables/Classes had 9).
+#define OLD_MAX_CLSS               9
+
+// Bit mask with a bit for each of the first n classes (n <= 32), as an int
+// the way the masks are stored; all MAX_CLSS bits is ~0, which is -1.
+inline int class_mask( int n )
+{
+  return (int)( n >= 32 ? ~0u : ( 1u << n ) - 1u );
+}
 
 #define TABLE_SOC_DEFAULT           0
 #define TABLE_SOC_HUMAN             1
@@ -475,7 +487,7 @@ public:
   virtual void init( )
   {
     alignments = ( 1 << MAX_ALIGNMENT ) - 1;
-    classes = ( 1 << MAX_CLSS ) - 1;
+    classes = class_mask( MAX_CLSS );
     sexes = ( 1 << ( MAX_SEX - 1 ) ) - 1;
     races = ( 1 << MAX_PLYR_RACE ) - 1;
   }
@@ -1135,6 +1147,21 @@ public:
 #define CLSS_DRUID                 6
 #define CLSS_MONK                  7
 #define CLSS_BARD                  8
+#define CLSS_PEASANT               9    // every new character starts here
+#define CLSS_MAGE2                10    // tier classes: placeholders, no skills yet
+#define CLSS_CLERIC2              11
+#define CLSS_CLERIC3              12
+#define CLSS_THIEF2               13
+#define CLSS_WARRIOR2             14
+#define CLSS_PALADIN2             15
+#define CLSS_MONK_SPRING          16
+#define CLSS_MONK_SUMMER          17
+#define CLSS_MONK_AUTUMN          18
+#define CLSS_MONK_WINTER          19
+#define CLSS_ANTIPALADIN          20
+#define CLSS_ENCHANTER            21
+#define CLSS_SPELLSWORD           22
+#define CLSS_PLACEHOLDER          23    // 23 .. MAX_CLSS-1: class23 .. class31
 
 
 #define GROUP_NONE                  0

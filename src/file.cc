@@ -119,7 +119,7 @@ char fread_letter( FILE *fp )
 
 int fread_number( FILE *fp )
 {
-  int number = 0;
+  unsigned number = 0;   // unsigned: -2147483648 (a mask with bit 31) must not overflow
   int sign = 1;
   char c;
   
@@ -143,7 +143,7 @@ int fread_number( FILE *fp )
     c = getc( fp );
   }
   
-  number *= sign;
+  number *= sign;      // modulo 2^32; back to int below
   
   while( c == ' ' ) {
     c = getc( fp );
@@ -151,7 +151,7 @@ int fread_number( FILE *fp )
   
   ungetc( c, fp );
 
-  return number;
+  return (int) number;
 }
 
 

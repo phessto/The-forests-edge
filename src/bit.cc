@@ -26,25 +26,25 @@ const char *on_off( const int *array, int bit )
 
 bool is_set( int vector, int bit )
 {
-  return( ( vector & ( 1 << bit ) ) != 0 );
+  return( ( vector & (int)( 1u << bit ) ) != 0 );
 }
 
 
 void switch_bit( int& vector, int bit )
 {
-  vector ^= ( 1 << bit );
+  vector ^= (int)( 1u << bit );
 }
 
 
 void set_bit( int& vector, int bit )
 {
-  vector |= ( 1 << bit );
+  vector |= (int)( 1u << bit );
 }
 
 
 void remove_bit( int& vector, int bit )
 {
-  vector &= ~( 1 << bit ); 
+  vector &= ~(int)( 1u << bit ); 
 }
 
 
@@ -67,7 +67,7 @@ bool is_set( const int *array, int bit )
   int i = bit/32;
   int j = bit-32*i;
 
-  return( ( array[i] & ( 1 << j ) ) != 0 );
+  return( ( array[i] & (int)( 1u << j ) ) != 0 );
 }
 
 
@@ -76,7 +76,7 @@ void switch_bit( int *array, int bit )
   int i = bit/32;
   int j = bit-32*i;
 
-  array[i] ^= ( 1 << j );
+  array[i] ^= (int)( 1u << j );
 }
 
 
@@ -85,7 +85,7 @@ void set_bit( int *array, int bit )
   int i = bit/32;
   int j = bit-32*i;
 
-  array[i] |= ( 1 << j );
+  array[i] |= (int)( 1u << j );
 }
 
 
@@ -94,7 +94,7 @@ void remove_bit( int *array, int bit )
   int i = bit/32;
   int j = bit-32*i;
 
-  array[i] &= ~( 1 << j ); 
+  array[i] &= ~(int)( 1u << j ); 
 }
 
 

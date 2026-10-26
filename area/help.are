@@ -12983,18 +12983,14 @@ You can also type \"?align\", for example \"?LG\" or \"?pure neutral\", for more
 1024 0 3 -1
 ""
 "Login_classes"
-"The following classes (professions) are available.  
+"Every adventurer begins life as a peasant.
 
-     Mage:   Controls the mystical elements
-   Cleric:   A priest, a follower of a god and worker of \"miracles\"
-    Thief:   Steals, backstabs, and robs the blind
-  Warrior:   Skillful at the art of war
-  Paladin:   A warrior dedicated to god
-   Ranger:   An outdoorsman, skillful in hunting and tracking
-     Monk:   A meditative loner, skilled in unarmed combat
-     Bard:   Traveling minstrel and jack-of-all-trades
+  Peasant:   A farmhand or laborer with a club and a strong back
 
-You can also type \"?class\", for example \"?paladin\", for more information.
+The other professions (mage, cleric, thief, warrior, paladin, ranger, druid,
+monk, bard and more) are earned later.
+
+You can also type \"?peasant\" for more information.
 "
 ""
 1024 0 3 -1
@@ -18191,6 +18187,17 @@ peace
 @CDESCRIPTION@n
 
 peace - Stop all fighting in the current room.
+"
+""
+0 0 15 -1
+""
+"Peasant"
+"Every adventurer in The Forest's Edge begins as a peasant: a farmhand,
+shepherd or laborer who has left home with little more than a padded jacket
+and a club.  Peasants fight unarmed or with a club and can climb; they
+practice their languages like warriors.
+
+The other professions are earned by playing through as a peasant first.
 "
 ""
 0 0 17 -1

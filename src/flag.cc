@@ -197,7 +197,7 @@ void flag_data :: sprint( char *tmp, int* bit )
 
   *tmp = '\0';
   
-  if( *max < 16 && *bit+1 == ( 1 << *max ) ) {
+  if( *max > 0 && *max <= 32 && *bit == class_mask( *max ) ) {
     strcpy( tmp, "all" );
     return;
   }

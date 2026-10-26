@@ -398,8 +398,7 @@ static void skill_help( char_data* ch, int i )
   const unsigned width = ( ch && ch->pcdata ) ? ch->pcdata->columns : 80;
 
   for( j = 0; j < MAX_CLSS; j++ ) {
-    if( ( level = skill_physical_table[i].level[j] ) > 0
-	&& clss_table[j].open ) {
+    if( ( level = skill_physical_table[i].level[j] ) > 0 ) {
       const char *name = clss_table[j].name;
       unsigned x = sprintf( buf, "%c%s", toupper( *name ), name+1 );
       if( is_apprentice( ch ) || level <= LEVEL_HERO ) {
@@ -506,8 +505,7 @@ static void spell_help( char_data* ch, int i )
   const unsigned width = ( ch && ch->pcdata ) ? ch->pcdata->columns : 80;
 
   for( j = 0; j < MAX_CLSS; j++ ) {
-    if( ( level = skill_spell_table[i].level[j] ) > 0
-	&& clss_table[j].open ) {
+    if( ( level = skill_spell_table[i].level[j] ) > 0 ) {
       const char *name = clss_table[j].name;
       unsigned x = sprintf( buf, "%c%s", toupper( *name ), name+1 );
       if( is_apprentice( ch ) || level <= LEVEL_HERO ) {

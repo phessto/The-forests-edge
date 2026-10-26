@@ -106,6 +106,11 @@ PY
         fail "boot logged bugs (above)"
     fi
     log "Boot clean"
+    tr -d '\r' < "$root/var/log/stdout.log" | grep -q '^  32 classes, 46 starting rows\.' \
+        || { kill "$pid"; fail "boot log does not show 32 classes and 46 starting rows"; }
+    tr -d '\r' < "$root/var/log/stdout.log" | grep -q 'Migrating the tables' \
+        && { kill "$pid"; fail "the repo's tables needed the class migration (tables/ not migrated)"; }
+    log "Tables: 32 classes, 46 starting rows, no migration needed"
     local repaired
     repaired="$(tr -d '\r' < "$root/var/log/stdout.log" | sed -n 's/^Repaired the 2009 CR LF line endings in \([0-9]*\) strings.*/\1/p')"
     [[ "$repaired" == "$damaged" ]] \
@@ -280,7 +285,40 @@ need("opens on its own.  The pages slowly\nflip over" in out and b"\r\n\r\n" not
 out = cmd("help score", more=True)
 need("Category: Misc\n" in out and "In order,\nmagic, fire, cold, electricity, and mind.\n\n" in out
      and "\n\n\n" not in out, "help score: one line per line, single blank lines")
-need("TempImm" in cmd("who"), "who lists the player")
+# Classes: 32 slots, any class can be given skills in the table editor.
+cmd("tedit skills.physical bash")
+cmd("tset cost[peasant] 3")
+cmd("tset level[peasant] 5")
+cmd("tedit")
+need(re.search(r"^bash\s+3\s+5", cmd("abil phy peasant"), re.M) is not None,
+     "a skill given to peasant in tset shows in abil phy peasant")
+need("class31 class has no skills" in cmd("abil all class31"), "abil all class31: placeholder, no skills")
+out = cmd("abil all peasant")
+need(all(k in out for k in ("unarmed", "club", "climb")), "abil all peasant: the starting skills")
+# A new character: only peasant is offered.
+imm = s
+s = socket.create_connection((host, port), timeout=10)
+read(3)
+for k in ("2", "temp", "llama", "Gorwin", "llama", "llama", "n", "", "y", "m"):
+    out = cmd(k)
+need("Select a class [Pea]:" in out, "new character: only peasant offered")
+need("unintelligible" in cmd("mag"), "new character: mage refused")
+cmd("")
+for k in ("pea", "hum", "pn"):
+    out = cmd(k)
+for k in ("done", "", "", ""):
+    out = cmd(k, 2)
+out = cmd("score")
+need("Gorwin" in out and "Level: 1" in out, "new character created, score works")
+need("wooden club" in out or "club" in cmd("equipment"), "peasant starting kit worn")
+newbie = s
+s = imm
+out = cmd("who")
+need("TempImm" in out and "Gorwin" in out, "who lists both players")
+s = newbie
+cmd("quit")
+s = imm
+
 need("saved" in cmd("save"), "save")
 cmd("shutdown", 5)
 print("ok   shutdown sent")

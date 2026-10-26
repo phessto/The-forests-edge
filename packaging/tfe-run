@@ -65,6 +65,19 @@ for d in tables notes; do
     done
 done
 
+# tables/ from before the class table grew to 32 classes (9 in
+# tables/Classes): tfe migrates them itself at boot and saves the new ones
+# (the old files go to prev/tables, which later table saves overwrite).
+# Keep a lasting copy of the old tables first.
+if [[ "$(sed -n 3p "$ROOT/tables/Classes" 2>/dev/null)" == 9 ]]; then
+    bak="$ROOT/prev/tables-9-classes-$(date +%Y%m%d-%H%M%S)"
+    if cp -a "$ROOT/tables" "$bak"; then
+        say "tables/ has 9 classes; tfe will migrate them to 32 (old tables kept in ${bak#"$ROOT"/})"
+    else
+        fail_boot "could not back up $ROOT/tables before the class migration"
+    fi
+fi
+
 # files/accounts: TFE writes it itself ("0" plus a blank line when there are
 # no accounts), but cannot boot from a zero-byte one ("Fread_number: bad
 # format"), and logs a scary Open_File bug when it is missing. A zero-byte

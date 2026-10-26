@@ -234,6 +234,120 @@ static const int table_size [ MAX_TABLE ] = {
 #define VAR_VARIABLE            38
 
 
+/*
+ *   Per-class columns of the five skill tables: a practice cost and a level
+ *   for each of the MAX_CLSS classes, in this order (the order of the columns
+ *   in tables/Skills.*; the first nine are the 2009 order, Monk before Druid).
+ */
+
+#define CLSS_ENTRY( tbl, fld, c )  { &tbl[0].fld[ c ], VAR_INT, true, true }
+#define CLSS_ENTRIES( tbl, fld ) \
+  CLSS_ENTRY( tbl, fld, CLSS_MAGE ), \
+  CLSS_ENTRY( tbl, fld, CLSS_CLERIC ), \
+  CLSS_ENTRY( tbl, fld, CLSS_THIEF ), \
+  CLSS_ENTRY( tbl, fld, CLSS_WARRIOR ), \
+  CLSS_ENTRY( tbl, fld, CLSS_PALADIN ), \
+  CLSS_ENTRY( tbl, fld, CLSS_RANGER ), \
+  CLSS_ENTRY( tbl, fld, CLSS_MONK ), \
+  CLSS_ENTRY( tbl, fld, CLSS_DRUID ), \
+  CLSS_ENTRY( tbl, fld, CLSS_BARD ), \
+  CLSS_ENTRY( tbl, fld, CLSS_PEASANT ), \
+  CLSS_ENTRY( tbl, fld, CLSS_MAGE2 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_CLERIC2 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_CLERIC3 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_THIEF2 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_WARRIOR2 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_PALADIN2 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_MONK_SPRING ), \
+  CLSS_ENTRY( tbl, fld, CLSS_MONK_SUMMER ), \
+  CLSS_ENTRY( tbl, fld, CLSS_MONK_AUTUMN ), \
+  CLSS_ENTRY( tbl, fld, CLSS_MONK_WINTER ), \
+  CLSS_ENTRY( tbl, fld, CLSS_ANTIPALADIN ), \
+  CLSS_ENTRY( tbl, fld, CLSS_ENCHANTER ), \
+  CLSS_ENTRY( tbl, fld, CLSS_SPELLSWORD ), \
+  CLSS_ENTRY( tbl, fld, CLSS_PLACEHOLDER+0 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_PLACEHOLDER+1 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_PLACEHOLDER+2 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_PLACEHOLDER+3 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_PLACEHOLDER+4 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_PLACEHOLDER+5 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_PLACEHOLDER+6 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_PLACEHOLDER+7 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_PLACEHOLDER+8 )
+
+#define CLSS_FIELDS( what ) \
+  "+" what "[Mage]", \
+      what "[Cleric]", \
+      what "[Thief]", \
+      what "[Warrior]", \
+      what "[Paladin]", \
+      what "[Ranger]", \
+      what "[Monk]", \
+      what "[Druid]", \
+      what "[Bard]", \
+      what "[Peasant]", \
+      what "[Mage2]", \
+      what "[Cleric2]", \
+      what "[Cleric3]", \
+      what "[Thief2]", \
+      what "[Warrior2]", \
+      what "[Paladin2]", \
+      what "[Monk-Spring]", \
+      what "[Monk-Summer]", \
+      what "[Monk-Autumn]", \
+      what "[Monk-Winter]", \
+      what "[Antipaladin]", \
+      what "[Enchanter]", \
+      what "[Spellsword]", \
+      what "[Class23]", \
+      what "[Class24]", \
+      what "[Class25]", \
+      what "[Class26]", \
+      what "[Class27]", \
+      what "[Class28]", \
+      what "[Class29]", \
+      what "[Class30]", \
+      what "[Class31]"
+
+static_assert( MAX_CLSS == 32, "CLSS_ENTRIES and CLSS_FIELDS list 32 classes" );
+
+// The class in each column of the skill tables (see CLSS_ENTRIES).
+static const int clss_column [ MAX_CLSS ] = {
+  CLSS_MAGE,
+  CLSS_CLERIC,
+  CLSS_THIEF,
+  CLSS_WARRIOR,
+  CLSS_PALADIN,
+  CLSS_RANGER,
+  CLSS_MONK,
+  CLSS_DRUID,
+  CLSS_BARD,
+  CLSS_PEASANT,
+  CLSS_MAGE2,
+  CLSS_CLERIC2,
+  CLSS_CLERIC3,
+  CLSS_THIEF2,
+  CLSS_WARRIOR2,
+  CLSS_PALADIN2,
+  CLSS_MONK_SPRING,
+  CLSS_MONK_SUMMER,
+  CLSS_MONK_AUTUMN,
+  CLSS_MONK_WINTER,
+  CLSS_ANTIPALADIN,
+  CLSS_ENCHANTER,
+  CLSS_SPELLSWORD,
+  CLSS_PLACEHOLDER+0,
+  CLSS_PLACEHOLDER+1,
+  CLSS_PLACEHOLDER+2,
+  CLSS_PLACEHOLDER+3,
+  CLSS_PLACEHOLDER+4,
+  CLSS_PLACEHOLDER+5,
+  CLSS_PLACEHOLDER+6,
+  CLSS_PLACEHOLDER+7,
+  CLSS_PLACEHOLDER+8,
+};
+
+
 static const Entry_Data social_entry[] = {
   {  &social_table[0][0].name,           VAR_CHAR,   true,  true  },
   {  &social_table[0][0].position,       VAR_POS,    true,  true  },
@@ -301,24 +415,8 @@ static const Entry_Data skill_physical_entry[] = {
   { &skill_physical_table[0].pre_level[0],                 VAR_INT,   true,  true     },
   { &skill_physical_table[0].pre_skill[1],                 VAR_SKILL, true,  true     },
   { &skill_physical_table[0].pre_level[1],                 VAR_INT,   true,  true     },
-  { &skill_physical_table[0].prac_cost[ CLSS_MAGE ],       VAR_INT,   true,  true     },  
-  { &skill_physical_table[0].prac_cost[ CLSS_CLERIC ],     VAR_INT,   true,  true     },  
-  { &skill_physical_table[0].prac_cost[ CLSS_THIEF ],      VAR_INT,   true,  true     },  
-  { &skill_physical_table[0].prac_cost[ CLSS_WARRIOR ],    VAR_INT,   true,  true     },  
-  { &skill_physical_table[0].prac_cost[ CLSS_PALADIN ],    VAR_INT,   true,  true     },  
-  { &skill_physical_table[0].prac_cost[ CLSS_RANGER ],     VAR_INT,   true,  true     },  
-  { &skill_physical_table[0].prac_cost[ CLSS_MONK ],       VAR_INT,   true,  true     },  
-  { &skill_physical_table[0].prac_cost[ CLSS_DRUID ],      VAR_INT,   true,  true     },
-  { &skill_physical_table[0].prac_cost[ CLSS_BARD ],       VAR_INT,   true,  true     },
-  { &skill_physical_table[0].level[ CLSS_MAGE ],           VAR_INT,   true,  true     },
-  { &skill_physical_table[0].level[ CLSS_CLERIC ],         VAR_INT,   true,  true     },  
-  { &skill_physical_table[0].level[ CLSS_THIEF ],          VAR_INT,   true,  true     },  
-  { &skill_physical_table[0].level[ CLSS_WARRIOR ],        VAR_INT,   true,  true     },  
-  { &skill_physical_table[0].level[ CLSS_PALADIN ],        VAR_INT,   true,  true     },  
-  { &skill_physical_table[0].level[ CLSS_RANGER ],         VAR_INT,   true,  true     },  
-  { &skill_physical_table[0].level[ CLSS_MONK ],           VAR_INT,   true,  true     },  
-  { &skill_physical_table[0].level[ CLSS_DRUID ],          VAR_INT,   true,  true     },
-  { &skill_physical_table[0].level[ CLSS_BARD ],           VAR_INT,   true,  true     },
+  CLSS_ENTRIES( skill_physical_table, prac_cost ),
+  CLSS_ENTRIES( skill_physical_table, level ),
   { &skill_physical_table[0].religions,                    VAR_RELIGIONS, true, true }
 };
 
@@ -328,24 +426,8 @@ static const Entry_Data skill_language_entry[] = {
   { &skill_language_table[0].pre_level[0],                 VAR_INT,   true,  true     },
   { &skill_language_table[0].pre_skill[1],                 VAR_SKILL, true,  true     },
   { &skill_language_table[0].pre_level[1],                 VAR_INT,   true,  true     },
-  { &skill_language_table[0].prac_cost[ CLSS_MAGE ],       VAR_INT,   true,  true     },  
-  { &skill_language_table[0].prac_cost[ CLSS_CLERIC ],     VAR_INT,   true,  true     },  
-  { &skill_language_table[0].prac_cost[ CLSS_THIEF ],      VAR_INT,   true,  true     },  
-  { &skill_language_table[0].prac_cost[ CLSS_WARRIOR ],    VAR_INT,   true,  true     },  
-  { &skill_language_table[0].prac_cost[ CLSS_PALADIN ],    VAR_INT,   true,  true     },  
-  { &skill_language_table[0].prac_cost[ CLSS_RANGER ],     VAR_INT,   true,  true     },  
-  { &skill_language_table[0].prac_cost[ CLSS_MONK ],       VAR_INT,   true,  true     },  
-  { &skill_language_table[0].prac_cost[ CLSS_DRUID ],      VAR_INT,   true,  true     },
-  { &skill_language_table[0].prac_cost[ CLSS_BARD ],       VAR_INT,   true,  true     },
-  { &skill_language_table[0].level[ CLSS_MAGE ],           VAR_INT,   true,  true     },
-  { &skill_language_table[0].level[ CLSS_CLERIC ],         VAR_INT,   true,  true     },  
-  { &skill_language_table[0].level[ CLSS_THIEF ],          VAR_INT,   true,  true     },  
-  { &skill_language_table[0].level[ CLSS_WARRIOR ],        VAR_INT,   true,  true     },  
-  { &skill_language_table[0].level[ CLSS_PALADIN ],        VAR_INT,   true,  true     },  
-  { &skill_language_table[0].level[ CLSS_RANGER ],         VAR_INT,   true,  true     },  
-  { &skill_language_table[0].level[ CLSS_MONK ],           VAR_INT,   true,  true     },  
-  { &skill_language_table[0].level[ CLSS_DRUID ],          VAR_INT,   true,  true     },
-  { &skill_language_table[0].level[ CLSS_BARD ],           VAR_INT,   true,  true     },
+  CLSS_ENTRIES( skill_language_table, prac_cost ),
+  CLSS_ENTRIES( skill_language_table, level ),
   { &skill_language_table[0].religions,                    VAR_RELIGIONS, true, true }
 };
 
@@ -355,24 +437,8 @@ static const Entry_Data skill_spell_entry[] = {
   { &skill_spell_table[0].pre_level[0],                 VAR_INT,   true,  true     },
   { &skill_spell_table[0].pre_skill[1],                 VAR_SKILL, true,  true     },
   { &skill_spell_table[0].pre_level[1],                 VAR_INT,   true,  true     },
-  { &skill_spell_table[0].prac_cost[ CLSS_MAGE ],       VAR_INT,   true,  true     },  
-  { &skill_spell_table[0].prac_cost[ CLSS_CLERIC ],     VAR_INT,   true,  true     },  
-  { &skill_spell_table[0].prac_cost[ CLSS_THIEF ],      VAR_INT,   true,  true     },  
-  { &skill_spell_table[0].prac_cost[ CLSS_WARRIOR ],    VAR_INT,   true,  true     },  
-  { &skill_spell_table[0].prac_cost[ CLSS_PALADIN ],    VAR_INT,   true,  true     },  
-  { &skill_spell_table[0].prac_cost[ CLSS_RANGER ],     VAR_INT,   true,  true     },  
-  { &skill_spell_table[0].prac_cost[ CLSS_MONK ],       VAR_INT,   true,  true     },  
-  { &skill_spell_table[0].prac_cost[ CLSS_DRUID ],      VAR_INT,   true,  true     },
-  { &skill_spell_table[0].prac_cost[ CLSS_BARD ],       VAR_INT,   true,  true     },
-  { &skill_spell_table[0].level[ CLSS_MAGE ],           VAR_INT,   true,  true     },
-  { &skill_spell_table[0].level[ CLSS_CLERIC ],         VAR_INT,   true,  true     },  
-  { &skill_spell_table[0].level[ CLSS_THIEF ],          VAR_INT,   true,  true     },  
-  { &skill_spell_table[0].level[ CLSS_WARRIOR ],        VAR_INT,   true,  true     },  
-  { &skill_spell_table[0].level[ CLSS_PALADIN ],        VAR_INT,   true,  true     },  
-  { &skill_spell_table[0].level[ CLSS_RANGER ],         VAR_INT,   true,  true     },  
-  { &skill_spell_table[0].level[ CLSS_MONK ],           VAR_INT,   true,  true     },  
-  { &skill_spell_table[0].level[ CLSS_DRUID ],          VAR_INT,   true,  true     },
-  { &skill_spell_table[0].level[ CLSS_BARD ],           VAR_INT,   true,  true     },
+  CLSS_ENTRIES( skill_spell_table, prac_cost ),
+  CLSS_ENTRIES( skill_spell_table, level ),
   { &skill_spell_table[0].religions,                    VAR_RELIGIONS, true, true },
   { &skill_spell_table[0].prepare,         		  VAR_INT,   true,  true       },
   { &skill_spell_table[0].wait,            		  VAR_INT,   true,  true       },
@@ -402,24 +468,8 @@ static const Entry_Data skill_trade_entry[] = {
   { &skill_trade_table[0].pre_level[0],                 VAR_INT,   true,  true     },
   { &skill_trade_table[0].pre_skill[1],                 VAR_SKILL, true,  true     },
   { &skill_trade_table[0].pre_level[1],                 VAR_INT,   true,  true     },
-  { &skill_trade_table[0].prac_cost[ CLSS_MAGE ],       VAR_INT,   true,  true     },  
-  { &skill_trade_table[0].prac_cost[ CLSS_CLERIC ],     VAR_INT,   true,  true     },  
-  { &skill_trade_table[0].prac_cost[ CLSS_THIEF ],      VAR_INT,   true,  true     },  
-  { &skill_trade_table[0].prac_cost[ CLSS_WARRIOR ],    VAR_INT,   true,  true     },  
-  { &skill_trade_table[0].prac_cost[ CLSS_PALADIN ],    VAR_INT,   true,  true     },  
-  { &skill_trade_table[0].prac_cost[ CLSS_RANGER ],     VAR_INT,   true,  true     },  
-  { &skill_trade_table[0].prac_cost[ CLSS_MONK ],       VAR_INT,   true,  true     },  
-  { &skill_trade_table[0].prac_cost[ CLSS_DRUID ],      VAR_INT,   true,  true     },
-  { &skill_trade_table[0].prac_cost[ CLSS_BARD ],       VAR_INT,   true,  true     },
-  { &skill_trade_table[0].level[ CLSS_MAGE ],           VAR_INT,   true,  true     },
-  { &skill_trade_table[0].level[ CLSS_CLERIC ],         VAR_INT,   true,  true     },  
-  { &skill_trade_table[0].level[ CLSS_THIEF ],          VAR_INT,   true,  true     },  
-  { &skill_trade_table[0].level[ CLSS_WARRIOR ],        VAR_INT,   true,  true     },  
-  { &skill_trade_table[0].level[ CLSS_PALADIN ],        VAR_INT,   true,  true     },  
-  { &skill_trade_table[0].level[ CLSS_RANGER ],         VAR_INT,   true,  true     },  
-  { &skill_trade_table[0].level[ CLSS_MONK ],           VAR_INT,   true,  true     },  
-  { &skill_trade_table[0].level[ CLSS_DRUID ],          VAR_INT,   true,  true     },
-  { &skill_trade_table[0].level[ CLSS_BARD ],           VAR_INT,   true,  true     },
+  CLSS_ENTRIES( skill_trade_table, prac_cost ),
+  CLSS_ENTRIES( skill_trade_table, level ),
   { &skill_trade_table[0].religions,                    VAR_RELIGIONS, true, true }
 };
 
@@ -429,24 +479,8 @@ static const Entry_Data skill_weapon_entry[] = {
   { &skill_weapon_table[0].pre_level[0],                 VAR_INT,   true,  true     },
   { &skill_weapon_table[0].pre_skill[1],                 VAR_SKILL, true,  true     },
   { &skill_weapon_table[0].pre_level[1],                 VAR_INT,   true,  true     },
-  { &skill_weapon_table[0].prac_cost[ CLSS_MAGE ],       VAR_INT,   true,  true     },  
-  { &skill_weapon_table[0].prac_cost[ CLSS_CLERIC ],     VAR_INT,   true,  true     },  
-  { &skill_weapon_table[0].prac_cost[ CLSS_THIEF ],      VAR_INT,   true,  true     },  
-  { &skill_weapon_table[0].prac_cost[ CLSS_WARRIOR ],    VAR_INT,   true,  true     },  
-  { &skill_weapon_table[0].prac_cost[ CLSS_PALADIN ],    VAR_INT,   true,  true     },  
-  { &skill_weapon_table[0].prac_cost[ CLSS_RANGER ],     VAR_INT,   true,  true     },  
-  { &skill_weapon_table[0].prac_cost[ CLSS_MONK ],       VAR_INT,   true,  true     },  
-  { &skill_weapon_table[0].prac_cost[ CLSS_DRUID ],      VAR_INT,   true,  true     },
-  { &skill_weapon_table[0].prac_cost[ CLSS_BARD ],       VAR_INT,   true,  true     },
-  { &skill_weapon_table[0].level[ CLSS_MAGE ],           VAR_INT,   true,  true     },
-  { &skill_weapon_table[0].level[ CLSS_CLERIC ],         VAR_INT,   true,  true     },  
-  { &skill_weapon_table[0].level[ CLSS_THIEF ],          VAR_INT,   true,  true     },  
-  { &skill_weapon_table[0].level[ CLSS_WARRIOR ],        VAR_INT,   true,  true     },  
-  { &skill_weapon_table[0].level[ CLSS_PALADIN ],        VAR_INT,   true,  true     },  
-  { &skill_weapon_table[0].level[ CLSS_RANGER ],         VAR_INT,   true,  true     },  
-  { &skill_weapon_table[0].level[ CLSS_MONK ],           VAR_INT,   true,  true     },  
-  { &skill_weapon_table[0].level[ CLSS_DRUID ],          VAR_INT,   true,  true     },
-  { &skill_weapon_table[0].level[ CLSS_BARD ],           VAR_INT,   true,  true     },
+  CLSS_ENTRIES( skill_weapon_table, prac_cost ),
+  CLSS_ENTRIES( skill_weapon_table, level ),
   { &skill_weapon_table[0].religions,                    VAR_RELIGIONS, true, true },
   { &skill_weapon_table[0].noun[0],                 	   VAR_CHAR,   true,  true    },
   { &skill_weapon_table[0].noun[1],                 	   VAR_CHAR,   true,  true    },
@@ -889,24 +923,8 @@ static const char* skill_fields [] = {
   "Level[1]",
   "Prereq[2]",
   "Level[2]",
-  "+Cost[Mage]",
-  "Cost[Cleric]",
-  "Cost[Thief]",
-  "Cost[Warrior]",
-  "Cost[Paladin]",
-  "Cost[Ranger]",
-  "Cost[Monk]",
-  "Cost[Druid]",
-  "Cost[Bard]",
-  "+Level[Mage]",
-  "Level[Cleric]",
-  "Level[Thief]",
-  "Level[Warrior]",
-  "Level[Paladin]",
-  "Level[Ranger]",
-  "Level[Monk]",
-  "Level[Druid]",
-  "Level[Bard]",
+  CLSS_FIELDS( "Cost" ),
+  CLSS_FIELDS( "Level" ),
   "+Religions",
   0
 };
@@ -918,24 +936,8 @@ static const char *spell_skill_fields [] = {
   "Level[1]",
   "Prereq[2]",
   "Level[2]",
-  "+Cost[Mage]",
-  "Cost[Cleric]",
-  "Cost[Thief]",
-  "Cost[Warrior]",
-  "Cost[Paladin]",
-  "Cost[Ranger]",
-  "Cost[Monk]",
-  "Cost[Druid]",
-  "Cost[Bard]",
-  "+Level[Mage]",
-  "Level[Cleric]",
-  "Level[Thief]",
-  "Level[Warrior]",
-  "Level[Paladin]",
-  "Level[Ranger]",
-  "Level[Monk]",
-  "Level[Druid]",
-  "Level[Bard]",
+  CLSS_FIELDS( "Cost" ),
+  CLSS_FIELDS( "Level" ),
   "+Religions",
   "+prepare",
   "wait",
@@ -967,24 +969,8 @@ static const char* weapon_skill_fields [] = {
   "Level[1]",
   "Prereq[2]",
   "Level[2]",
-  "+Cost[Mage]",
-  "Cost[Cleric]",
-  "Cost[Thief]",
-  "Cost[Warrior]",
-  "Cost[Paladin]",
-  "Cost[Ranger]",
-  "Cost[Monk]",
-  "Cost[Druid]",
-  "Cost[Bard]",
-  "+Level[Mage]",
-  "Level[Cleric]",
-  "Level[Thief]",
-  "Level[Warrior]",
-  "Level[Paladin]",
-  "Level[Ranger]",
-  "Level[Monk]",
-  "Level[Druid]",
-  "Level[Bard]",
+  CLSS_FIELDS( "Cost" ),
+  CLSS_FIELDS( "Level" ),
   "+Religions",
   "+noun[0]",
   "noun[1]",
@@ -1896,6 +1882,187 @@ static void remove_entry( char_data* ch, int table, int entry )
  */
 
 
+/*
+ *   CLASS TABLE MIGRATION
+ *
+ *   Until MAX_CLSS was raised to 32 the table files had 9 classes: 9 rows in
+ *   Classes, 1+9+races rows in Starting, and 9 cost and 9 level columns in
+ *   each Skills.* file. A world with such tables (an RPM's /var/lib/tfe is
+ *   seeded once and never overwritten) is read with the missing columns
+ *   left blank, then given the new classes and saved in the new format (the
+ *   old files go to prev/tables, the game's usual backup).
+ */
+
+static int file_classes = MAX_CLSS;    // classes in the table files being read
+
+struct new_class_data {
+  const char*  name;
+  const char*  abbrev;
+  int          like;    // class whose hp/energy/move gains it copies, -1 peasant
+};
+
+static const new_class_data new_classes [ MAX_CLSS-OLD_MAX_CLSS ] = {
+  { "peasant",     "Pea", -1 },
+  { "mage2",       "Ma2", CLSS_MAGE },
+  { "cleric2",     "Cl2", CLSS_CLERIC },
+  { "cleric3",     "Cl3", CLSS_CLERIC },
+  { "thief2",      "Th2", CLSS_THIEF },
+  { "warrior2",    "Wa2", CLSS_WARRIOR },
+  { "paladin2",    "Pa2", CLSS_PALADIN },
+  { "monk-spring", "MSp", CLSS_MONK },
+  { "monk-summer", "MSu", CLSS_MONK },
+  { "monk-autumn", "MAu", CLSS_MONK },
+  { "monk-winter", "MWi", CLSS_MONK },
+  { "antipaladin", "APa", CLSS_PALADIN },
+  { "enchanter",   "Enc", CLSS_MAGE },
+  { "spellsword",  "SpS", CLSS_PALADIN },
+  { "class23",     "C23", -1 },
+  { "class24",     "C24", -1 },
+  { "class25",     "C25", -1 },
+  { "class26",     "C26", -1 },
+  { "class27",     "C27", -1 },
+  { "class28",     "C28", -1 },
+  { "class29",     "C29", -1 },
+  { "class30",     "C30", -1 },
+  { "class31",     "C31", -1 }
+};
+
+
+static bool is_skill_table( int table )
+{
+  return table >= TABLE_SKILL_PHYSICAL && table <= TABLE_SKILL_WEAPON;
+}
+
+
+// Is field k of the table in the file being read? (The class columns of
+// the skill tables are fields 5 .. 5+2*MAX_CLSS-1, see CLSS_ENTRIES.)
+static bool in_file( int table, int k )
+{
+  if( file_classes == MAX_CLSS || !is_skill_table( table ) )
+    return true;
+
+  const int col = ( k-5 ) % MAX_CLSS;
+  return k < 5 || k >= 5+2*MAX_CLSS || col < file_classes;
+}
+
+
+// The number of classes in tables/Classes, before anything is loaded.
+static int classes_in_file( )
+{
+  FILE *fp = open_file( TABLE_DIR, table_names[ TABLE_CLSS ], "r", true );
+  if( strcmp( fread_word( fp ), "#TABLE" ) )
+    panic( "Load_tables: missing header" );
+  const int n = fread_number( fp );
+  fclose( fp );
+  return n;
+}
+
+
+static void set_name( Table_Data *entry, const char *name )
+{
+  free_string( (char*) entry->name, MEM_TABLE );
+  entry->name = alloc_string( name, MEM_TABLE );
+}
+
+
+static void migrate_classes( )
+{
+  // Classes: the old nine stay, closed to new characters; the new ones are
+  // added, and only the peasant is open.
+  for( int i = 0; i < OLD_MAX_CLSS; ++i )
+    clss_table[i].open = false;
+
+  for( int i = OLD_MAX_CLSS; i < MAX_CLSS; ++i ) {
+    const new_class_data& nc = new_classes[ i-OLD_MAX_CLSS ];
+    Clss_Type& c = clss_table[i];
+    set_name( &c, nc.name );
+    free_string( (char*) c.abbrev, MEM_TABLE );
+    c.abbrev = alloc_string( nc.abbrev, MEM_TABLE );
+    if( nc.like >= 0 ) {
+      const Clss_Type& l = clss_table[ nc.like ];
+      c.hit_min = l.hit_min;    c.hit_max = l.hit_max;
+      c.mana_min = l.mana_min;  c.mana_max = l.mana_max;
+      c.move_min = l.move_min;  c.move_max = l.move_max;
+      c.hit_bonus = l.hit_bonus;
+      c.mana_bonus = l.mana_bonus;
+      c.move_bonus = l.move_bonus;
+      for( int j = 0; j < MAX_RESIST; ++j )
+	c.resist[j] = l.resist[j];
+    } else {
+      // Modest gains: a peasant is tougher than a mage, weaker than a warrior.
+      c.hit_min = 8;   c.hit_max = 11;
+      c.mana_min = 2;  c.mana_max = 4;
+      c.move_min = 1;  c.move_max = 3;
+      c.hit_bonus = 2; c.mana_bonus = 1; c.move_bonus = 2;
+      for( int j = 0; j < MAX_RESIST; ++j )
+	c.resist[j] = 1;
+    }
+    c.alignments = ( 1 << MAX_ALIGNMENT ) - 1;
+    c.open = ( i == CLSS_PEASANT );
+  }
+  table_max[ TABLE_CLSS ] = MAX_CLSS;
+
+  // Starting: row 0 is the default, 1+class for classes, then the races.
+  const int races = table_max[ TABLE_STARTING ]-1-OLD_MAX_CLSS;
+  if( races < 0 || races > MAX_PLYR_RACE )
+    panic( "Load_tables: Starting has %d rows, expected 1+%d+races.",
+	   table_max[ TABLE_STARTING ], OLD_MAX_CLSS );
+  for( int r = races-1; r >= 0; --r ) {
+    Starting_Data& from = starting_table[ 1+OLD_MAX_CLSS+r ];
+    Starting_Data& to = starting_table[ 1+MAX_CLSS+r ];
+    to = from;                      // the name moves with it
+    from.name = empty_string;
+  }
+  for( int i = OLD_MAX_CLSS; i < MAX_CLSS; ++i ) {
+    Starting_Data& st = starting_table[ 1+i ];
+    set_name( &st, clss_table[i].name );
+    vzero( st.object, 10 );
+    for( int j = 0; j < 5; ++j ) {
+      st.skill[j] = -1;
+      st.level[j] = 0;
+    }
+  }
+  {
+    // The peasant starts with a padded jacket and a club, and can fight
+    // unarmed or with the club and climb.
+    Starting_Data& st = starting_table[ 1+CLSS_PEASANT ];
+    st.object[0] = 2000; st.object[1] = 1;    // padded jacket
+    st.object[2] = 3034; st.object[3] = 1;    // club
+    const char *skills [] = { "unarmed", "club", "climb" };
+    const int levels [] = { 3, 1, 1 };
+    for( int j = 0; j < 3; ++j ) {
+      st.skill[j] = skill_index( skills[j] );
+      st.level[j] = levels[j];
+    }
+  }
+  table_max[ TABLE_STARTING ] = 1+MAX_CLSS+races;
+
+  // Skills: the new columns were left blank (-1 cost, -2 level) by init().
+  // The peasant can practice its starting skills and the languages, like a
+  // warrior.
+  for( int j = 0; j < table_max[ TABLE_SKILL_LANGUAGE ]; ++j ) {
+    skill_language_table[j].prac_cost[ CLSS_PEASANT ] = skill_language_table[j].prac_cost[ CLSS_WARRIOR ];
+    skill_language_table[j].level[ CLSS_PEASANT ] = skill_language_table[j].level[ CLSS_WARRIOR ];
+  }
+  const char *skills [] = { "unarmed", "club", "climb" };
+  for( int j = 0; j < 3; ++j ) {
+    const int n = skill_index( skills[j] );
+    if( n < 0 )
+      continue;
+    Skill_Type *entry = skill_entry( n );
+    entry->prac_cost[ CLSS_PEASANT ] = max( 1, entry->prac_cost[ CLSS_WARRIOR ] );
+    entry->level[ CLSS_PEASANT ] = max( 1, entry->level[ CLSS_WARRIOR ] );
+  }
+
+  // Religions and their class masks: the new classes are allowed wherever
+  // the old ones were looked at (placeholders), the peasant in every one.
+  for( int i = 0; i < table_max[ TABLE_RELIGION ]; ++i )
+    religion_table[i].classes |= ~class_mask( OLD_MAX_CLSS );
+
+  save_tables( );
+}
+
+
 static void load_table( int table, bool spoof )
 {
   fprintf( stdout, "  -%s\n\r", table_names[table] );
@@ -1915,7 +2082,7 @@ static void load_table( int table, bool spoof )
     for( int k = 0; table_field[table][k]; ++k ) {
       char **pntr = (char**)table_pntr( table, k, j );
       int n = max( 0,table-MAX_PLYR_RACE );
-      if( table_entry[n][k].load ) {
+      if( table_entry[n][k].load && in_file( table, k ) ) {
 	switch( entry_type( table, k ) ) {
 	case VAR_TEMP :
 	  *(int *)pntr = 0;
@@ -2073,12 +2240,32 @@ void load_tables( )
     }
   }
 
+  file_classes = classes_in_file( );
+  if( file_classes != MAX_CLSS && file_classes != OLD_MAX_CLSS )
+    panic( "Load_tables: tables/Classes has %d classes; expected 32 (or 9, migrated).",
+	   file_classes );
+
   for( int i = 0; i < MAX_SKILL_CAT; ++i ) {
     load_table( skill_table_number[ i ], true );
   }
 
   for( int i = 0; i < MAX_TABLE; ++i ) {
     load_table( i, false );
+  }
+
+  if( file_classes != MAX_CLSS ) {
+    char tmp [ TWO_LINES ];
+    snprintf( tmp, TWO_LINES, "Migrating the tables from %d to %d classes (old files in prev/tables) ...\n\r",
+	      file_classes, MAX_CLSS );
+    echo( tmp );
+    migrate_classes( );
+    file_classes = MAX_CLSS;
+  }
+  {
+    char tmp [ TWO_LINES ];
+    snprintf( tmp, TWO_LINES, "  %d classes, %d starting rows.\n\r",
+	      table_max[ TABLE_CLSS ], table_max[ TABLE_STARTING ] );
+    echo( tmp );
   }
 
   /*
@@ -2781,7 +2968,7 @@ void do_tset( char_data* ch, const char *argument )
 
 void do_tstat( char_data* ch, const char *)
 {
-  char                 tmp  [ FOUR_LINES ];
+  char                 tmp  [ MAX_STRING_LENGTH ];
   wizard_data*         imm;
   if( !(imm = wizard( ch )) )
     return;
