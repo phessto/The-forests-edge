@@ -97,6 +97,8 @@
 #define SKILL_SOFT_78
 #define SKILL_ESCAPE               ( ( SKILL_CAT_PHYSICAL << 16 ) |  79 )
 #define SKILL_FOCUS                ( ( SKILL_CAT_PHYSICAL << 16 ) |  80 )
+#define SKILL_THIRD_OFFHAND        ( ( SKILL_CAT_PHYSICAL << 16 ) |  81 )
+#define SKILL_FOURTH_OFFHAND       ( ( SKILL_CAT_PHYSICAL << 16 ) |  82 )
 
 /* Language skill defines */
 

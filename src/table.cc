@@ -256,7 +256,7 @@ static const int table_size [ MAX_TABLE ] = {
   CLSS_ENTRY( tbl, fld, CLSS_CLERIC2 ), \
   CLSS_ENTRY( tbl, fld, CLSS_CLERIC3 ), \
   CLSS_ENTRY( tbl, fld, CLSS_ASSASSIN ), \
-  CLSS_ENTRY( tbl, fld, CLSS_WARRIOR2 ), \
+  CLSS_ENTRY( tbl, fld, CLSS_KNIGHT ), \
   CLSS_ENTRY( tbl, fld, CLSS_PALADIN2 ), \
   CLSS_ENTRY( tbl, fld, CLSS_MONK_SPRING ), \
   CLSS_ENTRY( tbl, fld, CLSS_MONK_SUMMER ), \
@@ -290,7 +290,7 @@ static const int table_size [ MAX_TABLE ] = {
       what "[Cleric2]", \
       what "[Cleric3]", \
       what "[Assassin]", \
-      what "[Warrior2]", \
+      what "[Knight]", \
       what "[Paladin2]", \
       what "[Monk-Spring]", \
       what "[Monk-Summer]", \
@@ -327,7 +327,7 @@ static const int clss_column [ MAX_CLSS ] = {
   CLSS_CLERIC2,
   CLSS_CLERIC3,
   CLSS_ASSASSIN,
-  CLSS_WARRIOR2,
+  CLSS_KNIGHT,
   CLSS_PALADIN2,
   CLSS_MONK_SPRING,
   CLSS_MONK_SUMMER,
@@ -1907,7 +1907,7 @@ static const new_class_data new_classes [ MAX_CLSS-OLD_MAX_CLSS ] = {
   { "cleric2",     "Cl2", CLSS_CLERIC },
   { "cleric3",     "Cl3", CLSS_CLERIC },
   { "assassin",    "Asn", CLSS_THIEF },
-  { "warrior2",    "Wa2", CLSS_WARRIOR },
+  { "knight",      "Kni", CLSS_WARRIOR },
   { "paladin2",    "Pa2", CLSS_PALADIN },
   { "monk-spring", "MSp", CLSS_MONK },
   { "monk-summer", "MSu", CLSS_MONK },

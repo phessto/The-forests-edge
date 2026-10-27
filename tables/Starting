@@ -257,22 +257,22 @@
 1
 1
 
-"warrior2"
-0 0
-0 0
-0 0
-0 0
-0 0
-""
-""
-""
-""
-""
+"knight"
+3028 1
+2000 1
+0 1
+0 1
+0 1
+"punch"
+"kick"
+"dagger"
+"bandage"
+"unarmed"
+1
+1
 0
 0
-0
-0
-0
+3
 
 "paladin2"
 0 0

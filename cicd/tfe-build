@@ -298,6 +298,18 @@ out = cmd("abil phy asn", more=True)
 need(re.search(r"^backstab\s+4\s+1\b", out, re.M) and re.search(r"^disguise\s+3\s+60\b", out, re.M)
      and re.search(r"^garrote\s+15\s+60\b", out, re.M), "abil phy asn: thief skills -10 levels, disguise 3/60")
 need(re.search(r"magic lore\s+<Unfinished>", out), "abil phy asn: magic lore stays <Unfinished>")
+# Knight (tier class 14): warrior's skills 10 levels earlier, plus third and
+# fourth off-hand attack, appended to Skills.Physical (skills save by name).
+out = cmd("abil phy kni", more=True)
+need(re.search(r"^second off-hand attack\s+15\s+60\b", out, re.M)
+     and re.search(r"^third off-hand attack\s+15\s+70\b", out, re.M)
+     and re.search(r"^fourth off-hand attack\s+15\s+80\b", out, re.M)
+     and re.search(r"^fifth attack\s+20\s+65\b", out, re.M), "abil phy kni: warrior skills -10 levels, third/fourth off-hand")
+need("third chance at attacking" in cmd("help third off-hand attack", more=True), "help third off-hand attack")
+need("fourth" in cmd("help fourth off-hand attack", more=True), "help fourth off-hand attack")
+out = cmd("sset tempimm", more=True)
+need(all(k in out for k in ("climb ( 1)", "punch ( 1)", "humanic (10)", "dagger ( 2)")),
+     "TempImm pfile skills intact after appending physical skills")
 out = cmd("help disguise", more=True)
 need("pass yourself off" in out, "help disguise")
 out = cmd("abil all peasant")

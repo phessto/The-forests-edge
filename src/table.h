@@ -1152,7 +1152,7 @@ public:
 #define CLSS_CLERIC2              11
 #define CLSS_CLERIC3              12
 #define CLSS_ASSASSIN             13
-#define CLSS_WARRIOR2             14
+#define CLSS_KNIGHT               14
 #define CLSS_PALADIN2             15
 #define CLSS_MONK_SPRING          16
 #define CLSS_MONK_SUMMER          17

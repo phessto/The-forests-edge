@@ -441,7 +441,9 @@ int player_round( char_data* ch, char_data* victim )
 
   if( secondary ) {
     attacks += ( ch->get_skill( SKILL_OFFHAND_ATTACK )
-		 + ch->get_skill( SKILL_SECOND_OFFHAND ) );
+		 + ch->get_skill( SKILL_SECOND_OFFHAND )
+		 + ch->get_skill( SKILL_THIRD_OFFHAND )
+		 + ch->get_skill( SKILL_FOURTH_OFFHAND ) );
     if( number_range( 0, 3 ) == 0 ) {
       wield = secondary;
     }
@@ -464,9 +466,26 @@ int player_round( char_data* ch, char_data* victim )
     
     if( i == -1 ) {
       ch->improve_skill( skill );
-    } else if( i < 4 ||
-	       ( i < 6 && wield && wield == secondary ) ) {
+    } else if( i < 4 || ( i == 4 && wield && wield == secondary ) ) {
       ch->improve_skill( attack_skills[i] );
+    } else if( i == 5 && wield && wield == secondary ) {
+      // Second, third and fourth off-hand attack share this slot, among
+      // the ones the character knows, so second improves as before.
+      const int offhand [] = {
+	SKILL_SECOND_OFFHAND, SKILL_THIRD_OFFHAND, SKILL_FOURTH_OFFHAND
+      };
+      int known = 0;
+      for( int k = 0; k < 3; ++k )
+	if( ch->get_skill( offhand[k] ) != UNLEARNT )
+	  ++known;
+      if( known > 0 ) {
+	int pick = number_range( 1, known );
+	for( int k = 0; k < 3; ++k )
+	  if( ch->get_skill( offhand[k] ) != UNLEARNT && --pick == 0 ) {
+	    ch->improve_skill( offhand[k] );
+	    break;
+	  }
+      }
     }
   }
   

@@ -22516,7 +22516,29 @@ This skill is automatic, but note that learning second attack even to
 attacking their foe with their off-hand weapon.  This skill is much like
 second attack, but for the off-hand.
 
-See also: off-hand attack, second attack.
+See also: off-hand attack, second attack, third off-hand attack.
+"
+""
+0 0 12 -1
+""
+"Third Off-Hand Attack"
+"This skill gives a knight a third chance at attacking their foe with
+their off-hand weapon each round, on top of off-hand attack and second
+off-hand attack.  Like them, it only works while wielding a weapon in
+the off-hand, and it improves with use in combat.
+
+See also: second off-hand attack, fourth off-hand attack.
+"
+""
+0 0 12 -1
+""
+"Fourth Off-Hand Attack"
+"The last of the off-hand attacks, this skill gives a knight a fourth
+chance at attacking their foe with their off-hand weapon each round.  It
+only works while wielding a weapon in the off-hand, and it improves with
+use in combat.
+
+See also: third off-hand attack, second off-hand attack.
 "
 ""
 0 0 1 -1
