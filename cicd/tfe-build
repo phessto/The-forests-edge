@@ -295,8 +295,8 @@ need(re.search(r"^bash\s+3\s+5", cmd("abil phy peasant"), re.M) is not None,
 need("class31 class has no skills" in cmd("abil all class31"), "abil all class31: placeholder, no skills")
 # Assassin (tier class 13): thief's skills 10 levels earlier, plus disguise.
 out = cmd("abil phy asn", more=True)
-need(re.search(r"^backstab\s+4\s+1\b", out, re.M) and re.search(r"^disguise\s+3\s+1\b", out, re.M)
-     and re.search(r"^garrote\s+15\s+60\b", out, re.M), "abil phy asn: thief skills -10 levels, disguise 3/1")
+need(re.search(r"^backstab\s+4\s+1\b", out, re.M) and re.search(r"^disguise\s+3\s+60\b", out, re.M)
+     and re.search(r"^garrote\s+15\s+60\b", out, re.M), "abil phy asn: thief skills -10 levels, disguise 3/60")
 out = cmd("help disguise", more=True)
 need("pass yourself off" in out, "help disguise")
 out = cmd("abil all peasant")
@@ -324,7 +324,9 @@ need("TempImm" in out and "Gorwin" in out, "who lists both players")
 s = newbie
 need("do not know how" in cmd("disguise elf"), "disguise: refused without the skill")
 s = imm
-for k in ("medit gorwin", "mset class assassin", "medit", "sset gorwin disguise 10"):
+# disguise is level 60 for assassin; open it at level 1 for the level-1 test character.
+for k in ("medit gorwin", "mset class assassin", "medit", "sset gorwin disguise 10",
+          "tedit skills.physical disguise", "tset level[assassin] 1", "tedit"):
     cmd(k)
 s = newbie
 out = cmd("identity")
