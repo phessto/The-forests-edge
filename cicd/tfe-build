@@ -297,6 +297,7 @@ need("class31 class has no skills" in cmd("abil all class31"), "abil all class31
 out = cmd("abil phy asn", more=True)
 need(re.search(r"^backstab\s+4\s+1\b", out, re.M) and re.search(r"^disguise\s+3\s+60\b", out, re.M)
      and re.search(r"^garrote\s+15\s+60\b", out, re.M), "abil phy asn: thief skills -10 levels, disguise 3/60")
+need(re.search(r"magic lore\s+<Unfinished>", out), "abil phy asn: magic lore stays <Unfinished>")
 out = cmd("help disguise", more=True)
 need("pass yourself off" in out, "help disguise")
 out = cmd("abil all peasant")
