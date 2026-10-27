@@ -296,6 +296,7 @@
 #define TRADE_LEATHERING           ( ( SKILL_CAT_TRADE << 16 ) |   1 )
 #define TRADE_METALURGY            ( ( SKILL_CAT_TRADE << 16 ) |   2 )
 #define TRADE_WOODWORKING          ( ( SKILL_CAT_TRADE << 16 ) |   3 )
+#define TRADE_FARMING              ( ( SKILL_CAT_TRADE << 16 ) |   4 )   // no commands yet
 
 /* Weapon skill defines */
 

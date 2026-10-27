@@ -294,7 +294,7 @@ need(re.search(r"^bash\s+3\s+5", cmd("abil phy peasant"), re.M) is not None,
      "a skill given to peasant in tset shows in abil phy peasant")
 need("class31 class has no skills" in cmd("abil all class31"), "abil all class31: placeholder, no skills")
 out = cmd("abil all peasant")
-need(all(k in out for k in ("unarmed", "club", "climb")), "abil all peasant: the starting skills")
+need(all(k in out for k in ("unarmed", "club", "climb", "farming")), "abil all peasant: the starting skills and farming")
 # A new character: only peasant is offered.
 imm = s
 s = socket.create_connection((host, port), timeout=10)
