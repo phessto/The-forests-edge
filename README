@@ -74,9 +74,11 @@ stopped, from a checkout of this repository:
 There are 32 class slots (src/table.h, CLSS_*): the nine original classes
 (0-8, closed to new characters but kept for existing ones), peasant (9, the
 only class a new character can pick), placeholders for the tier classes
-(mage2, cleric2, cleric3, thief2, warrior2, paladin2, monk-spring,
+(mage2, cleric2, cleric3, assassin, warrior2, paladin2, monk-spring,
 monk-summer, monk-autumn, monk-winter, antipaladin, enchanter, spellsword)
-and class23 .. class31, with no skills yet. Give a class skills with the
+and class23 .. class31, with no skills yet. The first finished tier class
+is assassin (13, "Asn", from thief): all thief skills 10 levels earlier,
+plus disguise; like the other tier classes it is not open at creation. Give a class skills with the
 table editor (tedit/tset on Skills.*: Cost[<class>], Level[<class>]); check
 with `abil all <class>`. Tables from before (9 classes) are migrated by tfe
 at boot and saved in the new format; the old files go to prev/tables, and

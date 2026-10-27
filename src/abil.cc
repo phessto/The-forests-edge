@@ -203,7 +203,8 @@ void do_abilities( char_data* ch, const char *argument )
   /* Select the correct table for that class. */
 
   for( clss = 0; clss < MAX_CLSS; ++clss ) 
-    if( !strncasecmp( argument, clss_table[clss].name, length ) ) 
+    if( !strncasecmp( argument, clss_table[clss].name, length )
+	|| !strcasecmp( argument, clss_table[clss].abbrev ) )
       break;
   
   if( clss == MAX_CLSS ) {

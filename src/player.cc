@@ -111,7 +111,8 @@ Pc_Data::Pc_Data ()
     max_level(-1), mod_age(0), wimpy(0),
     mail(0), mail_edit(0), pfile(0), recognize(0),
     burden(-1),
-    dictionary(empty_string), journal(empty_string)
+    dictionary(empty_string), journal(empty_string),
+    disguise(-1)
 {
   vzero( cflags, MAX_CFLAG );
   vzero( color, SAVED_COLORS );

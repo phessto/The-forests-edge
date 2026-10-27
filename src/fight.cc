@@ -258,6 +258,8 @@ bool set_fighting( char_data *ch, char_data *victim )
   ch->fighting = victim;
 
   if( victim ) {
+    break_disguise( ch );
+    break_disguise( victim );
     react_attack( ch, victim );
   }
 

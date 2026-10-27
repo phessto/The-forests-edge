@@ -309,6 +309,13 @@ bool is_aggressive( char_data* ch, char_data* victim )
   if( ch->shdata->race == RACE_PLANT
       && victim->is_affected( AFF_PROT_PLANTS ) )
     return false;
+
+  // A disguised player passes for one of this mob's own race.
+  if( victim->pcdata
+      && victim->pcdata->disguise >= 0
+      && victim->pcdata->disguise == ch->shdata->race
+      && !is_enemy( ch, victim ) )
+    return false;
   
   if( victim->pcdata ) {
     if( ( !is_set( ch->status, STAT_PET )

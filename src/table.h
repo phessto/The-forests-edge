@@ -1151,7 +1151,7 @@ public:
 #define CLSS_MAGE2                10    // tier classes: placeholders, no skills yet
 #define CLSS_CLERIC2              11
 #define CLSS_CLERIC3              12
-#define CLSS_THIEF2               13
+#define CLSS_ASSASSIN             13
 #define CLSS_WARRIOR2             14
 #define CLSS_PALADIN2             15
 #define CLSS_MONK_SPRING          16

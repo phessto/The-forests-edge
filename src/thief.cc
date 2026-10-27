@@ -187,11 +187,96 @@ void do_gouge( char_data* ch, const char *argument )
 */
 
 
-void do_disguise( char_data* ch, const char *argument)
+/*
+ *   DISGUISE
+ *
+ *   A player with the skill can pass for one of the player races.  Mobs of
+ *   that race are not aggressive toward them (is_aggressive in fight3.cc),
+ *   except mobs that already count them as an enemy.  The disguise is kept
+ *   only in memory (not saved) and drops when its wearer attacks or is
+ *   attacked (set_fighting in fight.cc), or tries a new disguise and fails.
+ */
+
+
+void break_disguise( char_data* ch )
+{
+  if( !ch || !ch->pcdata || ch->pcdata->disguise < 0 )
+    return;
+
+  ch->pcdata->disguise = -1;
+  send( ch, "Your disguise falls away.\n\r" );
+}
+
+
+void do_disguise( char_data* ch, const char *argument )
 {
   if( is_mob( ch ) )
     return;
-  
+
+  int& disguise = ch->pcdata->disguise;
+
+  if( !*argument || !strcasecmp( argument, "off" ) ) {
+    if( disguise >= 0 ) {
+      disguise = -1;
+      send( ch, "You remove your disguise.\n\r" );
+    } else if( *argument ) {
+      send( ch, "You are not disguised.\n\r" );
+    } else {
+      send( ch, "Syntax: disguise <race>, or disguise off.\n\r" );
+    }
+    return;
+  }
+
+  if( ch->get_skill( SKILL_DISGUISE ) == UNLEARNT ) {
+    send( ch, "You do not know how to disguise yourself.\n\r" );
+    return;
+  }
+
+  if( ch->fighting ) {
+    send( ch, "You cannot disguise yourself while fighting.\n\r" );
+    return;
+  }
+
+  int race;
+  for( race = 0; race < MAX_PLYR_RACE; ++race )
+    if( plyr_race_table[race].open
+	&& ( fmatches( argument, race_table[race].name, 3 )
+	     || !strcasecmp( argument, race_table[race].abbrev ) ) )
+      break;
+
+  if( race == MAX_PLYR_RACE ) {
+    send( ch, "That is not a race you can pass yourself off as.\n\r" );
+    return;
+  }
+
+  if( race == ch->shdata->race ) {
+    send( ch, "You already look like one of your own kind.\n\r" );
+    return;
+  }
+
+  const int move = 10;
+
+  if( ch->move < move ) {
+    send( ch, "You are too exhausted to disguise yourself.\n\r" );
+    return;
+  }
+
+  ch->move -= move;
+  set_delay( ch, 20 );
+  disguise = -1;
+
+  if( !ch->check_skill( SKILL_DISGUISE ) ) {
+    fsend( ch, "Your attempt to pass yourself off as %s fails.",
+	   race_table[race].name );
+    return;
+  }
+
+  disguise = race;
+  fsend( ch, "You disguise yourself and now pass for %s.",
+	 race_table[race].name );
+  fsend_seen( ch, "%s changes %s appearance.", ch, ch->His_Her( ) );
+
+  ch->improve_skill( SKILL_DISGUISE );
 }
 
 

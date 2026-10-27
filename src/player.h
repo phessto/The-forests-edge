@@ -239,6 +239,7 @@ public:
   char             burden;
   const char  *dictionary;
   const char     *journal;
+  int              disguise;	// race the player passes for, -1 none; not saved
   
   Pc_Data ();
   ~Pc_Data ();

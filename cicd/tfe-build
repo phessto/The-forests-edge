@@ -293,6 +293,12 @@ cmd("tedit")
 need(re.search(r"^bash\s+3\s+5", cmd("abil phy peasant"), re.M) is not None,
      "a skill given to peasant in tset shows in abil phy peasant")
 need("class31 class has no skills" in cmd("abil all class31"), "abil all class31: placeholder, no skills")
+# Assassin (tier class 13): thief's skills 10 levels earlier, plus disguise.
+out = cmd("abil phy asn", more=True)
+need(re.search(r"^backstab\s+4\s+1\b", out, re.M) and re.search(r"^disguise\s+3\s+1\b", out, re.M)
+     and re.search(r"^garrote\s+15\s+60\b", out, re.M), "abil phy asn: thief skills -10 levels, disguise 3/1")
+out = cmd("help disguise", more=True)
+need("pass yourself off" in out, "help disguise")
 out = cmd("abil all peasant")
 need(all(k in out for k in ("unarmed", "club", "climb", "farming")), "abil all peasant: the starting skills and farming")
 # A new character: only peasant is offered.
@@ -316,6 +322,20 @@ s = imm
 out = cmd("who")
 need("TempImm" in out and "Gorwin" in out, "who lists both players")
 s = newbie
+need("do not know how" in cmd("disguise elf"), "disguise: refused without the skill")
+s = imm
+for k in ("medit gorwin", "mset class assassin", "medit", "sset gorwin disguise 10"):
+    cmd(k)
+s = newbie
+out = cmd("identity")
+need("assassin" in out.lower(), "mset class assassin: identity shows it")
+for _ in range(6):
+    out = cmd("disguise elf", 3)
+    if "pass for elf" in out:
+        break
+need("pass for elf" in out, "disguise elf works")
+need("remove your disguise" in cmd("disguise off"), "disguise off")
+need("not a race" in cmd("disguise dragon"), "disguise: invalid race refused")
 cmd("quit")
 s = imm
 

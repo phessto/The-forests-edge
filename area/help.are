@@ -6575,6 +6575,27 @@ Tomb Rot - eats away the flesh draining hp until death or cured with spell
 Ly?? - difficult to code well 
 "
 ""
+0 0 17 -1
+""
+"Disguise"
+"@eSYNTAX@n
+
+disguise <race> : pass yourself off as one of the player races
+disguise off    : remove your disguise (so does 'disguise' alone)
+
+@eDESCRIPTION@n
+
+Assassins learn to change their face, dress and bearing until they pass
+for one of another race.  Disguising yourself takes a moment and some
+movement, and may fail; practice makes it more reliable.  While the
+disguise holds, creatures of that race will not attack you on sight,
+though any who already count you as an enemy are not fooled.
+
+The disguise falls away as soon as you attack or are attacked, and it
+does not last past quitting.  You cannot disguise yourself while
+fighting, or as your own race.
+"
+""
 0 0 13 -1
 ""
 "Dismount"
