@@ -10,8 +10,8 @@ void do_hands( char_data* ch, const char *argument )
   char_data*  victim;
   int             hp;
  
-  if( ch->species || ch->pcdata->clss != CLSS_PALADIN ) {
-    send( ch, "Only paladins can lay hands to heal.\n\r" );
+  if( ch->species || !is_paladin_class( ch->pcdata->clss ) ) {
+    send( ch, "Only paladins and crusaders can lay hands to heal.\n\r" );
     return;
   }
 

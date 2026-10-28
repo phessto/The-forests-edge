@@ -529,7 +529,7 @@ bool can_use( char_data* ch, obj_clss_data* obj_clss, obj_data* obj )
       && is_set( obj_clss->anti_flags, ANTI_FEMALE ) )
     return false;
   if( !ch->species
-      && ch->pcdata->clss == CLSS_PALADIN
+      && is_paladin_class( ch->pcdata->clss )
       && is_set( obj_clss->restrictions, RESTR_DISHONORABLE ) )
     return false;
   if( !ch->species
@@ -653,7 +653,7 @@ static thing_data *dishonorable( thing_data* t1, char_data* ch, thing_data* )
   obj_data* obj = (obj_data*) t1;
 
   if( !ch->species
-      && ch->pcdata->clss == CLSS_PALADIN 
+      && is_paladin_class( ch->pcdata->clss ) 
       && is_set( obj->pIndexData->restrictions, RESTR_DISHONORABLE ) ) 
     return 0;
 

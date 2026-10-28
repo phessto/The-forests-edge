@@ -315,7 +315,7 @@ void do_sacrifice( char_data* ch, const char *argument )
   if( ch->pcdata->religion != REL_NONE
       && ch->pcdata->religion != i
       && ( ch->pcdata->clss == CLSS_CLERIC
-	   || ch->pcdata->clss == CLSS_PALADIN
+	   || is_paladin_class( ch->pcdata->clss )
 	   || ch->pcdata->clss == CLSS_DRUID ) ) {
     fsend( ch, "%s disappears with a flash.", obj );
     fsend_seen( ch, "%s disappears with a flash.", obj );

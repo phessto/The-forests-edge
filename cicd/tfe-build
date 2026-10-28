@@ -360,6 +360,13 @@ for _ in range(6):
 need("pass for elf" in out, "disguise elf works")
 need("remove your disguise" in cmd("disguise off"), "disguise off")
 need("not a race" in cmd("disguise dragon"), "disguise: invalid race refused")
+# Paladin rules cover crusader: lay hands passes the class check (no skill yet).
+need("Only paladins and crusaders" in cmd("hands"), "lay hands: assassin refused by class")
+s = imm
+for k in ("medit gorwin", "mset class crusader", "medit"):
+    cmd(k)
+s = newbie
+need("don't know how to lay hands" in cmd("hands"), "lay hands: crusader passes the class check")
 cmd("quit")
 s = imm
 

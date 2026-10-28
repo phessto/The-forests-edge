@@ -1164,6 +1164,13 @@ public:
 #define CLSS_PLACEHOLDER          23    // 23 .. MAX_CLSS-1: class23 .. class31
 
 
+// Classes bound by the paladin's rules (lay hands, honour, religion, assist).
+inline bool is_paladin_class( int clss )
+{
+  return clss == CLSS_PALADIN || clss == CLSS_CRUSADER;
+}
+
+
 #define GROUP_NONE                  0
 
 

@@ -11,7 +11,7 @@ static bool can_assist( char_data* ch, char_data* victim )
     return true;
   
   if( ch->pcdata->clss != CLSS_CLERIC
-      && ch->pcdata->clss != CLSS_PALADIN )
+      && !is_paladin_class( ch->pcdata->clss ) )
     return true;
   
   if( ch->Align_Distance( victim ) > 2 ) {
